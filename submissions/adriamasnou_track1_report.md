@@ -1,4 +1,10 @@
-# Track 1 Methods Report — VCF-targeted BUB1B analysis
+# Track 1 Methods Report — v1: baseline / scorer-format probe (VCF-targeted BUB1B analysis)
+
+> **Note to reviewers:** this is a deliberate baseline submission from the provided VCF
+> only, submitted early to validate the scorer's expected answer format. A deeper
+> follow-up (unbiased genome-wide prioritization, FASTQ realignment with independent
+> variant calling, SV/CNV analysis, and read-depth quantification of the mosaic
+> aneuploidy itself) is in progress and will accompany a later submission.
 
 **Participant:** adriamasnou (individual)
 **Submission:** `adriamasnou_vcf-targeted-bub1b.csv`
