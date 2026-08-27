@@ -1,0 +1,13 @@
+name: verify
+on: [push, pull_request]
+jobs:
+  citations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Verify every cited PMID resolves
+        run: python3 analysis/verify_citations.py . --report
+      - uses: actions/upload-artifact@v4
+        with: {name: citation-manifest, path: citation-manifest.json}
