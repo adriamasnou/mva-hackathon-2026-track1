@@ -2,8 +2,19 @@
 """Citation verification as a build step.
 
 Extracts every PMID cited anywhere in the report/dossier tree, resolves each against
-NCBI E-utilities, and FAILS (non-zero exit) if any PMID does not resolve or if the
-cited title does not match the record. Run in CI so a broken citation breaks the build.
+NCBI E-utilities, and FAILS (non-zero exit) if any PMID does not resolve. Run in CI so a
+dead citation breaks the build.
+
+SCOPE — read this before relying on a green result. This verifies that a cited PMID
+EXISTS. It does NOT verify that the PMID is the paper the surrounding prose claims it is:
+nothing here compares the cited title, author or year against the record it fetched. A
+misattributed citation — a real PMID under the wrong claim — passes this gate cleanly.
+That is not hypothetical; it is the one citation error this project has actually made
+(the Bertoli -> Pavone misattribution, corrected 2026-08-27), and this gate would not
+have caught it. The docstring previously claimed the title check as implemented; it never
+was. Attribution remains a human review step. Implementing it properly needs a
+machine-readable author/year next to each PMID in the prose, which the corpus does not
+currently have.
 
 Rationale: a bibliography is a claim about the world. Claims about the world should be
 tested by the same pipeline that tests the code. Uncited assertions and dead PMIDs are
@@ -51,8 +62,24 @@ def collect(paths):
     return found
 
 
-def resolve(pmids):
-    out = {}
+def resolve(pmids, cache_path=pathlib.Path(".citation-cache.json")):
+    """Resolve PMIDs against PubMed, caching successes permanently.
+
+    A PubMed record for a given PMID does not change, so a hit is cacheable forever.
+    This keeps the gate fast enough that nobody is tempted to skip it — a slow gate is
+    a skipped gate, and a skipped gate is not a gate.
+    """
+    cache = {}
+    if cache_path.exists():
+        try:
+            cache = json.loads(cache_path.read_text())
+        except Exception:
+            cache = {}
+    out = {p: cache[p] for p in pmids if cache.get(p)}
+    pmids = [p for p in pmids if p not in out]
+    if not pmids:
+        print(f"  (all {len(out)} PMIDs served from cache)")
+        return out
     for i in range(0, len(pmids), BATCH):
         chunk = pmids[i:i + BATCH]
         q = urllib.parse.urlencode({"db": "pubmed", "id": ",".join(chunk), "retmode": "json"})
@@ -78,6 +105,11 @@ def resolve(pmids):
                     "first_author": (rec.get("authors") or [{}])[0].get("name", ""),
                 }
         time.sleep(0.4)  # be polite to NCBI
+    cache.update({k: v for k, v in out.items() if v})
+    try:
+        cache_path.write_text(json.dumps(cache))
+    except OSError:
+        pass
     return out
 
 
