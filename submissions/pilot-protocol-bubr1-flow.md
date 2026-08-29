@@ -66,7 +66,10 @@ Z' = 1 - 3·CV·(hi + lo) / (hi - lo)
 | item | source | identifier |
 |---|---|---|
 | **anti-BUBR1, clone 9** (primary) | BD Transduction | **612502** (50 µg) / **612503** (150 µg) — mouse monoclonal IgG2a, aa 276–388, **knockout-validated** |
-| isotype control | any | **mouse IgG2a**, matched concentration |
+| isotype control | BioLegend / BD | **mouse IgG2a κ**, clone **MOPC-173** — matched **µg/mL**, not matched dilution |
+| **Fc receptor block** | BioLegend **422302** (TruStain FcX) *or* BD **564220** (Human Fc Block) | 🔴 **mandatory — these are EBV-transformed B cells** |
+| **fixable viability dye** | Thermo **L34957** (LIVE/DEAD Fixable Aqua) | must be **fixable**; PI/7-AAD do not survive fixation |
+| knockdown host line | ATCC | **HeLa CCL-2** or **U2OS HTB-96** — see §5.6 |
 | secondary | Jackson ImmunoResearch | anti-mouse Alexa 488 — **715-545-150** |
 | **patient cells** | NIGMS/Coriell | **GM21284** (LCL, *BUB1B* `753X`/`R814H`) |
 | **control cells** | NIGMS/Coriell | **GM21657**, **GM22004** (unaffected parent LCLs) |
@@ -119,13 +122,31 @@ associated and detergent versus alcohol permeabilisation are not interchangeable
 ### 5.3 Staining — per well, 96-well V-bottom
 
 1. **5 × 10⁵ cells** per well. Pellet **300 × g, 5 min**, discard supernatant.
-2. Fix/permeabilise per §5.2. Pellet, wash twice.
-3. **Block: 50 µL TBS + 0.1% Triton X-100 + 2% BSA, 30 min, RT.**
-4. **Primary: 50 µL at the titrated dilution in block buffer, 1 h RT** (or overnight 4 °C — pick one
+2. 🔴 **FIXABLE viability dye, on LIVE cells, BEFORE fixation.** Amine-reactive fixable stain
+   (e.g. LIVE/DEAD Fixable Aqua, Thermo **L34957**), 15 min RT in PBS **without protein**, then
+   wash. **Conventional PI or 7-AAD do NOT survive fixation and permeabilisation** — using one
+   here would put dead cells back into the analysis gate, and dead cells bind antibody
+   non-specifically. **This step must precede fixing; it cannot be added later.**
+3. 🔴 **Fc RECEPTOR BLOCK — mandatory, and specific to this cell type.**
+   **These are EBV-transformed B-lymphoblastoid lines, and EBV transformation *increases* Fcγ
+   receptor number per cell.** A mouse IgG2a monoclonal will bind FcγR non-specifically on every
+   line in this pilot. Block with **human Fc receptor blocking reagent** (BioLegend TruStain FcX
+   **422302**, or BD Human Fc Block **564220**), **10 min RT before the primary antibody**, per
+   the manufacturer's volume.
+   > **This is not a refinement.** Unblocked FcγR binding raises background in *all* arms, **adds
+   > variance to the very CV that §3 requires to be ≤ 6.7%**, and can blunt the knockdown response
+   > that criterion 2 depends on. An isotype control measures this artefact; it does not remove it.
+4. Fix/permeabilise per §5.2. Pellet, wash twice.
+5. **Block: 50 µL TBS + 0.1% Triton X-100 + 2% BSA, 30 min, RT.**
+6. **Primary: 50 µL at the titrated dilution in block buffer, 1 h RT** (or overnight 4 °C — pick one
    and hold it constant; **do not mix incubation regimes across plates**).
-5. Wash **2 × 200 µL** block buffer.
-6. **Secondary: anti-mouse Alexa 488, 50 µL at 1:500 in block buffer, 30 min RT, protected from light.**
-7. Wash 2 × 200 µL. **Resuspend in 200 µL PBS + 1% BSA.** Acquire same day.
+7. Wash **2 × 200 µL** block buffer.
+8. **Secondary: anti-mouse Alexa 488, 50 µL at 1:500 in block buffer, 30 min RT, protected from light.**
+9. Wash 2 × 200 µL. **Resuspend in 200 µL PBS + 1% BSA.** Acquire same day.
+
+**Compensation.** This is a **two-colour** experiment (Alexa 488 + viability dye). Acquire
+**single-stain controls on the same cells, same day**: unstained · viability-only · Alexa-488-only.
+Compensation set from beads alone is not adequate when one dye is amine-reactive on cells.
 
 ### 5.4 🔴 Gating strategy — stated explicitly, because a flow assay without one is not defined
 
@@ -204,6 +225,15 @@ lipofection will work here is the kind of assumption that costs a month.
 > published 22–29% expectation applies.**
 > If a knockdown in LCLs is wanted regardless, it requires **nucleofection**, not lipofection, and
 > the efficiency must be measured rather than assumed.
+
+**Knockdown conditions for the adherent arm:** **HeLa (ATCC CCL-2)** or **U2OS (ATCC HTB-96)**,
+reverse-transfect **dsiBUBR1 at 10–20 nM** with a standard lipid reagent (e.g. Lipofectamine
+RNAiMAX), **harvest at 48 and 72 h** — BubR1 is a stable protein and 24 h is frequently too early to
+see depletion. **Include a non-targeting dsiRNA at the same concentration**, not just an untreated
+well: transfection itself perturbs the cells.
+⚠️ **Confirm depletion by western blot in parallel.** If the flow signal falls but the blot shows no
+depletion, the flow readout is measuring something else — and that is a result worth having before
+the screen, not after.
 
 ### 5.7 How the CV is computed, so criterion 4 is unambiguous
 
