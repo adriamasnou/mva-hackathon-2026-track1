@@ -28,6 +28,11 @@ Analysis code and submission for [Rare Disease, Real Kid: The MVA Hackathon 2026
   *FGFR2* ranks **first at 0.9647**, 146× the next gene, from phenotype and variants alone. No
   hackathon data involved. Limitations, including that this is a constructed mini-case rather than
   a full exome, are stated in §4.
+- **[Do either of this child's variants also disrupt splicing?](submissions/splice-prediction.md)**
+  — local SpliceAI run as the model, not as lookup. Neither variant shows a splice signal
+  (max delta 0.03), which is what the dose argument assumes and could have come out otherwise. The
+  positive control caught a patch of ours that had silently broken the model into returning a
+  plausible negative for every input.
 - **[The answer existed and could not be found](submissions/register-audit.md)** — an audit of the
   infrastructure between a rare-disease diagnosis and what a family is entitled to, measured across
   all 2,063 UK-approved PGT-M conditions rather than one child: **94.9%** of causative genes are
