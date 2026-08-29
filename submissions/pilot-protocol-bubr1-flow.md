@@ -66,8 +66,8 @@ Z' = 1 - 3·CV·(hi + lo) / (hi - lo)
 | item | source | identifier |
 |---|---|---|
 | **anti-BUBR1, clone 9** (primary) | BD Transduction | **612502** (50 µg) / **612503** (150 µg) — mouse monoclonal IgG2a, aa 276–388, **knockout-validated** |
-| isotype control | BioLegend / BD | **mouse IgG2a κ**, clone **MOPC-173** — matched **µg/mL**, not matched dilution |
-| **Fc receptor block** | BioLegend **422302** (TruStain FcX) *or* BD **564220** (Human Fc Block) | 🔴 **mandatory — these are EBV-transformed B cells** |
+| isotype control | BioLegend **400287** (purified) | **mouse IgG2a κ, clone MOPC-173** — matched **µg/mL**, not matched dilution. ⚠️ *For an isotype control the CLONE and ISOTYPE are what matter; vendors are interchangeable, and BioLegend lists more than one purified format (standard and Go-ChIP-Grade) — confirm the format at ordering.* |
+| **Fc receptor block** | BioLegend **422302** (TruStain FcX, RRID AB_2818986) *or* BD **564220** / **564219** (Human BD Fc Block) | 🔴 **mandatory — these are EBV-transformed B cells.** BD's own guidance specifies **10 min before staining**, matching §5.3 |
 | **fixable viability dye** | Thermo **L34976** (LIVE/DEAD Fixable **Near-IR**, 633/775) | must be **fixable** (PI/7-AAD do not survive fix), **and spectrally clear of Alexa 488** |
 | knockdown host line | ATCC | **HeLa CCL-2** (RRID **CVCL_0030**) or **U2OS HTB-96** (RRID **CVCL_0042**) — both verified via Cellosaurus |
 | secondary | Jackson ImmunoResearch | anti-mouse Alexa 488 — **715-545-150** |
@@ -267,6 +267,9 @@ says which is which, because a protocol that hides the difference is worse than 
 | GM21284 / GM21657 / GM22004, type, genotype, price | NIGMS repository |
 | Jackson **715-545-150** | published Key Resources Table |
 | TruStain FcX **422302**, RRID AB_2818986, FACS + ICS | vendor |
+| **MOPC-173 → BioLegend 400287** · **BD Fc Block 564220/564219** + its 10-min protocol | vendor |
+| **HeLa = CCL-2 = CVCL_0030** · **U2OS = HTB-96 = CVCL_0042** | Cellosaurus |
+| **MIFlowCyt** reporting standard | **PMID 18752282**, ISAC |
 | **L34976** Near-IR, 633/775, fixable, pre-fixation use | vendor |
 | EBV transformation **increases** FcR per cell | literature |
 
@@ -286,8 +289,16 @@ range · ≥10,000 events · 90% methanol, 30 min, −20 °C · dsiRNA at 10–2
 duration (already flagged) · the stain-index formula (a real published concept, cited here to no
 specific paper).**
 
-**And three catalogue numbers that are NOT yet verified and must be confirmed before ordering:**
-**MOPC-173** (isotype clone) and **BD 564220** (alternative Fc block). **ATCC CCL-2 and HTB-96 have since been verified** against Cellosaurus (CVCL_0030, CVCL_0042). Every other catalogue number in this document has been checked against its vendor or a
+**✅ Every catalogue number in this document has now been verified against its vendor or a public
+registry.** The three that were previously flagged are closed: **MOPC-173 → BioLegend 400287**
+(purified mouse IgG2a κ); **BD 564220 / 564219 → Human BD Fc Block**, whose own guidance confirms
+the 10-minute pre-stain incubation this protocol specifies; and **ATCC CCL-2 → HeLa (CVCL_0030)**,
+**HTB-96 → U2OS (CVCL_0042)** via Cellosaurus.
+
+⚠️ **Two residual cautions, which are not the same as being unverified.** BioLegend lists more than
+one *purified* MOPC-173 format (standard and Go-ChIP-Grade), so the **format** — not the clone —
+should be confirmed at ordering. And for an isotype control the **clone and isotype are the
+specification**; the vendor is interchangeable. Every other catalogue number in this document has been checked against its vendor or a
 registry today.
 
 > ### What class [C] means in practice
