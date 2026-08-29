@@ -39,6 +39,13 @@ Analysis code and submission for [Rare Disease, Real Kid: The MVA Hackathon 2026
   designed and Tm-checked mutagenic primers, the destination-vector constraint the depositor warns
   about, a QC plan, and costs. **It cannot be ordered by us — it needs a laboratory.**
 
+- **[Pilot: can BubR1 be measured by intracellular flow?](submissions/pilot-protocol-bubr1-flow.md)**
+  — the gate before the screen, because **no anti-BUBR1 antibody is vendor-validated for flow and
+  no published precedent exists.** It has a published expected value to hit (patient BubR1 at
+  22–29%, PMID 16411201), a **derived** precision requirement (CV ≤ 6.7%), and a decision written
+  before the result. Its central finding: **the obvious pilot — "can we separate patient from
+  control?" — is 3× more forgiving than what the screen actually needs**, so passing it would
+  produce a false green light.
 - **[The repurposing screen, made runnable](submissions/screen-protocol-runnable.md)** — the
   screen's own audit said 4 of 13 components done and *"we hold zero HTS methods papers"*. This
   closes the seven desk-closable ones against the NIH/NCATS **Assay Guidance Manual**'s criteria
