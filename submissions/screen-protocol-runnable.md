@@ -195,12 +195,55 @@ stall a facility. Closing it surfaced a real problem.
 > control cells?** If it does not, the primary readout must change — most likely to a tagged
 > reporter line — and that is a different, larger project. **This gate comes before the Z′ gate.**
 
-⚠️ **A discrepancy a lab must not inherit.** Our holdings contain one passage using **A300-386A to
-detect BUB1** and another specifying **BUB1 = A300-373A, BUBR1 = A300-386A**. Those cannot both be
-right. **Confirm the catalogue number against the vendor's own datasheet before ordering** — BUB1
-and BUBR1 are different proteins and the wrong tube produces a confidently meaningless screen.
-**[OUR MEASUREMENT — both passages are in papers held in `papers-local/`; the inconsistency is in
-the published text, not introduced here.]**
+### 10.1 ✅ The catalogue-number discrepancy — investigated to resolution
+
+An earlier version flagged that our holdings disagreed about which antibody detects which protein,
+and said "confirm before ordering". **That was not good enough, and it is now resolved definitively
+at the gene-identifier level.**
+
+| catalogue | RRID | registry name | **NCBI Gene** |
+|---|---|---|---|
+| **A300-386A** | **AB_386097** | Rabbit anti-BubR1, affinity purified | **701 = *BUB1B*** ✅ |
+| A300-373A | AB_2065943 | Bub1 Antibody | *BUB1* |
+
+**`A300-386A` targets *BUB1B*. This protocol is correct.** Resolved by gene identifier, not by name
+matching — a name can be mistyped in a registry; a gene ID cannot mean two things.
+
+**Where the confusion came from: two papers we hold each contradict *themselves*.**
+1. One paper's methods correctly state `Bub1 = A300-373A, BubR1 = A300-386A` **and its own RRID
+   table agrees** — then a later sentence calls **`A300-373A` "anti-BubR1"**. Wrong once in three
+   mentions, inside one paper.
+2. 🔴 **More serious: a paper *about biallelic* BUB1 *mutations* has two figure legends stating that
+   BUB1 protein was detected "using A300-386A"** — the anti-**BUBR1** antibody — while **its own
+   methods section correctly assigns `BUB1 = A300-373A`.** Its western blot of BUB1 levels and its
+   BUB1 immunofluorescence panel are both legended with the wrong antibody. The methods section is
+   almost certainly right and the legends are typos, but **a reader taking reagents from the figure
+   legends of a BUB1 paper would order an anti-BUBR1 antibody.**
+
+**[OUR MEASUREMENT — every occurrence of both catalogue numbers across `papers-local/` was
+enumerated; RRIDs resolved via the Antibody Registry; NCBI Gene 701 confirmed as *BUB1B* via
+E-utilities. The contradictions are in the published texts, not introduced here.]**
+
+### 10.2 🔴 Two risks the investigation surfaced that nobody had asked about
+
+**(a) The epitope is outside the stability protocol's construct.** A300-386A's epitope is
+**aa 350–400**. The companion stability protocol's route A2 expresses **BubR1 (721–1,044)** — the
+pseudokinase domain. **The epitope is not in that fragment, so this antibody cannot detect that
+construct.** Irrelevant to the screen, which measures full-length endogenous protein, but a
+genuine cross-protocol trap: **do not carry this reagent between the two documents.**
+
+**(b) It is an unconjugated rabbit POLYCLONAL, and that is a poor fit for a screen.** Polyclonal
+lot-to-lot variability across a campaign running for months is a reproducibility risk that a Z′
+computed on one plate on one day will not reveal, and "unconjugated" means a secondary-antibody
+step adding background and another source of variation.
+> **Therefore the §10 pilot must test more than "does it work once": it must check signal
+> reproducibility across at least two lots, and a monoclonal or directly-conjugated alternative
+> should be sought in parallel.** A screen whose primary reagent drifts between lots produces hit
+> lists that cannot be compared across plates.
+
+⚠️ **Still open:** whether the vendor formally validates A300-386A for flow cytometry. The registry
+record lists no applications and the product page refuses automated access (HTTP 403). **This must
+be confirmed with the vendor by a human before the pilot is designed.**
 
 ## 11. How this document compares to the stability protocol, measured
 
