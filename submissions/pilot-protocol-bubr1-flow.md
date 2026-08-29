@@ -70,7 +70,7 @@ Z' = 1 - 3·CV·(hi + lo) / (hi - lo)
 | **Fc receptor block** | BioLegend **422302** (TruStain FcX, RRID AB_2818986) *or* BD **564220** / **564219** (Human BD Fc Block) | 🔴 **mandatory — these are EBV-transformed B cells.** BD's own guidance specifies **10 min before staining**, matching §5.3 |
 | **fixable viability dye** | Thermo **L34976** (LIVE/DEAD Fixable **Near-IR**, 633/775) | must be **fixable** (PI/7-AAD do not survive fix), **and spectrally clear of Alexa 488** |
 | knockdown host line | ATCC | **HeLa CCL-2** (RRID **CVCL_0030**) or **U2OS HTB-96** (RRID **CVCL_0042**) — both verified via Cellosaurus |
-| secondary | Jackson ImmunoResearch | anti-mouse Alexa 488 — **715-545-150** |
+| secondary | Jackson ImmunoResearch **715-545-150** | **Alexa Fluor 488 AffiniPure Donkey Anti-Mouse IgG (H+L), *min X*** — flow-validated. 🔴 ***min X* is not optional here: see below** |
 | **patient cells** | NIGMS/Coriell | **GM21284** (LCL, *BUB1B* `753X`/`R814H`) |
 | **control cells** | NIGMS/Coriell | **GM21657**, **GM22004** (unaffected parent LCLs) |
 | positive control (raises BubR1) | Calbiochem | **MG132**, CAS **133407-82-6** |
@@ -128,10 +128,18 @@ associated and detergent versus alcohol permeabilisation are not interchangeable
 | | **Condition A** (published for BUBR1 staining) | **Condition B** (alcohol) |
 |---|---|---|
 | fix | **4% formaldehyde + 1% Triton X-100 in PBS, 20 min, RT, in the dark** | 4% formaldehyde in PBS, **10 min, RT** |
-| permeabilise | (simultaneous, above) | **ice-cold 90% methanol, 30 min, −20 °C** |
+| permeabilise | (simultaneous, above) | **ice-cold 90% methanol** — vendor protocols specify **90%, minimum 10 min ON ICE**; 30 min is within convention but the published minimum is 10 |
 | wash | 2 × 200 µL PBS + 0.1% Triton | 2 × 200 µL PBS |
 
 **Testing both once costs one day. Discovering the wrong one after the screen costs the screen.**
+
+> ### 🔴 A fluorophore constraint on Condition B that a substitution would walk straight into
+> **Methanol damages PE and APC and causes loss of signal.** The reagents specified here are safe —
+> Alexa Fluor 488 (secondary) and an amine-reactive fixable viability dye, both covalently bound or
+> small-molecule — **but a PE-conjugated secondary is one of the most common substitutions a lab
+> would make, and in Condition B it would silently lose signal.** ⚠️ **Any substitution into the
+> methanol arm must be checked for alcohol compatibility first**, and the fixable viability dye's
+> methanol tolerance should be confirmed on the first plate rather than assumed.
 
 ### 5.3 Staining — per well, 96-well V-bottom
 
@@ -165,7 +173,14 @@ associated and detergent versus alcohol permeabilisation are not interchangeable
    🔑 **Note that the vendor protocol itself says "predetermined optimum concentration" — the
    titration in §5.1 is the vendor's own requirement, not an extra step invented here.**
 7. Wash **2 × 200 µL** block buffer.
-8. **Secondary: anti-mouse Alexa 488, 50 µL at 1:500 in block buffer, 30 min RT, protected from light.**
+8. **Secondary: 50 µL anti-mouse Alexa 488 (**715-545-150**) in block buffer, 30 min RT, protected
+   from light.** Dilution **1:500 [OUR CONVENTION — a starting point]**; the vendor does not publish
+   a flow-specific dilution, and §5.1's titration applies to the secondary too.
+   > 🔴 **Why the *min X* secondary is mandatory rather than preferred.** **LCLs are B cells — they
+   > PRODUCE immunoglobulin.** A donkey anti-mouse secondary without minimal cross-reactivity
+   > screening can bind human Ig, and on an immunoglobulin-producing cell that is not a small
+   > background — it is background proportional to the very cells being measured. **715-545-150 is
+   > the *min X* product; a non-min-X anti-mouse secondary is the wrong reagent for this cell type.**
 9. Wash 2 × 200 µL. **Resuspend in 200 µL PBS + 1% BSA.** Acquire same day.
 
 **Compensation.** This is a **two-colour** experiment (Alexa 488 + viability dye). Acquire
@@ -309,6 +324,8 @@ says which is which, because a protocol that hides the difference is worse than 
 | **stain index** as the titration metric | **PMID 15536642** (Maecker 2004) |
 | **350 × g, 5 min**; fix 20 min RT **in the dark**; **primary 20 min RT in the dark**; **"predetermined optimum concentration"**, i.e. titration is the vendor's own requirement | vendor intracellular-staining protocol (protocols.io, DOI-versioned) |
 | **≥20,000 events/well** | **DERIVED** — `SE(median) ≈ 1.2533·σ/√n` against the 6.7% budget |
+| **90% methanol, minimum 10 min on ice**; **methanol damages PE and APC** | vendor alcohol-permeabilisation protocols |
+| **715-545-150 = Alexa 488 donkey anti-mouse IgG (H+L) *min X***, flow-validated | Jackson ImmunoResearch |
 | EBV transformation **increases** FcR per cell | literature |
 
 **[B] DERIVED — computed by us from sourced inputs, reproducible**
@@ -322,8 +339,13 @@ says which is which, because a protocol that hides the difference is worse than 
 **[C] 🔴 CONVENTION OR OUR CHOICE — NOT from a primary source for this assay**
 
 **5 × 10⁵ cells per well · 50 µL staining volumes · 30 min RT secondary · secondary at 1:500 · the
-1:50–1:800 titration range · 90% methanol, 30 min, −20 °C · dsiRNA at 10–20 nM and 48/72 h · MG132
-duration (already flagged) · ≥2 passages after thaw.**
+1:50–1:800 titration range · dsiRNA at 10–20 nM and 48/72 h · MG132 duration (already flagged) ·
+≥2 passages after thaw.**
+
+🔻 **A FOURTH pass moved two more out, and both carried a constraint I did not have:** the methanol
+conditions (**90%, minimum 10 min on ice — and PE/APC are damaged by methanol**, which is a trap for
+anyone substituting a secondary), and the secondary's identity (**715-545-150 is the *min X*
+product, and *min X* is mandatory on immunoglobulin-producing B cells, not merely preferable**).
 
 ⚠️ **On volumes specifically: the vendor protocol is written for 12 × 75 mm TUBES (0.5 mL fixation,
 2 mL washes). This protocol is 96-well V-bottom.** **Times, speeds and "in the dark" transfer
