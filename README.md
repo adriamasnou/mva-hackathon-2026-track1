@@ -23,6 +23,12 @@ Analysis code and submission for [Rare Disease, Real Kid: The MVA Hackathon 2026
   cystic fibrosis among them. `hfea-pgtm-gene-crosswalk.csv` and `hfea-pgtm-gene-index.json`
   supply the missing index for all 2,063 conditions; `pipeline/hfea_crosswalk.py` rebuilds them
   from public sources in one command.
+- **[The answer existed and could not be found](submissions/register-audit.md)** — an audit of the
+  infrastructure between a rare-disease diagnosis and what a family is entitled to, measured across
+  all 2,063 UK-approved PGT-M conditions rather than one child: **94.9%** of causative genes are
+  invisible to the register's own search, **1,068** genes are made indistinguishable by the coding
+  European registries use, and **91.4%** of approved conditions have no causative gene with a
+  single expert-panel-curated variant.
 - **[Tiered disclosure protocol for secondary findings](submissions/secondary-findings-disclosure-protocol.md)**
   — a reusable, condition-agnostic governance template (CC BY 4.0) for any challenge that puts one
   identifiable patient's genome in front of many teams and publishes the results openly, plus an

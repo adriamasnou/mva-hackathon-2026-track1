@@ -97,16 +97,18 @@ unless both of those are answered.
 
 *Does the method work?* We gave it a question we already knew the answer to. George is male, so he
 has one X chromosome where the other chromosomes come in pairs — a real, known difference in copy
-number. **The method returned 0.499 where the true answer is 0.500.** It can detect a genuine
-change in chromosome copy number to within a fifth of one percent. It then found nothing on
-chromosomes 20, 21 and 22.
+number, and one the method was never shown while it was being set up. **It returned 0.4999 where
+the true answer is 0.5000** — an error of one part in ten thousand. It can detect a genuine change
+in chromosome copy number. It then found nothing on chromosomes 20, 21 and 22.
 
 *How hard did it look?* We tested it against simulated data containing a known amount of mosaic
-change. **Had 3.4% or more of his blood cells carried an extra copy, we would have detected it.**
+change. **Had roughly 3–4% or more of his blood cells carried an extra copy, we would have
+detected it.** We quote the more cautious end of that range, because different reasonable choices
+in the analysis move it and we would rather understate how hard we looked than overstate it.
 
-So the honest statement is *"not detected above roughly 3.4% of cells, using a method shown on the
-same sample to work"* — which is a real result. It is not *"there is nothing there"*, which would
-be a claim we cannot support.
+So the honest statement is *"not detected above roughly 4% of cells, using a method shown on this
+same sample to recover a known answer"* — which is a real result. It is not *"there is nothing
+there"*, which would be a claim we cannot support.
 
 **None of this changes the diagnosis.** Mosaic variegated aneuploidy is diagnosed from cells
 examined directly under a microscope, which is a far more sensitive test for this and which has
@@ -138,10 +140,29 @@ during a period when these tumours do still occur. The newer guidance also gives
 appointments slip in practice, so a 3-month target is safer than a 3–4 month one, and these
 tumours can double in size in as little as eleven days.
 
-**The question to ask is simply: "which of these two is our surveillance plan following?"** Some
-clinics will already be on the current one. Some may be working from the older figure, which is
-still what several patient-facing summaries on the internet repeat. It is a reasonable question
-and an easy one to answer.
+**The question to ask is simply: "which of these two is our surveillance plan following?"** Many
+clinics will already be on the current one. But we checked what is actually in circulation, and
+**three different sources aimed at three different audiences give three different answers**, none
+of which matches the current consensus exactly:
+
+| where | scan how often | which scan | until what age |
+|---|---|---|---|
+| the current consensus (2021, 2024) | every 3 months | **kidney** ultrasound | **7th birthday** |
+| clinical reference sites still in use | every 3–4 months | kidney | age 5 |
+| the main MVA guide written for families (2026) | every 3 months ✅ | **abdominal** | **no age given** |
+
+So the older interval is still circulating — in **clinician-facing** reference sources rather than
+in the family-facing guide, which we had assumed and checked. And the family-facing guide, while
+right about the interval, recommends an *abdominal* scan where the consensus specifies a *kidney*
+scan (it reserves full abdominal scanning for other conditions), gives **no stopping age**, and
+states that no clinical practice guidelines for this condition have been published — so it does not
+point families to the 2021 consensus at all.
+
+**[OUR MEASUREMENT — the three sources were read directly on 2026-08-29. We are describing what
+published sources say, not what any particular clinic does, which we have no way to know.]**
+
+None of this means anyone has done anything wrong. It means the question is worth asking out loud,
+and that it is a reasonable and easy one to answer.
 
 One more detail from the same guidance, in case it comes up: the recommendation is for **kidney
 ultrasound specifically**, not a full abdominal scan, and it applies to all forms of MVA — the
@@ -291,7 +312,7 @@ Families are owed straight answers about uncertainty, so, in order of how much t
    arrangement is by far the most likely one, but a parental test is what would confirm it.
 3. **We looked for the wrong-chromosome-number pattern in this data and did not find it**, once
    an analysis artefact was removed — see section 2. We could have detected it had it involved
-   about 3.4% or more of his blood cells, and we checked the method works by testing it against a
+   roughly 4% or more of his blood cells, and we checked the method works by testing it against a
    known answer on this same sample.
 4. **One feature of his condition — calcium deposits in the kidneys — is probably not caused by
    the gene.** It is common in babies born very prematurely, which is the more likely explanation
