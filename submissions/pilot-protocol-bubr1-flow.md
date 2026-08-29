@@ -318,6 +318,50 @@ much larger number that would fail the criterion for the wrong reason.
 Report it **separately for each arm**, and **for arm 3 (patient baseline) it must meet §3's ≤ 6.7%**,
 because that is the population the screen actually measures against.
 
+## 5.13 🔴 THE CONFOUND THAT FIVE EARLIER PASSES MISSED — BubR1 abundance is cell-cycle dependent
+
+**BubR1 protein is not constitutively expressed.** It is degraded after mitotic exit via **APC/C-Cdh1**
+(it carries a destruction box and KEN boxes) and is **held low through interphase**. Abundance
+therefore tracks **what fraction of the population is in mitosis.**
+
+> ### Consequence: anything that increases the mitotic fraction raises measured BubR1 without
+> ### touching BubR1 stability at all.
+> **This is a large false-positive class for an abundance screen, and none of the screen's three
+> counter-screens catches it** — such a compound is not necessarily toxic, it *does* raise BubR1
+> specifically, and it would behave similarly across genotypes. **A repurposing library of approved
+> drugs contains multiple antimitotics** (taxanes, vinca alkaloids) **and many more compounds that
+> perturb the cycle.** It is not an edge case; it is one of the most probable ways this screen
+> produces confident nonsense.
+
+**And it confounds this pilot's own positive control**, since MG132 is standardly used to hold cells
+in mitosis.
+
+### The fix, and it costs one channel rather than one experiment
+
+**Measure DNA content in the same wells.** The readout is already flow, so this needs no extra plate
+and no extra sample:
+
+- Add a **DNA dye on the violet laser** (e.g. DAPI or an equivalent fixable DNA stain) — the violet
+  channel is otherwise unused, since the viability dye was moved to Near-IR (§5.2) and the readout is
+  Alexa 488. ⚠️ **This makes it a three-colour experiment: single-stain compensation controls are
+  required for all three (§5.3).**
+- **Gate on DNA content and report BubR1 median WITHIN a fixed cell-cycle compartment** — G1, the
+  largest and most stable population — **rather than across the whole population.**
+- **Report the cycle distribution alongside every measurement.**
+
+> **Normalising within a cell-cycle gate removes the confound at source**, rather than screening it
+> out afterwards. **Reporting BubR1 across an unnormalised population makes the assay a partial
+> readout of proliferation**, which is not what anyone intends to measure.
+
+⚠️ **This changes the acceptance criteria only in interpretation, not in value:** the 22–29% anchor
+and the CV ≤ 6.7% requirement now apply **within the G1 gate**. It also means the per-well event
+count of §5.4 must be met **after** cell-cycle gating, not before — **collect proportionally more
+events**, since G1 is a fraction of the population.
+
+**[OUR INFERENCE from sourced facts — that BubR1 is an APC/C-Cdh1 substrate degraded after mitotic
+exit is published; that this makes cell-cycle gating necessary for an abundance screen is our
+reasoning, and it is the kind of reasoning that should be checked by a flow cytometrist.]**
+
 ## 5.8 🔴 PROVENANCE OF EVERY DETAIL — and the honest answer is that not all of it is primary
 
 Asked directly whether every detail here comes from a validated primary source: **no.** This table

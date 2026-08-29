@@ -131,6 +131,15 @@ exactly that, and each must be run on every confirmed hit:
 3. **Specificity across genotype.** A real BubR1-abundance effect should behave differently in the
    *CEP57* lines, which have a different lesion. A compound that does the same thing everywhere is
    a general effect.
+4. 🔴 **CELL-CYCLE DISTRIBUTION — added 2026-08-29, and it may be the most important of the four.**
+   **BubR1 is degraded after mitotic exit by APC/C-Cdh1 and is held low in interphase**, so its
+   abundance tracks the mitotic fraction. **Any compound that arrests or slows cells in mitosis
+   raises measured BubR1 without affecting BubR1 stability at all** — and **counter-screens 1–3 do
+   not catch it**: such a compound need not be toxic, it *does* raise BubR1 specifically, and it
+   behaves similarly across genotypes. **An approved-drug library contains multiple antimitotics.**
+   **Measure DNA content in the same wells and report BubR1 within a fixed cell-cycle gate**, not
+   across the whole population — otherwise the primary readout is partly a proliferation assay.
+   Detail in the pilot protocol, §5.13.
 
 ## 8. Cost and duration
 
