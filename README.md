@@ -11,6 +11,12 @@ Analysis code and submission for [Rare Disease, Real Kid: The MVA Hackathon 2026
 
 ### For families and non-specialists
 
+- **[Decisions you may be asked to make](submissions/family-facing-decision-aid.md)** — a patient
+  decision aid built to the **International Patient Decision Aid Standards (IPDAS)**, covering the
+  surveillance schedule and reproductive options. It includes a values-clarification exercise, a
+  question list for the appointment, the caregiver burden counted in appointments rather than
+  pounds, and **a conformance table naming the IPDAS criteria it fails** — it has not been field
+  tested and has not been peer reviewed, and says so before it says anything else.
 - **[What we found, in plain language](submissions/family-facing-summary.md)** — the findings
   written for a family rather than a specialist, including four things a family can actually ask
   their clinical team about, and an explicit account of what we are unsure about.
