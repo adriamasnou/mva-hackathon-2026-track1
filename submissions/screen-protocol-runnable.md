@@ -241,9 +241,51 @@ step adding background and another source of variation.
 > should be sought in parallel.** A screen whose primary reagent drifts between lots produces hit
 > lists that cannot be compared across plates.
 
-⚠️ **Still open:** whether the vendor formally validates A300-386A for flow cytometry. The registry
-record lists no applications and the product page refuses automated access (HTTP 403). **This must
-be confirmed with the vendor by a human before the pilot is designed.**
+### 10.3 ✅ Is any anti-BUBR1 antibody validated for flow? — asked and answered. No.
+
+An earlier version left this "for a human to confirm with the vendor". It is now settled from the
+vendors and the literature, and **the answer changes which antibody this protocol recommends.**
+
+| | **A300-386A** (Bethyl/Thermo) | **612502 / 612503** (BD, clone 9) |
+|---|---|---|
+| format | **rabbit POLYclonal** | ✅ **mouse MONOclonal, IgG2a** |
+| vendor-validated | Western blot (1:2,000–1:15,000), **IP only** | WB, **immunofluorescence**, ELISA, ICC, IP |
+| **knockout-validated** | not stated | ✅ **yes** |
+| **flow cytometry** | ❌ **not listed** | ❌ **not listed** |
+| epitope | aa **350–400** | aa **276–388** |
+
+> ### 🔴 No anti-BUBR1 antibody is vendor-validated for flow cytometry — neither of them.
+> And **the literature has no precedent either.** 39 papers cite `A300-386A`; six also mention flow
+> cytometry; **in every case the antibody sits in a WESTERN-BLOT list at 1:1,000–1:2,000 while the
+> flow in that paper is doing something unrelated** — sorting YFP⁺ cells, BODIPY lipid staining,
+> BrdU incorporation. **The six hits were co-occurrence, not usage.**
+> **[OUR MEASUREMENT — Europe PMC full-text search, each hit's full text retrieved and the usage
+> context read. A hit count is not a usage count.]**
+
+**★ RECOMMENDATION CHANGED: use BD 612502 (clone 9), not A300-386A.** Neither is flow-validated, so
+the pilot is mandatory either way — but clone 9 is the better bet on every axis that matters here:
+
+1. **Monoclonal** — removes the lot-to-lot variability that makes a polyclonal a poor reagent for a
+   campaign running months. §10.2(b)'s risk is designed out rather than tested around.
+2. **Knockout-validated** — the strongest available specificity evidence.
+3. **Immunofluorescence-validated** — and **IF is a far better predictor of intracellular flow than
+   western blot is**, because both require the epitope to survive fixation and permeabilisation in
+   situ. A300-386A is not even IF-validated by its vendor, though papers use it that way.
+
+⚠️ **The epitope (aa 276–388) is likewise outside the stability protocol's 721–1,044 construct**, so
+§10.2(a)'s cross-protocol warning stands unchanged for this antibody too.
+
+### 10.4 The contingency, named now rather than discovered later
+
+Because **no antibody is validated for this application**, there is a real chance the pilot fails —
+not because the biology is wrong but because no reagent detects BubR1 well enough in flow.
+
+**If it fails, the fallback is a tagged reporter line** — endogenous BubR1 tagged with a fluorescent
+protein, read directly with no antibody at all. That removes the reagent risk entirely and gives a
+cleaner quantitative signal. **It is also a substantially larger and slower project**, requiring
+genome editing in a patient-derived line.
+**Naming it now means the pilot has a decision attached to its failure**, rather than becoming the
+point at which the screen quietly stalls.
 
 ## 11. How this document compares to the stability protocol, measured
 
