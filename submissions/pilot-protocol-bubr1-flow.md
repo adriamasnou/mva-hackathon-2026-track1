@@ -83,12 +83,23 @@ Cell lines ~**$262 US-academic / $448 international** each, MTA required.
 
 ### 5.0 Culture
 
-LCLs are EBV-transformed suspension B-cell lines. **RPMI-1640 + 15% FBS + 2 mM L-glutamine, 37 °C,
-5% CO₂**, maintained between **3 × 10⁵ and 1 × 10⁶ cells/mL**; do not let them exceed 1 × 10⁶ or
-they exit log phase and protein levels drift.
-⚠️ **Take the definitive culture conditions from each line's own repository datasheet** — they are
-line-specific and are published per catalogue number. Expand for **≥ 2 passages after thaw** before
-any measurement; freshly thawed LCLs are not in steady state.
+LCLs are EBV-transformed suspension B-cell lines. **The repository publishes the conditions per
+line, and these are GM21284's own, taken from its catalogue record rather than assumed:**
+
+| | |
+|---|---|
+| medium | **RPMI-1640 with 2 mM L-glutamine** (or equivalent) |
+| serum | **15% fetal bovine serum — NOT heat-inactivated** |
+| temperature / atmosphere | **37 °C, 5% CO₂** |
+| subcultivation | **split ratio 1:4**, by dilution — add fresh medium |
+
+🔻 **An earlier version of this section specified a density window of "3 × 10⁵ to 1 × 10⁶ cells/mL".
+That was invented.** The repository specifies a **split ratio, not a density**, and the
+"not heat-inactivated" instruction is a real one that a lab defaulting to heat-inactivated FBS would
+silently violate. **[VERIFIED — Coriell/NIGMS catalogue record for GM21284.]**
+
+Expand for **≥ 2 passages after thaw** before any measurement; freshly thawed LCLs are not in steady
+state. **[OUR CONVENTION — not specified by the repository.]**
 
 ### 5.1 🔴 STEP ONE: antibody titration. This is not optional.
 
@@ -97,10 +108,13 @@ dilutions on the datasheet are for other applications and other fixation chemist
 
 **Titrate before anything else:** 1:50 · 1:100 · 1:200 · 1:400 · 1:800, on control LCLs, stained
 alongside a matched isotype at each concentration.
-**Choose the dilution maximising the *stain index*:**
+**Choose the dilution maximising the *stain index*** — the published metric for exactly this
+purpose (**Maecker *et al.*, *Cytometry A* 2004, PMID 15536642**), which weights the separation
+between populations by **the spread of the negative**, and therefore penalises a bright reagent
+sitting on a broad background:
 
 ```
-stain index = (median_stained - median_isotype) / (2 × robust SD_isotype)
+stain index = (median_stained − median_isotype) / (2 × robust SD_isotype)
 ```
 
 **Not the dilution giving the brightest signal** — the brightest is usually not the most separated,
@@ -113,7 +127,7 @@ associated and detergent versus alcohol permeabilisation are not interchangeable
 
 | | **Condition A** (published for BUBR1 staining) | **Condition B** (alcohol) |
 |---|---|---|
-| fix | **4% formaldehyde + 1% Triton X-100 in PBS, 20 min, RT** | 4% formaldehyde in PBS, **10 min, RT** |
+| fix | **4% formaldehyde + 1% Triton X-100 in PBS, 20 min, RT, in the dark** | 4% formaldehyde in PBS, **10 min, RT** |
 | permeabilise | (simultaneous, above) | **ice-cold 90% methanol, 30 min, −20 °C** |
 | wash | 2 × 200 µL PBS + 0.1% Triton | 2 × 200 µL PBS |
 
@@ -121,7 +135,8 @@ associated and detergent versus alcohol permeabilisation are not interchangeable
 
 ### 5.3 Staining — per well, 96-well V-bottom
 
-1. **5 × 10⁵ cells** per well. Pellet **300 × g, 5 min**, discard supernatant.
+1. **5 × 10⁵ cells** per well **[OUR CONVENTION]**. Pellet **350 × g, 5 min** — the vendor's own
+   published intracellular-staining protocol, not the 300 × g an earlier version specified.
 2. 🔴 **FIXABLE viability dye, on LIVE cells, BEFORE fixation.** Amine-reactive fixable stain
    **LIVE/DEAD Fixable Near-IR, Thermo **L34976** (~633 nm ex / ~775 nm em)**, 15 min RT in PBS
    **without protein**, then wash.
@@ -271,6 +286,9 @@ says which is which, because a protocol that hides the difference is worse than 
 | **HeLa = CCL-2 = CVCL_0030** · **U2OS = HTB-96 = CVCL_0042** | Cellosaurus |
 | **MIFlowCyt** reporting standard | **PMID 18752282**, ISAC |
 | **L34976** Near-IR, 633/775, fixable, pre-fixation use | vendor |
+| **GM21284 culture: RPMI-1640 + 2 mM L-gln, 15% FBS not heat-inactivated, 37 °C/5% CO₂, split 1:4** | **Coriell/NIGMS catalogue record** |
+| **stain index** as the titration metric | **PMID 15536642** (Maecker 2004) |
+| **350 × g, 5 min**; fix 20 min RT **in the dark** | vendor intracellular-staining protocol |
 | EBV transformation **increases** FcR per cell | literature |
 
 **[B] DERIVED — computed by us from sourced inputs, reproducible**
@@ -283,11 +301,15 @@ says which is which, because a protocol that hides the difference is worse than 
 
 **[C] 🔴 CONVENTION OR OUR CHOICE — NOT from a primary source for this assay**
 
-**RPMI + 15% FBS and the density window · 5 × 10⁵ cells per well · 300 × g, 5 min · 50 µL staining
-volumes · 1 h RT primary and 30 min RT secondary · secondary at 1:500 · the 1:50–1:800 titration
-range · ≥10,000 events · 90% methanol, 30 min, −20 °C · dsiRNA at 10–20 nM and 48/72 h · MG132
-duration (already flagged) · the stain-index formula (a real published concept, cited here to no
-specific paper).**
+**5 × 10⁵ cells per well · 50 µL staining volumes · 1 h RT primary and 30 min RT secondary ·
+secondary at 1:500 · the 1:50–1:800 titration range · ≥10,000 events · 90% methanol, 30 min, −20 °C
+· dsiRNA at 10–20 nM and 48/72 h · MG132 duration (already flagged) · ≥2 passages after thaw.**
+
+🔻 **Four items left this class after a second sourcing pass and are now [A]:** the culture
+conditions (**Coriell's own record — and it corrected an invented density window**), the stain-index
+metric (**PMID 15536642**), the centrifugation speed (**350 × g, not the 300 × g asserted here
+first**), and fixation in the dark. **Asserting that class [C] was unsourceable was itself wrong;
+it was under-searched.**
 
 **✅ Every catalogue number in this document has now been verified against its vendor or a public
 registry.** The three that were previously flagged are closed: **MOPC-173 → BioLegend 400287**
