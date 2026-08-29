@@ -137,9 +137,11 @@ exactly that, and each must be run on every confirmed hit:
    raises measured BubR1 without affecting BubR1 stability at all** — and **counter-screens 1–3 do
    not catch it**: such a compound need not be toxic, it *does* raise BubR1 specifically, and it
    behaves similarly across genotypes. **An approved-drug library contains multiple antimitotics.**
-   **Measure DNA content in the same wells and report BubR1 within a fixed cell-cycle gate**, not
-   across the whole population — otherwise the primary readout is partly a proliferation assay.
-   Detail in the pilot protocol, §5.13.
+   **Measure DNA content in the same wells and REPORT it as a covariate — do not gate on it.**
+   ⚠️ **Gating would be the obvious move and is wrong in this disease: MVA is defined by aneuploidy
+   in >25% of cells, so a "normal G1" gate silently selects against the very cells that carry the
+   phenotype.** Flag any hit that shifts the cycle distribution. Detail and reasoning: pilot
+   protocol §5.13 and §5.13a.
 
 ## 8. Cost and duration
 

@@ -33,9 +33,12 @@ weakness against the companion stability protocol. **This pilot has one.**
 is not measuring BubR1 specifically. If they read at 3%, something else is wrong. **The pilot has a
 number to hit, not merely a signal to observe.**
 
-⚠️ **Two honest limits on the anchor.** Matsuura's figures are **% of HeLa**, a different cell type
-from the lymphoblastoid lines used here, and **those patients are not this repository's donor**.
-Treat 22–29% as an expected *range and direction*, not a target to be matched to the digit.
+⚠️ **Three honest limits on the anchor.** Matsuura's figures are **% of HeLa**; **those patients are
+not this repository's donor**; and — checked directly — **the patient material was lymphocytes and
+fibroblasts, not EBV-transformed lymphoblastoid lines.** EBV transformation changes proliferation
+rate and therefore the cell-cycle distribution, which §5.13 shows is coupled to BubR1 abundance.
+**Treat 22–29% as an expected range and direction, not a target to be matched to the digit** — which
+is why criterion 3 is written as a broad 20–35% band.
 
 ## 3. 🔴 The precision the assay must reach — derived, not asserted
 
@@ -345,18 +348,42 @@ and no extra sample:
   channel is otherwise unused, since the viability dye was moved to Near-IR (§5.2) and the readout is
   Alexa 488. ⚠️ **This makes it a three-colour experiment: single-stain compensation controls are
   required for all three (§5.3).**
-- **Gate on DNA content and report BubR1 median WITHIN a fixed cell-cycle compartment** — G1, the
-  largest and most stable population — **rather than across the whole population.**
-- **Report the cycle distribution alongside every measurement.**
+- **Use DNA content as a REPORTED COVARIATE, not as a filter** — see the correction below, which
+  matters specifically because of this disease.
+- **Report the cycle distribution alongside every measurement**, and treat any compound that shifts
+  it as confounded until shown otherwise.
 
-> **Normalising within a cell-cycle gate removes the confound at source**, rather than screening it
-> out afterwards. **Reporting BubR1 across an unnormalised population makes the assay a partial
-> readout of proliferation**, which is not what anyone intends to measure.
+### 🔴 5.13a A CORRECTION TO THE FIX ABOVE — and it is specific to MVA
 
-⚠️ **This changes the acceptance criteria only in interpretation, not in value:** the 22–29% anchor
-and the CV ≤ 6.7% requirement now apply **within the G1 gate**. It also means the per-well event
-count of §5.4 must be met **after** cell-cycle gating, not before — **collect proportionally more
-events**, since G1 is a fraction of the population.
+The obvious implementation is to **gate on G1 and report BubR1 within it.** **In this disease that
+is wrong**, and the reason is the disease's own definition:
+
+> **MVA is diagnosed by aneuploidy in — verbatim — *"usually >25%"* of cells.**
+> **More than a quarter of the patient population has abnormal DNA content by definition.**
+
+Three consequences:
+1. **A G1 gate drawn on normal diploid cells does not map onto the patient line.** Aneuploid cells
+   with gains or losses sit off the 2N peak, so the gate silently excludes them.
+2. 🔴 **Worse, the exclusion is not random — it selects AGAINST the cells carrying the phenotype.**
+   Gating "normal G1 DNA content" in an MVA line preferentially retains its most euploid
+   subpopulation. **If BubR1 level and mis-segregation are related at all — which is the entire
+   thesis — then those are exactly the cells with the most BubR1, and the gate biases the measured
+   value upward.**
+3. **It breaks the patient-vs-control comparison**, since a near-diploid control and a >25%-aneuploid
+   patient line are not comparable populations inside "the same" gate.
+
+> ### Resolution: measure DNA content, report it, and do not filter on it.
+> The confound being addressed is *"the compound redistributed the cell cycle"*, and that is visible
+> in the **BubR1-versus-DNA-content relationship** without excluding any cell. **Report the median
+> BubR1 of the whole live-singlet population AND the cycle distribution, and flag any well whose
+> distribution has moved.** A hit that raises BubR1 *and* shifts the cycle is confounded; a hit that
+> raises BubR1 with the distribution unchanged is not.
+> **This keeps the aneuploid cells in the analysis, where they belong — they are the disease.**
+
+⚠️ **Acceptance criteria are therefore unchanged in both value and population:** the 20–35% anchor
+and CV ≤ 6.7% apply to the whole live-singlet gate, as originally written. **[OUR INFERENCE from a
+sourced fact — the >25% aneuploidy figure is published; that it makes cycle-gating inappropriate
+here is our reasoning.]**
 
 **[OUR INFERENCE from sourced facts — that BubR1 is an APC/C-Cdh1 substrate degraded after mitotic
 exit is published; that this makes cell-cycle gating necessary for an abundance screen is our
