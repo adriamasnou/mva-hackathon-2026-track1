@@ -23,6 +23,11 @@ Analysis code and submission for [Rare Disease, Real Kid: The MVA Hackathon 2026
   cystic fibrosis among them. `hfea-pgtm-gene-crosswalk.csv` and `hfea-pgtm-gene-index.json`
   supply the missing index for all 2,063 conditions; `pipeline/hfea_crosswalk.py` rebuilds them
   from public sources in one command.
+- **[Does the pipeline work on a case that is not this child's?](submissions/generalisation-public-case.md)**
+  — a phenotype-driven genome-wide scan run end to end on public ClinVar data with a known answer:
+  *FGFR2* ranks **first at 0.9647**, 146× the next gene, from phenotype and variants alone. No
+  hackathon data involved. Limitations, including that this is a constructed mini-case rather than
+  a full exome, are stated in §4.
 - **[The answer existed and could not be found](submissions/register-audit.md)** — an audit of the
   infrastructure between a rare-disease diagnosis and what a family is entitled to, measured across
   all 2,063 UK-approved PGT-M conditions rather than one child: **94.9%** of causative genes are
