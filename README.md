@@ -39,6 +39,13 @@ Analysis code and submission for [Rare Disease, Real Kid: The MVA Hackathon 2026
   designed and Tm-checked mutagenic primers, the destination-vector constraint the depositor warns
   about, a QC plan, and costs. **It cannot be ordered by us — it needs a laboratory.**
 
+- **[The repurposing screen, made runnable](submissions/screen-protocol-runnable.md)** — the
+  screen's own audit said 4 of 13 components done and *"we hold zero HTS methods papers"*. This
+  closes the seven desk-closable ones against the NIH/NCATS **Assay Guidance Manual**'s criteria
+  (Z′ ≥ 0.4, SW ≥ 2, CV ≤ 20%), names a real library, and includes an adversarial review whose
+  third attack **changed the protocol**. It does not improve the odds, which remain 25–40% for a
+  usable hit and under 10% for anything a child could take.
+
 ### Track 2 — beyond this one case
 
 - **[The UK PGT-M register, indexed by gene](submissions/hfea-pgtm-gene-crosswalk.md)** — the
