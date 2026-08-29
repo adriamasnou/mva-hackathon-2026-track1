@@ -68,7 +68,7 @@ Z' = 1 - 3·CV·(hi + lo) / (hi - lo)
 | **anti-BUBR1, clone 9** (primary) | BD Transduction | **612502** (50 µg) / **612503** (150 µg) — mouse monoclonal IgG2a, aa 276–388, **knockout-validated** |
 | isotype control | BioLegend / BD | **mouse IgG2a κ**, clone **MOPC-173** — matched **µg/mL**, not matched dilution |
 | **Fc receptor block** | BioLegend **422302** (TruStain FcX) *or* BD **564220** (Human Fc Block) | 🔴 **mandatory — these are EBV-transformed B cells** |
-| **fixable viability dye** | Thermo **L34957** (LIVE/DEAD Fixable Aqua) | must be **fixable**; PI/7-AAD do not survive fixation |
+| **fixable viability dye** | Thermo **L34976** (LIVE/DEAD Fixable **Near-IR**, 633/775) | must be **fixable** (PI/7-AAD do not survive fix), **and spectrally clear of Alexa 488** |
 | knockdown host line | ATCC | **HeLa CCL-2** or **U2OS HTB-96** — see §5.6 |
 | secondary | Jackson ImmunoResearch | anti-mouse Alexa 488 — **715-545-150** |
 | **patient cells** | NIGMS/Coriell | **GM21284** (LCL, *BUB1B* `753X`/`R814H`) |
@@ -123,8 +123,12 @@ associated and detergent versus alcohol permeabilisation are not interchangeable
 
 1. **5 × 10⁵ cells** per well. Pellet **300 × g, 5 min**, discard supernatant.
 2. 🔴 **FIXABLE viability dye, on LIVE cells, BEFORE fixation.** Amine-reactive fixable stain
-   (e.g. LIVE/DEAD Fixable Aqua, Thermo **L34957**), 15 min RT in PBS **without protein**, then
-   wash. **Conventional PI or 7-AAD do NOT survive fixation and permeabilisation** — using one
+   **LIVE/DEAD Fixable Near-IR, Thermo **L34976** (~633 nm ex / ~775 nm em)**, 15 min RT in PBS
+   **without protein**, then wash.
+   ⚠️ **Not the Aqua variant (L34957).** Aqua emits at **~525 nm** against Alexa 488's **~519 nm** —
+   resolvable only by separate lasers, with heavy spillover **into the very channel this assay
+   reads**. Near-IR sits **250 nm away on a different laser**, so spillover into the BubR1 channel
+   is negligible. **The dye choice is part of the CV budget, not a detail.** **Conventional PI or 7-AAD do NOT survive fixation and permeabilisation** — using one
    here would put dead cells back into the analysis gate, and dead cells bind antibody
    non-specifically. **This step must precede fixing; it cannot be added later.**
 3. 🔴 **Fc RECEPTOR BLOCK — mandatory, and specific to this cell type.**
@@ -242,6 +246,59 @@ wells of one arm on one plate** — *not* the CV of events within a well, which 
 much larger number that would fail the criterion for the wrong reason.
 Report it **separately for each arm**, and **for arm 3 (patient baseline) it must meet §3's ≤ 6.7%**,
 because that is the population the screen actually measures against.
+
+## 5.8 🔴 PROVENANCE OF EVERY DETAIL — and the honest answer is that not all of it is primary
+
+Asked directly whether every detail here comes from a validated primary source: **no.** This table
+says which is which, because a protocol that hides the difference is worse than one that admits it.
+
+**[A] PRIMARY — verified against a paper, vendor datasheet or registry**
+
+| detail | source |
+|---|---|
+| patient BubR1 at 22 / 25 / 29% | **PMID 16411201** |
+| Z′ formula · ≥0.4 · SW ≥2 · CV ≤20% | **NIH/NCATS Assay Guidance Manual** |
+| BD 612502: clone 9, IgG2a, aa 276–388, KO-validated, applications | vendor |
+| A300-386A: **WB + IP only**, epitope aa 350–400 | vendor |
+| A300-386A = **NCBI Gene 701 (*BUB1B*)**, RRID AB_386097 · A300-373A = *BUB1*, RRID AB_2065943 | Antibody Registry + NCBI |
+| fix/perm 4% formaldehyde + 1% Triton, 20 min RT | published, used for BUBR1 staining |
+| MG132 **10 µM** | literature held here |
+| `dsiBUBR1` sequence | Foley 2011 |
+| GM21284 / GM21657 / GM22004, type, genotype, price | NIGMS repository |
+| Jackson **715-545-150** | published Key Resources Table |
+| TruStain FcX **422302**, RRID AB_2818986, FACS + ICS | vendor |
+| **L34976** Near-IR, 633/775, fixable, pre-fixation use | vendor |
+| EBV transformation **increases** FcR per cell | literature |
+
+**[B] DERIVED — computed by us from sourced inputs, reproducible**
+
+| detail | how |
+|---|---|
+| **CV ≤ 6.7%** | AGM Z′ formula + the Matsuura baseline |
+| **n = 12** | χ² bound on the sample variance — `pipeline/pilot_n.py` |
+| the 3× forgiveness trap in §3 | same derivation |
+
+**[C] 🔴 CONVENTION OR OUR CHOICE — NOT from a primary source for this assay**
+
+**RPMI + 15% FBS and the density window · 5 × 10⁵ cells per well · 300 × g, 5 min · 50 µL staining
+volumes · 1 h RT primary and 30 min RT secondary · secondary at 1:500 · the 1:50–1:800 titration
+range · ≥10,000 events · 90% methanol, 30 min, −20 °C · dsiRNA at 10–20 nM and 48/72 h · MG132
+duration (already flagged) · the stain-index formula (a real published concept, cited here to no
+specific paper).**
+
+**And three catalogue numbers that are NOT yet verified and must be confirmed before ordering:**
+**MOPC-173** (isotype clone) · **ATCC CCL-2 / HTB-96** (HeLa / U2OS) · **BD 564220** (alternative Fc
+block). Every other catalogue number in this document has been checked against its vendor or a
+registry today.
+
+> ### What class [C] means in practice
+> These are **standard, defensible laboratory conventions** — a flow cytometrist would recognise all
+> of them — but **they are not evidence, and none is optimised for this assay.** They are starting
+> points the pilot exists to refine. **Class [C] is roughly half the bench detail in this document.**
+>
+> **The one thing that must not happen is class [C] being read as class [A].** That is what the
+> earlier `[NOT FOUND]` error in the family document did, in the other direction, and it is why this
+> table exists.
 
 ## 6. Acceptance criteria — all four, fixed before any data exist
 
