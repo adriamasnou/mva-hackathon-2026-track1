@@ -157,8 +157,13 @@ associated and detergent versus alcohol permeabilisation are not interchangeable
    > that criterion 2 depends on. An isotype control measures this artefact; it does not remove it.
 4. Fix/permeabilise per §5.2. Pellet, wash twice.
 5. **Block: 50 µL TBS + 0.1% Triton X-100 + 2% BSA, 30 min, RT.**
-6. **Primary: 50 µL at the titrated dilution in block buffer, 1 h RT** (or overnight 4 °C — pick one
-   and hold it constant; **do not mix incubation regimes across plates**).
+6. **Primary: 50 µL at the titrated concentration in block buffer, 20 min at room temperature,
+   IN THE DARK** — the vendor's published intracellular-staining protocol, which specifies *"a
+   predetermined optimum concentration … for 20 minutes in the dark at room temperature"*.
+   🔻 **An earlier version of this protocol said 1 h RT. That was convention; 20 min in the dark is
+   the published condition.** Whichever is used, **hold it constant across every plate and day.**
+   🔑 **Note that the vendor protocol itself says "predetermined optimum concentration" — the
+   titration in §5.1 is the vendor's own requirement, not an extra step invented here.**
 7. Wash **2 × 200 µL** block buffer.
 8. **Secondary: anti-mouse Alexa 488, 50 µL at 1:500 in block buffer, 30 min RT, protected from light.**
 9. Wash 2 × 200 µL. **Resuspend in 200 µL PBS + 1% BSA.** Acquire same day.
@@ -178,7 +183,21 @@ Compensation set from beads alone is not adequate when one dye is amine-reactive
 5. **Report the MEDIAN fluorescence intensity of that gate**, not the mean — flow distributions are
    right-skewed and the mean is unstable to outliers.
 
-**Collect ≥ 10,000 live singlet events per well.** Keep voltages, gates and compensation **identical
+**Events per well — derived from the CV budget, not chosen.** The per-well statistic is a median,
+whose sampling error must be negligible against the **6.7%** between-well budget, or the assay's
+measured precision is limited by counting rather than by biology. Using
+`SE(median) ≈ 1.2533·σ/√n`, and targeting **SE ≤ 0.67%** (one tenth of the budget):
+
+| within-well population CV | events needed |
+|---|---|
+| 30% (tight stain) | ≥ 3,150 |
+| **50% (typical protein stain)** | **≥ 8,748** |
+| **80% (broad stain)** | **≥ 22,395** |
+
+> **Collect ≥ 20,000 live singlet events per well**, and **set the final count from the spread
+> actually observed during titration.** 🔻 An earlier version said "≥10,000" — adequate only if the
+> stain is tight, and **insufficient at a broad 80% spread**, where counting error alone would eat
+> 15% of the CV budget. Keep voltages, gates and compensation **identical
 across all wells, plates and days**; changing them between conditions invalidates every CV computed.
 
 ### 5.5 🔴 How many replicate wells — derived, and it is NOT six
@@ -288,7 +307,8 @@ says which is which, because a protocol that hides the difference is worse than 
 | **L34976** Near-IR, 633/775, fixable, pre-fixation use | vendor |
 | **GM21284 culture: RPMI-1640 + 2 mM L-gln, 15% FBS not heat-inactivated, 37 °C/5% CO₂, split 1:4** | **Coriell/NIGMS catalogue record** |
 | **stain index** as the titration metric | **PMID 15536642** (Maecker 2004) |
-| **350 × g, 5 min**; fix 20 min RT **in the dark** | vendor intracellular-staining protocol |
+| **350 × g, 5 min**; fix 20 min RT **in the dark**; **primary 20 min RT in the dark**; **"predetermined optimum concentration"**, i.e. titration is the vendor's own requirement | vendor intracellular-staining protocol (protocols.io, DOI-versioned) |
+| **≥20,000 events/well** | **DERIVED** — `SE(median) ≈ 1.2533·σ/√n` against the 6.7% budget |
 | EBV transformation **increases** FcR per cell | literature |
 
 **[B] DERIVED — computed by us from sourced inputs, reproducible**
@@ -301,11 +321,21 @@ says which is which, because a protocol that hides the difference is worse than 
 
 **[C] 🔴 CONVENTION OR OUR CHOICE — NOT from a primary source for this assay**
 
-**5 × 10⁵ cells per well · 50 µL staining volumes · 1 h RT primary and 30 min RT secondary ·
-secondary at 1:500 · the 1:50–1:800 titration range · ≥10,000 events · 90% methanol, 30 min, −20 °C
-· dsiRNA at 10–20 nM and 48/72 h · MG132 duration (already flagged) · ≥2 passages after thaw.**
+**5 × 10⁵ cells per well · 50 µL staining volumes · 30 min RT secondary · secondary at 1:500 · the
+1:50–1:800 titration range · 90% methanol, 30 min, −20 °C · dsiRNA at 10–20 nM and 48/72 h · MG132
+duration (already flagged) · ≥2 passages after thaw.**
 
-🔻 **Four items left this class after a second sourcing pass and are now [A]:** the culture
+⚠️ **On volumes specifically: the vendor protocol is written for 12 × 75 mm TUBES (0.5 mL fixation,
+2 mL washes). This protocol is 96-well V-bottom.** **Times, speeds and "in the dark" transfer
+directly; VOLUMES DO NOT** and are scaled here by format. That distinction is stated rather than
+letting a tube protocol's numbers be silently reused at plate scale.
+
+🔻 **A THIRD sourcing pass moved three more out of this class — two of them corrections:**
+**primary incubation 1 h → 20 min RT in the dark** (vendor); **titration is the vendor's OWN
+requirement** ("predetermined optimum concentration"), not an addition here; and **events/well
+≥10,000 → ≥20,000, now DERIVED** from the CV budget rather than chosen.
+
+🔻 **Four items left this class after the second pass and are now [A]:** the culture
 conditions (**Coriell's own record — and it corrected an invented density window**), the stain-index
 metric (**PMID 15536642**), the centrifugation speed (**350 × g, not the 300 × g asserted here
 first**), and fixation in the dark. **Asserting that class [C] was unsourceable was itself wrong;
