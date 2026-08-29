@@ -380,6 +380,40 @@ Three consequences:
 > raises BubR1 with the distribution unchanged is not.
 > **This keeps the aneuploid cells in the analysis, where they belong — they are the disease.**
 
+### 🔻 5.13b THREE GAPS IN §5.13a ITSELF, found by auditing the fix as a new claim
+
+**Written one pass after §5.13a, because a fix is a claim and gets the same scrutiny as what it
+fixed.**
+
+**(a) "Flag any well whose distribution has moved" had NO THRESHOLD.** Having criticised an
+asserted hit criterion, the fix introduced a rule with no criterion at all — which is worse, because
+it is unfalsifiable. **Definition now required: report the percentage of events in each cycle
+compartment, and flag a well when any compartment shifts by more than 3 SD of the DMSO-control wells
+on the same plate.** Same logic as the hit criterion; the plate's own controls set the scale.
+
+**(b) 🔴 The DNA dye's compatibility with METHANOL was never checked** — and Condition B is a
+methanol arm. Methanol permeabilisation changes DNA-dye access and histogram resolution, and this
+protocol asks for a DNA dye and a methanol condition **without ever asking whether they work
+together.** **Add to the §5.2 comparison: acquire the DNA histogram in both fix/perm conditions and
+confirm resolvable G1/G2 peaks before either is chosen.** If the methanol arm cannot give a clean
+DNA histogram, that is a reason to prefer Condition A — a criterion this protocol did not have.
+
+**(c) 🔴 The whole statistical framework assumes a UNIMODAL population, and this disease may not
+provide one.** §3's CV ≤ 6.7% derivation and every use of "median MFI" assume a single well-behaved
+distribution. **But the patient line is >25% aneuploid, and whether BubR1 is distributed unimodally
+across euploid and aneuploid subpopulations is unknown** — and it is not a safe assumption, since
+the thesis itself proposes that BubR1 level and mis-segregation are linked.
+> **Therefore: unimodality is now a PRECONDITION, checked before the CV criterion is applied.**
+> **Report the BubR1 histogram shape for every arm.** If the patient distribution is bimodal, **a
+> median is the wrong statistic and the CV criterion does not hold** — the analysis must move to
+> reporting the subpopulations, and the hit definition changes with it.
+> ⚠️ **A bimodal patient distribution would not be a nuisance. It would be a finding** — it would
+> say the patient's cells are not uniformly BubR1-low, which no published measurement of these
+> lines addresses.
+
+**[OUR INFERENCE throughout §5.13b. (c) rests on the published >25% aneuploidy figure; the
+statistical consequence is our reasoning.]**
+
 ⚠️ **Acceptance criteria are therefore unchanged in both value and population:** the 20–35% anchor
 and CV ≤ 6.7% apply to the whole live-singlet gate, as originally written. **[OUR INFERENCE from a
 sourced fact — the >25% aneuploidy figure is published; that it makes cycle-gating inappropriate
