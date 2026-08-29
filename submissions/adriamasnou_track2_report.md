@@ -161,27 +161,41 @@ Both numbers are reported so the choice is visible rather than buried.
 
 ---
 
-### 2.3 🔑 Generalised to 111 cancer-susceptibility genes: the ceiling has not moved in 19 months
+### 2.3 🔑 Generalised to 116 cancer-susceptibility genes: the ceiling has not moved in 19 months
 
 The *BUB1B* result above is not a special case, and we tested that rather than asserting it. Lin's
 Table 3 covers **116 inherited cancer-susceptibility genes**; we re-counted all of them against the
 ClinVar bulk release at two later timepoints (`F-028`).
 
-⚠️ **Five baseline rows are excluded and named** — `CDKN1C`, `GATA2`, `GREM1`, `NTHL1`, `RUNX1` read
-`0 0 0 0` in the published table yet are non-zero in the earliest archived release we can test
-(`RUNX1`: 31 benign, 31 pathogenic), so they cannot serve as a baseline. **n = 111.** Without the
-exclusion `RUNX1` would appear to "cross into PS3-strong (0 → 34)" — a fabricated finding.
-**[OUR MEASUREMENT — Lin Table 3 (PMID 40925377) as parsed, tested against the ClinVar 2025-01
-archived bulk release. We make no claim that the published table is in error; five rows did not
-survive a check we could run, and their extraction pipeline is not visible to us.]**
+**Five rows of that baseline are under-reported, and we establish it rather than assume it.**
+`CDKN1C`, `GATA2`, `GREM1`, `NTHL1` and `RUNX1` read `0 0 0 0` in Table 3 of **Lin et al.,
+PMID 40925377**, checked here against the ClinVar public bulk releases of 2025-01 and 2026-08
+**[OUR MEASUREMENT]**. That the
+zeros are in the source data — not in our reading of it — follows from arithmetic: our parse, with
+the zeros in place, reproduces Lin's **own published** 36.2% and 19.8% **exactly**; had we mis-read
+those rows our totals would have come out *lower*. And that the zeros are incorrect follows from the
+archived ClinVar release of 2025-01, which predates any accretion window: **`RUNX1` holds 31 benign
+and 31 pathogenic missense classifications there, and has its own ClinGen Myeloid Malignancy VCEP.**
+
+**Both halves of that matter, and the second is reassuring:** correcting all five moves the headline
+from **19.8% → 20.7%** and **36.2% → 37.1%** — **one gene of 116 changes tier. Lin's conclusion
+stands.** We therefore **correct rather than drop**, keeping n = 116, and substitute the 2025-01
+values — a deliberately conservative choice that *raises* the baseline and so *understates* later
+growth. The drop variant (n = 111) is reported as a sensitivity check and agrees.
+**[OUR MEASUREMENT — Lin Table 3 (PMID 40925377) as parsed, against ClinVar public bulk releases
+2025-01 and 2026-08. We do claim the five rows under-report ClinVar; we do NOT claim to know why,
+as their extraction pipeline is not visible to us.]**
 
 **Genes able to support `PS3` (strong), i.e. ≥ 19 benign controls:**
 
 | timepoint | **≥2★ truthset** | **≥1★ truthset** |
 |---|---|---|
-| Lin 2025 Table 3 | **23/111 = 20.7%** | 42/111 = 37.8% |
-| ClinVar 2025-01 | **23/111 = 20.7%** | 44/111 = 39.6% |
-| ClinVar 2026-08 | **23/111 = 20.7%** | **62/111 = 55.9%** |
+| Lin 2025 baseline (corrected) | **24/116 = 20.7%** | 43/116 = 37.1% |
+| ClinVar 2025-01 | **24/116 = 20.7%** | 45/116 = 38.8% |
+| ClinVar 2026-08 | **24/116 = 20.7%** | **63/116 = 54.3%** |
+
+*Sensitivity, five rows dropped instead (n = 111): 20.7% at all three timepoints likewise;
+37.8% → 39.6% → 55.9% at ≥1★.* **The two framings agree.**
 
 > **At ≥2★ the figure is 20.7% at every timepoint. It has not moved in 19+ months** — net churn
 > exactly zero (`NF1` in, `ANKRD26` out). **At ≥1★ it crossed from a minority to a majority**,
