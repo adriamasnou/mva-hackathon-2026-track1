@@ -279,14 +279,36 @@ lipofection will work here is the kind of assumption that costs a month.
 > If a knockdown in LCLs is wanted regardless, it requires **nucleofection**, not lipofection, and
 > the efficiency must be measured rather than assumed.
 
-**Knockdown conditions for the adherent arm:** **HeLa (ATCC CCL-2)** or **U2OS (ATCC HTB-96)**,
-reverse-transfect **dsiBUBR1 at 10–20 nM** with a standard lipid reagent (e.g. Lipofectamine
-RNAiMAX), **harvest at 48 and 72 h** — BubR1 is a stable protein and 24 h is frequently too early to
-see depletion. **Include a non-targeting dsiRNA at the same concentration**, not just an untreated
-well: transfection itself perturbs the cells.
+**Knockdown conditions for the adherent arm:** **HeLa (ATCC CCL-2, CVCL_0030)** or **U2OS
+(ATCC HTB-96, CVCL_0042)**, reverse-transfected with a standard lipid reagent (e.g. Lipofectamine
+RNAiMAX).
+
+🔻 **Concentration corrected: a dose–response at 0.1 / 1 / 10 nM, NOT the "10–20 nM" an earlier
+version specified.** `dsiBUBR1` is a **DsiRNA** — a 27mer Dicer-substrate duplex, which the
+manufacturer states is **more potent than a conventional 21mer siRNA**, is typically used at
+**1–10 nM**, and often achieves knockdown **at 1 nM or less**. The manufacturer's recommended
+starting design is explicitly a **0.1 / 1 / 10 nM dose–response**.
+> 🔴 **Why this is not a detail.** The manufacturer's stated reason for low concentrations is
+> **minimising off-target effects** — and this arm exists **solely to demonstrate SPECIFICITY.**
+> Running it at 10–20 nM would have used an excess whose known consequence is off-target activity,
+> **inside the one experiment whose entire purpose is showing the signal is on-target.**
+
+🔴 **Add a POSITIVE transfection control** (e.g. an HPRT DsiRNA), which the manufacturer recommends
+in every experiment to assess transfection efficiency. **This protocol had a non-targeting control
+but no positive one, and they answer different questions.** Non-targeting says *transfection
+perturbs the cells*; a positive control says *the transfection worked at all*.
+> **Without it, a failed criterion 2 is uninterpretable** — the antibody may be fine and the
+> transfection may simply have failed — **and §7's decision tree would send the project to the
+> reporter-line fallback for the wrong reason.** That is the most expensive wrong turn available
+> in this document.
+
+**Harvest at 48 and 72 h.** ⚠️ The manufacturer's standard 24 h assay measures **gene expression**;
+this measures **protein**, and **BubR1 is stable, so protein depletion lags mRNA depletion.** The
+deviation from 24 h is deliberate and reasoned, not an oversight. **[OUR INFERENCE.]**
+
 ⚠️ **Confirm depletion by western blot in parallel.** If the flow signal falls but the blot shows no
-depletion, the flow readout is measuring something else — and that is a result worth having before
-the screen, not after.
+depletion, the flow readout is measuring something else — a result worth having before the screen,
+not after.
 
 ### 5.7 How the CV is computed, so criterion 4 is unambiguous
 
@@ -326,6 +348,7 @@ says which is which, because a protocol that hides the difference is worse than 
 | **≥20,000 events/well** | **DERIVED** — `SE(median) ≈ 1.2533·σ/√n` against the 6.7% budget |
 | **90% methanol, minimum 10 min on ice**; **methanol damages PE and APC** | vendor alcohol-permeabilisation protocols |
 | **715-545-150 = Alexa 488 donkey anti-mouse IgG (H+L) *min X***, flow-validated | Jackson ImmunoResearch |
+| **DsiRNA at 0.1 / 1 / 10 nM** (27mer, more potent than 21mer; low doses to limit off-target); **a positive transfection control in every experiment** | manufacturer guidance |
 | EBV transformation **increases** FcR per cell | literature |
 
 **[B] DERIVED — computed by us from sourced inputs, reproducible**
@@ -341,6 +364,10 @@ says which is which, because a protocol that hides the difference is worse than 
 **5 × 10⁵ cells per well · 50 µL staining volumes · 30 min RT secondary · secondary at 1:500 · the
 1:50–1:800 titration range · dsiRNA at 10–20 nM and 48/72 h · MG132 duration (already flagged) ·
 ≥2 passages after thaw.**
+
+🔻 **A FIFTH pass corrected the knockdown arm outright:** the DsiRNA concentration was **10–20 nM
+against the manufacturer's 0.1/1/10 nM**, in the one experiment whose purpose is specificity; and a
+**positive transfection control was missing**, without which a failed criterion 2 is uninterpretable.
 
 🔻 **A FOURTH pass moved two more out, and both carried a constraint I did not have:** the methanol
 conditions (**90%, minimum 10 min on ice — and PE/APC are damaged by methanol**, which is a trap for
