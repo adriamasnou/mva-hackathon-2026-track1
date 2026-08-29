@@ -30,6 +30,15 @@ Analysis code and submission for [Rare Disease, Real Kid: The MVA Hackathon 2026
   one in the code written to catch them. `python3 canary/run_canary.py --self-test` proves the
   panel can go red, on a real bug rather than a synthetic one.
 
+### The one thing here that is an object rather than a document
+
+- **[Build specification: the *BUB1B* N1002K construct](submissions/n1002k-reagent-specification.md)**
+  — no reagent carrying this child's actual variant exists anywhere, so every therapeutic claim
+  about him, ours and others', is extrapolated from other people's alleles. This is the turnkey
+  spec that ends that for a few hundred dollars: the edit verified from the reference sequence,
+  designed and Tm-checked mutagenic primers, the destination-vector constraint the depositor warns
+  about, a QC plan, and costs. **It cannot be ordered by us — it needs a laboratory.**
+
 ### Track 2 — beyond this one case
 
 - **[The UK PGT-M register, indexed by gene](submissions/hfea-pgtm-gene-crosswalk.md)** — the
