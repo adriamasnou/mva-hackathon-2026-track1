@@ -161,6 +161,45 @@ Both numbers are reported so the choice is visible rather than buried.
 
 ---
 
+### 2.3 🔑 Generalised to 111 cancer-susceptibility genes: the ceiling has not moved in 19 months
+
+The *BUB1B* result above is not a special case, and we tested that rather than asserting it. Lin's
+Table 3 covers **116 inherited cancer-susceptibility genes**; we re-counted all of them against the
+ClinVar bulk release at two later timepoints (`F-028`).
+
+⚠️ **Five baseline rows are excluded and named** — `CDKN1C`, `GATA2`, `GREM1`, `NTHL1`, `RUNX1` read
+`0 0 0 0` in the published table yet are non-zero in the earliest archived release we can test
+(`RUNX1`: 31 benign, 31 pathogenic), so they cannot serve as a baseline. **n = 111.** Without the
+exclusion `RUNX1` would appear to "cross into PS3-strong (0 → 34)" — a fabricated finding.
+**[OUR MEASUREMENT — Lin Table 3 (PMID 40925377) as parsed, tested against the ClinVar 2025-01
+archived bulk release. We make no claim that the published table is in error; five rows did not
+survive a check we could run, and their extraction pipeline is not visible to us.]**
+
+**Genes able to support `PS3` (strong), i.e. ≥ 19 benign controls:**
+
+| timepoint | **≥2★ truthset** | **≥1★ truthset** |
+|---|---|---|
+| Lin 2025 Table 3 | **23/111 = 20.7%** | 42/111 = 37.8% |
+| ClinVar 2025-01 | **23/111 = 20.7%** | 44/111 = 39.6% |
+| ClinVar 2026-08 | **23/111 = 20.7%** | **62/111 = 55.9%** |
+
+> **At ≥2★ the figure is 20.7% at every timepoint. It has not moved in 19+ months** — net churn
+> exactly zero (`NF1` in, `ANKRD26` out). **At ≥1★ it crossed from a minority to a majority**,
+> 22 genes in, 2 out.
+
+🔑 **The generalisation, and it is the same shape as §2.2:** whether a functional assay can deliver
+*strong* evidence is decided by an **admissibility question — do single-submitter classifications
+count?** — far more than by the accumulation of data. **Waiting for ClinVar does not work: four in
+five genes remain unable to reach `PS3` from 2★ classifications, at exactly the rate measured
+before.** *BUB1B* sits at **rank 41 of 116** — an ordinary member of this panel, which is what makes
+it usable as a worked example rather than a special pleading.
+
+**[OUR MEASUREMENT — `pipeline/lin_table3_parse.py` → `clinvar_gene_panel.py` → `lin_panel_compare.py`;
+public gene-level ClinVar only, no patient data. Two validations were run before any result was
+read: the Table-3 parse reproduces Lin's published 36.2% and 19.8% exactly, and the panel counter
+reproduces our independent single-gene *BUB1B* run exactly on all four values. Limits in `F-028` §5 —
+notably that the domain-scoping arm remains n = 1 and every figure is a perfect-classifier ceiling.]**
+
 ## SECTIONS NOT YET WRITTEN
 
 Held and sourced in the private tree; not yet converted. Ten remaining of the twelve measured as
