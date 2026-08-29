@@ -168,7 +168,66 @@ guarantee power to detect a 2-fold change.** ⚠️ **Therefore: a secondary Z�
 against a low-effect reference before believing the screen can see what it is looking for.**
 *This attack changed the protocol rather than being noted and dismissed.*
 
-## 10. What still needs a person
+## 10. 🔴 THE CRITICAL REAGENT, and an honest risk that could sink the primary readout
+
+**In an intracellular BubR1 flow stain, the antibody IS the assay.** The first version of this
+protocol said "intracellular antibody stain" and named nothing — which is the single fastest way to
+stall a facility. Closing it surfaced a real problem.
+
+| reagent | identifier | status |
+|---|---|---|
+| **anti-BUBR1** | **Bethyl A300-386A** | ⚠️ documented in our holdings **at 1:100 for immunofluorescence** — **NOT for flow** |
+| MG132 (Z′ maximum control) | Calbiochem, CAS **133407-82-6** | ✅ catalogued |
+| **anti-α-tubulin, clone DM1A** — the "unrelated abundance control protein" of §7.2, now named | Santa Cruz **sc-32293**, RRID:**AB_628412** | ✅ catalogued |
+| Alexa-conjugated secondaries | Jackson ImmunoResearch, 711-545-152 etc. | ✅ catalogued |
+
+> ### The risk, stated plainly
+> **BubR1 HAS been read by FACS** — Janssen 2009 lists it among antibodies used for "Western blot,
+> Immunofluorescence, and FACS analysis", so the readout is not unprecedented. **But that antibody
+> was "a gift from R. Freire" — not a commercial reagent.** The commercial candidate above is
+> evidenced in our holdings only for immunofluorescence.
+>
+> **So the most important reagent in this screen is unvalidated for the application it is being
+> asked to perform.** That is a real risk to the primary readout, not a formality.
+>
+> **Therefore the first bench task is not the screen. It is: does A300-386A give a specific,
+> quantitative intracellular BubR1 signal by flow in LCLs, with a window between patient and
+> control cells?** If it does not, the primary readout must change — most likely to a tagged
+> reporter line — and that is a different, larger project. **This gate comes before the Z′ gate.**
+
+⚠️ **A discrepancy a lab must not inherit.** Our holdings contain one passage using **A300-386A to
+detect BUB1** and another specifying **BUB1 = A300-373A, BUBR1 = A300-386A**. Those cannot both be
+right. **Confirm the catalogue number against the vendor's own datasheet before ordering** — BUB1
+and BUBR1 are different proteins and the wrong tube produces a confidently meaningless screen.
+**[OUR MEASUREMENT — both passages are in papers held in `papers-local/`; the inconsistency is in
+the published text, not introduced here.]**
+
+## 11. How this document compares to the stability protocol, measured
+
+Asked directly whether this is as precise as the accompanying stability protocol: **it is not, and
+the gap is measurable.**
+
+| | stability protocol | this document |
+|---|---|---|
+| catalogue numbers | 28 | 8 → **12** |
+| **published expected values / calibration anchors** | **71** | **0** |
+| derived statistics | 41 | 2 |
+
+**The zero is the honest headline.** Every construct in the stability protocol carries a *published
+expected result*, so a lab knows on day one whether the assay works. **This screen has no such
+anchor for its primary readout, because no drug-induced BubR1-abundance measurement has ever been
+published** — that is the same absence that makes §0's odds estimates rather than measurements.
+
+**Consequently the ≥2-fold hit criterion in §6 is asserted, not derived.** The stability protocol
+tabulated its minimum detectable ΔTm across the unknown standard deviation. The equivalent cannot
+be done here until the pilot in §10 produces a signal window. **It is a placeholder with a number
+on it, and it should be replaced by a derived threshold once the pilot exists.**
+
+**What that means practically: the stability protocol can be sent to a laboratory. This one can be
+sent to a laboratory for a pilot.** They are not at the same readiness and should not be presented
+as though they were.
+
+## 12. What still needs a person
 
 - 🔴 **A screening facility.** Nothing here can be ordered by us.
 - MTAs for the cell lines; library access is facility-dependent.
