@@ -25,9 +25,17 @@ the unit costs are not.]**
 
 ### 1.1 The evidence gap we will not paper over
 
-⚠️ **There is no published cost-effectiveness analysis with ICERs for Wilms tumour surveillance** —
-not in Beckwith-Wiedemann, DICER1, CMMRD or retinoblastoma. **[NOT FOUND — a genuine gap in the
-literature, stated rather than filled with a proxy.]**
+🔻 **CORRECTED 2026-08-29. This section previously read: "There is no published cost-effectiveness
+analysis with ICERs for Wilms tumour surveillance — not in Beckwith-Wiedemann, DICER1, CMMRD or
+retinoblastoma." That is wrong.** **McNeil *et al.*, *Med Pediatr Oncol* 2001, PMID 11568898** is a
+cost-effectiveness model for Wilms tumour and hepatoblastoma surveillance in Beckwith-Wiedemann
+syndrome, reporting **cost per life-year saved**, and its costs were judged reasonable against
+population cancer-screening programmes of the time. It is cited in **§4 of Hol 2021, the paper this
+project's surveillance recommendation is built on and whose full text we have held throughout.**
+
+**The claim was produced by searching our own notes rather than the source.** The honest, narrower
+statement is: **the BWS analysis is 25 years old, its authors' own successors call an update
+"warranted", and no cost-effectiveness analysis exists for MVA specifically.**
 
 The nearest real analysis is for a different syndrome: Li-Fraumeni surveillance in Brazil
 (Frankenthal *et al.*, *Lancet Reg Health Am* 2022, PMC9904006) — **ICER $2,982 per life-year for

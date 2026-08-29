@@ -74,21 +74,33 @@ reason the consensus interval is 3 months rather than 3–4.
 - Some children find scans distressing, and that distress is real even though the scan is painless.
 - A family already managing many appointments may reasonably weigh this differently.
 
-### 2.5 🔴 What we could NOT tell you, and it matters
+### 2.5 How often does a scan raise a false alarm?
 
-IPDAS asks a decision aid about a test to give the chance of a **true positive, false positive,
-true negative and false negative** result, and the chance the disease is found **with** versus
-**without** screening.
+This is the question most surveillance information leaves out, and it has an answer — though not
+one measured in MVA.
 
-> **We searched and could not find those numbers for renal ultrasound surveillance in MVA.**
-> **[NOT FOUND — a genuine gap in the published evidence, not an omission here.]** There is also
-> **no published cost-effectiveness analysis with hard numbers for Wilms tumour surveillance** in
-> any predisposition syndrome we could find.
+> ### About **4 in 10** children under this kind of surveillance have something found that turns
+> ### out not to be a tumour.
+> In the largest series we could find, **25 of 63 children (40%)** on a Wilms-surveillance protocol
+> had renal or liver abnormalities identified that required further investigation
+> (Zarate *et al.*, *Am J Med Genet A* 2009, **PMID 19610116**).
 
-So we cannot tell you how often a scan raises a false alarm, or by how much scanning improves
-outcome in this specific condition. **The recommendation for surveillance rests on the size of the
-risk and on general principle, not on a trial in these children.** Anyone who gives you a precise
-number for this should be asked where it came from.
+**And a false alarm is not always harmless.** In an earlier series, **two children had renal
+lesions removed that were suspected to be cystic Wilms tumours and proved to be infected cysts.
+One of them had a kidney and ureter removed** (Choyke *et al.*, *Med Pediatr Oncol* 1999,
+**PMID 10064187**).
+
+⚠️ **These numbers come from Beckwith-Wiedemann spectrum, not MVA.** BWS is the condition in which
+Wilms surveillance has been studied most; the equivalent figures for MVA **do not exist**. They are
+the best available guide and they may not transfer exactly. **We are showing you the nearest real
+evidence rather than leaving the column blank — but it is a neighbouring condition's evidence, and
+you should weigh it as such.**
+
+**What we still cannot tell you.** How much surveillance improves outcome *in this condition*.
+The recommendation rests on the size of the risk and on general principle, not on a trial in these
+children. **The effectiveness of screening in BWS has been studied** (Mussa *et al.*,
+*J Cancer Res Clin Oncol* 2019, **PMID 31583434**) and a **cost-effectiveness model exists for
+BWS** (McNeil *et al.*, *Med Pediatr Oncol* 2001, **PMID 11568898**) — again, not MVA.
 
 **One thing we can say plainly:** the consensus group recommends surveillance for *all* forms of
 MVA specifically **because the numbers for each individual gene are too small to act on separately**
@@ -145,9 +157,16 @@ Neither number below is a reason to choose either way; they are simply the part 
 Each appointment is typically travel, a wait, the scan itself, and the wait for a result. Multiply
 by two parents where both attend, and by any siblings who must be arranged around it.
 
-**[OUR ESTIMATE — appointment counts follow directly from the published intervals; the surrounding
-burden is arithmetic, not measured. We found no study measuring caregiver burden in MVA
-surveillance. [NOT FOUND]]**
+**What families themselves have said.** The consensus group asked two patient organisations — the
+International WAGR Syndrome Association and the UK BWS Support Group — and their answer was not
+one-sided: **surveillance visits are "stressful for some parents while reassuring for others",
+anxiety "varies from child to child", and both groups reported that *not* undergoing surveillance
+can also be stressful.** Time and transport were raised, but described as less important than the
+anxiety. (Hol *et al.* 2021, **PMID 34134020**, §4.)
+
+**[OUR ESTIMATE for the appointment counts, which follow directly from the published intervals.
+The family-experience evidence above is quoted from Hol 2021 and comes from BWS and WAGR families,
+not MVA families — no study of caregiver burden specific to MVA surveillance was found.]**
 
 ---
 
@@ -220,7 +239,9 @@ Decision aids are expected to declare how they were made. Most of what follows i
 | Describes the condition, options, and doing nothing (2.1–2.4) | ✅ |
 | Describes benefits and harms with equal space (2.6, 2.7, 9.1, 9.2) | ✅ |
 | Outcome probabilities with population and time period (3.1–3.3) | 🟡 partial — the risk figure and intervals are given; **test performance is missing and flagged** |
-| **Test-specific: true/false positive and negative rates (2.10, 2.12)** | ❌ **NOT AVAILABLE — searched, [NOT FOUND], stated in §2.5** |
+| **Test-specific: false-positive rate (2.10)** | 🟡 **partial — a real figure is given (40%, PMID 19610116), but from BWS rather than MVA, and flagged as such in §2.5** |
+| Test-specific: chance disease is found with vs without screening (2.12) | ❌ **not available for MVA; the BWS effectiveness study is cited instead (PMID 31583434)** |
+| 🔻 **Correction history** | **§2.5 previously read "[NOT FOUND]" for all test-performance items. That was wrong: the data was in a paper this project already held. See the note below.** |
 | Describes uncertainty around the probabilities (3.4) | ✅ §2.5 |
 | Visual diagram of probabilities (3.5) | ❌ **not provided** |
 | Values clarification (4.1–4.3) | ✅ §5 |
@@ -234,6 +255,14 @@ Decision aids are expected to declare how they were made. Most of what follows i
 | Readability formally scored at grade 8 or below (10.4) | ❌ **not scored.** Written to be plain, not measured |
 | Conflicts of interest (7.1–7.4) | ✅ below |
 | Developer credentials (1.1) | ✅ below |
+
+> ### 🔻 A correction, recorded rather than quietly fixed
+> An earlier version of §2.5 said the false-positive and screening-effectiveness numbers could not
+> be found. **They could.** They are in Hol *et al.* 2021 §4 — the same paper this document's
+> surveillance recommendation comes from, whose full text this project has held all along. The
+> earlier claim came from searching our own notes rather than the paper. **An absence found by
+> searching the wrong thing is not an absence**, and a family-facing document is the worst place to
+> make that mistake.
 
 > ### 🔴 Read that table before you use this document.
 > **It has not been field tested and it has not been peer reviewed.** Those are the two things that
