@@ -69,7 +69,7 @@ Z' = 1 - 3·CV·(hi + lo) / (hi - lo)
 | isotype control | BioLegend / BD | **mouse IgG2a κ**, clone **MOPC-173** — matched **µg/mL**, not matched dilution |
 | **Fc receptor block** | BioLegend **422302** (TruStain FcX) *or* BD **564220** (Human Fc Block) | 🔴 **mandatory — these are EBV-transformed B cells** |
 | **fixable viability dye** | Thermo **L34976** (LIVE/DEAD Fixable **Near-IR**, 633/775) | must be **fixable** (PI/7-AAD do not survive fix), **and spectrally clear of Alexa 488** |
-| knockdown host line | ATCC | **HeLa CCL-2** or **U2OS HTB-96** — see §5.6 |
+| knockdown host line | ATCC | **HeLa CCL-2** (RRID **CVCL_0030**) or **U2OS HTB-96** (RRID **CVCL_0042**) — both verified via Cellosaurus |
 | secondary | Jackson ImmunoResearch | anti-mouse Alexa 488 — **715-545-150** |
 | **patient cells** | NIGMS/Coriell | **GM21284** (LCL, *BUB1B* `753X`/`R814H`) |
 | **control cells** | NIGMS/Coriell | **GM21657**, **GM22004** (unaffected parent LCLs) |
@@ -287,8 +287,7 @@ duration (already flagged) · the stain-index formula (a real published concept,
 specific paper).**
 
 **And three catalogue numbers that are NOT yet verified and must be confirmed before ordering:**
-**MOPC-173** (isotype clone) · **ATCC CCL-2 / HTB-96** (HeLa / U2OS) · **BD 564220** (alternative Fc
-block). Every other catalogue number in this document has been checked against its vendor or a
+**MOPC-173** (isotype clone) and **BD 564220** (alternative Fc block). **ATCC CCL-2 and HTB-96 have since been verified** against Cellosaurus (CVCL_0030, CVCL_0042). Every other catalogue number in this document has been checked against its vendor or a
 registry today.
 
 > ### What class [C] means in practice
@@ -299,6 +298,78 @@ registry today.
 > **The one thing that must not happen is class [C] being read as class [A].** That is what the
 > earlier `[NOT FOUND]` error in the family document did, in the other direction, and it is why this
 > table exists.
+
+## 5.9 🔴 PLATE LAYOUT — the omission that most directly attacked this protocol's own criterion
+
+Everything here is built on achieving **CV ≤ 6.7%**, and the protocol had **no plate layout at
+all.** Plate-position artefacts are among the largest and best-documented sources of well-to-well
+variance in plate-based assays, and they are systematic rather than random — so they do not average
+out and they inflate exactly the quantity being measured.
+
+**Rules:**
+1. **Do not use the outer wells for samples.** Fill row A/H and column 1/12 with buffer. Evaporation
+   and thermal gradients are worst at the edge.
+2. 🔴 **Interleave the arms; never block them.** If patient wells occupy columns 2–7 and control
+   wells 8–11, **any plate gradient becomes indistinguishable from the biological difference the
+   assay exists to measure.** Assign the six arms across the plate in a randomised or systematically
+   interleaved pattern, and **use the same map on every plate and every day.**
+3. **Record the well position with every measurement.** If the median MFI correlates with row or
+   column, the CV is reporting plate geometry, not assay precision — **and that must be checked
+   before the CV is believed**, not after.
+
+**Without this, a plate gradient can produce either a false pass on criterion 3 (patient ≈ 20–35%
+of control, manufactured by position) or a false fail on criterion 4.**
+
+## 5.10 Analysis plan, fixed in advance
+
+- **Gates are set once**, on the control-LCL + full-stain sample, and **applied unchanged to every
+  well.** Per-well gate adjustment is how subjective flow analysis becomes unfalsifiable.
+- **Gating is performed blind to arm assignment** — the well map is unblinded only after the median
+  MFIs are exported. Cheap, and it removes the largest source of unconscious bias in flow analysis.
+- **No well is excluded** except for a pre-declared technical reason (fewer than 10,000 live singlet
+  events; visible clog). **Outlier removal on the basis of the value itself is not permitted** — it
+  would directly manufacture the CV this protocol is testing.
+- Analysis software and version recorded; `.fcs` files retained.
+
+## 5.11 MIFlowCyt conformance
+
+Flow cytometry has a published minimum-reporting standard — **MIFlowCyt** (Lee *et al.*,
+*Cytometry A* 2008, **PMID 18752282**), an ISAC standard required by *Nature* and PLOS. Its four
+domains, and where this protocol addresses them:
+
+| MIFlowCyt domain | here |
+|---|---|
+| experiment overview, purpose, keywords | §1–§3 |
+| **specimens and reagents** | §4 (catalogue numbers, RRIDs), §5.0 |
+| **instrument configuration** | 🟡 **PARTIAL** — lasers implied by the dye choices; **voltages, filter sets and cytometer model must be recorded at run time and cannot be pre-specified here** |
+| **data processing** — gates, transformations, software | §5.4, §5.10 |
+
+**⚠️ The instrument row cannot be closed by us**, because it is a property of the facility's machine.
+**It is named so that it is recorded rather than forgotten**, which is the whole purpose of a
+minimum-reporting standard.
+
+## 5.12 Adversarial review of THIS pilot
+
+The screen protocol carries one; this document did not, which was an inconsistency rather than a
+judgement. Three attacks:
+
+**P1 — "You are measuring total BubR1, but the patient's defect may be functional."** Does not land
+*for the pilot*, which is an assay-qualification experiment and makes no biological claim. **It lands
+hard on the screen**, and is already recorded there as attack A1.
+
+**P2 — "The 22–29% anchor is from a different cell type and different patients, so criterion 3 is
+not really a criterion."** **Partly lands.** It is why the acceptance range is written as a broad
+**20–35%** rather than a point estimate, and why §2 states the limits explicitly. **If the observed
+value is 40–50%, the honest response is uncertainty about the anchor, not automatic rejection of
+the assay** — and that ambiguity is a real weakness with no clean resolution available to us.
+
+**P3 — "Criterion 2 (knockdown) is run in a different cell type from criteria 3–4."** **Lands, and
+it is the sharpest.** Specificity is demonstrated in HeLa/U2OS while the anchor is measured in LCLs,
+so **strictly, specificity is not demonstrated in the cells the screen will actually use.** The
+justification — that antibody specificity is a property of the antibody — is reasonable but is an
+**assumption, not a measurement.** ⚠️ **Mitigation, now required: if the pilot passes, confirm
+BubR1 depletion in LCLs by nucleofection at least once before the screen begins.** Deferred, not
+dismissed.
 
 ## 6. Acceptance criteria — all four, fixed before any data exist
 
