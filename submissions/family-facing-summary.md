@@ -59,31 +59,61 @@ aneuploidy" means: *mosaic* (only some cells), *variegated* (not the same error 
 We did not find a different answer, and we think that is worth saying plainly: the existing
 diagnosis holds up under independent examination by people who had never seen it.
 
-## 2. Can we actually see the condition in his data? — partly, and honestly
+## 2. Can we see the condition itself in his data? — we thought so, we tested it, and no
 
-The genetic *cause* is solid. The question of whether we can see its *effect* — the wrong
-chromosome counts — in the data we were given is more delicate, and we want to be careful here
-rather than impressive.
+The genetic *cause* is solid. Whether we can see its *effect* — cells with the wrong number of
+chromosomes — in the data we were given is a separate question, and this section is the honest
+answer to it, including the part where we were wrong.
 
-We looked across all of his chromosomes for a statistical fingerprint of cells carrying extra
-copies. Three chromosomes (numbers 20, 21 and 22) show a signal noticeably stronger than the
-other twenty, and it has the uneven, several-chromosomes-at-once shape that MVA would predict
-rather than the single uniform pattern of a different condition.
+**What we first saw.** Looking across all his chromosomes for a statistical fingerprint of cells
+carrying extra copies, three of them — 20, 21 and 22 — stood out clearly, at about 1.4× the
+signal of the other nineteen. It had the uneven, several-chromosomes-at-once shape that MVA
+predicts. It looked like the condition made visible.
 
-**But we are not claiming this as proven, for a specific reason.** Chromosomes 20, 21 and 22 are
-the three smallest, and small chromosomes are also the ones most distorted by a well-known
-technical artefact of this kind of sequencing (a bias related to DNA composition). The pattern we
-see is *consistent with* mosaic gains; it is not yet *evidence of* them. Settling it needs a
-different analysis run on the raw sequencing reads, which we have set up but not completed.
-**[OUR MEASUREMENT — our own scan across all 24 chromosomes of the shared data; the three
-chromosomes sit at roughly 1.4× the spread seen on the other twenty. The caveat in this paragraph
-is recorded in our own working notes for that scan, not raised by anyone else.]**
+**What happened when we tried to break it.** Rather than publish that, we tried to find an
+innocent explanation.
 
-We are flagging this because an earlier draft of this summary said we had seen the pattern
-"directly", and that was stronger than our own data supports. A family is entitled to the
-version with the caveat attached.
+- *Is it because those chromosomes are small?* No. Chromosome 19 is smaller than chromosome 20
+  and shows nothing.
+- *Is it because they were read less deeply?* No — the opposite. They were read slightly more
+  deeply than average, which makes the measurement more reliable, not less.
+- *Is it because parts of the genome resemble each other, so the software puts reads in the
+  wrong place?* **Yes. That was it.**
 
----
+The genome contains regions that closely resemble other regions. Reads from them can be assigned
+to the wrong location, and when that happens the software reports something that looks exactly
+like an extra chromosome copy but is a filing error. Each read carries a score for how confident
+the alignment is. **When we kept only the reads the software was certain about, the signal on
+chromosomes 20, 21 and 22 vanished completely** — they became indistinguishable from every other
+chromosome. The reason those three stood out is that about a third of their measurable sites are
+in these confusing regions, against roughly one in eight for a typical chromosome.
+
+> **So: we did not detect mosaic aneuploidy in this data, and the pattern that looked like it was
+> an artefact of the analysis. We are reporting this because it is what we found, not because it
+> is what we hoped for.**
+
+**How hard did we look, and does our method work at all?** A negative result is worth nothing
+unless both of those are answered.
+
+*Does the method work?* We gave it a question we already knew the answer to. George is male, so he
+has one X chromosome where the other chromosomes come in pairs — a real, known difference in copy
+number. **The method returned 0.499 where the true answer is 0.500.** It can detect a genuine
+change in chromosome copy number to within a fifth of one percent. It then found nothing on
+chromosomes 20, 21 and 22.
+
+*How hard did it look?* We tested it against simulated data containing a known amount of mosaic
+change. **Had 3.4% or more of his blood cells carried an extra copy, we would have detected it.**
+
+So the honest statement is *"not detected above roughly 3.4% of cells, using a method shown on the
+same sample to work"* — which is a real result. It is not *"there is nothing there"*, which would
+be a claim we cannot support.
+
+**None of this changes the diagnosis.** Mosaic variegated aneuploidy is diagnosed from cells
+examined directly under a microscope, which is a far more sensitive test for this and which has
+already been done for George. What we tested was whether the same phenomenon could *also* be seen
+in this particular sequencing data, from blood, using this particular method. It could not. That
+is a limitation of our method and this sample, and it says nothing about whether he has the
+condition — he does.
 
 ## 3. ★ Ask your team about this: is the cancer surveillance plan the current one?
 
@@ -259,8 +289,10 @@ Families are owed straight answers about uncertainty, so, in order of how much t
 2. **We have not proved the two changes sit on opposite copies of the gene.** They are too far
    apart in the gene for this sequencing method to settle it. The diagnosis assumes it and the
    arrangement is by far the most likely one, but a parental test is what would confirm it.
-3. **The chromosome-count signal in sections 2 is preliminary**, for the technical reason given
-   there.
+3. **We looked for the wrong-chromosome-number pattern in this data and did not find it**, once
+   an analysis artefact was removed — see section 2. We could have detected it had it involved
+   about 3.4% or more of his blood cells, and we checked the method works by testing it against a
+   known answer on this same sample.
 4. **One feature of his condition — calcium deposits in the kidneys — is probably not caused by
    the gene.** It is common in babies born very prematurely, which is the more likely explanation
    here. We checked the rest of his genome for an alternative genetic cause and did not find one,
