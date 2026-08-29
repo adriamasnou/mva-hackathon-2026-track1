@@ -15,6 +15,15 @@ Analysis code and submission for [Rare Disease, Real Kid: The MVA Hackathon 2026
   written for a family rather than a specialist, including four things a family can actually ask
   their clinical team about, and an explicit account of what we are unsure about.
 
+### A reusable tool: is your pipeline actually working?
+
+- **[The canary panel](canary/README.md)** — a positive-control set for the *interpretation* layer
+  of a rare-disease pipeline. Not a benchmark of accuracy: a test of **liveness**, because
+  bioinformatics tools fail *closed* — they return "nothing found" — and in clinical genomics
+  "nothing found" is a diagnosis. Six silent failures in one day of work motivated it, including
+  one in the code written to catch them. `python3 canary/run_canary.py --self-test` proves the
+  panel can go red, on a real bug rather than a synthetic one.
+
 ### Track 2 — beyond this one case
 
 - **[The UK PGT-M register, indexed by gene](submissions/hfea-pgtm-gene-crosswalk.md)** — the

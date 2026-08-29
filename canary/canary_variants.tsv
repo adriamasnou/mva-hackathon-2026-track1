@@ -1,0 +1,12 @@
+# CANARY PANEL — variants with PUBLISHED, NON-NEGOTIABLE answers.
+# Every row asserts a result a working tool MUST produce. A tool that fails closed --
+# returning "nothing found" rather than an error -- fails these loudly.
+# assembly: GRCh38. Coordinates are 1-based VCF positions.
+#
+# id	chrom	pos	ref	alt	class	gene	expect	why_this_answer_is_not_in_doubt
+SPL-01	2	19989284	T	C	splice	WDR35	spliceai_max>=0.5	ClinVar Pathogenic canonical acceptor c.25-2A>G
+SPL-02	2	63492941	C	A	splice	WDPCP	spliceai_max>=0.5	ClinVar Pathogenic canonical acceptor c.76-1G>T
+SPL-03	1	45014071	G	C	splice	UROD	spliceai_max>=0.5	ClinVar Pathogenic canonical donor c.636+1G>C
+SPL-04	10	89222510	C	T	splice	LIPA	spliceai_max>=0.5	ClinVar Pathogenic canonical donor c.894+1G>A
+SPL-05	22	30613044	T	G	splice	TCN2	spliceai_max>=0.5	ClinVar Pathogenic canonical donor c.427+2T>G
+SPL-N1	15	40209701	T	G	splice	BUB1B	spliceai_max<0.2	coding nonsense, no splice signal expected (NEGATIVE control)
