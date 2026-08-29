@@ -25,9 +25,9 @@ Analysis code and submission for [Rare Disease, Real Kid: The MVA Hackathon 2026
   from public sources in one command.
 - **[Does the pipeline work on a case that is not this child's?](submissions/generalisation-public-case.md)**
   — a phenotype-driven genome-wide scan run end to end on public ClinVar data with a known answer:
-  *FGFR2* ranks **first at 0.9647**, 146× the next gene, from phenotype and variants alone. No
-  hackathon data involved. Limitations, including that this is a constructed mini-case rather than
-  a full exome, are stated in §4.
+  run on a whole real human genome — **GIAB HG002, 4,096,123 variants**, with one pathogenic
+  *FGFR2* variant spiked in. **It ranks first of 649 scored genes**, and the discrimination is
+  phenotypic rather than ClinVar recognition (§3b.1). No hackathon data involved.
 - **[Do either of this child's variants also disrupt splicing?](submissions/splice-prediction.md)**
   — local SpliceAI run as the model, not as lookup. Neither variant shows a splice signal
   (max delta 0.03), which is what the dose argument assumes and could have come out otherwise. The
