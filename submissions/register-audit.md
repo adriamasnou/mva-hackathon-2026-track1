@@ -136,6 +136,54 @@ source and checked; it was in the clinician-facing ones instead.**
 
 ---
 
+## 4b. ✅ The join that came back CLEAN — and it is here because it did
+
+A fourth join was run and **found no meaningful hole.** It is reported for two reasons: because
+selecting only the joins that found something would make the other three unreliable, and because
+**what nearly happened to it is the most useful part.**
+
+**The question:** are there conditions the UK approves embryo selection against whose gene the NHS
+will not test? Joining the crosswalk to **PanelApp**, the Genomics England register of the gene
+panels the NHS Genomic Medicine Service actually uses:
+
+| | |
+|---|---|
+| genes behind approved conditions that are **diagnostic-grade ("green") on an NHS panel** | **1,643 / 1,778 = 92.4%** |
+| not diagnostic-grade anywhere | 135 (7.6%) |
+| **approved conditions where no causative gene is diagnostic-grade** | **108 of 2,026 = 5.3%** |
+
+**And most of the residual is gene-symbol drift, not a coverage gap** — `TAFAZZIN` (was `TAZ`),
+`H3-3A` (was `H3F3A`), `CDIN1` (was `C15orf41`). **Controls behave: *BUB1B*, *CFTR*, *BRCA2*, *DMD*
+and *TP53* are all green.**
+
+> ### These two NHS surfaces align. That is a real answer, and it is a negative.
+
+### 🔴 4b.1 What nearly happened, and why it is the most instructive part of this document
+
+**The first run of this join reported 40.6% of genes not testable and 35.8% of conditions blocked**
+— a dramatic, quotable, entirely publishable-looking claim.
+
+**It was computed on 26% of the data.** The fetcher had aborted at page 85 of 326, written 8,498 of
+32,503 entries, **printed `DONE`, and exited 0.** It was caught only because the API's own declared
+count did not match what was held — **by eye, not by any assertion.**
+
+| | truncated (26%) | complete (92.9%) |
+|---|---|---|
+| genes not diagnostic-grade | **40.6%** | **7.6%** |
+| conditions blocked | **35.8%** | **5.3%** |
+
+**The fetcher now reads the API's declared count as a contract and exits non-zero if short**
+(`pipeline/fetch_panelapp.py`). ⚠️ **The completed fetch is still 92.9% of the declared count** —
+consistent with duplicate delivery under unstable pagination rather than loss, **but that cannot be
+proved, so the figures above carry that caveat.**
+
+> **A partial download that announces success is worse than one that crashes.** The three findings
+> in §1–§3 are trustworthy only to the extent that this failure mode was caught in §4b — and it was
+> caught once, late, by a human noticing.
+
+**[OUR MEASUREMENT — PanelApp API, 30,190 of 32,503 declared gene-panel entries, 414 panels,
+5,937 genes, retrieved 2026-08-29.]**
+
 ## 5. What this is, and what it is not
 
 **It is not a criticism of the HFEA, Orphanet, ClinGen or any charity.** Each is doing a job well
