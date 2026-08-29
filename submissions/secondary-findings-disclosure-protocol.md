@@ -146,10 +146,58 @@ Separately, and on the literature rather than the genome: the same clinical feat
 reported in any published MVA case**, and the more likely explanation remains extreme prematurity.
 That is a published negative and it belongs in the report, not here.
 
-**Tier 2 — NOT SCREENED.** The ACMG secondary-findings gene screen **has not been run.** Per rule
-A.2.6, we state this rather than let its absence read as a clean result. If it is run, its output
-will follow the category-and-count rule, and **the private-channel transmission it describes has
-not been used and would require explicit authorisation before any message is sent.**
+**Tier 2 — SCREENED 2026-08-29. Result below, reported under this document's own rules.**
+
+*(This section previously read "NOT SCREENED", stated so that its absence could not read as a clean
+result. The screen has since been run: `pipeline/acmg_sf_screen.py`.)*
+
+**Method.** All 81 genes of **ACMG SF v3.2** (enumerated from NCBI, 2026-08-29), plus — because the
+proband is a UK child — **the NHS Genomic Medicine Service's own age-stratified "additional
+findings" panels** from Genomics England PanelApp. Classification is **ClinVar's, not ours**: a
+variant counts as reportable only where ClinVar records it Pathogenic or Likely pathogenic at ≥1★.
+We assert no pathogenicity ourselves.
+**[OUR MEASUREMENT — gene list from `ncbi.nlm.nih.gov/clinvar/docs/acmg/` and NHS panels from
+PanelApp, both retrieved 2026-08-29; classifications from ClinVar `variant_summary.txt.gz`
+of the same date. ⚠️ The NCBI page's prose states 73 genes while enumerating 81; the
+enumeration was used and the discrepancy is recorded rather than reconciled away.]**
+
+| screened against | genes | variants meeting reporting criteria |
+|---|---|---|
+| ACMG SF v3.2 — cancer | 28 | **0** |
+| ACMG SF v3.2 — cardiovascular | 39 | **0** |
+| ACMG SF v3.2 — metabolic / other | 14 | **0** |
+| **NHS additional findings — children** | **7** | **0** |
+| NHS additional findings — adult-specific | 6 | **0** |
+| NHS additional findings — full health-related | 14 | **0** |
+
+**10,895 PASS variants fall inside the ACMG SF genes; none meets reporting criteria. There is
+nothing to disclose, and therefore no Tier 2 transmission to request.**
+
+> ### 🔴 This negative is only worth stating because the join was controlled first.
+> A zero from an unverified lookup is indistinguishable from a broken one. **Controls, run before
+> the result was believed:** 1,851 of the proband's chr15 variants match ClinVar records, so the
+> join works; and the proband's **own** truncating allele is **found** in ClinVar while his
+> missense allele is **absent** — exactly as expected, since the latter is novel. A screen that
+> cannot find the variant we already know about would not be evidence of anything.
+
+### 🔑 What the NHS comparison shows, and why it belongs in a protocol document
+
+**The NHS returns seven genes to a child where ACMG recommends eighty-one.** *BRCA1*, *BRCA2* and
+the Lynch-syndrome genes sit on the **adult-specific** panel and would **not** be returned to him
+now — they are held until he can decide for himself.
+
+That is **age-stratified return of results already operating in a national health service**, and it
+is the same principle as Part A's tiering, arrived at independently by people with statutory
+responsibility for it. Our Tier 2 rule says specifics go to the family through their clinicians
+rather than into a public repository; the NHS goes further and withholds adult-onset findings from
+the child entirely until adulthood. **A protocol proposing restraint is on firmer ground when it can
+point at a health service already practising more of it than the protocol demands.**
+
+⚠️ **A null result is not a clean bill of health.** It means no variant in these genes met these
+criteria in this callset — not that none exists. Coverage gaps, structural variants, and variants
+ClinVar has not yet classified are all outside what this screen can see, and roughly 1–3% of
+individuals are expected to carry a reportable secondary finding, so **zero is the ordinary outcome
+rather than a reassuring one.**
 
 **Tier 3 — nothing to report**, consistent with Tier 1 not yet being curated.
 
