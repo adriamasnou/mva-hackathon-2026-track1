@@ -1,4 +1,4 @@
-# MVA Hackathon 2026 — Track 1: BUB1B compound heterozygote
+# MVA Hackathon 2026 — BUB1B compound heterozygote (Tracks 1 and 2)
 
 Analysis code and submission for [Rare Disease, Real Kid: The MVA Hackathon 2026](https://sagebio-rare-disease-real-kid-mva-hackathon-2026.hf.space/) (Track 1, variant prediction), by **adriamasnou**.
 
@@ -8,6 +8,25 @@ Analysis code and submission for [Rare Disease, Real Kid: The MVA Hackathon 2026
 
 - `analysis/bub1b_targeted_analysis.py` — reproduces the finding from the provided VCF in one command: extracts the GRCh38 BUB1B locus, filters heterozygous PASS variants absent from dbSNP, and computes protein consequences locally against the Ensembl canonical CDS.
 - `submissions/` — the ranked predictions CSV and methods report.
+
+### For families and non-specialists
+
+- **[What we found, in plain language](submissions/family-facing-summary.md)** — the findings
+  written for a family rather than a specialist, including four things a family can actually ask
+  their clinical team about, and an explicit account of what we are unsure about.
+
+### Track 2 — beyond this one case
+
+- **[The UK PGT-M register, indexed by gene](submissions/hfea-pgtm-gene-crosswalk.md)** — the
+  UK's register of conditions approved for embryo testing has no gene column, so **1,688 of the
+  1,778 genes behind approved conditions (94.9%) cannot be found by searching for the gene** —
+  cystic fibrosis among them. `hfea-pgtm-gene-crosswalk.csv` and `hfea-pgtm-gene-index.json`
+  supply the missing index for all 2,063 conditions; `pipeline/hfea_crosswalk.py` rebuilds them
+  from public sources in one command.
+- **[Tiered disclosure protocol for secondary findings](submissions/secondary-findings-disclosure-protocol.md)**
+  — a reusable, condition-agnostic governance template (CC BY 4.0) for any challenge that puts one
+  identifiable patient's genome in front of many teams and publishes the results openly, plus an
+  adoption checklist and our own application of it including what we have not done.
 
 ## Reproduce
 
