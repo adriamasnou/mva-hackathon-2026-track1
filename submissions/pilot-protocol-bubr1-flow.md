@@ -14,7 +14,8 @@ cytometry. **But other anti-BubR1 clones are, and we were wrong to say otherwise
 >
 > | catalogue | clone | host / isotype | flow, as listed | vendor flow figure |
 > |---|---|---|---|---|
-> | **NB100-353** · **NBP2-80606** | **8G1** | mouse IgG1κ | **1 µg per 10⁶ cells** · *CyTOF-ready* | ✅ **intracellular stain, HeLa, 4% PFA / 0.1% saponin, 5 µg/mL 30 min RT, vs a matched isotype control**, DyLight 650 direct conjugate |
+> | **MA1-16577** *(Invitrogen/Thermo — a **second, independent supplier of the same clone**)* | **8G1** | mouse IgG1κ | **1 µg per 10⁶ cells** | — WB/ICC figures; positive control **HeLa**; RRID **AB_568472** |
+| **NB100-353** · **NBP2-80606** | **8G1** | mouse IgG1κ | **1 µg per 10⁶ cells** · *CyTOF-ready* | ✅ **intracellular stain, HeLa, 4% PFA / 0.1% saponin, 5 µg/mL 30 min RT, vs a matched isotype control**, DyLight 650 direct conjugate |
 > | **NB100-353AF350** | 8G1 | mouse IgG1κ | listed; dilution to be determined | — **directly conjugated (Alexa Fluor 350)** |
 > | NB100-353CL1 | 8G1 | mouse IgG1κ | listed | — (CoraFluor 1 conjugate) |
 > | **NBP1-47680** · **NBP2-70314** | OTI6E5 | mouse IgG1 | **1:100** · *CyTOF-ready* | ✅ **HEK293T transfected with BubR1 vs empty vector** — a specificity control by overexpression |
@@ -26,12 +27,21 @@ cytometry. **But other anti-BubR1 clones are, and we were wrong to say otherwise
 > abundance by flow is still not established** — a vendor datasheet figure is the manufacturer's
 > own data, not an independent publication, and this protocol does not treat the two as equal.
 > **What does not survive is the word "any vendor".**
-> [Vendor datasheets v.20.1, retrieved 2026-08-30, held at `papers-local/datasheets/`; catalogue
-> numbers above resolve at `novusbio.com/<cat>`.]
+> [Novus datasheets v.20.1, retrieved 2026-08-30, held at `papers-local/datasheets/`; catalogue
+> numbers resolve at `novusbio.com/<cat>`. **Thermo `MA1-16577` and BD `612502` read directly from
+> the vendor product pages on 2026-08-30** — both had returned HTTP 403 to an automated fetch the
+> same day, so this is the check that was recorded as deferred, now done.]
 
 - **Neither originally shortlisted antibody is vendor-validated for flow cytometry.** `A300-386A`
-  is validated for western blot and immunoprecipitation only; `BD 612502` for WB, IF, ELISA, ICC
-  and IP.
+  is validated for western blot and immunoprecipitation only. **`BD 612502` is listed by BD for
+  *"Western blot (Routinely Tested), Immunofluorescence (Tested During Development)"* — and
+  nothing else.**
+  🔻 **CORRECTED 2026-08-30.** This line used to say 612502 was validated *"for WB, IF, ELISA, ICC
+  and IP"* — **five applications where BD lists two**, one of which BD qualifies as only *tested
+  during development*. We overstated a reagent's validation, in the document whose entire subject
+  is that validation matters. **[VERIFIED — BD Biosciences product page for 612502, read
+  2026-08-30: clone 9/BUBR1, mouse **IgG2a**, immunogen human BUBR1 aa 276–388, 250 µg/mL,
+  RRID **AB_2066085**, RUO.]**
 - **No *published* precedent for the readout.** Of 39 papers citing `A300-386A`, six also mention
   flow — and in every case the antibody sits in a *western-blot* list while the flow is doing
   something unrelated. Co-occurrence, not usage. **This still holds**, and it is about

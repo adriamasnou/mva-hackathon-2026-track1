@@ -307,7 +307,15 @@ vendors and the literature, and **the answer changes which antibody this protoco
 > **[OUR MEASUREMENT — Europe PMC full-text search, each hit's full text retrieved and the usage
 > context read. A hit count is not a usage count.]**
 
-**★ RECOMMENDATION CHANGED: use BD 612502 (clone 9), not A300-386A.** Neither is flow-validated, so
+**★ RECOMMENDATION CHANGED AGAIN, 2026-08-30: use clone 8G1 or 7H4, not BD 612502 and not
+A300-386A.** BD's own product page lists 612502 for *"Western blot (Routinely Tested),
+Immunofluorescence (Tested During Development)"* **only** — this document previously credited it
+with WB, IF, ELISA, ICC and IP, which overstated it. Meanwhile **8G1 and 7H4 ARE vendor-listed for
+flow at 1 µg/10⁶ cells**, with intracellular-stain figures on HeLa; see
+`pilot-protocol-bubr1-flow.md` §1. The reasoning below is kept because it is still the right
+reasoning — it was simply applied to too small a candidate set.
+
+**★ SUPERSEDED RECOMMENDATION (2026-08-29): use BD 612502 (clone 9), not A300-386A.** Neither is flow-validated, so
 the pilot is mandatory either way — but clone 9 is the better bet on every axis that matters here:
 
 1. **Monoclonal** — removes the lot-to-lot variability that makes a polyclonal a poor reagent for a
