@@ -37,10 +37,22 @@ appear in rare-disease repurposing lists.
 
 ## 3. 🔻 What we are NOT claiming, because we measured it
 
-**This is not novel to us.** Re-measured at the 50-archived-owner denominator:
-**`arimoclomol` appears in 6 of 50 competitor repositories**, and at least one team ranks it **#1**,
+**This is not novel to us.** Re-measured 2026-08-30 against the live archive:
+**`arimoclomol` appears in 7 of 57 archived competitor repositories, held by 6 of 52 distinct
+owners**, and at least one team ranks it **#1**,
 justified as *"mechanism matched exactly to the temperature-rescuable folding defect"*. One entire
 competing submission is built on the same abundance-rescue question.
+
+> 🔴 **DENOMINATOR CORRECTED 2026-08-30, AND SO WAS ITS UNIT.** This paragraph read *"the
+> 50-archived-owner denominator: `arimoclomol` appears in **6 of 50 competitor repositories**"* —
+> which names an **owner** denominator and then applies it to **repositories** in the same breath.
+> They are different populations: the archive holds **52 owners across 57 repositories**, because
+> some owners have more than one. Re-measured with a positive control run first
+> (`grep -rli BUB1B archive/competitors/` → 713 files, so a zero would have been real):
+> **7 repositories, 6 owners.** The conclusion is unchanged and slightly stronger against us —
+> which is why it is stated in both units rather than whichever is smaller.
+> [OUR MEASUREMENT — `grep -rli arimoclomol archive/competitors/`, deduplicated to repository and
+> to owner, 2026-08-30.]
 
 **[OUR MEASUREMENT — grep over `archive/competitors/`, every hit read by hand, 2026-08-29.
 An observation about competitors' documents, never evidence about the biology.]**
