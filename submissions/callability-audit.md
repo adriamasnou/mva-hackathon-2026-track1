@@ -94,6 +94,16 @@ splice-altering), this is the third independent way the finding could have faile
 4. **Autosomal statistics exclude chrX and chrY**, whose copy number differs in this male sample and
    which are treated separately in the mosaicism analysis.
 
+## 6a. ✅ Independently re-derived, 2026-08-31
+
+**This document had never been claim-audited.** Every number in it was recomputed from
+`data/derived/scans/depth{,Q60}.regions.bed.gz` on 2026-08-31, and **all of them reproduce
+exactly**: 5,531 autosomal bins · p1 **0.004** · p5 **0.603** · median **0.983** · p95 **0.994** ·
+DARK <0.50 **238 (4.3%)** · VERY DARK <0.25 **157 (2.8%)** · chr21 **16.0% / 0.985**, chr9
+**12.5% / 0.981**, chr22 **11.7% / 0.980**, chr16 **11.4% / 0.983**, chr6 and chr19 **0.9%** ·
+***BUB1B* bin 0.990**. The "18-fold" chr21-vs-chr19 ratio is 17.8. **No defect found.**
+[OUR MEASUREMENT — re-derivation 2026-08-31, independent of the original run.]
+
 ## 7. Reproduce
 
 ```bash

@@ -51,6 +51,23 @@ embryonic lethal — **Baker DJ *et al.*, *Nat Genet* 2004, PMID 15208629**).
 - **Read support is robust for both calls, and now orthogonally confirmed.** The provided VCF gives `AD` (ref,alt) of **21,25** at chr15:40,209,701 and **15,13** at chr15:40,220,612. Re-calling independently from our own four-lane alignment reproduces this: pileup ref/alt of **21/26** (alt fraction 0.553) and **15/12** (0.444), with both positions re-called by `bcftools mpileup`/`call` without reference to the provided callset. Reference counts agree exactly; the one-read differences on the alt side are the `-Q 20` base-quality filter. Both sites are therefore clean germline heterozygotes with **no indication of low-VAF mosaicism**, established from reads rather than from the delivered VCF alone. Mosaicism elsewhere in the genome was not assessed.
 - No FASTQ realignment or SV/CNV calling was performed for this submission; the provided GATK VCF was taken as-is. Rows 2 and 3 of the CSV hedge against a mis-assigned second allele.
 
+## ✅ Data claims independently re-derived, 2026-08-31
+
+**This report had never been claim-audited.** Every count in it was recomputed from the provided
+VCF on 2026-08-31 and **all reproduce exactly**: **14 variants** in `15:40,160,984–40,221,137`, of
+which **8 heterozygous**; **3** heterozygous PASS variants without a dbSNP ID, at exactly
+**40,209,701 · 40,216,470 · 40,220,612**; **`AD` 21,25** and **15,13** at the two reported alleles.
+The phasing arithmetic also checks: the marker gaps are **6,769 bp** and **4,142 bp**, so against a
+longest observed fragment of 1,272 bp the easier hop is **3.26×** and the harder **5.32×**.
+*(The fragment statistics themselves — 22,623 properly-paired reads, mean TLEN 458 bp, longest
+1,272 bp — could not be re-derived on 2026-08-31 because the merged alignment is no longer on this
+disk; they remain as originally measured and are consistent with `F-001`'s independent 455.7 ±
+181.6 bp.)*
+**One defect was found in this audit — the "Sieben 2020" mouse-null attribution, corrected in the
+Approach section above.** Hanks 2004 (PMID 15475955) and Yost 2017 (PMID 28553959) both verified
+correct.
+[OUR MEASUREMENT — re-derivation from `WGS_EX2312012_HGWCNDSX7.vcf.gz`, 2026-08-31.]
+
 ## Reproducibility
 
 `analysis/bub1b_targeted_analysis.py` (Python 3 stdlib; optional `truststore`) reproduces steps 2–4 from the provided VCF in one command. See repository README.

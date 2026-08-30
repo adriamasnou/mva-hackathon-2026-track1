@@ -92,6 +92,19 @@ The second variant overlaps *PAK6*, which shares this locus with *BUB1B*; it is 
 - ❌ **This says nothing about the variants' protein-level consequences**, which are argued
   elsewhere from other evidence.
 
+## 5a. ✅ Independently re-run, 2026-08-31
+
+**This document had never been claim-audited.** The result table was **re-run from scratch** on
+2026-08-31 — `python3 pipeline/spliceai_run.py` against a freshly written two-variant VCF — and
+**every value reproduces exactly**: L737\* *BUB1B* `0.03 / 0.00 / 0.00 / 0.01`, max **0.03**;
+N1002K *BUB1B* `0.02 / 0.00 / 0.00 / 0.00`, max **0.02**; N1002K *PAK6* `0.02 / 0.00 / 0.01 /
+0.00`, max **0.02**. The three cutoffs (0.2 / 0.5 / 0.8) are printed by the tool itself, not
+asserted by this document. **No defect found.**
+
+*The byte-encoding arithmetic in §3 also checks out: `A`=65, 65 mod 5 = **0** (read as `N`);
+`G`=71, 71 mod 5 = **1** (read as `A`) — exactly the corruption described.* And 20/63 = **31.7%**,
+consistent with the "32%" in §2.
+
 ## 6. Reproduce
 
 ```bash
