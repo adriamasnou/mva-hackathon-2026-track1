@@ -29,7 +29,21 @@ Ranked candidate 1 is a **BUB1B compound heterozygote**:
 4. **Local consequence calling.** Exon structure and CDS sequence for ENST00000287598 were fetched from Ensembl REST (public gene data only — no proband variant left the analysis machine); codon changes were computed locally: p.Leu737* and p.Asn1002Lys. The reference base at each position was asserted against the Ensembl CDS.
 5. **Corroboration.** ClinVar: c.2210T>G (p.Leu737*) is Pathogenic/Likely pathogenic for MVA1; at chr15:40220612, c.3006T>A (same p.Asn1002Lys) is a reported VUS and c.3006T>C (p.Asn1002=) likely benign. Ensembl also lists pathogenic frameshift alleles at bases adjacent to 40209701, consistent with truncation intolerance in exon 17.
 
-The genotype matches the canonical biallelic BUB1B MVA architecture (one truncating allele + one hypomorphic kinase-domain allele), with the missense allele plausibly preserving partial BubR1 function (complete loss of BUB1B is presumed lethal: Hanks 2004, PMID 15475955; murine BubR1 nulls are embryonic lethal, Sieben 2020).
+The genotype matches the canonical biallelic BUB1B MVA architecture (one truncating allele + one hypomorphic kinase-domain allele), with the missense allele plausibly preserving partial BubR1 function (complete loss of BUB1B is presumed lethal: Hanks 2004, PMID 15475955; murine BubR1 nulls are
+embryonic lethal — **Baker DJ *et al.*, *Nat Genet* 2004, PMID 15208629**).
+
+> 🔻 **CITATION CORRECTED 2026-08-31 — FIRST CLAIM AUDIT OF THIS FILE.** The mouse-null statement
+> was attributed to a **bare "Sieben 2020" with no identifier**, which is the one citation form
+> this project's PMID-based citation gate cannot see — which is why it survived every audit by
+> being unparseable rather than by being right. **Checking the held full text of Sieben 2020
+> (PMID 31738183), it does not support the claim:** it reports **early *postnatal* lethality** at
+> >90% BubR1 reduction, and **embryonic lethality for one specific compound genotype
+> (`BubR1^X753/L1002P`)** — not for the null. The mouse allelic series establishing that
+> `BubR1^−/−` and `BubR1^H/−` are lethal while `BubR1^H/H` (~10% of wild-type) is viable is
+> **Baker 2004**, which this project holds and already cites correctly in its private notes.
+> **The claim is true and was cited to the wrong paper.** *(This file is the already-submitted
+> Track 1 report; the correction is recorded here rather than concealed, and the submitted text is
+> not retro-edited — see the note at approach step 1 for the same convention.)*
 
 ## Limitations
 
