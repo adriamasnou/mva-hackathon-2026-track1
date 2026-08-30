@@ -111,10 +111,22 @@ backwards, and we got it backwards ourselves before computing it:
 > absent pathogenic ones.** Under Brnich's perfect-classifier model, `OddsPath = n_benign` exactly —
 > the pathogenic count cancels. Verified across all 39 modelled rows of Brnich's own published
 > Additional file 1 (PMID 31892348, `13073_2019_690_MOESM1_ESM.xlsx`), and stated in prose as the
-> central finding of Lin et al. (PMID 40925377).
+> central finding of Rowlands et al. (PMID 40925377).
+
+> 🔴 **AUTHOR NAME CORRECTED 2026-08-30.** Every reference to PMID 40925377 in this report
+> previously read **"Lin"**. The paper is **Rowlands CF et al.**, *"Availability of benign missense
+> variant 'truthsets' for validation of variant effect maps"*, CanVIG-UK, *Am J Hum Genet*
+> 2025;112(10):2281–2294. **There is no author named Lin on it** — our own held full text names
+> Charlie F Rowlands and contains "Lin" zero times. **No number in this report moves**: the
+> thesis, the threshold of 19, the 19.8% and 36.2% figures and every count were always taken from
+> the paper itself, never from the byline. Three working files still carry the wrong surname in
+> their **filenames** (`lin2025_ajhg_benign_truthsets.txt`, `pipeline/lin_table3_parse.py`,
+> `pipeline/lin_panel_compare.py`); they are named here deliberately and left unrenamed, because a
+> filename is referenced from several places and a silent rename is how a citation error becomes
+> untraceable. **Their contents are corrected.**
 
 ⚠️ **This is not our insight and we do not claim it.** It is the headline thesis of
-**Lin et al., *Am J Hum Genet* 2025 (PMID 40925377)**: *"benign truthset size is the primary driver
+**Rowlands et al., *Am J Hum Genet* 2025 (PMID 40925377)**: *"benign truthset size is the primary driver
 of applicable functional evidence toward pathogenicity (PS3)."* That paper also fixes the integer —
 *"the minimum number of benign truthset variants permitting application of PS3 at 'strong' is
 **19**"* — and reports that only **19.8% (23/116)** of established cancer-susceptibility genes can
@@ -122,24 +134,24 @@ reach "strong" from ClinVar ≥2★ classifications alone. ***BUB1B* is one of t
 Table 3.**
 
 **What this project contributes here is the application, not the principle:** that for *BUB1B*
-specifically the binding constraint is the benign arm, and that Lin's systematic construction
+specifically the binding constraint is the benign arm, and that Rowlands' systematic construction
 framework — assigning benignity across all possible missense variants using population frequency,
 in silico codes and case-control signal — is therefore the operation that would unlock a calibrated
 assay for this gene.
 
 ### 2.2 🔑 The benign truthset for *BUB1B*, measured — and the one scoping decision that sets the answer
 
-Lin's Table 3 records *BUB1B* benign/likely-benign missense at **19 (≥1★)** and **8 (≥2★)**. Our
-counts are larger. **Rather than declare that unreconciled, we reconciled it** by replicating Lin's
+Rowlands' Table 3 records *BUB1B* benign/likely-benign missense at **19 (≥1★)** and **8 (≥2★)**. Our
+counts are larger. **Rather than declare that unreconciled, we reconciled it** by replicating Rowlands'
 method on the ClinVar bulk file at two timepoints, including an archived release:
 
 | source | exact 1★ | **≥2★** | ≥1★ total |
 |---|---|---|---|
-| Lin 2025 Table 3 (extraction predates 2025-01) | 11 | **8** | 19 |
+| Rowlands 2025 Table 3 (extraction predates 2025-01) | 11 | **8** | 19 |
 | ClinVar 2025-01 (archived release) | 20 | **8** | 28 |
 | ClinVar 2026-08 (current) | 27 | **8** | **35** |
 
-✅ **The ≥2★ tier is 8 at all three timepoints — an exact match to Lin.** The entire difference is
+✅ **The ≥2★ tier is 8 at all three timepoints — an exact match to Rowlands.** The entire difference is
 **accretion confined to the single-submitter (1★) tier**. Over the same 19 months the gene grew from
 1,818 to 2,477 unique variants. **The discrepancy is explained, not waved away.**
 
@@ -147,7 +159,7 @@ method on the ClinVar bulk file at two timepoints, including an archived release
 
 | truthset scope | benign ≥1★ | OddsPath ceiling | attainable strength |
 |---|---|---|---|
-| **gene-wide** | **35** | 35 | 🟢 **`PS3` (strong)** — clears Lin's threshold of 19 |
+| **gene-wide** | **35** | 35 | 🟢 **`PS3` (strong)** — clears Rowlands' threshold of 19 |
 | **pseudokinase domain only (aa 721–1,044)** | **10** | 10 | 🟡 **`PS3_moderate`** |
 
 > **Whether a *BUB1B* functional assay can deliver *strong* or only *moderate* evidence turns
@@ -163,26 +175,26 @@ Both numbers are reported so the choice is visible rather than buried.
 
 ### 2.3 🔑 Generalised to 116 cancer-susceptibility genes: the ceiling has not moved in 19 months
 
-The *BUB1B* result above is not a special case, and we tested that rather than asserting it. Lin's
+The *BUB1B* result above is not a special case, and we tested that rather than asserting it. Rowlands'
 Table 3 covers **116 inherited cancer-susceptibility genes**; we re-counted all of them against the
 ClinVar bulk release at two later timepoints (`F-028`).
 
 **Five rows of that baseline are under-reported, and we establish it rather than assume it.**
-`CDKN1C`, `GATA2`, `GREM1`, `NTHL1` and `RUNX1` read `0 0 0 0` in Table 3 of **Lin et al.,
+`CDKN1C`, `GATA2`, `GREM1`, `NTHL1` and `RUNX1` read `0 0 0 0` in Table 3 of **Rowlands et al.,
 PMID 40925377**, checked here against the ClinVar public bulk releases of 2025-01 and 2026-08
 **[OUR MEASUREMENT]**. That the
 zeros are in the source data — not in our reading of it — follows from arithmetic: our parse, with
-the zeros in place, reproduces Lin's **own published** 36.2% and 19.8% **exactly**; had we mis-read
+the zeros in place, reproduces Rowlands' **own published** 36.2% and 19.8% **exactly**; had we mis-read
 those rows our totals would have come out *lower*. And that the zeros are incorrect follows from the
 archived ClinVar release of 2025-01, which predates any accretion window: **`RUNX1` holds 31 benign
 and 31 pathogenic missense classifications there, and has its own ClinGen Myeloid Malignancy VCEP.**
 
 **Both halves of that matter, and the second is reassuring:** correcting all five moves the headline
-from **19.8% → 20.7%** and **36.2% → 37.1%** — **one gene of 116 changes tier. Lin's conclusion
+from **19.8% → 20.7%** and **36.2% → 37.1%** — **one gene of 116 changes tier. Rowlands' conclusion
 stands.** We therefore **correct rather than drop**, keeping n = 116, and substitute the 2025-01
 values — a deliberately conservative choice that *raises* the baseline and so *understates* later
 growth. The drop variant (n = 111) is reported as a sensitivity check and agrees.
-**[OUR MEASUREMENT — Lin Table 3 (PMID 40925377) as parsed, against ClinVar public bulk releases
+**[OUR MEASUREMENT — Rowlands Table 3 (PMID 40925377) as parsed, against ClinVar public bulk releases
 2025-01 and 2026-08. We do claim the five rows under-report ClinVar; we do NOT claim to know why,
 as their extraction pipeline is not visible to us.]**
 
@@ -190,7 +202,7 @@ as their extraction pipeline is not visible to us.]**
 
 | timepoint | **≥2★ truthset** | **≥1★ truthset** |
 |---|---|---|
-| Lin 2025 baseline (corrected) | **24/116 = 20.7%** | 43/116 = 37.1% |
+| Rowlands 2025 baseline (corrected) | **24/116 = 20.7%** | 43/116 = 37.1% |
 | ClinVar 2025-01 | **24/116 = 20.7%** | 45/116 = 38.8% |
 | ClinVar 2026-08 | **24/116 = 20.7%** | **63/116 = 54.3%** |
 
@@ -210,7 +222,7 @@ it usable as a worked example rather than a special pleading.
 
 **[OUR MEASUREMENT — `pipeline/lin_table3_parse.py` → `clinvar_gene_panel.py` → `lin_panel_compare.py`;
 public gene-level ClinVar only, no patient data. Two validations were run before any result was
-read: the Table-3 parse reproduces Lin's published 36.2% and 19.8% exactly, and the panel counter
+read: the Table-3 parse reproduces Rowlands' published 36.2% and 19.8% exactly, and the panel counter
 reproduces our independent single-gene *BUB1B* run exactly on all four values. Limits in `F-028` §5 —
 notably that the domain-scoping arm remains n = 1 and every figure is a perfect-classifier ceiling.]**
 
