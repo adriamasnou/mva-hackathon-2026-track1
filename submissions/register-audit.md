@@ -93,30 +93,43 @@ Measured across the whole register, from ClinVar's own review-status field
 | genes behind UK-approved PGT-M conditions | 1,778 |
 | **…with ≥1 expert-panel-reviewed variant** | **141 (7.9%)** |
 | **…with ZERO expert-panel-reviewed variants** | **1,637 (92.1%)** |
-| **approved conditions where no causative gene has any expert curation** | **1,851 of the 2,026 gene-mappable conditions (91.4%)** — **1,851 of all 2,063 approved (89.7%)** |
+| **approved conditions where no causative gene has any expert curation** | **1,850 of the 2,028 gene-mappable conditions (91.2%)** — **1,850 of all 2,063 approved (89.7%)** |
 
-> ⚠️ **DENOMINATOR DRIFT, FLAGGED NOT PATCHED — 2026-08-31.** Two bugs were fixed in
-> `pipeline/hfea_crosswalk.py` today (a ClinVar `RelatedGenes` field never read, and a null `-`
-> ingested as a gene — see `hfea-pgtm-gene-crosswalk.md` §6 item 5). **The shipped CSV now maps
-> 2,028 conditions to at least one gene, against the 2,026 this row uses.** The **2,063** total and
-> the **89.7%** figure are unaffected. **I have deliberately NOT adjusted 1,851 or 91.4%**: the
-> numerator comes from a ClinVar expert-curation panel run that has not been re-executed, and
-> recomputing a rate by moving only its denominator would manufacture a number neither run
-> produced. **To close this properly, re-run the panel against the corrected crosswalk and restate
-> both figures together.** The direction is knowable in advance — two more mappable conditions can
-> only *lower* the percentage — so 91.4% is a ceiling, not a floor.
+> ✅ **RE-DERIVED 2026-08-31 — and the headline is confirmed exactly.** Earlier today I flagged a
+> denominator drift here and declined to patch it, because the numerator came from a panel run I
+> had not executed. **A search then found that `1,851` appeared in this document and NOWHERE ELSE
+> in the repository — no committed tool produced it**, and this file's own Reproduce block names
+> only `hfea_crosswalk.py`, which computes nothing about expert curation. That is the same class of
+> defect as a frozen input with no builder. **It now has one: `pipeline/register_expert_curation.py`.**
+>
+> | | published | re-derived 2026-08-31 |
+> |---|---|---|
+> | approved conditions | 2,063 | **2,063** ✅ |
+> | gene-mappable | 2,026 | **2,028** |
+> | no expert-curated variant in any causative gene | 1,851 | **1,850** |
+> | as a share of the gene-mappable set | 91.4% | **91.2%** |
+> | **as a share of all approved — the floor** | **89.7%** | **89.7%** ✅ |
+>
+> **The pull-quote figure is unchanged.** The two small moves are fully explained by the two
+> crosswalk bugs fixed the same day: Leigh Syndrome gained 24 genes and became mappable, and the
+> null `-` gene left Prader-Willi — so `+2` mappable, and `−1` uncurated because at least one newly
+> mappable condition turns out to have an expert-curated gene. **Method, stated so it can be
+> disagreed with:** a gene counts as expert-curated if ClinVar's bulk `variant_summary.txt.gz`
+> holds ≥1 variant in it at `reviewed by expert panel` or `practice guideline` — **220 genes
+> genome-wide**; a condition is uncurated if it maps to ≥1 gene and **none** of them qualifies.
+> **[OUR MEASUREMENT — `python3 pipeline/register_expert_curation.py`, 2026-08-31.]**
 
-> **The UK approves embryo selection against 2,063 conditions. For 1,851 of them — 89.7% — no
+> **The UK approves embryo selection against 2,063 conditions. For 1,850 of them — 89.7% — no
 > expert panel has ever classified a single variant in any causative gene.**
 
 🔻 **CORRECTED 2026-08-30 — the numerator and the denominator were from different populations.**
-This pull-quote used to read *"For 91.4% of them"*. **91.4% is 1,851 / 2,026** — a rate over the
+This pull-quote used to read *"For 91.4% of them"*. **91.4% was 1,851 / 2,026** (now 91.2% = 1,850 / 2,028) — a rate over the
 conditions that could be mapped to a causative gene **at all** — while the sentence applies it to
 the **2,063** approved conditions it names in its own first clause. Over 2,063 the figure is
 **89.7%**. The ~37 unmapped conditions cannot be assessed for expert curation either way, so
 **89.7% is a floor**: the true share is somewhere between 89.7% and 91.4% depending on how the
 unmapped tail resolves, and the floor is the honest number to lead with. The table above keeps
-1,851/2,026 = 91.4% and now says which population it is over. [OUR MEASUREMENT — arithmetic,
+the gene-mappable rate and now says which population it is over. [OUR MEASUREMENT — arithmetic,
 2026-08-30: 1851/2063 = 89.7%, 1851/2026 = 91.4%.]
 
 ***BUB1B* holds 2,472 ClinVar variants and 0 expert-panel classifications.** That is not an
@@ -171,7 +184,7 @@ panels the NHS Genomic Medicine Service actually uses:
 |---|---|
 | genes behind approved conditions that are **diagnostic-grade ("green") on an NHS panel** | **1,643 / 1,778 = 92.4%** |
 | not diagnostic-grade anywhere | 135 (7.6%) |
-| **approved conditions where no causative gene is diagnostic-grade** | **108 of 2,026 = 5.3%** |
+| **approved conditions where no causative gene is diagnostic-grade** | **108 of 2,026 = 5.3%** ⚠️ *not re-derived 2026-08-31 — this row uses a different, stricter criterion than the expert-curation row above and has no committed generator either. Its denominator is now 2,028. Treat 5.3% as approximate until it is rebuilt the same way.* |
 
 **And most of the residual is gene-symbol drift, not a coverage gap** — `TAFAZZIN` (was `TAZ`),
 `H3-3A` (was `H3F3A`), `CDIN1` (was `C15orf41`). **Controls behave: *BUB1B*, *CFTR*, *BRCA2*, *DMD*
@@ -236,7 +249,8 @@ outcome is that the register grows a gene column and makes it obsolete.
 ## Reproduce
 
 ```bash
-python3 pipeline/hfea_crosswalk.py --refresh     # §1, and the index that everything else joins to
+python3 pipeline/hfea_crosswalk.py --refresh          # §1, and the index that everything else joins to
+python3 pipeline/register_expert_curation.py         # §3 — the expert-curation headline
 ```
 
 Sources: HFEA approved-conditions workbook · Orphanet `en_product1.xml` (CC BY 4.0) · ClinVar
