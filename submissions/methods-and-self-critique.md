@@ -32,8 +32,11 @@ rank.** The defensible claim is that a phenotype-blind recessive model puts *BUB
 ~20% of 230 candidates with no prior knowledge of MVA. **[OUR MEASUREMENT]**, re-derived
 2026-08-30 by `python3 pipeline/vep_concordance.py`, which also reproduces the 55/230 above from
 the pre-registered rule. Re-annotating the same callset with **Ensembl VEP** moves *BUB1B* to
-**rank 42 of 187** with its own allele counts unchanged — see
-[`annotation-toolchain-vep.md`](annotation-toolchain-vep.md) §6d.
+**rank 42 of 184** with its own allele counts unchanged — see
+[`annotation-toolchain-vep.md`](annotation-toolchain-vep.md) §6d, which reports **four** rules
+side by side — including the post-hoc arm that counts splice consequences as damaging, and which
+moves *BUB1B* the other way, to rank 59 of 239. *BUB1B*'s own allele counts are identical under
+all four.
 
 **The good half.** The scan recovered the architecture exactly, with no prior:
 

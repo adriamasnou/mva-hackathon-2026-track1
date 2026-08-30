@@ -186,44 +186,64 @@ below *BUB1B*, because the first sort key is truncating-allele count and the sec
 damaging count, on which they score 1/1 against *BUB1B*'s 1/2. **[OUR MEASUREMENT]**, 2026-08-30.
 
 **A frame-shifting 200 bp insertion called synonymous is worth saying out loud**, whatever the
-splice-junction context. If this scan were re-run rather than reported, splice consequences would
-be in the damaging set from the start — but that is a change to a pre-registered rule, and the
-place to make it is the next pre-registration, not this one.
+splice-junction context. And rather than leave it there, §6d runs the scan **with splice counted
+as damaging** — rule B — so the excluded class is measured rather than merely disclosed. It costs
+us four rank places, and it is reported anyway.
 
-### 6d. Does the annotator change the answer? — a sensitivity analysis
+### 6d. Does the answer depend on the two choices we made before running? — four rules, side by side
 
-The pre-registration forbids post-hoc changes, so this is **not** a re-ranking. The pre-registered
-result stands as published. This asks a different question: *if a reviewer re-ran our own rule with
-the field-standard annotator, what would they get?*
+Two choices were fixed before the scan ran: **which annotator**, and **whether splice consequences
+count as damaging**. The pre-registration excluded splice deliberately, and §6c showed that
+exclusion has a cost. So we measured both choices instead of arguing about them —
+`python3 pipeline/scan_sensitivity.py`.
 
-**[OUR MEASUREMENT]** — both rows recomputed this session from the pre-registered rule in `pipeline/recessive_scan_PREREGISTERED.md`; the first row reproduces the published 55/230 exactly, which is itself a check on the published number.
+**Rebuilt from the callset, not from the scan's own output.** The scan's variant table holds only
+what it already called damaging, so any re-ranking built on it can drop a gene but never add one —
+one-sided in exactly the direction that matters here. This rebuild reads all **313,417** variants
+with their genotypes and both annotators' calls. **Rule A reproduces the published 230 genes and
+*BUB1B* rank 55 exactly**, which is the acid test that the rebuild is faithful; the tool refuses to
+report the other three arms if it fails. *(An earlier draft of this document said "187 genes" for
+rule C. That figure came from the one-sided route and is superseded by the 184 below.)*
 
-| | qualifying genes | *BUB1B* | truncating / damaging alleles |
-|---|---|---|---|
-| `bcftools csq` — **as pre-registered** | 230 | **rank 55** | 1 / 2 |
-| VEP canonical — sensitivity | 187 | **rank 42** | 1 / 2 |
-| *provenance* | **[OUR MEASUREMENT]** | recomputed 2026-08-30 | from `recessive_scan_PREREGISTERED.md` |
+| rule | annotator | splice damaging? | qualifying genes | *BUB1B* | its own alleles |
+|---|---|---|---|---|---|
+| **A** | `bcftools csq` | no — **AS PRE-REGISTERED** | **230** | **rank 55** | 1 truncating / 2 damaging |
+| B | `bcftools csq` | **yes** (post-hoc) | 239 | rank **59** | 1 / 2 |
+| C | VEP canonical | no (post-hoc) | 184 | rank **42** | 1 / 2 |
+| D | VEP canonical | **yes** (post-hoc) | 191 | rank **43** | 1 / 2 |
+| *provenance* | **[OUR MEASUREMENT]** | 2026-08-30 | `pipeline/scan_sensitivity.py` | acid test passed | |
 
-Two things to notice, and the second one matters more than the first.
+🔴 **A is the result. B, C and D are declared post-hoc arms and must never be quoted as if they
+were the pre-registered finding.** A post-hoc rule change that improves your own candidate is the
+most suspect move available in this kind of analysis, which is why all four are printed together —
+including when they help.
 
-**[OUR MEASUREMENT]. First: the conclusion is robust, and the standard toolchain moves it in our favour.** *BUB1B*
-improves from 55/230 to 42/187. Its **own** numbers are byte-identical under both annotators —
-one truncating allele, two damaging alleles, both heterozygous. The improvement comes entirely
-from 43 *other* genes dropping out because their damaging calls were non-canonical. We did not
-gain a candidate; the field around it thinned.
+**Three things this settles.**
 
-**[OUR MEASUREMENT]. Second, and we would rather say it than have it found: `rank 55` is not a measurement.**
-Nine genes are tied with *BUB1B* on both severity keys, occupying ranks **53–61**. Within that
-block, **seven genes — VPS41, IGHV8-51-1, *BUB1B*, TUBB8B, PSG1, LILRB4, LBP — are tied on all
-three pre-registered sort keys**, every one of them at mean GQ 99.0. *BUB1B*'s position among
-those seven is decided by **nothing the pre-registration specifies.** Under VEP the same thing
-happens one block higher: rank 42, six genes tied on all three keys.
+**[OUR MEASUREMENT]. First, the rule change we were tempted to make would have made us look
+WORSE, not better.** Counting splice as damaging moves *BUB1B* from 55/230 to **59/239** under the
+pre-registered annotator, and from 42/184 to 43/191 under VEP. The pre-registered exclusion was
+not a choice that flattered our own candidate — and now we can say that with a number instead of
+an assurance. **Rule B is the honest home for the FOXO6 and WWC3 misses in §6c**: including them
+costs us four places, and we are reporting it anyway.
+
+**[OUR MEASUREMENT]. Second, *BUB1B*'s own evidence is invariant.** One truncating allele, two
+damaging alleles, both heterozygous — **identical under all four rules**. Every movement in the
+table is other genes entering or leaving the list around it. We did not gain a candidate under any
+arm; the field around it thinned or thickened.
+
+**[OUR MEASUREMENT]. Third, and we would rather say it than have it found: `rank 55` is not a
+measurement.** Nine genes are tied with *BUB1B* on both severity keys, at ranks **53–61**. Within
+that block, **seven — VPS41, IGHV8-51-1, *BUB1B*, TUBB8B, PSG1, LILRB4, LBP — are tied on all
+three pre-registered sort keys**, every one at mean GQ 99.0. *BUB1B*'s position among those seven
+is decided by **nothing the pre-registration specifies**, and the same is true in every other arm
+(9 tied under B, 6 under C and D).
 
 **The honest unit is the tie block, not the rank.** The scan's real claim is *"an unbiased,
-phenotype-blind recessive model puts BUB1B in the top ~20% of 230 candidate genes with no prior
-knowledge of MVA"* — which is true under both annotators — and **not** *"BUB1B ranked 55th"*,
-which implies a precision the sort keys do not carry. `methods-and-self-critique.md` has been
-corrected to say so.
+phenotype-blind recessive model puts BUB1B in the top ~20–25% of candidate genes with no prior
+knowledge of MVA"* — true under **all four rules** — and **not** *"BUB1B ranked 55th"*, which
+implies a precision the sort keys do not carry. `methods-and-self-critique.md` has been corrected
+to say so.
 
 ---
 
