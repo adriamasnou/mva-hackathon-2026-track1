@@ -1,8 +1,22 @@
 # Pilot: can BubR1 abundance be measured by intracellular flow cytometry?
 
-**The gate that comes before the screen. No anti-BUBR1 antibody is validated for this application
-by any vendor, and no published precedent exists — so this is not a formality, and it has a
-pre-declared failure condition with an action attached.**
+**The gate that comes before the screen. Neither antibody this protocol shortlists is
+vendor-validated for flow cytometry, and we found no published precedent for either — so this is
+not a formality, and it has a pre-declared failure condition with an action attached.**
+
+> 🔻 **SCOPE CORRECTED 2026-08-30.** This sentence read *"**No** anti-BUBR1 antibody is validated
+> for this application **by any vendor**"*. **§1 below checks exactly two products** —
+> `A300-386A` and `BD 612502` — and a two-catalogue check cannot license a market-wide negative.
+> No vendor list, no search query and no date were ever recorded for the wider claim.
+> **[UNVERIFIED — whether some other supplier flow-validates an anti-BubR1 clone is an open
+> question, not a settled absence.]** It matters in the protocol's own favour: if a flow-validated
+> clone exists, §5.1's titration gets easier and the pre-declared failure condition may never
+> fire. **Next action, and it is cheap:** query the vendor catalogues (Thermo/Invitrogen, Novus,
+> Boster, Abcam, Santa Cruz, BioLegend, Cell Signaling) for `BUB1B`/`BubR1` filtered to *Flow
+> Cytometry*, record the query and the date, and replace this box with the result. *(Attempted
+> 2026-08-30 by direct fetch; thermofisher.com returned **HTTP 403** to an automated request, so
+> the check is deferred rather than done — recorded here so that "we tried" is not mistaken for
+> "we found nothing".)*
 
 *Rare Disease, Real Kid: The MVA Hackathon 2026 · adriamasnou · 2026-08-29 · CC BY 4.0*
 
@@ -33,12 +47,30 @@ weakness against the companion stability protocol. **This pilot has one.**
 is not measuring BubR1 specifically. If they read at 3%, something else is wrong. **The pilot has a
 number to hit, not merely a signal to observe.**
 
-⚠️ **Three honest limits on the anchor.** Matsuura's figures are **% of HeLa**; **those patients are
-not this repository's donor**; and — checked directly — **the patient material was lymphocytes and
-fibroblasts, not EBV-transformed lymphoblastoid lines.** EBV transformation changes proliferation
-rate and therefore the cell-cycle distribution, which §5.13 shows is coupled to BubR1 abundance.
-**Treat 22–29% as an expected range and direction, not a target to be matched to the digit** — which
-is why criterion 3 is written as a broad 20–35% band.
+⚠️ **Three honest limits on the anchor, and the third was rewritten on 2026-08-30 because it was
+wrong in both halves.** Matsuura's figures are **% of HeLa**; **those patients are not this
+repository's donor**; and **the 22 / 25 / 29% trio was measured on hTERT-immortalised *fibroblast*
+lines from patients 1, 2 and 5 — not on lymphoblastoid cells.** Proliferation rate, and therefore
+cell-cycle distribution, differs between fibroblasts and LCLs, and §5.13 shows that distribution is
+coupled to BubR1 abundance. **Treat 22–29% as an expected range and direction, not a target to be
+matched to the digit** — which is why criterion 3 is written as a broad 20–35% band.
+
+> 🔴 **WHAT THE PREVIOUS WORDING GOT WRONG, and it was flagged "— checked directly —".** It read:
+> *"the patient material was lymphocytes and fibroblasts, **not** EBV-transformed lymphoblastoid
+> lines."* **Both halves are false, and the paper we hold says so on the same page.** The trio is
+> fibroblast-only (*"fibroblast cell lines from patients 1, 2, and 5 … BubR1 bands of normal size
+> but reduced intensities (22%, 25%, and 29% of HeLa cells)"*), and **Matsuura DOES report
+> EBV-transformed lymphoblastoid lines, at length** — family 2 at mother **71%**, father **57%**,
+> **patient 2 at 22%**; family 6 with carriers at **38%** and **31%** against normal individuals at
+> **112%** and **158%**. **An asserted verification is the most dangerous kind of unverified
+> claim**: "checked directly" told every later reader not to check.
+>
+> 🔑 **AND IT IS GOOD NEWS FOR THIS PROTOCOL.** The lymphoblastoid data are the closest published
+> match to what this pilot actually measures — **patient 2's LCL reads 22%**, inside the 20–35%
+> band criterion 3 already specifies, and the normal range of **112–158%** is what a proper
+> unrelated control should look like. The anchor is *stronger* than the previous caveat allowed.
+> [OUR MEASUREMENT — `papers-local/matsuura2006_ajmg_monoallelic_bub1b.txt` re-read 2026-08-30;
+> control `grep -ci bubr1` → 44.]
 
 ## 3. 🔴 The precision the assay must reach — derived, not asserted
 

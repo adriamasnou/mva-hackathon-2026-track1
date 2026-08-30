@@ -79,11 +79,24 @@ reason the consensus interval is 3 months rather than 3–4.
 This is the question most surveillance information leaves out, and it has an answer — though not
 one measured in MVA.
 
-> ### About **4 in 10** children under this kind of surveillance have something found that turns
-> ### out not to be a tumour.
-> In the largest series we could find, **25 of 63 children (40%)** on a Wilms-surveillance protocol
-> had renal or liver abnormalities identified that required further investigation
-> (Zarate *et al.*, *Am J Med Genet A* 2009, **PMID 19610116**).
+> ### About **4 in 10** children under this kind of surveillance have something show up on a scan.
+> ### For most of them it is not a tumour.
+> In the largest series we could find, **25 of 63 children (40%)** on a Wilms-surveillance
+> protocol **had an abnormality seen on ultrasound** — most often **nephromegaly**, meaning a
+> kidney larger than expected or one kidney bigger than the other. **2 of the 63 (3.2%) turned out
+> to be a tumour or a tumour precursor.** (Zarate *et al.*, *Am J Med Genet A* 2009,
+> **PMID 19610116**.)
+>
+> 🔻 **Corrected 2026-08-30, and the correction matters for how you read the number.** This box
+> used to say 4 in 10 have *"something found that turns out not to be a tumour"*, and that the
+> abnormalities *"required further investigation"*. **Neither is what the paper says.** It reports
+> an **abnormality-detection rate**, not a false-alarm rate, and it says nothing about what
+> follow-up each child then had — we had added that consequence ourselves. The distinction is not
+> pedantic: the commonest finding, nephromegaly, can be **a feature of the underlying condition
+> being monitored for**, so counting all 25 as false alarms overstates the harm. What is fair to
+> take from it is that **scans often find something, and most of the time that something is not
+> cancer** — which is a real burden to weigh, and a different one from being told 40% of scans are
+> wrong. [Source abstract re-read 2026-08-30 by `efetch`.]
 
 **And a false alarm is not always harmless.** In an earlier series, **two children had renal
 lesions removed that were suspected to be cystic Wilms tumours and proved to be infected cysts.
@@ -239,7 +252,7 @@ Decision aids are expected to declare how they were made. Most of what follows i
 | Describes the condition, options, and doing nothing (2.1–2.4) | ✅ |
 | Describes benefits and harms with equal space (2.6, 2.7, 9.1, 9.2) | ✅ |
 | Outcome probabilities with population and time period (3.1–3.3) | 🟡 partial — the risk figure and intervals are given; **test performance is missing and flagged** |
-| **Test-specific: false-positive rate (2.10)** | 🟡 **partial — a real figure is given (40%, PMID 19610116), but from BWS rather than MVA, and flagged as such in §2.5** |
+| **Test-specific: false-positive rate (2.10)** | 🟡 **partial, and now stated correctly — §2.5 gives an *abnormality-detection* rate (40%, 25/63, PMID 19610116) with the tumour rate beside it (2/63, 3.2%), from a BWS cohort rather than MVA. 🔻 *This row and §2.5 both called it a false-positive rate until 2026-08-30; the source measures detection, not false alarms.* A true false-positive rate for MVA surveillance is not published** |
 | Test-specific: chance disease is found with vs without screening (2.12) | ❌ **not available for MVA; the BWS effectiveness study is cited instead (PMID 31583434)** |
 | 🔻 **Correction history** | **§2.5 previously read "[NOT FOUND]" for all test-performance items. That was wrong: the data was in a paper this project already held. See the note below.** |
 | Describes uncertainty around the probabilities (3.4) | ✅ §2.5 |
@@ -278,7 +291,7 @@ option described. **The author is a participant in a competition in which this d
 submission** — which is a real interest and is disclosed here rather than left to be discovered.
 The author does not gain or lose from which option any family chooses.
 
-**Evidence.** Primary sources, cited inline by PMID. Where a required number could not be found,
+**Evidence.** Cited inline by PMID. 🔻 **Corrected 2026-08-30 — this line read *"Primary sources, cited inline by PMID"*, and that overstates what was read.** Two sources were read in full: **Hol *et al.* 2021 (PMID 34134020)** and **Nakano *et al.* 2024 (PMID 39264246)** — and both are **literature reviews and consensus recommendations, not original studies**. The four papers behind the numbers in §2.5 and §2.6 (**PMIDs 19610116, 10064187, 31583434, 11568898**) were reached through Hol 2021's reference list and §4 narrative; **their abstracts have since been read directly** (see §2.5, corrected the same day) **but their full texts are not held here**. **[SECONDARY where marked.]** Nothing in this document rests on a source we have not at least read the abstract of, and where a figure comes from a review rather than the study itself, the review is named. Where a required number could not be found,
 this document says so rather than substituting an estimate.
 
 *This is research communication, not medical advice. All decisions belong with the family and
