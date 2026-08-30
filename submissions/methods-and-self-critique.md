@@ -21,7 +21,19 @@ filter pre-registered *before* the run in `pipeline/recessive_scan_PREREGISTERED
 | damaging coding consequences | 1,015 |
 | genes with any damaging call | 467 |
 | genes meeting the recessive model | 230 |
-| ***BUB1B* rank** | **55 of 230** |
+| ***BUB1B* rank** | **55 of 230 — but see the tie disclosure below** |
+
+🔴 **`rank 55` is not a measurement, and we would rather say so than have it found.** Nine genes
+are tied with *BUB1B* on both severity sort keys, occupying ranks **53–61**; within that block
+**seven — VPS41, IGHV8-51-1, *BUB1B*, TUBB8B, PSG1, LILRB4, LBP — are tied on all three
+pre-registered sort keys**, every one at mean GQ 99.0. *BUB1B*'s position among those seven is
+decided by nothing the pre-registration specifies. **The honest unit is the tie block, not the
+rank.** The defensible claim is that a phenotype-blind recessive model puts *BUB1B* in the top
+~20% of 230 candidates with no prior knowledge of MVA. **[OUR MEASUREMENT]**, re-derived
+2026-08-30 by `python3 pipeline/vep_concordance.py`, which also reproduces the 55/230 above from
+the pre-registered rule. Re-annotating the same callset with **Ensembl VEP** moves *BUB1B* to
+**rank 42 of 187** with its own allele counts unchanged — see
+[`annotation-toolchain-vep.md`](annotation-toolchain-vep.md) §6d.
 
 **The good half.** The scan recovered the architecture exactly, with no prior:
 
