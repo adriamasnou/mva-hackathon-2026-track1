@@ -81,6 +81,24 @@ weakness against the companion stability protocol. **This pilot has one.**
 > **Matsuura *et al.* 2006 (PMID 16411201) measured BubR1 in three MVA patients at
 > 22%, 25% and 29%** of the reference level.
 
+> ✅ **AN AUDIT CANDIDATE CHECKED HERE AND REFUTED, 2026-08-31 — recorded so the correction is not
+> made later by someone who reads only the paper's title.** A coverage sweep flagged *"they are not
+> MVA patients"*, on the ground that PMID 16411201 is titled *"**Monoallelic** BUB1B mutations …
+> in seven families with **premature chromatid separation (PCS) syndrome**"*. **The paper's own
+> first sentence settles it the other way:** *"Cancer-prone syndrome of premature chromatid
+> separation (PCS syndrome) with mosaic variegated aneuploidy (MVA) is a rare autosomal recessive
+> disorder …"*, and it calls MVA syndrome *"probably identical to the PCS syndrome"*. **They are
+> MVA patients**, and the anchor stands.
+>
+> ⚠️ **What IS a real difference, and it is not the one the sweep found.** Matsuura's patients 1, 2
+> and 5 carry **one truncating allele plus the low-expression `6G3` haplotype** — a second allele
+> *"without detectable mutation"*. **This child carries two identified variants**, a nonsense and a
+> missense. The genetic architectures differ even though the consequence — a large reduction in
+> BubR1 with no wild-type pool — is the same shape. **The anchor is an expected range from an
+> analogous architecture, not a matched genotype**, which is the third limit stated below.
+> [`papers-local/matsuura2006_ajmg_monoallelic_bub1b.txt`, re-read 2026-08-31; title confirmed by
+> `esummary` for PMID 16411201.]
+
 **A working assay must reproduce roughly that.** If patient cells read at 80% of control, the assay
 is not measuring BubR1 specifically. If they read at 3%, something else is wrong. **The pilot has a
 number to hit, not merely a signal to observe.**
