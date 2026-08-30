@@ -17,8 +17,14 @@ the way genetics is actually practised.**
 ## 1. Why this exists
 
 The HFEA publishes which conditions are approved for PGT-M in the UK. Its register has three
-columns: **condition name, status, OMIM number.** There is no gene column, and no gene symbol
-appears anywhere in the workbook.
+columns: **condition name, status, OMIM number.** **There is no gene column** — the only place a
+gene symbol ever appears is inside a *condition name*, where a curator happened to write one.
+🔻 *This read "no gene symbol appears anywhere in the workbook" until 2026-08-31, and §2 of this
+same document falsifies it four paragraphs later: §2's entire measurement rests on symbols
+appearing in condition names — its worked example is BRCA2, "the symbol sits inside
+Breast-Ovarian Cancer, Familial, Susceptibility to, 2 (BRCA2)" — and the shipped index records
+`_genes_findable_by_accident: 90`. **The absolute was the overstatement; the finding underneath it
+is unchanged and is if anything sharper: a gene is findable only by accident.**
 
 The register's own guidance tells users to search by OMIM number, precisely because condition
 names are unstable. That advice is sound and it has a gap in the middle of it: **nothing in the
@@ -80,6 +86,13 @@ the CSV's `register_defect` column:
 | free text where a number belongs | 1 | `ARVC/D` |
 | **malformed OMIM number** | 2 | see below |
 
+🔻 **The `rows` column above sums to 28, and the register carries 27 defective rows** — corrected
+2026-08-31. **The prose total of 27 is right**; the table double-counts **one row that bears two
+defects**, whose CSV value is `multi-omim(3);malformed-mim-length`. It is counted once under
+*"several OMIM numbers in one cell"* and again under *"malformed OMIM number"*. The column is
+labelled **rows**, so as printed it is a row count that does not sum to the row count. **Read the
+column as defect-instances, not rows; the row total is 27.**
+
 > ### 🔴 CHIME syndrome is published under OMIM `28000`. That is not an OMIM number.
 > Every MIM in OMIM's own index is six digits; `28000` is five and does not exist. The correct
 > identifier is **280000** (→ *PIGL*, confirmed via ClinVar). The register instructs users to
@@ -133,9 +146,32 @@ would quietly shrink every count downstream, and a wrong number is worse than a 
    Nothing here is a statement that any person qualifies for anything.
 4. **Gene–disease attribution is inherited** from ClinVar and HPO and is only as current as they
    are. Where they disagree, both genes are listed.
-5. **36 conditions are unmapped** and are in the CSV with `n_genes=0` — 14 because the register
+5. **35 conditions are unmapped** and are in the CSV with `n_genes=0` — 14 because the register
    gives no OMIM number, 1 because it gives text, 1 because the number is malformed, and the rest
    because no public gene–disease source links that MIM to a gene. They are listed, not hidden.
+
+   > 🔴 **IT WAS 36, AND ONE OF THEM WAS OUR BUG, NOT THE REGISTER'S — fixed 2026-08-31.**
+   > **`Leigh Syndrome (LS)` (MIM 256000) shipped as a measured zero with a blank `sources` cell.**
+   > ClinVar's `gene_condition_source_id` carries **48 rows** for that MIM naming **24 distinct
+   > genes** (BCS1L, COX10, DLAT, DLD, LRPPRC, MTFMT, NDUFA1, …) — **but every one of those rows
+   > has an empty `AssociatedGenes` field and puts the genes in `RelatedGenes`**, which is how
+   > ClinVar files multi-gene phenotypes. `pipeline/hfea_crosswalk.py` read only `AssociatedGenes`,
+   > so all 48 were dropped silently. **That is an absence produced by our reader, not by the
+   > register** — precisely the defect this document exists to find in someone else's data.
+   > **Both fields are now read.** Leigh Syndrome goes **0 → 24 genes**, and eight other multi-gene
+   > phenotypes gain genuine entries: Craniosynostosis 1 (1→4), Usher Syndrome USH1 and USH1B
+   > (2→5), Mitochondrial DNA Depletion Syndrome 15 (1→4), Cerebral Cavernous Malformations (3→4),
+   > Phenylketonuria (1→2), Pyridoxine-Dependent Epilepsy (1→2).
+   >
+   > 🔴 **AND A NULL WAS PUBLISHED AS A GENE.** HPO uses `-` as its null `gene_symbol` in **10
+   > rows**, two of them OMIM:176270 (Prader-Willi). `read_clinvar()` filtered `sym != "-"`;
+   > **`read_hpo()` did not, and `"-"` is truthy** — so the shipped index JSON carried a literal
+   > **`"-"` key** and the CSV's Prader-Willi row read `genes=-;HERC2;IPW;…` with `n_genes=11`.
+   > **The same guard is now in both readers.** PWS is **11 → 10**, the `"-"` key is gone, and the
+   > index goes 1,778 → 1,782 keys. **The row count is unchanged at 2,063**, so no headline
+   > denominator moves.
+   > **[OUR MEASUREMENT — both bugs re-derived from the source files 2026-08-31: 48 rows / 0
+   > `AssociatedGenes` / 24 `RelatedGenes` for MIM 256000; 10 HPO rows with `gene_symbol == "-"`.]**
 6. **UK only.** Other countries run their own registers.
 
 ## 7. Reuse

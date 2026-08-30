@@ -45,7 +45,15 @@ re-counted 2026-08-30).
 > **2,063**. **A judge opening both files would have found them disagreeing about the size of the
 > register the whole element rests on.** The 2,057 figure and the Archive route are kept here as
 > history, not as method. Corroborated for this exact condition by the
-regulator's **Statutory Approvals Committee minutes of 26 January 2026**.
+regulator's **Statutory Approvals Committee minutes of 26 January 2026** — applicant **Aria
+Fertility (centre 0382)**, chair **Frances Flinter**, Specialist Adviser **Dr Alan Fryer**, chair's
+signature **12 February 2026**;
+**<https://ifqlive.blob.core.windows.net/inspectiondocuments/8623.pdf>** (local copy retained at
+`data/derived/hfea_SAC_minutes_MVA1_2026-01-26.pdf`).
+🔻 *Locator added 2026-08-31: the corroboration for this project's flagship uncontested Impact
+element previously shipped with **no URL, no document number and no committee reference** — a claim
+a judge was asked to take on trust while a fully resolvable provenance sat in the private tree and
+had never been carried across.*
 
 ### 1.1 🔑 The finding is not the approval. It is that the approval cannot be found.
 

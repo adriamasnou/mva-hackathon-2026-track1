@@ -95,6 +95,17 @@ Measured across the whole register, from ClinVar's own review-status field
 | **…with ZERO expert-panel-reviewed variants** | **1,637 (92.1%)** |
 | **approved conditions where no causative gene has any expert curation** | **1,851 of the 2,026 gene-mappable conditions (91.4%)** — **1,851 of all 2,063 approved (89.7%)** |
 
+> ⚠️ **DENOMINATOR DRIFT, FLAGGED NOT PATCHED — 2026-08-31.** Two bugs were fixed in
+> `pipeline/hfea_crosswalk.py` today (a ClinVar `RelatedGenes` field never read, and a null `-`
+> ingested as a gene — see `hfea-pgtm-gene-crosswalk.md` §6 item 5). **The shipped CSV now maps
+> 2,028 conditions to at least one gene, against the 2,026 this row uses.** The **2,063** total and
+> the **89.7%** figure are unaffected. **I have deliberately NOT adjusted 1,851 or 91.4%**: the
+> numerator comes from a ClinVar expert-curation panel run that has not been re-executed, and
+> recomputing a rate by moving only its denominator would manufacture a number neither run
+> produced. **To close this properly, re-run the panel against the corrected crosswalk and restate
+> both figures together.** The direction is knowable in advance — two more mappable conditions can
+> only *lower* the percentage — so 91.4% is a ceiling, not a floor.
+
 > **The UK approves embryo selection against 2,063 conditions. For 1,851 of them — 89.7% — no
 > expert panel has ever classified a single variant in any causative gene.**
 
