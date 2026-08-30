@@ -146,11 +146,18 @@ Z' = 1 - 3·CV·(hi + lo) / (hi - lo)
 | the same, comfortably | ≥ 0.5 | ≤ 5.6% |
 | the same, bare 3σ separation | 0.0 | ≤ 11.1% |
 
-> ### 🔴 The trap: the easy comparison is ~3× more forgiving than the one that matters.
+> ### 🔴 The trap: the easy comparison is **~1.8×** more forgiving than the one that matters.
 > A pilot that shows "we can clearly separate patient from control cells" would look like a
 > success, be declared one, **and the screen would then fail** — because separating 25% from 100%
 > needs CV ≤ 12% while separating 25% from 50% needs **CV ≤ 6.7%.**
 > **Therefore the pilot's acceptance criterion is CV ≤ 6.7%, not "clear separation".**
+> 🔻 **"~3×" corrected to "~1.8×" on 2026-08-31.** **12.0 / 6.7 = 1.79.** The figure 3 is the value
+> of `(hi+lo)/(hi-lo)` for the hard comparison (50 vs 25 → exactly 3.000), not the ratio between
+> the two CV allowances — it was read off the wrong quantity in the same derivation. Both limits
+> re-derived from this file's own formula and both are correct: at Z′ = 0.4,
+> `CV = 0.6 / (3 × (hi+lo)/(hi−lo))` gives **12.00%** for 100 vs 25 and **6.67%** for 50 vs 25.
+> **The trap is entirely real; it is 1.8× rather than 3×, and the acceptance criterion does not
+> move.** [OUR MEASUREMENT — arithmetic, 2026-08-31.]
 
 ## 4. Materials — catalogue numbers
 
@@ -329,11 +336,23 @@ measured precision is limited by counting rather than by biology. Using
 | **50% (typical protein stain)** | **≥ 8,748** |
 | **80% (broad stain)** | **≥ 22,395** |
 
-> **Collect ≥ 20,000 live singlet events per well**, and **set the final count from the spread
+> **Collect ≥ 25,000 live singlet events per well**, and **set the final count from the spread
 > actually observed during titration.** 🔻 An earlier version said "≥10,000" — adequate only if the
 > stain is tight, and **insufficient at a broad 80% spread**, where counting error alone would eat
 > 15% of the CV budget. Keep voltages, gates and compensation **identical
 across all wells, plates and days**; changing them between conditions invalidates every CV computed.
+
+> 🔻 **RAISED FROM 20,000 TO 25,000 ON 2026-08-31 — because 20,000 failed the same test that
+> retired 10,000.** The table three lines above requires **≥ 22,395 events at an 80% (broad) stain
+> spread**. I re-derived it: `SE(median) = 1.2533 × CV / √n`, so at CV = 80%,
+> **n = 20,000 gives SE = 0.709%**, above the 0.67% target — the section recommended a number
+> insufficient for exactly the case it had just declared 10,000 insufficient for.
+> **n = 22,395 is the exact break-even; 25,000 is the round number above it.**
+> **AND §5.10'S EXCLUSION FLOOR WAS STILL SET AT THE RETRACTED VALUE.** Its pre-declared rule read
+> *"fewer than 10,000 live singlet events"*, so a well acquired at 12,000 was below §5.4's spec and
+> yet **required to be kept and analysed**. That floor is raised to **20,000** — deliberately below
+> the 25,000 target, because an exclusion rule should catch acquisition failures, not marginal
+> wells. **[OUR MEASUREMENT — arithmetic re-derived 2026-08-31.]**
 
 ### 5.5 🔴 How many replicate wells — derived, and it is NOT six
 
@@ -368,7 +387,21 @@ Reproduce: `python3 pipeline/pilot_n.py`.
 > answer is assay optimisation or the reporter-line fallback, **not more replicates.** That is a
 > decision you want on day one rather than after three months of adding wells.
 
-**Six arms, n = 12 each = 72 wells = one 96-well plate per condition-set**, which is also why
+**Seven arms (arm 7 added 2026-08-31), n = 12 each = 84 wells — which does NOT fit one 96-well plate under this protocol's own
+edge rule**, and the layout below is corrected accordingly. 
+
+> 🔴 **PLATE LAYOUT CORRECTED 2026-08-31 — the design did not fit, by this protocol's own §5.9
+> rule.** §5.9 rule 1 says *"**Do not use the outer wells for samples.** Fill row A/H and column
+> 1/12 with buffer."* A 96-well plate minus rows A/H and columns 1/12 leaves **6 × 10 = 60 usable
+> wells**. The design needs **72** before anything else, and the true requirement is larger still:
+> §5.3 mandates single-stain compensation controls (unstained · viability-only · Alexa-488-only,
+> plus a DNA-dye single stain once §5.13 makes it three-colour), and **arm 6 is a 2 / 4 / 6 h MG132
+> time course — three conditions, not one**. **★ Run the LCL arms across two 96-well plates**, with
+> the compensation controls on a third partial plate, and treat "one plate per condition-set" as
+> retired. *(Arm 5 is not an LCL arm at all — §5.6 moves the knockdown to reverse-transfected
+> adherent HeLa/U2OS at three DsiRNA concentrations, so it never belonged in this count.)*
+
+This is also why
 §5.2's two fix/perm conditions fit on two plates run side by side.
 
 ### 5.5b The arms
@@ -381,6 +414,18 @@ Reproduce: `python3 pipeline/pilot_n.py`.
 | 4 | **control LCL + anti-BUBR1** | the anchor comparison |
 | 5 | **+ BUBR1 knockdown** | specificity — see §5.6 |
 | 6 | **patient + MG132** | **10 µM**, with a **2 / 4 / 6 h** time course |
+| **7** | **patient + VEHICLE (DMSO alone)** | **matched to arm 6's DMSO concentration, same 2 / 4 / 6 h time course** — 🔻 **ADDED 2026-08-31** |
+
+> 🔴 **WHY ARM 7 HAD TO BE ADDED, AND IT FIXES TWO THINGS AT ONCE.** §5.13b(a) introduces a
+> falsifiable cell-cycle rule — *flag a well when any compartment shifts by more than 3 SD of the
+> DMSO-control wells on the same plate* — **and there were no DMSO-control wells.** Arms 1–6 are
+> isotype, secondary-only, patient + anti-BUBR1, control LCL + anti-BUBR1, knockdown, and
+> patient + MG132. **None is a vehicle arm**, so the threshold written specifically to cure an
+> unfalsifiable rule was itself unrunnable — its reference population did not exist.
+> **The second gap is worse and independent: MG132 is dissolved in DMSO.** Without a vehicle
+> comparator, **any BubR1 change produced by the pilot's own positive control cannot be separated
+> from the solvent.** Arm 7 is the control that makes arm 6 interpretable, and it should have been
+> there from the first draft.
 
 **MG132 at 10 µM is well supported** across the literature held here. ⚠️ **The duration needed for
 BubR1 accumulation is NOT** — the published uses are 15 min to 1 h for mitotic arrest, a different
@@ -459,8 +504,10 @@ not after.
 
 ### 5.7 How the CV is computed, so criterion 4 is unambiguous
 
-**CV = SD / mean of the per-well MEDIAN fluorescence intensities**, across the **n ≥ 6 replicate
-wells of one arm on one plate** — *not* the CV of events within a well, which is a different and
+**CV = SD / mean of the per-well MEDIAN fluorescence intensities**, across the **n = 12 replicate
+wells of one arm on one plate** 🔻 *(this read "n ≥ 6" until 2026-08-31 — the exact value §5.5
+exists to retract. The correction had landed everywhere except the one section that DEFINES the
+criterion.)* — *not* the CV of events within a well, which is a different and
 much larger number that would fail the criterion for the wrong reason.
 Report it **separately for each arm**, and **for arm 3 (patient baseline) it must meet §3's ≤ 6.7%**,
 because that is the population the screen actually measures against.
@@ -532,7 +579,7 @@ fixed.**
 **(a) "Flag any well whose distribution has moved" had NO THRESHOLD.** Having criticised an
 asserted hit criterion, the fix introduced a rule with no criterion at all — which is worse, because
 it is unfalsifiable. **Definition now required: report the percentage of events in each cycle
-compartment, and flag a well when any compartment shifts by more than 3 SD of the DMSO-control wells
+compartment, and flag a well when any compartment shifts by more than 3 SD of the **vehicle (DMSO) control wells added to §5.5b as arm 7**
 on the same plate.** Same logic as the hit criterion; the plate's own controls set the scale.
 
 **(b) 🔴 The DNA dye's compatibility with METHANOL was never checked** — and Condition B is a
@@ -691,7 +738,7 @@ of control, manufactured by position) or a false fail on criterion 4.**
   well.** Per-well gate adjustment is how subjective flow analysis becomes unfalsifiable.
 - **Gating is performed blind to arm assignment** — the well map is unblinded only after the median
   MFIs are exported. Cheap, and it removes the largest source of unconscious bias in flow analysis.
-- **No well is excluded** except for a pre-declared technical reason (fewer than 10,000 live singlet
+- **No well is excluded** except for a pre-declared technical reason (fewer than **20,000** live singlet 🔻 *raised from 10,000 on 2026-08-31 with §5.4 — the floor had been left at a value §5.4 retracted, so a well at 12,000 events was below spec and yet required to be kept*
   events; visible clog). **Outlier removal on the basis of the value itself is not permitted** — it
   would directly manufacture the CV this protocol is testing.
 - Analysis software and version recorded; `.fcs` files retained.
@@ -736,7 +783,17 @@ justification — that antibody specificity is a property of the antibody — is
 BubR1 depletion in LCLs by nucleofection at least once before the screen begins.** Deferred, not
 dismissed.
 
-## 6. Acceptance criteria — all four, fixed before any data exist
+## 6. Acceptance criteria — all **five**, fixed before any data exist
+
+🔻 **The heading said "all four" until 2026-08-31.** The table below has **five** numbered criteria
+and §7's first bullet already read *"All five met → proceed"*, so the heading was the odd one out.
+⚠️ **Two gaps in §7's decision tree remain open and are flagged rather than invented:** it has **no
+branch for criterion 5 failing** (reproducibility across ≥2 antibody lots and 2 independent days),
+and **no branch for criterion 3 failing on its own** — the 40–50% case §5.12's attack P2 raises and
+leaves unresolved. **A third gate exists outside both:** §5.13b(c) makes unimodality *"a
+PRECONDITION, checked before the CV criterion is applied"*, and it appears in neither the §6 table
+nor the §7 tree. **These are design decisions for the lab, not arithmetic, so they are named here
+rather than resolved by us.**
 
 | # | criterion | why |
 |---|---|---|
