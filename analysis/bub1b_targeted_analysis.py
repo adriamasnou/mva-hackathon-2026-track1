@@ -8,8 +8,22 @@ BUB1B-targeted pass that identified the candidate compound heterozygote:
 
   1. Extract all variants in the GRCh38 BUB1B locus from the provided
      GATK VCF (no realignment needed for this pass).
-  2. Keep PASS heterozygous variants; flag variants absent from dbSNP
-     (no rsID) as candidate-novel.
+  2. Keep PASS heterozygous variants; flag variants with NO rsID IN THIS VCF
+     as candidate-novel.
+
+     🔻 CORRECTED 2026-08-30. This line said "flag variants absent from dbSNP
+     (no rsID)" and that is NOT what the test does. The test reads the ID
+     column of the DELIVERED VCF, and this VCF's header names its annotation
+     source explicitly:
+         Homo_sapiens_assembly38_no_chr.dbsnp138.vcf.gz     <- dbSNP BUILD 138
+     So an empty ID means "not in dbSNP 138", NOT "absent from dbSNP".
+     Concretely: c.2210T>G p.Leu737* HAS an rsID -- rs759242053 -- confirmed
+     independently by VEP 116 (dbSNP 156 cache) and by ClinVar VCV000533901,
+     which this project has held since 26/08. It is absent only from a 2013
+     build. c.3006T>G p.Asn1002Lys returns no colocated variant in dbSNP 156
+     either, so for THAT allele the novelty call stands.
+     The candidate-novel FLAG is still the right screen and it found the right
+     two variants; only the LABEL was overclaimed.
   3. Map candidate-novel variants onto the canonical transcript
      (ENST00000287598) exon structure fetched from Ensembl REST, and
      compute protein consequences locally against the Ensembl CDS.
@@ -105,7 +119,9 @@ def main(vcf_path):
             gt = fields[9].split(":")[0]
             hits.append((int(pos), rsid, ref, alt, filt, gt))
 
-    print(f"\n{len(hits)} variants in locus; heterozygous PASS without rsID:")
+    print(f"\n{len(hits)} variants in locus; heterozygous PASS with no rsID "
+          f"in this VCF (annotated against dbSNP 138 -- NOT the same as "
+          f"'absent from dbSNP'; see the module docstring):")
     for pos, rsid, ref, alt, filt, gt in hits:
         if filt != "PASS" or rsid != "." or gt not in ("0/1", "0|1", "1|0"):
             continue
