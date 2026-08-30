@@ -158,9 +158,37 @@ three classes the pre-registration declared damaging (nonsense, frameshift, miss
 and `start_lost` are out of scope *by design*, and counting them as misses would score the scan
 against a rule it never adopted).
 
-**824 of 826 were already in the scan — recall 99.8%.** The two it missed are frameshifts in
-**FOXO6** and **WWC3**. Neither is a plausible cause of this child's phenotype, but both are
-reported here rather than left out.
+**824 of 826 were already in the scan — recall 99.8%.** Two were missed, and because "why not
+100%?" is the right question to ask a recall figure, here is the whole answer.
+
+| | FOXO6 | WWC3 |
+|---|---|---|
+| Locus | chr1:41,382,200 | chrX:10,015,674 |
+| Change | **200 bp insertion** (not a multiple of 3) | **1 bp insertion** |
+| VEP, canonical | `frameshift_variant` + `splice_acceptor_variant` | `frameshift_variant` |
+| `bcftools csq` | `synonymous&splice_donor`, `splice_acceptor` | `synonymous&splice_donor`, `splice_region` |
+| Zygosity | homozygous | homozygous |
+| *provenance* | **[OUR MEASUREMENT]** · `BCSQ` read from the input VCF, VEP from our own run | same |
+
+**Both misses are the same thing, and it is a rule we wrote down in advance, not a bug.** At a
+splice junction the two annotators disagree about which consequence dominates: `bcftools csq`
+reports the **splice** term and calls the coding half *synonymous*; VEP reports the **frameshift**.
+The pre-registration lists exactly three damaging classes — nonsense, frameshift, missense — and
+**explicitly excludes `splice_donor`/`splice_acceptor`**, with the reason recorded at the time:
+adding splice later would be a post-hoc change. So the scan saw both variants, classified both,
+and excluded both **by its own stated rule**. That is the pre-registration working, not failing.
+
+It is still a real limitation, so we bound it. Both variants are homozygous, and the pre-registered
+recessive model qualifies a gene on a single homozygous damaging allele — so had they been counted,
+each would have added a gene. We recomputed the ranking with both inserted as homozygous
+frameshifts: **230 genes → 232, and *BUB1B* stays at rank 55.** FOXO6 and WWC3 land at 79 and 80,
+below *BUB1B*, because the first sort key is truncating-allele count and the second is total
+damaging count, on which they score 1/1 against *BUB1B*'s 1/2. **[OUR MEASUREMENT]**, 2026-08-30.
+
+**A frame-shifting 200 bp insertion called synonymous is worth saying out loud**, whatever the
+splice-junction context. If this scan were re-run rather than reported, splice consequences would
+be in the damaging set from the start — but that is a change to a pre-registered rule, and the
+place to make it is the next pre-registration, not this one.
 
 ### 6d. Does the annotator change the answer? — a sensitivity analysis
 
