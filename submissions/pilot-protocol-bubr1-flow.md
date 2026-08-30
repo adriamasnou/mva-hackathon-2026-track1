@@ -771,9 +771,28 @@ hard on the screen**, and is already recorded there as attack A1.
 
 **P2 — "The 22–29% anchor is from a different cell type and different patients, so criterion 3 is
 not really a criterion."** **Partly lands.** It is why the acceptance range is written as a broad
-**20–35%** rather than a point estimate, and why §2 states the limits explicitly. **If the observed
-value is 40–50%, the honest response is uncertainty about the anchor, not automatic rejection of
-the assay** — and that ambiguity is a real weakness with no clean resolution available to us.
+**20–35%** rather than a point estimate, and why §2 states the limits explicitly. **If the observed value is 40–50%, that is NOT an
+uninterpretable result** — see §7's branch for it, added 2026-08-31.
+
+> ✅ **P2 IS NOW PARTLY ANSWERED, AND THE ANSWER CAME FROM THE ANCHOR PAPER ITSELF.** This passage
+> used to end *"that ambiguity is a real weakness with no clean resolution available to us."* That
+> was written when we had only the fibroblast trio (22/25/29%). **Matsuura 2006 also reports a
+> LYMPHOBLASTOID series — the cell type this pilot actually uses — and it is a full distribution,
+> not a point:**
+>
+> | LCL, % of normal control | who |
+> |---|---|
+> | **22%** | affected patient 2 (truncating + `6G3`) |
+> | **31%, 38%** | `6G3` carriers, family 6 |
+> | **57%** | truncating-mutation carrier (father, family 2) |
+> | **71%** | `6G3` carrier (mother, family 2) |
+> | **112%, 158%** | normal individuals |
+>
+> **A 40–50% reading falls inside the published CARRIER band (31–71%) and far below the normal band
+> (≥112%).** It is therefore not ambiguous between "assay broken" and "patient" — it is a
+> *quantitatively meaningful* position, and the protocol can now say which of two things it means
+> and how to tell them apart. **[`papers-local/matsuura2006_ajmg_monoallelic_bub1b.txt`, read
+> 2026-08-31.]**
 
 **P3 — "Criterion 2 (knockdown) is run in a different cell type from criteria 3–4."** **Lands, and
 it is the sharpest.** Specificity is demonstrated in HeLa/U2OS while the anchor is measured in LCLs,
@@ -787,13 +806,14 @@ dismissed.
 
 🔻 **The heading said "all four" until 2026-08-31.** The table below has **five** numbered criteria
 and §7's first bullet already read *"All five met → proceed"*, so the heading was the odd one out.
-⚠️ **Two gaps in §7's decision tree remain open and are flagged rather than invented:** it has **no
-branch for criterion 5 failing** (reproducibility across ≥2 antibody lots and 2 independent days),
-and **no branch for criterion 3 failing on its own** — the 40–50% case §5.12's attack P2 raises and
-leaves unresolved. **A third gate exists outside both:** §5.13b(c) makes unimodality *"a
-PRECONDITION, checked before the CV criterion is applied"*, and it appears in neither the §6 table
-nor the §7 tree. **These are design decisions for the lab, not arithmetic, so they are named here
-rather than resolved by us.**
+✅ **Three gaps in §7's decision tree were open on 2026-08-31 and are now CLOSED** — a branch for
+criterion 3 failing alone (the 40–50% case), a branch for criterion 5 failing (decomposed into
+lot-instability vs day-instability, which have different fixes), and the §5.13b(c) unimodality
+precondition, which existed in the text but appeared in neither the §6 table nor the §7 tree — so a
+lab following §7 alone would never have applied it. **The 40–50% branch was resolvable from the
+anchor paper all along:** Matsuura's lymphoblastoid series is a distribution, not a point, and a
+40–50% reading sits inside its published *carrier* band. We had been calling it *"a real weakness
+with no clean resolution available to us"* while holding the paper that resolves it.
 
 | # | criterion | why |
 |---|---|---|
@@ -811,6 +831,36 @@ rather than resolved by us.**
   partial outcome and the one most likely to be waved through.
 - **2 failed** *(no knockdown response)* → **stop.** The reagent is not measuring BubR1 in this
   format. Try the other antibody once; if it also fails, go to the fallback.
+- **3 failed ALONE — the patient reads 40–50% instead of 20–35%** *(specific, precise, but off the
+  anchor)* → **do not stop, and do not wave it through. Read the control arms first, because they
+  decide which of two things it is.**
+  - **If the unrelated normal LCLs also read low** relative to their own expectation, the scale is
+    compressed — an assay problem. **Optimise (titration, fixation, voltage) and re-run.**
+  - **If the normals read normally and only the patient reads 40–50%**, that is a **real biological
+    value in the published carrier band** (Matsuura's LCL series: carriers **31–71%**, affected
+    patient **22%**, normals **112–158%** — §5.12 P2). **This child's architecture is not
+    Matsuura's** — a nonsense plus a missense, against truncating plus the `6G3` low-expression
+    haplotype — so a higher residual is a plausible *finding*, not a failure. **Proceed, and report
+    the value as the result rather than forcing it onto the anchor.**
+  - **The carrier comparator arms make this decidable rather than arguable.** `GM21657` and
+    `GM22004` are obligate carriers (§4) and should read in the 31–71% band; if they do, the scale
+    is trustworthy and the patient's number means what it says.
+- **5 failed** *(not reproducible)* → **decompose it before deciding, because the two halves have
+  different fixes.**
+  - **Fails across ANTIBODY LOTS, holds across days** → a reagent problem, not an assay problem.
+    **Qualify each lot against the same control LCL before use** and record the lot in every result;
+    this is ordinary practice for a polyclonal-sensitive readout and does not invalidate the assay.
+  - **Fails across DAYS, holds across lots** → a run-to-run problem: instrument setup, compensation,
+    or culture state. **Add a bead-based daily standardisation and fix passage number after thaw
+    (§5.10 already requires ≥2 passages), then re-run.**
+  - **Fails both** → **stop and go to the fallback.** A readout that is neither lot-stable nor
+    day-stable cannot support a 1,520-compound screen where plates are acquired over days.
+- **Unimodality is a PRECONDITION, not a criterion** (§5.13b(c)) → check it **before** criterion 4
+  is applied. **A bimodal patient distribution invalidates the CV, not the assay** — a median and an
+  SD across a two-population well describe neither population. **If it is bimodal, resolve the cause
+  (mixed cell states, incomplete permeabilisation, doublets) before any CV is computed or reported.**
+  *(Added to this tree 2026-08-31: §5.13b(c) created this gate and it appeared in neither §6's table
+  nor this tree, so a lab following §7 alone would never have applied it.)*
 - **Fallback** → an **endogenously tagged fluorescent BubR1 reporter line**: no antibody, cleaner
   quantitation, but genome editing in a patient-derived line and a substantially larger project.
   **Named here so that failure has a route rather than becoming a stall.**
