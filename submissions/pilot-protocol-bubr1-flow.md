@@ -1,37 +1,65 @@
 # Pilot: can BubR1 abundance be measured by intracellular flow cytometry?
 
-**The gate that comes before the screen. Neither antibody this protocol shortlists is
-vendor-validated for flow cytometry, and we found no published precedent for either — so this is
-not a formality, and it has a pre-declared failure condition with an action attached.**
+**The gate that comes before the screen — and it is now a much cheaper gate than this protocol
+originally assumed.** Neither antibody this protocol first shortlisted is vendor-validated for flow
+cytometry. **But other anti-BubR1 clones are, and we were wrong to say otherwise.**
 
-> 🔻 **SCOPE CORRECTED 2026-08-30.** This sentence read *"**No** anti-BUBR1 antibody is validated
-> for this application **by any vendor**"*. **§1 below checks exactly two products** —
-> `A300-386A` and `BD 612502` — and a two-catalogue check cannot license a market-wide negative.
-> No vendor list, no search query and no date were ever recorded for the wider claim.
-> **[UNVERIFIED — whether some other supplier flow-validates an anti-BubR1 clone is an open
-> question, not a settled absence.]** It matters in the protocol's own favour: if a flow-validated
-> clone exists, §5.1's titration gets easier and the pre-declared failure condition may never
-> fire. **Next action, and it is cheap:** query the vendor catalogues (Thermo/Invitrogen, Novus,
-> Boster, Abcam, Santa Cruz, BioLegend, Cell Signaling) for `BUB1B`/`BubR1` filtered to *Flow
-> Cytometry*, record the query and the date, and replace this box with the result. *(Attempted
-> 2026-08-30 by direct fetch; thermofisher.com returned **HTTP 403** to an automated request, so
-> the check is deferred rather than done — recorded here so that "we tried" is not mistaken for
-> "we found nothing".)*
+> 🔴 **THE ORIGINAL CLAIM IS FALSIFIED — corrected 2026-08-30, and the correction is good news.**
+> This section used to open: *"**No** anti-BUBR1 antibody is validated for this application **by
+> any vendor**, and no published precedent exists."* **That rested on checking exactly two
+> products** — `A300-386A` and `BD 612502` — and a two-catalogue check cannot license a market-wide
+> negative. Adrià pulled the Novus/Bio-Techne catalogue. **Eight anti-BubR1 products across four
+> clones list Flow Cytometry as a validated application, and several publish an intracellular flow
+> histogram on the datasheet.**
+>
+> | catalogue | clone | host / isotype | flow, as listed | vendor flow figure |
+> |---|---|---|---|---|
+> | **NB100-353** · **NBP2-80606** | **8G1** | mouse IgG1κ | **1 µg per 10⁶ cells** · *CyTOF-ready* | ✅ **intracellular stain, HeLa, 4% PFA / 0.1% saponin, 5 µg/mL 30 min RT, vs a matched isotype control**, DyLight 650 direct conjugate |
+> | **NB100-353AF350** | 8G1 | mouse IgG1κ | listed; dilution to be determined | — **directly conjugated (Alexa Fluor 350)** |
+> | NB100-353CL1 | 8G1 | mouse IgG1κ | listed | — (CoraFluor 1 conjugate) |
+> | **NBP1-47680** · **NBP2-70314** | OTI6E5 | mouse IgG1 | **1:100** · *CyTOF-ready* | ✅ **HEK293T transfected with BubR1 vs empty vector** — a specificity control by overexpression |
+> | **NBP3-15207** | 7H4 | **rabbit** IgG | listed | ✅ overlay histogram, HeLa, 70% EtOH fix, **1 µg/10⁶ cells**, FITC goat-anti-rabbit |
+> | **NBP3-51987** | 23GB1640 | rabbit IgG | listed | — **"Knockdown Validated"** |
+>
+> **What survives of the original claim, stated precisely:** the two antibodies this protocol
+> shortlisted are still not flow-validated, and **a peer-reviewed precedent for quantifying BubR1
+> abundance by flow is still not established** — a vendor datasheet figure is the manufacturer's
+> own data, not an independent publication, and this protocol does not treat the two as equal.
+> **What does not survive is the word "any vendor".**
+> [Vendor datasheets v.20.1, retrieved 2026-08-30, held at `papers-local/datasheets/`; catalogue
+> numbers above resolve at `novusbio.com/<cat>`.]
 
-*Rare Disease, Real Kid: The MVA Hackathon 2026 · adriamasnou · 2026-08-29 · CC BY 4.0*
+- **Neither originally shortlisted antibody is vendor-validated for flow cytometry.** `A300-386A`
+  is validated for western blot and immunoprecipitation only; `BD 612502` for WB, IF, ELISA, ICC
+  and IP.
+- **No *published* precedent for the readout.** Of 39 papers citing `A300-386A`, six also mention
+  flow — and in every case the antibody sits in a *western-blot* list while the flow is doing
+  something unrelated. Co-occurrence, not usage. **This still holds**, and it is about
+  `A300-386A`; it says nothing about 8G1, OTI6E5 or 7H4, which no longer need it.
 
----
+### 1.1 ★ What this changes in the protocol
 
-## 1. The question, and why it cannot be assumed
+**[OUR INFERENCE]** — the four items below are our reading of the datasheet evidence above,
+not claims made by any vendor. The underlying facts (applications, hosts, clones, dilutions,
+figure legends) are `[VERIFIED]` from the datasheets at `papers-local/datasheets/`, retrieved
+2026-08-30 from `novusbio.com`; what to *do* about them is ours.
 
-The repurposing screen's primary readout is **BubR1 protein abundance, by intracellular antibody
-stain, read on a flow cytometer.** Establishing that this works is a prerequisite, because:
-
-- **Neither candidate antibody is vendor-validated for flow cytometry.** `A300-386A` is validated
-  for western blot and immunoprecipitation only; `BD 612502` for WB, IF, ELISA, ICC and IP.
-- **No published precedent exists.** Of 39 papers citing `A300-386A`, six also mention flow — and
-  in every case the antibody is in a *western-blot* list while the flow is doing something
-  unrelated. Co-occurrence, not usage.
+1. **★ Start with `NB100-353` (clone 8G1). [OUR INFERENCE from the datasheet facts above; the datasheets themselves are held at `papers-local/datasheets/`, retrieved 2026-08-30 from `novusbio.com`.]** It is the only option with a **published intracellular
+   flow protocol on the exact reference cell line our calibration anchor uses — HeLa** — including
+   fixation, permeabilisation, concentration, incubation and an isotype control. That replaces
+   §5.1's blind `1:50–1:800` titration with a **published starting point: 4% PFA, 0.1% saponin,
+   5 µg/mL, 30 min RT**, and the titration becomes a confirmation rather than a search.
+2. **★ The two-colour species clash dissolves.** `screen-protocol-runnable.md` §10 pairs BubR1 with
+   α-tubulin `sc-32293` (clone DM1A, **mouse**), which collides with a mouse BubR1 primary. Two
+   clean exits now exist: **(a)** use the **rabbit** clone **7H4 (`NBP3-15207`)** for BubR1 and keep
+   mouse DM1A — two hosts, two secondaries, no isotype gymnastics; or **(b)** use a **directly
+   conjugated** 8G1 (`NB100-353AF350`, Alexa Fluor 350) and skip the BubR1 secondary entirely.
+3. **`NBP3-51987` is "Knockdown Validated"** by the vendor — the same specificity evidence §5.6's
+   dsiRNA arm exists to generate. Worth ordering as the confirmatory reagent even if 8G1 is the
+   primary workhorse.
+4. **`CyTOF-ready` on 8G1 and OTI6E5** is independent evidence that these clones survive fixation
+   and permeabilisation in single-cell suspension, which is the property the whole readout depends
+   on.
 
 **A screen built on an unvalidated readout is not a screen.**
 

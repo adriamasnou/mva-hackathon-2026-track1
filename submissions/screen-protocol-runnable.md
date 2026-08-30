@@ -209,9 +209,18 @@ stall a facility. Closing it surfaced a real problem.
 > **two-colour discrimination by host species is gone.** Resolve it before the bench, by one of:
 > **(a)** an **isotype-specific** secondary pair — BD 612502 is **IgG2a** and DM1A is **IgG1**, so
 > anti-mouse-IgG2a and anti-mouse-IgG1 secondaries separate them cleanly; **(b)** a **directly
-> conjugated** α-tubulin reagent; or **(c)** a **rabbit** α-tubulin clone. **(a) is the cheapest
-> and keeps both validated clones.** This protocol does not choose for the lab, but it must not
-> ship a panel that silently cannot resolve its own two channels.
+> conjugated** α-tubulin reagent; or **(c)** a **rabbit** α-tubulin clone.
+>
+> ✅ **RESOLVED 2026-08-30 — a better exit than any of the three, and it comes from falsifying a
+> different claim.** The pilot protocol's founding negative (*"no anti-BubR1 antibody is
+> flow-validated by any vendor"*) turned out to be false: **four Novus clones list flow, and two
+> of them dissolve this clash outright.** Either **swap the BubR1 primary to the RABBIT clone
+> `NBP3-15207` (7H4)** — two hosts, two secondaries, DM1A stays exactly as it is — **or use a
+> directly conjugated 8G1 (`NB100-353AF350`, Alexa Fluor 350)** and drop the BubR1 secondary
+> entirely. **Both are cheaper than isotype-specific secondaries and neither requires giving up a
+> validated clone.** See `pilot-protocol-bubr1-flow.md` §1 and §1.1 for the datasheet evidence and
+> the recommendation. **[OUR INFERENCE from vendor datasheets held at `papers-local/datasheets/`,
+> retrieved 2026-08-30.]**
 >
 > **This document warned about exactly this class of error one section earlier** — §10.2(a):
 > *"do not carry this reagent between the two documents"* — and then carried a reagent across its
