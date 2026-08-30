@@ -7,7 +7,7 @@ Track 2 is **one shot with no resubmit**. Nothing here ships without Adrià's ex
 **Rubric this is written against:** Rigor 35 · Impact 25 · Innovation 25 · Scalability 15.
 
 > **Build note.** Sections are written in the order set by `dossier/PLAN-2026-08-29-remade.md` §5:
-> the two elements measured at **0 of 39 competitor owners** come first, because uncontested *and*
+> the two elements measured at **0 of 52 competitor owners** come first, because uncontested *and*
 > invisible is the worst combination for material we already hold. Every section below is
 > converted from held, sourced dossier material — **no section states anything not already
 > verified in the private tree.** **[OUR MEASUREMENT — the 0-of-39 field positions are from a grep
@@ -17,7 +17,7 @@ Track 2 is **one shot with no resubmit**. Nothing here ships without Adrià's ex
 
 ## 1. Impact — PGT-M for MVA is already approved in the UK, and is undiscoverable by gene
 
-**Field position: 0 of 39 competitor owners hold this** [OUR MEASUREMENT — grep over all 41 repos /
+**Field position: 0 of 52 competitor owners hold this** [OUR MEASUREMENT — grep over all 57 repos /
 39 owners in `archive/competitors/`, every hit read by hand; `F-005`, re-verified 2026-08-28].
 
 Preimplantation genetic testing for monogenic conditions (PGT-M) is **already approved by the UK
@@ -64,7 +64,26 @@ have not made.]**
 
 ## 2. Impact — a "Definitive" gene with zero expert-reviewed variants and no expert panel
 
-**Field position: 0 of 39 competitor owners hold this** [same measurement as §1].
+**Field position: 0 of 52 competitor owners hold this** [same measurement as §1].
+
+> 🔴 **DENOMINATOR CORRECTED 2026-08-30, IN OUR OWN FAVOUR.** Both field-position lines above read
+> **"0 of 39 competitor owners"** until today — a denominator two re-measurements stale. The
+> archive now holds **52 owners across 57 repositories**, and **both elements were re-measured
+> against all of it and both still return zero**:
+>
+> | screen | owners | route |
+> |---|---|---|
+> | `HFEA` | **0 of 52** | `grep -rli HFEA archive/competitors/` |
+> | `PGT-M` / `PGTM` | **0 of 52** | same, both spellings |
+> | *(context)* `preimplantation`, any mention | 2 of 52 — `ModeEric`, `neilkale` | the broader term IS present; the specific regulatory route is not |
+> | *(context)* `preimplantation genetic testing/diagnosis` spelled out | 1 of 52 — `ModeEric` | |
+> | *control* `BUB1B` | **51 of 52** | proves a zero here is real and not a broken route |
+>
+> **The stale figure understated our own claim**, and we are correcting it in the direction that
+> helps us — which is exactly why the control row is printed beside it. **[OUR MEASUREMENT —
+> 2026-08-30.]** The two context rows are given because *"nobody has thought about embryo
+> selection"* would be false; the claim is narrower and survives: **nobody has gone to the
+> regulator's own approved-condition register.**
 
 *BUB1B*'s gene–disease relationship for MVA is classified at the **highest confidence tier**. The
 variant-interpretation infrastructure that tier is supposed to imply **does not exist**.
