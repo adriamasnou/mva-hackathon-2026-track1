@@ -96,11 +96,34 @@ one measured in MVA.
 > being monitored for**, so counting all 25 as false alarms overstates the harm. What is fair to
 > take from it is that **scans often find something, and most of the time that something is not
 > cancer** — which is a real burden to weigh, and a different one from being told 40% of scans are
-> wrong. [Source abstract re-read 2026-08-30 by `efetch`.]
+> wrong.
+>
+> ✅ **FULL TEXT NOW HELD (2026-08-31), and it confirms both halves of that correction.** What the
+> 25 findings actually were:
+>
+> | finding on ultrasound | children |
+> |---|---|
+> | nephromegaly / kidney size discrepancy | **11 / 63 (17.5%)** |
+> | hydronephrosis or collecting-system dilation | 4 / 63 (6.3%) |
+> | echogenic changes in the kidney | 3 / 63 (4.8%) |
+> | haemangiomas / haemangioendotheliomas | 2 / 63 (3.2%) |
+> | enlarged spleen | 2 / 63 (3.2%) |
+> | calcium deposits in kidney or liver | 2 / 63 (3.2%) |
+>
+> **The single commonest finding is a large kidney**, which is a feature of the overgrowth
+> condition itself. **And the paper reports no follow-up data at all** — it does not say what
+> further imaging, referral or procedure any of these children then had. So the *"required further
+> investigation"* clause we had written is not merely unsupported by the abstract; **it is absent
+> from the full paper.** We are leaving that gap visible rather than filling it.
 
-**And a false alarm is not always harmless.** In an earlier series, **two children had renal
-lesions removed that were suspected to be cystic Wilms tumours and proved to be infected cysts.
-One of them had a kidney and ureter removed** (Choyke *et al.*, *Med Pediatr Oncol* 1999,
+**And a false alarm is not always harmless.** In an earlier series, **three children had a false
+positive on screening and were operated on for a suspected Wilms tumour. In two the lesion proved
+to be an infected renal cyst — one of those two had a whole kidney and its ureter removed** (a
+radical nephroureterectomy, in an 8-month-old boy, on a CT read as a Wilms tumour "even though it
+was quite cystic"). **In the third the lesion was nephroblastomatosis** — a genuine tumour
+precursor, so that operation found something real. *(Full text held and read 2026-08-31; the
+earlier version of this paragraph described the two cyst cases and omitted the third child, which
+made the harm look slightly worse than the paper reports.)* (Choyke *et al.*, *Med Pediatr Oncol* 1999,
 **PMID 10064187**).
 
 ⚠️ **These numbers come from Beckwith-Wiedemann spectrum, not MVA.** BWS is the condition in which
@@ -113,7 +136,12 @@ you should weigh it as such.**
 The recommendation rests on the size of the risk and on general principle, not on a trial in these
 children. **The effectiveness of screening in BWS has been studied** (Mussa *et al.*,
 *J Cancer Res Clin Oncol* 2019, **PMID 31583434**) and a **cost-effectiveness model exists for
-BWS** (McNeil *et al.*, *Med Pediatr Oncol* 2001, **PMID 11568898**) — again, not MVA.
+BWS** (McNeil *et al.*, *Med Pediatr Oncol* 2001, **PMID 11568898**) — again, not MVA. **Full text
+held 2026-08-31:** it models scans three times a year from birth and finds **$9,642 per life-year
+saved if screening stops at age 4**, **$14,740 if it continues to age 7**, both inside the range
+normally judged acceptable for population cancer screening (**under $50,000 per life-year**). Its
+conclusion is that sonographic screening in BWS **is a reasonable strategy and that a trial is
+warranted** — i.e. the economics are not the obstacle; the evidence of benefit is.
 
 **One thing we can say plainly:** the consensus group recommends surveillance for *all* forms of
 MVA specifically **because the numbers for each individual gene are too small to act on separately**
@@ -291,7 +319,7 @@ option described. **The author is a participant in a competition in which this d
 submission** — which is a real interest and is disclosed here rather than left to be discovered.
 The author does not gain or lose from which option any family chooses.
 
-**Evidence.** Cited inline by PMID. 🔻 **Corrected 2026-08-30 — this line read *"Primary sources, cited inline by PMID"*, and that overstates what was read.** Two sources were read in full: **Hol *et al.* 2021 (PMID 34134020)** and **Nakano *et al.* 2024 (PMID 39264246)** — and both are **literature reviews and consensus recommendations, not original studies**. The four papers behind the numbers in §2.5 and §2.6 (**PMIDs 19610116, 10064187, 31583434, 11568898**) were reached through Hol 2021's reference list and §4 narrative; **their abstracts have since been read directly** (see §2.5, corrected the same day) **but their full texts are not held here**. **[SECONDARY where marked.]** Nothing in this document rests on a source we have not at least read the abstract of, and where a figure comes from a review rather than the study itself, the review is named. Where a required number could not be found,
+**Evidence.** Cited inline by PMID. 🔻 **Corrected 2026-08-30 — this line read *"Primary sources, cited inline by PMID"*, and that overstates what was read.** Two sources were read in full: **Hol *et al.* 2021 (PMID 34134020)** and **Nakano *et al.* 2024 (PMID 39264246)** — and both are **literature reviews and consensus recommendations, not original studies**. The four papers behind the numbers in §2.5 and §2.6 (**PMIDs 19610116, 10064187, 31583434, 11568898**) were reached through Hol 2021's reference list and §4 narrative; **their abstracts were read directly on 2026-08-30, and on **2026-08-31 Adrià supplied the paywalled full texts — three of the four are now HELD AND READ** (Choyke 1999, Zarate 2009, McNeil 2001), and the corrections in §2.5 and §2.6 above were made from those full texts, not from abstracts. **The fourth, Mussa 2019 (PMID 31583434), is the exception: its PMC record is front matter only, so it remains a resolved reference with an unread body, and nothing in this document rests on it.** **[SECONDARY only where marked.]** Nothing in this document rests on a source we have not at least read the abstract of, and where a figure comes from a review rather than the study itself, the review is named. Where a required number could not be found,
 this document says so rather than substituting an estimate.
 
 *This is research communication, not medical advice. All decisions belong with the family and

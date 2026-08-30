@@ -29,8 +29,14 @@ the unit costs are not.]**
 analysis with ICERs for Wilms tumour surveillance — not in Beckwith-Wiedemann, DICER1, CMMRD or
 retinoblastoma." That is wrong.** **McNeil *et al.*, *Med Pediatr Oncol* 2001, PMID 11568898** is a
 cost-effectiveness model for Wilms tumour and hepatoblastoma surveillance in Beckwith-Wiedemann
-syndrome, reporting **cost per life-year saved**, and its costs were judged reasonable against
-population cancer-screening programmes of the time. It is cited in **§4 of Hol 2021, the paper this
+syndrome, reporting **cost per life-year saved**. ✅ **Full text held 2026-08-31, so the figures can
+now be given rather than characterised:** modelling two hypothetical cohorts of 1,000 BWS infants
+with sonography **three times yearly from birth**, it reports **$9,642 per life-year saved when
+screening stops at age 4** and **$14,740 when it continues to age 7** — both within the
+**< $50,000 per life-year** band it takes as the acceptable range for population cancer screening,
+and robust to high/low variation in scan cost, discount rate and screening effectiveness. Its
+stated conclusion: sonography in BWS **"represent[s] a reasonable strategy for a cancer screening
+program"** and a trial is warranted. It is cited in **§4 of Hol 2021, the paper this
 project's surveillance recommendation is built on and whose full text we have held throughout.**
 
 **The claim was produced by searching our own notes rather than the source.** The honest, narrower
