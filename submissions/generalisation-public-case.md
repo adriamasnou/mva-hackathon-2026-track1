@@ -127,10 +127,30 @@ as a benchmark in either direction.
    > **[`splice-prediction.md`](splice-prediction.md)** — a document shipping in this same
    > directory. **A judge opening both files would have found one denying a capability the other
    > delivers.** The true statement is the narrow one now in the item text: splice prediction
-   > played no part in *this Exomiser run*. **We have not verified whether the §3b genome-scale run
-   > included `SPLICE_AI`, and we do not claim either way** — the only `SPLICE_AI` strings we can
-   > point to are in vendored example configs, which is exactly what this item warns against
-   > treating as evidence.
+   > played no part in *this* §3 run.
+   >
+   > ✅ **AND §3b DID USE IT — settled from our own output, not from a config file.** An earlier
+   > version of this note said we had not verified that and would not claim either way, because
+   > the only `SPLICE_AI` strings we could point to were in **vendored examples**. That was the
+   > right caution and the wrong place to stop: **the run's own results record which source scored
+   > each variant.** Parsing `HG002-spiked.jsonl` (the §3b output, 4,096,123 variants in):
+   >
+   > | pathogenicity source | variant records scored |
+   > |---|---|
+   > | `ALPHA_MISSENSE` | 1,569 |
+   > | `REVEL` | 1,445 |
+   > | `MVP` | 1,146 |
+   > | **`SPLICE_AI`** | **113 — and for 53 of them it is the ONLY source, i.e. the variant's entire pathogenicity score is SpliceAI's** |
+   > | `SIFT` · `POLYPHEN` · `MUTATION_TASTER` | 0 |
+   >
+   > A representative record: a `SPLICE_REGION_VARIANT` with
+   > `"pathogenicityScore":0.32,"pathogenicityScores":[{"score":0.32,"source":"SPLICE_AI"}]`.
+   > **So the §3b source set was `[REVEL, MVP, ALPHA_MISSENSE, SPLICE_AI]` and SpliceAI contributed
+   > real deltas to real variants.** ⚠️ **The §3b run's YAML was never saved** — only its output —
+   > which is why this had to be recovered by parsing results. Same class of gap as the VEP
+   > `docker run` lines: the result was kept, the command was not.
+   > [OUR MEASUREMENT — `pipeline/work/exomiser_wgs/HG002-spiked.jsonl` parsed 2026-08-30;
+   > 1,644 records carry `pathogenicityScores`; control: three other sources return non-zero.]
 
 ## 5. Reproduce
 
