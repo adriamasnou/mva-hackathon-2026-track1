@@ -75,10 +75,39 @@ Z' = 1 - 3·CV·(hi + lo) / (hi - lo)
 | knockdown host line | ATCC | **HeLa CCL-2** (RRID **CVCL_0030**) or **U2OS HTB-96** (RRID **CVCL_0042**) — both verified via Cellosaurus |
 | secondary | Jackson ImmunoResearch **715-545-150** | **Alexa Fluor 488 AffiniPure Donkey Anti-Mouse IgG (H+L), *min X*** — flow-validated. 🔴 ***min X* is not optional here: see below** |
 | **patient cells** | NIGMS/Coriell | **GM21284** (LCL, *BUB1B* `753X`/`R814H`) |
-| **control cells** | NIGMS/Coriell | **GM21657**, **GM22004** (unaffected parent LCLs) |
+| **normal-abundance reference** | NIGMS/Coriell | **GM12878** (CEPH/HapMap LCL) **plus ≥1 further unrelated apparently-healthy LCL** — see the 🔴 box below |
 | positive control (raises BubR1) | Calbiochem | **MG132**, CAS **133407-82-6** |
-| **specificity control** | Foley 2011 | **dsiBUBR1 5'-GUCUCACAGAUUGCUGCCUCAGAGC-3'** |
+| **specificity control** | **Gama Braga 2020**, *Cell Rep* 33:108397 (PMID 33207204) — see the citation note in §5.6 | **dsiBUBR1 5'-GUCUCACAGAUUGCUGCCUCAGAGC-3'**, published at **20–50 nM** |
 | mitotic arrest (optional arm) | Sigma | nocodazole **M1404-10MG** |
+
+> 🔴 **CORRECTED 2026-08-30 — the previous control lines were wrong, and wrong in the direction
+> that would have broken the assay.** This table used to name **GM21657** and **GM22004** as
+> "unaffected parent LCLs". Coriell's own records, fetched to check, say otherwise:
+>
+> | line | what Coriell actually says | why it cannot be the 100% denominator |
+> |---|---|---|
+> | **GM21657** | *"MOSAIC VARIEGATED ANEUPLOIDY SYNDROME 2; MVA2 · CENTROSOMAL PROTEIN, 57-KD; CEP57"*, father of GM21654/GM21655 | **A different gene.** He is in the *CEP57* family this protocol already lists one row below as its *specificity* control |
+> | **GM22004** | *"MOSAIC VARIEGATED ANEUPLOIDY SYNDROME 1; MVA1"*, *"father of an affected child (GM22006)"* | MVA is **autosomal recessive**, so he is an **obligate heterozygous carrier** at the *BUB1B* locus |
+> | **GM21284** | *"parental cell lines not in the repository"* | **Neither line is a parent of the patient line.** No parent of GM21284 exists at Coriell |
+>
+> **Why this mattered more than a wrong catalogue number.** These two lines were the **100%
+> denominator** for acceptance criterion 3 (*patient ≈ 20–35% of control*) and the cells §5.1
+> titrates the antibody on. Using a carrier as "normal" compresses the very ratio the assay
+> exists to measure — and the protocol's **own anchor paper says so**: Matsuura 2006 reports
+> lymphoblastoid BubR1 at **63–158% in normal individuals** against **21–57%** in truncating-
+> mutation carriers and **31–71%** in 6G3-haplotype carriers. A carrier denominator would have
+> made a real reduction look smaller than it is, in the conservative direction — which is worse,
+> not better, because it costs sensitivity silently.
+>
+> **The replacement, and why it is defensible.** The reference must be **unrelated to any MVA
+> family**, apparently healthy, and an LCL so that cell type matches. **GM12878** is a
+> CEPH/HapMap pedigree-1463 B-lymphocyte line, the most deeply characterised LCL in existence
+> (1000 Genomes / ENCODE tier 1). *Full disclosure from its Coriell record: it carries* `CYP2C19*2`,
+> *a pharmacogenetic splice variant with no relationship to BubR1 abundance.* **Use at least two
+> unrelated controls**, because criterion 3 is a ratio and a single denominator has no spread.
+> The *CEP57* lines **GM21654 · GM21655 remain the specificity control** — a different MVA gene is
+> exactly what that arm needs — and **GM21657 and GM22004 may still be run as carrier comparators,
+> labelled as carriers**, which is informative. They are simply not "normal".
 
 Cell lines ~**$262 US-academic / $448 international** each, MTA required.
 
@@ -271,7 +300,7 @@ purpose. **Hence the time course rather than a single invented number.**
 
 ### 5.6 ⚠️ The knockdown control has a practical problem, and it changes where it is run
 
-`dsiBUBR1 5'-GUCUCACAGAUUGCUGCCUCAGAGC-3'` (Foley 2011) is the right reagent, **but LCLs are
+`dsiBUBR1 5'-GUCUCACAGAUUGCUGCCUCAGAGC-3'` (**Gama Braga 2020**, PMID 33207204; see §5.6) is the right reagent, **but LCLs are
 EBV-transformed B cells and are notoriously refractory to lipid transfection.** Assuming a
 lipofection will work here is the kind of assumption that costs a month.
 
@@ -286,15 +315,42 @@ lipofection will work here is the kind of assumption that costs a month.
 (ATCC HTB-96, CVCL_0042)**, reverse-transfected with a standard lipid reagent (e.g. Lipofectamine
 RNAiMAX).
 
-🔻 **Concentration corrected: a dose–response at 0.1 / 1 / 10 nM, NOT the "10–20 nM" an earlier
-version specified.** `dsiBUBR1` is a **DsiRNA** — a 27mer Dicer-substrate duplex, which the
-manufacturer states is **more potent than a conventional 21mer siRNA**, is typically used at
-**1–10 nM**, and often achieves knockdown **at 1 nM or less**. The manufacturer's recommended
-starting design is explicitly a **0.1 / 1 / 10 nM dose–response**.
-> 🔴 **Why this is not a detail.** The manufacturer's stated reason for low concentrations is
-> **minimising off-target effects** — and this arm exists **solely to demonstrate SPECIFICITY.**
-> Running it at 10–20 nM would have used an excess whose known consequence is off-target activity,
-> **inside the one experiment whose entire purpose is showing the signal is on-target.**
+🔻🔻 **CONCENTRATION CORRECTED TWICE — read this, because the first correction made it worse.**
+An early version specified "10–20 nM". A correction on 2026-08-30 replaced that with a
+**0.1 / 1 / 10 nM** dose–response, reasoning from the *manufacturer's* generic DsiRNA guidance
+(27mer Dicer-substrate, more potent than a 21mer, often effective at ≤1 nM). **That reasoning was
+sound and the answer was wrong**, because generic vendor guidance was preferred over the only
+published use of *this exact duplex*.
+
+**Gama Braga et al. 2020 (*Cell Rep* 33:108397, PMID 33207204) — the paper that published this
+sequence — states in its Methods, verbatim: `dsiBUBR1 (20-50 nM)`.** The same paragraph runs
+`dsiCENP-E` at 50 nM and `dsiBUB1` at 20 nM. **That laboratory does not run DsiRNAs at 1 nM.**
+The 0.1 nM floor was **200–500× below** the published working concentration and even the 10 nM
+ceiling was 2–5× below it — a titration that could have returned no knockdown and been read as
+antibody failure.
+
+**★ USE: a dose–response of `5 / 20 / 50 nM`**, which brackets the published 20–50 nM rather than
+sitting under it. Report the knockdown at each dose. If ≥70% knockdown is reached at 5 nM, use the
+lowest effective dose for the specificity arm — the manufacturer's off-target argument below is
+still correct, it just cannot justify a range that has never been shown to work.
+
+> 🔴 **CITATION NOTE, and it does not resolve cleanly.** This protocol previously attributed the
+> duplex to **Foley 2011**. **Gama Braga's own Key Resources Table credits it the same way** —
+> `dsiBUBR1 … (Foley et al., 2011)` — so the attribution was inherited from a peer-reviewed
+> source, not invented here. **But we hold Foley et al. 2011 (*Nat Cell Biol* 13:1265,
+> PMID 21874008) in full text, and the duplex sequence does not appear in it**
+> (`grep -c GUCUCACAGAUUGCU foley2011.txt` → 0; that paper's siRNAs target the B56 subunits, and
+> "BubR1" appears 6 times in the whole text). We cannot exclude a supplementary file we do not
+> hold, so we do not assert that Gama Braga is wrong. **What we assert is what we verified:
+> Gama Braga 2020 publishes the sequence and the working concentration, so Gama Braga is the
+> citation a reader needs — and the concentration is the reason it matters.**
+> 🔴 **The off-target argument is still real — it just cannot set the dose on its own.** The
+> manufacturer's stated reason for low DsiRNA concentrations is **minimising off-target effects**,
+> and this arm exists **solely to demonstrate SPECIFICITY**, so an unnecessary excess is a genuine
+> hazard inside the one experiment whose purpose is showing the signal is on-target. That is why
+> the recommended series **brackets** the published 20–50 nM from below (5 / 20 / 50 nM) and why
+> the lowest dose reaching ≥70% knockdown is the one to carry forward. **A concentration that has
+> never been shown to work is not the safe choice; it is an uninterpretable one.**
 
 🔴 **Add a POSITIVE transfection control** (e.g. an HPRT DsiRNA), which the manufacturer recommends
 in every experiment to assess transfection efficiency. **This protocol had a non-targeting control
@@ -439,7 +495,7 @@ says which is which, because a protocol that hides the difference is worse than 
 | A300-386A = **NCBI Gene 701 (*BUB1B*)**, RRID AB_386097 · A300-373A = *BUB1*, RRID AB_2065943 | Antibody Registry + NCBI |
 | fix/perm 4% formaldehyde + 1% Triton, 20 min RT | published, used for BUBR1 staining |
 | MG132 **10 µM** | literature held here |
-| `dsiBUBR1` sequence | Foley 2011 |
+| `dsiBUBR1` sequence and its **20–50 nM** working concentration | **Gama Braga 2020**, *Cell Rep* 33:108397, PMID 33207204 (its own resource table credits Foley 2011; we could not find the duplex there — see §5.6) |
 | GM21284 / GM21657 / GM22004, type, genotype, price | NIGMS repository |
 | Jackson **715-545-150** | published Key Resources Table |
 | TruStain FcX **422302**, RRID AB_2818986, FACS + ICS | vendor |
@@ -453,7 +509,7 @@ says which is which, because a protocol that hides the difference is worse than 
 | **≥20,000 events/well** | **DERIVED** — `SE(median) ≈ 1.2533·σ/√n` against the 6.7% budget |
 | **90% methanol, minimum 10 min on ice**; **methanol damages PE and APC** | vendor alcohol-permeabilisation protocols |
 | **715-545-150 = Alexa 488 donkey anti-mouse IgG (H+L) *min X***, flow-validated | Jackson ImmunoResearch |
-| **DsiRNA at 0.1 / 1 / 10 nM** (27mer, more potent than 21mer; low doses to limit off-target); **a positive transfection control in every experiment** | manufacturer guidance |
+| **DsiRNA at 5 / 20 / 50 nM**, bracketing the published 20–50 nM; **a positive transfection control in every experiment** | **Gama Braga 2020 Methods** for the concentration; manufacturer guidance for the off-target rationale and the transfection control |
 | EBV transformation **increases** FcR per cell | literature |
 
 **[B] DERIVED — computed by us from sourced inputs, reproducible**
@@ -467,12 +523,16 @@ says which is which, because a protocol that hides the difference is worse than 
 **[C] 🔴 CONVENTION OR OUR CHOICE — NOT from a primary source for this assay**
 
 **5 × 10⁵ cells per well · 50 µL staining volumes · 30 min RT secondary · secondary at 1:500 · the
-1:50–1:800 titration range · dsiRNA at 10–20 nM and 48/72 h · MG132 duration (already flagged) ·
+1:50–1:800 titration range · the dsiRNA **timepoints** 48/72 h (the *concentration* is now sourced — §5.6) · MG132 duration (already flagged) ·
 ≥2 passages after thaw.**
 
-🔻 **A FIFTH pass corrected the knockdown arm outright:** the DsiRNA concentration was **10–20 nM
-against the manufacturer's 0.1/1/10 nM**, in the one experiment whose purpose is specificity; and a
-**positive transfection control was missing**, without which a failed criterion 2 is uninterpretable.
+🔻 **A FIFTH pass corrected the knockdown arm, and a SIXTH pass corrected the FIFTH.** The fifth
+replaced "10–20 nM" with the manufacturer's generic **0.1 / 1 / 10 nM**. The sixth (2026-08-30)
+found that this preferred vendor boilerplate over the **only published use of this exact duplex**:
+Gama Braga 2020 runs `dsiBUBR1` at **20–50 nM**, so the "corrected" floor was 200–500× below a
+working dose. **★ Now 5 / 20 / 50 nM.** The fifth pass's other finding stands: a **positive
+transfection control was missing**, without which a failed criterion 2 is uninterpretable.
+**A fix is a new claim and earns the same scrutiny as what it fixed.**
 
 🔻 **A FOURTH pass moved two more out, and both carried a constraint I did not have:** the methanol
 conditions (**90%, minimum 10 min on ice — and PE/APC are damaged by methanol**, which is a trap for

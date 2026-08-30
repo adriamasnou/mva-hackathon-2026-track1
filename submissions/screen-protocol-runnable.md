@@ -45,7 +45,8 @@ throughput objection to a flow readout dissolves at 384-well.
 | line | type | genotype | role |
 |---|---|---|---|
 | **GM21284** | LCL | *BUB1B* `4-bp ins 2211GTTA` / `R814H` | **the screen line** |
-| GM21657 · GM22004 | LCL | unaffected parents (families 2680 / 2741) | normal-abundance reference |
+| **GM12878** + ≥1 further unrelated apparently-healthy LCL | LCL | CEPH/HapMap pedigree 1463; no MVA-gene family history | **normal-abundance reference** |
+| GM21657 · GM22004 | LCL | 🔴 **obligate carriers, NOT normals — corrected 2026-08-30.** GM21657 is *CEP57*/MVA2 (father of GM21654·GM21655, the row below); GM22004 is *MVA1* (father of an affected child). MVA is recessive, so both are heterozygous carriers | **carrier comparators** — informative, but they cannot be the 100% denominator |
 | GM21654 · GM21655 | LCL | *CEP57* patients | specificity control — a different MVA gene |
 
 **~$262 US-academic / $448 international each, MTA required** (NIGMS Human Genetic Cell Repository).
@@ -147,13 +148,13 @@ exactly that, and each must be run on every confirmed hit:
 
 | item | estimate |
 |---|---|
-| cell lines (4 × ~$262–448) | **$1,050–1,800** |
+| cell lines — **5 minimum** (GM21284 + 2 unrelated normals + 2 *CEP57* specificity), **7 with the carrier comparators** — at $262 US-academic / $448 international each | **$1,310–2,240** minimum · **$1,834–3,136** full |
 | Prestwick library access (facility-dependent) | **[VARIES — often already held by the facility]** |
 | 384-well plates, antibodies, staining reagents, ~6 plates + validation | **$2,000–5,000** |
 | high-throughput flow time | **[NOT ESTIMATED — facility rate]** |
 | **elapsed time, validation → confirmed hits** | **[ESTIMATE] 3–5 months** |
 
-**[OUR ESTIMATE. Cell-line prices are `[VERIFIED]` from the repository. Everything else is a range
+**[OUR ESTIMATE. Cell-line prices are `[VERIFIED]` from the repository — GM12878 was checked on 2026-08-30 and sits in the same $262/$448 tier. The line COUNT was corrected the same day: the table said 4 while §3 specified 5, and §3 now specifies 7 including the carrier comparators. Everything else is a range
 for scoping, not a quote — and labour is not included, not because it is small but because
 inventing it would be worse than admitting it.]**
 
@@ -190,7 +191,31 @@ stall a facility. Closing it surfaced a real problem.
 | **anti-BUBR1** | **Bethyl A300-386A** | ⚠️ documented in our holdings **at 1:100 for immunofluorescence** — **NOT for flow** |
 | MG132 (Z′ maximum control) | Calbiochem, CAS **133407-82-6** | ✅ catalogued |
 | **anti-α-tubulin, clone DM1A** — the "unrelated abundance control protein" of §7.2, now named | Santa Cruz **sc-32293**, RRID:**AB_628412** | ✅ catalogued |
-| Alexa-conjugated secondaries | Jackson ImmunoResearch, 711-545-152 etc. | ✅ catalogued |
+| Alexa-conjugated secondary — **anti-MOUSE** | Jackson ImmunoResearch **715-545-150** (Alexa Fluor 488 AffiniPure Donkey Anti-**Mouse** IgG (H+L), *min X*) | ✅ catalogued · 🔴 **corrected 2026-08-30, see below** |
+
+> 🔴 **THE §10.3 RECOMMENDATION CHANGE HAD NOT REACHED THIS TABLE, AND THE PANEL AS LISTED COULD
+> NOT HAVE PRODUCED A SIGNAL.** §10.3 ends *"★ RECOMMENDATION CHANGED: use BD 612502 (clone 9),
+> not A300-386A"* — swapping a **rabbit polyclonal** for a **mouse monoclonal, IgG2a**. This table
+> still listed **Jackson 711-545-152** as the only secondary. Checked against the vendor on
+> 2026-08-30, with a positive control run first: **715-545-150 → "Alexa Fluor 488-Donkey
+> Anti-Mouse IgG"**, **711-545-152 → "Alexa Fluor 488-Donkey Anti-*Rabbit* IgG"**. An anti-rabbit
+> secondary is blind to a mouse primary: the stain would have come back empty and read as
+> "the antibody does not work in flow".
+>
+> **A SECOND PROBLEM THE SWAP CREATES, which was not in the original finding's scope but follows
+> from it.** The §7.2 abundance control in this same table, **Santa Cruz sc-32293 (clone DM1A,
+> RRID AB_628412)**, is *also* a **mouse monoclonal** — confirmed via the Antibody Registry API on
+> 2026-08-30 (`sourceOrganism: mouse, clonality: monoclonal`). Once the BubR1 primary is mouse,
+> **two-colour discrimination by host species is gone.** Resolve it before the bench, by one of:
+> **(a)** an **isotype-specific** secondary pair — BD 612502 is **IgG2a** and DM1A is **IgG1**, so
+> anti-mouse-IgG2a and anti-mouse-IgG1 secondaries separate them cleanly; **(b)** a **directly
+> conjugated** α-tubulin reagent; or **(c)** a **rabbit** α-tubulin clone. **(a) is the cheapest
+> and keeps both validated clones.** This protocol does not choose for the lab, but it must not
+> ship a panel that silently cannot resolve its own two channels.
+>
+> **This document warned about exactly this class of error one section earlier** — §10.2(a):
+> *"do not carry this reagent between the two documents"* — and then carried a reagent across its
+> own section boundary. The warning was right; the propagation was not done.
 
 > ### The risk, stated plainly
 > **BubR1 HAS been read by FACS** — Janssen 2009 lists it among antibodies used for "Western blot,
