@@ -115,9 +115,22 @@ as a benchmark in either direction.
 3. **The phenotype is clean and specific.** Real referrals carry sparser, noisier HPO terms.
 4. **Nothing here validates the *BUB1B* analysis.** It validates the *machinery*, on a case where
    the answer is independently known.
-5. ⚠️ **This run does not credit any splice-prediction capability.** `pathogenicitySources` was set
-   to `[REVEL, MVP]`. SpliceAI is **not installed here**, and the vendored example configuration
-   that references it must not be read as evidence that we ran it.
+5. ⚠️ **This run does not credit any splice-prediction capability — but the submission does.**
+   `pathogenicitySources` was set to `[REVEL, MVP]`, so **no splice source contributed to any score
+   in this run**, and the vendored example configurations that list `SPLICE_AI` must not be read as
+   evidence that we ran it. **That last caution is the reason for the correction below: it is
+   right, and an earlier version of this item over-applied it.**
+
+   > 🔴 **CORRECTED 2026-08-30 — this item used to say "SpliceAI is *not installed here*", and that
+   > is false.** `import spliceai` succeeds on this machine, and **SpliceAI 1.3.1 was executed
+   > locally on the child's two variants, with a positive control**, and published in
+   > **[`splice-prediction.md`](splice-prediction.md)** — a document shipping in this same
+   > directory. **A judge opening both files would have found one denying a capability the other
+   > delivers.** The true statement is the narrow one now in the item text: splice prediction
+   > played no part in *this Exomiser run*. **We have not verified whether the §3b genome-scale run
+   > included `SPLICE_AI`, and we do not claim either way** — the only `SPLICE_AI` strings we can
+   > point to are in vendored example configs, which is exactly what this item warns against
+   > treating as evidence.
 
 ## 5. Reproduce
 
@@ -138,12 +151,18 @@ only data bundle installed was `2512_hg38`.** A neighbouring filename ending `_3
 assembly and is a UTR position.
 
 The plan's premise — that the work was bought and only needed running — was wrong by one 19.4 GB
-download. That bundle is now downloading, from
-`data.monarchinitiative.org/exomiser/data/2512_hg19.zip`; the URL documented in the tool's own
-README (`/exomiser/latest/`) returns 404, because "latest" has moved on to an older-numbered
-release than the one installed.
+download, **and that download FAILED.**
 
-**That bundle is still downloading, and §3b has since made the Pfeiffer run redundant as a scale
+> 🔴 **STATUS, DATED, BECAUSE THE PREVIOUS WORDING SAID "is now downloading" AND WAS STALE BY A
+> DAY.** The hg19 bundle was pulled from `data.monarchinitiative.org/exomiser/data/2512_hg19.zip`
+> — the URL in the tool's own README (`/exomiser/latest/`) returns 404, because "latest" has moved
+> on to an *older*-numbered release than the one installed. **The transfer stopped at 5.36 GB of
+> 19.4 GB (27.7%) at 17:46 on 2026-08-29 and never resumed**; the partial file is not a valid zip
+> archive (`zipfile.BadZipFile`). **Checked again on 2026-08-30: unchanged.** It is a dead
+> download, not a running one. [OUR MEASUREMENT — `os.path.getsize` and `zipfile.ZipFile` on
+> `/Volumes/BOLCAT-WIN/exomiser-data/2512_hg19.zip`, 2026-08-30.]
+
+**That bundle never finished, and §3b has since made the Pfeiffer run redundant as a scale
 test**: at 37,709 variants it is *two orders of magnitude smaller* than the 4,096,123-variant run
 already completed. It remains worth doing as an independent second case on a different assembly,
 and it is named here rather than quietly dropped — but the limitation it was going to close has

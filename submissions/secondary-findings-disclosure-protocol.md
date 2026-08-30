@@ -38,7 +38,7 @@ wrong to place in a public repository attached to a named child who cannot conse
 day be an adult.
 
 **Precedent does not settle it.** CAGI6-RGP instructed teams *not* to return incidental findings
-(Stenton *et al.* 2024). This hackathon explicitly invites them. Neither addresses the difference
+(Stenton SL *et al.*, *Hum Genomics* 2024;18:44. **PMID 38685113** · doi:10.1186/s40246-024-00604-w). This hackathon explicitly invites them. Neither addresses the difference
 between finding something and publishing it.
 
 The resolution is not to refuse the findings. It is to **separate what is discovered from what is
@@ -177,8 +177,18 @@ nothing to disclose, and therefore no Tier 2 transmission to request.**
 > A zero from an unverified lookup is indistinguishable from a broken one. **Controls, run before
 > the result was believed:** 1,851 of the proband's chr15 variants match ClinVar records, so the
 > join works; and the proband's **own** truncating allele is **found** in ClinVar while his
-> missense allele is **absent** — exactly as expected, since the latter is novel. A screen that
+> missense allele is **absent** — exactly as expected, since this screen joins on
+> chromosome/position/ref/alt and **`c.3006T>G` is novel *at the nucleotide level*.** A screen that
 > cannot find the variant we already know about would not be evidence of anything.
+>
+> 🔴 **PRECISION ADDED 2026-08-30, because "novel" without a qualifier is wrong here.**
+> **p.Asn1002Lys is NOT novel as a protein change.** ClinVar holds
+> **VCV004600147 — `NM_001211.6(BUB1B):c.3006T>A (p.Asn1002Lys)`, Uncertain significance, criteria
+> provided/single submitter** — the same codon and the same amino-acid substitution, reached by
+> **T>A** instead of the child's **T>G**. What is absent from ClinVar is the child's *nucleotide*
+> change, which is why a position/ref/alt join correctly returns nothing. Sibling files in this
+> project already carried the *"at the nucleotide level"* qualifier; this one had dropped it.
+> [OUR MEASUREMENT — ClinVar esummary for VariationID 4600147, 2026-08-30.]
 
 ### 🔑 What the NHS comparison shows, and why it belongs in a protocol document
 
@@ -220,5 +230,5 @@ adapt or absorb it, in whole or in part, with or without attribution to us. Part
 nothing specific to this condition, this child, or this contest, and that is deliberate: the
 hazard belongs to the format, not to the case.
 
-**Reference for the returned-findings route:** Stenton *et al.*, on the Rare Genomes Project's
+**Reference for the returned-findings route:** Stenton SL *et al.*, *Hum Genomics* 2024;18:44, **PMID 38685113** · doi:10.1186/s40246-024-00604-w 🔻 *(the identifier was missing at both sites until 2026-08-30 — a bare author-year is invisible to this project's PMID-regex citation gate, so it passed every audit by being unparseable rather than by being right)*, on the Rare Genomes Project's
 practice of returning findings via a local clinician after clinical confirmation.

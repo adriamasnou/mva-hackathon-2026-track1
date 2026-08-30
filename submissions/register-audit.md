@@ -93,10 +93,20 @@ Measured across the whole register, from ClinVar's own review-status field
 | genes behind UK-approved PGT-M conditions | 1,778 |
 | **…with ≥1 expert-panel-reviewed variant** | **141 (7.9%)** |
 | **…with ZERO expert-panel-reviewed variants** | **1,637 (92.1%)** |
-| **approved conditions where no causative gene has any expert curation** | **1,851 of 2,026 (91.4%)** |
+| **approved conditions where no causative gene has any expert curation** | **1,851 of the 2,026 gene-mappable conditions (91.4%)** — **1,851 of all 2,063 approved (89.7%)** |
 
-> **The UK approves embryo selection against 2,063 conditions. For 91.4% of them, no expert panel
-> has ever classified a single variant in any causative gene.**
+> **The UK approves embryo selection against 2,063 conditions. For 1,851 of them — 89.7% — no
+> expert panel has ever classified a single variant in any causative gene.**
+
+🔻 **CORRECTED 2026-08-30 — the numerator and the denominator were from different populations.**
+This pull-quote used to read *"For 91.4% of them"*. **91.4% is 1,851 / 2,026** — a rate over the
+conditions that could be mapped to a causative gene **at all** — while the sentence applies it to
+the **2,063** approved conditions it names in its own first clause. Over 2,063 the figure is
+**89.7%**. The ~37 unmapped conditions cannot be assessed for expert curation either way, so
+**89.7% is a floor**: the true share is somewhere between 89.7% and 91.4% depending on how the
+unmapped tail resolves, and the floor is the honest number to lead with. The table above keeps
+1,851/2,026 = 91.4% and now says which population it is over. [OUR MEASUREMENT — arithmetic,
+2026-08-30: 1851/2063 = 89.7%, 1851/2026 = 91.4%.]
 
 ***BUB1B* holds 2,472 ClinVar variants and 0 expert-panel classifications.** That is not an
 outlier; it is the ordinary case.

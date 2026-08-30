@@ -39,8 +39,19 @@ Before any biological reading, the callset has to be characterised honestly:
 - **`PASS` does not mean the sample carries the variant.** 496 DEL, 387 DUP and 561 BND calls are
   `PASS` with genotype `0/0`.
 - **The large end is dominated by artefact.** The largest `PASS` "deletion" spans **223 Mb** —
-  longer than any human chromosome. 383 `PASS` calls exceed 5 Mb, and **348 of those (91%) are
-  `IMPRECISE`**, i.e. supported by discordant read pairs with no breakpoint-spanning reads.
+  longer than any human chromosome. **516 `PASS` calls exceed 5 Mb, and 348 of those (67%) are
+  `IMPRECISE`** — supported by discordant read pairs with no breakpoint-spanning reads. Restricted
+  to the calls that also carry a genotype, **383 remain, of which 246 (64%) are `IMPRECISE`**.
+
+  > 🔻 **CORRECTED 2026-08-30, and it was three errors in one sentence.** It read *"383 `PASS`
+  > calls exceed 5 Mb, and **348 of those (91%)** are `IMPRECISE`"*. **(a)** `PASS` calls over
+  > 5 Mb is **516**; 383 is that set further restricted to a carried genotype — a restriction the
+  > sentence never stated. **(b)** 348 is the `IMPRECISE` count over the **516**, not over the 383.
+  > **(c)** 91% is 348/383, i.e. **one cohort's numerator divided by another cohort's size**; the
+  > two real rates are 67% and 64%. **The document contradicted itself two lines below**, where the
+  > size distribution already read *"**516 above 5 Mb**"*. Re-derived from the primary calls this
+  > session. [OUR MEASUREMENT — `bcftools query` over all 24 per-chromosome `delly` BCFs,
+  > `FILTER == PASS`, `SVTYPE ∈ {DEL,DUP,INV}`, length > 5 Mb; 2026-08-30.]
 - Size distribution of `PASS` DEL/DUP/INV: 9,064 below 1 kb, 1,522 at 1–10 kb, 768 at 10–100 kb,
   652 at 100 kb–1 Mb, 373 at 1–5 Mb, **516 above 5 Mb**.
 
@@ -87,8 +98,12 @@ child who already has a complete biallelic explanation for his condition.
 ## 6. Consistency with the aneuploidy analysis
 
 This survey and the mosaicism analysis are independent methods that agree. No chromosome-scale
-duplication survives filtering, which is what the GC-corrected depth analysis also found — no
-mosaic gain of chr20, 21 or 22 above ~3.4% of cells. **Two methods, one negative.**
+duplication survives filtering, which is what the GC + mappability corrected depth analysis also
+found — no gain above **~3.2% of cells** — **4.2%** on the conservative leave-one-chromosome-out variant — on a method that recovers chrX at **0.4999 against a true 0.5000**. **Two methods, one negative.**
+
+🔻 *Corrected 2026-08-30: this read "~3.4% of cells", which is the superseded **Pass-2**
+GC-only bound. The shipped model is **Pass 3** (GC + mappability, global fit), bound 3.2%,
+and it is the model the 0.4999 chrX anchor belongs to.*
 
 That negative does not bear on the diagnosis, which rests on direct cytogenetics of dividing
 cells — a far more sensitive assay for mosaic aneuploidy than bulk short-read WGS of blood.

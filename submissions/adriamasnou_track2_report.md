@@ -31,21 +31,29 @@ regulator for mosaic variegated aneuploidy** — not one type, but five.
 | MVA5 / Atelis Syndrome 1 | approved | 620184 |
 | MVA6 / Atelis Syndrome 2 | approved | 620185 |
 
-**Source:** HFEA's own downloadable workbook `2026-07-24-pgt-m-full-approved-condition-list.xlsx`
-(2,057 conditions), parsed directly. The live HFEA site returned
-`HTTP Error 500.30 — ASP.NET Core app failed to start`, reproduced with `curl`, WebFetch and a real
-browser, so the workbook was retrieved from the Internet Archive snapshot of 2026-08-21
-(`web.archive.org/web/20260821185705/https://www.hfea.gov.uk/pgt-m-conditions/`); source page
-`https://www.hfea.gov.uk/pgt-m-conditions/`. Corroborated for this exact condition by the
+**Source:** HFEA's own downloadable workbook, snapshot **2026-08-05**, **2,063 approved
+conditions**, parsed directly; the copy is retained at `data/derived/hfea_pgtm_2026-08-05.xlsx` and
+the parsed rows ship in this directory as `hfea-pgtm-gene-crosswalk.csv` (**2,063 data rows**,
+re-counted 2026-08-30).
+
+> 🔻 **CORRECTED 2026-08-30.** This paragraph described an earlier pass: the
+> `2026-07-24` workbook at **2,057 conditions**, retrieved from an Internet Archive snapshot
+> because the live HFEA site was returning `HTTP Error 500.30 — ASP.NET Core app failed to start`
+> (reproduced with `curl`, WebFetch and a real browser). **That outage ended and the register was
+> re-downloaded live**, but this section still narrated the outage and quoted the superseded count
+> — while `hfea-pgtm-gene-crosswalk.md`, shipping in the same directory on the same date, said
+> **2,063**. **A judge opening both files would have found them disagreeing about the size of the
+> register the whole element rests on.** The 2,057 figure and the Archive route are kept here as
+> history, not as method. Corroborated for this exact condition by the
 regulator's **Statutory Approvals Committee minutes of 26 January 2026**.
 
 ### 1.1 🔑 The finding is not the approval. It is that the approval cannot be found.
 
 **The workbook's columns are *condition name*, *status*, and *OMIM number*. There is no gene
-column, and the string `BUB1B` appears in none of the 2,057 rows.** Querying the HFEA list for
+column, and the string `BUB1B` appears in none of the 2,063 rows.** Querying the HFEA list for
 `BUB1B` returns **"No data to display."**
-**[OUR MEASUREMENT — HFEA workbook `2026-07-24-pgt-m-full-approved-condition-list.xlsx` parsed
-directly, 2,057 rows; source `https://www.hfea.gov.uk/pgt-m-conditions/`.]**
+**[OUR MEASUREMENT — HFEA workbook, 2026-08-05 snapshot, parsed directly, 2,063 rows (re-counted
+from the shipped CSV 2026-08-30); source `https://www.hfea.gov.uk/pgt-m-conditions/`.]**
 
 **That is a false negative, and it is structural.** A family — or a clinician — who searches the
 regulator's list the way genetics is actually practised, *by gene*, is told the thing they are

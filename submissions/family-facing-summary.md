@@ -50,6 +50,15 @@ than it first appears: because the first copy makes nothing, **every single insp
 his cells is the altered kind.** There is no supply of the normal version mixed in. Most people
 with one changed copy have a healthy second copy to fall back on. He does not.
 
+**One honest caveat, and we would rather put it here than only at the end.** That last paragraph
+holds *if* the two changes sit on opposite copies of the gene — one from each parent. **We have
+not proved that.** The two changes are too far apart for this kind of sequencing to settle it, and
+a test of the parents' DNA would settle it in a day. It is by far the most likely arrangement, it
+is what his clinical diagnosis already assumes, and every other line of evidence fits it — but it
+is an assumption, not a measurement, and §9 explains why it has not been closed. *(Added
+2026-08-30: §9 of this document had always said so; §1 had not, and a family reading only the
+opening would have taken an inference for a fact.)*
+
 With the inspector weakened, some dividing cells finish up with the wrong number of chromosomes
 — and different wrong numbers in different cells. That is exactly what "mosaic variegated
 aneuploidy" means: *mosaic* (only some cells), *variegated* (not the same error each time),

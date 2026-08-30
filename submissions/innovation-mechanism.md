@@ -63,8 +63,19 @@ excluded* and *what experiment decides whether any of them could work at all*.
 
 ## 4. The honest position
 
-The therapeutic branch of this work is the **weakest** part of it, and the numbers say so: 25–40%
-that a screen yields any compound raising BubR1 two-fold, **well under 10%** that anything reaches
-a child. It is included because a mechanism actively tested and found wanting is a different
+The therapeutic branch of this work is the **weakest** part of it, and our own odds on it are
+poor: **25–40%** that a screen yields any compound raising BubR1 two-fold, **well under 10%** that
+anything reaches a child. **[ESTIMATE — both figures are ours and neither is derived from data.
+No *BUB1B*-specific prior exists, because no screen has been run.** The reasoning behind them is
+in `THERAPEUTIC-SCREEN-design-and-odds.md`: proteostasis/degradation lesions are a precedented
+screening target, the required effect is modest, and the readout is direct — which is an argument
+for plausibility, not a measurement.**]**
+
+> 🔻 **CORRECTED 2026-08-30.** This paragraph read *"and the numbers say so"*, which presents two
+> subjective priors as measurements. **The private source tags both figures `[ESTIMATE]` and
+> carries the reason they can be nothing else** — *"No BUB1B-specific prior exists because no
+> screen has been run"* — and the tag was dropped when the sentence was restated in this
+> judge-visible file. **A provenance tag that does not survive being copied outward is not
+> provenance.** It is included because a mechanism actively tested and found wanting is a different
 epistemic state from one never examined — and because the branch point is a real, cheap,
 decidable question that nobody has answered.
