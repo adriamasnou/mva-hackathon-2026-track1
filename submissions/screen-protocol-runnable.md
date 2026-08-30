@@ -27,7 +27,7 @@ and function is confirmed separately.
 ## 2. ★ The design decision everything else follows from
 
 The published functional readout is **the MPM-2⁺ fraction of the 4N population after 16 h
-nocodazole, by flow cytometry** (Suijkerbuijk 2010). That is the right *confirmatory* assay and the
+nocodazole, by flow cytometry** (Suijkerbuijk SJE et al., *Cancer Res* 2010, **PMID 20516114**). That is the right *confirmatory* assay and the
 wrong *primary* one — it is slow, and it measures the consequence rather than the thing the thesis
 is about.
 
@@ -60,7 +60,15 @@ accompanying reagent specification addresses.
 
 ## 4. Assay validation — to the Assay Guidance Manual, with its numbers
 
-**[NIH/NCATS Assay Guidance Manual — these thresholds are the AGM's, quoted, not invented here.]**
+**[NIH/NCATS Assay Guidance Manual — these thresholds are the AGM's, quoted, not invented here.
+Eli Lilly & Company and the National Center for Advancing Translational Sciences, eds.
+*Assay Guidance Manual*, Bethesda (MD): NCBI Bookshelf **NBK53196**,
+`https://www.ncbi.nlm.nih.gov/books/NBK53196/` — the Z′-factor, signal window and CV criteria are
+in its assay-validation chapters. 🔻 *Locator added 2026-08-31: this document's subtitle stakes it
+on this source and §4 reproduces five numeric thresholds from it, and until today it gave no
+Bookshelf ID, no chapter and no URL — so no reader could check whether the numbers were quoted
+correctly. The project's own standard requires a PMID, DOI or URL on every load-bearing claim,
+and the document's headline authority was the one claim without one.*]**
 
 ```
 Z' = 1 - ( 3·(SD_max + SD_min) / |AVG_max - AVG_min| )
@@ -93,8 +101,21 @@ cannot be relaxed after seeing data.
 | NCATS Pharmaceutical Collection | ~2,750 | approved/investigational, NIH |
 | Broad Drug Repurposing Hub | ~6,800 | broadest, richly annotated |
 
-**1,520 compounds in 384-well = 4 assay plates.** That is the reason to start with Prestwick: the
-whole primary screen is a handful of plates, not a campaign.
+**1,520 compounds in 384-well = 5 assay plates**, once every plate carries its own controls. That
+is still the reason to start with Prestwick: the whole primary screen is a handful of plates, not a
+campaign.
+
+> 🔻 **CORRECTED 2026-08-31 — the old figure of 4 left no room for the controls this same document
+> makes mandatory.** 1,520 / 384 = **3.96**, so four plates hold the library only if **every** well
+> takes a compound, leaving **16 wells in total — four per plate** for both control populations.
+> But §4 requires a **minimum-signal (DMSO)** and a **maximum-signal (MG132)** population large
+> enough to compute a Z′-factor on each plate, and §6 calls hits at **"≥ 3 SD above the plate mean
+> of DMSO wells"** — which needs a DMSO population big enough to estimate a mean *and* an SD, **per
+> plate**. Four wells cannot do either. Reserving the outer two columns per plate (a standard
+> screening layout that also avoids edge effects) gives **320 compound wells**, so
+> **1,520 / 320 = 4.75 → 5 plates**. §8's budget already said **"~6 plates + validation"**, which
+> contradicted §5's four without explanation; at five plus validation the two now agree.
+> **[OUR MEASUREMENT — arithmetic, 2026-08-31.]**
 
 > ### ★ Apply a paediatric-exposure filter to the library BEFORE screening, not after.
 > The patient is a child with a cancer-predisposition syndrome. A hit with no paediatric safety data
@@ -227,7 +248,7 @@ stall a facility. Closing it surfaced a real problem.
 > own section boundary. The warning was right; the propagation was not done.
 
 > ### The risk, stated plainly
-> **BubR1 HAS been read by FACS** — Janssen 2009 lists it among antibodies used for "Western blot,
+> **BubR1 HAS been read by FACS** — Janssen A, Kops GJPL, Medema RH, *PNAS* 2009 (**PMID 19855003**) lists it among antibodies used for "Western blot,
 > Immunofluorescence, and FACS analysis", so the readout is not unprecedented. **But that antibody
 > was "a gift from R. Freire" — not a commercial reagent.** The commercial candidate above is
 > evidenced in our holdings only for immunofluorescence.
@@ -299,8 +320,23 @@ vendors and the literature, and **the answer changes which antibody this protoco
 | **flow cytometry** | ❌ **not listed** | ❌ **not listed** |
 | epitope | aa **350–400** | aa **276–388** |
 
-> ### 🔴 No anti-BUBR1 antibody is vendor-validated for flow cytometry — neither of them.
-> And **the literature has no precedent either.** 39 papers cite `A300-386A`; six also mention flow
+> ### 🔴 **Neither of these two** antibodies is vendor-validated for flow cytometry.
+> 🔻 **HEADING NARROWED TWICE, 2026-08-31.** It used to read *"**No** anti-BUBR1 antibody is
+> vendor-validated for flow cytometry"* and *"**the literature has no precedent either**"*. Both
+> were scoped to a two-product check and one product's citing literature, and **both are now
+> falsified — one by the vendors and one by this document itself**:
+> **(i)** four Novus/Thermo clones (**8G1, OTI6E5, 7H4, 23GB1640**) *are* vendor-listed for flow at
+> 1 µg/10⁶ cells, several with an intracellular histogram on HeLa — see
+> `pilot-protocol-bubr1-flow.md` §1.
+> **(ii)** §10 of *this file*, seventy lines above, already said *"**BubR1 HAS been read by FACS**
+> — Janssen A, Kops GJPL, Medema RH, *PNAS* 2009 (**PMID 19855003**) lists it among antibodies used for Western blot, Immunofluorescence, and FACS
+> analysis, so the readout is not unprecedented."* **Those two statements could not both stand, and
+> the document never acknowledged it.** §10.3 was appended without reconciling §10. The
+> `A300-386A` measurement below is correct and worth keeping — **it is a fact about one product's
+> citing literature, not about the field**, and that is exactly the narrowing that was lost when it
+> was promoted to a heading.
+>
+> **What remains true:** 39 papers cite `A300-386A`; six also mention flow
 > cytometry; **in every case the antibody sits in a WESTERN-BLOT list at 1:1,000–1:2,000 while the
 > flow in that paper is doing something unrelated** — sorting YFP⁺ cells, BODIPY lipid staining,
 > BrdU incorporation. **The six hits were co-occurrence, not usage.**
@@ -352,9 +388,30 @@ the gap is measurable.**
 | derived statistics | 41 | 2 |
 
 **The zero is the honest headline.** Every construct in the stability protocol carries a *published
-expected result*, so a lab knows on day one whether the assay works. **This screen has no such
-anchor for its primary readout, because no drug-induced BubR1-abundance measurement has ever been
-published** — that is the same absence that makes §0's odds estimates rather than measurements.
+expected result*, so a lab knows on day one whether the assay works. **This screen has a weaker
+anchor for its primary readout: no drug-induced BubR1-abundance measurement has been published
+*in this assay format*, and none from a screen** — that is the same absence that makes §0's odds
+estimates rather than measurements.
+
+> 🔴 **CORRECTED 2026-08-31, AND THE FALSIFYING PAPER IS THE ONE THIS DOCUMENT ALREADY DEPENDS ON.**
+> The sentence used to read: *"no drug-induced BubR1-abundance measurement **has ever been
+> published**"*. **That is false, and we hold the paper.** Suijkerbuijk *et al.*, *Cancer Res* 2010
+> (**PMID 20516114**), **Fig 3C** treats cells expressing wild-type, `I909T` or `L1012P` BubR1 with
+> inhibitors of the three pathways controlling protein abundance — **cycloheximide (translation),
+> geldanamycin (HSP90 folding) and MG132 (proteasomal degradation)** — and reports, verbatim:
+> *"levels of both mutant proteins were severely decreased after 5 h treatments with the HSP90
+> inhibitor (Fig. 3C, GA) … inhibition of proteasomal degradation with MG132 (Fig. 3C, MG)
+> prevented the enhanced protein turnover"*. **That is a drug-induced BubR1-abundance measurement**,
+> on a missense allele (`L1012P`) **ten residues from this child's N1002**, with wild-type as the
+> internal control. **And `MG132` is where this document's own maximum-signal positive control comes
+> from** — we took the reagent from the paper and then said the measurement did not exist.
+>
+> **What survives, and it is still the honest headline:** that measurement is a **western blot on
+> transfected cells**, not an **intracellular flow readout**, and it is **not a screen** — nobody has
+> published a compound library run against BubR1 abundance. So the ≥2-fold hit criterion below is
+> still asserted rather than derived, and §0's odds are still estimates. **The absence is real; it
+> was stated one category too wide.** [`papers-local/suijkerbuijk2010_cancerres_molecular_causes.txt`,
+> re-read 2026-08-31; control `grep -c MG132` → 9.]
 
 **Consequently the ≥2-fold hit criterion in §6 is asserted, not derived.** The stability protocol
 tabulated its minimum detectable ΔTm across the unknown standard deviation. The equivalent cannot
