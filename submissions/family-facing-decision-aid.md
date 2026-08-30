@@ -133,9 +133,24 @@ evidence rather than leaving the column blank — but it is a neighbouring condi
 you should weigh it as such.**
 
 **What we still cannot tell you.** How much surveillance improves outcome *in this condition*.
-The recommendation rests on the size of the risk and on general principle, not on a trial in these
-children. **The effectiveness of screening in BWS has been studied** (Mussa *et al.*,
-*J Cancer Res Clin Oncol* 2019, **PMID 31583434**) and a **cost-effectiveness model exists for
+There has never been a trial of surveillance in MVA, and there never will be one at this rarity.
+
+**What we can now tell you, because the paper arrived on 2026-08-31.** In **Beckwith–Wiedemann
+syndrome** — a different condition, but the one with the most surveillance data — children whose
+Wilms tumour was found **by screening** had it found **earlier and at a lower stage** than children
+whose tumour was not found by screening: **stage 1.5 ± 1.3 versus 2.6 ± 1.6**, at **22.8 ± 18.6
+months versus 34.7 ± 20.5 months**, across **155 children with BWS and Wilms tumour** compared
+against **3,665 Wilms tumours in the US national SEER registry**. The same paper estimates that
+**screening until age 7 catches close to 95% of the Wilms tumours that occur in BWS**. An earlier
+series found **no late-stage disease in 12 screened children against 25 of 59 (42%) unscreened**.
+
+⚠️ **Two honest limits on that, and they matter.** **First, nobody was randomised.** Families who
+screen and families who do not may differ in other ways, and finding a tumour earlier partly
+*guarantees* an earlier stage without necessarily changing the outcome — that is a known trap in
+screening studies, and this design cannot rule it out. **Second, this is BWS, not MVA.** We are
+reasoning across conditions because there is nothing closer.
+*(Mussa* et al.*, J Cancer Res Clin Oncol 2019, **PMID 31583434**; Choyke* et al.*, 2001 figures
+above)* and a **cost-effectiveness model exists for
 BWS** (McNeil *et al.*, *Med Pediatr Oncol* 2001, **PMID 11568898**) — again, not MVA. **Full text
 held 2026-08-31:** it models scans three times a year from birth and finds **$9,642 per life-year
 saved if screening stops at age 4**, **$14,740 if it continues to age 7**, both inside the range
