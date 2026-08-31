@@ -34,6 +34,34 @@ put in a tube.** Until it is, every claim about it is an argument.
 **[OUR MEASUREMENT — extracted directly from `GRCh38_no_alt_plus_hs38d1.fna` and translated; the
 reference base returned `T`, matching the VCF. Not taken from an annotation.]**
 
+### 2a. ✅ Re-verified end to end, 2026-08-31 — every number a bench would rely on
+
+**Two independent sources, agreeing.** The genome gives the local context; the transcript gives the
+codon number. **A residue number is the thing most likely to be wrong** — this project already
+carries a mouse-vs-human numbering scar — so it was re-derived rather than trusted.
+
+| check | result |
+|---|---|
+| genomic context, `chr15:40,220,572–40,220,652` | `…GGATTCTGAA`**`T`**`GCCAATGAT…` — the variant base is `T` at position 41 of that extract ✅ **matches §2** |
+| canonical CDS `ENST00000287598.11` | **3,153 bp** → **1,050 aa + stop** ✅ matches the 1,050-residue protein the domain map uses |
+| codon 1002 (`c.3004–3006`) | **`AAT`** ✅ · `c.3006` is its **third base**, and it is `T` ✅ |
+| translation, residues 995–1010 | `KFFVRIL`**`N`**`ANDEATVS` — **residue 1002 is `N`** ✅ |
+| apply `c.3006T>G` | `AAT` → `AAG` → **residue 1002 is `K`** ✅ **p.Asn1002Lys confirmed** |
+| fragment 721–1,044 | **972 bp · 324 codons** ✅ matches §3 · first and last residues both `P`, matching the full-length protein at those positions |
+| WT vs N1002K fragment | **exactly 1 difference**, at fragment position **846** ✅ · no internal stop codon in either |
+| **provenance of every row above** | **[OUR MEASUREMENT — computed 2026-08-31 from the two public sources in the reproduce block: `ENST00000287598.11` CDS via Ensembl REST, and the GRCh38 reference FASTA. No annotation, database summary or prior document was used as a source for any row.]** |
+
+**Reproduce (public identifiers only — no patient data is sent anywhere):**
+
+```bash
+curl -s "https://rest.ensembl.org/sequence/id/ENST00000287598?type=cds;content-type=text/x-fasta"
+samtools faidx pipeline/ref/GRCh38_no_alt_plus_hs38d1.fna chr15:40220572-40220652
+```
+
+⚠️ **Use `curl`, not python `urllib`** — on the machine this was built on, urllib fails with
+`SSL CERTIFICATE_VERIFY_FAILED` against a self-signed certificate in a local proxy chain, which
+reads as "the sequence is unavailable" rather than "the client is misconfigured."
+
 ## 3. Two routes, and the recommendation is the less obvious one
 
 The protocol's route **A2** needs the **HIS₆-BubR1 (721–1,044)** pseudokinase-domain fragment —
@@ -51,6 +79,80 @@ At ~1 kb, **synthesis is now cheaper and faster than mutagenising and subcloning
 - ⚠️ Codon-optimise **nothing**. A ΔTm comparison requires the two constructs to be identical
   outside the edit; optimisation would silently break that.
 
+#### ★★ The two sequences to order — paste these into the vendor form
+
+🔴 **ADDED 2026-08-31. This document previously RECOMMENDED route 1 and then did not supply the
+sequence**, leaving the ordering laboratory to re-derive it from a transcript ID — which is exactly
+where strand, transcript-version and residue-numbering errors enter. **That was the largest
+remaining gap between this file and "turnkey", and it is closed here.**
+
+**Source: `ENST00000287598.11` CDS, fetched from Ensembl REST and verified in full (§2a).
+972 bp · 324 codons · residues 721–1,044. The two differ at exactly one base — fragment
+position 846 — and at nothing else.**
+
+<details><summary><b>BUB1B_721-1044_WT</b> — 972 bp</summary>
+
+```
+CCATGGTGTTCACAGTATCGCAGACAGCTACTGAAGTCCCTACCAGAGTTAAGTGCCTCT
+GCAGAGTTGTGTATAGAAGACAGACCAATGCCTAAGTTGGAAATTGAGAAGGAAATTGAA
+TTAGGTAATGAGGATTACTGCATTAAACGAGAATACCTAATATGTGAAGATTACAAGTTA
+TTCTGGGTGGCGCCAAGAAACTCTGCAGAATTAACAGTAATAAAGGTATCTTCTCAACCT
+GTCCCATGGGACTTTTATATCAACCTCAAGTTAAAGGAACGTTTAAATGAAGATTTTGAT
+CATTTTTGCAGCTGTTATCAATATCAAGATGGCTGTATTGTTTGGCACCAATATATAAAC
+TGCTTCACCCTTCAGGATCTTCTCCAACACAGTGAATATATTACCCATGAAATAACAGTG
+TTGATTATTTATAACCTTTTGACAATAGTGGAGATGCTACACAAAGCAGAAATAGTCCAT
+GGTGACTTGAGTCCAAGGTGTCTGATTCTCAGAAACAGAATCCACGATCCCTATGATTGT
+AACAAGAACAATCAAGCTTTGAAGATAGTGGACTTTTCCTACAGTGTTGACCTTAGGGTG
+CAGCTGGATGTTTTTACCCTCAGCGGCTTTCGGACTGTACAGATCCTGGAAGGACAAAAG
+ATCCTGGCTAACTGTTCTTCTCCCTACCAGGTAGACCTGTTTGGTATAGCAGATTTAGCA
+CATTTACTATTGTTCAAGGAACACCTACAGGTCTTCTGGGATGGGTCCTTCTGGAAACTT
+AGCCAAAATATTTCTGAGCTAAAAGATGGTGAATTGTGGAATAAATTCTTTGTGCGGATT
+CTGAATGCCAATGATGAGGCCACAGTGTCTGTTCTTGGGGAGCTTGCAGCAGAAATGAAT
+GGGGTTTTTGACACTACATTCCAAAGTCACCTGAACAAAGCCTTATGGAAGGTAGGGAAG
+TTAACTAGTCCT
+```
+</details>
+
+<details><summary><b>BUB1B_721-1044_N1002K</b> — 972 bp, <code>c.3006T&gt;G</code> at fragment position 846</summary>
+
+```
+CCATGGTGTTCACAGTATCGCAGACAGCTACTGAAGTCCCTACCAGAGTTAAGTGCCTCT
+GCAGAGTTGTGTATAGAAGACAGACCAATGCCTAAGTTGGAAATTGAGAAGGAAATTGAA
+TTAGGTAATGAGGATTACTGCATTAAACGAGAATACCTAATATGTGAAGATTACAAGTTA
+TTCTGGGTGGCGCCAAGAAACTCTGCAGAATTAACAGTAATAAAGGTATCTTCTCAACCT
+GTCCCATGGGACTTTTATATCAACCTCAAGTTAAAGGAACGTTTAAATGAAGATTTTGAT
+CATTTTTGCAGCTGTTATCAATATCAAGATGGCTGTATTGTTTGGCACCAATATATAAAC
+TGCTTCACCCTTCAGGATCTTCTCCAACACAGTGAATATATTACCCATGAAATAACAGTG
+TTGATTATTTATAACCTTTTGACAATAGTGGAGATGCTACACAAAGCAGAAATAGTCCAT
+GGTGACTTGAGTCCAAGGTGTCTGATTCTCAGAAACAGAATCCACGATCCCTATGATTGT
+AACAAGAACAATCAAGCTTTGAAGATAGTGGACTTTTCCTACAGTGTTGACCTTAGGGTG
+CAGCTGGATGTTTTTACCCTCAGCGGCTTTCGGACTGTACAGATCCTGGAAGGACAAAAG
+ATCCTGGCTAACTGTTCTTCTCCCTACCAGGTAGACCTGTTTGGTATAGCAGATTTAGCA
+CATTTACTATTGTTCAAGGAACACCTACAGGTCTTCTGGGATGGGTCCTTCTGGAAACTT
+AGCCAAAATATTTCTGAGCTAAAAGATGGTGAATTGTGGAATAAATTCTTTGTGCGGATT
+CTGAAGGCCAATGATGAGGCCACAGTGTCTGTTCTTGGGGAGCTTGCAGCAGAAATGAAT
+GGGGTTTTTGACACTACATTCCAAAGTCACCTGAACAAAGCCTTATGGAAGGTAGGGAAG
+TTAACTAGTCCT
+```
+</details>
+
+**✅ Synthesisability pre-screened against the standard vendor rejection criteria, so the order
+should not bounce:** global GC **40.4% / 40.5%** (limits 25–75%); worst 50 bp window **24–56%**
+(limits 20–80%); **zero homopolymer runs ≥ 6 nt**; no internal stop codon in either frame-0
+translation. **[OUR MEASUREMENT, 2026-08-31.]**
+
+> ⚠️ **THREE THINGS THE VENDOR FORM WILL NOT WARN YOU ABOUT.** This fragment is **internal to the
+> ORF** — residues 721–1,044 of 1,050:
+> 1. **It has no start codon and no stop codon.** With an N-terminal HIS₆ tag the vector supplies
+>    the start; **you must ensure a stop.** Append `TAA` yourself if your destination vector does
+>    not provide one. *(This is the same failure class as Addgene #23858 in route 2 below — an
+>    entry clone with no stop codon that yields a read-through product. It has now bitten this
+>    document twice, in two different routes.)*
+> 2. **It must be cloned in frame with the tag.** Add the flanking cloning sites your vector needs
+>    **outside** the 972 bp, and check the frame across the junction — do not edit inside it.
+> 3. **Order both fragments in the same run**, as §3 already argues. The ΔTm is the measurement;
+>    two synthesis batches introduce a difference the experiment cannot separate from the variant.
+
 ### Route 2 — site-directed mutagenesis from Addgene #23858
 
 Use if a full-length ORF is wanted for cell work rather than the bacterial fragment.
@@ -59,11 +161,31 @@ Use if a full-length ORF is wanted for cell work rather than the bacterial fragm
 centred at position 18 of 35):
 
 ```
-FWD 5'-TTTGTGCGGATTCTGAAGGCCAATGATGAGGCCAC-3'    35 nt · Tm 80.4 °C · GC 51.4%
-REV 5'-GTGGCCTCATCATTGGCCTTCAGAATCCGCACAAA-3'
+FWD 5'-CTTTGTGCGGATTCTGAAGGCCAATGATGAGGCCAC-3'   36 nt · Tm 81.6 °C · GC 52.8%
+REV 5'-GTGGCCTCATCATTGGCCTTCAGAATCCGCACAAAG-3'   mismatch at 19 of 36 · flanks 18/17
 ```
 
-Tm exceeds the ≥78 °C the method requires; both ends terminate in C/G.
+Tm exceeds the ≥78 °C the method requires, the mismatch is centred with ≥17 correct bases on both
+sides, and **all four termini are G or C**.
+
+> ### 🔻 CORRECTED 2026-08-31 — THE PREVIOUS PAIR VIOLATED THE DESIGN RULE THIS LINE CLAIMED IT MET
+> The pair read `FWD 5'-TTTGTGCGG…GCCAC-3'` / `REV 5'-GTGGCC…CACAAA-3'`, annotated *"both ends
+> terminate in C/G."* **They did not.** Checked computationally: **`FWD` 5′ = `T` and `REV` 3′ = `A`.**
+> The QuikChange rule is about the **3′ terminus**, where the polymerase extends, and the reverse
+> primer ended in `A`. Because the two primers must be exact reverse complements, this cannot be
+> repaired on one strand — the window itself had to move.
+>
+> **The fix is one base: a `C` prepended to the 5′ end of `FWD`**, which makes `REV` end in `G`.
+> Nothing else changes; the 3′ end of `FWD` is untouched. Tm rises 80.4 → 81.6 °C, GC 51.4 → 52.8%,
+> and the mismatch stays centred. **52 windows satisfy every QuikChange criterion including both
+> termini; this is the most centred short one, and it is the minimal edit to what was already here.**
+>
+> ⚠️ **The old pair was internally self-consistent** — exact reverse complements, correct mismatch
+> at 18/35, correct Tm and GC arithmetic, and it would have amplified. **The annotation was the
+> defect, and a lab that trusted it would have ordered a primer with a documented efficiency
+> penalty.** Everything checkable was checked; the one thing asserted in prose was wrong.
+> **[OUR MEASUREMENT — reverse-complementarity, Tm by the QuikChange formula
+> `81.5 + 0.41(%GC) − 675/N − %mismatch`, and an exhaustive window search over the CDS, 2026-08-31.]**
 
 > ### 🔴 #23858 has NO STOP CODON, and the depositor says so
 > Verbatim: *"The ORF has **no Stop codon**… **Do NOT use this plasmid directly for
