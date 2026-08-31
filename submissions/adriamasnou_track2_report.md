@@ -268,16 +268,175 @@ read: the Table-3 parse reproduces Rowlands' published 36.2% and 19.8% exactly, 
 reproduces our independent single-gene *BUB1B* run exactly on all four values. Limits in `F-028` §5 —
 notably that the domain-scoping arm remains n = 1 and every figure is a perfect-classifier ceiling.]**
 
-## SECTIONS NOT YET WRITTEN
+## 3. Innovation — the mining harness, and why its **kill rate** is the result worth reporting
 
-Held and sourced in the private tree; not yet converted. Ten remaining of the twelve measured as
-`HELD BUT NOT PUBLISHED` by `guardrails/score_field.py` on 2026-08-29:
+**Field position: 11 of 54 competitor owners hold some form of multi-agent / orchestrated-harness
+method framing** **[OUR MEASUREMENT — `guardrails/score_field.py`, element `Innovation :: novel
+method framing`, over 54 archived owners, 2026-08-31; control `BUB1B` 53 of 54]**. So the harness
+itself is **not** novel and we do not claim it is. **What we have not seen anyone else report is the
+number below.**
 
-- **Impact:** surveillance protocol · cost figures · access route · patient registry · contraindications
-- **Innovation:** novel method framing · scaffolding-branch therapy · compartment matching
-- **Rigor:** phenotype-blind scan (executed) · adversarial self-critique
+### What was actually run
 
-Plus the scientific spine still to be written up: the **two-variable dose–response** (`F-014` §3c),
-the **residue map and ortholog conservation** (`F-026`), the **publicly catalogued MVA cell-line
-panel** (`F-027`), and the **N1002K stability protocol** with its adversarial review
-(`WETLAB-PROTOCOL` §6g).
+Literature mining was run as **orchestrated subagent roles, not one long conversation**:
+
+| role | what it does | output |
+|---|---|---|
+| **miner nodes** | read one held primary each; emit **typed** findings — `CONTRADICTS`, `NARROWS`, `SUPPORTS`, `NEW_NUMBER`, `NEW_ANGLE` — each with a verbatim quote and a file-and-line locator | 361 findings over 87 papers |
+| **adversarial verifier nodes** | receive one allegation with **no stake in it** and are instructed to **REFUTE** it, defaulting to refuted under uncertainty | one verdict per allegation |
+| **adjudication** | only survivors are applied to the corpus; refuted allegations are recorded, not deleted | the corpus diff |
+
+The separation matters: the node that generates a claim never gets to confirm it, and the verifier
+is rewarded for killing it. Runs, raw verdicts and reports are committed —
+`dossier/sweeps/pool1-mining-2026-08-31.json`, `pool1-verify38-2026-08-31.json`,
+`pool2-mining-2026-08-31.json`, and the three `POOL*-*.md` reports beside them.
+
+### The result
+
+| | alleged | survived | refuted | kill rate |
+|---|---|---|---|---|
+| Pool 1 (first pass) | 20 | 5 | 15 | 75% |
+| Pool 1 (remaining 38, `wf_0a9fa457-04b`) | 38 | 8 | 30 | 79% |
+| Pool 2 | 35 | 2 | 33 | 94% |
+| **combined** | **93** | **15** | **78** | **83.9%** |
+
+**[OUR MEASUREMENT — recomputed from the three committed JSONs on 2026-08-31, not quoted from the
+reports: `alleged`, `len(survivors)`, `len(refuted)`.]**
+
+🔑 **Roughly five in six of this method's own confident allegations do not survive an adversarial
+check.** That is the finding. An unverified mining run of this size would have injected on the order
+of **78 wrong statements** into a corpus that a family and a clinical audience are meant to read —
+each one fluent, each one carrying a real quote and a real line number.
+
+### The distinction that makes the number interpretable
+
+A separate pass measured something the kill rate does **not** measure. All **91 `NEW_NUMBER`** leads —
+the class that asserts *figures* — were checked against the primaries, whitespace-insensitively,
+with a control asserting the matcher **rejects the same quote with one digit changed**:
+
+| | |
+|---|---|
+| verbatim faithful to the primary | **91 of 91** |
+| **fabricated or unsupported figures** | **0** |
+
+**[OUR MEASUREMENT — `dossier/sweeps/NEWNUMBER-ADJUDICATION-2026-08-31.md`, 2026-08-31.]**
+
+🔑 **Transcription fidelity and allegation validity are different quantities, and this method is
+near-perfect at the first while failing five times in six at the second.** The quotes are real. The
+*inferences drawn from them about our own corpus* are usually wrong. Reporting one number without
+the other would misdescribe the method in either direction, which is why both are here.
+
+### What the refutation stage actually caught
+
+Two of the fifteen survivors were defects in our own judge-visible material that no gate we hold
+could see:
+
+- **An oncological signal against our own lead compound, which we already held and had never
+  cited.** Maric 2023 (**PMID `36371959`**): dietary nicotinamide riboside at **≈32 mg/kg/day
+  human-equivalent — the same order as the paediatric A-T dose we cite as precedent** — was
+  associated with **brain metastases in 9 of 11 animals versus 3 of 12**, Fisher *p* = 0.012, in an
+  MDA-MB-231 xenograft. Our own `papers-READ-index.md` had logged it as an *"adverse oncological
+  signal"*; the claim file named the compound **6 times** and the study **0 times**. **We had applied
+  a cancer caveat to the candidate we were demoting and withheld it from the one we were leading
+  with.** It is now in the family-facing summary, not just our notes.
+- **A category error in a published mechanism claim** — that an allele *"escapes NMD"* because it
+  sits in the last exon. A **missense creates no premature stop codon, so nonsense-mediated decay is
+  never engaged** and the exon is irrelevant. The conclusion survived on a corrected premise.
+
+> 🔑 **A WRONG REASON UNDER A RIGHT CONCLUSION IS INVISIBLE TO EVERY AUTOMATED CHECK IN THIS
+> REPOSITORY.** The claim linter sees a source. The citation gate sees a PMID that resolves. The
+> figure gate sees a panel that exists. None of them reads the argument. **That is the specific gap
+> an adversarial reader role fills, and it is why the kill rate is high enough to be uncomfortable.**
+
+### Limits, stated
+
+- **93 allegations is the adversarially-checked subset, not the whole harvest.** The remaining
+  **268** findings — 108 `NEW_ANGLE`, 91 `NEW_NUMBER`, 69 `SUPPORTS` — have had **no adversarial
+  pass on their substance**, and on this record the prior for any one of them is poor. They are
+  recorded as **leads, not results**, and nothing in this submission rests on an unadjudicated one.
+- **The kill rate is not a measure of the underlying literature.** It measures *this method's
+  allegations about our corpus*, which is a much narrower thing.
+- **A verifier that shares the miner's blind spot cannot see it.** Verifier nodes run on the same
+  model family as the miners; independence here is independence of *stake and context*, not of
+  architecture. **[OUR INFERENCE — stated as a limitation, not measured.]**
+
+---
+
+## 4. Where the rest of this submission lives
+
+> 🔻 **THIS SECTION REPLACED A STALE ONE, 2026-08-31.** It previously read *"SECTIONS NOT YET
+> WRITTEN … Ten remaining of the twelve measured as `HELD BUT NOT PUBLISHED` by
+> `guardrails/score_field.py` on 2026-08-29"* and then listed ten elements as missing. **Eleven of
+> those twelve are now judge-visible** — they were written as standalone documents in this
+> directory after that measurement, and the report's own status block was never updated. **A
+> to-do list that outlives its own completion misdescribes the submission in the direction of
+> understating it**, which is the rarer and more embarrassing direction.
+> **Re-measured `guardrails/score_field.py` 2026-08-31: exactly ONE element was still
+> `HELD BUT NOT PUBLISHED` — `Innovation :: novel method framing` — and §3 above is it.**
+> **[OUR MEASUREMENT — `python3 guardrails/score_field.py`, `US`/`JV` columns over
+> 54 archived owners, 2026-08-31.]**
+
+**This report is the spine, not the whole submission.** Each element below is a complete standalone
+document in this directory, and the scoreboard element it answers is named so a reader can check
+coverage rather than take our word for it.
+
+### Rigor
+
+| document | what it establishes |
+|---|---|
+| [`adriamasnou_track1_report.md`](adriamasnou_track1_report.md) | the variant call, the phasing bound, and the alignment it rests on |
+| [`annotation-toolchain-vep.md`](annotation-toolchain-vep.md) | Ensembl VEP over the full cache — **313,417 variants in, 313,417 distinct out**, nothing dropped, both patient alleles passing a known-answer control |
+| [`methods-and-self-critique.md`](methods-and-self-critique.md) | the **phenotype-blind** scan, run so the answer could have come out otherwise — plus every claim of ours that failed |
+| [`splice-prediction.md`](splice-prediction.md) | local SpliceAI run **as the model, not as lookup**, with a positive control that caught a silent failure of our own making |
+| [`sv-cnv-survey.md`](sv-cnv-survey.md) | genome-wide SV/CNV survey — is the compound heterozygote the complete molecular explanation? |
+| [`callability-audit.md`](callability-audit.md) | genome-wide MAPQ/callability audit, and the check that the causal locus is **not** in a dark region |
+| [`generalisation-public-case.md`](generalisation-public-case.md) | the same pipeline, unchanged, on **public** data |
+
+### Impact
+
+| document | what it establishes |
+|---|---|
+| [`register-audit.md`](register-audit.md) | **1,850 of 2,063** approved conditions (**89.7%**) have **no expert-curated variant in any causative gene** |
+| [`hfea-pgtm-gene-crosswalk.md`](hfea-pgtm-gene-crosswalk.md) | the gene↔condition crosswalk the regulator's own register does not provide |
+| [`impact-costs-and-access.md`](impact-costs-and-access.md) | what surveillance actually costs, and how anything would reach this child |
+| [`family-facing-decision-aid.md`](family-facing-decision-aid.md) | built to **IPDAS**, including a declaration of the criteria it **fails** |
+| [`family-facing-summary.md`](family-facing-summary.md) | the same evidence written for the family, carrying the same caveats — including the one against our own lead compound |
+| [`secondary-findings-disclosure-protocol.md`](secondary-findings-disclosure-protocol.md) | a reusable governance template for open single-patient challenges, CC BY 4.0 |
+
+### Innovation
+
+| document | what it establishes |
+|---|---|
+| [`innovation-mechanism.md`](innovation-mechanism.md) | compartment matching, and the **contraindication** it produces — which candidates are *not* worth testing |
+| §3 of this report | the mining harness and its **83.9% kill rate** |
+| [`n1002k-reagent-specification.md`](n1002k-reagent-specification.md) | what a lab would have to buy — **no N1002K construct exists in any catalogue searched** |
+| [`screen-protocol-runnable.md`](screen-protocol-runnable.md) · [`pilot-protocol-bubr1-flow.md`](pilot-protocol-bubr1-flow.md) | the screen, and the pilot that gates it |
+
+### Presentation
+
+| document | what it establishes |
+|---|---|
+| [`pitch-video-script.md`](pitch-video-script.md) | the ToS §7 pitch, scripted, with a **claim ledger** binding every spoken sentence to a source |
+
+---
+
+## 5. What we are not claiming
+
+**The strongest thing in this submission is the list of things we stopped claiming.** Each was held,
+written down, and then withdrawn on evidence:
+
+| withdrawn | why | where |
+|---|---|---|
+| **the ClinVar submission itself** | we built the package, then found **three of the four ACMG criteria we had claimed do not hold** — `PM3` needs parental phase we do not have, `PP4` fails because MVA has ≥8 genetic causes, `PP3` is inadmissible because Richards requires in-silico agreement and ours disagree (REVEL 0.472 vs AlphaMissense 0.923). **Only `PM2` survives. It is not being submitted.** | `dossier/clinvar-submission-package.md` |
+| **"supplement-grade safety" for our lead compound** | an unresolved oncological signal we already held — §3 above | `family-facing-summary.md` §7 |
+| **"the mosaic aneuploidy is visible in bulk WGS"** | **falsified — it was mis-mapping.** Replaced with a bounded negative: no gain above **~3.2% of cells**, on a model whose truth anchor returns chrX **0.4999** against a true 0.5000 | `methods-and-self-critique.md` |
+| **"microcephaly is *BUB1B*-specific"** | citation drift, traced across three papers; the primary says **4 of 7** | `dossier/findings/F-024` |
+| **"an N1002K construct does not exist anywhere"** | narrowed to the two repositories actually searched — **an unresolved query is not an absence** | `n1002k-reagent-specification.md` |
+
+> 🔑 **Every row above was found by us, before submission, and each is published rather than
+> quietly dropped.** A reviewer can check that: the corrections are in the files, with dates and
+> with what the text used to say.
+
+---
+
+*Rare Disease, Real Kid: The MVA Hackathon 2026 · Track 2 · adriamasnou · CC BY 4.0*
