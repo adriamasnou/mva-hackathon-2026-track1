@@ -371,7 +371,7 @@ in ClinVar, by **aggregate** germline classification:
 
 The BubR1 pseudokinase domain is a **variant-of-uncertain-significance desert**: 96% uncertain, and
 **not one pathogenic or likely-pathogenic in-domain missense record** available to serve as a
-positive control against the 11 that **PMID 31892348** requires. There is additionally **no ClinGen
+positive control against the 11 that **Brnich (PMID 31892348)** requires. There is additionally **no ClinGen
 Variant Curation Expert Panel for *BUB1B***, so no body currently exists to make the assay-scoping
 decision that would set the achievable ceiling. **[OUR MEASUREMENT and OUR INFERENCE — the ClinVar
 tabulation is ours (2026-08-30); the control-count requirement is ClinGen's; the conclusion that the
@@ -395,7 +395,7 @@ The ceiling is in §Limitations: **449 in-domain missense records, 430 uncertain
 likely-pathogenic** **[OUR MEASUREMENT — ClinVar, aggregate germline classification, 2026-08-30]**.
 There is no calibration set, so even a flawless N1002K measurement cannot be converted into a defined
 evidence strength. Adding K795A and Q921H gives the assay a *demonstrated dynamic range* — the
-precondition **PMID 31892348** sets for applying functional evidence at all — but two controls is not
+precondition **Brnich (PMID 31892348)** sets for applying functional evidence at all — but two controls is not
 the eleven that paper requires, and the eleven do not exist to be bought.
 
 **A multiplexed assay of variant effect across aa 721–1,044 removes the ceiling instead of working
