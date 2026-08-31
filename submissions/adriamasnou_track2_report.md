@@ -11,7 +11,7 @@ Track 2 is **one shot with no resubmit**. Nothing here ships without Adrià's ex
 > invisible is the worst combination for material we already hold. Every section below is
 > converted from held, sourced dossier material — **no section states anything not already
 > verified in the private tree.** **[OUR MEASUREMENT — the 0-of-54 field positions are from a grep
-> over all 58 distinct repos / 54 owners in `archive/competitors/`, re-derived 2026-08-31 with a
+> over all 59 distinct repos / 54 owners in `archive/competitors/`, re-derived 2026-08-31 with a
 > positive control (`BUB1B` 53 of 54 owners); first recorded at the then-current 41 repos / 39
 > owners in `dossier/scoreboard-VERIFIED.json`.]**
 
@@ -19,7 +19,7 @@ Track 2 is **one shot with no resubmit**. Nothing here ships without Adrià's ex
 
 ## 1. Impact — PGT-M for MVA is already approved in the UK, and is undiscoverable by gene
 
-**Field position: 0 of 54 competitor owners hold this** *(re-measured 2026-08-31 against **54 owners** after `mateooSM` and `Jakeelamb` were archived; numerator unchanged, control `BUB1B` **53 of 54**)* [OUR MEASUREMENT — grep over all 58 distinct repos (59 archived directories, one repo archived
+**Field position: 0 of 54 competitor owners hold this** *(re-measured 2026-08-31 against **54 owners** after `mateooSM` and `Jakeelamb` were archived; numerator unchanged, control `BUB1B` **53 of 54**)* [OUR MEASUREMENT — grep over all 59 distinct repos (60 archived directories, one repo archived
 twice under a rename) / 54 owners in `archive/competitors/`, every hit read by hand; `F-005`,
 re-verified 2026-08-31].
 
@@ -87,7 +87,7 @@ have not made.]**
 
 > 🔴 **DENOMINATOR CORRECTED 2026-08-30, IN OUR OWN FAVOUR.** Both field-position lines above read
 > **"0 of 39 competitor owners"** until today — a denominator two re-measurements stale. The
-> archive now holds **54 owners across 58 distinct repositories** (59 archived directories, one repo
+> archive now holds **54 owners across 59 distinct repositories** (60 archived directories, one repo
 > archived twice under a rename — `Samistus1234__mva-hackathon-track1` is the SAME upstream repo as
 > `Samistus1234__mva-hackathon`, proved by HTTP 301 on the old name; **owner counts are unaffected and
 > never needed correcting**), and **both elements were re-measured

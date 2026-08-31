@@ -79,16 +79,16 @@ uncomfortable.
 ## 3. 🔻 What we are NOT claiming, because we measured it
 
 **This is not novel to us.** Re-measured 2026-08-30 against the live archive:
-**`arimoclomol` appears in 6 of 58 archived competitor repositories, held by 6 of 54 distinct
-owners** *(re-measured 2026-08-31 against the live archive — **54 owners / 58 distinct repositories**; numerator unchanged at 6 and 6, control `BUB1B` **53 of 54 owners / 722 files**)*, and at least one team ranks it **#1**,
+**`arimoclomol` appears in 7 of 59 archived competitor repositories, held by 6 of 54 distinct
+owners** *(re-measured 2026-08-31 against the live archive — **54 owners / 59 distinct repositories, 60 directories**; control `BUB1B` **53 of 54 owners**. The repo numerator rose 6 → 7 the same day when `danelyjimin07-maker/BUBR1-RESCUE-2.0`, a Track 2 repo created 2026-08-30, was archived; that owner already held the term, so **the owner count did not move**)*, and at least one team ranks it **#1**,
 justified as *"mechanism matched exactly to the temperature-rescuable folding defect"*. One entire
 competing submission is built on the same abundance-rescue question.
 
 > 🔴 **DENOMINATOR CORRECTED 2026-08-30, AND SO WAS ITS UNIT.** This paragraph read *"the
 > 50-archived-owner denominator: `arimoclomol` appears in **6 of 50 competitor repositories**"* —
 > which names an **owner** denominator and then applies it to **repositories** in the same breath.
-> They are different populations: the archive holds **54 owners across 58 distinct repositories**
-> (59 archived directories, one repo archived twice under a rename — `Samistus1234__mva-hackathon-track1`
+> They are different populations: the archive holds **54 owners across 59 distinct repositories**
+> (60 archived directories, one repo archived twice under a rename — `Samistus1234__mva-hackathon-track1`
 > is the SAME upstream repo as `Samistus1234__mva-hackathon`, proved by HTTP 301 on the old name;
 > **owner counts are unaffected and never needed correcting**), because
 > some owners have more than one. Re-measured with a positive control run first
