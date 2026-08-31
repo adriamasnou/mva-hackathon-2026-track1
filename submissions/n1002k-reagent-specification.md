@@ -79,6 +79,36 @@ At ~1 kb, **synthesis is now cheaper and faster than mutagenising and subcloning
 - ⚠️ Codon-optimise **nothing**. A ΔTm comparison requires the two constructs to be identical
   outside the edit; optimisation would silently break that.
 
+#### 🔴 ORDER THE CLONED PRODUCT, NOT THE FRAGMENT — they are different things and the cheaper one is not sequence-verified
+
+This document says synthesis *"arrives sequence-verified."* **That is true of one product and not of
+the one a lab is likely to click on.** Verified against Twist's published specifications,
+2026-08-31:
+
+| | **Clonal Genes** ✅ order this | **Gene Fragments** ❌ not this |
+|---|---|---|
+| format | cloned into a vector | **linear dsDNA — not cloned** |
+| verification | **"100% sequence perfect, NGS verified"** | *no per-construct sequence-perfect guarantee stated* |
+| price, 0.3–1.8 kb | **9¢/bp** Low/Medium · 12¢/bp High | **from 7¢/bp** |
+| cloning | **+$35** cloning vector · **+$55** expression vector · +$75 custom | you clone it yourself |
+| turnaround | Express **4–7** business days · Standard **10** | — |
+
+**At 972 bp the difference is about $150 across the pair, and it buys the thing this experiment
+depends on.** Gene Fragments are cheaper and would leave the laboratory to clone and sequence-verify
+both constructs itself — which is exactly the work route 1 exists to remove, and it reintroduces
+the chance that the pair ends up differing by more than one base.
+
+✅ **Our fragment should price at the Low/Medium tier (9¢/bp), not High.** The §3 synthesisability
+screen — GC 40.4%/40.5%, worst 50 bp window 24–56%, zero homopolymers ≥6 nt — is the same class of
+measure Twist scores complexity on, and Gene Fragments are offered only for Low/Medium sequences,
+with high-complexity sequences routed to Clonal Genes. **Twist's own Manufacturability Analyzer will
+confirm the tier before you commit** — run the two sequences through it and check the quoted
+complexity before ordering.
+
+**[OUR MEASUREMENT — all figures read from twistbioscience.com/products/genes and
+/products/genes/fragments on 2026-08-31. US list prices; academic, volume and regional pricing
+differ, and these must still be confirmed in your own quote.]**
+
 #### ★★ The two sequences to order — paste these into the vendor form
 
 🔴 **ADDED 2026-08-31. This document previously RECOMMENDED route 1 and then did not supply the
@@ -314,19 +344,51 @@ synthesise.** The protein is unaffected — so a *protein* melting curve is not 
 
 ## 6. Costs
 
+### 🔑 Route 1, costed exactly — the recommended path, 2026-08-31 list prices
+
+| item | unit | ×2 |
+|---|---|---|
+| **Twist Clonal Gene**, 972 bp @ **9¢/bp** (Low/Medium) | **$87.48** | **$174.96** |
+| cloning into an **expression vector** | +$55 | +$110 |
+| *(or a plain cloning vector)* | *+$35* | *+$70* |
+| **Plasmidsaurus whole-plasmid sequencing** @ **$15** ×3 | $15 | **$45** |
+| | | |
+| **ROUTE 1 TOTAL — expression vector** | | **≈ $330** |
+| **ROUTE 1 TOTAL — cloning vector** | | **≈ $290** |
+
+**Turnaround: 4–7 business days express, 10 standard**, plus 1 day for sequencing.
+
+🔑 **The recommended route needs no Addgene plasmid and no mutagenesis kit, and it comes in under
+half the headline figure below** — the $400–700 range covers the optional route-A1 controls too.
+⚠️ **Twist's Clonal Genes are already NGS-verified**, so the $45 of whole-plasmid sequencing is an
+*independent* check rather than a mandatory step. **Run it anyway** — §5 item 1 wants confirmation
+from a second party, and at $15 a sample that is the cheapest line in this table.
+
+**[OUR MEASUREMENT — Twist and Plasmidsaurus published list prices, read 2026-08-31. Arithmetic
+ours. US list; academic and volume pricing differ.]**
+
 | item | estimate |
 |---|---|
-| synthesised fragment ×2 (WT + N1002K), ~1 kb each | **$150–400** |
+| synthesised fragment ×2 (WT + N1002K), ~1 kb each — **now costed exactly above** | **$245–285** |
 | *or* Addgene #23858 + mutagenesis kit + LR reaction | ~$94 plasmid + reagents |
 | Addgene control plasmids (#114052, #114061) — **only if route A1 or a cell-based arm is run**; they are mammalian full-length constructs and are **not** used on route A2 (§5 item 4) | **2 × $94 = $188** |
-| whole-plasmid sequencing ×3 | ~$45–75 |
+| whole-plasmid sequencing ×3 — **Plasmidsaurus, $15/sample, 1-day turnaround** | **$45** |
 | **total, reagents only** | **~$400–700** |
 
 **[OUR ESTIMATE. All three Addgene prices — #23858, #114052, #114061 — are `[VERIFIED]` at **$94
 each**, re-fetched from the live plasmid pages 2026-08-31 (§4a); the previous "~$80–100" range is
-replaced by the exact figure. Synthesis and sequencing prices are current market ranges and MUST be
-re-quoted before ordering. Consumables, instrument time and labour are `[NOT ESTIMATED]` and are not
+replaced by the exact figure. **Synthesis and sequencing are now `[VERIFIED]` too** — Twist Clonal
+Genes at **9¢/bp + $35–55 cloning** and Plasmidsaurus whole-plasmid sequencing at **$15/sample**,
+both read from the vendors' published pricing 2026-08-31, replacing the previous "current market
+ranges". These are **US list prices**; academic, volume and regional pricing differ and a real quote
+should still be obtained. Consumables, instrument time and labour are `[NOT ESTIMATED]` and are not
 invented here.]**
+
+> 🔻 **THIS PARAGRAPH USED TO SAY SYNTHESIS AND SEQUENCING PRICES "MUST be re-quoted" AS THOUGH NO
+> SOURCE COULD SETTLE THEM.** Both vendors publish per-bp and per-sample list prices openly; the
+> figures were never unobtainable, only unfetched. **An estimate defended as unavoidable is worth
+> re-testing before it is inherited** — that is the same error class as an absence asserted without
+> a lookup, which this project has logged four times.
 
 🔑 **The recommended path does not need any Addgene plasmid.** Route 1 is two synthesised fragments
 plus sequencing: **~$195–475 all in.** The $188 of control plasmids is optional and belongs to route
