@@ -55,7 +55,7 @@ throughput objection to a flow readout dissolves at 384-well.
 unaffected LCLs above are from *other families and a different gene*, so they are population
 references, not matched controls. **[VERIFIED from the repository's own records; the trio structure
 of families 2680 and 2741 does not extend to the *BUB1B* donor.]**
-⚠️ And `GM21284` is **not this child's genotype** — no N1002K line exists, which is what the
+⚠️ And `GM21284` is **not this child's genotype** — no N1002K line is catalogued in Coriell or Addgene *(the repositories searched; ECACC unresolved)*, which is what the
 accompanying reagent specification addresses.
 
 ## 4. Assay validation — to the Assay Guidance Manual, with its numbers

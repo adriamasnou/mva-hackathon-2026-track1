@@ -7,18 +7,21 @@ Track 2 is **one shot with no resubmit**. Nothing here ships without Adrià's ex
 **Rubric this is written against:** Rigor 35 · Impact 25 · Innovation 25 · Scalability 15.
 
 > **Build note.** Sections are written in the order set by `dossier/PLAN-2026-08-29-remade.md` §5:
-> the two elements measured at **0 of 52 competitor owners** come first, because uncontested *and*
+> the two elements measured at **0 of 54 competitor owners** come first, because uncontested *and*
 > invisible is the worst combination for material we already hold. Every section below is
 > converted from held, sourced dossier material — **no section states anything not already
-> verified in the private tree.** **[OUR MEASUREMENT — the 0-of-39 field positions are from a grep
-> over all 41 repos / 39 owners in `archive/competitors/`, recorded in `dossier/scoreboard-VERIFIED.json`.]**
+> verified in the private tree.** **[OUR MEASUREMENT — the 0-of-54 field positions are from a grep
+> over all 58 distinct repos / 54 owners in `archive/competitors/`, re-derived 2026-08-31 with a
+> positive control (`BUB1B` 53 of 54 owners); first recorded at the then-current 41 repos / 39
+> owners in `dossier/scoreboard-VERIFIED.json`.]**
 
 ---
 
 ## 1. Impact — PGT-M for MVA is already approved in the UK, and is undiscoverable by gene
 
-**Field position: 0 of 52 competitor owners hold this** [OUR MEASUREMENT — grep over all 57 repos /
-39 owners in `archive/competitors/`, every hit read by hand; `F-005`, re-verified 2026-08-28].
+**Field position: 0 of 54 competitor owners hold this** *(re-measured 2026-08-31 against **54 owners** after `mateooSM` and `Jakeelamb` were archived; numerator unchanged, control `BUB1B` **53 of 54**)* [OUR MEASUREMENT — grep over all 58 distinct repos (59 archived directories, one repo archived
+twice under a rename) / 54 owners in `archive/competitors/`, every hit read by hand; `F-005`,
+re-verified 2026-08-31].
 
 Preimplantation genetic testing for monogenic conditions (PGT-M) is **already approved by the UK
 regulator for mosaic variegated aneuploidy** — not one type, but five.
@@ -80,24 +83,28 @@ have not made.]**
 
 ## 2. Impact — a "Definitive" gene with zero expert-reviewed variants and no expert panel
 
-**Field position: 0 of 52 competitor owners hold this** [same measurement as §1].
+**Field position: 0 of 54 competitor owners hold this** [same measurement as §1]. *(re-measured 2026-08-31 against **54 owners** after `mateooSM` and `Jakeelamb` were archived; numerator unchanged, control `BUB1B` **53 of 54**)*
 
 > 🔴 **DENOMINATOR CORRECTED 2026-08-30, IN OUR OWN FAVOUR.** Both field-position lines above read
 > **"0 of 39 competitor owners"** until today — a denominator two re-measurements stale. The
-> archive now holds **52 owners across 57 repositories**, and **both elements were re-measured
+> archive now holds **54 owners across 58 distinct repositories** (59 archived directories, one repo
+> archived twice under a rename — `Samistus1234__mva-hackathon-track1` is the SAME upstream repo as
+> `Samistus1234__mva-hackathon`, proved by HTTP 301 on the old name; **owner counts are unaffected and
+> never needed correcting**), and **both elements were re-measured
 > against all of it and both still return zero**:
 >
 > | screen | owners | route |
 > |---|---|---|
-> | `HFEA` | **0 of 52** | `grep -rli HFEA archive/competitors/` |
-> | `PGT-M` / `PGTM` | **0 of 52** | same, both spellings |
-> | *(context)* `preimplantation`, any mention | 2 of 52 — `ModeEric`, `neilkale` | the broader term IS present; the specific regulatory route is not |
-> | *(context)* `preimplantation genetic testing/diagnosis` spelled out | 1 of 52 — `ModeEric` | |
-> | *control* `BUB1B` | **51 of 52** | proves a zero here is real and not a broken route |
+> | `HFEA` | **0 of 54** | `grep -rli HFEA archive/competitors/` |
+> | `PGT-M` / `PGTM` | **0 of 54** | same, both spellings |
+> | *(context)* `preimplantation`, any mention | 2 of 54 — `ModeEric`, `neilkale` | the broader term IS present; the specific regulatory route is not |
+> | *(context)* `preimplantation genetic testing/diagnosis` spelled out | 1 of 54 — `ModeEric` | |
+> | *control* `BUB1B` | **53 of 54** | proves a zero here is real and not a broken route |
 >
 > **The stale figure understated our own claim**, and we are correcting it in the direction that
 > helps us — which is exactly why the control row is printed beside it. **[OUR MEASUREMENT —
-> 2026-08-30.]** The two context rows are given because *"nobody has thought about embryo
+> 2026-08-30; every row of this table re-derived against the live 54-owner archive on 2026-08-31 and
+> every one reproduces exactly.]** The two context rows are given because *"nobody has thought about embryo
 > selection"* would be false; the claim is narrower and survives: **nobody has gone to the
 > regulator's own approved-condition register.**
 

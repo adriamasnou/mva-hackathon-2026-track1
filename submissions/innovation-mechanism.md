@@ -35,22 +35,77 @@ appear in rare-disease repurposing lists.
 > This is a *screening* argument, not a treatment recommendation. It says which candidates are
 > **not worth testing**, which is the cheaper half of a therapeutic programme.
 
+## 2b. 🔴 And if you give the matched drug — can you tell whether it worked?
+
+Compartment matching says arimoclomol is **aimed at the right place**. It says nothing about
+whether the answer would be **readable**. That question has a published answer, and it is
+uncomfortable.
+
+**The only human measurement of this drug engaging its target** comes from the Niemann-Pick C phase
+2/3 trial — Mengel E et al., *J Inherit Metab Dis* 2021, **PMID 34418116** (**NCT02612129**),
+93–372 mg/day weight-banded, three times daily:
+
+| | |
+|---|---|
+| HSP70 in PBMCs, 0 → 12 months | **n = 11**, mean change **+1778.98 pg/mL**, **SD 1835.56**, *P* = .001 |
+| Statistical test | **within-group** Wilcoxon signed-rank — not a between-group comparison |
+| Placebo comparator | **none usable** — verbatim: *"Because of loss of PBMC samples by the central laboratory, it was not possible to consider the placebo group (n = 4) as a control"* |
+
+**The standard deviation is larger than the mean: CV = 1835.56 / 1778.98 = 103.2%.**
+**[OUR MEASUREMENT — arithmetic on the trial's own two published values.]**
+
+**Three consequences for anyone designing the experiment, including us:**
+
+1. **Target engagement gates interpretation.** An experiment in which HSP70 did not rise is
+   **uninterpretable, not negative.** Blot BubR1 in the same lysate as **HSPA1A** and **HSP90AA1**.
+2. **Do not calibrate that gate from the trial.** At a marker CV near 100%, a gate keyed to it at
+   n = 3 cannot separate *"no engagement"* from *"engagement we could not see"* — it converts a
+   technical failure into a false negative, which is the very thing the gate exists to prevent.
+   **Pre-specify the minimum detectable induction in the cell system, from its own CV.**
+3. **Never normalise to GAPDH or tubulin here.** HSF1 activation and HSP90 inhibition perturb
+   housekeeping proteins, so a housekeeping normaliser **manufactures an effect** in exactly the
+   arms of interest. Use total-protein normalisation, and a **linear** quantification method
+   (capillary western or PRM mass spectrometry) — the effects at stake are **20–40%**, at or below
+   reliable ECL film resolution.
+
+> 🔻 **THIS OBJECTION IS NOT OURS, AND WE WERE BEHIND ON IT.** Measured 2026-08-31 over 52 archived
+> owners with a positive control: **2 owners already state it**, and **one states it in a more
+> developed form than we did** — specifying target-engagement gating, linear quantification and the
+> housekeeping-normalisation trap. A claim that these objections were new to us has been retracted
+> in the private record. **What is added here is the trial arithmetic**: that team's own report says
+> the NPC exposures were *not retrieved*, and the CV above is what the retrieved paper shows.
+> **Being second to an idea is not a reason to state it less carefully.**
+
 ## 3. 🔻 What we are NOT claiming, because we measured it
 
 **This is not novel to us.** Re-measured 2026-08-30 against the live archive:
-**`arimoclomol` appears in 7 of 57 archived competitor repositories, held by 6 of 52 distinct
-owners**, and at least one team ranks it **#1**,
+**`arimoclomol` appears in 6 of 58 archived competitor repositories, held by 6 of 54 distinct
+owners** *(re-measured 2026-08-31 against the live archive — **54 owners / 58 distinct repositories**; numerator unchanged at 6 and 6, control `BUB1B` **53 of 54 owners / 722 files**)*, and at least one team ranks it **#1**,
 justified as *"mechanism matched exactly to the temperature-rescuable folding defect"*. One entire
 competing submission is built on the same abundance-rescue question.
 
 > 🔴 **DENOMINATOR CORRECTED 2026-08-30, AND SO WAS ITS UNIT.** This paragraph read *"the
 > 50-archived-owner denominator: `arimoclomol` appears in **6 of 50 competitor repositories**"* —
 > which names an **owner** denominator and then applies it to **repositories** in the same breath.
-> They are different populations: the archive holds **52 owners across 57 repositories**, because
+> They are different populations: the archive holds **54 owners across 58 distinct repositories**
+> (59 archived directories, one repo archived twice under a rename — `Samistus1234__mva-hackathon-track1`
+> is the SAME upstream repo as `Samistus1234__mva-hackathon`, proved by HTTP 301 on the old name;
+> **owner counts are unaffected and never needed correcting**), because
 > some owners have more than one. Re-measured with a positive control run first
 > (`grep -rli BUB1B archive/competitors/` → 713 files, so a zero would have been real):
-> **7 repositories, 6 owners.** The conclusion is unchanged and slightly stronger against us —
+> **6 repositories, 6 owners.** The conclusion is unchanged and slightly stronger against us —
 > which is why it is stated in both units rather than whichever is smaller.
+>
+> 🔴 **REPO COUNT CORRECTED AGAIN 2026-08-31 — it read "7 of 57", and I re-verified that figure the
+> same day and reported it as holding. It does not.** `archive/competitors/` holds **the same
+> repository twice**: `Samistus1234__mva-hackathon` is a **strict subset** of
+> `Samistus1234__mva-hackathon-track1` (0 files unique to it, 60 shared paths, 55 byte-identical) —
+> the upstream repo was **renamed**, and we archived it under both names. **Both copies were inside
+> the arimoclomol 7.** True at that measurement: **6 repositories of 56** — and **6 of 58** at the
+> live denominator once `mateooSM` and `Jakeelamb` were archived later the same day (numerator
+> re-measured, unchanged). ⚠️ **The OWNER counts are unaffected** — the
+> two directories always deduplicated to one owner — **so every "of 52 owners" figure in this
+> project stands. Only repo-denominated counts were inflated.**
 > [OUR MEASUREMENT — `grep -rli arimoclomol archive/competitors/`, deduplicated to repository and
 > to owner, 2026-08-30.]
 

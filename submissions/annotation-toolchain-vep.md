@@ -89,11 +89,39 @@ ever run here**, so this is a control and not a tautology.
 | ClinVar | **pathogenic, likely pathogenic** | no assertion for this nucleotide change |
 | *provenance* | **[OUR MEASUREMENT]** · asserted by `pipeline/vep_check.py` | **[OUR MEASUREMENT]** · asserted by `pipeline/vep_check.py` |
 
-Both controls hold. **The exon numbering is the load-bearing part**: allele A is in exon 17 of 23
-and is NMD-competent, so that transcript is degraded; allele B is in the **last** exon and escapes
-NMD. That asymmetry — independently confirmed here by the standard toolchain — is why all residual
-BubR1 protein in this child carries the missense allele, and it is the premise of everything
-downstream.
+Both controls hold. **The exon numbering is load-bearing for allele A, and the asymmetry is real —
+but it is not an NMD asymmetry, and this passage stated it wrongly until 2026-08-31.**
+
+- **Allele A — `p.Leu737Ter`, exon 17 of 23 — IS an NMD substrate.** It creates a premature
+  termination codon **~748 nt and 6 exon–exon junctions upstream** of the final exon–exon junction,
+  far beyond the 50–55 nt rule, so the transcript is predicted to be degraded. ⚠️ **Predicted, not
+  measured** — no RNA was sequenced, and NMD efficiency cannot be derived from DNA.
+- **Allele B — `p.Asn1002Lys` — is NOT an NMD substrate and never was.** A **missense creates no
+  premature termination codon**, so the surveillance pathway is **never engaged** and the exon it
+  falls in is **irrelevant to transcript stability**. The transcript is normal-length and translated.
+
+> 🔴 **CORRECTED 2026-08-31 — CATEGORY ERROR.** This passage read: *"allele B is in the **last** exon
+> and **escapes NMD**."* **A missense does not "escape" NMD; NMD is not applicable to it.** The
+> last-exon fact is true and is useful elsewhere — it is why `p.Leu1012Pro`, the closest
+> functionally characterised MVA allele, sits **29 bp away in the same exon** — but it does **no
+> work** in the NMD argument, and presenting it as the reason allele B survives implies a mechanism
+> that does not exist.
+>
+> ✅ **THE CONCLUSION IS UNCHANGED, and now rests on the right premise:** allele A's transcript is
+> predicted to be degraded, and allele B's is a normal-length transcript that was never at risk —
+> **so the residual BubR1 protein in this child is predicted to be N1002K.** The asymmetry is
+> *"one allele is destroyed, the other is untouched"*, **not** *"both were at risk and one escaped"*.
+>
+> ⚠️ **And "the premise of everything downstream" was too strong** — it inherits allele A's
+> prediction-not-measurement caveat, and Suijkerbuijk 2010 records that *"it is unclear what the
+> status of 194X, 483X or 753X is in patient cells"*, i.e. **BUB1B truncations are not uniformly
+> null once NMD is bypassed.** Stated as a prediction, not a premise.
+>
+> *How this was found: the error was surfaced by an internal field-intelligence sweep noting that a
+> competitor had publicly withdrawn the identical formulation from their own report. **The
+> correction here rests on the molecular biology and on our own allele-A analysis, not on their
+> document** — per this project's standing rule that a claim sourced from a competitor repository is
+> an observation about a competitor, never evidence about the biology.*
 
 ---
 

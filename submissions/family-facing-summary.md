@@ -286,11 +286,26 @@ genetic condition affecting chromosome stability, at controlled doses under medi
 and a regulator has granted it rare-paediatric-disease status in that condition. So a route
 exists in principle.
 
+**And there is one more thing on the other side of the ledger, which we would be wrong to leave
+out.** In a 2023 mouse study, this same compound — fed at a dose comparable, size for size, to the
+one used in children — was associated with **more spread of an already-implanted breast-cancer line
+to the brain** (9 of 11 animals, against 3 of 12 that did not get it). The same paper also reported
+more tumours overall, but that particular difference was small enough that it could easily have been
+chance, and the authors did not test it. **What this study does not show:** that the compound
+*causes* cancer — the animals were given tumour cells to begin with — and it was not any of the
+tumour types seen in George's condition, and the cells had been specially chosen for being unusually
+good at taking the compound up. **What it does mean, plainly: nobody can currently tell you whether
+this compound would raise or lower cancer risk in a child who is already at higher risk.** That
+question is open, and it has to be said out loud rather than left in a file.
+**[Source: Maric T et al., *Biosens Bioelectron* 2023, PMID 36371959. The comparison of the two
+numbers above is OUR MEASUREMENT from the figures the paper reports.]**
+
 > **What this is:** a testable hypothesis with a defined first experiment.
 > **What this is not:** a treatment, a recommendation, or anything to try at home. Doses used in
 > studies are not approved for children, and shop-bought supplements are neither the same thing
-> nor a safe substitute for one. Anything of this kind belongs in a supervised clinical setting,
-> decided together with George's own medical team.
+> nor a safe substitute for one. **And its effect on cancer risk is genuinely unknown, in a child
+> for whom that risk is already raised.** Anything of this kind belongs in a supervised clinical
+> setting, decided together with George's own medical team.
 
 ---
 

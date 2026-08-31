@@ -1,8 +1,10 @@
 # Build specification: the *BUB1B* N1002K construct that does not exist
 
 **Every therapeutic claim about this child — ours and three competing teams' — is extrapolated from
-other people's variants, because no N1002K reagent exists anywhere. This is the document that ends
-that, for a few hundred dollars.**
+other people's variants, because **no N1002K reagent is catalogued in any repository we searched** —
+Coriell and Addgene, both queried and read record by record (§1); ECACC could not be resolved and is
+recorded as inconclusive, not negative. This is the document that ends that, for a few hundred
+dollars.**
 
 *Rare Disease, Real Kid: The MVA Hackathon 2026 · adriamasnou · 2026-08-29 · CC BY 4.0*
 
@@ -15,7 +17,7 @@ that, for a few hundred dollars.**
 | `GM21284` (Coriell) | a real MVA patient line — but genotype **`753X` / `R814H`**, not this child's |
 | Addgene **#114052 / #114061 / #114062** | wild-type, `K795A`, `D882N` BubR1 — Kops lab, publication-linked. 🔴 **All three are MAMMALIAN pIC58 (pLAP) plasmids encoding FULL-LENGTH YFP-TEV-S-LAP-BubR1** (verified 2026-08-30) — useful for cell-based work and for route **A1**, **not** for the bacterial HIS₆ (721–1,044) purification route **A2** this document selects in §3. See §5 item 4 |
 | Addgene **#23858** `pDONR223-BUB1B` | full-length ORF, Gateway **entry** clone |
-| **an N1002K construct** | ❌ **does not exist, anywhere** |
+| **an N1002K construct** | ❌ **not catalogued in Coriell or Addgene** — the two repositories searched, record by record. *(Scoped 2026-08-31 from "does not exist, anywhere": ECACC returned nothing parseable, and an unresolved query is not an absence.)* |
 
 So the dose–response curves, the stability data, the chaperone-dependence result — all of it is
 `753X/R814H`, `K795A`, or mouse. **The specific allele this child actually carries has never been

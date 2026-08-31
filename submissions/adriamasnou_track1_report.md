@@ -59,10 +59,34 @@ which **8 heterozygous**; **3** heterozygous PASS variants without a dbSNP ID, a
 **40,209,701 · 40,216,470 · 40,220,612**; **`AD` 21,25** and **15,13** at the two reported alleles.
 The phasing arithmetic also checks: the marker gaps are **6,769 bp** and **4,142 bp**, so against a
 longest observed fragment of 1,272 bp the easier hop is **3.26×** and the harder **5.32×**.
-*(The fragment statistics themselves — 22,623 properly-paired reads, mean TLEN 458 bp, longest
-1,272 bp — could not be re-derived on 2026-08-31 because the merged alignment is no longer on this
-disk; they remain as originally measured and are consistent with `F-001`'s independent 455.7 ±
-181.6 bp.)*
+*(The fragment statistics — 22,623 properly-paired reads, mean TLEN 458 bp, longest 1,272 bp — were
+**re-derived from the alignment on 2026-08-31 and they reproduce.**)*
+
+> 🔴 **CORRECTED 2026-08-31, LATER THE SAME DAY. This sentence previously read *"could not be
+> re-derived … because the merged alignment is no longer on this disk."* **That was false.** The
+> merged alignment is present and readable: `pipeline/work/WGS_EX2312012_HGWCNDSX7.markdup.cram`
+> (20 GB, indexed), **four read groups L001–L004 merged** by `bwa mem` → `samtools fixmate` →
+> `markdup`, against the reference its own `@SQ UR:` tag names —
+> `pipeline/ref/GRCh38_no_alt_plus_hs38d1.fna`, 2.9 GB, present with its `.fai`.
+>
+> **Re-derived over the RefSeq *BUB1B* span `chr15:40,161,057–40,220,509`:**
+> ```
+> samtools view -f 2 -F 2304 -T pipeline/ref/GRCh38_no_alt_plus_hs38d1.fna >   pipeline/work/WGS_EX2312012_HGWCNDSX7.markdup.cram chr15:40161057-40220509 >   | awk '{t=$9; if(t>0){n++; s+=t; if(t>m)m=t}} END{print n, s/n, m}'
+> ```
+> | statistic | published | re-derived 2026-08-31 |
+> |---|---|---|
+> | mean TLEN | **458 bp** | **458.4 bp** ✅ |
+> | longest fragment | **1,272 bp** | **1,272 bp** ✅ |
+> | properly-paired reads | **22,623** | **22,398** on the exact RefSeq span; **23,188** on a slightly wider one — the published figure sits between, i.e. it differs only by the region definition, not by the data |
+>
+> **The two numbers the phasing argument actually uses — mean TLEN and the longest observed fragment
+> — reproduce exactly.** The `3.26×` and `5.32×` gap-to-fragment ratios above therefore stand on a
+> re-derivable measurement, not on a remembered one.
+> ⚠️ **How the error happened, since it matters more than the error:** an earlier check looked for the
+> reference at `/ref/…`, the path the canary hard-codes, found nothing there, and concluded the
+> alignment was gone. **The CRAM's own header records where its reference actually is.** A file's
+> provenance is written inside it; asking the file beats guessing its path.
+> *(Independent cross-check unchanged: `F-001`'s 455.7 ± 181.6 bp.)*
 **One defect was found in this audit — the "Sieben 2020" mouse-null attribution, corrected in the
 Approach section above.** Hanks 2004 (PMID 15475955) and Yost 2017 (PMID 28553959) both verified
 correct.
