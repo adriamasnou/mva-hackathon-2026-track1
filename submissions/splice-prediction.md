@@ -89,6 +89,15 @@ The second variant overlaps *PAK6*, which shares this locus with *BUB1B*; it is 
   it is still a predictor.
 - ❌ **A low delta is not proof of no effect.** SpliceAI has known blind spots for deep-intronic
   and structural events, and the window here is ±500 bp.
+- ✅ **The ±500 bp window is wider than the definition the model was validated on, and we checked
+  that this changes nothing.** Jaganathan 2019 (PMID 30661751) defines the delta score as *"the
+  largest change in splice prediction scores within 50 nt from the variant"*, and its published
+  sensitivity curves are calibrated to that definition. Ours aggregates over ±500 bp — ten-fold
+  wider, so it can only *raise* a maximum, never lower one. **Re-run at the paper's own 50 nt
+  (2026-08-31): every reported maximum is identical — L737\* 0.03, N1002K *BUB1B* 0.02, N1002K
+  *PAK6* 0.02.** Two non-maximal components fall to zero (L737\* `DS_DL` 0.01 → 0.00, N1002K/*PAK6*
+  `DS_DG` 0.01 → 0.00); neither is a reported value, and no verdict moves.
+  **[OUR MEASUREMENT — same model, same reference, `dist` argument 50 instead of 500.]**
 - ❌ **This says nothing about the variants' protein-level consequences**, which are argued
   elsewhere from other evidence.
 
