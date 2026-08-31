@@ -206,10 +206,71 @@ design, verifies the entire construct rather than a window, and — the reason t
 **catches second-site mutations that polymerase-based mutagenesis introduces elsewhere in the
 plasmid**, which a targeted amplicon cannot see.
 
+## 4a. ✅ CATALOGUE FACTS RE-VERIFIED LIVE, 2026-08-31 — and this found a trap
+
+Every Addgene figure in this document was re-fetched from the live records on **2026-08-31**. **Both
+previously-unverified claims hold exactly**, and the check surfaced four things the document did not
+have — one of which would have broken the QC gate in §5.
+
+| claim | live record | verdict |
+|---|---|---|
+| #23858 price **$94** | *"Plasmid 23858 … agar stab 1 **$94**"* | ✅ **exact** |
+| #23858 has no stop codon | *"The ORF has **no Stop codon**. This design enables easy recombination into a destination vector to add an epitope tag of choice and Stop codon to the ORF. **Do NOT use this plasmid directly for transfections.**"* | ✅ **verbatim, unchanged** |
+| Kops plasmids are mammalian pIC58/pLAP, full-length, `YFP-TEV-S-` LAP N-terminal | confirmed for **#114052** and **#114061**; vector type *"Mammalian Expression"* | ✅ |
+| control plasmids **"~$80–100"** each | **$94** each — all three plasmids are $94 | 🔻 **now exact, not a range** |
+| **[OUR MEASUREMENT — all rows re-fetched from addgene.org/23858, /114052 and /114061 on 2026-08-31.]** | | |
+
+### 🔴 4a.1 THE TRAP: both Kops plasmids carry two silent edits *inside* our fragment
+
+**#114052 and #114061 both list `Mutation: C2823A and G2826A (siRNA-resistance)`.** Resolved against
+`ENST00000287598.11`:
+
+| | codon | change | consequence | in the 721–1,044 fragment? |
+|---|---|---|---|---|
+| `c.2823C>A` | 941 | `ATC` → `ATA` | **Ile → Ile, synonymous** | ✅ **yes — fragment position 663** |
+| `c.2826G>A` | 942 | `CTG` → `CTA` | **Leu → Leu, synonymous** | ✅ **yes — fragment position 666** |
+
+**They sit 180–183 bp upstream of the N1002K edit, well inside the region this document tells you to
+synthesise.** The protein is unaffected — so a *protein* melting curve is not compromised — but:
+
+> 🔴 **IF YOU USE #114052 AS THE "WILD-TYPE" COMPARATOR, YOUR PAIR DIFFERS AT THREE BASES, NOT ONE**,
+> and **§5's QC gate — *"exactly one difference from wild-type … only the edit is present"* — will
+> fail on two changes that are supposed to be there.** A laboratory hitting that would reasonably
+> conclude the synthesis was wrong.
+>
+> ✅ **This is a further argument for route 1 as written**: order **both** fragments from the same
+> synthesis run and neither carries the siRNA-resistance edits, so the pair genuinely differs by one
+> base. **Do not mix a synthesised fragment against an Addgene-derived wild-type.**
+> **[OUR MEASUREMENT — Addgene's stated mutations mapped onto the canonical CDS, 2026-08-31.]**
+
+### 4a.2 Three further things the records say and this document did not
+
+1. 🔴 **Neither plasmid can be fully verified in silico before ordering.** #23858: *"Full plasmid
+   sequence is not available for this item."* #114061's depositor states: *"based on pLAP-BUBR1:
+   **point mutation(s) are not included in Sequence:Full**"* — **the deposited sequence does not show
+   K795A.** Anyone using #114061 as a route-A1 positive control and checking it against the deposited
+   record will not find the mutation there. **Sequence it on arrival; do not infer it.**
+2. ⚠️ **#23858's insert is listed as 3,153 bp — numerically identical to the full CDS *including* its
+   stop codon**, while the depositor says the ORF has no stop codon. Both cannot be literally true of
+   the same 3 bases. **The 3′ end is exactly where Gateway recombination and tag frame matter, so
+   resolve it by sequencing** — which §4 already recommends for a different reason.
+3. ✅ **Growth and selection, straight from the records** — absent here until now, and needed the
+   moment a stab arrives: **#23858 — Spectinomycin 50 µg/mL**, DH5α, 37 °C, high copy; sequencing
+   primers **M13pUC-fwd / M13rev**. **#114052 and #114061 — Kanamycin 50 µg/mL**, DH5α, 37 °C, high
+   copy. All three are **academic/non-profit only, UBMTA**.
+
+⚠️ **Note also that the two Kops plasmids come from *different papers*:** #114061 (K795A) is from
+**PMID 22698286**, the pseudokinase paper this document quotes for the 39.1/34.7 °C Tm pair;
+**#114052 (WT) is from PMID 23079597**, the kinase–phosphatase paper. Cite each to its own source.
+
 ## 5. Quality control — what must be true before the construct is used
 
 1. **Whole-plasmid sequence**, matching the intended sequence with **exactly one difference from
    wild-type**. Not "the edit is present" — *only* the edit is present.
+   🔴 **This gate assumes both members of the pair come from the same synthesis run (route 1).** If
+   the comparator is an Addgene-derived construct it carries two extra synonymous
+   siRNA-resistance changes inside the fragment and this gate will fail correctly — **see §4a.1
+   before concluding the synthesis went wrong.**
 2. **The WT counterpart sequenced in the same run**, from the same source.
 3. Expression checked by SDS-PAGE before any Tm measurement; a construct that does not express
    cannot produce a melting curve, and a flat curve would otherwise be read as a result.
@@ -257,13 +318,19 @@ plasmid**, which a targeted amplicon cannot see.
 |---|---|
 | synthesised fragment ×2 (WT + N1002K), ~1 kb each | **$150–400** |
 | *or* Addgene #23858 + mutagenesis kit + LR reaction | ~$94 plasmid + reagents |
-| Addgene control plasmids (#114052, #114061) — **only if route A1 or a cell-based arm is run**; they are mammalian full-length constructs and are **not** used on route A2 (§5 item 4) | ~$**2 × 80–100** |
+| Addgene control plasmids (#114052, #114061) — **only if route A1 or a cell-based arm is run**; they are mammalian full-length constructs and are **not** used on route A2 (§5 item 4) | **2 × $94 = $188** |
 | whole-plasmid sequencing ×3 | ~$45–75 |
 | **total, reagents only** | **~$400–700** |
 
-**[OUR ESTIMATE. Addgene's $94 for #23858 is `[VERIFIED]` from the plasmid page; synthesis and
-sequencing prices are current market ranges and MUST be re-quoted before ordering. Consumables,
-instrument time and labour are `[NOT ESTIMATED]` and are not invented here.]**
+**[OUR ESTIMATE. All three Addgene prices — #23858, #114052, #114061 — are `[VERIFIED]` at **$94
+each**, re-fetched from the live plasmid pages 2026-08-31 (§4a); the previous "~$80–100" range is
+replaced by the exact figure. Synthesis and sequencing prices are current market ranges and MUST be
+re-quoted before ordering. Consumables, instrument time and labour are `[NOT ESTIMATED]` and are not
+invented here.]**
+
+🔑 **The recommended path does not need any Addgene plasmid.** Route 1 is two synthesised fragments
+plus sequencing: **~$195–475 all in.** The $188 of control plasmids is optional and belongs to route
+A1 only.
 
 ## 7. What this does not include, and what needs a person
 
