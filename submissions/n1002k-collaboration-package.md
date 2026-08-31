@@ -9,7 +9,7 @@
 | **Licence** | CC BY 4.0 |
 | **Companion document** | [`n1002k-reagent-specification.md`](n1002k-reagent-specification.md) — construct design, orderable sequences, costings |
 | **Biosafety** | **BSL-1.** *E. coli* K-12/B-derivative expression host; synthetic dsDNA; no human material, no pathogen, no controlled-access data |
-| **Estimated reagent cost** | **≈ $290–330** (list, §Materials) |
+| **Estimated reagent cost** | **≈ $630** — four constructs including two controls (list prices, §Materials) |
 | **Estimated timeline** | **~3 weeks** elapsed; ~4 days hands-on (§Timing) |
 
 ---
@@ -79,22 +79,49 @@ its evidentiary reach wastes the time of whoever runs it.**
 
 ### DNA constructs
 
-| Construct | Source | Cost |
-|---|---|---|
-| **HIS₆-BubR1(721–1,044) WT**, 972 bp CDS | **Synthesise.** Sequence in companion document §3 | Twist Clonal Gene, 9¢/bp ≈ **$87** + vector $35–55 |
-| **HIS₆-BubR1(721–1,044) N1002K**, 972 bp | **Synthesise.** Sequence in companion document §3 | as above |
+**Four constructs, not two.** The two controls are not optional — see the CRITICAL note below.
 
-> **CRITICAL** — Order both constructs as **cloned, sequence-verified genes** (e.g. Twist *Clonal
+| Construct | Role | Residue in 721–1,044? | Cost |
+|---|---|---|---|
+| **WT** | baseline | — | ≈$87 + vector $35–55 |
+| **N1002K** | **the variant under test** | 1002 ✅ | as above |
+| **K795A** | 🔑 **positive control — destabilised** | 795 ✅ | as above |
+| **Q921H** | 🔑 **in-domain functional negative control** | 921 ✅ | as above |
+
+> 🔴 **CRITICAL — a two-construct design fails the standard this protocol cites, and would be
+> inadmissible at any evidence strength.** Brnich *et al.* (**PMID 31892348**) require *"internal
+> controls that demonstrate the dynamic range of the assay (e.g., the readout of the assay with
+> wild-type and null effect)"*, and state that functional evidence *"should not be applied"* unless
+> that dynamic range and its thresholds are well understood. **WT vs variant is a two-point
+> comparison with no demonstrated range.** With K795A and Q921H included, N1002K is placed on a
+> scale between a known-destabilised and a known-neutral in-domain substitution, **all four melted in
+> the same run.** The added cost is ≈$285. **[OUR INFERENCE — the requirement is ClinGen's; the
+> choice of these two controls is ours.]**
+>
+> **Why K795A specifically:** it is the **only variant in this system with a published melting
+> temperature** — WT 39.1 °C vs K795A 34.7 °C (**PMID 22698286**, Fig 3G/S3D). ⚠️ That pair was
+> measured on **full-length GST-BUBR1**, so it is an expectation of *magnitude*, not a numeric gate
+> for this fragment; but as a **synthesised 972 bp fragment** K795A costs exactly what any other
+> construct costs and gives the assay a positive arm it otherwise lacks entirely.
+>
+> ⚠️ **Q921H is a *functional*, not a clinical, negative — state it that way.** It is published to
+> behave as wild-type in isolation (**PMID 20516114**, Fig 4D). But in Hanks *et al.* 2004
+> (**PMID 15475955**, Table 1, family 1) it occurs **in cis with L844F on the same allele in an
+> affected patient**, and it is among the ClinVar records with *conflicting* classifications. **It is
+> a defensible negative arm for a folding assay and an indefensible one for a claim about clinical
+> benignity.** Do not let it drift between those two uses.
+
+> **CRITICAL** — Order all four constructs as **cloned, sequence-verified genes** (e.g. Twist *Clonal
 > Genes*, specified *"100% sequence perfect, NGS verified"*), **not** as linear gene fragments. Order
 > them **in the same run**. The measurement is a ΔTm between two constructs that must differ at
-> exactly one base; two synthesis batches introduce differences the experiment cannot separate from
+> exactly one base from WT; two synthesis batches introduce differences the experiment cannot separate from
 > the variant. See companion document §3 for the full rationale and a documented trap involving
 > silent siRNA-resistance edits present in the deposited pLAP-BUBR1 plasmids.
 >
 > **CRITICAL** — The fragment is **internal to the ORF**: no start codon, no stop codon. Ensure the
 > destination vector supplies an N-terminal HIS₆ tag **in frame**, and that a stop codon is present —
 > append `TAA` if the vector does not provide one. **Do not codon-optimise.** Optimisation would break
-> the requirement that the two constructs be identical outside the edit.
+> the requirement that the constructs be identical outside their intended edits.
 
 ### Reagents
 
@@ -297,10 +324,21 @@ motivated the experiment.**
 - The standing alternative — that the pseudokinase domain can be functionally impaired **at normal
   protein level**, via PP2A-B56 recruitment rather than folding — becomes the leading reading of this
   genotype.
-- **A protein-abundance-raising strategy would be misdirected for this patient**, and several
+- A protein-abundance-raising strategy would be **less well supported** for this patient, and several
   independent groups are currently pursuing exactly that direction with different molecules.
-- 🔑 **This is arguably the more valuable result, and it is the reason the experiment is worth running
-  regardless of direction.** A negative redirects effort currently being spent on an untested premise.
+
+> 🔴 **A NULL RESULT IS WEAKER THAN A POSITIVE ONE, AND THIS SECTION IS DELIBERATELY WEIGHTED THAT
+> WAY.** A ΔTm of zero is consistent with at least three non-exclusive explanations: (i) the variant
+> genuinely does not destabilise; (ii) it destabilises only in the context of the full-length
+> protein, which this fragment does not reproduce; (iii) it is cleared in cells by a chaperone or
+> degradation route that a thermal melt of purified protein cannot see. **The controls bound this but
+> do not eliminate it** — if K795A separates from WT in the same run, the assay demonstrably has the
+> dynamic range to detect a destabilising substitution of that magnitude, which makes (i) more likely
+> and narrows (ii) and (iii). It does not exclude them.
+>
+> **So: a negative narrows the hypothesis. It does not redirect the field, and this document does not
+> claim it does.** 🔻 *An earlier draft of this section called Outcome B "arguably the more valuable
+> result". That overstated a null and is corrected here.* **[OUR INFERENCE.]**
 
 ### Outcome C — Ambiguous (ΔTm within preparation variance)
 
@@ -347,6 +385,41 @@ Further limitations, stated plainly:
 - **n = 1 variant against WT** is a two-point comparison, not a calibrated assay.
 
 ---
+
+## The version of this that would matter more — a domain-wide scan
+
+**The single-variant experiment above has a ceiling that no amount of care raises, and it is worth
+stating plainly rather than discovering it after the work is done.**
+
+The ceiling is in §Limitations: **449 in-domain missense records, 430 uncertain, zero pathogenic or
+likely-pathogenic** **[OUR MEASUREMENT — ClinVar, aggregate germline classification, 2026-08-30]**.
+There is no calibration set, so even a flawless N1002K measurement cannot be converted into a defined
+evidence strength. Adding K795A and Q921H gives the assay a *demonstrated dynamic range* — the
+precondition **PMID 31892348** sets for applying functional evidence at all — but two controls is not
+the eleven that paper requires, and the eleven do not exist to be bought.
+
+**A multiplexed assay of variant effect across aa 721–1,044 removes the ceiling instead of working
+around it.** Synthesise a variant library spanning the domain, assay abundance or stability in a
+pooled format, read out by sequencing.
+
+| | single-variant melt | domain-wide MAVE |
+|---|---|---|
+| answers | one allele, for one child | **~430 uncertain variants** |
+| calibration set | **does not exist — this is the blocker** | **generates it** |
+| ACMG reach | indeterminate; no OddsPath obtainable | **the format the OddsPath framework was built to score** (PMID 31892348) |
+| cost / time | ≈$630, ~3 weeks | a project — months, real budget |
+| capability needed | protein purification + a fluorimeter | **library synthesis, pooled assay, sequencing** |
+
+🔑 **The last row is the argument.** A cuvette melting curve is a small favour to ask of a laboratory
+whose distinctive capability is massively parallel DNA synthesis and sequencing-based readout — it
+uses none of it. **A domain-wide scan is the same biological question asked in the format that lab
+actually excels at**, and it would convert a *BUB1B* variant-of-uncertain-significance desert into a
+classified domain. **[OUR INFERENCE — no such scan exists for *BUB1B*, and we have not attempted to
+design one here; this is a direction, not a protocol.]**
+
+⚠️ **We are not asking for this.** It is named because the small experiment is the honest first step
+toward it and because whoever reads this may be in a position to see that the second one is worth
+more. **The single-variant version stands on its own and is what §What is being asked requests.**
 
 ## What is being asked, and what is not
 
