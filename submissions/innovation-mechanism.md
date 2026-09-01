@@ -78,11 +78,26 @@ uncomfortable.
 
 ## 3. 🔻 What we are NOT claiming, because we measured it
 
-**This is not novel to us.** Re-measured 2026-08-30 against the live archive:
-**`arimoclomol` appears in 7 of 59 archived competitor repositories, held by 6 of 54 distinct
-owners** *(re-measured 2026-08-31 against the live archive — **54 owners / 59 distinct repositories, 60 directories**; control `BUB1B` **53 of 54 owners**. The repo numerator rose 6 → 7 the same day when `danelyjimin07-maker/BUBR1-RESCUE-2.0`, a Track 2 repo created 2026-08-30, was archived; that owner already held the term, so **the owner count did not move**)*, and at least one team ranks it **#1**,
+**This is not novel to us.** Re-measured **2026-09-01** against the live archive:
+**`arimoclomol` appears in 7 of the 62 distinct competitor repositories we hold (8 archived
+directories, two of which are the same repo under a rename), held by 6 of 57 distinct owners** —
+control `BUB1B` **56 of 57 owners**, so a zero here would be real. And at least one team ranks it **#1**,
 justified as *"mechanism matched exactly to the temperature-rescuable folding defect"*. One entire
 competing submission is built on the same abundance-rescue question.
+
+> 🔻 **DENOMINATOR AND NUMERATOR BOTH RE-MEASURED 2026-09-01, AND THE REASON MATTERS MORE THAN THE
+> NUMBERS.** This paragraph read *"7 of 59 archived competitor repositories, held by 6 of 54 distinct
+> owners"*. **The owner count is genuinely unchanged at 6** — but it is now 6 **of 57**, and the repo
+> figure is 7 **of 62**. More importantly, **`Marxist-Leninist/mva-hackathon-2026` newly carries the
+> term, and we could not see it until today**: our archived copy of that repo was cloned 2026-08-27
+> and upstream had pushed on 2026-08-30. **Eight of our 63 archived copies were stale on 2026-09-01
+> and were re-cloned; refreshing them moved 15 of the 23 competitor cells on the scoreboard, every
+> one of them upward.** The full table is in
+> `dossier/sweeps/evidence-2026-09-01/FIELD-SWEEP-2026-09-01.md`.
+> 🔑 **A FIELD MEASUREMENT HAS TWO WAYS TO BE STALE — the denominator, and the CONTENT the numerator
+> was counted over.** This project had a standing rule for the first and no instrument for the
+> second. **[OUR MEASUREMENT — `grep -rli arimoclomol archive/competitors/`, deduplicated to owner
+> and to repository via `guardrails/archive_duplicates.json`, 2026-09-01, after the refresh.]**
 
 > 🔴 **DENOMINATOR CORRECTED 2026-08-30, AND SO WAS ITS UNIT.** This paragraph read *"the
 > 50-archived-owner denominator: `arimoclomol` appears in **6 of 50 competitor repositories**"* —
