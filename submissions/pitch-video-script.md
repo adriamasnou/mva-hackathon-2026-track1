@@ -100,7 +100,7 @@ re-derived 2026-08-31, positive control `BUB1B` 53 of 54]**.)*
 | pre-registered scan | **230 genes, *BUB1B* rank 55, tie block of 8** | `pipeline/scan_sensitivity.py` ACID TEST |
 | generalisation | **HG002, 4,096,123 variants, *FGFR2* rank 1 (0.9654)** | `generalisation-public-case.md` |
 | ClinVar not submitted | **only `PM2` survives** | `dossier/clinvar-submission-package.md` |
-| supplement cancer signal | brain metastases **9/11 vs 3/12**, *p* = 0.012 | Maric 2023, **PMID 36371959** |
+| supplement cancer signal | brain metastases **9/11 vs 3/12** | Maric 2023, **PMID 36371959** — counts verbatim. ⚠️ **The paper reports no p-value and runs no Fisher test**; the *p* = 0.012 this row used to carry is **[OUR MEASUREMENT — two-tailed Fisher exact on the paper's own counts, 2026-09-01: 0.01228]**, corrected 2026-09-01 |
 | mosaicism claim falsified | no gain above **~3.2% of cells** | `methods-and-self-critique.md`; `F-029` |
 
 > ⚠️ **TWO SCORES EXIST FOR *FGFR2* AND BOTH ARE CORRECT — do not "fix" one.** **0.9647** is the
