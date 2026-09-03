@@ -78,10 +78,10 @@ uncomfortable.
 
 ## 3. 🔻 What we are NOT claiming, because we measured it
 
-**This is not novel to us.** Re-measured **2026-09-01** against the live archive:
-**`arimoclomol` appears in 7 of the 62 distinct competitor repositories we hold (8 archived
-directories, two of which are the same repo under a rename), held by 6 of 57 distinct owners** —
-control `BUB1B` **56 of 57 owners**, so a zero here would be real. And at least one team ranks it **#1**,
+**This is not novel to us.** Re-measured **2026-09-03** against the live archive:
+**`arimoclomol` appears in 7 of the 64 distinct competitor repositories we hold (8 archived
+directories, two of which are the same repo under a rename), held by 6 of 59 distinct owners** —
+control `BUB1B` **57 of 59 owners**, so a zero here would be real. And at least one team ranks it **#1**,
 justified as *"mechanism matched exactly to the temperature-rescuable folding defect"*. One entire
 competing submission is built on the same abundance-rescue question.
 
