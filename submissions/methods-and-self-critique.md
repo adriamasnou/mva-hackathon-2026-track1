@@ -91,7 +91,47 @@ That pattern is the subject of `canary/`, a positive-control panel published wit
 and the honest summary is: **we did not catch these by being careful. We caught them by demanding
 that each instrument first produce a result we already knew.**
 
-## 3. What this section is not
+## 3. Compute footprint — measured on the runs that produced this submission, not estimated
+
+Every figure below is read from a log or a file that the pipeline wrote (`pipeline/work/overnight.log`,
+`markdup_stats.txt`, `stats_SN.txt`, the VEP and Exomiser run records); none is a projection.
+**[OUR MEASUREMENT, 2026-08-27 to 2026-08-30.]**
+
+**Hardware.** One laptop: Apple M3 Max, 14 cores, 36 GB RAM. Two 1 TB external USB disks (exFAT)
+held the reference databases; nothing ran in the cloud. **Cost beyond the laptop and its
+electricity: none** (LLM API access aside, disclosed in the methods form).
+
+| step | input | wall-clock | resources | output |
+|---|---|---|---|---|
+| FASTQ integrity + checksums | 8 files (4 lanes × 2 reads), 9.5–10 GiB each where logged, ≈ 80 GB compressed | minutes | `gzip -t`, `sha256sum` | `fastq.sha256` manifest; FASTQs deleted afterwards |
+| Whole-genome alignment, per lane | one lane pair | **2 h 38 m – 2 h 44 m** each (L001 2:41, L002 2:44, L003 2:38, L004 ≈ 3 h); four lanes sequentially ≈ **11.3 h** | `bwa mem -t 8` → `samtools sort`, GRCh38 no-alt + hs38d1 | four sorted lane CRAMs, ≈ 5.2 GB each |
+| Merge + duplicate marking + QC + targeted re-call + pileups | four lane CRAMs | **49 min** (20:49 → 21:38) | `samtools markdup -@ 4` streaming, no `-S` (the read-name temp for `-S` hit 46 GB with zero output in 15 min and was dropped; it does not change primary-alignment duplicate calls, measured at both causal positions) | **`WGS_EX2312012_HGWCNDSX7.markdup.cram`, 19.9 GB + index** |
+| Depth per 500 kb window over the CRAM | 19.9 GB CRAM | ≈ 15 min | `mosdepth -t 4 -Q 60` | `depthQ60.regions.bed.gz` |
+| VEP on the rare-variant set | 313,417 variants | **10 min 28 s** | Docker `ensemblorg/ensembl-vep:release_116.1` (1.29 GB image), `--fork 6`, 28 GB offline cache mounted **read-only** from USB | 433,168 annotation rows; count conservation asserted by `pipeline/vep_check.py` |
+| Exomiser on a public whole genome (GIAB HG002) | 4,096,123 variants | **9 min 20 s** | Exomiser 15.1.0, `-Xmx6g`, 54 GB data (30 GB hg38 + 24 GB phenotype) on USB | *FGFR2* rank 1 — see `generalisation-public-case.md` |
+
+**What the alignment produced, as a check that it is a real whole genome and not a subset:**
+1,076,022,529 reads written; 1,067,610,275 mapped (99.6 %); 155.9 Gb of mapped bases, ≈ 50× over
+3.1 Gb before duplicate removal; 137,794,964 duplicates marked (12.9 % of primary reads); mean read
+length 149. The two causal positions were re-piled from this CRAM: 47 and 27 reads
+(`overnight.log`, stage 5).
+
+**Storage discipline, because it was the binding constraint.** The internal disk reached 95 % full
+during the run. A whole-genome BAM would have been ≈ 63 GB (scaled from a measured 5.05 GB chr1
+BAM); streaming lane CRAMs into a single deduplicated CRAM kept the peak near 20 GB of output, and
+the FASTQs were deleted only after the merged read count matched the expected 1,076,022,529 and
+every file's checksum was on record. **The realignment is reproducible from the public FASTQs in
+≈ 12 h on the same hardware; it is not required for any Track 2 conclusion**, which rest on the
+organizers' VCF and on the literature.
+
+**Why this is stated.** The Scalability criterion asks whether the approach can be applied to other
+individuals. A full realignment, standard annotation with the clinical toolchain, and a
+phenotype-driven genome-wide rank on a 4.1-million-variant public genome all completed on one
+consumer laptop in under a working day of compute, with every database offline. That is the scale
+at which a rare-disease family or a single clinical group operates, and it is the scale this
+submission was built at.
+
+## 4. What this section is not
 
 It is not a claim that the analysis is correct. It is a claim that **the specific ways we could
 find to make it wrong have been tried and are recorded**, including the one that worked. Anyone
