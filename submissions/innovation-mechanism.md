@@ -78,15 +78,15 @@ uncomfortable.
 
 ## 3. 🔻 What we are NOT claiming, because we measured it
 
-**This is not novel to us.** Re-measured **2026-09-03** against the live archive:
-**`arimoclomol` appears in 7 of the 64 distinct competitor repositories we hold (8 archived
-directories, two of which are the same repo under a rename), held by 6 of 59 distinct owners** —
-control `BUB1B` **57 of 59 owners**, so a zero here would be real. And at least one team ranks it **#1**,
+**This is not novel to us.** Re-measured **2026-09-04** against the live archive:
+**`arimoclomol` appears in 7 of the 65 distinct competitor repositories we hold (8 archived
+directories, two of which are the same repo under a rename), held by 6 of 60 distinct owners** —
+control `BUB1B` **57 of 60 owners**, so a zero here would be real. And at least one team ranks it **#1**,
 justified as *"mechanism matched exactly to the temperature-rescuable folding defect"*. One entire
 competing submission is built on the same abundance-rescue question.
 
 > 🔻 **DENOMINATOR AND NUMERATOR BOTH RE-MEASURED 2026-09-01, AND THE REASON MATTERS MORE THAN THE
-> NUMBERS.** This paragraph read *"7 of 59 archived competitor repositories, held by 6 of 54 distinct
+> NUMBERS.** This paragraph read *"7 of 60 archived competitor repositories, held by 6 of 54 distinct
 > owners"*. **The owner count is genuinely unchanged at 6** — but it is now 6 **of 57**, and the repo
 > figure is 7 **of 62**. More importantly, **`Marxist-Leninist/mva-hackathon-2026` newly carries the
 > term, and we could not see it until today**: our archived copy of that repo was cloned 2026-08-27
