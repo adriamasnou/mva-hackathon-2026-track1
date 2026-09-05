@@ -3,8 +3,8 @@
 **Status: SCRIPT ONLY. The video does not exist.** Recording and publishing are Adrià's decision
 (`CLAUDE.md` RED #1/#3). This file exists because the video is **mandatory under ToS §7** and is the
 **only presentation channel** — *"Presentations are pre-recorded; there is no live Q&A round"* — and
-until today we held **zero artefacts of any kind** toward it, against **4 of 60 archived competitor
-owners with a rendered `.mp4`** *(re-measured 2026-09-04 over `archive/competitors/`, 60 owners / 65
+until today we held **zero artefacts of any kind** toward it, against **4 of 62 archived competitor
+owners with a rendered `.mp4`** *(re-measured 2026-09-05 over `archive/competitors/`, 62 owners / 67
 distinct repos; the same four holders as on 2026-08-31)* and **10 with a script or storyboard**
 *(measured 2026-08-31 at 54 owners; not re-screened since)*.
 
@@ -95,7 +95,7 @@ re-derived 2026-08-31, positive control `BUB1B` 53 of 54]**.)*
 | two *BUB1B* variants in trans | L737\* / N1002K | `repo/submissions/adriamasnou_track1_report.md` |
 | HFEA has approved PGT-M for MVA | **5 entries** | `adriamasnou_track2_report.md` §1; HFEA workbook snapshot 2026-08-05 |
 | register size | **2,063 approved conditions** | same, parsed directly |
-| no competitor has gone to it | **0 of 60 owners** | re-measured 2026-09-04, control `BUB1B` 57 of 60 |
+| no competitor has gone to it | **0 of 62 owners** | re-measured 2026-09-05, control `BUB1B` 59 of 62 |
 | no expert-curated variant | **1,850 / 2,063 = 89.7%** | `register-audit.md`; `pipeline/register_expert_curation.py` |
 | VEP losslessness | **313,417 → 313,417 distinct** | `annotation-toolchain-vep.md` |
 | pre-registered scan | **230 genes, *BUB1B* rank 55, tie block of 8** | `pipeline/scan_sensitivity.py` ACID TEST |
