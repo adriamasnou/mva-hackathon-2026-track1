@@ -6,7 +6,14 @@ Coriell and Addgene, both queried and read record by record (§1); ECACC could n
 recorded as inconclusive, not negative. This is the document that ends that, for a few hundred
 dollars.**
 
-*Rare Disease, Real Kid: The MVA Hackathon 2026 · adriamasnou · 2026-08-29 · CC BY 4.0*
+*Rare Disease, Real Kid: The MVA Hackathon 2026 · adriamasnou · 2026-08-29, updated 2026-09-06 · CC BY 4.0*
+
+> 🔻 **UPDATED 2026-09-06 — FOUR CONSTRUCTS, AND ALL FOUR SEQUENCES.** The companion protocol moved on
+> 2026-08-31 to a four-construct design (WT · N1002K · **K795A** positive control · **Q921H** in-domain
+> functional negative) because a two-construct melt has no demonstrated dynamic range. This document
+> still supplied two sequences and costed two constructs — a laboratory following both would have had
+> to design the controls itself. **The two control sequences are now in §3**, verified and screened the
+> same way as the pair, and **§6 is costed for four (≈ $630)**. The WT and N1002K sequences are unchanged.
 
 ---
 
@@ -29,7 +36,7 @@ put in a tube.** Until it is, every claim about it is an argument.
 |---|---|
 | variant | `chr15:40,220,612 T>G` (GRCh38) · `c.3006T>G` · **p.Asn1002Lys** |
 | codon | **`AAT` (Asn) → `AAG` (Lys)** — third base |
-| context | `…GATTCTGAA[**T**>G]GCCAATGAT…` |
+| context | `…GATTCTGAA[T>G]GCCAATGAT…` — the bracketed base is the one that changes |
 
 **[OUR MEASUREMENT — extracted directly from `GRCh38_no_alt_plus_hs38d1.fna` and translated; the
 reference base returned `T`, matching the VCF. Not taken from an annotation.]**
@@ -70,14 +77,15 @@ The protocol's route **A2** needs the **HIS₆-BubR1 (721–1,044)** pseudokinas
 ### ★ Route 1 — SYNTHESISE the mutant fragment (recommended)
 
 At ~1 kb, **synthesis is now cheaper and faster than mutagenising and subcloning**, and it arrives
-**sequence-verified**. Order the 721–1,044 fragment twice — once wild-type, once carrying
-`c.3006T>G` — with the flanking sites your destination vector needs.
+**sequence-verified**. Order the 721–1,044 fragment **four times** — wild-type, `c.3006T>G` (N1002K), and the two
+controls the companion protocol requires, K795A and Q921H — each with the flanking sites your
+destination vector needs.
 
 - No template to source, no mutagenesis, no screening of colonies.
-- **The WT arrives from the same synthesis run**, so the pair differ by exactly one base and share
-  every other property. For a ΔTm measurement between two constructs, that matters more than cost.
-- ⚠️ Codon-optimise **nothing**. A ΔTm comparison requires the two constructs to be identical
-  outside the edit; optimisation would silently break that.
+- **The WT arrives from the same synthesis run**, so each variant differs from WT only at its intended
+  codon and shares every other property. For a ΔTm measurement between constructs, that matters more than cost.
+- ⚠️ Codon-optimise **nothing**. A ΔTm comparison requires the constructs to be identical
+  outside their intended edits; optimisation would silently break that.
 
 #### 🔴 ORDER THE CLONED PRODUCT, NOT THE FRAGMENT — they are different things and the cheaper one is not sequence-verified
 
@@ -93,23 +101,23 @@ the one a lab is likely to click on.** Verified against Twist's published specif
 | cloning | **+$35** cloning vector · **+$55** expression vector · +$75 custom | you clone it yourself |
 | turnaround | Express **4–7** business days · Standard **10** | — |
 
-**At 972 bp the difference is about $150 across the pair, and it buys the thing this experiment
-depends on.** Gene Fragments are cheaper and would leave the laboratory to clone and sequence-verify
-both constructs itself — which is exactly the work route 1 exists to remove, and it reintroduces
-the chance that the pair ends up differing by more than one base.
+**At 972 bp the difference is about $150 across the pair and ≈ $300 across the four, and it buys the
+thing this experiment depends on.** Gene Fragments are cheaper and would leave the laboratory to clone and sequence-verify
+the constructs itself — which is exactly the work route 1 exists to remove, and it reintroduces
+the chance that a construct ends up differing from WT by more than its intended edit.
 
 ✅ **Our fragment should price at the Low/Medium tier (9¢/bp), not High.** The §3 synthesisability
-screen — GC 40.4%/40.5%, worst 50 bp window 24–56%, zero homopolymers ≥6 nt — is the same class of
-measure Twist scores complexity on, and Gene Fragments are offered only for Low/Medium sequences,
+screen — GC 40.4–40.6% across the four, worst 50 bp window 24–56%, zero homopolymers ≥6 nt — is the
+same class of measure Twist scores complexity on, and Gene Fragments are offered only for Low/Medium sequences,
 with high-complexity sequences routed to Clonal Genes. **Twist's own Manufacturability Analyzer will
-confirm the tier before you commit** — run the two sequences through it and check the quoted
+confirm the tier before you commit** — run all four sequences through it and check the quoted
 complexity before ordering.
 
 **[OUR MEASUREMENT — all figures read from twistbioscience.com/products/genes and
 /products/genes/fragments on 2026-08-31. US list prices; academic, volume and regional pricing
 differ, and these must still be confirmed in your own quote.]**
 
-#### ★★ The two sequences to order — paste these into the vendor form
+#### ★★ The four sequences to order — paste these into the vendor form
 
 🔴 **ADDED 2026-08-31. This document previously RECOMMENDED route 1 and then did not supply the
 sequence**, leaving the ordering laboratory to re-derive it from a transcript ID — which is exactly
@@ -117,8 +125,8 @@ where strand, transcript-version and residue-numbering errors enter. **That was 
 remaining gap between this file and "turnkey", and it is closed here.**
 
 **Source: `ENST00000287598.11` CDS, fetched from Ensembl REST and verified in full (§2a).
-972 bp · 324 codons · residues 721–1,044. The two differ at exactly one base — fragment
-position 846 — and at nothing else.**
+972 bp · 324 codons · residues 721–1,044. The pair under test differ at exactly one base — fragment
+position 846 — and at nothing else; the two controls that follow each differ from WT at one codon only.**
 
 <details><summary><b>BUB1B_721-1044_WT</b> — 972 bp</summary>
 
@@ -166,10 +174,66 @@ TTAACTAGTCCT
 ```
 </details>
 
+<details><summary><b>BUB1B_721-1044_K795A</b> — 972 bp, positive control (destabilised): codon 795 <code>AAG</code>→<code>GCG</code>, fragment positions 223–224 (<code>c.2383_2384delinsGC</code>)</summary>
+
+```
+CCATGGTGTTCACAGTATCGCAGACAGCTACTGAAGTCCCTACCAGAGTTAAGTGCCTCT
+GCAGAGTTGTGTATAGAAGACAGACCAATGCCTAAGTTGGAAATTGAGAAGGAAATTGAA
+TTAGGTAATGAGGATTACTGCATTAAACGAGAATACCTAATATGTGAAGATTACAAGTTA
+TTCTGGGTGGCGCCAAGAAACTCTGCAGAATTAACAGTAATAGCGGTATCTTCTCAACCT
+GTCCCATGGGACTTTTATATCAACCTCAAGTTAAAGGAACGTTTAAATGAAGATTTTGAT
+CATTTTTGCAGCTGTTATCAATATCAAGATGGCTGTATTGTTTGGCACCAATATATAAAC
+TGCTTCACCCTTCAGGATCTTCTCCAACACAGTGAATATATTACCCATGAAATAACAGTG
+TTGATTATTTATAACCTTTTGACAATAGTGGAGATGCTACACAAAGCAGAAATAGTCCAT
+GGTGACTTGAGTCCAAGGTGTCTGATTCTCAGAAACAGAATCCACGATCCCTATGATTGT
+AACAAGAACAATCAAGCTTTGAAGATAGTGGACTTTTCCTACAGTGTTGACCTTAGGGTG
+CAGCTGGATGTTTTTACCCTCAGCGGCTTTCGGACTGTACAGATCCTGGAAGGACAAAAG
+ATCCTGGCTAACTGTTCTTCTCCCTACCAGGTAGACCTGTTTGGTATAGCAGATTTAGCA
+CATTTACTATTGTTCAAGGAACACCTACAGGTCTTCTGGGATGGGTCCTTCTGGAAACTT
+AGCCAAAATATTTCTGAGCTAAAAGATGGTGAATTGTGGAATAAATTCTTTGTGCGGATT
+CTGAATGCCAATGATGAGGCCACAGTGTCTGTTCTTGGGGAGCTTGCAGCAGAAATGAAT
+GGGGTTTTTGACACTACATTCCAAAGTCACCTGAACAAAGCCTTATGGAAGGTAGGGAAG
+TTAACTAGTCCT
+```
+</details>
+
+<details><summary><b>BUB1B_721-1044_Q921H</b> — 972 bp, in-domain functional negative control: codon 921 <code>CAG</code>→<code>CAC</code>, fragment position 603 (<code>c.2763G&gt;C</code>)</summary>
+
+```
+CCATGGTGTTCACAGTATCGCAGACAGCTACTGAAGTCCCTACCAGAGTTAAGTGCCTCT
+GCAGAGTTGTGTATAGAAGACAGACCAATGCCTAAGTTGGAAATTGAGAAGGAAATTGAA
+TTAGGTAATGAGGATTACTGCATTAAACGAGAATACCTAATATGTGAAGATTACAAGTTA
+TTCTGGGTGGCGCCAAGAAACTCTGCAGAATTAACAGTAATAAAGGTATCTTCTCAACCT
+GTCCCATGGGACTTTTATATCAACCTCAAGTTAAAGGAACGTTTAAATGAAGATTTTGAT
+CATTTTTGCAGCTGTTATCAATATCAAGATGGCTGTATTGTTTGGCACCAATATATAAAC
+TGCTTCACCCTTCAGGATCTTCTCCAACACAGTGAATATATTACCCATGAAATAACAGTG
+TTGATTATTTATAACCTTTTGACAATAGTGGAGATGCTACACAAAGCAGAAATAGTCCAT
+GGTGACTTGAGTCCAAGGTGTCTGATTCTCAGAAACAGAATCCACGATCCCTATGATTGT
+AACAAGAACAATCAAGCTTTGAAGATAGTGGACTTTTCCTACAGTGTTGACCTTAGGGTG
+CACCTGGATGTTTTTACCCTCAGCGGCTTTCGGACTGTACAGATCCTGGAAGGACAAAAG
+ATCCTGGCTAACTGTTCTTCTCCCTACCAGGTAGACCTGTTTGGTATAGCAGATTTAGCA
+CATTTACTATTGTTCAAGGAACACCTACAGGTCTTCTGGGATGGGTCCTTCTGGAAACTT
+AGCCAAAATATTTCTGAGCTAAAAGATGGTGAATTGTGGAATAAATTCTTTGTGCGGATT
+CTGAATGCCAATGATGAGGCCACAGTGTCTGTTCTTGGGGAGCTTGCAGCAGAAATGAAT
+GGGGTTTTTGACACTACATTCCAAAGTCACCTGAACAAAGCCTTATGGAAGGTAGGGAAG
+TTAACTAGTCCT
+```
+</details>
+
+**How the two control sequences were made, and what they are.** Both were derived from the WT
+fragment above by editing one codon and nothing else, then re-translated and diffed against WT
+(**K795A: protein differs at residue 795 only, K→A, two adjacent bases; Q921H: residue 921 only,
+Q→H, one base; no stop codon introduced in either**). **Q921H uses the patient allele itself** —
+`c.2763G>C` is the change reported in *cis* with L844F in Hanks 2004 family 1 (**PMID 15475955**) and
+characterised as wild-type-like in isolation (**PMID 20516114**, Fig 4D). **K795A is a laboratory
+mutant**, not a patient variant; the source (**PMID 22698286**) does not state which alanine codon it
+used, so `GCG` was chosen as the minimal two-base edit that keeps the third position — any alanine
+codon is equivalent at the protein level, and the melt reads protein. **[OUR MEASUREMENT — derived
+and verified 2026-09-06 from the WT sequence in this section; codon numbering re-checked against
+`ENST00000287598.11` as in §2a.]**
+
 **✅ Synthesisability pre-screened against the standard vendor rejection criteria, so the order
-should not bounce:** global GC **40.4% / 40.5%** (limits 25–75%); worst 50 bp window **24–56%**
-(limits 20–80%); **zero homopolymer runs ≥ 6 nt**; no internal stop codon in either frame-0
-translation. **[OUR MEASUREMENT, 2026-08-31.]**
+should not bounce:** global GC **40.4–40.6%** across the four (limits 25–75%); worst 50 bp window **24–56%** (limits 20–80%); **zero homopolymer runs ≥ 6 nt** (longest 5); no internal stop codon in any frame-0 translation. **[OUR MEASUREMENT — pair 2026-08-31, controls 2026-09-06, same script.]**
 
 > ⚠️ **THREE THINGS THE VENDOR FORM WILL NOT WARN YOU ABOUT.** This fragment is **internal to the
 > ORF** — residues 721–1,044 of 1,050:
@@ -180,7 +244,7 @@ translation. **[OUR MEASUREMENT, 2026-08-31.]**
 >    document twice, in two different routes.)*
 > 2. **It must be cloned in frame with the tag.** Add the flanking cloning sites your vector needs
 >    **outside** the 972 bp, and check the frame across the junction — do not edit inside it.
-> 3. **Order both fragments in the same run**, as §3 already argues. The ΔTm is the measurement;
+> 3. **Order all four fragments in the same run**, as §3 already argues. The ΔTm is the measurement;
 >    two synthesis batches introduce a difference the experiment cannot separate from the variant.
 
 ### Route 2 — site-directed mutagenesis from Addgene #23858
@@ -263,14 +327,14 @@ have — one of which would have broken the QC gate in §5.
 **They sit 180–183 bp upstream of the N1002K edit, well inside the region this document tells you to
 synthesise.** The protein is unaffected — so a *protein* melting curve is not compromised — but:
 
-> 🔴 **IF YOU USE #114052 AS THE "WILD-TYPE" COMPARATOR, YOUR PAIR DIFFERS AT THREE BASES, NOT ONE**,
-> and **§5's QC gate — *"exactly one difference from wild-type … only the edit is present"* — will
-> fail on two changes that are supposed to be there.** A laboratory hitting that would reasonably
+> 🔴 **IF YOU USE #114052 AS THE "WILD-TYPE" COMPARATOR, EVERY VARIANT DIFFERS FROM IT AT THREE
+> BASES, NOT AT ITS ONE INTENDED CODON**, and **§5's QC gate — *"differing from wild-type only at its
+> intended codon … only the edit is present"* — will fail on two changes that are supposed to be there.** A laboratory hitting that would reasonably
 > conclude the synthesis was wrong.
 >
-> ✅ **This is a further argument for route 1 as written**: order **both** fragments from the same
-> synthesis run and neither carries the siRNA-resistance edits, so the pair genuinely differs by one
-> base. **Do not mix a synthesised fragment against an Addgene-derived wild-type.**
+> ✅ **This is a further argument for route 1 as written**: order **all four** fragments from the same
+> synthesis run and none carries the siRNA-resistance edits, so each variant genuinely differs from WT
+> only at its intended codon. **Do not mix a synthesised fragment against an Addgene-derived wild-type.**
 > **[OUR MEASUREMENT — Addgene's stated mutations mapped onto the canonical CDS, 2026-08-31.]**
 
 ### 4a.2 Three further things the records say and this document did not
@@ -295,9 +359,10 @@ synthesise.** The protein is unaffected — so a *protein* melting curve is not 
 
 ## 5. Quality control — what must be true before the construct is used
 
-1. **Whole-plasmid sequence**, matching the intended sequence with **exactly one difference from
-   wild-type**. Not "the edit is present" — *only* the edit is present.
-   🔴 **This gate assumes both members of the pair come from the same synthesis run (route 1).** If
+1. **Whole-plasmid sequence**, matching the intended sequence, with **each construct differing from
+   wild-type only at its intended codon** — one base for N1002K and Q921H, two adjacent bases for
+   K795A. Not "the edit is present" — *only* the edit is present.
+   🔴 **This gate assumes all four constructs come from the same synthesis run (route 1).** If
    the comparator is an Addgene-derived construct it carries two extra synonymous
    siRNA-resistance changes inside the fragment and this gate will fail correctly — **see §4a.1
    before concluding the synthesis went wrong.**
@@ -327,9 +392,10 @@ synthesise.** The protein is unaffected — so a *protein* melting curve is not 
    **★ WHAT TO DO INSTEAD, and it is not weaker. [OUR INFERENCE]** — no source prescribes a gate for a construct with no published anchor, so this is our design decision, reasoned from the absence Suijkerbuijk 2012 (PMID 22698286) leaves. On route A2 the WT/variant separation must be
    **established in-house**, so the acceptance gate becomes an **internal** one:
 
-   - Purify **HIS₆-BubR1 (721–1,044) wild-type** and the **N1002K** fragment from the same
-     expression batch, and melt them **side by side in the same run**. The measurement that matters
-     is **ΔTm between them**, not either absolute value.
+   - Purify **HIS₆-BubR1 (721–1,044) wild-type**, the **N1002K** fragment and the two controls
+     (**K795A**, **Q921H**; sequences in §3) from the same expression batch, and melt all four
+     **side by side in the same run**. The measurement that matters is **ΔTm of N1002K from WT**,
+     read against the K795A arm — not any absolute value.
    - **Run ≥3 independent protein preparations.** With no published anchor, reproducibility across
      preparations *is* the anchor.
    - **Report the WT absolute Tm** so that the next laboratory using this fragment has the anchor
@@ -344,23 +410,26 @@ synthesise.** The protein is unaffected — so a *protein* melting curve is not 
 
 ## 6. Costs
 
-### 🔑 Route 1, costed exactly — the recommended path, 2026-08-31 list prices
+### 🔑 Route 1, costed exactly — the recommended path, 2026-08-31 list prices, four constructs (restated 2026-09-06)
 
-| item | unit | ×2 |
-|---|---|---|
-| **Twist Clonal Gene**, 972 bp @ **9¢/bp** (Low/Medium) | **$87.48** | **$174.96** |
-| cloning into an **expression vector** | +$55 | +$110 |
-| *(or a plain cloning vector)* | *+$35* | *+$70* |
-| **Plasmidsaurus whole-plasmid sequencing** @ **$15** ×3 | $15 | **$45** |
-| | | |
-| **ROUTE 1 TOTAL — expression vector** | | **≈ $330** |
-| **ROUTE 1 TOTAL — cloning vector** | | **≈ $290** |
+| item | unit | **×4** — WT · N1002K · K795A · Q921H | ×2 — pair only *(no dynamic range; see note)* |
+|---|---|---|---|
+| **Twist Clonal Gene**, 972 bp @ **9¢/bp** (Low/Medium) | **$87.48** | **$349.92** | $174.96 |
+| cloning into an **expression vector** | +$55 | **+$220** | +$110 |
+| *(or a plain cloning vector)* | *+$35* | *+$140* | *+$70* |
+| **Plasmidsaurus whole-plasmid sequencing** @ **$15**, one per construct | $15 | **$60** | $30 |
+| | | | |
+| **ROUTE 1 TOTAL — expression vector** | | **≈ $630** | ≈ $315 |
+| **ROUTE 1 TOTAL — cloning vector** | | **≈ $550** | ≈ $275 |
 
 **Turnaround: 4–7 business days express, 10 standard**, plus 1 day for sequencing.
 
-🔑 **The recommended route needs no Addgene plasmid and no mutagenesis kit, and it comes in under
-half the headline figure below** — the $400–700 range covers the optional route-A1 controls too.
-⚠️ **Twist's Clonal Genes are already NGS-verified**, so the $45 of whole-plasmid sequencing is an
+🔑 **The recommended route needs no Addgene plasmid and no mutagenesis kit.** ≈ $630 is the figure
+the companion protocol carries. **The pair-only column is not an option** — WT vs variant alone has no
+demonstrated dynamic range and fails the standard the protocol cites (Brnich, **PMID 31892348**); it is
+shown only so the marginal cost of the two controls is visible: ≈ $285 in synthesis and cloning,
+≈ $315 with sequencing.
+⚠️ **Twist's Clonal Genes are already NGS-verified**, so the $60 of whole-plasmid sequencing is an
 *independent* check rather than a mandatory step. **Run it anyway** — §5 item 1 wants confirmation
 from a second party, and at $15 a sample that is the cheapest line in this table.
 
@@ -369,11 +438,11 @@ ours. US list; academic and volume pricing differ.]**
 
 | item | estimate |
 |---|---|
-| synthesised fragment ×2 (WT + N1002K), ~1 kb each — **now costed exactly above** | **$245–285** |
+| synthesised constructs ×4 (WT, N1002K, K795A, Q921H), 972 bp each — **costed exactly above** | **≈ $490–570** (≈ $245–285 for the pair) |
 | *or* Addgene #23858 + mutagenesis kit + LR reaction | ~$94 plasmid + reagents |
 | Addgene control plasmids (#114052, #114061) — **only if route A1 or a cell-based arm is run**; they are mammalian full-length constructs and are **not** used on route A2 (§5 item 4) | **2 × $94 = $188** |
-| whole-plasmid sequencing ×3 — **Plasmidsaurus, $15/sample, 1-day turnaround** | **$45** |
-| **total, reagents only** | **~$400–700** |
+| whole-plasmid sequencing ×4 — **Plasmidsaurus, $15/sample, 1-day turnaround** | **$60** |
+| **total, reagents only** | **≈ $550–630** (route A2 alone) · **≈ $740–820** with the optional route-A1 plasmids |
 
 **[OUR ESTIMATE. All three Addgene prices — #23858, #114052, #114061 — are `[VERIFIED]` at **$94
 each**, re-fetched from the live plasmid pages 2026-08-31 (§4a); the previous "~$80–100" range is
@@ -390,8 +459,8 @@ invented here.]**
 > re-testing before it is inherited** — that is the same error class as an absence asserted without
 > a lookup, which this project has logged four times.
 
-🔑 **The recommended path does not need any Addgene plasmid.** Route 1 is two synthesised fragments
-plus sequencing: **~$195–475 all in.** The $188 of control plasmids is optional and belongs to route
+🔑 **The recommended path does not need any Addgene plasmid.** Route 1 is four synthesised constructs
+plus sequencing: **≈ $550–630 all in.** The $188 of control plasmids is optional and belongs to route
 A1 only.
 
 ## 7. What this does not include, and what needs a person

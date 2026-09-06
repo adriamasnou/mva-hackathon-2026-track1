@@ -4,10 +4,10 @@
 
 | | |
 |---|---|
-| **Version** | 1.0 — 2026-08-31 |
+| **Version** | 1.1 — 2026-09-06 *(1.0: 2026-08-31; 1.1 aligns every procedural step with the four-construct design and adds the two control sequences to the companion document)* |
 | **Author** | adriamasnou · *Rare Disease, Real Kid: The MVA Hackathon 2026* |
 | **Licence** | CC BY 4.0 |
-| **Companion document** | [`n1002k-reagent-specification.md`](n1002k-reagent-specification.md) — construct design, orderable sequences, costings |
+| **Companion document** | [`n1002k-reagent-specification.md`](n1002k-reagent-specification.md) — construct design, all four orderable sequences, costings |
 | **Biosafety** | **BSL-1.** *E. coli* K-12/B-derivative expression host; synthetic dsDNA; no human material, no pathogen, no controlled-access data |
 | **Estimated reagent cost** | **≈ $630** — four constructs including two controls (list prices, §Materials) |
 | **Estimated timeline** | **~3 weeks** elapsed; ~4 days hands-on (§Timing) |
@@ -27,7 +27,8 @@ functionally impaired at normal abundance determines whether protein-stabilising
 mechanistically coherent for this genotype at all.
 
 This protocol measures the melting temperature (Tm) of recombinant HIS₆-BubR1(721–1,044) wild-type
-and N1002K, purified from the same expression batch and denatured side by side, using the buffer and
+and N1002K — bracketed by a published destabilised (K795A) and a published neutral (Q921H) in-domain
+control — all four purified from the same expression batch and denatured side by side, using the buffer and
 readout conditions of the published series so the result is comparable to it. **The interpretation of
 each possible outcome is pre-registered in §Anticipated results and is not to be revised after
 unblinding.**
@@ -113,8 +114,8 @@ its evidentiary reach wastes the time of whoever runs it.**
 
 > **CRITICAL** — Order all four constructs as **cloned, sequence-verified genes** (e.g. Twist *Clonal
 > Genes*, specified *"100% sequence perfect, NGS verified"*), **not** as linear gene fragments. Order
-> them **in the same run**. The measurement is a ΔTm between two constructs that must differ at
-> exactly one base from WT; two synthesis batches introduce differences the experiment cannot separate from
+> them **in the same run**. The measurement is a ΔTm between constructs that must differ from WT only
+> at the intended codon; two synthesis batches introduce differences the experiment cannot separate from
 > the variant. See companion document §3 for the full rationale and a documented trap involving
 > silent siRNA-resistance edits present in the deposited pLAP-BUBR1 plasmids.
 >
@@ -180,7 +181,7 @@ four-condition panel exactly as in ref 1:
 3. **+ 250 µM AMP-PNP**
 4. **+ 10 mM MgCl₂ + 250 µM AMP-PNP**
 
-> **CRITICAL** — Run all four conditions for **both** constructs. Nucleotide and metal binding shift
+> **CRITICAL** — Run all four conditions for **all four** constructs. Nucleotide and metal binding shift
 > Tm, and a ΔTm measured under only one condition can miss a difference that appears under another —
 > or manufacture one. The panel is the control.
 
@@ -190,25 +191,27 @@ four-condition panel exactly as in ref 1:
 
 ### Stage 1 · Construct preparation ● TIMING 1–2 weeks, mostly waiting
 
-1. Order both constructs as cloned, sequence-verified genes per §Materials. **TIMING** 4–7 business
+1. Order all four constructs — WT, N1002K, K795A, Q921H; sequences in the companion document §3 — as
+   cloned, sequence-verified genes per §Materials. **TIMING** 4–7 business
    days express, 10 standard.
 2. Transform into the cloning host; prepare plasmid DNA.
 3. **Verify by whole-plasmid sequencing** (e.g. Plasmidsaurus, $15/sample, overnight).
-   **CRITICAL STEP** — The acceptance criterion is **exactly one difference between the two
-   constructs, at the intended position, and no other difference anywhere in either plasmid.** Not
+   **CRITICAL STEP** — The acceptance criterion is **each construct differs from WT only at its
+   intended codon — one base for N1002K and Q921H, two adjacent bases for K795A — and nothing else
+   differs anywhere in any of the four plasmids.** Not
    "the edit is present" — *only* the edit is present. Whole-plasmid rather than Sanger sequencing,
    because polymerase-based steps introduce second-site mutations that a targeted amplicon cannot see.
    ■ **PAUSE POINT** — plasmid stocks are stable indefinitely at −20 °C.
 
 ### Stage 2 · Expression ● TIMING 2 days
 
-4. Transform both plasmids into the expression host **in parallel, on the same day, from the same
+4. Transform all four plasmids into the expression host **in parallel, on the same day, from the same
    competent-cell batch.**
-5. Express both constructs **in the same experiment**, under identical induction conditions.
-   **CRITICAL STEP** — Batch is a confounder for every downstream comparison. WT and N1002K must
+5. Express all four constructs **in the same experiment**, under identical induction conditions.
+   **CRITICAL STEP** — Batch is a confounder for every downstream comparison. All four constructs must
    travel together from this step onward.
    > ⚠️ **Induction temperature, IPTG concentration and duration are NOT specified in ref 1** and are
-   > left to the laboratory. Whatever is chosen must be **identical for both constructs**, and should
+   > left to the laboratory. Whatever is chosen must be **identical for all four constructs**, and should
    > be recorded, since a future laboratory reproducing this will need it — one of the reasons this
    > measurement is worth publishing is that it establishes parameters the source did not report.
 6. Harvest by centrifugation, **15 min at 4,000 g**.
@@ -222,13 +225,13 @@ four-condition panel exactly as in ref 1:
 9. Clarify the homogenate by centrifugation, **30 min at 20,000 g**.
 10. Affinity-purify on **chelating Sepharose charged with NiCl₂**.
 11. Elute in lysis buffer + **400 mM imidazole**.
-12. **Polish both constructs identically.**
+12. **Polish all four constructs identically.**
     > 🔴 **CRITICAL STEP — a methodological asymmetry in the source, which we flag so that
     > reproducing it is a decision rather than an inheritance.** Ref 1 applied **size-exclusion
     > chromatography (Superdex S75) to WT only**, while *"the point mutants … were dialyzed"*. SEC
     > removes aggregate and misfolded species. Applying it to WT alone could flatter WT's apparent
     > stability relative to the mutant, in the same direction as the hypothesis under test. **We
-    > recommend treating both constructs identically — SEC both, or dialyse both.** If you reproduce
+    > recommend treating all constructs identically — SEC all, or dialyse all.** If you reproduce
     > the published asymmetry for comparability with ref 1, we suggest running the symmetric version
     > alongside it. The source does not comment on this. **[Our observation on reading the method.]**
 13. Assess purity and integrity by SDS-PAGE.
@@ -238,9 +241,10 @@ four-condition panel exactly as in ref 1:
 
 ### Stage 4 · Thermal denaturation ● TIMING 1 day
 
-14. Prepare WT and N1002K at matched concentration in each of the four conditions in §Reagent setup.
-15. **Melt WT and N1002K side by side in the same run.** **CRITICAL STEP** — The measurement is the
-    ΔTm between them. Absolute Tm compared across runs is not the endpoint.
+14. Prepare all four constructs at matched concentration in each of the four conditions in §Reagent setup.
+15. **Melt all four constructs side by side in the same run.** **CRITICAL STEP** — The measurement is
+    the ΔTm of N1002K from WT, read against the K795A and Q921H arms melted in the same run. Absolute
+    Tm compared across runs is not the endpoint.
 16. Ramp temperature in **1 °C steps**, equilibrating **5 min** at each step (or the equivalent
     continuous slow ramp on a nanoDSF instrument).
 17. Record emission **300–400 nm** with excitation at **290 nm**; plot the melting curve at
@@ -256,7 +260,7 @@ four-condition panel exactly as in ref 1:
 
 ### Stage 5 · Orthogonal confirmation (recommended) ● TIMING 0.5 day
 
-20. Acquire far-UV CD spectra for both constructs ± 10 mM MgCl₂ / 250 µM AMP-PNP, temperature ramped
+20. Acquire far-UV CD spectra for WT and N1002K (and the controls, if material allows) ± 10 mM MgCl₂ / 250 µM AMP-PNP, temperature ramped
     in 1 °C steps. This tests whether any Tm difference is accompanied by a change in secondary
     structure content, and distinguishes a destabilised-but-folded protein from a misfolded one.
 
@@ -285,7 +289,7 @@ four-condition panel exactly as in ref 1:
 | 13 | One construct expresses, the other does not | A genuinely destabilising variant can reduce soluble yield | **This is itself informative — record it.** Do not discard; note yield for both and proceed with whatever is obtainable |
 | 15 | Noisy or non-sigmoidal melting curve | Protein concentration too low; aggregation; buffer mismatch | Confirm concentration; centrifuge before loading; verify buffer identity between constructs |
 | 17 | Flat signal in AMP-PNP conditions | Excitation set to 280 nm; nucleotide interference | Set excitation to **290 nm** (Step 17) |
-| 19 | ΔTm inconsistent across preparations | Batch effect; asymmetric purification | Confirm WT and mutant were purified identically (Step 12) and travelled together from Step 4 |
+| 19 | ΔTm inconsistent across preparations | Batch effect; asymmetric purification | Confirm all four constructs were purified identically (Step 12) and travelled together from Step 4 |
 
 ---
 
@@ -382,7 +386,8 @@ Further limitations, stated plainly:
 - **A single-domain thermostability measurement is not a measurement of checkpoint function.** It
   addresses folding, not activity.
 - **Recombinant fragment behaviour need not predict full-length behaviour in cells.**
-- **n = 1 variant against WT** is a two-point comparison, not a calibrated assay.
+- **One variant under test, bracketed by two controls,** demonstrates a dynamic range; it is not a
+  calibrated assay — that needs the eleven controls above, which do not exist.
 
 ---
 
@@ -458,7 +463,7 @@ more. **The single-variant version stands on its own and is what §What is being
 
 Every experimental parameter in §Procedure Stages 3–5 is quoted from ref 1 and its Supplemental
 Experimental Procedures. Where a parameter is **not** in the source — expression strain, induction
-conditions, the nanoDSF equivalence argument, the recommendation to purify both constructs
+conditions, the nanoDSF equivalence argument, the recommendation to purify all constructs
 symmetrically — it is marked as ours at the point of use. The ClinVar tabulation is our measurement,
 dated. Construct sequences, primer design and costings are in the companion document, each carrying
 its own source and date.
