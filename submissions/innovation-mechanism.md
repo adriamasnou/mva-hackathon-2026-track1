@@ -79,16 +79,16 @@ uncomfortable.
 ## 3. 🔻 What we are NOT claiming, because we measured it
 
 **This is not novel to us.** Re-measured **2026-09-05** against the live archive:
-**`arimoclomol` appears in 7 of the 67 distinct competitor repositories we hold (8 archived
-directories, two of which are the same repo under a rename), held by 6 of 62 distinct owners** —
-control `BUB1B` **59 of 62 owners**, so a zero here would be real. And at least one team ranks it **#1**,
+**`arimoclomol` appears in 7 of the 69 distinct competitor repositories we hold (8 archived
+directories, two of which are the same repo under a rename), held by 7 of 64 distinct owners** 🔻 *(6 of 62 on 2026-09-05; the seventh, `MikeRecognex`, arrived with a 2026-09-06 refresh and names arimoclomol only to argue **against** it)* —
+control `BUB1B` **61 of 64 owners**, so a zero here would be real. And at least one team ranks it **#1**,
 justified as *"mechanism matched exactly to the temperature-rescuable folding defect"*. One entire
 competing submission is built on the same abundance-rescue question.
 
 > 🔻 **DENOMINATOR AND NUMERATOR BOTH RE-MEASURED 2026-09-01, AND THE REASON MATTERS MORE THAN THE
-> NUMBERS.** This paragraph read *"7 of 62 archived competitor repositories, held by 6 of 54 distinct
+> NUMBERS.** This paragraph read *"7 of 64 archived competitor repositories, held by 6 of 54 distinct
 > owners"*. **The owner count is genuinely unchanged at 6** — but it is now 6 **of 57**, and the repo
-> figure is 7 **of 62**. More importantly, **`Marxist-Leninist/mva-hackathon-2026` newly carries the
+> figure is 7 **of 64**. More importantly, **`Marxist-Leninist/mva-hackathon-2026` newly carries the
 > term, and we could not see it until today**: our archived copy of that repo was cloned 2026-08-27
 > and upstream had pushed on 2026-08-30. **Eight of our 63 archived copies were stale on 2026-09-01
 > and were re-cloned; refreshing them moved 15 of the 23 competitor cells on the scoreboard, every
