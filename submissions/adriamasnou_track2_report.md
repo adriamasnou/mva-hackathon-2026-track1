@@ -158,24 +158,49 @@ individual molecule now being named for this child — each for a specific, cite
 
 | candidate | why it fails **for this genotype** | source |
 |---|---|---|
-| **Rapamycin / sirolimus** | The only in-vivo test in the flagship model was **negative**: BubR1 progeroid mice on dietary rapamycin *"developed age-related phenotypes at similar rates as mice on a control diet"* — reported by the lab that built the model, and uncontradicted since 2013. The mTORC1 evidence behind the idea is **one tissue, one *heterozygous* allele, explicitly correlative** — and the authors do not propose mTOR inhibition as a therapy. The 2026 *Drosophila* MVA model **did** rescue aneuploid neuroblast number with oral rapamycin — and **failed on brain size and neuronal output**, the organ-level endpoints. Label: **not established <13 y**, with a **boxed warning for malignancy** in a child whose syndrome already carries a high childhood-cancer risk | **Baker 2013** (**PMID 23602569**, preliminary unpublished data cited in a peer-reviewed paper) · **Sieben 2020** (**PMID 31738183**) · **González-Blanco 2026** (**PMID 41820377**) · Rapamune label rev. 10/2024 §8.4 |
+| **Rapamycin / sirolimus** | The only in-vivo test in the flagship model was **negative**: BubR1 progeroid mice on dietary rapamycin *"developed age-related phenotypes at similar rates as mice on a control diet"* — reported by the lab that built the model, and uncontradicted since 2013. The mTORC1 evidence behind the idea is **one tissue, one *heterozygous* allele, explicitly correlative** — and the authors do not propose mTOR inhibition as a therapy. The 2026 *Drosophila* MVA model **did** rescue aneuploid neuroblast number with oral rapamycin — and **failed on brain size and neuronal output**, the organ-level endpoints. Label: **not established <13 y**, with a **boxed warning for malignancy** in a child whose syndrome already carries a high childhood-cancer risk | **Baker 2013** (**PMID 23602569**, preliminary unpublished data cited in a peer-reviewed paper) · **Sieben 2020** (**PMID 31738183**) · **González-Blanco 2026** (**PMID 41820377**) · FDA label **SPL `set_id` 384cb547-55a4-47fc-a0a6-054c18a51b84**, v17, effective 2025-05-27, NDA021083 (Mylan) §8.4 🔻 *(re-pinned 2026-09-08: this row cited "Rapamune label rev. 10/2024", and **the brand RAPAMUNE returns no current FDA label** — the application is now labelled under the plain name "Sirolimus". Both facts re-verified against the SPL above: §8.4 states safety and efficacy **<13 years** not established, and the boxed warning names malignancy.)* |
 | **NAD⁺ precursors (NR / NMN — the "niacin axis")** | The famous lifespan result is a **SIRT2 transgene, not a drug** (+58% median, male-driven); **NMN was never given to a BubR1 mouse**, and no NAD⁺ precursor has ever been administered to any MVA model. **NR has never been shown to raise BubR1.** The SIRT2 longevity effect **failed replication in the same transgenic line** by the original group. And there is an unresolved **oncological signal**: dietary NR at a human-equivalent dose comparable to the paediatric precedent was associated with **brain metastases in 9 of 11 animals versus 3 of 12** — counts verbatim from the paper, which **reports no p-value for them and runs no Fisher test**; two-tailed Fisher on its own counts gives ***p* = 0.012 [OUR MEASUREMENT, 2026-09-01]** | **North 2014** (**PMID 24825348**) · **Wu 2023** (**PMID 38009412**) · **Maric 2023** (**PMID 36371959**) |
 | **Aurora-B modulation** | **Wrong direction of effect.** Partial Aurora inhibition at a dose with little effect on other endpoints *increased* merotelic attachments and lagging chromosomes — it is a validated method for *inducing* missegregation. No Aurora inhibitor is approved for any indication | **Cimini 2006** (**PMID 16950108**) |
 | **Low-dose taxol** | Same failure mode: at clinically achievable 5–50 nM it causes missegregation on multipolar spindles — that *is* its anticancer mechanism | **Zasadil 2014** (**PMID 24670687**) |
-| **Senolytics** | The BubR1 result everyone cites is a **transgene** (INK-ATTAC + a synthetic dimeriser with no clinical status), **lifespan was not extended**, and in the **late-life** arm — the arm matching a child who has already had a sarcoma — *"cataracts … remained unchanged"* and the gains *"reflect attenuated progression … rather than a reversal"*. Real senolytic drugs have **never been tested in BubR1 mice**; dasatinib carries growth-plate effects in children | **Baker 2011**, *Nature* (**PMID 22048312**) for the transgene · **Zhu 2015**, *Aging Cell* (**PMID 25754370**) for the senolytic drugs |
-| **HSP90 inhibitors** | 🔴 **Not a candidate — a contraindication.** HSP90 inhibition *"severely decreased"* mutant BubR1 while barely touching wild-type. In a child whose only BubR1 is a chaperone-dependent mutant, this class should be regarded as **relatively contraindicated** | **PMID 20516114** |
+| **Senolytics** | The BubR1 result everyone cites is a **transgene** (INK-ATTAC + a synthetic dimeriser with no clinical status), **lifespan was not extended**, and in the **late-life** arm — the arm matching a child who has already had a sarcoma — *"cataracts … remained unchanged"* and the gains *"reflect attenuated progression … rather than a reversal"*. Real senolytic drugs have **never been tested in BubR1 mice**; dasatinib carries growth-plate effects in children — **and that is on the label, not only in the literature: SPRYCEL SPL `set_id` 4764f37b-c9e6-4ede-bcc2-8a03b7c521df, v48, effective 2026-08-21, NDA021986 §8.4 reports adverse reactions associated with bone growth and development in 5.2% of paediatric patients** | **Baker 2011**, *Nature* (**PMID 22048312**) for the transgene · **Zhu 2015**, *Aging Cell* (**PMID 25754370**) for the senolytic drugs |
+| **HSP90 inhibitors** | 🔴 **Not a candidate — a contraindication, and the strength of that word is conditional.** HSP90 inhibition *"severely decreased"* mutant BubR1 while barely touching wild-type. In a child whose only BubR1 is a chaperone-dependent mutant, this class should be regarded as **relatively contraindicated**. 🔴 **The caution is a CLASS prediction, not an allele-specific one:** the destabilisation was established for I909T, L1012P, R727C, R814H and L844F, and **N1002K has never been assayed**, so whether this child's missense protein is HSP90-dependent at all is unmeasured. **[OUR INFERENCE — that the class reading transfers to an unassayed in-domain variant; the variant series is the source's.]** Experiment 1c of §3 tests it rather than assuming it, and a negative there reopens the branch | **PMID 20516114** |
 | **Fisetin (OTC senolytic supplement)** | 🔴 **Not a candidate — a contraindication, and the only one here needing no prescriber.** At 30 µM in dividing human cells, fisetin cut **kinetochore BubR1 by 94%** (P < 0.001) with the structural marker Hec1 down just 4% — selective removal, not kinetochore collapse — and forced **86% (n = 42)** of prophase/prometaphase cells out of mitosis *"despite the presence of unaligned chromosomes"*. **That is this child's lesion, reproduced pharmacologically.** The authors themselves write that *"precaution should be taken when using nutritional supplements rich with fisetin"*. 🔴 **Bounded honestly: no pharmacokinetics in the source, dietary intake ≈0.4 mg/day against 30 µM in the dish, supplement content unquantified — a mechanistic contraindication with an UNMEASURED human exposure, not a demonstrated clinical hazard. Specific to fisetin; quercetin and dasatinib were not tested.** | **PMID 19395653** |
 | **Metformin** | **No evidence** of any link to BubR1, the SAC or missegregation. The nearest literature is radiation clastogenesis — the wrong lesion — and high-dose metformin is itself genotoxic under low glucose | **Cheki 2016** (**PMID 27692296**) · **Lyu 2022** (**PMID 35568294**) |
 | **ER chemical chaperones (4-PBA, TUDCA)** | **Excluded by compartment.** Chaperone systems are compartment-specific and BubR1 is a soluble cytosolic/nuclear protein cleared by the ubiquitin–proteasome system; 4-PBA's successes are in secretory/trafficking clients. A drug that corrects folding in the ER cannot correct a misfolded cytosolic protein | **[OUR INFERENCE — the compartment filter is ours; the compartment assignments are published]** |
 | **Proteasome inhibition** | Mechanistically coherent (MG132 preserved mutant BubR1) and a **non-starter** as chronic therapy in a proliferating child | **PMID 20516114** |
 | **Antioxidants / NAC** | No antioxidant has been tested in BubR1-hypomorphic mice. What is published is the **vulnerability**, not the rescue | **PMID 27815460** |
 
+> #### How the label claims above are pinned, and a control on the ones that are absences
+>
+> **Added 2026-09-08.** Every regulatory statement in the table is pinned to a specific FDA
+> Structured Product Label by `set_id`, version and effective date rather than to a brand name, so a
+> reader can retrieve the exact document we read: `https://api.fda.gov/drug/label.json?search=set_id:"<id>"`.
+> Brand names are not stable identifiers — **`RAPAMUNE`, `TAXOL` and `GLUCOPHAGE` all return no
+> current label**, because the applications moved to other manufacturers under generic names, and one
+> of our own citations was written that way until today.
+>
+> 🔑 **A missing `boxed_warning` field is a null, and a null from an instrument never shown to fire is
+> worth nothing.** The control: the identical extraction over the same API returned a boxed warning of
+> **2,824 characters for sirolimus**, 2,580 for metformin and 1,127 for paclitaxel. **The extractor
+> fires, so the absence of a boxed warning on arimoclomol and dasatinib is a real absence.** Two
+> further cautions we impose on ourselves: boxed-warning text differs between manufacturers' SPLs of
+> the same drug — across 26 sirolimus labels the length runs 2,817–2,836 characters, and the
+> nab-sirolimus product **FYARRO** carries **none at all** — so *"sirolimus has a boxed warning"* is
+> only true against a named `set_id`; and **a label hit is not an approval**: `quercetin` returns
+> 23 SPLs and `NMN` one, every one an unapproved OTC product with no application number.
+> **[OUR MEASUREMENT — openFDA `drug/label` queried 2026-09-08, control-first.]**
+>
+> **Agents in this report with NO approved US label at all**, stated because it is a finding rather
+> than a gap: nicotinamide riboside, TUDCA, and **every HSP90 inhibitor** (tanespimycin,
+> geldanamycin, 17-AAG, alvespimycin, luminespib, pimitespib, ganetespib, onalespib). The
+> contraindication we raise is therefore against a class with **no approved member**, which lowers its
+> immediate clinical stakes and raises its relevance to any future trial.
+
 ### 2.2 What survives: the class, and the one drug that is compartment-matched
 
 The filter that kills the list also names what is left. **Cytosolic proteostasis is the only
 compartment-matched axis** — BubR1 is a soluble cytosolic/nuclear protein whose mutant forms are
-HSP90-dependent and proteasome-cleared (**PMID 20516114**) — and **arimoclomol** (HSF1/HSP70 axis,
-approved Sept 2024, paediatric ≥2 y) is the molecule that sits in it. **[OUR INFERENCE — the
+HSP90-dependent and proteasome-cleared (**PMID 20516114**) — and **arimoclomol** is the molecule that sits in it — **FDA label SPL `set_id` 5feffc0e-453d-47fa-91dd-38d4952309bc, v5, effective 2026-03-18, NDA214927; paediatric use established from **2 years**; **no boxed warning**.** 🔻 **Stated precisely, because the indication is narrower than "approved" implies: it is approved for the neurological manifestations of Niemann-Pick type C *in combination with miglustat*, not as a monotherapy, and not for any indication resembling this child's** *(added 2026-09-08 from the label itself; this row previously read only "approved Sept 2024, paediatric ≥2 y")*. **[OUR INFERENCE — the
 compartment filter and its application to this candidate list are ours; the compartment assignments
 and the chaperone-dependence are published.]**
 
@@ -320,7 +345,26 @@ reusable **CC BY 4.0** secondary-findings disclosure protocol for open single-pa
 5. **A verifier that shares the miner's blind spot cannot see it.** Verifier nodes run on the same
    model family as the miners; the independence is of *stake and context*, not of architecture.
    **[OUR INFERENCE — stated as a limitation, not measured.]**
-6. **Every "no competitor has X" claim is bounded by what we could see.** Repositories may stay
+6. 🔴 **Our rescue argument assumes that more BubR1 is monotonically better, and that assumption is
+   unevidenced.** In mice the relationship between missegregation rate and tumour outcome is not
+   monotonic: *"low rates of chromosome missegregation can promote tumorigenesis, whereas
+   missegregation of high numbers of chromosomes leads to cell death and tumor suppression"*
+   (**Silk 2013, PMID 24133140**). If that curve holds in humans, partially restoring BubR1 could in
+   principle move cells from a death-prone regime toward a proliferative one. **We do not claim it as
+   a hazard, and we are explicit about why we cannot: every arm of that paper, and of its companion
+   (Weaver 2007, PMID 17189716), alters segregation by reducing CENP-E and therefore RAISES
+   missegregation. Neither contains a single arm in which missegregation is LOWERED and a tumour
+   endpoint measured**, so reading either as an argument against partial correction runs the model
+   backwards across an untested direction. Weaver's authors bound their own result further:
+   *"reduction of Mad2, Bub3, or BubR1 would be anticipated to produce defects in addition to simple
+   increases in whole-chromosome aneuploidy that might affect their tumor-suppressing potential"* —
+   the curve was derived from CENP-E and should not be assumed to hold for *BUB1B* at all. **The
+   assumption is therefore unrefuted and unsupported, which is not the same as safe.** It has one
+   design consequence we adopt: **§3 must measure a missegregation-rate and a cell-fate endpoint
+   alongside BubR1 level**, because abundance alone cannot distinguish a therapeutic correction from
+   a move along an untested curve. **[OUR INFERENCE — the assumption and its consequence are ours;
+   both papers are read in full and neither addresses this direction.]**
+7. **Every "no competitor has X" claim is bounded by what we could see.** Repositories may stay
    private until the close, so such statements are about **the repositories we archived on a stated
    date**, never about the field.
 
