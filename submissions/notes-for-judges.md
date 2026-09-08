@@ -15,7 +15,7 @@ mechanism-matched move is raising it above the ~13% of wild-type where fidelity 
 
 **We killed every molecule named for this genotype** — rapamycin, NAD⁺ precursors, Aurora-B,
 senolytics, metformin — each against a primary source (§2.1; the rapamycin negative is
-PMID 23602569), and flag HSP90 inhibitors as relatively contraindicated here.
+PMID 23602569), and flag **two** contraindications for this genotype: HSP90 inhibitors, and **fisetin**, an over-the-counter senolytic supplement that strips **94% of BubR1 from kinetochores** while leaving the kinetochore intact (Salmela *et al.*, *Carcinogenesis* 2009, PMID 19395653 — held and read in full). It is the only item in our submission a family can act on without a prescriber, and we state its unmeasured-exposure bound in the same breath.
 
 **The class is unverified for this child, because nobody has measured whether N1002K destabilises.**
 §3 specifies the deciding experiment: four sequence-verified constructs, ≈$630, ~3 weeks.

@@ -211,10 +211,13 @@ Whether any individual family qualifies is a clinical decision that we are not i
 make and have not made. And this is UK-specific; other countries have their own regulators and
 their own lists.
 
-## 5. ★ Ask your team about this: one thing that could actively cause harm
+## 5. ★ Ask your team about this: two things that could actively cause harm
 
 Most of this document is about what might help. This section is about the opposite, and it is
-short because it is important.
+short because it is important. **The first needs a doctor to prescribe it. The second is on sale
+in shops, which is why we added it.**
+
+### A class of cancer drug — HSP90 inhibitors
 
 There is a class of cancer drug called **HSP90 inhibitors**. In laboratory work on cells
 carrying *BUB1B* changes very like George's, blocking HSP90 **stripped out the altered BubR1
@@ -233,6 +236,42 @@ that the question gets asked if it ever arises.**
 human cancer predisposition syndrome mosaic variegated aneuploidy", *Cancer Research* 2010;
 PMID 20516114. The laboratory result is theirs; the clinical caution drawn from it is ours, and
 we are not aware of it appearing in any guideline.]**
+
+### And one you can buy without a prescription — a supplement called fisetin
+
+Everything else in this document needs a doctor. **This one does not, which is why it is here.**
+
+**Fisetin** is a plant compound sold over the counter as an anti-ageing or "senolytic" supplement.
+There is a reason a family reading about this condition would meet it: the best-known laboratory
+work on clearing worn-out cells was done **in mice carrying a low-BubR1 change** — the same protein
+this document is about. Reading about *BUB1B* leads to that work, that work leads to senolytics, and
+the one senolytic on open sale is fisetin.
+
+**What the laboratory work found.** In dividing human cells, fisetin **removed about 94% of the
+BubR1 protein from the structures where it does its job** — while leaving the underlying structure
+itself intact, so this is the protein being taken away rather than the machinery falling apart. In
+cells dividing normally, most were **pushed out of division early, with chromosomes still not lined
+up** — which is the exact process that produces the wrong chromosome numbers in this condition
+(Salmela *et al.*, 2009).
+
+**In plain terms: in the laboratory, this compound does chemically what George's genetic change does
+to him.** The paper's own authors write that *"precaution should be taken when using nutritional
+supplements rich with fisetin"*, and note that supplements can contain far more than any diet would.
+
+**What we do not know, and it is the important part.** Nobody has measured what dose of a supplement
+puts how much fisetin into a person's cells. The laboratory work used a concentration far above what
+food provides, and the study reports no measurements in people or animals. **So this is a reason for
+caution based on how the compound works, not a proven harm** — and the reason the gap is still open
+is that nobody has done the measurement, while the product stays on sale.
+
+**We would not give this supplement to George, and we think it is worth asking his team about before
+anyone does.** It costs nothing to avoid. **[OUR INFERENCE, from Salmela A-L *et al.*, "Dietary
+flavonoid fisetin induces a forced exit from mitosis by targeting the mitotic spindle checkpoint",
+*Carcinogenesis* 2009; PMID 19395653. The laboratory results are theirs; the authors' own caution is
+about supplements in general and in pregnancy. Applying it to a child with this specific condition is
+ours, and we are not aware of it appearing in any guideline. This says nothing about whether fisetin
+works as an anti-ageing supplement, and nothing about other senolytic compounds, which that study did
+not test.]**
 
 ## 6. ★ Ask your team about this: there is no MVA registry yet, and that is a fixable problem
 
