@@ -1,6 +1,6 @@
 # Compartment matching, and the branch point a therapy proposal has to choose
 
-> 🔻 **DENOMINATOR CUTOVER 2026-09-07 — the archived field moved 64 → 65 owners and 69 → 70 distinct repos**, when `guardrails/repo_search.py` surfaced `Fernandosr85/mva-hackathon-2026-track2` (created 2026-09-04, a complete Track 2 report). Every numerator in this file was re-measured at 65 with `owner_count.py` / `field_count.py` and is unchanged unless marked 🔻; control `BUB1B` 62 of 65. *This is a denominator change, not a claim change.*
+> 🔻 **DENOMINATOR CUTOVER 2026-09-09 — the archived field moved 65 → 67 owners and 70 → 73 distinct repos** (`franzmgarcia/hackaton-rare-disease`, `Anusree-J/mva-track1-2026` + `mva-track2-2026`; `Vijayavallabh/mva-hackathon-2026` returned from a 404 and was refreshed 60 → 104 files). Every numerator below re-measured at 67 with `owner_count.py`; control `BUB1B` 64 of 67. Previous cutover 2026-09-07 (64 → 65 owners), when `guardrails/repo_search.py` surfaced `Fernandosr85/mva-hackathon-2026-track2` (created 2026-09-04, a complete Track 2 report). Every numerator in this file was re-measured at 65 with `owner_count.py` / `field_count.py` and is unchanged unless marked 🔻; control `BUB1B` 62 of 65. *This is a denominator change, not a claim change.*
 
 
 *Rare Disease, Real Kid: The MVA Hackathon 2026 · adriamasnou · 2026-08-29 · CC BY 4.0*
@@ -81,10 +81,10 @@ uncomfortable.
 
 ## 3. 🔻 What we are NOT claiming, because we measured it
 
-**This is not novel to us.** Re-measured **2026-09-05** against the live archive:
-**`arimoclomol` appears in 7 of the 69 distinct competitor repositories we hold (8 archived
-directories, two of which are the same repo under a rename), held by 7 of 65 distinct owners** 🔻 *(6 of 62 on 2026-09-05; the seventh, `MikeRecognex`, arrived with a 2026-09-06 refresh and names arimoclomol only to argue **against** it)* —
-control `BUB1B` **62 of 65 owners**, so a zero here would be real. And at least one team ranks it **#1**,
+**This is not novel to us.** Re-measured **2026-09-09** against the live archive:
+**`arimoclomol` appears in 7 of the 73 distinct competitor repositories we hold (9 archived
+directories: one same-repo rename pair and one repo archived twice), held by 7 of 67 distinct owners** 🔻 *(6 of 62 on 2026-09-05; the seventh, `MikeRecognex`, arrived with a 2026-09-06 refresh and names arimoclomol only to argue **against** it)* —
+control `BUB1B` **64 of 67 owners**, so a zero here would be real. And at least one team ranks it **#1**,
 justified as *"mechanism matched exactly to the temperature-rescuable folding defect"*. One entire
 competing submission is built on the same abundance-rescue question.
 

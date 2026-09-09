@@ -1,14 +1,15 @@
 # 3-minute pitch video — script and shot list
 
-> 🔻 **DENOMINATOR CUTOVER 2026-09-07 — the archived field moved 64 → 65 owners and 69 → 70 distinct repos**, when `guardrails/repo_search.py` surfaced `Fernandosr85/mva-hackathon-2026-track2` (created 2026-09-04, a complete Track 2 report). Every numerator in this file was re-measured at 65 with `owner_count.py` / `field_count.py` and is unchanged unless marked 🔻; control `BUB1B` 62 of 65. *This is a denominator change, not a claim change.*
+> 🔻 **DENOMINATOR CUTOVER 2026-09-09 — the archived field moved 65 → 67 owners and 70 → 73 distinct repos** (`franzmgarcia/hackaton-rare-disease`, `Anusree-J/mva-track1-2026` + `mva-track2-2026`; `Vijayavallabh/mva-hackathon-2026` returned from a 404 and was refreshed 60 → 104 files). Every numerator below re-measured at 67 with `owner_count.py`; control `BUB1B` 64 of 67. Previous cutover 2026-09-07 (64 → 65 owners), when `guardrails/repo_search.py` surfaced `Fernandosr85/mva-hackathon-2026-track2` (created 2026-09-04, a complete Track 2 report). Every numerator in this file was re-measured at 65 with `owner_count.py` / `field_count.py` and is unchanged unless marked 🔻; control `BUB1B` 62 of 65. *This is a denominator change, not a claim change.*
 
 
 **Status: SCRIPT ONLY. The video does not exist.** Recording and publishing are Adrià's decision
 (`CLAUDE.md` RED #1/#3). This file exists because the video is **mandatory under ToS §7** and is the
 **only presentation channel** — *"Presentations are pre-recorded; there is no live Q&A round"* — and
-until today we held **zero artefacts of any kind** toward it, against **4 of 65 archived competitor
-owners with a rendered `.mp4`** *(re-measured 2026-09-05 over `archive/competitors/`, 64 owners / 67
-distinct repos; the same four holders as on 2026-08-31)* and **10 with a script or storyboard**
+until today we held **zero artefacts of any kind** toward it, against **4 of 67 archived competitor
+owners with a rendered `.mp4`** *(re-measured 2026-09-09 over `archive/competitors/`, 67 owners / 73
+distinct repos; the same four holders as on 2026-08-31)* and **12 with a script or storyboard** 🔻
+*(filename screen `storyboard|pitch[-_ ]?(script|video)|video[-_ ]?script`, 2026-09-09; 10 on 2026-09-05 — `Anusree-J` arrived with a complete built-video pipeline: storyboard, SRT captions, build receipt)*
 *(measured 2026-08-31 at 54 owners; not re-screened since)*.
 
 **Written against the rubric weights:** Rigor **.35** · Impact **.25** · Innovation **.25** ·
@@ -98,7 +99,7 @@ re-derived 2026-08-31, positive control `BUB1B` 53 of 54]**.)*
 | two *BUB1B* variants in trans | L737\* / N1002K | `repo/submissions/adriamasnou_track1_report.md` |
 | HFEA has approved PGT-M for MVA | **5 entries** | `adriamasnou_track2_report.md` §1; HFEA workbook snapshot 2026-08-05 |
 | register size | **2,063 approved conditions** | same, parsed directly |
-| no competitor has gone to it | **0 of 65 owners** | re-measured 2026-09-07, control `BUB1B` 62 of 65 |
+| no competitor has gone to it | **0 of 67 owners** | re-measured 2026-09-09, control `BUB1B` 64 of 67 |
 | no expert-curated variant | **1,850 / 2,063 = 89.7%** | `register-audit.md`; `pipeline/register_expert_curation.py` |
 | VEP losslessness | **313,417 → 313,417 distinct** | `annotation-toolchain-vep.md` |
 | pre-registered scan | **230 genes, *BUB1B* rank 55, tie block of 8** | `pipeline/scan_sensitivity.py` ACID TEST |
