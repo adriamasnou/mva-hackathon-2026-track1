@@ -1,5 +1,6 @@
 # Compartment matching, and the branch point a therapy proposal has to choose
 
+> 🔻 **DENOMINATOR CUTOVER 2026-09-22 — the archived field moved 67 → 74 owners and 73 → 80 distinct repos** (81 directories, 5,620 files) after a 13-day gap in the field routine: `repo_search.py` surfaced seven content-bearing repos by owners no route had linked — `Ryukijano/mva-hackathon-2026` (private until ~12/09 per its own README; 426 files; a 6,700-word Track 2 report leading with amlexanox/ataluren readthrough behind an NMD gate, SIRT2/NAD⁺ K668 stabilisation, glycerol phenylbutyrate, and arimoclomol as a POSITIVE), `JoseVelasco2026` (= `@JoseVelasco22`; AlphaFold3 WT/N1002K and an HSP90-centred Track 2 evidence set), `samadon1` (= `@samwell`; claims ~5 % mosaic chr20/chr22 gains), `ybedoyab`, `yefry08`, `Biskit-Van-Roy`, `PetAByte11`. Six stale copies were refreshed (`Vijayavallabh` 104 → 317 files). Every numerator in this file was re-measured at 74 with `owner_count.py` / `field_count.py` and is unchanged unless marked 🔻; control `BUB1B` 69 of 74. *This is a denominator change, not a claim change.*
 > 🔻 **DENOMINATOR CUTOVER 2026-09-09 — the archived field moved 65 → 67 owners and 70 → 73 distinct repos** (`franzmgarcia/hackaton-rare-disease`, `Anusree-J/mva-track1-2026` + `mva-track2-2026`; `Vijayavallabh/mva-hackathon-2026` returned from a 404 and was refreshed 60 → 104 files). Every numerator below re-measured at 67 with `owner_count.py`; control `BUB1B` 64 of 67. Previous cutover 2026-09-07 (64 → 65 owners), when `guardrails/repo_search.py` surfaced `Fernandosr85/mva-hackathon-2026-track2` (created 2026-09-04, a complete Track 2 report). Every numerator in this file was re-measured at 65 with `owner_count.py` / `field_count.py` and is unchanged unless marked 🔻; control `BUB1B` 62 of 65. *This is a denominator change, not a claim change.*
 
 
@@ -82,9 +83,9 @@ uncomfortable.
 ## 3. 🔻 What we are NOT claiming, because we measured it
 
 **This is not novel to us.** Re-measured **2026-09-09** against the live archive:
-**`arimoclomol` appears in 7 of the 73 distinct competitor repositories we hold (9 archived
-directories: one same-repo rename pair and one repo archived twice), held by 7 of 67 distinct owners** 🔻 *(6 of 62 on 2026-09-05; the seventh, `MikeRecognex`, arrived with a 2026-09-06 refresh and names arimoclomol only to argue **against** it)* —
-control `BUB1B` **64 of 67 owners**, so a zero here would be real. And at least one team ranks it **#1**,
+**`arimoclomol` appears in 8 of the 80 distinct competitor repositories we hold (10 archived
+directories: one same-repo rename pair and one repo archived twice), held by 8 of 74 distinct owners** 🔻 *(7 of 67 on 2026-09-09; the eighth, `Ryukijano` (2026-09-22), ranks arimoclomol as an approved-medication candidate — #4 of its proposed Track 2 stack — i.e. FOR it; 6 of 62 on 2026-09-05; the seventh, `MikeRecognex`, arrived with a 2026-09-06 refresh and names arimoclomol only to argue **against** it)* —
+control `BUB1B` **69 of 74 owners**, so a zero here would be real. And at least one team ranks it **#1**,
 justified as *"mechanism matched exactly to the temperature-rescuable folding defect"*. One entire
 competing submission is built on the same abundance-rescue question.
 

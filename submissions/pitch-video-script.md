@@ -1,14 +1,15 @@
 # 3-minute pitch video — script and shot list
 
+> 🔻 **DENOMINATOR CUTOVER 2026-09-22 — the archived field moved 67 → 74 owners and 73 → 80 distinct repos** (81 directories, 5,620 files) after a 13-day gap in the field routine: `repo_search.py` surfaced seven content-bearing repos by owners no route had linked — `Ryukijano/mva-hackathon-2026` (private until ~12/09 per its own README; 426 files; a 6,700-word Track 2 report leading with amlexanox/ataluren readthrough behind an NMD gate, SIRT2/NAD⁺ K668 stabilisation, glycerol phenylbutyrate, and arimoclomol as a POSITIVE), `JoseVelasco2026` (= `@JoseVelasco22`; AlphaFold3 WT/N1002K and an HSP90-centred Track 2 evidence set), `samadon1` (= `@samwell`; claims ~5 % mosaic chr20/chr22 gains), `ybedoyab`, `yefry08`, `Biskit-Van-Roy`, `PetAByte11`. Six stale copies were refreshed (`Vijayavallabh` 104 → 317 files). Every numerator in this file was re-measured at 74 with `owner_count.py` / `field_count.py` and is unchanged unless marked 🔻; control `BUB1B` 69 of 74. *This is a denominator change, not a claim change.*
 > 🔻 **DENOMINATOR CUTOVER 2026-09-09 — the archived field moved 65 → 67 owners and 70 → 73 distinct repos** (`franzmgarcia/hackaton-rare-disease`, `Anusree-J/mva-track1-2026` + `mva-track2-2026`; `Vijayavallabh/mva-hackathon-2026` returned from a 404 and was refreshed 60 → 104 files). Every numerator below re-measured at 67 with `owner_count.py`; control `BUB1B` 64 of 67. Previous cutover 2026-09-07 (64 → 65 owners), when `guardrails/repo_search.py` surfaced `Fernandosr85/mva-hackathon-2026-track2` (created 2026-09-04, a complete Track 2 report). Every numerator in this file was re-measured at 65 with `owner_count.py` / `field_count.py` and is unchanged unless marked 🔻; control `BUB1B` 62 of 65. *This is a denominator change, not a claim change.*
 
 
 **Status: SCRIPT ONLY. The video does not exist.** Recording and publishing are Adrià's decision
 (`CLAUDE.md` RED #1/#3). This file exists because the video is **mandatory under ToS §7** and is the
 **only presentation channel** — *"Presentations are pre-recorded; there is no live Q&A round"* — and
-until today we held **zero artefacts of any kind** toward it, against **4 of 67 archived competitor
-owners with a rendered `.mp4`** *(re-measured 2026-09-09 over `archive/competitors/`, 67 owners / 73
-distinct repos; the same four holders as on 2026-08-31)* and **12 with a script or storyboard** 🔻
+until today we held **zero artefacts of any kind** toward it, against **4 of 74 archived competitor
+owners with a rendered `.mp4`** *(re-measured 2026-09-22 over `archive/competitors/`, 74 owners / 80
+distinct repos; the same four holders as on 2026-08-31)* and **12 with a script or storyboard** 🔻 *(the 12 is the 2026-09-09 measurement and was NOT re-measured on 2026-09-22 — its filename pattern was never written beside it; a wider screen that day, `storyboard|script.*video|video.*script|pitch` on filenames, returns 18 owners)*
 *(filename screen `storyboard|pitch[-_ ]?(script|video)|video[-_ ]?script`, 2026-09-09; 10 on 2026-09-05 — `Anusree-J` arrived with a complete built-video pipeline: storyboard, SRT captions, build receipt)*
 *(measured 2026-08-31 at 54 owners; not re-screened since)*.
 
@@ -99,7 +100,7 @@ re-derived 2026-08-31, positive control `BUB1B` 53 of 54]**.)*
 | two *BUB1B* variants in trans | L737\* / N1002K | `repo/submissions/adriamasnou_track1_report.md` |
 | HFEA has approved PGT-M for MVA | **5 entries** | `adriamasnou_track2_report.md` §1; HFEA workbook snapshot 2026-08-05 |
 | register size | **2,063 approved conditions** | same, parsed directly |
-| no competitor has gone to it | **0 of 67 owners** | re-measured 2026-09-09, control `BUB1B` 64 of 67 |
+| no competitor has gone to it | **0 of 74 owners** | re-measured 2026-09-22, control `BUB1B` 69 of 74 *(the naive strings `HFEA` and `PGT-?M` each return 1 at 74 — `JoseVelasco2026`, respectively the letters inside "strengt**hFea**sibility" in a PDF-extracted table and an amino-acid run in an AlphaFold `.a3m` file; both read, both false positives)* |
 | no expert-curated variant | **1,850 / 2,063 = 89.7%** | `register-audit.md`; `pipeline/register_expert_curation.py` |
 | VEP losslessness | **313,417 → 313,417 distinct** | `annotation-toolchain-vep.md` |
 | pre-registered scan | **230 genes, *BUB1B* rank 55, tie block of 8** | `pipeline/scan_sensitivity.py` ACID TEST |
