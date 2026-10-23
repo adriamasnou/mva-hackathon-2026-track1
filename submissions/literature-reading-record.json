@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-10-23T22:55:31.488348+02:00",
+  "recorded_at": "2026-10-23T23:03:14.775807+02:00",
   "papers_assessed": 33,
   "main_texts_read_available_versions": 33,
   "not_full_text": [],
@@ -592,7 +592,7 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19395653/",
       "main_text_read": true,
       "coverage": {
-        "status": "full_main_article_read_supplement_access_gap",
+        "status": "full_main_article_and_S1_read_remaining_supplement_access_gap",
         "main_sections": [
           "abstract",
           "complete Introduction",
@@ -609,11 +609,11 @@
           4,
           5
         ],
-        "supplement": "Supplementary Figures S1\u2013S3 and Videos 1\u20138 were identified in the article/PMC links but not accessed or read/viewed.",
+        "supplement": "S1 retrieved and visually read; S2/S3 and Videos 1\u20138 remain unread/unviewed.",
         "gaps": [
-          "PMC binary/index links returned download/challenge HTML instead of the requested assets; Europe PMC supplementaryFiles did not supply an OA package; publisher/legacy supplement routes were inaccessible in this environment. Figures S1\u2013S3 and all eight videos remain unread/unviewed."
+          "All 11 assets are affirmatively linked by PMC, and Oxford exposes a supplementary ZIP. Failure to retrieve remaining bytes is an access/transport limitation in this session, not evidence the publisher lacks them. Videos 2\u20138 were in an interrupted batch with unknown progress and were not separately tested to a recorded outcome."
         ],
-        "limits": "Complete main-paper read is confirmed; complete paper-plus-supplement coverage is not claimed. Main time-lapse sequences were inspected in the published figures, not by watching the supplementary movies."
+        "limits": "Main text and all five main figures reviewed; S1 inspected in full. No separate S1 caption/key, S2/S3 or movies were retrieved. No clinical contraindication or quantitative hit reanalysis follows from S1."
       },
       "review_record": "therapeutics.json",
       "review_record_sha256": "4a453c1de587a01f660a95d15c9f7358e4b2295822fdbc43d1ffa37bf621d1c2",
@@ -673,8 +673,33 @@
           "bytes": 56545,
           "role": "main_figure_image",
           "read_coverage": "all main panels"
+        },
+        {
+          "path": "papers-local/supplementary/salmela2009/bgp101_carcin-2008-01051-File007.jpg",
+          "bytes": 218620,
+          "sha256": "3ebfde70f171fb7dbf57f50b602ebec84b3f350ca7594f4a353de2d41b5224f4",
+          "role": "genuine_supplementary_figure_S1",
+          "read_coverage": "Entire image visually inspected, including fisetin label, plate heatmaps, colour scale and figure identity. No separate S1 caption supplied by the retrieved image/index."
         }
-      ]
+      ],
+      "supplement_followup": {
+        "record": "salmela-supplement-access.json",
+        "sha256": "27ac7f173d57fedb3db54277bf72cd3979671a48a96dae9ea651ed93e74d7e62",
+        "coverage": {
+          "supplementary_figures_retrieved_and_visually_read": [
+            "S1"
+          ],
+          "supplementary_figures_unread": [
+            "S2",
+            "S3"
+          ],
+          "movies_retrieved": 0,
+          "movies_viewed": 0,
+          "movie_contact_sheets": 0,
+          "main_article": "Existing prior complete main-article review reused; not duplicated.",
+          "coverage_claim": "1 of 3 supplementary figures read; 0 of 8 movies viewed. Complete paper-plus-supplement coverage is not established."
+        }
+      }
     },
     {
       "pmid": "19610116",
