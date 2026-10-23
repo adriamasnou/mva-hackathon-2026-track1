@@ -13,9 +13,34 @@ prep=module('prepare');ev=module('evaluate');runner=module('run')
 phenotype=module('run_phenotype')
 exporter=module('export_results')
 export_verifier=module('verify_export')
+phenotype_exporter=module('export_phenotype')
 
 
 class PublicBenchmarkTests(unittest.TestCase):
+    def test_phenotype_export_preserves_ties_after_original_outputs_are_removed(self):
+        with tempfile.TemporaryDirectory() as d:
+            work=Path(d)/'work';work.mkdir();(work/'results').mkdir()
+            job=work/'case.yml';job.write_text('public phenotype fixture')
+            jobs=[{'case_id':'x','gene':'TARGET','job':str(job),'job_sha256':runner.sha(job)}]
+            protocol=work/'protocol-before-inference.json';protocol.write_text(json.dumps({'jobs':jobs}))
+            source=work/'results/x.phenotype_only.genes.tsv'
+            source.write_text('GENE_SYMBOL\tEXOMISER_GENE_PHENO_SCORE\nTARGET\t0.5000\nTARGET\t0.4000\nOTHER\t0.5000\n')
+            record=work/'execution.json'
+            record.write_text(json.dumps({'status':'completed','exit_code':0,'missing_outputs':[],
+                'protocol_sha256':runner.sha(protocol),'outputs':{str(source):runner.sha(source)}}))
+            row={'case_id':'x','output_sha256':runner.sha(source),**ev.rank_records(phenotype.phenotype_records(source),'TARGET')}
+            (work/'evaluation.json').write_text(json.dumps({'execution_receipt_sha256':runner.sha(record),'all_case_results':[row]}))
+            for name in ['batch.txt','runtime.properties']:(work/name).write_text('public fixture')
+            out=Path(d)/'export';self.assertEqual(phenotype_exporter.export(work,out)['jobs_verified'],1)
+            source.unlink();job.unlink()
+            self.assertEqual(phenotype_exporter.verify(out)['jobs_verified'],1)
+            compact=out/'gene-scores/x.tsv'
+            compact.write_text(compact.read_text().replace('OTHER\t0.5','OTHER\t0.4999'))
+            receipt=out/'export-receipt.json';r=json.loads(receipt.read_text())
+            r['file_sha256']['gene-scores/x.tsv']=runner.sha(compact);receipt.write_text(json.dumps(r))
+            with self.assertRaisesRegex(ValueError,'do not reproduce phenotype rank'):
+                phenotype_exporter.verify(out)
+
     def test_portable_export_recomputes_ranks_without_original_files(self):
         with tempfile.TemporaryDirectory() as d:
             work=Path(d)/'work';work.mkdir()

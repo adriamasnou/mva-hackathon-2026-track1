@@ -32,7 +32,7 @@ def verify(root):
         raise ValueError('Exported manifest differs from execution')
     results = json.loads((root/'evaluation.json').read_text())['all_case_results']
     lookup = {(r['case_id'], r['arm']): r for r in results}
-    if len(lookup) != len(results) or len(results) != len(jobs):
+    if len(lookup) != len(results) or len(results) != len(jobs) or set(lookup) != {(j['case_id'],j['arm']) for j in jobs}:
         raise ValueError('Missing or duplicate evaluated job')
     for job in jobs:
         name = Path(job['job']).stem

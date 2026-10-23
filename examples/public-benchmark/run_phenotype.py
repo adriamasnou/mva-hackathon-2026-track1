@@ -57,6 +57,7 @@ def main():
     record={'status':'running','started_utc':datetime.now(timezone.utc).isoformat(),
             'command':command,'script_sha256':runner.sha(__file__),
             'protocol_sha256':runner.sha(protocol),'batch_sha256':runner.sha(work/'batch.txt'),
+            'pre_inference_addenda':{p.name:{'sha256':runner.sha(p),'content':json.loads(p.read_text())} for p in sorted(work.glob('addendum-*.json'))},
             'properties_sha256':runner.sha(properties),'properties_text':properties.read_text(),
             'software_sha256':{str(p):runner.sha(p) for p in [jar,*sorted((jar.parent/'lib').glob('*.jar'))]},
             'data_receipts':{str(p):{'sha256':runner.sha(p),'content':json.loads(p.read_text())} for p in a.data_receipt},

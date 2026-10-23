@@ -6,7 +6,7 @@ The frozen source selection uses Phenopacket Store 0.1.19, excludes BUB1B and th
 
 ## Prepare and run
 
-Required software: Exomiser 15.1.0, its matching 2512 hg38/phenotype bundles, a supported Java runtime, Python, bcftools and the pinned preparation dependency in `requirements-runtime.txt`. Preparation below uses bcftools 1.24 and PyYAML 6.0.3. Lightweight unit tests do not require these runtimes or any patient data.
+Required software: Exomiser 15.1.0, its matching 2512 hg38/phenotype bundles, a supported Java runtime, Python 3.11+, bcftools and the pinned preparation dependency in `requirements-runtime.txt`. Preparation below uses bcftools 1.24 and PyYAML 6.0.3. Lightweight unit tests do not require these runtimes or any patient data.
 
 ```sh
 python3 examples/public-benchmark/prepare.py \
@@ -73,3 +73,5 @@ python3 examples/public-benchmark/verify_export.py /path/to/export
 ```
 
 This verifies every exported member and recomputes source-gene ranks from the full compact gene-score tables. It does not rerun inference. The regression deliberately removes the original result files and rejects a falsified tied rank even after its export hash is updated.
+
+The phenotype-only export uses `export_phenotype.py --work /path/to/phenotype-work --out /path/to/new-export`. Later, `export_phenotype.py --verify /path/to/export` checks its hashes and rederives the conservative phenotype ranks offline. These exported scores retain the precision supplied by Exomiser; no artificial precision is added.
