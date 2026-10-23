@@ -1,9 +1,8 @@
 # The phenotype-blind scan, and everything we tried to break
 
-**Two things a submission is not obliged to include: an analysis that did not go our way, and a
-record of our own claims failing.**
+**Retained negative findings, corrected claims and measured computational limits.**
 
-*Rare Disease, Real Kid: The MVA Hackathon 2026 · adriamasnou · 2026-08-29 · CC BY 4.0*
+*Rare Disease, Real Kid: The MVA Hackathon 2026 · adriamasnou · original record 2026-08-29, updated 2026-10-24 · CC BY 4.0*
 
 ---
 
@@ -95,9 +94,9 @@ Every figure below is read from a log or a file that the pipeline wrote (`pipeli
 `markdup_stats.txt`, `stats_SN.txt`, the VEP and Exomiser run records); none is a projection.
 **[OUR MEASUREMENT, 2026-08-27 to 2026-08-30.]**
 
-**Hardware.** One laptop: Apple M3 Max, 14 cores, 36 GB RAM. Two 1 TB external USB disks (exFAT)
-held the reference databases; nothing ran in the cloud. **Cost beyond the laptop and its
-electricity: none** (LLM API access aside, disclosed in the methods form).
+**Historical hardware.** One laptop: Apple M3 Max, 14 cores, 36 GB RAM. Two 1 TB external USB disks (exFAT)
+held the reference databases; no separately billed cloud compute is recorded. Hardware, electricity,
+human time and LLM subscriptions were not apportioned to these runs; the table is not a total project-cost estimate.
 
 | step | input | wall-clock | resources | output |
 |---|---|---|---|---|
@@ -122,16 +121,20 @@ every file's checksum was on record. **The realignment is reproducible from the 
 ≈ 12 h on the same hardware; it is not required for any Track 2 conclusion**, which rest on the
 organizers' VCF and on the literature.
 
-**Why this is stated.** The Scalability criterion asks whether the approach can be applied to other
-individuals. A full realignment, standard annotation with the clinical toolchain, and a
-phenotype-driven genome-wide rank on a 4.1-million-variant public genome all completed on one
-consumer laptop in under a working day of compute, with every database offline. That is the scale
-at which a rare-disease family or a single clinical group operates, and it is the scale this
-submission was built at.
+**What those timings establish.** The separate alignment, annotation and public-genome analyses
+completed on the stated laptop and storage. They do not measure clinical turnaround, other hardware,
+independent diagnostic performance or family usability. Their logs cover different runs and must not
+be combined into an unsupported end-to-end working-day claim.
+
+**October reconstruction.** Both reconstructed FGFR2 jobs completed in **200.48 seconds including
+startup**, with FGFR2 first among 2 and 471 scored genes. This newer execution used recovered public
+databases on a larger external disk and retained exact configuration and outputs. The missing August
+YAML was not recovered; changed candidate counts and hardware/configuration prevent treating the two
+timings as a controlled speed comparison. [Executed reconstruction and offline verification](generalisation-public-case.md).
+**[OUR MEASUREMENT — October execution receipt retained with the reconstructed results.]**
 
 ## 4. What this section is not
 
-It is not a claim that the analysis is correct. It is a claim that **the specific ways we could
-find to make it wrong have been tried and are recorded**, including the one that worked. Anyone
-who wants to attack the finding should start at §1 — the 55th-place rank is the weakest point and
-we would rather name it than have it found.
+These checks address the specified failure modes and retain negative findings. They do not exhaust
+possible errors. The phenotype-blind severity tie at ranks 53–61 is a limited ranking result;
+unresolved phase, allele function and treatment response remain distinct biological limitations.

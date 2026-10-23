@@ -27,11 +27,13 @@ exomiser.hg38.data-version=2512
 exomiser.phenotype.data-version=2512
 exomiser.hg38.use-clinvar-white-list=false
 spring.cache.type=caffeine
-spring.cache.caffeine.spec=maximumSize=60000
+spring.cache.caffeine.spec=maximumSize=300000
 logging.level.com.zaxxer.hikari=ERROR
 ```
 
 The explicit whitelist setting prevents the default ClinVar filter bypass. It does **not** remove all ClinVar annotations, predictor training information or HPO/OMIM knowledge of the published cases. No temporal holdout or novel-gene performance is established. The separate reconstruction of the historical FGFR2 runs retains its own configuration and must not be conflated with this evaluation.
+
+The initial multi-case attempt used a 60,000-entry cache and was deliberately interrupted during its third job. The retained relaunch uses 300,000 entries and repeats every job. Its dated addendum checks unchanged scientific configuration and input hashes, apart from result destinations; the operational change occurred after inference began. It is not retrospective preregistration. Both completed outputs from the interrupted attempt must be included in repeat-agreement reporting.
 
 The subsequent primary methods review of [Cooperstein et al., 2025 (PMID 41121346)](https://doi.org/10.1186/s13073-025-01546-1) reinforces those reporting boundaries: its benchmark and clinical workflow use different whitelist settings, and gene recovery, variant recovery and inheritance recovery are distinct endpoints. Our small constructed evaluation is not a replication of that clinical study.
 

@@ -1,6 +1,6 @@
 # Review the working tools
 
-The [report](adriamasnou_track2_report.pdf) explains the candidate and proposed biology. These short examples let a reviewer inspect the delivered software locally. Neither requires challenge data or a network connection.
+The [report](adriamasnou_track2_report.pdf) explains the candidate and proposed biology. These short examples let a reviewer inspect the delivered software locally. They require neither challenge data nor a network connection.
 
 ## Follow a gene to its source
 
@@ -34,6 +34,7 @@ python3 -m unittest discover -s tests -v
 python3 canary/run_canary.py --self-test
 python3 analysis/exposure_check.py
 python3 tools/check_package.py
+python3 examples/public-case/verify_reconstruction.py --export examples/public-case/reconstructed-results
 ```
 
 The canary self-test injects faults into synthetic checker inputs. Its [separate measured SpliceAI controls](../canary/README.md) document actual inference. The [public Exomiser recipe](../examples/public-benchmark/README.md) requires the named Java runtime and large public databases; it is a separate computational evaluation. No check here measures N1002K rescue, clinical benefit or family usability.
