@@ -75,7 +75,7 @@ class RescueDecisionTests(unittest.TestCase):
 
     def test_specification_hash_and_protocol_provenance(self):
         self.assertEqual(hashlib.sha256((MODULE / "expected-cases.json").read_bytes()).hexdigest(), RECEIPT["sha256"])
-        self.assertEqual(hashlib.sha256((ROOT / BOOK["protocol"]).read_bytes()).hexdigest(), BOOK["protocol_sha256"])
+        self.assertEqual(hashlib.sha256((MODULE / "protocol-at-specification.txt").read_bytes()).hexdigest(), BOOK["protocol_sha256"])
         self.assertEqual(RECEIPT["case_count"], 40)
         self.assertEqual(len({case["id"] for case in BOOK["cases"]}), 40)
 

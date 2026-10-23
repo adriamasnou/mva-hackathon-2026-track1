@@ -15,15 +15,19 @@
   },
   "protocol_source": {
     "path": "submissions/functional-rescue-plan.md",
-    "sha256_at_specification": "fabcf50ac4d63a2edf2c96919d099015914532ce19299057bee8c3f83d846ef7"
+    "sha256_at_specification": "fabcf50ac4d63a2edf2c96919d099015914532ce19299057bee8c3f83d846ef7",
+    "retained_snapshot": "analysis/rescue_decision/protocol-at-specification.txt",
+    "snapshot_recovered_from_commit": "ad435c8dec4e0b97b9c5de067fc1abe2515496aa",
+    "current_protocol_sha256": "320704ae2e66f8393b00e1b1d7f36f7cdadd192a6bda4a00bc1295aa91b793c8",
+    "revision_scope": "Later additions concern comparative compounds, native RNA, tissue-output follow-up and the prototype link. The bounded decision criteria are unchanged. The historical protocol hash certifies the retained specification snapshot, not the subsequently expanded document."
   },
   "implementation_sha256": {
     "decision.py": "3b8005a48987af8d3f3b57b32f2dbff03c9e22ee941c7b7711846043ae0289ed",
     "casebook.py": "2b27d5d1afee82b4d161818a88c0a2e611da145558c669fc87b988669097c2fa",
-    "validate_cases.py": "e6853f58e90539c1586a381915274986512f57373a67d89149868c8190429379",
+    "validate_cases.py": "75da1abb62981ebe3e8916492afe6ee99e108d7a8b6e952a38baa798d876af0e",
     "mutation_checks.py": "e368c6d25e70ff4b0625da19953f625b505926dea4da5ac6aec91315450649b9"
   },
-  "test_source_sha256": "d74a035896ea12566b0d01479cc5c3e9607bebffac085d7ae509400520da0722",
+  "test_source_sha256": "cc4ad2e05cf05c8c8b6267dc557db812793aadc7d076881f2f68647d20bcd771",
   "comparators": {
     "naive_protein_only": "Accept any finite BubR1 protein ratio > 1; ignores function, fate, exposure, uncertainty and controls.",
     "naive_survivor_only": "Accept any finite positive change in normal-cell fraction among survivors; ignores function per division, selection, fate, exposure, uncertainty and controls.",

@@ -91,7 +91,11 @@ def build_report():
         "title": "Synthetic research decision-rule conformance; not biological or clinical validation",
         "scope": "Deterministic evaluator of supplied estimates and qualification assertions. Eligibility means independent research replication only.",
         "expected_case_freeze": receipt,
-        "protocol_source": {"path": book["protocol"], "sha256_at_specification": book["protocol_sha256"]},
+        "protocol_source": {"path": book["protocol"], "sha256_at_specification": book["protocol_sha256"],
+                            "retained_snapshot": "analysis/rescue_decision/protocol-at-specification.txt",
+                            "snapshot_recovered_from_commit": "ad435c8dec4e0b97b9c5de067fc1abe2515496aa",
+                            "current_protocol_sha256": hashlib.sha256((root.parents[1] / book["protocol"]).read_bytes()).hexdigest(),
+                            "revision_scope": "Later additions concern comparative compounds, native RNA, tissue-output follow-up and the prototype link. The bounded decision criteria are unchanged. The historical protocol hash certifies the retained specification snapshot, not the subsequently expanded document."},
         "implementation_sha256": {name: hashlib.sha256((root / name).read_bytes()).hexdigest()
                                   for name in ("decision.py", "casebook.py", "validate_cases.py", "mutation_checks.py")},
         "test_source_sha256": hashlib.sha256((root.parents[1] / "tests/test_rescue_decision.py").read_bytes()).hexdigest(),
