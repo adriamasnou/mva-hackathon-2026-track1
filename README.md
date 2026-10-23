@@ -20,6 +20,7 @@ We propose **arimoclomol for conditional preclinical testing** in BUB1B-MVA. The
 python3 -m unittest discover -s tests -v
 python3 canary/run_canary.py --self-test
 python3 analysis/exposure_check.py
+python3 tools/pgtm/audit.py
 python3 tools/check_package.py
 ```
 
@@ -31,6 +32,8 @@ The canary self-test tests the checker with synthetic fixtures. Actual model inf
 - [Annotation](submissions/annotation-toolchain-vep.md), [splice prediction](submissions/splice-prediction.md), [SV/CNV assessment](submissions/sv-cnv-survey.md) and [callability](submissions/callability-audit.md).
 - [Public HG002 spike-in smoke test](submissions/generalisation-public-case.md): scale demonstration, not diagnostic validation.
 - [Reagent design](submissions/n1002k-reagent-specification.md), [fragment protocol](submissions/n1002k-collaboration-package.md), [assay pilot](submissions/pilot-protocol-bubr1-flow.md) and [screen design](submissions/screen-protocol-runnable.md): proposed laboratory work, subject to the functional plan's gates.
+- [Literature reading record](submissions/literature-reading-record.md): exact review coverage and unresolved supplementary access.
+- [Navigator task validation](submissions/pgtm-task-validation.md): eleven source-adjudicated tasks with explicit comparison limits.
 - [Register audit](submissions/register-audit.md), [decision-aid draft](submissions/family-facing-decision-aid.md), [cost/access context](submissions/impact-costs-and-access.md) and [secondary-findings governance](submissions/secondary-findings-disclosure-protocol.md).
 
 ## Data and reproducibility

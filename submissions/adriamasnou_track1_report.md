@@ -12,7 +12,7 @@
 
 ## Summary of prediction
 
-Ranked candidate 1 is a **BUB1B compound heterozygote**:
+Ranked candidate 1 is a **pair of heterozygous BUB1B variants with phase unconfirmed**. A compound-heterozygous interpretation requires the variants to be on opposite copies of the gene:
 
 | Allele | GRCh38 | HGVS (NM_001211.6 / ENST00000287598) | Consequence | Evidence |
 |---|---|---|---|---|
@@ -21,7 +21,7 @@ Ranked candidate 1 is a **BUB1B compound heterozygote**:
 
 ## Approach
 
-1. **Phenotype-driven gene prior.** The proband's HPO profile (rhabdomyosarcoma HP:0002859, nephrocalcinosis HP:0000121, short stature HP:0004322, failure to thrive HP:0001508, skeletal muscle atrophy HP:0003202, premature birth HP:0001622, SGA HP:0001518, parental recurrent spontaneous abortion HP:0200067) forms the classic chromosomal-instability cluster of Mosaic Variegated Aneuploidy. Established MVA genes (BUB1B/MVA1, CEP57/MVA2, TRIP13/MVA3, plus newer reports) were prioritized, with BUB1B prioritized because its published phenotype includes rhabdomyosarcoma and Wilms tumour. (BUB1B/MVA1: Hanks 2004, PMID 15475955.)
+1. **Phenotype-driven gene prior.** The proband's HPO profile (rhabdomyosarcoma HP:0002859, nephrocalcinosis HP:0000121, short stature HP:0004322, failure to thrive HP:0001508, skeletal muscle atrophy HP:0003202, premature birth HP:0001622, SGA HP:0001518, parental recurrent spontaneous abortion HP:0200067) forms the classic chromosomal-instability cluster of Mosaic Variegated Aneuploidy. Established MVA genes (BUB1B/MVA1, CEP57/MVA2, TRIP13/MVA3, plus newer reports) were prioritized. Hanks's biallelic BUB1B series directly reported two children with embryonal rhabdomyosarcoma, supporting the BUB1B phenotype prior; that selected series does not establish an individual tumour-risk estimate. (Hanks 2004, PMID 15475955, Table 1.)
 
    > **Updated 23 October 2026:** the earlier exclusivity claim is withdrawn. TRIP13/MVA3 also carries a strong Wilms association (Yost 2017, PMID 28553959). This file includes later corrections and is not a byte-identical copy of the initially submitted report.
 
@@ -30,21 +30,18 @@ Ranked candidate 1 is a **BUB1B compound heterozygote**:
 4. **Local consequence calling.** Exon structure and CDS sequence for ENST00000287598 were fetched from Ensembl REST (public gene data only — no proband variant left the analysis machine); codon changes were computed locally: p.Leu737* and p.Asn1002Lys. The reference base at each position was asserted against the Ensembl CDS. **[OUR MEASUREMENT]**
 5. **Corroboration.** ClinVar: c.2210T>G (p.Leu737*) is Pathogenic/Likely pathogenic for MVA1; at chr15:40220612, c.3006T>A (same p.Asn1002Lys) is a reported VUS and c.3006T>C (p.Asn1002=) likely benign. Ensembl also lists pathogenic frameshift alleles at bases adjacent to 40209701, consistent with truncation intolerance in exon 17.
 
-The genotype matches the canonical biallelic BUB1B MVA architecture (one truncating allele + one hypomorphic kinase-domain allele), with the missense allele plausibly preserving partial BubR1 function (complete loss of BUB1B is presumed lethal: Hanks 2004, PMID 15475955; murine BubR1 nulls are
-embryonic lethal — **Baker DJ *et al.*, *Nat Genet* 2004, PMID 15208629**).
+**If the variants are in trans**, the truncating-plus-missense pair is consistent with the allelic architecture reported in BUB1B-associated MVA. Hanks established opposite-parent inheritance in its families; that does not establish phase here. N1002K's residual function has not been measured, so hypomorphism remains a hypothesis. Human biallelic-null lethality was also proposed, not observed, in that study (Hanks 2004, PMID 15475955). Murine null lethality is a separate, genotype-specific evidence chain: Baker 2004 (PMID 15208629) reports early embryonic lethality of null homozygotes as data not shown with a prior-work citation, and Sieben 2020 (PMID 31738183) summarizes that result in its Introduction.
 
-> 🔻 **CITATION CORRECTED 2026-08-31 — FIRST CLAIM AUDIT OF THIS FILE.** The mouse-null statement
-> was attributed to a **bare "Sieben 2020" with no identifier**, which is the one citation form
-> this project's PMID-based citation gate cannot see — which is why it survived every audit by
-> being unparseable rather than by being right. **Checking the held full text of Sieben 2020
-> (PMID 31738183), it does not support the claim:** it reports **early *postnatal* lethality** at
-> >90% BubR1 reduction, and **embryonic lethality for one specific compound genotype
-> (`BubR1^X753/L1002P`)** — not for the null. The mouse allelic series establishing that
-> `BubR1^−/−` and `BubR1^H/−` are lethal while `BubR1^H/H` (~10% of wild-type) is viable is
-> **Baker 2004**, which this project holds and already cites correctly in its private notes.
-> **The claim is true and was cited to the wrong paper.** *(This file is the already-submitted
-> Track 1 report; the correction is recorded here rather than concealed, and the submitted text is
-> not retro-edited — see the note at approach step 1 for the same convention.)*
+> **Source-chain correction, 23 October 2026:** the August 31 correction incorrectly said
+> Sieben did not support the null-lethality statement. **Sieben's Introduction (p.171) does
+> summarize prior null embryonic lethality, citing Baker; it does not present a new null experiment.**
+> Baker's Results (p.744) distinguish early embryonic lethality of `BubR1^−/−`, death within
+> hours after birth of `BubR1^H/−`, and survival of `BubR1^H/H` mice with markedly reduced
+> BubR1. Figure 1 displays the hypomorphic allelic series; the null-embryo statement is not a
+> displayed new embryo experiment. These engineered mouse alleles neither establish the function
+> of human N1002K nor confirm phase in this case. This local report includes subsequent evidence
+> corrections and is not a byte-identical record of the original submission; editing it does not
+> revise a submitted version.
 
 ## Limitations
 
@@ -88,9 +85,10 @@ longest observed fragment of 1,272 bp the easier hop is **3.26×** and the harde
 > alignment was gone. **The CRAM's own header records where its reference actually is.** A file's
 > provenance is written inside it; asking the file beats guessing its path.
 > *(Independent cross-check unchanged: `F-001`'s 455.7 ± 181.6 bp.)*
-**One defect was found in this audit — the "Sieben 2020" mouse-null attribution, corrected in the
-Approach section above.** Hanks 2004 (PMID 15475955) and Yost 2017 (PMID 28553959) both verified
-correct.
+**The August 31 audit's mouse-null attribution correction was itself mistaken; the source chain
+is corrected in the Approach section above on 23 October 2026.** The bibliographic identities of
+Hanks 2004 (PMID 15475955) and Yost 2017 (PMID 28553959) were verified. This source review does
+not constitute a new run of the numerical analyses recorded here.
 [OUR MEASUREMENT — re-derivation from `WGS_EX2312012_HGWCNDSX7.vcf.gz`, 2026-08-31.]
 
 ## Reproducibility

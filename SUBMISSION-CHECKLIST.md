@@ -8,6 +8,8 @@ Prepared locally on 23 October 2026. This checklist is not a submission receipt.
 - Pitch option 2: [silent visuals](submissions/pitch/pitch-silent.mp4), [editable slides](submissions/pitch/pitch-editable.pptx) and [timed script](submissions/pitch-video-script.md) for participant narration.
 - [Notes for judges](submissions/notes-for-judges.md) fit the 150-word limit.
 - [Offline navigator](submissions/pgtm-navigator.html) and the source code are included. Download the HTML to use it locally.
+- [Literature reading record](submissions/literature-reading-record.md) identifies the 33 main texts reviewed and distinguishes remaining supplement and underlying-data gaps.
+- [Navigator task evaluation](submissions/pgtm-task-validation.md) reports 11 selected tasks, the comparator and the limits of this unblinded evaluation.
 
 Before submitting, the participant should review the report and methods form, choose the final narration, check pronunciation/captions, and create a judge-accessible video URL. Confirm the repository URL exposes the reviewed files under the challenge's access rules; local files and a private remote alone do not establish judge access. Record the actual submission receipt and the version submitted. No hosted pitch URL or Track 2 submission receipt exists in this package.
 

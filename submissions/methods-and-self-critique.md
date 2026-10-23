@@ -37,19 +37,18 @@ side by side — including the post-hoc arm that counts splice consequences as d
 moves *BUB1B* the other way, to rank 59 of 239. *BUB1B*'s own allele counts are identical under
 all four.
 
-**The good half.** The scan recovered the architecture exactly, with no prior:
+**The good half.** The scan recovered the same heterozygous truncating-plus-missense pair without a phenotype or candidate-gene list in the filter:
 
 ```
 chr15:40,209,701  T>G  stop_gained  0/1     (allele A)
 chr15:40,220,612  T>G  missense     0/1     (allele B)
 ```
 
-One truncating plus one missense, both heterozygous — the canonical MVA compound-heterozygote
-architecture (Hanks 2004, PMID 15475955). Phase remains inferred; an analyst who already knows the answer is not blinded.
+One truncating plus one missense, both heterozygous. **If they are in trans**, this pair is consistent with the allelic architecture reported in BUB1B-associated MVA (Hanks 2004, PMID 15475955). Hanks demonstrated opposite-parent inheritance in its families; phase here remains unconfirmed, and N1002K's residual function is unmeasured. An analyst who already knows the answer is not blinded.
 
 > ### The bad half, which we are reporting rather than burying: **55th is not first.**
 > A phenotype-blind scan does **not** independently nominate this gene. **It corroborates the
-> architecture; it does not corroborate the priority.** Anyone claiming a blind scan validates
+> variant-pair pattern; it does not establish phase, missense function or the priority.** Anyone claiming a blind scan validates
 > their candidate should say where it ranked.
 
 **Why 55th, and why that is not a defence.** The top of the list is dominated by loci notorious in

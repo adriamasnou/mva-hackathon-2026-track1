@@ -13,7 +13,7 @@ Four sequences are supplied: WT, N1002K, K795A and Q921H. K795A and Q921H are pr
 | what exists | what it is |
 |---|---|
 | `GM21284` (Coriell) | a real MVA patient line — but genotype **`753X` / `R814H`**, not this child's |
-| Addgene **#114052 / #114061 / #114062** | wild-type, `K795A`, `D882N` BubR1 — Kops lab, publication-linked. 🔴 **All three are MAMMALIAN pIC58 (pLAP) plasmids encoding FULL-LENGTH YFP-TEV-S-LAP-BubR1** (verified 2026-08-30) — useful for cell-based work and for route **A1**, **not** for the bacterial HIS₆ (721–1,044) purification route **A2** this document selects in §3. See §5 item 4 |
+| Addgene **#114052 / #114061 / #114062** | wild-type, `K795A`, `D882N` BubR1 — Kops lab, publication-linked. 🔴 **All three are MAMMALIAN pIC58 (pLAP) plasmids encoding FULL-LENGTH YFP-TEV-S-LAP-BubR1** (verified 2026-08-30) — useful for cell-based work, but not the source's full-length **GST-BUBR1** purification system (route **A1**) or the bacterial HIS₆ (721–1,044) purification route **A2** this document selects in §3. See §5 item 4 |
 | Addgene **#23858** `pDONR223-BUB1B` | full-length ORF, Gateway **entry** clone |
 | **an N1002K construct** | ❌ **not catalogued in Coriell or Addgene** — the two repositories searched, record by record. *(Scoped 2026-08-31 from "does not exist, anywhere": ECACC returned nothing parseable, and an unresolved query is not an absence.)* |
 
@@ -68,7 +68,7 @@ The protocol's route **A2** needs the **HIS₆-BubR1 (721–1,044)** pseudokinas
 
 At ~1 kb, **synthesis is now cheaper and faster than mutagenising and subcloning**, and it arrives
 **sequence-verified**. Order the 721–1,044 fragment **four times** — wild-type, `c.3006T>G` (N1002K), and the two
-controls the companion protocol requires, K795A and Q921H — each with the flanking sites your
+candidate comparators the companion protocol requires, K795A and Q921H — each with the flanking sites your
 destination vector needs.
 
 - No template to source, no mutagenesis, no screening of colonies.
@@ -164,7 +164,7 @@ TTAACTAGTCCT
 ```
 </details>
 
-<details><summary><b>BUB1B_721-1044_K795A</b> — 972 bp, positive control (destabilised): codon 795 <code>AAG</code>→<code>GCG</code>, fragment positions 223–224 (<code>c.2383_2384delinsGC</code>)</summary>
+<details><summary><b>BUB1B_721-1044_K795A</b> — 972 bp, candidate destabilising comparator, fragment behaviour unvalidated: codon 795 <code>AAG</code>→<code>GCG</code>, fragment positions 223–224 (<code>c.2383_2384delinsGC</code>)</summary>
 
 ```
 CCATGGTGTTCACAGTATCGCAGACAGCTACTGAAGTCCCTACCAGAGTTAAGTGCCTCT
@@ -332,7 +332,7 @@ synthesise.** The protein is unaffected — so a *protein* melting curve is not 
 1. 🔴 **Neither plasmid can be fully verified in silico before ordering.** #23858: *"Full plasmid
    sequence is not available for this item."* #114061's depositor states: *"based on pLAP-BUBR1:
    **point mutation(s) are not included in Sequence:Full**"* — **the deposited sequence does not show
-   K795A.** Anyone using #114061 as a route-A1 positive control and checking it against the deposited
+   K795A.** Anyone using #114061 as a cell-based comparator and checking it against the deposited
    record will not find the mutation there. **Sequence it on arrival; do not infer it.**
 2. ⚠️ **#23858's insert is listed as 3,153 bp — numerically identical to the full CDS *including* its
    stop codon**, while the depositor says the ORF has no stop codon. Both cannot be literally true of
@@ -359,44 +359,34 @@ synthesise.** The protein is unaffected — so a *protein* melting curve is not 
 2. **The WT counterpart sequenced in the same run**, from the same source.
 3. Expression checked by SDS-PAGE before any Tm measurement; a construct that does not express
    cannot produce a melting curve, and a flat curve would otherwise be read as a result.
-4. 🔴 **CORRECTED 2026-08-30 — the previous version of this item set a gate the chosen route
-   cannot pass.** It read: *"Include a construct with a published expected value — `K795A`
-   (Addgene #114061) is the allele the assay's own calibration comes from. A run that cannot
-   reproduce a published value cannot interpret a novel one."* **Two things are wrong with it.**
+4. **Qualify controls for the actual construct and assay.** Published unfolding curves exist for
+   **HIS₆-BubR1(721–1,044)** (PMID 22698286, Fig S3G–H). The **39.1 °C / 34.7 °C** WT–K795A
+   pair instead concerns **full-length GST-BUBR1** (Fig 3G / S3D). The supplement does not establish
+   WT–K795A separation for the fragment assay or a calibrated N1002K threshold. The earlier claim
+   that the fragment had no published thermal data was incorrect.
 
-   **(a) The published Tm pair belongs to a DIFFERENT CONSTRUCT.** The 39.1 °C / 34.7 °C
-   WT-vs-K795A separation is measured on **full-length GST-BUBR1** (Suijkerbuijk 2012,
-   PMID 22698286, Fig 3G / S3D). §3 of this document commits to **route A2, the HIS₆-BubR1
-   (721–1,044) pseudokinase-domain fragment**, and **there is no published Tm for that fragment at
-   all.** Neither construct is wrong; choosing A2 while quoting the A1 numbers as the acceptance
-   gate is. *(This was established in our own protocol notes on 2026-08-30 and had not reached
-   this file — the propagation failure is the reason this correction is written out rather than
-   silently edited.)*
+   **Proposed fragment qualification [OUR DESIGN]:**
 
-   **(b) #114061 could not have been "included" in this run anyway.** Addgene #114061 is
-   **pLAP-BUBR1-K795A**: a **mammalian** pIC58 expression plasmid encoding **full-length** BubR1
-   with an N-terminal YFP-TEV-S-LAP tag (verified against the Addgene record, 2026-08-30). It is
-   not a bacterial HIS₆-fragment construct and cannot go into a purified-fragment melting-curve
-   experiment.
+   - Purify **WT, N1002K, K795A and Q921H HIS₆-BubR1(721–1,044)** using matched expression and
+     purification conditions, and melt all four side by side. K795A is a **candidate destabilising
+     comparator**, and Q921H a **candidate WT-like comparator**; neither role is established for
+     this fragment. N1002K is the unknown, not a calibration control. **[OUR INFERENCE — proposed
+     assay design; comparator roles require experimental qualification.]**
+   - Use **≥3 independent protein preparations** as an exploratory reproducibility check, not a
+     substitute for demonstrated dynamic range or a confirmatory power calculation. Qualify control
+     behaviour and freeze assay acceptance criteria before interpreting N1002K.
+   - Report **absolute unfolding curves, method-specific transition estimates and within-run ΔTm**.
+     Use the published WT-fragment curves as context, without importing full-length thresholds.
+     Failed control qualification makes the assay indeterminate, not the variant normal or abnormal.
 
-   **★ WHAT TO DO INSTEAD, and it is not weaker. [OUR INFERENCE]** — no source prescribes a gate for a construct with no published anchor, so this is our design decision, reasoned from the absence Suijkerbuijk 2012 (PMID 22698286) leaves. On route A2 the WT/variant separation must be
-   **established in-house**, so the acceptance gate becomes an **internal** one:
-
-   - Purify **HIS₆-BubR1 (721–1,044) wild-type**, the **N1002K** fragment and the two controls
-     (**K795A**, **Q921H**; sequences in §3) from the same expression batch, and melt all four
-     **side by side in the same run**. The measurement that matters is **ΔTm of N1002K from WT**,
-     read against the K795A arm — not any absolute value.
-   - **Run ≥3 independent protein preparations.** With no published anchor, reproducibility across
-     preparations *is* the anchor.
-   - **Report the WT absolute Tm** so that the next laboratory using this fragment has the anchor
-     this one lacked. Establishing it is a contribution, not a shortfall.
-   - **If route A1 (full-length GST-BUBR1) is chosen instead**, then and only then does `K795A`
-     become a legitimate positive control against the published 39.1 → 34.7 °C — and #114061 is
-     still the wrong plasmid for a purification; source a bacterial full-length construct.
-
-   **The principle the old wording got right and applied to the wrong construct still stands:**
-   a run that cannot reproduce a known separation cannot interpret a novel one. On A2 the known
-   separation has to be made before it can be reproduced.
+   **Full-length alternative (route A1):** comparison with the published WT–K795A pair requires
+   documenting the source's **High-Five insect cells / Bac-to-Bac expression, GST tag, purification
+   and fluorescence conditions** (PMID 22698286, Supplemental Experimental Procedures, pp.9–12).
+   Its thermal assay used **0.75 µM protein, 280 nm excitation and 353 nm emission**, distinct from
+   the fragment assay. Bacterial full-length expression or another readout is an adaptation requiring
+   validation. Addgene **#114061 is mammalian pLAP-BUBR1-K795A**, not the source's GST expression
+   construct or a HIS₆-fragment reagent; its published association does not make it an interchangeable
+   thermal control.
 
 ## 6. Costs
 
@@ -415,10 +405,18 @@ synthesise.** The protein is unaffected — so a *protein* melting curve is not 
 **Turnaround: 4–7 business days express, 10 standard**, plus 1 day for sequencing.
 
 🔑 **The recommended route needs no Addgene plasmid and no mutagenesis kit.** ≈ $630 is the figure
-the companion protocol carries. **The pair-only column is not an option** — WT vs variant alone has no
-demonstrated dynamic range and fails the standard the protocol cites (Brnich, **PMID 31892348**); it is
-shown only so the marginal cost of the two controls is visible: ≈ $285 in synthesis and cloning,
-≈ $315 with sequencing.
+the companion protocol carries. **For this unvalidated fragment assay, our design retains technical
+positive and negative controls and independent preparations to establish an interpretable response
+range.** K795A and Q921H are candidates for those roles, subject to qualification (§5); merely
+including them does not validate the assay. WT versus N1002K alone would not validate it either.
+These technical controls do not substitute for independently classified pathogenic/benign variants
+or by themselves calibrate **PS3/BS3**. Brnich distinguishes technical controls from clinical
+validation and permits limited exceptions for established assays; our four-construct design is
+not a universal control-count rule from that guidance (**PMID 31892348**, assay-instance evaluation
+and Fig 2). The pair-only column is a cost comparison: the two candidate comparators add ≈ $285
+in synthesis and cloning, or ≈ $315 with sequencing. **[OUR ASSAY DESIGN; clinical-evidence limits
+as cited.]**
+
 ⚠️ **Twist's Clonal Genes are already NGS-verified**, so the $60 of whole-plasmid sequencing is an
 *independent* check rather than a mandatory step. **Run it anyway** — §5 item 1 wants confirmation
 from a second party, and at $15 a sample that is the cheapest line in this table.
@@ -430,9 +428,9 @@ ours. US list; academic and volume pricing differ.]**
 |---|---|
 | synthesised constructs ×4 (WT, N1002K, K795A, Q921H), 972 bp each — **costed exactly above** | **≈ $490–570** (≈ $245–285 for the pair) |
 | *or* Addgene #23858 + mutagenesis kit + LR reaction | ~$94 plasmid + reagents |
-| Addgene control plasmids (#114052, #114061) — **only if route A1 or a cell-based arm is run**; they are mammalian full-length constructs and are **not** used on route A2 (§5 item 4) | **2 × $94 = $188** |
+| Addgene comparator plasmids (#114052, #114061) — **for a cell-based arm**; these mammalian full-length constructs are **not** the route-A1 GST expression system or route-A2 fragment reagents (§5 item 4) | **2 × $94 = $188** |
 | whole-plasmid sequencing ×4 — **Plasmidsaurus, $15/sample, 1-day turnaround** | **$60** |
-| **total, reagents only** | **≈ $550–630** (route A2 alone) · **≈ $740–820** with the optional route-A1 plasmids |
+| **total, reagents only** | **≈ $550–630** (route A2 alone) · **≈ $740–820** including the optional cell-based plasmids; route-A1 GST purification is not costed |
 
 **[OUR ESTIMATE. All three Addgene prices — #23858, #114052, #114061 — are `[VERIFIED]` at **$94
 each**, re-fetched from the live plasmid pages 2026-08-31 (§4a); the previous "~$80–100" range is
@@ -450,8 +448,8 @@ invented here.]**
 > a lookup, which this project has logged four times.
 
 🔑 **The recommended path does not need any Addgene plasmid.** Route 1 is four synthesised constructs
-plus sequencing: **≈ $550–630 all in.** The $188 of control plasmids is optional and belongs to route
-A1 only.
+plus sequencing: **≈ $550–630 in these materials.** The $188 of optional comparator plasmids belongs
+to cell-based work, not either purified-protein route.
 
 ## 7. What this does not include, and what needs a person
 

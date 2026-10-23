@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "selection_mims": [
+    "257300",
+    "219700",
+    "310200",
+    "300624",
+    "612555",
+    "600185",
+    "604373",
+    "261600"
+  ],
+  "sources": {
+    "hfea_pgtm_2026-08-05.xlsx": {
+      "url": "https://www.hfea.gov.uk/media/ssapbtyc/2026-08-05-pgt-m-full-approved-condition-list.xlsx",
+      "sha256": "4affb34263310f6965f1190669aef9633163412a2f4f3522cb4d685ed32fa684",
+      "bytes": 93832
+    },
+    "gene_condition_source_id": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/gene_condition_source_id",
+      "sha256": "e44777bb75c0f59f99d7b9beefe56d55dfb0b495214cecaffdfe55b8d98f68b3",
+      "bytes": 1254048
+    },
+    "genes_to_disease.txt": {
+      "url": "https://purl.obolibrary.org/obo/hp/hpoa/genes_to_disease.txt",
+      "sha256": "a247027ae9944e34545e0a91060243ff6c118681c06379b9721af1ee4f39286a",
+      "bytes": 1477762
+    },
+    "mim2gene.txt": {
+      "url": "https://omim.org/static/omim/data/mim2gene.txt",
+      "sha256": "50274f17b282bb24414bc8d10c2431318a03a8d4622475ba26caa880f0720579",
+      "bytes": 987837
+    }
+  },
+  "hfea_rows": {
+    "182": {
+      "worksheet": "xl/worksheets/sheet1.xml",
+      "cells": {
+        "A182": "Breast Ovarian Cancer Familial Susceptibility (BRCA2) (including testing for sex selection)",
+        "B182": "approved",
+        "C182": "612555, 600185"
+      }
+    },
+    "332": {
+      "worksheet": "xl/worksheets/sheet1.xml",
+      "cells": {
+        "A332": "CHEK2 mutation and increased risk of breast cancer",
+        "B332": "approved",
+        "C332": "* 604373"
+      }
+    },
+    "369": {
+      "worksheet": "xl/worksheets/sheet1.xml",
+      "cells": {
+        "A369": "Coloboma, Congenital Heart Disease, Ichthyosiform Dermatosis, Impaired Intellectual Development, and Ear Anomalies Syndrome (CHIME)",
+        "B369": "approved",
+        "C369": "28000"
+      }
+    },
+    "503": {
+      "worksheet": "xl/worksheets/sheet1.xml",
+      "cells": {
+        "A503": "Cystic Fibrosis (CF)",
+        "B503": "approved",
+        "C503": "219700"
+      }
+    },
+    "826": {
+      "worksheet": "xl/worksheets/sheet1.xml",
+      "cells": {
+        "A826": "Fragile X Syndrome (FXS)",
+        "B826": "approved",
+        "C826": "300624"
+      }
+    },
+    "1399": {
+      "worksheet": "xl/worksheets/sheet1.xml",
+      "cells": {
+        "A1399": "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+        "B1399": "approved",
+        "C1399": "257300"
+      }
+    },
+    "1436": {
+      "worksheet": "xl/worksheets/sheet1.xml",
+      "cells": {
+        "A1436": "Muscular Dystrophy, Duchenne Type (DMD)",
+        "B1436": "approved",
+        "C1436": "310200"
+      }
+    },
+    "1675": {
+      "worksheet": "xl/worksheets/sheet1.xml",
+      "cells": {
+        "A1675": "Phenylketonuria (PKU)",
+        "B1675": "approved",
+        "C1675": "261600"
+      }
+    },
+    "1873": {
+      "worksheet": "xl/worksheets/sheet1.xml",
+      "cells": {
+        "A1873": "SIX2-related disorder (No OMIM number)",
+        "B1873": "approved",
+        "C1873": ""
+      }
+    }
+  },
+  "mapping_records": {
+    "gene_condition_source_id": {
+      "header": "#GeneID\tAssociatedGenes\tRelatedGenes\tConceptID\tDiseaseName\tSourceName\tSourceID\tDiseaseMIM\tLastUpdated",
+      "records": [
+        {
+          "line": 864,
+          "text": "675\tBRCA2\t\tC2675520\tBreast-ovarian cancer, familial, susceptibility to, 2\tMONDO\tMONDO:0012933\t612555\tApr 19 2022"
+        },
+        {
+          "line": 890,
+          "text": "701\tBUB1B\t\tC1850343\tMosaic variegated aneuploidy syndrome 1\tMONDO\tMONDO:0009759\t257300\tAug 16 2017"
+        },
+        {
+          "line": 1333,
+          "text": "1080\tCFTR\t\tC0010674\tCystic fibrosis\tMONDO\tMONDO:0009061\t219700\tJul  6 2018"
+        },
+        {
+          "line": 2126,
+          "text": "1756\tDMD\t\tC0013264\tDuchenne muscular dystrophy\tMONDO\tMONDO:0010679\t310200\tFeb 16 2016"
+        },
+        {
+          "line": 2694,
+          "text": "2212\tFCGR2A\t\tC0010674\tCystic fibrosis\tMONDO\tMONDO:0009061\t219700\tJul  6 2018"
+        },
+        {
+          "line": 2862,
+          "text": "2332\tFMR1\t\tC0016667\tFragile X syndrome\tMONDO\tMONDO:0010383\t300624\tFeb 16 2016"
+        },
+        {
+          "line": 5711,
+          "text": "5053\tPAH\t\tC0031485\tPhenylketonuria\tMONDO\tMONDO:0009861\t261600\tFeb 16 2016"
+        },
+        {
+          "line": 7913,
+          "text": "7040\tTGFB1\t\tC0010674\tCystic fibrosis\tMONDO\tMONDO:0009061\t219700\tJul  6 2018"
+        },
+        {
+          "line": 12260,
+          "text": "5860\t\tQDPR\tC0031485\tPhenylketonuria\tMONDO\tMONDO:0009861\t261600\t16 Feb 2016"
+        }
+      ]
+    },
+    "genes_to_disease.txt": {
+      "header": "ncbi_gene_id\tgene_symbol\tassociation_type\tdisease_id\tsource",
+      "records": [
+        {
+          "line": 872,
+          "text": "NCBIGene:1080\tCFTR\tMENDELIAN\tOMIM:219700\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 873,
+          "text": "NCBIGene:2212\tFCGR2A\tPOLYGENIC\tOMIM:219700\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 874,
+          "text": "NCBIGene:7040\tTGFB1\tPOLYGENIC\tOMIM:219700\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 2852,
+          "text": "NCBIGene:5053\tPAH\tMENDELIAN\tOMIM:261600\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 5940,
+          "text": "NCBIGene:675\tBRCA2\tPOLYGENIC\tOMIM:612555\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 5976,
+          "text": "NCBIGene:701\tBUB1B\tMENDELIAN\tOMIM:257300\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 6273,
+          "text": "NCBIGene:1756\tDMD\tMENDELIAN\tOMIM:310200\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 7365,
+          "text": "NCBIGene:2332\tFMR1\tMENDELIAN\tOMIM:300624\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        }
+      ]
+    },
+    "mim2gene.txt": {
+      "header": "# MIM Number\tMIM Entry Type (see FAQ 1.3 at https://omim.org/help/faq)\tEntrez Gene ID (NCBI)\tApproved Gene Symbol (HGNC)\tEnsembl Gene ID (Ensembl)",
+      "records": [
+        {
+          "line": 4951,
+          "text": "219700\tphenotype\t\t\t"
+        },
+        {
+          "line": 5752,
+          "text": "257300\tphenotype\t\t\t"
+        },
+        {
+          "line": 5862,
+          "text": "261600\tphenotype\t\t\t"
+        },
+        {
+          "line": 6895,
+          "text": "300624\tphenotype\t\t\t"
+        },
+        {
+          "line": 7677,
+          "text": "310200\tphenotype\t\t\t"
+        },
+        {
+          "line": 8174,
+          "text": "600185\tgene\t675\tBRCA2\tENSG00000139618"
+        },
+        {
+          "line": 12362,
+          "text": "604373\tgene\t11200\tCHEK2\tENSG00000183765"
+        },
+        {
+          "line": 20544,
+          "text": "612555\tphenotype\t\t\t"
+        }
+      ]
+    }
+  }
+}

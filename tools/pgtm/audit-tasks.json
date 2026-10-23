@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "adjudication": "AI-assisted manual reading of the original HFEA XML cells and mapping TSV records, independently of build.py; not a second human or blinded adjudication. Task selection was informed by the existing tool and source anomalies. Expected answers transcribed explicitly before runner execution.",
+  "selection": "Convenience sample, not random or preregistered: seven gene queries spanning MVA, pulmonary disease, muscular dystrophy, fragile X, cancer predisposition and metabolic disease; plus malformed/unresolved/no-match/alias tasks. Broad query matches beyond the named target are not clinically adjudicated.",
+  "scope": "Source-faithful retrieval and integrity only; not clinical accuracy, eligibility, usability, time saved, or a live-HFEA search comparison.",
+  "shared_source_limitation": "HFEA and mapping snapshots also feed the builder. Manual source reading is independent of builder output but not independent biological truth. HPO/ClinVar can share upstream evidence. Six online corroborations are separate pages, not six independent datasets, and were not downloaded or cryptographically pinned.",
+  "online_review_date": "2026-10-23",
+  "evidence_file": "audit-evidence.json",
+  "evidence_sha256": "79329a1eb50a7ce474412d545e6a239a53a18e9854ec9c2c8f9e2120a8f576a7",
+  "online_corroboration": [
+    {
+      "tasks": [
+        "T01",
+        "T11"
+      ],
+      "url": "https://medlineplus.gov/genetics/condition/mosaic-variegated-aneuploidy-syndrome/",
+      "section": "Causes",
+      "claim": "BUB1B causes MVA type 1; BUBR1 is the protein produced by BUB1B."
+    },
+    {
+      "tasks": [
+        "T02"
+      ],
+      "url": "https://medlineplus.gov/genetics/condition/cystic-fibrosis/",
+      "section": "Causes",
+      "claim": "CFTR variants cause cystic fibrosis; this does not establish FCGR2A/TGFB1 as equivalent causal genes."
+    },
+    {
+      "tasks": [
+        "T03"
+      ],
+      "url": "https://medlineplus.gov/genetics/condition/duchenne-and-becker-muscular-dystrophy/",
+      "section": "Causes",
+      "claim": "DMD variants cause Duchenne and Becker muscular dystrophy."
+    },
+    {
+      "tasks": [
+        "T04"
+      ],
+      "url": "https://medlineplus.gov/genetics/condition/fragile-x-syndrome/",
+      "section": "Causes",
+      "claim": "FMR1 variants cause fragile X syndrome."
+    },
+    {
+      "tasks": [
+        "T05"
+      ],
+      "url": "https://www.cancer.gov/about-cancer/causes-prevention/genetics/brca-fact-sheet",
+      "section": "What are BRCA1 and BRCA2?",
+      "claim": "Harmful inherited BRCA2 variants increase breast/ovarian cancer risk."
+    },
+    {
+      "tasks": [
+        "T07"
+      ],
+      "url": "https://medlineplus.gov/genetics/condition/phenylketonuria/",
+      "section": "Causes",
+      "claim": "PAH variants cause phenylketonuria; does not resolve the QDPR source disagreement."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T01",
+      "query": "BUB1B",
+      "kind": "gene",
+      "selection_reason": "Project anchor; gene absent from condition title.",
+      "hfea_row": 1399,
+      "expected": {
+        "condition": "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+        "hfea_status": "approved",
+        "omim_as_published": "257300",
+        "omim": "257300",
+        "genes": [
+          "BUB1B"
+        ],
+        "clinvar_hpo": "both",
+        "register_defect": "",
+        "gene_evidence": {
+          "BUB1B": [
+            {
+              "source": "ClinVar",
+              "omim": "257300"
+            },
+            {
+              "source": "HPO",
+              "omim": "257300"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "T02",
+      "query": "CFTR",
+      "kind": "gene",
+      "selection_reason": "Different disease area; explicitly retain modifier associations, not just causal CFTR.",
+      "hfea_row": 503,
+      "expected": {
+        "condition": "Cystic Fibrosis (CF)",
+        "hfea_status": "approved",
+        "omim_as_published": "219700",
+        "omim": "219700",
+        "genes": [
+          "CFTR",
+          "FCGR2A",
+          "TGFB1"
+        ],
+        "clinvar_hpo": "both",
+        "register_defect": "",
+        "gene_evidence": {
+          "CFTR": [
+            {
+              "source": "ClinVar",
+              "omim": "219700"
+            },
+            {
+              "source": "HPO",
+              "omim": "219700"
+            }
+          ],
+          "FCGR2A": [
+            {
+              "source": "ClinVar",
+              "omim": "219700"
+            },
+            {
+              "source": "HPO",
+              "omim": "219700"
+            }
+          ],
+          "TGFB1": [
+            {
+              "source": "ClinVar",
+              "omim": "219700"
+            },
+            {
+              "source": "HPO",
+              "omim": "219700"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "T03",
+      "query": "DMD",
+      "kind": "gene",
+      "selection_reason": "X-linked muscular dystrophy; symbol already occurs in condition title.",
+      "hfea_row": 1436,
+      "expected": {
+        "condition": "Muscular Dystrophy, Duchenne Type (DMD)",
+        "hfea_status": "approved",
+        "omim_as_published": "310200",
+        "omim": "310200",
+        "genes": [
+          "DMD"
+        ],
+        "clinvar_hpo": "both",
+        "register_defect": "",
+        "gene_evidence": {
+          "DMD": [
+            {
+              "source": "ClinVar",
+              "omim": "310200"
+            },
+            {
+              "source": "HPO",
+              "omim": "310200"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "T04",
+      "query": "FMR1",
+      "kind": "gene",
+      "selection_reason": "Repeat-associated condition; gene absent from condition title.",
+      "hfea_row": 826,
+      "expected": {
+        "condition": "Fragile X Syndrome (FXS)",
+        "hfea_status": "approved",
+        "omim_as_published": "300624",
+        "omim": "300624",
+        "genes": [
+          "FMR1"
+        ],
+        "clinvar_hpo": "both",
+        "register_defect": "",
+        "gene_evidence": {
+          "FMR1": [
+            {
+              "source": "ClinVar",
+              "omim": "300624"
+            },
+            {
+              "source": "HPO",
+              "omim": "300624"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "T05",
+      "query": "BRCA2",
+      "kind": "gene",
+      "selection_reason": "Cancer predisposition; two OMIM entries including a gene MIM.",
+      "hfea_row": 182,
+      "expected": {
+        "condition": "Breast Ovarian Cancer Familial Susceptibility (BRCA2) (including testing for sex selection)",
+        "hfea_status": "approved",
+        "omim_as_published": "612555, 600185",
+        "omim": "612555;600185",
+        "genes": [
+          "BRCA2"
+        ],
+        "clinvar_hpo": "both",
+        "register_defect": "multi-omim(2)",
+        "gene_evidence": {
+          "BRCA2": [
+            {
+              "source": "ClinVar",
+              "omim": "612555"
+            },
+            {
+              "source": "HPO",
+              "omim": "612555"
+            },
+            {
+              "source": "OMIM-geneMIM",
+              "omim": "600185"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "T06",
+      "query": "CHEK2",
+      "kind": "gene",
+      "selection_reason": "Gene-MIM-only mapping, with asterisk preserved.",
+      "hfea_row": 332,
+      "expected": {
+        "condition": "CHEK2 mutation and increased risk of breast cancer",
+        "hfea_status": "approved",
+        "omim_as_published": "* 604373",
+        "omim": "604373",
+        "genes": [
+          "CHEK2"
+        ],
+        "clinvar_hpo": "",
+        "register_defect": "asterisk-gene-entry",
+        "gene_evidence": {
+          "CHEK2": [
+            {
+              "source": "OMIM-geneMIM",
+              "omim": "604373"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "T07",
+      "query": "PAH",
+      "kind": "gene",
+      "selection_reason": "Small manually inspectable source disagreement; selected after inspecting disagreement list.",
+      "hfea_row": 1675,
+      "expected": {
+        "condition": "Phenylketonuria (PKU)",
+        "hfea_status": "approved",
+        "omim_as_published": "261600",
+        "omim": "261600",
+        "genes": [
+          "PAH",
+          "QDPR"
+        ],
+        "clinvar_hpo": "differ",
+        "register_defect": "",
+        "gene_evidence": {
+          "PAH": [
+            {
+              "source": "ClinVar",
+              "omim": "261600"
+            },
+            {
+              "source": "HPO",
+              "omim": "261600"
+            }
+          ],
+          "QDPR": [
+            {
+              "source": "ClinVar",
+              "omim": "261600"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "T08",
+      "query": "CHIME",
+      "kind": "malformed",
+      "selection_reason": "Five-digit OMIM cell; do not silently repair 28000 to 280000.",
+      "hfea_row": 369,
+      "expected": {
+        "condition": "Coloboma, Congenital Heart Disease, Ichthyosiform Dermatosis, Impaired Intellectual Development, and Ear Anomalies Syndrome (CHIME)",
+        "hfea_status": "approved",
+        "omim_as_published": "28000",
+        "omim": "",
+        "genes": [],
+        "clinvar_hpo": "",
+        "register_defect": "malformed-mim-length",
+        "gene_evidence": {}
+      }
+    },
+    {
+      "id": "T09",
+      "query": "SIX2",
+      "kind": "unresolved",
+      "selection_reason": "Gene present in condition name but no identifier mapping; no fabricated gene linkage.",
+      "hfea_row": 1873,
+      "expected": {
+        "condition": "SIX2-related disorder (No OMIM number)",
+        "hfea_status": "approved",
+        "omim_as_published": "",
+        "omim": "",
+        "genes": [],
+        "clinvar_hpo": "",
+        "register_defect": "no-omim-cell",
+        "gene_evidence": {}
+      }
+    },
+    {
+      "id": "T10",
+      "query": "__AUDIT_NO_SUCH_GENE_20261023__",
+      "kind": "no-match",
+      "selection_reason": "Synthetic impossible token; tests no-match wording only, not a real-gene negative or eligibility.",
+      "expected_count": 0,
+      "status_contains": "No match in this snapshot. Try a condition name, OMIM number or the live register."
+    },
+    {
+      "id": "T11",
+      "query": "BUBR1",
+      "kind": "alias",
+      "selection_reason": "Single supported alias, independently described by MedlinePlus.",
+      "hfea_row": 1399,
+      "expected": {
+        "condition": "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+        "hfea_status": "approved",
+        "omim_as_published": "257300",
+        "omim": "257300",
+        "genes": [
+          "BUB1B"
+        ],
+        "clinvar_hpo": "both",
+        "register_defect": "",
+        "gene_evidence": {
+          "BUB1B": [
+            {
+              "source": "ClinVar",
+              "omim": "257300"
+            },
+            {
+              "source": "HPO",
+              "omim": "257300"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

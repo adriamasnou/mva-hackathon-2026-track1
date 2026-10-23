@@ -22,19 +22,45 @@ Does any approved drug **raise the amount of BubR1** in patient cells? An abunda
 
 ## 2. ★ The design decision everything else follows from
 
-The published functional readout is **the MPM-2⁺ fraction of the 4N population after 16 h
-nocodazole, by flow cytometry** (Suijkerbuijk SJE et al., *Cancer Res* 2010, **PMID 20516114**). That is the right *confirmatory* assay and the
-wrong *primary* one — it is slow, and it measures the consequence rather than the thing the thesis
-is about.
+The published **MPM-2⁺ fraction of the 4N population after 16 h nocodazole, by flow cytometry**
+is a checkpoint-arrest readout (Suijkerbuijk SJE et al., *Cancer Res* 2010; PMID 20516114, Fig 4D, upper panel).
+The same paper measures chromosome segregation by live imaging (PMID 20516114, Fig 4D, middle panel).
+Y155C retains kinetochore localisation and chromosome-alignment activity but fails to restore
+nocodazole-induced MPM-2 positivity, illustrating separation of these functions (PMID 20516114, Fig 5A–D).
+
+Gama Braga measures BUBR1 KARD phosphorylation and PP2A-B56 recruitment separately from
+checkpoint silencing and kinetochore–microtubule attachment; the tested constructs can retain
+kinetochore-localised protein yet have impaired functional readouts (PMID 33207204, Figs 3–4 and S5).
+
+Foley shows restoration of cold-stable fibres after short Aurora B or Plk1 inhibitor treatment
+in B56-depleted cells (PMID 21874008, Fig 4D–E and Fig 5A–B); that attachment result
+does not itself demonstrate correct subsequent chromosome segregation.
+
+Nocodazole arrest maintenance alone cannot establish attachment, checkpoint-silencing or
+segregation rescue. These distinct experimental endpoints motivate following abundance hits
+through the [full-length functional and exposure plan](functional-rescue-plan.md).
+**[OUR INFERENCE — proposed confirmation design.]**
 
 > **Primary screen: BubR1 ABUNDANCE, by intracellular antibody stain, read on a
 > high-throughput flow cytometer in 384-well format.
-> Secondary confirmation: the published MPM-2 / 4N functional assay, on hits only.**
+> Hit confirmation: repeat abundance dose–response and counter-screens, followed by functional
+> testing with segregation errors per completed division as the primary functional outcome.**
 
-Cheap primary, expensive orthogonal secondary — standard screening architecture, and here it is
-also forced by the biology: **the patient line is a lymphoblastoid line, i.e. suspension cells.**
-Suspension makes high-content imaging awkward and makes flow the natural platform, so the
-throughput objection to a flow readout dissolves at 384-well.
+Measure chromosome alignment, checkpoint activation/maintenance, checkpoint silencing/exit timing,
+full-length BubR1 abundance/localisation, and division and cell fates separately. Track failed,
+arrested and dying cells so that restricting the primary denominator to completed divisions does
+not conceal harm or selection. Phospho-KARD/B56 and cold-stable-fibre assays may help identify a
+failed attachment-regulation step; they do not replace the division-level outcome. PMID 23079597;
+PMID 21874008. **[PROPOSED FOLLOW-UP; governed by the full-length plan]**
+
+Use controls qualified for each endpoint. The published forced-expression rescue of the
+nocodazole checkpoint response by I909T/L1012P does not calibrate every BubR1 function, and
+fragment thermal comparators do not serve as interchangeable cellular rescue controls.
+PMID 20516114. **[OUR INFERENCE]**
+
+**The screen line is a lymphoblastoid line, i.e. suspension cells.** This motivates flow for the
+abundance primary; it does not establish that the proposed division-imaging and functional assays
+are qualified in that line. Model and readout qualification remain laboratory work.
 
 ## 3. Cells — real catalogue numbers
 
@@ -79,12 +105,14 @@ Z' = 1 - ( 3·(SD_max + SD_min) / |AVG_max - AVG_min| )
 | plate format | ≥ 96-well; 384 and 1536 templates provided |
 
 **The Z′ controls, which the design previously lacked:**
+
 - **Minimum signal** = patient cells + DMSO.
-- **Maximum signal** = patient cells + a **proteasome inhibitor** (e.g. MG132). Blocking degradation
-  **must** raise BubR1 if the readout works at all.
-- ⚠️ **The positive control is an assay control, not a hit mimic.** A proteasome inhibitor raises
-  everything and is toxic. It defines the assay window; it is not a candidate, and a compound that
-  merely reproduces its profile is a counter-screen failure, not a hit.
+- **Candidate maximum-signal control** = patient cells + a **proteasome inhibitor** (e.g. MG132).
+  The MG132 immunoblot result in PMID 20516114, Fig 3C motivates testing this control, but
+  does not validate its effect in this LCL flow assay. Qualify the signal window and record viability and cell-cycle effects before use.
+- **The positive control is an abundance-assay control, not a functional-rescue control.** A
+  proteasome-inhibitor response does not establish BubR1-specific function or treatment potential;
+  candidates still require the counter-screens and functional advancement tests. **[OUR DESIGN]**
 
 **Gate: no compound plate is read until Z′ ≥ 0.4 on validation plates.** Cited in advance so it
 cannot be relaxed after seeing data.
@@ -129,8 +157,8 @@ campaign.
 |---|---|
 | primary | **single concentration, 10 µM**, single well per compound |
 | hit threshold | **≥ 3 SD above the plate mean** of DMSO wells, plate-normalised (B-score if plate effects appear) |
-| confirmation | **10-point dose–response, 3-fold dilutions from 30 µM, in triplicate** |
-| criterion for a real hit | **≥ 2-fold increase in BubR1 abundance**, dose-dependent, reproduced on a separate day |
+| abundance confirmation | **10-point dose–response, 3-fold dilutions from 30 µM, in triplicate** |
+| provisional abundance-hit criterion, not functional rescue | **≥ 2-fold increase in BubR1 abundance**, dose-dependent, reproduced on a separate day; functional advancement follows §2 and the full-length plan |
 
 Single-well primary screening is standard **when Z′ ≥ 0.4** — which is what §4's gate exists to
 establish. Below that threshold, replicates are needed and the design changes.
@@ -155,11 +183,16 @@ exactly that, and each must be run on every confirmed hit:
    raises measured BubR1 without affecting BubR1 stability at all** — and **counter-screens 1–3 do
    not catch it**: such a compound need not be toxic, it *does* raise BubR1 specifically, and it
    behaves similarly across genotypes. **An approved-drug library contains multiple antimitotics.**
-   **Measure DNA content in the same wells and REPORT it as a covariate — do not gate on it.**
-   ⚠️ **Gating would be the obvious move and is wrong in this disease: MVA is defined by aneuploidy
-   in >25% of cells, so a "normal G1" gate silently selects against the very cells that carry the
-   phenotype.** Flag any hit that shifts the cycle distribution. Detail and reasoning: pilot
-   protocol §5.13 and §5.13a.
+   **Measure DNA content in the same wells and report the distribution and any inclusion/exclusion
+   rules.** A gate based solely on a normal diploid DNA-content distribution may distort an
+   aneuploid culture; characterise the actual line's chromosome and DNA-content distributions before
+   defining such a gate. **MVA has no universal >25% aneuploid-cell minimum:** Matsuura reports
+   affected cases with **9–32%** aneuploidy (PMID 16411201, Table I), and Yost reports a case with
+   **10%** and culture-dependent changes in another (PMID 28553959, Fig S1). Those chromosome-count
+   fractions do not determine the fraction excluded by a DNA-content gate in this assay.
+   Flag hits that shift the cycle distribution and assess possible selection explicitly.
+   **[Source findings as cited; gating recommendation is OUR DESIGN.]** See also pilot protocol
+   §5.13 and §5.13a.
 
 ## 8. Cost and duration
 
@@ -181,9 +214,10 @@ The previous adversarial pass in this project reviewed the *stability protocol*,
 Three attacks on this one:
 
 **A1 — "The primary readout does not measure what you care about."** Partly lands. Abundance is a
-proxy for function; a compound could raise a non-functional pool. **Mitigated but not removed** by
-the MPM-2 secondary. **A hit that raises abundance without restoring function is a real possible
-outcome and would not be a treatment.**
+proxy for function; a compound could raise a non-functional pool. **MPM-2 arrest alone does not
+resolve this:** §2 requires division-level segregation outcomes and distinct attachment,
+checkpoint and cell-fate assessments under the full-length plan. **A hit that raises abundance
+without restoring function remains possible and does not pass the advancement gate.**
 
 **A2 — "GM21284 is the wrong genotype."** Lands fully. It is `753X/R814H`, not N1002K, so a hit
 found here **may not transfer to this child** — the odds table already scores that transfer as
@@ -191,8 +225,8 @@ found here **may not transfer to this child** — the odds table already scores 
 way.
 
 **A3 — "A proteasome inhibitor positive control guarantees a Z′ you cannot achieve with a real
-hit."** Lands, and it is the sharpest. The assay window is defined by a maximal, toxic
-intervention; genuine hits will sit far below it. **Z′ ≥ 0.4 against that control does not
+hit."** A qualified proteasome-inhibitor control may provide a much larger signal than candidate
+compounds. **Z′ ≥ 0.4 against that control does not
 guarantee power to detect a 2-fold change.** ⚠️ **Therefore: a secondary Z′ must also be computed
 against a low-effect reference before believing the screen can see what it is looking for.**
 *This attack changed the protocol rather than being noted and dismissed.*
@@ -244,18 +278,21 @@ stall a facility. Closing it surfaced a real problem.
 > own section boundary. The warning was right; the propagation was not done.
 
 > ### The risk, stated plainly
-> **BubR1 HAS been read by FACS** — Janssen A, Kops GJPL, Medema RH, *PNAS* 2009 (**PMID 19855003**) lists it among antibodies used for "Western blot,
-> Immunofluorescence, and FACS analysis", so the readout is not unprecedented. **But that antibody
-> was "a gift from R. Freire" — not a commercial reagent.** The commercial candidate above is
-> evidenced in our holdings only for immunofluorescence.
+> Janssen A, Kops GJPL, Medema RH, *PNAS* 2009 (**PMID 19855003**) reports **BubR1 immunoblotting**
+> and includes a research BubR1 antibody in a combined list covering immunoblotting,
+> immunofluorescence and FACS (Materials and Methods, Antibodies; Figs 1–4). The list does not
+> establish which application used that antibody. **We have not verified a BubR1 flow-cytometry
+> protocol from this paper**; its supporting information was inaccessible in this review.
 >
-> **So the most important reagent in this screen is unvalidated for the application it is being
-> asked to perform.** That is a real risk to the primary readout, not a formality.
+> The separately retained **vendor-flow evidence in §10.3** remains relevant, but does not establish
+> quantitative performance in this LCL preparation. It is not strengthened by the Janssen antibody
+> list. Application-specific qualification of the selected reagent is still necessary.
 >
-> **Therefore the first bench task is not the screen. It is: does A300-386A give a specific,
-> quantitative intracellular BubR1 signal by flow in LCLs, with a window between patient and
-> control cells?** If it does not, the primary readout must change — most likely to a tagged
-> reporter line — and that is a different, larger project. **This gate comes before the Z′ gate.**
+> **The pilot must establish a specific, quantitative intracellular BubR1 signal in LCLs using the
+> selected reagent**, with suitable controls, an orthogonal protein measurement and a qualified
+> signal window. The current vendor-listed candidates are in §10.3 and the pilot protocol;
+> A300-386A's historical consideration is not validation of the present assay. **Reagent
+> qualification comes before the Z′ gate.**
 
 ### 10.1 ✅ The catalogue-number discrepancy — investigated to resolution
 
@@ -317,19 +354,19 @@ vendors and the literature, and **the answer changes which antibody this protoco
 | epitope | aa **350–400** | aa **276–388** |
 
 > ### 🔴 **Neither of these two** antibodies is vendor-validated for flow cytometry.
-> 🔻 **HEADING NARROWED TWICE, 2026-08-31.** It used to read *"**No** anti-BUBR1 antibody is
-> vendor-validated for flow cytometry"* and *"**the literature has no precedent either**"*. Both
-> were scoped to a two-product check and one product's citing literature, and **both are now
-> falsified — one by the vendors and one by this document itself**:
+> **Earlier headings exceeded the evidence.** A two-product check and one product's citing
+> literature could not support either a field-wide absence of vendor-listed flow reagents or a
+> field-wide absence of published BubR1 flow methods. The retained evidence supports these
+> separate conclusions:
 > **(i)** four Novus/Thermo clones (**8G1, OTI6E5, 7H4, 23GB1640**) *are* vendor-listed for flow at
 > 1 µg/10⁶ cells, several with an intracellular histogram on HeLa — see
 > `pilot-protocol-bubr1-flow.md` §1.
-> **(ii)** §10 of *this file*, seventy lines above, already said *"**BubR1 HAS been read by FACS**
-> — Janssen A, Kops GJPL, Medema RH, *PNAS* 2009 (**PMID 19855003**) lists it among antibodies used for Western blot, Immunofluorescence, and FACS
-> analysis, so the readout is not unprecedented."* **Those two statements could not both stand, and
-> the document never acknowledged it.** §10.3 was appended without reconciling §10. The
-> `A300-386A` measurement below is correct and worth keeping — **it is a fact about one product's
-> citing literature, not about the field**, and that is exactly the narrowing that was lost when it
+> **(ii)** The earlier appeal to Janssen's combined antibody list (**PMID 19855003**) as a BubR1
+> FACS precedent was unsupported. The paper reports BubR1 immunoblotting; we have not verified a
+> BubR1 flow protocol from it (§10). That limitation does not negate the separately documented
+> vendor-flow listings above, which still require qualification in the proposed LCL assay. The
+> `A300-386A` measurement below concerns **one product's
+> citing literature, not the field as a whole**, and that is exactly the narrowing that was lost when it
 > was promoted to a heading.
 >
 > **What remains true:** 39 papers cite `A300-386A`; six also mention flow
@@ -372,51 +409,32 @@ genome editing in a patient-derived line.
 **Naming it now means the pilot has a decision attached to its failure**, rather than becoming the
 point at which the screen quietly stalls.
 
-## 11. How this document compares to the stability protocol, measured
+## 11. What the published experiments calibrate
 
-Asked directly whether this is as precise as the accompanying stability protocol: **it is not, and
-the gap is measurable.**
+**Neither protocol is already calibrated for N1002K.** The fragment protocol includes WT and
+candidate comparators whose roles need qualification in the chosen construct and assay.
+N1002K is the unknown. Published WT-fragment unfolding curves and the full-length WT/K795A thermal
+pair inform development, but do not establish K795A separation or Q921H neutrality in the fragment
+assay (PMID 22698286, Fig 3G/S3D and S3G–H). Q921H's WT-like cellular abundance, segregation,
+alignment and checkpoint results do not supply fragment thermal calibration (PMID 20516114,
+Fig 4D and S2A–B). Counting catalogue numbers or numerical observations does not establish a
+validated control set.
 
-| | stability protocol | this document |
-|---|---|---|
-| catalogue numbers | 28 | 8 → **12** |
-| **published expected values / calibration anchors** | **71** | **0** |
-| derived statistics | 41 | 2 |
+Drug-induced BubR1-abundance measurements do exist: Suijkerbuijk 2010 **Fig 3C** tests WT, I909T
+and L1012P with cycloheximide, geldanamycin and MG132 (**PMID 20516114**). It reports loss of the
+mutant proteins under HSP90 inhibition and prevention of enhanced turnover under proteasome
+inhibition. These are **immunoblot measurements in transfected cells**, not validation of this
+intracellular-flow screen, its signal window or its hit threshold. They motivate testing MG132
+as an abundance-assay control; they do not guarantee its performance here or establish rescue.
 
-**The zero is the honest headline.** Every construct in the stability protocol carries a *published
-expected result*, so a lab knows on day one whether the assay works. **This screen has a weaker
-anchor for its primary readout: no drug-induced BubR1-abundance measurement has been published
-*in this assay format*, and none from a screen** — that is the same absence that makes §0's odds
-estimates rather than measurements.
+**The ≥2-fold abundance criterion in §6 is a provisional design choice, not a threshold derived
+from those papers.** A pilot must establish the actual assay's signal window and precision, then
+justify and freeze hit criteria before confirmatory screening. The fragment study likewise needs
+control and method qualification; neither a calculated detection limit nor a proposed comparator
+substitutes for those measurements.
 
-> 🔴 **CORRECTED 2026-08-31, AND THE FALSIFYING PAPER IS THE ONE THIS DOCUMENT ALREADY DEPENDS ON.**
-> The sentence used to read: *"no drug-induced BubR1-abundance measurement **has ever been
-> published**"*. **That is false, and we hold the paper.** Suijkerbuijk *et al.*, *Cancer Res* 2010
-> (**PMID 20516114**), **Fig 3C** treats cells expressing wild-type, `I909T` or `L1012P` BubR1 with
-> inhibitors of the three pathways controlling protein abundance — **cycloheximide (translation),
-> geldanamycin (HSP90 folding) and MG132 (proteasomal degradation)** — and reports, verbatim:
-> *"levels of both mutant proteins were severely decreased after 5 h treatments with the HSP90
-> inhibitor (Fig. 3C, GA) … inhibition of proteasomal degradation with MG132 (Fig. 3C, MG)
-> prevented the enhanced protein turnover"*. **That is a drug-induced BubR1-abundance measurement**,
-> on a missense allele (`L1012P`) **ten residues from this child's N1002**, with wild-type as the
-> internal control. **And `MG132` is where this document's own maximum-signal positive control comes
-> from** — we took the reagent from the paper and then said the measurement did not exist.
->
-> **What survives, and it is still the honest headline:** that measurement is a **western blot on
-> transfected cells**, not an **intracellular flow readout**, and it is **not a screen** — nobody has
-> published a compound library run against BubR1 abundance. So the ≥2-fold hit criterion below is
-> still asserted rather than derived, and §0's odds are still estimates. **The absence is real; it
-> was stated one category too wide.** [`papers-local/suijkerbuijk2010_cancerres_molecular_causes.txt`,
-> re-read 2026-08-31; control `grep -c MG132` → 9.]
-
-**Consequently the ≥2-fold hit criterion in §6 is asserted, not derived.** The stability protocol
-tabulated its minimum detectable ΔTm across the unknown standard deviation. The equivalent cannot
-be done here until the pilot in §10 produces a signal window. **It is a placeholder with a number
-on it, and it should be replaced by a derived threshold once the pilot exists.**
-
-**What that means practically: the stability protocol can be sent to a laboratory. This one can be
-sent to a laboratory for a pilot.** They are not at the same readiness and should not be presented
-as though they were.
+Both documents can support laboratory design review and qualification work. Functional advancement
+requires the separate full-length plan, not a fragment melting result or an abundance hit alone.
 
 ## 12. What still needs a person
 

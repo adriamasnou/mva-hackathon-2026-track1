@@ -10,11 +10,11 @@ The [functional plan](functional-rescue-plan.md) requires a laboratory to price 
 
 ## Surveillance burden
 
-The SIOP-Europe recommendation of renal ultrasound every three months to age seven implies roughly 28 scheduled scans from birth, subject to how start and boundary visits are counted (PMID 34134020). A previous illustrative cost model used £79.07–£110.22 per scan and assumed 14 outpatient attendances at £339.90 each. Its arithmetic is £6,972.56–£7,844.76; these are historical unit-cost assumptions, not current tariffs, a family bill or a demonstrated MVA cost-effectiveness ratio. **[ESTIMATE; OUR MEASUREMENT]**
+The 2021 SIOP-Europe consensus recommendation of renal ultrasound every three months until the seventh birthday implies roughly 28 scheduled scans from birth, subject to how start and boundary visits are counted (PMID 34134020). A previous illustrative cost model used £79.07–£110.22 per scan and assumed 14 outpatient attendances at £339.90 each. Its arithmetic is £6,972.56–£7,844.76; these are historical unit-cost assumptions, not current tariffs, a family bill or a demonstrated MVA cost-effectiveness ratio. **[ESTIMATE; OUR MEASUREMENT]**
 
 Travel, childcare, time away from work and waiting for results are additional burdens. Costs and preferences belong in discussion with the clinical team. Comparing surveillance costs to a transplant does not establish the benefit of surveillance and is not part of the current argument.
 
-A published cost-effectiveness model exists for Beckwith–Wiedemann surveillance (PMID 11568898). It concerns a different condition, historical costs and model assumptions; it cannot establish present-day cost-effectiveness in MVA.
+A historical Beckwith–Wiedemann model combined Wilms tumour and hepatoblastoma surveillance with four-monthly abdominal ultrasound (PMID 11568898). Its disease risks, assumed tumour-stage shifts and costs in 2000 US dollars do not establish present-day MVA cost-effectiveness. The favourable model result depends partly on the assumed hepatoblastoma benefit; it cannot be transferred directly to renal surveillance in MVA.
 
 ## From a laboratory result to a possible clinical study
 

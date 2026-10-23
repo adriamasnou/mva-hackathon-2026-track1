@@ -6,7 +6,7 @@ This guide has not been field-tested, peer reviewed or endorsed by a clinical te
 
 ## 1. Agreeing a surveillance plan
 
-Published SIOP-Europe guidance recommends renal ultrasound every three months until age seven for MVA (PMID 34134020). Older schedules and no scheduled surveillance are not presented here as equivalent alternatives. Any adaptation should be discussed with the treating team, including the child's circumstances, expected benefit, burdens and uncertainty.
+The 2021 SIOP-Europe consensus guidance recommends renal ultrasound every three months until the seventh birthday for MVA (PMID 34134020). Older schedules and no scheduled surveillance are not presented here as equivalent alternatives. Any adaptation should be discussed with the treating team, including the child's circumstances, expected benefit, burdens and uncertainty.
 
 Questions to bring:
 
@@ -18,7 +18,7 @@ Questions to bring:
 
 **The burden is real.** Four scans a year for seven years is approximately 28 scheduled scans, depending on when surveillance starts and how boundary dates are counted. This is appointment arithmetic, not a prediction of this child's actual care. Travel, time off work, waiting for results and the child's experience matter too. **[OUR MEASUREMENT]**
 
-**The uncertainty is also real.** We do not have a reliable MVA-specific estimate of the chance that screening will improve outcome or produce a false alarm. A study of 63 children with Beckwith–Wiedemann syndrome reported ultrasound abnormalities in 25; that is an abnormality-detection rate in another condition, not a 40% false-positive rate for MVA. Observational BWS work associates screening with earlier-stage detection but does not remove confounding or prove the same benefit in MVA. PMID 19610116; PMID 31583434.
+**The uncertainty is also real.** We do not have a reliable MVA-specific estimate of the chance that screening will improve outcome or produce a false alarm. A retrospective series of 63 children—29 with Beckwith–Wiedemann syndrome (BWS) and 34 with isolated hemihyperplasia—reported ultrasound abnormalities in 25. This was an abnormality-detection proportion in a mixed cohort, not a false-positive rate for MVA. Observational BWS work associates screening with earlier-stage detection but does not remove confounding or prove the same benefit in MVA. PMID 19610116; PMID 31583434.
 
 ## 2. Exploring reproductive options, if and when wanted
 

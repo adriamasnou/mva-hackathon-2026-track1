@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "claim_scope": "Source-faithful retrieval and integrity only; not clinical accuracy, eligibility, usability, time saved, or a live-HFEA search comparison.",
+  "observed_at_utc": "2026-10-23T20:06:07.772013+00:00",
+  "tasks_passed": 11,
+  "tasks_total": 11,
+  "tasks_executed": 11,
+  "source_verification": "whole files and excerpts",
+  "input_sha256": {
+    "taskset": "b2ae06fb9b722e6eed3d205a4e28a743282fe3bbe576b73aae58ab8d1fea31a4",
+    "evidence": "79329a1eb50a7ce474412d545e6a239a53a18e9854ec9c2c8f9e2120a8f576a7",
+    "audit.py": "12f4bd5cc865ce94cac44ef1aac4c792ca72c80410b3805d97bff642202d977e",
+    "audit_query.cjs": "3519881583c576e5534d84f223721446ae14266760484fe17ccfb6995a5894fc",
+    "pgtm-navigator.html": "9bc65306e2c392678e59ee56fdb72328638deba4b347481c9a81fe53dd20c353",
+    "hfea-pgtm-gene-crosswalk.csv": "214b5e626572903d79b9174e50e6efb59b17371338b2bdef9a7a165c55d11c86",
+    "hfea-pgtm-gene-index.json": "ed361d7dd9640936660496211360c31879837839551a62d6d53373645394330c",
+    "hfea-pgtm-provenance.json": "4e75a8e49d0beed59006600f0a6816176c1c2d11a451b0253d92b454a30d10be"
+  },
+  "errors": [],
+  "tasks": [
+    {
+      "id": "T01",
+      "query": "BUB1B",
+      "kind": "gene",
+      "matched_rows": 1,
+      "literal_title_baseline_hit": false,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "T02",
+      "query": "CFTR",
+      "kind": "gene",
+      "matched_rows": 2,
+      "literal_title_baseline_hit": false,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "T03",
+      "query": "DMD",
+      "kind": "gene",
+      "matched_rows": 3,
+      "literal_title_baseline_hit": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "T04",
+      "query": "FMR1",
+      "kind": "gene",
+      "matched_rows": 1,
+      "literal_title_baseline_hit": false,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "T05",
+      "query": "BRCA2",
+      "kind": "gene",
+      "matched_rows": 4,
+      "literal_title_baseline_hit": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "T06",
+      "query": "CHEK2",
+      "kind": "gene",
+      "matched_rows": 1,
+      "literal_title_baseline_hit": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "T07",
+      "query": "PAH",
+      "kind": "gene",
+      "matched_rows": 1,
+      "literal_title_baseline_hit": false,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "T08",
+      "query": "CHIME",
+      "kind": "malformed",
+      "matched_rows": 1,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "T09",
+      "query": "SIX2",
+      "kind": "unresolved",
+      "matched_rows": 1,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "T10",
+      "query": "__AUDIT_NO_SUCH_GENE_20261023__",
+      "kind": "no-match",
+      "matched_rows": 0,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "T11",
+      "query": "BUBR1",
+      "kind": "alias",
+      "matched_rows": 1,
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "target_retrieval": {
+    "navigator_passed": 7,
+    "literal_condition_title_hits": 3,
+    "denominator": 7
+  },
+  "status": "PASS"
+}

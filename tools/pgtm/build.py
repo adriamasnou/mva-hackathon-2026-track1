@@ -86,38 +86,47 @@ def read_hfea():
 
 
 # ---------------------------------------------------------------- phenotype -> gene
+def checked_tsv(path, required):
+    """Reject schema drift and partial rows instead of publishing plausible omissions.
+
+    A missing RelatedGenes header used to pass the BUB1B control while silently
+    discarding related-gene mappings. Whole-file completeness still requires the
+    supplied source hashes; a syntactically complete truncated file is not detectable
+    from TSV structure alone.
+    """
+    with open(path, encoding="utf8", newline="") as f:
+        reader = csv.DictReader(f, delimiter="\t")
+        headers = reader.fieldnames or []
+        if len(headers) != len(set(headers)) or not set(required) <= set(headers):
+            raise ValueError(f"{path.name}: unexpected TSV schema; required {sorted(required)}")
+        for row in reader:
+            if None in row or any(value is None for value in row.values()):
+                raise ValueError(f"{path.name}:{reader.line_num}: partial or extra-column TSV row")
+            yield row
+
+
 def read_clinvar():
     m = {}
-    with open(SRC / "gene_condition_source_id", encoding="utf8") as f:
-        for r in csv.DictReader(f, delimiter="\t"):
-            # 🔴 FIXED 2026-08-31: this read ONLY `AssociatedGenes`, and ClinVar puts the genes
-            # for multi-gene phenotypes in `RelatedGenes` instead. Leigh Syndrome (MIM 256000) has
-            # **48 rows, 0 with AssociatedGenes, 24 distinct RelatedGenes** (BCS1L, COX10, DLAT,
-            # DLD, LRPPRC, MTFMT, NDUFA1, NDUFA10, …) — so it shipped as a MEASURED ZERO with a
-            # blank sources cell. That is an absence produced by the reader, not by the register,
-            # which is the exact failure class this project keeps finding. Both fields now count.
-            mim = (r.get("DiseaseMIM") or "").strip()
-            if mim.isdigit():
-                for field in ("AssociatedGenes", "RelatedGenes"):
-                    for sym in re.split(r"[;,|]", r.get(field) or ""):
-                        sym = sym.strip()
-                        if sym and sym != "-":
-                            m.setdefault(mim, set()).add(sym)
+    for r in checked_tsv(SRC / "gene_condition_source_id",
+                         {"DiseaseMIM", "AssociatedGenes", "RelatedGenes"}):
+        # Keep both fields: multi-gene phenotypes can use RelatedGenes exclusively.
+        mim = r["DiseaseMIM"].strip()
+        if mim.isdigit():
+            for field in ("AssociatedGenes", "RelatedGenes"):
+                for sym in re.split(r"[;,|]", r[field]):
+                    sym = sym.strip()
+                    if sym and sym != "-":
+                        m.setdefault(mim, set()).add(sym)
     return m
 
 
 def read_hpo():
     m = {}
-    with open(SRC / "genes_to_disease.txt", encoding="utf8", errors="replace") as f:
-        for r in csv.DictReader(f, delimiter="\t"):
-            did, sym = (r.get("disease_id") or "").strip(), (r.get("gene_symbol") or "").strip()
-            # 🔴 FIXED 2026-08-31: the `sym != "-"` guard existed in read_clinvar() and NOT here,
-            # and "-" is truthy. HPO uses "-" as its null gene_symbol in 10 rows, two of them
-            # OMIM:176270 (Prader-Willi) — so "-" was published as a gene: a literal `"-"` key in
-            # the shipped index JSON, and `genes=-;HERC2;IPW;MAGEL2;…` in the shipped CSV.
-            # The same guard, in both readers.
-            if did.startswith("OMIM:") and sym and sym != "-":
-                m.setdefault(did[5:], set()).add(sym)
+    for r in checked_tsv(SRC / "genes_to_disease.txt", {"disease_id", "gene_symbol"}):
+        did, sym = r["disease_id"].strip(), r["gene_symbol"].strip()
+        # HPO's '-' sentinel is not a gene, even though it is truthy in Python.
+        if did.startswith("OMIM:") and sym and sym != "-":
+            m.setdefault(did[5:], set()).add(sym)
     return m
 
 

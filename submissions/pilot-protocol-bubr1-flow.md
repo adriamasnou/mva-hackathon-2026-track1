@@ -1,5 +1,7 @@
 # Pilot: can BubR1 abundance be measured by intracellular flow cytometry?
 
+**Proposed assay qualification; clinical-source corrections integrated 23 October 2026.** Historical protein measurements are contextual examples, not an expected N1002K range or a therapeutic threshold. This pilot has not been performed.
+
 **The gate that comes before the screen — and it is now a much cheaper gate than this protocol
 originally assumed.** Neither antibody this protocol first shortlisted is vendor-validated for flow
 cytometry. **But other anti-BubR1 clones are, and we were wrong to say otherwise.**
@@ -55,7 +57,7 @@ figure legends) are `[VERIFIED]` from the datasheets at `papers-local/datasheets
 2026-08-30 from `novusbio.com`; what to *do* about them is ours.
 
 1. **★ Start with `NB100-353` (clone 8G1). [OUR INFERENCE from the datasheet facts above; the datasheets themselves are held at `papers-local/datasheets/`, retrieved 2026-08-30 from `novusbio.com`.]** It is the only option with a **published intracellular
-   flow protocol on the exact reference cell line our calibration anchor uses — HeLa** — including
+   flow protocol on the HeLa reference line used in Matsuura's fibroblast immunoblot comparison** — including
    fixation, permeabilisation, concentration, incubation and an isotype control. That replaces
    §5.1's blind `1:50–1:800` titration with a **published starting point: 4% PFA, 0.1% saponin,
    5 µg/mL, 30 min RT**, and the titration becomes a confirmation rather than a search.
@@ -73,56 +75,37 @@ figure legends) are `[VERIFIED]` from the datasheets at `papers-local/datasheets
 
 **A screen built on an unvalidated readout is not a screen.**
 
-## 2. ★ The calibration anchor — a published expected value
+## 2. Historical protein measurements and their limits
 
-The screen protocol had **no published expected value for its primary readout**, which was its main
-weakness against the companion stability protocol. **This pilot has one.**
+Matsuura *et al.* 2006 (PMID 16411201) studied PCS/MVA families. The title's use of
+"monoallelic" and "PCS" does not make the patients irrelevant to MVA. The important limits
+are the genotypes, cell preparations, assay and reference used.
 
-> **Matsuura *et al.* 2006 (PMID 16411201) measured BubR1 in three MVA patients at
-> 22%, 25% and 29%** of the reference level.
+**Figure 3A:** BubR1 immunoblot intensities in fibroblast lines from patients 1, 2 and 5 were
+**22%, 25% and 29% of the HeLa reference**, normalised to α-tubulin. The Methods (pp.359–360)
+describe **SV40 transformation followed, after crisis, by phTERT transfection**. These are
+transformed-fibroblast immunoblot measurements, not intracellular-flow measurements in LCLs.
 
-> ✅ **AN AUDIT CANDIDATE CHECKED HERE AND REFUTED, 2026-08-31 — recorded so the correction is not
-> made later by someone who reads only the paper's title.** A coverage sweep flagged *"they are not
-> MVA patients"*, on the ground that PMID 16411201 is titled *"**Monoallelic** BUB1B mutations …
-> in seven families with **premature chromatid separation (PCS) syndrome**"*. **The paper's own
-> first sentence settles it the other way:** *"Cancer-prone syndrome of premature chromatid
-> separation (PCS syndrome) with mosaic variegated aneuploidy (MVA) is a rare autosomal recessive
-> disorder …"*, and it calls MVA syndrome *"probably identical to the PCS syndrome"*. **They are
-> MVA patients**, and the anchor stands.
->
-> ⚠️ **What IS a real difference, and it is not the one the sweep found.** Matsuura's patients 1, 2
-> and 5 carry **one truncating allele plus the low-expression `6G3` haplotype** — a second allele
-> *"without detectable mutation"*. **This child carries two identified variants**, a nonsense and a
-> missense. The genetic architectures differ. **The child’s phase, NMD and protein abundance remain unmeasured. The published levels are contextual comparators, not an expected range that this sample must reproduce.**
-> [`papers-local/matsuura2006_ajmg_monoallelic_bub1b.txt`, re-read 2026-08-31; title confirmed by
-> `esummary` for PMID 16411201.]
+**Figure 1 and mutation results (PMID 16411201):** these three patients had a detected truncating BUB1B alteration
+and no second mutation explaining disease identified by the methods used. Patients 1 and 2
+carried the **6G3** second haplotype; patient 5 carried **6G8**. The study's failure to detect a
+second mutation does not establish its absence, and the haplotype label is not itself a proven
+causal sequence variant. These models differ from the present unphased nonsense-plus-missense
+pair. **The child's phase, NMD, protein abundance and N1002K function remain unmeasured.**
 
-**Qualify specificity and linearity independently of the patient value.** A measured level outside the published examples may reflect biology, cell model or measurement. Use knockdown, dilution/linearity and orthogonal protein measurement to distinguish these. Do not tune the assay to force the patient into an expected band. **[OUR INFERENCE]**
+**Figure 3B:** the separate EBV-transformed LCL experiments include family 2 values of **57%**
+for the father, **71%** for the mother and **22%** for the patient, relative to a normal reference
+at 100%. Other normal-individual lanes include **63%, 112% and 158%**. Truncating-allele carrier
+lanes include **13%, 21%, 29% and 57%**; the paper's prose summary of 21–57% omits the 13% lane.
+Values vary widely and overlap between groups. The affected R36Q case has approximately normal
+abundance (**102% in Figure 3B, 104% in the prose**). Neither these individual values nor the
+three fibroblast measurements define a diagnostic reference interval or an expected N1002K signal.
 
-⚠️ **Three honest limits on the anchor, and the third was rewritten on 2026-08-30 because it was
-wrong in both halves.** Matsuura's figures are **% of HeLa**; **those patients are not this
-repository's donor**; and **the 22 / 25 / 29% trio was measured on hTERT-immortalised *fibroblast*
-lines from patients 1, 2 and 5 — not on lymphoblastoid cells.** Proliferation rate, and therefore
-cell-cycle distribution, differs between fibroblasts and LCLs, and §5.13 shows that distribution is
-coupled to BubR1 abundance. **Treat 22–29% as an expected range and direction, not a target to be
-matched to the digit** — which is why criterion 3 is written as a broad 20–35% band.
-
-> 🔴 **WHAT THE PREVIOUS WORDING GOT WRONG, and it was flagged "— checked directly —".** It read:
-> *"the patient material was lymphocytes and fibroblasts, **not** EBV-transformed lymphoblastoid
-> lines."* **Both halves are false, and the paper we hold says so on the same page.** The trio is
-> fibroblast-only (*"fibroblast cell lines from patients 1, 2, and 5 … BubR1 bands of normal size
-> but reduced intensities (22%, 25%, and 29% of HeLa cells)"*), and **Matsuura DOES report
-> EBV-transformed lymphoblastoid lines, at length** — family 2 at mother **71%**, father **57%**,
-> **patient 2 at 22%**; family 6 with carriers at **38%** and **31%** against normal individuals at
-> **112%** and **158%**. **An asserted verification is the most dangerous kind of unverified
-> claim**: "checked directly" told every later reader not to check.
->
-> 🔑 **AND IT IS GOOD NEWS FOR THIS PROTOCOL.** The lymphoblastoid data are the closest published
-> match to what this pilot actually measures — **patient 2's LCL reads 22%**, inside the 20–35%
-> band criterion 3 already specifies, and the normal range of **112–158%** is what a proper
-> unrelated control should look like. The anchor is *stronger* than the previous caveat allowed.
-> [OUR MEASUREMENT — `papers-local/matsuura2006_ajmg_monoallelic_bub1b.txt` re-read 2026-08-30;
-> control `grep -ci bubr1` → 44.]
+**Qualify specificity, linearity, normalisation and precision independently of the patient value.**
+A measured level outside these examples may reflect biology, cell model or measurement. Use
+qualified depletion controls, dilution/linearity and orthogonal protein measurement to distinguish
+these. Do not tune the assay to force a patient into a historical abundance band. Criterion 3
+tests measurement performance; the observed patient abundance remains a result. **[OUR INFERENCE]**
 
 ## 3. 🔴 The precision the assay must reach — derived, not asserted
 
@@ -143,17 +126,19 @@ Z' = 1 - 3·CV·(hi + lo) / (hi - lo)
 | the same, bare 3σ separation | 0.0 | ≤ 11.1% |
 
 > ### 🔴 The trap: the easy comparison is **~1.8×** more forgiving than the one that matters.
-> A pilot that shows "we can clearly separate patient from control cells" would look like a
-> success, be declared one, **and the screen would then fail** — because separating 25% from 100%
-> needs CV ≤ 12% while separating 25% from 50% needs **CV ≤ 6.7%.**
-> **Therefore the pilot's acceptance criterion is CV ≤ 6.7%, not "clear separation".**
+> Separation of a patient and control does not establish precision for a smaller change. In this
+> **hypothetical contrast**, separating 25% from 100% permits CV ≤ 12%, while separating 25% from
+> 50% requires **CV ≤ 6.7%** at the chosen Z′ target.
+> **CV ≤ 6.7% is therefore the proposed engineering target for this contrast**, not a measured
+> N1002K baseline or a guarantee of detecting a clinically meaningful rescue. Qualify the model
+> in the actual assay before confirmation; "clear separation" alone is insufficient.
 > 🔻 **"~3×" corrected to "~1.8×" on 2026-08-31.** **12.0 / 6.7 = 1.79.** The figure 3 is the value
 > of `(hi+lo)/(hi-lo)` for the hard comparison (50 vs 25 → exactly 3.000), not the ratio between
 > the two CV allowances — it was read off the wrong quantity in the same derivation. Both limits
 > re-derived from this file's own formula and both are correct: at Z′ = 0.4,
 > `CV = 0.6 / (3 × (hi+lo)/(hi−lo))` gives **12.00%** for 100 vs 25 and **6.67%** for 50 vs 25.
-> **The trap is entirely real; it is 1.8× rather than 3×, and the acceptance criterion does not
-> move.** [OUR MEASUREMENT — arithmetic, 2026-08-31.]
+> **The allowance ratio is 1.8×, conditional on these chosen contrasts and equal-CV assumptions.**
+> [OUR MEASUREMENT — arithmetic, 2026-08-31.]
 
 ## 4. Materials — catalogue numbers
 
@@ -177,28 +162,28 @@ Z' = 1 - 3·CV·(hi + lo) / (hi - lo)
 >
 > | line | what Coriell actually says | why it cannot be the 100% denominator |
 > |---|---|---|
-> | **GM21657** | *"MOSAIC VARIEGATED ANEUPLOIDY SYNDROME 2; MVA2 · CENTROSOMAL PROTEIN, 57-KD; CEP57"*, father of GM21654/GM21655 | **A different gene.** He is in the *CEP57* family this protocol already lists one row below as its *specificity* control |
-> | **GM22004** | *"MOSAIC VARIEGATED ANEUPLOIDY SYNDROME 1; MVA1"*, *"father of an affected child (GM22006)"* | MVA is **autosomal recessive**, so he is an **obligate heterozygous carrier** at the *BUB1B* locus |
-> | **GM21284** | *"parental cell lines not in the repository"* | **Neither line is a parent of the patient line.** No parent of GM21284 exists at Coriell |
+> | **GM21657** | *"MOSAIC VARIEGATED ANEUPLOIDY SYNDROME 2; MVA2 · CENTROSOMAL PROTEIN, 57-KD; CEP57"*, father of GM21654/GM21655 | A *CEP57*-family comparator; the quoted relationship alone does not verify a molecular carrier genotype or a normal BubR1 reference value |
+> | **GM22004** | *"MOSAIC VARIEGATED ANEUPLOIDY SYNDROME 1; MVA1"*, *"father of an affected child (GM22006)"* | A family comparator **pending molecular genotype verification**; fatherhood and an MVA1 catalogue label alone do not establish a heterozygous *BUB1B* genotype |
+> | **GM21284** | *"parental cell lines not in the repository"* | Neither of the two quoted family relationships identifies a parent of GM21284; its held catalogue record does not list available parental lines |
 >
-> **Why this mattered more than a wrong catalogue number.** These two lines were the **100%
-> denominator** for acceptance criterion 3 (*patient ≈ 20–35% of control*) and the cells §5.1
-> titrates the antibody on. Using a carrier as "normal" compresses the very ratio the assay
-> exists to measure — and the protocol's **own anchor paper says so**: Matsuura 2006 reports
-> lymphoblastoid BubR1 at **63–158% in normal individuals** against **21–57%** in truncating-
-> mutation carriers and **31–71%** in 6G3-haplotype carriers. A carrier denominator would have
-> made a real reduction look smaller than it is, in the conservative direction — which is worse,
-> not better, because it costs sensitivity silently.
+> **Comparator selection matters.** A carrier must not silently become an unaffected reference.
+> Matsuura's LCL examples show wide variation and overlapping values, including the normal and
+> carrier lanes listed in §2; they do not supply reference limits for this flow assay. A carrier
+> with lower BubR1 could compress a patient/control contrast, but the direction and size must be
+> measured in the actual lines. No patient/control abundance band is an acceptance criterion.
 >
 > **The replacement, and why it is defensible.** The reference must be **unrelated to any MVA
 > family**, apparently healthy, and an LCL so that cell type matches. **GM12878** is a
-> CEPH/HapMap pedigree-1463 B-lymphocyte line, the most deeply characterised LCL in existence
-> (1000 Genomes / ENCODE tier 1). *Full disclosure from its Coriell record: it carries* `CYP2C19*2`,
+> CEPH/HapMap pedigree-1463 B-lymphocyte line. *Full disclosure from its Coriell record: it carries* `CYP2C19*2`,
 > *a pharmacogenetic splice variant with no relationship to BubR1 abundance.* **Use at least two
-> unrelated controls**, because criterion 3 is a ratio and a single denominator has no spread.
-> The *CEP57* lines **GM21654 · GM21655 remain the specificity control** — a different MVA gene is
-> exactly what that arm needs — and **GM21657 and GM22004 may still be run as carrier comparators,
-> labelled as carriers**, which is informative. They are simply not "normal".
+> unrelated controls** to characterise between-line variation; neither is required to reproduce
+> a historical percentage. Criterion 3 concerns linearity and orthogonal agreement in the chosen cells.
+> The *CEP57* lines **GM21654 · GM21655 are disease comparators**. A different causal MVA gene
+> does not make them BubR1-negative or establish antibody specificity. Reserve specificity
+> assessment for **qualified BubR1 depletion and orthogonal validation in §5.6**.
+> **GM21657 and GM22004 may be run as family comparators**, with the molecular genotype recorded
+> as unverified unless a source explicitly establishes it. Use a carrier label only after that
+> verification; neither family relationship alone defines a normal-abundance denominator.
 
 Cell lines ~**$262 US-academic / $448 international** each, MTA required.
 
@@ -231,17 +216,32 @@ dilutions on the datasheet are for other applications and other fixation chemist
 
 **Titrate before anything else:** 1:50 · 1:100 · 1:200 · 1:400 · 1:800, on control LCLs, stained
 alongside a matched isotype at each concentration.
-**Choose the dilution maximising the *stain index*** — the published metric for exactly this
-purpose (**Maecker *et al.*, *Cytometry A* 2004, PMID 15536642**), which weights the separation
-between populations by **the spread of the negative**, and therefore penalises a bright reagent
-sitting on a broad background:
+**Compare dilutions using an adapted stain index.** Maecker *et al.* (*Cytometry A* 2004,
+PMID 15536642, p.173) support assessing separation relative to the spread of the negative
+population and permit medians as an alternative to means. The following median/MAD implementation
+and control choice are **our proposed adaptation**, not a published BubR1-flow validation:
 
 ```
-stain index = (median_stained − median_isotype) / (2 × robust SD_isotype)
+MAD_negative = median(|x_negative − median(x_negative)|)
+robust_SD_negative = 1.4826 × MAD_negative
+adapted_stain_index = (median_stained − median_negative) / (2 × robust_SD_negative)
 ```
 
-**Not the dilution giving the brightest signal** — the brightest is usually not the most separated,
-and picking on raw brightness is the standard way to enter a screen with a poor window.
+Calculate this on **linear compensated fluorescence values**, retaining negative compensated
+values without clipping or adding an offset; log/biexponential plots are for display and do not
+change the calculation. Use the same qualified live-singlet gate for the matched samples. If the
+negative dispersion is zero or non-finite, mark the index undefined and investigate rather than
+assigning infinite separation. Freeze the estimator, scale and control definition before
+confirmation. **[OUR ANALYSIS CHOICE]**
+
+The proposed negative population is a **same-line, same-preparation, concentration-matched
+isotype control**, intended to assess background under the chosen staining conditions. Check it
+against unstained and secondary-only controls and appropriate single-stain/FMO controls for
+multicolour interpretation. An isotype control alone cannot establish target specificity or
+eliminate spreading error. The biological depletion and orthogonal checks in §5.6 remain required.
+Select a concentration with useful separation and acceptable background, then confirm it in the
+actual assay; neither maximal brightness nor a high adapted index alone proves BubR1 specificity.
+**[OUR INFERENCE; PROPOSED ANALYSIS]**
 
 ### 5.2 Fix and permeabilise
 
@@ -312,7 +312,9 @@ Compensation set from beads alone is not adequate when one dye is amine-reactive
 
 ### 5.4 🔴 Gating strategy — stated explicitly, because a flow assay without one is not defined
 
-1. **FSC-A vs SSC-A** → the intact lymphoblast population, excluding debris at low FSC.
+1. **FSC-A vs SSC-A** → the intact lymphoblast population, excluding debris at low FSC. Qualify
+   this gate in representative pilot samples from each chosen line before freezing it; a
+   control-only boundary must not silently exclude an altered patient-cell population (§5.10).
 2. **FSC-H vs FSC-A** → **singlets.** Doublets carry double the signal and will otherwise widen the
    CV — which is the exact quantity this pilot must minimise.
 3. **Viability dye vs FSC-A** → live cells only. Dead cells bind antibody non-specifically and
@@ -407,7 +409,7 @@ This is also why
 | 1 | patient + **isotype** control | mouse IgG2a at the same µg/mL as the titrated primary |
 | 2 | patient + **secondary only** | no primary |
 | 3 | **patient + anti-BUBR1** | baseline |
-| 4 | **control LCL + anti-BUBR1** | the anchor comparison |
+| 4 | **control LCL + anti-BUBR1** | comparison with unrelated LCLs; no required patient/control ratio |
 | 5 | **+ BUBR1 knockdown** | specificity — see §5.6 |
 | 6 | **patient + MG132** | **10 µM**, with a **2 / 4 / 6 h** time course |
 | **7** | **patient + VEHICLE (DMSO alone)** | **matched to arm 6's DMSO concentration, same 2 / 4 / 6 h time course** — 🔻 **ADDED 2026-08-31** |
@@ -429,16 +431,17 @@ purpose. **Hence the time course rather than a single invented number.**
 
 ### 5.6 ⚠️ The knockdown control has a practical problem, and it changes where it is run
 
-`dsiBUBR1 5'-GUCUCACAGAUUGCUGCCUCAGAGC-3'` (**Gama Braga 2020**, PMID 33207204; see §5.6) is the right reagent, **but LCLs are
-EBV-transformed B cells and are notoriously refractory to lipid transfection.** Assuming a
-lipofection will work here is the kind of assumption that costs a month.
+`dsiBUBR1 5'-GUCUCACAGAUUGCUGCCUCAGAGC-3'` is directly reported by **Gama Braga 2020**
+(PMID 33207204). Delivery and depletion must be demonstrated in the chosen cells; the published
+reagent does not establish effective transfection in this LCL model.
 
-> **Therefore: run the knockdown specificity arm in an easily transfected adherent line
-> (HeLa or U2OS), not in the LCLs.** Specificity is a property of the *antibody*, not of the cell
-> line, so it transfers. **The anchor comparison (§ arms 3–4) stays in the LCL pair, where the
-> published 22–29% expectation applies.**
-> If a knockdown in LCLs is wanted regardless, it requires **nucleofection**, not lipofection, and
-> the efficiency must be measured rather than assumed.
+**Proposed development arm:** start the knockdown comparison in HeLa or U2OS. A response there
+supports reagent qualification but **does not establish specificity in LCLs under this fixation
+and flow protocol**. Before screening, demonstrate depletion in the chosen LCL preparation with
+a qualified delivery method and an orthogonal protein measurement. Nucleofection is a candidate
+delivery approach to qualify, not an assumed successful method. Failed delivery is an
+indeterminate specificity test, not proof that the antibody fails. Arms 3–4 remain an LCL
+comparison with no prescribed abundance ratio. **[OUR INFERENCE; PROPOSED EXPERIMENT]**
 
 **Knockdown conditions for the adherent arm:** **HeLa (ATCC CCL-2, CVCL_0030)** or **U2OS
 (ATCC HTB-96, CVCL_0042)**, reverse-transfected with a standard lipid reagent (e.g. Lipofectamine
@@ -448,12 +451,12 @@ RNAiMAX).
 An early version specified "10–20 nM". A correction on 2026-08-30 replaced that with a
 **0.1 / 1 / 10 nM** dose–response, reasoning from the *manufacturer's* generic DsiRNA guidance
 (27mer Dicer-substrate, more potent than a 21mer, often effective at ≤1 nM). **That reasoning was
-sound and the answer was wrong**, because generic vendor guidance was preferred over the only
-published use of *this exact duplex*.
+sound and the answer was wrong**, because generic vendor guidance was preferred over the
+verified published protocol for *this exact duplex*.
 
 **Gama Braga et al. 2020 (*Cell Rep* 33:108397, PMID 33207204) — the paper that published this
 sequence — states in its Methods, verbatim: `dsiBUBR1 (20-50 nM)`.** The same paragraph runs
-`dsiCENP-E` at 50 nM and `dsiBUB1` at 20 nM. **That laboratory does not run DsiRNAs at 1 nM.**
+`dsiCENP-E` at 50 nM and `dsiBUB1` at 20 nM. **That paragraph does not establish a 1 nM working dose for dsiBUBR1.**
 The 0.1 nM floor was **200–500× below** the published working concentration and even the 10 nM
 ceiling was 2–5× below it — a titration that could have returned no knockdown and been read as
 antibody failure.
@@ -463,16 +466,15 @@ sitting under it. Report the knockdown at each dose. If ≥70% knockdown is reac
 lowest effective dose for the specificity arm — the manufacturer's off-target argument below is
 still correct, it just cannot justify a range that has never been shown to work.
 
-> 🔴 **CITATION NOTE, and it does not resolve cleanly.** This protocol previously attributed the
-> duplex to **Foley 2011**. **Gama Braga's own Key Resources Table credits it the same way** —
-> `dsiBUBR1 … (Foley et al., 2011)` — so the attribution was inherited from a peer-reviewed
-> source, not invented here. **But we hold Foley et al. 2011 (*Nat Cell Biol* 13:1265,
-> PMID 21874008) in full text, and the duplex sequence does not appear in it**
-> (`grep -c GUCUCACAGAUUGCU foley2011.txt` → 0; that paper's siRNAs target the B56 subunits, and
-> "BubR1" appears 6 times in the whole text). We cannot exclude a supplementary file we do not
-> hold, so we do not assert that Gama Braga is wrong. **What we assert is what we verified:
-> Gama Braga 2020 publishes the sequence and the working concentration, so Gama Braga is the
-> citation a reader needs — and the concentration is the reason it matters.**
+> **Reagent provenance, updated 23 October 2026:** Gama Braga 2020 directly prints this
+> dsiBUBR1 sequence in its Key Resources Table and the **20–50 nM** range in its Cell culture
+> methods (PMID 33207204). Its table credits Foley 2011 (PMID 21874008), but the exact duplex
+> was not identified in the fully read Foley main text or its **now-held, fully read seven-page
+> publisher supplement, Figures S1–S6**. The earlier attribution remains unresolved. Cite Gama
+> Braga for the verified sequence and reported working range; this is not a claim about unpublished
+> material. The proposed **5 / 20 / 50 nM** titration adds a lower dose by design; 5 nM is not a
+> reported working dose in the cited paragraph. Different dose labels within Gama Braga's
+> Figure S3B also preclude assigning every panel a single exact dose from that figure alone.
 > 🔴 **The off-target argument is still real — it just cannot set the dose on its own.** The
 > manufacturer's stated reason for low DsiRNA concentrations is **minimising off-target effects**,
 > and this arm exists **solely to demonstrate SPECIFICITY**, so an unnecessary excess is a genuine
@@ -535,79 +537,59 @@ and no extra sample:
   channel is otherwise unused, since the viability dye was moved to Near-IR (§5.2) and the readout is
   Alexa 488. ⚠️ **This makes it a three-colour experiment: single-stain compensation controls are
   required for all three (§5.3).**
-- **Use DNA content as a REPORTED COVARIATE, not as a filter** — see the correction below, which
-  matters specifically because of this disease.
+- **Report DNA content alongside the primary whole-live-singlet abundance result.** Any secondary
+  DNA-content stratification requires qualification in the actual lines; do not select a normal
+  diploid peak solely because it makes the abundance comparison easier (§5.13a).
 - **Report the cycle distribution alongside every measurement**, and treat any compound that shifts
   it as confounded until shown otherwise.
 
-### 🔴 5.13a A CORRECTION TO THE FIX ABOVE — and it is specific to MVA
+### 5.13a Characterise the actual population before interpreting a DNA-content gate
 
-The obvious implementation is to **gate on G1 and report BubR1 within it.** **In this disease that
-is wrong**, and the reason is the disease's own definition:
+**MVA does not establish a universal >25% aneuploid-cell threshold.** Matsuura 2006 Table I
+reports **9–32%** aneuploidy in affected patients, including several below 25% (PMID 16411201).
+These chromosome-count proportions are not measurements of DNA-content peaks in the proposed
+cultures. A descriptive literature phrase such as "usually >25%" cannot define this line's
+aneuploid fraction, the cells excluded by a flow gate, or their BubR1 abundance.
 
-> **MVA is diagnosed by aneuploidy in — verbatim — *"usually >25%"* of cells.**
-> **More than a quarter of the patient population has abnormal DNA content by definition.**
+A gate based solely on a normal diploid DNA-content distribution **may** distort an aneuploid
+culture. The direction and magnitude of that bias depend on the actual cell states, chromosome
+changes and assay resolution. Do not assume that excluded cells have less BubR1 or that every
+aneuploid cell lies outside a nominal G1 peak. **[OUR INFERENCE]**
 
-Three consequences:
-1. **A G1 gate drawn on normal diploid cells does not map onto the patient line.** Aneuploid cells
-   with gains or losses sit off the 2N peak, so the gate silently excludes them.
-2. 🔴 **Worse, the exclusion is not random — it selects AGAINST the cells carrying the phenotype.**
-   Gating "normal G1 DNA content" in an MVA line preferentially retains its most euploid
-   subpopulation. **If BubR1 level and mis-segregation are related at all — which is the entire
-   thesis — then those are exactly the cells with the most BubR1, and the gate biases the measured
-   value upward.**
-3. **It breaks the patient-vs-control comparison**, since a near-diploid control and an aneuploid
-   patient line are not comparable populations inside "the same" gate.
+For the primary abundance analysis, retain the qualified whole-live-singlet population and report
+its BubR1 histogram, median and DNA-content distribution. Qualify any secondary cell-state
+stratification in the actual lines, specify it before confirmation and report the number and
+fraction of events included and excluded. A shift in DNA content flags a potential cell-state
+confound; an unchanged distribution does **not** exclude other confounding or establish functional
+rescue. The [functional plan](functional-rescue-plan.md) governs candidate advancement.
+**[OUR INFERENCE; PROPOSED ANALYSIS]**
 
-> ### Resolution: measure DNA content, report it, and do not filter on it.
-> The confound being addressed is *"the compound redistributed the cell cycle"*, and that is visible
-> in the **BubR1-versus-DNA-content relationship** without excluding any cell. **Report the median
-> BubR1 of the whole live-singlet population AND the cycle distribution, and flag any well whose
-> distribution has moved.** A hit that raises BubR1 *and* shifts the cycle is confounded; a hit that
-> raises BubR1 with the distribution unchanged is not.
-> **This keeps the aneuploid cells in the analysis, where they belong — they are the disease.**
+### 5.13b Qualify distribution, staining and precision assumptions
 
-### 🔻 5.13b THREE GAPS IN §5.13a ITSELF, found by auditing the fix as a new claim
+**(a) Prespecify a distribution-shift flag.** Report the fraction of events in each qualified
+DNA-content compartment. The proposed rule is to flag a shift greater than **3 SD of the vehicle
+(DMSO) control wells on the same plate** (§5.5b, arm 7). Qualify the compartment definitions and
+their variability in the pilot before confirmation. This is an analysis choice, not a validated
+disease or safety threshold. If compartments cannot be assigned reliably, report the unresolved
+distribution rather than force cells into normal diploid categories.
 
-**Written one pass after §5.13a, because a fix is a claim and gets the same scrutiny as what it
-fixed.**
+**(b) Qualify the DNA readout under both fixation/permeabilisation conditions.** Acquire DNA
+histograms in both §5.2 conditions and assess resolution in each chosen line. Do not assume that
+a methanol-compatible fluorophore alone establishes a reliable DNA-content assay. Select and
+document a condition that supports the intended analysis before confirmation.
 
-**(a) "Flag any well whose distribution has moved" had NO THRESHOLD.** Having criticised an
-asserted hit criterion, the fix introduced a rule with no criterion at all — which is worse, because
-it is unfalsifiable. **Definition now required: report the percentage of events in each cycle
-compartment, and flag a well when any compartment shifts by more than 3 SD of the **vehicle (DMSO) control wells added to §5.5b as arm 7**
-on the same plate.** Same logic as the hit criterion; the plate's own controls set the scale.
+**(c) Inspect the BubR1 distribution before choosing its summary and precision model.** A median
+and the CV across per-well medians can be calculated for a multimodal population, but a median
+alone may conceal changing subgroup proportions or responses. Multiple modes can also reflect
+staining, doublets or cell-state differences; they do not by themselves establish distinct disease
+subpopulations. Report histogram shape, investigate the cause and qualify the analysis for the
+observed distribution. Do not discard a mode to obtain a desired patient value or CV.
 
-**(b) 🔴 The DNA dye's compatibility with METHANOL was never checked** — and Condition B is a
-methanol arm. Methanol permeabilisation changes DNA-dye access and histogram resolution, and this
-protocol asks for a DNA dye and a methanol condition **without ever asking whether they work
-together.** **Add to the §5.2 comparison: acquire the DNA histogram in both fix/perm conditions and
-confirm resolvable G1/G2 peaks before either is chosen.** If the methanol arm cannot give a clean
-DNA histogram, that is a reason to prefer Condition A — a criterion this protocol did not have.
-
-**(c) 🔴 The whole statistical framework assumes a UNIMODAL population, and this disease may not
-provide one.** §3's CV ≤ 6.7% derivation and every use of "median MFI" assume a single well-behaved
-distribution. **A disease-level description of aneuploidy in usually >25% of cells does not establish the fraction in the chosen cultured line. Whether BubR1 is distributed unimodally
-across euploid and aneuploid subpopulations is unknown** — and it is not a safe assumption, since
-the thesis itself proposes that BubR1 level and mis-segregation are linked.
-> **Therefore: unimodality is now a PRECONDITION, checked before the CV criterion is applied.**
-> **Report the BubR1 histogram shape for every arm.** If the patient distribution is bimodal, **a
-> median alone can conceal subgroup responses; qualify the precision model for the observed distribution** — the analysis must move to
-> reporting the subpopulations, and the hit definition changes with it.
-> ⚠️ **A bimodal patient distribution would not be a nuisance. It would be a finding** — it would
-> say the patient's cells are not uniformly BubR1-low, which no published measurement of these
-> lines addresses.
-
-**[OUR INFERENCE throughout §5.13b. (c) rests on the published >25% aneuploidy figure; the
-statistical consequence is our reasoning.]**
-
-**Updated interpretation:** the 20–35% literature range is not an acceptance criterion. The CV ≤6.7% value is the engineering target derived under the assumptions in §3, which must be qualified in the actual cell population. **[OUR INFERENCE from a
-sourced fact — the >25% aneuploidy figure is published; that it makes cycle-gating inappropriate
-here is our reasoning.]**
-
-**[OUR INFERENCE from sourced facts — that BubR1 is an APC/C-Cdh1 substrate degraded after mitotic
-exit is published; that this makes cell-cycle gating necessary for an abundance screen is our
-reasoning, and it is the kind of reasoning that should be checked by a flow cytometrist.]**
+The **CV ≤6.7%** value remains the conditional engineering target for the hypothetical contrast
+in §3. Its suitability and the event-sampling approximation in §5.4 require qualification in the
+actual assay. No historical patient-abundance band or universal aneuploid fraction supplies that
+qualification. A flow cytometrist should review the population definitions, staining and analysis
+before confirmation. **[OUR INFERENCE; PROPOSED ANALYSIS throughout §5.13b]**
 
 ## 5.8 🔴 PROVENANCE OF EVERY DETAIL — and the honest answer is that not all of it is primary
 
@@ -618,14 +600,14 @@ says which is which, because a protocol that hides the difference is worse than 
 
 | detail | source |
 |---|---|
-| patient BubR1 at 22 / 25 / 29% | **PMID 16411201** |
+| historical fibroblast immunoblot examples: 22 / 25 / 29% of HeLa, after SV40/phTERT transformation; not an expected LCL or N1002K range | **PMID 16411201**, Figure 3A and cell-culture Methods |
 | Z′ formula · ≥0.4 · SW ≥2 · CV ≤20% | **NIH/NCATS Assay Guidance Manual** |
 | BD 612502: clone 9, IgG2a, aa 276–388, KO-validated, applications | vendor |
 | A300-386A: **WB + IP only**, epitope aa 350–400 | vendor |
 | A300-386A = **NCBI Gene 701 (*BUB1B*)**, RRID AB_386097 · A300-373A = *BUB1*, RRID AB_2065943 | Antibody Registry + NCBI |
 | fix/perm 4% formaldehyde + 1% Triton, 20 min RT | published, used for BUBR1 staining |
 | MG132 **10 µM** | literature held here |
-| `dsiBUBR1` sequence and its **20–50 nM** working concentration | **Gama Braga 2020**, *Cell Rep* 33:108397, PMID 33207204 (its own resource table credits Foley 2011; we could not find the duplex there — see §5.6) |
+| `dsiBUBR1` sequence and its reported **20–50 nM** working range | **Gama Braga 2020**, *Cell Rep* 33:108397, PMID 33207204, Key Resources Table / Cell culture; earlier Foley attribution unresolved after reading its main text and publisher supplement — see §5.6 |
 | GM21284 / GM21657 / GM22004, type, genotype, price | NIGMS repository |
 | Jackson **715-545-150** | published Key Resources Table |
 | TruStain FcX **422302**, RRID AB_2818986, FACS + ICS | vendor |
@@ -634,31 +616,31 @@ says which is which, because a protocol that hides the difference is worse than 
 | **MIFlowCyt** reporting standard | **PMID 18752282**, ISAC |
 | **L34976** Near-IR, 633/775, fixable, pre-fixation use | vendor |
 | **GM21284 culture: RPMI-1640 + 2 mM L-gln, 15% FBS not heat-inactivated, 37 °C/5% CO₂, split 1:4** | **Coriell/NIGMS catalogue record** |
-| **stain index** as the titration metric | **PMID 15536642** (Maecker 2004) |
+| separation relative to negative-population spread as a titration principle | **PMID 15536642** (Maecker 2004), p.173; our median/MAD estimator, scale and negative-control choice are specified as adaptations in §5.1 |
 | **350 × g, 5 min**; fix 20 min RT **in the dark**; **primary 20 min RT in the dark**; **"predetermined optimum concentration"**, i.e. titration is the vendor's own requirement | vendor intracellular-staining protocol (protocols.io, DOI-versioned) |
 | **≥25,000 events/well** | **DERIVED** — `SE(median) ≈ 1.2533·σ/√n` against the 6.7% budget |
 | **90% methanol, minimum 10 min on ice**; **methanol damages PE and APC** | vendor alcohol-permeabilisation protocols |
 | **715-545-150 = Alexa 488 donkey anti-mouse IgG (H+L) *min X***, flow-validated | Jackson ImmunoResearch |
-| **DsiRNA at 5 / 20 / 50 nM**, bracketing the published 20–50 nM; **a positive transfection control in every experiment** | **Gama Braga 2020 Methods** for the concentration; manufacturer guidance for the off-target rationale and the transfection control |
+| **DsiRNA reported at 20–50 nM**; **a positive transfection control in every experiment** | **Gama Braga 2020 Methods** for the reported range; manufacturer guidance for the transfection control. The added 5 nM arm is our design choice, not a published working dose. |
 | EBV transformation **increases** FcR per cell | literature |
 
 **[B] DERIVED — computed by us from sourced inputs, reproducible**
 
 | detail | how |
 |---|---|
-| **CV ≤ 6.7%** | AGM Z′ formula + the Matsuura baseline |
+| **CV ≤ 6.7%**, conditional engineering target | AGM Z′ formula with the hypothetical 25%-to-50% contrast and equal-CV assumption in §3; not a measured Matsuura or N1002K baseline |
 | **n = 12** | χ² bound on the sample variance — `pipeline/pilot_n.py` |
-| the 3× forgiveness trap in §3 | same derivation |
+| the approximately 1.8× ratio of CV allowances in §3 | same derivation for the two hypothetical contrasts |
 
 **[C] 🔴 CONVENTION OR OUR CHOICE — NOT from a primary source for this assay**
 
-**5 × 10⁵ cells per well · 50 µL staining volumes · 30 min RT secondary · secondary at 1:500 · the
-1:50–1:800 titration range · the dsiRNA **timepoints** 48/72 h (the *concentration* is now sourced — §5.6) · MG132 duration (already flagged) ·
-≥2 passages after thaw.**
+5 × 10⁵ cells per well · 50 µL staining volumes · 30 min RT secondary · secondary at 1:500 · the
+1:50–1:800 titration range · the added **5 nM dsiRNA arm** and **timepoints** 48/72 h (20–50 nM is the reported range — §5.6) · MG132 duration (already flagged) ·
+≥2 passages after thaw · the **median/MAD stain-index implementation and matched negative-control choice in §5.1**.
 
 🔻 **A FIFTH pass corrected the knockdown arm, and a SIXTH pass corrected the FIFTH.** The fifth
 replaced "10–20 nM" with the manufacturer's generic **0.1 / 1 / 10 nM**. The sixth (2026-08-30)
-found that this preferred vendor boilerplate over the **only published use of this exact duplex**:
+found that this preferred vendor boilerplate over the **verified published protocol for this exact duplex**:
 Gama Braga 2020 runs `dsiBUBR1` at **20–50 nM**, so the "corrected" floor was 200–500× below a
 working dose. **★ Now 5 / 20 / 50 nM.** The fifth pass's other finding stands: a **positive
 transfection control was missing**, without which a failed criterion 2 is uninterpretable.
@@ -728,8 +710,11 @@ out and they inflate exactly the quantity being measured.
 
 ## 5.10 Analysis plan, fixed in advance
 
-- **Gates are set once**, on the control-LCL + full-stain sample, and **applied unchanged to every
-  well.** Per-well gate adjustment is how subjective flow analysis becomes unfalsifiable.
+- **Qualify gates in representative pilot samples from each chosen line, then freeze the rules
+  before confirmation.** Apply the same rules to every well; any justified model-specific
+  boundaries must be prespecified. Report included/excluded events and verify that a control-only
+  boundary does not silently remove a patient-cell population. Do not retune gates to obtain a
+  preferred abundance result (§5.13a).
 - **Gating is performed blind to arm assignment** — the well map is unblinded only after the median
   MFIs are exported. Cheap, and it removes the largest source of unconscious bias in flow analysis.
 - **No well is excluded** except for a pre-declared technical reason (fewer than **20,000** live singlet 🔻 *raised from 10,000 on 2026-08-31 with §5.4 — the floor had been left at a value §5.4 retracted, so a well at 12,000 events was below spec and yet required to be kept*
@@ -737,11 +722,11 @@ out and they inflate exactly the quantity being measured.
   would directly manufacture the CV this protocol is testing.
 - Analysis software and version recorded; `.fcs` files retained.
 
-## 5.11 MIFlowCyt conformance
+## 5.11 Prospective MIFlowCyt reporting plan
 
 Flow cytometry has a published minimum-reporting standard — **MIFlowCyt** (Lee *et al.*,
-*Cytometry A* 2008, **PMID 18752282**), an ISAC standard required by *Nature* and PLOS. Its four
-domains, and where this protocol addresses them:
+*Cytometry A* 2008, **PMID 18752282**), an **ISAC minimum-information standard**. This prospective
+protocol addresses its four domains; it does not yet supply a completed experimental record:
 
 | MIFlowCyt domain | here |
 |---|---|
@@ -750,9 +735,12 @@ domains, and where this protocol addresses them:
 | **instrument configuration** | 🟡 **PARTIAL** — lasers implied by the dye choices; **voltages, filter sets and cytometer model must be recorded at run time and cannot be pre-specified here** |
 | **data processing** — gates, transformations, software | §5.4, §5.10 |
 
-**⚠️ The instrument row cannot be closed by us**, because it is a property of the facility's machine.
-**It is named so that it is recorded rather than forgotten**, which is the whole purpose of a
-minimum-reporting standard.
+At execution, complete the run-specific specimen/reagent record, instrument configuration and
+settings, controls and compensation, transformations, gate hierarchy with denominators, analysis
+versions and appropriate raw-FCS access information. A uniquely specified stock instrument model
+can identify fixed components; modifications and unresolved settings require explicit description.
+The standard supports interpretable reporting, not certification of assay specificity, precision
+or clinical validity. No blanket journal-policy requirement is asserted here.
 
 ## 5.12 Adversarial review of THIS pilot
 
@@ -765,13 +753,11 @@ hard on the screen**, and is already recorded there as attack A1.
 
 **P2 — a historical protein-abundance range cannot validate a different cell line.** This criticism stands. The Matsuura series is informative context, but does not establish the expected signal in GM21284 or an N1002K system. Even a value inside the published range is insufficient evidence of specificity. Validate the assay independently, then report the observed biology. PMID 16411201. **[OUR INFERENCE]**
 
-**P3 — "Criterion 2 (knockdown) is run in a different cell type from criteria 3–4."** **Lands, and
-it is the sharpest.** Specificity is demonstrated in HeLa/U2OS while the anchor is measured in LCLs,
-so **strictly, specificity is not demonstrated in the cells the screen will actually use.** The
-justification — that antibody specificity is a property of the antibody — is reasonable but is an
-**assumption, not a measurement.** ⚠️ **Mitigation, now required: if the pilot passes, confirm
-BubR1 depletion in LCLs by nucleofection at least once before the screen begins.** Deferred, not
-dismissed.
+**P3 — a knockdown result in HeLa/U2OS does not establish LCL-flow specificity.** This criticism
+stands. The adherent arm is a proposed development step, not permission to transfer validation
+between cell models and preparations. Before the LCL assay qualifies for screening, demonstrate
+depletion in the chosen LCL preparation using a qualified delivery method, confirm protein loss
+orthogonally and assess the flow response. Delivery failure leaves the test indeterminate (§5.6).
 
 ## 6. Proposed assay-qualification criteria
 
@@ -780,19 +766,22 @@ These are design targets for laboratory review, not a completed preregistration.
 | # | criterion | why |
 |---|---|---|
 | **1** | **Specific signal**: arm 3 ≫ arms 1 and 2 | otherwise it is background |
-| **2** | **Specificity by knockdown**: dsiBUBR1 reduces signal **≥ 50%** | 🔴 **the decisive one.** An antibody signal that does not fall when the target is knocked down is not measuring the target, whatever else it does |
+| **2** | **Specificity by confirmed depletion in the chosen LCL preparation**: proposed flow-signal reduction **≥ 50%**, with orthogonal protein confirmation and passing delivery controls | an adherent-line result alone does not qualify LCL flow; failed depletion makes the specificity test indeterminate |
 | **3** | **Linearity and orthogonal agreement** in the chosen cells, with tolerance fixed from pilot precision before confirmation | validates measurement without forcing a patient value into a historical range |
-| **4** | 🔴 **Precision**: **CV ≤ 6.7%** across replicate wells | §3 — and **not** merely "patient and control separate" |
+| **4** | **Precision**: proposed **CV ≤ 6.7%** across replicate wells, with the summary and model qualified in the actual assay | conditional on §3's hypothetical contrast and equal-CV assumption; patient/control separation alone is insufficient |
 | **5** | **Reproducibility across ≥ 2 antibody lots** and 2 independent days | a screen runs for months |
 
 ## 7. Decision, written before the result
 
-- **All five met** → proceed to Z′ validation and the screen.
-- **1–3 met, 4 failed** *(specific but imprecise)* → the assay measures BubR1 but cannot see a
-  2-fold change. **Optimise before proceeding — do not start the screen.** This is the most likely
-  partial outcome and the one most likely to be waved through.
-- **2 failed** *(no knockdown response)* → **stop.** The reagent is not measuring BubR1 in this
-  format. Try the other antibody once; if it also fails, go to the fallback.
+- **All five met in the intended LCL assay**, with population/analysis assumptions qualified → proceed to Z′ validation for the proposed abundance screen. This does not qualify N1002K function or a therapeutic effect.
+- **1–3 met, 4 failed** *(specific but imprecise)* → the assay has not met the precision target
+  for the chosen hypothetical 2-fold contrast under §3's assumptions. **Optimise and requalify
+  before proceeding.** A failed design target does not establish the size of a biological response.
+- **2 indeterminate** *(delivery/depletion controls fail)* → qualify those controls and repeat;
+  do not infer antibody failure from ineffective depletion.
+- **2 failed despite confirmed depletion** → **stop.** Resolve the mismatch between protein loss
+  and flow signal, including assay linearity and background. Qualify an alternative antibody or
+  readout before proceeding; do not declare the assay specific from the adherent arm alone.
 - **3 failed** → measurement is indeterminate. Resolve dilution/linearity or orthogonal disagreement before screening. A patient value outside the published examples is not itself a failure. Do not infer a carrier state from an abundance band. **[OUR INFERENCE]**
 - **5 failed** *(not reproducible)* → **decompose it before deciding, because the two halves have
   different fixes.**
@@ -804,12 +793,10 @@ These are design targets for laboratory review, not a completed preregistration.
     (§5.10 already requires ≥2 passages), then re-run.**
   - **Fails both** → **stop and go to the fallback.** A readout that is neither lot-stable nor
     day-stable cannot support a 1,520-compound screen where plates are acquired over days.
-- **Unimodality is a PRECONDITION, not a criterion** (§5.13b(c)) → check it **before** criterion 4
-  is applied. **A bimodal patient distribution invalidates the CV, not the assay** — a median and an
-  SD across a two-population well describe neither population. **If it is bimodal, resolve the cause
-  (mixed cell states, incomplete permeabilisation, doublets) before any CV is computed or reported.**
-  *(Added to this tree 2026-08-31: §5.13b(c) created this gate and it appeared in neither §6's table
-  nor this tree, so a lab following §7 alone would never have applied it.)*
+- **Distribution or analysis assumptions unresolved** (§5.13b(c)) → report the data and investigate
+  the cause before interpreting criterion 4. A multimodal histogram does not make a per-well
+  median or its CV undefined, but it can make that summary inadequate. Qualify any subgroup
+  analysis without removing a population merely to meet an abundance or precision target.
 - **Fallback** → an **endogenously tagged fluorescent BubR1 reporter line**: no antibody, cleaner
   quantitation, but genome editing in a patient-derived line and a substantially larger project.
   **Named here so that failure has a route rather than becoming a stall.**

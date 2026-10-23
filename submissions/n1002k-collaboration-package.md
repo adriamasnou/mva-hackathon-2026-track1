@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| **Version** | 1.2 — 2026-10-23; interpretation and evidence limits corrected |
+| **Version** | 1.3 — 2026-10-23; published methods, control scope and instrument adaptation corrected |
 | **Author** | adriamasnou · *Rare Disease, Real Kid: The MVA Hackathon 2026* |
 | **Licence** | CC BY 4.0 |
 | **Companion document** | [`n1002k-reagent-specification.md`](n1002k-reagent-specification.md) — construct design, all four orderable sequences, costings |
@@ -20,7 +20,7 @@ This is a **proposed fragment biophysics sub-study**, not a validated assay or a
 
 The retained literature supports instability for some MVA-associated BubR1 variants, but does not establish N1002K function. Phase and nonsense-mediated decay for the identified pair are unmeasured. The protocol therefore makes no claim that all protein in the child is N1002K. PMID 20516114. **[OUR INFERENCE]**
 
-The experiment compares HIS₆-BubR1(721–1,044) WT and N1002K with K795A and Q921H comparators. Published K795A thermal values concern **full-length GST-BUBR1**, not this fragment. Q921H is a normal-abundance comparator in the cited cellular work; it is not a proven neutral fragment-thermostability or clinical control. All fragment comparators need qualification before interpretation. PMID 22698286; PMID 20516114.
+The experiment compares HIS₆-BubR1(721–1,044) WT and N1002K with K795A and Q921H comparators. Published WT-fragment unfolding curves exist (PMID 22698286, Fig S3G–H), but the reported WT–K795A thermal separation concerns **full-length GST-BUBR1** (Fig 3G/S3D). Isolated full-length Q921H was WT-like in the cited cellular abundance, segregation, alignment and checkpoint assays (PMID 20516114, Fig 4D and S2A–B); this does not establish neutral fragment thermostability or clinical benignity. All fragment comparators need qualification before interpretation.
 
 The C-terminal domain contributes structural and non-catalytic functions; the proposal does not require a universal claim that BubR1 has no catalytic activity. A fragment stability measurement cannot establish checkpoint function, HSP90 dependence or a treatment indication. PMID 22698286; PMID 33207204.
 
@@ -34,7 +34,7 @@ The C-terminal domain contributes structural and non-catalytic functions; the pr
 
 | Item | Source | Notes |
 |---|---|---|
-| *E. coli* expression host | BL21(DE3) or equivalent | **Not specified in ref 1**, which states only *"expressed in E. coli"*. BL21(DE3) is our recommendation for a T7-driven His-tagged construct, not a source parameter. |
+| *E. coli* expression host | **BL21(DE3) T1R** | Reported in ref 1, Supplemental Experimental Procedures, p.10. A substitute host is a laboratory adaptation requiring qualification. |
 | Cloning host | DH5α or equivalent | For plasmid propagation |
 
 ### DNA constructs
@@ -46,13 +46,13 @@ The C-terminal domain contributes structural and non-catalytic functions; the pr
 | WT | baseline | — | ≈$87 + vector $35–55 |
 | N1002K | variant under test | 1002 | as above |
 | K795A | candidate destabilising comparator | 795 | as above |
-| Q921H | normal-abundance cellular comparator; fragment behaviour unknown | 921 | as above |
+| Q921H | candidate WT-like fragment comparator, unqualified; WT-like in the reported full-length cellular assays | 921 | as above |
 
 Brnich et al. require assay controls, a demonstrated dynamic range and justified thresholds before interpreting functional evidence (PMID 31892348). Merely adding two constructs does not meet those requirements or establish an ACMG evidence strength. A WT–variant comparison alone cannot establish calibration.
 
 K795A has published thermal measurements on **full-length GST-BUBR1**: WT 39.1 °C and K795A 34.7 °C (PMID 22698286, Figures 3G/S3D). These values do not establish the behaviour of the isolated 721–1,044 fragment. Qualify the comparator in the actual assay before using it to interpret a negative result.
 
-Q921H retained approximately normal abundance in the cited cellular experiment (PMID 20516114). That does not validate neutral fragment thermostability or normal chromosome-segregation function. It also occurs in cis with L844F in an affected family (PMID 15475955). It is neither a clinically benign calibration variant nor an established negative folding control. If either comparator fails qualification, redesign the control set and classify the assay as indeterminate.
+Isolated full-length Q921H was WT-like in cellular abundance and chromosome segregation (PMID 20516114, Fig 4D, middle panel), and in the reported alignment and checkpoint assays (Fig S2A–B). Those direct functional results do not validate neutral fragment thermostability, every possible BubR1 function or clinical benignity. Q921H also occurs in cis with L844F in an affected family (PMID 15475955). Qualify its proposed WT-like role in the fragment assay before using it as a negative folding comparator. If either comparator fails its prespecified qualification criteria, redesign the control set and classify the assay as indeterminate.
 
 > **CRITICAL** — Order all four constructs as **cloned, sequence-verified genes** (e.g. Twist *Clonal
 > Genes*, specified *"100% sequence perfect, NGS verified"*), **not** as linear gene fragments. Order
@@ -89,22 +89,23 @@ Plasmidsaurus whole-plasmid sequencing ($15/sample, 1-day turnaround).
 
 ### Equipment
 
-| Item | As used in ref 1 | Accepted modern equivalent |
+| Item | As used in ref 1 | Proposed alternative / qualification |
 |---|---|---|
 | Cell disruption | **Emulsiflex** homogeniser | French press, microfluidiser, or sonication |
 | Centrifuge | 4,000 g and 20,000 g capable | any |
 | FPLC | Akta Explorer | any FPLC |
-| **Thermal denaturation** | **Perkin Elmer LS55 fluorimeter** + Neslab RTE circulator + in-cuvette thermometer (Edale), software Fluope | 🔑 **nanoDSF (e.g. NanoTemper Prometheus) is the direct modern equivalent and we recommend it** — see CRITICAL note below |
+| **Thermal denaturation** | **Perkin Elmer LS55 fluorimeter** + Neslab RTE circulator + in-cuvette thermometer (Edale), software Fluope | **NanoDSF is a proposed adaptation requiring qualification**, not an established equivalent — see note below |
 | Circular dichroism | Jasco-32 spectropolarimeter | any far-UV CD instrument with Peltier control |
 
-> 🔑 **CRITICAL — instrument substitution, and why this one is not a compromise.** Ref 1 measures
-> **intrinsic tryptophan fluorescence** (excitation 290 nm, emission followed at 340 nm) in 1 °C
-> steps. **That is precisely the physical observable nanoDSF measures natively**, as the 350/330 nm
-> emission ratio, with far better temperature control, continuous ramping, and ~10 µL sample volumes.
-> A modern nanoDSF instrument is therefore **the same measurement, better executed** — not a
-> substitution that breaks comparability. **Report both the raw 340 nm curve and the 350/330 ratio**
-> if the instrument provides them, so the value can be compared to the published series either way.
-> **[Our recommendation. Ref 1 used the LS55; the equivalence argument is ours.]**
+> **CRITICAL — qualify the instrument adaptation.** Ref 1 follows intrinsic fluorescence of the
+> fragment at **290 nm excitation / 340 nm emission**, using **1 °C steps with 5 min equilibration**
+> and a transition estimated by linear extrapolation. A continuous-ramp 350/330 nm ratio is a
+> different readout and analysis, not automatically a numerically equivalent measurement.
+> For nanoDSF, document the actual instrument's excitation and emission channels, compatibility with
+> nucleotide-containing samples, ramp, aggregation behaviour and transition-fitting method. Do not
+> assume it can select 290 nm excitation or collect a 340 nm trace. Bridge against source-like
+> conditions where practicable; retain raw signals and report method-specific transition estimates.
+> **[Proposed adaptation and qualification requirements; not validation reported in ref 1.]**
 
 ### Reagent setup
 
@@ -123,9 +124,9 @@ four-condition panel exactly as in ref 1:
 3. **+ 250 µM AMP-PNP**
 4. **+ 10 mM MgCl₂ + 250 µM AMP-PNP**
 
-> **CRITICAL** — Run all four conditions for **all four** constructs. Nucleotide and metal binding shift
-> Tm, and a ΔTm measured under only one condition can miss a difference that appears under another —
-> or manufacture one. The panel is the control.
+> **CRITICAL [OUR DESIGN]** — Apply the published four-condition panel to **all four** constructs.
+> Report condition-dependent differences without assuming that nucleotide or metal addition must
+> stabilise the fragment. The panel does not replace qualification of the construct comparators.
 
 ---
 
@@ -152,10 +153,11 @@ four-condition panel exactly as in ref 1:
 5. Express all four constructs **in the same experiment**, under identical induction conditions.
    **CRITICAL STEP** — Batch is a confounder for every downstream comparison. All four constructs must
    travel together from this step onward.
-   > ⚠️ **Induction temperature, IPTG concentration and duration are NOT specified in ref 1** and are
-   > left to the laboratory. Whatever is chosen must be **identical for all four constructs**, and should
-   > be recorded, since a future laboratory reproducing this will need it — one of the reasons this
-   > measurement is worth publishing is that it establishes parameters the source did not report.
+   > **Published conditions:** BL21(DE3) T1R cultures grown at **30 °C to OD₆₀₀ 0.6** in **LB with
+   > 30 µg/mL kanamycin**, then induced with **0.25 mM IPTG for 18 h at 16 °C** (ref 1,
+   > Supplemental Experimental Procedures, p.10, Protein purification). These are source parameters,
+   > not guarantees of N1002K expression. Record any adaptation for the selected vector/host and
+   > apply matched conditions across all four constructs.
 6. Harvest by centrifugation, **15 min at 4,000 g**.
    ■ **PAUSE POINT** — pellets may be frozen at −80 °C.
 
@@ -184,27 +186,37 @@ four-condition panel exactly as in ref 1:
 ### Stage 4 · Thermal denaturation ● TIMING 1 day
 
 14. Prepare all four constructs at matched concentration in each of the four conditions in §Reagent setup.
+    The published WT-fragment fluorescence curves used **1 µM protein** (ref 1, Fig S3G).
+    Qualify signal quality at the chosen concentration and record any adaptation.
 15. **Melt all four constructs side by side in the same run.** **CRITICAL STEP** — The measurement is
-    the ΔTm of N1002K from WT, read against the K795A and Q921H arms melted in the same run. Absolute
-    Tm compared across runs is not the endpoint.
-16. Ramp temperature in **1 °C steps**, equilibrating **5 min** at each step (or the equivalent
-    continuous slow ramp on a nanoDSF instrument).
-17. Record emission **300–400 nm** with excitation at **290 nm**; plot the melting curve at
-    **340 nm**. On nanoDSF, additionally record the **350/330 ratio**.
-    > **CRITICAL** — Excitation at 290 nm rather than 280 nm is deliberate in ref 1, *"due to
-    > interference of the nucleotide by excitation at 280 nm"*. Conditions 3 and 4 contain AMP-PNP.
-    > **Do not default the instrument to 280 nm.**
-18. Determine the denaturation temperature by **linear extrapolation** (ref 1's stated method), or by
-    first-derivative maximum if using nanoDSF — **report which, and use one method throughout.**
-19. **Repeat Stages 2–4 with ≥3 independent protein preparations.** **CRITICAL STEP** — There is no
-    published Tm for this fragment, so reproducibility across independent preparations *is* the
-    anchor. ? **TROUBLESHOOTING**
+    the within-run ΔTm of N1002K from WT. Interpret it only after qualifying the K795A and Q921H
+    comparators for their intended roles. Retain absolute unfolding curves and transition estimates
+    as well as within-run differences.
+16. **Source-like fluorescence method:** increase temperature in **1 °C steps**, equilibrating
+    **5 min** at each step. **Proposed nanoDSF adaptation:** qualify and report its ramp and
+    equilibration settings; do not call a continuous ramp equivalent without a method comparison.
+17. **Source-like method:** record emission **300–400 nm** with excitation at **290 nm**, and plot
+    the melting curve at **340 nm**. Ref 1 selected 290 nm because nucleotide interfered at 280 nm.
+    **NanoDSF adaptation:** report the available raw emission channels and ratio, if used, and
+    qualify interference in AMP-PNP conditions. If the instrument has fixed excitation, it cannot
+    simply reproduce the source's 290 nm setting; unresolved interference prevents interpretation.
+18. **Source-like method:** estimate the transition by **linear extrapolation** (ref 1).
+    **NanoDSF adaptation:** prespecify a qualified fitting method, such as a first-derivative maximum,
+    and report it explicitly. Use one analysis consistently within a comparison; do not pool
+    method-specific transition estimates as though they were interchangeable.
+19. **Repeat Stages 2–4 with ≥3 independent protein preparations [OUR EXPLORATORY DESIGN].**
+    Published WT-fragment unfolding curves exist (ref 1, Fig S3G–H), but do not establish fragment
+    WT–K795A separation, Q921H neutrality or an N1002K threshold. Reproducibility complements
+    control qualification; it does not replace calibration or a confirmatory power calculation.
+    ? **TROUBLESHOOTING**
 
 ### Stage 5 · Orthogonal confirmation (recommended) ● TIMING 0.5 day
 
-20. Acquire far-UV CD spectra for WT and N1002K (and the controls, if material allows) ± 10 mM MgCl₂ / 250 µM AMP-PNP, temperature ramped
-    in 1 °C steps. This tests whether any Tm difference is accompanied by a change in secondary
-    structure content, and distinguishes a destabilised-but-folded protein from a misfolded one.
+20. Acquire far-UV CD spectra for WT and N1002K (and the comparators, if material allows), with and
+    without **10 mM MgCl₂ plus 250 µM AMP-PNP**. The published WT-fragment experiment used **2.5 µM
+    protein** (ref 1, Fig S3H), **1 °C steps**, **3 min equilibration** and an unfolding trace at
+    **222 nm** (Supplemental Experimental Procedures, p.12). Applying this to N1002K is our proposed
+    orthogonal measurement of secondary structure and unfolding, not a cellular functional assay.
 
 ---
 
@@ -230,7 +242,7 @@ four-condition panel exactly as in ref 1:
 | 13 | No expression, or insoluble product | Internal fragment, no native start/stop; frame error at the tag junction | Re-check frame across the cloning junction; confirm a stop codon is present; try lower induction temperature |
 | 13 | One construct expresses, the other does not | A genuinely destabilising variant can reduce soluble yield | **This is itself informative — record it.** Do not discard; note yield for both and proceed with whatever is obtainable |
 | 15 | Noisy or non-sigmoidal melting curve | Protein concentration too low; aggregation; buffer mismatch | Confirm concentration; centrifuge before loading; verify buffer identity between constructs |
-| 17 | Flat signal in AMP-PNP conditions | Excitation set to 280 nm; nucleotide interference | Set excitation to **290 nm** (Step 17) |
+| 17 | Flat signal in AMP-PNP conditions | Possible nucleotide interference or inadequate signal | For a source-like assay, check **290 nm** excitation. For fixed-excitation instruments, qualify interference and signal quality; redesign the measurement if unresolved (Step 17) |
 | 19 | ΔTm inconsistent across preparations | Batch effect; asymmetric purification | Confirm all four constructs were purified identically (Step 12) and travelled together from Step 4 |
 
 ---
@@ -239,7 +251,7 @@ four-condition panel exactly as in ref 1:
 
 **Draft before data collection; not a completed preregistration.** A laboratory must freeze sample size, analysis and technical exclusion rules after assay qualification and before confirmatory unblinding. The exploratory minimum of three preparations is not a power calculation or permission for optional stopping.
 
-Published WT 39.1 °C and K795A 34.7 °C values were measured on full-length GST-BUBR1 (PMID 22698286). They are not acceptance thresholds for the 721–1,044 fragment. A comparator that does not separate from WT in this system may indicate limited assay sensitivity, different construct biology or a failed assay; do not reinterpret that as a positive result for N1002K.
+Published WT 39.1 °C and K795A 34.7 °C values were measured on full-length GST-BUBR1 (PMID 22698286, Fig 3G/S3D). They are not acceptance thresholds for the 721–1,044 fragment, whose WT unfolding curves are in Fig S3G–H. Qualification must establish whether K795A provides reproducible destabilising separation and whether Q921H is WT-like in the actual fragment assay. Q921H is not expected to supply the destabilising separation merely because it is called a comparator. Failure to establish either proposed role requires control redesign and an indeterminate assay classification; it is not a positive result for N1002K.
 
 ### Reproducible lower thermal stability
 
@@ -274,9 +286,9 @@ A domain-wide multiplexed assay could measure many variants and help reveal func
 1. Suijkerbuijk SJ, van Dam TJP, Karagöz GE, von Castelmur E, Hübner NC, Duarte AMS, Vleugel M,
    Perrakis A, Rüdiger SGD, Snel B, Kops GJPL. **The vertebrate mitotic checkpoint protein BUBR1 is
    an unusual pseudokinase.** *Dev Cell* 2012;22(6):1321–1329. PMID **22698286**.
-   *(Thermal denaturation method, buffer and instrument conditions; the 39.1/34.7 °C full-length
-   pair; the 721–1,044 construct definition. Method parameters in §3 are verbatim from this paper's
-   Supplemental Experimental Procedures.)*
+   *(Full-length WT/K795A thermal pair, Fig 3G/S3D; WT-fragment fluorescence and CD curves,
+   Fig S3G–H. Expression, purification and thermal methods: Supplemental Experimental Procedures,
+   pp.9–12. Proposed adaptations and qualification steps are identified separately above.)*
 2. Suijkerbuijk SJ, van Osch MHJ, Bos FL, Hanks S, Rahman N, Kops GJPL. **Molecular causes for BUBR1
    dysfunction in the human cancer predisposition syndrome mosaic variegated aneuploidy.**
    *Cancer Res* 2010;70(12):4891–4900. PMID **20516114**. *(Destabilisation mechanism for the
@@ -291,12 +303,13 @@ A domain-wide multiplexed assay could measure many variants and help reveal func
 
 ## Provenance and competing interests
 
-Every experimental parameter in §Procedure Stages 3–5 is quoted from ref 1 and its Supplemental
-Experimental Procedures. Where a parameter is **not** in the source — expression strain, induction
-conditions, the nanoDSF equivalence argument, the recommendation to purify all constructs
-symmetrically — it is marked as ours at the point of use. The ClinVar tabulation is our measurement,
-dated. Construct sequences, primer design and costings are in the companion document, each carrying
-its own source and date.
+The expression strain, induction conditions, buffers and source-like fluorescence/CD methods are
+reported in ref 1 and its Supplemental Experimental Procedures. The matched purification design,
+four-construct comparisons, exploratory preparation count, control-qualification rules and nanoDSF
+adaptation are our proposals, not methods validated for N1002K by that paper. Published curves and
+full-length thermal values are distinguished above from proposed fragment acceptance criteria.
+Construct sequences, primer design and costings are in the companion document, each carrying its
+own source and date.
 
 **No competing interests.** This work was produced for a public rare-disease hackathon and is
 released CC BY 4.0. **No funding or laboratory commitment is attached to it.**

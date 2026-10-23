@@ -1,0 +1,2136 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-23T22:55:31.488348+02:00",
+  "papers_assessed": 33,
+  "main_texts_read_available_versions": 33,
+  "not_full_text": [],
+  "scope": "Main-text coverage is distinct from figure, supplement and underlying-data coverage; inspect each record. No shelf-wide, systematic-review, independent-human-review or raw-data-validation claim.",
+  "papers": [
+    {
+      "pmid": "11568898",
+      "doi": "10.1002/mpo.1209",
+      "title": "Screening for Wilms tumor and hepatoblastoma in children with Beckwith-Wiedemann syndromes: a cost-effective model.",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/11568898/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "All eight pages (349\u2013356): abstract, introduction, complete model methods and assumptions, results, discussion, Tables I\u2013VII, notes and references. Table values read from fresh layout extraction; Table VII also inspected in the rendered page. No figures or supplementary file are referenced in the held main article.",
+        "gaps": []
+      },
+      "review_record": "clinical-impact.json",
+      "review_record_sha256": "6f965236b78a7f9e316661f7800dee9867dce04ad41284f6790b40dd4fb0f251",
+      "source_records": [
+        {
+          "path": "papers-local/mcneil2001_mpo_cost_effectiveness.pdf",
+          "sha256": "935cfb48a5f220e7d2ca30d32abd58c22ee47cf4294bb0ae97fa69797bfabe62",
+          "bytes": 94571,
+          "role": "main article",
+          "coverage": "Entire main article read using fresh layout extraction; relevant figures inspected visually."
+        },
+        {
+          "path": "/tmp/mva-clinical-review/mcneil2001_mpo_cost_effectiveness-layout.txt",
+          "sha256": "cc437b396f3121ea51de10027d468a72e3b9219a6fc9f8adec0b80fc4863601c",
+          "bytes": 53332,
+          "role": "fresh pdftotext -layout extraction",
+          "coverage": "Entire text read, including all tables, legends and references."
+        },
+        {
+          "path": "papers-local/mcneil2001_mpo_cost_effectiveness.txt",
+          "sha256": "cc437b396f3121ea51de10027d468a72e3b9219a6fc9f8adec0b80fc4863601c",
+          "bytes": 53332,
+          "role": "pre-existing held text / index-linked filename",
+          "coverage": "Located and consulted for source matching; full-read claim refers to fresh PDF layout extraction, not this older extraction."
+        }
+      ]
+    },
+    {
+      "pmid": "15034571",
+      "doi": "10.1038/nm1021",
+      "title": "Treatment with arimoclomol, a coinducer of heat shock proteins, delays disease progression in ALS mice",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/15034571/",
+      "main_text_read": true,
+      "coverage": {
+        "status": "COMPLETE_MAIN_AND_ALL_FIVE_LISTED_SUPPLEMENTS_INSPECTED",
+        "main": "All four pages, journal pp402\u2013405: abstract, introduction/results/discussion, complete Methods, acknowledgments, financial-interest statement, all 20 references. Entire layout extraction read and all four rendered pages visually inspected.",
+        "figures": [
+          "Fig1a\u2013h",
+          "Fig2a\u2013e",
+          "Fig3a\u2013e",
+          "Fig4a\u2013f"
+        ],
+        "figure_legends": "All four complete legends inspected with plots/images.",
+        "tables": "No numbered main-article tables.",
+        "supplements": [
+          "Fig1 PDF pp1\u20132, plot and full legend",
+          "Fig2 PDF pp1\u20132, plot and full legend",
+          "Supplementary Note pp1\u20132, all three sections",
+          "Movie1: all 832 frames, 26.346112 seconds",
+          "Movie2: all 554 frames, 17.542964 seconds"
+        ],
+        "movie_method": "Decoded every frame with ffmpeg; inspected consecutive indexed contact sheets at 160x120 per frame (native 320x240), no temporal sampling. Not native-speed playback; files have no audio stream. Quantitative behavioral scoring not attempted.",
+        "missing_known_published_scope": [],
+        "unavailable_or_unverified": "No underlying raw animal data, original full blots or protocol beyond published content; not claimed read."
+      },
+      "review_record": "pyramid-arimoclomol.json",
+      "review_record_sha256": "419886949ce0c8c69822293b01eb3903ecf687a4062c3aa6e681da4c94bb706b",
+      "source_records": []
+    },
+    {
+      "pmid": "15208629",
+      "doi": "10.1038/ng1382",
+      "title": "BubR1 insufficiency causes early onset of aging-associated phenotypes and infertility in mice",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/15208629/",
+      "main_text_read": true,
+      "coverage": {
+        "main_article": "FULL READ: abstract, complete introduction/results/discussion/methods, references, all legends and Table 1.",
+        "figures": "Main Figures 1\u20135 visually inspected. Supplementary Figures 1\u20134 visually inspected, including both pages of Supplementary Figure 2.",
+        "supplements": "All six publisher supplements read: Figures S1\u2013S4, Table S1, Supplementary Methods. PDF tables checked using pdftotext -layout.",
+        "gaps": [],
+        "main_full_read": true
+      },
+      "review_record": "methods-genetics.json",
+      "review_record_sha256": "770f837b7b9f150d50d8c7f6f0593d6eeebc3814fd54e284dd6ecb451b171517",
+      "source_records": [
+        {
+          "path": "papers-local/baker2004.pdf",
+          "absolute_path": "papers-local/baker2004.pdf",
+          "sha256": "52ad5e14abf69bd1661b283b3fae53432c44394b0c0b38022630e874832eb212",
+          "bytes": 1981498,
+          "role": "main PDF",
+          "read_coverage": "Full text and all main figures/tables"
+        },
+        {
+          "path": "papers-local/baker2004.txt",
+          "absolute_path": "papers-local/baker2004.txt",
+          "sha256": "42858f8afcb4d078bda2661dd9d2e0046b6176e834669119bba8fba11d74d151",
+          "bytes": 32627,
+          "role": "existing main extraction",
+          "read_coverage": "Full text; PDF layout used to disambiguate tables"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-baker-supp1.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-baker-supp1.pdf",
+          "sha256": "68e45feaea681584123c125c3d7a31db43d714d453a7d7e2bbdf943e075735aa",
+          "bytes": 111338,
+          "role": "publisher supplement",
+          "read_coverage": "Figure S1 and legend, full",
+          "retrieval_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng1382/MediaObjects/41588_2004_BFng1382_MOESM1_ESM.pdf"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-baker-supp2.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-baker-supp2.pdf",
+          "sha256": "cfa886ac5780c6fd63accbed1e87377300813220e35eaa5349f009d917d726cd",
+          "bytes": 1541118,
+          "role": "publisher supplement",
+          "read_coverage": "Figure S2 and legend, full",
+          "retrieval_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng1382/MediaObjects/41588_2004_BFng1382_MOESM2_ESM.pdf"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-baker-supp3.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-baker-supp3.pdf",
+          "sha256": "4ebde9e8a6e2efaa3c61616d5b0b5c09579e2511a075a1e9408681f8763ce037",
+          "bytes": 145543,
+          "role": "publisher supplement",
+          "read_coverage": "Figure S3 and legend, full",
+          "retrieval_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng1382/MediaObjects/41588_2004_BFng1382_MOESM3_ESM.pdf"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-baker-supp4.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-baker-supp4.pdf",
+          "sha256": "9a37cd12abba3630bd64b07361d70338d4b323eef9b4465f2458271a4a57297f",
+          "bytes": 87027,
+          "role": "publisher supplement",
+          "read_coverage": "Figure S4 and legend, full",
+          "retrieval_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng1382/MediaObjects/41588_2004_BFng1382_MOESM4_ESM.pdf"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-baker-supp5.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-baker-supp5.pdf",
+          "sha256": "4c7754ea88d000c3114dd12b66a914bbaef758e1106c7a0dc65107a7adeab9d1",
+          "bytes": 7446,
+          "role": "publisher supplement",
+          "read_coverage": "Table S1, full",
+          "retrieval_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng1382/MediaObjects/41588_2004_BFng1382_MOESM5_ESM.pdf"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-baker-supp6.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-baker-supp6.pdf",
+          "sha256": "d5514d1f90ffac9efbc581e5d2688a88deb6ce3b2364a84f03ad0968afb7dfb8",
+          "bytes": 51357,
+          "role": "publisher supplement",
+          "read_coverage": "Supplementary Methods, full",
+          "retrieval_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fng1382/MediaObjects/41588_2004_BFng1382_MOESM6_ESM.pdf"
+        }
+      ]
+    },
+    {
+      "pmid": "15475955",
+      "doi": "10.1038/ng1449",
+      "title": "Constitutional aneuploidy and cancer predisposition caused by biallelic mutations in BUB1B.",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/15475955/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "All three pages (1159\u20131161): opening summary, complete research letter including embedded methods, results and interpretation, Figure 1a\u2013d and legend, Table 1 and all footnotes, acknowledgements and all 15 references. Figure 1 and Table 1 visually inspected; table also read in layout.",
+        "gaps": [
+          "No supplement is identified by a callout in the held three-page article. PCR primer sequences/conditions described as available on request were not obtained. A publisher-page access attempt failed at the Nature identity-provider route; this audit does not claim to have inventoried every publisher-hosted extra."
+        ]
+      },
+      "review_record": "clinical-impact.json",
+      "review_record_sha256": "6f965236b78a7f9e316661f7800dee9867dce04ad41284f6790b40dd4fb0f251",
+      "source_records": [
+        {
+          "path": "papers-local/hanks2004_natgenet_bub1b_mva.pdf",
+          "sha256": "de8a2376b10981c8573764d1516caa0b14e725c01a9de843b261478fb6d7eec6",
+          "bytes": 330504,
+          "role": "main article",
+          "coverage": "Entire main article read using fresh layout extraction; relevant figures inspected visually."
+        },
+        {
+          "path": "/tmp/mva-clinical-review/hanks2004_natgenet_bub1b_mva-layout.txt",
+          "sha256": "aff4d99e4e134c4d3ca91d0386d2fd593f33e227d4931ff9924763de23f37c3f",
+          "bytes": 32842,
+          "role": "fresh pdftotext -layout extraction",
+          "coverage": "Entire text read, including all tables, legends and references."
+        },
+        {
+          "path": "papers-local/hanks2004_natgenet_bub1b_mva.txt",
+          "sha256": "63f230dbbc8b73313554f0ba224f43171ecc77d00bab20fdea1afdcdb627f3b4",
+          "bytes": 14184,
+          "role": "pre-existing held text / index-linked filename",
+          "coverage": "Located and consulted for source matching; full-read claim refers to fresh PDF layout extraction, not this older extraction."
+        }
+      ]
+    },
+    {
+      "pmid": "15536642",
+      "doi": "10.1002/cyto.a.20092",
+      "title": "Selecting fluorochrome conjugates for maximum sensitivity",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/15536642/",
+      "main_text_read": true,
+      "coverage": {
+        "main_article": "FULL READ: complete five-page article, methods/examples/discussion, formula, references and legends.",
+        "figures": "Figures 1\u20133 visually inspected; formula checked in PDF layout.",
+        "supplements": "No supplementary file identified for this article.",
+        "gaps": [
+          "No assay validation data for a BubR1 antibody are supplied by this paper. This is a scope limitation, not an unread part of the article."
+        ],
+        "main_full_read": true
+      },
+      "review_record": "methods-genetics.json",
+      "review_record_sha256": "770f837b7b9f150d50d8c7f6f0593d6eeebc3814fd54e284dd6ecb451b171517",
+      "source_records": [
+        {
+          "path": "papers-local/maecker2004_cytometrya_fluorochrome_selection.pdf",
+          "absolute_path": "papers-local/maecker2004_cytometrya_fluorochrome_selection.pdf",
+          "sha256": "4731e6ce65e22774319ba3979035c64a37fcf5628051db696ac7db3b4e4d1120",
+          "bytes": 749507,
+          "role": "main PDF",
+          "read_coverage": "Complete article, formula and Figures 1\u20133"
+        },
+        {
+          "path": "papers-local/maecker2004_cytometrya_fluorochrome_selection.txt",
+          "absolute_path": "papers-local/maecker2004_cytometrya_fluorochrome_selection.txt",
+          "sha256": "550d66898e77d7cb5a1731046fdad0767f9a3f03f7cbe58f7b3fba4acdfd6d0c",
+          "bytes": 23261,
+          "role": "existing main extraction",
+          "read_coverage": "Complete article; formula cross-checked in PDF"
+        }
+      ]
+    },
+    {
+      "pmid": "16411201",
+      "doi": "10.1002/ajmg.a.31069",
+      "title": "Monoallelic BUB1B mutations and defective mitotic-spindle checkpoint in seven families with premature chromatid separation (PCS) syndrome.",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/16411201/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "All ten pages (358\u2013367): abstract, introduction, all subjects/materials/methods, results, discussion, acknowledgements and references, Tables I\u2013III and Figures 1\u20134 with every legend. Figures 1\u20134 inspected visually, including pedigree haplotypes and densitometry labels; all table values read in fresh layout.",
+        "gaps": []
+      },
+      "review_record": "clinical-impact.json",
+      "review_record_sha256": "6f965236b78a7f9e316661f7800dee9867dce04ad41284f6790b40dd4fb0f251",
+      "source_records": [
+        {
+          "path": "papers-local/matsuura2006_ajmg_monoallelic_bub1b.pdf",
+          "sha256": "1e1562911f81dd8fa6b4463a68e633be453f1c2843b622dfbeb0a6d6fd102e54",
+          "bytes": 416718,
+          "role": "main article",
+          "coverage": "Entire main article read using fresh layout extraction; relevant figures inspected visually."
+        },
+        {
+          "path": "/tmp/mva-clinical-review/matsuura2006_ajmg_monoallelic_bub1b-layout.txt",
+          "sha256": "7350b494df8df660d42b0b9f12a426c152e1c318e8ec619f4da9d83edf0e013b",
+          "bytes": 61083,
+          "role": "fresh pdftotext -layout extraction",
+          "coverage": "Entire text read, including all tables, legends and references."
+        },
+        {
+          "path": "papers-local/matsuura2006_ajmg_monoallelic_bub1b.txt",
+          "sha256": "d96309981b590bbb07f8b4eaab46d084ceeca16569fa32e7e8c3ce2712965d6f",
+          "bytes": 42250,
+          "role": "pre-existing held text / index-linked filename",
+          "coverage": "Located and consulted for source matching; full-read claim refers to fresh PDF layout extraction, not this older extraction."
+        }
+      ]
+    },
+    {
+      "pmid": "18551622",
+      "doi": "10.1002/mus.21059",
+      "title": "Arimoclomol at dosages up to 300 mg/day is well tolerated and safe in amyotrophic lateral sclerosis",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18551622/",
+      "main_text_read": true,
+      "coverage": {
+        "status": "COMPLETE_SUPPLIED_MAIN_ARTICLE_READ_AND_VISUALLY_INSPECTED",
+        "main_pdf_pages": 8,
+        "main_pages_text_read": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "main_pages_visually_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "journal_pages": "837-844",
+        "figures": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "tables": [
+          "1",
+          "2",
+          "3"
+        ],
+        "legends_and_footnotes": "All inspected visually with their figure/table",
+        "sections": [
+          "abstract",
+          "introduction",
+          "methods",
+          "results",
+          "discussion",
+          "consortium appendix",
+          "funding/acknowledgments",
+          "all27 reference entries"
+        ],
+        "method": "Read complete pdftotext-layout extraction, rendered every page with pdftoppm -scale-to1800 -png and inspected every page; inspected source table anomalies directly.",
+        "supplement_check": {
+          "article_reference_to_external_supplement_found": false,
+          "method": "Complete article read plus text screen for supplement/supporting/online/appendix; appendix is inside p843",
+          "external_supplements_read": 0,
+          "publisher_inventory_rechecked": false,
+          "limit": "No supplement is referenced in this supplied article. This is not proof that no publisher-only supplementary object exists; no external request was authorized/performed."
+        },
+        "outside_scope": [
+          "participant-level data",
+          "unpublished phase1 studies",
+          "all27 cited papers as full papers",
+          "independent re-review of the2024ALS paper",
+          "publisher-wide supplement inventory"
+        ],
+        "retained_renderings": "papers-local/supplementary/cudkowicz2008-review/page-1.png through page-8.png. Original temporary renders were visually inspected and removed; identical-parameter renders were regenerated from the unchanged PDF here at user request."
+      },
+      "review_record": "cudkowicz2008.json",
+      "review_record_sha256": "782ef3f5ac2d098fd6e783ea5aac3f5ab792ccd9ca75bf72820705f9a78db8a4",
+      "source_records": [
+        {
+          "path": "papers-local/cudkowicz2008_musclenerve_arimoclomol_als.pdf",
+          "role": "primary_licensed_full_text",
+          "bytes": 147507,
+          "sha256": "201ecd9c37e1931b69c57acc73eff5091e0245c4c7ce125990fb3d0f94dc5466"
+        },
+        {
+          "path": "papers-local/cudkowicz2008_musclenerve_arimoclomol_als.txt",
+          "role": "primary_layout_extraction",
+          "bytes": 49135,
+          "sha256": "c168e3a0e0df87733317865d9406dc5e213b1d81b204e72e8c2d52001a45709c"
+        }
+      ]
+    },
+    {
+      "pmid": "18752282",
+      "doi": "10.1002/cyto.a.20623",
+      "title": "MIFlowCyt: the minimum information about a Flow Cytometry Experiment",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18752282/",
+      "main_text_read": true,
+      "coverage": {
+        "main_article": "FULL READ: complete main article, Table 1, references and all sections.",
+        "figures": "Main Table 1 inspected visually and through pdftotext -layout. The main article has no experimental figure set. Worked-example Figures 1\u20137 visually inspected.",
+        "supplements": "Full 23-page normative standard, full 11-page worked experiment and full three-page required-information summary read. Normative example tables read in layout extraction.",
+        "gaps": [],
+        "main_full_read": true
+      },
+      "review_record": "methods-genetics.json",
+      "review_record_sha256": "770f837b7b9f150d50d8c7f6f0593d6eeebc3814fd54e284dd6ecb451b171517",
+      "source_records": [
+        {
+          "path": "papers-local/maecker2008_miflowcyt.txt",
+          "absolute_path": "papers-local/maecker2008_miflowcyt.txt",
+          "sha256": "c9d7dc83f6ddb504057f1e39b46dcf5341ec7385c7db95539715a091228783a0",
+          "bytes": 30716,
+          "role": "misnamed existing main extraction",
+          "read_coverage": "Complete main text; identity is Lee, not Maecker"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-miflow.xml",
+          "absolute_path": "papers-local/audit-methods-20261023-miflow.xml",
+          "sha256": "61782a58214b9592ba6758c0e4f3596c9d955c2142eebc6654c34f79f3844f81",
+          "bytes": 76874,
+          "role": "NCBI full XML",
+          "read_coverage": "Complete main article, including supplement identifiers",
+          "source_landing_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2773297/"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-miflow-main.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-miflow-main.pdf",
+          "sha256": "fbb7e5551cab2a3266ad56cfe0460f14525ff6fc9dd68b25d0596589a2f8198b",
+          "bytes": 99015,
+          "role": "main PDF",
+          "read_coverage": "Complete main article and Table 1",
+          "retrieval_url": "https://flowcore.hsc.wvu.edu/media/15842/miflowcyt-std-2008.pdf"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-miflow-standard.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-miflow-standard.pdf",
+          "sha256": "c0369bc914f9016cab10482fda05df201560afb18ec9597b7d05b61f8aaee5a1",
+          "bytes": 77660,
+          "role": "normative supplement",
+          "read_coverage": "All 23 pages, including requirements and example tables",
+          "retrieval_url": "https://health.wvu.edu/media/v3opio42/miflowcyt-sup-descript-outline.pdf"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-miflow-example.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-miflow-example.pdf",
+          "sha256": "bfa88986848452ec001ad0e4b46ac326b9d3797586f4de42df58149b78f92a6e",
+          "bytes": 405508,
+          "role": "worked-example supplement",
+          "read_coverage": "All 11 pages and Figures 1\u20137",
+          "retrieval_url": "https://health.wvu.edu/media/a34fut4u/miflowcyt-sup-example-experiment-5.pdf"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-miflow-summary.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-miflow-summary.pdf",
+          "sha256": "42bc16e690e9971cfced9c7b68dd1ed6a34e6291329e617268e2d9b5f1420600",
+          "bytes": 19128,
+          "role": "summary supplement",
+          "read_coverage": "All three pages",
+          "retrieval_url": "https://health.wvu.edu/media/2y3pqkv0/miflowcyt-sup-required-info-summary.pdf"
+        }
+      ]
+    },
+    {
+      "pmid": "19183864",
+      "doi": "10.2478/s11658-009-0002-8",
+      "title": "Activation of the heat shock response in a primary cellular model of motoneuron neurodegeneration-evidence for neuroprotective and neurotoxic effects",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19183864/",
+      "main_text_read": true,
+      "coverage": {
+        "main_text_complete": true,
+        "pdf_pages_read": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "printed_pages_read": "319\u2013335",
+        "sections": [
+          "abstract",
+          "complete introduction",
+          "all methods subsections",
+          "complete results",
+          "complete discussion",
+          "acknowledgements",
+          "all 45 reference entries"
+        ],
+        "figures": [
+          {
+            "number": 1,
+            "panels": "A\u2013D",
+            "pdf_page": 6,
+            "printed_page": 324,
+            "legend_read": true,
+            "visually_inspected": true
+          },
+          {
+            "number": 2,
+            "panels": "A\u2013F",
+            "pdf_page": 8,
+            "printed_page": 326,
+            "legend_read": true,
+            "visually_inspected": true
+          },
+          {
+            "number": 3,
+            "panels": "A\u2013I",
+            "pdf_page": 9,
+            "printed_page": 327,
+            "legend_read": true,
+            "visually_inspected": true
+          }
+        ],
+        "tables": "No main tables present; numeric results checked in layout extraction and rendered figure pages.",
+        "supplements": {
+          "status": "none_identified_in_inspected_publication_records",
+          "pmc_metadata": "pmc-prop-has-supplement=no; pmc-prop-pdf-only=yes",
+          "publisher_check": "No supplementary-material section or article supplement links identified on the retrieved publisher page.",
+          "main_pdf_check": "No supplementary-material citations/links in the complete PDF.",
+          "unavailable_identified_supplement_files": []
+        },
+        "missing_or_unreported_materials": [
+          "Separate one-hour pretreatment data explicitly not shown (p325); cannot be independently examined.",
+          "Raw replicate-level survival values, exact n per point and quantitative Hsp70/caspase datasets are not supplied in the inspected publication.",
+          "No unambiguous reconciliation of the timing/dose/endpoint inconsistencies described in HS-Q1\u2013Q4."
+        ],
+        "access_gaps": [
+          "PMC browser HTML route returned reCAPTCHA; publisher PDF and Europe PMC XML supplied the article by lawful independent routes, so there is no remaining main-text/figure access gap."
+        ],
+        "not_claimed": [
+          "Independent raw-data verification",
+          "Causal proof of HSF1/Hsp70 mediation",
+          "Full reads of the 45 cited papers",
+          "Clinical MVA efficacy/safety or contraindications",
+          "Existence or availability of undisclosed supplementary data"
+        ]
+      },
+      "review_record": "pyramid-heatshock.json",
+      "review_record_sha256": "b0b764e84454c27b7038e3e724295f7b1972107b1030cca077935f226bdfbc0e",
+      "source_records": [
+        {
+          "path": "papers-local/kalmar2009_cmbl_heatshock_neuroprotection_neurotoxicity.pdf",
+          "sha256": "6cbc1e8e98be924823e48875fb7918bdc11a594055de0452aef988781a59f047",
+          "bytes": 2317472,
+          "role": "canonical_main_article",
+          "coverage": "All 17 PDF pages (printed pp319\u2013335); main text, figures 1\u20133, legends, acknowledgements and references",
+          "url": "https://link.springer.com/content/pdf/10.2478/s11658-009-0002-8.pdf"
+        },
+        {
+          "path": "papers-local/kalmar2009_cmbl_heatshock_neuroprotection_neurotoxicity.txt",
+          "sha256": "14ed5efc5c13ea40221fb01337ecb4d4e52240de0762961a0e81882f9160a786",
+          "bytes": 48520,
+          "role": "canonical_layout_text",
+          "coverage": "Complete pdftotext -layout extraction; 17 page boundaries; read in three non-truncated blocks",
+          "url": null
+        },
+        {
+          "path": "papers-local/audit-pyramid-heatshock-crossref.json",
+          "sha256": "358d6eec1085c1a3f39cd2a2f4a39cff2f56b54a8a01cdc32135b6a0cc7a14cd",
+          "bytes": 17266,
+          "role": "identity_and_reference_metadata",
+          "coverage": "DOI/title/authors/publisher links plus complete deposited list of 45 references inspected",
+          "url": "https://api.crossref.org/works/10.2478%2Fs11658-009-0002-8"
+        },
+        {
+          "path": "papers-local/audit-pyramid-heatshock-pubmed-esummary.json",
+          "sha256": "54209bed284a951569290cc4dd7d07c44b79aa385815f879abc70b6edca7a9d5",
+          "bytes": 1971,
+          "role": "identity_metadata",
+          "coverage": "PMID/DOI/PMCID/title/pages verified",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=19183864&retmode=json"
+        },
+        {
+          "path": "papers-local/audit-pyramid-heatshock-europepmc.xml",
+          "sha256": "61f738fae2a7d8bd95451815b2caff0ba81195088d8d1763486522cf7a1a3f3e",
+          "bytes": 102927,
+          "role": "alternate_article_and_repository_metadata",
+          "coverage": "Front matter and explicit has-supplement=no checked; not counted as a second paper",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6275696/fullTextXML"
+        },
+        {
+          "path": "papers-local/audit-pyramid-heatshock-publisher.html",
+          "sha256": "8f48ebdf857b1215924a729e594f3ee34bf5e2f0094aea3949f8468b7da85b3a",
+          "bytes": 350592,
+          "role": "publisher_access_page",
+          "coverage": "Identity/full-PDF link and absence of supplement section/asset links checked",
+          "url": "https://link.springer.com/article/10.2478/s11658-009-0002-8"
+        },
+        {
+          "path": "papers-local/audit-pyramid-heatshock-pmc-access-response.html",
+          "sha256": "8e38909e3fbb9385c5c9baa4b521f1b3dcf78deb90cfe4590ec625cccf613854",
+          "bytes": 21261,
+          "role": "failed_access_response",
+          "coverage": "reCAPTCHA page only; not article text and not counted as read paper",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6275696/"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-crossref-31900865.json",
+          "sha256": "103c6c264ba1574bbe24a52c2eaeb90a211f39c6b30a91a614b873911ae90205",
+          "bytes": 30157,
+          "role": "existing_pyramid_seed_metadata",
+          "coverage": "Kuta reference bb0115 independently points to this DOI; no write to this seed file",
+          "url": null
+        }
+      ]
+    },
+    {
+      "pmid": "19395653",
+      "doi": "10.1093/carcin/bgp101",
+      "title": "Dietary flavonoid fisetin induces a forced exit from mitosis by targeting the mitotic spindle checkpoint",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19395653/",
+      "main_text_read": true,
+      "coverage": {
+        "status": "full_main_article_read_supplement_access_gap",
+        "main_sections": [
+          "abstract",
+          "complete Introduction",
+          "complete Materials and methods",
+          "complete Results",
+          "complete Discussion",
+          "all main legends 1\u20135",
+          "funding/end matter"
+        ],
+        "main_figures_visually_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "supplement": "Supplementary Figures S1\u2013S3 and Videos 1\u20138 were identified in the article/PMC links but not accessed or read/viewed.",
+        "gaps": [
+          "PMC binary/index links returned download/challenge HTML instead of the requested assets; Europe PMC supplementaryFiles did not supply an OA package; publisher/legacy supplement routes were inaccessible in this environment. Figures S1\u2013S3 and all eight videos remain unread/unviewed."
+        ],
+        "limits": "Complete main-paper read is confirmed; complete paper-plus-supplement coverage is not claimed. Main time-lapse sequences were inspected in the published figures, not by watching the supplementary movies."
+      },
+      "review_record": "therapeutics.json",
+      "review_record_sha256": "4a453c1de587a01f660a95d15c9f7358e4b2295822fdbc43d1ffa37bf621d1c2",
+      "source_records": [
+        {
+          "path": "papers-local/salmela2009_carcinogenesis_fisetin_spindle_checkpoint.pdf",
+          "sha256": "ee9a7ed1f8dc7d21c5e89321f7f0205184714d944165550ff454cd19e398337f",
+          "bytes": 883092,
+          "role": "main_article_pdf",
+          "read_coverage": "complete main article; figures also inspected as separate images"
+        },
+        {
+          "path": "papers-local/salmela2009_carcinogenesis_fisetin_spindle_checkpoint.txt",
+          "sha256": "d8ce015ec456aa78cf97120c37d0e55ae7c8e8dbb7b649d079f5995e6fbde151",
+          "bytes": 65583,
+          "role": "held_main_text",
+          "read_coverage": "complete main text"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-salmela-layout.txt",
+          "sha256": "d8ce015ec456aa78cf97120c37d0e55ae7c8e8dbb7b649d079f5995e6fbde151",
+          "bytes": 65583,
+          "role": "main_layout_extraction",
+          "read_coverage": "fresh pdftotext -layout extraction; figure/method values checked"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-salmela-carcinbgp101f01_ht.jpg",
+          "sha256": "0c195abda89e2e9ac98930b07d1a3956ffd87ed8efaa901847618085c0d8676a",
+          "bytes": 91772,
+          "role": "main_figure_image",
+          "read_coverage": "all main panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-salmela-carcinbgp101f02_ht.jpg",
+          "sha256": "34717ee02a597d24cdf62342f7563081f93ade74a371ebd8cc41b29f51cbf957",
+          "bytes": 240459,
+          "role": "main_figure_image",
+          "read_coverage": "all main panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-salmela-carcinbgp101f03_ht.jpg",
+          "sha256": "ddbc1f1593b44988597a989b97d93ad40aec8880ff5600995ca4487e4a0f4eca",
+          "bytes": 164773,
+          "role": "main_figure_image",
+          "read_coverage": "all main panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-salmela-carcinbgp101f04_ht.jpg",
+          "sha256": "6cf598a2206f5a3fa3a7cefc694c4c4caeffd23a82589224e7f6a52d434fb215",
+          "bytes": 100305,
+          "role": "main_figure_image",
+          "read_coverage": "all main panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-salmela-carcinbgp101f05_ht.jpg",
+          "sha256": "e0f763b2afca30790c58eb11fa0c84a543dcb86566e8025db715ade5e4cf7c32",
+          "bytes": 56545,
+          "role": "main_figure_image",
+          "read_coverage": "all main panels"
+        }
+      ]
+    },
+    {
+      "pmid": "19610116",
+      "doi": "10.1002/ajmg.a.32966",
+      "title": "Experience with hemihyperplasia and Beckwith-Wiedemann syndrome surveillance protocol.",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19610116/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "All seven pages (1691\u20131697): abstract, introduction, patients/methods, results, discussion, end note added in proof, Tables I\u2013II, Figures 1\u20134 and legends, and references. Figures 1, 2A\u2013D, 3 and 4 and Table II inspected in rendered pages; table values read in layout.",
+        "gaps": []
+      },
+      "review_record": "clinical-impact.json",
+      "review_record_sha256": "6f965236b78a7f9e316661f7800dee9867dce04ad41284f6790b40dd4fb0f251",
+      "source_records": [
+        {
+          "path": "papers-local/zarate2009_ajmga_bws_surveillance.pdf",
+          "sha256": "3aca667dcfbca965928e57a26ec62554a8925bb27678e51843de101da1e1bf25",
+          "bytes": 207491,
+          "role": "main article",
+          "coverage": "Entire main article read using fresh layout extraction; relevant figures inspected visually."
+        },
+        {
+          "path": "/tmp/mva-clinical-review/zarate2009_ajmga_bws_surveillance-layout.txt",
+          "sha256": "4ad1a64cc19a9334c42b0fe17cd6573b1bc329fdbff27012908416a99d97e37f",
+          "bytes": 47529,
+          "role": "fresh pdftotext -layout extraction",
+          "coverage": "Entire text read, including all tables, legends and references."
+        },
+        {
+          "path": "papers-local/zarate2009_ajmga_bws_surveillance.txt",
+          "sha256": "4ad1a64cc19a9334c42b0fe17cd6573b1bc329fdbff27012908416a99d97e37f",
+          "bytes": 47529,
+          "role": "pre-existing held text / index-linked filename",
+          "coverage": "Located and consulted for source matching; full-read claim refers to fresh PDF layout extraction, not this older extraction."
+        }
+      ]
+    },
+    {
+      "pmid": "19855003",
+      "doi": "10.1073/pnas.0904343106",
+      "title": "Elevating the frequency of chromosome mis-segregation as a strategy to kill tumor cells",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19855003/",
+      "main_text_read": true,
+      "coverage": {
+        "main_article": "FULL READ: abstract, complete results/discussion/materials and methods, references and all legends.",
+        "figures": "Main Figures 1\u20134 visually inspected. Main quantitative passages checked against PDF layout.",
+        "supplements": "NOT READ: original supporting information remained inaccessible after lawful publisher/PMC/Europe PMC routes. Main-text summaries of SI results were read, but are not equivalent to reading the SI.",
+        "gaps": [
+          "Supporting Figures S1\u2013S10 and detailed supporting methods were not obtained. Reagent-to-modality assignment and SI-only rescue controls therefore cannot be independently adjudicated.",
+          "NCBI/Europe PMC XML retrieval yielded metadata rather than a full article body for this item; an assets response reported unavailable/non-open-access material. PNAS access was blocked and PMC endpoints returned access challenges. These responses were not treated as paper content."
+        ],
+        "main_full_read": true
+      },
+      "review_record": "methods-genetics.json",
+      "review_record_sha256": "770f837b7b9f150d50d8c7f6f0593d6eeebc3814fd54e284dd6ecb451b171517",
+      "source_records": [
+        {
+          "path": "papers-local/janssen2009.pdf",
+          "absolute_path": "papers-local/janssen2009.pdf",
+          "sha256": "a67505bd46d96c70b9e29261700810f6123536ca408214760733c4beeaf52f56",
+          "bytes": 1008757,
+          "role": "main PDF",
+          "read_coverage": "Complete main article and Figures 1\u20134"
+        },
+        {
+          "path": "papers-local/janssen2009.txt",
+          "absolute_path": "papers-local/janssen2009.txt",
+          "sha256": "f7b2cbb64dfc2e118f503c5dbcad2f43a79be3883fedff7310b3d1f5e0b32159",
+          "bytes": 42006,
+          "role": "existing main extraction",
+          "read_coverage": "Complete main article; layout extraction used for quantitative comparisons"
+        }
+      ]
+    },
+    {
+      "pmid": "20516114",
+      "doi": "10.1158/0008-5472.CAN-09-4319",
+      "title": "Molecular causes for BUBR1 dysfunction in the human cancer predisposition syndrome mosaic variegated aneuploidy",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/20516114/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "Both held manuscript texts read from front matter through abstract, introduction, all available Methods, Results/Discussion, references and all five main figure legends. new13.txt is the same article, not a separate source.",
+        "figures": "Main Figures 1\u20135 visually inspected using PMC JPEGs; all three supplement PDF pages visually inspected, including Table S1 and Figures S1\u2013S5. Table values checked using pdftotext -layout and page images.",
+        "supplement": "Complete held three-page supplement read. It contains figures/legends and Table S1, but not the detailed Methods promised by the manuscript.",
+        "gap": "The publisher version has additional immunofluorescence, flow/immunoblot, live-imaging and Northern-blot methods. Their indexed publisher passages were read, including the unsynchronized-LCL exception. Direct publisher HTML requests returned 403, so a complete, locally held final-version Methods section was not obtained. Do not label this a complete version-of-record methods audit. No underlying movies or raw experimental measurements were reanalysed."
+      },
+      "review_record": "mechanism.json",
+      "review_record_sha256": "f45733d79fa6e47f10f1b4fb14553d0139ff9da64341acff283bbd8526675d8b",
+      "source_records": [
+        "papers-local/suijkerbuijk2010_cancerres_molecular_causes.txt",
+        "papers-local/new13.txt",
+        "papers-local/suijkerbuijk2010_SUPPLEMENTARY.pdf"
+      ]
+    },
+    {
+      "pmid": "21874008",
+      "doi": "10.1038/ncb2327",
+      "title": "Formation of stable attachments between kinetochores and microtubules depends on the B56-PP2A phosphatase",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21874008/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "Full held text read, including all main text, complete Methods, references and Figures 1\u20135 legends. Main Figures 1\u20135 visually inspected from PMC JPEGs.",
+        "supplement": "Complete seven-page publisher supplement newly retrieved, read with pdftotext -layout and visually inspected page by page: Figures S1\u2013S6, all legends, full blot scans and distance distributions.",
+        "gap": "PMC\u2019s seven .ai download routes returned HTML download-challenge pages, not image data. They were not counted as read. The publisher PDF subsequently supplied the supplementary figures. No raw microscopy movies or measurements reanalysed."
+      },
+      "review_record": "mechanism.json",
+      "review_record_sha256": "f45733d79fa6e47f10f1b4fb14553d0139ff9da64341acff283bbd8526675d8b",
+      "source_records": [
+        "papers-local/foley2011.txt",
+        "papers-local/audit-mechanism-20261023-foley2011-publisher-supplement.pdf"
+      ]
+    },
+    {
+      "pmid": "22069317",
+      "doi": "10.1074/jbc.M111.293282",
+      "title": "4-Phenylbutyrate Stimulates Hsp70 Expression through the Elp2 Component of Elongator and STAT-3 in Cystic Fibrosis Epithelial Cells",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22069317/",
+      "main_text_read": true,
+      "coverage": {
+        "main_text": "Complete PMC article read in normal browser accessibility output: abstract, Introduction, Experimental Procedures, Results, Discussion, all eight legends and end matter/reference list.",
+        "figures": "All eight main figures visually inspected individually through the article. Figure files retained and hashed.",
+        "supplements": "No supplementary material section/files identified on this article page; not a guarantee that no external/raw data exist.",
+        "main_text_local_file": null,
+        "limitation": "Main HTML/PDF retrieval produced challenge/error responses; the successful full read was online. Abstract-only eutils result is quarantined under audit-access and is not counted as full text.",
+        "not_claimed": [
+          "raw-data reanalysis",
+          "independent experimental replication",
+          "full reading of the 68 cited references"
+        ]
+      },
+      "review_record": "suaud2011.json",
+      "review_record_sha256": "a03767680ce5b2a31ab0892d3e133c8012adbf0b294f8b0f80c46fb365faa804",
+      "source_records": [
+        {
+          "role": "main_figure",
+          "figure": 1,
+          "path": "papers-local/supplementary/suaud2011-figures/5448972eadf6631f.jpg",
+          "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/722f/3247989/d9d8a6024aaf/zbc0021291820001.jpg",
+          "sha256": "5a7894b3deb0e2215d35f8f0f6337baed444afb76fb89bf2b19e79bb989fed46",
+          "read": "visual inspection of each figure and legend"
+        },
+        {
+          "role": "main_figure",
+          "figure": 2,
+          "path": "papers-local/supplementary/suaud2011-figures/4bfd60966b5f2062.jpg",
+          "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/722f/3247989/8698d166dc74/zbc0021291820002.jpg",
+          "sha256": "88ce76cb045f6bf839f0b4b566d52548d05c9cc419b2578e8de10b52aaad663a",
+          "read": "visual inspection of each figure and legend"
+        },
+        {
+          "role": "main_figure",
+          "figure": 3,
+          "path": "papers-local/supplementary/suaud2011-figures/27a190ddafc6ff3f.jpg",
+          "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/722f/3247989/712062b70dd0/zbc0021291820003.jpg",
+          "sha256": "9ac69e510826d2fe2382fca54e63263da14e7bc275da27033bc9851235bd6ec4",
+          "read": "visual inspection of each figure and legend"
+        },
+        {
+          "role": "main_figure",
+          "figure": 4,
+          "path": "papers-local/supplementary/suaud2011-figures/92652af79052e145.jpg",
+          "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/722f/3247989/5afa4ea66ca2/zbc0021291820004.jpg",
+          "sha256": "695f1dce5d432e26dee6338fa47beb39424b78147df366ce2a44f38d34810740",
+          "read": "visual inspection of each figure and legend"
+        },
+        {
+          "role": "main_figure",
+          "figure": 5,
+          "path": "papers-local/supplementary/suaud2011-figures/0177077b5d0cae16.jpg",
+          "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/722f/3247989/dd1c1ae25176/zbc0021291820005.jpg",
+          "sha256": "9cb973c7e49cf3428f0ce041a60cd8ab1e0e0363e74f962eaab0a21c7670b12b",
+          "read": "visual inspection of each figure and legend"
+        },
+        {
+          "role": "main_figure",
+          "figure": 6,
+          "path": "papers-local/supplementary/suaud2011-figures/1e0e9715a7ecd3f5.jpg",
+          "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/722f/3247989/07ddf2724b14/zbc0021291820006.jpg",
+          "sha256": "f7e838b27b4e75489dd3ffe1f3514d674789c5d4cc75dd161194d477c1eed21f",
+          "read": "visual inspection of each figure and legend"
+        },
+        {
+          "role": "main_figure",
+          "figure": 7,
+          "path": "papers-local/supplementary/suaud2011-figures/ed2070f5cf5752e3.jpg",
+          "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/722f/3247989/e5bbe72c6ce9/zbc0021291820007.jpg",
+          "sha256": "86b9dc3122d41c332babbb762e2254145fbdf13e3766e0b0773248129120c552",
+          "read": "visual inspection of each figure and legend"
+        },
+        {
+          "role": "main_figure",
+          "figure": 8,
+          "path": "papers-local/supplementary/suaud2011-figures/7bbd067c59647c19.jpg",
+          "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/722f/3247989/a2349975f1e8/zbc0021291820008.jpg",
+          "sha256": "6351d79006468aee585fe0d8ba4283d102104ceed3c5a79a6c65992fc1d67b7d",
+          "read": "visual inspection of each figure and legend"
+        }
+      ]
+    },
+    {
+      "pmid": "22698286",
+      "doi": "10.1016/j.devcel.2012.03.009",
+      "title": "The vertebrate mitotic checkpoint protein BUBR1 is an unusual pseudokinase",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22698286/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "All nine main PDF pages read, including abstract, introduction, results, discussion, experimental procedures, references and Figures 1\u20134 legends. Figures 1\u20134 inspected visually.",
+        "supplement": "All 15 pages of mmc1 read, including Figures S1\u2013S3, legends, supplemental experimental procedures and references; figure pages visually inspected. All eight pages of mmc3 alignment visually inspected, with focused inspection of human BUB1/BUBR1 and the C-terminal motifs. This is an alignment inspection, not independent validation of every residue, accession or phylogenetic reconstruction.",
+        "gap": "The separate mmc2.xlsx Table S1 workbook was not read cell by cell. The main phylogeny and mmc1 methods/limitations were read; do not claim all underlying phylogenomic data independently checked."
+      },
+      "review_record": "mechanism.json",
+      "review_record_sha256": "f45733d79fa6e47f10f1b4fb14553d0139ff9da64341acff283bbd8526675d8b",
+      "source_records": [
+        "papers-local/suijkerbuijk2012b_devcell_bubr1_pseudokinase.pdf",
+        "papers-local/suijkerbuijk2012b_devcell_pseudokinase_mmc1.pdf",
+        "papers-local/suijkerbuijk2012b_devcell_pseudokinase_mmc3.pdf"
+      ]
+    },
+    {
+      "pmid": "23079597",
+      "doi": "10.1016/j.devcel.2012.09.005",
+      "title": "Integration of kinase and phosphatase activities by BUBR1 ensures formation of stable kinetochore-microtubule attachments",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23079597/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "All 11 PDF pages read, including abstract/introduction, all results and discussion, experimental procedures, acknowledgements, references and all seven figure legends. Figures 1\u20137 visually inspected on PDF pages 2\u20138.",
+        "supplement": "No separate supplement was required to interpret the cited main experiments; full experimental procedures are included in the held PDF.",
+        "gap": "The Addgene catalogue mapping cited by our reagent document was not independently revalidated in this paper review. A publication alone does not establish a current repository accession, availability or sequence."
+      },
+      "review_record": "mechanism.json",
+      "review_record_sha256": "f45733d79fa6e47f10f1b4fb14553d0139ff9da64341acff283bbd8526675d8b",
+      "source_records": [
+        "papers-local/suijkerbuijk2012.pdf"
+      ]
+    },
+    {
+      "pmid": "23602569",
+      "doi": "10.1016/j.celrep.2013.03.028",
+      "title": "p21 both attenuates and drives senescence and aging in BubR1 progeroid mice",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23602569/",
+      "main_text_read": true,
+      "coverage": {
+        "status": "full_main_article_and_identified_supplement_read",
+        "main_sections": [
+          "Summary",
+          "complete Introduction",
+          "complete Results",
+          "complete Discussion",
+          "complete Experimental procedures",
+          "all main legends 1\u20136",
+          "end matter"
+        ],
+        "main_figures_visually_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "supplement": "All four supplement pages, Figs S1\u2013S4 and legends, read and visually inspected. Publisher mmc1 PDF contains the full main article followed by these four pages; its local name says supp but its actual coverage is broader.",
+        "gaps": [],
+        "limits": "No rapamycin experimental dataset is present in this main article or its supplied supplement. This is an absence in the inspected publication, not a claim that no experiment existed."
+      },
+      "review_record": "therapeutics.json",
+      "review_record_sha256": "4a453c1de587a01f660a95d15c9f7358e4b2295822fdbc43d1ffa37bf621d1c2",
+      "source_records": [
+        {
+          "path": "papers-local/baker2013_cellrep_p21_bubr1_progeroid.txt",
+          "sha256": "e21f5de451ec512e3219254b742fdad2b88da7cb6e064f54d1a4c1592e6bd1e2",
+          "bytes": 66328,
+          "role": "main_article_text",
+          "read_coverage": "complete main article and supplement legends"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-baker-supp.pdf",
+          "sha256": "3ec8df81574264d4578cd25718c7416453eda8debf490f06aeaad9b4886f8edd",
+          "bytes": 2517093,
+          "role": "publisher_combined_main_and_supplement_pdf",
+          "read_coverage": "main article plus S1\u2013S4; supplement pages 12\u201315 visually inspected"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-baker-supp-layout.txt",
+          "sha256": "0bdd0b64a2b4b2f20043bc813e6b19fb4cb593cfd300900b28edcb2e8f0660cf",
+          "bytes": 86013,
+          "role": "combined_layout_extraction",
+          "read_coverage": "main and supplement text/legends"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-baker-nihms-460178-f0001.jpg",
+          "sha256": "ccf77b35fa5df3c30f36d1af5632f4da47b01723836a534131ac95c4ea2d6d51",
+          "bytes": 41197,
+          "role": "main_figure_image",
+          "read_coverage": "all main figure panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-baker-nihms-460178-f0002.jpg",
+          "sha256": "a22242443965ef48397e0254ab02d1d0a686f0b1b1ee68c0ca3f4db53503ec9b",
+          "bytes": 45631,
+          "role": "main_figure_image",
+          "read_coverage": "all main figure panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-baker-nihms-460178-f0003.jpg",
+          "sha256": "bdae239104277815e1d516dd7bae58b239a27bec7feee2c5c105b2880b55ffca",
+          "bytes": 43106,
+          "role": "main_figure_image",
+          "read_coverage": "all main figure panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-baker-nihms-460178-f0004.jpg",
+          "sha256": "88988368b0d1a216c33fd7523e8074bb1ea57f62c055b05329843ce6bcf6be12",
+          "bytes": 32940,
+          "role": "main_figure_image",
+          "read_coverage": "all main figure panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-baker-nihms-460178-f0005.jpg",
+          "sha256": "9174e3b55231e87732cc0f55d539b5afa03815332c07aac20fc95c6a22a16d50",
+          "bytes": 44375,
+          "role": "main_figure_image",
+          "read_coverage": "all main figure panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-baker-nihms-460178-f0006.jpg",
+          "sha256": "00f6824deecd18a93c77b8caec8772e638a7470219f54217855e494d91f1e236",
+          "bytes": 34514,
+          "role": "main_figure_image",
+          "read_coverage": "all main figure panels"
+        }
+      ]
+    },
+    {
+      "pmid": "24825348",
+      "doi": "10.15252/embj.201386907",
+      "title": "SIRT2 induces the checkpoint kinase BubR1 to increase lifespan",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24825348/",
+      "main_text_read": true,
+      "coverage": {
+        "status": "full_main_article_and_identified_supplements_read",
+        "main_sections": [
+          "abstract",
+          "complete Introduction",
+          "complete Results",
+          "complete Discussion",
+          "all Materials and methods",
+          "main legends 1\u20137",
+          "end matter"
+        ],
+        "main_figures_visually_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "supplement": "All six supplementary figures S1\u2013S6, legends and all eight pages across their PDFs read/visually inspected. Complete eight-page public peer-review process file (MOESM7) read as contextual documentation, not as an additional experimental paper.",
+        "gaps": [],
+        "limits": "Reviewers\u2019 mistaken references to NMN lifespan rescue in the process file were not treated as data; the authors explicitly clarify that long-term NMN work was not performed."
+      },
+      "review_record": "therapeutics.json",
+      "review_record_sha256": "4a453c1de587a01f660a95d15c9f7358e4b2295822fdbc43d1ffa37bf621d1c2",
+      "source_records": [
+        {
+          "path": "papers-local/p24825348.txt",
+          "sha256": "062b9434e577fdf4e5db989ce064935298f262a823235a58037cc12fa187bfe2",
+          "bytes": 75614,
+          "role": "main_article_text",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-embj0033-1438-f1.jpg",
+          "sha256": "541c0f83a569bc3208dee0f72c9f02016264eede3a3a90e05585d3d043dfbf21",
+          "bytes": 111906,
+          "role": "main_figure_image",
+          "read_coverage": "all main panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-embj0033-1438-f2.jpg",
+          "sha256": "6499161d5db325599a7cb3b952e929b9e79952deeb94410c2e9537d0c59ddf77",
+          "bytes": 83927,
+          "role": "main_figure_image",
+          "read_coverage": "all main panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-embj0033-1438-f3.jpg",
+          "sha256": "61e7bc4e866e486be6083ad9bff7fa15cd1f1b7e5a8cac3982fd2e4c1f2ec7ac",
+          "bytes": 112636,
+          "role": "main_figure_image",
+          "read_coverage": "all main panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-embj0033-1438-f4.jpg",
+          "sha256": "7825d1601896bf2d6473d733354401006ec3937d710bd7a10f6b54c6b3462d49",
+          "bytes": 100385,
+          "role": "main_figure_image",
+          "read_coverage": "all main panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-embj0033-1438-f5.jpg",
+          "sha256": "aeaa5fc48235716d0b5338f9eace4dbf1e2a51383c49f8bbd5f11976ff4f8c73",
+          "bytes": 64048,
+          "role": "main_figure_image",
+          "read_coverage": "all main panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-embj0033-1438-f6.jpg",
+          "sha256": "858c3123068e11bfa47da43023518dcded0e68f51b1eb1bded71a1dcea771e12",
+          "bytes": 85868,
+          "role": "main_figure_image",
+          "read_coverage": "all main panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-embj0033-1438-f7.jpg",
+          "sha256": "d676dc62d5c8715e4de3c764ae41e89b83d78121b65f9b647fa262c14b3821fc",
+          "bytes": 42837,
+          "role": "main_figure_image",
+          "read_coverage": "all main panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM1_ESM.pdf",
+          "sha256": "1a494ccd7443f7a562453f1067e99deddca56fd6ab4a6bb3c91a3860ffad29fb",
+          "bytes": 607098,
+          "role": "supplement_figure_pdf",
+          "read_coverage": "complete figure and legend, all pages"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM2_ESM.pdf",
+          "sha256": "445e1a97c84d9d0cd351484017cb6fc76b2821f21b6cde4bb609570b05b3ef99",
+          "bytes": 419689,
+          "role": "supplement_figure_pdf",
+          "read_coverage": "complete figure and legend, all pages"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM3_ESM.pdf",
+          "sha256": "d33f279dd31b66cdc0b745570ff2b6ea5c04f8456fb093b52669280037691c03",
+          "bytes": 1089619,
+          "role": "supplement_figure_pdf",
+          "read_coverage": "complete figure and legend, all pages"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM4_ESM.pdf",
+          "sha256": "c4dcbd43abb4c98e874dee194672cc84756c79f5025400bc3406824430ad2a31",
+          "bytes": 543756,
+          "role": "supplement_figure_pdf",
+          "read_coverage": "complete figure and legend, all pages"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM5_ESM.pdf",
+          "sha256": "4558c9a6e52abb4a0989f0141f8601ae747cc9bb90fcf064cde15be44977064c",
+          "bytes": 351850,
+          "role": "supplement_figure_pdf",
+          "read_coverage": "complete figure and legend, all pages"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM6_ESM.pdf",
+          "sha256": "09b39a5a9456c0812613ce6de751d876bd4f7d34685fed0a687dcd643a3ba472",
+          "bytes": 239707,
+          "role": "supplement_figure_pdf",
+          "read_coverage": "complete figure and legend, all pages"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM7_ESM.pdf",
+          "sha256": "bf7f532ac0d30d0ac6d1185f3c0ee495a2802005d1085b97d98bd5d073b3e47a",
+          "bytes": 224202,
+          "role": "public_peer_review_file",
+          "read_coverage": "all eight pages of correspondence"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM1_ESM.txt",
+          "sha256": "fd446c01a496b491f05c317b1a16efab01b363fd5d3a09bbac4419ee49ad63b1",
+          "bytes": 864,
+          "role": "layout_extraction",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM2_ESM.txt",
+          "sha256": "1278e3fb89c2a7883c36575e33daa77c4a2722f81d4b604d1ebf231d96779ed5",
+          "bytes": 528,
+          "role": "layout_extraction",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM3_ESM.txt",
+          "sha256": "0ab6aa08ca6e6982d168c256d0d6d62342d2e4edd0821cd68e3de0aed95f64a0",
+          "bytes": 1185,
+          "role": "layout_extraction",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM4_ESM.txt",
+          "sha256": "d38450199ec95365255ec5c3e2b685c8d2ff638d6e7b83e357587b4f69732a78",
+          "bytes": 934,
+          "role": "layout_extraction",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM5_ESM.txt",
+          "sha256": "e06703a6c8175272fed088dd95a90eba166b62f16aba199c873de452bc7dda86",
+          "bytes": 638,
+          "role": "layout_extraction",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM6_ESM.txt",
+          "sha256": "5fe5d84bca2d5da530dc4bf9c523762ccbb5c42607b2f7bdeebbe8a1eca17978",
+          "bytes": 288,
+          "role": "layout_extraction",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-north-44318_2014_BFEMBJ201386907_MOESM7_ESM.txt",
+          "sha256": "10e2d43a73bb91c0dbaef205cae72cc00c4637ff1ffa3d85d7f1c2395fdd4a4c",
+          "bytes": 28911,
+          "role": "layout_extraction",
+          "read_coverage": "complete"
+        }
+      ]
+    },
+    {
+      "pmid": "28553959",
+      "doi": "10.1038/ng.3883",
+      "title": "Biallelic TRIP13 mutations predispose to Wilms tumor and chromosome missegregation.",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28553959/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "All seven main-PDF pages: pp.1148\u20131151 plus all three Online Methods pages, including summary, results, interpretation, methods, Table 1, Figures 1\u20134 and legends, acknowledgements and references. Figures 1\u20134 and Table 1 visually inspected. The complete held 13-page supplement was read and every content-bearing page visually inspected (Figures S1\u2013S9, Tables S1\u2013S2, case descriptions and pedigrees).",
+        "gaps": [
+          "No separate raw image/movie datasets were inspected. The full-read claim covers the main article, its Online Methods and the complete held supplementary PDF, not raw experimental data."
+        ]
+      },
+      "review_record": "clinical-impact.json",
+      "review_record_sha256": "6f965236b78a7f9e316661f7800dee9867dce04ad41284f6790b40dd4fb0f251",
+      "source_records": [
+        {
+          "path": "papers-local/yost2017_trip13_natgenet.pdf",
+          "sha256": "abb4d43654fec8c0ec28e1356386f3bad357e7f7ee88eeda27812518a892cf97",
+          "bytes": 942842,
+          "role": "main article",
+          "coverage": "Entire main article read using fresh layout extraction; relevant figures inspected visually."
+        },
+        {
+          "path": "/tmp/mva-clinical-review/yost2017_trip13_natgenet-layout.txt",
+          "sha256": "edd0714250f4bbb1fccbab373a11f5e93f85b1cc5ee6a538350bf45e0156de33",
+          "bytes": 107104,
+          "role": "fresh pdftotext -layout extraction",
+          "coverage": "Entire text read, including all tables, legends and references."
+        },
+        {
+          "path": "papers-local/yost2017_trip13_natgenet.txt",
+          "sha256": "53a0bece9692f06e330eaa81dbc097c431dfe773e7a91bed426e62498ad8bfac",
+          "bytes": 45206,
+          "role": "pre-existing held text / index-linked filename",
+          "coverage": "Located and consulted for source matching; full-read claim refers to fresh PDF layout extraction, not this older extraction."
+        },
+        {
+          "path": "papers-local/supplementary/yost2017_SUPPLEMENTARY.pdf",
+          "sha256": "81bb3e813f77832d6eccbcb7c3c8c28c0788ab6e0be92c7f8b342595235f057d",
+          "bytes": 8576904,
+          "role": "complete held supplementary PDF",
+          "coverage": "All 13 pages read: cover, case histories/pedigrees/chromatograms, Figures S1\u2013S9 and legends, Tables S1\u2013S2; all content-bearing pages 2\u201313 visually inspected."
+        },
+        {
+          "path": "/tmp/mva-clinical-review/yost2017_SUPPLEMENTARY-layout.txt",
+          "sha256": "d9b3a8ae96416253f7c8212367fafc613ce00a0ea47f96b7d4bc49862136d404",
+          "bytes": 28239,
+          "role": "supplement fresh layout extraction",
+          "coverage": "Entire supplementary text and both tables read."
+        }
+      ]
+    },
+    {
+      "pmid": "30661751",
+      "doi": "10.1016/j.cell.2018.12.015",
+      "title": "Predicting Splicing from Primary Sequence with Deep Learning",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30661751/",
+      "main_text_read": true,
+      "coverage": {
+        "main_article": "FULL READ: complete abstract/introduction/results/discussion, all STAR Methods, references, legends and main tables.",
+        "figures": "Main Figures 1\u20135 and Supplementary Figures S1\u2013S6 visually inspected. S6 was inspected as a full-page overview; not every tiny plot annotation was separately transcribed. The independent validation outcome rows were read in Table S4.",
+        "supplements": "All supplementary figure legends, Table S1 and Table S2 read. Table S4: all 36 variant rows, status/validation information and notes read. Table S3: workbook structure, sheet headers and cohort-summary sheet inspected; the large mutation-rate and enrichment sheets were not adjudicated row by row. PDF Tables S1/S2 read with pdftotext -layout.",
+        "gaps": [
+          "Table S3 bulk mutation-rate/gene-enrichment rows were not fully read or independently recalculated. No claim of exhaustive raw-data audit is made."
+        ],
+        "main_full_read": true
+      },
+      "review_record": "methods-genetics.json",
+      "review_record_sha256": "770f837b7b9f150d50d8c7f6f0593d6eeebc3814fd54e284dd6ecb451b171517",
+      "source_records": [
+        {
+          "path": "papers-local/jaganathan2019_cell_spliceai.txt",
+          "absolute_path": "papers-local/jaganathan2019_cell_spliceai.txt",
+          "sha256": "5262c760754869e73e9d706dc22cc89d0faf782c7d3f6bf1b81f46c28d97ef83",
+          "bytes": 158898,
+          "role": "existing main/STAR/supplementary-figure extraction",
+          "read_coverage": "Complete text read, including STAR Methods and S1\u2013S6 legends"
+        },
+        {
+          "path": "papers-local/jaganathan2019_cell_spliceai_suppl.txt",
+          "absolute_path": "papers-local/jaganathan2019_cell_spliceai_suppl.txt",
+          "sha256": "1b69e154038801e6ea2b793fa08acc4c0733d6e49e1836bb1e2c25bc8f857209",
+          "bytes": 786,
+          "role": "short existing supplement extraction",
+          "read_coverage": "Cover material and Table S1; not a complete supplementary collection"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-jaganathan.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-jaganathan.pdf",
+          "sha256": "e0d62bfd97c26907e184a6a262eb277e3ad0737322373df282c9832b56697dda",
+          "bytes": 4719612,
+          "role": "complete PDF with STAR Methods and supplementary figures",
+          "read_coverage": "Main text/STAR Methods full; main and supplementary figures viewed",
+          "retrieval_url": "https://www.marcottelab.org/users/BCH394P_364C_2021/SplicingAI-jaganathan2019.pdf"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-jaganathan-mmc1.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-jaganathan-mmc1.pdf",
+          "sha256": "7aeeff51cc817486276eccb97a6a2fb3aa7177d94a1297b419e7872fe15144ce",
+          "bytes": 33747,
+          "role": "publisher Table S1",
+          "read_coverage": "Complete table and cover",
+          "retrieval_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867418316295-mmc1.pdf"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-jaganathan-mmc2.pdf",
+          "absolute_path": "papers-local/audit-methods-20261023-jaganathan-mmc2.pdf",
+          "sha256": "7618107940f540a86abd4a0e415c4c3186c618f9e140a144201e69735ef0fe62",
+          "bytes": 13381,
+          "role": "publisher Table S2",
+          "read_coverage": "Complete table",
+          "retrieval_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867418316295-mmc2.pdf"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-jaganathan-mmc3.xlsx",
+          "absolute_path": "papers-local/audit-methods-20261023-jaganathan-mmc3.xlsx",
+          "sha256": "b2a3c21975a8c788dbd42249cdc164b37db5013335be34ff2b34bfa300d513d3",
+          "bytes": 3122349,
+          "role": "publisher Table S3",
+          "read_coverage": "Structure, headers and cohort summary only; bulk rows not fully read",
+          "retrieval_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867418316295-mmc3.xlsx"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-jaganathan-mmc4.xlsx",
+          "absolute_path": "papers-local/audit-methods-20261023-jaganathan-mmc4.xlsx",
+          "sha256": "b5ff43061ad09ffcec1020c6aff69afea195cfa1cb657ce4a49eb9777d1af792",
+          "bytes": 12296,
+          "role": "publisher Table S4",
+          "read_coverage": "All 36 validation rows read",
+          "retrieval_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867418316295-mmc4.xlsx"
+        }
+      ]
+    },
+    {
+      "pmid": "31583434",
+      "doi": "10.1007/s00432-019-03038-3",
+      "title": "The effectiveness of Wilms tumor screening in Beckwith-Wiedemann spectrum.",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31583434/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "All nine pages (3115\u20133123): abstract, introduction, complete methods, results, discussion, conclusion, declarations and references, Tables 1\u20133 and Figures 1\u20132 with legends. Table 3 and both main figures visually inspected; all tables also read in layout. No supplementary file is referenced in the held main article.",
+        "gaps": []
+      },
+      "review_record": "clinical-impact.json",
+      "review_record_sha256": "6f965236b78a7f9e316661f7800dee9867dce04ad41284f6790b40dd4fb0f251",
+      "source_records": [
+        {
+          "path": "papers-local/mussa2019_wilms_screening_effectiveness.pdf",
+          "sha256": "59c16a2e07e1ec4768cf13c7cf56c7049a6e81b6085b2f1827d2d574adc96015",
+          "bytes": 771089,
+          "role": "main article",
+          "coverage": "Entire main article read using fresh layout extraction; relevant figures inspected visually."
+        },
+        {
+          "path": "/tmp/mva-clinical-review/mussa2019_wilms_screening_effectiveness-layout.txt",
+          "sha256": "4ffbdc5e74eb557cda81da45914a2be8a227851bffaf6f393da6001295b73426",
+          "bytes": 75432,
+          "role": "fresh pdftotext -layout extraction",
+          "coverage": "Entire text read, including all tables, legends and references."
+        },
+        {
+          "path": "papers-local/mussa2019_wilms_screening_effectiveness.txt",
+          "sha256": "4ffbdc5e74eb557cda81da45914a2be8a227851bffaf6f393da6001295b73426",
+          "bytes": 75432,
+          "role": "pre-existing held text / index-linked filename",
+          "coverage": "Located and consulted for source matching; full-read claim refers to fresh PDF layout extraction, not this older extraction."
+        }
+      ]
+    },
+    {
+      "pmid": "31738183",
+      "doi": "10.1172/JCI126863",
+      "title": "BubR1 allelic effects drive phenotypic heterogeneity in mosaic-variegated aneuploidy progeria syndrome",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31738183/",
+      "main_text_read": true,
+      "coverage": {
+        "main_article": "FULL READ: entire original main article, not the short corrigendum; abstract/introduction/results/discussion/methods, references, all figures/legends.",
+        "figures": "Main Figures 1\u201310 visually inspected. All Supplementary Figures S1\u2013S10 visually inspected. Corrected Figure 2E in the separate corrigendum visually inspected.",
+        "supplements": "All 15 supplement pages, Figures S1\u2013S10 and Tables S1\u2013S5 read. Tables checked with pdftotext -layout. Separate corrigendum read in full and its corrected panel inspected.",
+        "gaps": [
+          "The held original main PDF retains the pre-correction Figure 2E and methods text. Interpretation must use the separate correction. No source file was silently overwritten."
+        ],
+        "main_full_read": true
+      },
+      "review_record": "methods-genetics.json",
+      "review_record_sha256": "770f837b7b9f150d50d8c7f6f0593d6eeebc3814fd54e284dd6ecb451b171517",
+      "source_records": [
+        {
+          "path": "papers-local/sieben2020_jci_PAPER.pdf",
+          "absolute_path": "papers-local/sieben2020_jci_PAPER.pdf",
+          "sha256": "bee619ff6a081da06e4840a3f7f3d1f08bbc3911b93ac43f90ba2da5c18664e5",
+          "bytes": 13188248,
+          "role": "complete original main PDF",
+          "read_coverage": "Full text and Figures 1\u201310; original figure/methods version"
+        },
+        {
+          "path": "papers-local/sieben2020_jci_PAPER.txt",
+          "absolute_path": "papers-local/sieben2020_jci_PAPER.txt",
+          "sha256": "e5979220d39015ee986612b81bc7da45ce98533ba1cbe8c786a5d340ff09f5bd",
+          "bytes": 87256,
+          "role": "complete existing main extraction",
+          "read_coverage": "Full text; not substituted by corrigendum"
+        },
+        {
+          "path": "papers-local/supplementary/sieben2020_jci_SUPPLEMENTARY.pdf",
+          "absolute_path": "papers-local/supplementary/sieben2020_jci_SUPPLEMENTARY.pdf",
+          "sha256": "0797fb43cd2c71cb13d26ab790e81f137a5f8763ce7a2c951a756f9f3475b9f1",
+          "bytes": 2870985,
+          "role": "supplement PDF",
+          "read_coverage": "All text, Figures S1\u2013S10 and Tables S1\u2013S5"
+        },
+        {
+          "path": "papers-local/supplementary/sieben2020_jci_SUPPLEMENTARY.txt",
+          "absolute_path": "papers-local/supplementary/sieben2020_jci_SUPPLEMENTARY.txt",
+          "sha256": "a67a4e2450b5dba7216aa995fa389f11200bc7c59c3122a81527f09d17bef185",
+          "bytes": 23228,
+          "role": "existing supplement extraction",
+          "read_coverage": "Full text; tables checked in PDF layout"
+        },
+        {
+          "path": "papers-local/sieben2020_jci_144781.pdf",
+          "absolute_path": "papers-local/sieben2020_jci_144781.pdf",
+          "sha256": "2f8b20d7dee927461ffab6d2eeb7b2f6f9837970df6036ca589ea91838b3be7d",
+          "bytes": 361891,
+          "role": "corrigendum PDF",
+          "read_coverage": "Complete text and corrected Figure 2E"
+        },
+        {
+          "path": "papers-local/sieben2020_jci_144781.txt",
+          "absolute_path": "papers-local/sieben2020_jci_144781.txt",
+          "sha256": "6effce605d6f08fb49877fdfb6592abc6bda92b47e011a530b6061f8b8a0a153",
+          "bytes": 2543,
+          "role": "corrigendum extraction",
+          "read_coverage": "Complete text"
+        }
+      ]
+    },
+    {
+      "pmid": "31892348",
+      "doi": "10.1186/s13073-019-0690-2",
+      "title": "Recommendations for application of the functional evidence PS3/BS3 criterion using the ACMG/AMP sequence variant interpretation framework",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31892348/",
+      "main_text_read": true,
+      "coverage": {
+        "main_article": "FULL READ: full abstract/background, recommendations, assay-evaluation framework, discussion/conclusions, methods, all tables/legends/references.",
+        "figures": "Figures 1\u20132 visually inspected from publisher image assets; textual labels/legends read.",
+        "supplements": "The entire two-sheet supplementary workbook read, including populated cells, formula expressions and cached outputs. This was a read audit, not an independent spreadsheet recalculation or clinical validation.",
+        "gaps": [],
+        "main_full_read": true
+      },
+      "review_record": "methods-genetics.json",
+      "review_record_sha256": "770f837b7b9f150d50d8c7f6f0593d6eeebc3814fd54e284dd6ecb451b171517",
+      "source_records": [
+        {
+          "path": "papers-local/brnich2019_ps3_bs3_functional_evidence.txt",
+          "absolute_path": "papers-local/brnich2019_ps3_bs3_functional_evidence.txt",
+          "sha256": "d4906d0e9468dfe23762f839a02ec0f62fb5ff9533ce87c0faa7869a21842311",
+          "bytes": 65231,
+          "role": "existing main extraction",
+          "read_coverage": "Complete main article"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-PMC6938631.xml",
+          "absolute_path": "papers-local/audit-methods-20261023-PMC6938631.xml",
+          "sha256": "a4777d5676c2d229f600c2fad21f63ba75e2a92913b3e57e7ec787598821913a",
+          "bytes": 115820,
+          "role": "Europe PMC full XML",
+          "read_coverage": "Complete main article including structured tables",
+          "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6938631/fullTextXML"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-brnich-13073_2019_690_Fig1_HTML.jpg",
+          "absolute_path": "papers-local/audit-methods-20261023-brnich-13073_2019_690_Fig1_HTML.jpg",
+          "sha256": "d705a012345ed6dd3549f3ab8ed847a035dd0173cd672eda6bd8e1c079d2bfde",
+          "bytes": 36396,
+          "role": "main Figure 1",
+          "read_coverage": "Viewed with legend and text"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-brnich-13073_2019_690_Fig2_HTML.jpg",
+          "absolute_path": "papers-local/audit-methods-20261023-brnich-13073_2019_690_Fig2_HTML.jpg",
+          "sha256": "43a8ae3cb729fcccbc8e0837b36da992db11124c32333fb33a58a9976ba69c06",
+          "bytes": 124459,
+          "role": "main Figure 2",
+          "read_coverage": "Viewed with legend and text"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-brnich-13073_2019_690_MOESM1_ESM.xlsx",
+          "absolute_path": "papers-local/audit-methods-20261023-brnich-13073_2019_690_MOESM1_ESM.xlsx",
+          "sha256": "11d14e89fbd5f59e20d6b65b7c1601046b9087f9cee8f1bee7b39d14eb2f6c22",
+          "bytes": 28964,
+          "role": "supplementary workbook",
+          "read_coverage": "All populated rows/cells and formulas in both sheets read"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-brnich-assets.zip",
+          "absolute_path": "papers-local/audit-methods-20261023-brnich-assets.zip",
+          "sha256": "7f844a9da862b2ba69b5ee0a2e1e30b0f84f1d5849d08c76665fd4004f0ea844",
+          "bytes": 187568,
+          "role": "Europe PMC source asset bundle",
+          "read_coverage": "Article figures and workbook extracted and inspected",
+          "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6938631/supplementaryFiles"
+        }
+      ]
+    },
+    {
+      "pmid": "31900865",
+      "doi": "10.1007/s12192-019-01064-1",
+      "title": "Depending on the stress, histone deacetylase inhibitors act as heat shock protein co-inducers in motor neurons and potentiate arimoclomol, exerting neuroprotection through multiple mechanisms in ALS models",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31900865/",
+      "main_text_read": true,
+      "coverage": {
+        "status": "full_main_article_and_identified_supplement_read",
+        "main_sections": [
+          "abstract in XML front matter",
+          "complete Introduction",
+          "complete Materials and methods",
+          "complete Results",
+          "complete Discussion",
+          "Table 1",
+          "all main figure legends 1\u20139"
+        ],
+        "main_figures_visually_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "supplement": "All five pages of MOESM1, including Online Resources 1\u20134, read using pdftotext -layout; graphs and blots visually inspected.",
+        "gaps": [],
+        "limits": "No raw-data reanalysis or independent experiment. Reference lists were used for leads; their cited papers were not thereby read."
+      },
+      "review_record": "therapeutics.json",
+      "review_record_sha256": "4a453c1de587a01f660a95d15c9f7358e4b2295822fdbc43d1ffa37bf621d1c2",
+      "source_records": [
+        {
+          "path": "papers-local/arimoclomol2020_low_exposure_primary.xml",
+          "sha256": "c79f7dec893f7a059496ceb25821cc3ba59848e6226fd5a4686a78bf37766710",
+          "bytes": 154855,
+          "role": "main_article_xml",
+          "read_coverage": "front matter/abstract plus complete body and table structure"
+        },
+        {
+          "path": "papers-local/arimoclomol2020_low_exposure_primary.txt",
+          "sha256": "28466b1a6b242b0637c4c732922041e60d15653110d4e0ad13e48971fad6be3e",
+          "bytes": 53901,
+          "role": "main_article_text",
+          "read_coverage": "complete body; abstract supplied by XML"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-kuta-12192_2019_1064_MOESM1_ESM.pdf",
+          "sha256": "0abe4c51e3ac01e9f4e6a8d334dcdc640594c3a6afa279cde1c7b6f01e936b5f",
+          "bytes": 944718,
+          "role": "supplement_pdf",
+          "read_coverage": "all five pages, Online Resources 1\u20134"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-kuta-supp-layout.txt",
+          "sha256": "db4a46a92f5ffa3a1720a641d4e3297f6cee14d4995671163d8fcf2e1df51f7c",
+          "bytes": 5323,
+          "role": "supplement_layout_extraction",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-kuta-12192_2019_1064_Fig1_HTML.jpg",
+          "sha256": "e23bdc2a7a8767cba9d3db5b08c81cdfda91a0f7905f1cbe5b4ac0bbd0672877",
+          "bytes": 51855,
+          "role": "main_figure_image",
+          "read_coverage": "all panels and legends, in conjunction with article text"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-kuta-12192_2019_1064_Fig2_HTML.jpg",
+          "sha256": "79dcc6c8fd916339d8e5557286516af77b3fb30e9ded72d1628b57717ef6e588",
+          "bytes": 59862,
+          "role": "main_figure_image",
+          "read_coverage": "all panels and legends, in conjunction with article text"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-kuta-12192_2019_1064_Fig3_HTML.jpg",
+          "sha256": "cc719919741d6a3959f72cb230858ad28c9277c1a5b2c88ef7ecf621fa4abded",
+          "bytes": 121883,
+          "role": "main_figure_image",
+          "read_coverage": "all panels and legends, in conjunction with article text"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-kuta-12192_2019_1064_Fig4_HTML.jpg",
+          "sha256": "589b1ee072d99b37adcd5fce4ff12fa5682919fe08d1c8afe1d422f2a014334d",
+          "bytes": 64760,
+          "role": "main_figure_image",
+          "read_coverage": "all panels and legends, in conjunction with article text"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-kuta-12192_2019_1064_Fig5_HTML.jpg",
+          "sha256": "f310d9c23096ccccfdd439e4f32c0b032946c9221f1976ede22b882b883f6411",
+          "bytes": 146250,
+          "role": "main_figure_image",
+          "read_coverage": "all panels and legends, in conjunction with article text"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-kuta-12192_2019_1064_Fig6_HTML.jpg",
+          "sha256": "35b80ead02960fc5f94871f5f818445dda61ae75667732ccb98c21e0e62fda1e",
+          "bytes": 74144,
+          "role": "main_figure_image",
+          "read_coverage": "all panels and legends, in conjunction with article text"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-kuta-12192_2019_1064_Fig7_HTML.jpg",
+          "sha256": "aeec8a9aa39b413d038875139241b326849c5f9c844388bbfc7de244033a075f",
+          "bytes": 83081,
+          "role": "main_figure_image",
+          "read_coverage": "all panels and legends, in conjunction with article text"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-kuta-12192_2019_1064_Fig8_HTML.jpg",
+          "sha256": "54fc6873ff2e1de3b1b2d3a18f0b1eed7b4978d5d7eafe307b701235804e5779",
+          "bytes": 70604,
+          "role": "main_figure_image",
+          "read_coverage": "all panels and legends, in conjunction with article text"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-kuta-12192_2019_1064_Fig9_HTML.jpg",
+          "sha256": "2fcafcbd39b4284d52cd7e267b391f31c9aa333a5924d755bcc32d6c6c42d477",
+          "bytes": 78939,
+          "role": "main_figure_image",
+          "read_coverage": "all panels and legends, in conjunction with article text"
+        }
+      ]
+    },
+    {
+      "pmid": "33207204",
+      "doi": "10.1016/j.celrep.2020.108397",
+      "title": "BUBR1 Pseudokinase Domain Promotes Kinetochore PP2A-B56 Recruitment, Spindle Checkpoint Silencing, and Chromosome Alignment",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33207204/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "Complete 35-page supplied article read: main article, abstract, results/discussion, all main figure legends, reference list, STAR Methods and Key Resources Table, plus the embedded 11-page supplement. Main Figures 1\u20137 inspected using the held figure JPEGs.",
+        "supplement": "All text/legends of the separate 11-page supplement read; Figures S1\u2013S6 visually inspected (pages 2,4,5,7,9,11). Supplement overlaps the embedded pages in mmc4.",
+        "gap": "External phylogenomic Data S1/S2 and any underlying movies/raw measurements were not independently read/reanalysed. gama_braga.txt is a held alternative extraction; the complete PDF was the reading source, not an abstract substitute."
+      },
+      "review_record": "mechanism.json",
+      "review_record_sha256": "f45733d79fa6e47f10f1b4fb14553d0139ff9da64341acff283bbd8526675d8b",
+      "source_records": [
+        "papers-local/gama_braga2020_cellrep_mmc4.pdf",
+        "papers-local/supplementary/gamabraga2020_SUPPLEMENTARY.pdf"
+      ]
+    },
+    {
+      "pmid": "34134020",
+      "doi": "10.1016/j.ejca.2021.05.014",
+      "title": "Wilms tumour surveillance in at-risk children: Literature review and recommendations from the SIOP-Europe Host Genome Working Group and SIOP Renal Tumour Study Group.",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34134020/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "All 13 pages (51\u201363): abstract, introduction, methods, every recommendation/syndrome section and discussion, Tables 1\u20132, Figure 1 and legend, declarations and references. Main Figure 1 and Table 2 visually inspected; both main tables read in layout. All five Supplemental Tables (1\u20135) read in full: every visible OOXML paragraph, table cell, footnote and listed reference. Tables 1, 2, 4 and 5 were acquired from the publisher CDN during the follow-up. DOCX cell grids and merged headers were checked directly; no Word rendering is claimed. None of these four files contains embedded media or separate header/footer/footnote/endnote text parts.",
+        "gaps": [
+          "No remaining read gap in the main article or named Supplemental Tables 1\u20135.",
+          "Full primary reading of every reference underlying Hol remains outside this assignment; neither those references nor raw data are marked read."
+        ]
+      },
+      "review_record": "clinical-impact.json",
+      "review_record_sha256": "6f965236b78a7f9e316661f7800dee9867dce04ad41284f6790b40dd4fb0f251",
+      "source_records": [
+        {
+          "path": "papers-local/hol2021_ejc_wilms_surveillance.pdf",
+          "sha256": "aac1b6dbae9db75e4e1680f5a1ae040c7455c08918297f05dbe206a767503fb4",
+          "bytes": 605296,
+          "role": "main article",
+          "coverage": "Entire main article read using fresh layout extraction; relevant figures inspected visually."
+        },
+        {
+          "path": "/tmp/mva-clinical-review/hol2021_ejc_wilms_surveillance-layout.txt",
+          "sha256": "7063c34ffb3a79c6e52ff5863ae6b1515ccbc61a939bc93bb6b9802b967bef02",
+          "bytes": 87352,
+          "role": "fresh pdftotext -layout extraction",
+          "coverage": "Entire text read, including all tables, legends and references."
+        },
+        {
+          "path": "papers-local/hol2021_ejc_wilms_surveillance.txt",
+          "sha256": "71b52c9237f76f9246814a38a9ae3553bc84a611f61757479a0ae705931d6355",
+          "bytes": 66012,
+          "role": "pre-existing held text / index-linked filename",
+          "coverage": "Located and consulted for source matching; full-read claim refers to fresh PDF layout extraction, not this older extraction."
+        },
+        {
+          "path": "papers-local/hol2021_ejc_wilms_surveillance_suppl_table3.docx",
+          "sha256": "eb3223933367b04ccbcb4e5dd2e7e4ef2ace916915c9282cffefd97cf0ba206d",
+          "bytes": 20487,
+          "role": "Supplemental Table 3",
+          "coverage": "All visible OOXML table cells, footnotes and four references read. It was not rendered as a Word document; cell contents were read directly, not inferred from the main paper."
+        },
+        {
+          "path": "papers-local/audit-clinical-20261023-hol-supp-table1.docx",
+          "sha256": "6048c9f5356b1c3cb6313ee169e2f6a8452e7dfed5cd148025b5d1d41ab97a38",
+          "bytes": 17085,
+          "role": "Supplemental Table 1, publisher original DOCX",
+          "coverage": "Complete search strategy: title/introduction, generic Wilms query and all 31 topic rows; complete two-column OOXML table read. No reference list or figures present.",
+          "acquisition_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0959804921003221-mmc1.docx",
+          "read_status": "FULL_DOCUMENT_TEXT_AND_TABLE_CELLS_READ",
+          "visual_rendering": "Not rendered as a Word document; OOXML grid, spans and text inspected directly."
+        },
+        {
+          "path": "papers-local/audit-clinical-20261023-hol-supp-table1.txt",
+          "sha256": "221f383c38db243c8a31beb7240d2ac2e9e41bbd048420a2460f4c212fd7dfe7",
+          "bytes": 8628,
+          "role": "Supplemental Table 1, derived complete visible-text extraction",
+          "coverage": "Complete search strategy: title/introduction, generic Wilms query and all 31 topic rows; complete two-column OOXML table read. No reference list or figures present."
+        },
+        {
+          "path": "papers-local/audit-clinical-20261023-hol-supp-table2.docx",
+          "sha256": "da6ecc76ae45d281a8b1c87c4e5bd485dc9b98997cca8ba99de9b30b9f92a53a",
+          "bytes": 26888,
+          "role": "Supplemental Table 2, publisher original DOCX",
+          "coverage": "Complete WT1 table: five cohort columns, all three genotype rows, pooled and surveillance columns, all five displayed footnotes (including duplicate C), and all five listed references. Merged header checked; pooled numerators/denominators recomputed from displayed cells.",
+          "acquisition_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0959804921003221-mmc2.docx",
+          "read_status": "FULL_DOCUMENT_TEXT_AND_TABLE_CELLS_READ",
+          "visual_rendering": "Not rendered as a Word document; OOXML grid, spans and text inspected directly."
+        },
+        {
+          "path": "papers-local/audit-clinical-20261023-hol-supp-table2.txt",
+          "sha256": "0431eb2249537e1f1f65a3a97c8d1ecc620f2007a7fc190b2bee3917f93f75f4",
+          "bytes": 1822,
+          "role": "Supplemental Table 2, derived complete visible-text extraction",
+          "coverage": "Complete WT1 table: five cohort columns, all three genotype rows, pooled and surveillance columns, all five displayed footnotes (including duplicate C), and all five listed references. Merged header checked; pooled numerators/denominators recomputed from displayed cells."
+        },
+        {
+          "path": "papers-local/audit-clinical-20261023-hol-supp-table4.docx",
+          "sha256": "6c3ff992015ec5403ddc66d7b84d1b37aa4526c34468130e9c81032c771cce85",
+          "bytes": 31271,
+          "role": "Supplemental Table 4, publisher original DOCX",
+          "coverage": "Complete BWSp table: eight cohort columns, all five molecular subgroup rows, pooled and surveillance columns, all displayed footnotes A\u2013H and deduplication note, and all eight listed references. Merged header checked; pooled numerators/denominators recomputed from displayed cells.",
+          "acquisition_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0959804921003221-mmc4.docx",
+          "read_status": "FULL_DOCUMENT_TEXT_AND_TABLE_CELLS_READ",
+          "visual_rendering": "Not rendered as a Word document; OOXML grid, spans and text inspected directly."
+        },
+        {
+          "path": "papers-local/audit-clinical-20261023-hol-supp-table4.txt",
+          "sha256": "dd24c666dfca417698947b2bb2a5b26198f8cb7c8384eb0b784b310a465cc48c",
+          "bytes": 3697,
+          "role": "Supplemental Table 4, derived complete visible-text extraction",
+          "coverage": "Complete BWSp table: eight cohort columns, all five molecular subgroup rows, pooled and surveillance columns, all displayed footnotes A\u2013H and deduplication note, and all eight listed references. Merged header checked; pooled numerators/denominators recomputed from displayed cells."
+        },
+        {
+          "path": "papers-local/audit-clinical-20261023-hol-supp-table5.docx",
+          "sha256": "fa0d90c38746aa60777f2902947a5ff3fb7f25849ce4191f25a5eea1ea7a2dba",
+          "bytes": 18544,
+          "role": "Supplemental Table 5, publisher original DOCX",
+          "coverage": "Complete other-predisposition table: all seven condition rows and all three columns, all considerations, and all 19 bibliography entries. References read as bibliography entries only; their full articles were not recursively read.",
+          "acquisition_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0959804921003221-mmc5.docx",
+          "read_status": "FULL_DOCUMENT_TEXT_AND_TABLE_CELLS_READ",
+          "visual_rendering": "Not rendered as a Word document; OOXML grid, spans and text inspected directly."
+        },
+        {
+          "path": "papers-local/audit-clinical-20261023-hol-supp-table5.txt",
+          "sha256": "631e621a33388da61810622332ed812b650229722165405bde10d7c546f8042f",
+          "bytes": 5980,
+          "role": "Supplemental Table 5, derived complete visible-text extraction",
+          "coverage": "Complete other-predisposition table: all seven condition rows and all three columns, all considerations, and all 19 bibliography entries. References read as bibliography entries only; their full articles were not recursively read."
+        }
+      ]
+    },
+    {
+      "pmid": "34418116",
+      "doi": "10.1002/jimd.12428",
+      "title": "Efficacy and safety of arimoclomol in Niemann-Pick disease type C: Results from a double-blind, randomised, placebo-controlled, multinational phase 2/3 trial of a novel treatment",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34418116/",
+      "main_text_read": true,
+      "coverage": {
+        "status": "full_main_article_and_identified_supplements_read",
+        "main_sections": [
+          "abstract",
+          "complete Introduction",
+          "complete Methods",
+          "complete Results",
+          "complete Discussion",
+          "main Tables 1\u20135 in structured XML",
+          "all main legends 1\u20133",
+          "funding/conflicts and end matter"
+        ],
+        "main_figures_visually_inspected": [
+          1,
+          2,
+          3
+        ],
+        "supplement": "Appendix S1 (s003 DOCX) complete text, methods, Tables S1\u2013S6 and legends; rendered to PDF, pdftotext -layout, table pages visually checked. Separate s001/s002 supplementary Figures S1/S2 read and visually inspected.",
+        "gaps": [
+          "Main publisher PDF was not obtained; complete main article was read from held text and authoritative XML, with separate main figure images. Main-table structure was read in XML, not inferred from flattened columns."
+        ],
+        "limits": "This is a read of the 2021 paper, not a fresh regulatory-label audit or patient-level trial reanalysis."
+      },
+      "review_record": "therapeutics.json",
+      "review_record_sha256": "4a453c1de587a01f660a95d15c9f7358e4b2295822fdbc43d1ffa37bf621d1c2",
+      "source_records": [
+        {
+          "path": "papers-local/mengel2021_jimd_arimoclomol_npc_phase23.txt",
+          "sha256": "cba2454ab148f533418530f80462c8ea4aff69081f1a02af3f6ab8a27d42803e",
+          "bytes": 77861,
+          "role": "main_article_text",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-34418116.xml",
+          "sha256": "5663379c7919e811703d088b702e6c72446452f988f5fcaf5e6427c5c492430d",
+          "bytes": 172955,
+          "role": "main_article_xml",
+          "read_coverage": "complete article including table cells"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-mengel-JIMD-44-1463-s003.docx",
+          "sha256": "5b2dc0e990e066378c959647aae7409b4dcb1ad52abd80d60a7a91fe7d546b8d",
+          "bytes": 67293,
+          "role": "supplement_original",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-mengel-JIMD-44-1463-s003.pdf",
+          "sha256": "f6c43a6f649bb9ab539a1868df4629b87ab7ec2794333192ae7220c2aac041de",
+          "bytes": 232002,
+          "role": "supplement_rendered_pdf",
+          "read_coverage": "derived local rendering; complete text; table pages visually inspected"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-mengel-JIMD-44-1463-s003-layout.txt",
+          "sha256": "f23a52841899bb54d2332ffcdd4cf83a6f9b55253f4c0204e7cab3b734cf5973",
+          "bytes": 24436,
+          "role": "supplement_layout_extraction",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-mengel-JIMD-44-1463-s001.pdf",
+          "sha256": "aad9a9645b76912774005541ae5c05f386c76e3745f6b02544d1b980b2e3908f",
+          "bytes": 173169,
+          "role": "supplement_figure",
+          "read_coverage": "S1 inspected"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-mengel-JIMD-44-1463-s002.pdf",
+          "sha256": "cf577973dfa0e20f54d12c85d10a49671047fc49dd315f5192edb0e5b63ad4b3",
+          "bytes": 24493,
+          "role": "supplement_figure",
+          "read_coverage": "S2 inspected"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-mengel-JIMD-44-1463-g001.jpg",
+          "sha256": "9755eced25020898e620f4b91bfc89610b9c56e94b5a60d838ec9f238eefa2e2",
+          "bytes": 54210,
+          "role": "main_figure_image",
+          "read_coverage": "all three main figures; g001=Fig3, g002=Fig1, g003=Fig2"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-mengel-JIMD-44-1463-g002.jpg",
+          "sha256": "fab6ff4cdd4f8ec141e0cc41f07679160e9aaa275ffe4efab9ddb54eb73dd7da",
+          "bytes": 67777,
+          "role": "main_figure_image",
+          "read_coverage": "all three main figures; g001=Fig3, g002=Fig1, g003=Fig2"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-mengel-JIMD-44-1463-g003.jpg",
+          "sha256": "5b093889cf074fdb9b230d87fab5116c8dc931dd0f7c0b555553e8bd6c4cba68",
+          "bytes": 152983,
+          "role": "main_figure_image",
+          "read_coverage": "all three main figures; g001=Fig3, g002=Fig1, g003=Fig2"
+        }
+      ]
+    },
+    {
+      "pmid": "36371959",
+      "doi": "10.1016/j.bios.2022.114826",
+      "title": "A bioluminescent-based probe for in vivo non-invasive monitoring of nicotinamide riboside uptake reveals a link between metastasis and NAD+ metabolism",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36371959/",
+      "main_text_read": true,
+      "coverage": {
+        "status": "full_main_article_and_identified_supplement_read",
+        "main_sections": [
+          "abstract",
+          "complete Introduction",
+          "all Methods subsections 2.1\u20132.14",
+          "complete Results",
+          "complete Discussion and conclusion",
+          "all main figure legends 1\u20134",
+          "end matter"
+        ],
+        "main_figures_visually_inspected": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "supplement": "Complete publisher DOCX: Figs S1\u2013S8 and legends, synthesis/characterization, Scheme 1, NMR/UV/IR images, release-kinetics plot and table, references. Rendered all 15 pages to PDF and visually inspected, including initially unrenderable EMF figures.",
+        "gaps": [
+          "Main PDF not held/acquired in this assignment; full held article text was read and all publisher main images inspected separately."
+        ],
+        "limits": "Chemical spectra were inspected as reported characterization, not independently reassigned from raw spectral data. No individual animal raw-data reanalysis."
+      },
+      "review_record": "therapeutics.json",
+      "review_record_sha256": "4a453c1de587a01f660a95d15c9f7358e4b2295822fdbc43d1ffa37bf621d1c2",
+      "source_records": [
+        {
+          "path": "papers-local/maric2023_biosens_nad_bioluminescent_probe.txt",
+          "sha256": "ee922b3f8d3e2c177b1bada8c2141aa0c9439ee00f47a4cb77b34186a311ed89",
+          "bytes": 71502,
+          "role": "main_article_text",
+          "read_coverage": "complete main article"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-maric-supp.docx",
+          "sha256": "b8f35c194548fa3d2d002dda42fd2fb9f72de3e4f8b71ac5de6bd248db9489ff",
+          "bytes": 1002508,
+          "role": "supplement_original",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-maric-supp.pdf",
+          "sha256": "144b01843f5dd7c436d677f344960c8aa9f5ba3b725f4ceb633a94bdf8d89888",
+          "bytes": 814512,
+          "role": "supplement_rendered_pdf",
+          "read_coverage": "all 15 pages visually inspected"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-maric-supp-readable.txt",
+          "sha256": "b4ccc296ee03e414f27800294bbcc0b22be47130c37fb6c792b0441d8e271bce",
+          "bytes": 12840,
+          "role": "supplement_text",
+          "read_coverage": "complete"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-maric-supp-layout.txt",
+          "sha256": "7f32d8c413585d57d4e81afb90be7d989b4f5b4b99a13f666b9e0da270b0dc29",
+          "bytes": 17323,
+          "role": "supplement_layout_extraction",
+          "read_coverage": "complete; includes release-kinetics table"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-maric-fig1.jpg",
+          "sha256": "807b3df4931b8e67276b7d708cd2407d07aab048eb1de821f85af0dcd0d179df",
+          "bytes": 176928,
+          "role": "main_figure_image",
+          "read_coverage": "all panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-maric-fig2.jpg",
+          "sha256": "1c4abd1a97bb66e12aa407c4000edcd4c20ba4e48dd4700159336ac2dd9ab29a",
+          "bytes": 128700,
+          "role": "main_figure_image",
+          "read_coverage": "all panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-maric-fig3.jpg",
+          "sha256": "6f395d8e74fe16dd96947e7a7083444df2077ce1f9da083dec027c14252b3846",
+          "bytes": 109577,
+          "role": "main_figure_image",
+          "read_coverage": "all panels"
+        },
+        {
+          "path": "papers-local/audit-therapeutics-maric-fig4.jpg",
+          "sha256": "79570d77c093dc8537799c4391bf23fa508803756825dd644070838cabc75d99",
+          "bytes": 105235,
+          "role": "main_figure_image",
+          "read_coverage": "all panels"
+        }
+      ]
+    },
+    {
+      "pmid": "37739573",
+      "doi": "10.1016/S1474-4422(23)00275-2",
+      "title": "Safety and efficacy of arimoclomol for inclusion body myositis: a multicentre, randomised, double-blind, placebo-controlled trial.",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37739573/",
+      "main_text_read": true,
+      "coverage": {
+        "main_text_fully_read": true,
+        "main_scope": "All main text, printed pp900\u2013911, references and disclosures. Original PDF visually inspected on file pp5\u201310 (printed pp904\u2013909): Figure 1, all six Figure 2 panels, Tables 1\u20134 including continuation and footnotes.",
+        "main_figure_images_visually_reviewed": true,
+        "supplement_text_fully_read": true,
+        "supplement_scope": "All 14 file pages: cover, contents and numbered pp1\u201312. Complete text read and every page visually inspected; Tables S1\u2013S9 and Figure S1.",
+        "supplement_numbered_pages_unread": 0,
+        "supplement_graphics": "Figure S1 visually inspected on file p14/numbered p12: design schematic, intended n75 per arm, arimoclomol citrate400mg three times daily. Planned sample size is not the realized randomization.",
+        "table_verification": "Original main Tables 1\u20134 and all supplemental tables visually inspected with row/column alignment. Safety versus efficacy denominators and participant versus event counts checked. Table S8 shows both renal diagnoses for participant9 but no participant11 row; source issues are quarantined in CE-17.",
+        "all_available_article_and_supplement_material_fully_read": true
+      },
+      "review_record": "counterevidence.json",
+      "review_record_sha256": "05bf8d46f1cfe2d1961249ddc6e5942d2bc497a884b07ba1bb80f4d0f5f6abb9",
+      "source_records": []
+    },
+    {
+      "pmid": "38685113",
+      "doi": "10.1186/s40246-024-00604-w",
+      "title": "Critical assessment of variant prioritization methods for rare disease diagnosis within the rare genomes project",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38685113/",
+      "main_text_read": true,
+      "coverage": {
+        "main_article": "FULL READ: complete abstract/background/methods/results/discussion/conclusions/ethics, tables, all model-summary rows, figure legends and references.",
+        "figures": "Main Figures 1\u20134 visually inspected; all three images embedded in the methods supplement inspected (workflow and supplementary comparison plots).",
+        "supplements": "Entire methods DOCX read, including all 16 team descriptions, reanalysis methods, figure legends and the four embedded math expressions. XLSX Table S3: all eight candidate rows read. Tables S1/S2: structure/headers and selected relevant cases inspected, not all family rows.",
+        "gaps": [
+          "The full training/test-family workbooks were not adjudicated row by row. No replication of submitted algorithms or recalculation of all performance metrics was performed."
+        ],
+        "main_full_read": true
+      },
+      "review_record": "methods-genetics.json",
+      "review_record_sha256": "770f837b7b9f150d50d8c7f6f0593d6eeebc3814fd54e284dd6ecb451b171517",
+      "source_records": [
+        {
+          "path": "papers-local/stenton2024_cagi6_rgp.txt",
+          "absolute_path": "papers-local/stenton2024_cagi6_rgp.txt",
+          "sha256": "773ebf432835ff1698c15b9351ac28bc1a58b393842a146a20d1f6605c8df362",
+          "bytes": 103563,
+          "role": "existing main extraction",
+          "read_coverage": "Complete main article"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-PMC11057178.xml",
+          "absolute_path": "papers-local/audit-methods-20261023-PMC11057178.xml",
+          "sha256": "ce171a29893aa241037a4dbcc6a095d496ad27aee856482d01391b9d81fda685",
+          "bytes": 253773,
+          "role": "Europe PMC full XML",
+          "read_coverage": "Complete main article including tables",
+          "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11057178/fullTextXML"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-stenton-40246_2024_604_Fig1_HTML.jpg",
+          "absolute_path": "papers-local/audit-methods-20261023-stenton-40246_2024_604_Fig1_HTML.jpg",
+          "sha256": "1b0eef0ab7444469efc425703255f89ddb775d561259b9578dc360f156747400",
+          "bytes": 100556,
+          "role": "main Figure 1",
+          "read_coverage": "Viewed with legend and relevant text"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-stenton-40246_2024_604_Fig2_HTML.jpg",
+          "absolute_path": "papers-local/audit-methods-20261023-stenton-40246_2024_604_Fig2_HTML.jpg",
+          "sha256": "ddaa65de3a3712ab25c13144c588b1e5f6e4845e455d7bc15724594559d5087a",
+          "bytes": 145808,
+          "role": "main Figure 2",
+          "read_coverage": "Viewed with legend and relevant text"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-stenton-40246_2024_604_Fig3_HTML.jpg",
+          "absolute_path": "papers-local/audit-methods-20261023-stenton-40246_2024_604_Fig3_HTML.jpg",
+          "sha256": "b96b166d7d9317930b7724426eae21b7faec884fc8bf49329077450c51139e65",
+          "bytes": 58484,
+          "role": "main Figure 3",
+          "read_coverage": "Viewed with legend and relevant text"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-stenton-40246_2024_604_Fig4_HTML.jpg",
+          "absolute_path": "papers-local/audit-methods-20261023-stenton-40246_2024_604_Fig4_HTML.jpg",
+          "sha256": "2a998738bc637fca608c7843cff3448e943e1a53b59e3e81bd838adce238eccf",
+          "bytes": 65664,
+          "role": "main Figure 4",
+          "read_coverage": "Viewed with legend and relevant text"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-stenton-40246_2024_604_MOESM1_ESM.xlsx",
+          "absolute_path": "papers-local/audit-methods-20261023-stenton-40246_2024_604_MOESM1_ESM.xlsx",
+          "sha256": "708d1f686ae1ae4f8ead69780507fb3789f54a7a17760b433a56c5107b0b3615",
+          "bytes": 285703,
+          "role": "supplementary data workbook",
+          "read_coverage": "All eight Table S3 candidate rows; Tables S1/S2 only structure/headers and selected cases"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-stenton-40246_2024_604_MOESM2_ESM.docx",
+          "absolute_path": "papers-local/audit-methods-20261023-stenton-40246_2024_604_MOESM2_ESM.docx",
+          "sha256": "69c63ed23a2bb44608a1b4bef4030e664357544c15c0969da736125d7eb69bb8",
+          "bytes": 1172536,
+          "role": "supplementary methods",
+          "read_coverage": "Full narrative, all team methods, math expressions and three embedded images"
+        },
+        {
+          "path": "papers-local/audit-methods-20261023-stenton-assets.zip",
+          "absolute_path": "papers-local/audit-methods-20261023-stenton-assets.zip",
+          "sha256": "acb89c1ba591bbec2924bc14439f180adeb7dc58dbf126e718ff27e147e43f2a",
+          "bytes": 1517348,
+          "role": "Europe PMC source asset bundle",
+          "read_coverage": "Full methods and scoped workbook review as specified",
+          "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11057178/supplementaryFiles"
+        }
+      ]
+    },
+    {
+      "pmid": "38782015",
+      "doi": "10.1016/S1474-4422(24)00134-0",
+      "title": "Safety and efficacy of arimoclomol in patients with early amyotrophic lateral sclerosis (ORARIALS-01): a randomised, double-blind, placebo-controlled, multicentre, phase 3 trial.",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38782015/",
+      "main_text_read": true,
+      "coverage": {
+        "main_text_fully_read": true,
+        "main_scope": "All main text, printed pp687\u2013699, references and disclosures. Original PDF visually checked on file pp3\u201310 (printed pp689\u2013696), including Figures 1, 2A\u2013C, 3 and Tables 1\u20133 with footnotes.",
+        "main_figure_images_visually_reviewed": true,
+        "supplement_total_file_pages": 206,
+        "supplement_cover_read": true,
+        "supplement_numbered_pages_total": 205,
+        "supplement_numbered_pages_read": 205,
+        "supplement_numbered_read_ranges": [
+          [
+            1,
+            205
+          ]
+        ],
+        "supplement_numbered_pages_unread": 0,
+        "supplement_numbered_unread_ranges": [],
+        "supplement_page_number_mapping": "Printed appendix page n corresponds to 1-based file page n+1; file page 1 is the cover.",
+        "supplement_graphics": "Visually inspected: supplemental Figure 1 (numbered p9), protocol trial-design Figure 1 (p42), electronic-data Panel 1 (p112), CAFS illustration (p191), interpolation formula/table (p196). Corrupt-font approval p13 and investigator roster pp204\u2013205 resolved visually. Supplementary Table 1 pp2\u20138 and selected protocol/SAP tables also visually checked; exact file-page manifest supplied.",
+        "table_verification": "Original PDF Tables 1\u20133 visually inspected including labels, row/column alignment, units, population denominators and notes; supplementary Table 1 all seven pages visually checked. New numbers are restricted to verified entries. Source discrepancies remain flagged in CE-15/CE-16, not silently corrected.",
+        "all_available_article_and_supplement_material_fully_read": true,
+        "supplement_text_fully_read": true,
+        "full_original_protocol_sap_and_linked_documents_read": false,
+        "unavailable_internal_material": "Published numbered appendix p198 ends at internal SAP p65 of93; next p199 begins at SAP p89 of93. Internal pp66\u201388 (23 pages) are absent, including the referenced Appendix 3 SAS code. Separate biomarker, population-PK and DMC plans/reports were not supplied or audited."
+      },
+      "review_record": "counterevidence.json",
+      "review_record_sha256": "05bf8d46f1cfe2d1961249ddc6e5942d2bc497a884b07ba1bb80f4d0f5f6abb9",
+      "source_records": []
+    },
+    {
+      "pmid": "40520915",
+      "doi": "10.1016/j.ymgmr.2025.101233",
+      "title": "Efficacy results from a 12-month double-blind randomized trial of arimoclomol for treatment of Niemann-Pick disease type C (NPC): Presenting a rescored 4-domain NPC Clinical Severity Scale.",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40520915/",
+      "main_text_read": true,
+      "coverage": {
+        "main_text_fully_read": true,
+        "main_scope": "Entire held PMC text, including all main sections, Tables 1\u20134, Figure 1 caption, references and disclosures; Figure 1 JPG separately inspected.",
+        "main_figure_images_visually_reviewed": true,
+        "all_available_article_and_supplement_material_fully_read": true,
+        "supplement_text_fully_read": true,
+        "supplement_scope": "All 5 PDF pages, including Tables S1\u2013S4, Figure S1 and legends; pdftotext -layout extraction plus visual inspection of all five rendered pages.",
+        "supplement_numbered_pages_unread": 0,
+        "table_verification": "Table 4 column/row alignment independently checked against live Europe PMC JATS XML (table-wrap id t0020). Figure 1 numerical labels checked in the image. Every supplemental page inspected visually.",
+        "not_in_scope": "Original 2021 trial publication, underlying individual participant data, complete original protocol/SAP and separate scale-validation papers are not certified read by this review."
+      },
+      "review_record": "counterevidence.json",
+      "review_record_sha256": "05bf8d46f1cfe2d1961249ddc6e5942d2bc497a884b07ba1bb80f4d0f5f6abb9",
+      "source_records": []
+    }
+  ]
+}
