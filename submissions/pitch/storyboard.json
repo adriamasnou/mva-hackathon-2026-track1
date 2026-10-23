@@ -1,7 +1,7 @@
 [
   {
     "title": "A candidate that must earn its place",
-    "subtitle": "BUB1B-MVA \u00b7 arimoclomol \u00b7 functional rescue",
+    "subtitle": "BUB1B-MVA · arimoclomol · functional rescue",
     "label": "01 / THE QUESTION",
     "narration": "For a child with mosaic variegated aneuploidy, a plausible medicine is only a starting point. We propose arimoclomol for laboratory testing, with explicit rules for deciding whether it deserves to advance. We have not demonstrated drug rescue or treated this child. Our contribution is a testable proposal, supported by working tools that others can use.",
     "bullets": [
@@ -9,56 +9,73 @@
       "Question: can functional BubR1 be restored?",
       "Status: proposed experiment; no drug rescue yet"
     ],
-    "source": "Track 2 report \u00b7 PMID 20516114"
+    "source": "Track 2 report · PMID 20516114"
   },
   {
     "title": "Measure the variant before choosing its remedy",
     "subtitle": "Protein amount and protein function are different questions",
     "label": "02 / THE MECHANISM",
-    "narration": "The two identified variants affect the gene that makes Bub R one, a protein involved in chromosome separation. Their phase is inferred. The exact protein consequences remain unmeasured. The missense variant could reduce abundance, impair function, do both, or remain indeterminate. We compare full-length normal and altered protein at matched abundance. An isolated fragment's melting curve cannot settle that question.",
+    "narration": "The two identified variants affect the gene that makes Bub R one, a protein involved in chromosome separation. Their phase is inferred. The exact protein consequences remain unmeasured. The missense variant could reduce abundance, impair function, do both, or remain indeterminate. The proposed experiment compares full-length normal and altered protein at matched abundance. An isolated fragment's melting curve cannot settle that question.",
     "bullets": [
       "Phase inferred; N1002K function unmeasured",
       "Full-length WT and N1002K, abundance matched",
-      "Abundance-limited \u00b7 function-limited \u00b7 mixed \u00b7 indeterminate"
+      "Abundance-limited · function-limited · mixed · indeterminate"
     ],
-    "source": "PMIDs 20516114 \u00b7 22698286 \u00b7 33207204"
+    "source": "PMIDs 20516114 · 22698286 · 33207204"
   },
   {
-    "title": "Three gates between a molecule and a claim",
-    "subtitle": "Exposure \u2192 response \u2192 chromosome-segregation function",
+    "title": "Four experimental gates",
+    "subtitle": "Variant effect, measurement, function and interpretation",
     "label": "03 / THE EXPERIMENT",
-    "narration": "Arimoclomol has a human approval in a different disease. Its reported effects depend on the cell and the stress. That makes exposure a gate, not a footnote. First, qualify the model and measurement. Second, test whether the proposed response occurs at relevant exposure. Third, require better chromosome segregation, while tracking division, survival and cell fate. More protein alone does not pass. Neither does an apparent improvement caused by stopping division or selectively losing abnormal cells. Failed controls are indeterminate; imprecise results are inconclusive. Rejection requires ruling out the predefined worthwhile benefit for that tested approach.",
+    "narration": "The protocol has four gates. Gate A establishes the variant's effect using full-length protein at matched abundance. Gate B qualifies measurement, pathway response and exposure. Gate C measures chromosome segregation while separately tracking division and cell fate. Gate D applies prespecified confidence bounds. More protein alone cannot pass. Neither can apparent improvement from stopping division or selectively losing abnormal cells. Failed controls are indeterminate. An interval touching the worthwhile-benefit threshold is inconclusive. Only an interval entirely below that threshold rules out the programme's worthwhile benefit at that exposure. These are proposed research rules, not clinical thresholds.",
     "bullets": [
-      "Qualify measurement and exposure",
-      "Require function, not protein alone",
-      "Exclude cytostasis, death and selection as explanations"
+      "A: establish the variant effect",
+      "B: qualify measurements and exposure",
+      "C: measure function and cell fate",
+      "D: apply prespecified decision rules"
     ],
-    "source": "PMID 31900865 \u00b7 MIPLYFFA label \u00a712 \u00b7 proposed protocol"
+    "source": "Functional rescue plan, gates A-D / proposed experiments",
+    "evidence_paths": [
+      "submissions/functional-rescue-plan.md",
+      "submissions/rescue-decision-validation.md"
+    ]
   },
   {
-    "title": "A gene name should lead to evidence",
-    "subtitle": "An offline navigator with uncertainty kept visible",
+    "title": "Gene-to-condition navigator",
+    "subtitle": "Source roles remain visible",
     "label": "04 / THE REUSABLE TOOL",
-    "narration": "We also built a practical gene-to-condition navigator. Search a gene, inspect its candidate condition mappings, and follow the source evidence. It includes every row of a dated, two thousand and sixty-three row register snapshot, including thirty-five unmapped rows and source disagreements. A match is not an eligibility decision, and no match is not evidence of ineligibility. Queries stay on the device.",
+    "narration": "The offline navigator links genes to candidate conditions and shows each source's association role. Twenty-eight selected queries passed, with complete review of every returned source association: forty-seven gene and register-row pairs. This was a developer evaluation using the same source snapshots, not independent clinical validation. All register rows remain visible, including unmapped entries. A match does not establish eligibility. Queries stay on the device.",
     "bullets": [
-      "2,063 register rows \u00b7 35 explicitly unmapped",
-      "Per-gene source and OMIM evidence",
-      "A lookup aid, not an eligibility decision"
+      "28 selected queries passed",
+      "47 returned gene-row associations reviewed",
+      "Shared-source developer evaluation; eligibility unresolved"
     ],
-    "source": "HFEA workbook 2026-08-05 \u00b7 hashed mapping sources",
-    "demo": true
+    "source": "Expanded frozen query audit / HFEA register 2026-08-05",
+    "demo": true,
+    "evidence_paths": [
+      "submissions/pgtm-expanded-validation.json",
+      "submissions/pgtm-expanded-validation.md",
+      "submissions/pgtm-navigator.html"
+    ],
+    "demo_query": "TGFB1"
   },
   {
-    "title": "An empty result must never pass",
-    "subtitle": "Portable checks for the interpretation layer",
+    "title": "Rules that reject misleading hits",
+    "subtitle": "Executable research decision prototype",
     "label": "05 / THE RIGOR",
-    "narration": "Our interpretation canary checks that a model has actually answered. Real Splice A I inference passes six controls. A separate checker self-test rejects nine injected failures, including missing and nonfinite output. We distinguish those tests from clinical accuracy. A public-genome spike-in also demonstrates scale, while leaving diagnostic performance and knowledge leakage unresolved.",
+    "narration": "We implemented these rescue-decision rules as a research software prototype. All forty frozen synthetic cases matched their expected decisions, including protein-only signals, selective killing, missing data and confidence-boundary cases. This verifies software behaviour, not biological rescue. Separately, real Splice A I inference passes six controls. Its checker rejects nine injected failures. Laboratory function, exposure and independent replication remain unmeasured.",
     "bullets": [
-      "6 controls passed with real model inference",
-      "9 injected failures rejected by the checker",
-      "Missing prerequisites return NOT RUN, never success"
+      "40 frozen synthetic cases matched expected decisions",
+      "6 real SpliceAI controls; 9 checker faults rejected",
+      "Software verification, not biological rescue"
     ],
-    "source": "Measured SpliceAI output 2026-10-23 \u00b7 public HG002 smoke test"
+    "source": "Rescue-decision validation / SpliceAI measured controls and checker",
+    "evidence_paths": [
+      "submissions/rescue-decision-validation.json",
+      "submissions/rescue-decision-validation.md",
+      "canary/measured-results-2026-10-23.txt",
+      "canary/README.md"
+    ]
   },
   {
     "title": "The next result is clear",
@@ -70,6 +87,6 @@
       "Next: independent functional and exposure validation",
       "No claim of a proven treatment"
     ],
-    "source": "adriamasnou \u00b7 MVA Hackathon 2026"
+    "source": "adriamasnou · MVA Hackathon 2026"
   }
 ]
