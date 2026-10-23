@@ -11,6 +11,9 @@ from pathlib import Path
 spec = importlib.util.spec_from_file_location('benchmark_evaluator', Path(__file__).with_name('evaluate.py'))
 evaluator = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(evaluator)
+spec = importlib.util.spec_from_file_location('export_provenance', Path(__file__).with_name('export_provenance.py'))
+provenance = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(provenance)
 
 
 def sha(path):
@@ -26,6 +29,9 @@ def verify(root):
             raise ValueError('Export member failed verification: '+name)
     jobs = json.loads((root/'jobs-manifest.json').read_text())
     execution = json.loads((root/'execution.json').read_text())
+    if sha(root/'execution.json') != receipt['execution_receipt_sha256']:
+        raise ValueError('Export execution receipt changed')
+    provenance.verify(root,execution)
     if execution['status'] != 'completed' or execution['exit_code'] != 0:
         raise ValueError('Execution did not complete successfully')
     if sha(root/'jobs-manifest.json') != execution['jobs_manifest_sha256']:

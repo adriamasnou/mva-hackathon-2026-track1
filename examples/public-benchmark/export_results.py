@@ -14,6 +14,7 @@ def module(name):
 
 
 runner=module('run');evaluator=module('evaluate')
+provenance=module('export_provenance')
 
 
 def allele_key(variant, source=False):
@@ -43,6 +44,9 @@ def export(work, out, cases_path):
     if execution.get('status')!='completed' or execution.get('exit_code')!=0:
         raise ValueError('Export only completed successful execution; report failed runs separately')
     if execution.get('jobs_manifest_sha256')!=runner.sha(manifest):raise ValueError('Manifest changed')
+    provenance.verify(work,execution)
+    for job in jobs:
+        if runner.sha(job['job'])!=job['job_sha256']:raise ValueError('Frozen job changed')
     results=evaluator.evaluate(jobs,execution)
     if any(r['status'] in ('invalid_output','missing_output','execution_failed') for r in results['all_case_results']):
         raise ValueError('Some output is not verified; do not package it as complete')
@@ -61,7 +65,7 @@ def export(work, out, cases_path):
         audits.append({'case_id':job['case_id'],'arm':job['arm'],'gene':job['gene'],
                        **variant_audit(records,cases[job['case_id']])})
     for path in [manifest,receipt,work/'protocol-before-inference.json',work/'preparation-receipt.json',
-                 work/'runtime.properties',work/'batch.txt',*sorted(work.glob('addendum-*.json'))]:
+                 work/'runtime.properties',work/'batch.txt',work/'execution.log',*sorted(work.glob('addendum-*.json'))]:
         if path.exists():shutil.copyfile(path,out/path.name)
     results['execution_receipt_sha256']=runner.sha(receipt)
     (out/'evaluation.json').write_text(json.dumps(results,indent=2)+'\n')

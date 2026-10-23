@@ -14,9 +14,24 @@ phenotype=module('run_phenotype')
 exporter=module('export_results')
 export_verifier=module('verify_export')
 phenotype_exporter=module('export_phenotype')
+provenance=module('export_provenance')
 
 
 class PublicBenchmarkTests(unittest.TestCase):
+    def test_execution_binding_rejects_changed_configuration_and_design(self):
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d)
+            properties=root/'runtime.properties';properties.write_text('whitelist=false\n')
+            design=root/'protocol-before-inference.json';design.write_text('{"arm":"original"}\n')
+            receipt={'properties_sha256':runner.sha(properties),'properties_text':properties.read_text(),
+                     'design_records':{design.name:{'sha256':runner.sha(design),'content':json.loads(design.read_text())}}}
+            provenance.verify(root,receipt)
+            properties.write_text('whitelist=true\n')
+            with self.assertRaises(ValueError):provenance.verify(root,receipt)
+            properties.write_text(receipt['properties_text'])
+            design.write_text('{"arm":"changed"}\n')
+            with self.assertRaises(ValueError):provenance.verify(root,receipt)
+
     def test_phenotype_export_preserves_ties_after_original_outputs_are_removed(self):
         with tempfile.TemporaryDirectory() as d:
             work=Path(d)/'work';work.mkdir();(work/'results').mkdir()

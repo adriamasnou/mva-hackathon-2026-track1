@@ -10,6 +10,7 @@ import shutil
 spec=importlib.util.spec_from_file_location('phenotype_runner',Path(__file__).with_name('run_phenotype.py'))
 phenotype=importlib.util.module_from_spec(spec);spec.loader.exec_module(phenotype)
 sha=phenotype.runner.sha
+provenance=phenotype.sibling('export_provenance')
 
 
 def verify(root):
@@ -20,6 +21,7 @@ def verify(root):
         if not path.is_relative_to(root) or not path.is_file() or sha(path)!=expected:
             raise ValueError('Export member failed verification: '+name)
     execution=json.loads((root/'execution.json').read_text())
+    provenance.verify(root,execution)
     if execution['status']!='completed' or execution['exit_code']!=0 or execution['missing_outputs']:
         raise ValueError('Incomplete execution')
     protocol=root/'protocol-before-inference.json'
@@ -46,6 +48,7 @@ def export(work,out):
     if out.exists():raise FileExistsError('Preserve prior export; choose a new destination')
     protocol=work/'protocol-before-inference.json'
     execution=json.loads((work/'execution.json').read_text())
+    provenance.verify(work,execution)
     report=json.loads((work/'evaluation.json').read_text())
     if execution['status']!='completed' or execution['exit_code']!=0 or execution['missing_outputs']:
         raise ValueError('Only successful complete executions may be exported')
@@ -68,6 +71,7 @@ def export(work,out):
     for name in ['protocol-before-inference.json','execution.json','evaluation.json','batch.txt','runtime.properties']:
         shutil.copyfile(work/name,out/name)
     for path in sorted(work.glob('addendum-*.json')):shutil.copyfile(path,out/path.name)
+    if (work/'execution.log').exists():shutil.copyfile(work/'execution.log',out/'execution.log')
     (out/'export-receipt.json').write_text(json.dumps({
         'scope':'Full compact unique-gene phenotype scores and execution/configuration records, without genome or database files.',
         'script_sha256':sha(__file__),
