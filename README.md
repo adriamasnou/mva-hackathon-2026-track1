@@ -14,6 +14,8 @@ We propose **arimoclomol for conditional preclinical testing** in BUB1B-MVA. The
 
 [Methods workbook](submissions/adriamasnou_methods_description.xlsx) · [Pitch and recording kit](submissions/pitch/README.md) · [Notes for judges](submissions/notes-for-judges.md)
 
+[Reviewer walkthrough](submissions/reviewer-walkthrough.md): inspect a gene-to-condition source link, an unresolved identifier and three executable synthetic rescue-decision examples.
+
 ## Run the public checks
 
 ```sh
@@ -34,6 +36,7 @@ The canary self-test tests the checker with synthetic fixtures. Actual model inf
 - [Reagent design](submissions/n1002k-reagent-specification.md), [fragment protocol](submissions/n1002k-collaboration-package.md), [assay pilot](submissions/pilot-protocol-bubr1-flow.md) and [screen design](submissions/screen-protocol-runnable.md): proposed laboratory work, subject to the functional plan's gates.
 - [Literature reading record](submissions/literature-reading-record.md): exact review coverage and unresolved supplementary access.
 - [Navigator task validation](submissions/pgtm-task-validation.md): eleven source-adjudicated tasks with explicit comparison limits.
+- [Rescue-decision prototype](submissions/rescue-decision-validation.md): 40 frozen synthetic cases exercise functional, exposure and fate criteria. This tests software decisions, not drug rescue.
 - [Register audit](submissions/register-audit.md), [decision-aid draft](submissions/family-facing-decision-aid.md), [cost/access context](submissions/impact-costs-and-access.md) and [secondary-findings governance](submissions/secondary-findings-disclosure-protocol.md).
 
 ## Data and reproducibility

@@ -1,0 +1,1021 @@
+{
+  "schema_version": 1,
+  "purpose": "Synthetic, manually specified protocol conformance cases frozen before implementation or execution. Same developer authors expectations and implementation; this is not independent human, biological or clinical validation.",
+  "protocol": "submissions/functional-rescue-plan.md",
+  "protocol_sha256": "fabcf50ac4d63a2edf2c96919d099015914532ce19299057bee8c3f83d846ef7",
+  "construction": "All thresholds, counts, references and confidence intervals are illustrative synthetic inputs. Intervals are supplied fixtures, not estimated from the illustrative counts. No pilot variance, statistical power, clinical threshold or biological truth is implied. set/remove paths are JSON pointers; append_contrasts clones baseline contrast then applies relative pointers. nonfinite explicitly injects an IEEE nonfinite value after loading this standards-compliant JSON.",
+  "baseline": {
+    "schema_version": 1,
+    "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+    "model": {
+      "qualified": true,
+      "record": "SYNTHETIC:model-qualification"
+    },
+    "plan": {
+      "record": "SYNTHETIC:plan-v1",
+      "frozen_before_confirmation": true,
+      "threshold_basis": "ILLUSTRATIVE synthetic programme margins; not clinical thresholds",
+      "smallest_worthwhile_reduction": 0.05,
+      "confidence_level": 0.95,
+      "comparison_family": [
+        "c1"
+      ],
+      "multiplicity": {
+        "method": "single_prespecified_contrast",
+        "record": "SYNTHETIC:single-contrast-plan"
+      },
+      "followup_hours": 48,
+      "division_handling": "first_completed_division_per_starting_cell",
+      "incomplete_followup_record": "SYNTHETIC:censoring-rules",
+      "biomarker_schedule_record": "SYNTHETIC:readout-timepoint-schedule",
+      "design_record": "SYNTHETIC:randomization-blinding-exclusions",
+      "pilot_record": "SYNTHETIC:pilot-placeholder-NOT-a-real-pilot",
+      "power_plan_record": "SYNTHETIC:power-placeholder-NOT-a-power-calculation",
+      "fate_boundary_rule": "strict_interior",
+      "fate_bounds": {
+        "minimum_division_ratio": 0.8,
+        "maximum_excess_death": 0.05,
+        "maximum_excess_arrest": 0.05,
+        "maximum_excess_censoring": 0.05
+      }
+    },
+    "contrasts": [
+      {
+        "id": "c1",
+        "role": "confirmatory",
+        "exposure": {
+          "measurement_qualified": true,
+          "within_qualified_window": true,
+          "record": "SYNTHETIC:exposure-and-pharmacology-review",
+          "compound_form": "synthetic active moiety",
+          "active_moiety_basis": "declared active moiety molarity",
+          "matrix": "synthetic medium and cellular assessment",
+          "sampling_hours": 24,
+          "fraction": "total",
+          "binding_context": "SYNTHETIC:binding-context-record"
+        },
+        "assays": {
+          "function_controls_qualified": true,
+          "response_controls_qualified": true,
+          "required_secondaries_complete": true,
+          "record": "SYNTHETIC:range-repeatability-controls-and-secondary-readouts",
+          "hsp_response": "present",
+          "protein_ratio": 1.4,
+          "survivor_normal_fraction_change": 0.1
+        },
+        "analysis": {
+          "record": "SYNTHETIC:replicate-aware-analysis",
+          "unit": "independent_culture",
+          "nesting_handled": true,
+          "multiplicity_adjusted": true,
+          "confidence_level": 0.95,
+          "benefit_ci": [
+            0.06,
+            0.11
+          ],
+          "biological_replicates": {
+            "vehicle": 3,
+            "treated": 3
+          }
+        },
+        "observations": {
+          "vehicle": [
+            {
+              "culture_id": "v1",
+              "starting_cells": 100,
+              "mitotic_entries": 80,
+              "completed_divisions": 75,
+              "segregation_errors": 15,
+              "deaths": 5,
+              "persistent_arrests": 5,
+              "censored": 5
+            },
+            {
+              "culture_id": "v2",
+              "starting_cells": 100,
+              "mitotic_entries": 80,
+              "completed_divisions": 75,
+              "segregation_errors": 15,
+              "deaths": 5,
+              "persistent_arrests": 5,
+              "censored": 5
+            },
+            {
+              "culture_id": "v3",
+              "starting_cells": 100,
+              "mitotic_entries": 80,
+              "completed_divisions": 75,
+              "segregation_errors": 15,
+              "deaths": 5,
+              "persistent_arrests": 5,
+              "censored": 5
+            }
+          ],
+          "treated": [
+            {
+              "culture_id": "t1",
+              "starting_cells": 100,
+              "mitotic_entries": 80,
+              "completed_divisions": 75,
+              "segregation_errors": 9,
+              "deaths": 5,
+              "persistent_arrests": 5,
+              "censored": 5
+            },
+            {
+              "culture_id": "t2",
+              "starting_cells": 100,
+              "mitotic_entries": 80,
+              "completed_divisions": 75,
+              "segregation_errors": 9,
+              "deaths": 5,
+              "persistent_arrests": 5,
+              "censored": 5
+            },
+            {
+              "culture_id": "t3",
+              "starting_cells": 100,
+              "mitotic_entries": 80,
+              "completed_divisions": 75,
+              "segregation_errors": 9,
+              "deaths": 5,
+              "persistent_arrests": 5,
+              "censored": 5
+            }
+          ]
+        },
+        "fate": {
+          "record": "SYNTHETIC:separate-fate-analysis-with-prespecified-confidence-coverage",
+          "division_ratio_ci": [
+            0.95,
+            1.05
+          ],
+          "excess_death_ci": [
+            -0.01,
+            0.01
+          ],
+          "excess_arrest_ci": [
+            -0.01,
+            0.01
+          ],
+          "excess_censoring_ci": [
+            -0.01,
+            0.01
+          ],
+          "selection_assessment": "excluded",
+          "measurement_qualified": true,
+          "confidence_level": 0.95,
+          "coverage_qualified": true
+        }
+      }
+    ]
+  },
+  "cases": [
+    {
+      "id": "qualified_functional_signal",
+      "category": "decision",
+      "set": {},
+      "expected_decisions": [
+        "REPLICATION_CANDIDATE"
+      ],
+      "expected_reason_codes": [],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "abundance_rise_benefit_ruled_out",
+      "category": "decision",
+      "set": {
+        "/contrasts/0/analysis/benefit_ci": [
+          -0.02,
+          0.04
+        ]
+      },
+      "expected_decisions": [
+        "WORTHWHILE_BENEFIT_RULED_OUT"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_UPPER_BELOW_DELTA"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "cytostasis_despite_conditional_benefit",
+      "category": "decision",
+      "set": {
+        "/contrasts/0/fate/division_ratio_ci": [
+          0.3,
+          0.5
+        ]
+      },
+      "expected_decisions": [
+        "DO_NOT_ADVANCE"
+      ],
+      "expected_reason_codes": [
+        "DIVISION_BOUND_FAILED"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "selective_killing_despite_better_survivors",
+      "category": "decision",
+      "set": {
+        "/contrasts/0/fate/excess_death_ci": [
+          0.1,
+          0.2
+        ],
+        "/contrasts/0/fate/selection_assessment": "detected"
+      },
+      "expected_decisions": [
+        "DO_NOT_ADVANCE"
+      ],
+      "expected_reason_codes": [
+        "DEATH_BOUND_FAILED",
+        "SELECTION_DETECTED"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "missing_functional_estimate",
+      "category": "invalid",
+      "set": {},
+      "remove": [
+        "/contrasts/0/analysis/benefit_ci"
+      ],
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "nonfinite_primary_nan",
+      "category": "invalid",
+      "set": {},
+      "nonfinite": {
+        "/contrasts/0/analysis/benefit_ci/0": "NaN"
+      },
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "nonfinite_fate_infinity",
+      "category": "invalid",
+      "set": {},
+      "nonfinite": {
+        "/contrasts/0/fate/division_ratio_ci/1": "Infinity"
+      },
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "missing_exposure_context",
+      "category": "invalid",
+      "set": {},
+      "remove": [
+        "/contrasts/0/exposure/binding_context"
+      ],
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "lower_ci_touches_delta",
+      "category": "boundary",
+      "set": {
+        "/contrasts/0/analysis/benefit_ci": [
+          0.05,
+          0.11
+        ]
+      },
+      "expected_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_TOUCHES_OR_CROSSES_DELTA"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "upper_ci_touches_delta",
+      "category": "boundary",
+      "set": {
+        "/contrasts/0/analysis/benefit_ci": [
+          -0.01,
+          0.05
+        ]
+      },
+      "expected_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_TOUCHES_OR_CROSSES_DELTA"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "ci_crosses_delta",
+      "category": "boundary",
+      "set": {
+        "/contrasts/0/analysis/benefit_ci": [
+          0.02,
+          0.08
+        ]
+      },
+      "expected_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_TOUCHES_OR_CROSSES_DELTA"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "strictly_below_delta",
+      "category": "boundary",
+      "set": {
+        "/contrasts/0/analysis/benefit_ci": [
+          0.01,
+          0.049999
+        ]
+      },
+      "expected_decisions": [
+        "WORTHWHILE_BENEFIT_RULED_OUT"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_UPPER_BELOW_DELTA"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "qualified_hsp_absence_function_positive",
+      "category": "decision",
+      "set": {
+        "/contrasts/0/assays/hsp_response": "absent"
+      },
+      "expected_decisions": [
+        "REPLICATION_CANDIDATE"
+      ],
+      "expected_reason_codes": [
+        "HSP_DISCORDANT_INVESTIGATE"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "failed_hsp_positive_control",
+      "category": "technical",
+      "set": {
+        "/contrasts/0/assays/response_controls_qualified": false
+      },
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "RESPONSE_CONTROLS_UNQUALIFIED"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "failed_exposure_measurement",
+      "category": "technical",
+      "set": {
+        "/contrasts/0/exposure/measurement_qualified": false
+      },
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "EXPOSURE_MEASUREMENT_UNQUALIFIED"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "outside_qualified_exposure_window",
+      "category": "decision",
+      "set": {
+        "/contrasts/0/exposure/within_qualified_window": false
+      },
+      "expected_decisions": [
+        "DO_NOT_ADVANCE"
+      ],
+      "expected_reason_codes": [
+        "OUTSIDE_QUALIFIED_EXPOSURE_WINDOW"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "uncollected_required_secondary",
+      "category": "technical",
+      "set": {
+        "/contrasts/0/assays/required_secondaries_complete": false
+      },
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "REQUIRED_SECONDARIES_INCOMPLETE"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "failed_function_control_with_negative_ci",
+      "category": "technical",
+      "set": {
+        "/contrasts/0/assays/function_controls_qualified": false,
+        "/contrasts/0/analysis/benefit_ci": [
+          -0.02,
+          0.04
+        ]
+      },
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "FUNCTION_CONTROLS_UNQUALIFIED"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "division_bound_touched",
+      "category": "boundary",
+      "set": {
+        "/contrasts/0/fate/division_ratio_ci": [
+          0.8,
+          1.0
+        ]
+      },
+      "expected_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "expected_reason_codes": [
+        "DIVISION_BOUND_INCONCLUSIVE"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "selection_not_resolved",
+      "category": "decision",
+      "set": {
+        "/contrasts/0/fate/selection_assessment": "unresolved"
+      },
+      "expected_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "expected_reason_codes": [
+        "SELECTION_UNRESOLVED"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "omitted_family_member",
+      "category": "invalid",
+      "set": {
+        "/plan/comparison_family": [
+          "c1",
+          "c2"
+        ],
+        "/plan/multiplicity/method": "bonferroni"
+      },
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "unadjusted_intervals",
+      "category": "technical",
+      "set": {
+        "/contrasts/0/analysis/multiplicity_adjusted": false
+      },
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "MULTIPLICITY_NOT_ACCOUNTED_FOR"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "cells_treated_as_independent_replicates",
+      "category": "invalid",
+      "set": {
+        "/contrasts/0/analysis/unit": "cell"
+      },
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "unqualified_model",
+      "category": "technical",
+      "set": {
+        "/model/qualified": false
+      },
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "MODEL_UNQUALIFIED"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "plan_not_frozen",
+      "category": "technical",
+      "set": {
+        "/plan/frozen_before_confirmation": false
+      },
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "PLAN_NOT_FROZEN"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "reversed_ci",
+      "category": "invalid",
+      "set": {
+        "/contrasts/0/analysis/benefit_ci": [
+          0.11,
+          0.06
+        ]
+      },
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "boolean_used_as_numeric_bound",
+      "category": "invalid",
+      "set": {
+        "/contrasts/0/analysis/benefit_ci/0": true
+      },
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "no_completed_divisions",
+      "category": "invalid",
+      "set": {
+        "/contrasts/0/observations/treated/0/completed_divisions": 0,
+        "/contrasts/0/observations/treated/1/completed_divisions": 0,
+        "/contrasts/0/observations/treated/2/completed_divisions": 0,
+        "/contrasts/0/observations/treated/0/segregation_errors": 0,
+        "/contrasts/0/observations/treated/1/segregation_errors": 0,
+        "/contrasts/0/observations/treated/2/segregation_errors": 0
+      },
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "replicate_count_disagrees",
+      "category": "invalid",
+      "set": {
+        "/contrasts/0/analysis/biological_replicates/treated": 225
+      },
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "exploratory_positive_not_eligible",
+      "category": "decision",
+      "set": {
+        "/plan/comparison_family": [],
+        "/contrasts/0/role": "exploratory"
+      },
+      "expected_decisions": [
+        "EXPLORATORY_SIGNAL"
+      ],
+      "expected_reason_codes": [
+        "EXPLORATORY_ONLY"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "death_bound_crossed",
+      "category": "boundary",
+      "set": {
+        "/contrasts/0/fate/excess_death_ci": [
+          0.01,
+          0.08
+        ]
+      },
+      "expected_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "expected_reason_codes": [
+        "DEATH_BOUND_INCONCLUSIVE"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "missing_fate_assay",
+      "category": "invalid",
+      "set": {},
+      "remove": [
+        "/contrasts/0/fate/excess_censoring_ci"
+      ],
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "function_without_protein_rise",
+      "category": "decision",
+      "set": {
+        "/contrasts/0/assays/protein_ratio": 0.98
+      },
+      "expected_decisions": [
+        "REPLICATION_CANDIDATE"
+      ],
+      "expected_reason_codes": [],
+      "expected_protein_candidates": [],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "function_without_survivor_fraction_rise",
+      "category": "decision",
+      "set": {
+        "/contrasts/0/assays/survivor_normal_fraction_change": 0.0
+      },
+      "expected_decisions": [
+        "REPLICATION_CANDIDATE"
+      ],
+      "expected_reason_codes": [],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": []
+    },
+    {
+      "id": "complete_adjusted_family_all_results",
+      "category": "family",
+      "set": {
+        "/plan/comparison_family": [
+          "c1",
+          "c2"
+        ],
+        "/plan/multiplicity/method": "bonferroni"
+      },
+      "append_contrasts": [
+        {
+          "/id": "c2",
+          "/analysis/benefit_ci": [
+            -0.02,
+            0.04
+          ]
+        }
+      ],
+      "expected_decisions": [
+        "REPLICATION_CANDIDATE",
+        "WORTHWHILE_BENEFIT_RULED_OUT"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_UPPER_BELOW_DELTA"
+      ],
+      "expected_protein_candidates": [
+        "c1",
+        "c2"
+      ],
+      "expected_survivor_candidates": [
+        "c1",
+        "c2"
+      ]
+    },
+    {
+      "id": "multiple_contrasts_single_contrast_method",
+      "category": "invalid",
+      "set": {
+        "/plan/comparison_family": [
+          "c1",
+          "c2"
+        ]
+      },
+      "append_contrasts": [
+        {
+          "/id": "c2"
+        }
+      ],
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1",
+        "c2"
+      ],
+      "expected_survivor_candidates": [
+        "c1",
+        "c2"
+      ]
+    },
+    {
+      "id": "high_exposure_hit_low_exposure_negative",
+      "category": "family",
+      "set": {
+        "/plan/comparison_family": [
+          "c1",
+          "c2"
+        ],
+        "/plan/multiplicity/method": "bonferroni",
+        "/contrasts/0/analysis/benefit_ci": [
+          -0.02,
+          0.04
+        ]
+      },
+      "append_contrasts": [
+        {
+          "/id": "c2",
+          "/exposure/within_qualified_window": false
+        }
+      ],
+      "expected_decisions": [
+        "WORTHWHILE_BENEFIT_RULED_OUT",
+        "DO_NOT_ADVANCE"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_UPPER_BELOW_DELTA",
+        "OUTSIDE_QUALIFIED_EXPOSURE_WINDOW"
+      ],
+      "expected_protein_candidates": [
+        "c1",
+        "c2"
+      ],
+      "expected_survivor_candidates": [
+        "c1",
+        "c2"
+      ]
+    },
+    {
+      "id": "failed_fate_controls",
+      "category": "technical",
+      "set": {
+        "/contrasts/0/fate/measurement_qualified": false
+      },
+      "remove": [],
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "FATE_MEASUREMENT_UNQUALIFIED"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "missing_fate_qualification",
+      "category": "invalid",
+      "set": {},
+      "remove": [
+        "/contrasts/0/fate/measurement_qualified"
+      ],
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    },
+    {
+      "id": "unqualified_fate_interval_coverage",
+      "category": "technical",
+      "set": {
+        "/contrasts/0/fate/coverage_qualified": false
+      },
+      "remove": [],
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "FATE_COVERAGE_UNQUALIFIED"
+      ],
+      "expected_protein_candidates": [
+        "c1"
+      ],
+      "expected_survivor_candidates": [
+        "c1"
+      ]
+    }
+  ]
+}

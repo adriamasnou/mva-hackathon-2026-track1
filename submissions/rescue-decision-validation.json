@@ -1,0 +1,2719 @@
+{
+  "schema_version": 1,
+  "title": "Synthetic research decision-rule conformance; not biological or clinical validation",
+  "scope": "Deterministic evaluator of supplied estimates and qualification assertions. Eligibility means independent research replication only.",
+  "expected_case_freeze": {
+    "artifact": "expected-cases.json",
+    "sha256": "c671d3dbeb95a551aec38e9e3bfda8746432e5c922e19d92f31a4e4072efd27f",
+    "case_count": 40,
+    "frozen_at_utc": "2026-10-23T21:25:23.519902+00:00",
+    "state_at_freeze": "Expected outcomes written manually; no evaluator or test implementation exists in this directory yet. No evaluator executed.",
+    "independence_limit": "Expected outcomes independent of evaluator execution, not independently authored or externally preregistered. Local hash receipt is not a trusted timestamp.",
+    "initial_freeze_sha256": "49afdc3b658490c90567314377609f7e753853f815e066cbe9e18c5bb659acf6",
+    "initial_freeze_at_utc": "2026-10-23T21:24:52.881327+00:00",
+    "preimplementation_refinement": "Added explicit separate fate measurement/coverage qualification and three cases before any evaluator or test implementation. No result-driven expectation changes."
+  },
+  "protocol_source": {
+    "path": "submissions/functional-rescue-plan.md",
+    "sha256_at_specification": "fabcf50ac4d63a2edf2c96919d099015914532ce19299057bee8c3f83d846ef7"
+  },
+  "implementation_sha256": {
+    "decision.py": "3b8005a48987af8d3f3b57b32f2dbff03c9e22ee941c7b7711846043ae0289ed",
+    "casebook.py": "2b27d5d1afee82b4d161818a88c0a2e611da145558c669fc87b988669097c2fa",
+    "validate_cases.py": "e6853f58e90539c1586a381915274986512f57373a67d89149868c8190429379",
+    "mutation_checks.py": "e368c6d25e70ff4b0625da19953f625b505926dea4da5ac6aec91315450649b9"
+  },
+  "test_source_sha256": "d74a035896ea12566b0d01479cc5c3e9607bebffac085d7ae509400520da0722",
+  "comparators": {
+    "naive_protein_only": "Accept any finite BubR1 protein ratio > 1; ignores function, fate, exposure, uncertainty and controls.",
+    "naive_survivor_only": "Accept any finite positive change in normal-cell fraction among survivors; ignores function per division, selection, fate, exposure, uncertainty and controls.",
+    "interpretation": "Illustrative failure modes only. Neither rule represents a named competitor. Case frequency is chosen, not sampled: counts do not estimate sensitivity, specificity, error rates or field superiority."
+  },
+  "statistical_simulation": {
+    "performed": false,
+    "reason": "No measured pilot variance or overdispersion is available. Invented parameters would not establish assay power or comparative benefit. Supplied CIs are synthetic fixtures, not fitted to the illustrative counts."
+  },
+  "hard_limits": [
+    "Expected cases and implementation have the same author. Expectations precede implementation execution, not independent human adjudication or external preregistration.",
+    "No mutant BubR1 rescue, actual N1002K defect, drug efficacy, patient benefit, causal mechanism or clinical threshold is demonstrated.",
+    "All reference strings, thresholds, counts and intervals in fixtures are synthetic. Passing three example cultures is not a power calculation.",
+    "The program cannot authenticate model qualification, pre-registration, exposure review, imaging, selection exclusion, statistical interval coverage, pilot records or independent culture identity.",
+    "No CI estimation, hierarchical model fitting or multiplicity adjustment is performed; qualified analyst-supplied results are required.",
+    "Only a first-completed-division-per-starting-cell design is supported. Repeated division data require a separately reviewed schema and analysis.",
+    "Comparison-family completeness is checked against the supplied declaration; undeclared experiments or changed declarations cannot be detected.",
+    "The phenotype classification / abundance-equivalence experiment is not implemented. A qualified stage-1 model is a declared prerequisite.",
+    "No deployment, runtime benchmark, external validation or medical-device validation is claimed."
+  ],
+  "summary": {
+    "fixture_cases": 40,
+    "cases_matching_expectations": 40,
+    "valid_input_cases": 27,
+    "invalid_input_cases": 13,
+    "expected_replication_candidate_contrasts": 5,
+    "validator_replication_candidate_contrasts": 5,
+    "naive_protein_only": {
+      "accepted_contrasts": 42,
+      "acceptances_not_authorized_by_expected_rules": 38,
+      "missed_expected_candidates": 1
+    },
+    "naive_survivor_only": {
+      "accepted_contrasts": 42,
+      "acceptances_not_authorized_by_expected_rules": 38,
+      "missed_expected_candidates": 1
+    }
+  },
+  "structurally_valid_comparison": {
+    "scope": "Structurally valid inputs only, excluding schema and nonfinite failures. These still include declared failed controls and inconclusive results.",
+    "contrast_count": 29,
+    "expected_replication_candidate_contrasts": 5,
+    "naive_protein_only": {
+      "accepted_contrasts": 28,
+      "acceptances_not_authorized_by_expected_rules": 24,
+      "missed_expected_candidates": 1
+    },
+    "naive_survivor_only": {
+      "accepted_contrasts": 28,
+      "acceptances_not_authorized_by_expected_rules": 24,
+      "missed_expected_candidates": 1
+    }
+  },
+  "bounded_mutation_checks": {
+    "scope": "Seven deliberately faulty in-memory versions of our own evaluator; no files changed. Not exhaustive mutation coverage or biological simulation.",
+    "faults_tested": 7,
+    "faults_detected": 7,
+    "results": [
+      {
+        "deliberate_fault": "accept_lower_ci_touching_delta",
+        "detected": true,
+        "detected_by_frozen_cases": [
+          "lower_ci_touches_delta",
+          "division_bound_touched"
+        ]
+      },
+      {
+        "deliberate_fault": "reject_upper_ci_touching_delta",
+        "detected": true,
+        "detected_by_frozen_cases": [
+          "upper_ci_touches_delta"
+        ]
+      },
+      {
+        "deliberate_fault": "ignore_fate_measurement_control",
+        "detected": true,
+        "detected_by_frozen_cases": [
+          "failed_fate_controls"
+        ]
+      },
+      {
+        "deliberate_fault": "ignore_qualified_exposure_window",
+        "detected": true,
+        "detected_by_frozen_cases": [
+          "outside_qualified_exposure_window",
+          "high_exposure_hit_low_exposure_negative"
+        ]
+      },
+      {
+        "deliberate_fault": "ignore_failed_fate_bounds",
+        "detected": true,
+        "detected_by_frozen_cases": [
+          "cytostasis_despite_conditional_benefit"
+        ]
+      },
+      {
+        "deliberate_fault": "discard_qualified_hsp_negative_functional_hit",
+        "detected": true,
+        "detected_by_frozen_cases": [
+          "qualified_hsp_absence_function_positive"
+        ]
+      },
+      {
+        "deliberate_fault": "force_primary_benefit_to_pass",
+        "detected": true,
+        "detected_by_frozen_cases": [
+          "abundance_rise_benefit_ruled_out",
+          "lower_ci_touches_delta",
+          "upper_ci_touches_delta",
+          "ci_crosses_delta",
+          "strictly_below_delta",
+          "complete_adjusted_family_all_results",
+          "high_exposure_hit_low_exposure_negative"
+        ]
+      }
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "qualified_functional_signal",
+      "category": "decision",
+      "expected_decisions": [
+        "REPLICATION_CANDIDATE"
+      ],
+      "observed_decisions": [
+        "REPLICATION_CANDIDATE"
+      ],
+      "expected_reason_codes": [],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [
+          "c1"
+        ],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "REPLICATION_CANDIDATE",
+            "reason_codes": [],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "abundance_rise_benefit_ruled_out",
+      "category": "decision",
+      "expected_decisions": [
+        "WORTHWHILE_BENEFIT_RULED_OUT"
+      ],
+      "observed_decisions": [
+        "WORTHWHILE_BENEFIT_RULED_OUT"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_UPPER_BELOW_DELTA"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "WORTHWHILE_BENEFIT_RULED_OUT",
+            "reason_codes": [
+              "BENEFIT_UPPER_BELOW_DELTA"
+            ],
+            "criteria": {
+              "primary_interval_relation": "fail",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "cytostasis_despite_conditional_benefit",
+      "category": "decision",
+      "expected_decisions": [
+        "DO_NOT_ADVANCE"
+      ],
+      "observed_decisions": [
+        "DO_NOT_ADVANCE"
+      ],
+      "expected_reason_codes": [
+        "DIVISION_BOUND_FAILED"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "DO_NOT_ADVANCE",
+            "reason_codes": [
+              "DIVISION_BOUND_FAILED"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "fail",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "selective_killing_despite_better_survivors",
+      "category": "decision",
+      "expected_decisions": [
+        "DO_NOT_ADVANCE"
+      ],
+      "observed_decisions": [
+        "DO_NOT_ADVANCE"
+      ],
+      "expected_reason_codes": [
+        "DEATH_BOUND_FAILED",
+        "SELECTION_DETECTED"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "DO_NOT_ADVANCE",
+            "reason_codes": [
+              "DEATH_BOUND_FAILED",
+              "SELECTION_DETECTED"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "fail",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "detected",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "missing_functional_estimate",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/contrasts/0/analysis: missing fields ['benefit_ci']; unknown fields []"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "nonfinite_primary_nan",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/contrasts/0/analysis/benefit_ci/0: must be finite"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "nonfinite_fate_infinity",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/contrasts/0/fate/division_ratio_ci/1: must be finite"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "missing_exposure_context",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/contrasts/0/exposure: missing fields ['binding_context']; unknown fields []"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "lower_ci_touches_delta",
+      "category": "boundary",
+      "expected_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "observed_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_TOUCHES_OR_CROSSES_DELTA"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "INCONCLUSIVE",
+            "reason_codes": [
+              "BENEFIT_TOUCHES_OR_CROSSES_DELTA"
+            ],
+            "criteria": {
+              "primary_interval_relation": "inconclusive",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "upper_ci_touches_delta",
+      "category": "boundary",
+      "expected_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "observed_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_TOUCHES_OR_CROSSES_DELTA"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "INCONCLUSIVE",
+            "reason_codes": [
+              "BENEFIT_TOUCHES_OR_CROSSES_DELTA"
+            ],
+            "criteria": {
+              "primary_interval_relation": "inconclusive",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "ci_crosses_delta",
+      "category": "boundary",
+      "expected_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "observed_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_TOUCHES_OR_CROSSES_DELTA"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "INCONCLUSIVE",
+            "reason_codes": [
+              "BENEFIT_TOUCHES_OR_CROSSES_DELTA"
+            ],
+            "criteria": {
+              "primary_interval_relation": "inconclusive",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "strictly_below_delta",
+      "category": "boundary",
+      "expected_decisions": [
+        "WORTHWHILE_BENEFIT_RULED_OUT"
+      ],
+      "observed_decisions": [
+        "WORTHWHILE_BENEFIT_RULED_OUT"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_UPPER_BELOW_DELTA"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "WORTHWHILE_BENEFIT_RULED_OUT",
+            "reason_codes": [
+              "BENEFIT_UPPER_BELOW_DELTA"
+            ],
+            "criteria": {
+              "primary_interval_relation": "fail",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "qualified_hsp_absence_function_positive",
+      "category": "decision",
+      "expected_decisions": [
+        "REPLICATION_CANDIDATE"
+      ],
+      "observed_decisions": [
+        "REPLICATION_CANDIDATE"
+      ],
+      "expected_reason_codes": [
+        "HSP_DISCORDANT_INVESTIGATE"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [
+          "c1"
+        ],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "REPLICATION_CANDIDATE",
+            "reason_codes": [
+              "HSP_DISCORDANT_INVESTIGATE"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "DISCORDANT_REQUIRES_INVESTIGATION"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "failed_hsp_positive_control",
+      "category": "technical",
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "observed_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "RESPONSE_CONTROLS_UNQUALIFIED"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "TECHNICALLY_INDETERMINATE",
+            "reason_codes": [
+              "RESPONSE_CONTROLS_UNQUALIFIED"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": false,
+              "hsp_mechanism": "UNINTERPRETABLE"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "failed_exposure_measurement",
+      "category": "technical",
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "observed_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "EXPOSURE_MEASUREMENT_UNQUALIFIED"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "TECHNICALLY_INDETERMINATE",
+            "reason_codes": [
+              "EXPOSURE_MEASUREMENT_UNQUALIFIED"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": false,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": false,
+              "hsp_mechanism": "UNINTERPRETABLE"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "outside_qualified_exposure_window",
+      "category": "decision",
+      "expected_decisions": [
+        "DO_NOT_ADVANCE"
+      ],
+      "observed_decisions": [
+        "DO_NOT_ADVANCE"
+      ],
+      "expected_reason_codes": [
+        "OUTSIDE_QUALIFIED_EXPOSURE_WINDOW"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "DO_NOT_ADVANCE",
+            "reason_codes": [
+              "OUTSIDE_QUALIFIED_EXPOSURE_WINDOW"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": false,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "uncollected_required_secondary",
+      "category": "technical",
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "observed_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "REQUIRED_SECONDARIES_INCOMPLETE"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "TECHNICALLY_INDETERMINATE",
+            "reason_codes": [
+              "REQUIRED_SECONDARIES_INCOMPLETE"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": false,
+              "hsp_mechanism": "UNINTERPRETABLE"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "failed_function_control_with_negative_ci",
+      "category": "technical",
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "observed_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "FUNCTION_CONTROLS_UNQUALIFIED"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "TECHNICALLY_INDETERMINATE",
+            "reason_codes": [
+              "FUNCTION_CONTROLS_UNQUALIFIED"
+            ],
+            "criteria": {
+              "primary_interval_relation": "fail",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": false,
+              "hsp_mechanism": "UNINTERPRETABLE"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "division_bound_touched",
+      "category": "boundary",
+      "expected_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "observed_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "expected_reason_codes": [
+        "DIVISION_BOUND_INCONCLUSIVE"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "INCONCLUSIVE",
+            "reason_codes": [
+              "DIVISION_BOUND_INCONCLUSIVE"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "inconclusive",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "selection_not_resolved",
+      "category": "decision",
+      "expected_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "observed_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "expected_reason_codes": [
+        "SELECTION_UNRESOLVED"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "INCONCLUSIVE",
+            "reason_codes": [
+              "SELECTION_UNRESOLVED"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "unresolved",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "omitted_family_member",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/plan/comparison_family: must match all and only supplied confirmatory contrasts; missing family members block the entire evaluation"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "unadjusted_intervals",
+      "category": "technical",
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "observed_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "MULTIPLICITY_NOT_ACCOUNTED_FOR"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "TECHNICALLY_INDETERMINATE",
+            "reason_codes": [
+              "MULTIPLICITY_NOT_ACCOUNTED_FOR"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": false,
+              "hsp_mechanism": "UNINTERPRETABLE"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "cells_treated_as_independent_replicates",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/contrasts/0/analysis/unit: must be one of ('independent_culture',)"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "unqualified_model",
+      "category": "technical",
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "observed_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "MODEL_UNQUALIFIED"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "TECHNICALLY_INDETERMINATE",
+            "reason_codes": [
+              "MODEL_UNQUALIFIED"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": false,
+              "hsp_mechanism": "UNINTERPRETABLE"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "plan_not_frozen",
+      "category": "technical",
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "observed_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "PLAN_NOT_FROZEN"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "TECHNICALLY_INDETERMINATE",
+            "reason_codes": [
+              "PLAN_NOT_FROZEN"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": false,
+              "hsp_mechanism": "UNINTERPRETABLE"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "reversed_ci",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/contrasts/0/analysis/benefit_ci: lower bound exceeds upper bound"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "boolean_used_as_numeric_bound",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/contrasts/0/analysis/benefit_ci/0: must be a number, not a boolean or numeric string"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "no_completed_divisions",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/contrasts/0/observations/treated: conditional primary endpoint has no completed divisions"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "replicate_count_disagrees",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/contrasts/0/observations/treated: culture count disagrees with declared biological replicates"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "exploratory_positive_not_eligible",
+      "category": "decision",
+      "expected_decisions": [
+        "EXPLORATORY_SIGNAL"
+      ],
+      "observed_decisions": [
+        "EXPLORATORY_SIGNAL"
+      ],
+      "expected_reason_codes": [
+        "EXPLORATORY_ONLY"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "exploratory",
+            "decision": "EXPLORATORY_SIGNAL",
+            "reason_codes": [
+              "EXPLORATORY_ONLY"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "death_bound_crossed",
+      "category": "boundary",
+      "expected_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "observed_decisions": [
+        "INCONCLUSIVE"
+      ],
+      "expected_reason_codes": [
+        "DEATH_BOUND_INCONCLUSIVE"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "INCONCLUSIVE",
+            "reason_codes": [
+              "DEATH_BOUND_INCONCLUSIVE"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "inconclusive",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "missing_fate_assay",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/contrasts/0/fate: missing fields ['excess_censoring_ci']; unknown fields []"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "function_without_protein_rise",
+      "category": "decision",
+      "expected_decisions": [
+        "REPLICATION_CANDIDATE"
+      ],
+      "observed_decisions": [
+        "REPLICATION_CANDIDATE"
+      ],
+      "expected_reason_codes": [],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [
+          "c1"
+        ],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "REPLICATION_CANDIDATE",
+            "reason_codes": [],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "function_without_survivor_fraction_rise",
+      "category": "decision",
+      "expected_decisions": [
+        "REPLICATION_CANDIDATE"
+      ],
+      "observed_decisions": [
+        "REPLICATION_CANDIDATE"
+      ],
+      "expected_reason_codes": [],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [
+          "c1"
+        ],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "REPLICATION_CANDIDATE",
+            "reason_codes": [],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "complete_adjusted_family_all_results",
+      "category": "family",
+      "expected_decisions": [
+        "REPLICATION_CANDIDATE",
+        "WORTHWHILE_BENEFIT_RULED_OUT"
+      ],
+      "observed_decisions": [
+        "REPLICATION_CANDIDATE",
+        "WORTHWHILE_BENEFIT_RULED_OUT"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_UPPER_BELOW_DELTA"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1",
+        "c2"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1",
+        "c2"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [
+          "c1"
+        ],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "REPLICATION_CANDIDATE",
+            "reason_codes": [],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          },
+          {
+            "id": "c2",
+            "role": "confirmatory",
+            "decision": "WORTHWHILE_BENEFIT_RULED_OUT",
+            "reason_codes": [
+              "BENEFIT_UPPER_BELOW_DELTA"
+            ],
+            "criteria": {
+              "primary_interval_relation": "fail",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "multiple_contrasts_single_contrast_method",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1",
+        "c2"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1",
+        "c2"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/plan/multiplicity: multiple eligible contrasts require a family coverage plan"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "high_exposure_hit_low_exposure_negative",
+      "category": "family",
+      "expected_decisions": [
+        "WORTHWHILE_BENEFIT_RULED_OUT",
+        "DO_NOT_ADVANCE"
+      ],
+      "observed_decisions": [
+        "WORTHWHILE_BENEFIT_RULED_OUT",
+        "DO_NOT_ADVANCE"
+      ],
+      "expected_reason_codes": [
+        "BENEFIT_UPPER_BELOW_DELTA",
+        "OUTSIDE_QUALIFIED_EXPOSURE_WINDOW"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1",
+        "c2"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1",
+        "c2"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "WORTHWHILE_BENEFIT_RULED_OUT",
+            "reason_codes": [
+              "BENEFIT_UPPER_BELOW_DELTA"
+            ],
+            "criteria": {
+              "primary_interval_relation": "fail",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          },
+          {
+            "id": "c2",
+            "role": "confirmatory",
+            "decision": "DO_NOT_ADVANCE",
+            "reason_codes": [
+              "OUTSIDE_QUALIFIED_EXPOSURE_WINDOW"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": false,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": true,
+              "hsp_mechanism": "HSP_RESPONSE_PRESENT_NOT_CAUSAL"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "failed_fate_controls",
+      "category": "technical",
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "observed_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "FATE_MEASUREMENT_UNQUALIFIED"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "TECHNICALLY_INDETERMINATE",
+            "reason_codes": [
+              "FATE_MEASUREMENT_UNQUALIFIED"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": false,
+              "hsp_mechanism": "UNINTERPRETABLE"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "missing_fate_qualification",
+      "category": "invalid",
+      "expected_decisions": [
+        "INVALID_INPUT"
+      ],
+      "observed_decisions": [
+        "INVALID_INPUT"
+      ],
+      "expected_reason_codes": [
+        "INVALID_INPUT"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": false,
+        "errors": [
+          "/contrasts/0/fate: missing fields ['measurement_qualified']; unknown fields []"
+        ],
+        "decision": "INVALID_INPUT",
+        "reason_codes": [
+          "INVALID_INPUT"
+        ],
+        "replication_candidate_ids": [],
+        "contrasts": []
+      }
+    },
+    {
+      "case_id": "unqualified_fate_interval_coverage",
+      "category": "technical",
+      "expected_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "observed_decisions": [
+        "TECHNICALLY_INDETERMINATE"
+      ],
+      "expected_reason_codes": [
+        "FATE_COVERAGE_UNQUALIFIED"
+      ],
+      "expectations_matched": true,
+      "naive_protein_candidate_ids": [
+        "c1"
+      ],
+      "naive_survivor_candidate_ids": [
+        "c1"
+      ],
+      "validator_output": {
+        "schema_version": 1,
+        "scope": "Research prototype: eligibility for independent replication only; not a medical device or biological evidence.",
+        "input_valid": true,
+        "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+        "errors": [],
+        "replication_candidate_ids": [],
+        "contrasts": [
+          {
+            "id": "c1",
+            "role": "confirmatory",
+            "decision": "TECHNICALLY_INDETERMINATE",
+            "reason_codes": [
+              "FATE_COVERAGE_UNQUALIFIED"
+            ],
+            "criteria": {
+              "primary_interval_relation": "pass",
+              "fate_interval_relations": {
+                "division": "pass",
+                "death": "pass",
+                "arrest": "pass",
+                "censoring": "pass"
+              },
+              "exposure_measurement_qualified": true,
+              "within_qualified_exposure_window": true,
+              "selection_assessment": "excluded",
+              "biological_interpretation_permitted_by_declared_controls": false,
+              "hsp_mechanism": "UNINTERPRETABLE"
+            },
+            "denominators": {
+              "vehicle": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 45,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              },
+              "treated": {
+                "independent_cultures": 3,
+                "starting_cells": 300,
+                "mitotic_entries": 240,
+                "completed_divisions": 225,
+                "segregation_errors": 27,
+                "deaths": 15,
+                "persistent_arrests": 15,
+                "censored": 15
+              }
+            },
+            "limit": "Interval relations are arithmetic on supplied estimates. A candidate requires independent replication, not treatment; no clinical benefit, N1002K defect or causal mechanism is established."
+          }
+        ]
+      }
+    }
+  ],
+  "focused_test_execution": {
+    "suite": "tests/test_rescue_decision.py",
+    "tests_run": 31,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "python_version": "3.13.14",
+    "output_on_failure": null,
+    "scope": "Only the new rescue decision tests; no shared gates or other project suites."
+  }
+}

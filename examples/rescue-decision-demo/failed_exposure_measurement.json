@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "study_id": "SYNTHETIC-FIRST-DIVISION-EXAMPLE",
+  "model": {
+    "qualified": true,
+    "record": "SYNTHETIC:model-qualification"
+  },
+  "plan": {
+    "record": "SYNTHETIC:plan-v1",
+    "frozen_before_confirmation": true,
+    "threshold_basis": "ILLUSTRATIVE synthetic programme margins; not clinical thresholds",
+    "smallest_worthwhile_reduction": 0.05,
+    "confidence_level": 0.95,
+    "comparison_family": [
+      "c1"
+    ],
+    "multiplicity": {
+      "method": "single_prespecified_contrast",
+      "record": "SYNTHETIC:single-contrast-plan"
+    },
+    "followup_hours": 48,
+    "division_handling": "first_completed_division_per_starting_cell",
+    "incomplete_followup_record": "SYNTHETIC:censoring-rules",
+    "biomarker_schedule_record": "SYNTHETIC:readout-timepoint-schedule",
+    "design_record": "SYNTHETIC:randomization-blinding-exclusions",
+    "pilot_record": "SYNTHETIC:pilot-placeholder-NOT-a-real-pilot",
+    "power_plan_record": "SYNTHETIC:power-placeholder-NOT-a-power-calculation",
+    "fate_boundary_rule": "strict_interior",
+    "fate_bounds": {
+      "minimum_division_ratio": 0.8,
+      "maximum_excess_death": 0.05,
+      "maximum_excess_arrest": 0.05,
+      "maximum_excess_censoring": 0.05
+    }
+  },
+  "contrasts": [
+    {
+      "id": "c1",
+      "role": "confirmatory",
+      "exposure": {
+        "measurement_qualified": false,
+        "within_qualified_window": true,
+        "record": "SYNTHETIC:exposure-and-pharmacology-review",
+        "compound_form": "synthetic active moiety",
+        "active_moiety_basis": "declared active moiety molarity",
+        "matrix": "synthetic medium and cellular assessment",
+        "sampling_hours": 24,
+        "fraction": "total",
+        "binding_context": "SYNTHETIC:binding-context-record"
+      },
+      "assays": {
+        "function_controls_qualified": true,
+        "response_controls_qualified": true,
+        "required_secondaries_complete": true,
+        "record": "SYNTHETIC:range-repeatability-controls-and-secondary-readouts",
+        "hsp_response": "present",
+        "protein_ratio": 1.4,
+        "survivor_normal_fraction_change": 0.1
+      },
+      "analysis": {
+        "record": "SYNTHETIC:replicate-aware-analysis",
+        "unit": "independent_culture",
+        "nesting_handled": true,
+        "multiplicity_adjusted": true,
+        "confidence_level": 0.95,
+        "benefit_ci": [
+          0.06,
+          0.11
+        ],
+        "biological_replicates": {
+          "vehicle": 3,
+          "treated": 3
+        }
+      },
+      "observations": {
+        "vehicle": [
+          {
+            "culture_id": "v1",
+            "starting_cells": 100,
+            "mitotic_entries": 80,
+            "completed_divisions": 75,
+            "segregation_errors": 15,
+            "deaths": 5,
+            "persistent_arrests": 5,
+            "censored": 5
+          },
+          {
+            "culture_id": "v2",
+            "starting_cells": 100,
+            "mitotic_entries": 80,
+            "completed_divisions": 75,
+            "segregation_errors": 15,
+            "deaths": 5,
+            "persistent_arrests": 5,
+            "censored": 5
+          },
+          {
+            "culture_id": "v3",
+            "starting_cells": 100,
+            "mitotic_entries": 80,
+            "completed_divisions": 75,
+            "segregation_errors": 15,
+            "deaths": 5,
+            "persistent_arrests": 5,
+            "censored": 5
+          }
+        ],
+        "treated": [
+          {
+            "culture_id": "t1",
+            "starting_cells": 100,
+            "mitotic_entries": 80,
+            "completed_divisions": 75,
+            "segregation_errors": 9,
+            "deaths": 5,
+            "persistent_arrests": 5,
+            "censored": 5
+          },
+          {
+            "culture_id": "t2",
+            "starting_cells": 100,
+            "mitotic_entries": 80,
+            "completed_divisions": 75,
+            "segregation_errors": 9,
+            "deaths": 5,
+            "persistent_arrests": 5,
+            "censored": 5
+          },
+          {
+            "culture_id": "t3",
+            "starting_cells": 100,
+            "mitotic_entries": 80,
+            "completed_divisions": 75,
+            "segregation_errors": 9,
+            "deaths": 5,
+            "persistent_arrests": 5,
+            "censored": 5
+          }
+        ]
+      },
+      "fate": {
+        "record": "SYNTHETIC:separate-fate-analysis-with-prespecified-confidence-coverage",
+        "division_ratio_ci": [
+          0.95,
+          1.05
+        ],
+        "excess_death_ci": [
+          -0.01,
+          0.01
+        ],
+        "excess_arrest_ci": [
+          -0.01,
+          0.01
+        ],
+        "excess_censoring_ci": [
+          -0.01,
+          0.01
+        ],
+        "selection_assessment": "excluded",
+        "measurement_qualified": true,
+        "confidence_level": 0.95,
+        "coverage_qualified": true
+      }
+    }
+  ]
+}
