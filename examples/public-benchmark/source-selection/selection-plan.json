@@ -1,0 +1,27 @@
+{
+  "protocol_version": "1.0",
+  "frozen_at_utc": "2026-10-23T21:13:22Z",
+  "seed": "mva-public-validation-2026-10-23-v1",
+  "release": "0.1.19",
+  "archive_url": "https://github.com/monarch-initiative/phenopacket-store/releases/download/0.1.19/all_phenopackets.zip",
+  "archive_sha256": "5e7b48c0f47bc24e1a36c64b824a6f6b666baf9cc2adad255e23b0100adc4d8e",
+  "archive_bytes": 11620861,
+  "excluded_genes": ["BUB1B", "FGFR2"],
+  "quotas_in_selection_order": [
+    ["autosomal_single_heterozygous", 4],
+    ["autosomal_homozygous", 4],
+    ["autosomal_two_heterozygous", 2],
+    ["X_heterozygous_female", 1],
+    ["X_hemizygous_male", 1]
+  ],
+  "eligibility": "One SOLVED interpretation; all genomic interpretations CAUSATIVE and belonging to one gene; one or two unique explicit hg38 small-variant records; canonical autosome or X; nonempty unequal ACGT REF/ALT shorter than 50 bases; matching known GENO ID/label; >=3 distinct present HPO features; at least one PubMed external reference. Exclude unsupported zygosity/sex configurations and the prior FGFR2 example or BUB1B. Do not use predicted pathogenicity, frequency, known gene score, Exomiser availability, or any analysis result to select.",
+  "selection": "Within each quota stratum, sort eligible gene symbols by SHA256(seed|gene|stratum|symbol); select first genes not already selected. For each gene sort eligible source member paths by SHA256(seed|case|member), choose first. Do not replace failed cases after execution; report exclusions/failures.",
+  "arms": {
+    "original": "All distinct non-excluded source HPO features; source diagnosis and gene are withheld from phenotype input.",
+    "half_missing": "Keep ceil(N/2) HPO features by SHA256(seed|drop|case_id|hpo_id), without score inspection.",
+    "swapped": "Order selected cases by SHA256(seed|donor|case_id); cyclic next case is donor. Use its complete observed HPO set. This is a phenotype-perturbation control, not a healthy biological negative.",
+    "none": "Empty HPO list. This is the no-phenotype baseline, not an unsolved/healthy patient."
+  },
+  "analysis_boundary": "This freezes public case selection and perturbations only. Runtime/configuration/background and result evaluation are handled separately by parent. Causal-only VCFs are spike ingredients, not a diagnostic ranking benchmark; no causal-only top-1 claim is meaningful. Knowledge leakage remains possible because these published cases may contribute to HPO/OMIM and pathogenicity databases. Two heterozygous variants are encoded unphased; this script does not establish trans phase. Strata are observed genotype patterns, not independently adjudicated inheritance modes.",
+  "no_results_seen_before_freeze": true
+}

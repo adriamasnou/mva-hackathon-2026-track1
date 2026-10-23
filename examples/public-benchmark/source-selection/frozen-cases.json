@@ -1,0 +1,3374 @@
+{
+  "schema_version": "1.0",
+  "frozen_at_utc": "2026-10-23T21:13:22Z",
+  "selection_plan_sha256": "aa5642479ac55e1db90502042b18216860e7314b6606b5bd8135e7e58157adca",
+  "selection_plan": {
+    "protocol_version": "1.0",
+    "frozen_at_utc": "2026-10-23T21:13:22Z",
+    "seed": "mva-public-validation-2026-10-23-v1",
+    "release": "0.1.19",
+    "archive_url": "https://github.com/monarch-initiative/phenopacket-store/releases/download/0.1.19/all_phenopackets.zip",
+    "archive_sha256": "5e7b48c0f47bc24e1a36c64b824a6f6b666baf9cc2adad255e23b0100adc4d8e",
+    "archive_bytes": 11620861,
+    "excluded_genes": [
+      "BUB1B",
+      "FGFR2"
+    ],
+    "quotas_in_selection_order": [
+      [
+        "autosomal_single_heterozygous",
+        4
+      ],
+      [
+        "autosomal_homozygous",
+        4
+      ],
+      [
+        "autosomal_two_heterozygous",
+        2
+      ],
+      [
+        "X_heterozygous_female",
+        1
+      ],
+      [
+        "X_hemizygous_male",
+        1
+      ]
+    ],
+    "eligibility": "One SOLVED interpretation; all genomic interpretations CAUSATIVE and belonging to one gene; one or two unique explicit hg38 small-variant records; canonical autosome or X; nonempty unequal ACGT REF/ALT shorter than 50 bases; matching known GENO ID/label; >=3 distinct present HPO features; at least one PubMed external reference. Exclude unsupported zygosity/sex configurations and the prior FGFR2 example or BUB1B. Do not use predicted pathogenicity, frequency, known gene score, Exomiser availability, or any analysis result to select.",
+    "selection": "Within each quota stratum, sort eligible gene symbols by SHA256(seed|gene|stratum|symbol); select first genes not already selected. For each gene sort eligible source member paths by SHA256(seed|case|member), choose first. Do not replace failed cases after execution; report exclusions/failures.",
+    "arms": {
+      "original": "All distinct non-excluded source HPO features; source diagnosis and gene are withheld from phenotype input.",
+      "half_missing": "Keep ceil(N/2) HPO features by SHA256(seed|drop|case_id|hpo_id), without score inspection.",
+      "swapped": "Order selected cases by SHA256(seed|donor|case_id); cyclic next case is donor. Use its complete observed HPO set. This is a phenotype-perturbation control, not a healthy biological negative.",
+      "none": "Empty HPO list. This is the no-phenotype baseline, not an unsolved/healthy patient."
+    },
+    "analysis_boundary": "This freezes public case selection and perturbations only. Runtime/configuration/background and result evaluation are handled separately by parent. Causal-only VCFs are spike ingredients, not a diagnostic ranking benchmark; no causal-only top-1 claim is meaningful. Knowledge leakage remains possible because these published cases may contribute to HPO/OMIM and pathogenicity databases. Two heterozygous variants are encoded unphased; this script does not establish trans phase. Strata are observed genotype patterns, not independently adjudicated inheritance modes.",
+    "no_results_seen_before_freeze": true
+  },
+  "source": {
+    "name": "Phenopacket Store",
+    "version": "0.1.19",
+    "url": "https://github.com/monarch-initiative/phenopacket-store/releases/download/0.1.19/all_phenopackets.zip",
+    "sha256": "5e7b48c0f47bc24e1a36c64b824a6f6b666baf9cc2adad255e23b0100adc4d8e",
+    "bytes": 11620861,
+    "license": "BSD-3-Clause",
+    "license_file": "source/LICENSE-phenopacket-store.txt",
+    "paper_pmid": "39394689",
+    "paper_doi": "10.1016/j.xhgg.2024.100371"
+  },
+  "selection_counts": {
+    "source_cases": 6668,
+    "eligible_cases": 5109,
+    "eligible_genes": 394,
+    "eligible_by_stratum": {
+      "autosomal_homozygous": 1127,
+      "autosomal_single_heterozygous": 3525,
+      "autosomal_two_heterozygous": 438,
+      "X_heterozygous_female": 16,
+      "X_hemizygous_male": 3
+    },
+    "selected_cases": 12,
+    "selected_genes": 12,
+    "rejection_counts": {
+      "missing_gene_identity": 69,
+      "fewer_than_three_observed_HPO_terms": 988,
+      "no_explicit_hg38_vcf_record": 317,
+      "unsupported_genotype_sex_stratum": 129,
+      "not_explicit_small_sequence_variant": 40,
+      "predeclared_gene_exclusion": 2,
+      "no_PubMed_source_reference": 11,
+      "duplicate_causal_record": 3
+    }
+  },
+  "cases": [
+    {
+      "case_id": "PMID_36595822_nan",
+      "subject_id": "nan",
+      "gene": "PAX4",
+      "hgnc_id": "HGNC:8618",
+      "stratum": "autosomal_single_heterozygous",
+      "sex": "MALE",
+      "causal_variants": [
+        {
+          "chrom": "7",
+          "pos": 127613831,
+          "ref": "G",
+          "alt": "A",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000135",
+            "label": "heterozygous"
+          },
+          "genotype": "0/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_001366110.1:c.487C>T"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000007.14:g.127613831G>A"
+            }
+          ]
+        }
+      ],
+      "hpo_ids": [
+        "HP:0000103",
+        "HP:0001959",
+        "HP:0002919",
+        "HP:0003074",
+        "HP:0004904",
+        "HP:0032368",
+        "HP:0040216",
+        "HP:0040217"
+      ],
+      "excluded_hpo_ids": [
+        "HP:0025329"
+      ],
+      "source_phenotypic_features": [
+        {
+          "type": {
+            "id": "HP:0004904",
+            "label": "Maturity-onset diabetes of the young"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P19Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000103",
+            "label": "Polyuria"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P19Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001959",
+            "label": "Polydipsia"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P19Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002919",
+            "label": "Ketonuria"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P19Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003074",
+            "label": "Hyperglycemia"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P19Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032368",
+            "label": "Acidemia"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P19Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0040217",
+            "label": "Elevated hemoglobin A1c"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P19Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0040216",
+            "label": "Hypoinsulinemia"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P19Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0025329",
+            "label": "Anti-glutamic acid decarboxylase antibody positivity"
+          },
+          "excluded": true
+        }
+      ],
+      "source_diagnosis": {
+        "id": "OMIM:612225",
+        "label": "Maturity-onset diabetes of the young, type IX"
+      },
+      "source_references": [
+        {
+          "id": "PMID:36595822",
+          "reference": "https://pubmed.ncbi.nlm.nih.gov/36595822",
+          "description": "C.487C>T mutation in PAX4 gene causes MODY9: A case report and literature review"
+        }
+      ],
+      "source_member": "0.1.19/PAX4/PMID_36595822_nan.json",
+      "source_sha256": "fd477d5a4de920c645c09cdaf2281bb898c799735277c14f20d78a8af57b5af4",
+      "truth_status": "source-curated SOLVED/CAUSATIVE; not independently re-adjudicated from every original case report",
+      "arms": {
+        "original": [
+          "HP:0000103",
+          "HP:0001959",
+          "HP:0002919",
+          "HP:0003074",
+          "HP:0004904",
+          "HP:0032368",
+          "HP:0040216",
+          "HP:0040217"
+        ],
+        "half_missing": [
+          "HP:0000103",
+          "HP:0003074",
+          "HP:0040216",
+          "HP:0040217"
+        ],
+        "swapped": [
+          "HP:0000023",
+          "HP:0001252",
+          "HP:0001263",
+          "HP:0009381"
+        ],
+        "none": []
+      },
+      "swapped_donor_case_id": "PMID_16783569_IV_11",
+      "swapped_donor_gene": "OFD1",
+      "local_source": "source/selected/PMID_36595822_nan.json",
+      "causal_only_vcf": "causal-only/PMID_36595822_nan.vcf",
+      "causal_only_vcf_sha256": "35aab8e428fe5be58adcbbe7e8b321f1c8bdcee42cb665460fe41ed8bf503c65"
+    },
+    {
+      "case_id": "PMID_27753196_index_patient",
+      "subject_id": "index patient",
+      "gene": "MTOR",
+      "hgnc_id": "HGNC:3942",
+      "stratum": "autosomal_single_heterozygous",
+      "sex": "FEMALE",
+      "causal_variants": [
+        {
+          "chrom": "1",
+          "pos": 11130747,
+          "ref": "C",
+          "alt": "T",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000135",
+            "label": "heterozygous"
+          },
+          "genotype": "0/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_004958.4:c.5395G>A"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000001.11:g.11130747C>T"
+            }
+          ]
+        }
+      ],
+      "hpo_ids": [
+        "HP:0000107",
+        "HP:0000256",
+        "HP:0000774",
+        "HP:0001249",
+        "HP:0001520",
+        "HP:0002119",
+        "HP:0002573",
+        "HP:0009882",
+        "HP:0011220",
+        "HP:0030255"
+      ],
+      "excluded_hpo_ids": [],
+      "source_phenotypic_features": [
+        {
+          "type": {
+            "id": "HP:0002119",
+            "label": "Ventriculomegaly"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P1Y6M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002573",
+            "label": "Hematochezia"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P7Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0030255",
+            "label": "Large intestinal polyposis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P7Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001520",
+            "label": "Large for gestational age"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000107",
+            "label": "Renal cyst"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011220",
+            "label": "Prominent forehead"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000256",
+            "label": "Macrocephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000774",
+            "label": "Narrow chest"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0009882",
+            "label": "Short distal phalanx of finger"
+          }
+        }
+      ],
+      "source_diagnosis": {
+        "id": "OMIM:616638",
+        "label": "Smith-Kingsmore syndrome"
+      },
+      "source_references": [
+        {
+          "id": "PMID:27753196",
+          "reference": "https://pubmed.ncbi.nlm.nih.gov/27753196",
+          "description": "Smith–Kingsmore syndrome: A third family with the MTOR mutation c.5395G>A p.(Glu1799Lys) and evidence for paternal gonadal mosaicism"
+        }
+      ],
+      "source_member": "0.1.19/MTOR/PMID_27753196_indexpatient.json",
+      "source_sha256": "c856892345d4749cf6ffde997ce0ec6613ef54f7b684269104955f6cf95f315c",
+      "truth_status": "source-curated SOLVED/CAUSATIVE; not independently re-adjudicated from every original case report",
+      "arms": {
+        "original": [
+          "HP:0000107",
+          "HP:0000256",
+          "HP:0000774",
+          "HP:0001249",
+          "HP:0001520",
+          "HP:0002119",
+          "HP:0002573",
+          "HP:0009882",
+          "HP:0011220",
+          "HP:0030255"
+        ],
+        "half_missing": [
+          "HP:0001249",
+          "HP:0001520",
+          "HP:0002119",
+          "HP:0009882",
+          "HP:0011220"
+        ],
+        "swapped": [
+          "HP:0000431",
+          "HP:0000750",
+          "HP:0001249",
+          "HP:0001263",
+          "HP:0002719",
+          "HP:0011968",
+          "HP:0031936"
+        ],
+        "none": []
+      },
+      "swapped_donor_case_id": "PMID_31239556_individual_32",
+      "swapped_donor_gene": "CTCF",
+      "local_source": "source/selected/PMID_27753196_index_patient.json",
+      "causal_only_vcf": "causal-only/PMID_27753196_index_patient.vcf",
+      "causal_only_vcf_sha256": "a2290acb789258596dd9c0b4c7cde3c6969d6f3ec4f3c4afbbcfa33367ad35e0"
+    },
+    {
+      "case_id": "PMID_23440193_11_y_old_boy",
+      "subject_id": "11-y-old boy",
+      "gene": "KCNJ2",
+      "hgnc_id": "HGNC:6263",
+      "stratum": "autosomal_single_heterozygous",
+      "sex": "MALE",
+      "causal_variants": [
+        {
+          "chrom": "17",
+          "pos": 70175935,
+          "ref": "A",
+          "alt": "T",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000135",
+            "label": "heterozygous"
+          },
+          "genotype": "0/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_000891.3:c.896A>T"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000017.11:g.70175935A>T"
+            }
+          ]
+        }
+      ],
+      "hpo_ids": [
+        "HP:0004757",
+        "HP:0012232",
+        "HP:0012663"
+      ],
+      "excluded_hpo_ids": [
+        "HP:0001645",
+        "HP:0001962",
+        "HP:0031972"
+      ],
+      "source_phenotypic_features": [
+        {
+          "type": {
+            "id": "HP:0004757",
+            "label": "Paroxysmal atrial fibrillation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012232",
+            "label": "Shortened QT interval"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012663",
+            "label": "Mildly reduced left ventricular ejection fraction"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001962",
+            "label": "Palpitations"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0031972",
+            "label": "Presyncope"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001645",
+            "label": "Sudden cardiac death"
+          },
+          "excluded": true
+        }
+      ],
+      "source_diagnosis": {
+        "id": "OMIM:609622",
+        "label": "Short QT syndrome 3"
+      },
+      "source_references": [
+        {
+          "id": "PMID:23440193",
+          "reference": "https://pubmed.ncbi.nlm.nih.gov/23440193",
+          "description": "KCNJ2 mutation in short QT syndrome 3 results in atrial fibrillation and ventricular proarrhythmia"
+        }
+      ],
+      "source_member": "0.1.19/KCNJ2/PMID_23440193_11-y-oldboy.json",
+      "source_sha256": "61c227346894178a5c1ed89fa7bf81929598f3181a4bd23f130ef497ae3a9d22",
+      "truth_status": "source-curated SOLVED/CAUSATIVE; not independently re-adjudicated from every original case report",
+      "arms": {
+        "original": [
+          "HP:0004757",
+          "HP:0012232",
+          "HP:0012663"
+        ],
+        "half_missing": [
+          "HP:0004757",
+          "HP:0012232"
+        ],
+        "swapped": [
+          "HP:0000246",
+          "HP:0000403",
+          "HP:0000491",
+          "HP:0001047",
+          "HP:0002788",
+          "HP:0006335",
+          "HP:0006532",
+          "HP:0032163",
+          "HP:0100658",
+          "HP:0410017",
+          "HP:0410327",
+          "HP:0410328",
+          "HP:0410330",
+          "HP:0410331"
+        ],
+        "none": []
+      },
+      "swapped_donor_case_id": "PMID_19776401_Patient_8-2",
+      "swapped_donor_gene": "DOCK8",
+      "local_source": "source/selected/PMID_23440193_11_y_old_boy.json",
+      "causal_only_vcf": "causal-only/PMID_23440193_11_y_old_boy.vcf",
+      "causal_only_vcf_sha256": "02dea0f654ed1be0ea0887b40d942b93451fca4d45b75e42d27ae3b88bf4ce12"
+    },
+    {
+      "case_id": "PMID_31239556_individual_32",
+      "subject_id": "individual 32",
+      "gene": "CTCF",
+      "hgnc_id": "HGNC:13723",
+      "stratum": "autosomal_single_heterozygous",
+      "sex": "MALE",
+      "causal_variants": [
+        {
+          "chrom": "16",
+          "pos": 67620778,
+          "ref": "G",
+          "alt": "A",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000135",
+            "label": "heterozygous"
+          },
+          "genotype": "0/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_006565.4:c.1168G>A"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000016.10:g.67620778G>A"
+            }
+          ]
+        }
+      ],
+      "hpo_ids": [
+        "HP:0000431",
+        "HP:0000750",
+        "HP:0001249",
+        "HP:0001263",
+        "HP:0002719",
+        "HP:0011968",
+        "HP:0031936"
+      ],
+      "excluded_hpo_ids": [
+        "HP:0000160",
+        "HP:0000194",
+        "HP:0000219",
+        "HP:0000248",
+        "HP:0000275",
+        "HP:0000276",
+        "HP:0000280",
+        "HP:0000286",
+        "HP:0000303",
+        "HP:0000307",
+        "HP:0000308",
+        "HP:0000316",
+        "HP:0000322",
+        "HP:0000325",
+        "HP:0000331",
+        "HP:0000336",
+        "HP:0000341",
+        "HP:0000343",
+        "HP:0000348",
+        "HP:0000358",
+        "HP:0000365",
+        "HP:0000369",
+        "HP:0000378",
+        "HP:0000396",
+        "HP:0000400",
+        "HP:0000411",
+        "HP:0000426",
+        "HP:0000455",
+        "HP:0000463",
+        "HP:0000494",
+        "HP:0000508",
+        "HP:0000527",
+        "HP:0000574",
+        "HP:0000581",
+        "HP:0000582",
+        "HP:0000592",
+        "HP:0000601",
+        "HP:0000637",
+        "HP:0000656",
+        "HP:0000716",
+        "HP:0000718",
+        "HP:0000722",
+        "HP:0000729",
+        "HP:0000733",
+        "HP:0000739",
+        "HP:0000938",
+        "HP:0000939",
+        "HP:0000954",
+        "HP:0001169",
+        "HP:0001182",
+        "HP:0001212",
+        "HP:0001251",
+        "HP:0001332",
+        "HP:0001382",
+        "HP:0001385",
+        "HP:0001508",
+        "HP:0001761",
+        "HP:0001762",
+        "HP:0001763",
+        "HP:0001769",
+        "HP:0001770",
+        "HP:0001831",
+        "HP:0002020",
+        "HP:0002064",
+        "HP:0002162",
+        "HP:0002553",
+        "HP:0002650",
+        "HP:0002808",
+        "HP:0002857",
+        "HP:0005280",
+        "HP:0005326",
+        "HP:0006101",
+        "HP:0006970",
+        "HP:0007018",
+        "HP:0008551",
+        "HP:0008807",
+        "HP:0009623",
+        "HP:0009765",
+        "HP:0010818",
+        "HP:0011220",
+        "HP:0011800",
+        "HP:0011822",
+        "HP:0012385",
+        "HP:0012450",
+        "HP:0012810",
+        "HP:0025190",
+        "HP:0030043",
+        "HP:0045025",
+        "HP:0045075",
+        "HP:0200055"
+      ],
+      "source_phenotypic_features": [
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031936",
+            "label": "Delayed ability to walk"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000750",
+            "label": "Delayed speech and language development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002719",
+            "label": "Recurrent infections"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000431",
+            "label": "Wide nasal bridge"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002020",
+            "label": "Gastroesophageal reflux"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012450",
+            "label": "Chronic constipation"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000729",
+            "label": "Autistic behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0007018",
+            "label": "Attention deficit hyperactivity disorder"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000718",
+            "label": "Aggressive behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000739",
+            "label": "Anxiety"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000733",
+            "label": "Motor stereotypy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000716",
+            "label": "Depression"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000722",
+            "label": "Compulsive behaviors"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0010818",
+            "label": "Generalized tonic seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0025190",
+            "label": "Bilateral tonic-clonic seizure with generalized onset"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0006970",
+            "label": "Periventricular leukomalacia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001332",
+            "label": "Dystonia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001251",
+            "label": "Ataxia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002064",
+            "label": "Spastic gait"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001761",
+            "label": "Pes cavus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000365",
+            "label": "Hearing impairment"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000248",
+            "label": "Brachycephaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000336",
+            "label": "Prominent supraorbital ridges"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000280",
+            "label": "Coarse facial features"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000322",
+            "label": "Short philtrum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011800",
+            "label": "Midface retrusion"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000307",
+            "label": "Pointed chin"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002162",
+            "label": "Low posterior hairline"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000396",
+            "label": "Overfolded helix"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000656",
+            "label": "Ectropion"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000574",
+            "label": "Thick eyebrow"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000275",
+            "label": "Narrow face"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001212",
+            "label": "Prominent fingertip pads"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000160",
+            "label": "Narrow mouth"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000276",
+            "label": "Long face"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000303",
+            "label": "Mandibular prognathia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000426",
+            "label": "Prominent nasal bridge"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0005326",
+            "label": "Hypoplastic philtrum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000494",
+            "label": "Downslanted palpebral fissures"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000348",
+            "label": "High forehead"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000455",
+            "label": "Broad nasal tip"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0005280",
+            "label": "Depressed nasal bridge"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000601",
+            "label": "Hypotelorism"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002553",
+            "label": "Highly arched eyebrow"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000331",
+            "label": "Short chin"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0045025",
+            "label": "Narrow palpebral fissure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000341",
+            "label": "Narrow forehead"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000308",
+            "label": "Microretrognathia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000378",
+            "label": "Cupped ear"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000592",
+            "label": "Blue sclerae"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011822",
+            "label": "Broad chin"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011220",
+            "label": "Prominent forehead"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000316",
+            "label": "Hypertelorism"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000463",
+            "label": "Anteverted nares"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000358",
+            "label": "Posteriorly rotated ears"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0045075",
+            "label": "Sparse eyebrow"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000400",
+            "label": "Macrotia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000325",
+            "label": "Triangular face"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000194",
+            "label": "Open mouth"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0008551",
+            "label": "Microtia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000343",
+            "label": "Long philtrum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000527",
+            "label": "Long eyelashes"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000369",
+            "label": "Low-set ears"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0009765",
+            "label": "Low hanging columella"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012810",
+            "label": "Wide nasal base"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000637",
+            "label": "Long palpebral fissure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000954",
+            "label": "Single transverse palmar crease"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000508",
+            "label": "Ptosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000219",
+            "label": "Thin upper lip vermilion"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000582",
+            "label": "Upslanted palpebral fissure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000286",
+            "label": "Epicanthus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000581",
+            "label": "Blepharophimosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000411",
+            "label": "Protruding ear"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0006101",
+            "label": "Finger syndactyly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0200055",
+            "label": "Small hand"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000939",
+            "label": "Osteoporosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030043",
+            "label": "Hip subluxation"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002857",
+            "label": "Genu valgum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001382",
+            "label": "Joint hypermobility"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001385",
+            "label": "Hip dysplasia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001770",
+            "label": "Toe syndactyly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0009623",
+            "label": "Proximal placement of thumb"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0008807",
+            "label": "Acetabular dysplasia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012385",
+            "label": "Camptodactyly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001763",
+            "label": "Pes planus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001169",
+            "label": "Broad palm"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002808",
+            "label": "Kyphosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001831",
+            "label": "Short toe"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001762",
+            "label": "Talipes equinovarus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000938",
+            "label": "Osteopenia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001769",
+            "label": "Broad foot"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001182",
+            "label": "Tapered finger"
+          },
+          "excluded": true
+        }
+      ],
+      "source_diagnosis": {
+        "id": "OMIM:615502",
+        "label": "Intellectual developmental disorder, autosomal dominant 21"
+      },
+      "source_references": [
+        {
+          "id": "PMID:31239556",
+          "reference": "https://pubmed.ncbi.nlm.nih.gov/31239556",
+          "description": "CTCF variants in 39 individuals with a variable neurodevelopmental disorder broaden the mutational and clinical spectrum"
+        }
+      ],
+      "source_member": "0.1.19/CTCF/PMID_31239556_individual32.json",
+      "source_sha256": "2478f8750ae5864e403c4153f9822b1af8715614cb9deb8a8d243969472e4a82",
+      "truth_status": "source-curated SOLVED/CAUSATIVE; not independently re-adjudicated from every original case report",
+      "arms": {
+        "original": [
+          "HP:0000431",
+          "HP:0000750",
+          "HP:0001249",
+          "HP:0001263",
+          "HP:0002719",
+          "HP:0011968",
+          "HP:0031936"
+        ],
+        "half_missing": [
+          "HP:0000750",
+          "HP:0001263",
+          "HP:0002719",
+          "HP:0011968"
+        ],
+        "swapped": [
+          "HP:0000154",
+          "HP:0000219",
+          "HP:0000252",
+          "HP:0000280",
+          "HP:0000445",
+          "HP:0000750",
+          "HP:0001252",
+          "HP:0001270",
+          "HP:0010864",
+          "HP:0011344",
+          "HP:0012444"
+        ],
+        "none": []
+      },
+      "swapped_donor_case_id": "PMID_37054711_Family_10_Subject_13",
+      "swapped_donor_gene": "INTS11",
+      "local_source": "source/selected/PMID_31239556_individual_32.json",
+      "causal_only_vcf": "causal-only/PMID_31239556_individual_32.vcf",
+      "causal_only_vcf_sha256": "a2317b2bfdc4cf66bfa35cd42da94c983a8b5a2324caf515850476d6dd806263"
+    },
+    {
+      "case_id": "PMID_29469822_Family_4_II-1",
+      "subject_id": "Family 4 II-1",
+      "gene": "LZTR1",
+      "hgnc_id": "HGNC:6742",
+      "stratum": "autosomal_homozygous",
+      "sex": "MALE",
+      "causal_variants": [
+        {
+          "chrom": "22",
+          "pos": 20994629,
+          "ref": "G",
+          "alt": "C",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000136",
+            "label": "homozygous"
+          },
+          "genotype": "1/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_006767.4:c.1687G>C"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000022.11:g.20994629G>C"
+            }
+          ]
+        }
+      ],
+      "hpo_ids": [
+        "HP:0000316",
+        "HP:0000347",
+        "HP:0000358",
+        "HP:0000369",
+        "HP:0000470",
+        "HP:0000494",
+        "HP:0000508",
+        "HP:0000767",
+        "HP:0001263",
+        "HP:0001639",
+        "HP:0002162",
+        "HP:0006721"
+      ],
+      "excluded_hpo_ids": [
+        "HP:0000028",
+        "HP:0000154",
+        "HP:0000218",
+        "HP:0000286",
+        "HP:0000307",
+        "HP:0000343",
+        "HP:0000396",
+        "HP:0000431",
+        "HP:0000463",
+        "HP:0000506",
+        "HP:0000768",
+        "HP:0001134",
+        "HP:0001212",
+        "HP:0001561",
+        "HP:0001629",
+        "HP:0001642",
+        "HP:0001647",
+        "HP:0001655",
+        "HP:0001790",
+        "HP:0002212",
+        "HP:0004322",
+        "HP:0005280",
+        "HP:0005684",
+        "HP:0006610",
+        "HP:0006695",
+        "HP:0011800"
+      ],
+      "source_phenotypic_features": [
+        {
+          "type": {
+            "id": "HP:0006721",
+            "label": "Acute lymphoblastic leukemia"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P3Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000494",
+            "label": "Downslanted palpebral fissures"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001639",
+            "label": "Hypertrophic cardiomyopathy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000316",
+            "label": "Hypertelorism"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000508",
+            "label": "Ptosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000358",
+            "label": "Posteriorly rotated ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000369",
+            "label": "Low-set ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000347",
+            "label": "Micrognathia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002162",
+            "label": "Low posterior hairline"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000470",
+            "label": "Short neck"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000767",
+            "label": "Pectus excavatum"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000028",
+            "label": "Cryptorchidism"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002212",
+            "label": "Curly hair"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011800",
+            "label": "Midface retrusion"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000307",
+            "label": "Pointed chin"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000768",
+            "label": "Pectus carinatum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001642",
+            "label": "Pulmonic stenosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0006695",
+            "label": "Atrioventricular canal defect"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001629",
+            "label": "Ventricular septal defect"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001647",
+            "label": "Bicuspid aortic valve"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001655",
+            "label": "Patent foramen ovale"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000463",
+            "label": "Anteverted nares"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0005280",
+            "label": "Depressed nasal bridge"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000431",
+            "label": "Wide nasal bridge"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000506",
+            "label": "Telecanthus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000286",
+            "label": "Epicanthus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000396",
+            "label": "Overfolded helix"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000154",
+            "label": "Wide mouth"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000343",
+            "label": "Long philtrum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001212",
+            "label": "Prominent fingertip pads"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001134",
+            "label": "Anterior polar cataract"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0006610",
+            "label": "Wide intermamillary distance"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001561",
+            "label": "Polyhydramnios"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001790",
+            "label": "Nonimmune hydrops fetalis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0005684",
+            "label": "Distal arthrogryposis"
+          },
+          "excluded": true
+        }
+      ],
+      "source_diagnosis": {
+        "id": "OMIM:605275",
+        "label": "Noonan syndrome 2"
+      },
+      "source_references": [
+        {
+          "id": "PMID:29469822",
+          "reference": "https://pubmed.ncbi.nlm.nih.gov/29469822",
+          "description": "Autosomal recessive Noonan syndrome associated with biallelic LZTR1 variants"
+        }
+      ],
+      "source_member": "0.1.19/LZTR1/PMID_29469822_Family4II-1.json",
+      "source_sha256": "89e4ae1999c0d7e128a15865825769ef69cc00b64f322f471c9cbdd58ed1434a",
+      "truth_status": "source-curated SOLVED/CAUSATIVE; not independently re-adjudicated from every original case report",
+      "arms": {
+        "original": [
+          "HP:0000316",
+          "HP:0000347",
+          "HP:0000358",
+          "HP:0000369",
+          "HP:0000470",
+          "HP:0000494",
+          "HP:0000508",
+          "HP:0000767",
+          "HP:0001263",
+          "HP:0001639",
+          "HP:0002162",
+          "HP:0006721"
+        ],
+        "half_missing": [
+          "HP:0000316",
+          "HP:0000369",
+          "HP:0000494",
+          "HP:0000508",
+          "HP:0001263",
+          "HP:0001639"
+        ],
+        "swapped": [
+          "HP:0000107",
+          "HP:0000256",
+          "HP:0000774",
+          "HP:0001249",
+          "HP:0001520",
+          "HP:0002119",
+          "HP:0002573",
+          "HP:0009882",
+          "HP:0011220",
+          "HP:0030255"
+        ],
+        "none": []
+      },
+      "swapped_donor_case_id": "PMID_27753196_index_patient",
+      "swapped_donor_gene": "MTOR",
+      "local_source": "source/selected/PMID_29469822_Family_4_II-1.json",
+      "causal_only_vcf": "causal-only/PMID_29469822_Family_4_II-1.vcf",
+      "causal_only_vcf_sha256": "10ea1bac129a80cad0d5a99b4f95661ce0532559c924e869c9ee2114670e7a1c"
+    },
+    {
+      "case_id": "PMID_37054711_Family_10_Subject_13",
+      "subject_id": "Family_10_Subject_13",
+      "gene": "INTS11",
+      "hgnc_id": "HGNC:26052",
+      "stratum": "autosomal_homozygous",
+      "sex": "FEMALE",
+      "causal_variants": [
+        {
+          "chrom": "1",
+          "pos": 1321072,
+          "ref": "C",
+          "alt": "A",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000136",
+            "label": "homozygous"
+          },
+          "genotype": "1/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_017871.6:c.50G>T"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000001.11:g.1321072C>A"
+            }
+          ]
+        }
+      ],
+      "hpo_ids": [
+        "HP:0000154",
+        "HP:0000219",
+        "HP:0000252",
+        "HP:0000280",
+        "HP:0000445",
+        "HP:0000750",
+        "HP:0001252",
+        "HP:0001270",
+        "HP:0010864",
+        "HP:0011344",
+        "HP:0012444"
+      ],
+      "excluded_hpo_ids": [],
+      "source_phenotypic_features": [
+        {
+          "type": {
+            "id": "HP:0011344",
+            "label": "Severe global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010864",
+            "label": "Intellectual disability, severe"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000750",
+            "label": "Delayed speech and language development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001270",
+            "label": "Motor delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012444",
+            "label": "Brain atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000280",
+            "label": "Coarse facial features"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000445",
+            "label": "Wide nose"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000219",
+            "label": "Thin upper lip vermilion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000154",
+            "label": "Wide mouth"
+          }
+        }
+      ],
+      "source_diagnosis": {
+        "id": "OMIM:620428",
+        "label": "Neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities"
+      },
+      "source_references": [
+        {
+          "id": "PMID:37054711",
+          "reference": "https://pubmed.ncbi.nlm.nih.gov/37054711",
+          "description": "Bi-allelic variants in INTS11 are associated with a complex neurological disorder"
+        }
+      ],
+      "source_member": "0.1.19/INTS11/PMID_37054711_Family_10_Subject_13.json",
+      "source_sha256": "9f2b7542706fafc6d3b0ddd5a895833548f8ad62b879c57c78eadca55bb075c4",
+      "truth_status": "source-curated SOLVED/CAUSATIVE; not independently re-adjudicated from every original case report",
+      "arms": {
+        "original": [
+          "HP:0000154",
+          "HP:0000219",
+          "HP:0000252",
+          "HP:0000280",
+          "HP:0000445",
+          "HP:0000750",
+          "HP:0001252",
+          "HP:0001270",
+          "HP:0010864",
+          "HP:0011344",
+          "HP:0012444"
+        ],
+        "half_missing": [
+          "HP:0000219",
+          "HP:0000252",
+          "HP:0000445",
+          "HP:0000750",
+          "HP:0001270",
+          "HP:0010864"
+        ],
+        "swapped": [
+          "HP:0001250",
+          "HP:0001254",
+          "HP:0010910",
+          "HP:0010911",
+          "HP:0010913",
+          "HP:0011968"
+        ],
+        "none": []
+      },
+      "swapped_donor_case_id": "PMID_14742428_DM",
+      "swapped_donor_gene": "BCKDHB",
+      "local_source": "source/selected/PMID_37054711_Family_10_Subject_13.json",
+      "causal_only_vcf": "causal-only/PMID_37054711_Family_10_Subject_13.vcf",
+      "causal_only_vcf_sha256": "907915fd381b8b6eb4b1f6af81d51afe71d294ae292e7914b6cbaf4ce0014ed8"
+    },
+    {
+      "case_id": "PMID_14742428_DM",
+      "subject_id": "DM",
+      "gene": "BCKDHB",
+      "hgnc_id": "HGNC:987",
+      "stratum": "autosomal_homozygous",
+      "sex": "UNKNOWN_SEX",
+      "causal_variants": [
+        {
+          "chrom": "6",
+          "pos": 80167690,
+          "ref": "T",
+          "alt": "G",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000136",
+            "label": "homozygous"
+          },
+          "genotype": "1/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_183050.4:c.356T>G"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000006.12:g.80167690T>G"
+            }
+          ]
+        }
+      ],
+      "hpo_ids": [
+        "HP:0001250",
+        "HP:0001254",
+        "HP:0010910",
+        "HP:0010911",
+        "HP:0010913",
+        "HP:0011968"
+      ],
+      "excluded_hpo_ids": [],
+      "source_phenotypic_features": [
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001254",
+            "label": "Lethargy"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001250",
+            "label": "Seizure"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010911",
+            "label": "Hyperleucinemia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010913",
+            "label": "Hyperisoleucinemia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010910",
+            "label": "Hypervalinemia"
+          }
+        }
+      ],
+      "source_diagnosis": {
+        "id": "OMIM:620698",
+        "label": "Maple syrup urine disease, type Ib"
+      },
+      "source_references": [
+        {
+          "id": "PMID:14742428",
+          "reference": "https://pubmed.ncbi.nlm.nih.gov/14742428",
+          "description": "Structural and biochemical basis for novel mutations in homozygous Israeli maple syrup urine disease patients: a proposed mechanism for the thiamin-responsive phenotype"
+        }
+      ],
+      "source_member": "0.1.19/BCKDHB/PMID_14742428_DM.json",
+      "source_sha256": "a051221e746f59fca00c125c079ef7bbba7c8901d9ce9dd99eef0643cedd5838",
+      "truth_status": "source-curated SOLVED/CAUSATIVE; not independently re-adjudicated from every original case report",
+      "arms": {
+        "original": [
+          "HP:0001250",
+          "HP:0001254",
+          "HP:0010910",
+          "HP:0010911",
+          "HP:0010913",
+          "HP:0011968"
+        ],
+        "half_missing": [
+          "HP:0001250",
+          "HP:0010910",
+          "HP:0011968"
+        ],
+        "swapped": [
+          "HP:0000280",
+          "HP:0000349",
+          "HP:0000403",
+          "HP:0000414",
+          "HP:0000729",
+          "HP:0000750",
+          "HP:0001156",
+          "HP:0001212",
+          "HP:0001263",
+          "HP:0004322",
+          "HP:0010864",
+          "HP:0200055"
+        ],
+        "none": []
+      },
+      "swapped_donor_case_id": "PMID_24403049_Proband_2",
+      "swapped_donor_gene": "SLC35C1",
+      "local_source": "source/selected/PMID_14742428_DM.json",
+      "causal_only_vcf": "causal-only/PMID_14742428_DM.vcf",
+      "causal_only_vcf_sha256": "adf2f6fb0f40e8d0191ae0ddcfba3a21f1d2b73657039621c0869318c5ec7d14"
+    },
+    {
+      "case_id": "PMID_19776401_Patient_8-2",
+      "subject_id": "Patient 8-2",
+      "gene": "DOCK8",
+      "hgnc_id": "HGNC:19191",
+      "stratum": "autosomal_homozygous",
+      "sex": "MALE",
+      "causal_variants": [
+        {
+          "chrom": "9",
+          "pos": 336714,
+          "ref": "A",
+          "alt": "G",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000136",
+            "label": "homozygous"
+          },
+          "genotype": "1/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_203447.3:c.1418A>G"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000009.12:g.336714A>G"
+            }
+          ]
+        }
+      ],
+      "hpo_ids": [
+        "HP:0000246",
+        "HP:0000403",
+        "HP:0000491",
+        "HP:0001047",
+        "HP:0002788",
+        "HP:0006335",
+        "HP:0006532",
+        "HP:0032163",
+        "HP:0100658",
+        "HP:0410017",
+        "HP:0410327",
+        "HP:0410328",
+        "HP:0410330",
+        "HP:0410331"
+      ],
+      "excluded_hpo_ids": [
+        "HP:0002099",
+        "HP:0002664",
+        "HP:0410323"
+      ],
+      "source_phenotypic_features": [
+        {
+          "type": {
+            "id": "HP:0000491",
+            "label": "Keratitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032163",
+            "label": "Molluscum contagiosum"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0006532",
+            "label": "Recurrent pneumonia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000403",
+            "label": "Recurrent otitis media"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100658",
+            "label": "Cellulitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410330",
+            "label": "Meat allergen allergy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001047",
+            "label": "Atopic dermatitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410328",
+            "label": "Egg allergy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0006335",
+            "label": "Persistence of primary teeth"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410017",
+            "label": "Otitis externa"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410331",
+            "label": "Nut food product allergy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000246",
+            "label": "Sinusitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002788",
+            "label": "Recurrent upper respiratory tract infections"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410327",
+            "label": "Dairy allergy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410323",
+            "label": "Drug allergy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002099",
+            "label": "Asthma"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002664",
+            "label": "Neoplasm"
+          },
+          "excluded": true
+        }
+      ],
+      "source_diagnosis": {
+        "id": "OMIM:243700",
+        "label": "Hyper-IgE syndrome 2, autosomal recessive, with recurrent infections"
+      },
+      "source_references": [
+        {
+          "id": "PMID:19776401",
+          "reference": "https://pubmed.ncbi.nlm.nih.gov/19776401",
+          "description": "Combined immunodeficiency associated with DOCK8 mutations"
+        }
+      ],
+      "source_member": "0.1.19/DOCK8/PMID_19776401_Patient8-2.json",
+      "source_sha256": "fb9650f17f8918e4e9a4edbc411b7996ff648176b17203482301b5b75b6e9684",
+      "truth_status": "source-curated SOLVED/CAUSATIVE; not independently re-adjudicated from every original case report",
+      "arms": {
+        "original": [
+          "HP:0000246",
+          "HP:0000403",
+          "HP:0000491",
+          "HP:0001047",
+          "HP:0002788",
+          "HP:0006335",
+          "HP:0006532",
+          "HP:0032163",
+          "HP:0100658",
+          "HP:0410017",
+          "HP:0410327",
+          "HP:0410328",
+          "HP:0410330",
+          "HP:0410331"
+        ],
+        "half_missing": [
+          "HP:0000246",
+          "HP:0000491",
+          "HP:0006335",
+          "HP:0032163",
+          "HP:0410327",
+          "HP:0410328",
+          "HP:0410330"
+        ],
+        "swapped": [
+          "HP:0001249",
+          "HP:0001250",
+          "HP:0001252",
+          "HP:0001263",
+          "HP:0001336",
+          "HP:0002421",
+          "HP:0007267",
+          "HP:0012301"
+        ],
+        "none": []
+      },
+      "swapped_donor_case_id": "PMID_17331980_patient",
+      "swapped_donor_gene": "COG8",
+      "local_source": "source/selected/PMID_19776401_Patient_8-2.json",
+      "causal_only_vcf": "causal-only/PMID_19776401_Patient_8-2.vcf",
+      "causal_only_vcf_sha256": "5125b43d827a225da011d59bfe5056249733a70750db7ce17f7198e1f168d320"
+    },
+    {
+      "case_id": "PMID_17331980_patient",
+      "subject_id": "patient",
+      "gene": "COG8",
+      "hgnc_id": "HGNC:18623",
+      "stratum": "autosomal_two_heterozygous",
+      "sex": "MALE",
+      "causal_variants": [
+        {
+          "chrom": "16",
+          "pos": 69334520,
+          "ref": "C",
+          "alt": "T",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000135",
+            "label": "heterozygous"
+          },
+          "genotype": "0/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_032382.5:c.1413+1G>A"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000016.10:g.69334520C>T"
+            }
+          ]
+        },
+        {
+          "chrom": "16",
+          "pos": 69330989,
+          "ref": "GAA",
+          "alt": "G",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000135",
+            "label": "heterozygous"
+          },
+          "genotype": "0/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_032382.5:c.1687_1688del"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000016.10:g.69330992_69330993del"
+            }
+          ]
+        }
+      ],
+      "hpo_ids": [
+        "HP:0001249",
+        "HP:0001250",
+        "HP:0001252",
+        "HP:0001263",
+        "HP:0001336",
+        "HP:0002421",
+        "HP:0007267",
+        "HP:0012301"
+      ],
+      "excluded_hpo_ids": [
+        "HP:0000233",
+        "HP:0000260",
+        "HP:0000286",
+        "HP:0000316",
+        "HP:0000347",
+        "HP:0000369",
+        "HP:0000445",
+        "HP:0000463",
+        "HP:0000470",
+        "HP:0000474",
+        "HP:0000582",
+        "HP:0001137",
+        "HP:0001188",
+        "HP:0001508",
+        "HP:0001511",
+        "HP:0001762",
+        "HP:0002002",
+        "HP:0002133",
+        "HP:0002376",
+        "HP:0002650",
+        "HP:0002673",
+        "HP:0003196",
+        "HP:0003438",
+        "HP:0005280",
+        "HP:0006380",
+        "HP:0006466",
+        "HP:0006846",
+        "HP:0007420",
+        "HP:0010880",
+        "HP:0012385",
+        "HP:0034337",
+        "HP:0034360"
+      ],
+      "source_phenotypic_features": [
+        {
+          "type": {
+            "id": "HP:0007267",
+            "label": "Chronic axonal neuropathy"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P7M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P7M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002421",
+            "label": "Poor head control"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P7M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P7M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001336",
+            "label": "Myoclonus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001250",
+            "label": "Seizure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012301",
+            "label": "Type II transferrin isoform profile"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034360",
+            "label": "Action myoclonus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002133",
+            "label": "Status epilepticus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0006846",
+            "label": "Acute encephalopathy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000463",
+            "label": "Anteverted nares"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003196",
+            "label": "Short nose"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000286",
+            "label": "Epicanthus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000233",
+            "label": "Thin vermilion border"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000582",
+            "label": "Upslanted palpebral fissure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000347",
+            "label": "Micrognathia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0010880",
+            "label": "Increased nuchal translucency"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000474",
+            "label": "Thickened nuchal skin fold"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001137",
+            "label": "Alternating esotropia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000445",
+            "label": "Wide nose"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002002",
+            "label": "Deep philtrum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0005280",
+            "label": "Depressed nasal bridge"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000316",
+            "label": "Hypertelorism"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000369",
+            "label": "Low-set ears"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012385",
+            "label": "Camptodactyly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0007420",
+            "label": "Spontaneous hematomas"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001188",
+            "label": "Hand clenching"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002376",
+            "label": "Developmental regression"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003438",
+            "label": "Absent Achilles reflex"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0034337",
+            "label": "Claw hand deformity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001762",
+            "label": "Talipes equinovarus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002673",
+            "label": "Coxa valga"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0006380",
+            "label": "Knee flexion contracture"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0006466",
+            "label": "Ankle flexion contracture"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001511",
+            "label": "Intrauterine growth retardation"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000260",
+            "label": "Wide anterior fontanel"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000470",
+            "label": "Short neck"
+          },
+          "excluded": true
+        }
+      ],
+      "source_diagnosis": {
+        "id": "OMIM:611182",
+        "label": "Congenital disorder of glycosylation, type IIh"
+      },
+      "source_references": [
+        {
+          "id": "PMID:17331980",
+          "reference": "https://pubmed.ncbi.nlm.nih.gov/17331980",
+          "description": "COG8 deficiency causes new congenital disorder of glycosylation type Iih"
+        }
+      ],
+      "source_member": "0.1.19/COG8/PMID_17331980_patient.json",
+      "source_sha256": "4fbbd599b001410c55d18675cce862241e11be5eee07706247d927bdbd1d12db",
+      "truth_status": "source-curated SOLVED/CAUSATIVE; not independently re-adjudicated from every original case report",
+      "arms": {
+        "original": [
+          "HP:0001249",
+          "HP:0001250",
+          "HP:0001252",
+          "HP:0001263",
+          "HP:0001336",
+          "HP:0002421",
+          "HP:0007267",
+          "HP:0012301"
+        ],
+        "half_missing": [
+          "HP:0001249",
+          "HP:0001336",
+          "HP:0002421",
+          "HP:0012301"
+        ],
+        "swapped": [
+          "HP:0001746",
+          "HP:0001748",
+          "HP:0011560",
+          "HP:0031348"
+        ],
+        "none": []
+      },
+      "swapped_donor_case_id": "PMID_17295247_Individual_III_3",
+      "swapped_donor_gene": "ZIC3",
+      "local_source": "source/selected/PMID_17331980_patient.json",
+      "causal_only_vcf": "causal-only/PMID_17331980_patient.vcf",
+      "causal_only_vcf_sha256": "6b28f2bdb5f8c76c0105ab89398d4c231bdfbe00b75d26fca406128847e09185"
+    },
+    {
+      "case_id": "PMID_24403049_Proband_2",
+      "subject_id": "Proband 2",
+      "gene": "SLC35C1",
+      "hgnc_id": "HGNC:20197",
+      "stratum": "autosomal_two_heterozygous",
+      "sex": "MALE",
+      "causal_variants": [
+        {
+          "chrom": "11",
+          "pos": 45805892,
+          "ref": "G",
+          "alt": "T",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000135",
+            "label": "heterozygous"
+          },
+          "genotype": "0/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_018389.5:c.91G>T"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000011.10:g.45805892G>T"
+            }
+          ]
+        },
+        {
+          "chrom": "11",
+          "pos": 45806301,
+          "ref": "CCTT",
+          "alt": "C",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000135",
+            "label": "heterozygous"
+          },
+          "genotype": "0/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_018389.5:c.503_505del"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000011.10:g.45806304_45806306del"
+            }
+          ]
+        }
+      ],
+      "hpo_ids": [
+        "HP:0000280",
+        "HP:0000349",
+        "HP:0000403",
+        "HP:0000414",
+        "HP:0000729",
+        "HP:0000750",
+        "HP:0001156",
+        "HP:0001212",
+        "HP:0001263",
+        "HP:0004322",
+        "HP:0010864",
+        "HP:0200055"
+      ],
+      "excluded_hpo_ids": [
+        "HP:0000739",
+        "HP:0001992",
+        "HP:0003112",
+        "HP:0003355",
+        "HP:0008155",
+        "HP:0010471",
+        "HP:0010529",
+        "HP:0011897",
+        "HP:0030352"
+      ],
+      "source_phenotypic_features": [
+        {
+          "type": {
+            "id": "HP:0000403",
+            "label": "Recurrent otitis media"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010864",
+            "label": "Intellectual disability, severe"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000750",
+            "label": "Delayed speech and language development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000729",
+            "label": "Autistic behavior"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001212",
+            "label": "Prominent fingertip pads"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001156",
+            "label": "Brachydactyly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0200055",
+            "label": "Small hand"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000414",
+            "label": "Bulbous nose"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000349",
+            "label": "Widow's peak"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000280",
+            "label": "Coarse facial features"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000739",
+            "label": "Anxiety"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0010529",
+            "label": "Echolalia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011897",
+            "label": "Neutrophilia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003112",
+            "label": "Abnormal circulating amino acid concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0008155",
+            "label": "Mucopolysacchariduria"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0010471",
+            "label": "Oligosacchariduria"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001992",
+            "label": "Organic aciduria"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030352",
+            "label": "Abnormal serum insulin-like growth factor 1 level"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003355",
+            "label": "Aminoaciduria"
+          },
+          "excluded": true
+        }
+      ],
+      "source_diagnosis": {
+        "id": "OMIM:266265",
+        "label": "Congenital disorder of glycosylation, type IIc"
+      },
+      "source_references": [
+        {
+          "id": "PMID:24403049",
+          "reference": "https://pubmed.ncbi.nlm.nih.gov/24403049",
+          "description": "Congenital disorder of fucosylation type 2c (LADII) presenting with short stature and developmental delay with minimal adhesion defect"
+        }
+      ],
+      "source_member": "0.1.19/SLC35C1/PMID_24403049_Proband2.json",
+      "source_sha256": "6c060537eec944e5e3d359aa7ee6416a99008e5ae4b650ef04c6af1636460240",
+      "truth_status": "source-curated SOLVED/CAUSATIVE; not independently re-adjudicated from every original case report",
+      "arms": {
+        "original": [
+          "HP:0000280",
+          "HP:0000349",
+          "HP:0000403",
+          "HP:0000414",
+          "HP:0000729",
+          "HP:0000750",
+          "HP:0001156",
+          "HP:0001212",
+          "HP:0001263",
+          "HP:0004322",
+          "HP:0010864",
+          "HP:0200055"
+        ],
+        "half_missing": [
+          "HP:0000280",
+          "HP:0000349",
+          "HP:0000729",
+          "HP:0001212",
+          "HP:0001263",
+          "HP:0004322"
+        ],
+        "swapped": [
+          "HP:0000103",
+          "HP:0001959",
+          "HP:0002919",
+          "HP:0003074",
+          "HP:0004904",
+          "HP:0032368",
+          "HP:0040216",
+          "HP:0040217"
+        ],
+        "none": []
+      },
+      "swapped_donor_case_id": "PMID_36595822_nan",
+      "swapped_donor_gene": "PAX4",
+      "local_source": "source/selected/PMID_24403049_Proband_2.json",
+      "causal_only_vcf": "causal-only/PMID_24403049_Proband_2.vcf",
+      "causal_only_vcf_sha256": "110143fc7917393c5743265df5995ac16881774931282c0aaa96515b59150364"
+    },
+    {
+      "case_id": "PMID_17295247_Individual_III_3",
+      "subject_id": "Individual III.3",
+      "gene": "ZIC3",
+      "hgnc_id": "HGNC:12874",
+      "stratum": "X_heterozygous_female",
+      "sex": "FEMALE",
+      "causal_variants": [
+        {
+          "chrom": "X",
+          "pos": 137567454,
+          "ref": "T",
+          "alt": "G",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000135",
+            "label": "heterozygous"
+          },
+          "genotype": "0/1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_003413.4:c.763T>G"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000023.11:g.137567454T>G"
+            }
+          ]
+        }
+      ],
+      "hpo_ids": [
+        "HP:0001746",
+        "HP:0001748",
+        "HP:0011560",
+        "HP:0031348"
+      ],
+      "excluded_hpo_ids": [
+        "HP:0001750",
+        "HP:0010882"
+      ],
+      "source_phenotypic_features": [
+        {
+          "type": {
+            "id": "HP:0001748",
+            "label": "Polysplenia"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001746",
+            "label": "Asplenia"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031348",
+            "label": "Dextrotransposition of the great arteries"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011560",
+            "label": "Mitral atresia"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001750",
+            "label": "Single ventricle"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0010882",
+            "label": "Pulmonary valve atresia"
+          },
+          "excluded": true
+        }
+      ],
+      "source_diagnosis": {
+        "id": "OMIM:306955",
+        "label": "Heterotaxy, visceral, 1, X-linked"
+      },
+      "source_references": [
+        {
+          "id": "PMID:17295247",
+          "reference": "https://pubmed.ncbi.nlm.nih.gov/17295247",
+          "description": "Elucidation of penetrance variability of a ZIC3 mutation in a family with complex heart defects and functional analysis of ZIC3 mutations in the first zinc finger domain"
+        }
+      ],
+      "source_member": "0.1.19/ZIC3/PMID_17295247_IndividualIII3.json",
+      "source_sha256": "4f75ef29daaf9e9c209ecec169fc012038089cc3e40141c8080943899b4b2ab5",
+      "truth_status": "source-curated SOLVED/CAUSATIVE; not independently re-adjudicated from every original case report",
+      "arms": {
+        "original": [
+          "HP:0001746",
+          "HP:0001748",
+          "HP:0011560",
+          "HP:0031348"
+        ],
+        "half_missing": [
+          "HP:0011560",
+          "HP:0031348"
+        ],
+        "swapped": [
+          "HP:0000316",
+          "HP:0000347",
+          "HP:0000358",
+          "HP:0000369",
+          "HP:0000470",
+          "HP:0000494",
+          "HP:0000508",
+          "HP:0000767",
+          "HP:0001263",
+          "HP:0001639",
+          "HP:0002162",
+          "HP:0006721"
+        ],
+        "none": []
+      },
+      "swapped_donor_case_id": "PMID_29469822_Family_4_II-1",
+      "swapped_donor_gene": "LZTR1",
+      "local_source": "source/selected/PMID_17295247_Individual_III_3.json",
+      "causal_only_vcf": "causal-only/PMID_17295247_Individual_III_3.vcf",
+      "causal_only_vcf_sha256": "3030d7bf7f2e20b7200ee050a9955d144f419d1eb320913caa0556ced182a100"
+    },
+    {
+      "case_id": "PMID_16783569_IV_11",
+      "subject_id": "IV: 11",
+      "gene": "OFD1",
+      "hgnc_id": "HGNC:2567",
+      "stratum": "X_hemizygous_male",
+      "sex": "MALE",
+      "causal_variants": [
+        {
+          "chrom": "X",
+          "pos": 13760581,
+          "ref": "T",
+          "alt": "TGAAG",
+          "genome_assembly": "GRCh38",
+          "allelic_state": {
+            "id": "GENO:0000134",
+            "label": "hemizygous"
+          },
+          "genotype": "1",
+          "expressions": [
+            {
+              "syntax": "hgvs.c",
+              "value": "NM_003611.3:c.2122_2125dup"
+            },
+            {
+              "syntax": "hgvs.g",
+              "value": "NC_000023.11:g.13760582_13760585dup"
+            }
+          ]
+        }
+      ],
+      "hpo_ids": [
+        "HP:0000023",
+        "HP:0001252",
+        "HP:0001263",
+        "HP:0009381"
+      ],
+      "excluded_hpo_ids": [
+        "HP:0000218",
+        "HP:0000369",
+        "HP:0001162",
+        "HP:0001513",
+        "HP:0002783",
+        "HP:0002788",
+        "HP:0011304"
+      ],
+      "source_phenotypic_features": [
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0009381",
+            "label": "Short finger"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000023",
+            "label": "Inguinal hernia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002788",
+            "label": "Recurrent upper respiratory tract infections"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002783",
+            "label": "Recurrent lower respiratory tract infections"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000369",
+            "label": "Low-set ears"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011304",
+            "label": "Broad thumb"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001513",
+            "label": "Obesity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001162",
+            "label": "Postaxial hand polydactyly"
+          },
+          "excluded": true
+        }
+      ],
+      "source_diagnosis": {
+        "id": "OMIM:300209",
+        "label": "Simpson-Golabi-Behmel syndrome, type 2"
+      },
+      "source_references": [
+        {
+          "id": "PMID:16783569",
+          "reference": "https://pubmed.ncbi.nlm.nih.gov/16783569",
+          "description": "A novel X-linked recessive mental retardation syndrome comprising macrocephaly and ciliary dysfunction is allelic to oral-facial-digital type I syndrome"
+        }
+      ],
+      "source_member": "0.1.19/OFD1/PMID_16783569_IV11.json",
+      "source_sha256": "b3b0a72bf465028658a0f9efb71937b588f0f52831e6c7596487f862c2d7c83d",
+      "truth_status": "source-curated SOLVED/CAUSATIVE; not independently re-adjudicated from every original case report",
+      "arms": {
+        "original": [
+          "HP:0000023",
+          "HP:0001252",
+          "HP:0001263",
+          "HP:0009381"
+        ],
+        "half_missing": [
+          "HP:0001252",
+          "HP:0001263"
+        ],
+        "swapped": [
+          "HP:0004757",
+          "HP:0012232",
+          "HP:0012663"
+        ],
+        "none": []
+      },
+      "swapped_donor_case_id": "PMID_23440193_11_y_old_boy",
+      "swapped_donor_gene": "KCNJ2",
+      "local_source": "source/selected/PMID_16783569_IV_11.json",
+      "causal_only_vcf": "causal-only/PMID_16783569_IV_11.vcf",
+      "causal_only_vcf_sha256": "91fcc5056ce54d2354aa36904f820dc00364e87a3bf186d74d029c9b53884b72"
+    }
+  ]
+}
