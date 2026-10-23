@@ -1,0 +1,1082 @@
+{
+  "schema_version": "2.0",
+  "recorded_at_utc": "2026-10-23T21:45:13.717630+00:00",
+  "inputs_manifest_sha256": "a69127a6c33cb66668686b446fd4d1e793422712bbd60b538a7c25ac159a61e2",
+  "manifest_changed": false,
+  "cases_replaced": false,
+  "results_seen_by_this_reviewer": false,
+  "timing_scope": "Recorded before this reviewer has inspected any inference output. Parent's latest message also reports no inference/results yet; no independent assertion about runtime start is made.",
+  "scope": "Original-case source review of nine provisional autosomal comparators. Adds qualifications; does not rewrite source-curated SOLVED/CAUSATIVE fields or frozen HPO/genotype inputs.",
+  "coverage": {
+    "cases": 9,
+    "main_texts_read_in_available_versions": 8,
+    "full_main_texts_held_locally": 6,
+    "author_copy_full_main_texts_read_online_only": 2,
+    "abstract_only": 1,
+    "complete_supplement_sets_read": 0,
+    "all_figures_read_claim": false
+  },
+  "prior_records": [
+    {
+      "path": "truth-adjudication.json",
+      "sha256": "cfcf6fd7e52b4c496415ff8c868850b81fe6dd5b4c5034d9ab3b3424d1226857"
+    },
+    {
+      "path": "execution-scope-addendum.json",
+      "sha256": "a01e72543663ee8de555a91f19af3657a53f4ccf1d572307085ed84142fc1fa5"
+    },
+    {
+      "path": "case-reviews/CTCF-interim.json",
+      "sha256": "75b5a2a65fe09a7a183c2ba1505b6b15f397b13be7e381ffe1b4c8e861710705"
+    },
+    {
+      "path": "case-reviews/interim-2-2026-10-23-source-findings.json",
+      "sha256": "9359870c5070bece3ca48250d62a8857c2714da9d11c7c5222bef94c9f9ab2b1"
+    },
+    {
+      "path": "case-reviews/interim-2026-10-23-source-findings.json",
+      "sha256": "a7511da4e3d93130a02f2cbeefe84d700cb9bf41ebcfdf40404647ddd78c4dd6"
+    },
+    {
+      "path": "case-reviews/pre-primary-nine-final-flags.json",
+      "sha256": "c52e504f0cbd56dd3881640af19b39ef9f00996882511defb938d596cd731dbf"
+    },
+    {
+      "path": "case-reviews/representation-checks.json",
+      "sha256": "bd020776b08a657631fa2e0286383ef00f1d6d015252010611df6e8fc0fe511a"
+    }
+  ],
+  "source_identity": {
+    "record": "identity-check.json",
+    "sha256": "1572eb450eb46fe31d4003653902a328c02eadb0d1e068727781d5f3977d4480",
+    "note": "All twelve selected PMID/title identities were checked against NCBI esummary; identity is separate from causal truth."
+  },
+  "reporting_policy": {
+    "retain_all_twelve": true,
+    "primary_nine": "Keep all nine provisional autosomal source-label comparator rows. Do not replace cases, alter HPO arms, or silently drop failed/qualified cases.",
+    "truth_profile_before_outputs": {
+      "primary_case_supported_with_all_positive_HPOs_supported": [
+        "KCNJ2",
+        "LZTR1",
+        "INTS11",
+        "COG8"
+      ],
+      "primary_case_genotype_supported_with_material_qualifications": [
+        "CTCF",
+        "BCKDHB",
+        "SLC35C1"
+      ],
+      "original_case_verification_incomplete": [
+        "MTOR",
+        "DOCK8"
+      ]
+    },
+    "profile_scope": "These categories describe source coverage, not performance tiers or a new clinical gold standard. COG8 retains a legacy-splice mapping caveat; LZTR1 a negative-HPO ambiguity. If showing category summaries, include the complete nine-case summary and each row alongside them.",
+    "outside_nine": "PAX4 remains disputed; ZIC3/OFD1 remain limited X technical cases without X background, with ZIC3 phenotype conflict unresolved. See earlier immutable records.",
+    "allowed_claim": "Synthetic public spike/background experiments measure repeatable ranking and agreement with qualified source labels.",
+    "disallowed_claims": [
+      "prospective diagnostic accuracy",
+      "all nine are independently proven solved cases",
+      "all papers/supplements/figures fully read",
+      "independence from HPO/OMIM/ClinVar knowledge",
+      "therapeutic efficacy",
+      "competitive superiority"
+    ],
+    "runtime_update": "Parent reports pre-inference disabling of Exomiser ClinVar whitelist for all12 cases. That removes automatic filter bypass only; source-label issues and other knowledge leakage remain. Runtime implementation was not inspected here."
+  },
+  "license_boundary": "BSD-3-Clause applies to the retained Phenopacket Store records, not automatically to original papers. Reading copies remain ignored local research assets; author-uploaded texts are linked without claiming redistribution rights.",
+  "cases": [
+    {
+      "pmid": "27753196",
+      "doi": "10.1002/ajmg.a.37999",
+      "status": "abstract_only_case_verification_incomplete",
+      "full_main_text_read": false,
+      "reading_scope": "Publisher/PubMed abstract and institutional repository record; online supplementary captions only. No main full text, supplement contents or figure pixels.",
+      "primary_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/27753196/",
+        "https://onlinelibrary.wiley.com/doi/10.1002/ajmg.a.37999",
+        "https://edoc.mdc-berlin.de/id/eprint/20641/"
+      ],
+      "held_main_assets": [],
+      "held_additional_assets": [
+        "MTOR-mdc.html"
+      ],
+      "case_genotype": "Abstract reports heterozygous c.5395G>A p.Glu1799Lys in two siblings. Exact index-patient mapping and all ten individual HPO observations remain unverified from the main paper.",
+      "inheritance_phase": "Parents negative in sampled tissues; gonadal mosaicism is inferred, not directly observed. Do not call the sibling variant unequivocally de novo.",
+      "causal_evidence": "Published recurrent variant attribution in abstract; this worker has not read this family's complete evidence.",
+      "hpo_locator": "Abstract insufficient for individual-level reconciliation.",
+      "limitations": [
+        "Do not promote this case to independently full-text-adjudicated solved truth.",
+        "Wiley full text/supplement routes returned access errors; MDC repository supplied a bibliographic record, not the article."
+      ],
+      "technical_normalization_assets": [],
+      "case_id": "PMID_27753196_index_patient",
+      "gene": "MTOR",
+      "input_phenopacket_sha256": "c856892345d4749cf6ffde997ce0ec6613ef54f7b684269104955f6cf95f315c",
+      "frozen_variant_count": 1,
+      "positive_hpo_adjudications": [
+        {
+          "id": "HP:0002119",
+          "label": "Ventriculomegaly",
+          "status": "requires_original_full_text"
+        },
+        {
+          "id": "HP:0002573",
+          "label": "Hematochezia",
+          "status": "requires_original_full_text"
+        },
+        {
+          "id": "HP:0030255",
+          "label": "Large intestinal polyposis",
+          "status": "requires_original_full_text"
+        },
+        {
+          "id": "HP:0001520",
+          "label": "Large for gestational age",
+          "status": "requires_original_full_text"
+        },
+        {
+          "id": "HP:0000107",
+          "label": "Renal cyst",
+          "status": "requires_original_full_text"
+        },
+        {
+          "id": "HP:0011220",
+          "label": "Prominent forehead",
+          "status": "requires_original_full_text"
+        },
+        {
+          "id": "HP:0000256",
+          "label": "Macrocephaly",
+          "status": "requires_original_full_text"
+        },
+        {
+          "id": "HP:0001249",
+          "label": "Intellectual disability",
+          "status": "requires_original_full_text"
+        },
+        {
+          "id": "HP:0000774",
+          "label": "Narrow chest",
+          "status": "requires_original_full_text"
+        },
+        {
+          "id": "HP:0009882",
+          "label": "Short distal phalanx of finger",
+          "status": "requires_original_full_text"
+        }
+      ],
+      "asset_receipts": [
+        {
+          "path": "source/case-review/MTOR-mdc.html",
+          "bytes": 36704,
+          "sha256": "2425fd4228461d3990f8bedf8c4552681abc2829937f00b77df465049d25c4a7"
+        }
+      ]
+    },
+    {
+      "pmid": "23440193",
+      "doi": "10.1073/pnas.1218154110",
+      "status": "primary_case_supported",
+      "full_main_text_read": true,
+      "reading_scope": "Complete PMC main text, methods, results, discussion and captions. Supplement and figure pixels not read.",
+      "primary_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3600465/"
+      ],
+      "held_main_assets": [
+        "23440193.html",
+        "23440193-html.txt"
+      ],
+      "held_additional_assets": [],
+      "case_genotype": "The 11-year-old boy carries heterozygous c.896A>T p.Glu299Val; both parents tested negative.",
+      "inheritance_phase": "Single heterozygous allele; parental absence reported. No two-allele phase question.",
+      "causal_evidence": "Variant-specific electrophysiology supports impaired rectification/increased outward current. The clinical findings and heterozygous experimental condition agree with the source attribution.",
+      "hpo_locator": "Clinical description: paroxysmal AF, QT 200 ms, LVEF 41%.",
+      "limitations": [
+        "Model-predicted ventricular arrhythmia is not an observed patient phenotype.",
+        "No new ACMG classification or independently replicated experiment is claimed."
+      ],
+      "technical_normalization_assets": [],
+      "case_id": "PMID_23440193_11_y_old_boy",
+      "gene": "KCNJ2",
+      "input_phenopacket_sha256": "61c227346894178a5c1ed89fa7bf81929598f3181a4bd23f130ef497ae3a9d22",
+      "frozen_variant_count": 1,
+      "positive_hpo_adjudications": [
+        {
+          "id": "HP:0004757",
+          "label": "Paroxysmal atrial fibrillation",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0012232",
+          "label": "Shortened QT interval",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0012663",
+          "label": "Mildly reduced left ventricular ejection fraction",
+          "status": "supported_case_observation"
+        }
+      ],
+      "asset_receipts": [
+        {
+          "path": "source/case-review/23440193.html",
+          "bytes": 176170,
+          "sha256": "2aa13dd6f1ebaa060438c330dc0d2e6ad11ee9f4a477dd15b7da38e33256a38a"
+        },
+        {
+          "path": "source/case-review/23440193-html.txt",
+          "bytes": 45054,
+          "sha256": "7508c416832fbf985ae142e01b19471c74fa3624fe74335ff8970365efdf6950"
+        }
+      ]
+    },
+    {
+      "pmid": "31239556",
+      "doi": "10.1038/s41436-019-0585-z",
+      "status": "primary_likely_pathogenic_attribution_with_additional_variant",
+      "full_main_text_read": true,
+      "reading_scope": "Complete PMC main text, main table/captions; Supplementary Table S1 case32 column Tabelle1!AG1:AG56 and row labels read. Other supplementary cases/material and figure pixels not fully read.",
+      "primary_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6892744/",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41436-019-0585-z/MediaObjects/41436_2019_585_MOESM2_ESM.xlsx"
+      ],
+      "held_main_assets": [
+        "31239556.html",
+        "31239556.xml",
+        "31239556.txt"
+      ],
+      "held_additional_assets": [
+        "CTCF-s1-springer.xlsx",
+        "CTCF-individual32-table.json"
+      ],
+      "case_genotype": "Individual32, male, NM_006565.3:c.1168G>A p.Asp390Asn. Table S1 assigns class4 (PS2+PM1+PM2), not VUS. Paper and packet transcript versions normalize identically.",
+      "inheritance_phase": "De novo by clinical trio exome; Table S1 explicitly says no Sanger confirmation.",
+      "causal_evidence": "Source likely-pathogenic attribution. A second de novo CAPRIN1 c.1129A>G p.Met377Val is recorded; its significance is not adjudicated here. Do not claim uniquely proven causality or declare CAPRIN1 an alternative diagnosis.",
+      "hpo_locator": "Table S1 individual32: swallowing difficulty, walking20months, language delay, moderate ID/developmental delay, recurrent ear infections, broad nasal bridge.",
+      "limitations": [
+        "Positive packet features align; original additional cleft lip/palate and obesity are omitted from the packet.",
+        "Source negative flags do not establish that every feature was clinically examined."
+      ],
+      "technical_normalization_assets": [
+        "canonical-NM_006565.3_c.1168G-A.json",
+        "canonical-NM_006565.4_c.1168G-A.json"
+      ],
+      "case_id": "PMID_31239556_individual_32",
+      "gene": "CTCF",
+      "input_phenopacket_sha256": "2478f8750ae5864e403c4153f9822b1af8715614cb9deb8a8d243969472e4a82",
+      "frozen_variant_count": 1,
+      "positive_hpo_adjudications": [
+        {
+          "id": "HP:0001249",
+          "label": "Intellectual disability",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0001263",
+          "label": "Global developmental delay",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0011968",
+          "label": "Feeding difficulties",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0031936",
+          "label": "Delayed ability to walk",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000750",
+          "label": "Delayed speech and language development",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000431",
+          "label": "Wide nasal bridge",
+          "status": "supported_case_observation"
+        }
+      ],
+      "asset_receipts": [
+        {
+          "path": "source/case-review/31239556.html",
+          "bytes": 253624,
+          "sha256": "e0a5c6047cc41056b88c2c5810edb02befcccd43d31786e68b86e9b36a97b3db"
+        },
+        {
+          "path": "source/case-review/31239556.xml",
+          "bytes": 79065,
+          "sha256": "77238fdf194605e0f568220e96d96d89e89254a5b2ce986d2da480b7414b390e"
+        },
+        {
+          "path": "source/case-review/31239556.txt",
+          "bytes": 39961,
+          "sha256": "f9b90450d3864be8b7db50ea086e4a5762edacf142d52229088ce08f640264e3"
+        },
+        {
+          "path": "source/case-review/CTCF-s1-springer.xlsx",
+          "bytes": 1404503,
+          "sha256": "5a92b354cdebd38155d594dd9123885e3247f6b9bc38dc95fe3dfc92f928253f"
+        },
+        {
+          "path": "source/case-review/CTCF-individual32-table.json",
+          "bytes": 7762,
+          "sha256": "f21d74a11e4be8c823e11e195a34ea61fe4eaf0d84784fe0d772bd605ca85278"
+        },
+        {
+          "path": "source/case-review/canonical-NM_006565.3_c.1168G-A.json",
+          "bytes": 101,
+          "sha256": "9243313457ea398f0ecc8777a1494d18e40b0f9307bf75889de5d608f64ba068"
+        },
+        {
+          "path": "source/case-review/canonical-NM_006565.4_c.1168G-A.json",
+          "bytes": 101,
+          "sha256": "9243313457ea398f0ecc8777a1494d18e40b0f9307bf75889de5d608f64ba068"
+        }
+      ]
+    },
+    {
+      "pmid": "29469822",
+      "doi": "10.1038/gim.2017.249",
+      "status": "primary_case_supported",
+      "full_main_text_read": true,
+      "reading_scope": "Complete PMC main text, Table1 and captions; Figure1 pedigree pixels read, including Family4. Other figure pixels and supplements not fully read.",
+      "primary_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6105555/"
+      ],
+      "held_main_assets": [
+        "29469822.html",
+        "29469822.xml",
+        "29469822.txt"
+      ],
+      "held_additional_assets": [
+        "LZTR1-F1.jpg"
+      ],
+      "case_genotype": "Family4 II-1 is homozygous c.1687G>C p.Glu563Gln. Do not substitute a different amino-acid consequence.",
+      "inheritance_phase": "Figure1D/Table1 show unaffected heterozygous parents. Affected sibling II-2 has the same homozygous variant.",
+      "causal_evidence": "Recessive segregation and cohort evidence support source attribution. The paper does not provide a variant-specific functional assay for Glu563Gln; other variants' splice assays are not evidence for this allele.",
+      "hpo_locator": "Family4 narrative and Table1 II-1 column; all12 positive terms align.",
+      "limitations": [
+        "Negative short-stature flag conflicts with narrative mild short stature; Table1 reports 93cm,25th percentile at3years. This ambiguity does not change frozen positive HPO arms."
+      ],
+      "technical_normalization_assets": [],
+      "case_id": "PMID_29469822_Family_4_II-1",
+      "gene": "LZTR1",
+      "input_phenopacket_sha256": "89e4ae1999c0d7e128a15865825769ef69cc00b64f322f471c9cbdd58ed1434a",
+      "frozen_variant_count": 1,
+      "positive_hpo_adjudications": [
+        {
+          "id": "HP:0006721",
+          "label": "Acute lymphoblastic leukemia",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000494",
+          "label": "Downslanted palpebral fissures",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0001639",
+          "label": "Hypertrophic cardiomyopathy",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000316",
+          "label": "Hypertelorism",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000508",
+          "label": "Ptosis",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000358",
+          "label": "Posteriorly rotated ears",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000369",
+          "label": "Low-set ears",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000347",
+          "label": "Micrognathia",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0002162",
+          "label": "Low posterior hairline",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0001263",
+          "label": "Global developmental delay",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000470",
+          "label": "Short neck",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000767",
+          "label": "Pectus excavatum",
+          "status": "supported_case_observation"
+        }
+      ],
+      "asset_receipts": [
+        {
+          "path": "source/case-review/29469822.html",
+          "bytes": 262227,
+          "sha256": "bb3ad564c29a12d30b2da012529f48bd35cc4ee7b6b4e24c0a4baf0af56cefab"
+        },
+        {
+          "path": "source/case-review/29469822.xml",
+          "bytes": 166524,
+          "sha256": "e5a671542a396a9465876dd27783b034ead697ce321b14c656fb8440bfbf4b82"
+        },
+        {
+          "path": "source/case-review/29469822.txt",
+          "bytes": 40526,
+          "sha256": "a1935f92cd2f5ed5b23ee39e598597bd012e92893516233de62bca20abb28d0e"
+        },
+        {
+          "path": "source/case-review/LZTR1-F1.jpg",
+          "bytes": 111319,
+          "sha256": "0310fe2e163649b9578715d0ea225550305c40071fdf53426d8d248a34d70573"
+        }
+      ]
+    },
+    {
+      "pmid": "37054711",
+      "doi": "10.1016/j.ajhg.2023.03.012",
+      "status": "primary_case_supported",
+      "full_main_text_read": true,
+      "reading_scope": "Complete PMC main text, Table1 and captions; Figure1 pedigree/variant pixels read. Other figure pixels and supplements not fully read.",
+      "primary_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10183469/"
+      ],
+      "held_main_assets": [
+        "37054711.html",
+        "37054711-html.txt"
+      ],
+      "held_additional_assets": [
+        "INTS11-F1.jpg"
+      ],
+      "case_genotype": "Family10 Subject13 homozygous NM_001256456.1:c.68G>T p.Arg23Leu; packet NM_017871.6:c.50G>T. Both map to GRCh38 chr1:1321072C>A.",
+      "inheritance_phase": "Recessive pedigree, heterozygous parents, homozygous siblings. No compound-heterozygous phase inference needed.",
+      "causal_evidence": "Corresponding fly Arg17Leu fails rescue. Human wild-type INTS11 also does not rescue the fly null, so this is ortholog-model evidence, not direct functional testing of the human mutant. Subject13 is outside the paper's untested-VUS group.",
+      "hpo_locator": "Main Table1, Subject13: all11 positive terms.",
+      "limitations": [
+        "Experimental evidence is from the orthologous fly model; do not transfer results from other variants."
+      ],
+      "technical_normalization_assets": [
+        "canonical-NM_001256456.1_c.68G-T.json",
+        "canonical-NM_017871.6_c.50G-T.json"
+      ],
+      "case_id": "PMID_37054711_Family_10_Subject_13",
+      "gene": "INTS11",
+      "input_phenopacket_sha256": "9f2b7542706fafc6d3b0ddd5a895833548f8ad62b879c57c78eadca55bb075c4",
+      "frozen_variant_count": 1,
+      "positive_hpo_adjudications": [
+        {
+          "id": "HP:0011344",
+          "label": "Severe global developmental delay",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0010864",
+          "label": "Intellectual disability, severe",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000750",
+          "label": "Delayed speech and language development",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0001270",
+          "label": "Motor delay",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0012444",
+          "label": "Brain atrophy",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0001252",
+          "label": "Hypotonia",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000252",
+          "label": "Microcephaly",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000280",
+          "label": "Coarse facial features",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000445",
+          "label": "Wide nose",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000219",
+          "label": "Thin upper lip vermilion",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000154",
+          "label": "Wide mouth",
+          "status": "supported_case_observation"
+        }
+      ],
+      "asset_receipts": [
+        {
+          "path": "source/case-review/37054711.html",
+          "bytes": 326053,
+          "sha256": "676631c133055bca62e179c93a3ec874100f4cffa74c9b8622e22af44085a183"
+        },
+        {
+          "path": "source/case-review/37054711-html.txt",
+          "bytes": 89586,
+          "sha256": "8c8f417b440c41e5362e7dad3e30f0537c2bf0aea0358a962ddee1bbf098d248"
+        },
+        {
+          "path": "source/case-review/INTS11-F1.jpg",
+          "bytes": 603723,
+          "sha256": "787321dadbdef506f8c4ce4bd38f534f490feff5c6ced418ec00087b912ca6b4"
+        },
+        {
+          "path": "source/case-review/canonical-NM_001256456.1_c.68G-T.json",
+          "bytes": 100,
+          "sha256": "6e856bf8d07f2f50e513916978b513ee3fd5c47656176603493bc1179600efb4"
+        },
+        {
+          "path": "source/case-review/canonical-NM_017871.6_c.50G-T.json",
+          "bytes": 100,
+          "sha256": "6e856bf8d07f2f50e513916978b513ee3fd5c47656176603493bc1179600efb4"
+        }
+      ]
+    },
+    {
+      "pmid": "14742428",
+      "doi": "10.1074/jbc.M313879200",
+      "status": "primary_genotype_supported_phenotypes_projected_from_syndrome",
+      "full_main_text_read": true,
+      "reading_scope": "Complete main article text in author-uploaded ResearchGate rendition, TablesI-III and figure captions. No local full-text copy or figure-pixel review. Text-extraction artifacts remain possible.",
+      "primary_urls": [
+        "https://doi.org/10.1074/jbc.M313879200",
+        "https://www.researchgate.net/publication/8904388_Structural_and_biochemical_basis_for_novel_mutations_in_homozygous_Israeli_maple_syrup_urine_disease_patients_-_A_proposed_mechanism_for_the_thiamin-responsive_phenotype"
+      ],
+      "held_main_assets": [],
+      "held_additional_assets": [
+        "BCKDHB-NM_183050.4.gb",
+        "BCKDHB-uniprot.json"
+      ],
+      "case_genotype": "D.M., homozygous mature-protein V69G (GTT>GGT). RefSeq c.356T>G changes precursor codon119 GTT toGGT; the annotated50-residue transit peptide reconciles precursorV119 with matureV69.",
+      "inheritance_phase": "Homozygosity confirmed by source sequencing; no invented parental phase or sex.",
+      "causal_evidence": "Patient E1 subunits below detection; recombinant V69G failed expression even with chaperonins. Do not describe a purified-mutant activity measurement that could not be performed.",
+      "hpo_locator": "Clinical Phenotypes assigns D.M. the previously described classic-MSUD phenotype. Introduction supplies generic symptoms and BCAA accumulation; individual values/observations are not supplied.",
+      "limitations": [
+        "All six HPO terms have weaker case specificity than the genotype truth. This is not six independently documented D.M. observations."
+      ],
+      "technical_normalization_assets": [
+        "canonical-NM_183050.4_c.356T-G.json"
+      ],
+      "case_id": "PMID_14742428_DM",
+      "gene": "BCKDHB",
+      "input_phenopacket_sha256": "a051221e746f59fca00c125c079ef7bbba7c8901d9ce9dd99eef0643cedd5838",
+      "frozen_variant_count": 1,
+      "positive_hpo_adjudications": [
+        {
+          "id": "HP:0011968",
+          "label": "Feeding difficulties",
+          "status": "syndrome_level_projection_not_individually_documented"
+        },
+        {
+          "id": "HP:0001254",
+          "label": "Lethargy",
+          "status": "syndrome_level_projection_not_individually_documented"
+        },
+        {
+          "id": "HP:0001250",
+          "label": "Seizure",
+          "status": "syndrome_level_projection_not_individually_documented"
+        },
+        {
+          "id": "HP:0010911",
+          "label": "Hyperleucinemia",
+          "status": "syndrome_level_projection_not_individually_documented"
+        },
+        {
+          "id": "HP:0010913",
+          "label": "Hyperisoleucinemia",
+          "status": "syndrome_level_projection_not_individually_documented"
+        },
+        {
+          "id": "HP:0010910",
+          "label": "Hypervalinemia",
+          "status": "syndrome_level_projection_not_individually_documented"
+        }
+      ],
+      "asset_receipts": [
+        {
+          "path": "source/case-review/BCKDHB-NM_183050.4.gb",
+          "bytes": 19178,
+          "sha256": "760f364bb5bec5685a3a7ecc8d423d57a441ba3e59f6da02001791f7d0e1bc29"
+        },
+        {
+          "path": "source/case-review/BCKDHB-uniprot.json",
+          "bytes": 63282,
+          "sha256": "a33eed98485529c7cd5a4445ce97b99496848876a2a6007d81724ef09c32e9d6"
+        },
+        {
+          "path": "source/case-review/canonical-NM_183050.4_c.356T-G.json",
+          "bytes": 101,
+          "sha256": "a3dcf6765d3d1ff691494e4f94829314834de33134f69c4907e5df873e9a21d3"
+        }
+      ]
+    },
+    {
+      "pmid": "19776401",
+      "doi": "10.1056/NEJMoa0905506",
+      "status": "main_text_read_exact_case_supplement_unverified",
+      "full_main_text_read": true,
+      "reading_scope": "Complete PMC main text and captions. Appendix and figure pixels not read. Appendix download attempts returned HTML challenges or403, not PDFs.",
+      "primary_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2965730/",
+        "https://www.nejm.org/doi/suppl/10.1056/NEJMoa0905506/suppl_file/nejm_zhang_2046sa1.pdf"
+      ],
+      "held_main_assets": [
+        "19776401.html",
+        "19776401.xml",
+        "19776401.txt"
+      ],
+      "held_additional_assets": [],
+      "case_genotype": "Family8 consanguineous; Patient8-2 is in the original cohort. Exact c.1418A>G assignment and individual genotype require appendix Figure2/Table2; not independently verified here.",
+      "inheritance_phase": "Packet homozygous; the exact allele/zygosity pairing remains source-curated pending appendix review.",
+      "causal_evidence": "Main text reports greatly reduced DOCK8 with residual full-length protein in Patient8-2 on overexposure. Do not label an absolute protein null.",
+      "hpo_locator": "Main Clinical Findings explicitly attributes atopic dermatitis and recurrent respiratory infections to all patients; other12 selected terms need patient-specific appendix rows.",
+      "limitations": [
+        "ClinVar/secondary summaries cannot substitute for the original case appendix.",
+        "Group-aggregate findings must not be assigned individually."
+      ],
+      "technical_normalization_assets": [],
+      "case_id": "PMID_19776401_Patient_8-2",
+      "gene": "DOCK8",
+      "input_phenopacket_sha256": "fb9650f17f8918e4e9a4edbc411b7996ff648176b17203482301b5b75b6e9684",
+      "frozen_variant_count": 1,
+      "positive_hpo_adjudications": [
+        {
+          "id": "HP:0000491",
+          "label": "Keratitis",
+          "status": "individual_assignment_requires_appendix"
+        },
+        {
+          "id": "HP:0032163",
+          "label": "Molluscum contagiosum",
+          "status": "individual_assignment_requires_appendix"
+        },
+        {
+          "id": "HP:0006532",
+          "label": "Recurrent pneumonia",
+          "status": "individual_assignment_requires_appendix"
+        },
+        {
+          "id": "HP:0000403",
+          "label": "Recurrent otitis media",
+          "status": "individual_assignment_requires_appendix"
+        },
+        {
+          "id": "HP:0100658",
+          "label": "Cellulitis",
+          "status": "individual_assignment_requires_appendix"
+        },
+        {
+          "id": "HP:0410330",
+          "label": "Meat allergen allergy",
+          "status": "individual_assignment_requires_appendix"
+        },
+        {
+          "id": "HP:0001047",
+          "label": "Atopic dermatitis",
+          "status": "supported_universal_cohort_statement"
+        },
+        {
+          "id": "HP:0410328",
+          "label": "Egg allergy",
+          "status": "individual_assignment_requires_appendix"
+        },
+        {
+          "id": "HP:0006335",
+          "label": "Persistence of primary teeth",
+          "status": "individual_assignment_requires_appendix"
+        },
+        {
+          "id": "HP:0410017",
+          "label": "Otitis externa",
+          "status": "individual_assignment_requires_appendix"
+        },
+        {
+          "id": "HP:0410331",
+          "label": "Nut food product allergy",
+          "status": "individual_assignment_requires_appendix"
+        },
+        {
+          "id": "HP:0000246",
+          "label": "Sinusitis",
+          "status": "individual_assignment_requires_appendix"
+        },
+        {
+          "id": "HP:0002788",
+          "label": "Recurrent upper respiratory tract infections",
+          "status": "supported_universal_cohort_statement"
+        },
+        {
+          "id": "HP:0410327",
+          "label": "Dairy allergy",
+          "status": "individual_assignment_requires_appendix"
+        }
+      ],
+      "asset_receipts": [
+        {
+          "path": "source/case-review/19776401.html",
+          "bytes": 186050,
+          "sha256": "ca7a80cfc2bd7c54955ece5035f0d354cae7dd36388eed84c7bdd5f34a592501"
+        },
+        {
+          "path": "source/case-review/19776401.xml",
+          "bytes": 58998,
+          "sha256": "411f11ee89e2ec11776727bf206d1887acb1e03d56013701e80d6b677a1e2c8c"
+        },
+        {
+          "path": "source/case-review/19776401.txt",
+          "bytes": 31947,
+          "sha256": "cdd8cc9f3c0636fa5c4ea594a059b6381dc7ac3e754cdee034b0ec31359b6e37"
+        }
+      ]
+    },
+    {
+      "pmid": "17331980",
+      "doi": "10.1093/hmg/ddm028",
+      "status": "primary_case_supported_legacy_splice_notation",
+      "full_main_text_read": true,
+      "reading_scope": "Complete main article text in author-uploaded ResearchGate rendition, Table1 and captions. No local full-text copy, supplement review or figure-pixel review; extraction artifacts remain possible.",
+      "primary_urls": [
+        "https://doi.org/10.1093/hmg/ddm028",
+        "https://www.researchgate.net/publication/6474657_COG8_deficiency_causes_new_congenital_disorder_of_glycosylation_type_IIh"
+      ],
+      "held_main_assets": [],
+      "held_additional_assets": [],
+      "case_genotype": "Original male patient has IVS3+1G>A and1687-1688delTT in NM_032382. Source splice description retains913 coding bases and deletes500, consistent with donor c.1413+1. Deletion independently normalizes to the frozen genomic event; intronic API expression returned400 and is not claimed as independently normalized.",
+      "inheritance_phase": "Parents carry one mutation each, supporting trans. Frozen synthetic VCF remains unphased0/1; pedigree evidence does not create phased sequencing reads.",
+      "causal_evidence": "Patient cells lack COG8; wild-type lentiviral complementation restores glycosylation/trafficking measurements, supporting causal gene attribution.",
+      "hpo_locator": "Clinical description and glycosylation results: all8 selected positive terms.",
+      "limitations": [
+        "The splice coordinate is reconciled with legacy notation by source arithmetic, not independently validated by the failed transcript-only intronic API request."
+      ],
+      "technical_normalization_assets": [
+        "canonical-NM_032382.5_c.1687_1688del.json",
+        "canonical-COG8-frozen-deletion.json"
+      ],
+      "case_id": "PMID_17331980_patient",
+      "gene": "COG8",
+      "input_phenopacket_sha256": "4fbbd599b001410c55d18675cce862241e11be5eee07706247d927bdbd1d12db",
+      "frozen_variant_count": 2,
+      "positive_hpo_adjudications": [
+        {
+          "id": "HP:0007267",
+          "label": "Chronic axonal neuropathy",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0001252",
+          "label": "Hypotonia",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0002421",
+          "label": "Poor head control",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0001263",
+          "label": "Global developmental delay",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0001336",
+          "label": "Myoclonus",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0001249",
+          "label": "Intellectual disability",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0001250",
+          "label": "Seizure",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0012301",
+          "label": "Type II transferrin isoform profile",
+          "status": "supported_case_observation"
+        }
+      ],
+      "asset_receipts": [
+        {
+          "path": "source/case-review/canonical-NM_032382.5_c.1687_1688del.json",
+          "bytes": 105,
+          "sha256": "dd26b9c2f15107135768f5095585a9332febcd8f80c62d18c049cf69f38d842f"
+        },
+        {
+          "path": "source/case-review/canonical-COG8-frozen-deletion.json",
+          "bytes": 105,
+          "sha256": "dd26b9c2f15107135768f5095585a9332febcd8f80c62d18c049cf69f38d842f"
+        }
+      ]
+    },
+    {
+      "pmid": "24403049",
+      "doi": "10.1093/hmg/ddu001",
+      "status": "primary_genotype_supported_one_phenotype_severity_unverified",
+      "full_main_text_read": true,
+      "reading_scope": "Complete PMC main text and captions. Supplementary PDF/movies and figure pixels not read.",
+      "primary_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4014190/"
+      ],
+      "held_main_assets": [
+        "24403049.html",
+        "24403049-html.txt"
+      ],
+      "held_additional_assets": [],
+      "case_genotype": "Proband2, younger brother: maternal c.91G>T p.Glu31* and paternal NM_018389.4:c.501_503delCTT p.Phe168del. The deletion, packet NM_018389.5:c.503_505del and frozen VCF normalize identically.",
+      "inheritance_phase": "Opposite parental origins establish trans in the source. Synthetic VCF remains unphased0/1.",
+      "causal_evidence": "Patient glycoprotein fucosylation abnormalities and partial granulocyte-adhesion defect support source attribution; normal family controls were studied.",
+      "hpo_locator": "Case presentations:11 positive terms align; younger brother is described as less delayed, with milder autistic features. No individual severity score establishes severe ID.",
+      "limitations": [
+        "Do not import the older sibling's severity or classic LADII immunodeficiency into this case.",
+        "The original deletion is non-3-prime-normalized but represents the same event, not a different allele."
+      ],
+      "technical_normalization_assets": [
+        "canonical-NM_018389.4_c.501_503delCTT.json",
+        "canonical-NM_018389.5_c.503_505del.json",
+        "canonical-SLC35C1-frozen-vcf.json"
+      ],
+      "case_id": "PMID_24403049_Proband_2",
+      "gene": "SLC35C1",
+      "input_phenopacket_sha256": "6c060537eec944e5e3d359aa7ee6416a99008e5ae4b650ef04c6af1636460240",
+      "frozen_variant_count": 2,
+      "positive_hpo_adjudications": [
+        {
+          "id": "HP:0000403",
+          "label": "Recurrent otitis media",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0010864",
+          "label": "Intellectual disability, severe",
+          "status": "severe_intellectual_disability_not_established_for_proband2"
+        },
+        {
+          "id": "HP:0001263",
+          "label": "Global developmental delay",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000750",
+          "label": "Delayed speech and language development",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000729",
+          "label": "Autistic behavior",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0001212",
+          "label": "Prominent fingertip pads",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0001156",
+          "label": "Brachydactyly",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0200055",
+          "label": "Small hand",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000414",
+          "label": "Bulbous nose",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000349",
+          "label": "Widow's peak",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0000280",
+          "label": "Coarse facial features",
+          "status": "supported_case_observation"
+        },
+        {
+          "id": "HP:0004322",
+          "label": "Short stature",
+          "status": "supported_case_observation"
+        }
+      ],
+      "asset_receipts": [
+        {
+          "path": "source/case-review/24403049.html",
+          "bytes": 175608,
+          "sha256": "caaaec0882d83ee3936d1baefcaab62e5c877a8e797a63561707f4e3cf1dac1e"
+        },
+        {
+          "path": "source/case-review/24403049-html.txt",
+          "bytes": 41577,
+          "sha256": "33df43c69db4f45b364d223cc59b4a1c909a784198784397bfb3b2b7a0ab3604"
+        },
+        {
+          "path": "source/case-review/canonical-NM_018389.4_c.501_503delCTT.json",
+          "bytes": 106,
+          "sha256": "dca31ce6addaff54d13ef26381c7b183bb3bd743551db9c56b55dac8e628693e"
+        },
+        {
+          "path": "source/case-review/canonical-NM_018389.5_c.503_505del.json",
+          "bytes": 106,
+          "sha256": "dca31ce6addaff54d13ef26381c7b183bb3bd743551db9c56b55dac8e628693e"
+        },
+        {
+          "path": "source/case-review/canonical-SLC35C1-frozen-vcf.json",
+          "bytes": 106,
+          "sha256": "dca31ce6addaff54d13ef26381c7b183bb3bd743551db9c56b55dac8e628693e"
+        }
+      ]
+    }
+  ],
+  "invalid_download_receipts": [
+    {
+      "path": "source/case-review/23440193-s1.pdf",
+      "bytes": 1817,
+      "sha256": "6b6efcacb9688893877ef8f9f34878f4b95a37f52ef16bbe72f71e2433c30df5",
+      "status": "HTML_download_challenge_not_a_PDF_not_read_as_paper"
+    },
+    {
+      "path": "source/case-review/23440193.xml",
+      "bytes": 6140,
+      "sha256": "478f38e0765ee9c406831bb2fc27e8019ac5227c20c6b28ca0de582d8449354a",
+      "status": "empty_or_error_response_not_a_paper"
+    },
+    {
+      "path": "source/case-review/24403049-s1.pdf",
+      "bytes": 1817,
+      "sha256": "7adf4a1069b4311d064d81a77f29e7750a3ed6da6643c3d031566d88e00c9c2a",
+      "status": "HTML_download_challenge_not_a_PDF_not_read_as_paper"
+    },
+    {
+      "path": "source/case-review/24403049.xml",
+      "bytes": 6140,
+      "sha256": "478f38e0765ee9c406831bb2fc27e8019ac5227c20c6b28ca0de582d8449354a",
+      "status": "empty_or_error_response_not_a_paper"
+    },
+    {
+      "path": "source/case-review/37054711-s1.pdf",
+      "bytes": 1817,
+      "sha256": "643fb35f01d906e72bed7ca218577d27868ffa50fbc14077a02324f32ebf56c1",
+      "status": "HTML_download_challenge_not_a_PDF_not_read_as_paper"
+    },
+    {
+      "path": "source/case-review/37054711-s2.pdf",
+      "bytes": 1817,
+      "sha256": "ede97db47c0e3fcffe78712ee858f5ce8d1cb32da7e923735bc700fd65a36a74",
+      "status": "HTML_download_challenge_not_a_PDF_not_read_as_paper"
+    },
+    {
+      "path": "source/case-review/37054711.xml",
+      "bytes": 6140,
+      "sha256": "478f38e0765ee9c406831bb2fc27e8019ac5227c20c6b28ca0de582d8449354a",
+      "status": "empty_or_error_response_not_a_paper"
+    },
+    {
+      "path": "source/case-review/DOCK8-instance-supp.pdf",
+      "bytes": 1817,
+      "sha256": "08f08b631f3841344d97b8d5176e0f51f1f82cbe45a407988e3bac87aefaba90",
+      "status": "HTML_download_challenge_not_a_PDF_not_read_as_paper"
+    },
+    {
+      "path": "source/case-review/DOCK8-supp-v2.pdf",
+      "bytes": 1817,
+      "sha256": "d30ae5e9c54100247563467f44eddc33737d763b89e38cf3ad11b859c0d7e877",
+      "status": "HTML_download_challenge_not_a_PDF_not_read_as_paper"
+    },
+    {
+      "path": "source/case-review/PMC10183469-oa.xml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "empty_or_error_response_not_a_paper"
+    },
+    {
+      "path": "source/case-review/PMC2965730-oa.xml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "empty_or_error_response_not_a_paper"
+    },
+    {
+      "path": "source/case-review/PMC3600465-oa.xml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "empty_or_error_response_not_a_paper"
+    },
+    {
+      "path": "source/case-review/PMC4014190-oa.xml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "empty_or_error_response_not_a_paper"
+    },
+    {
+      "path": "source/case-review/PMC6105555-oa.xml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "empty_or_error_response_not_a_paper"
+    },
+    {
+      "path": "source/case-review/PMC6892744-oa.xml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "empty_or_error_response_not_a_paper"
+    }
+  ],
+  "normalization_boundary": "NCBI Variation responses reconcile explicitly named representations. They are technical sequence evidence, not pathogenicity evidence. All14 frozen REF alleles previously matched the local GRCh38 reference; this alone never proves causal truth.",
+  "actions_not_performed": [
+    "read Exomiser results",
+    "run Java",
+    "change parent runtime/configuration",
+    "change frozen manifest",
+    "edit shared reading record",
+    "run shared gates",
+    "commit",
+    "push",
+    "contact",
+    "host",
+    "submit"
+  ]
+}

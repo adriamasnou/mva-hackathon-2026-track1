@@ -33,6 +33,8 @@ logging.level.com.zaxxer.hikari=ERROR
 
 The explicit whitelist setting prevents the default ClinVar filter bypass. It does **not** remove all ClinVar annotations, predictor training information or HPO/OMIM knowledge of the published cases. No temporal holdout or novel-gene performance is established. The separate reconstruction of the historical FGFR2 runs retains its own configuration and must not be conflated with this evaluation.
 
+The subsequent primary methods review of [Cooperstein et al., 2025 (PMID 41121346)](https://doi.org/10.1186/s13073-025-01546-1) reinforces those reporting boundaries: its benchmark and clinical workflow use different whitelist settings, and gene recovery, variant recovery and inheritance recovery are distinct endpoints. Our small constructed evaluation is not a replication of that clinical study.
+
 ```sh
 python3 examples/public-benchmark/run.py \
   --work /path/to/new-work \

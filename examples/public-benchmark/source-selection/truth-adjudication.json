@@ -1,0 +1,36 @@
+{
+  "frozen_at_utc": "2026-10-23T21:17:03Z",
+  "inputs_manifest_sha256": "a69127a6c33cb66668686b446fd4d1e793422712bbd60b538a7c25ac159a61e2",
+  "no_exomiser_results_seen": true,
+  "selection_changed": false,
+  "cases_replaced": false,
+  "evaluation_policy": {
+    "execution_denominator": 12,
+    "all_source_label_concordance": "Report ranks for every frozen case, including both flagged cases. Name this concordance with source-curated labels, never diagnostic accuracy or clinical validation.",
+    "provisionally_usable_truth_subset": "Ten cases other than PAX4 and ZIC3. This is a pre-execution sensitivity subset, not a clean clinical gold standard: the other original case publications have not all been independently re-adjudicated. Retain and show both flagged cases separately; do not silently drop them or replace any execution failures.",
+    "phenotype_controls": "Retain all frozen original/half_missing/swapped/none arms unchanged, including donor assignments. Swapped and none are synthetic perturbations, not healthy or genuinely unsolved cases.",
+    "claim_limit": "Externally authored case phenotypes and curated variants, with synthesized spike/background input, demonstrate pipeline behavior across genes and genotype structures. They do not measure prospective diagnostic accuracy or drug rescue. Leakage into HPO/OMIM/ClinVar/pathogenicity resources remains possible."
+  },
+  "flagged_cases": [
+    {
+      "case_id": "PMID_36595822_nan",
+      "gene": "PAX4",
+      "status": "disputed_causal_truth",
+      "reason": "The source paper's own genetic-results section classifies this variant as of unknown clinical significance, reports the same variant in an unaffected father, and contradicts its introductory de-novo statement. The dataset nevertheless encodes SOLVED/CAUSATIVE. A gene-level primary genetic-evidence study challenges PAX4 as a monogenic MODY cause. Thus a high PAX4 rank must not be counted as a confirmed correct diagnosis, and a low rank is not unambiguous diagnostic failure.",
+      "sources": [
+        {"pmid": "36595822", "doi": "10.1097/MD.0000000000032461", "location": "Results of genetic analysis; Discussion", "full_main_text_read": true, "format": "PMC BioC XML", "figure_pixels_read": false},
+        {"pmid": "35108381", "doi": "10.2337/db21-0844", "location": "Methods, Results, Discussion; three structured tables", "full_main_text_read": true, "format": "PMC BioC XML", "figure_pixels_read": false, "supplements_read": false}
+      ],
+      "bounds": "The older gene-level study has ancestry/power limitations; this is a disputed-label flag, not a new patient diagnosis or a claim that every PAX4 variant has been disproved."
+    },
+    {
+      "case_id": "PMID_17295247_Individual_III_3",
+      "gene": "ZIC3",
+      "status": "unresolved_source_phenotype_conflict",
+      "reason": "The same public phenopacket marks both HP:0001746 Asplenia and HP:0001748 Polysplenia as present. We preserve this source conflict rather than guessing which term belongs to the individual. The original report has not been fully read to resolve it.",
+      "source_member": "0.1.19/ZIC3/PMID_17295247_IndividualIII3.json",
+      "pmid": "17295247",
+      "original_case_paper_full_read": false
+    }
+  ]
+}

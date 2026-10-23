@@ -1,0 +1,280 @@
+{
+  "recorded_at_utc": "2026-10-23T21:20:52.776461+00:00",
+  "sources": [
+    {
+      "file": "source/all_phenopackets-0.1.19.zip",
+      "url": "https://github.com/monarch-initiative/phenopacket-store/releases/download/0.1.19/all_phenopackets.zip",
+      "bytes": 11620861,
+      "sha256": "5e7b48c0f47bc24e1a36c64b824a6f6b666baf9cc2adad255e23b0100adc4d8e",
+      "license": "BSD-3-Clause",
+      "gitignored": true,
+      "coverage": "All 6668 records parsed for eligibility; only 12 selected records read for case details; no whole-corpus substantive review claimed."
+    },
+    {
+      "file": "source/LICENSE-phenopacket-store.txt",
+      "url": "https://raw.githubusercontent.com/monarch-initiative/phenopacket-store/0.1.19/LICENSE",
+      "bytes": 1505,
+      "sha256": "fbf52d70fd8bce10e0ce4274caaf40e680a6eeb2c7c24076e5fe10629b309bc8",
+      "license": "BSD-3-Clause",
+      "read_in_full": true
+    },
+    {
+      "file": "source/release-0.1.19.json",
+      "url": "https://api.github.com/repos/monarch-initiative/phenopacket-store/releases/tags/0.1.19",
+      "bytes": 4142,
+      "sha256": "89015e20241140f0f8574931be3b0eb3beff6b7b560a8eb5bbb9d101f258e705",
+      "coverage": "Release version, date and archive size verified."
+    },
+    {
+      "file": "source/Danis2025-phenopacket-store.pdf",
+      "url": "https://research-portal.uu.nl/ws/files/250719196/PIIS2666247724001118.pdf",
+      "bytes": 1909020,
+      "sha256": "0b77a9a3f349bf320816719f3b0f75a0eb07e005ba3b56aad06ab6437fe26f7a",
+      "pmid": "39394689",
+      "doi": "10.1016/j.xhgg.2024.100371",
+      "license": "CC-BY-4.0 (article statement)",
+      "gitignored": true,
+      "coverage": "Complete seven-page article plus repository cover read; both main figures and Table 1 visually reviewed; supplementary S1/S2 not read."
+    },
+    {
+      "file": "source/esummary-danis.json",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=39394689&retmode=json",
+      "bytes": 3911,
+      "sha256": "a50aa048679784ed12b0125b50b496faf30bf22dbe97baf446b3138850ee5e43",
+      "coverage": "PMID/title/DOI identity verified."
+    },
+    {
+      "file": "source/esummary-selected-cases.json",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id=36595822,27753196,23440193,31239556,29469822,37054711,14742428,19776401,17331980,24403049,17295247,16783569,35108381",
+      "bytes": 35867,
+      "sha256": "f7594592d6f5f6f1c0b4447756d94e40d159c11a4545083b6df6ac566c2d0cd7",
+      "coverage": "All 12 case-source PMID titles and Laver PMID/title verified; metadata verification is not full-paper review."
+    },
+    {
+      "file": "source/Laver2022-MODY-validity.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC9044126/unicode",
+      "bytes": 91721,
+      "sha256": "9e123ed92896349c9254f602a9c1bd70eb36ff4557be9f06c04178cf1a586581",
+      "pmid": "35108381",
+      "doi": "10.2337/db21-0844",
+      "license": "Article specifies cited, educational/not-for-profit, unaltered use; not included in a redistributable package.",
+      "gitignored": true,
+      "coverage": "Available full main-text XML read, three structured main tables and figure caption read; figure pixels and supplementary tables not read. Used as gene-level counterevidence, not a new clinical adjudication."
+    },
+    {
+      "file": "source/Zhang2022-PAX4-case.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC9794226/unicode",
+      "bytes": 27478,
+      "sha256": "7caaa6e4de5d8c0b995fba082f1933fe095913d2ba1d634ce02183da188bce14",
+      "pmid": "36595822",
+      "doi": "10.1097/MD.0000000000032461",
+      "gitignored": true,
+      "coverage": "Available full main-text XML read including case, genetic results, discussion and figure caption; figure pixels not read. Explicit VUS and unaffected carrier father trigger disputed-label flag."
+    }
+  ],
+  "preparation": {
+    "selection_plan": {
+      "file": "selection-plan.json",
+      "url": null,
+      "bytes": 2712,
+      "sha256": "aa5642479ac55e1db90502042b18216860e7314b6606b5bd8135e7e58157adca"
+    },
+    "script": {
+      "file": "prepare.py",
+      "url": null,
+      "bytes": 12991,
+      "sha256": "9baecb9d8cb3c0b8ce8023d445eccd66d4c539aa5916d0cb3a80b0cb5c3d8304"
+    },
+    "manifest": {
+      "file": "prepared/cases.json",
+      "url": null,
+      "bytes": 85032,
+      "sha256": "a69127a6c33cb66668686b446fd4d1e793422712bbd60b538a7c25ac159a61e2"
+    },
+    "truth_adjudication": {
+      "file": "truth-adjudication.json",
+      "url": null,
+      "bytes": 3250,
+      "sha256": "cfcf6fd7e52b4c496415ff8c868850b81fe6dd5b4c5034d9ab3b3424d1226857"
+    },
+    "eligibility": {
+      "file": "prepared/eligibility-audit.json",
+      "url": null,
+      "bytes": 1749340,
+      "sha256": "74aa2338c78bbbab7adcc510215c6652f295b3bc9c4ed36cc4a3cdcfd5aabad0"
+    },
+    "reference_check": {
+      "file": "prepared/reference-check.json",
+      "url": null,
+      "bytes": 2829,
+      "sha256": "cc9eb14a5d5781ec4b015fd113d41a46d1a07b361f1dbdcf275509568f703280"
+    },
+    "checksums": {
+      "file": "prepared/checksums.json",
+      "url": null,
+      "bytes": 7557,
+      "sha256": "0b9b68caf8cb3a24e51c294b30bedb326e465499c5403d3d835f38378fe673af"
+    },
+    "tests_passed": 10,
+    "reference_alleles_matching": 14,
+    "reference_alleles_checked": 14,
+    "repeat_preparation_byte_identical_members": 63,
+    "exomiser_executed": false,
+    "result_files_read": false,
+    "identity_check": {
+      "file": "identity-check.json",
+      "sha256": "1572eb450eb46fe31d4003653902a328c02eadb0d1e068727781d5f3977d4480",
+      "bytes": 21300
+    },
+    "execution_scope_addendum": {
+      "file": "execution-scope-addendum.json",
+      "sha256": "a01e72543663ee8de555a91f19af3657a53f4ccf1d572307085ed84142fc1fa5",
+      "bytes": 1215
+    }
+  },
+  "scope": "Public sources only. No gated MVA data read, transformed, or exported. No Java execution, shared gate execution, commits, push, host, submit, contact, or shared submission/index/log changes.",
+  "selected_sources": [
+    {
+      "case_id": "PMID_36595822_nan",
+      "gene": "PAX4",
+      "member": "0.1.19/PAX4/PMID_36595822_nan.json",
+      "file": "source/selected/PMID_36595822_nan.json",
+      "sha256": "fd477d5a4de920c645c09cdaf2281bb898c799735277c14f20d78a8af57b5af4",
+      "license": "BSD-3-Clause",
+      "pmids": [
+        "PMID:36595822"
+      ]
+    },
+    {
+      "case_id": "PMID_27753196_index_patient",
+      "gene": "MTOR",
+      "member": "0.1.19/MTOR/PMID_27753196_indexpatient.json",
+      "file": "source/selected/PMID_27753196_index_patient.json",
+      "sha256": "c856892345d4749cf6ffde997ce0ec6613ef54f7b684269104955f6cf95f315c",
+      "license": "BSD-3-Clause",
+      "pmids": [
+        "PMID:27753196"
+      ]
+    },
+    {
+      "case_id": "PMID_23440193_11_y_old_boy",
+      "gene": "KCNJ2",
+      "member": "0.1.19/KCNJ2/PMID_23440193_11-y-oldboy.json",
+      "file": "source/selected/PMID_23440193_11_y_old_boy.json",
+      "sha256": "61c227346894178a5c1ed89fa7bf81929598f3181a4bd23f130ef497ae3a9d22",
+      "license": "BSD-3-Clause",
+      "pmids": [
+        "PMID:23440193"
+      ]
+    },
+    {
+      "case_id": "PMID_31239556_individual_32",
+      "gene": "CTCF",
+      "member": "0.1.19/CTCF/PMID_31239556_individual32.json",
+      "file": "source/selected/PMID_31239556_individual_32.json",
+      "sha256": "2478f8750ae5864e403c4153f9822b1af8715614cb9deb8a8d243969472e4a82",
+      "license": "BSD-3-Clause",
+      "pmids": [
+        "PMID:31239556"
+      ]
+    },
+    {
+      "case_id": "PMID_29469822_Family_4_II-1",
+      "gene": "LZTR1",
+      "member": "0.1.19/LZTR1/PMID_29469822_Family4II-1.json",
+      "file": "source/selected/PMID_29469822_Family_4_II-1.json",
+      "sha256": "89e4ae1999c0d7e128a15865825769ef69cc00b64f322f471c9cbdd58ed1434a",
+      "license": "BSD-3-Clause",
+      "pmids": [
+        "PMID:29469822"
+      ]
+    },
+    {
+      "case_id": "PMID_37054711_Family_10_Subject_13",
+      "gene": "INTS11",
+      "member": "0.1.19/INTS11/PMID_37054711_Family_10_Subject_13.json",
+      "file": "source/selected/PMID_37054711_Family_10_Subject_13.json",
+      "sha256": "9f2b7542706fafc6d3b0ddd5a895833548f8ad62b879c57c78eadca55bb075c4",
+      "license": "BSD-3-Clause",
+      "pmids": [
+        "PMID:37054711"
+      ]
+    },
+    {
+      "case_id": "PMID_14742428_DM",
+      "gene": "BCKDHB",
+      "member": "0.1.19/BCKDHB/PMID_14742428_DM.json",
+      "file": "source/selected/PMID_14742428_DM.json",
+      "sha256": "a051221e746f59fca00c125c079ef7bbba7c8901d9ce9dd99eef0643cedd5838",
+      "license": "BSD-3-Clause",
+      "pmids": [
+        "PMID:14742428"
+      ]
+    },
+    {
+      "case_id": "PMID_19776401_Patient_8-2",
+      "gene": "DOCK8",
+      "member": "0.1.19/DOCK8/PMID_19776401_Patient8-2.json",
+      "file": "source/selected/PMID_19776401_Patient_8-2.json",
+      "sha256": "fb9650f17f8918e4e9a4edbc411b7996ff648176b17203482301b5b75b6e9684",
+      "license": "BSD-3-Clause",
+      "pmids": [
+        "PMID:19776401"
+      ]
+    },
+    {
+      "case_id": "PMID_17331980_patient",
+      "gene": "COG8",
+      "member": "0.1.19/COG8/PMID_17331980_patient.json",
+      "file": "source/selected/PMID_17331980_patient.json",
+      "sha256": "4fbbd599b001410c55d18675cce862241e11be5eee07706247d927bdbd1d12db",
+      "license": "BSD-3-Clause",
+      "pmids": [
+        "PMID:17331980"
+      ]
+    },
+    {
+      "case_id": "PMID_24403049_Proband_2",
+      "gene": "SLC35C1",
+      "member": "0.1.19/SLC35C1/PMID_24403049_Proband2.json",
+      "file": "source/selected/PMID_24403049_Proband_2.json",
+      "sha256": "6c060537eec944e5e3d359aa7ee6416a99008e5ae4b650ef04c6af1636460240",
+      "license": "BSD-3-Clause",
+      "pmids": [
+        "PMID:24403049"
+      ]
+    },
+    {
+      "case_id": "PMID_17295247_Individual_III_3",
+      "gene": "ZIC3",
+      "member": "0.1.19/ZIC3/PMID_17295247_IndividualIII3.json",
+      "file": "source/selected/PMID_17295247_Individual_III_3.json",
+      "sha256": "4f75ef29daaf9e9c209ecec169fc012038089cc3e40141c8080943899b4b2ab5",
+      "license": "BSD-3-Clause",
+      "pmids": [
+        "PMID:17295247"
+      ]
+    },
+    {
+      "case_id": "PMID_16783569_IV_11",
+      "gene": "OFD1",
+      "member": "0.1.19/OFD1/PMID_16783569_IV11.json",
+      "file": "source/selected/PMID_16783569_IV_11.json",
+      "sha256": "b3b0a72bf465028658a0f9efb71937b588f0f52831e6c7596487f862c2d7c83d",
+      "license": "BSD-3-Clause",
+      "pmids": [
+        "PMID:16783569"
+      ]
+    }
+  ],
+  "POMP_assembly_audit": {
+    "vcf_path": "pipeline/exomiser/exomiser-cli-15.1.0/examples/NA19722_CHR13_601952_AUTOSOMAL_RECESSIVE_POMP_13_29233225_5UTR_38.vcf.gz",
+    "vcf_sha256": "c20d4fca42085a0303b4df83b3534fa6a3d99cc8184e1700374919085444e6f3",
+    "yaml_path": "pipeline/exomiser/exomiser-cli-15.1.0/examples/NA19722_601952_AUTOSOMAL_RECESSIVE_POMP_13_29233225_5UTR_38.yml",
+    "yaml_sha256": "7af9fbccae974a3acee02a7f2fee8dece8d5149134cec405d40e0bf39e38fb98",
+    "vcf_declares": "hs37d5/b37",
+    "yaml_genomeAssembly": "hg19",
+    "status": "not accepted for hg38 without validated conversion",
+    "source": "local official Exomiser 15.1.0 distribution files; file name suffix is not an assembly guarantee"
+  }
+}

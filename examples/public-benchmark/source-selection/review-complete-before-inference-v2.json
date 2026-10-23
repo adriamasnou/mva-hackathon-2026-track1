@@ -1,0 +1,115 @@
+{
+  "schema_version": "2.0",
+  "recorded_at_utc": "2026-10-23T22:04:54.887805+00:00",
+  "review_complete": true,
+  "completion_scope": "Bounded nine-case source-truth review plus recovered MTOR/DOCK8 evidence complete; additional figure/supplement coverage work continues separately. Does not claim all figures/supplements read.",
+  "primary_source_label_genes": [
+    "MTOR",
+    "KCNJ2",
+    "CTCF",
+    "LZTR1",
+    "INTS11",
+    "BCKDHB",
+    "DOCK8",
+    "COG8",
+    "SLC35C1"
+  ],
+  "no_exomiser_results_seen": true,
+  "no_result_access_assertion": "This workstream has not opened, parsed, queried or inspected Exomiser inference/score output. No result paths were inspected. Parent reports no inference at16.7/23.6GB database download.",
+  "pre_inference_exclusions_changed": false,
+  "additional_pre_inference_exclusions": [],
+  "removed_pre_inference_exclusions": [],
+  "case_selection_changed": false,
+  "phenotype_arms_changed": false,
+  "primary_evaluation": "source-label concordance on synthetic public spike/background cases; not clinical diagnostic accuracy",
+  "retained_primary_case_count": 9,
+  "existing_nonprimary_cases": {
+    "PAX4": "Disputed autosomal causal truth; retained as a separately reported execution case.",
+    "ZIC3": "Separate X technical case without X background; unresolved source asplenia/polysplenia conflict.",
+    "OFD1": "Separate X technical case without X background."
+  },
+  "all_twelve_execution_cases_retained": true,
+  "coverage": {
+    "cases": 9,
+    "main_texts_read_in_available_versions": 9,
+    "full_main_texts_held_locally": 7,
+    "author_copy_full_main_texts_read_online_only": 2,
+    "abstract_only": 0,
+    "known_complete_supplement_sets_read": [
+      "MTOR",
+      "DOCK8"
+    ],
+    "all_figures_read_claim": false,
+    "scope_note": "MTOR all main pages/figure and both known supplements read. DOCK8 main text previously read, main Figure3 now inspected; appendix all28 pages text, all3 tables and all9 figures/panels read. Other seven exact gaps remain."
+  },
+  "exact_read_gaps": {
+    "MTOR": [],
+    "KCNJ2": [
+      "Supplementary methods/material unread.",
+      "Main figure pixels unread; captions and full main text read."
+    ],
+    "CTCF": [
+      "Table S1 read only for individual32, Tabelle1!AG1:AG56 plus row labels; other case columns and remaining supplementary material not fully read.",
+      "Main figure pixels unread."
+    ],
+    "LZTR1": [
+      "Supplements and main figure pixels other than Figure1 not fully read.",
+      "Figure1 pedigree pixels, main Table1 and complete main text were read."
+    ],
+    "INTS11": [
+      "Supplements and main figure pixels other than Figure1 not fully read.",
+      "Figure1 pedigree/variant pixels, main Table1 and complete main text were read."
+    ],
+    "BCKDHB": [
+      "Full main article read as an online author-uploaded text rendition; no local full-text asset or figure-pixel review.",
+      "No supplementary material reviewed; completeness of any supplement set is not certified."
+    ],
+    "DOCK8": [
+      "Main Figure1, Figure2 and Figure4 pixels not reviewed; their captions and all main text were read. No appendix access/read gap remains.",
+      "No raw sequencing traces/data reanalysis; Patient8-2 individual Sanger trace is not supplied in the inspected appendix, which shows the sibling8-1 trace and explicitly assigns the shared allele to both siblings."
+    ],
+    "COG8": [
+      "Full main article read as an online author-uploaded text rendition; no local full-text asset, figure-pixel review or supplement review.",
+      "Legacy splice-coordinate reconciliation uses the source description; independent transcript-only intronic normalization failed with HTTP400."
+    ],
+    "SLC35C1": [
+      "Supplementary PDF and movies unread.",
+      "Main figure pixels unread; complete main text and captions read."
+    ]
+  },
+  "truth_qualifications_do_not_change_primary_membership": {
+    "CTCF": "Likely-pathogenic source attribution with another de novo CAPRIN1 variant; not uniquely proven causal truth.",
+    "BCKDHB": "Six HPO terms project a generic classic-MSUD description onto the selected individual.",
+    "SLC35C1": "Severe-ID phenotype severity is not established for younger Proband2.",
+    "DOCK8": "Appendix now read; legacy transcript notation reconciled; individual zygosity evidence and cellulitis/recurrence/coding qualifications retained.",
+    "MTOR": "Primary variant supported; PKD1 competing renal etiology, uncertain MTOR-polyposis attribution, ID/LGA specificity qualifications.",
+    "LZTR1": "Excluded short-stature term has a source-internal/curation ambiguity.",
+    "COG8": "Legacy splice mapping caveat remains; trans parental inheritance is supported.",
+    "INTS11": "Functional evidence is from the orthologous fly variant, not a direct human-mutant rescue assay."
+  },
+  "review_artifact": {
+    "path": "truth-adjudication-v3.json",
+    "sha256": "aae8b0f78030856a24eb36a1e4aae0b33d2c0f12c2da7f6bcf7b1bf7018dbbd2",
+    "recorded_at_utc": "2026-10-23T22:03:58.267611+00:00"
+  },
+  "execution_scope_artifact": {
+    "path": "execution-scope-addendum.json",
+    "sha256": "a01e72543663ee8de555a91f19af3657a53f4ccf1d572307085ed84142fc1fa5"
+  },
+  "frozen_inputs_manifest": {
+    "path": "prepared/cases.json",
+    "sha256": "a69127a6c33cb66668686b446fd4d1e793422712bbd60b538a7c25ac159a61e2"
+  },
+  "timing_evidence": "Local UTC creation timestamp and hashed earlier review records. No external preregistration or independently verified parent execution-start timestamp claimed.",
+  "runtime_boundary": "Marker satisfies this worker's review gate only. Parent owns DB readiness, configuration and queued execution. ClinVar whitelist disabling does not remove all knowledge leakage.",
+  "previous_marker": {
+    "path": "review-complete-before-inference.json",
+    "sha256": "b08885fe9e6cb220901064974186737b137fc6e749821f48565f42bf160ea3b7",
+    "preserved_unchanged": true
+  },
+  "source_support_groups": {
+    "path": "source-support-groups-v3.json",
+    "sha256": "e7ee5cb7b4c1abae16e88bb8c57d8dd474acb38f6e7b373b4b16544090f5e634"
+  },
+  "ongoing_reading_does_not_change_this_gate": "Further main-figure and selected-genotype/HPO supplement review will be appended separately. Frozen membership, arms and group definitions cannot silently change."
+}

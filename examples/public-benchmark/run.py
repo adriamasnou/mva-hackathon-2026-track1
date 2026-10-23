@@ -63,6 +63,7 @@ def main():
             'wrapper_sha256':sha(Path(__file__)),
             'evaluation_script_sha256':sha(Path(__file__).with_name('evaluate.py')),
             'jobs_manifest_sha256':sha(work/'jobs-manifest.json'),
+            'pre_inference_addenda':{p.name:{'sha256':sha(p),'content':json.loads(p.read_text())} for p in sorted(work.glob('addendum-*.json'))},
             'properties_sha256':sha(args.properties),'properties_text':args.properties.read_text(),
             'data_receipts':{str(p):{'sha256':sha(p),'content':json.loads(p.read_text())} for p in args.data_receipt},
             'batch_sha256':sha(work/'batch.txt'),
