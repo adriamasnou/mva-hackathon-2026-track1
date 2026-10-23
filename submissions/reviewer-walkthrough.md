@@ -35,6 +35,7 @@ python3 canary/run_canary.py --self-test
 python3 analysis/exposure_check.py
 python3 tools/check_package.py
 python3 examples/public-case/verify_reconstruction.py --export examples/public-case/reconstructed-results
+python3 -S analysis/rescue_decision/simulation/frozen-source/verify.py --folder analysis/rescue_decision/simulation --results analysis/rescue_decision/simulation/results.json --compare analysis/rescue_decision/simulation/parent-reproduced-results.json
 ```
 
-The canary self-test injects faults into synthetic checker inputs. Its [separate measured SpliceAI controls](../canary/README.md) document actual inference. The [public Exomiser recipe](../examples/public-benchmark/README.md) requires the named Java runtime and large public databases; it is a separate computational evaluation. No check here measures N1002K rescue, clinical benefit or family usability.
+The canary self-test injects faults into synthetic checker inputs. Its [separate measured SpliceAI controls](../canary/README.md) document actual inference. The simulation command checks retained results and an independently launched exact seeded rerun; [full execution instructions](../analysis/rescue_decision/simulation/README.md) require the pinned scientific runtime. The [public Exomiser recipe](../examples/public-benchmark/README.md) requires the named Java runtime and large public databases; it is a separate computational evaluation. No check here measures N1002K rescue, clinical benefit or family usability.

@@ -1,0 +1,181 @@
+{
+  "audited_utc": "2026-10-23T23:40:24.603173+00:00",
+  "scope": "Local synthetic sidecar only; no commit or external action",
+  "post_freeze_original_source_changes": [
+    "README.md"
+  ],
+  "post_freeze_source_change_reason": "Current README attribution correction; frozen snapshot remains unchanged, see PROVENANCE-ERRATUM-2026-10-24.md.",
+  "root_tests_stdlib_no_site_packages": {
+    "passed": 89,
+    "skipped": 0,
+    "new_sidecar_tests": 13
+  },
+  "separate_numeric_tests": {
+    "passed": 8,
+    "warning": "Expected SciPy precision-loss warning for a deliberately constant arm, retained in pre-freeze-numeric-tests.txt."
+  },
+  "simulation_failures": 0,
+  "reproduction_exact_scientific_outputs": true,
+  "files": [
+    {
+      "path": "dossier/sweeps/evidence-2026-10-23/rubric-repair/rescue-simulation-draft.md",
+      "bytes": 8586,
+      "sha256": "148c58bfed2e994cc17e9b7c6b32ede76dc2d8273617efa6d90fe909b0e18cf3"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/PROVENANCE-ERRATUM-2026-10-24.md",
+      "bytes": 1599,
+      "sha256": "15874cc0f33a48d0e19d8400fa8c5ae109ed01ddb741cdae8395699a89048768"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/README.md",
+      "bytes": 5262,
+      "sha256": "86111a0e987cb5a3016198f868fa18f7b77b918fe8649625dbfbc4fd675665fa"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/freeze.json",
+      "bytes": 2509,
+      "sha256": "df0f3e56912671d296fbc0e8891403238c8401ae4f0984a730b5d72277ad5b93"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/freeze.py",
+      "bytes": 10545,
+      "sha256": "f4d278b08c510313d5beab4d3a070615a896a94e91f193e479ca1a56252418c6"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/frozen-source/README.md",
+      "bytes": 4941,
+      "sha256": "3b17ed40178b5a7756c1a3d1a648654ed98263866bb37eb401e51480c7c6077c"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/frozen-source/decision_snapshot.py",
+      "bytes": 19014,
+      "sha256": "3b8005a48987af8d3f3b57b32f2dbff03c9e22ee941c7b7711846043ae0289ed"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/frozen-source/freeze.py",
+      "bytes": 10545,
+      "sha256": "f4d278b08c510313d5beab4d3a070615a896a94e91f193e479ca1a56252418c6"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/frozen-source/math_helpers.py",
+      "bytes": 3462,
+      "sha256": "452cb0dd3be90bfd0706a6be7235eba0cd659fd774643ca361c35113d0f870ee"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/frozen-source/requirements.txt",
+      "bytes": 110,
+      "sha256": "04fb9199cc0520c3cff06fc321e270745a5eedf18600f94158851da2053d006f"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/frozen-source/runtime.py",
+      "bytes": 593,
+      "sha256": "9778d08e8affbbb713b17a496040b2cbae8470091c12cb3b65c594a6b74f7a45"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/frozen-source/simulate.py",
+      "bytes": 14763,
+      "sha256": "62ed4cbb1c6fe600fd8f6a92ba9acf7d2a8f13c40ad6cf782f23cbb4de68c139"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/frozen-source/test_numeric.py",
+      "bytes": 6338,
+      "sha256": "0e0c356af64ce7d3919dfa65902c54ccf3fd4db42a500c0adba6032468a285a4"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/frozen-source/test_rescue_simulation.py",
+      "bytes": 5143,
+      "sha256": "ebe385d0064209724f3cab542a16b06f02c92b4cbf6f596b139f758d61f1fe47"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/frozen-source/verify.py",
+      "bytes": 7510,
+      "sha256": "5c2787f5d2bb60d88d870932815cc213444b9e9a4973a97400659fd428a40e33"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/math_helpers.py",
+      "bytes": 3462,
+      "sha256": "452cb0dd3be90bfd0706a6be7235eba0cd659fd774643ca361c35113d0f870ee"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/plan.json",
+      "bytes": 7972,
+      "sha256": "2ae9beb9e7fd4fdbeec875feef481466d2e047c9e59682f84d4ff08956d006be"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/pre-freeze-numeric-tests.txt",
+      "bytes": 1463,
+      "sha256": "94460f8abe63bacacd29bdbb21c0d168a919ea98bf74ca8d7ba87932022a2cc4"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/pre-freeze-stdlib-tests.txt",
+      "bytes": 1887,
+      "sha256": "81bd4b4670946bf8ce1d8452c59de3cef455bdaa4715fc29cc1f2fcb0e407b9d"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/reproduced-results.json",
+      "bytes": 1724839,
+      "sha256": "e7420b54ca7d8f55c97b46fedc8a5d05feee91503254784623be403de4ab7090"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/reproduction-verification.json",
+      "bytes": 433,
+      "sha256": "b7b739f9820cf471de186b94c820696e2d82dbb2925c2fbafd2c57199ea75616"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/reproduction.log",
+      "bytes": 4359,
+      "sha256": "d22362fb1a6718ba1e32303db33c700bd8f13b1f75fdd25e2d2b6777b5a416e9"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/requirements.txt",
+      "bytes": 110,
+      "sha256": "04fb9199cc0520c3cff06fc321e270745a5eedf18600f94158851da2053d006f"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/results.json",
+      "bytes": 1724831,
+      "sha256": "17af80b5f5fddc7d553003a47223dfff57cada96ea40636e2c31145cd16a9314"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/root-stdlib-suite.txt",
+      "bytes": 13606,
+      "sha256": "a498d261199a610d7969b5565510a0d14a4a0ee019ddeb14ebd93c72f82e3faa"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/run.log",
+      "bytes": 4351,
+      "sha256": "dd6b075b52c1bdfa9c07f67c833f2510ef4fe473c3f774acd7b8f2634e2bc136"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/runtime.py",
+      "bytes": 593,
+      "sha256": "9778d08e8affbbb713b17a496040b2cbae8470091c12cb3b65c594a6b74f7a45"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/simulate.py",
+      "bytes": 14763,
+      "sha256": "62ed4cbb1c6fe600fd8f6a92ba9acf7d2a8f13c40ad6cf782f23cbb4de68c139"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/test_numeric.py",
+      "bytes": 6338,
+      "sha256": "0e0c356af64ce7d3919dfa65902c54ccf3fd4db42a500c0adba6032468a285a4"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/verification.json",
+      "bytes": 294,
+      "sha256": "9bba696b645340b133a846762a80eefefaa963d75aae74e7b47dcf123996a7a2"
+    },
+    {
+      "path": "repo/analysis/rescue_decision/simulation/verify.py",
+      "bytes": 7510,
+      "sha256": "5c2787f5d2bb60d88d870932815cc213444b9e9a4973a97400659fd428a40e33"
+    },
+    {
+      "path": "repo/tests/test_rescue_simulation.py",
+      "bytes": 5143,
+      "sha256": "ebe385d0064209724f3cab542a16b06f02c92b4cbf6f596b139f758d61f1fe47"
+    }
+  ]
+}
