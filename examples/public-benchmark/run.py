@@ -51,6 +51,7 @@ def main():
              '-jar',str(jar),'batch',str(work/'batch.txt')]
     result={'status':'running','started_utc':datetime.now(timezone.utc).isoformat(),
             'command':command,'software_sha256':software,'inputs_sha256':inputs,
+            'jobs_manifest_sha256':sha(work/'jobs-manifest.json'),
             'properties_sha256':sha(args.properties),'properties_text':args.properties.read_text(),
             'data_receipts':{str(p):{'sha256':sha(p),'content':json.loads(p.read_text())} for p in args.data_receipt},
             'batch_sha256':sha(work/'batch.txt'),

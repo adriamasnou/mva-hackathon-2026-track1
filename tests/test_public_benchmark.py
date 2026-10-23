@@ -57,4 +57,17 @@ class PublicBenchmarkTests(unittest.TestCase):
             runner.check_inputs([job]);p.write_text('changed')
             with self.assertRaisesRegex(ValueError,'changed'):runner.check_inputs([job])
 
+    def test_failed_execution_and_modified_results_cannot_count_as_recovery(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)/'result.jsonl';p.write_text(json.dumps({'geneSymbol':'TARGET','combinedScore':.8})+'\n')
+            jobs=[{'case_id':'x','gene':'TARGET','stratum':'autosomal_single_heterozygous','arm':'original','primary_autosomal':True,'result_jsonl':str(p)}]
+            receipt={'status':'failed','exit_code':1,'outputs':{str(p):runner.sha(p)}}
+            result=ev.evaluate(jobs,receipt)
+            self.assertEqual(result['all_case_results'][0]['status'],'execution_failed')
+            self.assertEqual(result['primary_autosomal']['original']['recovered']['1'],0)
+            receipt.update(status='completed',exit_code=0)
+            self.assertEqual(ev.evaluate(jobs,receipt)['primary_autosomal']['original']['recovered']['1'],1)
+            p.write_text(json.dumps({'geneSymbol':'TARGET','combinedScore':.9})+'\n')
+            self.assertEqual(ev.evaluate(jobs,receipt)['all_case_results'][0]['status'],'invalid_output')
+
 if __name__=='__main__':unittest.main()
