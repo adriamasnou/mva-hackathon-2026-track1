@@ -6,6 +6,7 @@ import hashlib
 import json
 from pathlib import Path
 import platform
+import shlex
 import subprocess
 import time
 
@@ -30,6 +31,13 @@ def check_inputs(jobs):
     return checked
 
 
+def check_batch(batch, jobs):
+    actual=[shlex.split(line) for line in Path(batch).read_text().splitlines() if line.strip()]
+    expected=[['analyse','--analysis',j['job']] for j in jobs]
+    if actual!=expected:
+        raise ValueError('Batch does not execute exactly the frozen jobs in order')
+
+
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--work',type=Path,required=True)
@@ -44,6 +52,7 @@ def main():
     if record.exists(): raise FileExistsError('Choose a new run; execution receipt already exists')
     jobs=json.loads((work/'jobs-manifest.json').read_text())
     inputs=check_inputs(jobs)
+    check_batch(work/'batch.txt',jobs)
     jar=args.jar.resolve()
     software={str(p):sha(p) for p in [jar,*sorted((jar.parent/'lib').glob('*.jar'))]}
     command=[str(args.java.resolve()),'-Xmx'+args.heap,
@@ -51,6 +60,8 @@ def main():
              '-jar',str(jar),'batch',str(work/'batch.txt')]
     result={'status':'running','started_utc':datetime.now(timezone.utc).isoformat(),
             'command':command,'software_sha256':software,'inputs_sha256':inputs,
+            'wrapper_sha256':sha(Path(__file__)),
+            'evaluation_script_sha256':sha(Path(__file__).with_name('evaluate.py')),
             'jobs_manifest_sha256':sha(work/'jobs-manifest.json'),
             'properties_sha256':sha(args.properties),'properties_text':args.properties.read_text(),
             'data_receipts':{str(p):{'sha256':sha(p),'content':json.loads(p.read_text())} for p in args.data_receipt},

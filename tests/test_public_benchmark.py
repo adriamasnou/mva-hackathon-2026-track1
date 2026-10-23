@@ -10,9 +10,41 @@ def module(name):
     spec=importlib.util.spec_from_file_location('public_benchmark_'+name,BASE/(name+'.py'))
     m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
 prep=module('prepare');ev=module('evaluate');runner=module('run')
+phenotype=module('run_phenotype')
+exporter=module('export_results')
 
 
 class PublicBenchmarkTests(unittest.TestCase):
+    def test_gene_recovery_does_not_imply_source_allele_contribution(self):
+        case={'gene':'TARGET','causal_variants':[{'chrom':'1','pos':10,'ref':'A','alt':'G'}]}
+        other={'contigName':'1','start':11,'ref':'C','alt':'T','filterStatus':'PASSED','contributesToGeneScore':True}
+        record={'geneSymbol':'TARGET','combinedScore':.9,'variantEvaluations':[other]}
+        audit=exporter.variant_audit([record],case)
+        self.assertTrue(audit['source_gene_in_output'])
+        self.assertEqual(audit['source_variants'][0]['exact_matches_in_source_gene'],0)
+        record['variantEvaluations'].append({'contigName':'chr1','start':10,'ref':'A','alt':'G','filterStatus':'FAILED','contributesToGeneScore':False})
+        matched=exporter.variant_audit([record],case)['source_variants'][0]
+        self.assertEqual(matched['exact_matches_in_source_gene'],1)
+        self.assertFalse(matched['matches'][0]['contributesToGeneScore'])
+
+    def test_batch_cannot_skip_duplicate_or_substitute_a_frozen_job(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)/'batch.txt';jobs=[{'job':'/a/first.yml'},{'job':'/a/second.yml'}]
+            valid='analyse --analysis /a/first.yml\nanalyse --analysis /a/second.yml\n'
+            p.write_text(valid);runner.check_batch(p,jobs)
+            for invalid in [valid.splitlines()[0],valid+valid,valid.replace('second','other')]:
+                p.write_text(invalid)
+                with self.assertRaises(ValueError):runner.check_batch(p,jobs)
+
+    def test_phenotype_comparator_collapses_modes_and_retains_rounded_ties(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)/'genes.tsv'
+            p.write_text('GENE_SYMBOL\tEXOMISER_GENE_PHENO_SCORE\nA\t0.5000\nA\t0.4000\nB\t0.5000\n')
+            ranked=ev.rank_records(phenotype.phenotype_records(p),'A')
+            self.assertEqual((ranked['rank_min'],ranked['rank_max'],ranked['scored_genes']),(1,2,2))
+            p.write_text('GENE_SYMBOL\tEXOMISER_GENE_PHENO_SCORE\nA\tnan\n')
+            with self.assertRaises(ValueError):phenotype.phenotype_records(p)
+
     def test_spike_collision_retains_other_loci_and_source_zygosity(self):
         rows=[['1','10','.','A','G','.','PASS','.','GT','0/1'],
               ['1','11','.','C','T','.','PASS','.','GT','1/1']]
