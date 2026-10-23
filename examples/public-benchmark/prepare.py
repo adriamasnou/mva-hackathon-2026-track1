@@ -18,6 +18,13 @@ import subprocess
 ARMS = ('original', 'half_missing', 'swapped', 'none')
 
 
+def batch_line(path):
+    path = str(path)
+    if any(c.isspace() or c in "\"'" for c in path):
+        raise ValueError('Exomiser batch paths must not contain whitespace or quotes')
+    return '--analysis ' + path + '\n'
+
+
 def sha(path):
     with Path(path).open('rb') as f:
         return hashlib.file_digest(f, 'sha256').hexdigest()
@@ -166,7 +173,7 @@ def prepare(args):
     protocol['background_sample']=background_sample
     dump(out/'preparation-receipt.json',protocol)
     dump(out/'jobs-manifest.json',job_records)
-    (out/'batch.txt').write_text(''.join('--analysis '+json.dumps(j['job'])+'\n' for j in job_records))
+    (out/'batch.txt').write_text(''.join(batch_line(j['job']) for j in job_records))
     print(json.dumps({'jobs':len(job_records),'background_records':len(rows),'out':str(out)}))
 
 

@@ -6,7 +6,6 @@ import hashlib
 import json
 from pathlib import Path
 import platform
-import shlex
 import subprocess
 import time
 
@@ -32,7 +31,8 @@ def check_inputs(jobs):
 
 
 def check_batch(batch, jobs):
-    actual=[shlex.split(line) for line in Path(batch).read_text().splitlines() if line.strip()]
+    # Exomiser 15.1.0 uses Java String.split("\\s+"), not a shell parser.
+    actual=[line.split() for line in Path(batch).read_text().splitlines() if line.strip()]
     expected=[['--analysis',j['job']] for j in jobs]
     if actual!=expected:
         raise ValueError('Batch does not execute exactly the frozen jobs in order')

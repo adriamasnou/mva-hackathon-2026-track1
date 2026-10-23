@@ -1,0 +1,661 @@
+{
+  "schema_version": "1.0",
+  "recorded_at_utc": "2026-10-23T22:35:53.253889+00:00",
+  "scope": "Append-only visual/supplement coverage after the bounded v3 review; frozen benchmark source-label concordance, not clinical diagnostic accuracy.",
+  "primary_source_label_genes": [
+    "MTOR",
+    "KCNJ2",
+    "CTCF",
+    "LZTR1",
+    "INTS11",
+    "BCKDHB",
+    "DOCK8",
+    "COG8",
+    "SLC35C1"
+  ],
+  "no_exomiser_results_seen": true,
+  "no_result_access_assertion": "No Exomiser output directory, scores, rankings or inference files were opened, parsed, queried or inspected in this workstream.",
+  "case_selection_changed": false,
+  "phenotype_arms_changed": false,
+  "source_support_groups_changed": false,
+  "pre_inference_exclusions_changed": false,
+  "freeze_artifacts_preserved": [
+    {
+      "path": "prepared/cases.json",
+      "sha256": "a69127a6c33cb66668686b446fd4d1e793422712bbd60b538a7c25ac159a61e2"
+    },
+    {
+      "path": "truth-adjudication-v3.json",
+      "sha256": "aae8b0f78030856a24eb36a1e4aae0b33d2c0f12c2da7f6bcf7b1bf7018dbbd2"
+    },
+    {
+      "path": "source-support-groups-v3.json",
+      "sha256": "e7ee5cb7b4c1abae16e88bb8c57d8dd474acb38f6e7b373b4b16544090f5e634"
+    },
+    {
+      "path": "review-complete-before-inference-v2.json",
+      "sha256": "6fa712e1f11737299b465ebcf00dc13df5414e43e8a1e574c5f6495231309b21"
+    }
+  ],
+  "group_interpretation": "Original4/3/2 and current4/5 remain frozen strata, not claims that each member is free of every source discrepancy. INTS11 now carries an explicit source-internal motor-delay contradiction without regrouping or input editing.",
+  "coverage": {
+    "full_main_texts_read_in_available_versions": 9,
+    "main_papers_with_all_figure_pixels_inspected": 9,
+    "main_figure_count": 39,
+    "new_valid_source_asset_receipt_count": 43,
+    "known_text_figure_table_supplement_sets_complete": [
+      "MTOR",
+      "DOCK8",
+      "KCNJ2",
+      "LZTR1",
+      "INTS11"
+    ],
+    "SLC35C1_supplement_pdf_complete": true,
+    "all_materials_without_gaps_claim": false
+  },
+  "cases": {
+    "MTOR": {
+      "main_figures": [
+        "1A–J"
+      ],
+      "scope": "Completed in v3: four-page main, all main figure panels, complete TableS1 and FigureS1A/B. No duplicate read.",
+      "qualification": "PKD1 alternative renal etiology, uncertain MTOR-polyposis attribution and ID/LGA specificity remain; see v3.",
+      "main_figure_count": 1,
+      "all_main_figure_pixels_inspected": true
+    },
+    "KCNJ2": {
+      "main_figures": [
+        "1A–C",
+        "2A–C",
+        "3A–D",
+        "4A–B",
+        "5A–C",
+        "6A–E"
+      ],
+      "supplement_figures": [
+        "S1A–D",
+        "S2A–C",
+        "S3A–B",
+        "S4",
+        "S5A–C",
+        "S6A–B",
+        "S7A–B",
+        "S8A–B"
+      ],
+      "supplement_tables": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "finding": "SupplementS1 pedigree/trace supports the affected heterozygous proband and genetically unaffected parents; QT200ms remains supported. Electrophysiology and computer simulations are distinct from observed patient arrhythmias.",
+      "qualification": "Do not treat simulated reentry or calcium-current modifications as patient outcomes. S8 panel text/legend ordering is imperfect; no benchmark label depends on that ordering.",
+      "main_figure_count": 6,
+      "all_main_figure_pixels_inspected": true
+    },
+    "CTCF": {
+      "main_figures": [
+        "1a–b",
+        "2",
+        "3a–c",
+        "4a–f"
+      ],
+      "supplement_figures": [
+        "S1a–c",
+        "S2a–c",
+        "S3a–k",
+        "S4a–b",
+        "S5a–f",
+        "S6a–b"
+      ],
+      "finding": "MainFigure2 does not depict selected individual32. MainRNAseqFigure3 and supplemental structural/localization experiments do not establish variant-specific function for Arg390His. SelectedTableS1 AG1:AG56 remains the direct case source.",
+      "qualification": "Source likely-pathogenic classification and additional de novo CAPRIN1 allele retained; not uniquely established causal truth.",
+      "main_figure_count": 4,
+      "all_main_figure_pixels_inspected": true
+    },
+    "LZTR1": {
+      "main_figures": [
+        "1 all family pedigrees",
+        "2A–S",
+        "3A–B",
+        "4"
+      ],
+      "supplement_figures": [
+        "S1A–B",
+        "S2"
+      ],
+      "finding": "Figure2I/J/K depicts Family4II1 at3,7,14years. Full methods appendix confirms homozygous Glu563Gln in II1 and postmortem affectedII2, both parents heterozygous. MainFigure3 and supplemental splicing/NMD traces concern other families.",
+      "qualification": "Appendix explicitly says later length around third centile; packet excluded-short-stature label remains unreliable. Positive labels and frozen arms retained; no functional splicing evidence transferred to Glu563Gln.",
+      "main_figure_count": 4,
+      "all_main_figure_pixels_inspected": true
+    },
+    "INTS11": {
+      "main_figures": [
+        "1",
+        "2A–E",
+        "3A–B",
+        "4A–E",
+        "5A–B",
+        "6A–D"
+      ],
+      "supplement_figures": [
+        "S1",
+        "S2A–H",
+        "S3",
+        "S4",
+        "S5A–B",
+        "S6"
+      ],
+      "supplement_tables": [
+        "S1 both pages and legend"
+      ],
+      "finding": "Family10 narrative confirms homozygous c.68G>T/p.Arg23Leu in all three affected subjects, heterozygous parents; subject13=F10S1. Selected phenotype narrative supports absent speech, profound ID, hypotonia, microcephaly, facial features and inability to walk.",
+      "qualification": "New source-internal conflict: TableS1 marks delayed gross motor development No for subject13, while the narrative says unable to walk at12. Retain HP:0001270 with explicit conflicting-table qualifier. Corresponding flyArg17Leu failure-to-rescue remains ortholog evidence; no human-mutant rescue claim.",
+      "correction_to_old_scope": "MainFigure1 is the variant/clinical overview; the earlier shorthand pedigree/variant pixels should not imply a pedigree image was inspected there.",
+      "main_figure_count": 6,
+      "all_main_figure_pixels_inspected": true
+    },
+    "BCKDHB": {
+      "main_figures": [
+        "1",
+        "2",
+        "3A–B",
+        "4A–C",
+        "5",
+        "6A–B"
+      ],
+      "main_tables": [
+        "I",
+        "II",
+        "III"
+      ],
+      "finding": "TableI identifies D.M. homozygous V69G-beta, no residual E1beta protein, classicMSUD. Figure4C is structural modeling from wild-type coordinates; the V69G construct did not express in the soluble bacterial fraction.",
+      "qualification": "TMAO activity rescue in Figure2 concerns H156Y, not selected V69G. Six phenotype labels remain a generic classicMSUD projection rather than individually documented findings. No separate supplement was identified in the inspected main text.",
+      "main_figure_count": 6,
+      "all_main_figure_pixels_inspected": true
+    },
+    "DOCK8": {
+      "main_figures": [
+        "1",
+        "2",
+        "3A–C",
+        "4A–B"
+      ],
+      "scope": "All mainfigures now visually read; 28-page appendix complete in v3, not duplicated.",
+      "finding": "Figure2 depicts individual-coded clinical laboratories; Figure4 family1 experiments must not be assigned to patient8-2. Selected allele/transcript reconciliation and appendixTableS2 review remain as in v3.",
+      "qualification": "Individual8-2 Sanger trace not supplied; sibling8-1 trace/shared allele assignment and source clinical/recurrence/cellulitis qualifications remain.",
+      "main_figure_count": 4,
+      "all_main_figure_pixels_inspected": true
+    },
+    "COG8": {
+      "main_figures": [
+        "1A–D (two files)",
+        "2A–B",
+        "3A–B",
+        "4",
+        "5A–C"
+      ],
+      "finding": "Figure4 directly shows maternal IVS3+1G>A and paternal1687–1688delTT in the patient, supporting trans inheritance. Figures1–3 show glycosylation/transport/COG-subunit defects. Figure5 shows complementation with wild-typeCOG8.",
+      "qualification": "Legacy splice coordinate normalization caveat retained. Full publisher HTML accessible through authorized UOC and article figures held; a genuine main PDF was not downloaded.",
+      "main_figure_count": 5,
+      "all_main_figure_pixels_inspected": true
+    },
+    "SLC35C1": {
+      "main_figures": [
+        "1",
+        "2A–D",
+        "3A–D"
+      ],
+      "supplement_figures": [
+        "S1",
+        "S2A–L"
+      ],
+      "supplement_tables": [
+        "S1"
+      ],
+      "finding": "S1 explicitly assays proband2IgG before/after fucosidase. S2B/H are proband2; panelsF/L concern proband1. CBCvalues for both probands read.",
+      "qualification": "Severe ID for youngerproband2 remains unsupported. Movie descriptions read but three movie files not viewed; no movie-based evidence asserted.",
+      "main_figure_count": 3,
+      "all_main_figure_pixels_inspected": true
+    }
+  },
+  "source_assets": [
+    {
+      "path": "source/case-review/visual-followup/KCNJ2-pnas.1218154110fig01.jpg",
+      "bytes": 100221,
+      "sha256": "dd292669340879e9bcc8d78a95cfc8ba5f8754a0c4b657fec8a3b5fedf67ef68",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4649/3600465/ffc369d9b9b2/pnas.1218154110fig01.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/KCNJ2-pnas.1218154110fig02.jpg",
+      "bytes": 89199,
+      "sha256": "f7c2b1b27da108685eb20d2e92db05a8579e051ae719a26d71dcc0132f31fef6",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4649/3600465/8db84586dd30/pnas.1218154110fig02.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/KCNJ2-pnas.1218154110fig03.jpg",
+      "bytes": 86240,
+      "sha256": "5e18f8c87332e38138de1e0a065836468d9b0d4cc975d9d5ce2899c5ab36150b",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4649/3600465/b0462c7f8e7b/pnas.1218154110fig03.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/KCNJ2-pnas.1218154110fig04.jpg",
+      "bytes": 83501,
+      "sha256": "ca93957eb1c2540bf3748273ef196b6336e15cbf0ae1dcd8956410e179f32191",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4649/3600465/444c93edf470/pnas.1218154110fig04.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/KCNJ2-pnas.1218154110fig05.jpg",
+      "bytes": 104578,
+      "sha256": "1734fdd51ca26a2c396abeabfd7ec3fd920aa4f3f6137aa71ad386e00660333f",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4649/3600465/7b82060b60c7/pnas.1218154110fig05.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/KCNJ2-pnas.1218154110fig06.jpg",
+      "bytes": 70480,
+      "sha256": "9688bfad1ae8ce7b0aaeab4302592a482862d915a0b9cce5d8f8dbb2fdbd7f50",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4649/3600465/5b5c2fb7f880/pnas.1218154110fig06.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/CTCF-41436_2019_585_Fig1_HTML.jpg",
+      "bytes": 82625,
+      "sha256": "025f6fce5a33e76187cfe3c5830228a8cc7c3ddb4ef6a34b23cb6974be71ca59",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9bed/6892744/ea64e2e92cf4/41436_2019_585_Fig1_HTML.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/CTCF-41436_2019_585_Fig2_HTML.jpg",
+      "bytes": 118719,
+      "sha256": "39d72b7e64a1a7b801a3bb4f0bd705b073255d332c6d18232e4bc71e0efc15ea",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9bed/6892744/fff824245ba0/41436_2019_585_Fig2_HTML.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/CTCF-41436_2019_585_Fig3_HTML.jpg",
+      "bytes": 64233,
+      "sha256": "c3617451d8d1f582829a9c5e8cd77adf27d7adcd6f8bf2d28235464f79bbfe0e",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9bed/6892744/a0d3a049adbd/41436_2019_585_Fig3_HTML.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/CTCF-41436_2019_585_Fig4_HTML.jpg",
+      "bytes": 57583,
+      "sha256": "4cf7901a3fbdd9594306540564c5eeb40cc2e019cc64686910bf0036d44da582",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9bed/6892744/2fd3897b76ef/41436_2019_585_Fig4_HTML.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/LZTR1-nihms922120f1.jpg",
+      "bytes": 111319,
+      "sha256": "0310fe2e163649b9578715d0ea225550305c40071fdf53426d8d248a34d70573",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9f44/6105555/b1d1ad9c1c2f/nihms922120f1.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/LZTR1-nihms922120f2.jpg",
+      "bytes": 91518,
+      "sha256": "4ae35f64216e7d9871623100a223fc5ec44188f7ccf2ed297a2971e435caaded",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9f44/6105555/7123c1fb46d8/nihms922120f2.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/LZTR1-nihms922120f3.jpg",
+      "bytes": 29878,
+      "sha256": "3851e03ab30d407493b989de5fbf121629a6693215f581a4306afbdecd6ff714",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9f44/6105555/c9bdff615b46/nihms922120f3.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/LZTR1-nihms922120f4.jpg",
+      "bytes": 51809,
+      "sha256": "0ec2d2802ed69838b91a5f8a8e0374f9c272ae21a1bc508437503a7b076e0636",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9f44/6105555/56f9ff80bc8c/nihms922120f4.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/INTS11-gr1.jpg",
+      "bytes": 603723,
+      "sha256": "787321dadbdef506f8c4ce4bd38f534f490feff5c6ced418ec00087b912ca6b4",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d54b/10183469/6c5e8186a813/gr1.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/INTS11-gr2.jpg",
+      "bytes": 296541,
+      "sha256": "6134525baae30a1745c434fcb672520139bf5633df34058ae34f4c944274354e",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d54b/10183469/346c48c2fed4/gr2.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/INTS11-gr3.jpg",
+      "bytes": 530091,
+      "sha256": "179eaa0b49af4ba92f1628aab0d01345965ed7f1f264523f603772f17affa827",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d54b/10183469/549371835808/gr3.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/INTS11-gr4.jpg",
+      "bytes": 293300,
+      "sha256": "960f01ef9e41b4fafaaf552047dc3998f0cdb18f31744402e58bd3726d6c0c57",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d54b/10183469/55c2ec6a35f8/gr4.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/INTS11-gr5.jpg",
+      "bytes": 302555,
+      "sha256": "07d8a37fd684f7316874f8247b6f235a712162bd5953c1dccd8e8e5aa459f3d4",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d54b/10183469/16b1d978cb35/gr5.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/INTS11-gr6.jpg",
+      "bytes": 345323,
+      "sha256": "5967433c94aeb7cb330f9c57f4917801e1ab9323585883c2d157c4aa4aa4f945",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/d54b/10183469/0b664474c9ba/gr6.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/DOCK8-nihms244353f1.jpg",
+      "bytes": 68720,
+      "sha256": "15c60d75e08ed67f06a3b589c16c4c348325543d848e397802e1c23fc53788a2",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/6f58/2965730/4484aeea3a5d/nihms244353f1.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/DOCK8-nihms244353f2.jpg",
+      "bytes": 63725,
+      "sha256": "4d00850d58fa0506ed2d7d1522d998b0d4b08edecba89a2ea0027c529f25c0c4",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/6f58/2965730/7c5cfca8235f/nihms244353f2.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/DOCK8-nihms244353f3.jpg",
+      "bytes": 65255,
+      "sha256": "183573b35c4e703c22dbecbe0ed356a7cdabe039faa5bce0106ef65827a71b1b",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/6f58/2965730/93ec84bbba3a/nihms244353f3.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/DOCK8-nihms244353f4.jpg",
+      "bytes": 60112,
+      "sha256": "cbfbe6a6ea5f8114407bf89dce11f612fcb77e46e1bd9d185adf65db89ad9d51",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/6f58/2965730/10af9550d8ee/nihms244353f4.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/SLC35C1-ddu00101.jpg",
+      "bytes": 86965,
+      "sha256": "a75c7433b99512db9db5ac713a22fa7d501be9ad36a350266e6df19fed3b936b",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dd76/4014190/0e6485f4e93d/ddu00101.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/SLC35C1-ddu00102.jpg",
+      "bytes": 91713,
+      "sha256": "0fa477a1b9683fbf804101f602cdef5b448d163d57b129bc215e5a1b8f555fc6",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dd76/4014190/2e108d53b63f/ddu00102.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/SLC35C1-ddu00103.jpg",
+      "bytes": 92496,
+      "sha256": "3a8cb462c494c889cc79780d0a95918d9e91c71605935601680adf19ff4badc3",
+      "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dd76/4014190/dceecfb0ca92/ddu00103.jpg",
+      "read_scope": "All visible panels and figure caption inspected; findings in per-gene record."
+    },
+    {
+      "path": "source/case-review/visual-followup/COG8-figure-01a.jpeg",
+      "bytes": 32310,
+      "sha256": "e79a5298b43c03860cda2263184669001840f0a0467fcfbad9697bb30c6bdf36",
+      "source_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/hmg/16/7/10.1093/hmg/ddm028/2/m_ddm02801a.jpeg",
+      "read_scope": "All visible figure panels inspected; Figure1 spans two image files."
+    },
+    {
+      "path": "source/case-review/visual-followup/COG8-figure-02.jpeg",
+      "bytes": 32894,
+      "sha256": "5eb92153cd5fc5efdc2d4cf3591720ef510915c8f45571c81165655d76e5a9ac",
+      "source_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/hmg/16/7/10.1093/hmg/ddm028/2/m_ddm02802.jpeg",
+      "read_scope": "All visible figure panels inspected; Figure1 spans two image files."
+    },
+    {
+      "path": "source/case-review/visual-followup/COG8-figure-03.jpeg",
+      "bytes": 31393,
+      "sha256": "0c0f9a493bdbb13564261c00703362a256e43efd312af74c97287952907435ec",
+      "source_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/hmg/16/7/10.1093/hmg/ddm028/2/m_ddm02803.jpeg",
+      "read_scope": "All visible figure panels inspected; Figure1 spans two image files."
+    },
+    {
+      "path": "source/case-review/visual-followup/COG8-figure-04.jpeg",
+      "bytes": 39438,
+      "sha256": "0bc9239e0803abebf5a2afd0d4d7d3956bc3bdd7801d4e86d3fc5f3e715a5fa4",
+      "source_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/hmg/16/7/10.1093/hmg/ddm028/2/m_ddm02804.jpeg",
+      "read_scope": "All visible figure panels inspected; Figure1 spans two image files."
+    },
+    {
+      "path": "source/case-review/visual-followup/COG8-figure-05.jpeg",
+      "bytes": 60174,
+      "sha256": "9d28188f23dad91aef85456cfa5efaea990e37fbf6b8ffc84176b16730d9bea7",
+      "source_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/hmg/16/7/10.1093/hmg/ddm028/2/m_ddm02805.jpeg",
+      "read_scope": "All visible figure panels inspected; Figure1 spans two image files."
+    },
+    {
+      "path": "source/case-review/visual-followup/COG8-figure-01b.jpeg",
+      "bytes": 103138,
+      "sha256": "d0bafb84f1ab95e36e773a078cd6c84e70abbbe72e8b5628f22ed32d554fb233",
+      "source_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/hmg/16/7/10.1093/hmg/ddm028/2/m_ddm02801b.jpeg",
+      "read_scope": "All visible figure panels inspected; Figure1 spans two image files."
+    },
+    {
+      "path": "source/case-review/visual-followup/BCKDHB-publisher-chrome.pdf",
+      "bytes": 740123,
+      "sha256": "f50267662271af06f35e5d94a23629dcdad5e91e8537ab5d4564cf79b0b70e5a",
+      "source_url": "https://www.jbc.org/article/S0021925819756130/pdf",
+      "read_scope": "Main text previously read through author copy; recovered publisher PDF all six figures and all three tables inspected on pages4–8, plus clinical/genotype narrative layout page3."
+    },
+    {
+      "path": "source/case-review/visual-followup/CTCF-supplement1.docx",
+      "bytes": 7784966,
+      "sha256": "51364e6e8e29ee0ddd0eba935d256424fd20eb91b23dc2778c7122988849c031",
+      "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41436-019-0585-z/MediaObjects/41436_2019_585_MOESM1_ESM.docx",
+      "read_scope": "Complete visible XML text read, including methods/references/captions. All six supplemental figures visually inspected in rendered16-page document (figures pages8,9,10,12,13,14)."
+    },
+    {
+      "path": "source/case-review/visual-followup/CTCF-supplement3.xlsx",
+      "bytes": 1571721,
+      "sha256": "496ab75ec0559a18aecf076a342f2989a11fa70fb11ba8cd6c8698388aab4b20",
+      "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41436-019-0585-z/MediaObjects/41436_2019_585_MOESM3_ESM.xlsx",
+      "read_scope": "Held and header/sheet scope inspected only; no claim of reading every data cell."
+    },
+    {
+      "path": "source/case-review/visual-followup/INTS11-supplement1-chrome.pdf",
+      "bytes": 1857912,
+      "sha256": "8605032ee1018ab4789ccb9820ea42142358403482680a097115c377d3d2111f",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/10183469/bin/mmc1.pdf",
+      "read_scope": "All16pages: full case narratives, captions, all S1–S6 figure panels, both TableS1 pages/all rows including selected subject13 and key."
+    },
+    {
+      "path": "source/case-review/visual-followup/INTS11-supplement2-chrome.pdf",
+      "bytes": 5146413,
+      "sha256": "d48ffae023b7d3d7a7ec295cf718a93b209969947c8409533a71eb547519fe71",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/10183469/bin/mmc2.pdf",
+      "read_scope": "33-page combined article+supplement; wrapper checked. Last16page normalized text exactly matches mmc1. Not counted as a second independent source or duplicate full read."
+    },
+    {
+      "path": "source/case-review/visual-followup/KCNJ2-supplement-chrome.pdf",
+      "bytes": 1083489,
+      "sha256": "b786912465e66f0f96b6bf0cf32b0e7d3a34e46480df97707269e595d50b65c7",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/3600465/bin/1218154110_pnas.201218154SI.pdf",
+      "read_scope": "All8pages text/layout, S1–S8 all panels, TablesS1–S4 all cells/key; two-column methods/formulations visually checked."
+    },
+    {
+      "path": "source/case-review/visual-followup/LZTR1-supplement-figures-chrome.pdf",
+      "bytes": 5432683,
+      "sha256": "87f7167f33247a8dbe982ee56b66edf344ee2627f1ce79885e671dfba35902f5",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6105555/bin/NIHMS922120-supplement-Supplemental_Figures.pdf",
+      "read_scope": "Bothpages visually read, S1A/B traces and S2 genome-browser image and captions."
+    },
+    {
+      "path": "source/case-review/visual-followup/LZTR1-supplement-methods-publisher.docx",
+      "bytes": 56803,
+      "sha256": "b97add1df3779848bce3ef8fe9a108400ae3dddeef42222b70baf732329bf119",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fgim.2017.249/MediaObjects/41436_2018_196_MOESM1_ESM.docx",
+      "read_scope": "All visible text read: methods, all12family clinical descriptions, all12family molecular results and references. No tables. Rendered15pages; selectedFamily4 clinical page7 and genotype page14 visually checked."
+    },
+    {
+      "path": "source/case-review/visual-followup/LZTR1-supplement-UDN-author-list-chrome.pdf",
+      "bytes": 23564,
+      "sha256": "36b6e2a417a9b051de5fc9d8728ac552140cb8d6187517ca2e10fc6b15fbd2bb",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6105555/bin/NIHMS922120-supplement-Supplementary_UDN_author_list.pdf",
+      "read_scope": "Bothpages extracted author-list text read; no selected-case evidence."
+    },
+    {
+      "path": "source/case-review/visual-followup/SLC35C1-supplement-chrome.pdf",
+      "bytes": 276306,
+      "sha256": "41552e0ec7c37980a1981693cbd5e1a2970c37c56a0bdb887a647447be74f6da",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4014190/bin/supp_ddu001_ddu001supp.pdf",
+      "read_scope": "All6pages text, S1 and S2A–L pixels, complete CBC TableS1. Movie descriptions read; movie files not viewed."
+    }
+  ],
+  "exact_remaining_read_or_access_gaps": {
+    "CTCF": [
+      "TableS1 only selected individual32 AG1:AG56 plus labels fully adjudicated; other case columns not fully read.",
+      "TableS2 held; workbook sheet names/headers inspected (differential expression3829x22, SysID2151x14, PANTHER123x5); all cells not read. These are cohort/functional data, not selected-individual32 clinical truth."
+    ],
+    "SLC35C1": [
+      "Three supplementary movie files not viewed; all movie descriptions and static laboratory figures read."
+    ],
+    "COG8": [
+      "Genuine publisher main PDF not held; available full article text was read online, all five figure pixels are now held/read.",
+      "Independent transcript-only normalization of the legacy intronic variant remains unresolved; biological source segregation is directly verified."
+    ],
+    "BCKDHB": [
+      "No separate supplementary file identified in inspected main article; global nonexistence not certified."
+    ],
+    "DOCK8": [
+      "The inspected materials do not supply an individual8-2 Sanger trace; cannot close a raw-data gap by reviewing a sibling trace."
+    ]
+  },
+  "not_read_as_evidence": [
+    {
+      "path": "source/case-review/visual-followup/BCKDHB-authorcopy.pdf",
+      "bytes": 20178,
+      "sha256": "f455175bb0df2546c5e87e6d724fea095e434fbae3cabcae79b304f15ed13543",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/BCKDHB-main.pdf",
+      "bytes": 5478,
+      "sha256": "ffdd5030f2d2a880d77301b67ae62db7afba2d53be6f12689e8ba2b1eb6fb29c",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/COG8-authorcopy.pdf",
+      "bytes": 20178,
+      "sha256": "06108bcb8d60ae07fce4fcfbb6415d4e82208c6dd3de54dd6140c23e66fd0023",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/COG8-citeseer.pdf",
+      "bytes": 4689,
+      "sha256": "9c2c6eab45dfdf1f0a61927c818d568a95a840b9069c67aeaab2fb3ff5ff51ff",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/COG8-main.pdf",
+      "bytes": 5546,
+      "sha256": "bf5c009b2dfdee6a445322e4d92352940d829a56619d5ee35e3ea39f84282395",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/CTCF-41436_2019_585_MOESM1_ESM.docx",
+      "bytes": 1814,
+      "sha256": "fe14c5ccde824e79f38459be6cb7ac04a6af94576f8ff6079ced668dc5840b2d",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/CTCF-41436_2019_585_MOESM3_ESM.xlsx",
+      "bytes": 1816,
+      "sha256": "3c037a0b5c945ab17b2a0e37ba39df1e6648276dd8f2782316e5d4afb8bda672",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/INTS11-europepmc-supp.zip",
+      "bytes": 297,
+      "sha256": "7e6656ee8daa5a27f454834fda08934aa0049d311d5522803f8449656f60c761",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/INTS11-mmc1.pdf",
+      "bytes": 1817,
+      "sha256": "3f1a9df6e045838cb4b762d917e2972dede2aa5f7686c5ae07ab38870c010579",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/INTS11-mmc2.pdf",
+      "bytes": 1816,
+      "sha256": "93ae41622f40ee1e25695eda72b6a854eb78e523e4507e44359f3493bc0063d6",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/KCNJ2-1218154110_pnas.201218154SI.pdf",
+      "bytes": 1816,
+      "sha256": "b910295a2debfcc179276f44777fbc52325935ad942456f895f860ba87d683de",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/KCNJ2-europepmc-supp.zip",
+      "bytes": 296,
+      "sha256": "4ad85c5523114ce852e1b2c11b2a6397620c49277dd2c5387a60436aaaaac0f8",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/LZTR1-NIHMS922120-supplement-Supplemental_Figures.pdf",
+      "bytes": 1816,
+      "sha256": "177a1ce3095de40e57bf626890bdb4b10579f374f92a582e5ed3530f049b1e1b",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/LZTR1-NIHMS922120-supplement-Supplementary_UDN_author_list.pdf",
+      "bytes": 1817,
+      "sha256": "08dea54ad6c1efe3269df6f8729728eb16b222cbe56e8764977f4ef9493c6cf6",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/LZTR1-NIHMS922120-supplement-Supplementary___Appendix__online_only_material__etc__.docx",
+      "bytes": 1817,
+      "sha256": "c434dfb2583f9839c40c6be5eebec85873215acea3dd25ef7ae1a4321dbd2b80",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/SLC35C1-europepmc-supp.zip",
+      "bytes": 296,
+      "sha256": "a43fda01fbfe9f48b987eec13af85a2c4112e0b4193eb97223c6fef982fe9553",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/SLC35C1-supp_ddu001_ddu001supp.pdf",
+      "bytes": 1817,
+      "sha256": "db936310f196e612df1d8e83dc19c34abb0f0ab5e55517d769ec2e961cc64e20",
+      "status": "HTML/XML error or challenge response; not a paper and not counted as read"
+    },
+    {
+      "path": "source/case-review/visual-followup/UNRELATED-older-download-mmc1.pdf",
+      "sha256": "7e61f14d7a286e125481308e562a9512c824daa3c02411d395f7daea545762ec",
+      "status": "Older unrelated download caught by title check; renamed and excluded. Actual INTS11 file was newest mmc1 (24).pdf, verified by article title."
+    }
+  ],
+  "provenance_limits": [
+    "Publisher/PMC licensed reading copies stay in ignored local source holdings; no redistribution license inferred.",
+    "Figure inspection is a visual reading of supplied panels, not raw assay-data validation.",
+    "No newly cited PMID introduced; previously verified primary identities retained.",
+    "This followup has its own timestamp. Parent owns execution timestamps; do not retroactively describe this entire later followup as pre-inference without parent timing confirmation."
+  ],
+  "integration_boundary": "Kepler/parent owns shared literature reading record. This sidecar and its new assets can be integrated without modifying the frozen manifest, arms, support groups or earlier markers.",
+  "internal_verification_note": "Before final handoff, the DOCK8Figure4 panel-range typo A–C was corrected to A–B by checking the held pixels. No biological conclusion, group or frozen input changed."
+}

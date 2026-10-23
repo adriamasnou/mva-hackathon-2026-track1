@@ -81,9 +81,12 @@ class PublicBenchmarkTests(unittest.TestCase):
             p=Path(d)/'batch.txt';jobs=[{'job':'/a/first.yml'},{'job':'/a/second.yml'}]
             valid='--analysis /a/first.yml\n--analysis /a/second.yml\n'
             p.write_text(valid);runner.check_batch(p,jobs)
-            for invalid in [valid.splitlines()[0],valid+valid,valid.replace('second','other'),'analyse '+valid]:
+            for invalid in [valid.splitlines()[0],valid+valid,valid.replace('second','other'),'analyse '+valid,
+                            valid.replace('/a/first.yml','"/a/first.yml"')]:
                 p.write_text(invalid)
                 with self.assertRaises(ValueError):runner.check_batch(p,jobs)
+            self.assertEqual(prep.batch_line('/a/first.yml'),valid.splitlines(True)[0])
+            with self.assertRaises(ValueError):prep.batch_line('/space here/job.yml')
 
     def test_phenotype_comparator_collapses_modes_and_retains_rounded_ties(self):
         with tempfile.TemporaryDirectory() as d:
