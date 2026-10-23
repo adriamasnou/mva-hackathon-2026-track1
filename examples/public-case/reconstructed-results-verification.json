@@ -1,0 +1,50 @@
+{
+  "recorded_utc": "2026-10-23T22:53:12.712909+00:00",
+  "scope": "Actual completed public FGFR2 reconstruction compact package, extracted from a fresh ZIP.",
+  "zip": "reconstructed-results.zip",
+  "zip_sha256": "dd9e3f5c927beaeda5bef10ccb4889ad6c162952ab63a17f804e638e4e9951eb",
+  "zip_bytes": 80997,
+  "export_receipt_sha256": "00189c3906d939999ccf533efc063ad17a9df8fcc6da41dd215da4da4e296d09",
+  "source_freeze_sha256": "c1dabf1730a728dd84b6bcc251e4f0e7989aa2186cf46587c85883115e44c8db",
+  "all_frozen_source_hashes_unchanged": true,
+  "offline_verification": {
+    "status": "verified_offline",
+    "verified_members": 35,
+    "all_case_results": [
+      {
+        "status": "scored",
+        "rank_min": 1,
+        "rank_max": 1,
+        "scored_genes": 2,
+        "combined_score": 0.9646647592821711,
+        "priority_score": 0.8598714392999345,
+        "variant_score": 1.0,
+        "case_id": "mini",
+        "gene": "FGFR2",
+        "output_sha256": "e7929d94e062fc72402df38cb7c0dd8e225d7a4df1ae363ffdd65fa9d393c75b"
+      },
+      {
+        "status": "scored",
+        "rank_min": 1,
+        "rank_max": 1,
+        "scored_genes": 471,
+        "combined_score": 0.9654084759164547,
+        "priority_score": 0.8598714392999345,
+        "variant_score": 1.0,
+        "case_id": "genome",
+        "gene": "FGFR2",
+        "output_sha256": "6fff4cf4a42ab47f1a8f8fd32129e2558bce867428418e37f26f148ae434fa16"
+      }
+    ],
+    "limits": "Package consistency and rank arithmetic verified without source paths. The unsigned member manifest is not authenticity proof. Without raw JSONL/VCFs/software/databases, their recorded hashes and TSV derivation cannot be independently recomputed."
+  },
+  "restricted_file_access_check": "Passed: Path.open permitted only within extracted package; no original path was read.",
+  "distinct_package_files_read": 36,
+  "standalone_test_output": "test_changed_job_still_fails_execution_binding_after_rehash (__main__.OfflinePackageTests.test_changed_job_still_fails_execution_binding_after_rehash) ... ok\ntest_changed_reported_rank_fails_even_with_updated_hashes (__main__.OfflinePackageTests.test_changed_reported_rank_fails_even_with_updated_hashes) ... ok\ntest_changed_tsv_rank_fails_even_with_updated_hash (__main__.OfflinePackageTests.test_changed_tsv_rank_fails_even_with_updated_hash) ... ok\ntest_design_content_checked_independently_of_updated_hash (__main__.OfflinePackageTests.test_design_content_checked_independently_of_updated_hash) ... ok\ntest_extra_member_rejected (__main__.OfflinePackageTests.test_extra_member_rejected) ... ok\ntest_not_scored_is_rederived (__main__.OfflinePackageTests.test_not_scored_is_rederived) ... ok\ntest_unhashed_change_rejected (__main__.OfflinePackageTests.test_unhashed_change_rejected) ... ok\ntest_zip_verifies_with_all_source_paths_absent (__main__.OfflinePackageTests.test_zip_verifies_with_all_source_paths_absent) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.083s\n\nOK\n",
+  "verification_command": [
+    "python3",
+    "verify_reconstruction.py",
+    "--export",
+    "reconstructed-results"
+  ]
+}

@@ -1,0 +1,33 @@
+
+ Welcome to:
+  _____ _            _____                     _
+ |_   _| |__   ___  | ____|_  _____  _ __ ___ (_)___  ___ _ __
+   | | | '_ \ / _ \ |  _| \ \/ / _ \| '_ ` _ \| / __|/ _ \ '__|
+   | | | | | |  __/ | |___ >  < (_) | | | | | | \__ \  __/ |
+   |_| |_| |_|\___| |_____/_/\_\___/|_| |_| |_|_|___/\___|_|
+
+ A Tool to Annotate and Prioritize Exome Variants     v15.1.0
+
+2026-10-24T00:45:06.186+02:00  INFO 56268 --- [           main] o.monarchinitiative.exomiser.cli.Main    : Starting Main v15.1.0 using Java 21.0.12.1 with PID 56268 (/Users/adriamasnou/mva-hackathon/pipeline/exomiser/exomiser-cli-15.1.0/exomiser-cli-15.1.0.jar started by adriamasnou in /Users/adriamasnou/mva-hackathon/pipeline/work/exomiser-reconstruction-20261023)
+2026-10-24T00:45:06.188+02:00  INFO 56268 --- [           main] o.monarchinitiative.exomiser.cli.Main    : No active profile set, falling back to 1 default profile: "default"
+2026-10-24T00:45:06.476+02:00  INFO 56268 --- [           main] o.m.exomiser.cli.config.MainConfig       : Exomiser home: /Users/adriamasnou/mva-hackathon/pipeline/exomiser/exomiser-cli-15.1.0
+2026-10-24T00:45:06.480+02:00  INFO 56268 --- [           main] o.m.exomiser.cli.config.MainConfig       : Root data source directory set to: /Volumes/easystore/MVA-public-exomiser-2512/data
+2026-10-24T00:45:06.482+02:00  INFO 56268 --- [           main] o.m.e.c.g.j.JannovarDataProtoSerialiser  : Deserialising Jannovar data from /Volumes/easystore/MVA-public-exomiser-2512/data/2512_hg38/2512_hg38_transcripts_ensembl.ser
+2026-10-24T00:45:06.940+02:00  INFO 56268 --- [           main] o.m.e.c.g.j.JannovarDataProtoSerialiser  : Deserialisation took 0.457 sec.
+2026-10-24T00:45:11.077+02:00  INFO 56268 --- [           main] o.m.e.c.g.dao.ClinVarWhiteListReader     : Reading ClinVar whitelist...
+2026-10-24T00:45:11.081+02:00  INFO 56268 --- [           main] o.m.e.c.g.dao.serialisers.MvStoreUtil    : MVMap 'clinvar' opened with 4128517 entries
+2026-10-24T00:45:12.886+02:00  INFO 56268 --- [           main] o.m.e.c.g.dao.ClinVarWhiteListReader     : Read 287098 ClinVar whitelist variants in 1809 ms
+2026-10-24T00:45:12.915+02:00  INFO 56268 --- [           main] o.m.e.a.genome.GenomeDataSourceLoader    : Loaded 287098 whitelist variants
+2026-10-24T00:45:12.962+02:00  INFO 56268 --- [           main] o.m.e.c.g.dao.serialisers.MvStoreUtil    : MVMap 'alleles' opened with 816467174 entries
+2026-10-24T00:45:12.973+02:00  INFO 56268 --- [           main] o.m.e.c.g.dao.serialisers.MvStoreUtil    : MVMap 'clinvar' opened with 4128517 entries
+2026-10-24T00:45:14.563+02:00  INFO 56268 --- [           main] o.m.e.core.genome.dao.ClinVarDaoMvStore  : Created 18591 ClinVar gene stats in 1590 ms
+2026-10-24T00:45:15.312+02:00  INFO 56268 --- [           main] g.GenomeAnalysisServiceAutoConfiguration : Configured hg38 genome analysis service
+2026-10-24T00:45:31.654+02:00  INFO 56268 --- [           main] o.m.e.a.ExomiserConfigReporter           : exomiser.data-directory: /Volumes/easystore/MVA-public-exomiser-2512/data
+2026-10-24T00:45:31.655+02:00  INFO 56268 --- [           main] o.m.e.a.ExomiserConfigReporter           : exomiser.hg19.data-version: -
+2026-10-24T00:45:31.655+02:00  INFO 56268 --- [           main] o.m.e.a.ExomiserConfigReporter           : exomiser.hg38.data-version: 2512
+2026-10-24T00:45:31.655+02:00  INFO 56268 --- [           main] o.m.e.a.ExomiserConfigReporter           : exomiser.hg38.clinvar-data-version: 2512
+2026-10-24T00:45:31.655+02:00  INFO 56268 --- [           main] o.m.e.a.ExomiserConfigReporter           : exomiser.phenotype.data-version: 2512
+2026-10-24T00:45:31.655+02:00  INFO 56268 --- [           main] o.m.e.a.ExomiserConfigReporter           : spring.cache.type: caffeine
+2026-10-24T00:45:31.729+02:00  INFO 56268 --- [           main] o.monarchinitiative.exomiser.cli.Main    : Started Main in 25.665 seconds (process running for 25.884)
+2026-10-24T00:45:31.733+02:00  INFO 56268 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running command BatchCommand{batchFilePath=/Users/adriamasnou/mva-hackathon/pipeline/work/exomiser-reconstruction-20261023/batch.txt, dryRun=true}
+2026-10-24T00:45:31.916+02:00  INFO 56268 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Checked 2 analyses, with no problems found.

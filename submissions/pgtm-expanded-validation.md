@@ -45,7 +45,7 @@ The following **pre-fix** omitted source distinctions remain fully enumerated in
 - Phenylketonuria, row 1675: **QDPR occurs in ClinVar `RelatedGenes`**, not HPO's gene set for this MIM (ClinVar line 12260). The separate QDPR condition at row 975 was also reviewed.
 - Tuberous sclerosis 2, row 2012: **IFNG is `POLYGENIC`**, while TSC2 is `MENDELIAN` (HPO lines 5066–5067).
 
-These were **11 row–gene omissions**, representing ten distinct gene–MIM qualifier facts: the BRCA2/612555 fact appears on two register rows. Repair restores these source distinctions; matching gene sets across sources still do not establish matching clinical roles.
+These were **11 row–gene omissions**, representing ten distinct gene–MIM qualifier facts: the BRCA2/612555 fact appears on two register rows. Repair restores these source distinctions; matching gene sets across sources still do not establish matching clinical roles. **[OUR MEASUREMENT — source-row audit above and linked JSON]**
 
 No source-unsupported gene/source/MIM links were found. The reviewed template and card text retain “Candidate gene(s)” and explicitly state that condition approval does not establish variant suitability or family eligibility. No explicit assertion that every displayed gene, variant or family is approved was identified. However, even with qualifiers restored and condition status explicitly labelled, candidate lists can still be overinterpreted. This evaluation did not measure comprehension or decisions. It **cannot classify all candidates as clinically true or false**.
 

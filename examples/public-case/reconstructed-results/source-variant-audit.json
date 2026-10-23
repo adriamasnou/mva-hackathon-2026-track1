@@ -1,0 +1,59 @@
+[
+  {
+    "case_id": "mini",
+    "coordinate": "GRCh38 chr10:121517378 C>T",
+    "input_gt": "0/1",
+    "exact_matches_in_FGFR2_output": 1,
+    "matches": [
+      {
+        "filterStatus": "PASSED",
+        "contributesToGeneScore": null,
+        "whiteListed": true,
+        "passedFilterTypes": [
+          "FAILED_VARIANT_FILTER",
+          "PATHOGENICITY_FILTER",
+          "FREQUENCY_FILTER",
+          "VARIANT_EFFECT_FILTER",
+          "INHERITANCE_FILTER"
+        ],
+        "failedFilterTypes": null,
+        "variantScore": 1.0,
+        "compatibleInheritanceModes": [
+          "AUTOSOMAL_DOMINANT",
+          "AUTOSOMAL_RECESSIVE"
+        ],
+        "contributingInheritanceModes": null
+      }
+    ],
+    "scope": "GT is established by the pinned/verified input. JSONL may omit genotype. Gene rank alone does not establish spike contribution; an unmatched allele needs review."
+  },
+  {
+    "case_id": "genome",
+    "coordinate": "GRCh38 chr10:121517378 C>T",
+    "input_gt": "0/1",
+    "exact_matches_in_FGFR2_output": 1,
+    "matches": [
+      {
+        "filterStatus": "PASSED",
+        "contributesToGeneScore": true,
+        "whiteListed": true,
+        "passedFilterTypes": [
+          "FAILED_VARIANT_FILTER",
+          "PATHOGENICITY_FILTER",
+          "FREQUENCY_FILTER",
+          "VARIANT_EFFECT_FILTER",
+          "INHERITANCE_FILTER"
+        ],
+        "failedFilterTypes": null,
+        "variantScore": 1.0,
+        "compatibleInheritanceModes": [
+          "AUTOSOMAL_DOMINANT"
+        ],
+        "contributingInheritanceModes": [
+          "AUTOSOMAL_DOMINANT"
+        ]
+      }
+    ],
+    "scope": "GT is established by the pinned/verified input. JSONL may omit genotype. Gene rank alone does not establish spike contribution; an unmatched allele needs review."
+  }
+]
