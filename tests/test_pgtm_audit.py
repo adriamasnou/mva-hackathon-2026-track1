@@ -106,7 +106,7 @@ class PgtmAuditTests(unittest.TestCase):
     def test_partial_rows_rejected_after_valid_control_row(self):
         examples = [
             ('gene_condition_source_id','DiseaseMIM\tAssociatedGenes\tRelatedGenes\n257300\tBUB1B\t\n256000\t\n',builder.read_clinvar),
-            ('genes_to_disease.txt','disease_id\tgene_symbol\nOMIM:257300\tBUB1B\nOMIM:219700\n',builder.read_hpo)]
+            ('genes_to_disease.txt','disease_id\tgene_symbol\tassociation_type\nOMIM:257300\tBUB1B\tMENDELIAN\nOMIM:219700\n',builder.read_hpo)]
         with tempfile.TemporaryDirectory() as td:
             folder = Path(td); previous = builder.SRC; builder.SRC = folder
             try:

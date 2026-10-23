@@ -1,0 +1,3022 @@
+{
+  "schema_version": 1,
+  "scope": "Original source excerpts collected before navigator execution; not yet manual adjudication.",
+  "selection_sha256": "ab1f176f972121b15e4d14459ce33f6ca094651acd5854910a818b0738531395",
+  "sources": {
+    "hfea_pgtm_2026-08-05.xlsx": {
+      "url": "https://www.hfea.gov.uk/media/ssapbtyc/2026-08-05-pgt-m-full-approved-condition-list.xlsx",
+      "sha256": "4affb34263310f6965f1190669aef9633163412a2f4f3522cb4d685ed32fa684",
+      "bytes": 93832
+    },
+    "gene_condition_source_id": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/gene_condition_source_id",
+      "sha256": "e44777bb75c0f59f99d7b9beefe56d55dfb0b495214cecaffdfe55b8d98f68b3",
+      "bytes": 1254048
+    },
+    "genes_to_disease.txt": {
+      "url": "https://purl.obolibrary.org/obo/hp/hpoa/genes_to_disease.txt",
+      "sha256": "a247027ae9944e34545e0a91060243ff6c118681c06379b9721af1ee4f39286a",
+      "bytes": 1477762
+    },
+    "mim2gene.txt": {
+      "url": "https://omim.org/static/omim/data/mim2gene.txt",
+      "sha256": "50274f17b282bb24414bc8d10c2431318a03a8d4622475ba26caa880f0720579",
+      "bytes": 987837
+    }
+  },
+  "source_terms": "Selected excerpts only; no whole mapping source redistributed. OMIM copyright Johns Hopkins University; use subject to https://omim.org/help/agreement . Observe all upstream source terms.",
+  "selection_mims": [
+    "113705",
+    "141800",
+    "141900",
+    "151623",
+    "162200",
+    "167800",
+    "181350",
+    "194070",
+    "201450",
+    "219700",
+    "232300",
+    "253300",
+    "253400",
+    "253550",
+    "257300",
+    "261600",
+    "261630",
+    "300376",
+    "300624",
+    "300696",
+    "302045",
+    "310200",
+    "310300",
+    "600185",
+    "603903",
+    "604370",
+    "604373",
+    "604403",
+    "605724",
+    "607208",
+    "610355",
+    "612555",
+    "612998",
+    "612999",
+    "613254",
+    "613320",
+    "614114",
+    "614302",
+    "616516",
+    "617598",
+    "617883",
+    "619317"
+  ],
+  "query_source_candidates": [
+    {
+      "id": "E01",
+      "query": "BUB1B",
+      "kind": "gene",
+      "stratum": "MVA pathway",
+      "source_symbol": "BUB1B",
+      "source_association_rows": [
+        1399
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E02",
+      "query": "CEP57",
+      "kind": "gene",
+      "stratum": "MVA pathway",
+      "source_symbol": "CEP57",
+      "source_association_rows": [
+        1400
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E03",
+      "query": "TRIP13",
+      "kind": "gene",
+      "stratum": "MVA pathway",
+      "source_symbol": "TRIP13",
+      "source_association_rows": [
+        1401
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E04",
+      "query": "CFTR",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity",
+      "source_symbol": "CFTR",
+      "source_association_rows": [
+        503,
+        1648
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E05",
+      "query": "DMD",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity",
+      "source_symbol": "DMD",
+      "source_association_rows": [
+        215,
+        1429,
+        1436
+      ],
+      "condition_text_rows": [
+        23,
+        725,
+        726,
+        727,
+        728,
+        729,
+        730,
+        731,
+        1436,
+        1963
+      ],
+      "identifier_rows": []
+    },
+    {
+      "id": "E06",
+      "query": "FMR1",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity",
+      "source_symbol": "FMR1",
+      "source_association_rows": [
+        826
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E07",
+      "query": "HBB",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity",
+      "source_symbol": "HBB",
+      "source_association_rows": [
+        163,
+        886,
+        1870
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E08",
+      "query": "HBA1",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity",
+      "source_symbol": "HBA1",
+      "source_association_rows": [
+        57
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E09",
+      "query": "SMN1",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity",
+      "source_symbol": "SMN1",
+      "source_association_rows": [
+        1898,
+        1899,
+        1900
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E10",
+      "query": "BRCA1",
+      "kind": "gene",
+      "stratum": "cancer predisposition / gene-identifier / multiple identifiers",
+      "source_symbol": "BRCA1",
+      "source_association_rows": [
+        177,
+        181,
+        806
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E11",
+      "query": "BRCA2",
+      "kind": "gene",
+      "stratum": "cancer predisposition / gene-identifier / multiple identifiers",
+      "source_symbol": "BRCA2",
+      "source_association_rows": [
+        178,
+        182,
+        793,
+        2059
+      ],
+      "condition_text_rows": [
+        182,
+        1662
+      ],
+      "identifier_rows": []
+    },
+    {
+      "id": "E12",
+      "query": "CHEK2",
+      "kind": "gene",
+      "stratum": "cancer predisposition / gene-identifier / multiple identifiers",
+      "source_symbol": "CHEK2",
+      "source_association_rows": [
+        332
+      ],
+      "condition_text_rows": [
+        332
+      ],
+      "identifier_rows": []
+    },
+    {
+      "id": "E13",
+      "query": "TP53",
+      "kind": "gene",
+      "stratum": "cancer predisposition / gene-identifier / multiple identifiers",
+      "source_symbol": "TP53",
+      "source_association_rows": [
+        1202
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E14",
+      "query": "PAH",
+      "kind": "gene",
+      "stratum": "metabolic / symbol ambiguity",
+      "source_symbol": "PAH",
+      "source_association_rows": [
+        1675
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E15",
+      "query": "GAA",
+      "kind": "gene",
+      "stratum": "metabolic / symbol ambiguity",
+      "source_symbol": "GAA",
+      "source_association_rows": [
+        870
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E16",
+      "query": "GBA",
+      "kind": "gene",
+      "stratum": "metabolic / symbol ambiguity",
+      "source_symbol": "GBA",
+      "source_association_rows": [],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E17",
+      "query": "ATP7B",
+      "kind": "gene",
+      "stratum": "metabolic / symbol ambiguity",
+      "source_symbol": "ATP7B",
+      "source_association_rows": [],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E18",
+      "query": "NF1",
+      "kind": "gene",
+      "stratum": "pleiotropic neurodevelopmental",
+      "source_symbol": "NF1",
+      "source_association_rows": [
+        1552
+      ],
+      "condition_text_rows": [
+        1552
+      ],
+      "identifier_rows": []
+    },
+    {
+      "id": "E19",
+      "query": "TSC2",
+      "kind": "gene",
+      "stratum": "pleiotropic neurodevelopmental",
+      "source_symbol": "TSC2",
+      "source_association_rows": [
+        2012
+      ],
+      "condition_text_rows": [
+        2012
+      ],
+      "identifier_rows": []
+    },
+    {
+      "id": "E20",
+      "query": "SCN1A",
+      "kind": "gene",
+      "stratum": "pleiotropic neurodevelopmental",
+      "source_symbol": "SCN1A",
+      "source_association_rows": [
+        621,
+        678,
+        856
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E21",
+      "query": "TGFB1",
+      "kind": "gene",
+      "stratum": "source-role ambiguity",
+      "source_symbol": "TGFB1",
+      "source_association_rows": [
+        503
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E22",
+      "query": "QDPR",
+      "kind": "gene",
+      "stratum": "source-role ambiguity",
+      "source_symbol": "QDPR",
+      "source_association_rows": [
+        975,
+        1675
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E23",
+      "query": "BUBR1",
+      "kind": "alias",
+      "stratum": "edge cases",
+      "reason": "Explicit supported alias; no general alias inference",
+      "source_symbol": "BUB1B",
+      "source_association_rows": [
+        1399
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E24",
+      "query": "CHIME",
+      "kind": "malformed",
+      "stratum": "edge cases",
+      "reason": "Malformed identifier preserved; no silent correction",
+      "source_symbol": "CHIME",
+      "source_association_rows": [],
+      "condition_text_rows": [
+        369
+      ],
+      "identifier_rows": []
+    },
+    {
+      "id": "E25",
+      "query": "SIX2",
+      "kind": "unresolved",
+      "stratum": "edge cases",
+      "reason": "Missing identifier and condition-name fallback",
+      "source_symbol": "SIX2",
+      "source_association_rows": [],
+      "condition_text_rows": [
+        1873
+      ],
+      "identifier_rows": []
+    },
+    {
+      "id": "E26",
+      "query": "28000",
+      "kind": "malformed-number",
+      "stratum": "edge cases",
+      "reason": "Malformed source identifier must not become a valid disease mapping",
+      "source_symbol": "28000",
+      "source_association_rows": [],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E27",
+      "query": "  cftr  ",
+      "kind": "normalization",
+      "stratum": "edge cases",
+      "reason": "Whitespace and case handling against CFTR",
+      "source_symbol": "CFTR",
+      "source_association_rows": [
+        503,
+        1648
+      ],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    },
+    {
+      "id": "E28",
+      "query": "__EXPANDED_NO_SUCH_GENE_20261023__",
+      "kind": "no-match",
+      "stratum": "edge cases",
+      "reason": "Synthetic unmatched token; no inference of ineligibility",
+      "source_symbol": "__EXPANDED_NO_SUCH_GENE_20261023__",
+      "source_association_rows": [],
+      "condition_text_rows": [],
+      "identifier_rows": []
+    }
+  ],
+  "hfea_rows": [
+    {
+      "row": 23,
+      "cells": {
+        "A23": "Acyl-CoA Dehydrogenase, Medium-Chain, Deficiency of (ACADMD) (due to publishing limitations, we can't provide a link to the relevant minutes - please contact HFEA.Licensing@HFEA.gov.uk if you would like to be sent a copy)",
+        "B23": "approved",
+        "C23": "201450"
+      },
+      "condition": "Acyl-CoA Dehydrogenase, Medium-Chain, Deficiency of (ACADMD) (due to publishing limitations, we can't provide a link to the relevant minutes - please contact HFEA.Licensing@HFEA.gov.uk if you would like to be sent a copy)",
+      "status": "approved",
+      "omim_raw": "201450",
+      "mims": [
+        "201450"
+      ]
+    },
+    {
+      "row": 57,
+      "cells": {
+        "A57": "Alpha Thalassemia",
+        "B57": "approved",
+        "C57": "141800"
+      },
+      "condition": "Alpha Thalassemia",
+      "status": "approved",
+      "omim_raw": "141800",
+      "mims": [
+        "141800"
+      ]
+    },
+    {
+      "row": 163,
+      "cells": {
+        "A163": "Beta Thalassaemia*",
+        "B163": "approved",
+        "C163": "141900"
+      },
+      "condition": "Beta Thalassaemia*",
+      "status": "approved",
+      "omim_raw": "141900",
+      "mims": [
+        "141900"
+      ]
+    },
+    {
+      "row": 177,
+      "cells": {
+        "A177": "Breast-Ovarian Cancer, Familial, Susceptibility to, 1 (BROVCA1) (including testing for sex selection)",
+        "B177": "approved",
+        "C177": "604370"
+      },
+      "condition": "Breast-Ovarian Cancer, Familial, Susceptibility to, 1 (BROVCA1) (including testing for sex selection)",
+      "status": "approved",
+      "omim_raw": "604370",
+      "mims": [
+        "604370"
+      ]
+    },
+    {
+      "row": 178,
+      "cells": {
+        "A178": "Breast-Ovarian Cancer, Familial, Susceptibility to, 2 (BROVCA2) (including testing for sex selection)",
+        "B178": "approved",
+        "C178": "612555"
+      },
+      "condition": "Breast-Ovarian Cancer, Familial, Susceptibility to, 2 (BROVCA2) (including testing for sex selection)",
+      "status": "approved",
+      "omim_raw": "612555",
+      "mims": [
+        "612555"
+      ]
+    },
+    {
+      "row": 181,
+      "cells": {
+        "A181": "BRCA 1 (increased susceptibility to breast cancer) (including testing for sex selection)",
+        "B181": "approved",
+        "C181": "113705"
+      },
+      "condition": "BRCA 1 (increased susceptibility to breast cancer) (including testing for sex selection)",
+      "status": "approved",
+      "omim_raw": "113705",
+      "mims": [
+        "113705"
+      ]
+    },
+    {
+      "row": 182,
+      "cells": {
+        "A182": "Breast Ovarian Cancer Familial Susceptibility (BRCA2) (including testing for sex selection)",
+        "B182": "approved",
+        "C182": "612555, 600185"
+      },
+      "condition": "Breast Ovarian Cancer Familial Susceptibility (BRCA2) (including testing for sex selection)",
+      "status": "approved",
+      "omim_raw": "612555, 600185",
+      "mims": [
+        "612555",
+        "600185"
+      ]
+    },
+    {
+      "row": 215,
+      "cells": {
+        "A215": "Cardiomyopathy, Dilated, 3B (CMD3B)",
+        "B215": "approved",
+        "C215": "302045"
+      },
+      "condition": "Cardiomyopathy, Dilated, 3B (CMD3B)",
+      "status": "approved",
+      "omim_raw": "302045",
+      "mims": [
+        "302045"
+      ]
+    },
+    {
+      "row": 332,
+      "cells": {
+        "A332": "CHEK2 mutation and increased risk of breast cancer",
+        "B332": "approved",
+        "C332": "* 604373"
+      },
+      "condition": "CHEK2 mutation and increased risk of breast cancer",
+      "status": "approved",
+      "omim_raw": "* 604373",
+      "mims": [
+        "604373"
+      ]
+    },
+    {
+      "row": 369,
+      "cells": {
+        "A369": "Coloboma, Congenital Heart Disease, Ichthyosiform Dermatosis, Impaired Intellectual Development, and Ear Anomalies Syndrome (CHIME)",
+        "B369": "approved",
+        "C369": "28000"
+      },
+      "condition": "Coloboma, Congenital Heart Disease, Ichthyosiform Dermatosis, Impaired Intellectual Development, and Ear Anomalies Syndrome (CHIME)",
+      "status": "approved",
+      "omim_raw": "28000",
+      "mims": []
+    },
+    {
+      "row": 503,
+      "cells": {
+        "A503": "Cystic Fibrosis (CF)",
+        "B503": "approved",
+        "C503": "219700"
+      },
+      "condition": "Cystic Fibrosis (CF)",
+      "status": "approved",
+      "omim_raw": "219700",
+      "mims": [
+        "219700"
+      ]
+    },
+    {
+      "row": 621,
+      "cells": {
+        "A621": "Developmental and Epileptic Encephalopathy 6B (DEE6B)",
+        "B621": "approved",
+        "C621": "619317"
+      },
+      "condition": "Developmental and Epileptic Encephalopathy 6B (DEE6B)",
+      "status": "approved",
+      "omim_raw": "619317",
+      "mims": [
+        "619317"
+      ]
+    },
+    {
+      "row": 678,
+      "cells": {
+        "A678": "Dravet Syndrome (DRVT)",
+        "B678": "approved",
+        "C678": "607208"
+      },
+      "condition": "Dravet Syndrome (DRVT)",
+      "status": "approved",
+      "omim_raw": "607208",
+      "mims": [
+        "607208"
+      ]
+    },
+    {
+      "row": 725,
+      "cells": {
+        "A725": "Emery-Dreifuss Muscular Dystrophy (x-linked) (EDMD) (Male embryos only)",
+        "B725": "approved",
+        "C725": "310300"
+      },
+      "condition": "Emery-Dreifuss Muscular Dystrophy (x-linked) (EDMD) (Male embryos only)",
+      "status": "approved",
+      "omim_raw": "310300",
+      "mims": [
+        "310300"
+      ]
+    },
+    {
+      "row": 726,
+      "cells": {
+        "A726": "Emery-Dreifuss Muscular Dystrophy 2, Autosomal Dominant (EDMD2) for cases where there is proven evidence of mosaicism in the blood or as a result of a second affected child",
+        "B726": "approved",
+        "C726": "181350"
+      },
+      "condition": "Emery-Dreifuss Muscular Dystrophy 2, Autosomal Dominant (EDMD2) for cases where there is proven evidence of mosaicism in the blood or as a result of a second affected child",
+      "status": "approved",
+      "omim_raw": "181350",
+      "mims": [
+        "181350"
+      ]
+    },
+    {
+      "row": 727,
+      "cells": {
+        "A727": "Emery-Dreifuss Muscular Dystrophy 3 , Autosomal Recessive (EDMD3)",
+        "B727": "approved",
+        "C727": "616516"
+      },
+      "condition": "Emery-Dreifuss Muscular Dystrophy 3 , Autosomal Recessive (EDMD3)",
+      "status": "approved",
+      "omim_raw": "616516",
+      "mims": [
+        "616516"
+      ]
+    },
+    {
+      "row": 728,
+      "cells": {
+        "A728": "Emery-Dreifuss Muscular Dystrophy 4, Autosomal Dominant (EDMD4)",
+        "B728": "approved",
+        "C728": "612998"
+      },
+      "condition": "Emery-Dreifuss Muscular Dystrophy 4, Autosomal Dominant (EDMD4)",
+      "status": "approved",
+      "omim_raw": "612998",
+      "mims": [
+        "612998"
+      ]
+    },
+    {
+      "row": 729,
+      "cells": {
+        "A729": "Emery-Dreifuss Muscular Dystrophy 5, Autosomal Dominant (EDMD5)",
+        "B729": "approved",
+        "C729": "612999"
+      },
+      "condition": "Emery-Dreifuss Muscular Dystrophy 5, Autosomal Dominant (EDMD5)",
+      "status": "approved",
+      "omim_raw": "612999",
+      "mims": [
+        "612999"
+      ]
+    },
+    {
+      "row": 730,
+      "cells": {
+        "A730": "Emery-Dreifuss Muscular Dystrophy 6, X-Linked (EDMD6)",
+        "B730": "approved",
+        "C730": "300696"
+      },
+      "condition": "Emery-Dreifuss Muscular Dystrophy 6, X-Linked (EDMD6)",
+      "status": "approved",
+      "omim_raw": "300696",
+      "mims": [
+        "300696"
+      ]
+    },
+    {
+      "row": 731,
+      "cells": {
+        "A731": "Emery-Dreifuss Muscular Dystrophy 7, Autosomal Dominant (EDMD7)",
+        "B731": "approved",
+        "C731": "614302"
+      },
+      "condition": "Emery-Dreifuss Muscular Dystrophy 7, Autosomal Dominant (EDMD7)",
+      "status": "approved",
+      "omim_raw": "614302",
+      "mims": [
+        "614302"
+      ]
+    },
+    {
+      "row": 793,
+      "cells": {
+        "A793": "Fanconi Anemia, Complementation Group D1 (FANCD1)",
+        "B793": "approved",
+        "C793": "605724"
+      },
+      "condition": "Fanconi Anemia, Complementation Group D1 (FANCD1)",
+      "status": "approved",
+      "omim_raw": "605724",
+      "mims": [
+        "605724"
+      ]
+    },
+    {
+      "row": 806,
+      "cells": {
+        "A806": "Fanconi Anemia, Complementation Group S (FANCS)",
+        "B806": "approved",
+        "C806": "617883"
+      },
+      "condition": "Fanconi Anemia, Complementation Group S (FANCS)",
+      "status": "approved",
+      "omim_raw": "617883",
+      "mims": [
+        "617883"
+      ]
+    },
+    {
+      "row": 826,
+      "cells": {
+        "A826": "Fragile X Syndrome (FXS)",
+        "B826": "approved",
+        "C826": "300624"
+      },
+      "condition": "Fragile X Syndrome (FXS)",
+      "status": "approved",
+      "omim_raw": "300624",
+      "mims": [
+        "300624"
+      ]
+    },
+    {
+      "row": 856,
+      "cells": {
+        "A856": "Generalized epilepsy with febrile seizures plus, type 2 (GEFSP2)",
+        "B856": "approved",
+        "C856": "604403"
+      },
+      "condition": "Generalized epilepsy with febrile seizures plus, type 2 (GEFSP2)",
+      "status": "approved",
+      "omim_raw": "604403",
+      "mims": [
+        "604403"
+      ]
+    },
+    {
+      "row": 870,
+      "cells": {
+        "A870": "Glycogen Storage Disease II (GSD2)",
+        "B870": "approved",
+        "C870": "232300"
+      },
+      "condition": "Glycogen Storage Disease II (GSD2)",
+      "status": "approved",
+      "omim_raw": "232300",
+      "mims": [
+        "232300"
+      ]
+    },
+    {
+      "row": 886,
+      "cells": {
+        "A886": "Haemoglobin SC disease",
+        "B886": "approved",
+        "C886": "141900.00380000001"
+      },
+      "condition": "Haemoglobin SC disease",
+      "status": "approved",
+      "omim_raw": "141900.00380000001",
+      "mims": [
+        "141900"
+      ]
+    },
+    {
+      "row": 975,
+      "cells": {
+        "A975": "Hyperphenylalaninemia, BH4-deficient, C (HPABH4C)",
+        "B975": "approved",
+        "C975": "261630"
+      },
+      "condition": "Hyperphenylalaninemia, BH4-deficient, C (HPABH4C)",
+      "status": "approved",
+      "omim_raw": "261630",
+      "mims": [
+        "261630"
+      ]
+    },
+    {
+      "row": 1202,
+      "cells": {
+        "A1202": "Li-Fraumeni Syndrome (LFS)",
+        "B1202": "approved",
+        "C1202": "151623"
+      },
+      "condition": "Li-Fraumeni Syndrome (LFS)",
+      "status": "approved",
+      "omim_raw": "151623",
+      "mims": [
+        "151623"
+      ]
+    },
+    {
+      "row": 1399,
+      "cells": {
+        "A1399": "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+        "B1399": "approved",
+        "C1399": "257300"
+      },
+      "condition": "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+      "status": "approved",
+      "omim_raw": "257300",
+      "mims": [
+        "257300"
+      ]
+    },
+    {
+      "row": 1400,
+      "cells": {
+        "A1400": "Mosaic Variegated Aneuploidy Syndrome 2 (MVA 2)",
+        "B1400": "approved",
+        "C1400": "614114"
+      },
+      "condition": "Mosaic Variegated Aneuploidy Syndrome 2 (MVA 2)",
+      "status": "approved",
+      "omim_raw": "614114",
+      "mims": [
+        "614114"
+      ]
+    },
+    {
+      "row": 1401,
+      "cells": {
+        "A1401": "Mosaic Variegated Aneuploidy Syndrome 3 (MVA3)",
+        "B1401": "approved",
+        "C1401": "617598"
+      },
+      "condition": "Mosaic Variegated Aneuploidy Syndrome 3 (MVA3)",
+      "status": "approved",
+      "omim_raw": "617598",
+      "mims": [
+        "617598"
+      ]
+    },
+    {
+      "row": 1429,
+      "cells": {
+        "A1429": "Muscular Dystrophy, Becker Type (BMD)",
+        "B1429": "approved",
+        "C1429": "300376"
+      },
+      "condition": "Muscular Dystrophy, Becker Type (BMD)",
+      "status": "approved",
+      "omim_raw": "300376",
+      "mims": [
+        "300376"
+      ]
+    },
+    {
+      "row": 1436,
+      "cells": {
+        "A1436": "Muscular Dystrophy, Duchenne Type (DMD)",
+        "B1436": "approved",
+        "C1436": "310200"
+      },
+      "condition": "Muscular Dystrophy, Duchenne Type (DMD)",
+      "status": "approved",
+      "omim_raw": "310200",
+      "mims": [
+        "310200"
+      ]
+    },
+    {
+      "row": 1552,
+      "cells": {
+        "A1552": "Neurofibromatosis, Type I (NF1)",
+        "B1552": "approved",
+        "C1552": "162200"
+      },
+      "condition": "Neurofibromatosis, Type I (NF1)",
+      "status": "approved",
+      "omim_raw": "162200",
+      "mims": [
+        "162200"
+      ]
+    },
+    {
+      "row": 1648,
+      "cells": {
+        "A1648": "Pancreatitis, Hereditary (PCTT)",
+        "B1648": "approved",
+        "C1648": "167800"
+      },
+      "condition": "Pancreatitis, Hereditary (PCTT)",
+      "status": "approved",
+      "omim_raw": "167800",
+      "mims": [
+        "167800"
+      ]
+    },
+    {
+      "row": 1662,
+      "cells": {
+        "A1662": "Partner and Localizer of BRCA2 (PALB2)",
+        "B1662": "approved",
+        "C1662": "610355"
+      },
+      "condition": "Partner and Localizer of BRCA2 (PALB2)",
+      "status": "approved",
+      "omim_raw": "610355",
+      "mims": [
+        "610355"
+      ]
+    },
+    {
+      "row": 1675,
+      "cells": {
+        "A1675": "Phenylketonuria (PKU)",
+        "B1675": "approved",
+        "C1675": "261600"
+      },
+      "condition": "Phenylketonuria (PKU)",
+      "status": "approved",
+      "omim_raw": "261600",
+      "mims": [
+        "261600"
+      ]
+    },
+    {
+      "row": 1870,
+      "cells": {
+        "A1870": "Sickle Cell Disease*",
+        "B1870": "approved",
+        "C1870": "603903"
+      },
+      "condition": "Sickle Cell Disease*",
+      "status": "approved",
+      "omim_raw": "603903",
+      "mims": [
+        "603903"
+      ]
+    },
+    {
+      "row": 1873,
+      "cells": {
+        "A1873": "SIX2-related disorder (No OMIM number)",
+        "B1873": "approved",
+        "C1873": ""
+      },
+      "condition": "SIX2-related disorder (No OMIM number)",
+      "status": "approved",
+      "omim_raw": "",
+      "mims": []
+    },
+    {
+      "row": 1898,
+      "cells": {
+        "A1898": "Spinal Muscular Atrophy, Type I (SMA1)",
+        "B1898": "approved",
+        "C1898": "253300"
+      },
+      "condition": "Spinal Muscular Atrophy, Type I (SMA1)",
+      "status": "approved",
+      "omim_raw": "253300",
+      "mims": [
+        "253300"
+      ]
+    },
+    {
+      "row": 1899,
+      "cells": {
+        "A1899": "Spinal Muscular Atrophy, Type II (SMA2)",
+        "B1899": "approved",
+        "C1899": "253550"
+      },
+      "condition": "Spinal Muscular Atrophy, Type II (SMA2)",
+      "status": "approved",
+      "omim_raw": "253550",
+      "mims": [
+        "253550"
+      ]
+    },
+    {
+      "row": 1900,
+      "cells": {
+        "A1900": "Spinal Muscular Atrophy, Type III (SMA3)",
+        "B1900": "approved",
+        "C1900": "253400"
+      },
+      "condition": "Spinal Muscular Atrophy, Type III (SMA3)",
+      "status": "approved",
+      "omim_raw": "253400",
+      "mims": [
+        "253400"
+      ]
+    },
+    {
+      "row": 1963,
+      "cells": {
+        "A1963": "Spondylometaphyseal Dysplasia, Megarbane-Dagher-Melki Type (SMDMDM)",
+        "B1963": "approved",
+        "C1963": "613320"
+      },
+      "condition": "Spondylometaphyseal Dysplasia, Megarbane-Dagher-Melki Type (SMDMDM)",
+      "status": "approved",
+      "omim_raw": "613320",
+      "mims": [
+        "613320"
+      ]
+    },
+    {
+      "row": 2012,
+      "cells": {
+        "A2012": "Tuberous Sclerosis 2 (TSC2)",
+        "B2012": "approved",
+        "C2012": "613254"
+      },
+      "condition": "Tuberous Sclerosis 2 (TSC2)",
+      "status": "approved",
+      "omim_raw": "613254",
+      "mims": [
+        "613254"
+      ]
+    },
+    {
+      "row": 2059,
+      "cells": {
+        "A2059": "Wilms Tumour 1 (WT1)",
+        "B2059": "approved",
+        "C2059": "194070"
+      },
+      "condition": "Wilms Tumour 1 (WT1)",
+      "status": "approved",
+      "omim_raw": "194070",
+      "mims": [
+        "194070"
+      ]
+    }
+  ],
+  "context_rows": [
+    {
+      "row": 853,
+      "cells": {
+        "A853": "Gaucher Disease, Type II (GD2)",
+        "B853": "approved",
+        "C853": "230900"
+      },
+      "condition": "Gaucher Disease, Type II (GD2)",
+      "status": "approved",
+      "omim_raw": "230900",
+      "mims": [
+        "230900"
+      ]
+    },
+    {
+      "row": 854,
+      "cells": {
+        "A854": "Gaucher Disease, Type III (GD3)",
+        "B854": "approved",
+        "C854": "231000"
+      },
+      "condition": "Gaucher Disease, Type III (GD3)",
+      "status": "approved",
+      "omim_raw": "231000",
+      "mims": [
+        "231000"
+      ]
+    }
+  ],
+  "context_scope": "Pre-query source follow-up for GBA and ATP7B no-match candidates. GBA1 and Wilson-condition names were inspected in sources only, not added to the navigator query set. All five context MIMs include every retained mapping line.",
+  "mapping_records": {
+    "gene_condition_source_id": {
+      "header": "#GeneID\tAssociatedGenes\tRelatedGenes\tConceptID\tDiseaseName\tSourceName\tSourceID\tDiseaseMIM\tLastUpdated",
+      "records": [
+        {
+          "line": 89,
+          "text": "34\tACADM\t\tC0220710\tMedium-chain acyl-coenzyme A dehydrogenase deficiency\t\t\t201450\tFeb 16 2016",
+          "mim": "201450",
+          "associations": [
+            {
+              "gene": "ACADM",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Medium-chain acyl-coenzyme A dehydrogenase deficiency",
+          "upstream": "",
+          "source_id": ""
+        },
+        {
+          "line": 857,
+          "text": "672\tBRCA1\t\tC2676676\tBreast-ovarian cancer, familial, susceptibility to, 1\tMONDO\tMONDO:0011450\t604370\tApr 19 2022",
+          "mim": "604370",
+          "associations": [
+            {
+              "gene": "BRCA1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Breast-ovarian cancer, familial, susceptibility to, 1",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0011450"
+        },
+        {
+          "line": 858,
+          "text": "672\tBRCA1\t\tC4554406\tFanconi anemia, complementation group S\tMONDO\tMONDO:0054748\t617883\tJan 22 2021",
+          "mim": "617883",
+          "associations": [
+            {
+              "gene": "BRCA1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Fanconi anemia, complementation group S",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0054748"
+        },
+        {
+          "line": 860,
+          "text": "675\tBRCA2\t\tCN033288\tWilms tumor 1\tMONDO\tMONDO:0008679\t194070\tFeb 16 2016",
+          "mim": "194070",
+          "associations": [
+            {
+              "gene": "BRCA2",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Wilms tumor 1",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0008679"
+        },
+        {
+          "line": 864,
+          "text": "675\tBRCA2\t\tC2675520\tBreast-ovarian cancer, familial, susceptibility to, 2\tMONDO\tMONDO:0012933\t612555\tApr 19 2022",
+          "mim": "612555",
+          "associations": [
+            {
+              "gene": "BRCA2",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Breast-ovarian cancer, familial, susceptibility to, 2",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0012933"
+        },
+        {
+          "line": 865,
+          "text": "675\tBRCA2\t\tC1838457\tFanconi anemia complementation group D1\tMONDO\tMONDO:0011584\t605724\tApr 19 2022",
+          "mim": "605724",
+          "associations": [
+            {
+              "gene": "BRCA2",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Fanconi anemia complementation group D1",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0011584"
+        },
+        {
+          "line": 890,
+          "text": "701\tBUB1B\t\tC1850343\tMosaic variegated aneuploidy syndrome 1\tMONDO\tMONDO:0009759\t257300\tAug 16 2017",
+          "mim": "257300",
+          "associations": [
+            {
+              "gene": "BUB1B",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Mosaic variegated aneuploidy syndrome 1",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0009759"
+        },
+        {
+          "line": 1259,
+          "text": "9702\tCEP57\t\tC3279843\tMosaic variegated aneuploidy syndrome 2\tMONDO\tMONDO:0013582\t614114\tFeb 16 2016",
+          "mim": "614114",
+          "associations": [
+            {
+              "gene": "CEP57",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Mosaic variegated aneuploidy syndrome 2",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0013582"
+        },
+        {
+          "line": 1332,
+          "text": "1080\tCFTR\t\tC0238339\tHereditary pancreatitis\tNCBI curation\t\t167800\tFeb 16 2016",
+          "mim": "167800",
+          "associations": [
+            {
+              "gene": "CFTR",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Hereditary pancreatitis",
+          "upstream": "NCBI curation",
+          "source_id": ""
+        },
+        {
+          "line": 1333,
+          "text": "1080\tCFTR\t\tC0010674\tCystic fibrosis\tMONDO\tMONDO:0009061\t219700\tJul  6 2018",
+          "mim": "219700",
+          "associations": [
+            {
+              "gene": "CFTR",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Cystic fibrosis",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0009061"
+        },
+        {
+          "line": 1849,
+          "text": "11330\tCTRC\t\tC0238339\tHereditary pancreatitis\tNCBI curation\t\t167800\tFeb 16 2016",
+          "mim": "167800",
+          "associations": [
+            {
+              "gene": "CTRC",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Hereditary pancreatitis",
+          "upstream": "NCBI curation",
+          "source_id": ""
+        },
+        {
+          "line": 2124,
+          "text": "1756\tDMD\t\tC3668940\tDilated cardiomyopathy 3B\tMONDO\tMONDO:0010542\t302045\tFeb 16 2016",
+          "mim": "302045",
+          "associations": [
+            {
+              "gene": "DMD",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Dilated cardiomyopathy 3B",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0010542"
+        },
+        {
+          "line": 2125,
+          "text": "1756\tDMD\t\tC0917713\tBecker muscular dystrophy\tMONDO\tMONDO:0010311\t300376\tFeb 16 2016",
+          "mim": "300376",
+          "associations": [
+            {
+              "gene": "DMD",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Becker muscular dystrophy",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0010311"
+        },
+        {
+          "line": 2126,
+          "text": "1756\tDMD\t\tC0013264\tDuchenne muscular dystrophy\tMONDO\tMONDO:0010679\t310200\tFeb 16 2016",
+          "mim": "310200",
+          "associations": [
+            {
+              "gene": "DMD",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Duchenne muscular dystrophy",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0010679"
+        },
+        {
+          "line": 2428,
+          "text": "2010\tEMD\t\tCN375556\tEmery-Dreifuss muscular dystrophy 1, X-linked\tMONDO\tMONDO:0100531\t310300\tOct  6 2023",
+          "mim": "310300",
+          "associations": [
+            {
+              "gene": "EMD",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Emery-Dreifuss muscular dystrophy 1, X-linked",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0100531"
+        },
+        {
+          "line": 2694,
+          "text": "2212\tFCGR2A\t\tC0010674\tCystic fibrosis\tMONDO\tMONDO:0009061\t219700\tJul  6 2018",
+          "mim": "219700",
+          "associations": [
+            {
+              "gene": "FCGR2A",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Cystic fibrosis",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0009061"
+        },
+        {
+          "line": 2785,
+          "text": "2273\tFHL1\t\tC2678055\tX-linked myopathy with postural muscle atrophy\tMONDO\tMONDO:0010401\t300696\tApr 19 2022",
+          "mim": "300696",
+          "associations": [
+            {
+              "gene": "FHL1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "X-linked myopathy with postural muscle atrophy",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0010401"
+        },
+        {
+          "line": 2862,
+          "text": "2332\tFMR1\t\tC0016667\tFragile X syndrome\tMONDO\tMONDO:0010383\t300624\tFeb 16 2016",
+          "mim": "300624",
+          "associations": [
+            {
+              "gene": "FMR1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Fragile X syndrome",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0010383"
+        },
+        {
+          "line": 2967,
+          "text": "2548\tGAA\t\tC0017921\tGlycogen storage disease, type II\t\t\t232300\tFeb 16 2016",
+          "mim": "232300",
+          "associations": [
+            {
+              "gene": "GAA",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Glycogen storage disease, type II",
+          "upstream": "",
+          "source_id": ""
+        },
+        {
+          "line": 3308,
+          "text": "2719\tGPC3\t\tCN033288\tWilms tumor 1\tMONDO\tMONDO:0008679\t194070\tFeb 16 2016",
+          "mim": "194070",
+          "associations": [
+            {
+              "gene": "GPC3",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Wilms tumor 1",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0008679"
+        },
+        {
+          "line": 3309,
+          "text": "2239\tGPC4\t\tCN033288\tWilms tumor 1\tMONDO\tMONDO:0008679\t194070\tFeb 16 2016",
+          "mim": "194070",
+          "associations": [
+            {
+              "gene": "GPC4",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Wilms tumor 1",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0008679"
+        },
+        {
+          "line": 3412,
+          "text": "283120\tH19\t\tCN033288\tWilms tumor 1\tMONDO\tMONDO:0008679\t194070\tFeb 16 2016",
+          "mim": "194070",
+          "associations": [
+            {
+              "gene": "H19",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Wilms tumor 1",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0008679"
+        },
+        {
+          "line": 3464,
+          "text": "3043\tHBB\t\tC0002895\tHb SS disease\tNCBI curation\t\t603903\tFeb 16 2016",
+          "mim": "603903",
+          "associations": [
+            {
+              "gene": "HBB",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Hb SS disease",
+          "upstream": "NCBI curation",
+          "source_id": ""
+        },
+        {
+          "line": 3733,
+          "text": "3458\tIFNG\t\tC1860707\tTuberous sclerosis 2\tMONDO\tMONDO:0013199\t613254\tFeb 16 2016",
+          "mim": "613254",
+          "associations": [
+            {
+              "gene": "IFNG",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Tuberous sclerosis 2",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0013199"
+        },
+        {
+          "line": 3778,
+          "text": "3481\tIGF2\t\tCN033288\tWilms tumor 1\tMONDO\tMONDO:0008679\t194070\tFeb 16 2016",
+          "mim": "194070",
+          "associations": [
+            {
+              "gene": "IGF2",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Wilms tumor 1",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0008679"
+        },
+        {
+          "line": 4441,
+          "text": "4000\tLMNA\t\tC2750035\tEmery-Dreifuss muscular dystrophy 3, autosomal recessive\tMONDO\tMONDO:0014676\t616516\tFeb 16 2016",
+          "mim": "616516",
+          "associations": [
+            {
+              "gene": "LMNA",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Emery-Dreifuss muscular dystrophy 3, autosomal recessive",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0014676"
+        },
+        {
+          "line": 4445,
+          "text": "4000\tLMNA\t\tC0410190\tEmery-Dreifuss muscular dystrophy 2, autosomal dominant\tMONDO\tMONDO:0021569\t181350\tMar 11 2024",
+          "mim": "181350",
+          "associations": [
+            {
+              "gene": "LMNA",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Emery-Dreifuss muscular dystrophy 2, autosomal dominant",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0021569"
+        },
+        {
+          "line": 5366,
+          "text": "4763\tNF1\t\tC0027831\tNeurofibromatosis, type 1\t\t\t162200\tFeb 16 2016",
+          "mim": "162200",
+          "associations": [
+            {
+              "gene": "NF1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Neurofibromatosis, type 1",
+          "upstream": "",
+          "source_id": ""
+        },
+        {
+          "line": 5711,
+          "text": "5053\tPAH\t\tC0031485\tPhenylketonuria\tMONDO\tMONDO:0009861\t261600\tFeb 16 2016",
+          "mim": "261600",
+          "associations": [
+            {
+              "gene": "PAH",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Phenylketonuria",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0009861"
+        },
+        {
+          "line": 5720,
+          "text": "51025\tPAM16\t\tC2750075\tAutosomal recessive spondylometaphyseal dysplasia, Megarbane type\tMONDO\tMONDO:0013223\t613320\tApr 19 2022",
+          "mim": "613320",
+          "associations": [
+            {
+              "gene": "PAM16",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Autosomal recessive spondylometaphyseal dysplasia, Megarbane type",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0013223"
+        },
+        {
+          "line": 6366,
+          "text": "5644\tPRSS1\t\tC0238339\tHereditary pancreatitis\tNCBI curation\t\t167800\tFeb 16 2016",
+          "mim": "167800",
+          "associations": [
+            {
+              "gene": "PRSS1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Hereditary pancreatitis",
+          "upstream": "NCBI curation",
+          "source_id": ""
+        },
+        {
+          "line": 6368,
+          "text": "5645\tPRSS2\t\tC0238339\tHereditary pancreatitis\tNCBI curation\t\t167800\tFeb 16 2016",
+          "mim": "167800",
+          "associations": [
+            {
+              "gene": "PRSS2",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Hereditary pancreatitis",
+          "upstream": "NCBI curation",
+          "source_id": ""
+        },
+        {
+          "line": 6481,
+          "text": "5860\tQDPR\t\tC0268465\tDihydropteridine reductase deficiency\tMONDO\tMONDO:0009862\t261630\tFeb 16 2016",
+          "mim": "261630",
+          "associations": [
+            {
+              "gene": "QDPR",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Dihydropteridine reductase deficiency",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0009862"
+        },
+        {
+          "line": 6906,
+          "text": "6323\tSCN1A\t\tC1858673\tGeneralized epilepsy with febrile seizures plus, type 2\tMONDO\tMONDO:0011461\t604403\tFeb 16 2016",
+          "mim": "604403",
+          "associations": [
+            {
+              "gene": "SCN1A",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Generalized epilepsy with febrile seizures plus, type 2",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0011461"
+        },
+        {
+          "line": 6907,
+          "text": "6323\tSCN1A\t\tC0751122\tSevere myoclonic epilepsy in infancy\tNCBI curation\t\t607208\tFeb 16 2016",
+          "mim": "607208",
+          "associations": [
+            {
+              "gene": "SCN1A",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Severe myoclonic epilepsy in infancy",
+          "upstream": "NCBI curation",
+          "source_id": ""
+        },
+        {
+          "line": 6908,
+          "text": "6323\tSCN1A\t\tC5543353\tDevelopmental and epileptic encephalopathy 6B\tMONDO\tMONDO:0030268\t619317\tNov  3 2021",
+          "mim": "619317",
+          "associations": [
+            {
+              "gene": "SCN1A",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Developmental and epileptic encephalopathy 6B",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0030268"
+        },
+        {
+          "line": 7441,
+          "text": "6606\tSMN1\t\tC0152109\tKugelberg-Welander disease\t\t\t253400\tFeb 16 2016",
+          "mim": "253400",
+          "associations": [
+            {
+              "gene": "SMN1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Kugelberg-Welander disease",
+          "upstream": "",
+          "source_id": ""
+        },
+        {
+          "line": 7442,
+          "text": "6606\tSMN1\t\tC5848259\tWerdnig-Hoffmann disease\t\t\t253300\tFeb 16 2016",
+          "mim": "253300",
+          "associations": [
+            {
+              "gene": "SMN1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Werdnig-Hoffmann disease",
+          "upstream": "",
+          "source_id": ""
+        },
+        {
+          "line": 7443,
+          "text": "6606\tSMN1\t\tC0393538\tSpinal muscular atrophy, type II\tMONDO\tMONDO:0009673\t253550\tFeb 16 2016",
+          "mim": "253550",
+          "associations": [
+            {
+              "gene": "SMN1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Spinal muscular atrophy, type II",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0009673"
+        },
+        {
+          "line": 7444,
+          "text": "6607\tSMN2\t\tC0152109\tKugelberg-Welander disease\t\t\t253400\tFeb 16 2016",
+          "mim": "253400",
+          "associations": [
+            {
+              "gene": "SMN2",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Kugelberg-Welander disease",
+          "upstream": "",
+          "source_id": ""
+        },
+        {
+          "line": 7549,
+          "text": "6690\tSPINK1\t\tC0238339\tHereditary pancreatitis\tNCBI curation\t\t167800\tFeb 16 2016",
+          "mim": "167800",
+          "associations": [
+            {
+              "gene": "SPINK1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Hereditary pancreatitis",
+          "upstream": "NCBI curation",
+          "source_id": ""
+        },
+        {
+          "line": 7719,
+          "text": "23345\tSYNE1\t\tC2751807\tEmery-Dreifuss muscular dystrophy 4, autosomal dominant\tMONDO\tMONDO:0013071\t612998\tFeb 16 2016",
+          "mim": "612998",
+          "associations": [
+            {
+              "gene": "SYNE1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Emery-Dreifuss muscular dystrophy 4, autosomal dominant",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0013071"
+        },
+        {
+          "line": 7721,
+          "text": "23224\tSYNE2\t\tC2751805\tEmery-Dreifuss muscular dystrophy 5, autosomal dominant\tMONDO\tMONDO:0013072\t612999\tFeb 16 2016",
+          "mim": "612999",
+          "associations": [
+            {
+              "gene": "SYNE2",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Emery-Dreifuss muscular dystrophy 5, autosomal dominant",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0013072"
+        },
+        {
+          "line": 7913,
+          "text": "7040\tTGFB1\t\tC0010674\tCystic fibrosis\tMONDO\tMONDO:0009061\t219700\tJul  6 2018",
+          "mim": "219700",
+          "associations": [
+            {
+              "gene": "TGFB1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Cystic fibrosis",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0009061"
+        },
+        {
+          "line": 8050,
+          "text": "79188\tTMEM43\t\tC3553060\tEmery-Dreifuss muscular dystrophy 7, autosomal dominant\tMONDO\tMONDO:0013677\t614302\tFeb 16 2016",
+          "mim": "614302",
+          "associations": [
+            {
+              "gene": "TMEM43",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Emery-Dreifuss muscular dystrophy 7, autosomal dominant",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0013677"
+        },
+        {
+          "line": 8153,
+          "text": "7157\tTP53\t\tC1835398\tLi-Fraumeni syndrome 1\tNCBI curation\t\t151623\tSep 14 2023",
+          "mim": "151623",
+          "associations": [
+            {
+              "gene": "TP53",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Li-Fraumeni syndrome 1",
+          "upstream": "NCBI curation",
+          "source_id": ""
+        },
+        {
+          "line": 8248,
+          "text": "9319\tTRIP13\t\tC4539839\tMosaic variegated aneuploidy syndrome 3\tMONDO\tMONDO:0054736\t617598\tAug 16 2017",
+          "mim": "617598",
+          "associations": [
+            {
+              "gene": "TRIP13",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Mosaic variegated aneuploidy syndrome 3",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0054736"
+        },
+        {
+          "line": 8298,
+          "text": "7249\tTSC2\t\tC1860707\tTuberous sclerosis 2\tMONDO\tMONDO:0013199\t613254\tFeb 16 2016",
+          "mim": "613254",
+          "associations": [
+            {
+              "gene": "TSC2",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Tuberous sclerosis 2",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0013199"
+        },
+        {
+          "line": 8679,
+          "text": "7490\tWT1\t\tCN033288\tWilms tumor 1\tMONDO\tMONDO:0008679\t194070\tFeb 16 2016",
+          "mim": "194070",
+          "associations": [
+            {
+              "gene": "WT1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Wilms tumor 1",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0008679"
+        },
+        {
+          "line": 12260,
+          "text": "5860\t\tQDPR\tC0031485\tPhenylketonuria\tMONDO\tMONDO:0009861\t261600\t16 Feb 2016",
+          "mim": "261600",
+          "associations": [
+            {
+              "gene": "QDPR",
+              "field": "RelatedGenes",
+              "role": "RelatedGenes"
+            }
+          ],
+          "source_disease_name": "Phenylketonuria",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0009861"
+        }
+      ],
+      "context_records": [
+        {
+          "line": 660,
+          "text": "540\tATP7B\t\tC0019202\tWilson disease\tMONDO\tMONDO:0010200\t277900\tNov  5 2016",
+          "mim": "277900",
+          "associations": [
+            {
+              "gene": "ATP7B",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Wilson disease",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0010200"
+        },
+        {
+          "line": 3048,
+          "text": "2629\tGBA1\t\tC0268251\tGaucher disease type III\tMONDO\tMONDO:0009267\t231000\tApr 23 2021",
+          "mim": "231000",
+          "associations": [
+            {
+              "gene": "GBA1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Gaucher disease type III",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0009267"
+        },
+        {
+          "line": 3051,
+          "text": "2629\tGBA1\t\tC0268250\tGaucher disease type II\tMONDO\tMONDO:0009266\t230900\tApr 15 2021",
+          "mim": "230900",
+          "associations": [
+            {
+              "gene": "GBA1",
+              "field": "AssociatedGenes",
+              "role": "AssociatedGenes"
+            }
+          ],
+          "source_disease_name": "Gaucher disease type II",
+          "upstream": "MONDO",
+          "source_id": "MONDO:0009266"
+        }
+      ]
+    },
+    "genes_to_disease.txt": {
+      "header": "ncbi_gene_id\tgene_symbol\tassociation_type\tdisease_id\tsource",
+      "records": [
+        {
+          "line": 95,
+          "text": "NCBIGene:1756\tDMD\tMENDELIAN\tOMIM:302045\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "302045",
+          "associations": [
+            {
+              "gene": "DMD",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 281,
+          "text": "NCBIGene:5644\tPRSS1\tMENDELIAN\tOMIM:167800\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "167800",
+          "associations": [
+            {
+              "gene": "PRSS1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 282,
+          "text": "NCBIGene:6690\tSPINK1\tMENDELIAN\tOMIM:167800\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "167800",
+          "associations": [
+            {
+              "gene": "SPINK1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 283,
+          "text": "NCBIGene:5645\tPRSS2\tPOLYGENIC\tOMIM:167800\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "167800",
+          "associations": [
+            {
+              "gene": "PRSS2",
+              "field": "gene_symbol",
+              "role": "POLYGENIC"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 284,
+          "text": "NCBIGene:1080\tCFTR\tPOLYGENIC\tOMIM:167800\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "167800",
+          "associations": [
+            {
+              "gene": "CFTR",
+              "field": "gene_symbol",
+              "role": "POLYGENIC"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 285,
+          "text": "NCBIGene:11330\tCTRC\tPOLYGENIC\tOMIM:167800\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "167800",
+          "associations": [
+            {
+              "gene": "CTRC",
+              "field": "gene_symbol",
+              "role": "POLYGENIC"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 366,
+          "text": "NCBIGene:4000\tLMNA\tMENDELIAN\tOMIM:616516\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "616516",
+          "associations": [
+            {
+              "gene": "LMNA",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 415,
+          "text": "NCBIGene:672\tBRCA1\tMENDELIAN\tOMIM:617883\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "617883",
+          "associations": [
+            {
+              "gene": "BRCA1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 496,
+          "text": "NCBIGene:6323\tSCN1A\tMENDELIAN\tOMIM:604403\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "604403",
+          "associations": [
+            {
+              "gene": "SCN1A",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 532,
+          "text": "NCBIGene:675\tBRCA2\tMENDELIAN\tOMIM:605724\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "605724",
+          "associations": [
+            {
+              "gene": "BRCA2",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 644,
+          "text": "NCBIGene:23224\tSYNE2\tMENDELIAN\tOMIM:612999\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "612999",
+          "associations": [
+            {
+              "gene": "SYNE2",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 647,
+          "text": "NCBIGene:23345\tSYNE1\tMENDELIAN\tOMIM:612998\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "612998",
+          "associations": [
+            {
+              "gene": "SYNE1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 765,
+          "text": "NCBIGene:2548\tGAA\tMENDELIAN\tOMIM:232300\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "232300",
+          "associations": [
+            {
+              "gene": "GAA",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 872,
+          "text": "NCBIGene:1080\tCFTR\tMENDELIAN\tOMIM:219700\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "219700",
+          "associations": [
+            {
+              "gene": "CFTR",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 873,
+          "text": "NCBIGene:2212\tFCGR2A\tPOLYGENIC\tOMIM:219700\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "219700",
+          "associations": [
+            {
+              "gene": "FCGR2A",
+              "field": "gene_symbol",
+              "role": "POLYGENIC"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 874,
+          "text": "NCBIGene:7040\tTGFB1\tPOLYGENIC\tOMIM:219700\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "219700",
+          "associations": [
+            {
+              "gene": "TGFB1",
+              "field": "gene_symbol",
+              "role": "POLYGENIC"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 1006,
+          "text": "NCBIGene:2010\tEMD\tMENDELIAN\tOMIM:310300\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "310300",
+          "associations": [
+            {
+              "gene": "EMD",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 1231,
+          "text": "NCBIGene:672\tBRCA1\tPOLYGENIC\tOMIM:604370\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "604370",
+          "associations": [
+            {
+              "gene": "BRCA1",
+              "field": "gene_symbol",
+              "role": "POLYGENIC"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 1416,
+          "text": "NCBIGene:9319\tTRIP13\tMENDELIAN\tOMIM:617598\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "617598",
+          "associations": [
+            {
+              "gene": "TRIP13",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 1459,
+          "text": "NCBIGene:34\tACADM\tMENDELIAN\tOMIM:201450\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "201450",
+          "associations": [
+            {
+              "gene": "ACADM",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 2098,
+          "text": "NCBIGene:6323\tSCN1A\tMENDELIAN\tOMIM:607208\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "607208",
+          "associations": [
+            {
+              "gene": "SCN1A",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 2105,
+          "text": "NCBIGene:79188\tTMEM43\tMENDELIAN\tOMIM:614302\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "614302",
+          "associations": [
+            {
+              "gene": "TMEM43",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 2524,
+          "text": "NCBIGene:3481\tIGF2\tMENDELIAN\tOMIM:194070\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "194070",
+          "associations": [
+            {
+              "gene": "IGF2",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 2525,
+          "text": "NCBIGene:2239\tGPC4\tMENDELIAN\tOMIM:194070\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "194070",
+          "associations": [
+            {
+              "gene": "GPC4",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 2526,
+          "text": "NCBIGene:7490\tWT1\tMENDELIAN\tOMIM:194070\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "194070",
+          "associations": [
+            {
+              "gene": "WT1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 2527,
+          "text": "NCBIGene:2719\tGPC3\tMENDELIAN\tOMIM:194070\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "194070",
+          "associations": [
+            {
+              "gene": "GPC3",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 2528,
+          "text": "NCBIGene:283120\tH19\tMENDELIAN\tOMIM:194070\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "194070",
+          "associations": [
+            {
+              "gene": "H19",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 2529,
+          "text": "NCBIGene:675\tBRCA2\tMENDELIAN\tOMIM:194070\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "194070",
+          "associations": [
+            {
+              "gene": "BRCA2",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 2852,
+          "text": "NCBIGene:5053\tPAH\tMENDELIAN\tOMIM:261600\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "261600",
+          "associations": [
+            {
+              "gene": "PAH",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 2925,
+          "text": "NCBIGene:5860\tQDPR\tMENDELIAN\tOMIM:261630\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "261630",
+          "associations": [
+            {
+              "gene": "QDPR",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 3138,
+          "text": "NCBIGene:9702\tCEP57\tMENDELIAN\tOMIM:614114\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "614114",
+          "associations": [
+            {
+              "gene": "CEP57",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 3677,
+          "text": "NCBIGene:6606\tSMN1\tMENDELIAN\tOMIM:253400\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "253400",
+          "associations": [
+            {
+              "gene": "SMN1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 3678,
+          "text": "NCBIGene:6607\tSMN2\tPOLYGENIC\tOMIM:253400\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "253400",
+          "associations": [
+            {
+              "gene": "SMN2",
+              "field": "gene_symbol",
+              "role": "POLYGENIC"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 4081,
+          "text": "NCBIGene:6606\tSMN1\tMENDELIAN\tOMIM:253300\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "253300",
+          "associations": [
+            {
+              "gene": "SMN1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 4124,
+          "text": "NCBIGene:1756\tDMD\tMENDELIAN\tOMIM:300376\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "300376",
+          "associations": [
+            {
+              "gene": "DMD",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 4507,
+          "text": "NCBIGene:51025\tPAM16\tMENDELIAN\tOMIM:613320\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "613320",
+          "associations": [
+            {
+              "gene": "PAM16",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 4899,
+          "text": "NCBIGene:3043\tHBB\tMENDELIAN\tOMIM:603903\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "603903",
+          "associations": [
+            {
+              "gene": "HBB",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 5022,
+          "text": "NCBIGene:6606\tSMN1\tMENDELIAN\tOMIM:253550\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "253550",
+          "associations": [
+            {
+              "gene": "SMN1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 5066,
+          "text": "NCBIGene:7249\tTSC2\tMENDELIAN\tOMIM:613254\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "613254",
+          "associations": [
+            {
+              "gene": "TSC2",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 5067,
+          "text": "NCBIGene:3458\tIFNG\tPOLYGENIC\tOMIM:613254\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "613254",
+          "associations": [
+            {
+              "gene": "IFNG",
+              "field": "gene_symbol",
+              "role": "POLYGENIC"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 5084,
+          "text": "NCBIGene:7157\tTP53\tMENDELIAN\tOMIM:151623\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "151623",
+          "associations": [
+            {
+              "gene": "TP53",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 5132,
+          "text": "NCBIGene:4000\tLMNA\tMENDELIAN\tOMIM:181350\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "181350",
+          "associations": [
+            {
+              "gene": "LMNA",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 5225,
+          "text": "NCBIGene:6323\tSCN1A\tMENDELIAN\tOMIM:619317\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "619317",
+          "associations": [
+            {
+              "gene": "SCN1A",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 5555,
+          "text": "NCBIGene:4763\tNF1\tMENDELIAN\tOMIM:162200\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "162200",
+          "associations": [
+            {
+              "gene": "NF1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 5940,
+          "text": "NCBIGene:675\tBRCA2\tPOLYGENIC\tOMIM:612555\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "612555",
+          "associations": [
+            {
+              "gene": "BRCA2",
+              "field": "gene_symbol",
+              "role": "POLYGENIC"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 5976,
+          "text": "NCBIGene:701\tBUB1B\tMENDELIAN\tOMIM:257300\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "257300",
+          "associations": [
+            {
+              "gene": "BUB1B",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 6273,
+          "text": "NCBIGene:1756\tDMD\tMENDELIAN\tOMIM:310200\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "310200",
+          "associations": [
+            {
+              "gene": "DMD",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 7365,
+          "text": "NCBIGene:2332\tFMR1\tMENDELIAN\tOMIM:300624\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "300624",
+          "associations": [
+            {
+              "gene": "FMR1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 7488,
+          "text": "NCBIGene:2273\tFHL1\tMENDELIAN\tOMIM:300696\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "300696",
+          "associations": [
+            {
+              "gene": "FHL1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        }
+      ],
+      "context_records": [
+        {
+          "line": 690,
+          "text": "NCBIGene:2629\tGBA1\tMENDELIAN\tOMIM:231000\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "231000",
+          "associations": [
+            {
+              "gene": "GBA1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 4847,
+          "text": "NCBIGene:2629\tGBA1\tMENDELIAN\tOMIM:230900\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "230900",
+          "associations": [
+            {
+              "gene": "GBA1",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        },
+        {
+          "line": 7211,
+          "text": "NCBIGene:540\tATP7B\tMENDELIAN\tOMIM:277900\tftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen",
+          "mim": "277900",
+          "associations": [
+            {
+              "gene": "ATP7B",
+              "field": "gene_symbol",
+              "role": "MENDELIAN"
+            }
+          ],
+          "upstream": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen"
+        }
+      ]
+    },
+    "mim2gene.txt": {
+      "header": "# Copyright (c) 1966-2026 Johns Hopkins University. Use of this file adheres to the terms specified at https://omim.org/help/agreement",
+      "records": [
+        {
+          "line": 540,
+          "text": "113705\tgene\t672\tBRCA1\tENSG00000012048",
+          "mim": "113705",
+          "associations": [
+            {
+              "gene": "BRCA1",
+              "field": "Approved Gene Symbol (HGNC)",
+              "role": "gene-identifier-only"
+            }
+          ],
+          "entry_type": "gene",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 1819,
+          "text": "141800\tgene\t3039\tHBA1\tENSG00000206172",
+          "mim": "141800",
+          "associations": [
+            {
+              "gene": "HBA1",
+              "field": "Approved Gene Symbol (HGNC)",
+              "role": "gene-identifier-only"
+            }
+          ],
+          "entry_type": "gene",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 1822,
+          "text": "141900\tgene\t3043\tHBB\tENSG00000244734",
+          "mim": "141900",
+          "associations": [
+            {
+              "gene": "HBB",
+              "field": "Approved Gene Symbol (HGNC)",
+              "role": "gene-identifier-only"
+            }
+          ],
+          "entry_type": "gene",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 2399,
+          "text": "151623\tphenotype\t\t\t",
+          "mim": "151623",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 2822,
+          "text": "162200\tphenotype\t\t\t",
+          "mim": "162200",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 3115,
+          "text": "167800\tphenotype\t\t\t",
+          "mim": "167800",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 3777,
+          "text": "181350\tphenotype\t\t\t",
+          "mim": "181350",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 4462,
+          "text": "194070\tphenotype\t\t\t",
+          "mim": "194070",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 4569,
+          "text": "201450\tphenotype\t\t\t",
+          "mim": "201450",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 4951,
+          "text": "219700\tphenotype\t\t\t",
+          "mim": "219700",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 5224,
+          "text": "232300\tphenotype\t\t\t",
+          "mim": "232300",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 5653,
+          "text": "253300\tphenotype\t\t\t",
+          "mim": "253300",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 5656,
+          "text": "253400\tphenotype\t\t\t",
+          "mim": "253400",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 5658,
+          "text": "253550\tphenotype\t\t\t",
+          "mim": "253550",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 5752,
+          "text": "257300\tphenotype\t\t\t",
+          "mim": "257300",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 5862,
+          "text": "261600\tphenotype\t\t\t",
+          "mim": "261600",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 5863,
+          "text": "261630\tphenotype\t\t\t",
+          "mim": "261630",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 6647,
+          "text": "300376\tphenotype\t\t\t",
+          "mim": "300376",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 6895,
+          "text": "300624\tphenotype\t\t\t",
+          "mim": "300624",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 6967,
+          "text": "300696\tphenotype\t\t\t",
+          "mim": "300696",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 7471,
+          "text": "302045\tphenotype\t\t\t",
+          "mim": "302045",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 7677,
+          "text": "310200\tphenotype\t\t\t",
+          "mim": "310200",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 7678,
+          "text": "310300\tphenotype\t\t\t",
+          "mim": "310300",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 8174,
+          "text": "600185\tgene\t675\tBRCA2\tENSG00000139618",
+          "mim": "600185",
+          "associations": [
+            {
+              "gene": "BRCA2",
+              "field": "Approved Gene Symbol (HGNC)",
+              "role": "gene-identifier-only"
+            }
+          ],
+          "entry_type": "gene",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 11892,
+          "text": "603903\tphenotype\t\t\t",
+          "mim": "603903",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 12359,
+          "text": "604370\tphenotype\t\t\t",
+          "mim": "604370",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 12362,
+          "text": "604373\tgene\t11200\tCHEK2\tENSG00000183765",
+          "mim": "604373",
+          "associations": [
+            {
+              "gene": "CHEK2",
+              "field": "Approved Gene Symbol (HGNC)",
+              "role": "gene-identifier-only"
+            }
+          ],
+          "entry_type": "gene",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 12392,
+          "text": "604403\tphenotype\t\t\t",
+          "mim": "604403",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 13713,
+          "text": "605724\tphenotype\t\t\t",
+          "mim": "605724",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 15197,
+          "text": "607208\tphenotype\t\t\t",
+          "mim": "607208",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 18344,
+          "text": "610355\tgene\t79728\tPALB2\tENSG00000083093",
+          "mim": "610355",
+          "associations": [
+            {
+              "gene": "PALB2",
+              "field": "Approved Gene Symbol (HGNC)",
+              "role": "gene-identifier-only"
+            }
+          ],
+          "entry_type": "gene",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 20544,
+          "text": "612555\tphenotype\t\t\t",
+          "mim": "612555",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 20987,
+          "text": "612998\tphenotype\t\t\t",
+          "mim": "612998",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 20988,
+          "text": "612999\tphenotype\t\t\t",
+          "mim": "612999",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 21243,
+          "text": "613254\tphenotype\t\t\t",
+          "mim": "613254",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 21309,
+          "text": "613320\tphenotype\t\t\t",
+          "mim": "613320",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 22103,
+          "text": "614114\tphenotype\t\t\t",
+          "mim": "614114",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 22291,
+          "text": "614302\tphenotype\t\t\t",
+          "mim": "614302",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 24505,
+          "text": "616516\tphenotype\t\t\t",
+          "mim": "616516",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 25587,
+          "text": "617598\tphenotype\t\t\t",
+          "mim": "617598",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 25872,
+          "text": "617883\tphenotype\t\t\t",
+          "mim": "617883",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 27305,
+          "text": "619317\tphenotype\t\t\t",
+          "mim": "619317",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        }
+      ],
+      "context_records": [
+        {
+          "line": 5192,
+          "text": "230900\tphenotype\t\t\t",
+          "mim": "230900",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 5193,
+          "text": "231000\tphenotype\t\t\t",
+          "mim": "231000",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 6245,
+          "text": "277900\tphenotype\t\t\t",
+          "mim": "277900",
+          "associations": [],
+          "entry_type": "phenotype",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 14452,
+          "text": "606463\tgene\t2629\tGBA1\tENSG00000177628",
+          "mim": "606463",
+          "associations": [
+            {
+              "gene": "GBA1",
+              "field": "Approved Gene Symbol (HGNC)",
+              "role": "gene-identifier-only"
+            }
+          ],
+          "entry_type": "gene",
+          "not_a_phenotype_mapping": true
+        },
+        {
+          "line": 14871,
+          "text": "606882\tgene\t540\tATP7B\tENSG00000123191",
+          "mim": "606882",
+          "associations": [
+            {
+              "gene": "ATP7B",
+              "field": "Approved Gene Symbol (HGNC)",
+              "role": "gene-identifier-only"
+            }
+          ],
+          "entry_type": "gene",
+          "not_a_phenotype_mapping": true
+        }
+      ]
+    }
+  }
+}

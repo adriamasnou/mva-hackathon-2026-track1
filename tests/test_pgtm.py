@@ -12,7 +12,7 @@ class PgtmTests(unittest.TestCase):
    finally:b.SRC=old
  def test_null_gene_is_not_indexed(self):
   with tempfile.TemporaryDirectory() as td:
-   Path(td,'genes_to_disease.txt').write_text('disease_id\tgene_symbol\nOMIM:257300\t-\nOMIM:257300\tBUB1B\n')
+   Path(td,'genes_to_disease.txt').write_text('disease_id\tgene_symbol\tassociation_type\nOMIM:257300\t-\tMENDELIAN\nOMIM:257300\tBUB1B\tMENDELIAN\n')
    old=b.SRC;b.SRC=Path(td)
    try:self.assertEqual(b.read_hpo()['257300'],{'BUB1B'})
    finally:b.SRC=old

@@ -22,9 +22,18 @@ const context = vm.createContext({window:{},document:{
 }});
 vm.runInContext(executable[0][2],context,{timeout:5000});
 function texts(el) { return [String(el.textContent),...el.children.flatMap(texts)]; }
+function visibleTexts(el) { return el.tag === 'details' ? [] : [String(el.textContent),...el.children.flatMap(visibleTexts)]; }
+function visibleGeneGroups(el) {
+  if (el.tag === 'details') return [];
+  if (el.className === 'gene-group') return [{
+    gene: String(el.children.find(child => child.tag === 'h3')?.textContent || ''),
+    labels: el.children.filter(child => child.className === 'gene-roles').flatMap(list => list.children.map(item => String(item.textContent)))
+  }];
+  return el.children.flatMap(visibleGeneGroups);
+}
 const results = queries.map(query => {
   context.queryForAudit = query;
   const rows = vm.runInContext('window.pgtmSearch(queryForAudit)',context,{timeout:5000});
-  return {query,rows,status:ids.status.textContent,cards:ids.results.children.map(texts)};
+  return {query,rows,status:ids.status.textContent,cards:ids.results.children.map(texts),visibleCards:ids.results.children.map(visibleTexts),geneGroups:ids.results.children.map(visibleGeneGroups)};
 });
 process.stdout.write(JSON.stringify(results));

@@ -105,7 +105,18 @@ def checked_tsv(path, required):
             yield row
 
 
-def read_clinvar():
+def add_evidence(mapping, mim, gene, record):
+    """Keep distinct source roles/fields, deduplicating only identical evidence."""
+    records = mapping.setdefault(mim, {}).setdefault(gene, [])
+    if record not in records:
+        records.append(record)
+
+
+def gene_sets(mapping):
+    return {mim: set(genes) for mim, genes in mapping.items()}
+
+
+def read_clinvar_evidence():
     m = {}
     for r in checked_tsv(SRC / "gene_condition_source_id",
                          {"DiseaseMIM", "AssociatedGenes", "RelatedGenes"}):
@@ -116,21 +127,23 @@ def read_clinvar():
                 for sym in re.split(r"[;,|]", r[field]):
                     sym = sym.strip()
                     if sym and sym != "-":
-                        m.setdefault(mim, set()).add(sym)
+                        add_evidence(m, mim, sym, dict(source="ClinVar", omim=mim,
+                                     source_field=field, association_type=None))
     return m
 
 
-def read_hpo():
+def read_hpo_evidence():
     m = {}
-    for r in checked_tsv(SRC / "genes_to_disease.txt", {"disease_id", "gene_symbol"}):
+    for r in checked_tsv(SRC / "genes_to_disease.txt", {"disease_id", "gene_symbol", "association_type"}):
         did, sym = r["disease_id"].strip(), r["gene_symbol"].strip()
         # HPO's '-' sentinel is not a gene, even though it is truthy in Python.
         if did.startswith("OMIM:") and sym and sym != "-":
-            m.setdefault(did[5:], set()).add(sym)
+            add_evidence(m, did[5:], sym, dict(source="HPO", omim=did[5:],
+                         source_field="gene_symbol", association_type=r["association_type"]))
     return m
 
 
-def read_mim2gene():
+def read_mim2gene_evidence():
     """GENE-MIM index only. Used to catch HFEA rows citing a gene MIM, never as phenotype->gene."""
     m = {}
     with open(SRC / "mim2gene.txt", encoding="utf8", errors="replace") as f:
@@ -139,8 +152,23 @@ def read_mim2gene():
                 continue
             p = line.rstrip("\n").split("\t")
             if len(p) >= 4 and p[1].strip() == "gene" and p[3].strip():
-                m[p[0].strip()] = {p[3].strip()}
+                mim = p[0].strip()
+                add_evidence(m, mim, p[3].strip(), dict(source="OMIM-geneMIM", omim=mim,
+                             source_field="Approved Gene Symbol (HGNC)", entry_type=p[1].strip(),
+                             association_type=None))
     return m
+
+
+def read_clinvar():
+    return gene_sets(read_clinvar_evidence())
+
+
+def read_hpo():
+    return gene_sets(read_hpo_evidence())
+
+
+def read_mim2gene():
+    return gene_sets(read_mim2gene_evidence())
 
 
 def main():
@@ -160,10 +188,10 @@ def main():
     if missing:
         ap.error('Missing inputs: '+', '.join(missing))
     rows = read_hfea()
-    cv, hp, gm = read_clinvar(), read_hpo(), read_mim2gene()
+    cv, hp, gm = read_clinvar_evidence(), read_hpo_evidence(), read_mim2gene_evidence()
     if not rows or any(not m for m in (cv,hp,gm)):
         ap.error('An input parsed to zero records; refusing to publish')
-    if 'BUB1B' not in (cv.get('257300',set()) | hp.get('257300',set())):
+    if 'BUB1B' not in (set(cv.get('257300',{})) | set(hp.get('257300',{}))):
         ap.error('BUB1B / OMIM 257300 positive control failed')
     out = []
     for row in rows:
@@ -172,9 +200,11 @@ def main():
         for name, mapping in [('ClinVar',cv),('HPO',hp),('OMIM-geneMIM',gm)]:
             genes = set()
             for mim in row['mims']:
-                genes |= mapping.get(mim,set())
-                for gene in mapping.get(mim,set()):
-                    evidence.setdefault(gene,[]).append({'source':name,'omim':mim})
+                genes.update(mapping.get(mim,{}))
+                for gene, records in mapping.get(mim,{}).items():
+                    for record in records:
+                        if record not in evidence.setdefault(gene,[]):
+                            evidence[gene].append(record)
             sets.append(genes)
         a,b,c = sets
         genes = sorted(a|b|c)
@@ -192,7 +222,7 @@ def main():
                  unmapped_rows=sum(not r['n_genes'] for r in out), genes=len(index),
                  source_disagreements=sum(r['clinvar_hpo']=='differ' for r in out),
                  genes_not_named_in_condition_text=sum(not any(re.search(r'\b'+re.escape(g)+r'\b',c,re.I) for c in cs) for g,cs in index.items()))
-    provenance = dict(schema_version=1, register_snapshot=args.snapshot_date,
+    provenance = dict(schema_version=2, register_snapshot=args.snapshot_date,
         generated_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
         register_url='https://www.hfea.gov.uk/pgt-m-conditions/',
         warning='Candidate mappings from dated public sources. Not variant classification, eligibility or funding advice. No result is not evidence of ineligibility. Confirm with the regulator and clinic.',

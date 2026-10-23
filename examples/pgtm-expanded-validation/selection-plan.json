@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "frozen_before_selected_tool_queries": true,
+  "selection": "Purposive stratified expansion; same developer aware of old eleven-task evaluation and current implementation. Not random, blinded, independent human validation or externally preregistered. No selected navigator queries executed for this expansion before this freeze.",
+  "scope": "All source associations on all rows returned for selected queries; source-faithful retrieval and displayed ambiguity, not clinical accuracy, eligibility or outcomes.",
+  "queries": [
+    {
+      "id": "E01",
+      "query": "BUB1B",
+      "kind": "gene",
+      "stratum": "MVA pathway"
+    },
+    {
+      "id": "E02",
+      "query": "CEP57",
+      "kind": "gene",
+      "stratum": "MVA pathway"
+    },
+    {
+      "id": "E03",
+      "query": "TRIP13",
+      "kind": "gene",
+      "stratum": "MVA pathway"
+    },
+    {
+      "id": "E04",
+      "query": "CFTR",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity"
+    },
+    {
+      "id": "E05",
+      "query": "DMD",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity"
+    },
+    {
+      "id": "E06",
+      "query": "FMR1",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity"
+    },
+    {
+      "id": "E07",
+      "query": "HBB",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity"
+    },
+    {
+      "id": "E08",
+      "query": "HBA1",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity"
+    },
+    {
+      "id": "E09",
+      "query": "SMN1",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity"
+    },
+    {
+      "id": "E10",
+      "query": "BRCA1",
+      "kind": "gene",
+      "stratum": "cancer predisposition / gene-identifier / multiple identifiers"
+    },
+    {
+      "id": "E11",
+      "query": "BRCA2",
+      "kind": "gene",
+      "stratum": "cancer predisposition / gene-identifier / multiple identifiers"
+    },
+    {
+      "id": "E12",
+      "query": "CHEK2",
+      "kind": "gene",
+      "stratum": "cancer predisposition / gene-identifier / multiple identifiers"
+    },
+    {
+      "id": "E13",
+      "query": "TP53",
+      "kind": "gene",
+      "stratum": "cancer predisposition / gene-identifier / multiple identifiers"
+    },
+    {
+      "id": "E14",
+      "query": "PAH",
+      "kind": "gene",
+      "stratum": "metabolic / symbol ambiguity"
+    },
+    {
+      "id": "E15",
+      "query": "GAA",
+      "kind": "gene",
+      "stratum": "metabolic / symbol ambiguity"
+    },
+    {
+      "id": "E16",
+      "query": "GBA",
+      "kind": "gene",
+      "stratum": "metabolic / symbol ambiguity"
+    },
+    {
+      "id": "E17",
+      "query": "ATP7B",
+      "kind": "gene",
+      "stratum": "metabolic / symbol ambiguity"
+    },
+    {
+      "id": "E18",
+      "query": "NF1",
+      "kind": "gene",
+      "stratum": "pleiotropic neurodevelopmental"
+    },
+    {
+      "id": "E19",
+      "query": "TSC2",
+      "kind": "gene",
+      "stratum": "pleiotropic neurodevelopmental"
+    },
+    {
+      "id": "E20",
+      "query": "SCN1A",
+      "kind": "gene",
+      "stratum": "pleiotropic neurodevelopmental"
+    },
+    {
+      "id": "E21",
+      "query": "TGFB1",
+      "kind": "gene",
+      "stratum": "source-role ambiguity"
+    },
+    {
+      "id": "E22",
+      "query": "QDPR",
+      "kind": "gene",
+      "stratum": "source-role ambiguity"
+    },
+    {
+      "id": "E23",
+      "query": "BUBR1",
+      "kind": "alias",
+      "stratum": "edge cases",
+      "reason": "Explicit supported alias; no general alias inference"
+    },
+    {
+      "id": "E24",
+      "query": "CHIME",
+      "kind": "malformed",
+      "stratum": "edge cases",
+      "reason": "Malformed identifier preserved; no silent correction"
+    },
+    {
+      "id": "E25",
+      "query": "SIX2",
+      "kind": "unresolved",
+      "stratum": "edge cases",
+      "reason": "Missing identifier and condition-name fallback"
+    },
+    {
+      "id": "E26",
+      "query": "28000",
+      "kind": "malformed-number",
+      "stratum": "edge cases",
+      "reason": "Malformed source identifier must not become a valid disease mapping"
+    },
+    {
+      "id": "E27",
+      "query": "  cftr  ",
+      "kind": "normalization",
+      "stratum": "edge cases",
+      "reason": "Whitespace and case handling against CFTR"
+    },
+    {
+      "id": "E28",
+      "query": "__EXPANDED_NO_SUCH_GENE_20261023__",
+      "kind": "no-match",
+      "stratum": "edge cases",
+      "reason": "Synthetic unmatched token; no inference of ineligibility"
+    }
+  ],
+  "adjudication_plan": [
+    "Read retained original workbook cells and all mapping lines for every identifier in every selected row, including genes other than the queried gene. Do not use builder output to specify source associations.",
+    "Freeze explicit expected row IDs, complete candidate gene sets, source fields/association roles and warning expectations before executing actual shipped JavaScript.",
+    "If unexpected rows occur, source-adjudicate them before reporting completion and retain them as post-query reviews; never silently expand pre-query expected answers.",
+    "Record omitted or added source associations, source disagreement, multi-candidate ambiguity, qualifier loss and any unsupported approval/causality promotion separately.",
+    "Treat source association union as shared-source conformance only. Independent clinical truth unavailable unless separately adjudicated; no accuracy benchmark, user outcomes or time savings."
+  ],
+  "caps": {
+    "queries": 28,
+    "source_review": "Do not expand query set; review every selected association thoroughly. If coverage cannot be complete report partial and unreviewed counts explicitly."
+  },
+  "constraints": [
+    "Do not modify old eleven-task record or builders, shared reports, gates or WORKLOG.",
+    "No full-source redistribution; retain selected raw evidence/locators subject to source-specific terms, with source hashes.",
+    "No public hosting, external messages, patient data, commits or pushes."
+  ]
+}

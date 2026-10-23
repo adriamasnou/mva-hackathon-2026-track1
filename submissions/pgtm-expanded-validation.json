@@ -1,0 +1,4668 @@
+{
+  "schema_version": 2,
+  "claim_scope": "Same-developer, shared-source retrieval and ambiguity audit. Not independent clinical accuracy, eligibility, user outcomes or time savings.",
+  "selection_freeze": {
+    "artifact": "selection-plan.json",
+    "sha256": "ab1f176f972121b15e4d14459ce33f6ca094651acd5854910a818b0738531395",
+    "frozen_at_utc": "2026-10-23T21:41:07.095688+00:00",
+    "queries": 28,
+    "gene_queries": 22,
+    "limit": "Local hash/timestamp, not trusted external preregistration. Selection is purposive and developer authored."
+  },
+  "expectation_freeze": {
+    "artifact": "expected.json",
+    "sha256": "b8475e2c25a7010ad78920bac254e63701f9529a67b35102f7f56dacea11e89d",
+    "frozen_at_utc": "2026-10-23T21:46:43.592512+00:00",
+    "state": "All selected source material read; explicit expectations frozen. No selected navigator queries executed yet.",
+    "selection_sha256": "ab1f176f972121b15e4d14459ce33f6ca094651acd5854910a818b0738531395",
+    "source_excerpt_sha256": "e1d5780ba8a163872e6dfbddf21db2f61a12f0b87a07ba3479f44260156f2da5",
+    "scope": "Same-developer source conformance, not independent clinical truth or trusted external preregistration."
+  },
+  "query_execution_started_utc": "2026-10-23T22:14:00.540529+00:00",
+  "source_verification": "Whole original file hashes, original workbook cells, and complete selected/context mapping excerpts verified before queries.",
+  "input_sha256": {
+    "selection-plan.json": "ab1f176f972121b15e4d14459ce33f6ca094651acd5854910a818b0738531395",
+    "expected.json": "b8475e2c25a7010ad78920bac254e63701f9529a67b35102f7f56dacea11e89d",
+    "source-excerpts.json": "e1d5780ba8a163872e6dfbddf21db2f61a12f0b87a07ba3479f44260156f2da5",
+    "collect_sources.py": "519d3bc6248b0800f3ff99fe6a4ad1c2ac2ca74ec0dcba6b20ed3ff07dd46991",
+    "evaluate.py": "bfbdc7c614d357ec0eb7cc72fa48e514a1d2b754c589be0984f670346272ba91",
+    "pgtm-navigator.html": "77cb5b4e291163393b1d6b28350b40d37905cf44a70795a4f3ad74cc2b2881e2",
+    "audit_query.cjs": "444f7599264bd07663fcac52686e287151900462f114aeef3d21b81a8f9b9a8e",
+    "tools/pgtm/build.py": "03f467ff8ec5d2ce0f8084283a5af5e567fc6f2313fbe8e297b2106ffe914607",
+    "tools/pgtm/template.html": "5bc450cf002c1e1bbdfe9454f9fa65604af2a7594cca4217a3d6e403d9b7dedc",
+    "submissions/hfea-pgtm-gene-crosswalk.csv": "7397eae54ac39646854177c8630d5ece40be708700a5aa27a0a300df27e9ad59",
+    "submissions/hfea-pgtm-provenance.json": "4bb926ad2e9ddc53eb686443dc7c31f750beed616ce135d05cfc3097ffce1895"
+  },
+  "source_review_coverage": {
+    "primary_workbook_rows": 45,
+    "context_workbook_rows": 2,
+    "primary_mapping_records": 141,
+    "context_mapping_records": 11,
+    "reviewed_before_queries": true
+  },
+  "summary": {
+    "queries": 28,
+    "source_conformance_passed": 28,
+    "gene_queries": 22,
+    "source_expected_positive_gene_queries": 20,
+    "source_expected_no_match_gene_queries": 2,
+    "positive_gene_queries_retrieving_all_expected_rows": 20,
+    "literal_title_queries_retrieving_at_least_one_expected_row": 5,
+    "positive_gene_query_row_instances": 35,
+    "literal_title_hits_in_those_row_instances": 5,
+    "unique_returned_rows_reviewed": 35,
+    "unreviewed_returned_rows": 0,
+    "distinct_returned_row_gene_associations": 47,
+    "source_unsupported_links": 0,
+    "missing_source_links": 0,
+    "multiple_candidate_rows": 6,
+    "source_disagreement_rows": 1,
+    "rows_missing_required_card_text": 0,
+    "rows_with_source_role_metadata_mismatch": 0,
+    "rows_missing_visible_source_labels": 0,
+    "distinct_returned_row_gene_ambiguity_role_omissions": 0,
+    "rows_with_ambiguity_role_omissions": 0
+  },
+  "ambiguity_role_omissions": [],
+  "before_after": {
+    "pre_fix_result": "examples/pgtm-expanded-validation/pre-fix/pgtm-expanded-validation.json",
+    "pre_fix_sha256": "bafbbe69cab6d335e2a35f414c9ee64e34877f7f05b0eef621e2d418c98c64f7",
+    "frozen_inputs_unchanged": true,
+    "before_summary": {
+      "queries": 28,
+      "source_conformance_passed": 28,
+      "gene_queries": 22,
+      "source_expected_positive_gene_queries": 20,
+      "source_expected_no_match_gene_queries": 2,
+      "positive_gene_queries_retrieving_all_expected_rows": 20,
+      "literal_title_queries_retrieving_at_least_one_expected_row": 5,
+      "positive_gene_query_row_instances": 35,
+      "literal_title_hits_in_those_row_instances": 5,
+      "unique_returned_rows_reviewed": 35,
+      "unreviewed_returned_rows": 0,
+      "distinct_returned_row_gene_associations": 47,
+      "source_unsupported_links": 0,
+      "missing_source_links": 0,
+      "multiple_candidate_rows": 6,
+      "source_disagreement_rows": 1,
+      "rows_missing_required_card_text": 0,
+      "distinct_returned_row_gene_ambiguity_role_omissions": 11,
+      "rows_with_ambiguity_role_omissions": 8
+    },
+    "after_summary": {
+      "queries": 28,
+      "source_conformance_passed": 28,
+      "gene_queries": 22,
+      "source_expected_positive_gene_queries": 20,
+      "source_expected_no_match_gene_queries": 2,
+      "positive_gene_queries_retrieving_all_expected_rows": 20,
+      "literal_title_queries_retrieving_at_least_one_expected_row": 5,
+      "positive_gene_query_row_instances": 35,
+      "literal_title_hits_in_those_row_instances": 5,
+      "unique_returned_rows_reviewed": 35,
+      "unreviewed_returned_rows": 0,
+      "distinct_returned_row_gene_associations": 47,
+      "source_unsupported_links": 0,
+      "missing_source_links": 0,
+      "multiple_candidate_rows": 6,
+      "source_disagreement_rows": 1,
+      "rows_missing_required_card_text": 0,
+      "rows_with_source_role_metadata_mismatch": 0,
+      "rows_missing_visible_source_labels": 0,
+      "distinct_returned_row_gene_ambiguity_role_omissions": 0,
+      "rows_with_ambiguity_role_omissions": 0
+    },
+    "original_11_omissions": [
+      {
+        "hfea_row": 503,
+        "gene": "FCGR2A",
+        "mim": "219700",
+        "source": "HPO",
+        "file": "genes_to_disease.txt",
+        "line": 873,
+        "field": "gene_symbol",
+        "source_role": "POLYGENIC"
+      },
+      {
+        "hfea_row": 503,
+        "gene": "TGFB1",
+        "mim": "219700",
+        "source": "HPO",
+        "file": "genes_to_disease.txt",
+        "line": 874,
+        "field": "gene_symbol",
+        "source_role": "POLYGENIC"
+      },
+      {
+        "hfea_row": 1648,
+        "gene": "PRSS2",
+        "mim": "167800",
+        "source": "HPO",
+        "file": "genes_to_disease.txt",
+        "line": 283,
+        "field": "gene_symbol",
+        "source_role": "POLYGENIC"
+      },
+      {
+        "hfea_row": 1648,
+        "gene": "CFTR",
+        "mim": "167800",
+        "source": "HPO",
+        "file": "genes_to_disease.txt",
+        "line": 284,
+        "field": "gene_symbol",
+        "source_role": "POLYGENIC"
+      },
+      {
+        "hfea_row": 1648,
+        "gene": "CTRC",
+        "mim": "167800",
+        "source": "HPO",
+        "file": "genes_to_disease.txt",
+        "line": 285,
+        "field": "gene_symbol",
+        "source_role": "POLYGENIC"
+      },
+      {
+        "hfea_row": 1900,
+        "gene": "SMN2",
+        "mim": "253400",
+        "source": "HPO",
+        "file": "genes_to_disease.txt",
+        "line": 3678,
+        "field": "gene_symbol",
+        "source_role": "POLYGENIC"
+      },
+      {
+        "hfea_row": 177,
+        "gene": "BRCA1",
+        "mim": "604370",
+        "source": "HPO",
+        "file": "genes_to_disease.txt",
+        "line": 1231,
+        "field": "gene_symbol",
+        "source_role": "POLYGENIC"
+      },
+      {
+        "hfea_row": 178,
+        "gene": "BRCA2",
+        "mim": "612555",
+        "source": "HPO",
+        "file": "genes_to_disease.txt",
+        "line": 5940,
+        "field": "gene_symbol",
+        "source_role": "POLYGENIC"
+      },
+      {
+        "hfea_row": 182,
+        "gene": "BRCA2",
+        "mim": "612555",
+        "source": "HPO",
+        "file": "genes_to_disease.txt",
+        "line": 5940,
+        "field": "gene_symbol",
+        "source_role": "POLYGENIC"
+      },
+      {
+        "hfea_row": 1675,
+        "gene": "QDPR",
+        "mim": "261600",
+        "source": "ClinVar",
+        "file": "gene_condition_source_id",
+        "line": 12260,
+        "field": "RelatedGenes",
+        "source_role": "RelatedGenes"
+      },
+      {
+        "hfea_row": 2012,
+        "gene": "IFNG",
+        "mim": "613254",
+        "source": "HPO",
+        "file": "genes_to_disease.txt",
+        "line": 5067,
+        "field": "gene_symbol",
+        "source_role": "POLYGENIC"
+      }
+    ],
+    "comparison_limit": "Original 28/28 pass measured retrieval/source-link conformance while reporting qualifier loss separately. Repaired evaluation adds exact field/type metadata and uncollapsed per-gene UI-label checks; frozen selection and expected source facts are unchanged."
+  },
+  "clinical_promotion_assessment": {
+    "independent_clinical_truth": "Unavailable for the full association set; no clinical accuracy or false-positive rate calculated.",
+    "observed_static_framing": "Condition status, candidate-gene labels and explicit non-eligibility notice are retained. No explicit claim that each candidate gene/variant/family is approved was identified in reviewed template/card text.",
+    "remaining_risk": "Original source labels are displayed without resolving their clinical meaning. POLYGENIC is not a clinical reclassification; RelatedGenes is not an independently adjudicated causal role. Gene-set agreement does not establish role agreement. Comprehension and real-world decisions were not studied.",
+    "source_sharing": "Builder and audit share original snapshots; HPO and ClinVar can share upstream records. Correct transcription is not independent biological truth. Same developer authored selection, expectations and evaluation."
+  },
+  "tasks": [
+    {
+      "id": "E01",
+      "query": "BUB1B",
+      "kind": "gene",
+      "stratum": "MVA pathway",
+      "expected_rows": [
+        1399
+      ],
+      "observed_rows": [
+        1399
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 1399,
+          "condition": "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+          "reviewed": true,
+          "genes": [
+            "BUB1B"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "query": "CEP57",
+      "kind": "gene",
+      "stratum": "MVA pathway",
+      "expected_rows": [
+        1400
+      ],
+      "observed_rows": [
+        1400
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 1400,
+          "condition": "Mosaic Variegated Aneuploidy Syndrome 2 (MVA 2)",
+          "reviewed": true,
+          "genes": [
+            "CEP57"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "query": "TRIP13",
+      "kind": "gene",
+      "stratum": "MVA pathway",
+      "expected_rows": [
+        1401
+      ],
+      "observed_rows": [
+        1401
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 1401,
+          "condition": "Mosaic Variegated Aneuploidy Syndrome 3 (MVA3)",
+          "reviewed": true,
+          "genes": [
+            "TRIP13"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E04",
+      "query": "CFTR",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity",
+      "expected_rows": [
+        503,
+        1648
+      ],
+      "observed_rows": [
+        503,
+        1648
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "2 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 503,
+          "condition": "Cystic Fibrosis (CF)",
+          "reviewed": true,
+          "genes": [
+            "CFTR",
+            "FCGR2A",
+            "TGFB1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": true,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 1648,
+          "condition": "Pancreatitis, Hereditary (PCTT)",
+          "reviewed": true,
+          "genes": [
+            "CFTR",
+            "CTRC",
+            "PRSS1",
+            "PRSS2",
+            "SPINK1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": true,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "query": "DMD",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity",
+      "expected_rows": [
+        215,
+        1429,
+        1436
+      ],
+      "observed_rows": [
+        215,
+        1429,
+        1436
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [
+        1436
+      ],
+      "status_text": "3 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 215,
+          "condition": "Cardiomyopathy, Dilated, 3B (CMD3B)",
+          "reviewed": true,
+          "genes": [
+            "DMD"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 1429,
+          "condition": "Muscular Dystrophy, Becker Type (BMD)",
+          "reviewed": true,
+          "genes": [
+            "DMD"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 1436,
+          "condition": "Muscular Dystrophy, Duchenne Type (DMD)",
+          "reviewed": true,
+          "genes": [
+            "DMD"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E06",
+      "query": "FMR1",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity",
+      "expected_rows": [
+        826
+      ],
+      "observed_rows": [
+        826
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 826,
+          "condition": "Fragile X Syndrome (FXS)",
+          "reviewed": true,
+          "genes": [
+            "FMR1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E07",
+      "query": "HBB",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity",
+      "expected_rows": [
+        163,
+        886,
+        1870
+      ],
+      "observed_rows": [
+        163,
+        886,
+        1870
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "3 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 163,
+          "condition": "Beta Thalassaemia*",
+          "reviewed": true,
+          "genes": [
+            "HBB"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 886,
+          "condition": "Haemoglobin SC disease",
+          "reviewed": true,
+          "genes": [
+            "HBB"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 1870,
+          "condition": "Sickle Cell Disease*",
+          "reviewed": true,
+          "genes": [
+            "HBB"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E08",
+      "query": "HBA1",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity",
+      "expected_rows": [
+        57
+      ],
+      "observed_rows": [
+        57
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 57,
+          "condition": "Alpha Thalassemia",
+          "reviewed": true,
+          "genes": [
+            "HBA1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E09",
+      "query": "SMN1",
+      "kind": "gene",
+      "stratum": "classical monogenic / inheritance diversity",
+      "expected_rows": [
+        1898,
+        1899,
+        1900
+      ],
+      "observed_rows": [
+        1898,
+        1899,
+        1900
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "3 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 1898,
+          "condition": "Spinal Muscular Atrophy, Type I (SMA1)",
+          "reviewed": true,
+          "genes": [
+            "SMN1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 1899,
+          "condition": "Spinal Muscular Atrophy, Type II (SMA2)",
+          "reviewed": true,
+          "genes": [
+            "SMN1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 1900,
+          "condition": "Spinal Muscular Atrophy, Type III (SMA3)",
+          "reviewed": true,
+          "genes": [
+            "SMN1",
+            "SMN2"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": true,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E10",
+      "query": "BRCA1",
+      "kind": "gene",
+      "stratum": "cancer predisposition / gene-identifier / multiple identifiers",
+      "expected_rows": [
+        177,
+        181,
+        806
+      ],
+      "observed_rows": [
+        177,
+        181,
+        806
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "3 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 177,
+          "condition": "Breast-Ovarian Cancer, Familial, Susceptibility to, 1 (BROVCA1) (including testing for sex selection)",
+          "reviewed": true,
+          "genes": [
+            "BRCA1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 181,
+          "condition": "BRCA 1 (increased susceptibility to breast cancer) (including testing for sex selection)",
+          "reviewed": true,
+          "genes": [
+            "BRCA1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 806,
+          "condition": "Fanconi Anemia, Complementation Group S (FANCS)",
+          "reviewed": true,
+          "genes": [
+            "BRCA1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E11",
+      "query": "BRCA2",
+      "kind": "gene",
+      "stratum": "cancer predisposition / gene-identifier / multiple identifiers",
+      "expected_rows": [
+        178,
+        182,
+        793,
+        2059
+      ],
+      "observed_rows": [
+        178,
+        182,
+        793,
+        2059
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [
+        182
+      ],
+      "status_text": "4 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 178,
+          "condition": "Breast-Ovarian Cancer, Familial, Susceptibility to, 2 (BROVCA2) (including testing for sex selection)",
+          "reviewed": true,
+          "genes": [
+            "BRCA2"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 182,
+          "condition": "Breast Ovarian Cancer Familial Susceptibility (BRCA2) (including testing for sex selection)",
+          "reviewed": true,
+          "genes": [
+            "BRCA2"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 793,
+          "condition": "Fanconi Anemia, Complementation Group D1 (FANCD1)",
+          "reviewed": true,
+          "genes": [
+            "BRCA2"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 2059,
+          "condition": "Wilms Tumour 1 (WT1)",
+          "reviewed": true,
+          "genes": [
+            "BRCA2",
+            "GPC3",
+            "GPC4",
+            "H19",
+            "IGF2",
+            "WT1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": true,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E12",
+      "query": "CHEK2",
+      "kind": "gene",
+      "stratum": "cancer predisposition / gene-identifier / multiple identifiers",
+      "expected_rows": [
+        332
+      ],
+      "observed_rows": [
+        332
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [
+        332
+      ],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 332,
+          "condition": "CHEK2 mutation and increased risk of breast cancer",
+          "reviewed": true,
+          "genes": [
+            "CHEK2"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E13",
+      "query": "TP53",
+      "kind": "gene",
+      "stratum": "cancer predisposition / gene-identifier / multiple identifiers",
+      "expected_rows": [
+        1202
+      ],
+      "observed_rows": [
+        1202
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 1202,
+          "condition": "Li-Fraumeni Syndrome (LFS)",
+          "reviewed": true,
+          "genes": [
+            "TP53"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E14",
+      "query": "PAH",
+      "kind": "gene",
+      "stratum": "metabolic / symbol ambiguity",
+      "expected_rows": [
+        1675
+      ],
+      "observed_rows": [
+        1675
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 1675,
+          "condition": "Phenylketonuria (PKU)",
+          "reviewed": true,
+          "genes": [
+            "PAH",
+            "QDPR"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": true,
+          "source_disagreement": true,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E15",
+      "query": "GAA",
+      "kind": "gene",
+      "stratum": "metabolic / symbol ambiguity",
+      "expected_rows": [
+        870
+      ],
+      "observed_rows": [
+        870
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 870,
+          "condition": "Glycogen Storage Disease II (GSD2)",
+          "reviewed": true,
+          "genes": [
+            "GAA"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E16",
+      "query": "GBA",
+      "kind": "gene",
+      "stratum": "metabolic / symbol ambiguity",
+      "expected_rows": [],
+      "observed_rows": [],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "No match in this snapshot. Try a condition name, OMIM number or the live register.",
+      "row_reviews": []
+    },
+    {
+      "id": "E17",
+      "query": "ATP7B",
+      "kind": "gene",
+      "stratum": "metabolic / symbol ambiguity",
+      "expected_rows": [],
+      "observed_rows": [],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "No match in this snapshot. Try a condition name, OMIM number or the live register.",
+      "row_reviews": []
+    },
+    {
+      "id": "E18",
+      "query": "NF1",
+      "kind": "gene",
+      "stratum": "pleiotropic neurodevelopmental",
+      "expected_rows": [
+        1552
+      ],
+      "observed_rows": [
+        1552
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [
+        1552
+      ],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 1552,
+          "condition": "Neurofibromatosis, Type I (NF1)",
+          "reviewed": true,
+          "genes": [
+            "NF1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E19",
+      "query": "TSC2",
+      "kind": "gene",
+      "stratum": "pleiotropic neurodevelopmental",
+      "expected_rows": [
+        2012
+      ],
+      "observed_rows": [
+        2012
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [
+        2012
+      ],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 2012,
+          "condition": "Tuberous Sclerosis 2 (TSC2)",
+          "reviewed": true,
+          "genes": [
+            "IFNG",
+            "TSC2"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": true,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E20",
+      "query": "SCN1A",
+      "kind": "gene",
+      "stratum": "pleiotropic neurodevelopmental",
+      "expected_rows": [
+        621,
+        678,
+        856
+      ],
+      "observed_rows": [
+        621,
+        678,
+        856
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "3 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 621,
+          "condition": "Developmental and Epileptic Encephalopathy 6B (DEE6B)",
+          "reviewed": true,
+          "genes": [
+            "SCN1A"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 678,
+          "condition": "Dravet Syndrome (DRVT)",
+          "reviewed": true,
+          "genes": [
+            "SCN1A"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 856,
+          "condition": "Generalized epilepsy with febrile seizures plus, type 2 (GEFSP2)",
+          "reviewed": true,
+          "genes": [
+            "SCN1A"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E21",
+      "query": "TGFB1",
+      "kind": "gene",
+      "stratum": "source-role ambiguity",
+      "expected_rows": [
+        503
+      ],
+      "observed_rows": [
+        503
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 503,
+          "condition": "Cystic Fibrosis (CF)",
+          "reviewed": true,
+          "genes": [
+            "CFTR",
+            "FCGR2A",
+            "TGFB1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": true,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E22",
+      "query": "QDPR",
+      "kind": "gene",
+      "stratum": "source-role ambiguity",
+      "expected_rows": [
+        975,
+        1675
+      ],
+      "observed_rows": [
+        975,
+        1675
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "2 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 975,
+          "condition": "Hyperphenylalaninemia, BH4-deficient, C (HPABH4C)",
+          "reviewed": true,
+          "genes": [
+            "QDPR"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 1675,
+          "condition": "Phenylketonuria (PKU)",
+          "reviewed": true,
+          "genes": [
+            "PAH",
+            "QDPR"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": true,
+          "source_disagreement": true,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E23",
+      "query": "BUBR1",
+      "kind": "alias",
+      "stratum": "edge cases",
+      "expected_rows": [
+        1399
+      ],
+      "observed_rows": [
+        1399
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "Alias BUBR1 \u2192 BUB1B. 1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 1399,
+          "condition": "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+          "reviewed": true,
+          "genes": [
+            "BUB1B"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E24",
+      "query": "CHIME",
+      "kind": "malformed",
+      "stratum": "edge cases",
+      "expected_rows": [
+        369
+      ],
+      "observed_rows": [
+        369
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [
+        369
+      ],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 369,
+          "condition": "Coloboma, Congenital Heart Disease, Ichthyosiform Dermatosis, Impaired Intellectual Development, and Ear Anomalies Syndrome (CHIME)",
+          "reviewed": true,
+          "genes": [],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E25",
+      "query": "SIX2",
+      "kind": "unresolved",
+      "stratum": "edge cases",
+      "expected_rows": [
+        1873
+      ],
+      "observed_rows": [
+        1873
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [
+        1873
+      ],
+      "status_text": "1 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 1873,
+          "condition": "SIX2-related disorder (No OMIM number)",
+          "reviewed": true,
+          "genes": [],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": false,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E26",
+      "query": "28000",
+      "kind": "malformed-number",
+      "stratum": "edge cases",
+      "expected_rows": [],
+      "observed_rows": [],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "No match in this snapshot. Try a condition name, OMIM number or the live register.",
+      "row_reviews": []
+    },
+    {
+      "id": "E27",
+      "query": "  cftr  ",
+      "kind": "normalization",
+      "stratum": "edge cases",
+      "expected_rows": [
+        503,
+        1648
+      ],
+      "observed_rows": [
+        503,
+        1648
+      ],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "2 matching register rows. ",
+      "row_reviews": [
+        {
+          "hfea_row": 503,
+          "condition": "Cystic Fibrosis (CF)",
+          "reviewed": true,
+          "genes": [
+            "CFTR",
+            "FCGR2A",
+            "TGFB1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": true,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        },
+        {
+          "hfea_row": 1648,
+          "condition": "Pancreatitis, Hereditary (PCTT)",
+          "reviewed": true,
+          "genes": [
+            "CFTR",
+            "CTRC",
+            "PRSS1",
+            "PRSS2",
+            "SPINK1"
+          ],
+          "source_supported": true,
+          "source_unsupported_links": [],
+          "missing_source_links": [],
+          "multiple_candidates": true,
+          "source_disagreement": false,
+          "missing_required_card_text": [],
+          "source_role_metadata_matches": true,
+          "missing_visible_source_labels": [],
+          "unexpected_visible_source_labels": [],
+          "ambiguity_role_omissions": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "E28",
+      "query": "__EXPANDED_NO_SUCH_GENE_20261023__",
+      "kind": "no-match",
+      "stratum": "edge cases",
+      "expected_rows": [],
+      "observed_rows": [],
+      "source_conformance_passed": true,
+      "errors": [],
+      "literal_title_hits_among_expected_rows": [],
+      "status_text": "No match in this snapshot. Try a condition name, OMIM number or the live register.",
+      "row_reviews": []
+    }
+  ],
+  "raw_query_results": [
+    {
+      "query": "BUB1B",
+      "rows": [
+        {
+          "condition": "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+          "hfea_status": "approved",
+          "omim": "257300",
+          "omim_as_published": "257300",
+          "genes": "BUB1B",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"BUB1B\": [{\"association_type\": null, \"omim\": \"257300\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"257300\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+          "Candidate gene(s): BUB1B",
+          "OMIM as published: 257300",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BUB1B",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 257300",
+          "HPO: Mendelian association \u00b7 OMIM 257300",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"BUB1B\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"257300\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"257300\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 257300 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+          "Candidate gene(s): BUB1B",
+          "OMIM as published: 257300",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BUB1B",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 257300",
+          "HPO: Mendelian association \u00b7 OMIM 257300",
+          "OMIM 257300 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "BUB1B",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 257300",
+              "HPO: Mendelian association \u00b7 OMIM 257300"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "CEP57",
+      "rows": [
+        {
+          "condition": "Mosaic Variegated Aneuploidy Syndrome 2 (MVA 2)",
+          "hfea_status": "approved",
+          "omim": "614114",
+          "omim_as_published": "614114",
+          "genes": "CEP57",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"CEP57\": [{\"association_type\": null, \"omim\": \"614114\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"614114\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Mosaic Variegated Aneuploidy Syndrome 2 (MVA 2)",
+          "Candidate gene(s): CEP57",
+          "OMIM as published: 614114",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CEP57",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 614114",
+          "HPO: Mendelian association \u00b7 OMIM 614114",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"CEP57\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"614114\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"614114\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 614114 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Mosaic Variegated Aneuploidy Syndrome 2 (MVA 2)",
+          "Candidate gene(s): CEP57",
+          "OMIM as published: 614114",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CEP57",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 614114",
+          "HPO: Mendelian association \u00b7 OMIM 614114",
+          "OMIM 614114 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "CEP57",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 614114",
+              "HPO: Mendelian association \u00b7 OMIM 614114"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "TRIP13",
+      "rows": [
+        {
+          "condition": "Mosaic Variegated Aneuploidy Syndrome 3 (MVA3)",
+          "hfea_status": "approved",
+          "omim": "617598",
+          "omim_as_published": "617598",
+          "genes": "TRIP13",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"TRIP13\": [{\"association_type\": null, \"omim\": \"617598\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"617598\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Mosaic Variegated Aneuploidy Syndrome 3 (MVA3)",
+          "Candidate gene(s): TRIP13",
+          "OMIM as published: 617598",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "TRIP13",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 617598",
+          "HPO: Mendelian association \u00b7 OMIM 617598",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"TRIP13\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"617598\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"617598\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 617598 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Mosaic Variegated Aneuploidy Syndrome 3 (MVA3)",
+          "Candidate gene(s): TRIP13",
+          "OMIM as published: 617598",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "TRIP13",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 617598",
+          "HPO: Mendelian association \u00b7 OMIM 617598",
+          "OMIM 617598 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "TRIP13",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 617598",
+              "HPO: Mendelian association \u00b7 OMIM 617598"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "CFTR",
+      "rows": [
+        {
+          "condition": "Cystic Fibrosis (CF)",
+          "hfea_status": "approved",
+          "omim": "219700",
+          "omim_as_published": "219700",
+          "genes": "CFTR;FCGR2A;TGFB1",
+          "n_genes": 3,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"CFTR\": [{\"association_type\": null, \"omim\": \"219700\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"219700\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"FCGR2A\": [{\"association_type\": null, \"omim\": \"219700\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"219700\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"TGFB1\": [{\"association_type\": null, \"omim\": \"219700\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"219700\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        },
+        {
+          "condition": "Pancreatitis, Hereditary (PCTT)",
+          "hfea_status": "approved",
+          "omim": "167800",
+          "omim_as_published": "167800",
+          "genes": "CFTR;CTRC;PRSS1;PRSS2;SPINK1",
+          "n_genes": 5,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"CFTR\": [{\"association_type\": null, \"omim\": \"167800\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"167800\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"CTRC\": [{\"association_type\": null, \"omim\": \"167800\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"167800\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"PRSS1\": [{\"association_type\": null, \"omim\": \"167800\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"167800\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"PRSS2\": [{\"association_type\": null, \"omim\": \"167800\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"167800\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"SPINK1\": [{\"association_type\": null, \"omim\": \"167800\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"167800\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "2 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Cystic Fibrosis (CF)",
+          "Candidate gene(s): CFTR, FCGR2A, TGFB1",
+          "OMIM as published: 219700",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CFTR",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: Mendelian association \u00b7 OMIM 219700",
+          "",
+          "FCGR2A",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: polygenic association \u00b7 OMIM 219700",
+          "",
+          "TGFB1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: polygenic association \u00b7 OMIM 219700",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"CFTR\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"219700\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"219700\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"FCGR2A\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"219700\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"219700\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"TGFB1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"219700\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"219700\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 219700 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Pancreatitis, Hereditary (PCTT)",
+          "Candidate gene(s): CFTR, CTRC, PRSS1, PRSS2, SPINK1",
+          "OMIM as published: 167800",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CFTR",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: polygenic association \u00b7 OMIM 167800",
+          "",
+          "CTRC",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: polygenic association \u00b7 OMIM 167800",
+          "",
+          "PRSS1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: Mendelian association \u00b7 OMIM 167800",
+          "",
+          "PRSS2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: polygenic association \u00b7 OMIM 167800",
+          "",
+          "SPINK1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: Mendelian association \u00b7 OMIM 167800",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"CFTR\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"167800\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"167800\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"CTRC\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"167800\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"167800\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"PRSS1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"167800\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"167800\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"PRSS2\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"167800\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"167800\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"SPINK1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"167800\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"167800\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 167800 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Cystic Fibrosis (CF)",
+          "Candidate gene(s): CFTR, FCGR2A, TGFB1",
+          "OMIM as published: 219700",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CFTR",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: Mendelian association \u00b7 OMIM 219700",
+          "",
+          "FCGR2A",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: polygenic association \u00b7 OMIM 219700",
+          "",
+          "TGFB1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: polygenic association \u00b7 OMIM 219700",
+          "OMIM 219700 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Pancreatitis, Hereditary (PCTT)",
+          "Candidate gene(s): CFTR, CTRC, PRSS1, PRSS2, SPINK1",
+          "OMIM as published: 167800",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CFTR",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: polygenic association \u00b7 OMIM 167800",
+          "",
+          "CTRC",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: polygenic association \u00b7 OMIM 167800",
+          "",
+          "PRSS1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: Mendelian association \u00b7 OMIM 167800",
+          "",
+          "PRSS2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: polygenic association \u00b7 OMIM 167800",
+          "",
+          "SPINK1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: Mendelian association \u00b7 OMIM 167800",
+          "OMIM 167800 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "CFTR",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 219700",
+              "HPO: Mendelian association \u00b7 OMIM 219700"
+            ]
+          },
+          {
+            "gene": "FCGR2A",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 219700",
+              "HPO: polygenic association \u00b7 OMIM 219700"
+            ]
+          },
+          {
+            "gene": "TGFB1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 219700",
+              "HPO: polygenic association \u00b7 OMIM 219700"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "CFTR",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 167800",
+              "HPO: polygenic association \u00b7 OMIM 167800"
+            ]
+          },
+          {
+            "gene": "CTRC",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 167800",
+              "HPO: polygenic association \u00b7 OMIM 167800"
+            ]
+          },
+          {
+            "gene": "PRSS1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 167800",
+              "HPO: Mendelian association \u00b7 OMIM 167800"
+            ]
+          },
+          {
+            "gene": "PRSS2",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 167800",
+              "HPO: polygenic association \u00b7 OMIM 167800"
+            ]
+          },
+          {
+            "gene": "SPINK1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 167800",
+              "HPO: Mendelian association \u00b7 OMIM 167800"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "DMD",
+      "rows": [
+        {
+          "condition": "Cardiomyopathy, Dilated, 3B (CMD3B)",
+          "hfea_status": "approved",
+          "omim": "302045",
+          "omim_as_published": "302045",
+          "genes": "DMD",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"DMD\": [{\"association_type\": null, \"omim\": \"302045\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"302045\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        },
+        {
+          "condition": "Muscular Dystrophy, Becker Type (BMD)",
+          "hfea_status": "approved",
+          "omim": "300376",
+          "omim_as_published": "300376",
+          "genes": "DMD",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"DMD\": [{\"association_type\": null, \"omim\": \"300376\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"300376\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        },
+        {
+          "condition": "Muscular Dystrophy, Duchenne Type (DMD)",
+          "hfea_status": "approved",
+          "omim": "310200",
+          "omim_as_published": "310200",
+          "genes": "DMD",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"DMD\": [{\"association_type\": null, \"omim\": \"310200\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"310200\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "3 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Cardiomyopathy, Dilated, 3B (CMD3B)",
+          "Candidate gene(s): DMD",
+          "OMIM as published: 302045",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "DMD",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 302045",
+          "HPO: Mendelian association \u00b7 OMIM 302045",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"DMD\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"302045\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"302045\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 302045 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Muscular Dystrophy, Becker Type (BMD)",
+          "Candidate gene(s): DMD",
+          "OMIM as published: 300376",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "DMD",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 300376",
+          "HPO: Mendelian association \u00b7 OMIM 300376",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"DMD\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"300376\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"300376\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 300376 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Muscular Dystrophy, Duchenne Type (DMD)",
+          "Candidate gene(s): DMD",
+          "OMIM as published: 310200",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "DMD",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 310200",
+          "HPO: Mendelian association \u00b7 OMIM 310200",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"DMD\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"310200\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"310200\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 310200 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Cardiomyopathy, Dilated, 3B (CMD3B)",
+          "Candidate gene(s): DMD",
+          "OMIM as published: 302045",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "DMD",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 302045",
+          "HPO: Mendelian association \u00b7 OMIM 302045",
+          "OMIM 302045 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Muscular Dystrophy, Becker Type (BMD)",
+          "Candidate gene(s): DMD",
+          "OMIM as published: 300376",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "DMD",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 300376",
+          "HPO: Mendelian association \u00b7 OMIM 300376",
+          "OMIM 300376 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Muscular Dystrophy, Duchenne Type (DMD)",
+          "Candidate gene(s): DMD",
+          "OMIM as published: 310200",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "DMD",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 310200",
+          "HPO: Mendelian association \u00b7 OMIM 310200",
+          "OMIM 310200 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "DMD",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 302045",
+              "HPO: Mendelian association \u00b7 OMIM 302045"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "DMD",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 300376",
+              "HPO: Mendelian association \u00b7 OMIM 300376"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "DMD",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 310200",
+              "HPO: Mendelian association \u00b7 OMIM 310200"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "FMR1",
+      "rows": [
+        {
+          "condition": "Fragile X Syndrome (FXS)",
+          "hfea_status": "approved",
+          "omim": "300624",
+          "omim_as_published": "300624",
+          "genes": "FMR1",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"FMR1\": [{\"association_type\": null, \"omim\": \"300624\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"300624\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Fragile X Syndrome (FXS)",
+          "Candidate gene(s): FMR1",
+          "OMIM as published: 300624",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "FMR1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 300624",
+          "HPO: Mendelian association \u00b7 OMIM 300624",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"FMR1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"300624\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"300624\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 300624 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Fragile X Syndrome (FXS)",
+          "Candidate gene(s): FMR1",
+          "OMIM as published: 300624",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "FMR1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 300624",
+          "HPO: Mendelian association \u00b7 OMIM 300624",
+          "OMIM 300624 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "FMR1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 300624",
+              "HPO: Mendelian association \u00b7 OMIM 300624"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "HBB",
+      "rows": [
+        {
+          "condition": "Beta Thalassaemia*",
+          "hfea_status": "approved",
+          "omim": "141900",
+          "omim_as_published": "141900",
+          "genes": "HBB",
+          "n_genes": 1,
+          "sources": "OMIM-geneMIM",
+          "clinvar_hpo": "",
+          "register_defect": "",
+          "gene_evidence": "{\"HBB\": [{\"association_type\": null, \"entry_type\": \"gene\", \"omim\": \"141900\", \"source\": \"OMIM-geneMIM\", \"source_field\": \"Approved Gene Symbol (HGNC)\"}]}"
+        },
+        {
+          "condition": "Haemoglobin SC disease",
+          "hfea_status": "approved",
+          "omim": "141900",
+          "omim_as_published": "141900.00380000001",
+          "genes": "HBB",
+          "n_genes": 1,
+          "sources": "OMIM-geneMIM",
+          "clinvar_hpo": "",
+          "register_defect": "multi-omim(3);malformed-mim-length",
+          "gene_evidence": "{\"HBB\": [{\"association_type\": null, \"entry_type\": \"gene\", \"omim\": \"141900\", \"source\": \"OMIM-geneMIM\", \"source_field\": \"Approved Gene Symbol (HGNC)\"}]}"
+        },
+        {
+          "condition": "Sickle Cell Disease*",
+          "hfea_status": "approved",
+          "omim": "603903",
+          "omim_as_published": "603903",
+          "genes": "HBB",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"HBB\": [{\"association_type\": null, \"omim\": \"603903\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"603903\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "3 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Beta Thalassaemia*",
+          "Candidate gene(s): HBB",
+          "OMIM as published: 141900",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "HBB",
+          "",
+          "OMIM: gene identifier only \u00b7 OMIM 141900",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"HBB\": [\n    {\n      \"association_type\": null,\n      \"entry_type\": \"gene\",\n      \"omim\": \"141900\",\n      \"source\": \"OMIM-geneMIM\",\n      \"source_field\": \"Approved Gene Symbol (HGNC)\"\n    }\n  ]\n}",
+          "OMIM 141900 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Haemoglobin SC disease",
+          "Candidate gene(s): HBB",
+          "OMIM as published: 141900.00380000001",
+          "Register flags: multi-omim(3);malformed-mim-length",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "HBB",
+          "",
+          "OMIM: gene identifier only \u00b7 OMIM 141900",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"HBB\": [\n    {\n      \"association_type\": null,\n      \"entry_type\": \"gene\",\n      \"omim\": \"141900\",\n      \"source\": \"OMIM-geneMIM\",\n      \"source_field\": \"Approved Gene Symbol (HGNC)\"\n    }\n  ]\n}",
+          "OMIM 141900 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Sickle Cell Disease*",
+          "Candidate gene(s): HBB",
+          "OMIM as published: 603903",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "HBB",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 603903",
+          "HPO: Mendelian association \u00b7 OMIM 603903",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"HBB\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"603903\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"603903\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 603903 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Beta Thalassaemia*",
+          "Candidate gene(s): HBB",
+          "OMIM as published: 141900",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "HBB",
+          "",
+          "OMIM: gene identifier only \u00b7 OMIM 141900",
+          "OMIM 141900 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Haemoglobin SC disease",
+          "Candidate gene(s): HBB",
+          "OMIM as published: 141900.00380000001",
+          "Register flags: multi-omim(3);malformed-mim-length",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "HBB",
+          "",
+          "OMIM: gene identifier only \u00b7 OMIM 141900",
+          "OMIM 141900 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Sickle Cell Disease*",
+          "Candidate gene(s): HBB",
+          "OMIM as published: 603903",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "HBB",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 603903",
+          "HPO: Mendelian association \u00b7 OMIM 603903",
+          "OMIM 603903 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "HBB",
+            "labels": [
+              "OMIM: gene identifier only \u00b7 OMIM 141900"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "HBB",
+            "labels": [
+              "OMIM: gene identifier only \u00b7 OMIM 141900"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "HBB",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 603903",
+              "HPO: Mendelian association \u00b7 OMIM 603903"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "HBA1",
+      "rows": [
+        {
+          "condition": "Alpha Thalassemia",
+          "hfea_status": "approved",
+          "omim": "141800",
+          "omim_as_published": "141800",
+          "genes": "HBA1",
+          "n_genes": 1,
+          "sources": "OMIM-geneMIM",
+          "clinvar_hpo": "",
+          "register_defect": "",
+          "gene_evidence": "{\"HBA1\": [{\"association_type\": null, \"entry_type\": \"gene\", \"omim\": \"141800\", \"source\": \"OMIM-geneMIM\", \"source_field\": \"Approved Gene Symbol (HGNC)\"}]}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Alpha Thalassemia",
+          "Candidate gene(s): HBA1",
+          "OMIM as published: 141800",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "HBA1",
+          "",
+          "OMIM: gene identifier only \u00b7 OMIM 141800",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"HBA1\": [\n    {\n      \"association_type\": null,\n      \"entry_type\": \"gene\",\n      \"omim\": \"141800\",\n      \"source\": \"OMIM-geneMIM\",\n      \"source_field\": \"Approved Gene Symbol (HGNC)\"\n    }\n  ]\n}",
+          "OMIM 141800 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Alpha Thalassemia",
+          "Candidate gene(s): HBA1",
+          "OMIM as published: 141800",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "HBA1",
+          "",
+          "OMIM: gene identifier only \u00b7 OMIM 141800",
+          "OMIM 141800 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "HBA1",
+            "labels": [
+              "OMIM: gene identifier only \u00b7 OMIM 141800"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "SMN1",
+      "rows": [
+        {
+          "condition": "Spinal Muscular Atrophy, Type I (SMA1)",
+          "hfea_status": "approved",
+          "omim": "253300",
+          "omim_as_published": "253300",
+          "genes": "SMN1",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"SMN1\": [{\"association_type\": null, \"omim\": \"253300\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"253300\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        },
+        {
+          "condition": "Spinal Muscular Atrophy, Type II (SMA2)",
+          "hfea_status": "approved",
+          "omim": "253550",
+          "omim_as_published": "253550",
+          "genes": "SMN1",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"SMN1\": [{\"association_type\": null, \"omim\": \"253550\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"253550\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        },
+        {
+          "condition": "Spinal Muscular Atrophy, Type III (SMA3)",
+          "hfea_status": "approved",
+          "omim": "253400",
+          "omim_as_published": "253400",
+          "genes": "SMN1;SMN2",
+          "n_genes": 2,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"SMN1\": [{\"association_type\": null, \"omim\": \"253400\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"253400\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"SMN2\": [{\"association_type\": null, \"omim\": \"253400\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"253400\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "3 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Spinal Muscular Atrophy, Type I (SMA1)",
+          "Candidate gene(s): SMN1",
+          "OMIM as published: 253300",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "SMN1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 253300",
+          "HPO: Mendelian association \u00b7 OMIM 253300",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"SMN1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"253300\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"253300\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 253300 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Spinal Muscular Atrophy, Type II (SMA2)",
+          "Candidate gene(s): SMN1",
+          "OMIM as published: 253550",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "SMN1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 253550",
+          "HPO: Mendelian association \u00b7 OMIM 253550",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"SMN1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"253550\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"253550\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 253550 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Spinal Muscular Atrophy, Type III (SMA3)",
+          "Candidate gene(s): SMN1, SMN2",
+          "OMIM as published: 253400",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "SMN1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 253400",
+          "HPO: Mendelian association \u00b7 OMIM 253400",
+          "",
+          "SMN2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 253400",
+          "HPO: polygenic association \u00b7 OMIM 253400",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"SMN1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"253400\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"253400\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"SMN2\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"253400\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"253400\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 253400 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Spinal Muscular Atrophy, Type I (SMA1)",
+          "Candidate gene(s): SMN1",
+          "OMIM as published: 253300",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "SMN1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 253300",
+          "HPO: Mendelian association \u00b7 OMIM 253300",
+          "OMIM 253300 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Spinal Muscular Atrophy, Type II (SMA2)",
+          "Candidate gene(s): SMN1",
+          "OMIM as published: 253550",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "SMN1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 253550",
+          "HPO: Mendelian association \u00b7 OMIM 253550",
+          "OMIM 253550 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Spinal Muscular Atrophy, Type III (SMA3)",
+          "Candidate gene(s): SMN1, SMN2",
+          "OMIM as published: 253400",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "SMN1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 253400",
+          "HPO: Mendelian association \u00b7 OMIM 253400",
+          "",
+          "SMN2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 253400",
+          "HPO: polygenic association \u00b7 OMIM 253400",
+          "OMIM 253400 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "SMN1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 253300",
+              "HPO: Mendelian association \u00b7 OMIM 253300"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "SMN1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 253550",
+              "HPO: Mendelian association \u00b7 OMIM 253550"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "SMN1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 253400",
+              "HPO: Mendelian association \u00b7 OMIM 253400"
+            ]
+          },
+          {
+            "gene": "SMN2",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 253400",
+              "HPO: polygenic association \u00b7 OMIM 253400"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "BRCA1",
+      "rows": [
+        {
+          "condition": "Breast-Ovarian Cancer, Familial, Susceptibility to, 1 (BROVCA1) (including testing for sex selection)",
+          "hfea_status": "approved",
+          "omim": "604370",
+          "omim_as_published": "604370",
+          "genes": "BRCA1",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"BRCA1\": [{\"association_type\": null, \"omim\": \"604370\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"604370\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        },
+        {
+          "condition": "BRCA 1 (increased susceptibility to breast cancer) (including testing for sex selection)",
+          "hfea_status": "approved",
+          "omim": "113705",
+          "omim_as_published": "113705",
+          "genes": "BRCA1",
+          "n_genes": 1,
+          "sources": "OMIM-geneMIM",
+          "clinvar_hpo": "",
+          "register_defect": "",
+          "gene_evidence": "{\"BRCA1\": [{\"association_type\": null, \"entry_type\": \"gene\", \"omim\": \"113705\", \"source\": \"OMIM-geneMIM\", \"source_field\": \"Approved Gene Symbol (HGNC)\"}]}"
+        },
+        {
+          "condition": "Fanconi Anemia, Complementation Group S (FANCS)",
+          "hfea_status": "approved",
+          "omim": "617883",
+          "omim_as_published": "617883",
+          "genes": "BRCA1",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"BRCA1\": [{\"association_type\": null, \"omim\": \"617883\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"617883\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "3 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Breast-Ovarian Cancer, Familial, Susceptibility to, 1 (BROVCA1) (including testing for sex selection)",
+          "Candidate gene(s): BRCA1",
+          "OMIM as published: 604370",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 604370",
+          "HPO: polygenic association \u00b7 OMIM 604370",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"BRCA1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"604370\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"604370\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 604370 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "BRCA 1 (increased susceptibility to breast cancer) (including testing for sex selection)",
+          "Candidate gene(s): BRCA1",
+          "OMIM as published: 113705",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA1",
+          "",
+          "OMIM: gene identifier only \u00b7 OMIM 113705",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"BRCA1\": [\n    {\n      \"association_type\": null,\n      \"entry_type\": \"gene\",\n      \"omim\": \"113705\",\n      \"source\": \"OMIM-geneMIM\",\n      \"source_field\": \"Approved Gene Symbol (HGNC)\"\n    }\n  ]\n}",
+          "OMIM 113705 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Fanconi Anemia, Complementation Group S (FANCS)",
+          "Candidate gene(s): BRCA1",
+          "OMIM as published: 617883",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 617883",
+          "HPO: Mendelian association \u00b7 OMIM 617883",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"BRCA1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"617883\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"617883\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 617883 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Breast-Ovarian Cancer, Familial, Susceptibility to, 1 (BROVCA1) (including testing for sex selection)",
+          "Candidate gene(s): BRCA1",
+          "OMIM as published: 604370",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 604370",
+          "HPO: polygenic association \u00b7 OMIM 604370",
+          "OMIM 604370 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "BRCA 1 (increased susceptibility to breast cancer) (including testing for sex selection)",
+          "Candidate gene(s): BRCA1",
+          "OMIM as published: 113705",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA1",
+          "",
+          "OMIM: gene identifier only \u00b7 OMIM 113705",
+          "OMIM 113705 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Fanconi Anemia, Complementation Group S (FANCS)",
+          "Candidate gene(s): BRCA1",
+          "OMIM as published: 617883",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 617883",
+          "HPO: Mendelian association \u00b7 OMIM 617883",
+          "OMIM 617883 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "BRCA1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 604370",
+              "HPO: polygenic association \u00b7 OMIM 604370"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "BRCA1",
+            "labels": [
+              "OMIM: gene identifier only \u00b7 OMIM 113705"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "BRCA1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 617883",
+              "HPO: Mendelian association \u00b7 OMIM 617883"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "BRCA2",
+      "rows": [
+        {
+          "condition": "Breast-Ovarian Cancer, Familial, Susceptibility to, 2 (BROVCA2) (including testing for sex selection)",
+          "hfea_status": "approved",
+          "omim": "612555",
+          "omim_as_published": "612555",
+          "genes": "BRCA2",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"BRCA2\": [{\"association_type\": null, \"omim\": \"612555\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"612555\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        },
+        {
+          "condition": "Breast Ovarian Cancer Familial Susceptibility (BRCA2) (including testing for sex selection)",
+          "hfea_status": "approved",
+          "omim": "612555;600185",
+          "omim_as_published": "612555, 600185",
+          "genes": "BRCA2",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO,OMIM-geneMIM",
+          "clinvar_hpo": "both",
+          "register_defect": "multi-omim(2)",
+          "gene_evidence": "{\"BRCA2\": [{\"association_type\": null, \"omim\": \"612555\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"612555\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}, {\"association_type\": null, \"entry_type\": \"gene\", \"omim\": \"600185\", \"source\": \"OMIM-geneMIM\", \"source_field\": \"Approved Gene Symbol (HGNC)\"}]}"
+        },
+        {
+          "condition": "Fanconi Anemia, Complementation Group D1 (FANCD1)",
+          "hfea_status": "approved",
+          "omim": "605724",
+          "omim_as_published": "605724",
+          "genes": "BRCA2",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"BRCA2\": [{\"association_type\": null, \"omim\": \"605724\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"605724\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        },
+        {
+          "condition": "Wilms Tumour 1 (WT1)",
+          "hfea_status": "approved",
+          "omim": "194070",
+          "omim_as_published": "194070",
+          "genes": "BRCA2;GPC3;GPC4;H19;IGF2;WT1",
+          "n_genes": 6,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"BRCA2\": [{\"association_type\": null, \"omim\": \"194070\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"194070\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"GPC3\": [{\"association_type\": null, \"omim\": \"194070\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"194070\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"GPC4\": [{\"association_type\": null, \"omim\": \"194070\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"194070\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"H19\": [{\"association_type\": null, \"omim\": \"194070\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"194070\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"IGF2\": [{\"association_type\": null, \"omim\": \"194070\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"194070\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"WT1\": [{\"association_type\": null, \"omim\": \"194070\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"194070\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "4 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Breast-Ovarian Cancer, Familial, Susceptibility to, 2 (BROVCA2) (including testing for sex selection)",
+          "Candidate gene(s): BRCA2",
+          "OMIM as published: 612555",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 612555",
+          "HPO: polygenic association \u00b7 OMIM 612555",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"BRCA2\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"612555\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"612555\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 612555 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Breast Ovarian Cancer Familial Susceptibility (BRCA2) (including testing for sex selection)",
+          "Candidate gene(s): BRCA2",
+          "OMIM as published: 612555, 600185",
+          "Register flags: multi-omim(2)",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 612555",
+          "HPO: polygenic association \u00b7 OMIM 612555",
+          "OMIM: gene identifier only \u00b7 OMIM 600185",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"BRCA2\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"612555\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"612555\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    },\n    {\n      \"association_type\": null,\n      \"entry_type\": \"gene\",\n      \"omim\": \"600185\",\n      \"source\": \"OMIM-geneMIM\",\n      \"source_field\": \"Approved Gene Symbol (HGNC)\"\n    }\n  ]\n}",
+          "OMIM 612555 \u2197 ",
+          "OMIM 600185 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Fanconi Anemia, Complementation Group D1 (FANCD1)",
+          "Candidate gene(s): BRCA2",
+          "OMIM as published: 605724",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 605724",
+          "HPO: Mendelian association \u00b7 OMIM 605724",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"BRCA2\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"605724\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"605724\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 605724 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Wilms Tumour 1 (WT1)",
+          "Candidate gene(s): BRCA2, GPC3, GPC4, H19, IGF2, WT1",
+          "OMIM as published: 194070",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 194070",
+          "HPO: Mendelian association \u00b7 OMIM 194070",
+          "",
+          "GPC3",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 194070",
+          "HPO: Mendelian association \u00b7 OMIM 194070",
+          "",
+          "GPC4",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 194070",
+          "HPO: Mendelian association \u00b7 OMIM 194070",
+          "",
+          "H19",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 194070",
+          "HPO: Mendelian association \u00b7 OMIM 194070",
+          "",
+          "IGF2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 194070",
+          "HPO: Mendelian association \u00b7 OMIM 194070",
+          "",
+          "WT1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 194070",
+          "HPO: Mendelian association \u00b7 OMIM 194070",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"BRCA2\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"194070\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"194070\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"GPC3\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"194070\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"194070\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"GPC4\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"194070\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"194070\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"H19\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"194070\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"194070\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"IGF2\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"194070\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"194070\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"WT1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"194070\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"194070\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 194070 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Breast-Ovarian Cancer, Familial, Susceptibility to, 2 (BROVCA2) (including testing for sex selection)",
+          "Candidate gene(s): BRCA2",
+          "OMIM as published: 612555",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 612555",
+          "HPO: polygenic association \u00b7 OMIM 612555",
+          "OMIM 612555 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Breast Ovarian Cancer Familial Susceptibility (BRCA2) (including testing for sex selection)",
+          "Candidate gene(s): BRCA2",
+          "OMIM as published: 612555, 600185",
+          "Register flags: multi-omim(2)",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 612555",
+          "HPO: polygenic association \u00b7 OMIM 612555",
+          "OMIM: gene identifier only \u00b7 OMIM 600185",
+          "OMIM 612555 \u2197 ",
+          "OMIM 600185 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Fanconi Anemia, Complementation Group D1 (FANCD1)",
+          "Candidate gene(s): BRCA2",
+          "OMIM as published: 605724",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 605724",
+          "HPO: Mendelian association \u00b7 OMIM 605724",
+          "OMIM 605724 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Wilms Tumour 1 (WT1)",
+          "Candidate gene(s): BRCA2, GPC3, GPC4, H19, IGF2, WT1",
+          "OMIM as published: 194070",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BRCA2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 194070",
+          "HPO: Mendelian association \u00b7 OMIM 194070",
+          "",
+          "GPC3",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 194070",
+          "HPO: Mendelian association \u00b7 OMIM 194070",
+          "",
+          "GPC4",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 194070",
+          "HPO: Mendelian association \u00b7 OMIM 194070",
+          "",
+          "H19",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 194070",
+          "HPO: Mendelian association \u00b7 OMIM 194070",
+          "",
+          "IGF2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 194070",
+          "HPO: Mendelian association \u00b7 OMIM 194070",
+          "",
+          "WT1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 194070",
+          "HPO: Mendelian association \u00b7 OMIM 194070",
+          "OMIM 194070 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "BRCA2",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 612555",
+              "HPO: polygenic association \u00b7 OMIM 612555"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "BRCA2",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 612555",
+              "HPO: polygenic association \u00b7 OMIM 612555",
+              "OMIM: gene identifier only \u00b7 OMIM 600185"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "BRCA2",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 605724",
+              "HPO: Mendelian association \u00b7 OMIM 605724"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "BRCA2",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 194070",
+              "HPO: Mendelian association \u00b7 OMIM 194070"
+            ]
+          },
+          {
+            "gene": "GPC3",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 194070",
+              "HPO: Mendelian association \u00b7 OMIM 194070"
+            ]
+          },
+          {
+            "gene": "GPC4",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 194070",
+              "HPO: Mendelian association \u00b7 OMIM 194070"
+            ]
+          },
+          {
+            "gene": "H19",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 194070",
+              "HPO: Mendelian association \u00b7 OMIM 194070"
+            ]
+          },
+          {
+            "gene": "IGF2",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 194070",
+              "HPO: Mendelian association \u00b7 OMIM 194070"
+            ]
+          },
+          {
+            "gene": "WT1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 194070",
+              "HPO: Mendelian association \u00b7 OMIM 194070"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "CHEK2",
+      "rows": [
+        {
+          "condition": "CHEK2 mutation and increased risk of breast cancer",
+          "hfea_status": "approved",
+          "omim": "604373",
+          "omim_as_published": "* 604373",
+          "genes": "CHEK2",
+          "n_genes": 1,
+          "sources": "OMIM-geneMIM",
+          "clinvar_hpo": "",
+          "register_defect": "asterisk-gene-entry",
+          "gene_evidence": "{\"CHEK2\": [{\"association_type\": null, \"entry_type\": \"gene\", \"omim\": \"604373\", \"source\": \"OMIM-geneMIM\", \"source_field\": \"Approved Gene Symbol (HGNC)\"}]}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "CHEK2 mutation and increased risk of breast cancer",
+          "Candidate gene(s): CHEK2",
+          "OMIM as published: * 604373",
+          "Register flags: asterisk-gene-entry",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CHEK2",
+          "",
+          "OMIM: gene identifier only \u00b7 OMIM 604373",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"CHEK2\": [\n    {\n      \"association_type\": null,\n      \"entry_type\": \"gene\",\n      \"omim\": \"604373\",\n      \"source\": \"OMIM-geneMIM\",\n      \"source_field\": \"Approved Gene Symbol (HGNC)\"\n    }\n  ]\n}",
+          "OMIM 604373 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "CHEK2 mutation and increased risk of breast cancer",
+          "Candidate gene(s): CHEK2",
+          "OMIM as published: * 604373",
+          "Register flags: asterisk-gene-entry",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CHEK2",
+          "",
+          "OMIM: gene identifier only \u00b7 OMIM 604373",
+          "OMIM 604373 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "CHEK2",
+            "labels": [
+              "OMIM: gene identifier only \u00b7 OMIM 604373"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "TP53",
+      "rows": [
+        {
+          "condition": "Li-Fraumeni Syndrome (LFS)",
+          "hfea_status": "approved",
+          "omim": "151623",
+          "omim_as_published": "151623",
+          "genes": "TP53",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"TP53\": [{\"association_type\": null, \"omim\": \"151623\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"151623\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Li-Fraumeni Syndrome (LFS)",
+          "Candidate gene(s): TP53",
+          "OMIM as published: 151623",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "TP53",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 151623",
+          "HPO: Mendelian association \u00b7 OMIM 151623",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"TP53\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"151623\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"151623\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 151623 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Li-Fraumeni Syndrome (LFS)",
+          "Candidate gene(s): TP53",
+          "OMIM as published: 151623",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "TP53",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 151623",
+          "HPO: Mendelian association \u00b7 OMIM 151623",
+          "OMIM 151623 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "TP53",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 151623",
+              "HPO: Mendelian association \u00b7 OMIM 151623"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "PAH",
+      "rows": [
+        {
+          "condition": "Phenylketonuria (PKU)",
+          "hfea_status": "approved",
+          "omim": "261600",
+          "omim_as_published": "261600",
+          "genes": "PAH;QDPR",
+          "n_genes": 2,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "differ",
+          "register_defect": "",
+          "gene_evidence": "{\"PAH\": [{\"association_type\": null, \"omim\": \"261600\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"261600\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"QDPR\": [{\"association_type\": null, \"omim\": \"261600\", \"source\": \"ClinVar\", \"source_field\": \"RelatedGenes\"}]}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Sources disagree \u2014 review required",
+          "Multiple candidate genes",
+          "Phenylketonuria (PKU)",
+          "Candidate gene(s): PAH, QDPR",
+          "OMIM as published: 261600",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "PAH",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 261600",
+          "HPO: Mendelian association \u00b7 OMIM 261600",
+          "",
+          "QDPR",
+          "",
+          "ClinVar: related gene \u00b7 OMIM 261600",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"PAH\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"261600\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"261600\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"QDPR\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"261600\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"RelatedGenes\"\n    }\n  ]\n}",
+          "OMIM 261600 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Sources disagree \u2014 review required",
+          "Multiple candidate genes",
+          "Phenylketonuria (PKU)",
+          "Candidate gene(s): PAH, QDPR",
+          "OMIM as published: 261600",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "PAH",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 261600",
+          "HPO: Mendelian association \u00b7 OMIM 261600",
+          "",
+          "QDPR",
+          "",
+          "ClinVar: related gene \u00b7 OMIM 261600",
+          "OMIM 261600 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "PAH",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 261600",
+              "HPO: Mendelian association \u00b7 OMIM 261600"
+            ]
+          },
+          {
+            "gene": "QDPR",
+            "labels": [
+              "ClinVar: related gene \u00b7 OMIM 261600"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "GAA",
+      "rows": [
+        {
+          "condition": "Glycogen Storage Disease II (GSD2)",
+          "hfea_status": "approved",
+          "omim": "232300",
+          "omim_as_published": "232300",
+          "genes": "GAA",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"GAA\": [{\"association_type\": null, \"omim\": \"232300\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"232300\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Glycogen Storage Disease II (GSD2)",
+          "Candidate gene(s): GAA",
+          "OMIM as published: 232300",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "GAA",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 232300",
+          "HPO: Mendelian association \u00b7 OMIM 232300",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"GAA\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"232300\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"232300\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 232300 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Glycogen Storage Disease II (GSD2)",
+          "Candidate gene(s): GAA",
+          "OMIM as published: 232300",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "GAA",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 232300",
+          "HPO: Mendelian association \u00b7 OMIM 232300",
+          "OMIM 232300 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "GAA",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 232300",
+              "HPO: Mendelian association \u00b7 OMIM 232300"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "GBA",
+      "rows": [],
+      "status": "No match in this snapshot. Try a condition name, OMIM number or the live register.",
+      "cards": [],
+      "visibleCards": [],
+      "geneGroups": []
+    },
+    {
+      "query": "ATP7B",
+      "rows": [],
+      "status": "No match in this snapshot. Try a condition name, OMIM number or the live register.",
+      "cards": [],
+      "visibleCards": [],
+      "geneGroups": []
+    },
+    {
+      "query": "NF1",
+      "rows": [
+        {
+          "condition": "Neurofibromatosis, Type I (NF1)",
+          "hfea_status": "approved",
+          "omim": "162200",
+          "omim_as_published": "162200",
+          "genes": "NF1",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"NF1\": [{\"association_type\": null, \"omim\": \"162200\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"162200\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Neurofibromatosis, Type I (NF1)",
+          "Candidate gene(s): NF1",
+          "OMIM as published: 162200",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "NF1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 162200",
+          "HPO: Mendelian association \u00b7 OMIM 162200",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"NF1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"162200\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"162200\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 162200 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Neurofibromatosis, Type I (NF1)",
+          "Candidate gene(s): NF1",
+          "OMIM as published: 162200",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "NF1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 162200",
+          "HPO: Mendelian association \u00b7 OMIM 162200",
+          "OMIM 162200 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "NF1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 162200",
+              "HPO: Mendelian association \u00b7 OMIM 162200"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "TSC2",
+      "rows": [
+        {
+          "condition": "Tuberous Sclerosis 2 (TSC2)",
+          "hfea_status": "approved",
+          "omim": "613254",
+          "omim_as_published": "613254",
+          "genes": "IFNG;TSC2",
+          "n_genes": 2,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"IFNG\": [{\"association_type\": null, \"omim\": \"613254\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"613254\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"TSC2\": [{\"association_type\": null, \"omim\": \"613254\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"613254\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Tuberous Sclerosis 2 (TSC2)",
+          "Candidate gene(s): IFNG, TSC2",
+          "OMIM as published: 613254",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "IFNG",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 613254",
+          "HPO: polygenic association \u00b7 OMIM 613254",
+          "",
+          "TSC2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 613254",
+          "HPO: Mendelian association \u00b7 OMIM 613254",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"IFNG\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"613254\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"613254\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"TSC2\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"613254\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"613254\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 613254 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Tuberous Sclerosis 2 (TSC2)",
+          "Candidate gene(s): IFNG, TSC2",
+          "OMIM as published: 613254",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "IFNG",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 613254",
+          "HPO: polygenic association \u00b7 OMIM 613254",
+          "",
+          "TSC2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 613254",
+          "HPO: Mendelian association \u00b7 OMIM 613254",
+          "OMIM 613254 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "IFNG",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 613254",
+              "HPO: polygenic association \u00b7 OMIM 613254"
+            ]
+          },
+          {
+            "gene": "TSC2",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 613254",
+              "HPO: Mendelian association \u00b7 OMIM 613254"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "SCN1A",
+      "rows": [
+        {
+          "condition": "Developmental and Epileptic Encephalopathy 6B (DEE6B)",
+          "hfea_status": "approved",
+          "omim": "619317",
+          "omim_as_published": "619317",
+          "genes": "SCN1A",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"SCN1A\": [{\"association_type\": null, \"omim\": \"619317\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"619317\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        },
+        {
+          "condition": "Dravet Syndrome (DRVT)",
+          "hfea_status": "approved",
+          "omim": "607208",
+          "omim_as_published": "607208",
+          "genes": "SCN1A",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"SCN1A\": [{\"association_type\": null, \"omim\": \"607208\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"607208\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        },
+        {
+          "condition": "Generalized epilepsy with febrile seizures plus, type 2 (GEFSP2)",
+          "hfea_status": "approved",
+          "omim": "604403",
+          "omim_as_published": "604403",
+          "genes": "SCN1A",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"SCN1A\": [{\"association_type\": null, \"omim\": \"604403\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"604403\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "3 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Developmental and Epileptic Encephalopathy 6B (DEE6B)",
+          "Candidate gene(s): SCN1A",
+          "OMIM as published: 619317",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "SCN1A",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 619317",
+          "HPO: Mendelian association \u00b7 OMIM 619317",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"SCN1A\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"619317\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"619317\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 619317 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Dravet Syndrome (DRVT)",
+          "Candidate gene(s): SCN1A",
+          "OMIM as published: 607208",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "SCN1A",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 607208",
+          "HPO: Mendelian association \u00b7 OMIM 607208",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"SCN1A\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"607208\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"607208\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 607208 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Generalized epilepsy with febrile seizures plus, type 2 (GEFSP2)",
+          "Candidate gene(s): SCN1A",
+          "OMIM as published: 604403",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "SCN1A",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 604403",
+          "HPO: Mendelian association \u00b7 OMIM 604403",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"SCN1A\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"604403\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"604403\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 604403 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Developmental and Epileptic Encephalopathy 6B (DEE6B)",
+          "Candidate gene(s): SCN1A",
+          "OMIM as published: 619317",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "SCN1A",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 619317",
+          "HPO: Mendelian association \u00b7 OMIM 619317",
+          "OMIM 619317 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Dravet Syndrome (DRVT)",
+          "Candidate gene(s): SCN1A",
+          "OMIM as published: 607208",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "SCN1A",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 607208",
+          "HPO: Mendelian association \u00b7 OMIM 607208",
+          "OMIM 607208 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Generalized epilepsy with febrile seizures plus, type 2 (GEFSP2)",
+          "Candidate gene(s): SCN1A",
+          "OMIM as published: 604403",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "SCN1A",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 604403",
+          "HPO: Mendelian association \u00b7 OMIM 604403",
+          "OMIM 604403 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "SCN1A",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 619317",
+              "HPO: Mendelian association \u00b7 OMIM 619317"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "SCN1A",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 607208",
+              "HPO: Mendelian association \u00b7 OMIM 607208"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "SCN1A",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 604403",
+              "HPO: Mendelian association \u00b7 OMIM 604403"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "TGFB1",
+      "rows": [
+        {
+          "condition": "Cystic Fibrosis (CF)",
+          "hfea_status": "approved",
+          "omim": "219700",
+          "omim_as_published": "219700",
+          "genes": "CFTR;FCGR2A;TGFB1",
+          "n_genes": 3,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"CFTR\": [{\"association_type\": null, \"omim\": \"219700\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"219700\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"FCGR2A\": [{\"association_type\": null, \"omim\": \"219700\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"219700\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"TGFB1\": [{\"association_type\": null, \"omim\": \"219700\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"219700\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Cystic Fibrosis (CF)",
+          "Candidate gene(s): CFTR, FCGR2A, TGFB1",
+          "OMIM as published: 219700",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CFTR",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: Mendelian association \u00b7 OMIM 219700",
+          "",
+          "FCGR2A",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: polygenic association \u00b7 OMIM 219700",
+          "",
+          "TGFB1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: polygenic association \u00b7 OMIM 219700",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"CFTR\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"219700\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"219700\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"FCGR2A\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"219700\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"219700\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"TGFB1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"219700\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"219700\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 219700 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Cystic Fibrosis (CF)",
+          "Candidate gene(s): CFTR, FCGR2A, TGFB1",
+          "OMIM as published: 219700",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CFTR",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: Mendelian association \u00b7 OMIM 219700",
+          "",
+          "FCGR2A",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: polygenic association \u00b7 OMIM 219700",
+          "",
+          "TGFB1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: polygenic association \u00b7 OMIM 219700",
+          "OMIM 219700 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "CFTR",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 219700",
+              "HPO: Mendelian association \u00b7 OMIM 219700"
+            ]
+          },
+          {
+            "gene": "FCGR2A",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 219700",
+              "HPO: polygenic association \u00b7 OMIM 219700"
+            ]
+          },
+          {
+            "gene": "TGFB1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 219700",
+              "HPO: polygenic association \u00b7 OMIM 219700"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "QDPR",
+      "rows": [
+        {
+          "condition": "Hyperphenylalaninemia, BH4-deficient, C (HPABH4C)",
+          "hfea_status": "approved",
+          "omim": "261630",
+          "omim_as_published": "261630",
+          "genes": "QDPR",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"QDPR\": [{\"association_type\": null, \"omim\": \"261630\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"261630\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        },
+        {
+          "condition": "Phenylketonuria (PKU)",
+          "hfea_status": "approved",
+          "omim": "261600",
+          "omim_as_published": "261600",
+          "genes": "PAH;QDPR",
+          "n_genes": 2,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "differ",
+          "register_defect": "",
+          "gene_evidence": "{\"PAH\": [{\"association_type\": null, \"omim\": \"261600\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"261600\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"QDPR\": [{\"association_type\": null, \"omim\": \"261600\", \"source\": \"ClinVar\", \"source_field\": \"RelatedGenes\"}]}"
+        }
+      ],
+      "status": "2 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Hyperphenylalaninemia, BH4-deficient, C (HPABH4C)",
+          "Candidate gene(s): QDPR",
+          "OMIM as published: 261630",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "QDPR",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 261630",
+          "HPO: Mendelian association \u00b7 OMIM 261630",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"QDPR\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"261630\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"261630\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 261630 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Sources disagree \u2014 review required",
+          "Multiple candidate genes",
+          "Phenylketonuria (PKU)",
+          "Candidate gene(s): PAH, QDPR",
+          "OMIM as published: 261600",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "PAH",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 261600",
+          "HPO: Mendelian association \u00b7 OMIM 261600",
+          "",
+          "QDPR",
+          "",
+          "ClinVar: related gene \u00b7 OMIM 261600",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"PAH\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"261600\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"261600\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"QDPR\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"261600\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"RelatedGenes\"\n    }\n  ]\n}",
+          "OMIM 261600 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Hyperphenylalaninemia, BH4-deficient, C (HPABH4C)",
+          "Candidate gene(s): QDPR",
+          "OMIM as published: 261630",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "QDPR",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 261630",
+          "HPO: Mendelian association \u00b7 OMIM 261630",
+          "OMIM 261630 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Sources disagree \u2014 review required",
+          "Multiple candidate genes",
+          "Phenylketonuria (PKU)",
+          "Candidate gene(s): PAH, QDPR",
+          "OMIM as published: 261600",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "PAH",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 261600",
+          "HPO: Mendelian association \u00b7 OMIM 261600",
+          "",
+          "QDPR",
+          "",
+          "ClinVar: related gene \u00b7 OMIM 261600",
+          "OMIM 261600 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "QDPR",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 261630",
+              "HPO: Mendelian association \u00b7 OMIM 261630"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "PAH",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 261600",
+              "HPO: Mendelian association \u00b7 OMIM 261600"
+            ]
+          },
+          {
+            "gene": "QDPR",
+            "labels": [
+              "ClinVar: related gene \u00b7 OMIM 261600"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "BUBR1",
+      "rows": [
+        {
+          "condition": "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+          "hfea_status": "approved",
+          "omim": "257300",
+          "omim_as_published": "257300",
+          "genes": "BUB1B",
+          "n_genes": 1,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"BUB1B\": [{\"association_type\": null, \"omim\": \"257300\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"257300\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "Alias BUBR1 \u2192 BUB1B. 1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+          "Candidate gene(s): BUB1B",
+          "OMIM as published: 257300",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BUB1B",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 257300",
+          "HPO: Mendelian association \u00b7 OMIM 257300",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"BUB1B\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"257300\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"257300\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 257300 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Mosaic Variegated Aneuploidy Syndrome 1 (MVA1)",
+          "Candidate gene(s): BUB1B",
+          "OMIM as published: 257300",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "BUB1B",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 257300",
+          "HPO: Mendelian association \u00b7 OMIM 257300",
+          "OMIM 257300 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "BUB1B",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 257300",
+              "HPO: Mendelian association \u00b7 OMIM 257300"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "CHIME",
+      "rows": [
+        {
+          "condition": "Coloboma, Congenital Heart Disease, Ichthyosiform Dermatosis, Impaired Intellectual Development, and Ear Anomalies Syndrome (CHIME)",
+          "hfea_status": "approved",
+          "omim": "",
+          "omim_as_published": "28000",
+          "genes": "",
+          "n_genes": 0,
+          "sources": "",
+          "clinvar_hpo": "",
+          "register_defect": "malformed-mim-length",
+          "gene_evidence": "{}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Coloboma, Congenital Heart Disease, Ichthyosiform Dermatosis, Impaired Intellectual Development, and Ear Anomalies Syndrome (CHIME)",
+          "Candidate gene(s): Unmapped",
+          "OMIM as published: 28000",
+          "Register flags: malformed-mim-length",
+          "",
+          "Raw source evidence (JSON)",
+          "{}"
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Coloboma, Congenital Heart Disease, Ichthyosiform Dermatosis, Impaired Intellectual Development, and Ear Anomalies Syndrome (CHIME)",
+          "Candidate gene(s): Unmapped",
+          "OMIM as published: 28000",
+          "Register flags: malformed-mim-length"
+        ]
+      ],
+      "geneGroups": [
+        []
+      ]
+    },
+    {
+      "query": "SIX2",
+      "rows": [
+        {
+          "condition": "SIX2-related disorder (No OMIM number)",
+          "hfea_status": "approved",
+          "omim": "",
+          "omim_as_published": "",
+          "genes": "",
+          "n_genes": 0,
+          "sources": "",
+          "clinvar_hpo": "",
+          "register_defect": "no-omim-cell",
+          "gene_evidence": "{}"
+        }
+      ],
+      "status": "1 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "SIX2-related disorder (No OMIM number)",
+          "Candidate gene(s): Unmapped",
+          "OMIM as published: (blank)",
+          "Register flags: no-omim-cell",
+          "",
+          "Raw source evidence (JSON)",
+          "{}"
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "SIX2-related disorder (No OMIM number)",
+          "Candidate gene(s): Unmapped",
+          "OMIM as published: (blank)",
+          "Register flags: no-omim-cell"
+        ]
+      ],
+      "geneGroups": [
+        []
+      ]
+    },
+    {
+      "query": "28000",
+      "rows": [],
+      "status": "No match in this snapshot. Try a condition name, OMIM number or the live register.",
+      "cards": [],
+      "visibleCards": [],
+      "geneGroups": []
+    },
+    {
+      "query": "  cftr  ",
+      "rows": [
+        {
+          "condition": "Cystic Fibrosis (CF)",
+          "hfea_status": "approved",
+          "omim": "219700",
+          "omim_as_published": "219700",
+          "genes": "CFTR;FCGR2A;TGFB1",
+          "n_genes": 3,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"CFTR\": [{\"association_type\": null, \"omim\": \"219700\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"219700\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"FCGR2A\": [{\"association_type\": null, \"omim\": \"219700\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"219700\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"TGFB1\": [{\"association_type\": null, \"omim\": \"219700\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"219700\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        },
+        {
+          "condition": "Pancreatitis, Hereditary (PCTT)",
+          "hfea_status": "approved",
+          "omim": "167800",
+          "omim_as_published": "167800",
+          "genes": "CFTR;CTRC;PRSS1;PRSS2;SPINK1",
+          "n_genes": 5,
+          "sources": "ClinVar,HPO",
+          "clinvar_hpo": "both",
+          "register_defect": "",
+          "gene_evidence": "{\"CFTR\": [{\"association_type\": null, \"omim\": \"167800\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"167800\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"CTRC\": [{\"association_type\": null, \"omim\": \"167800\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"167800\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"PRSS1\": [{\"association_type\": null, \"omim\": \"167800\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"167800\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"PRSS2\": [{\"association_type\": null, \"omim\": \"167800\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"POLYGENIC\", \"omim\": \"167800\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}], \"SPINK1\": [{\"association_type\": null, \"omim\": \"167800\", \"source\": \"ClinVar\", \"source_field\": \"AssociatedGenes\"}, {\"association_type\": \"MENDELIAN\", \"omim\": \"167800\", \"source\": \"HPO\", \"source_field\": \"gene_symbol\"}]}"
+        }
+      ],
+      "status": "2 matching register rows. ",
+      "cards": [
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Cystic Fibrosis (CF)",
+          "Candidate gene(s): CFTR, FCGR2A, TGFB1",
+          "OMIM as published: 219700",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CFTR",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: Mendelian association \u00b7 OMIM 219700",
+          "",
+          "FCGR2A",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: polygenic association \u00b7 OMIM 219700",
+          "",
+          "TGFB1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: polygenic association \u00b7 OMIM 219700",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"CFTR\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"219700\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"219700\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"FCGR2A\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"219700\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"219700\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"TGFB1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"219700\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"219700\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 219700 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Pancreatitis, Hereditary (PCTT)",
+          "Candidate gene(s): CFTR, CTRC, PRSS1, PRSS2, SPINK1",
+          "OMIM as published: 167800",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CFTR",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: polygenic association \u00b7 OMIM 167800",
+          "",
+          "CTRC",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: polygenic association \u00b7 OMIM 167800",
+          "",
+          "PRSS1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: Mendelian association \u00b7 OMIM 167800",
+          "",
+          "PRSS2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: polygenic association \u00b7 OMIM 167800",
+          "",
+          "SPINK1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: Mendelian association \u00b7 OMIM 167800",
+          "",
+          "Raw source evidence (JSON)",
+          "{\n  \"CFTR\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"167800\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"167800\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"CTRC\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"167800\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"167800\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"PRSS1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"167800\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"167800\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"PRSS2\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"167800\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"POLYGENIC\",\n      \"omim\": \"167800\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ],\n  \"SPINK1\": [\n    {\n      \"association_type\": null,\n      \"omim\": \"167800\",\n      \"source\": \"ClinVar\",\n      \"source_field\": \"AssociatedGenes\"\n    },\n    {\n      \"association_type\": \"MENDELIAN\",\n      \"omim\": \"167800\",\n      \"source\": \"HPO\",\n      \"source_field\": \"gene_symbol\"\n    }\n  ]\n}",
+          "OMIM 167800 \u2197 "
+        ]
+      ],
+      "visibleCards": [
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Cystic Fibrosis (CF)",
+          "Candidate gene(s): CFTR, FCGR2A, TGFB1",
+          "OMIM as published: 219700",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CFTR",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: Mendelian association \u00b7 OMIM 219700",
+          "",
+          "FCGR2A",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: polygenic association \u00b7 OMIM 219700",
+          "",
+          "TGFB1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 219700",
+          "HPO: polygenic association \u00b7 OMIM 219700",
+          "OMIM 219700 \u2197 "
+        ],
+        [
+          "",
+          "Condition status: approved",
+          "Multiple candidate genes",
+          "Pancreatitis, Hereditary (PCTT)",
+          "Candidate gene(s): CFTR, CTRC, PRSS1, PRSS2, SPINK1",
+          "OMIM as published: 167800",
+          "Source descriptions, not clinical classifications or gene-level approvals.",
+          "",
+          "",
+          "CFTR",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: polygenic association \u00b7 OMIM 167800",
+          "",
+          "CTRC",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: polygenic association \u00b7 OMIM 167800",
+          "",
+          "PRSS1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: Mendelian association \u00b7 OMIM 167800",
+          "",
+          "PRSS2",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: polygenic association \u00b7 OMIM 167800",
+          "",
+          "SPINK1",
+          "",
+          "ClinVar: associated gene \u00b7 OMIM 167800",
+          "HPO: Mendelian association \u00b7 OMIM 167800",
+          "OMIM 167800 \u2197 "
+        ]
+      ],
+      "geneGroups": [
+        [
+          {
+            "gene": "CFTR",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 219700",
+              "HPO: Mendelian association \u00b7 OMIM 219700"
+            ]
+          },
+          {
+            "gene": "FCGR2A",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 219700",
+              "HPO: polygenic association \u00b7 OMIM 219700"
+            ]
+          },
+          {
+            "gene": "TGFB1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 219700",
+              "HPO: polygenic association \u00b7 OMIM 219700"
+            ]
+          }
+        ],
+        [
+          {
+            "gene": "CFTR",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 167800",
+              "HPO: polygenic association \u00b7 OMIM 167800"
+            ]
+          },
+          {
+            "gene": "CTRC",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 167800",
+              "HPO: polygenic association \u00b7 OMIM 167800"
+            ]
+          },
+          {
+            "gene": "PRSS1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 167800",
+              "HPO: Mendelian association \u00b7 OMIM 167800"
+            ]
+          },
+          {
+            "gene": "PRSS2",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 167800",
+              "HPO: polygenic association \u00b7 OMIM 167800"
+            ]
+          },
+          {
+            "gene": "SPINK1",
+            "labels": [
+              "ClinVar: associated gene \u00b7 OMIM 167800",
+              "HPO: Mendelian association \u00b7 OMIM 167800"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "query": "__EXPANDED_NO_SUCH_GENE_20261023__",
+      "rows": [],
+      "status": "No match in this snapshot. Try a condition name, OMIM number or the live register.",
+      "cards": [],
+      "visibleCards": [],
+      "geneGroups": []
+    }
+  ],
+  "source_conformance_status": "PASS",
+  "overall_interpretation": "Report both retained pre-fix loss and post-fix field/type/display checks. Repair preserves source semantics; it does not establish clinical validity.",
+  "targeted_test_execution": {
+    "executed_utc": "2026-10-23T22:15:55.950199+00:00",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "node": "v26.7.0",
+    "tests_run": 41,
+    "status": "PASS",
+    "suites": [
+      {
+        "command": [
+          "/Users/adriamasnou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_pgtm*.py",
+          "-v"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "test_both_clinvar_fields_survive (test_pgtm.PgtmTests.test_both_clinvar_fields_survive) ... ok\ntest_embedded_data_equal_csv (test_pgtm.PgtmTests.test_embedded_data_equal_csv) ... ok\ntest_null_gene_is_not_indexed (test_pgtm.PgtmTests.test_null_gene_is_not_indexed) ... ok\ntest_packaged_rows_and_per_gene_evidence (test_pgtm.PgtmTests.test_packaged_rows_and_per_gene_evidence) ... ok\ntest_adjudicated_tasks_run_actual_javascript (test_pgtm_audit.PgtmAuditTests.test_adjudicated_tasks_run_actual_javascript) ... ok\ntest_altered_original_hash_fails_before_parsing (test_pgtm_audit.PgtmAuditTests.test_altered_original_hash_fails_before_parsing) ... ok\ntest_consistent_output_corruption_still_fails_external_expectation (test_pgtm_audit.PgtmAuditTests.test_consistent_output_corruption_still_fails_external_expectation) ... ok\ntest_missing_and_corrupted_bundled_evidence_fail_closed (test_pgtm_audit.PgtmAuditTests.test_missing_and_corrupted_bundled_evidence_fail_closed) ... ok\ntest_missing_node_is_error_not_skipped_success (test_pgtm_audit.PgtmAuditTests.test_missing_node_is_error_not_skipped_success) ... ok\ntest_partial_rows_rejected_after_valid_control_row (test_pgtm_audit.PgtmAuditTests.test_partial_rows_rejected_after_valid_control_row) ... ok\ntest_removed_record_fails_even_if_excerpt_hash_is_updated (test_pgtm_audit.PgtmAuditTests.test_removed_record_fails_even_if_excerpt_hash_is_updated) ... ok\ntest_renamed_relatedgenes_header_rejected_despite_bub1b_control (test_pgtm_audit.PgtmAuditTests.test_renamed_relatedgenes_header_rejected_despite_bub1b_control) ... ok\ntest_missing_or_renamed_hpo_role_header_fails_closed (test_pgtm_roles.SourceRoleTests.test_missing_or_renamed_hpo_role_header_fails_closed) ... ok\ntest_multiple_hpo_roles_for_one_gene_survive_and_are_not_normalized (test_pgtm_roles.SourceRoleTests.test_multiple_hpo_roles_for_one_gene_survive_and_are_not_normalized) ... ok\ntest_omim_gene_entry_remains_distinct_from_phenotype_mapping (test_pgtm_roles.SourceRoleTests.test_omim_gene_entry_remains_distinct_from_phenotype_mapping) ... ok\ntest_same_gene_preserves_both_clinvar_fields_without_inventing_type (test_pgtm_roles.SourceRoleTests.test_same_gene_preserves_both_clinvar_fields_without_inventing_type) ... ok\ntest_cftr_query_shows_other_genes_roles_outside_details (test_pgtm_roles.VisibleRoleTests.test_cftr_query_shows_other_genes_roles_outside_details) ... ok\ntest_one_group_per_gene_and_no_implementation_labels_in_visible_text (test_pgtm_roles.VisibleRoleTests.test_one_group_per_gene_and_no_implementation_labels_in_visible_text) ... ok\ntest_relatedgenes_is_not_promoted_to_associatedgenes (test_pgtm_roles.VisibleRoleTests.test_relatedgenes_is_not_promoted_to_associatedgenes) ... ok\ntest_status_is_condition_level_and_gene_identifier_caveat_is_visible (test_pgtm_roles.VisibleRoleTests.test_status_is_condition_level_and_gene_identifier_caveat_is_visible) ... ok\ntest_unexpected_source_category_is_preserved_without_clinical_reclassification (test_pgtm_roles.VisibleRoleTests.test_unexpected_source_category_is_preserved_without_clinical_reclassification) ... ok\ntest_unknown_hpo_types_remain_literal_and_raw_evidence_unchanged (test_pgtm_roles.VisibleRoleTests.test_unknown_hpo_types_remain_literal_and_raw_evidence_unchanged) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 0.382s\n\nOK\n"
+      },
+      {
+        "command": [
+          "/Users/adriamasnou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "examples/pgtm-expanded-validation",
+          "-p",
+          "test_evaluation.py",
+          "-v"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "test_bad_original_verification_blocks_runtime (test_evaluation.ExpandedEvaluationTests.test_bad_original_verification_blocks_runtime) ... ok\ntest_complete_frozen_review_and_prequery_order (test_evaluation.ExpandedEvaluationTests.test_complete_frozen_review_and_prequery_order) ... ok\ntest_correct_visible_role_under_wrong_gene_is_rejected (test_evaluation.ExpandedEvaluationTests.test_correct_visible_role_under_wrong_gene_is_rejected) ... ok\ntest_correct_word_on_wrong_gene_is_rejected (test_evaluation.ExpandedEvaluationTests.test_correct_word_on_wrong_gene_is_rejected) ... ok\ntest_deleted_related_gene_record_fails_even_without_hash_check (test_evaluation.ExpandedEvaluationTests.test_deleted_related_gene_record_fails_even_without_hash_check) ... ok\ntest_incomplete_manual_gene_set_is_not_accepted_as_truth (test_evaluation.ExpandedEvaluationTests.test_incomplete_manual_gene_set_is_not_accepted_as_truth) ... ok\ntest_mapping_correct_but_ambiguity_warning_missing_fails (test_evaluation.ExpandedEvaluationTests.test_mapping_correct_but_ambiguity_warning_missing_fails) ... ok\ntest_metadata_in_collapsed_details_only_does_not_pass (test_evaluation.ExpandedEvaluationTests.test_metadata_in_collapsed_details_only_does_not_pass) ... ok\ntest_missing_runtime_does_not_return_skipped_success (test_evaluation.ExpandedEvaluationTests.test_missing_runtime_does_not_return_skipped_success) ... ok\ntest_pre_fix_payload_fails_new_role_and_visible_label_checks (test_evaluation.ExpandedEvaluationTests.test_pre_fix_payload_fails_new_role_and_visible_label_checks) ... ok\ntest_qualifier_loss_is_reported_despite_source_conformance (test_evaluation.ExpandedEvaluationTests.test_qualifier_loss_is_reported_despite_source_conformance) ... ok\ntest_query_identity_mismatch_fails (test_evaluation.ExpandedEvaluationTests.test_query_identity_mismatch_fails) ... ok\ntest_relatedgenes_changed_to_associatedgenes_is_rejected (test_evaluation.ExpandedEvaluationTests.test_relatedgenes_changed_to_associatedgenes_is_rejected) ... ok\ntest_retained_11_pairs_and_frozen_facts_unchanged (test_evaluation.ExpandedEvaluationTests.test_retained_11_pairs_and_frozen_facts_unchanged) ... ok\ntest_same_genes_with_unsupported_source_link_fail (test_evaluation.ExpandedEvaluationTests.test_same_genes_with_unsupported_source_link_fail) ... ok\ntest_source_role_changes_are_detected (test_evaluation.ExpandedEvaluationTests.test_source_role_changes_are_detected) ... ok\ntest_target_only_match_cannot_hide_missing_additional_rows (test_evaluation.ExpandedEvaluationTests.test_target_only_match_cannot_hide_missing_additional_rows) ... ok\ntest_unqualified_status_is_rejected_even_when_condition_status_exists (test_evaluation.ExpandedEvaluationTests.test_unqualified_status_is_rejected_even_when_condition_status_exists) ... ok\ntest_unreviewed_extra_row_fails_closed (test_evaluation.ExpandedEvaluationTests.test_unreviewed_extra_row_fails_closed) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.006s\n\nOK\n"
+      }
+    ],
+    "test_file_sha256": {
+      "tests/test_pgtm.py": "d3624062a93231478990395d30a18303894725e607d67504663755a303c3e99d",
+      "tests/test_pgtm_audit.py": "d217f11e716415e1aa37fca24b9ae094c927c7098d708643dcffe3673dc2c564",
+      "tests/test_pgtm_roles.py": "c0c1df74254340893bdadf7e8ffbb15461d100385dd923351bf620f002294271",
+      "examples/pgtm-expanded-validation/test_evaluation.py": "000ea1d9a668e302a850f6fe737d823d09f3e55b2c5904ddca2b2e48778d3737"
+    },
+    "limitations": "Targeted parser, source-role and grouped UI payload checks. Browser layout verification is recorded separately; no user-comprehension or clinical validation."
+  },
+  "browser_rendering_verification": {
+    "executed_utc": "2026-10-23T22:15:45.394Z",
+    "browser": "156.0.8078.47",
+    "navigator_sha256": "77cb5b4e291163393b1d6b28350b40d37905cf44a70795a4f3ad74cc2b2881e2",
+    "script_sha256": "8fc3ae42595ff87f09ba189c9026eb62fd85488cc624b19ae4efdf47e99ed173",
+    "checks": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "query": "CFTR",
+        "cards": 2,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "query": "QDPR",
+        "cards": 2,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "query": "BRCA1",
+        "cards": 3,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "query": "BRCA2",
+        "cards": 4,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "query": "CHEK2",
+        "cards": 1,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "query": "HBB",
+        "cards": 3,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "query": "CFTR",
+        "cards": 2,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "query": "QDPR",
+        "cards": 2,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "query": "BRCA1",
+        "cards": 3,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "query": "BRCA2",
+        "cards": 4,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "query": "CHEK2",
+        "cards": 1,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "query": "HBB",
+        "cards": 3,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "query": "CFTR",
+        "cards": 2,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "query": "QDPR",
+        "cards": 2,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "query": "BRCA1",
+        "cards": 3,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "query": "BRCA2",
+        "cards": 4,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "query": "CHEK2",
+        "cards": 1,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      },
+      {
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "query": "HBB",
+        "cards": 3,
+        "horizontalOverflow": false,
+        "groupedRolesVisible": true,
+        "rawEvidenceUnchanged": true,
+        "status": "PASS"
+      }
+    ],
+    "javascriptErrors": [],
+    "attemptedHttpRequests": [],
+    "rawJsonExpandsAtAllViewports": true,
+    "status": "PASS",
+    "limits": "Local headless Chromium rendering of selected source-reviewed queries. Not a physical-device, cross-browser, accessibility, usability or clinical validation. Final presentation captures are separate."
+  }
+}

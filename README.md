@@ -35,7 +35,7 @@ The canary self-test tests the checker with synthetic fixtures. Actual model inf
 - [Public HG002 spike-in smoke test](submissions/generalisation-public-case.md): scale demonstration, not diagnostic validation.
 - [Reagent design](submissions/n1002k-reagent-specification.md), [fragment protocol](submissions/n1002k-collaboration-package.md), [assay pilot](submissions/pilot-protocol-bubr1-flow.md) and [screen design](submissions/screen-protocol-runnable.md): proposed laboratory work, subject to the functional plan's gates.
 - [Literature reading record](submissions/literature-reading-record.md): exact review coverage and unresolved supplementary access.
-- [Navigator task validation](submissions/pgtm-task-validation.md): eleven source-adjudicated tasks with explicit comparison limits.
+- [Expanded navigator evaluation](submissions/pgtm-expanded-validation.md): 28 frozen queries, all 47 returned row–gene pairs reviewed, source-role repair and 18 local browser checks. The earlier [11-task audit](submissions/pgtm-task-validation.md) is retained.
 - [Rescue-decision prototype](submissions/rescue-decision-validation.md): 40 frozen synthetic cases exercise functional, exposure and fate criteria. This tests software decisions, not drug rescue.
 - [Register audit](submissions/register-audit.md), [decision-aid draft](submissions/family-facing-decision-aid.md), [cost/access context](submissions/impact-costs-and-access.md) and [secondary-findings governance](submissions/secondary-findings-disclosure-protocol.md).
 

@@ -1,0 +1,48 @@
+{
+  "executed_utc": "2026-10-23T22:15:55.950199+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "node": "v26.7.0",
+  "tests_run": 41,
+  "status": "PASS",
+  "suites": [
+    {
+      "command": [
+        "/Users/adriamasnou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_pgtm*.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_both_clinvar_fields_survive (test_pgtm.PgtmTests.test_both_clinvar_fields_survive) ... ok\ntest_embedded_data_equal_csv (test_pgtm.PgtmTests.test_embedded_data_equal_csv) ... ok\ntest_null_gene_is_not_indexed (test_pgtm.PgtmTests.test_null_gene_is_not_indexed) ... ok\ntest_packaged_rows_and_per_gene_evidence (test_pgtm.PgtmTests.test_packaged_rows_and_per_gene_evidence) ... ok\ntest_adjudicated_tasks_run_actual_javascript (test_pgtm_audit.PgtmAuditTests.test_adjudicated_tasks_run_actual_javascript) ... ok\ntest_altered_original_hash_fails_before_parsing (test_pgtm_audit.PgtmAuditTests.test_altered_original_hash_fails_before_parsing) ... ok\ntest_consistent_output_corruption_still_fails_external_expectation (test_pgtm_audit.PgtmAuditTests.test_consistent_output_corruption_still_fails_external_expectation) ... ok\ntest_missing_and_corrupted_bundled_evidence_fail_closed (test_pgtm_audit.PgtmAuditTests.test_missing_and_corrupted_bundled_evidence_fail_closed) ... ok\ntest_missing_node_is_error_not_skipped_success (test_pgtm_audit.PgtmAuditTests.test_missing_node_is_error_not_skipped_success) ... ok\ntest_partial_rows_rejected_after_valid_control_row (test_pgtm_audit.PgtmAuditTests.test_partial_rows_rejected_after_valid_control_row) ... ok\ntest_removed_record_fails_even_if_excerpt_hash_is_updated (test_pgtm_audit.PgtmAuditTests.test_removed_record_fails_even_if_excerpt_hash_is_updated) ... ok\ntest_renamed_relatedgenes_header_rejected_despite_bub1b_control (test_pgtm_audit.PgtmAuditTests.test_renamed_relatedgenes_header_rejected_despite_bub1b_control) ... ok\ntest_missing_or_renamed_hpo_role_header_fails_closed (test_pgtm_roles.SourceRoleTests.test_missing_or_renamed_hpo_role_header_fails_closed) ... ok\ntest_multiple_hpo_roles_for_one_gene_survive_and_are_not_normalized (test_pgtm_roles.SourceRoleTests.test_multiple_hpo_roles_for_one_gene_survive_and_are_not_normalized) ... ok\ntest_omim_gene_entry_remains_distinct_from_phenotype_mapping (test_pgtm_roles.SourceRoleTests.test_omim_gene_entry_remains_distinct_from_phenotype_mapping) ... ok\ntest_same_gene_preserves_both_clinvar_fields_without_inventing_type (test_pgtm_roles.SourceRoleTests.test_same_gene_preserves_both_clinvar_fields_without_inventing_type) ... ok\ntest_cftr_query_shows_other_genes_roles_outside_details (test_pgtm_roles.VisibleRoleTests.test_cftr_query_shows_other_genes_roles_outside_details) ... ok\ntest_one_group_per_gene_and_no_implementation_labels_in_visible_text (test_pgtm_roles.VisibleRoleTests.test_one_group_per_gene_and_no_implementation_labels_in_visible_text) ... ok\ntest_relatedgenes_is_not_promoted_to_associatedgenes (test_pgtm_roles.VisibleRoleTests.test_relatedgenes_is_not_promoted_to_associatedgenes) ... ok\ntest_status_is_condition_level_and_gene_identifier_caveat_is_visible (test_pgtm_roles.VisibleRoleTests.test_status_is_condition_level_and_gene_identifier_caveat_is_visible) ... ok\ntest_unexpected_source_category_is_preserved_without_clinical_reclassification (test_pgtm_roles.VisibleRoleTests.test_unexpected_source_category_is_preserved_without_clinical_reclassification) ... ok\ntest_unknown_hpo_types_remain_literal_and_raw_evidence_unchanged (test_pgtm_roles.VisibleRoleTests.test_unknown_hpo_types_remain_literal_and_raw_evidence_unchanged) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 0.382s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/Users/adriamasnou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "examples/pgtm-expanded-validation",
+        "-p",
+        "test_evaluation.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_bad_original_verification_blocks_runtime (test_evaluation.ExpandedEvaluationTests.test_bad_original_verification_blocks_runtime) ... ok\ntest_complete_frozen_review_and_prequery_order (test_evaluation.ExpandedEvaluationTests.test_complete_frozen_review_and_prequery_order) ... ok\ntest_correct_visible_role_under_wrong_gene_is_rejected (test_evaluation.ExpandedEvaluationTests.test_correct_visible_role_under_wrong_gene_is_rejected) ... ok\ntest_correct_word_on_wrong_gene_is_rejected (test_evaluation.ExpandedEvaluationTests.test_correct_word_on_wrong_gene_is_rejected) ... ok\ntest_deleted_related_gene_record_fails_even_without_hash_check (test_evaluation.ExpandedEvaluationTests.test_deleted_related_gene_record_fails_even_without_hash_check) ... ok\ntest_incomplete_manual_gene_set_is_not_accepted_as_truth (test_evaluation.ExpandedEvaluationTests.test_incomplete_manual_gene_set_is_not_accepted_as_truth) ... ok\ntest_mapping_correct_but_ambiguity_warning_missing_fails (test_evaluation.ExpandedEvaluationTests.test_mapping_correct_but_ambiguity_warning_missing_fails) ... ok\ntest_metadata_in_collapsed_details_only_does_not_pass (test_evaluation.ExpandedEvaluationTests.test_metadata_in_collapsed_details_only_does_not_pass) ... ok\ntest_missing_runtime_does_not_return_skipped_success (test_evaluation.ExpandedEvaluationTests.test_missing_runtime_does_not_return_skipped_success) ... ok\ntest_pre_fix_payload_fails_new_role_and_visible_label_checks (test_evaluation.ExpandedEvaluationTests.test_pre_fix_payload_fails_new_role_and_visible_label_checks) ... ok\ntest_qualifier_loss_is_reported_despite_source_conformance (test_evaluation.ExpandedEvaluationTests.test_qualifier_loss_is_reported_despite_source_conformance) ... ok\ntest_query_identity_mismatch_fails (test_evaluation.ExpandedEvaluationTests.test_query_identity_mismatch_fails) ... ok\ntest_relatedgenes_changed_to_associatedgenes_is_rejected (test_evaluation.ExpandedEvaluationTests.test_relatedgenes_changed_to_associatedgenes_is_rejected) ... ok\ntest_retained_11_pairs_and_frozen_facts_unchanged (test_evaluation.ExpandedEvaluationTests.test_retained_11_pairs_and_frozen_facts_unchanged) ... ok\ntest_same_genes_with_unsupported_source_link_fail (test_evaluation.ExpandedEvaluationTests.test_same_genes_with_unsupported_source_link_fail) ... ok\ntest_source_role_changes_are_detected (test_evaluation.ExpandedEvaluationTests.test_source_role_changes_are_detected) ... ok\ntest_target_only_match_cannot_hide_missing_additional_rows (test_evaluation.ExpandedEvaluationTests.test_target_only_match_cannot_hide_missing_additional_rows) ... ok\ntest_unqualified_status_is_rejected_even_when_condition_status_exists (test_evaluation.ExpandedEvaluationTests.test_unqualified_status_is_rejected_even_when_condition_status_exists) ... ok\ntest_unreviewed_extra_row_fails_closed (test_evaluation.ExpandedEvaluationTests.test_unreviewed_extra_row_fails_closed) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.006s\n\nOK\n"
+    }
+  ],
+  "test_file_sha256": {
+    "tests/test_pgtm.py": "d3624062a93231478990395d30a18303894725e607d67504663755a303c3e99d",
+    "tests/test_pgtm_audit.py": "d217f11e716415e1aa37fca24b9ae094c927c7098d708643dcffe3673dc2c564",
+    "tests/test_pgtm_roles.py": "c0c1df74254340893bdadf7e8ffbb15461d100385dd923351bf620f002294271",
+    "examples/pgtm-expanded-validation/test_evaluation.py": "000ea1d9a668e302a850f6fe737d823d09f3e55b2c5904ddca2b2e48778d3737"
+  },
+  "limitations": "Targeted parser, source-role and grouped UI payload checks. Browser layout verification is recorded separately; no user-comprehension or clinical validation."
+}
