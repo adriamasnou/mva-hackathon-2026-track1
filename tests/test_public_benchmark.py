@@ -12,9 +12,33 @@ def module(name):
 prep=module('prepare');ev=module('evaluate');runner=module('run')
 phenotype=module('run_phenotype')
 exporter=module('export_results')
+export_verifier=module('verify_export')
 
 
 class PublicBenchmarkTests(unittest.TestCase):
+    def test_portable_export_recomputes_ranks_without_original_files(self):
+        with tempfile.TemporaryDirectory() as d:
+            work=Path(d)/'work';work.mkdir()
+            result=work/'result.jsonl'
+            result.write_text('\n'.join(json.dumps({'geneSymbol':g,'combinedScore':score,'priorityScore':.5,'variantScore':.8}) for g,score in [('TARGET',.8),('OTHER',.8)])+'\n')
+            job=work/'case.yml';job.write_text('retained public job fixture')
+            jobs=[{'case_id':'x','gene':'TARGET','stratum':'autosomal','arm':'original','primary_autosomal':True,
+                   'job':str(job),'job_sha256':runner.sha(job),'result_jsonl':str(result)}]
+            manifest=work/'jobs-manifest.json';manifest.write_text(json.dumps(jobs))
+            (work/'execution.json').write_text(json.dumps({'status':'completed','exit_code':0,'jobs_manifest_sha256':runner.sha(manifest),'outputs':{str(result):runner.sha(result)}}))
+            cases=work/'cases.json';cases.write_text(json.dumps({'cases':[{'case_id':'x','gene':'TARGET','causal_variants':[]}]}))
+            out=Path(d)/'export';exporter.export(work,out,cases)
+            result.unlink();job.unlink()
+            self.assertEqual(export_verifier.verify(out)['jobs_verified'],1)
+            evaluation=out/'evaluation.json';data=json.loads(evaluation.read_text())
+            data['all_case_results'][0]['rank_max']=1
+            evaluation.write_text(json.dumps(data))
+            receipt=out/'export-receipt.json';data=json.loads(receipt.read_text())
+            data['file_sha256']['evaluation.json']=runner.sha(evaluation)
+            receipt.write_text(json.dumps(data))
+            with self.assertRaisesRegex(ValueError,'do not reproduce rank'):
+                export_verifier.verify(out)
+
     def test_gene_recovery_does_not_imply_source_allele_contribution(self):
         case={'gene':'TARGET','causal_variants':[{'chrom':'1','pos':10,'ref':'A','alt':'G'}]}
         other={'contigName':'1','start':11,'ref':'C','alt':'T','filterStatus':'PASSED','contributesToGeneScore':True}

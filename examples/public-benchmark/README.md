@@ -65,3 +65,11 @@ These tests exercise splice construction, background selection, conservative tie
 The separately frozen phenotype-only comparator uses `run_phenotype.py` with the same `--work`, `--java`, `--jar` and data-receipt arguments. It supplies original positive HPO terms without a VCF. Unique genes are ranked by the best exported phenotype score across modes, conservatively treating equal four-decimal TSV scores as ties. This lower-precision knowledge comparator must remain distinct from the full-precision genomic ranking.
 
 `export_results.py` packages exact jobs, execution receipts, every scored gene's full-precision scores, and source-allele diagnostics. It refuses changed, missing or incomplete results. No genome VCF or database is copied into the deliverable. The exact-coordinate allele audit is supplementary: an unmatched indel needs representation review, and a high gene rank alone does not establish that both source alleles contributed or were phased correctly.
+
+A completed compact export can be checked without the original genome or database:
+
+```sh
+python3 examples/public-benchmark/verify_export.py /path/to/export
+```
+
+This verifies every exported member and recomputes source-gene ranks from the full compact gene-score tables. It does not rerun inference. The regression deliberately removes the original result files and rejects a falsified tied rank even after its export hash is updated.
