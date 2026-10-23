@@ -1,0 +1,514 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-23T23:03:26.066597+00:00",
+  "paper": {
+    "pmid": "39394689",
+    "pmcid": "PMC11564936",
+    "doi": "10.1016/j.xhgg.2024.100371",
+    "title": "A corpus of GA4GH phenopackets: Case-level phenotyping for genomic diagnostics and discovery.",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11564936/",
+    "doi_url": "https://doi.org/10.1016/j.xhgg.2024.100371"
+  },
+  "scope": "Bounded supplement review for the frozen twelve-case source selection. No benchmark output access, new inference, input replacement, source-group reassignment or shared-ledger edit.",
+  "prior_main_review": {
+    "record": {
+      "path": "dossier/sweeps/evidence-2026-10-23/rubric-repair/benchmark-background-reading.json",
+      "bytes": 6781,
+      "sha256": "e48441145d8d97fb3f814cac8c5632cbb8a7cbc234b599074b9cf0b0fc4f07de"
+    },
+    "status": "Parent previously recorded complete seven-page article plus repository cover, both main figures and Table 1 read. This task rechecked relevant methods/discussion passages only; it does not claim a new independent full-main read.",
+    "held_main": {
+      "path": "papers-local/danis2025_hggadv_phenopacket_store.pdf",
+      "bytes": 1909020,
+      "sha256": "0b77a9a3f349bf320816719f3b0f75a0eb07e005ba3b56aad06ab6437fe26f7a",
+      "source_url": "https://research-portal.uu.nl/ws/files/250719196/PIIS2666247724001118.pdf",
+      "pdf_pages": 8,
+      "article_pages": 7
+    }
+  },
+  "retrieval": {
+    "article_xml": {
+      "path": "papers-local/supplementary/danis2025_phenopacket_store/official-fulltext.xml",
+      "bytes": 94263,
+      "sha256": "254394dbebded82660b4d76a98dd98e1d388ea0b38e7aa89764065ee0c1b4062",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11564936/fullTextXML"
+    },
+    "supplementary_archive": {
+      "path": "papers-local/supplementary/danis2025_phenopacket_store/official-supplementary-assets.zip",
+      "bytes": 2317135,
+      "sha256": "788320b85669a82bcd93df5173d3e165611d9a177a1934369407321b973ab3f9",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11564936/supplementaryFiles",
+      "http_status": 200,
+      "content_type": "application/zip"
+    },
+    "inventory_discovery": "Official JATS supplementary-material mmc1 and mmc2; caption titles and media hrefs retained below. Files obtained as identically named members of the official Europe PMC supplementaryFiles archive.",
+    "failed_routes": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11564936/",
+        "result": "web tool returned browser challenge"
+      },
+      {
+        "url": "https://www.cell.com/hgg-advances/fulltext/S2666-2477(24)00111-8",
+        "result": "web tool 403"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11564936/bin/mmc1.pdf",
+        "result": "bounded curl HTTP 404; not used as a successful source"
+      }
+    ],
+    "archive_member_inventory": [
+      {
+        "member": "gr1.gif",
+        "bytes": 71962,
+        "sha256": "b0d2afe63a01df25db587c295665e7c357650f183d1af25d31cfe67162a6ad0d",
+        "role": "main_article_figure_rendition_not_new_supplement"
+      },
+      {
+        "member": "mmc1.pdf",
+        "bytes": 76297,
+        "sha256": "761acf891eec625cf9b2641c010214efcd6eb5a42a925b8ab301a93ec87dca24",
+        "role": "supplementary_document"
+      },
+      {
+        "member": "gr2.jpg",
+        "bytes": 160537,
+        "sha256": "66ea9d4f0a7b4b8cae00878463b656f54f2ca4202b5f73f6881b7876dd005d03",
+        "role": "main_article_figure_rendition_not_new_supplement"
+      },
+      {
+        "member": "gr2.gif",
+        "bytes": 70037,
+        "sha256": "fa60a16465a48e0ff71ab71d0d244863bbc2104ca853d9f6dee3d8213a40598f",
+        "role": "main_article_figure_rendition_not_new_supplement"
+      },
+      {
+        "member": "gr1.jpg",
+        "bytes": 236373,
+        "sha256": "071f3f03afe5d0cbcdcb3188cd1607fa8e0a2c111f10bcc2c40526e8a52e17dd",
+        "role": "main_article_figure_rendition_not_new_supplement"
+      },
+      {
+        "member": "mmc2.pdf",
+        "bytes": 1949704,
+        "sha256": "dd8d3795e14d232935cf071524aab57be39bd2dc13ba7307c365706c25492d48",
+        "role": "supplementary_document"
+      }
+    ]
+  },
+  "supplement_documents": [
+    {
+      "id": "mmc1",
+      "title": "Document S1. Figures S1 and S2",
+      "jats_media_href": "mmc1.pdf",
+      "article_anchor": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11564936/#mmc1",
+      "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11564936/supplementaryFiles",
+      "archive_member": "mmc1.pdf",
+      "file": {
+        "path": "papers-local/supplementary/danis2025_phenopacket_store/mmc1.pdf",
+        "bytes": 76297,
+        "sha256": "761acf891eec625cf9b2641c010214efcd6eb5a42a925b8ab301a93ec87dca24"
+      },
+      "pdf_pages": 3,
+      "coverage": "All three PDF pages visually inspected, all text read: title/author cover, full Figure S1 JSON and caption, full Figure S2 JSON and caption.",
+      "read_units": [
+        {
+          "pdf_page": 1,
+          "content": "Supplement title and authors"
+        },
+        {
+          "pdf_page": 2,
+          "printed_page": 1,
+          "content": "Figure S1 SNV representation and caption"
+        },
+        {
+          "pdf_page": 3,
+          "printed_page": 2,
+          "content": "Figure S2 qualitative deletion representation and caption"
+        }
+      ]
+    },
+    {
+      "id": "mmc2",
+      "title": "Document S2. Article plus supplemental information",
+      "jats_media_href": "mmc2.pdf",
+      "article_anchor": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11564936/#mmc2",
+      "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11564936/supplementaryFiles",
+      "archive_member": "mmc2.pdf",
+      "file": {
+        "path": "papers-local/supplementary/danis2025_phenopacket_store/mmc2.pdf",
+        "bytes": 1949704,
+        "sha256": "dd8d3795e14d232935cf071524aab57be39bd2dc13ba7307c365706c25492d48"
+      },
+      "pdf_pages": 10,
+      "coverage": "Combined copy. Pages 1-7 match held article pages 2-8; pages 8-10 match Document S1 pages 1-3. All ten rendered page pairs byte-identical at 1600-pixel longest side, and extracted text matches. No additional unique supplement content. Main-text reading remains the inherited parent review; unique supplement read is counted once."
+    }
+  ],
+  "transformations": {
+    "text_command": "pdftotext -layout INPUT.pdf OUTPUT-layout.txt",
+    "render_command": "pdftoppm -png -scale-to 1600 -f START -l END INPUT.pdf PREFIX",
+    "text_comparison": "Whitespace-normalized extracted text equal for each of seven main pages; complete supplemental extracted text equal for S1 and S2 pages 8-10.",
+    "render_comparisons": [
+      {
+        "held_main_pdf_page": 2,
+        "combined_pdf_page": 1,
+        "held_render_sha256": "352e11d460eadb0b438f5ece88cfe624d9895459efac9740901b74866c4be18d",
+        "combined_render_sha256": "352e11d460eadb0b438f5ece88cfe624d9895459efac9740901b74866c4be18d",
+        "render_bytes_equal": true
+      },
+      {
+        "held_main_pdf_page": 3,
+        "combined_pdf_page": 2,
+        "held_render_sha256": "980775f2837a82eb9246d78eb40a320b23b20443a71a79a0ccc44b9dadb12ca8",
+        "combined_render_sha256": "980775f2837a82eb9246d78eb40a320b23b20443a71a79a0ccc44b9dadb12ca8",
+        "render_bytes_equal": true
+      },
+      {
+        "held_main_pdf_page": 4,
+        "combined_pdf_page": 3,
+        "held_render_sha256": "438b20ed1fbf453c0ec7b2ad10b002b2ae03903c88730200c88b9aca6afb0c10",
+        "combined_render_sha256": "438b20ed1fbf453c0ec7b2ad10b002b2ae03903c88730200c88b9aca6afb0c10",
+        "render_bytes_equal": true
+      },
+      {
+        "held_main_pdf_page": 5,
+        "combined_pdf_page": 4,
+        "held_render_sha256": "6512facb443a7067e0df41283c8c2a0f8c3194c2cab7b50a62094a2ab820985c",
+        "combined_render_sha256": "6512facb443a7067e0df41283c8c2a0f8c3194c2cab7b50a62094a2ab820985c",
+        "render_bytes_equal": true
+      },
+      {
+        "held_main_pdf_page": 6,
+        "combined_pdf_page": 5,
+        "held_render_sha256": "093f374ca7dfd2e51579c5e58f370d5e7dfcd04e77515525ce41c8b472d729d5",
+        "combined_render_sha256": "093f374ca7dfd2e51579c5e58f370d5e7dfcd04e77515525ce41c8b472d729d5",
+        "render_bytes_equal": true
+      },
+      {
+        "held_main_pdf_page": 7,
+        "combined_pdf_page": 6,
+        "held_render_sha256": "f9235592c297e39474183a2922a6d09a6d580121e7a898c3dcef9af0bdf4c50b",
+        "combined_render_sha256": "f9235592c297e39474183a2922a6d09a6d580121e7a898c3dcef9af0bdf4c50b",
+        "render_bytes_equal": true
+      },
+      {
+        "held_main_pdf_page": 8,
+        "combined_pdf_page": 7,
+        "held_render_sha256": "e3e759a5ecb525db7dda1cbf3fba115b4bb3d481f91903f1056729f6d61c0435",
+        "combined_render_sha256": "e3e759a5ecb525db7dda1cbf3fba115b4bb3d481f91903f1056729f6d61c0435",
+        "render_bytes_equal": true
+      },
+      {
+        "document_s1_pdf_page": 1,
+        "combined_pdf_page": 8,
+        "s1_render_sha256": "0ea0416c08fa6de9ceb14772aebee208339ac63682b96a4088469b77004c95f7",
+        "combined_render_sha256": "0ea0416c08fa6de9ceb14772aebee208339ac63682b96a4088469b77004c95f7",
+        "render_bytes_equal": true
+      },
+      {
+        "document_s1_pdf_page": 2,
+        "combined_pdf_page": 9,
+        "s1_render_sha256": "7e5d404f72638415cc21f9b5f4af3bd4097437e2e24165c9ff0afba962fada1c",
+        "combined_render_sha256": "7e5d404f72638415cc21f9b5f4af3bd4097437e2e24165c9ff0afba962fada1c",
+        "render_bytes_equal": true
+      },
+      {
+        "document_s1_pdf_page": 3,
+        "combined_pdf_page": 10,
+        "s1_render_sha256": "293cbfde2e62c6b7526a82b91aa79cccf1c4d77d0cc76d7a46847e85c896ce0e",
+        "combined_render_sha256": "293cbfde2e62c6b7526a82b91aa79cccf1c4d77d0cc76d7a46847e85c896ce0e",
+        "render_bytes_equal": true
+      }
+    ],
+    "tool_version": "pdftoppm version 26.08.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC",
+    "retained_text_and_renders": [
+      {
+        "path": "papers-local/supplementary/danis2025_phenopacket_store/mmc1-1.png",
+        "bytes": 127931,
+        "sha256": "0ea0416c08fa6de9ceb14772aebee208339ac63682b96a4088469b77004c95f7"
+      },
+      {
+        "path": "papers-local/supplementary/danis2025_phenopacket_store/mmc1-2.png",
+        "bytes": 168643,
+        "sha256": "7e5d404f72638415cc21f9b5f4af3bd4097437e2e24165c9ff0afba962fada1c"
+      },
+      {
+        "path": "papers-local/supplementary/danis2025_phenopacket_store/mmc1-3.png",
+        "bytes": 142858,
+        "sha256": "293cbfde2e62c6b7526a82b91aa79cccf1c4d77d0cc76d7a46847e85c896ce0e"
+      },
+      {
+        "path": "papers-local/supplementary/danis2025_phenopacket_store/mmc1-layout.txt",
+        "bytes": 4821,
+        "sha256": "c7798cef34e5d67ad1ac7614f007760b5f3f74d505c3d3a4eae3c9064aec1f83"
+      },
+      {
+        "path": "papers-local/supplementary/danis2025_phenopacket_store/mmc2-08.png",
+        "bytes": 127931,
+        "sha256": "0ea0416c08fa6de9ceb14772aebee208339ac63682b96a4088469b77004c95f7"
+      },
+      {
+        "path": "papers-local/supplementary/danis2025_phenopacket_store/mmc2-09.png",
+        "bytes": 168643,
+        "sha256": "7e5d404f72638415cc21f9b5f4af3bd4097437e2e24165c9ff0afba962fada1c"
+      },
+      {
+        "path": "papers-local/supplementary/danis2025_phenopacket_store/mmc2-10.png",
+        "bytes": 142858,
+        "sha256": "293cbfde2e62c6b7526a82b91aa79cccf1c4d77d0cc76d7a46847e85c896ce0e"
+      },
+      {
+        "path": "papers-local/supplementary/danis2025_phenopacket_store/mmc2-layout.txt",
+        "bytes": 50101,
+        "sha256": "d0f269e9d0f8249ee10a92bbecda3f4991236341f915308e5fc007cdbfe26de8"
+      }
+    ]
+  },
+  "claims_checked": [
+    {
+      "id": "DANIS-SUP-01",
+      "statement_checked": "Release 0.1.19 contains 6,668 phenopackets; reported corpus totals include 475 diseases, 423 genes, 3,834 distinct variants and 959 publications.",
+      "source_locator": "Main article pp.1-2 and Table 1; Data and code availability p.5.",
+      "finding": "Supported as manuscript/release-wide descriptive counts. The paper does not describe our twelve-case sample.",
+      "selection_implication": "The frozen archive/release provenance is consistent with the paper; no inference that every record or original source is independently scientifically validated."
+    },
+    {
+      "id": "DANIS-SUP-02",
+      "statement_checked": "Curation uses individual-level published case information; aggregate-only descriptions are excluded.",
+      "source_locator": "Main article p.2 (paragraph beginning There is a need).",
+      "finding": "Supported as the authors' curation policy. This is not a guarantee against individual-record attribution errors.",
+      "selection_implication": "Retain existing case-specific/source-support qualifications; this review does not reverse the ZIC3, OFD1 or other source cautions."
+    },
+    {
+      "id": "DANIS-SUP-03",
+      "statement_checked": "SOLVED/CAUSATIVE, HGNC gene identity, explicit hg38 VCF-like fields and GENO zygosity are meaningful source fields for eligibility.",
+      "source_locator": "Figure S1, Document S1 PDF p.2 / printed p.1; main article pp.3-4.",
+      "finding": "S1 explicitly shows progressStatus SOLVED, interpretationStatus CAUSATIVE, PAX3/HGNC:8617, hg38 chr2:222297048 G>A, and GENO:0000136 homozygous. Its caption describes pyphetools querying VariantValidator from HGVS to obtain gene, genomic HGVS and VCF-like data.",
+      "selection_implication": "Supports the field interpretation used in parse_case. This is a representation example, not independent clinical proof or an assurance that all records contain these fields."
+    },
+    {
+      "id": "DANIS-SUP-04",
+      "statement_checked": "Some source variants are qualitative structural descriptions and cannot provide exact small-variant spike coordinates.",
+      "source_locator": "Figure S2, Document S1 PDF p.3 / printed p.2; main article p.4 Genomic interpretations.",
+      "finding": "S2 represents ITPR1/HGNC:6180, DEL423kb, SO:1000029 chromosomal_deletion, GENO:0000135 heterozygous, with no vcfRecord or exact breakpoints. The caption defines structural variants here as at least 50 nucleotides. The main-text SLC9A3 gene-deletion example is a different case.",
+      "selection_implication": "Supports requiring an explicit hg38 record and excluding symbolic/qualitative/large-variant entries. Never manufacture breakpoints or REF/ALT from DEL423kb or gene deletion."
+    },
+    {
+      "id": "DANIS-SUP-05",
+      "statement_checked": "GENO zygosity supports encoding a genotype but not inferring trans phase or a mode of inheritance.",
+      "source_locator": "Figures S1-S2; selection-plan.json analysis_boundary and prepare.py STATES/vcf_text.",
+      "finding": "S1 illustrates homozygous GENO:0000136 and S2 heterozygous GENO:0000135. Neither figure establishes phase for two heterozygous variants. Hemizygous GENO:0000134 is not illustrated in these supplements.",
+      "selection_implication": "Keep observed-genotype strata, unphased 0/1 encoding and explicit phase limitation. This supplement review adds no independent verification of the X strata or hemizygous ontology mapping."
+    },
+    {
+      "id": "DANIS-SUP-06",
+      "statement_checked": "The paper proposes spiking source variants into representative population VCFs for simulated software evaluation.",
+      "source_locator": "Main article p.4 Discussion.",
+      "finding": "Supported. This motivates synthetic testing; it does not turn a causal-only VCF into a genome-wide diagnostic benchmark or establish clinical generalisation.",
+      "selection_implication": "Preserve causal-only spike-ingredient language and distinction from clinical performance."
+    },
+    {
+      "id": "DANIS-SUP-07",
+      "statement_checked": "Source identity and quality checks do not establish independent diagnoses, complete deduplication or freedom from knowledge leakage.",
+      "source_locator": "Main article p.3 Quality control and Phenopacket and individual IDs; p.4 Discussion.",
+      "finding": "The article describes format-oriented QC and PMID-prefixed IDs, explicitly warns that one person may appear in multiple publications, and describes Monarch use of phenopackets in HPO annotation.",
+      "selection_implication": "Schema checks and PMID presence are not scientific adjudication. Possible knowledge leakage is an inference consistent with the HPO use described, not evidence that a particular selected case leaked into this runtime."
+    },
+    {
+      "id": "DANIS-SUP-08",
+      "statement_checked": "The twelve-case quotas, deterministic seed, three-positive-HPO minimum, one-gene/one-or-two-variant restriction, FGFR2/BUB1B exclusions and four phenotype arms follow from the paper.",
+      "source_locator": "Frozen selection-plan.json and prepare.py; full Document S1.",
+      "finding": "They are local design choices, not rules or validated parameters supplied by Danis or its supplements. S1-S2 provide two variant-representation examples, no twelve-case evaluation or perturbation study.",
+      "selection_implication": "Attribute the selection design to the frozen local protocol. Neither supplementary figure tests any of the twelve selected cases or changes frozen source-support groups."
+    }
+  ],
+  "coverage_limits": [
+    "No supplemental explanatory pages or figures remain unread among the two supplement documents enumerated by the official article XML.",
+    "This is a full read of two figure representations and captions, not scientific interpretation of every cell/record in the 6,668-case bank.",
+    "No new corpus traversal or independent review of every underlying publication was performed. Existing twelve-case source reviews and source-support limitations remain unchanged.",
+    "Figure S1/S2 example cases and their original clinical publications were not separately re-adjudicated.",
+    "No runtime-specific leakage test, phase confirmation, pathogenicity reassessment or benchmark-result inspection was performed."
+  ],
+  "frozen_selection_integrity": {
+    "directory": "repo/examples/public-benchmark/source-selection",
+    "files_checked": 31,
+    "before_after_identical": true,
+    "files": [
+      {
+        "path": "repo/examples/public-benchmark/source-selection/README.md",
+        "bytes": 2723,
+        "sha256": "d04728973e6fb48f048b9be2b0c7171535162c9f6ab403e69490b32ee1c22555"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/addendum-source-visual-followup-before-inference.json",
+        "bytes": 538,
+        "sha256": "a316c5a058eafc302d45d32247fbda9561dc724e84c9b473bb449efc0e73c40c"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/addendum-x-source-before-inference.json",
+        "bytes": 925,
+        "sha256": "4c2500ccdf9a6c39ebd6c58979f9fb34fb126010107a593e4cb279db98588bae"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/execution-scope-addendum.json",
+        "bytes": 1215,
+        "sha256": "a01e72543663ee8de555a91f19af3657a53f4ccf1d572307085ed84142fc1fa5"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/frozen-cases.json",
+        "bytes": 85032,
+        "sha256": "a69127a6c33cb66668686b446fd4d1e793422712bbd60b538a7c25ac159a61e2"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/identity-check.json",
+        "bytes": 21300,
+        "sha256": "1572eb450eb46fe31d4003653902a328c02eadb0d1e068727781d5f3977d4480"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/prepare.py",
+        "bytes": 12991,
+        "sha256": "9baecb9d8cb3c0b8ce8023d445eccd66d4c539aa5916d0cb3a80b0cb5c3d8304"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/review-complete-before-inference-v2.json",
+        "bytes": 6343,
+        "sha256": "6fa712e1f11737299b465ebcf00dc13df5414e43e8a1e574c5f6495231309b21"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/selection-plan.json",
+        "bytes": 2712,
+        "sha256": "aa5642479ac55e1db90502042b18216860e7314b6606b5bd8135e7e58157adca"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/LICENSE-phenopacket-store.txt",
+        "bytes": 1505,
+        "sha256": "fbf52d70fd8bce10e0ce4274caaf40e680a6eeb2c7c24076e5fe10629b309bc8"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/selected/PMID_14742428_DM.json",
+        "bytes": 4645,
+        "sha256": "a051221e746f59fca00c125c079ef7bbba7c8901d9ce9dd99eef0643cedd5838"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/selected/PMID_16783569_IV_11.json",
+        "bytes": 5119,
+        "sha256": "b3b0a72bf465028658a0f9efb71937b588f0f52831e6c7596487f862c2d7c83d"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/selected/PMID_17295247_Individual_III_3.json",
+        "bytes": 4939,
+        "sha256": "4f75ef29daaf9e9c209ecec169fc012038089cc3e40141c8080943899b4b2ab5"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/selected/PMID_17331980_patient.json",
+        "bytes": 10094,
+        "sha256": "4fbbd599b001410c55d18675cce862241e11be5eee07706247d927bdbd1d12db"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/selected/PMID_19776401_Patient_8-2.json",
+        "bytes": 5441,
+        "sha256": "fb9650f17f8918e4e9a4edbc411b7996ff648176b17203482301b5b75b6e9684"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/selected/PMID_23440193_11_y_old_boy.json",
+        "bytes": 4312,
+        "sha256": "61c227346894178a5c1ed89fa7bf81929598f3181a4bd23f130ef497ae3a9d22"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/selected/PMID_24403049_Proband_2.json",
+        "bytes": 7524,
+        "sha256": "6c060537eec944e5e3d359aa7ee6416a99008e5ae4b650ef04c6af1636460240"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/selected/PMID_27753196_index_patient.json",
+        "bytes": 5072,
+        "sha256": "c856892345d4749cf6ffde997ce0ec6613ef54f7b684269104955f6cf95f315c"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/selected/PMID_29469822_Family_4_II-1.json",
+        "bytes": 8187,
+        "sha256": "89e4ae1999c0d7e128a15865825769ef69cc00b64f322f471c9cbdd58ed1434a"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/selected/PMID_31239556_individual_32.json",
+        "bytes": 15731,
+        "sha256": "2478f8750ae5864e403c4153f9822b1af8715614cb9deb8a8d243969472e4a82"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/selected/PMID_36595822_nan.json",
+        "bytes": 5353,
+        "sha256": "fd477d5a4de920c645c09cdaf2281bb898c799735277c14f20d78a8af57b5af4"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source/selected/PMID_37054711_Family_10_Subject_13.json",
+        "bytes": 5085,
+        "sha256": "9f2b7542706fafc6d3b0ddd5a895833548f8ad62b879c57c78eadca55bb075c4"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/source-support-groups-v3.json",
+        "bytes": 1467,
+        "sha256": "e7ee5cb7b4c1abae16e88bb8c57d8dd474acb38f6e7b373b4b16544090f5e634"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/sources.json",
+        "bytes": 11342,
+        "sha256": "2d97e406b1e3ba60b3943d9537e6ca187770c3cbaaea982b4246deab0a7d249e"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/truth-adjudication-v2.json",
+        "bytes": 44316,
+        "sha256": "4501130d070e46c15d073a148ef74cbfaf9ceb33dc7ad313c0b0e2b013959f3f"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/truth-adjudication-v3.json",
+        "bytes": 70061,
+        "sha256": "aae8b0f78030856a24eb36a1e4aae0b33d2c0f12c2da7f6bcf7b1bf7018dbbd2"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/truth-adjudication.json",
+        "bytes": 3250,
+        "sha256": "cfcf6fd7e52b4c496415ff8c868850b81fe6dd5b4c5034d9ab3b3424d1226857"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/visual-followup-v1.json",
+        "bytes": 34673,
+        "sha256": "8c182ef4175d30ca3ea47afc8a3d480a490b348bbb69f1f014346c434f868c97"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/visual-followup-v1.md",
+        "bytes": 3942,
+        "sha256": "3de6193ed39a4147bf3d2b34a4aaed6f228340157064ddeb19730df3af6174ee"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/x-case-source-review.json",
+        "bytes": 52058,
+        "sha256": "d92e0371146592ef6b8ac22996d25fd84322b5b0bca143ee0210de54c442db46"
+      },
+      {
+        "path": "repo/examples/public-benchmark/source-selection/x-case-source-review.md",
+        "bytes": 5537,
+        "sha256": "c6e255f6de44e2121831c0956e5acea9d5e3a52c5f9e3c242e88ebe9fed891aa"
+      }
+    ]
+  },
+  "ledger_integration": {
+    "recipient": "Kepler",
+    "suggested_main_status": "Preserve existing complete main-text review attribution.",
+    "suggested_supplement_status": "Document S1 fully read visually and textually (3 PDF pages; Figure S1 and Figure S2 with captions). Document S2 retained and verified duplicate of main article plus S1 (10 pages); no unique supplemental explanatory content remains unread in the official XML inventory.",
+    "replace_gap": "Supplementary S1/S2 not read.",
+    "preserve_boundary": "Corpus parsing/raw case-bank inspection is not all-record scientific interpretation; underlying individual-paper and case-specific gaps remain.",
+    "delivery_status": "Prepared for Kepler. No Kepler thread or subagent messaging route exposed in this session; direct delivery not claimed."
+  },
+  "review_markdown": {
+    "path": "dossier/sweeps/evidence-2026-10-23/rubric-repair/danis-supplement-review.md",
+    "bytes": 8263,
+    "sha256": "68e535a76e3470db7e43341e00f44f3f8cb9cd5ff33920931cde3b8c9fb7c4c2"
+  },
+  "verification": {
+    "all_recorded_local_hashes_match": true,
+    "checked_file_references": 45,
+    "archive_crc_and_member_hashes_match": true,
+    "official_supplement_inventory_matches": true,
+    "all_ten_render_pairs_match": true,
+    "frozen_selection_file_hashes_still_match": true
+  }
+}

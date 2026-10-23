@@ -1,6 +1,6 @@
 # MVA Hackathon 2026 — evidence, experiment and reusable tools
 
-**adriamasnou · Track 2 · 23 October 2026**
+**adriamasnou · Track 2 · 24 October 2026**
 
 We propose **arimoclomol for conditional preclinical testing** in BUB1B-MVA. The candidate must improve chromosome-segregation function at relevant exposure; more protein alone is insufficient. No drug rescue or treatment in this child has been performed.
 
@@ -17,6 +17,8 @@ We propose **arimoclomol for conditional preclinical testing** in BUB1B-MVA. The
 [Reviewer walkthrough](submissions/reviewer-walkthrough.md): inspect a gene-to-condition source link, an unresolved identifier and three executable synthetic rescue-decision examples.
 
 ## Run the public checks
+
+Use Python 3.11 or newer. The navigator audit also needs Node.js. The tests below use public fixtures and do not run the large annotation models.
 
 ```sh
 python3 -m unittest discover -s tests -v

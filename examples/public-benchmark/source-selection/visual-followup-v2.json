@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0",
+  "recorded_at_utc": "2026-10-23T23:02:48.202484+00:00",
+  "record_type": "append_only_source_coverage_and_erratum_v2",
+  "supersedes_only_coverage_and_error_fields_of": "case-reviews/visual-followup-v1.json",
+  "timing": {
+    "parent_reported_primary_HG002_inference_started_at_utc": "2026-10-23T22:49:10Z",
+    "completion_relation": "post-inference-start",
+    "pre_inference_completion_claim": false,
+    "note": "Review continued and finished after the reported inference start. Earlier markers remain unchanged. This source reviewer has not accessed outputs or learned scores."
+  },
+  "no_exomiser_results_seen": true,
+  "results_or_ranks_or_output_directories_accessed": false,
+  "primary_source_label_genes": [
+    "MTOR",
+    "KCNJ2",
+    "CTCF",
+    "LZTR1",
+    "INTS11",
+    "BCKDHB",
+    "DOCK8",
+    "COG8",
+    "SLC35C1"
+  ],
+  "original_pre_result_4_3_2": {
+    "primary_case_supported_with_all_positive_HPOs_supported": [
+      "KCNJ2",
+      "LZTR1",
+      "INTS11",
+      "COG8"
+    ],
+    "primary_case_genotype_supported_with_material_qualifications": [
+      "CTCF",
+      "BCKDHB",
+      "SLC35C1"
+    ],
+    "original_case_verification_incomplete": [
+      "MTOR",
+      "DOCK8"
+    ]
+  },
+  "current_source_support_4_5": {
+    "primary_case_supported_with_all_positive_HPOs_supported": [
+      "KCNJ2",
+      "LZTR1",
+      "INTS11",
+      "COG8"
+    ],
+    "primary_case_supported_with_material_qualifications": [
+      "CTCF",
+      "BCKDHB",
+      "SLC35C1",
+      "MTOR",
+      "DOCK8"
+    ]
+  },
+  "support_groups_unchanged": true,
+  "all_cases_and_phenotype_arms_unchanged": true,
+  "evaluation_scope": "Synthetic public spike-in, source-label concordance. Not clinical diagnostic accuracy or independent proof of causality. Training/knowledge leakage remains.",
+  "correction": {
+    "affected_record": "case-reviews/visual-followup-v1.json",
+    "affected_field": "cases.CTCF.finding",
+    "incorrect_protein_label": "Arg390His",
+    "correct_protein_label": "Asp390Asn",
+    "primary_source": "PMID:31239556, supplementary TableS1, Tabelle1!AG5",
+    "primary_source_cell_value": "c.1168G>A p.(Asp390Asn)",
+    "source_transcript": "NM_006565.3",
+    "frozen_packet_transcript_variant": "NM_006565.4:c.1168G>A",
+    "frozen_GRCh38_allele": "chr16:67620778 G>A, heterozygous 0/1",
+    "scope": "Prose label error in visual-followup-v1 only; frozen inputs and truth-adjudication-v2/v3 already say Asp390Asn and were not changed.",
+    "verification": "Independently reread AG5, selected packet and full source table. Supplement S4a pixels show Glu336Gln, Arg342Cys, Arg368Cys, Arg368His, His373Pro, Arg377His, Pro378Leu, Arg448Gln, not Asp390Asn. S4b tests Arg396Lysfs*13 and Arg567Trp. Structural methods/S3 and RNA-seq missense set likewise do not test selected Asp390Asn.",
+    "replacement_finding": "Main Figure2 does not depict selected individual32. Main RNAseq Figure3 and supplementary structural/localization experiments do not demonstrate variant-specific function for Asp390Asn. Selected TableS1 AG1:AG56 remains the direct clinical source.",
+    "prior_record_preserved": true
+  },
+  "CTCF": {
+    "pmid": "31239556",
+    "doi": "10.1038/s41436-019-0585-z",
+    "explanatory_material": "Full supplementary author/affiliation text, methods, figure descriptions, table definitions and references read; relevant main RNA-seq methods/results reread using previously read full primary text.",
+    "S1": {
+      "populated_range": "Tabelle1!A1:AW57",
+      "populated_cells": 2036,
+      "new_individual_columns": 39,
+      "previously_published_comparison_columns": 7,
+      "all_populated_case_cells_and_row_labels_read_in_coordinate_preserving_extraction": true,
+      "other_sheets": "Tabelle2 and Tabelle3 contain no populated cells.",
+      "scope": "Read clinical/genotype cells, including missingness/qualifiers, for all 39 reported individuals and seven comparison columns. This is table reading; only the selected individual32 underwent case/packet adjudication. Comparison columns do not imply separate full reads of their original reports.",
+      "complete_extract": "source/case-review/coverage-v2/CTCF-S1-complete-populated-table.json",
+      "extraction_correction": "An interim A:AN draft named CTCF-S1-all-cohort-cells.json was incomplete: AL is a blank separator, individual39 is AO and seven published comparison columns are AQ:AW. It is not the coverage receipt; the complete bounded extraction above supersedes it.",
+      "selected_case": "AG9 de novo; AG10 class4 PS2+PM1+PM2; AG11 Sanger no; AG12 additional de novo CAPRIN1 Met377Val. Source labels support a CTCF candidate, not uniquely proven causality.",
+      "positive_HPO_check": "All seven frozen positive HPOs have source support: ID/global delay, walking20months, firstwords18months/speech delay, swallowing difficulty, recurrent ear infections, broad nasal bridge. Generalized HPO labels retain prior qualifications.",
+      "negative_HPO_check": "Blank, NA, no MRI, and presumed no/not tested remain unknown rather than proven absence. No negative labels were edited."
+    },
+    "S2": {
+      "all_data_biologically_interpreted": false,
+      "independent_RNAseq_reanalysis": false,
+      "scope": "All populated cells traversed for structure/types/formulas, not manual semantic interpretation of every raw value. All three sheet headers and explanatory material read; all123 rows of PANTHER GO-Slim read. DE and SysID first/middle/last, extrema, CTCF lookup and detected annotation/date anomalies inspected.",
+      "sheets": [
+        {
+          "name": "differentially expressed genes",
+          "populated_cells": 84223,
+          "declared_rows": 3829,
+          "declared_columns": 22
+        },
+        {
+          "name": "SysID ID gene list 06112018",
+          "populated_cells": 29362,
+          "declared_rows": 2151,
+          "declared_columns": 14
+        },
+        {
+          "name": "PANTHER GO-Slim",
+          "populated_cells": 523,
+          "declared_rows": 123,
+          "declared_columns": 5
+        }
+      ],
+      "summary_claim_checks": {
+        "DE_data_rows": 3828,
+        "upregulated": 1667,
+        "downregulated": 2161,
+        "matches_paper": true,
+        "all_baseMean_at_least_10": true,
+        "all_padj_at_most_0_01": true,
+        "unique_Ensembl_ids": 3828,
+        "sample_expression_columns": 13,
+        "case_columns": 5,
+        "control_columns": 8,
+        "all_sample_values_numeric_nonnegative": true,
+        "PANTHER_formulas_checked": 95,
+        "cached_negative_log10_FDR_values_match": 95
+      },
+      "source_qualifications": [
+        "PANTHER header abbreviates threshold as p<=0.01; main methods specify adjusted p<=0.01, which the DE rows satisfy. Raw p and FDR are separate columns.",
+        "Five PANTHER displayed terms have FDR>0.05 (rows15,120,121,122,123); not every listed term is significant at0.05. Fold enrichment below1 represents depletion.",
+        "The DE sheet has13 missing HGNC symbols and2 missing descriptions; external gene names and Ensembl IDs are populated. No duplicated nonempty HGNC symbols were found.",
+        "SysID is a November2018 list of2150 rows:1164 primary/986 candidate ID genes; it is not an independent clinical validation cohort. Seventy Ensembl IDs are missing.",
+        "SysID!E1583 is stored as Excel date2006-09-01 with mmm-yy formatting; same row says septin6, Entrez23157 and ENSG00000125354. Preserve original source; do not silently use the date as a gene symbol.",
+        "Exact CTCF/ENSG00000102974 is absent from the filtered DE sheet. Individual CTCF-expression fold changes in the main text were not independently reconstructed from this table; absence from a filtered list is not absence of expression.",
+        "No raw-read alignment, DESeq2 refit, independent enrichment reproduction, per-gene biological interpretation or clinical reclassification was performed."
+      ],
+      "audit_receipt": "source/case-review/coverage-v2/CTCF-workbook-systematic-audit.json",
+      "reproduction_script": "audit_ctcf_supplements.py"
+    }
+  },
+  "SLC35C1": {
+    "pmid": "24403049",
+    "doi": "10.1093/hmg/ddu001",
+    "retrieval": "Actual official Oxford article Supplementary Data link downloaded through Chrome. Earlier PMC video route was blocked; no browser security setting was changed. ZIP CRC validated and contains the three WMVs and the same previously read supplementary PDF.",
+    "publisher_zip_members": [
+      "ddu001supp_video2.wmv",
+      "ddu001supp_video1.wmv",
+      "ddu001supp.pdf",
+      "ddu001supp_video3.wmv"
+    ],
+    "movie_review": [
+      {
+        "movie": 1,
+        "seconds": "24.658000",
+        "decoded_video_frames": [
+          "739"
+        ],
+        "sampled_2fps_frames": 49,
+        "contact_sheets": [
+          "movie1-sheet-1.jpg",
+          "movie1-sheet-2.jpg",
+          "movie1-sheet-3.jpg",
+          "movie1-sheet-4.jpg",
+          "movie1-sheet-5.jpg"
+        ],
+        "on_screen_identity": "Father",
+        "all_five_shear_conditions_visually_inspected": [
+          0.5,
+          1.0,
+          2.0,
+          5.0,
+          10.0
+        ],
+        "all_contact_sheets_visually_inspected": true,
+        "final_decoded_frame_separately_inspected": true,
+        "manual_review_of_every_original_frame": false,
+        "audio_16bit_pcm_all_zero": true,
+        "observation": "Bright round cells remain visible across the escalating shear-condition montage, with changed positions between sampled frames. This is consistent with the source-described control rolling behavior; no velocities or rolling counts were remeasured."
+      },
+      {
+        "movie": 2,
+        "seconds": "23.915000",
+        "decoded_video_frames": [
+          "717"
+        ],
+        "sampled_2fps_frames": 48,
+        "contact_sheets": [
+          "movie2-sheet-1.jpg",
+          "movie2-sheet-2.jpg",
+          "movie2-sheet-3.jpg",
+          "movie2-sheet-4.jpg"
+        ],
+        "on_screen_identity": "P1",
+        "all_five_shear_conditions_visually_inspected": [
+          0.5,
+          1.0,
+          2.0,
+          5.0,
+          10.0
+        ],
+        "all_contact_sheets_visually_inspected": true,
+        "final_decoded_frame_separately_inspected": true,
+        "manual_review_of_every_original_frame": false,
+        "audio_16bit_pcm_all_zero": true,
+        "observation": "P1 label is visible. Bright round cells appear in early low-shear fields and become sparse in later high-shear fields. Montage changes field of view. This is qualitatively consistent with the source-described adhesion defect; sampling does not quantify velocity or prove absence of every interaction."
+      },
+      {
+        "movie": 3,
+        "seconds": "28.141000",
+        "decoded_video_frames": [
+          "844"
+        ],
+        "sampled_2fps_frames": 56,
+        "contact_sheets": [
+          "movie3-sheet-1.jpg",
+          "movie3-sheet-2.jpg",
+          "movie3-sheet-3.jpg",
+          "movie3-sheet-4.jpg",
+          "movie3-sheet-5.jpg"
+        ],
+        "on_screen_identity": "P2",
+        "all_five_shear_conditions_visually_inspected": [
+          0.5,
+          1.0,
+          2.0,
+          5.0,
+          10.0
+        ],
+        "all_contact_sheets_visually_inspected": true,
+        "final_decoded_frame_separately_inspected": true,
+        "manual_review_of_every_original_frame": false,
+        "audio_16bit_pcm_all_zero": true,
+        "observation": "P2 label is visible. Bright cells occur during low-shear segments; later high-shear fields show few such cells. All five labels and the final frame were inspected. This supports the scope of the source-described cell assay, not developmental-severity inference."
+      }
+    ],
+    "manual_visual_scope": "All14 contact sheets containing153 frames sampled at2fps over all three movies, plus the final decoded frame of each movie, were inspected. All title cards and five labeled shear conditions were seen. Not a claim of viewing every original30fps frame.",
+    "decoding_scope": "All739+717+844=2300 video frames decoded/counted. Audio decoded completely to16bit PCM is allzero; no speech transcript was inferred.",
+    "method_context": "Supplement explains representative10-second fields compressed into4seconds at each of five shear settings, not an uninterrupted recording of all minute-long experimental intervals.",
+    "source_interpretation": "Author-described control maintains rolling at higher shear; probands roll faster at lower shear and fail to maintain rolling at high shear. Visual sampled sequences are compatible, but no velocities, trajectories or rolling-cell counts were independently measured.",
+    "selected_case_implication": "This adds visual inspection of the functional adhesion evidence. It does not establish severe intellectual disability in the younger proband, remove age/phenotype qualifications, or change any frozen genotype/HPO arm."
+  },
+  "remaining_limits": {
+    "CTCF_S1": "Full populated table read; independent clinical re-adjudication of all46 columns not performed or claimed.",
+    "CTCF_S2": "No raw RNA-seq/complete gene-by-gene biological reanalysis; systematic sheet inspection and used-claim verification only.",
+    "SLC35C1_movies": "Accessible movies recovered and systematically visually inspected; no manual every-original-frame review or quantitative cell-tracking reanalysis.",
+    "COG8": [
+      "Genuine publisher main PDF not held; available full article text was read online, all five figure pixels are now held/read.",
+      "Independent transcript-only normalization of the legacy intronic variant remains unresolved; biological source segregation is directly verified."
+    ],
+    "BCKDHB": [
+      "No separate supplementary file identified in inspected main article; global nonexistence not certified."
+    ],
+    "DOCK8": [
+      "The inspected materials do not supply an individual8-2 Sanger trace; cannot close a raw-data gap by reviewing a sibling trace."
+    ]
+  },
+  "source_assets": [
+    {
+      "path": "source/case-review/CTCF-s1-springer.xlsx",
+      "bytes": 1404503,
+      "sha256": "5a92b354cdebd38155d594dd9123885e3247f6b9bc38dc95fe3dfc92f928253f",
+      "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41436-019-0585-z/MediaObjects/41436_2019_585_MOESM2_ESM.xlsx",
+      "scope": "All populated table columns and labels read; selected individual32 adjudicated. No new independent clinical diagnosis for other columns."
+    },
+    {
+      "path": "source/case-review/visual-followup/CTCF-supplement3.xlsx",
+      "bytes": 1571721,
+      "sha256": "496ab75ec0559a18aecf076a342f2989a11fa70fb11ba8cd6c8698388aab4b20",
+      "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41436-019-0585-z/MediaObjects/41436_2019_585_MOESM3_ESM.xlsx",
+      "scope": "Systematic structural and summary checks; complete PANTHER sheet read; sampled DE/SysID rows and detected anomalies read. Not all data biologically interpreted."
+    },
+    {
+      "path": "source/case-review/visual-followup/CTCF-supplement1.docx",
+      "bytes": 7784966,
+      "sha256": "51364e6e8e29ee0ddd0eba935d256424fd20eb91b23dc2778c7122988849c031",
+      "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41436-019-0585-z/MediaObjects/41436_2019_585_MOESM1_ESM.docx",
+      "scope": "Full explanatory text reread; previously reviewed figures preserved; S4 labels visually rechecked for Asp390Asn correction."
+    },
+    {
+      "path": "source/case-review/coverage-v2/SLC35C1-publisher-supplement.zip",
+      "bytes": 5478063,
+      "sha256": "4e6cb5928a30d71547243bb9a4980a79bb0f9f087950e564539f728acf79098b",
+      "source_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/hmg/23/11/10.1093_hmg_ddu001/1/ddu001_Supplementary_Data.zip",
+      "scope": "Observed official publisher Supplementary Data link, Chrome download; ZIP CRC validated; signed query not retained in public-facing receipt."
+    },
+    {
+      "path": "source/case-review/coverage-v2/ddu001supp.pdf",
+      "bytes": 276306,
+      "sha256": "41552e0ec7c37980a1981693cbd5e1a2970c37c56a0bdb887a647447be74f6da",
+      "source_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/hmg/23/11/10.1093_hmg_ddu001/1/ddu001_Supplementary_Data.zip",
+      "scope": "ZIP member; SHA-identical to previously fully read six-page supplementary PDF."
+    },
+    {
+      "path": "source/case-review/coverage-v2/ddu001supp_video1.wmv",
+      "bytes": 1668953,
+      "sha256": "6c97f83d9257ee1e82198775a5fd5fe63d9acec39db4363d5ecedc1be84a51fa",
+      "source_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/hmg/23/11/10.1093_hmg_ddu001/1/ddu001_Supplementary_Data.zip",
+      "scope": "ZIP member; complete stream decoded; 2fps sampled visual review plus final frame. Movie 1."
+    },
+    {
+      "path": "source/case-review/coverage-v2/ddu001supp_video2.wmv",
+      "bytes": 1604147,
+      "sha256": "48c162290f733192793f37cecd1bcce5d03718c5b7e85cc6c2e309a52d0d2ba3",
+      "source_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/hmg/23/11/10.1093_hmg_ddu001/1/ddu001_Supplementary_Data.zip",
+      "scope": "ZIP member; complete stream decoded; 2fps sampled visual review plus final frame. Movie 2."
+    },
+    {
+      "path": "source/case-review/coverage-v2/ddu001supp_video3.wmv",
+      "bytes": 1928177,
+      "sha256": "5e2ab4dc9499c2676e3bda7af265168e65d7306321d2412f43ca06bddff7a4d5",
+      "source_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/hmg/23/11/10.1093_hmg_ddu001/1/ddu001_Supplementary_Data.zip",
+      "scope": "ZIP member; complete stream decoded; 2fps sampled visual review plus final frame. Movie 3."
+    }
+  ],
+  "unchanged_frozen_receipts": [
+    {
+      "path": "prepared/cases.json",
+      "sha256": "a69127a6c33cb66668686b446fd4d1e793422712bbd60b538a7c25ac159a61e2",
+      "modified_by_this_followup": false
+    },
+    {
+      "path": "truth-adjudication-v3.json",
+      "sha256": "aae8b0f78030856a24eb36a1e4aae0b33d2c0f12c2da7f6bcf7b1bf7018dbbd2",
+      "modified_by_this_followup": false
+    },
+    {
+      "path": "source-support-groups-v3.json",
+      "sha256": "e7ee5cb7b4c1abae16e88bb8c57d8dd474acb38f6e7b373b4b16544090f5e634",
+      "modified_by_this_followup": false
+    },
+    {
+      "path": "review-complete-before-inference.json",
+      "sha256": "b08885fe9e6cb220901064974186737b137fc6e749821f48565f42bf160ea3b7",
+      "modified_by_this_followup": false
+    },
+    {
+      "path": "review-complete-before-inference-v2.json",
+      "sha256": "6fa712e1f11737299b465ebcf00dc13df5414e43e8a1e574c5f6495231309b21",
+      "modified_by_this_followup": false
+    },
+    {
+      "path": "case-reviews/visual-followup-v1.json",
+      "sha256": "8c182ef4175d30ca3ea47afc8a3d480a490b348bbb69f1f014346c434f868c97",
+      "modified_by_this_followup": false
+    },
+    {
+      "path": "case-reviews/visual-followup-v1.md",
+      "sha256": "3de6193ed39a4147bf3d2b34a4aaed6f228340157064ddeb19730df3af6174ee",
+      "modified_by_this_followup": false
+    }
+  ],
+  "permission_scope": "Local authorized reading copies only; access does not imply redistribution rights. No shared submission/reading record/index/WORKLOG edits, commits, external messages, hosting or submission.",
+  "handoff": "Parent/Kepler may integrate this v2 JSON and companion Markdown after checking hashes. No agent-message tool was available in this worker; no direct handoff message is claimed."
+}

@@ -1,6 +1,6 @@
-# Arimoclomol for BUB1B-MVA: test exposure, protein function and rescue before treatment
+# Arimoclomol for BUB1B-MVA: a functional rescue proposal
 
-**Track 2 · adriamasnou · 23 October 2026**<br/>
+**Track 2 · adriamasnou · 24 October 2026**<br/>
 **Research proposal. No drug rescue experiment or treatment in this child has been performed.**
 
 ## The proposed candidate and the decision it must earn
@@ -9,7 +9,7 @@ We propose **arimoclomol as a conditional preclinical repurposing candidate** fo
 
 The candidate has a defined human regulatory and pharmacokinetic record, but no established MVA indication. Its US indication is neurological manifestations of Niemann–Pick type C, **with miglustat**, from age two; its clinical mechanism in NPC remains unknown. This is a reason to examine translation carefully, not evidence of efficacy or safety in this child. [MIPLYFFA label, revised March 2026, §§1, 12](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5feffc0e-453d-47fa-91dd-38d4952309bc).
 
-The deliverable combines a falsifiable drug proposal with two working public tools: an offline **gene-to-condition navigator** and a **fail-closed interpretation canary**. It is supported by variant analysis, literature adjudication, a proposed laboratory protocol and a public-genome computational smoke test. The tools can be used now; therapeutic rescue remains to be demonstrated.
+The proposal includes variant analysis, primary-source adjudication and a laboratory protocol, with an implemented **gene-to-condition navigator**, **interpretation canary** and **rescue-decision prototype**.
 
 ## 1. Genotype and mechanism: distinguish evidence from inference
 
@@ -21,7 +21,7 @@ Human BubR1's C-terminal domain has structural functions beyond any catalytic in
 
 **Working categories are abundance-limited, function-limited, mixed and indeterminate.** They are experimental outcomes, not diagnoses assigned from a structure prediction. A normal melting temperature of an isolated fragment cannot exclude a full-length stability, degradation, localisation or interaction defect. A rise in total protein does not by itself establish rescue. **[OUR INFERENCE]**
 
-Local annotation retained all 313,417 input variants as distinct annotated variants. A prespecified phenotype-blind scan returned *BUB1B* within a severity-tied block spanning ranks 53–61 among 230 genes (nominal rank 55); this is supporting analysis with limited discrimination, not a blinded clinical validation. Local SpliceAI produced low scores for the two findings, with positive controls, which does not exclude splice effects experimentally. [Annotation methods](annotation-toolchain-vep.md); [splice assessment](splice-prediction.md). **[OUR MEASUREMENT]**
+Local annotation retained all 313,417 distinct input variants. A prespecified phenotype-blind scan placed *BUB1B* in a severity-tied block at ranks 53–61 among 230 genes. This has limited discrimination. Low local SpliceAI scores, with positive controls, do not experimentally exclude splice effects. [Annotation methods](annotation-toolchain-vep.md); [splice assessment](splice-prediction.md). **[OUR MEASUREMENT]**
 
 ## 2. Why arimoclomol merits a bounded test—and what could disqualify it
 
@@ -35,9 +35,9 @@ The EMA's earlier NPC assessment describes HSP70/NPC1 expression effects at much
 
 Clinical translation is a material counterargument: the larger ALS and inclusion-body myositis (IBM) trials did not demonstrate efficacy. Active arms had more adverse-event discontinuations and hepatic signals; one IBM participant had renal inflammation/injury considered treatment-related. Higher exposure cannot simply be assumed to solve a negative experiment. These adult disease-specific results do not test BUB1B or establish an MVA contraindication. PMID 38782015; PMID 37739573. The positive 2021 NPC trial is disease-specific (PMID 34418116). Its 2025 rescored-endpoint analysis uses the same trial, not independent replication (PMID 40520915). **[OUR INFERENCE: transfer limits]**
 
-The current label estimates paediatric NPC steady-state mean serum trough and peak concentrations of **206 and 523 ng/mL**. Using arimoclomol free-base molecular weight approximately 313.78 g/mol gives **0.66 and 1.67 µM**, respectively. This arithmetic is a first exposure anchor: serum concentration is not intracellular free concentration, and a peak is not sustained exposure. [Label §§11–12](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5feffc0e-453d-47fa-91dd-38d4952309bc); [reproducible calculation](../analysis/exposure_check.py). **[OUR MEASUREMENT]**
+The label estimates paediatric NPC steady-state mean serum trough/peak concentrations of **206/523 ng/mL**, equivalent to **0.66/1.67 µM** using free-base molecular weight 313.78 g/mol. Serum values do not establish intracellular free concentration or sustained peak exposure. [Label §§11–12](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5feffc0e-453d-47fa-91dd-38d4952309bc); [reproducible calculation](../analysis/exposure_check.py). **[OUR MEASUREMENT]**
 
-**Advance only if a validated cellular assay demonstrates functional benefit in the clinically anchored range.** A proposed initial series spans vehicle, 0.2, 0.6, 1 and 2 µM; 4 and 10 µM are exploratory arms clearly separated from the translational claim. These are laboratory design values, not doses for a person. Measure medium and intracellular exposure where feasible and account for protein binding and time course. An effect confined to a high exploratory concentration does not pass the translational gate. **[PROPOSED EXPERIMENT]**
+**Require functional benefit at qualified exposure.** The proposed initial series is vehicle, 0.2, 0.6, 1 and 2 µM; 4 and 10 µM are exploratory. These are laboratory design values, not human doses. Measure exposure and account for binding and time course. A high-exposure-only effect fails the translational gate. **[PROPOSED EXPERIMENT]**
 
 ## 3. The experiment: four gates with explicit failure outcomes
 
@@ -74,7 +74,7 @@ The existing sequence and reagent specifications support an initial fragment stu
 
 **Gene-to-condition navigator.** The offline [interactive lookup](pgtm-navigator.html) joins a dated HFEA register to candidate gene mappings from ClinVar, HPO and gene-MIM records. The rebuilt August 5 workbook contains **2,063 rows: 2,028 mapped and 35 unmapped**, with **1,782 gene symbols**. Each gene retains source/OMIM evidence; nine ClinVar/HPO disagreements remain visible. No match is not ineligibility, and a matched condition does not establish a particular variant or family's eligibility. [Data and provenance](hfea-pgtm-provenance.json); [builder](../tools/pgtm/build.py). **[OUR MEASUREMENT]**
 
-The tool addresses a practical information gap while preserving uncertainty. It runs without a server, sends no queries and links back to the regulator. Its extension to other genes is demonstrated by the full crosswalk and public controls, not inferred from the single MVA case. A source-adjudicated convenience task set retrieved all seven selected gene–condition targets, versus three using literal condition-title matching; four additional tasks exercised ambiguity or absence handling. This is an unblinded developer evaluation sharing the tool’s source data, not clinical accuracy or a comparison with the live HFEA service. [Task cases, evidence and executable check](pgtm-task-validation.md). It has not been evaluated with families or clinicians and does not claim improved access or outcomes.
+The tool addresses a practical information gap while preserving uncertainty. It runs without a server, sends no queries and links back to the regulator. Its extension to other genes is demonstrated by the full crosswalk and public controls, not inferred from the single MVA case. An expanded 28-query audit reviewed every returned row and all 47 gene–row associations. All 20 positive gene queries recovered their expected rows, versus five with literal condition-title matching. The audit found and repaired 11 omitted source qualifiers; per-gene labels now preserve them. [Frozen cases, before/after evidence and executable check](pgtm-expanded-validation.md). This unblinded developer evaluation shares source data with the tool; it establishes neither clinical accuracy nor superiority to the live HFEA service. No family or clinician outcomes were measured.
 
 **Interpretation canary.** The [portable panel](../canary/README.md) refuses to turn missing, malformed or nonfinite model outputs into reassuring negatives. Real SpliceAI inference passes six controls; a separate harness self-test rejects nine injected failures. These are regression checks, not a clinical accuracy benchmark. No patient-scale data or reference genome is distributed. **[OUR MEASUREMENT — measured output and dependency snapshot included]**
 

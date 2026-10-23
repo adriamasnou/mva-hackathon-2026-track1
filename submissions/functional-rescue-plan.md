@@ -1,6 +1,6 @@
 # Functional rescue plan: full-length N1002K and exposure-limited arimoclomol
 
-**Proposed experiments; not performed. Protocol revision: 23 October 2026.**
+**Proposed experiments; not performed. Protocol revision: 24 October 2026.**
 
 This is the decision protocol for the [Track 2 candidate](adriamasnou_track2_report.md). The fragment reagent specification remains an optional mechanistic sub-study. Neither a fragment melting curve nor increased BubR1 alone is sufficient to advance a drug.
 
