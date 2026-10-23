@@ -17,15 +17,29 @@ phenotype_exporter=module('export_phenotype')
 provenance=module('export_provenance')
 
 
+def provenance_fixture(work):
+    for name in ['runtime.properties','batch.txt','execution.log']:
+        if not (work/name).exists():(work/name).write_text('public provenance fixture\n')
+    return {'properties_sha256':runner.sha(work/'runtime.properties'),
+            'properties_text':(work/'runtime.properties').read_text(),
+            'batch_sha256':runner.sha(work/'batch.txt'),
+            'log_sha256':runner.sha(work/'execution.log'),
+            'pre_inference_addenda':{}}
+
+
 class PublicBenchmarkTests(unittest.TestCase):
     def test_execution_binding_rejects_changed_configuration_and_design(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d)
             properties=root/'runtime.properties';properties.write_text('whitelist=false\n')
             design=root/'protocol-before-inference.json';design.write_text('{"arm":"original"}\n')
-            receipt={'properties_sha256':runner.sha(properties),'properties_text':properties.read_text(),
+            receipt={**provenance_fixture(root),
                      'design_records':{design.name:{'sha256':runner.sha(design),'content':json.loads(design.read_text())}}}
             provenance.verify(root,receipt)
+            for key in provenance_fixture(root):
+                incomplete=dict(receipt);del incomplete[key]
+                with self.subTest(missing_key=key),self.assertRaisesRegex(ValueError,'incomplete'):
+                    provenance.verify(root,incomplete)
             properties.write_text('whitelist=true\n')
             with self.assertRaises(ValueError):provenance.verify(root,receipt)
             properties.write_text(receipt['properties_text'])
@@ -41,11 +55,10 @@ class PublicBenchmarkTests(unittest.TestCase):
             source=work/'results/x.phenotype_only.genes.tsv'
             source.write_text('GENE_SYMBOL\tEXOMISER_GENE_PHENO_SCORE\nTARGET\t0.5000\nTARGET\t0.4000\nOTHER\t0.5000\n')
             record=work/'execution.json'
-            record.write_text(json.dumps({'status':'completed','exit_code':0,'missing_outputs':[],
+            record.write_text(json.dumps({**provenance_fixture(work),'status':'completed','exit_code':0,'missing_outputs':[],
                 'protocol_sha256':runner.sha(protocol),'outputs':{str(source):runner.sha(source)}}))
             row={'case_id':'x','output_sha256':runner.sha(source),**ev.rank_records(phenotype.phenotype_records(source),'TARGET')}
             (work/'evaluation.json').write_text(json.dumps({'execution_receipt_sha256':runner.sha(record),'all_case_results':[row]}))
-            for name in ['batch.txt','runtime.properties']:(work/name).write_text('public fixture')
             out=Path(d)/'export';self.assertEqual(phenotype_exporter.export(work,out)['jobs_verified'],1)
             source.unlink();job.unlink()
             self.assertEqual(phenotype_exporter.verify(out)['jobs_verified'],1)
@@ -65,7 +78,7 @@ class PublicBenchmarkTests(unittest.TestCase):
             jobs=[{'case_id':'x','gene':'TARGET','stratum':'autosomal','arm':'original','primary_autosomal':True,
                    'job':str(job),'job_sha256':runner.sha(job),'result_jsonl':str(result)}]
             manifest=work/'jobs-manifest.json';manifest.write_text(json.dumps(jobs))
-            (work/'execution.json').write_text(json.dumps({'status':'completed','exit_code':0,'jobs_manifest_sha256':runner.sha(manifest),'outputs':{str(result):runner.sha(result)}}))
+            (work/'execution.json').write_text(json.dumps({**provenance_fixture(work),'status':'completed','exit_code':0,'jobs_manifest_sha256':runner.sha(manifest),'outputs':{str(result):runner.sha(result)}}))
             cases=work/'cases.json';cases.write_text(json.dumps({'cases':[{'case_id':'x','gene':'TARGET','causal_variants':[]}]}))
             out=Path(d)/'export';exporter.export(work,out,cases)
             result.unlink();job.unlink()
