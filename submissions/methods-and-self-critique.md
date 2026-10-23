@@ -12,8 +12,8 @@ record of our own claims failing.**
 The obvious attack on our finding is that **we found what we went looking for.** *BUB1B* was
 reached with a candidate-gene prior; a prior that strong can manufacture its own confirmation.
 
-So the analysis was re-run knowing nothing: **no gene list, no HPO terms, no panel** — against a
-filter pre-registered *before* the run in `pipeline/recessive_scan_PREREGISTERED.md`.
+The algorithm was re-run without phenotype or a candidate list: **no gene list, no HPO terms, no panel** — against a
+filter recorded *before* this run, after the team already knew the candidate in `pipeline/recessive_scan_PREREGISTERED.md`.
 
 | | |
 |---|---|
@@ -28,8 +28,7 @@ are tied with *BUB1B* on both severity sort keys, occupying ranks **53–61**; w
 **seven — VPS41, IGHV8-51-1, *BUB1B*, TUBB8B, PSG1, LILRB4, LBP — are tied on all three
 pre-registered sort keys**, every one at mean GQ 99.0. *BUB1B*'s position among those seven is
 decided by nothing the pre-registration specifies. **The honest unit is the tie block, not the
-rank.** The defensible claim is that a phenotype-blind recessive model puts *BUB1B* in the top
-~20% of 230 candidates with no prior knowledge of MVA. **[OUR MEASUREMENT]**, re-derived
+rank.** The defensible claim is that a phenotype-blind recessive model puts *BUB1B* in the approximately the top quarter of 230 candidates under a rule that does not use phenotype or a gene list. **[OUR MEASUREMENT]**, re-derived
 2026-08-30 by `python3 pipeline/vep_concordance.py`, which also reproduces the 55/230 above from
 the pre-registered rule. Re-annotating the same callset with **Ensembl VEP** moves *BUB1B* to
 **rank 42 of 184** with its own allele counts unchanged — see
@@ -46,7 +45,7 @@ chr15:40,220,612  T>G  missense     0/1     (allele B)
 ```
 
 One truncating plus one missense, both heterozygous — the canonical MVA compound-heterozygote
-architecture (Hanks 2004, PMID 15475955), reconstructed blind.
+architecture (Hanks 2004, PMID 15475955). Phase remains inferred; an analyst who already knows the answer is not blinded.
 
 > ### The bad half, which we are reporting rather than burying: **55th is not first.**
 > A phenotype-blind scan does **not** independently nominate this gene. **It corroborates the
@@ -74,9 +73,9 @@ it.** All four below were run on 2026-08-29.
 | claim attacked | test built | outcome |
 |---|---|---|
 | **"the mosaic aneuploidy is visible in bulk WGS"** — held 3 days, already in a family-facing draft | restrict to uniquely-mapping sites; independent GC+mappability depth model with a known-truth anchor | 🔻 **FALSIFIED.** Mismapping. Replaced by a bounded negative: no gain above **~3.2% of cells** — **4.2%** on the conservative leave-one-chromosome-out variant — on a method that recovers chrX at **0.4999 against a true 0.5000**. 🔻 *(Corrected 2026-08-30: this cell read "~3.4%". **3.4% is the Pass-2 GC-only bound; 0.4999 is the Pass-3 GC+mappability anchor** — the shipped model, whose bound is 3.2%. The sentence welded one model's detection limit to a different model's truth anchor.)* |
-| **"neither causal variant disrupts splicing"** | five canonical splice-site pathogenic variants, selected by regex, that **must** score ≥0.5 | 🔻 **The instrument was broken** — our own patch had it returning 0.00 for everything. Fixed; controls 5/5; claim then **confirmed** |
+| **"neither candidate variant has a high SpliceAI prediction"** | five canonical splice-site pathogenic controls with a regression threshold ≥0.5 | 🔻 **The instrument was broken** — our own patch had it returning 0.00 for everything. Fixed; controls 5/5; low prediction scores reproduced; an experimental absence of splice effects remains unproven |
 | **"the PS3 ceiling has not moved in 19 months"** | recompute from a ClinVar release newer than the finding's own, by a separate implementation | ✅ **SURVIVES.** 21.6% vs 20.7%; *BUB1B* count reproduces **exactly** (35) |
-| **"the compound het is the whole story at this locus"** | genome-wide SV survey; splice prediction; MAPQ callability | ✅ **SURVIVES all three.** No SV at the locus, no splice signal, callability 0.990 vs a 0.983 median |
+| **"no additional event was detected by these surveys"** | genome-wide SV survey; splice prediction; MAPQ callability | No SV or large splice-prediction signal detected within the analyses’ limits; callability 0.990 vs a 0.983 median. This does not exclude every additional cause. |
 **[OUR MEASUREMENT — every row above is a run in this repository on 2026-08-29, reproducible via `pipeline/mosaicism_test.py`, `pipeline/mosaicism_pass3.py`, `pipeline/spliceai_run.py` and `canary/run_canary.py`. The verdicts are the tests' own outputs.]**
 
 > **One of four claims did not survive, and it was the most quotable one we had.**
@@ -88,7 +87,7 @@ than an error — a patched encoder scoring noise, a contig-naming mismatch yiel
 data fetch that wrote 26% of a file and exited zero. **None threw.**
 
 That pattern is the subject of `canary/`, a positive-control panel published with this submission,
-and the honest summary is: **we did not catch these by being careful. We caught them by demanding
+and the practical lesson is: **we did not catch these by being careful. We caught them by demanding
 that each instrument first produce a result we already knew.**
 
 ## 3. Compute footprint — measured on the runs that produced this submission, not estimated
@@ -120,7 +119,7 @@ length 149. The two causal positions were re-piled from this CRAM: 47 and 27 rea
 during the run. A whole-genome BAM would have been ≈ 63 GB (scaled from a measured 5.05 GB chr1
 BAM); streaming lane CRAMs into a single deduplicated CRAM kept the peak near 20 GB of output, and
 the FASTQs were deleted only after the merged read count matched the expected 1,076,022,529 and
-every file's checksum was on record. **The realignment is reproducible from the public FASTQs in
+every file's checksum was on record. **The realignment is reproducible from the access-controlled hackathon FASTQs in
 ≈ 12 h on the same hardware; it is not required for any Track 2 conclusion**, which rest on the
 organizers' VCF and on the literature.
 

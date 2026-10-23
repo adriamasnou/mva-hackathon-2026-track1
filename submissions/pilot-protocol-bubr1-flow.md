@@ -93,15 +93,11 @@ weakness against the companion stability protocol. **This pilot has one.**
 > ⚠️ **What IS a real difference, and it is not the one the sweep found.** Matsuura's patients 1, 2
 > and 5 carry **one truncating allele plus the low-expression `6G3` haplotype** — a second allele
 > *"without detectable mutation"*. **This child carries two identified variants**, a nonsense and a
-> missense. The genetic architectures differ even though the consequence — a large reduction in
-> BubR1 with no wild-type pool — is the same shape. **The anchor is an expected range from an
-> analogous architecture, not a matched genotype**, which is the third limit stated below.
+> missense. The genetic architectures differ. **The child’s phase, NMD and protein abundance remain unmeasured. The published levels are contextual comparators, not an expected range that this sample must reproduce.**
 > [`papers-local/matsuura2006_ajmg_monoallelic_bub1b.txt`, re-read 2026-08-31; title confirmed by
 > `esummary` for PMID 16411201.]
 
-**A working assay must reproduce roughly that.** If patient cells read at 80% of control, the assay
-is not measuring BubR1 specifically. If they read at 3%, something else is wrong. **The pilot has a
-number to hit, not merely a signal to observe.**
+**Qualify specificity and linearity independently of the patient value.** A measured level outside the published examples may reflect biology, cell model or measurement. Use knockdown, dilution/linearity and orthogonal protein measurement to distinguish these. Do not tune the assay to force the patient into an expected band. **[OUR INFERENCE]**
 
 ⚠️ **Three honest limits on the anchor, and the third was rewritten on 2026-08-30 because it was
 wrong in both halves.** Matsuura's figures are **% of HeLa**; **those patients are not this
@@ -132,7 +128,7 @@ matched to the digit** — which is why criterion 3 is written as a broad 20–3
 
 This is the calculation the screen protocol could not do, and it produces a trap worth naming.
 
-The screen must detect a **2-fold rise from the patient baseline**: **25% → 50%** of control. Using
+For assay design, consider a **hypothetical two-fold abundance increase from 25% to 50%** of a reference control. Neither 25% nor a clinically meaningful two-fold rescue has been measured for this child or N1002K. The following is an engineering precision calculation under an equal-CV assumption, not a therapeutic threshold. Using
 the Assay Guidance Manual's own Z′ definition, with CV equal in both populations:
 
 ```
@@ -141,8 +137,8 @@ Z' = 1 - 3·CV·(hi + lo) / (hi - lo)
 
 | what is being resolved | Z′ target | **maximum assay CV** |
 |---|---|---|
-| patient vs control — **25% vs 100%** *(the easy comparison)* | ≥ 0.4 | **≤ 12.0%** |
-| **a 2-fold hit — 25% vs 50%** *(what the screen needs)* | ≥ 0.4 | **≤ 6.7%** |
+| illustrative low vs reference — **25% vs 100%** *(the easy comparison)* | ≥ 0.4 | **≤ 12.0%** |
+| **a 2-fold hit — 25% vs 50%** *(chosen engineering target)* | ≥ 0.4 | **≤ 6.7%** |
 | the same, comfortably | ≥ 0.5 | ≤ 5.6% |
 | the same, bare 3σ separation | 0.0 | ≤ 11.1% |
 
@@ -560,7 +556,7 @@ Three consequences:
    subpopulation. **If BubR1 level and mis-segregation are related at all — which is the entire
    thesis — then those are exactly the cells with the most BubR1, and the gate biases the measured
    value upward.**
-3. **It breaks the patient-vs-control comparison**, since a near-diploid control and a >25%-aneuploid
+3. **It breaks the patient-vs-control comparison**, since a near-diploid control and an aneuploid
    patient line are not comparable populations inside "the same" gate.
 
 > ### Resolution: measure DNA content, report it, and do not filter on it.
@@ -591,12 +587,12 @@ DNA histogram, that is a reason to prefer Condition A — a criterion this proto
 
 **(c) 🔴 The whole statistical framework assumes a UNIMODAL population, and this disease may not
 provide one.** §3's CV ≤ 6.7% derivation and every use of "median MFI" assume a single well-behaved
-distribution. **But the patient line is >25% aneuploid, and whether BubR1 is distributed unimodally
+distribution. **A disease-level description of aneuploidy in usually >25% of cells does not establish the fraction in the chosen cultured line. Whether BubR1 is distributed unimodally
 across euploid and aneuploid subpopulations is unknown** — and it is not a safe assumption, since
 the thesis itself proposes that BubR1 level and mis-segregation are linked.
 > **Therefore: unimodality is now a PRECONDITION, checked before the CV criterion is applied.**
 > **Report the BubR1 histogram shape for every arm.** If the patient distribution is bimodal, **a
-> median is the wrong statistic and the CV criterion does not hold** — the analysis must move to
+> median alone can conceal subgroup responses; qualify the precision model for the observed distribution** — the analysis must move to
 > reporting the subpopulations, and the hit definition changes with it.
 > ⚠️ **A bimodal patient distribution would not be a nuisance. It would be a finding** — it would
 > say the patient's cells are not uniformly BubR1-low, which no published measurement of these
@@ -605,8 +601,7 @@ the thesis itself proposes that BubR1 level and mis-segregation are linked.
 **[OUR INFERENCE throughout §5.13b. (c) rests on the published >25% aneuploidy figure; the
 statistical consequence is our reasoning.]**
 
-⚠️ **Acceptance criteria are therefore unchanged in both value and population:** the 20–35% anchor
-and CV ≤ 6.7% apply to the whole live-singlet gate, as originally written. **[OUR INFERENCE from a
+**Updated interpretation:** the 20–35% literature range is not an acceptance criterion. The CV ≤6.7% value is the engineering target derived under the assumptions in §3, which must be qualified in the actual cell population. **[OUR INFERENCE from a
 sourced fact — the >25% aneuploidy figure is published; that it makes cycle-gating inappropriate
 here is our reasoning.]**
 
@@ -641,7 +636,7 @@ says which is which, because a protocol that hides the difference is worse than 
 | **GM21284 culture: RPMI-1640 + 2 mM L-gln, 15% FBS not heat-inactivated, 37 °C/5% CO₂, split 1:4** | **Coriell/NIGMS catalogue record** |
 | **stain index** as the titration metric | **PMID 15536642** (Maecker 2004) |
 | **350 × g, 5 min**; fix 20 min RT **in the dark**; **primary 20 min RT in the dark**; **"predetermined optimum concentration"**, i.e. titration is the vendor's own requirement | vendor intracellular-staining protocol (protocols.io, DOI-versioned) |
-| **≥20,000 events/well** | **DERIVED** — `SE(median) ≈ 1.2533·σ/√n` against the 6.7% budget |
+| **≥25,000 events/well** | **DERIVED** — `SE(median) ≈ 1.2533·σ/√n` against the 6.7% budget |
 | **90% methanol, minimum 10 min on ice**; **methanol damages PE and APC** | vendor alcohol-permeabilisation protocols |
 | **715-545-150 = Alexa 488 donkey anti-mouse IgG (H+L) *min X***, flow-validated | Jackson ImmunoResearch |
 | **DsiRNA at 5 / 20 / 50 nM**, bracketing the published 20–50 nM; **a positive transfection control in every experiment** | **Gama Braga 2020 Methods** for the concentration; manufacturer guidance for the off-target rationale and the transfection control |
@@ -724,13 +719,12 @@ out and they inflate exactly the quantity being measured.
 2. 🔴 **Interleave the arms; never block them.** If patient wells occupy columns 2–7 and control
    wells 8–11, **any plate gradient becomes indistinguishable from the biological difference the
    assay exists to measure.** Assign the six arms across the plate in a randomised or systematically
-   interleaved pattern, and **use the same map on every plate and every day.**
+   interleaved pattern, and **use a recorded balanced randomisation across plates and days.**
 3. **Record the well position with every measurement.** If the median MFI correlates with row or
    column, the CV is reporting plate geometry, not assay precision — **and that must be checked
    before the CV is believed**, not after.
 
-**Without this, a plate gradient can produce either a false pass on criterion 3 (patient ≈ 20–35%
-of control, manufactured by position) or a false fail on criterion 4.**
+**Without this, a plate gradient can manufacture a patient–control difference or distort the precision estimate.**
 
 ## 5.10 Analysis plan, fixed in advance
 
@@ -769,30 +763,7 @@ judgement. Three attacks:
 *for the pilot*, which is an assay-qualification experiment and makes no biological claim. **It lands
 hard on the screen**, and is already recorded there as attack A1.
 
-**P2 — "The 22–29% anchor is from a different cell type and different patients, so criterion 3 is
-not really a criterion."** **Partly lands.** It is why the acceptance range is written as a broad
-**20–35%** rather than a point estimate, and why §2 states the limits explicitly. **If the observed value is 40–50%, that is NOT an
-uninterpretable result** — see §7's branch for it, added 2026-08-31.
-
-> ✅ **P2 IS NOW PARTLY ANSWERED, AND THE ANSWER CAME FROM THE ANCHOR PAPER ITSELF.** This passage
-> used to end *"that ambiguity is a real weakness with no clean resolution available to us."* That
-> was written when we had only the fibroblast trio (22/25/29%). **Matsuura 2006 also reports a
-> LYMPHOBLASTOID series — the cell type this pilot actually uses — and it is a full distribution,
-> not a point:**
->
-> | LCL, % of normal control | who |
-> |---|---|
-> | **22%** | affected patient 2 (truncating + `6G3`) |
-> | **31%, 38%** | `6G3` carriers, family 6 |
-> | **57%** | truncating-mutation carrier (father, family 2) |
-> | **71%** | `6G3` carrier (mother, family 2) |
-> | **112%, 158%** | normal individuals |
->
-> **A 40–50% reading falls inside the published CARRIER band (31–71%) and far below the normal band
-> (≥112%).** It is therefore not ambiguous between "assay broken" and "patient" — it is a
-> *quantitatively meaningful* position, and the protocol can now say which of two things it means
-> and how to tell them apart. **[`papers-local/matsuura2006_ajmg_monoallelic_bub1b.txt`, read
-> 2026-08-31.]**
+**P2 — a historical protein-abundance range cannot validate a different cell line.** This criticism stands. The Matsuura series is informative context, but does not establish the expected signal in GM21284 or an N1002K system. Even a value inside the published range is insufficient evidence of specificity. Validate the assay independently, then report the observed biology. PMID 16411201. **[OUR INFERENCE]**
 
 **P3 — "Criterion 2 (knockdown) is run in a different cell type from criteria 3–4."** **Lands, and
 it is the sharpest.** Specificity is demonstrated in HeLa/U2OS while the anchor is measured in LCLs,
@@ -802,24 +773,15 @@ justification — that antibody specificity is a property of the antibody — is
 BubR1 depletion in LCLs by nucleofection at least once before the screen begins.** Deferred, not
 dismissed.
 
-## 6. Acceptance criteria — all **five**, fixed before any data exist
+## 6. Proposed assay-qualification criteria
 
-🔻 **The heading said "all four" until 2026-08-31.** The table below has **five** numbered criteria
-and §7's first bullet already read *"All five met → proceed"*, so the heading was the odd one out.
-✅ **Three gaps in §7's decision tree were open on 2026-08-31 and are now CLOSED** — a branch for
-criterion 3 failing alone (the 40–50% case), a branch for criterion 5 failing (decomposed into
-lot-instability vs day-instability, which have different fixes), and the §5.13b(c) unimodality
-precondition, which existed in the text but appeared in neither the §6 table nor the §7 tree — so a
-lab following §7 alone would never have applied it. **The 40–50% branch was resolvable from the
-anchor paper all along:** Matsuura's lymphoblastoid series is a distribution, not a point, and a
-40–50% reading sits inside its published *carrier* band. We had been calling it *"a real weakness
-with no clean resolution available to us"* while holding the paper that resolves it.
+These are design targets for laboratory review, not a completed preregistration. The observed patient abundance is a result, never a pass/fail target. The [functional plan](functional-rescue-plan.md) requires additional cellular validation before a drug claim.
 
 | # | criterion | why |
 |---|---|---|
 | **1** | **Specific signal**: arm 3 ≫ arms 1 and 2 | otherwise it is background |
 | **2** | **Specificity by knockdown**: dsiBUBR1 reduces signal **≥ 50%** | 🔴 **the decisive one.** An antibody signal that does not fall when the target is knocked down is not measuring the target, whatever else it does |
-| **3** | **Anchor**: patient ≈ **20–35%** of control | reproduces the published expectation; well outside that range means the assay is measuring something else |
+| **3** | **Linearity and orthogonal agreement** in the chosen cells, with tolerance fixed from pilot precision before confirmation | validates measurement without forcing a patient value into a historical range |
 | **4** | 🔴 **Precision**: **CV ≤ 6.7%** across replicate wells | §3 — and **not** merely "patient and control separate" |
 | **5** | **Reproducibility across ≥ 2 antibody lots** and 2 independent days | a screen runs for months |
 
@@ -831,20 +793,7 @@ with no clean resolution available to us"* while holding the paper that resolves
   partial outcome and the one most likely to be waved through.
 - **2 failed** *(no knockdown response)* → **stop.** The reagent is not measuring BubR1 in this
   format. Try the other antibody once; if it also fails, go to the fallback.
-- **3 failed ALONE — the patient reads 40–50% instead of 20–35%** *(specific, precise, but off the
-  anchor)* → **do not stop, and do not wave it through. Read the control arms first, because they
-  decide which of two things it is.**
-  - **If the unrelated normal LCLs also read low** relative to their own expectation, the scale is
-    compressed — an assay problem. **Optimise (titration, fixation, voltage) and re-run.**
-  - **If the normals read normally and only the patient reads 40–50%**, that is a **real biological
-    value in the published carrier band** (Matsuura's LCL series: carriers **31–71%**, affected
-    patient **22%**, normals **112–158%** — §5.12 P2). **This child's architecture is not
-    Matsuura's** — a nonsense plus a missense, against truncating plus the `6G3` low-expression
-    haplotype — so a higher residual is a plausible *finding*, not a failure. **Proceed, and report
-    the value as the result rather than forcing it onto the anchor.**
-  - **The carrier comparator arms make this decidable rather than arguable.** `GM21657` and
-    `GM22004` are obligate carriers (§4) and should read in the 31–71% band; if they do, the scale
-    is trustworthy and the patient's number means what it says.
+- **3 failed** → measurement is indeterminate. Resolve dilution/linearity or orthogonal disagreement before screening. A patient value outside the published examples is not itself a failure. Do not infer a carrier state from an abundance band. **[OUR INFERENCE]**
 - **5 failed** *(not reproducible)* → **decompose it before deciding, because the two halves have
   different fixes.**
   - **Fails across ANTIBODY LOTS, holds across days** → a reagent problem, not an assay problem.

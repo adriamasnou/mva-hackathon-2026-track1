@@ -1,239 +1,157 @@
 #!/usr/bin/env python3
-r"""
-Canary runner — assert that the interpretation layer of this pipeline is ALIVE.
+"""Fail-closed SpliceAI regression panel. Model execution and harness self-test are distinct."""
+import argparse
+import math
+import os
+from pathlib import Path
+import subprocess
+import sys
+import tempfile
 
-Not a benchmark. A liveness test. Every assertion here has a published or arithmetic answer
-that is not in dispute, so a failure means a TOOL IS BROKEN, not that a threshold was
-tuned badly.
-
-Exit 0 = every assertion held. Non-zero = at least one tool is returning something you
-should not believe. See canary/README.md for why this exists.
-"""
-import csv, os, pathlib, subprocess, sys, tempfile
-
-ROOT = pathlib.Path(__file__).resolve().parent.parent
-PANEL = ROOT / "canary/canary_variants.tsv"
-RESULTS = []
+ROOT = Path(__file__).resolve().parent.parent
+PANEL = ROOT / 'canary/canary_variants.tsv'
 
 
-def record(panel, name, ok, detail, skipped=False):
-    RESULTS.append((panel, name, "SKIP" if skipped else ("PASS" if ok else "FAIL"), detail))
-
-
-def load_panel(cls):
+def load_panel(path=PANEL):
     rows = []
-    with open(PANEL) as f:
-        for line in f:
-            if line.startswith("#") or not line.strip():
-                continue
-            p = line.rstrip("\n").split("\t")
-            if len(p) >= 9 and p[5] == cls:
-                rows.append(dict(id=p[0], chrom=p[1], pos=p[2], ref=p[3], alt=p[4],
-                                 gene=p[6], expect=p[7], why=p[8]))
+    for line in path.read_text().splitlines():
+        if not line.strip() or line.startswith('#'):
+            continue
+        p = line.split('\t')
+        if len(p) != 9 or p[5] != 'splice':
+            raise ValueError('Malformed or unsupported panel row')
+        rows.append(dict(id=p[0], chrom=p[1], pos=int(p[2]), ref=p[3], alt=p[4],
+                         gene=p[6], positive='>=' in p[7]))
+    if not rows or len({r['id'] for r in rows}) != len(rows):
+        raise ValueError('Empty panel or duplicate identifiers')
+    if not any(r['positive'] for r in rows) or not any(not r['positive'] for r in rows):
+        raise ValueError('Panel needs both positive and negative controls')
     return rows
 
 
-# ---------------------------------------------------------------- PANEL 1: splice
-def panel_splice():
-    rows = load_panel("splice")
-    runner = ROOT / "pipeline/spliceai_run.py"
-    if not runner.exists():
-        for r in rows:
-            record("splice", r["id"], False, "spliceai_run.py not present", skipped=True)
-        return
-    with tempfile.NamedTemporaryFile("w", suffix=".vcf", delete=False) as fh:
-        fh.write("##fileformat=VCFv4.2\n")
-        for c in sorted({r["chrom"] for r in rows}, key=lambda x: x.zfill(2)):
-            fh.write(f"##contig=<ID={c}>\n")
-        fh.write('##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">\n')
-        fh.write("#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\tcanary\n")
-        for r in sorted(rows, key=lambda r: (r["chrom"].zfill(2), int(r["pos"]))):
-            fh.write(f"{r['chrom']}\t{r['pos']}\t{r['id']}\t{r['ref']}\t{r['alt']}\t100\tPASS\t.\tGT\t0/1\n")
-        vcf = fh.name
-    proc = subprocess.run([sys.executable, str(runner), vcf],
-                          capture_output=True, text=True, cwd=ROOT)
-    os.unlink(vcf)
+def key(row):
+    return f"{row['chrom']}:{row['pos']}{row['ref']}>{row['alt']}"
+
+
+def evaluate(stdout, rows, returncode=0):
+    """Accept complete finite four-channel scores; do not turn absence into zero."""
+    if returncode:
+        return [f'Runner exited {returncode}']
     scores = {}
-    for line in proc.stdout.splitlines():
+    errors = []
+    expected = {(key(r), r['gene']) for r in rows}
+    for line in stdout.splitlines():
         p = line.split()
-        if len(p) >= 8 and ":" in p[0] and p[1] and _isfloat(p[6]):
-            key = p[0]
-            scores[key] = max(scores.get(key, 0.0), float(p[6]))
-    if not scores:
-        for r in rows:
-            record("splice", r["id"], False,
-                   "runner produced NO scores at all — the classic silent failure")
-        return
-    for r in rows:
-        key = f"{r['chrom']}:{r['pos']}{r['ref']}>{r['alt']}"
-        got = scores.get(key)
-        if got is None:
-            record("splice", r["id"], False, f"{r['gene']}: no score returned (silent miss)")
+        if len(p) < 2 or (p[0], p[1]) not in expected:
             continue
-        op, thr = (">=", 0.5) if ">=" in r["expect"] else ("<", 0.2)
-        ok = got >= thr if op == ">=" else got < thr
-        record("splice", r["id"], ok,
-               f"{r['gene']:<7} max delta {got:.2f}  expected {op}{thr}  ({r['why'][:44]})")
+        try:
+            ds = tuple(float(x) for x in p[2:6])
+            maximum = float(p[6])
+            if len(ds) != 4 or not all(math.isfinite(x) and 0 <= x <= 1 for x in (*ds, maximum)):
+                raise ValueError('nonfinite/out-of-range')
+            if abs(max(ds) - maximum) > 0.011:
+                raise ValueError('inconsistent maximum')
+            k = (p[0], p[1])
+            if k in scores:
+                raise ValueError('duplicate score')
+            scores[k] = ds
+        except (ValueError, IndexError):
+            errors.append(f'Malformed score: {p[0]} {p[1]}')
+    for r in rows:
+        ds = scores.get((key(r), r['gene']))
+        if ds is None:
+            errors.append(f"{r['id']}: missing score for {r['gene']}")
+        elif r['positive']:
+            # First two are acceptor-loss controls; the remaining positives donor-loss.
+            channel = 1 if r['id'] in ('SPL-01', 'SPL-02') else 3
+            if ds[channel] < 0.5:
+                errors.append(f"{r['id']}: expected loss channel >=0.5, got {ds[channel]:.2f}")
+        elif max(ds) >= 0.2:
+            errors.append(f"{r['id']}: negative control >=0.2")
+    return errors
 
 
-def _isfloat(x):
-    try:
-        float(x); return True
-    except Exception:
-        return False
+def fixture(rows):
+    """Synthetic protocol fixture, never a measured model result."""
+    lines = []
+    for r in rows:
+        ds = [0., 0., 0., 0.]
+        if r['positive']:
+            ds[1 if r['id'] in ('SPL-01', 'SPL-02') else 3] = 0.9
+        lines.append(' '.join([key(r), r['gene'], *map(str, ds), str(max(ds)), 'fixture']))
+    return '\n'.join(lines)
 
 
-# ---------------------------------------------------------------- PANEL 2: depth / CNV
-def panel_depth():
-    """chrX in a male MUST come back at 0.5. Free, and present in every male genome."""
-    mod = ROOT / "pipeline/mosaicism_pass3.py"
-    gc = ROOT / "data/derived/scans/gc.500kb.tsv"
-    q60 = ROOT / "data/derived/scans/depthQ60.regions.bed.gz"
-    if not (mod.exists() and gc.exists() and q60.exists()):
-        record("depth", "XCHR-01", False,
-               "depth artefacts not on this machine (sample-specific, expected on a fresh clone)",
-               skipped=True)
-        return
-    proc = subprocess.run([sys.executable, str(mod)], capture_output=True, text=True, cwd=ROOT)
-    val = None
-    for line in proc.stdout.splitlines():
-        if "chrX =" in line:
-            try:
-                val = float(line.split("chrX =")[1].split("vs")[0].strip())
-            except Exception:
-                pass
-    if val is None:
-        record("depth", "XCHR-01", False,
-               "model produced no chrX value — a filter may have dropped every chrX bin")
-        return
-    err = abs(val - 0.5) / 0.5 * 100
-    record("depth", "XCHR-01", err <= 1.0,
-           f"chrX ratio {val:.4f} vs a true 0.5000 — error {err:.2f}%  (must be <=1%)")
+def self_test(rows):
+    good = fixture(rows)
+    faults = {
+        'empty output': '', 'missing row': '\n'.join(good.splitlines()[:-1]),
+        'all-zero output': good.replace('0.9', '0.0'),
+        'nonfinite output': good.replace('0.9', 'nan'),
+        'wrong chromosome convention': '\n'.join('chr'+s for s in good.splitlines()),
+        'wrong gene': good.replace('WDR35', 'OTHER'),
+        'duplicate row': good + '\n' + good.splitlines()[0],
+        'out-of-range output': good.replace('0.9', '1.1'),
+    }
+    if evaluate(good, rows):
+        raise AssertionError('Known-good protocol fixture rejected')
+    for name, bad in faults.items():
+        if not evaluate(bad, rows):
+            raise AssertionError(f'Undetected failure: {name}')
+    if not evaluate(good, rows, returncode=1):
+        raise AssertionError('Runner failure accepted')
+    print(f'PASS: harness rejected {len(faults)+1} injected failures and accepted its control.')
+    print('This tests the harness, NOT SpliceAI inference. Run --splice with dependencies and reference for that.')
+    return 0
 
 
-# ---------------------------------------------------------------- PANEL 4: contig naming
-def panel_naming():
-    """
-    The trap that cost the most time and never announced itself. A reference and an
-    annotation that disagree on contig naming produce EMPTY output, not an error.
-    """
-    ens = ROOT / "pipeline/ref/GRCh38.primary.fa.bgz.fai"
-    ucsc = ROOT / "pipeline/ref/GRCh38_no_alt_plus_hs38d1.fna.fai"
-    if not (ens.exists() and ucsc.exists()):
-        record("naming", "CONTIG-01", False, "reference indexes not present", skipped=True)
-        return
-    e = open(ens).readline().split("\t")[0]
-    u = open(ucsc).readline().split("\t")[0]
-    mismatch = e.startswith("chr") != u.startswith("chr")
-    record("naming", "CONTIG-01", True,
-           f"references on this machine use DIFFERENT conventions ('{e}' vs '{u}') — "
-           f"{'CONFIRMED, and every tool must be told which' if mismatch else 'same convention'}")
-    record("naming", "CONTIG-02", True,
-           "spliceai grch38 annotation is Ensembl-named -> pair it with GRCh38.primary, "
-           "never with GRCh38_no_alt (mismatch = silently empty scores, not an error)")
-
-
-# ---------------------------------------------------------------- SELF-TEST
-def self_test():
-    r"""
-    🔴 CAN THIS CANARY ACTUALLY GO RED?
-
-    A control set that has only ever passed is indistinguishable from one that cannot
-    fail -- which is the exact failure mode it exists to catch, turned on itself. So we
-    reintroduce a REAL bug (the one that actually happened here) into a throwaway copy of
-    the splice runner and assert the panel catches it.
-
-    The bug: SpliceAI one-hot encoding without the byte substitution that precedes it, so
-    'A' is read as 'N' and 'G' as 'A'. It raises no exception. It returns 0.00 for every
-    variant -- a plausible "no splice signal" for a canonical splice-site mutation.
-    """
-    import re, shutil
-    src = ROOT / "pipeline/spliceai_run.py"
-    if not src.exists():
-        print("  self-test SKIPPED: spliceai_run.py not present")
-        return 0
-    broken = ROOT / "canary/.broken_runner_tmp.py"
-    text = src.read_text()
-    # strip the substitution line -- the precise defect, not a synthetic one
-    patched, n = re.subn(
-        r'    seq = \(seq\.upper\(\)[^\n]*\n(?:[^\n]*\n)?',
-        '', text, count=1)
-    if n != 1:
-        print("  self-test SKIPPED: could not locate the encoder line to break")
-        return 0
-    broken.write_text(patched)
-    try:
-        rows = load_panel("splice")
-        pos = [r for r in rows if ">=" in r["expect"]]
-        with tempfile.NamedTemporaryFile("w", suffix=".vcf", delete=False) as fh:
-            fh.write("##fileformat=VCFv4.2\n")
-            for c in sorted({r["chrom"] for r in pos}, key=lambda x: x.zfill(2)):
-                fh.write(f"##contig=<ID={c}>\n")
-            fh.write('##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">\n')
-            fh.write("#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\tcanary\n")
-            for r in sorted(pos, key=lambda r: (r["chrom"].zfill(2), int(r["pos"]))):
-                fh.write(f"{r['chrom']}\t{r['pos']}\t{r['id']}\t{r['ref']}\t{r['alt']}\t100\tPASS\t.\tGT\t0/1\n")
-            vcf = fh.name
-        proc = subprocess.run([sys.executable, str(broken), vcf],
-                              capture_output=True, text=True, cwd=ROOT)
-        os.unlink(vcf)
-        got = []
-        for line in proc.stdout.splitlines():
-            p_ = line.split()
-            if len(p_) >= 8 and ":" in p_[0] and _isfloat(p_[6]):
-                got.append(float(p_[6]))
-        print("\n" + "=" * 84)
-        print("CANARY SELF-TEST — deliberately breaking the encoder, exactly as it broke for real")
-        print("=" * 84)
-        if not got:
-            print("  inconclusive: the broken runner produced no parsable output")
-            return 0
-        caught = sum(1 for g in got if g < 0.5)
-        print(f"  broken runner returned: {got}")
-        print(f"  canary assertions that would FAIL: {caught} of {len(got)}")
-        if caught == len(got):
-            print("\n  ✅ THE CANARY CATCHES IT. All positive controls fail when the tool is")
-            print("     silently broken, and the failure is loud instead of a clean negative.")
-            return 0
-        print("\n  🔴 THE CANARY DID NOT CATCH IT. This panel cannot detect the failure it was")
-        print("     built for and must not be trusted.")
-        return 1
-    finally:
-        broken.unlink(missing_ok=True)
+def run_model(rows, runner, reference):
+    if not runner.is_file() or not reference or not Path(reference).is_file():
+        raise FileNotFoundError('Model runner and indexed GRCh38 FASTA required; set --reference or MVA_SPLICEAI_REFERENCE')
+    with tempfile.TemporaryDirectory(prefix='mva-canary-') as tmp:
+        vcf = Path(tmp) / 'public-controls.vcf'
+        text = ['##fileformat=VCFv4.2']
+        text += [f'##contig=<ID={c}>' for c in sorted({r['chrom'] for r in rows})]
+        text += ['##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">',
+                 '#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\tcanary']
+        text += [f"{r['chrom']}\t{r['pos']}\t{r['id']}\t{r['ref']}\t{r['alt']}\t100\tPASS\t.\tGT\t0/1" for r in sorted(rows, key=lambda r:(r['chrom'],r['pos']))]
+        vcf.write_text('\n'.join(text)+'\n')
+        return subprocess.run([sys.executable, str(runner), str(vcf), '--reference', reference],
+                              capture_output=True, text=True, timeout=600)
 
 
 def main():
-    if "--self-test" in sys.argv:
-        return self_test()
-    want = [a.lstrip("-") for a in sys.argv[1:]] or ["splice", "depth", "naming"]
-    if "splice" in want: panel_splice()
-    if "depth" in want:  panel_depth()
-    if "naming" in want: panel_naming()
+    p = argparse.ArgumentParser(description=__doc__)
+    mode = p.add_mutually_exclusive_group()
+    mode.add_argument('--self-test', action='store_true')
+    mode.add_argument('--splice', action='store_true')
+    mode.add_argument('--scores', type=Path, help='Evaluate previously captured model stdout; does not run inference')
+    p.add_argument('--reference', default=os.environ.get('MVA_SPLICEAI_REFERENCE'))
+    p.add_argument('--runner', type=Path, default=ROOT/'pipeline/spliceai_run.py')
+    p.add_argument('--save-output', type=Path)
+    args = p.parse_args()
+    try:
+        rows = load_panel()
+        if args.self_test:
+            return self_test(rows)
+        if args.scores:
+            output, code = args.scores.read_text(), 0
+        else:
+            proc = run_model(rows, args.runner, args.reference)
+            output, code = proc.stdout, proc.returncode
+            if code:
+                print(proc.stderr[-2000:], file=sys.stderr)
+        if args.save_output:
+            args.save_output.write_text(output)
+        errors = evaluate(output, rows, code)
+        for error in errors:
+            print('FAIL:', error)
+        print(f'{len(rows)} controls requested; {len(errors)} failed assertions; inference={not bool(args.scores)}')
+        return 1 if errors else 0
+    except (OSError, ValueError, subprocess.TimeoutExpired) as error:
+        print(f'NOT RUN: {error}', file=sys.stderr)
+        return 2
 
-    print("\n" + "=" * 84)
-    print("CANARY — is the interpretation layer alive?  (not: is it accurate)")
-    print("=" * 84)
-    cur = None
-    for panel, name, status, detail in RESULTS:
-        if panel != cur:
-            print(f"\n  [{panel}]"); cur = panel
-        mark = {"PASS": "ok  ", "FAIL": "FAIL", "SKIP": "skip"}[status]
-        print(f"    {mark}  {name:<10} {detail}")
-    n_fail = sum(1 for r in RESULTS if r[2] == "FAIL")
-    n_pass = sum(1 for r in RESULTS if r[2] == "PASS")
-    n_skip = sum(1 for r in RESULTS if r[2] == "SKIP")
-    print("\n" + "-" * 84)
-    print(f"  {n_pass} passed · {n_fail} FAILED · {n_skip} skipped")
-    if n_fail:
-        print("\n  🔴 A FAILED CANARY MEANS A TOOL IS RETURNING SOMETHING YOU SHOULD NOT BELIEVE.")
-        print("     Every expectation here has a published or arithmetic answer. Fix the tool,")
-        print("     never the threshold.")
-    else:
-        print("\n  All live assertions held. This says the tools ANSWER; it does not say they are")
-        print("  right — for that you need a benchmark, which this is not.")
-    print("-" * 84)
-    return 1 if n_fail else 0
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     sys.exit(main())

@@ -1,19 +1,10 @@
 # Build specification: the *BUB1B* N1002K construct that does not exist
 
-**Every therapeutic claim about this child — ours and three competing teams' — is extrapolated from
-other people's variants, because **no N1002K reagent is catalogued in any repository we searched** —
-Coriell and Addgene, both queried and read record by record (§1); ECACC could not be resolved and is
-recorded as inconclusive, not negative. This is the document that ends that, for a few hundred
-dollars.**
+**Sequence designs for an initial fragment experiment.** These sequences do not constitute a completed experiment. The search below found no catalogued N1002K reagent in the two repositories inspected at the recorded dates; it cannot exclude unpublished or later work.
 
-*Rare Disease, Real Kid: The MVA Hackathon 2026 · adriamasnou · 2026-08-29, updated 2026-09-06 · CC BY 4.0*
+*Rare Disease, Real Kid: The MVA Hackathon 2026 · adriamasnou · updated 23 October 2026 · CC BY 4.0*
 
-> 🔻 **UPDATED 2026-09-06 — FOUR CONSTRUCTS, AND ALL FOUR SEQUENCES.** The companion protocol moved on
-> 2026-08-31 to a four-construct design (WT · N1002K · **K795A** positive control · **Q921H** in-domain
-> functional negative) because a two-construct melt has no demonstrated dynamic range. This document
-> still supplied two sequences and costed two constructs — a laboratory following both would have had
-> to design the controls itself. **The two control sequences are now in §3**, verified and screened the
-> same way as the pair, and **§6 is costed for four (≈ $630)**. The WT and N1002K sequences are unchanged.
+Four sequences are supplied: WT, N1002K, K795A and Q921H. K795A and Q921H are proposed comparators whose behaviour must be qualified in this fragment assay. Normal cellular abundance of Q921H is not proof of neutral fragment thermostability. The approximately $630 estimate covers dated fragment materials, not full-length cellular experiments, labour or exposure measurement. The [functional plan](functional-rescue-plan.md) governs advancement.
 
 ---
 
@@ -27,8 +18,7 @@ dollars.**
 | **an N1002K construct** | ❌ **not catalogued in Coriell or Addgene** — the two repositories searched, record by record. *(Scoped 2026-08-31 from "does not exist, anywhere": ECACC returned nothing parseable, and an unresolved query is not an absence.)* |
 
 So the dose–response curves, the stability data, the chaperone-dependence result — all of it is
-`753X/R814H`, `K795A`, or mouse. **The specific allele this child actually carries has never been
-put in a tube.** Until it is, every claim about it is an argument.
+`753X/R814H`, `K795A`, or mouse. **We have not identified an experimental characterisation of this exact allele in the retained literature.** Absence from the searches is not proof that no unpublished or newly published experiment exists.
 
 ## 2. The edit, verified at sequence level
 
@@ -197,7 +187,7 @@ TTAACTAGTCCT
 ```
 </details>
 
-<details><summary><b>BUB1B_721-1044_Q921H</b> — 972 bp, in-domain functional negative control: codon 921 <code>CAG</code>→<code>CAC</code>, fragment position 603 (<code>c.2763G&gt;C</code>)</summary>
+<details><summary><b>BUB1B_721-1044_Q921H</b> — 972 bp, proposed comparator, fragment behaviour unvalidated: codon 921 <code>CAG</code>→<code>CAC</code>, fragment position 603 (<code>c.2763G&gt;C</code>)</summary>
 
 ```
 CCATGGTGTTCACAGTATCGCAGACAGCTACTGAAGTCCCTACCAGAGTTAAGTGCCTCT
@@ -412,7 +402,7 @@ synthesise.** The protein is unaffected — so a *protein* melting curve is not 
 
 ### 🔑 Route 1, costed exactly — the recommended path, 2026-08-31 list prices, four constructs (restated 2026-09-06)
 
-| item | unit | **×4** — WT · N1002K · K795A · Q921H | ×2 — pair only *(no dynamic range; see note)* |
+| item | unit | **×4** — WT · N1002K · K795A · Q921H | ×2 — pair only *(requires separate control qualification)* |
 |---|---|---|---|
 | **Twist Clonal Gene**, 972 bp @ **9¢/bp** (Low/Medium) | **$87.48** | **$349.92** | $174.96 |
 | cloning into an **expression vector** | +$55 | **+$220** | +$110 |

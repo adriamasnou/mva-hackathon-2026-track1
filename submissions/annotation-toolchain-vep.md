@@ -89,41 +89,13 @@ ever run here**, so this is a control and not a tautology.
 | ClinVar | **pathogenic, likely pathogenic** | no assertion for this nucleotide change |
 | *provenance* | **[OUR MEASUREMENT]** · asserted by `pipeline/vep_check.py` | **[OUR MEASUREMENT]** · asserted by `pipeline/vep_check.py` |
 
-Both controls hold. **The exon numbering is load-bearing for allele A, and the asymmetry is real —
-but it is not an NMD asymmetry, and this passage stated it wrongly until 2026-08-31.**
+Both annotation controls hold. The two consequences have different implications, but neither is an RNA measurement.
 
-- **Allele A — `p.Leu737Ter`, exon 17 of 23 — IS an NMD substrate.** It creates a premature
-  termination codon **~748 nt and 6 exon–exon junctions upstream** of the final exon–exon junction,
-  far beyond the 50–55 nt rule, so the transcript is predicted to be degraded. ⚠️ **Predicted, not
-  measured** — no RNA was sequenced, and NMD efficiency cannot be derived from DNA.
-- **Allele B — `p.Asn1002Lys` — is NOT an NMD substrate and never was.** A **missense creates no
-  premature termination codon**, so the surveillance pathway is **never engaged** and the exon it
-  falls in is **irrelevant to transcript stability**. The transcript is normal-length and translated.
+- **p.Leu737Ter:** the premature stop is approximately 748 nucleotides and six exon junctions upstream of the final exon junction in the annotated transcript. This supports an NMD prediction; actual decay and residual truncated protein have not been measured. **[OUR MEASUREMENT; OUR INFERENCE]**
+- **p.Asn1002Lys:** the annotated missense change itself introduces no premature stop. That does not prove normal transcript abundance or exclude splice or other RNA effects. Low SpliceAI predictions are not an experimental RNA assay. **[OUR INFERENCE]**
 
-> 🔴 **CORRECTED 2026-08-31 — CATEGORY ERROR.** This passage read: *"allele B is in the **last** exon
-> and **escapes NMD**."* **A missense does not "escape" NMD; NMD is not applicable to it.** The
-> last-exon fact is true and is useful elsewhere — it is why `p.Leu1012Pro`, the closest
-> functionally characterised MVA allele, sits **29 bp away in the same exon** — but it does **no
-> work** in the NMD argument, and presenting it as the reason allele B survives implies a mechanism
-> that does not exist.
->
-> ✅ **THE CONCLUSION IS UNCHANGED, and now rests on the right premise:** allele A's transcript is
-> predicted to be degraded, and allele B's is a normal-length transcript that was never at risk —
-> **so the residual BubR1 protein in this child is predicted to be N1002K.** The asymmetry is
-> *"one allele is destroyed, the other is untouched"*, **not** *"both were at risk and one escaped"*.
->
-> ⚠️ **And "the premise of everything downstream" was too strong** — it inherits allele A's
-> prediction-not-measurement caveat, and Suijkerbuijk 2010 records that *"it is unclear what the
-> status of 194X, 483X or 753X is in patient cells"*, i.e. **BUB1B truncations are not uniformly
-> null once NMD is bypassed.** Stated as a prediction, not a premise.
->
-> *How this was found: the error was surfaced by an internal field-intelligence sweep noting that a
-> competitor had publicly withdrawn the identical formulation from their own report. **The
-> correction here rests on the molecular biology and on our own allele-A analysis, not on their
-> document** — per this project's standing rule that a claim sourced from a competitor repository is
-> an observation about a competitor, never evidence about the biology.*
+Do not infer that every protein molecule is N1002K. That requires phase, transcript and protein evidence we do not have. Published work also cautions against assuming uniform null behaviour for BUB1B truncations. PMID 20516114.
 
----
 
 ## 5. What VEP added that our previous annotator could not
 

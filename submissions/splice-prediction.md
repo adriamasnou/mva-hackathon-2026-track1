@@ -9,10 +9,9 @@ silent failure of our own making.**
 
 ## 1. Why this question is load-bearing
 
-The Track 1 finding is a *BUB1B* compound heterozygote: **L737\*** (nonsense) and **N1002K**
+The Track 1 finding is an inferred *BUB1B* compound heterozygote: **L737\*** (nonsense) and **N1002K**
 (pseudokinase-domain missense). The Track 2 thesis rests on a specific consequence of that pair —
-the nonsense allele produces no protein, so **every residual BubR1 molecule in this child is the
-N1002K form.** There is no wild-type pool.
+the nonsense allele may undergo nonsense-mediated decay and N1002K may supply residual full-length protein. **Phase, transcript decay and protein abundance are unmeasured**, so this is a conditional model, not an established protein inventory.
 
 That model assumes each variant does exactly one thing. **If the missense allele also disrupted
 splicing, it would produce an aberrant transcript rather than a full-length altered protein, and
@@ -27,7 +26,7 @@ score, and **at the point of use a missing score is indistinguishable from a ben
 variants on which an argument rests, that gap is the entire question.
 
 Illumina's precomputed score files sit behind a BaseSpace login. **The model is pip-installable and
-GPL-3.0, needs no account, and scores any variant including indels**, which the precomputed SNV set
+GPL-3.0, needs no account, and can score supported variants including indels**, which the precomputed SNV set
 does not cover. The login-gated artefact is the weaker one.
 
 ## 3. 🔴 The positive control, and the silent failure it caught

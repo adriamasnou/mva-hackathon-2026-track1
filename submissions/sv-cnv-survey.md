@@ -9,15 +9,8 @@ the complete molecular explanation?**
 
 ## 1. Why this was run
 
-The Track 1 finding is a biallelic *BUB1B* compound heterozygote: a nonsense allele and a
-pseudokinase-domain missense allele. That model makes a strong structural claim — **that all
-residual BubR1 in this child is the missense form** — and the claim only holds if nothing
-structural is also happening at the locus. A cryptic deletion, duplication or inversion at
-*BUB1B* would change the interpretation entirely.
+The analysis identified a nonsense and a missense BUB1B variant. Phase is inferred, and the exact RNA/protein consequences remain unmeasured. A structural event at the locus could alter this interpretation, so we surveyed structural variants and copy-number signals in addition to SNVs. The survey cannot establish that all residual protein is the missense form or exclude every structural mechanism. **[OUR INFERENCE]**
 
-Short-read SNV calling cannot see those. This survey was run to look for them, and to ask
-whether any structural variant elsewhere contributes to features the *BUB1B* pair does not
-explain.
 
 ## 2. Method
 

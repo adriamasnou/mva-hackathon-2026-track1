@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| **Version** | 1.1 — 2026-09-06 *(1.0: 2026-08-31; 1.1 aligns every procedural step with the four-construct design and adds the two control sequences to the companion document)* |
+| **Version** | 1.2 — 2026-10-23; interpretation and evidence limits corrected |
 | **Author** | adriamasnou · *Rare Disease, Real Kid: The MVA Hackathon 2026* |
 | **Licence** | CC BY 4.0 |
 | **Companion document** | [`n1002k-reagent-specification.md`](n1002k-reagent-specification.md) — construct design, all four orderable sequences, costings |
@@ -14,58 +14,17 @@
 
 ---
 
-## Abstract
+## Scope and scientific premise
 
-Mosaic variegated aneuploidy syndrome 1 (MVA1, MIM 257300) is caused by biallelic loss of function
-in *BUB1B*, encoding the spindle-assembly-checkpoint protein BubR1. Five missense variants in the
-BubR1 pseudokinase domain (aa 721–1,044) are published to act by destabilising the fold and lowering
-cellular protein abundance; one in-domain variant is published not to. **The variant
-p.(Asn1002Lys) has never been assayed by any method.** It matters because it occurs in a patient
-in whom the second allele, `p.(Leu737*)`, is a nonsense-mediated-decay substrate — so **essentially
-all BubR1 protein in that individual is N1002K**, and whether it is destabilised or merely
-functionally impaired at normal abundance determines whether protein-stabilising approaches are
-mechanistically coherent for this genotype at all.
+This is a **proposed fragment biophysics sub-study**, not a validated assay or an executed experiment. Its decisions were drafted before data collection but have not been registered as a final statistical protocol. The [full-length functional and exposure plan](functional-rescue-plan.md) governs candidate advancement.
 
-This protocol measures the melting temperature (Tm) of recombinant HIS₆-BubR1(721–1,044) wild-type
-and N1002K — bracketed by a published destabilised (K795A) and a published neutral (Q921H) in-domain
-control — all four purified from the same expression batch and denatured side by side, using the buffer and
-readout conditions of the published series so the result is comparable to it. **The interpretation of
-each possible outcome is pre-registered in §Anticipated results and is not to be revised after
-unblinding.**
+The retained literature supports instability for some MVA-associated BubR1 variants, but does not establish N1002K function. Phase and nonsense-mediated decay for the identified pair are unmeasured. The protocol therefore makes no claim that all protein in the child is N1002K. PMID 20516114. **[OUR INFERENCE]**
 
-**Keywords:** BUB1B · BubR1 · pseudokinase · protein thermostability · nanoDSF · mosaic variegated
-aneuploidy · variant functional characterisation · ACMG PS3
+The experiment compares HIS₆-BubR1(721–1,044) WT and N1002K with K795A and Q921H comparators. Published K795A thermal values concern **full-length GST-BUBR1**, not this fragment. Q921H is a normal-abundance comparator in the cited cellular work; it is not a proven neutral fragment-thermostability or clinical control. All fragment comparators need qualification before interpretation. PMID 22698286; PMID 20516114.
 
----
+The C-terminal domain contributes structural and non-catalytic functions; the proposal does not require a universal claim that BubR1 has no catalytic activity. A fragment stability measurement cannot establish checkpoint function, HSP90 dependence or a treatment indication. PMID 22698286; PMID 33207204.
 
-## Introduction
-
-### Background
-
-BubR1 is a core component of the mitotic checkpoint complex. Its C-terminal domain (aa 721–1,044) is
-a **pseudokinase** — catalytically inactive in vertebrates — whose role appears to be structural and
-scaffolding rather than enzymatic (**PMID 22698286**, ref 1). Suijkerbuijk *et al.* established that
-several MVA-associated missense variants in this domain reduce BubR1 abundance by destabilising the
-fold, and demonstrated the effect directly by thermal denaturation of the recombinant domain
-(**PMID 22698286**) and by chaperone-dependence in cells (**PMID 20516114**, ref 2).
-
-### The gap
-
-`p.(Asn1002Lys)` (`NM_001211.6:c.3006T>G`) lies within the pseudokinase domain. It is **absent from
-every functional dataset**: it is not among the variants characterised in refs 1–2, it is not
-represented in any public reagent repository (Coriell and Addgene searched record by record), and two
-independent pre-registered computational attempts by this project terminated at their own decision
-rules without returning a usable score.
-
-### What this protocol does and does not deliver
-
-**Delivers:** the first functional measurement of any kind for this allele; an absolute Tm anchor for
-the HIS₆-BubR1(721–1,044) fragment, for which none is published; and a data point toward the
-control set a future expert panel would require.
-
-**Does not deliver:** ACMG PS3-level evidence. §Limitations sets out why, with the measurement that
-establishes it. **This is stated at the front rather than buried, because a protocol that oversells
-its evidentiary reach wastes the time of whoever runs it.**
+**Potential deliverable:** a reproducible fragment stability measurement with explicit assay limits. A null result cannot exclude a full-length or cellular-context defect. **Not delivered by this experiment alone:** clinical classification, drug rescue or a calibrated PS3/BS3 evidence strength.
 
 ---
 
@@ -80,37 +39,20 @@ its evidentiary reach wastes the time of whoever runs it.**
 
 ### DNA constructs
 
-**Four constructs, not two.** The two controls are not optional — see the CRITICAL note below.
+**Four proposed constructs, with controls qualified before interpretation.**
 
-| Construct | Role | Residue in 721–1,044? | Cost |
+| Construct | Proposed role | Residue in 721–1,044? | Dated materials estimate |
 |---|---|---|---|
-| **WT** | baseline | — | ≈$87 + vector $35–55 |
-| **N1002K** | **the variant under test** | 1002 ✅ | as above |
-| **K795A** | 🔑 **positive control — destabilised** | 795 ✅ | as above |
-| **Q921H** | 🔑 **in-domain functional negative control** | 921 ✅ | as above |
+| WT | baseline | — | ≈$87 + vector $35–55 |
+| N1002K | variant under test | 1002 | as above |
+| K795A | candidate destabilising comparator | 795 | as above |
+| Q921H | normal-abundance cellular comparator; fragment behaviour unknown | 921 | as above |
 
-> 🔴 **CRITICAL — a two-construct design fails the standard this protocol cites, and would be
-> inadmissible at any evidence strength.** Brnich *et al.* (**PMID 31892348**) require *"internal
-> controls that demonstrate the dynamic range of the assay (e.g., the readout of the assay with
-> wild-type and null effect)"*, and state that functional evidence *"should not be applied"* unless
-> that dynamic range and its thresholds are well understood. **WT vs variant is a two-point
-> comparison with no demonstrated range.** With K795A and Q921H included, N1002K is placed on a
-> scale between a known-destabilised and a known-neutral in-domain substitution, **all four melted in
-> the same run.** The added cost is ≈$285. **[OUR INFERENCE — the requirement is ClinGen's; the
-> choice of these two controls is ours.]**
->
-> **Why K795A specifically:** it is the **only variant in this system with a published melting
-> temperature** — WT 39.1 °C vs K795A 34.7 °C (**PMID 22698286**, Fig 3G/S3D). ⚠️ That pair was
-> measured on **full-length GST-BUBR1**, so it is an expectation of *magnitude*, not a numeric gate
-> for this fragment; but as a **synthesised 972 bp fragment** K795A costs exactly what any other
-> construct costs and gives the assay a positive arm it otherwise lacks entirely.
->
-> ⚠️ **Q921H is a *functional*, not a clinical, negative — state it that way.** It is published to
-> behave as wild-type in isolation (**PMID 20516114**, Fig 4D). But in Hanks *et al.* 2004
-> (**PMID 15475955**, Table 1, family 1) it occurs **in cis with L844F on the same allele in an
-> affected patient**, and it is among the ClinVar records with *conflicting* classifications. **It is
-> a defensible negative arm for a folding assay and an indefensible one for a claim about clinical
-> benignity.** Do not let it drift between those two uses.
+Brnich et al. require assay controls, a demonstrated dynamic range and justified thresholds before interpreting functional evidence (PMID 31892348). Merely adding two constructs does not meet those requirements or establish an ACMG evidence strength. A WT–variant comparison alone cannot establish calibration.
+
+K795A has published thermal measurements on **full-length GST-BUBR1**: WT 39.1 °C and K795A 34.7 °C (PMID 22698286, Figures 3G/S3D). These values do not establish the behaviour of the isolated 721–1,044 fragment. Qualify the comparator in the actual assay before using it to interpret a negative result.
+
+Q921H retained approximately normal abundance in the cited cellular experiment (PMID 20516114). That does not validate neutral fragment thermostability or normal chromosome-segregation function. It also occurs in cis with L844F in an affected family (PMID 15475955). It is neither a clinically benign calibration variant nor an established negative folding control. If either comparator fails qualification, redesign the control set and classify the assay as indeterminate.
 
 > **CRITICAL** — Order all four constructs as **cloned, sequence-verified genes** (e.g. Twist *Clonal
 > Genes*, specified *"100% sequence perfect, NGS verified"*), **not** as linear gene fragments. Order
@@ -293,148 +235,36 @@ four-condition panel exactly as in ref 1:
 
 ---
 
-## Anticipated results
+## Anticipated results and interpretation limits
 
-**Pre-registered. This section is written before any data exist and is not to be revised once a
-result is known.**
+**Draft before data collection; not a completed preregistration.** A laboratory must freeze sample size, analysis and technical exclusion rules after assay qualification and before confirmatory unblinding. The exploratory minimum of three preparations is not a power calculation or permission for optional stopping.
 
-The published orientation for the size of a destabilising shift in this protein is **WT 39.1 °C vs
-K795A 34.7 °C**<sup>1</sup> (Fig 3G/S3D). ⚠️ **That pair was measured on full-length GST-BUBR1, not
-on the 721–1,044 fragment, and there is no published Tm for this fragment at all.** It is an
-expectation of magnitude, **not a control for this construct**, and must not be used as an
-acceptance gate.
+Published WT 39.1 °C and K795A 34.7 °C values were measured on full-length GST-BUBR1 (PMID 22698286). They are not acceptance thresholds for the 721–1,044 fragment. A comparator that does not separate from WT in this system may indicate limited assay sensitivity, different construct biology or a failed assay; do not reinterpret that as a positive result for N1002K.
 
-### Outcome A — N1002K is destabilised (ΔTm negative, beyond preparation-to-preparation variance)
+### Reproducible lower thermal stability
 
-- Converts an **inference by class into a measurement on this patient's actual protein.** The
-  destabilisation mechanism was established for I909T, L1012P, R727C, R814H and L844F
-  (**PMID 20516114**) — **not** for N1002K. **[OUR INFERENCE — that the class reading does not
-  transfer to an unassayed in-domain variant; the variant series is the source's.]**
-- **Sharpens an HSP90 contraindication from a class prediction to an allele-specific one.**
-  Geldanamycin severely depletes destabilised BubR1 mutants while barely affecting
-  WT<sup>2</sup>. If N1002K is destabilised, that caution — currently the single most clinically
-  actionable output of this project — stops being an extrapolation.
-- Makes temperature-rescue and chaperone-modulation arms testable for this genotype
-  (27/33 °C, ref 1 Fig 3H/S3E–F).
-- 🔴 **It does not establish that any drug helps.** It establishes that the lesion is of a *kind* that
-  stabilisation could in principle address. The distance from there to a paediatric therapy is large
-  and is not shortened by this result.
+This supports destabilisation of the purified fragment under the tested conditions. It does not measure full-length abundance, prove HSP90 dependence or establish a clinical contraindication. Test those separately in cells. The finding motivates, but does not validate, a stabilisation hypothesis. **[OUR INFERENCE]**
 
-### Outcome B — N1002K behaves like wild-type (no ΔTm)
+### No detectable difference
 
-**This is the outcome with the larger consequences, and it is negative for the hypothesis that
-motivated the experiment.**
+Report the estimate, confidence interval and resolution of the assay. A null result is consistent with similar fragment stability, insufficient sensitivity, a full-length-context defect or altered cellular degradation/localisation. It does not establish a specific PP2A mechanism or exclude an abundance-limited state in cells. **[OUR INFERENCE]**
 
-- The standing alternative — that the pseudokinase domain can be functionally impaired **at normal
-  protein level**, via PP2A-B56 recruitment rather than folding — becomes the leading reading of this
-  genotype.
-- A protein-abundance-raising strategy would be **less well supported** for this patient, and several
-  independent groups are currently pursuing exactly that direction with different molecules.
+### Ambiguous or failed measurement
 
-> 🔴 **A NULL RESULT IS WEAKER THAN A POSITIVE ONE, AND THIS SECTION IS DELIBERATELY WEIGHTED THAT
-> WAY.** A ΔTm of zero is consistent with at least three non-exclusive explanations: (i) the variant
-> genuinely does not destabilise; (ii) it destabilises only in the context of the full-length
-> protein, which this fragment does not reproduce; (iii) it is cleared in cells by a chaperone or
-> degradation route that a thermal melt of purified protein cannot see. **The controls bound this but
-> do not eliminate it** — if K795A separates from WT in the same run, the assay demonstrably has the
-> dynamic range to detect a destabilising substitution of that magnitude, which makes (i) more likely
-> and narrows (ii) and (iii). It does not exclude them.
->
-> **So: a negative narrows the hypothesis. It does not redirect the field, and this document does not
-> claim it does.** 🔻 *An earlier draft of this section called Outcome B "arguably the more valuable
-> result". That overstated a null and is corrected here.* **[OUR INFERENCE.]**
+If the curves, controls or independent preparations fail prespecified quality rules, report the result as indeterminate. Any additional work after unblinding must be identified as follow-up rather than silently extending a fixed analysis.
 
-### Outcome C — Ambiguous (ΔTm within preparation variance)
+## Clinical evidence and future scale
 
-Report as indeterminate with the measured variance. **Do not resolve an ambiguous result by adding
-preparations until it reaches significance.** The pre-registered n is ≥3; any extension beyond it is
-a separate, declared analysis.
+The ClinGen functional-evidence framework requires assessment of assay relevance, validation and suitable controls (PMID 31892348). Its control-count guidance is conditional, not an automatic ceiling determined solely by the existence of a VCEP. A BUB1B-specific panel is not the only mechanism for clinical interpretation. This fragment experiment has not been validated for PS3 or BS3 and must not be used to upgrade N1002K by itself.
 
----
-
-## Limitations
-
-**This experiment, executed perfectly, does not reach ACMG PS3-level evidence, and we would rather
-say so than have it discovered downstream.**
-
-The governing standard is ClinGen's Sequence Variant Interpretation recommendation for the PS3/BS3
-codes (**PMID 31892348**, ref 3): *"a minimum of 11 total pathogenic and benign variant controls are
-required to reach moderate-level evidence in the absence of rigorous statistical analysis."*
-
-**Those controls do not exist for this domain.** All **449** in-domain (aa 721–1,044) missense records
-in ClinVar, by **aggregate** germline classification:
-
-| Aggregate germline classification | Records |
-|---|---|
-| **Uncertain significance** | **430 (96%)** |
-| Conflicting classifications | 9 |
-| Likely benign | 8 |
-| Benign / Benign–Likely benign | 2 |
-| 🔴 **Pathogenic or Likely pathogenic** | 🔴 **0** |
-| **provenance** | **[OUR MEASUREMENT — all 449 in-domain (aa 721–1,044) missense ClinVar records, by aggregate germline classification, 2026-08-30.]** |
-
-The BubR1 pseudokinase domain is a **variant-of-uncertain-significance desert**: 96% uncertain, and
-**not one pathogenic or likely-pathogenic in-domain missense record** available to serve as a
-positive control against the 11 that **Brnich (PMID 31892348)** requires. There is additionally **no ClinGen
-Variant Curation Expert Panel for *BUB1B***, so no body currently exists to make the assay-scoping
-decision that would set the achievable ceiling. **[OUR MEASUREMENT and OUR INFERENCE — the ClinVar
-tabulation is ours (2026-08-30); the control-count requirement is ClinGen's; the conclusion that the
-two cannot currently be reconciled for this domain is ours.]**
-
-Further limitations, stated plainly:
-
-- **A single-domain thermostability measurement is not a measurement of checkpoint function.** It
-  addresses folding, not activity.
-- **Recombinant fragment behaviour need not predict full-length behaviour in cells.**
-- **One variant under test, bracketed by two controls,** demonstrates a dynamic range; it is not a
-  calibrated assay — that needs the eleven controls above, which do not exist.
-
----
-
-## The version of this that would matter more — a domain-wide scan
-
-**The single-variant experiment above has a ceiling that no amount of care raises, and it is worth
-stating plainly rather than discovering it after the work is done.**
-
-The ceiling is in §Limitations: **449 in-domain missense records, 430 uncertain, zero pathogenic or
-likely-pathogenic** **[OUR MEASUREMENT — ClinVar, aggregate germline classification, 2026-08-30]**.
-There is no calibration set, so even a flawless N1002K measurement cannot be converted into a defined
-evidence strength. Adding K795A and Q921H gives the assay a *demonstrated dynamic range* — the
-precondition **Brnich (PMID 31892348)** sets for applying functional evidence at all — but two controls is not
-the eleven that paper requires, and the eleven do not exist to be bought.
-
-**A multiplexed assay of variant effect across aa 721–1,044 removes the ceiling instead of working
-around it.** Synthesise a variant library spanning the domain, assay abundance or stability in a
-pooled format, read out by sequencing.
-
-| | single-variant melt | domain-wide MAVE |
-|---|---|---|
-| answers | one allele, for one child | **~430 uncertain variants** |
-| calibration set | **does not exist — this is the blocker** | **generates it** |
-| ACMG reach | indeterminate; no OddsPath obtainable | **the format the OddsPath framework was built to score** (PMID 31892348) |
-| cost / time | ≈$630, ~3 weeks | a project — months, real budget |
-| capability needed | protein purification + a fluorimeter | **library synthesis, pooled assay, sequencing** |
-
-🔑 **The last row is the argument.** A cuvette melting curve is a small favour to ask of a laboratory
-whose distinctive capability is massively parallel DNA synthesis and sequencing-based readout — it
-uses none of it. **A domain-wide scan is the same biological question asked in the format that lab
-actually excels at**, and it would convert a *BUB1B* variant-of-uncertain-significance desert into a
-classified domain. **[OUR INFERENCE — no such scan exists for *BUB1B*, and we have not attempted to
-design one here; this is a direction, not a protocol.]**
-
-⚠️ **We are not asking for this.** It is named because the small experiment is the honest first step
-toward it and because whoever reads this may be in a position to see that the second one is worth
-more. **The single-variant version stands on its own and is what §What is being asked requests.**
+A domain-wide multiplexed assay could measure many variants and help reveal functional patterns. PMID 31892348. **[OUR INFERENCE]** **It cannot generate its own independent clinical truth labels merely by measuring more variants.** Calibration still requires external pathogenic/benign evidence, suitable validation and an appropriate disease-relevant readout. A large set of VUS measurements is not automatically a clinically classified domain. **[PROPOSED FUTURE WORK; OUR INFERENCE]**
 
 ## What is being asked, and what is not
 
 - **No clinical recommendation is made or intended.** Nothing here constitutes advice about the care
   of any patient, and no contact with the family is sought or permitted.
 - **This project has no wet laboratory.** Everything here is specification; we cannot run it.
-- **No controlled-access data or material is involved.** The only patient-derived information
-  required is the variant string `BUB1B NM_001211.6:c.3006T>G, p.(Asn1002Lys)`, which is already
-  public two independent ways — via a CC-BY hackathon submission, and via an existing ClinVar VUS for
-  the identical protein change through `c.3006T>A`.
+- **The proposed recombinant fragment experiment needs a variant sequence, not patient sequencing files or tissue.** Do not treat a ClinVar record for c.3006T>A as public provenance for c.3006T>G: they encode the same protein substitution but are different nucleotide alleles. Patient-derived extensions would require separate access, consent and governance.
 - **Whatever the result, it should be published** — including, and especially, Outcome B.
 
 ---
@@ -469,4 +299,4 @@ dated. Construct sequences, primer design and costings are in the companion docu
 its own source and date.
 
 **No competing interests.** This work was produced for a public rare-disease hackathon and is
-released CC BY 4.0. **No funding is attached to it and none is sought.**
+released CC BY 4.0. **No funding or laboratory commitment is attached to it.**

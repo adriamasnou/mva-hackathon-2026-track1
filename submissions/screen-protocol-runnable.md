@@ -14,15 +14,11 @@ audit listed **13 components: 4 done, 7 desk-closable, 1 blocked on a laboratory
 the binding constraint was named honestly: **we held zero high-throughput-screening methods
 papers.** This closes the seven.
 
-**It does not improve the odds.** Those remain **25–40%** for a usable hit and **well under 10%**
-for anything a child could take. **An airtight protocol for a long-odds experiment is still a
-long-odds experiment.**
+**This is a proposed abundance-screen design, not an executed screen.** No reliable probability of a hit or treatment follows from the protocol. Candidate advancement is governed by the [full-length functional and exposure plan](functional-rescue-plan.md).
 
 ## 1. The question the screen asks
 
-Does any approved drug **raise the amount of BubR1** in patient cells? The thesis is that the
-lesion is one of protein *abundance*, not of catalytic activity — so the screen measures amount,
-and function is confirmed separately.
+Does any approved drug **raise the amount of BubR1** in patient cells? An abundance-limited defect is a hypothesis to test. This screen measures amount; function, exposure, proliferation and selection must be assessed separately before advancing a candidate.
 
 ## 2. ★ The design decision everything else follows from
 

@@ -1,6 +1,20 @@
 name: verify
 on: [push, pull_request]
 jobs:
+  public-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Check the complete submission package
+        run: python3 tools/check_package.py
+      - name: Test public tools without patient data or model downloads
+        run: python3 -m unittest discover -s tests -v
+      - name: Exercise failure-injection checker
+        run: python3 canary/run_canary.py --self-test
+      - name: Verify exposure arithmetic
+        run: python3 analysis/exposure_check.py
   citations:
     runs-on: ubuntu-latest
     steps:
