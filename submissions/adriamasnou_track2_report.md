@@ -1,6 +1,6 @@
 # Arimoclomol for BUB1B-MVA: test exposure, protein function and rescue before treatment
 
-**Track 2 · adriamasnou · 23 October 2026**<br>
+**Track 2 · adriamasnou · 23 October 2026**<br/>
 **Research proposal. No drug rescue experiment or treatment in this child has been performed.**
 
 ## The proposed candidate and the decision it must earn

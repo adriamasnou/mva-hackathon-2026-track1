@@ -6,7 +6,17 @@ def module(name,path):
 coverage=module('coverage','tools/pgtm/expert_coverage.py')
 fixture=module('fixture','examples/public-case/prepare.py')
 builder=module('pgtmbuilder','tools/pgtm/build.py')
+package=module('packagecheck','tools/check_package.py')
 class PublicDeliveryTests(unittest.TestCase):
+ def test_coverage_provenance_detects_changed_source(self):
+  self.assertEqual(package.provenance_errors(ROOT),[])
+  with tempfile.TemporaryDirectory() as td:
+   p=Path(td);(p/'submissions').mkdir()
+   for name in ['hfea-pgtm-gene-crosswalk.csv','expert-coverage.json']:
+    (p/'submissions'/name).write_bytes((ROOT/'submissions'/name).read_bytes())
+   crosswalk=p/'submissions/hfea-pgtm-gene-crosswalk.csv'
+   crosswalk.write_bytes(crosswalk.read_bytes()+b'\n')
+   self.assertEqual(package.provenance_errors(p),['Coverage provenance does not match the shipped crosswalk'])
  def test_coverage_denominator_excludes_unmapped(self):
   with tempfile.TemporaryDirectory() as td:
    p=Path(td);bulk=p/'bulk.gz';cross=p/'cross.csv'
