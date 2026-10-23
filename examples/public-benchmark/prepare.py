@@ -166,7 +166,7 @@ def prepare(args):
     protocol['background_sample']=background_sample
     dump(out/'preparation-receipt.json',protocol)
     dump(out/'jobs-manifest.json',job_records)
-    (out/'batch.txt').write_text(''.join('analyse --analysis '+json.dumps(j['job'])+'\n' for j in job_records))
+    (out/'batch.txt').write_text(''.join('--analysis '+json.dumps(j['job'])+'\n' for j in job_records))
     print(json.dumps({'jobs':len(job_records),'background_records':len(rows),'out':str(out)}))
 
 

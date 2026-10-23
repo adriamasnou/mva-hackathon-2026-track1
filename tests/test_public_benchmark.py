@@ -79,9 +79,9 @@ class PublicBenchmarkTests(unittest.TestCase):
     def test_batch_cannot_skip_duplicate_or_substitute_a_frozen_job(self):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d)/'batch.txt';jobs=[{'job':'/a/first.yml'},{'job':'/a/second.yml'}]
-            valid='analyse --analysis /a/first.yml\nanalyse --analysis /a/second.yml\n'
+            valid='--analysis /a/first.yml\n--analysis /a/second.yml\n'
             p.write_text(valid);runner.check_batch(p,jobs)
-            for invalid in [valid.splitlines()[0],valid+valid,valid.replace('second','other')]:
+            for invalid in [valid.splitlines()[0],valid+valid,valid.replace('second','other'),'analyse '+valid]:
                 p.write_text(invalid)
                 with self.assertRaises(ValueError):runner.check_batch(p,jobs)
 

@@ -33,7 +33,7 @@ def check_inputs(jobs):
 
 def check_batch(batch, jobs):
     actual=[shlex.split(line) for line in Path(batch).read_text().splitlines() if line.strip()]
-    expected=[['analyse','--analysis',j['job']] for j in jobs]
+    expected=[['--analysis',j['job']] for j in jobs]
     if actual!=expected:
         raise ValueError('Batch does not execute exactly the frozen jobs in order')
 
