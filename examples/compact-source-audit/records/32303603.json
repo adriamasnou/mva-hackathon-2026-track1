@@ -1,0 +1,1482 @@
+{
+  "schema_version": 1,
+  "pmid": "32303603",
+  "title": "Homozygous variants in SYCP2L cause premature ovarian insufficiency",
+  "reviewer": {
+    "id": "reader-3",
+    "reviewed_at_utc": "2026-10-24T17:22:08.391731+00:00",
+    "method": "Complete primary main text including references read without truncation; both mainfigures allpanels and all six supplementalPDFpages(5files) text andpixels read. All individual clinicaltable cells and bothmappedpackets checked. No rawgenotypes or benchmarkoutcomes accessed."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Required HANDOFF contains aggregate compact-cohort metrics. No per-case inference ranks, scores or outcomes opened or used. Post-inference source audit, not blinded validation."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "8f9c1b06b3ddcc90582ba4de7bc9163fd57327e23ebbb8c2bf70f41a1f1b7a67",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/main.complete.txt",
+      "sha256": "d5e0fc3042cfbddec918ffa589b8facd210937b08c93dcaaeec1ff3d02b5c138",
+      "kind": "text",
+      "description": "Complete maintext consumed"
+    },
+    {
+      "id": "xml",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/main.xml",
+      "sha256": "c4b41f434fa8dc796635f440fecc245c606e4abbf8e0c5d9c32e68a8549b4182",
+      "kind": "xml",
+      "description": "Primaryidentity/componentinventory"
+    },
+    {
+      "id": "fig1",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/cloud/PMC7907585.1/jmedgenet-2019-106789f01.jpg",
+      "sha256": "dc7c1c45585c107f43461eee44645ee12b449eef329b128de3d7076c0d4c807f",
+      "kind": "image",
+      "description": "Allpanels read"
+    },
+    {
+      "id": "fig2",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/cloud/PMC7907585.1/jmedgenet-2019-106789f02.jpg",
+      "sha256": "7112cb28a13b426e79c20cbb8e57c2b705910e01bddc65b2203a675ec69f9978",
+      "kind": "image",
+      "description": "Allpanels read"
+    },
+    {
+      "id": "supp1",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/cloud/PMC7907585.1/jmedgenet-2019-106789supp001.pdf",
+      "sha256": "e17752a3dffee7a0a39e202b234649c8e6b554bdfbb4cc1a47f94413e36393e5",
+      "kind": "pdf",
+      "description": "Complete supplement read"
+    },
+    {
+      "id": "supp1text",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/reviewer-3-assets/supp1.txt",
+      "sha256": "a5d1c359e8d5c531de9305d8a573c0af30b4a4218ec42001827deda3b96b0b44",
+      "kind": "text",
+      "description": "Complete layouttextread"
+    },
+    {
+      "id": "supp1p1",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/reviewer-3-assets/supp1-1.png",
+      "sha256": "1791742a7489d284e82905572e90b6726dcabc187bfbd7f60a946abdf3333bf7",
+      "kind": "image",
+      "description": "Entirepage inspected"
+    },
+    {
+      "id": "supp1p2",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/reviewer-3-assets/supp1-2.png",
+      "sha256": "f93c5a38593fec7102b496750fbeddcf20361198517aa2c332449a5f121a39b4",
+      "kind": "image",
+      "description": "Entirepage inspected"
+    },
+    {
+      "id": "supp2",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/cloud/PMC7907585.1/jmedgenet-2019-106789supp002.pdf",
+      "sha256": "77fb7bebad6e7c4741d24d388236611b98d891fc9ca9f0af7421a3dbdb1bb768",
+      "kind": "pdf",
+      "description": "Complete supplement read"
+    },
+    {
+      "id": "supp2text",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/reviewer-3-assets/supp2.txt",
+      "sha256": "edc38677c11b0b1e7b4c0a2062aae3ca4d7f37931b3c1bba713104a1ec7dd934",
+      "kind": "text",
+      "description": "Complete layouttextread"
+    },
+    {
+      "id": "supp2p1",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/reviewer-3-assets/supp2-1.png",
+      "sha256": "791491dd7da6f3640a467a7abf126dcd379e15fa980181dfb09b2443a8abc41a",
+      "kind": "image",
+      "description": "Entirepage inspected"
+    },
+    {
+      "id": "supp3",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/cloud/PMC7907585.1/jmedgenet-2019-106789supp003.pdf",
+      "sha256": "f4d2e12761c59d012d718fcf7465b82669a29c729309224ed5d1e9f618d715fb",
+      "kind": "pdf",
+      "description": "Complete supplement read"
+    },
+    {
+      "id": "supp3text",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/reviewer-3-assets/supp3.txt",
+      "sha256": "f54f82bf29a11f154f5fc4a528f1d6e265e39831ae1cbb8d1bf7a7aa2b59390c",
+      "kind": "text",
+      "description": "Complete layouttextread"
+    },
+    {
+      "id": "supp3p1",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/reviewer-3-assets/supp3-1.png",
+      "sha256": "0f6e05ee8bbcd7a32e926e29fb9be7952baeef15b67fa8504b2a68ec02d25825",
+      "kind": "image",
+      "description": "Entirepage inspected"
+    },
+    {
+      "id": "supp4",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/cloud/PMC7907585.1/jmedgenet-2019-106789supp004.pdf",
+      "sha256": "5a9d4ffaa5123d90e4deeef4e019908182c85bc593b28f4d149e5270ecff616e",
+      "kind": "pdf",
+      "description": "Complete supplement read"
+    },
+    {
+      "id": "supp4text",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/reviewer-3-assets/supp4.txt",
+      "sha256": "5f8b2e682022a800f0621658331f58858248200b072ed265c09b4d5f6353fc47",
+      "kind": "text",
+      "description": "Complete layouttextread"
+    },
+    {
+      "id": "supp4p1",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/reviewer-3-assets/supp4-1.png",
+      "sha256": "104f0afe4639962736249dd24f11bc1d05d552b12e086237a3e89ca3a9c58120",
+      "kind": "image",
+      "description": "Entirepage inspected"
+    },
+    {
+      "id": "supp5",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/cloud/PMC7907585.1/jmedgenet-2019-106789supp005.pdf",
+      "sha256": "290da833a5d3130e4316673f2d0ca65754366ec48c48e882f21fdb1531fd00c2",
+      "kind": "pdf",
+      "description": "Complete supplement read"
+    },
+    {
+      "id": "supp5text",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/reviewer-3-assets/supp5.txt",
+      "sha256": "d647cb17283de9d9dbc695ca26506afedb7e9337efdca887abb5ba1effe82c91",
+      "kind": "text",
+      "description": "Complete layouttextread"
+    },
+    {
+      "id": "supp5p1",
+      "pmid": "32303603",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32303603/reviewer-3-assets/supp5-1.png",
+      "sha256": "af72beefe299499fc8b8560c8df63baa7e37d6372e594ca795301b198295b02c",
+      "kind": "image",
+      "description": "Entirepage inspected"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Homozygous variants in SYCP2L cause premature ovarian insufficiency",
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "PMID32303603 DOI10.1136/jmedgenet-2019-106789 article title"
+      }
+    ],
+    "note": "Primary publishedarticle verified; supplements carry sameDOI."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 2,
+      "table": 0,
+      "supplement": 5
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "FigF1/F2, no maintables, SP1-SP5"
+      }
+    ],
+    "note": "FivePDFsupplements: methods2pages and four single-page tables. Nootherdistributedcomponentidentified."
+  },
+  "components": [
+    {
+      "id": "main",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 212,
+      "extent_source_id": "main",
+      "extent_evidence": [
+        {
+          "source_id": "main",
+          "locator": "Entiretext"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 212,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "All text includingreferences"
+        }
+      ],
+      "note": "Entireprimaryread."
+    },
+    {
+      "id": "fig1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig1",
+      "extent_evidence": [
+        {
+          "source_id": "fig1",
+          "locator": "Wholefigure"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig1",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Pedigrees/traces/models andexpressionimagesread."
+    },
+    {
+      "id": "fig2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig2",
+      "extent_evidence": [
+        {
+          "source_id": "fig2",
+          "locator": "Wholefigure"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig2",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Pedigrees/traces/models andexpressionimagesread."
+    },
+    {
+      "id": "supp1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 2,
+      "extent_source_id": "supp1",
+      "extent_evidence": [
+        {
+          "source_id": "supp1",
+          "locator": "Complete2-pagePDF"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "text",
+          "source_id": "supp1text",
+          "locator": "Alltext andtablecells"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp1p1",
+          "locator": "Entirepage"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "supp1p2",
+          "locator": "Entirepage"
+        }
+      ],
+      "note": "Every pageandcell consumed."
+    },
+    {
+      "id": "supp2",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "supp2",
+      "extent_evidence": [
+        {
+          "source_id": "supp2",
+          "locator": "Complete1-pagePDF"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supp2text",
+          "locator": "Alltext andtablecells"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp2p1",
+          "locator": "Entirepage"
+        }
+      ],
+      "note": "Every pageandcell consumed."
+    },
+    {
+      "id": "supp3",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "supp3",
+      "extent_evidence": [
+        {
+          "source_id": "supp3",
+          "locator": "Complete1-pagePDF"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supp3text",
+          "locator": "Alltext andtablecells"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp3p1",
+          "locator": "Entirepage"
+        }
+      ],
+      "note": "Every pageandcell consumed."
+    },
+    {
+      "id": "supp4",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "supp4",
+      "extent_evidence": [
+        {
+          "source_id": "supp4",
+          "locator": "Complete1-pagePDF"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supp4text",
+          "locator": "Alltext andtablecells"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp4p1",
+          "locator": "Entirepage"
+        }
+      ],
+      "note": "Every pageandcell consumed."
+    },
+    {
+      "id": "supp5",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "supp5",
+      "extent_evidence": [
+        {
+          "source_id": "supp5",
+          "locator": "Complete1-pagePDF"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supp5text",
+          "locator": "Alltext andtablecells"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp5p1",
+          "locator": "Entirepage"
+        }
+      ],
+      "note": "Every pageandcell consumed."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SYCP2L/PMID_32303603_family_P0001_IV_2.json",
+      "packet_sha256": "9c5a9e275741b9483b7d51c60a3c35857a7bb1632b6c314eac5e45194213d893",
+      "case_id": "TC_8ae4f858dad1c059",
+      "role": "selected",
+      "packet_subject_id": "family P0001 IV-2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Twoindividuals, candidate association; moderngenomicmapping unverified."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "family P0001 IV-2, affectedwomanIV-2 in first-cousinpedigree. P0001age31;P0005age31inmainbut30inTable4.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Phenotypeofpatients and identificationvariants"
+          },
+          {
+            "source_id": "supp5p1",
+            "locator": "Table4 exactindividualcolumn"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "PedigreeA individualIV-2"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "HomozygousSYCP2L NM_001040274:c.150_151del p.Ser52ProfsTer7 matches coding/protein packet. SupplementmethodsusesNP_001035364.2 consistent withpacket proteinaccession, but cDNA accessionversion absent. Table3coordinates10894170/10912986 differfrompacketGRCh38; assembly unspecified so no silent equivalence or falsecontradiction; liftover/indelnormalization not independently verified.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Phenotypeofpatients and identificationvariants"
+          },
+          {
+            "source_id": "supp5p1",
+            "locator": "Table4 exactindividualcolumn"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "PedigreeA individualIV-2"
+          },
+          {
+            "source_id": "supp4p1",
+            "locator": "Table3variantcolumns"
+          },
+          {
+            "source_id": "supp1p1",
+            "locator": "Methodsproteinaccession"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Both parentsIII-1/III-2 heterozygous; two unaffected sistersIV-1/IV-3heterozygous and havechildren. Sangertraces and pedigree match recessive segregation.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Phenotypeofpatients and identificationvariants"
+          },
+          {
+            "source_id": "supp5p1",
+            "locator": "Table4 exactindividualcolumn"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "PedigreeA individualIV-2"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Homozygousallele with bothparentsheterozygous, not compoundheterozygosity. Consanguinity compatible with sharedancestralallele; no long-readphaseorCNVexclusion provided.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Phenotypeofpatients and identificationvariants"
+          },
+          {
+            "source_id": "supp5p1",
+            "locator": "Table4 exactindividualcolumn"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "PedigreeA individualIV-2"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authorsclassify pathogenic, supportedby2unrelatedconsanguineousfamilies andCHOmislocalization; firsthumanassociation. Oneaffectedpersonperallele, no patientoocyte/endogenousRNAassay, no humanrescue, no exactalleleanimalmodel. CompleteversuspartialLOF andvariant-specificseverity remain inferred from qualitativeoverexpression andtwoindividuals. In-silicopredictionsdisagreeforI333M.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Phenotypeofpatients and identificationvariants"
+          },
+          {
+            "source_id": "supp5p1",
+            "locator": "Table4 exactindividualcolumn"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "PedigreeA individualIV-2"
+          },
+          {
+            "source_id": "fig2",
+            "locator": "CHOprotein/localizationexperiments"
+          },
+          {
+            "source_id": "supp4p1",
+            "locator": "MutationTasterI333M polymorphism"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All8positive/negativefeatures perpacket compared with exactindividualTable4cells and narratives; laboratorymeasurementdates notautomaticallyonset. Missingmenstrualnegative andP0005lowAMH/referenceconflict retained.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Phenotypeofpatients and identificationvariants"
+          },
+          {
+            "source_id": "supp5p1",
+            "locator": "Table4 exactindividualcolumn"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "PedigreeA individualIV-2"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c150_151del_SYCP2L_NM_001040274v3",
+            "geneContext": {
+              "valueId": "HGNC:21537",
+              "symbol": "SYCP2L"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001040274.3:c.150_151del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.10893942_10893943del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001035364.2:p.(Ser52ProfsTer7)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 10893937,
+              "ref": "AAG",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "337060ddc052a29e92bb016bfaeb3afc335eaead34f12108f3b78b033f8ae712",
+          "assessment": {
+            "status": "qualified",
+            "statement": "HomozygousSYCP2L NM_001040274:c.150_151del p.Ser52ProfsTer7 matches coding/protein packet. SupplementmethodsusesNP_001035364.2 consistent withpacket proteinaccession, but cDNA accessionversion absent. Table3coordinates10894170/10912986 differfrompacketGRCh38; assembly unspecified so no silent equivalence or falsecontradiction; liftover/indelnormalization not independently verified.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              },
+              {
+                "source_id": "supp4p1",
+                "locator": "Table3variantcolumns"
+              },
+              {
+                "source_id": "supp1p1",
+                "locator": "Methodsproteinaccession"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000876",
+              "label": "Oligomenorrhea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3840df1d8283cf049d73995763639fd434ce3cd42f630c6782341109c6fd645e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P0001secondaryamenorrheareported; prioroligomenorrhea not explicitly excluded.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000869",
+              "label": "Secondary amenorrhea"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P30Y"
+              }
+            }
+          },
+          "snapshot_sha256": "0e99b1091ee464db7523bb17e21cdc27ec284e8051c67e7564f8160f85e09e17",
+          "assessment": {
+            "status": "supported",
+            "statement": "Secondaryamenorrhea andPOIdiagnosis at30explicit.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008222",
+              "label": "Female infertility"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P28Y"
+              }
+            }
+          },
+          "snapshot_sha256": "3270b2e1c2b13ef3c7f3bfdb55c969dd57d3320a0a04971a5a031ca3aa43e8bc",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Primaryinfertility >3years ofmarriage at31supports infertility but exactonset28inpacket is arithmeticapproximation, not datedsourceonset.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008232",
+              "label": "Elevated circulating follicle stimulating hormone level"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P31Y"
+              }
+            }
+          },
+          "snapshot_sha256": "e8c7b0f4da2305777061110d4ffbdff7ed4c02daa44a42101fadaf8c27193e05",
+          "assessment": {
+            "status": "qualified",
+            "statement": "FSH57.34mIU/ml versus3.03-8.08reference atage31. Elevatedmeasurement supportsfeature; measurementage not documentedbiologicalonset.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011969",
+              "label": "Elevated circulating luteinizing hormone level"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P31Y"
+              }
+            }
+          },
+          "snapshot_sha256": "248727b38b0a2466bca706c6b8eba7bff929cda2ca28b72cc63bf57152859ddc",
+          "assessment": {
+            "status": "qualified",
+            "statement": "LH32.53versus1.8-11.78 at31supports elevation; trueonset notknown.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031103",
+              "label": "Decreased circulating antimullerian hormone circulation"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P31Y"
+              }
+            }
+          },
+          "snapshot_sha256": "78c6090183c0c8b04ca78858483bf8e487b127114cd0d326816b29e864b5d264",
+          "assessment": {
+            "status": "qualified",
+            "statement": "AMH.01below.24-11.78reference at31; no exactonsetmeasured.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008214",
+              "label": "Decreased serum estradiol"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P31Y"
+              }
+            }
+          },
+          "snapshot_sha256": "164aba17f64f3a663a1f5acd249999558b8efd561eb2d531a03ccfbffdc1eb89",
+          "assessment": {
+            "status": "qualified",
+            "statement": "E2<10below21-251pg/ml at31supports lowestradiol, not exactbiologicalonset.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033085",
+              "label": "Reduced antral follicle count"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P31Y"
+              }
+            }
+          },
+          "snapshot_sha256": "17934109aa69ce3c6bc5fa78cd6b39b61008f6f82a946e156bcebdf7b6515228",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Noantralfollicles in eitherovary at31supports reducedcount, but exactonset notknown.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SYCP2L/PMID_32303603_family_P0005_IV_2.json",
+      "packet_sha256": "02fafc0e9e8440c89fd84a6c8be3444c6d4ca07b7e9176bc32dfb1139744f253",
+      "case_id": "TC_c60339b2a2253ecd",
+      "role": "selected",
+      "packet_subject_id": "family P0005 IV-2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Twoindividuals, candidate association; moderngenomicmapping unverified."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "family P0005 IV-2, affectedwomanIV-2 in first-cousinpedigree. P0001age31;P0005age31inmainbut30inTable4.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Phenotypeofpatients and identificationvariants"
+          },
+          {
+            "source_id": "supp5p1",
+            "locator": "Table4 exactindividualcolumn"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "PedigreeA individualIV-2"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "HomozygousSYCP2L NM_001040274:c.999A>G p.Ile333Met matches coding/protein packet. SupplementmethodsusesNP_001035364.2 consistent withpacket proteinaccession, but cDNA accessionversion absent. Table3coordinates10894170/10912986 differfrompacketGRCh38; assembly unspecified so no silent equivalence or falsecontradiction; liftover/indelnormalization not independently verified.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Phenotypeofpatients and identificationvariants"
+          },
+          {
+            "source_id": "supp5p1",
+            "locator": "Table4 exactindividualcolumn"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "PedigreeA individualIV-2"
+          },
+          {
+            "source_id": "supp4p1",
+            "locator": "Table3variantcolumns"
+          },
+          {
+            "source_id": "supp1p1",
+            "locator": "Methodsproteinaccession"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Both parentsIII-1/III-2 heterozygous; sisterIV-3heterozygous andhaschildren. Sangertraces and pedigree match recessive segregation.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Phenotypeofpatients and identificationvariants"
+          },
+          {
+            "source_id": "supp5p1",
+            "locator": "Table4 exactindividualcolumn"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "PedigreeA individualIV-2"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Homozygousallele with bothparentsheterozygous, not compoundheterozygosity. Consanguinity compatible with sharedancestralallele; no long-readphaseorCNVexclusion provided.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Phenotypeofpatients and identificationvariants"
+          },
+          {
+            "source_id": "supp5p1",
+            "locator": "Table4 exactindividualcolumn"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "PedigreeA individualIV-2"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authorsclassify pathogenic, supportedby2unrelatedconsanguineousfamilies andCHOmislocalization; firsthumanassociation. Oneaffectedpersonperallele, no patientoocyte/endogenousRNAassay, no humanrescue, no exactalleleanimalmodel. CompleteversuspartialLOF andvariant-specificseverity remain inferred from qualitativeoverexpression andtwoindividuals. In-silicopredictionsdisagreeforI333M.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Phenotypeofpatients and identificationvariants"
+          },
+          {
+            "source_id": "supp5p1",
+            "locator": "Table4 exactindividualcolumn"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "PedigreeA individualIV-2"
+          },
+          {
+            "source_id": "fig2",
+            "locator": "CHOprotein/localizationexperiments"
+          },
+          {
+            "source_id": "supp4p1",
+            "locator": "MutationTasterI333M polymorphism"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All8positive/negativefeatures perpacket compared with exactindividualTable4cells and narratives; laboratorymeasurementdates notautomaticallyonset. Missingmenstrualnegative andP0005lowAMH/referenceconflict retained.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Phenotypeofpatients and identificationvariants"
+          },
+          {
+            "source_id": "supp5p1",
+            "locator": "Table4 exactindividualcolumn"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "PedigreeA individualIV-2"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c999AtoG_SYCP2L_NM_001040274v3",
+            "geneContext": {
+              "valueId": "HGNC:21537",
+              "symbol": "SYCP2L"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001040274.3:c.999A>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.10912753A>G"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001035364.2:p.(Ile333Met)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 10912753,
+              "ref": "A",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "6116a8e9498493580dbf91446a86378a6434f206da53b09b0410e2efc0cfdf38",
+          "assessment": {
+            "status": "qualified",
+            "statement": "HomozygousSYCP2L NM_001040274:c.999A>G p.Ile333Met matches coding/protein packet. SupplementmethodsusesNP_001035364.2 consistent withpacket proteinaccession, but cDNA accessionversion absent. Table3coordinates10894170/10912986 differfrompacketGRCh38; assembly unspecified so no silent equivalence or falsecontradiction; liftover/indelnormalization not independently verified.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              },
+              {
+                "source_id": "supp4p1",
+                "locator": "Table3variantcolumns"
+              },
+              {
+                "source_id": "supp1p1",
+                "locator": "Methodsproteinaccession"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000876",
+              "label": "Oligomenorrhea"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P26Y"
+              }
+            }
+          },
+          "snapshot_sha256": "a32b5673193bd5c32a974c9f039763106ca833e8294d55062afe17d01442e344",
+          "assessment": {
+            "status": "supported",
+            "statement": "Irregularcycles from21andoligomenorrhea at26explicit.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000869",
+              "label": "Secondary amenorrhea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a743f263335cdde8eb70d4f3f85dc1273bca8bfd42b2f3b8035ddf0b701d338c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P0005oligomenorrhea/pregnancyat30ratherthanreportedsecondaryamenorrhea, but lifelongabsence notexplicitlyestablished.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008222",
+              "label": "Female infertility"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "4716eeef7a63bbec67ac12cea7f072be614e33df763537b2f5593999dac9a849",
+          "assessment": {
+            "status": "qualified",
+            "statement": "POI/femaleinfertilityascertainment, irregularcycles21andoligomenorrhea26, pregnancyending39daysat30; subfertility is not absoluteinabilitytoconceive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008232",
+              "label": "Elevated circulating follicle stimulating hormone level"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P31Y"
+              }
+            }
+          },
+          "snapshot_sha256": "e8c7b0f4da2305777061110d4ffbdff7ed4c02daa44a42101fadaf8c27193e05",
+          "assessment": {
+            "status": "qualified",
+            "statement": "FSH33.46versus3.03-8.08reference;Table4age30butmain31. Elevatedmeasurement supportsfeature; measurementage not documentedbiologicalonset.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011969",
+              "label": "Elevated circulating luteinizing hormone level"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f116c8a60b29dfc802fd30b444b6e7465fef0840ada76261c8b38a235887baad",
+          "assessment": {
+            "status": "supported",
+            "statement": "LH5.17within1.8-11.78supports absenceofelevation atmeasurement only.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031103",
+              "label": "Decreased circulating antimullerian hormone circulation"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P31Y"
+              }
+            }
+          },
+          "snapshot_sha256": "78c6090183c0c8b04ca78858483bf8e487b127114cd0d326816b29e864b5d264",
+          "assessment": {
+            "status": "qualified",
+            "statement": "MaincallsAMHlow, butTable4.456 lies within its printed.24-11.78reference. Internalqualitative/referenceconflict unresolved; Table4age30vs31also differs. Do not treatprintedrange as confirminglow.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008214",
+              "label": "Decreased serum estradiol"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "584e4cffe39c7931ad4cbb0c1cbd37bd738dff4f923c7e3f016d5d08514bc7a1",
+          "assessment": {
+            "status": "supported",
+            "statement": "E2 34.55within21-251supports no decrease atmeasurement only.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033085",
+              "label": "Reduced antral follicle count"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c94dede9380194786fcf03cf934d6bc57b86eb1ec79f128427bec93d1fddce9e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Table4records left1/right2follicles andmainthree smallfollicles. This does not establish a normal/unreduced antralcount; packetnegative unsupported. No source AFCnormalreference supplied.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results Phenotypeofpatients and identificationvariants"
+              },
+              {
+                "source_id": "supp5p1",
+                "locator": "Table4 exactindividualcolumn"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "PedigreeA individualIV-2"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Allprimary/supplementtext, bothmainfigures andsixsupplementpagesread; no unread distributedcomponentidentified. No rawWES, originalmouse/GWASsources ornewclinicaldata read. Complete reading doesnotmean independentexperimentalreplication.",
+    "Twohomozygouspatients among110POIwomen(fiveconsanguineous), parents/sisterscarriers; no malehomozygotes. 46XXandFMR1normalreported; no associatedendocrine/autoimmune conditions. Filtering<1%populationfrequency,atleastonedamagingpredictor,recessiveinheritanceand/orpriorinfertility genes is broad; completecandidatevariantlistnotprovided, so alternative/multilocuscauses notexhaustivelyexcluded.",
+    "Table3frameshiftgnomAD.00001, missense.00005/1000G.0001, not absent; I333MMutationTasterpolymorphism conflicts withPolyPhen/CADD24.7. Nterminalmodel20-403uses41.18%-identitySYCP2template; predictedshape/hydrogenbondchange notmutantstructureexperiment.",
+    "CHOoverexpressionV5 constructs show cytoplasmictruncatedsignal andI333Mnoncentromericnuclearfoci; no quantitativecolocalization,replicatenumbers,blindedscoringorstatisticaltestreported. WBmissensestablequalitative; truncated57aaproteinabsentbyWB butseenbyIF, stabilityexplanation notexperimentallyproved. NativepatientRNA/NMDnotmeasured; intronlesscDNAoverexpressioncannotdemonstrateendogenousNMD.",
+    "V5tag explicitly Nterminal inMethods, so possibleframeshiftproteinIFdetection not a Cterminaltagimpossibility. No WTrescue, patientmeiosis/oocytenumbermeasurements orhumanfertilitymechanisticassay. CompleteLOFvs partialLOFandseveritycomparison fromonecaseeachnotquantified.",
+    "P0005AMH.456 is withinprintedTable4reference.24-11.78 despite maincallinglow; P0005age30Table4vs31narrative. Threefollicles doesnotprove normalAFC; packetexcludedreducedAFC unsupported. NegativeoligomenorrheainP0001notexplicit. Labage notfeatureonset.",
+    "Table2P0005totaleffectivebases84346114labelledMb is internallyimplausible relative19270.79rawMb/18218.58cleanMb; likelyreportingerror, no correctednumber invented. Mainmeansequencing110.24-151.46 could coverfamilymembers whereas Table2proband131.24/133.29, not necessarilyconflict.",
+    "Human tissueexpression includesperitumoral tissues anddonatedoocytes, not quantitativeproofexpressionexclusivity acrossallhealthycelltypes. Husbandnormalsemenanalysis supportslackofmeasuredmalefactor, notprovennormalfertility. No treatment/drugrescue assessed."
+  ]
+}

@@ -1,0 +1,3238 @@
+{
+  "schema_version": 1,
+  "pmid": "39560673",
+  "title": "Dominant negative variants in ITPR3 impair T cell Ca2+ dynamics causing combined immunodeficiency.",
+  "reviewer": {
+    "id": "reviewer-2",
+    "reviewed_at_utc": "2026-10-24T16:59:37.229832+00:00",
+    "method": "Complete main-source reading in bounded nontruncated segments, visual figure/table inspection where stated, individual source-packet adjudication. Missing coverage remains explicit."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited user context describes cohort results as source-label recovery and prior project validation limitations; no compact-cohort per-case ranking/score/result files opened. Assigned source contexts and primary sources only were used for adjudication."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "6caadf2e020fdaf3c50a5091a996cc9a282039424addf193f3b9a89398fc0ead",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/main.complete.txt",
+      "sha256": "621f8ec39a263eaccb0eef17b61086660b6d5a6914610bc8f8799c9b6e891239",
+      "kind": "text",
+      "description": "Entire166750character main text consumed in nontruncated segments, including methods, all references, and S1–S3 figure legends"
+    },
+    {
+      "id": "xml",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/main.xml",
+      "sha256": "5475365dec9aa1067bd9bb136d1b2782f44408b96d20b7a43df9a8103b83e0a6",
+      "kind": "xml",
+      "description": "Canonical identity and inventory"
+    },
+    {
+      "id": "pdf",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/PMC11577440.1.pdf",
+      "sha256": "9f2e0e4a57e3d961a7a51469894929c8dfa4d4bc54a9ab24ba6ee98f45ede287",
+      "kind": "pdf",
+      "description": "Published29page article"
+    },
+    {
+      "id": "layout",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/main.layout.txt",
+      "sha256": "642a9b3751ceb88fcc115f5eb05e2fe177b599b26e3ab14def88794696dce147",
+      "kind": "text",
+      "description": "Layout-preserving PDF extraction; patient tables checked against pixels"
+    },
+    {
+      "id": "fig1",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_Fig1.jpg",
+      "sha256": "372a83fa20adace3b0645eb786288ef91dd3f3c7b4c4d05b605f536eb491a9ca",
+      "kind": "image",
+      "description": "Every panel visually inspected"
+    },
+    {
+      "id": "fig2",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_Fig2.jpg",
+      "sha256": "256a8c3b56bef3f11d3aa1c5281e92103b0e85415afd5199c339ddc4ef67a851",
+      "kind": "image",
+      "description": "Every panel visually inspected"
+    },
+    {
+      "id": "fig3",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_Fig3.jpg",
+      "sha256": "694edd3d6619ca6cdb4b41bca0a6036e033cf562359c587d087d644e7ba68cd0",
+      "kind": "image",
+      "description": "Every panel visually inspected"
+    },
+    {
+      "id": "fig4",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_Fig4.jpg",
+      "sha256": "0f57b15d1be83cd56f631b5c86230248f65e4ad3db0f5e199e9bcdadf374c2d4",
+      "kind": "image",
+      "description": "Every panel visually inspected"
+    },
+    {
+      "id": "fig5",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_Fig5.jpg",
+      "sha256": "556691e450bf2dfc326e141e548e4028b57b7ed1c8a69227e61065d1a714dc78",
+      "kind": "image",
+      "description": "Every panel visually inspected"
+    },
+    {
+      "id": "fig6",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_Fig6.jpg",
+      "sha256": "8550f5d21a1de94a5452fd4df9581c037eb93ec7314b99a6d88a146dedad16a1",
+      "kind": "image",
+      "description": "Every panel visually inspected"
+    },
+    {
+      "id": "fig7",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_Fig7.jpg",
+      "sha256": "317ef3089bfef430ed538eb8505dad02f7829ff98e49ef79a7c7ae413557416b",
+      "kind": "image",
+      "description": "Every panel visually inspected"
+    },
+    {
+      "id": "figS1",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_FigS1.jpg",
+      "sha256": "776d9b433f10b59f77eca49e42c55e2af8f6a266854f56ff6557aaf9bfca323e",
+      "kind": "image",
+      "description": "Every panel visually inspected"
+    },
+    {
+      "id": "figS2",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_FigS2.jpg",
+      "sha256": "777df7f13fd6dc5ce90444b04cae9e52264e4157a238005939781d70b5f547cb",
+      "kind": "image",
+      "description": "Every panel visually inspected"
+    },
+    {
+      "id": "figS3",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_FigS3.jpg",
+      "sha256": "b8a417d43c43a0c2793a149ff8f656467233b6610a14e6d3f27373cf36f88521",
+      "kind": "image",
+      "description": "Every panel visually inspected"
+    },
+    {
+      "id": "table1image",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/page-04.png",
+      "sha256": "e8846d0becda947e79486b5a0a0a5e9aa852eeba8773ae97e408a999e3fb1b02",
+      "kind": "image",
+      "description": "Complete patient table and footnotes inspected"
+    },
+    {
+      "id": "table2image",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/page-05.png",
+      "sha256": "9c5a69fcb610d147e2ca40f8fc6294f9400da4dde0447ee57d7f997859f54ba7",
+      "kind": "image",
+      "description": "Complete patient table and footnotes inspected"
+    },
+    {
+      "id": "supp1",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_TableS1.docx",
+      "sha256": "849b33f2b7c0a7661fb4ad8c39023a5306becad0e49c669a508afc7f4a0a4277",
+      "kind": "data",
+      "description": "All table cells consumed; native page pixels pending"
+    },
+    {
+      "id": "supp1text",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/JEM_20220979_TableS1.txt",
+      "sha256": "64c03ca6217c5c43f230b28055f7b88f8195be8874bfa4f879b17c2066642bd5",
+      "kind": "text",
+      "description": "Complete DOCX paragraphs and table cells extracted and read"
+    },
+    {
+      "id": "supp2",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_TableS2.docx",
+      "sha256": "8cec77e99f8332ee5bda5882d01fb2d414dd84c10a6a3860b8216a8cddd937d3",
+      "kind": "data",
+      "description": "All table cells consumed; native page pixels pending"
+    },
+    {
+      "id": "supp2text",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/JEM_20220979_TableS2.txt",
+      "sha256": "4475fcf52e0f760264d5fb7322c68cffe7968535c5717fbf1b9bc0f6c70c8040",
+      "kind": "text",
+      "description": "Complete DOCX paragraphs and table cells extracted and read"
+    },
+    {
+      "id": "sourceF2",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_SourceDataF2.pdf",
+      "sha256": "70b29342920c375176cf1e8d24380b944fde16c95d93122161840d4042014f50",
+      "kind": "pdf",
+      "description": "Full source blots inspected, including labels and uncropped exposures"
+    },
+    {
+      "id": "sourceF2text",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/JEM_20220979_SourceDataF2.txt",
+      "sha256": "7054dc2e8e797baafb92d9e0816ae79e64f7dbf13620176c47059b51b36d84c6",
+      "kind": "text",
+      "description": "All page text read"
+    },
+    {
+      "id": "sourceF2image1",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/JEM_20220979_SourceDataF2-1.png",
+      "sha256": "94cb6c6df8f074f0df3fdc564be28ede3f29454b8ce5b2815355eb12cf32c370",
+      "kind": "image",
+      "description": "Full page inspected; F4/FS1 identical rendered bytes to F2 pages3/4 respectively"
+    },
+    {
+      "id": "sourceF2image2",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/JEM_20220979_SourceDataF2-2.png",
+      "sha256": "3dd13c4b7c88449f9be649081b24e50ca91e8b68ae26495a0343fffdc5878654",
+      "kind": "image",
+      "description": "Full page inspected; F4/FS1 identical rendered bytes to F2 pages3/4 respectively"
+    },
+    {
+      "id": "sourceF2image3",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/JEM_20220979_SourceDataF2-3.png",
+      "sha256": "52007f2ef1742c2dc4be4c90df23ff909a4588131ec2e16757e0b1ef9b0993e6",
+      "kind": "image",
+      "description": "Full page inspected; F4/FS1 identical rendered bytes to F2 pages3/4 respectively"
+    },
+    {
+      "id": "sourceF2image4",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/JEM_20220979_SourceDataF2-4.png",
+      "sha256": "46a341994f725766c5935f25b7bd337cb16219be21de29161bad6ed92568c066",
+      "kind": "image",
+      "description": "Full page inspected; F4/FS1 identical rendered bytes to F2 pages3/4 respectively"
+    },
+    {
+      "id": "sourceF4",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_SourceDataF4.pdf",
+      "sha256": "5df53832ee5f420a1c6ee4d2dea9b335019318e1a9bcf2f8733ca178ec42783d",
+      "kind": "pdf",
+      "description": "Full source blots inspected, including labels and uncropped exposures"
+    },
+    {
+      "id": "sourceF4text",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/JEM_20220979_SourceDataF4.txt",
+      "sha256": "52de2099b3994408696c0073967f623ab6e6676348d68fe8d2be08f28b3f3167",
+      "kind": "text",
+      "description": "All page text read"
+    },
+    {
+      "id": "sourceF4image1",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/JEM_20220979_SourceDataF4-1.png",
+      "sha256": "52007f2ef1742c2dc4be4c90df23ff909a4588131ec2e16757e0b1ef9b0993e6",
+      "kind": "image",
+      "description": "Full page inspected; F4/FS1 identical rendered bytes to F2 pages3/4 respectively"
+    },
+    {
+      "id": "sourceFS1",
+      "pmid": "39560673",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39560673/cloud/PMC11577440.1/JEM_20220979_SourceDataFS1.pdf",
+      "sha256": "d66444cd71290cf0e3fe049de22d8ad414504e2b570b5a5882db9d2372897be8",
+      "kind": "pdf",
+      "description": "Full source blots inspected, including labels and uncropped exposures"
+    },
+    {
+      "id": "sourceFS1text",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/JEM_20220979_SourceDataFS1.txt",
+      "sha256": "c68d52fafb7ef6fac22379e6cebb85c6ec53eb233afaec61bdd0d2223f8ddfdd",
+      "kind": "text",
+      "description": "All page text read"
+    },
+    {
+      "id": "sourceFS1image1",
+      "pmid": "39560673",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/39560673/JEM_20220979_SourceDataFS1-1.png",
+      "sha256": "46a341994f725766c5935f25b7bd337cb16219be21de29161bad6ed92568c066",
+      "kind": "image",
+      "description": "Full page inspected; F4/FS1 identical rendered bytes to F2 pages3/4 respectively"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Dominant negative variants in ITPR3 impair T cell Ca2+ dynamics causing combined immunodeficiency.",
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "PMID39560673; DOI10.1084/jem.20220979; title"
+      },
+      {
+        "source_id": "pdf",
+        "locator": "Title and publication"
+      }
+    ],
+    "note": "Exact published paper, not merely a related ITPR3 report."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 10,
+      "table": 2,
+      "supplement": 5
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "Figures1–7 and S1–S3; Tables1–2; TablesS1/S2 and SourceDataF2/F4/FS1 distinctfiles"
+      }
+    ],
+    "note": "Five distinct supplemental files; SourceDataF2 includes duplicated F4/FS1 pages, whose rendered SHA256 matches the separate files. No double-reading claim."
+  },
+  "components": [
+    {
+      "id": "main",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 725,
+      "extent_source_id": "main",
+      "extent_evidence": [
+        {
+          "source_id": "main",
+          "locator": "Complete article"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 725,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Complete source"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig1",
+      "extent_evidence": [
+        {
+          "source_id": "fig1",
+          "locator": "All panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig1",
+          "locator": "Complete source"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig2",
+      "extent_evidence": [
+        {
+          "source_id": "fig2",
+          "locator": "All panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig2",
+          "locator": "Complete source"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig3",
+      "extent_evidence": [
+        {
+          "source_id": "fig3",
+          "locator": "All panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig3",
+          "locator": "Complete source"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig4",
+      "extent_evidence": [
+        {
+          "source_id": "fig4",
+          "locator": "All panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig4",
+          "locator": "Complete source"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig5",
+      "extent_evidence": [
+        {
+          "source_id": "fig5",
+          "locator": "All panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig5",
+          "locator": "Complete source"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig6",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig6",
+      "extent_evidence": [
+        {
+          "source_id": "fig6",
+          "locator": "All panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig6",
+          "locator": "Complete source"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig7",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig7",
+      "extent_evidence": [
+        {
+          "source_id": "fig7",
+          "locator": "All panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig7",
+          "locator": "Complete source"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "figS1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figS1",
+      "extent_evidence": [
+        {
+          "source_id": "figS1",
+          "locator": "All panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figS1",
+          "locator": "Complete source"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "figS2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figS2",
+      "extent_evidence": [
+        {
+          "source_id": "figS2",
+          "locator": "All panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figS2",
+          "locator": "Complete source"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "figS3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figS3",
+      "extent_evidence": [
+        {
+          "source_id": "figS3",
+          "locator": "All panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figS3",
+          "locator": "Complete source"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "table1image",
+      "extent_evidence": [
+        {
+          "source_id": "table1image",
+          "locator": "Table1"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Table1 full text"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "layout",
+          "locator": "PDF page4"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table1image",
+          "locator": "All cells and footnotes"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "table2",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "table2image",
+      "extent_evidence": [
+        {
+          "source_id": "table2image",
+          "locator": "Table2"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Table2 full text"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "layout",
+          "locator": "PDF page5"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table2image",
+          "locator": "All cells and footnotes"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "supp1",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "data",
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp1",
+      "extent_evidence": [
+        {
+          "source_id": "supp1",
+          "locator": "TableS1"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "data",
+          "source_id": "supp1",
+          "locator": "Every cell consumed"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supp1text",
+          "locator": "All paragraphs and cells"
+        }
+      ],
+      "note": "All table content read; native document page images have not been viewed."
+    },
+    {
+      "id": "supp2",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "data",
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp2",
+      "extent_evidence": [
+        {
+          "source_id": "supp2",
+          "locator": "TableS2"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "data",
+          "source_id": "supp2",
+          "locator": "Every cell consumed"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supp2text",
+          "locator": "All paragraphs and cells"
+        }
+      ],
+      "note": "All table content read; native document page images have not been viewed."
+    },
+    {
+      "id": "sourceF2",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 4,
+      "extent_source_id": "sourceF2",
+      "extent_evidence": [
+        {
+          "source_id": "sourceF2",
+          "locator": "Full PDF"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 4,
+          "mode": "text",
+          "source_id": "sourceF2text",
+          "locator": "Complete source"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "sourceF2image1",
+          "locator": "Entire page; F4/FS1 byte-identical render to inspected F2p3/p4"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "sourceF2image2",
+          "locator": "Entire page; F4/FS1 byte-identical render to inspected F2p3/p4"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "sourceF2image3",
+          "locator": "Entire page; F4/FS1 byte-identical render to inspected F2p3/p4"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "sourceF2image4",
+          "locator": "Entire page; F4/FS1 byte-identical render to inspected F2p3/p4"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "sourceF4",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "sourceF4",
+      "extent_evidence": [
+        {
+          "source_id": "sourceF4",
+          "locator": "Full PDF"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "sourceF4text",
+          "locator": "Complete source"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "sourceF4image1",
+          "locator": "Entire page; F4/FS1 byte-identical render to inspected F2p3/p4"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "sourceFS1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "sourceFS1",
+      "extent_evidence": [
+        {
+          "source_id": "sourceFS1",
+          "locator": "Full PDF"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "sourceFS1text",
+          "locator": "Complete source"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "sourceFS1image1",
+          "locator": "Entire page; F4/FS1 byte-identical render to inspected F2p3/p4"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/ITPR3/PMID_39560673_P1.json",
+      "packet_sha256": "f5aa0d102a545317ca5fba5d711cc39267713f3657b3fed351364880377d5242",
+      "case_id": "TC_2064c6a86ce0b815",
+      "role": "selected",
+      "packet_subject_id": "P1",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Post-inference source audit; source diagnosis not an independent clinical reclassification."
+      ],
+      "patient_identity": {
+        "status": "contradicted",
+        "statement": "P1 is female, age24; packet age agrees. Packet MALE contradicts female narrative and Figure1circle.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous c.586G>A p.Ala196Thr; GRCh38chr6:33659078 matches packet. SourceNM_002224.3 vs packet.4; genomic/protein concordant, transcriptversion not independently remapped.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+          }
+        ],
+        "limitations": [
+          "Version difference explicit."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "P1 variant de novo with bothparentsWT byFigure1 andsequencing. ",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single heterozygous dominantcandidate; compoundphase not applicable.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "c.586G>A p.Ala196Thr: clinical/segregation evidence plus direct engineeredvariant Ca-signalling defect. Supports ITPR3-relatedCID, but not every phenotype and not an independently replicatedmechanism.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B; Figures2–7"
+          }
+        ],
+        "limitations": [
+          "Normalabundance not normalfunction; heterologousmodel and smallcohort; noindependentACMG classification."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every P1 positiveandnegative checked individually againstclinicalnarrative, twoTables, andappropriateFigure/S1. Absolute/proportional counts separated; negativeunreportedfeatures unresolved.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+          }
+        ],
+        "limitations": [
+          "Observations are timepoint-specific and sourcehas internalconflicts."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c586GtoA_ITPR3_NM_002224v4",
+            "geneContext": {
+              "valueId": "HGNC:6182",
+              "symbol": "ITPR3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002224.4:c.586G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.33659078G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_002215.2:p.(Ala196Thr)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 33659078,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "fa3c9c254e69bb92f95684c7a9bc14f6396ff3af1671e7d38f643ef1092e9b64",
+          "assessment": {
+            "status": "qualified",
+            "statement": "c.586G>A p.Ala196Thr,heterozygous; genomicchr6:33659078andprotein match. NM_002224.3 inarticle vs.4packet; codingchanges agree.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Transcriptversion equivalence not independently validated."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025834",
+              "label": "Decreased PHA-induced T-cell proliferation"
+            }
+          },
+          "snapshot_sha256": "0ddbd9873ba00c9ea9e589105af1528c43f30006f6e12a8b88bdee72abaad35e",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1 Table2 PHA response: Absent; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410240",
+              "label": "Abnormal circulating IgA concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8748d6ac98fa363fa478180f1db4e48eb20b23fd10ba1d0abf2bed215751fd37",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1 Table2 IgA g/l: 1.29 [0.7–2.5] normal; packet negative.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410242",
+              "label": "Abnormal circulating IgG concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ce59cc86d5d09e2ee3d867cf82b4f2a232c83b2bcf0f73d2d86a1f0c26a7dbd6",
+          "assessment": {
+            "status": "supported",
+            "statement": "IgG12.50 within5.4–16.1",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410243",
+              "label": "Abnormal circulating IgM concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e18158352d359ac8935932ea4fee3eead9f7dbc97e7dc2debe173b73b1b27a75",
+          "assessment": {
+            "status": "supported",
+            "statement": "IgM0.63 within0.5–1.8",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004313",
+              "label": "Decreased circulating immunoglobulin concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ec084bbd1475e548b0bf853cabdb4b0d987717a6e27e7d5b13cf8c6fad43440f",
+          "assessment": {
+            "status": "supported",
+            "statement": "IgG/IgA/IgM all within Table2 ranges; Table1 hypogammaglobulinemiaNo",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001973",
+              "label": "Autoimmune thrombocytopenia"
+            }
+          },
+          "snapshot_sha256": "a9cc672d4c0c9d878ef1a3e252d31ca1c021414a0670f9f59aea7a62eb5f4115",
+          "assessment": {
+            "status": "supported",
+            "statement": "ITP diagnosed with platelet109k; narrative autoimmune thrombocytopenia",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020064",
+              "label": "Abnormal total eosinophil count"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6c28111cde488e04a0f80d183146fb26c8a6b8fd270265ce92b723a507bd4548",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1 Table2 Eosinophils/µl: 330 [100–800] normal; packet negative.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001875",
+              "label": "Decreased total neutrophil count"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8a403e22f1d6364a09a12790a2cffd5b1bfdcd73104b9d05a6230924f36f44a3",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1 Table2 Neutrophils/µl: 7510 [1500–8000] normal; packet negative.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031545",
+              "label": "Abnormally low T cell receptor excision circle level"
+            }
+          },
+          "snapshot_sha256": "5b080d564236ff8b4bb1cc3afa1f4eb6b88b9428e7090a3dd0d61a65a4ae976c",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1 Table2 TRECs/10^6 T cells: Absent; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005403",
+              "label": "Decreased total T cell count"
+            }
+          },
+          "snapshot_sha256": "eee614ebba35bb2f67dc437f2fe0eb2c3f92644303942f78dd2651c6ef6af357",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1 Table2 CD3/µl: 170 [1352–3275] low; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010976",
+              "label": "Decreased total B cell count"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f95977262784d15d8820981e851c858ff83f8a373d8a7932eafd5ee5a96cbc24",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P1 Table2 CD19/µl: 260 [157–725] normal; packet negative. Narrative says mildlylowBcells, conflicting with normalTable2 andTable1No.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Sourceinternal/timepoint ambiguity."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001888",
+              "label": "Decreased total lymphocyte count"
+            }
+          },
+          "snapshot_sha256": "f6be6912374e556f6936e22afa58928cde4db3a0915b19058f5e5c348e711eb3",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1 Table2 Lymphocytes/µl: 780 [1500–7000] low; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025845",
+              "label": "Abnormal TCR repertoire"
+            }
+          },
+          "snapshot_sha256": "a4264110684486f2e8efbfe9fa6fda862d0b02db149cf8d88c6b56af788fa0b1",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1 Table2 Spectratyping: Abnormal; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410378",
+              "label": "Decreased naive CD4+ T cell proportion"
+            }
+          },
+          "snapshot_sha256": "cdeda9327022c31b923596c01eedd5f31ba3456164dfaf8b9fbcac8f91e17e44",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1 naiveCD4count0 ofCD4total10 inTable2, therefore fractionzero.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005415",
+              "label": "Decreased CD8+ T cell proportion"
+            }
+          },
+          "snapshot_sha256": "92c76bccd8638bbb7f9ff03af28b9af52e17de80736ae6bdb08d289f66e0831e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P1 Table2 shows low absoluteCD8, not demonstrated lowproportion: CD8/CD3 is 120/170 (~71%). No age-matched proportional reference establishes this HPO assertion.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Absolute count is not proportion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410377",
+              "label": "Decreased naive CD8+ T cell proportion"
+            }
+          },
+          "snapshot_sha256": "8b735cfe47de02d014cfa68da06d82f2ab83627b1f2e73e27326b3cd6f630ec8",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P1 absolute naivecounts low, but proportions not demonstrated low againstage-matched reference: naiveCD8 86/120 (~72%).",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Cannot translate absolute lymphopenia into proportionaldepletion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000964",
+              "label": "Eczematoid dermatitis"
+            }
+          },
+          "snapshot_sha256": "59e9568fa53da6419818c35dddc2130050e73ef80c1a097a373680626a6e96b5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Narrative andTable1 eczema",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032163",
+              "label": "Molluscum contagiosum"
+            }
+          },
+          "snapshot_sha256": "78770ebddbc4baeb0bd3d57cad75043e9e28dc799364302af73bd89526486210",
+          "assessment": {
+            "status": "supported",
+            "statement": "Resistant molluscum contagiosum in narrative andTable1",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005387",
+              "label": "Combined immunodeficiency"
+            }
+          },
+          "snapshot_sha256": "1b9071a2b52427e5e6ce90cd3040da62513ddc3a5e166c6fcb615cbd5649a043",
+          "assessment": {
+            "status": "supported",
+            "statement": "Profound T lymphopenia, absentPHA, severeviral infections; clinicalCID",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002213",
+              "label": "Fine hair"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cac491ba44f74ba4b73df333a47ee0d71dcb899d69402f3175217b348c8d1231",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1 hair anomaliesNo; noED narrative",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000966",
+              "label": "Hypohidrosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "79ffc95e3f178c65d376808176e960fd1040a524d0750de3833cb43122e50063",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1No",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000968",
+              "label": "Ectodermal dysplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "97c4e25cdb63982c3c19612f7ffb02812146ba0b7c375b9ae3f8f480e5a12427",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1No and narrative noED",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032215",
+              "label": "Disseminated cutaneous warts"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P7Y"
+              }
+            }
+          },
+          "snapshot_sha256": "8b0b055659f7105a96cb196805dd38650070be2efd311370f5f097e2a1162a3b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Extensive HPV cutaneouswarts presentingage7",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002665",
+              "label": "Lymphoma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e0af772648a7c4b7c0382427e64127789d50cc21adbedd1e3c073640bb886c2b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No lymphoma reported inP1; not explicit lifetime negative",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP1; Methods/clinicaldescription P1; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Omission is not an explicit negative finding."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/ITPR3/PMID_39560673_P2.json",
+      "packet_sha256": "1ad364df9c98fe5a622129fedfb9f338bdc36e295bb3cd6b7c1a82923bd6c113",
+      "case_id": "TC_7015ba863b8992f6",
+      "role": "selected",
+      "packet_subject_id": "P2",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Post-inference source audit; source diagnosis not an independent clinical reclassification."
+      ],
+      "patient_identity": {
+        "status": "contradicted",
+        "statement": "P2 is female, age6; packet age agrees. Packet MALE contradicts female narrative and Figure1circle.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous c.7517T>A p.Ile2506Asn; GRCh38chr6:33692786 matches packet. SourceNM_002224.3 vs packet.4; genomic/protein concordant, transcriptversion not independently remapped.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+          }
+        ],
+        "limitations": [
+          "Version difference explicit."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "P2 variant de novo with bothparentsWT byFigure1 andsequencing. P2 also maternal commonR1850Q.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "unresolved",
+        "statement": "P2 maternalR1850Q not phased relative todenovoI2506N; shortreads insufficient. This commonpolymorphism is not proven secondpathogenic allele.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+          }
+        ],
+        "limitations": [
+          "Article explicitly states short reads cannot phase the common maternal polymorphism relative to I2506N."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "c.7517T>A p.Ile2506Asn: clinical/segregation evidence plus direct engineeredvariant Ca-signalling defect. Supports ITPR3-relatedCID, but not every phenotype and not an independently replicatedmechanism.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B; Figures2–7"
+          }
+        ],
+        "limitations": [
+          "Normalabundance not normalfunction; heterologousmodel and smallcohort; noindependentACMG classification."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every P2 positiveandnegative checked individually againstclinicalnarrative, twoTables, andappropriateFigure/S1. Absolute/proportional counts separated; negativeunreportedfeatures unresolved.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+          }
+        ],
+        "limitations": [
+          "Observations are timepoint-specific and sourcehas internalconflicts."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c7517TtoA_ITPR3_NM_002224v4",
+            "geneContext": {
+              "valueId": "HGNC:6182",
+              "symbol": "ITPR3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002224.4:c.7517T>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.33692786T>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_002215.2:p.(Ile2506Asn)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 33692786,
+              "ref": "T",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "0498217a0145abeccd2957f90c2db17eaf0282683fcb6d8ebe6477d317f04469",
+          "assessment": {
+            "status": "qualified",
+            "statement": "c.7517T>A p.Ile2506Asn,heterozygous; genomicchr6:33692786andprotein match. NM_002224.3 inarticle vs.4packet; codingchanges agree.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Transcriptversion equivalence not independently validated."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003593",
+                "label": "Infantile onset"
+              }
+            }
+          },
+          "snapshot_sha256": "93c51b393602dd43226f691429c4264e5666bea3aa751eff92480af014df4a34",
+          "assessment": {
+            "status": "supported",
+            "statement": "Feeding difficulties in infancy",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012450",
+              "label": "Chronic constipation"
+            }
+          },
+          "snapshot_sha256": "b7f53fd54f140de8808bd8211ca451bd81cb461dd9466ef65f669b5cdc57161d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Chronicconstipation narrative/Table1",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025834",
+              "label": "Decreased PHA-induced T-cell proliferation"
+            }
+          },
+          "snapshot_sha256": "0ddbd9873ba00c9ea9e589105af1528c43f30006f6e12a8b88bdee72abaad35e",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 Table2 PHA response: Absent; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410240",
+              "label": "Abnormal circulating IgA concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8748d6ac98fa363fa478180f1db4e48eb20b23fd10ba1d0abf2bed215751fd37",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 Table2 IgA g/l: 0.19 [0.15–0.7] normal; packet negative.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004315",
+              "label": "Decreased circulating IgG concentration"
+            }
+          },
+          "snapshot_sha256": "01fedeedbff1656c9388ab85b6e282e079077b7e1a97eed6bb95f6d546078604",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 Table2 IgG g/l: 2.75 [3–9] low; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002850",
+              "label": "Decreased circulating total IgM"
+            }
+          },
+          "snapshot_sha256": "c124705ab707a74946f3e4b2bdd796f46ac57bcf053cfa1004374fc312319344",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 Table2 IgM g/l: 0.08 [0.4–1.6] low; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410297",
+              "label": "Partial absence of specific antibody response to tetanus vaccine"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6d40d28c18e1efee050f5e6e1c8b290cc16ed36a917e7f5175d946cb40ccaa3e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Narrative preserved tetanusresponse, although Table2vaccineNA",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Narrativepositivepreserved response, Table2NA, no actualtiter printed."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001873",
+              "label": "Thrombocytopenia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6219d06d025b1e379dc61effbd6dced1459c460637dc38ec44e0e7379fdbfb7c",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 Table2 Platelets/µl: 318k [150–450k] normal; packet negative.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020064",
+              "label": "Abnormal total eosinophil count"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6c28111cde488e04a0f80d183146fb26c8a6b8fd270265ce92b723a507bd4548",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 Table2 Eosinophils/µl: 160 [100–300] normal; packet negative.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001875",
+              "label": "Decreased total neutrophil count"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8a403e22f1d6364a09a12790a2cffd5b1bfdcd73104b9d05a6230924f36f44a3",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 Table2 Neutrophils/µl: 3280 [1000–8500] normal; packet negative.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031545",
+              "label": "Abnormally low T cell receptor excision circle level"
+            }
+          },
+          "snapshot_sha256": "5b080d564236ff8b4bb1cc3afa1f4eb6b88b9428e7090a3dd0d61a65a4ae976c",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 Table2 TRECs/10^6 T cells: 1028 vs10th15337; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005403",
+              "label": "Decreased total T cell count"
+            }
+          },
+          "snapshot_sha256": "eee614ebba35bb2f67dc437f2fe0eb2c3f92644303942f78dd2651c6ef6af357",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 Table2 CD3/µl: 230 [3764–6289] low; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010976",
+              "label": "Decreased total B cell count"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f95977262784d15d8820981e851c858ff83f8a373d8a7932eafd5ee5a96cbc24",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P2 Table2 CD19/µl: 280 [896–2316] low; packet negative. Negative matchesTable1No but contradicts Table2lowmeasurement.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Definite quantitative conflict but source label itself contradictory."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001888",
+              "label": "Decreased total lymphocyte count"
+            }
+          },
+          "snapshot_sha256": "f6be6912374e556f6936e22afa58928cde4db3a0915b19058f5e5c348e711eb3",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 Table2 Lymphocytes/µl: 1080 [3000–13500] low; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025845",
+              "label": "Abnormal TCR repertoire"
+            }
+          },
+          "snapshot_sha256": "a4264110684486f2e8efbfe9fa6fda862d0b02db149cf8d88c6b56af788fa0b1",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 Table2 Spectratyping: Abnormal; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410378",
+              "label": "Decreased naive CD4+ T cell proportion"
+            }
+          },
+          "snapshot_sha256": "cdeda9327022c31b923596c01eedd5f31ba3456164dfaf8b9fbcac8f91e17e44",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 naiveCD4/CD8 fractions are markedlydepleted inFigure5A andTableS1 (0.8/103CD4;0.07/111CD8); supports reducedproportion.",
+            "evidence": [
+              {
+                "source_id": "supp1",
+                "locator": "Figure5A; TableS1 P2 naiveCD4/CD8 rows"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005415",
+              "label": "Decreased CD8+ T cell proportion"
+            }
+          },
+          "snapshot_sha256": "92c76bccd8638bbb7f9ff03af28b9af52e17de80736ae6bdb08d289f66e0831e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P2 Table2 shows low absoluteCD8, not demonstrated lowproportion: CD8/CD3 is 100/230 (~43%). No age-matched proportional reference establishes this HPO assertion.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Absolute count is not proportion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410377",
+              "label": "Decreased naive CD8+ T cell proportion"
+            }
+          },
+          "snapshot_sha256": "8b735cfe47de02d014cfa68da06d82f2ab83627b1f2e73e27326b3cd6f630ec8",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2 naiveCD4/CD8 fractions are markedlydepleted inFigure5A andTableS1 (0.8/103CD4;0.07/111CD8); supports reducedproportion.",
+            "evidence": [
+              {
+                "source_id": "supp1",
+                "locator": "Figure5A; TableS1 P2 naiveCD4/CD8 rows"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002783",
+              "label": "Recurrent lower respiratory tract infections"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003593",
+                "label": "Infantile onset"
+              }
+            }
+          },
+          "snapshot_sha256": "923f67d8081f36e6f5b3c338b631cda795612853056a3c5245c537877bf703b3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Infant recurrentLRTI includingH.influenzae; RSV andadenovirus infections",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002835",
+              "label": "Aspiration"
+            }
+          },
+          "snapshot_sha256": "ea86e94fb84e7b4de56134a49ef65fae6a796ca61ca2bc8d000550f86079ffcb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Aspiration of thinfluids and regurgitation, unsafe swallow",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005387",
+              "label": "Combined immunodeficiency"
+            }
+          },
+          "snapshot_sha256": "1b9071a2b52427e5e6ce90cd3040da62513ddc3a5e166c6fcb615cbd5649a043",
+          "assessment": {
+            "status": "supported",
+            "statement": "CID with persistentlyCD3<300/µl and absentPHA",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002213",
+              "label": "Fine hair"
+            }
+          },
+          "snapshot_sha256": "153c4e2b150557a9c8de1e20ce038fe6b1090aa0e02b35555362db9d6a227d6b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thin hair Table1",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000966",
+              "label": "Hypohidrosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "79ffc95e3f178c65d376808176e960fd1040a524d0750de3833cb43122e50063",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1No",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000968",
+              "label": "Ectodermal dysplasia"
+            }
+          },
+          "snapshot_sha256": "8b4b72a0abaea3b8eecb9cd3bf1e0603d3fe08e2c192ff1bc6c1b6c30406c6c7",
+          "assessment": {
+            "status": "supported",
+            "statement": "ED clinicaldiagnosis withmicrodontia/lowerpegincisors",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006342",
+              "label": "Peg-shaped maxillary lateral incisors"
+            }
+          },
+          "snapshot_sha256": "449dfbc013857d025ce753035d4ef155d62aa404f596f474f866cc81a95be6d7",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Source specifies lower incisors, not upper/maxillarylateral Packet changes anatomicalsite frommandibular/lower to maxillaryupper.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000691",
+              "label": "Microdontia"
+            }
+          },
+          "snapshot_sha256": "5c33364b485ba8a92465eb31f02358e384e8340cab63d5750a79350c51a4c24b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Small incisors Table1 andexplicitmicrodontia narrative",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000668",
+              "label": "Hypodontia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3bf9779b4e7307befce938a6d97696e06a3c57b37b30f43d1ef64820c9f91861",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not described forP2; small/peg teeth do not exclude absent teeth",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Omission is not an explicit negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030051",
+              "label": "Tip-toe gait"
+            }
+          },
+          "snapshot_sha256": "d0f2e651d48d723434f2f508d7acb2fcaab38245fae4b753bbb2b07423c25b2d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Persistenttiptoeing age3 promptedneurologicalassessment",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011096",
+              "label": "Peripheral demyelination"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f4e7a45322031ab58ba16845c8511d48bf47ce21f20ccf09e5d401219e0d9339",
+          "assessment": {
+            "status": "supported",
+            "statement": "Narrative explicitly without evidence ofdemyelination",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007178",
+              "label": "Motor polyneuropathy"
+            }
+          },
+          "snapshot_sha256": "8c418048762ce7ebae68cdc26214a2398b01699e6de15e7cfcd6f583ff2c6063",
+          "assessment": {
+            "status": "qualified",
+            "statement": "CMT-like chronic motor neuronopathy oflimbs; not confirmed demyelinatingCMT",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP2; Methods/clinicaldescription P2; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Source calls motorneuronopathy/CMT-like; electrodiagnostic specificity bounded."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/ITPR3/PMID_39560673_P3.json",
+      "packet_sha256": "e545d587a9202b2cf0dca0b2d6d1f1f589b98720eb3580ea32e007d18675524d",
+      "case_id": "TC_fd7b36bcc5edda9f",
+      "role": "selected",
+      "packet_subject_id": "P3",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Post-inference source audit; source diagnosis not an independent clinical reclassification."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "P3 is male, age33; packet age agrees. Male matches.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous c.7571G>A p.Arg2524His; GRCh38chr6:33692840 matches packet. SourceNM_002224.3 vs packet.4; genomic/protein concordant, transcriptversion not independently remapped.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+          }
+        ],
+        "limitations": [
+          "Version difference explicit."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "P3 variant de novo with bothparentsWT byFigure1 andsequencing. ",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single heterozygous dominantcandidate; compoundphase not applicable.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "c.7571G>A p.Arg2524His: clinical/segregation evidence plus patient-cell defects and same-residueR2524C engineered functionalproxy; R2524H not directlyreconstituted. Supports ITPR3-relatedCID, but not every phenotype and not an independently replicatedmechanism.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B; Figures2–7"
+          }
+        ],
+        "limitations": [
+          "Normalabundance not normalfunction; heterologousmodel and smallcohort; noindependentACMG classification."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every P3 positiveandnegative checked individually againstclinicalnarrative, twoTables, andappropriateFigure/S1. Absolute/proportional counts separated; negativeunreportedfeatures unresolved.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+          }
+        ],
+        "limitations": [
+          "Observations are timepoint-specific and sourcehas internalconflicts."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c7571GtoA_ITPR3_NM_002224v4",
+            "geneContext": {
+              "valueId": "HGNC:6182",
+              "symbol": "ITPR3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002224.4:c.7571G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.33692840G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_002215.2:p.(Arg2524His)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 33692840,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "a7ae39f2c5707be1b86e9880167f310f5d5884307f78412f794c9a32f59ce735",
+          "assessment": {
+            "status": "qualified",
+            "statement": "c.7571G>A p.Arg2524His,heterozygous; genomicchr6:33692840andprotein match. NM_002224.3 inarticle vs.4packet; Figure2B c7517G>A is apparent labeltransposition; Table1/Fig1/text c7571G>Aconcordant.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Transcriptversion equivalence not independently validated."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001433",
+              "label": "Hepatosplenomegaly"
+            }
+          },
+          "snapshot_sha256": "fa104936225d991c9c05a1b229234b314c020a79c8479108ffb9716a93dda60c",
+          "assessment": {
+            "status": "supported",
+            "statement": "At22years with lymphoma andBsymptoms",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410240",
+              "label": "Abnormal circulating IgA concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8748d6ac98fa363fa478180f1db4e48eb20b23fd10ba1d0abf2bed215751fd37",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3 Table2 IgA g/l: 2.57 [0.8–2.8] normal; packet negative.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004315",
+              "label": "Decreased circulating IgG concentration"
+            }
+          },
+          "snapshot_sha256": "01fedeedbff1656c9388ab85b6e282e079077b7e1a97eed6bb95f6d546078604",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3 Table2 IgG g/l: 4.64 [6–16] low; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002850",
+              "label": "Decreased circulating total IgM"
+            }
+          },
+          "snapshot_sha256": "c124705ab707a74946f3e4b2bdd796f46ac57bcf053cfa1004374fc312319344",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3 Table2 IgM g/l: 0.47 [0.5–1.9] low; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001873",
+              "label": "Thrombocytopenia"
+            }
+          },
+          "snapshot_sha256": "d901b0eeedefd54428cb6ad29a1218857c7f60fd8eaed8fd4e1952b67d37697f",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3 Table2 Platelets/µl: 142k [150–450k] low; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001973",
+              "label": "Autoimmune thrombocytopenia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f1799d44ec00e5a537000ae4b8a9f337bab68105c22b9f904fa643ed7db21111",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Platelets142k low but autoimmune mechanism not assessed/reported",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Omission is not an explicit negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020064",
+              "label": "Abnormal total eosinophil count"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6c28111cde488e04a0f80d183146fb26c8a6b8fd270265ce92b723a507bd4548",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3 Table2 Eosinophils/µl: 310 [100–800] normal; packet negative.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001875",
+              "label": "Decreased total neutrophil count"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8a403e22f1d6364a09a12790a2cffd5b1bfdcd73104b9d05a6230924f36f44a3",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3 Table2 Neutrophils/µl: 2480 [1800–8000] normal; packet negative.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031545",
+              "label": "Abnormally low T cell receptor excision circle level"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f037c7ac4cd92e733f26f3c80f755ddd0f067a857d19a71a59aa04f061a01645",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "P3 Table2 TRECs/10^6 T cells: 7797 vs10th8538; packet negative. Source narrative also explicitlylowTRECs; negativepacket incorrect.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005403",
+              "label": "Decreased total T cell count"
+            }
+          },
+          "snapshot_sha256": "eee614ebba35bb2f67dc437f2fe0eb2c3f92644303942f78dd2651c6ef6af357",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3 Table2 CD3/µl: 430 [930–3477] low; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010976",
+              "label": "Decreased total B cell count"
+            }
+          },
+          "snapshot_sha256": "d271c8dbe1f949ea6f4b8b6acbb9834ba3da11d46c275dbeac2d328fe25c29bb",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3 Table2 CD19/µl: 40 [173–1194] low; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001888",
+              "label": "Decreased total lymphocyte count"
+            }
+          },
+          "snapshot_sha256": "f6be6912374e556f6936e22afa58928cde4db3a0915b19058f5e5c348e711eb3",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3 Table2 Lymphocytes/µl: 530 [1200–5200] low; packet positive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410378",
+              "label": "Decreased naive CD4+ T cell proportion"
+            }
+          },
+          "snapshot_sha256": "cdeda9327022c31b923596c01eedd5f31ba3456164dfaf8b9fbcac8f91e17e44",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P3 absolute naivecounts low, but proportions not demonstrated low againstage-matched reference: naiveCD4 90/290 (~31%), naiveCD8 85/130 (~65%).",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Cannot translate absolute lymphopenia into proportionaldepletion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005415",
+              "label": "Decreased CD8+ T cell proportion"
+            }
+          },
+          "snapshot_sha256": "92c76bccd8638bbb7f9ff03af28b9af52e17de80736ae6bdb08d289f66e0831e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P3 Table2 shows low absoluteCD8, not demonstrated lowproportion: CD8/CD3 is 130/430 (~30%). No age-matched proportional reference establishes this HPO assertion.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Absolute count is not proportion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410377",
+              "label": "Decreased naive CD8+ T cell proportion"
+            }
+          },
+          "snapshot_sha256": "8b735cfe47de02d014cfa68da06d82f2ab83627b1f2e73e27326b3cd6f630ec8",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P3 absolute naivecounts low, but proportions not demonstrated low againstage-matched reference: naiveCD4 90/290 (~31%), naiveCD8 85/130 (~65%).",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Cannot translate absolute lymphopenia into proportionaldepletion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020072",
+              "label": "Persistent EBV viremia"
+            }
+          },
+          "snapshot_sha256": "47070f24078aa48354e6b11dbe03ce2a3fd8d48efc8be18b4a4fbf87329af32d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Low-levelEBV fromchildhood; EBV-related mucocutaneousulcer, cleared afterHCT",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002788",
+              "label": "Recurrent upper respiratory tract infections"
+            }
+          },
+          "snapshot_sha256": "a34e157230352da947a0a5d54e102ae89b35d05e28035424b07e12be65568941",
+          "assessment": {
+            "status": "supported",
+            "statement": "Frequent respiratory infections infancy/childhood",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002090",
+              "label": "Pneumonia"
+            }
+          },
+          "snapshot_sha256": "f1d2debc84c853b81856950a767393d252eb4cc3892ef6a9fc4ad437e76adc83",
+          "assessment": {
+            "status": "supported",
+            "statement": "Pneumonia age11 andrecurrence age12",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012735",
+              "label": "Cough"
+            }
+          },
+          "snapshot_sha256": "0ce74984971c43df78504902fb582c46a35bd7553feb7692fd543c8ed9a3c626",
+          "assessment": {
+            "status": "supported",
+            "statement": "Persistentcough at22years withlymphoma",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002099",
+              "label": "Asthma"
+            }
+          },
+          "snapshot_sha256": "6fd38916aebf1c6ac7b4b834bd4864352f4cf3cf08c7470866cdc158dbd4ef93",
+          "assessment": {
+            "status": "supported",
+            "statement": "Asthma infancy/childhood",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000964",
+              "label": "Eczematoid dermatitis"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003593",
+                "label": "Infantile onset"
+              }
+            }
+          },
+          "snapshot_sha256": "f149e2e134253ecfd420cdf9174980606e0e8079e83fdd936c79f6e227974454",
+          "assessment": {
+            "status": "supported",
+            "statement": "Eczema infancy/childhood",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000403",
+              "label": "Recurrent otitis media"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003593",
+                "label": "Infantile onset"
+              }
+            }
+          },
+          "snapshot_sha256": "41f4bce53662c1f841f6a8fe69de4b159c2d01079d1ef98cda764d4d7cd24dab",
+          "assessment": {
+            "status": "supported",
+            "statement": "Recurrentearinfections infancy/childhood",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032170",
+              "label": "Severe varicella zoster infection"
+            }
+          },
+          "snapshot_sha256": "c533ae5daefeba96c01933ba942380cc15e3036b4e8696b6860256ff95309a9b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1 severe cutaneousVZV",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005387",
+              "label": "Combined immunodeficiency"
+            }
+          },
+          "snapshot_sha256": "1b9071a2b52427e5e6ce90cd3040da62513ddc3a5e166c6fcb615cbd5649a043",
+          "assessment": {
+            "status": "supported",
+            "statement": "CID withlymphoproliferation, panlymphopenia andimpairedPHA",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002716",
+              "label": "Lymphadenopathy"
+            }
+          },
+          "snapshot_sha256": "632966df325182a738e7d4eea6219c0bf497d8f99de1522c379dbaf000ae51cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Recurrentlymphadenopathy from12, widespreadat22",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002213",
+              "label": "Fine hair"
+            }
+          },
+          "snapshot_sha256": "153c4e2b150557a9c8de1e20ce038fe6b1090aa0e02b35555362db9d6a227d6b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thin hair Table1",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000966",
+              "label": "Hypohidrosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "79ffc95e3f178c65d376808176e960fd1040a524d0750de3833cb43122e50063",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1No",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000968",
+              "label": "Ectodermal dysplasia"
+            }
+          },
+          "snapshot_sha256": "8b4b72a0abaea3b8eecb9cd3bf1e0603d3fe08e2c192ff1bc6c1b6c30406c6c7",
+          "assessment": {
+            "status": "supported",
+            "statement": "ED withhypo/microdontia",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006342",
+              "label": "Peg-shaped maxillary lateral incisors"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ba78834e0df49aece580fe6669cd47d2c7ddf6fa2c7b74b44c70f91742a29af5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not reported; hypo/microdontia does not exclude peg morphology",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": [
+              "Omission is not an explicit negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000691",
+              "label": "Microdontia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d98aee5d9867b6e1f9ce1245aa5815a7ee722816214a7ea296b6d609eba02bbf",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Table1 andnarrative explicitly microdontia Packet excludedtrue conflicts explicitpositive.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000668",
+              "label": "Hypodontia"
+            }
+          },
+          "snapshot_sha256": "542919caf446e189c4de9dc86e0d68ad6d67b59da1de1b0666988894cdfb9da9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1 andnarrative explicitly hypodontia",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012191",
+              "label": "B-cell lymphoma"
+            }
+          },
+          "snapshot_sha256": "fd7f7f622293b130d5699d713bfeac2384559634dbcb99e93359026d95b90f1c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Stage4B T-cell-rich B-celllymphoma withmarrow/extensiveextranodal disease age22",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012189",
+              "label": "Hodgkin lymphoma"
+            }
+          },
+          "snapshot_sha256": "f744a6fff4aae0a34c69b2062ece576972814275ec785d0cb25251322fd3d8c0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Concurrent nodularlymphocytepredominantHodgkinlymphoma onnodebiopsy",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Tables1–2 columnP3; Methods/clinicaldescription P3; Figure1A/B"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "All main text, methods, references, ten main/extended figures and two clinical tables read. All cells of TablesS1/S2 read, but their native page pixels pending. All six source-blot PDF pages inspected, four distinct imagepages; F4/FS1 byte-identical rendered duplicates of F2p3/p4. Raw sequencing/flow files not read or reanalysed; no independent laboratory replication.",
+    "Five unrelated patients with four heterozygous variants and CID, four with ED and two neuropathy. P5 donor father unavailable: de novo not proven despite abstract generalisation; P1–4 parents tested. GEL selection explicitly filters for IEI/ED and recurrence, so not unbiased penetrance evidence. Four HCT outcomes improve immune function observationally; no proof of correction of ectodermal/neuropathy manifestations or comparative treatment efficacy.",
+    "Normal ITPR3 expression in LCL/fibroblast and heterologous transfectants does not establish normal channel function. Primary T-cell protein unmeasured because lymphopenia. KO alone preserves SOCE; reexpression of A196T/I2506N/R2524C disrupts it, supporting active dominant interference over haploinsufficiency. Engineered KO/reconstitution retains ITPR1/2, is not exact native heterozygous stoichiometry, and uses clones from one KO parent. R2524H not directly reconstituted: R2524C at same residue used as proxy. ER-leak mechanism inferred rather than measured as single-channel gating of every allele.",
+    "Cell-context differences matter: T-cell responses impaired while fibroblast ATP response not significantly different. Ionomycin rescues acute Ca influx; not a clinical treatment. No constitutive SOCE shown. Abundance/localisation and structural delta-deltaG predictions are not functional equivalence. Source blots show variable exposures and truncated/lower bands; no independent densitometry performed.",
+    "Human T-cell RNAseq Methods explicitly says reads aligned to mouse mm10. This is a material unresolved methods discrepancy, possibly textual error; no raw alignment audit or author contact performed. RNA signatures cannot be treated as independently reproduced. Metabolic-marker protein changes are not direct flux measurements. RNA IL2/IFNG differences coexist with normal tested cytokine production/degranulation. Memory skew, small patient numbers and nested technical repetitions limit inference. Figure5 statistical caption mixes Mann–Whitney with all-statistics bilateral t-tests.",
+    "Patient HSPC thymopoiesis experiments use marrow versus healthy cord blood, creating source/age confounding; demonstrate late differentiation block in two cases, not absence of all thymopoiesis. HCT results are time-dependent. P1 clinical HCT age9 vs Table2 age24/14years post implies age10; P2 narrative age3 vs age6/2years post implies4. Do not silently harmonise.",
+    "Clinical table conflicts retained: P2 Table1 B-cell lymphopenia No but Table2 280/µl below896–2316; P1 narrative mildly low Bcells but Table2 normal260 and Table1No. P3 lowTRECs7797 below10th8538; source narrative also low, so packetnegative is wrong. P3 microdontia positive inTable1/narrative but packetnegative. P5 hypohidrosis narrativeYes versusTable1No. Atrialseptaldefect is P4, not P2, confirmed tablepixels.",
+    "P1/P2 both female by narrative and Fig1 circles; packets incorrectly male. P2 lower-incisor morphology does not support maxillary lateral incisor term. Table2 absolute T-cell counts cannot automatically establish proportions: P1 CD8/CD3=120/170~71%, P2~43%, P3~30%; low absolute numbers do not show low CD8 fraction. Naive-CD8 counts P1/P3 similarly not a proven proportional decrease. P2 proportional naive reduction directly visibleFig5/S1.",
+    "Main variant transcript NM_002224.3 versus packets .4; same reported coding/protein and GRCh38 genomic loci, but version equivalence not independently remapped. P2 common maternal R1850Q (8.2%,6079gnomADhom) unphased with I2506N, so not a demonstrated recessive pair. Figure2B P3 label c7517G>A appears transposed versus c7571G>A Table1/Fig1/text; exact allele anchored by concordant genomic and protein description."
+  ]
+}

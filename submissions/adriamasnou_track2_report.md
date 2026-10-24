@@ -84,7 +84,7 @@ The [rescue-decision prototype](rescue-decision-validation.md) makes functional,
 
 **Executed public evaluation.** Across 96 genomic jobs, original-HPO top-1/5/10 recovery was **6/7/8 (HG002) and 7/8/8 (HG001) of nine primary source labels**; five have material source qualifications. Phenotype-only recovered **4/8/8**; candidate universes differ. COG8/SLC35C1 no-HPO best modes use only one of two source alleles. [Full evaluation and portable outputs](public-validation.md); [separate FGFR2 reconstructions](generalisation-public-case.md). These semi-synthetic checks establish execution and ranking behaviour, not clinical accuracy or drug rescue. **[OUR MEASUREMENT]**
 
-A separate [ten-hypothesis benchmark](compact-public-validation.md) completed 1,418 jobs across 713 source signatures. Autosomal original-HPO top-1 was **556/681 versus 430/681 without HPO**, after a disclosed parser correction. A [post-inference source audit](../examples/compact-source-audit/README.md) records 137 full-main-text and 62 complete paper reviews; source-label recovery remains distinct from clinical accuracy. **[OUR MEASUREMENT]**
+A separate [ten-hypothesis benchmark](compact-public-validation.md) completed 1,418 jobs across 713 source signatures. Autosomal original-HPO top-1 was **556/681 versus 430/681 without HPO**, after a disclosed parser correction. A [post-inference source audit](../examples/compact-source-audit/README.md) records 178 full-main-text and 80 complete paper reviews; source-label recovery remains distinct from clinical accuracy. **[OUR MEASUREMENT]**
 
 ## 6. What is delivered, and what remains unknown
 

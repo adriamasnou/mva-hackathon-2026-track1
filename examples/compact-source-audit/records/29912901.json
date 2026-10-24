@@ -1,0 +1,1995 @@
+{
+  "schema_version": 1,
+  "pmid": "29912901",
+  "title": "Germline mutations and somatic inactivation of TRIM28 in Wilms tumour.",
+  "reviewer": {
+    "id": "reader-3",
+    "reviewed_at_utc": "2026-10-24T17:26:13.020732+00:00",
+    "method": "All maintext read in two complete contiguous chunks; five mainfigures and allTable1rows inspected in pixels. CompleteclinicalDOCXtext andone-page render, allthree supplementary workbook cells, six supplementaryTIFFplates read. S7PDF onlypage1text/pixels read; rest explicitlyopen. Fourmappedsubjects checked individually; no benchmarkranks used."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Required HANDOFF contains aggregate compact-cohort metrics. No per-case inference ranks, scores or outcomes opened or used. Post-inference source audit, not blinded validation."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "6c5410df17226d8b265e28a17d8313f11d1949d51a3ccb7946d4283cfae741e9",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/main.complete.txt",
+      "sha256": "b8a5474bcd197b2b7105c98e55dbd4fd52a0fabbc561506a2049960956b2eb4b",
+      "kind": "text",
+      "description": "Allprimarytextread"
+    },
+    {
+      "id": "xml",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/main.xml",
+      "sha256": "22c108d434e452c82cece010ae945e0de1d89fd640cdcd4b28752f6f9f543e08",
+      "kind": "xml",
+      "description": "Primaryidentity/inventory"
+    },
+    {
+      "id": "table",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.t001.jpg",
+      "sha256": "3253d7e2aa22c7784aee8348a3ab18eefcd0c31a1359ccc5301adc4196161b6f",
+      "kind": "image",
+      "description": "AllmainTable1cells read"
+    },
+    {
+      "id": "clinical",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.s001.docx",
+      "sha256": "2c41eba5b01a78dd4068263a22bb01f448c301e473384ef0bf26955ed6a34ff8",
+      "kind": "data",
+      "description": "WholeclinicalDOCXread"
+    },
+    {
+      "id": "clinicaltext",
+      "pmid": "29912901",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/29912901/clinical.txt",
+      "sha256": "d1696a60a1901fc99dfc4de6f6bd85c5c9e163fc1d92017cc35b7139734feadc",
+      "kind": "text",
+      "description": "CompleteOOXMLtextread"
+    },
+    {
+      "id": "clinicalimage",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/reviewer-3-assets/clinical/page-1.png",
+      "sha256": "8b34965b4faa499d04f523d9837a3bbc1b796d36fb00f1fc33ca0f84950abe18",
+      "kind": "image",
+      "description": "Wholeone-pageclinicalrenderread"
+    },
+    {
+      "id": "fig1",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.g001.jpg",
+      "sha256": "64d6c909f22971298eeb70decc4c92fb92740f7babf3fe18728dbcd838866c3d",
+      "kind": "image",
+      "description": "Allfigurepanels read"
+    },
+    {
+      "id": "fig2",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.g002.jpg",
+      "sha256": "7e7eb5b7519a0b1dc245a64f7ff5b9d3651ad38a248b7e4bad5de39266062696",
+      "kind": "image",
+      "description": "Allfigurepanels read"
+    },
+    {
+      "id": "fig3",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.g003.jpg",
+      "sha256": "f779a798061ca83273c2b54e1b44c639702d45ae42ddac2e600034c1f363319a",
+      "kind": "image",
+      "description": "Allfigurepanels read"
+    },
+    {
+      "id": "fig4",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.g004.jpg",
+      "sha256": "17e61a45aef04bd4dad660cce97991239007521ca6bc406ff888b359cd4ac50b",
+      "kind": "image",
+      "description": "Allfigurepanels read"
+    },
+    {
+      "id": "fig5",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.g005.jpg",
+      "sha256": "a4548a5e6f68892f5a46ff2640334c6d91ac9747ea2a0f8701481e373756ff15",
+      "kind": "image",
+      "description": "Allfigurepanels read"
+    },
+    {
+      "id": "workbook2",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.s002.xlsx",
+      "sha256": "6d6770db891df8a0710f1489ddb6b476419a0863b1e570016a4d7a8e44c0b158",
+      "kind": "data",
+      "description": "Allworkbookcellsread"
+    },
+    {
+      "id": "workbook3",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.s003.xlsx",
+      "sha256": "f0813648f0133e481fb242f92d4502b721a25070fcfda226235062d82842d1ee",
+      "kind": "data",
+      "description": "Allworkbookcellsread"
+    },
+    {
+      "id": "workbook4",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.s004.xlsx",
+      "sha256": "1423d58a1439c8961fedb1d63c198808e63938931f64816bb0aed8a86cd9bc4b",
+      "kind": "data",
+      "description": "Allworkbookcellsread"
+    },
+    {
+      "id": "Sfig1",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.s005.tiff",
+      "sha256": "910a3b4789c31f483f86ae21cbe5fbd495edf9742a217faa90a7d735d2253c80",
+      "kind": "image",
+      "description": "Originalsingle-frameTIFF"
+    },
+    {
+      "id": "Sfig1png",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/reviewer-3-assets/s5.png",
+      "sha256": "26cf380fec000ddb7771c0879f72e55b002a8db9562a9f4d73f639cb324bacf0",
+      "kind": "image",
+      "description": "FaithfulPNGconversioninspected"
+    },
+    {
+      "id": "Sfig2",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.s006.tiff",
+      "sha256": "cf9d7b78e61370586a9dec87040aa39bfc57c2639340cddd2c8f489d319fdfb7",
+      "kind": "image",
+      "description": "Originalsingle-frameTIFF"
+    },
+    {
+      "id": "Sfig2png",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/reviewer-3-assets/s6.png",
+      "sha256": "5356de99afc620af375af31111abe05deb9da727e21bb9082990aa347407132a",
+      "kind": "image",
+      "description": "FaithfulPNGconversioninspected"
+    },
+    {
+      "id": "Sfig3",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.s007.tiff",
+      "sha256": "bf4f7eb43c44eeff44d0f24579ac688df82586747d7cedbe91ff766b42114234",
+      "kind": "image",
+      "description": "Originalsingle-frameTIFF"
+    },
+    {
+      "id": "Sfig3png",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/reviewer-3-assets/s7.png",
+      "sha256": "e94538ebedece4d830c69b9625da635f270ab6de4cd80d4253a394ff9a18d876",
+      "kind": "image",
+      "description": "FaithfulPNGconversioninspected"
+    },
+    {
+      "id": "Sfig4",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.s008.tiff",
+      "sha256": "25db1a7e18a0b2a14eaa644072754a9a0de0f202105e79a941a714c531319f5f",
+      "kind": "image",
+      "description": "Originalsingle-frameTIFF"
+    },
+    {
+      "id": "Sfig4png",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/reviewer-3-assets/s8.png",
+      "sha256": "ed446221b47481270e202e7d9dd37f2782e4968a15e1a3cda763ab5baf80c84e",
+      "kind": "image",
+      "description": "FaithfulPNGconversioninspected"
+    },
+    {
+      "id": "Sfig5",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.s009.tiff",
+      "sha256": "460d8865dcf24b1b273fe5d284c5247de8705a4e791200b56aefa66e608be757",
+      "kind": "image",
+      "description": "Originalsingle-frameTIFF"
+    },
+    {
+      "id": "Sfig5png",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/reviewer-3-assets/s9.png",
+      "sha256": "d2e72b16055ce17278ddcdb9b006901dc9678f302b07fdcf197f67ff1c3eb082",
+      "kind": "image",
+      "description": "FaithfulPNGconversioninspected"
+    },
+    {
+      "id": "Sfig6",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.s010.tiff",
+      "sha256": "1b7743d2f8b9f2995178191f868e1742595da16401aa212051677b87b49592e8",
+      "kind": "image",
+      "description": "Originalsingle-frameTIFF"
+    },
+    {
+      "id": "Sfig6png",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/reviewer-3-assets/s10.png",
+      "sha256": "fd4d31cf431f24b59f754bf7c0d240e53e23dce2642fce62db783f8ec955e655",
+      "kind": "image",
+      "description": "FaithfulPNGconversioninspected"
+    },
+    {
+      "id": "S7",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/cloud/PMC6005459.1/pgen.1007399.s011.pdf",
+      "sha256": "03f9505f73b166270bf9afa54ef943cef3a707f9458b3de2128241a0a20a3871",
+      "kind": "pdf",
+      "description": "33pageomicsreport"
+    },
+    {
+      "id": "S7text",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/reviewer-3-assets/S7.txt",
+      "sha256": "efaee52a577f11982ff74d22d7bc3a9cabe98097c1d537d0b629f53b21af8eac",
+      "kind": "text",
+      "description": "Extractallpages, onlypage1claimedread"
+    },
+    {
+      "id": "S7p1",
+      "pmid": "29912901",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29912901/reviewer-3-assets/S7-01.png",
+      "sha256": "d583be606b296eab9ea26b83346a66447bf80ae2a62e73b149d49cbe1a365a0e",
+      "kind": "image",
+      "description": "S7page1summaryinspected"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Germline mutations and somatic inactivation of TRIM28 in Wilms tumour.",
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "PMID29912901 DOI10.1371/journal.pgen.1007399 title"
+      }
+    ],
+    "note": "PrimarypublishedarticleidentityconfirmedwithinfullXML."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 5,
+      "table": 1,
+      "supplement": 11
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "Fivefigures,Table1,s001-s011"
+      }
+    ],
+    "note": "S1TextDOCX;S1-S3tablesXLSX;sixTIFFS1-S6;S7PDF33pages. No additionaldistributedcomponentsidentified."
+  },
+  "components": [
+    {
+      "id": "main",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 431,
+      "extent_source_id": "main",
+      "extent_evidence": [
+        {
+          "source_id": "main",
+          "locator": "Entiretext"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 431,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Allbody/references/captions/tabletext"
+        }
+      ],
+      "note": "Fullprimarytextconsumed."
+    },
+    {
+      "id": "fig1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig1",
+      "extent_evidence": [
+        {
+          "source_id": "fig1",
+          "locator": "Entireimage"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig1",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Allpanelsconsumed."
+    },
+    {
+      "id": "fig2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig2",
+      "extent_evidence": [
+        {
+          "source_id": "fig2",
+          "locator": "Entireimage"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig2",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Allpanelsconsumed."
+    },
+    {
+      "id": "fig3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig3",
+      "extent_evidence": [
+        {
+          "source_id": "fig3",
+          "locator": "Entireimage"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig3",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Allpanelsconsumed."
+    },
+    {
+      "id": "fig4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig4",
+      "extent_evidence": [
+        {
+          "source_id": "fig4",
+          "locator": "Entireimage"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig4",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Allpanelsconsumed."
+    },
+    {
+      "id": "fig5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig5",
+      "extent_evidence": [
+        {
+          "source_id": "fig5",
+          "locator": "Entireimage"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig5",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Allpanelsconsumed."
+    },
+    {
+      "id": "T1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Table1"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "AllTable1rows"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table",
+          "locator": "Allcellsandfootnotes"
+        }
+      ],
+      "note": "Allsevenrows includingunaffectedmotherandSCTBN88read."
+    },
+    {
+      "id": "S1Text",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "clinicalimage",
+      "extent_evidence": [
+        {
+          "source_id": "clinicalimage",
+          "locator": "One renderedpage"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "clinicaltext",
+          "locator": "AllOOXMLtext, no embeddedmedia"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "clinicalimage",
+          "locator": "Entirepageallfivepatients"
+        }
+      ],
+      "note": "Entireclinicaldocumentread; allpatientsnonsyndromicperexplicitstatement."
+    },
+    {
+      "id": "workbook2",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "sheets",
+      "unit_count": 1,
+      "extent_source_id": "workbook2",
+      "extent_evidence": [
+        {
+          "source_id": "workbook2",
+          "locator": "Onesheet73rows14columns"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "data",
+          "source_id": "workbook2",
+          "locator": "All73x14cellsincludingheaders/blankcells"
+        }
+      ],
+      "note": "S1variants,S2pathways,S3primers fullyconsumed."
+    },
+    {
+      "id": "workbook3",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "sheets",
+      "unit_count": 1,
+      "extent_source_id": "workbook3",
+      "extent_evidence": [
+        {
+          "source_id": "workbook3",
+          "locator": "Onesheet53rows11columns"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "data",
+          "source_id": "workbook3",
+          "locator": "All53x11cellsincludingheaders/blankcells"
+        }
+      ],
+      "note": "S1variants,S2pathways,S3primers fullyconsumed."
+    },
+    {
+      "id": "workbook4",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "sheets",
+      "unit_count": 1,
+      "extent_source_id": "workbook4",
+      "extent_evidence": [
+        {
+          "source_id": "workbook4",
+          "locator": "Onesheet36rows7columns"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "data",
+          "source_id": "workbook4",
+          "locator": "All36x7cellsincludingheaders/blankcells"
+        }
+      ],
+      "note": "S1variants,S2pathways,S3primers fullyconsumed."
+    },
+    {
+      "id": "Sfig1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "Sfig1",
+      "extent_evidence": [
+        {
+          "source_id": "Sfig1",
+          "locator": "OneTIFFframe"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "Sfig1png",
+          "locator": "Entireplate"
+        }
+      ],
+      "note": "Fullplateinspected; captioninmaintextread."
+    },
+    {
+      "id": "Sfig2",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "Sfig2",
+      "extent_evidence": [
+        {
+          "source_id": "Sfig2",
+          "locator": "OneTIFFframe"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "Sfig2png",
+          "locator": "Entireplate"
+        }
+      ],
+      "note": "Fullplateinspected; captioninmaintextread."
+    },
+    {
+      "id": "Sfig3",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "Sfig3",
+      "extent_evidence": [
+        {
+          "source_id": "Sfig3",
+          "locator": "OneTIFFframe"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "Sfig3png",
+          "locator": "Entireplate"
+        }
+      ],
+      "note": "Fullplateinspected; captioninmaintextread."
+    },
+    {
+      "id": "Sfig4",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "Sfig4",
+      "extent_evidence": [
+        {
+          "source_id": "Sfig4",
+          "locator": "OneTIFFframe"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "Sfig4png",
+          "locator": "Entireplate"
+        }
+      ],
+      "note": "Fullplateinspected; captioninmaintextread."
+    },
+    {
+      "id": "Sfig5",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "Sfig5",
+      "extent_evidence": [
+        {
+          "source_id": "Sfig5",
+          "locator": "OneTIFFframe"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "Sfig5png",
+          "locator": "Entireplate"
+        }
+      ],
+      "note": "Fullplateinspected; captioninmaintextread."
+    },
+    {
+      "id": "Sfig6",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "Sfig6",
+      "extent_evidence": [
+        {
+          "source_id": "Sfig6",
+          "locator": "OneTIFFframe"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "Sfig6png",
+          "locator": "Entireplate"
+        }
+      ],
+      "note": "Fullplateinspected; captioninmaintextread."
+    },
+    {
+      "id": "S7",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 33,
+      "extent_source_id": "S7",
+      "extent_evidence": [
+        {
+          "source_id": "S7",
+          "locator": "PDF33pages"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "S7text",
+          "locator": "Page1summarymethods/results"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "S7p1",
+          "locator": "Entirepage1"
+        }
+      ],
+      "note": "Remainder32pagesgene/probe/heatmaps notread; extracted/rendered isnotread."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/TRIM28/PMID_29912901_case_37.json",
+      "packet_sha256": "833a80dd06b8a3340f8584099791291b1dd1429b073452f033a59bbb82fc2c87",
+      "case_id": "TC_97851b58c16df0fe",
+      "role": "selected",
+      "packet_subject_id": "case 37",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Case249constitutionalgermlinestatusnotdirectlymeasured;family2pedigreesexsymbolsconflictwithclinicaltext."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Case37: male39months,unilateralstage1,alivewithoutrecurrence23years. Exactindividualsourcecolumnconfirmed.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case37;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case37row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "37clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "SourceNM_005762.2:c.525_526del p.(Glu175Aspfs*29), packetNM_005762.3samecoding/proteindescriptor. Heterozygositydirectlyobservedinnon-neoplastickidney37K. Moderngenomicindelnormalization/liftovertoGRCh38notindependentlyverified.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case37;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case37row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "37clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Samevariantinbothsiblings37/39andtheirasymptomaticmother, fatherreferencetrace; maternaltransmissionconfirmed, incompletepenetrance.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case37;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case37row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "37clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Constitutionalsingleheterozygouspredispositionallele distinctfromtumourLOH. 37Tcopy-neutralLOHincludesTRIM28andseveralothergenes;39TLOHcopystatusunknown. No recessivecompoundheterozygousphaseclaim.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case37;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case37row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "37clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "FamilialtruncatingvariantswithtumourlossofWTalleleandmonomorphicepithelialhistologystronglysupportTRIM28predisposition/two-hitmodel; proteinlossdemonstratedfor37/39/W117, notIHCdirectlyshownfor249/399. Nonpenetrantmotherandmissingfamily2constitutional/parentalsampleslimitindividualcausalcertainty. Sole-driverandgoodprognosisclaimremainhypothesesfromsmallselectedseries.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case37;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case37row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "37clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          },
+          {
+            "source_id": "fig2",
+            "locator": "37T/39T/W117IHC"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Onlynephroblastomaencodedanddirectlyconfirmed; packetomitslaterality,age,stage,histology,therapyandfollow-up. Noextraabsencesinferred. S1Textexplicitlystatesnosyndromicfeatures.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case37;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case37row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "37clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c525_526del_TRIM28_NM_005762v3",
+            "geneContext": {
+              "valueId": "HGNC:16384",
+              "symbol": "TRIM28"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005762.3:c.525_526del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000019.10:g.58545835_58545836del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005753.1:p.(Glu175AspfsTer29)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr19",
+              "pos": 58545832,
+              "ref": "TGA",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "a9f72e072a2ea5e50311086de4a713c185a1a0dcd3f33cf24475f6a06941f2df",
+          "assessment": {
+            "status": "qualified",
+            "statement": "SourceNM_005762.2:c.525_526del p.(Glu175Aspfs*29), packetNM_005762.3samecoding/proteindescriptor. Heterozygositydirectlyobservedinnon-neoplastickidney37K. Moderngenomicindelnormalization/liftovertoGRCh38notindependentlyverified.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1case37;TRIM28mutationsresults"
+              },
+              {
+                "source_id": "table",
+                "locator": "case37row"
+              },
+              {
+                "source_id": "clinicalimage",
+                "locator": "37clinicalparagraph"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A"
+              },
+              {
+                "source_id": "Sfig1png",
+                "locator": "Familypedigree/allelecartoon"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002667",
+              "label": "Nephroblastoma"
+            }
+          },
+          "snapshot_sha256": "365e9adca0fedd79f0e75c27fbccfe19460bb200f70829c5ed06e63fbfe3b9dd",
+          "assessment": {
+            "status": "supported",
+            "statement": "HistologicallydiagnosedWilms/nephroblastomaexplicitforcase37;monomorphicepithelialhistology. male39months,unilateralstage1,alivewithoutrecurrence23years.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1case37;TRIM28mutationsresults"
+              },
+              {
+                "source_id": "table",
+                "locator": "case37row"
+              },
+              {
+                "source_id": "clinicalimage",
+                "locator": "37clinicalparagraph"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A"
+              },
+              {
+                "source_id": "Sfig1png",
+                "locator": "Familypedigree/allelecartoon"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/TRIM28/PMID_29912901_case_39.json",
+      "packet_sha256": "7cc3a9e140328711f9e5a7d4203ddc080133b52e09e526d5738057ecd4ed8dfa",
+      "case_id": "TC_97851b58c16df0fe",
+      "role": "alternate",
+      "packet_subject_id": "case 39",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Case249constitutionalgermlinestatusnotdirectlymeasured;family2pedigreesexsymbolsconflictwithclinicaltext."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Case39: female8months,bilateralstageV(local1or2),alivewithoutrecurrence20years. Exactindividualsourcecolumnconfirmed.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case39;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case39row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "39clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "SourceNM_005762.2:c.525_526del p.(Glu175Aspfs*29), packetNM_005762.3samecoding/proteindescriptor. Heterozygositydirectlyobservedinperipheralblood. Moderngenomicindelnormalization/liftovertoGRCh38notindependentlyverified.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case39;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case39row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "39clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Samevariantinbothsiblings37/39andtheirasymptomaticmother, fatherreferencetrace; maternaltransmissionconfirmed, incompletepenetrance.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case39;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case39row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "39clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Constitutionalsingleheterozygouspredispositionallele distinctfromtumourLOH. 37Tcopy-neutralLOHincludesTRIM28andseveralothergenes;39TLOHcopystatusunknown. No recessivecompoundheterozygousphaseclaim.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case39;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case39row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "39clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "FamilialtruncatingvariantswithtumourlossofWTalleleandmonomorphicepithelialhistologystronglysupportTRIM28predisposition/two-hitmodel; proteinlossdemonstratedfor37/39/W117, notIHCdirectlyshownfor249/399. Nonpenetrantmotherandmissingfamily2constitutional/parentalsampleslimitindividualcausalcertainty. Sole-driverandgoodprognosisclaimremainhypothesesfromsmallselectedseries.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case39;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case39row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "39clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          },
+          {
+            "source_id": "fig2",
+            "locator": "37T/39T/W117IHC"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Onlynephroblastomaencodedanddirectlyconfirmed; packetomitslaterality,age,stage,histology,therapyandfollow-up. Noextraabsencesinferred. S1Textexplicitlystatesnosyndromicfeatures.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case39;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case39row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "39clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c525_526del_TRIM28_NM_005762v3",
+            "geneContext": {
+              "valueId": "HGNC:16384",
+              "symbol": "TRIM28"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005762.3:c.525_526del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000019.10:g.58545835_58545836del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005753.1:p.(Glu175AspfsTer29)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr19",
+              "pos": 58545832,
+              "ref": "TGA",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "a9f72e072a2ea5e50311086de4a713c185a1a0dcd3f33cf24475f6a06941f2df",
+          "assessment": {
+            "status": "qualified",
+            "statement": "SourceNM_005762.2:c.525_526del p.(Glu175Aspfs*29), packetNM_005762.3samecoding/proteindescriptor. Heterozygositydirectlyobservedinperipheralblood. Moderngenomicindelnormalization/liftovertoGRCh38notindependentlyverified.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1case39;TRIM28mutationsresults"
+              },
+              {
+                "source_id": "table",
+                "locator": "case39row"
+              },
+              {
+                "source_id": "clinicalimage",
+                "locator": "39clinicalparagraph"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A"
+              },
+              {
+                "source_id": "Sfig1png",
+                "locator": "Familypedigree/allelecartoon"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002667",
+              "label": "Nephroblastoma"
+            }
+          },
+          "snapshot_sha256": "365e9adca0fedd79f0e75c27fbccfe19460bb200f70829c5ed06e63fbfe3b9dd",
+          "assessment": {
+            "status": "supported",
+            "statement": "HistologicallydiagnosedWilms/nephroblastomaexplicitforcase39;monomorphicepithelialhistology. female8months,bilateralstageV(local1or2),alivewithoutrecurrence20years.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1case39;TRIM28mutationsresults"
+              },
+              {
+                "source_id": "table",
+                "locator": "case39row"
+              },
+              {
+                "source_id": "clinicalimage",
+                "locator": "39clinicalparagraph"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A"
+              },
+              {
+                "source_id": "Sfig1png",
+                "locator": "Familypedigree/allelecartoon"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/TRIM28/PMID_29912901_case_399.json",
+      "packet_sha256": "18219b9eba88da9d9d2e5b170dc7724e66d7179e358fbf73338431b341b64cf0",
+      "case_id": "TC_a64dc14669f70c46",
+      "role": "selected",
+      "packet_subject_id": "case 399",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Case249constitutionalgermlinestatusnotdirectlymeasured;family2pedigreesexsymbolsconflictwithclinicaltext."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Case399: female5months,stage1,alivewithoutrecurrence29years. S1Figuresexsymbolsreverse249/399relativetoTable1andclinicalS1Text; numericalpatientidentifierandclinicaltextretained.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case399;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case399row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "399clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "B"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "SourceNM_005762.2:c.1746_1747delinsC p.(Glu583Argfs*93), packetNM_005762.3samecoding/proteindescriptor. Heterozygositydirectlyobservedinperipheralblood. Moderngenomicindelnormalization/liftovertoGRCh38notindependentlyverified.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case399;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case399row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "399clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "B"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Bothsiblings249/399tumourshavesamevariant,399bloodheterozygous. MotherhadWilmsbutDNAunavailable; maternaltransmissionprobablefamilialinference, notconfirmedgenotype.249constitutionalstatusassumed.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case399;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case399row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "399clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "B"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Constitutionalsingleheterozygouspredispositionallele distinctfromtumourLOH. 249T/399Tlossreferenceallele;copy-neutralversuscopy-lossnotresolvedand249normalDNAunavailable. No recessivecompoundheterozygousphaseclaim.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case399;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case399row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "399clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "B"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "FamilialtruncatingvariantswithtumourlossofWTalleleandmonomorphicepithelialhistologystronglysupportTRIM28predisposition/two-hitmodel; proteinlossdemonstratedfor37/39/W117, notIHCdirectlyshownfor249/399. Nonpenetrantmotherandmissingfamily2constitutional/parentalsampleslimitindividualcausalcertainty. Sole-driverandgoodprognosisclaimremainhypothesesfromsmallselectedseries.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case399;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case399row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "399clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "B"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          },
+          {
+            "source_id": "fig2",
+            "locator": "37T/39T/W117IHC"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Onlynephroblastomaencodedanddirectlyconfirmed; packetomitslaterality,age,stage,histology,therapyandfollow-up. Noextraabsencesinferred. S1Textexplicitlystatesnosyndromicfeatures.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case399;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case399row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "399clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "B"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1746_1747delinsC_TRIM28_NM_005762v3",
+            "geneContext": {
+              "valueId": "HGNC:16384",
+              "symbol": "TRIM28"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005762.3:c.1746_1747delinsC"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000019.10:g.58549414_58549415delinsC"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005753.1:p.(Glu583ArgfsTer93)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr19",
+              "pos": 58549414,
+              "ref": "GG",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "612dcd4b0fc2868ed17c503c9759e4f032144c882d12d795a53493c4221c179e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "SourceNM_005762.2:c.1746_1747delinsC p.(Glu583Argfs*93), packetNM_005762.3samecoding/proteindescriptor. Heterozygositydirectlyobservedinperipheralblood. Moderngenomicindelnormalization/liftovertoGRCh38notindependentlyverified.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1case399;TRIM28mutationsresults"
+              },
+              {
+                "source_id": "table",
+                "locator": "case399row"
+              },
+              {
+                "source_id": "clinicalimage",
+                "locator": "399clinicalparagraph"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "B"
+              },
+              {
+                "source_id": "Sfig1png",
+                "locator": "Familypedigree/allelecartoon"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002667",
+              "label": "Nephroblastoma"
+            }
+          },
+          "snapshot_sha256": "365e9adca0fedd79f0e75c27fbccfe19460bb200f70829c5ed06e63fbfe3b9dd",
+          "assessment": {
+            "status": "supported",
+            "statement": "HistologicallydiagnosedWilms/nephroblastomaexplicitforcase399;monomorphicepithelialhistology. female5months,stage1,alivewithoutrecurrence29years.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1case399;TRIM28mutationsresults"
+              },
+              {
+                "source_id": "table",
+                "locator": "case399row"
+              },
+              {
+                "source_id": "clinicalimage",
+                "locator": "399clinicalparagraph"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "B"
+              },
+              {
+                "source_id": "Sfig1png",
+                "locator": "Familypedigree/allelecartoon"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/TRIM28/PMID_29912901_cases_249.json",
+      "packet_sha256": "3d7774a2d9ca43295eba56e6025eafeeb1e8f56d78e5854ca89a8e9317b85d04",
+      "case_id": "TC_a64dc14669f70c46",
+      "role": "alternate",
+      "packet_subject_id": "cases 249",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Case249constitutionalgermlinestatusnotdirectlymeasured;family2pedigreesexsymbolsconflictwithclinicaltext."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Case249: male8months,stage1,alivewithoutrecurrence30years. S1Figuresexsymbolsreverse249/399relativetoTable1andclinicalS1Text; numericalpatientidentifierandclinicaltextretained.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case249;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case249row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "249clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "B"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "genotype": {
+        "status": "unresolved",
+        "statement": "SourceNM_005762.2:c.1746_1747delinsC p.(Glu583Argfs*93), packetNM_005762.3samecoding/proteindescriptor. Variantonlydemonstratedin249tumour; constitutionalheterozygosityassumed(bracketsS1Fig), notmeasured inblood/kidney. Moderngenomicindelnormalization/liftovertoGRCh38notindependentlyverified.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case249;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case249row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "249clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "B"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Bothsiblings249/399tumourshavesamevariant,399bloodheterozygous. MotherhadWilmsbutDNAunavailable; maternaltransmissionprobablefamilialinference, notconfirmedgenotype.249constitutionalstatusassumed.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case249;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case249row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "249clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "B"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Constitutionalsingleheterozygouspredispositionallele distinctfromtumourLOH. 249T/399Tlossreferenceallele;copy-neutralversuscopy-lossnotresolvedand249normalDNAunavailable. No recessivecompoundheterozygousphaseclaim.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case249;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case249row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "249clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "B"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "FamilialtruncatingvariantswithtumourlossofWTalleleandmonomorphicepithelialhistologystronglysupportTRIM28predisposition/two-hitmodel; proteinlossdemonstratedfor37/39/W117, notIHCdirectlyshownfor249/399. Nonpenetrantmotherandmissingfamily2constitutional/parentalsampleslimitindividualcausalcertainty. Sole-driverandgoodprognosisclaimremainhypothesesfromsmallselectedseries.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case249;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case249row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "249clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "B"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          },
+          {
+            "source_id": "fig2",
+            "locator": "37T/39T/W117IHC"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Onlynephroblastomaencodedanddirectlyconfirmed; packetomitslaterality,age,stage,histology,therapyandfollow-up. Noextraabsencesinferred. S1Textexplicitlystatesnosyndromicfeatures.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1case249;TRIM28mutationsresults"
+          },
+          {
+            "source_id": "table",
+            "locator": "case249row"
+          },
+          {
+            "source_id": "clinicalimage",
+            "locator": "249clinicalparagraph"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "B"
+          },
+          {
+            "source_id": "Sfig1png",
+            "locator": "Familypedigree/allelecartoon"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1746_1747delinsC_TRIM28_NM_005762v3",
+            "geneContext": {
+              "valueId": "HGNC:16384",
+              "symbol": "TRIM28"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005762.3:c.1746_1747delinsC"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000019.10:g.58549414_58549415delinsC"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005753.1:p.(Glu583ArgfsTer93)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr19",
+              "pos": 58549414,
+              "ref": "GG",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "612dcd4b0fc2868ed17c503c9759e4f032144c882d12d795a53493c4221c179e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "SourceNM_005762.2:c.1746_1747delinsC p.(Glu583Argfs*93), packetNM_005762.3samecoding/proteindescriptor. Variantonlydemonstratedin249tumour; constitutionalheterozygosityassumed(bracketsS1Fig), notmeasured inblood/kidney. Moderngenomicindelnormalization/liftovertoGRCh38notindependentlyverified.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1case249;TRIM28mutationsresults"
+              },
+              {
+                "source_id": "table",
+                "locator": "case249row"
+              },
+              {
+                "source_id": "clinicalimage",
+                "locator": "249clinicalparagraph"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "B"
+              },
+              {
+                "source_id": "Sfig1png",
+                "locator": "Familypedigree/allelecartoon"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002667",
+              "label": "Nephroblastoma"
+            }
+          },
+          "snapshot_sha256": "365e9adca0fedd79f0e75c27fbccfe19460bb200f70829c5ed06e63fbfe3b9dd",
+          "assessment": {
+            "status": "supported",
+            "statement": "HistologicallydiagnosedWilms/nephroblastomaexplicitforcase249;monomorphicepithelialhistology. male8months,stage1,alivewithoutrecurrence30years.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1case249;TRIM28mutationsresults"
+              },
+              {
+                "source_id": "table",
+                "locator": "case249row"
+              },
+              {
+                "source_id": "clinicalimage",
+                "locator": "249clinicalparagraph"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "B"
+              },
+              {
+                "source_id": "Sfig1png",
+                "locator": "Familypedigree/allelecartoon"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Wholemain,allmainfigures/Table1,clinicalDOCXandrender,allthreeworkbooksandS1-S6figuresconsumed. S7onlypage1read; pages2-33remainunread evenifrendered. NorawWES/methylationreadorGEOreanalysis; priorclinical/familyreferencesnotindependentlyreadhere.",
+    "249constitutionalsampleabsent, germlineheterozygosityandLOHassumedinTable1/S1figure;399blooddirect. Family2affectedmotherDNAunavailable, maternalsegregationunproved. S1figure249circle/399squarecontradictsTable1+S1Text249male/399female; retainexplicitinternalconflict.",
+    "Family137/39maternalvariantconfirmedwithunaffectedmother; thusincompletepenetrance, notdeterministictumourrisk. Twofamiliescannotestimatepenetrance, sexeffectormaternal-specificinheritance. Pathogenicpredispositionnotcauseofeveryfeature.",
+    "37copy-neutralLOHchr19hg1959023166-qterincludesSLC27A5/ZBTB45/TRIM28/MIR6807/CHMP2A/UBE2M/MZF1/MZF1-AS1, notTRIM28isolatedevent. 39/249/399LOHcopy-neutralvscopy-lossunknown. ModernpacketNM.3vsprimaryNM.2andGRCh37to38coordinateequivalenceunverified.",
+    "W117somaticframeshiftplus39.5%exon1methylation; mutationandmethylationonoppositeallelesnotphased, sameallelecannotbeexcluded. IHCabsencecompatiblewithfunctionallossbutnotdirectphaseproof. Adjacentkidney1.2-1.4%methylationandmutation0/1212or2/1077suggestmosaicfirstevent; twoadjacentsamplesandhistologylimitcontaminationhypothesisbutdonotproveallele-specificcellularmechanism. 2.4%cellsderivedassumesoneallelepercell.",
+    "S1FigandmainclaimW117KmutationnotdetectedisqualifiedbyS4firstsample2/1077(0.19%),independentrepl0/1212. Bulkreadfractionsarenotdirectcellcounts. S2Sangerlackmethylationdoesnotcontradictdeepersequencinglow-levelmosaicism.",
+    "Exome18pairsandcandidate-genefilter; twoTRIM28tumoursexomicallyquietandfewCNVscannotproveTRIM28sole-driver: noncoding/regulatory/SV/epigeneticandlow-levelalterationsremain. Exon1uncapturedandPCRrefractoryillustratesblindspot; bisulfitemethodresolvedsequence/methylationtherelocusonly. Filteringthresholds/capture/noisemustboundnegativeclaims.",
+    "Geneexpression17tumourswithonly2TRIM28mutants; selectedvariableprobesandcomparisonswithpreviousS1cohortshowcorrelation, notmechanisticprooforindependentclassificationaccuracy. Cellcomposition/differentiationcanexplainclustering. AMER1nonclusteringdoesnotexcludeanysharedpathway. NoformaltraineddiagnosticvalidationorIHCsensitivity/specificityestimated.",
+    "FiguresandTable1showsSCTBN88monomorphicepithelialwithTRIM28positive/noidentifiedmutation; histologyisnotuniquesurrogate. Familial/histology-drivenascertainmentcreatesselectionbias. Fivepatientswithlongsurvivalafteractualtherapydonotestablishsafede-escalation; excellentprognosismarkerrequiresprospectivevalidation.39receiveddoxorubicinplusbilateralnephronsparingoperations, so cannotinferuntreatedbenigncourse.",
+    "IGF2monoallelicboth37/W117andH19monoallelic37onlyaddressspecificloci; no globalimprintingnormalityproved. Nephrogenesismetagenesfrommousemarkers/humanarrays,noaliasmatchinginitially; overlapLHX1/CDH4/BMP2/POU3F3/CCND1/JAG1canrepeatassociationacrossstages. S7pvaluesexplicitlyuncorrectedformultiplecomparisons.",
+    "No therapeuticrescueorN1002KBubR1measurement. CandidateTRIM28mechanismnotdirectlytransferabletodifferentMVAgenotype."
+  ]
+}

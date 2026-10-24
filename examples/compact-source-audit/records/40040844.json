@@ -1,0 +1,4680 @@
+{
+  "schema_version": 1,
+  "pmid": "40040844",
+  "title": "Biallelic variants in GTF3C3 encoding a subunit of the TFIIIC2 complex are associated with neurodevelopmental phenotypes in humans and zebrafish.",
+  "reviewer": {
+    "id": "reader-3",
+    "reviewed_at_utc": "2026-10-24T17:07:11.332522+00:00",
+    "method": "Entire primary main text consumed in two untruncated contiguous chunks; all four main figures, graphical abstract, all eight Table1 patient columns, and all nine supplementary PDF pages inspected in pixels. Complete supplement text, five tables and three figure plates read. Every mapped positive and negative assertion checked against individual columns; no outcomes consulted."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Required HANDOFF contains aggregate compact-cohort metrics. No per-case inference ranks, scores or outcomes opened or used. Post-inference source audit, not blinded validation."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "ca35a06d9162eb90d9a8322b5c49b9b2a50dd39192ff108737fea8f1a27a245c",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main",
+      "pmid": "40040844",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40040844/main.complete.txt",
+      "sha256": "b7c35719adf3918fcaba9b92b301e6e5c802e182808bbb708ed241ec37322d62",
+      "kind": "text",
+      "description": "Entire primary main text read"
+    },
+    {
+      "id": "xml",
+      "pmid": "40040844",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40040844/main.xml",
+      "sha256": "6e1d914481d68e6e5333874f54f1db85d00fd025395972a3d8ea85c384ec909f",
+      "kind": "xml",
+      "description": "Primary publication identity/component inventory"
+    },
+    {
+      "id": "pdf",
+      "pmid": "40040844",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40040844/cloud/PMC11878552.1/PMC11878552.1.pdf",
+      "sha256": "d9b5140d172fb00302ff89922b7038e610c7f179f798e1144b81a1f3b164fc63",
+      "kind": "pdf",
+      "description": "13-page published article"
+    },
+    {
+      "id": "layout",
+      "pmid": "40040844",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/40040844/main-layout.txt",
+      "sha256": "932ac13073e834ea2bfac6f7c9b09597b6b52a2a33a3ea3491127997204da536",
+      "kind": "text",
+      "description": "Layout extraction for table correspondence"
+    },
+    {
+      "id": "tableimage",
+      "pmid": "40040844",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/40040844/table1.png",
+      "sha256": "115911c4534a1d7199aecf043d34963bb154dccf1505a6ea6b70d884480d88b5",
+      "kind": "image",
+      "description": "MainTable1, all eight columns inspected"
+    },
+    {
+      "id": "supp",
+      "pmid": "40040844",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40040844/cloud/PMC11878552.1/fcaf055_supplementary_data.pdf",
+      "sha256": "5ac65cc677a2b64649d8a0270da91c71cc390b7ad3a56521816ca0004c1ab2f2",
+      "kind": "pdf",
+      "description": "Entire nine-page supplement"
+    },
+    {
+      "id": "supptext",
+      "pmid": "40040844",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/40040844/supp.txt",
+      "sha256": "8c050e1e0471672a4f219ecb9ae4951220357353d444ec5fe0ea297e9b7f7a10",
+      "kind": "text",
+      "description": "All supplemental text read"
+    },
+    {
+      "id": "fig1",
+      "pmid": "40040844",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40040844/cloud/PMC11878552.1/fcaf055f1.jpg",
+      "sha256": "46ddd95a3b7ea9d8eec3f6bfbbb7655147efb1b03ca1c43a442ef1915d09e188",
+      "kind": "image",
+      "description": "All figure panels inspected"
+    },
+    {
+      "id": "fig2",
+      "pmid": "40040844",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40040844/cloud/PMC11878552.1/fcaf055f2.jpg",
+      "sha256": "e9aa32b3c1624794588bb85dca1dcd631546c68a212a188c5ce86705bb1540e4",
+      "kind": "image",
+      "description": "All figure panels inspected"
+    },
+    {
+      "id": "fig3",
+      "pmid": "40040844",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40040844/cloud/PMC11878552.1/fcaf055f3.jpg",
+      "sha256": "5f492de9957d2373730548c021aaf092147cea30ef7e3aee575f9a4114b2bb5a",
+      "kind": "image",
+      "description": "All figure panels inspected"
+    },
+    {
+      "id": "fig4",
+      "pmid": "40040844",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40040844/cloud/PMC11878552.1/fcaf055f4.jpg",
+      "sha256": "ed56270723fbdf468561560080d2d5c635c58c1d7a5e8e9c5e7539d3d33a4e4d",
+      "kind": "image",
+      "description": "All figure panels inspected"
+    },
+    {
+      "id": "figga",
+      "pmid": "40040844",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40040844/cloud/PMC11878552.1/fcaf055_ga.jpg",
+      "sha256": "831ba88e7fdef2bbdc51396008cd11f13dcfaefd3eebc6fbab996d99f92ae5af",
+      "kind": "image",
+      "description": "All figure panels inspected"
+    },
+    {
+      "id": "supp1",
+      "pmid": "40040844",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/40040844/supp-1.png",
+      "sha256": "2897b62c781911e9f01387adf47d8036ef89fa845e8867a81a5fdff686a6d7c6",
+      "kind": "image",
+      "description": "Supplementpage1 all content inspected"
+    },
+    {
+      "id": "supp2",
+      "pmid": "40040844",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/40040844/supp-2.png",
+      "sha256": "5f5bcee2547d975b4468e84f5867bdec388e3493fe4e1ea5d9e3b94fbcd8cc10",
+      "kind": "image",
+      "description": "Supplementpage2 all content inspected"
+    },
+    {
+      "id": "supp3",
+      "pmid": "40040844",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/40040844/supp-3.png",
+      "sha256": "0e1d83db8142d31d2c6d50d333c89d01b02a528933d1775842b6097a07324606",
+      "kind": "image",
+      "description": "Supplementpage3 all content inspected"
+    },
+    {
+      "id": "supp4",
+      "pmid": "40040844",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/40040844/supp-4.png",
+      "sha256": "17c8c00424ea8c005001b67685e1d7efb5eab08688a2482d8f5876936ad2c63e",
+      "kind": "image",
+      "description": "Supplementpage4 all content inspected"
+    },
+    {
+      "id": "supp5",
+      "pmid": "40040844",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/40040844/supp-5.png",
+      "sha256": "ac233b0fac31df01eaceb2f233229942d1c4b207b782c68843328b8a9ec5fe7e",
+      "kind": "image",
+      "description": "Supplementpage5 all content inspected"
+    },
+    {
+      "id": "supp6",
+      "pmid": "40040844",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/40040844/supp-6.png",
+      "sha256": "fbfe0a97203ac175e9d3d71b7998d37d3f4a201b9343e2ac760dd6ff49610b05",
+      "kind": "image",
+      "description": "Supplementpage6 all content inspected"
+    },
+    {
+      "id": "supp7",
+      "pmid": "40040844",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/40040844/supp-7.png",
+      "sha256": "c81f7e67eec4d171f5512b1193c6d69fa3b5d38fee3abecbc04999db63fe1074",
+      "kind": "image",
+      "description": "Supplementpage7 all content inspected"
+    },
+    {
+      "id": "supp8",
+      "pmid": "40040844",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/40040844/supp-8.png",
+      "sha256": "8619fa0f7c24ea4743e3cdffec0021cd65f66b88d311977602e2557f0a20fa84",
+      "kind": "image",
+      "description": "Supplementpage8 all content inspected"
+    },
+    {
+      "id": "supp9",
+      "pmid": "40040844",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/40040844/supp-9.png",
+      "sha256": "33587094a3c88918555f7d50fa605d71bc845f0ae2d7d310c1f7190441be2b96",
+      "kind": "image",
+      "description": "Supplementpage9 all content inspected"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Biallelic variants in GTF3C3 encoding a subunit of the TFIIIC2 complex are associated with neurodevelopmental phenotypes in humans and zebrafish.",
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "PMID40040844 DOI10.1093/braincomms/fcaf055 and article title"
+      },
+      {
+        "source_id": "main",
+        "locator": "Title/front matter"
+      }
+    ],
+    "note": "Published Brain Communications primary article; identity matches primary XML and PDF."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 5,
+      "table": 1,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "Four numbered main figures, graphical abstract, Table1, one supplementary PDF; repeated links deduplicated"
+      }
+    ],
+    "note": "Graphical abstract counted as fifth figure; nine-page PDF includes five tables and three figures. Supporting raw data available on request, not supplied or accessed."
+  },
+  "components": [
+    {
+      "id": "main",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 386,
+      "extent_source_id": "main",
+      "extent_evidence": [
+        {
+          "source_id": "main",
+          "locator": "Entire extraction"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 386,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "All text and references"
+        }
+      ],
+      "note": "Entire text consumed."
+    },
+    {
+      "id": "fig1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig1",
+      "extent_evidence": [
+        {
+          "source_id": "fig1",
+          "locator": "Entire image"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig1",
+          "locator": "All panels"
+        }
+      ],
+      "note": "All panels read; caption errors recorded separately."
+    },
+    {
+      "id": "fig2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig2",
+      "extent_evidence": [
+        {
+          "source_id": "fig2",
+          "locator": "Entire image"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig2",
+          "locator": "All panels"
+        }
+      ],
+      "note": "All panels read; caption errors recorded separately."
+    },
+    {
+      "id": "fig3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig3",
+      "extent_evidence": [
+        {
+          "source_id": "fig3",
+          "locator": "Entire image"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig3",
+          "locator": "All panels"
+        }
+      ],
+      "note": "All panels read; caption errors recorded separately."
+    },
+    {
+      "id": "fig4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig4",
+      "extent_evidence": [
+        {
+          "source_id": "fig4",
+          "locator": "Entire image"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig4",
+          "locator": "All panels"
+        }
+      ],
+      "note": "All panels read; caption errors recorded separately."
+    },
+    {
+      "id": "figga",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figga",
+      "extent_evidence": [
+        {
+          "source_id": "figga",
+          "locator": "Entire image"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figga",
+          "locator": "All panels"
+        }
+      ],
+      "note": "All panels read; caption errors recorded separately."
+    },
+    {
+      "id": "T1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "MainPDFp5"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Table1 all eight individual columns"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "tableimage",
+          "locator": "All cells and footnote"
+        }
+      ],
+      "note": "All four new cases plus four historical columns read."
+    },
+    {
+      "id": "SD1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 9,
+      "extent_source_id": "supp",
+      "extent_evidence": [
+        {
+          "source_id": "supp",
+          "locator": "Nine-pagePDF"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 9,
+          "mode": "text",
+          "source_id": "supptext",
+          "locator": "Complete nine-page text"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp1",
+          "locator": "Entire page"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "supp2",
+          "locator": "Entire page"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "supp3",
+          "locator": "Entire page"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "supp4",
+          "locator": "Entire page"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "supp5",
+          "locator": "Entire page"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "supp6",
+          "locator": "Entire page"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "supp7",
+          "locator": "Entire page"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "supp8",
+          "locator": "Entire page"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "supp9",
+          "locator": "Entire page"
+        }
+      ],
+      "note": "All five tables, three figures, legends and primer sequences consumed. No additional distributed supplement identified."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/GTF3C3/PMID_40040844_F3_P4.json",
+      "packet_sha256": "bc31d0c9526e6463a306e11d4cb2cacc387ebc77be33bb5f3c34696b666e451a",
+      "case_id": "TC_1c438581a47c604c",
+      "role": "selected",
+      "packet_subject_id": "F3-P4",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source classification is VUS for missense allele, not independently proven clinical diagnosis; exact genomic coordinates not independently verified."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "F3-P4, male2years; died2years4months; one of four new subjects, not historical comparison patients.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F3-P4 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F3-P4 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient4 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "compound heterozygous NM_012086.5:c.2149C>T p.Arg717Ter and c.1525G>A p.Ala509Thr matches packet coding/protein descriptors. Source reports transcript but not explicit GRCh38 genomic positions; exact genomic mapping in packet not independently sequence-validated.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F3-P4 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F3-P4 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient4 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": [
+          "Coding/protein identity and zygosity supported; genomic coordinates lack direct source verification."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Results and Fig1D assign Arg717Ter to father and Ala509Thr to mother. Fig1A pedigree labels instead put C/T under mother and G/A under father, an internal parent-label conflict. Both presentations support one allele from each parent.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F3-P4 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F3-P4 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient4 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Parental segregation supports two heterozygous alleles in trans; the inconsistent mother/father labels do not change trans assignment.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F3-P4 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F3-P4 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient4 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "SupplementTable4 explicitly classifies all three missense alleles VUS (C172G PM2/PP3; V427F PP1/PM2/PP3; A509T PM2/PP3), despite stronger association language and packet causal labels. Four new cases/three families and zebrafish F0 loss-of-function support gene association. A509T and R717Ter were not tested in the mRNA rescue experiments; R717Ter is present in64heterozygotes in source gnomADv4 report.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F3-P4 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F3-P4 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient4 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          },
+          {
+            "source_id": "supp2",
+            "locator": "TableS4 classifications and discordant predictions"
+          },
+          {
+            "source_id": "fig4",
+            "locator": "A-F exact tested variants"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All individual positive and negative packet assertions checked against mainTable1 and TableS3, not cohort prevalence. Missing observations kept unresolved, short versus thin CC distinguished; no frozen packet edits.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F3-P4 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F3-P4 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient4 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c2149CtoT_GTF3C3_NM_012086v5",
+            "geneContext": {
+              "valueId": "HGNC:4666",
+              "symbol": "GTF3C3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_012086.5:c.2149C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.196771859G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_036218.1:p.(Arg717Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 196771859,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "515da6a74e4c788af28667cd72b62cdfbf129cf586e57860b60435753bf6c7bb",
+          "assessment": {
+            "status": "qualified",
+            "statement": "compound heterozygous NM_012086.5:c.2149C>T p.Arg717Ter and c.1525G>A p.Ala509Thr matches packet coding/protein descriptors. Source reports transcript but not explicit GRCh38 genomic positions; exact genomic mapping in packet not independently sequence-validated.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Coding/protein identity and zygosity supported; genomic coordinates lack direct source verification."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1525GtoA_GTF3C3_NM_012086v5",
+            "geneContext": {
+              "valueId": "HGNC:4666",
+              "symbol": "GTF3C3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_012086.5:c.1525G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.196776495C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_036218.1:p.(Ala509Thr)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 196776495,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "8c5a5a50e8991bed7801c90f3a7b9b88e23f81fa0b165da8087669c208511104",
+          "assessment": {
+            "status": "qualified",
+            "statement": "compound heterozygous NM_012086.5:c.2149C>T p.Arg717Ter and c.1525G>A p.Ala509Thr matches packet coding/protein descriptors. Source reports transcript but not explicit GRCh38 genomic positions; exact genomic mapping in packet not independently sequence-validated.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Coding/protein identity and zygosity supported; genomic coordinates lack direct source verification."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002307",
+              "label": "Drooling"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9d7d8146bb9036fda18340d02f69948511335f929848e8afff5948ff0ccf366c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Drooling is not reported for this patient; only patient2 has an explicit positive. Omission does not establish absence.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010804",
+              "label": "Tented upper lip vermilion"
+            }
+          },
+          "snapshot_sha256": "fd368514566c5e8607082fd9609c4fad4d526ee3f3c0144729eace728586761c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Tented upper lip vermilion corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000179",
+              "label": "Thick lower lip vermilion"
+            }
+          },
+          "snapshot_sha256": "90687293e9e74d680e38518445d564956fd2d785c8d4acfa291d509c94d8b162",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thick lower lip vermilion corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000341",
+              "label": "Narrow forehead"
+            }
+          },
+          "snapshot_sha256": "8a5534f583fe6a6bb7e10a47f45953cb741913449f2d193d9e2d723c21b85866",
+          "assessment": {
+            "status": "supported",
+            "statement": "Narrow forehead corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000294",
+              "label": "Low anterior hairline"
+            }
+          },
+          "snapshot_sha256": "6e556f2e83d0db8dc47d73a5bfe09a873e319d1287fd60c665e326328dcadeed",
+          "assessment": {
+            "status": "supported",
+            "statement": "Low anterior hairline corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000293",
+              "label": "Full cheeks"
+            }
+          },
+          "snapshot_sha256": "942429126b6ec61a723642c2a98a718736f4f16f9b025604eabaa0f1f77adbfc",
+          "assessment": {
+            "status": "supported",
+            "statement": "Full cheeks corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000286",
+              "label": "Epicanthus"
+            }
+          },
+          "snapshot_sha256": "fa35492c67bd8ba3f8e32394909fc187ef3a6a091e19b289420ad8ddab6e1acb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Epicanthus corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000582",
+              "label": "Upslanted palpebral fissure"
+            }
+          },
+          "snapshot_sha256": "e17fd85a8b46ea879c14173d9086e90f3167854411ecb0b35109ffe4909a1275",
+          "assessment": {
+            "status": "supported",
+            "statement": "Upslanted palpebral fissure corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000527",
+              "label": "Long eyelashes"
+            }
+          },
+          "snapshot_sha256": "bf13ab09053d8df3852d49064cafa56c5f358416850a7c5d77a93bc5b0bb28ff",
+          "assessment": {
+            "status": "supported",
+            "statement": "Long eyelashes corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000664",
+              "label": "Synophrys"
+            }
+          },
+          "snapshot_sha256": "70013c53d6885e8062be9362e97b9479ebd41fd0424ad161ef1621b013f52330",
+          "assessment": {
+            "status": "supported",
+            "statement": "Synophrys corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003196",
+              "label": "Short nose"
+            }
+          },
+          "snapshot_sha256": "240850229a4b1f7fc9c72faf7473f4726984423e88b5e2844530e5eaa24049e3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Short nose corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011451",
+              "label": "Primary microcephaly"
+            }
+          },
+          "snapshot_sha256": "97a944b4509a0fcda5eb4e46f05a33936ed80dffd5fdb1bc599385079333f44b",
+          "assessment": {
+            "status": "supported",
+            "statement": "BirthOFC29cm -3SD; currentOFC34cm -10.3SD. Microcephaly already measured at birth supports primary microcephaly.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4a1bfc1bd5599f694602bb5a9c71ff1934f02d19f1529197116397e70f25b7f7",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Hypertonia reported; absence of hypotonia at all ages/body regions not established.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001276",
+              "label": "Hypertonia"
+            }
+          },
+          "snapshot_sha256": "407962068b0666bf714d0fbe84ee071a2a99568330207feaf3fbd1dea87a69f3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypertonia explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypertelorism corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000639",
+              "label": "Nystagmus"
+            }
+          },
+          "snapshot_sha256": "80a6461efe4404a5e6141af2c9147c90e357c02039cef90f5688674f862741fd",
+          "assessment": {
+            "status": "supported",
+            "statement": "Nystagmus explicitly in patient4 Other findings row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000365",
+              "label": "Hearing impairment"
+            }
+          },
+          "snapshot_sha256": "7248fb908c047107c7f6b1c50b9a8a0492c240dc112218c422777274565d2289",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hearing impairment explicitly in patient4 Other findings row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Developmental delay plus intellectual disability reported; specific multidomain milestone detail is not supplied.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            }
+          },
+          "snapshot_sha256": "c444dd47b030fe9f7b2523d299496431fe54f2ce557f990c454810b00764e589",
+          "assessment": {
+            "status": "supported",
+            "statement": "Individual Table1 explicitly reports ID without grade.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002317",
+              "label": "Unsteady gait"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d00d81ce3cc518e16e19a92c9b0ebc8c2638cb68d6046c40706297297d3ebd49",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicit individual assessment of gait stability; excluded unsteadiness is not demonstrated.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002353",
+              "label": "EEG abnormality"
+            }
+          },
+          "snapshot_sha256": "1988384bc5a9ffae67a3bb781fb6ea1350991113125ae5de18037c0ad0606e07",
+          "assessment": {
+            "status": "supported",
+            "statement": "Disorganized electrical activity explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032792",
+              "label": "Tonic seizure"
+            }
+          },
+          "snapshot_sha256": "50c7fc3d092d53fc1564da761de18b86d7ff2f48f16c68e591972e08b047b73d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Tonic seizures onset12months; narrative says controlled with antiepileptic medication.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001272",
+              "label": "Cerebellar atrophy"
+            }
+          },
+          "snapshot_sha256": "321fdd7d1ac78300f13f98fdb048dec89e802f4a5947ba678fd9980310da496c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Cerebellar atrophy explicitly reported in individual MRI row; cross-sectional scan alone does not independently establish progression.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033725",
+              "label": "Thin corpus callosum"
+            }
+          },
+          "snapshot_sha256": "46e89517a2809531e4acbda0a00736d04c295a09bcc1007bfc99860ddefc0cb2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Source says slightly short corpus callosum, not thin; these descriptors are not interchangeable.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033454",
+              "label": "Tube feeding"
+            }
+          },
+          "snapshot_sha256": "2e60ef62ab77209897ba4dacc58a2d927d3ab3f15261da1587984a82699cbf97",
+          "assessment": {
+            "status": "supported",
+            "statement": "Nasoenteral tube feeding explicitly reported for patient4.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001903",
+              "label": "Anemia"
+            }
+          },
+          "snapshot_sha256": "abde46fc81336b652b8919df231c7f3f919ba9ae32e889f067e1ce7edc3631e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Anemia explicitly in patient4 Other findings row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001873",
+              "label": "Thrombocytopenia"
+            }
+          },
+          "snapshot_sha256": "d901b0eeedefd54428cb6ad29a1218857c7f60fd8eaed8fd4e1952b67d37697f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thrombocytopenia explicitly in patient4 Other findings row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F3-P4 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F3-P4 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient4 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/GTF3C3/PMID_40040844_F1_P1.json",
+      "packet_sha256": "f96836fe3c9f8342d925dd6073491b2da562f6f5085a1224eed1f15edbb348cc",
+      "case_id": "TC_7a7f304ba52c85d3",
+      "role": "selected",
+      "packet_subject_id": "F1-P1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source classification is VUS for missense allele, not independently proven clinical diagnosis; exact genomic coordinates not independently verified."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "F1-P1, female2years8months; one of four new subjects, not historical comparison patients.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F1-P1 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F1-P1 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient1 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "homozygous NM_012086.5:c.1279G>T p.Val427Phe matches packet coding/protein descriptors. Source reports transcript but not explicit GRCh38 genomic positions; exact genomic mapping in packet not independently sequence-validated.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F1-P1 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F1-P1 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient1 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": [
+          "Coding/protein identity and zygosity supported; genomic coordinates lack direct source verification."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Fig1A/D show homozygous affected child and both parents heterozygous; both affected sisters share the allele in family1. Family2 unaffected genotyped brother is heterozygous.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F1-P1 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F1-P1 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient1 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Homozygous recessive variant supported with both parents heterozygous; no compound-heterozygous cis/trans claim.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F1-P1 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F1-P1 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient1 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "SupplementTable4 explicitly classifies all three missense alleles VUS (C172G PM2/PP3; V427F PP1/PM2/PP3; A509T PM2/PP3), despite stronger association language and packet causal labels. Four new cases/three families and zebrafish F0 loss-of-function support gene association. C172G/V427F mRNA fails to rescue several morphology measures as efficiently as WT, supporting function but not a clinical pathogenic reclassification.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F1-P1 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F1-P1 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient1 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          },
+          {
+            "source_id": "supp2",
+            "locator": "TableS4 classifications and discordant predictions"
+          },
+          {
+            "source_id": "fig4",
+            "locator": "A-F exact tested variants"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All individual positive and negative packet assertions checked against mainTable1 and TableS3, not cohort prevalence. Missing observations kept unresolved, short versus thin CC distinguished; no frozen packet edits.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F1-P1 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F1-P1 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient1 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1279GtoT_GTF3C3_NM_012086v5",
+            "geneContext": {
+              "valueId": "HGNC:4666",
+              "symbol": "GTF3C3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_012086.5:c.1279G>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.196779007C>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_036218.1:p.(Val427Phe)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 196779007,
+              "ref": "C",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "45c8a0b0673f7e92bf873ced6301828774ba9f7ee5677d2b8e22e6fa6cf28dcd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "homozygous NM_012086.5:c.1279G>T p.Val427Phe matches packet coding/protein descriptors. Source reports transcript but not explicit GRCh38 genomic positions; exact genomic mapping in packet not independently sequence-validated.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Coding/protein identity and zygosity supported; genomic coordinates lack direct source verification."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002307",
+              "label": "Drooling"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9d7d8146bb9036fda18340d02f69948511335f929848e8afff5948ff0ccf366c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Drooling is not reported for this patient; only patient2 has an explicit positive. Omission does not establish absence.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010804",
+              "label": "Tented upper lip vermilion"
+            }
+          },
+          "snapshot_sha256": "fd368514566c5e8607082fd9609c4fad4d526ee3f3c0144729eace728586761c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Tented upper lip vermilion corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000179",
+              "label": "Thick lower lip vermilion"
+            }
+          },
+          "snapshot_sha256": "90687293e9e74d680e38518445d564956fd2d785c8d4acfa291d509c94d8b162",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thick lower lip vermilion corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000341",
+              "label": "Narrow forehead"
+            }
+          },
+          "snapshot_sha256": "8a5534f583fe6a6bb7e10a47f45953cb741913449f2d193d9e2d723c21b85866",
+          "assessment": {
+            "status": "supported",
+            "statement": "Narrow forehead corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000293",
+              "label": "Full cheeks"
+            }
+          },
+          "snapshot_sha256": "942429126b6ec61a723642c2a98a718736f4f16f9b025604eabaa0f1f77adbfc",
+          "assessment": {
+            "status": "supported",
+            "statement": "Full cheeks corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000582",
+              "label": "Upslanted palpebral fissure"
+            }
+          },
+          "snapshot_sha256": "e17fd85a8b46ea879c14173d9086e90f3167854411ecb0b35109ffe4909a1275",
+          "assessment": {
+            "status": "supported",
+            "statement": "Upslanted palpebral fissure corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000527",
+              "label": "Long eyelashes"
+            }
+          },
+          "snapshot_sha256": "bf13ab09053d8df3852d49064cafa56c5f358416850a7c5d77a93bc5b0bb28ff",
+          "assessment": {
+            "status": "supported",
+            "statement": "Long eyelashes corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005484",
+              "label": "Secondary microcephaly"
+            }
+          },
+          "snapshot_sha256": "15168d01a6e208ca6fc0886d01dab03e1c4026f9304396ee7b9c8abd6caeb246",
+          "assessment": {
+            "status": "supported",
+            "statement": "BirthOFC34cm -0.5SD; currentOFC44cm -2.8SD. Normal measured birth size followed by microcephaly supports secondary, not primary, microcephaly.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011451",
+              "label": "Primary microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b50f907dbbda956175db165f70b817f97c363cfca108b485a31dbcfe6d08c66",
+          "assessment": {
+            "status": "supported",
+            "statement": "BirthOFC34cm -0.5SD; currentOFC44cm -2.8SD. Normal measured birth size followed by microcephaly supports secondary, not primary, microcephaly.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            }
+          },
+          "snapshot_sha256": "dfed0eeba81852313a1b62b7fd1e2a33e9467ee7a6360518e53376370228edaa",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypotonia explicitly reported, mild for patient3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001276",
+              "label": "Hypertonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61f0395086850642bf55317cdac4bc303244121a9f06268143fea0e30331fcff",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Hypotonia reported (mild in patient3); absence of hypertonia at all ages/body regions not established.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypertelorism corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Global developmental delay explicitly listed.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010864",
+              "label": "Severe intellectual disability"
+            }
+          },
+          "snapshot_sha256": "14303bb6dff9d2476153d12bfbf8c1b1581f5902b16558e3abc784b07c0f984d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Individual Table1 explicitly reports severeID.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002317",
+              "label": "Unsteady gait"
+            }
+          },
+          "snapshot_sha256": "753bae04c8acb2cd14051f8bbdb5b3114cdd9575efde9f1278de2827a2e62f82",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Unsteadiness explicitly described; gait-specific interpretation is broader because walking milestones/examination are not detailed.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Autistic features reported; no standardized diagnostic assessment supplied.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002353",
+              "label": "EEG abnormality"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "016d271ab7c29a9d9043d1b661a6ae73fb5138a51921c3c13b1dae054cbe8ed5",
+          "assessment": {
+            "status": "supported",
+            "statement": "EEG explicitly normal at2years, despite seizures from1year; no lifetime normality inferred.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025190",
+              "label": "Bilateral tonic-clonic seizure with generalized onset"
+            }
+          },
+          "snapshot_sha256": "3888ca8516ee914442c59f19c168318c20d17196a58af4b2293d8d2617b88ee7",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Generalized tonic-clonic seizures at1year, associated with fever in narrative. Generalized-onset terminology is reported, without independent ictal EEG validation.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001272",
+              "label": "Cerebellar atrophy"
+            }
+          },
+          "snapshot_sha256": "321fdd7d1ac78300f13f98fdb048dec89e802f4a5947ba678fd9980310da496c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Cerebellar atrophy explicitly reported in individual MRI row; cross-sectional scan alone does not independently establish progression.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033725",
+              "label": "Thin corpus callosum"
+            }
+          },
+          "snapshot_sha256": "46e89517a2809531e4acbda0a00736d04c295a09bcc1007bfc99860ddefc0cb2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thin corpus callosum explicitly reported in individual MRI row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006956",
+              "label": "Lateral ventricle dilatation"
+            }
+          },
+          "snapshot_sha256": "cd961766ca2ef2f6037a2ea94881b6bac79a226df6093d6826f32082072f571a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dilated lateral ventricles explicitly reported; ex-vacuo and left-predominant for patient1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Height89cm -1.1SD supports no short stature at assessment.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P1 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P1 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient1 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/GTF3C3/PMID_40040844_F1_P2.json",
+      "packet_sha256": "bb59db4817526916e1e46f465830f1add44635d22a100f60f1bad6d67fa5e820",
+      "case_id": "TC_7a7f304ba52c85d3",
+      "role": "alternate",
+      "packet_subject_id": "F1-P2",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Source classification is VUS for missense allele, not independently proven clinical diagnosis; exact genomic coordinates not independently verified."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "F1-P2, female1year9months; one of four new subjects, not historical comparison patients.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F1-P2 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F1-P2 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient2 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "homozygous NM_012086.5:c.1279G>T p.Val427Phe matches packet coding/protein descriptors. Source reports transcript but not explicit GRCh38 genomic positions; exact genomic mapping in packet not independently sequence-validated.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F1-P2 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F1-P2 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient2 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": [
+          "Coding/protein identity and zygosity supported; genomic coordinates lack direct source verification."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Fig1A/D show homozygous affected child and both parents heterozygous; both affected sisters share the allele in family1. Family2 unaffected genotyped brother is heterozygous.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F1-P2 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F1-P2 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient2 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Homozygous recessive variant supported with both parents heterozygous; no compound-heterozygous cis/trans claim.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F1-P2 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F1-P2 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient2 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "SupplementTable4 explicitly classifies all three missense alleles VUS (C172G PM2/PP3; V427F PP1/PM2/PP3; A509T PM2/PP3), despite stronger association language and packet causal labels. Four new cases/three families and zebrafish F0 loss-of-function support gene association. C172G/V427F mRNA fails to rescue several morphology measures as efficiently as WT, supporting function but not a clinical pathogenic reclassification.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F1-P2 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F1-P2 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient2 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          },
+          {
+            "source_id": "supp2",
+            "locator": "TableS4 classifications and discordant predictions"
+          },
+          {
+            "source_id": "fig4",
+            "locator": "A-F exact tested variants"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All individual positive and negative packet assertions checked against mainTable1 and TableS3, not cohort prevalence. Missing observations kept unresolved, short versus thin CC distinguished; no frozen packet edits.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F1-P2 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F1-P2 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient2 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1279GtoT_GTF3C3_NM_012086v5",
+            "geneContext": {
+              "valueId": "HGNC:4666",
+              "symbol": "GTF3C3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_012086.5:c.1279G>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.196779007C>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_036218.1:p.(Val427Phe)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 196779007,
+              "ref": "C",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "45c8a0b0673f7e92bf873ced6301828774ba9f7ee5677d2b8e22e6fa6cf28dcd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "homozygous NM_012086.5:c.1279G>T p.Val427Phe matches packet coding/protein descriptors. Source reports transcript but not explicit GRCh38 genomic positions; exact genomic mapping in packet not independently sequence-validated.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Coding/protein identity and zygosity supported; genomic coordinates lack direct source verification."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002307",
+              "label": "Drooling"
+            }
+          },
+          "snapshot_sha256": "76653e9a575ed9845e864787526be6a2dd402484846782bbf2fe1f21a4b4fd6c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Drooling explicitly in patient2 neurological row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010804",
+              "label": "Tented upper lip vermilion"
+            }
+          },
+          "snapshot_sha256": "fd368514566c5e8607082fd9609c4fad4d526ee3f3c0144729eace728586761c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Tented upper lip vermilion corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000179",
+              "label": "Thick lower lip vermilion"
+            }
+          },
+          "snapshot_sha256": "90687293e9e74d680e38518445d564956fd2d785c8d4acfa291d509c94d8b162",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thick lower lip vermilion corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000341",
+              "label": "Narrow forehead"
+            }
+          },
+          "snapshot_sha256": "8a5534f583fe6a6bb7e10a47f45953cb741913449f2d193d9e2d723c21b85866",
+          "assessment": {
+            "status": "supported",
+            "statement": "Narrow forehead corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000293",
+              "label": "Full cheeks"
+            }
+          },
+          "snapshot_sha256": "942429126b6ec61a723642c2a98a718736f4f16f9b025604eabaa0f1f77adbfc",
+          "assessment": {
+            "status": "supported",
+            "statement": "Full cheeks corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000527",
+              "label": "Long eyelashes"
+            }
+          },
+          "snapshot_sha256": "bf13ab09053d8df3852d49064cafa56c5f358416850a7c5d77a93bc5b0bb28ff",
+          "assessment": {
+            "status": "supported",
+            "statement": "Long eyelashes corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000431",
+              "label": "Wide nasal bridge"
+            }
+          },
+          "snapshot_sha256": "7ebadada733e56c15dd83f041c8b3a2fdbbe0acb026ab7d2e8cdcbaa5d47f898",
+          "assessment": {
+            "status": "supported",
+            "statement": "Wide nasal bridge corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003196",
+              "label": "Short nose"
+            }
+          },
+          "snapshot_sha256": "240850229a4b1f7fc9c72faf7473f4726984423e88b5e2844530e5eaa24049e3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Short nose corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000311",
+              "label": "Round face"
+            }
+          },
+          "snapshot_sha256": "2fd7b483abdf82581119852df2bd7810ec0d6c84a60b1c04e1119ea1ab869888",
+          "assessment": {
+            "status": "supported",
+            "statement": "Round face corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005484",
+              "label": "Secondary microcephaly"
+            }
+          },
+          "snapshot_sha256": "15168d01a6e208ca6fc0886d01dab03e1c4026f9304396ee7b9c8abd6caeb246",
+          "assessment": {
+            "status": "supported",
+            "statement": "BirthOFC33.5cm -0.8SD; currentOFC41cm -4.3SD. Normal measured birth size followed by microcephaly supports secondary, not primary, microcephaly.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011451",
+              "label": "Primary microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b50f907dbbda956175db165f70b817f97c363cfca108b485a31dbcfe6d08c66",
+          "assessment": {
+            "status": "supported",
+            "statement": "BirthOFC33.5cm -0.8SD; currentOFC41cm -4.3SD. Normal measured birth size followed by microcephaly supports secondary, not primary, microcephaly.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            }
+          },
+          "snapshot_sha256": "dfed0eeba81852313a1b62b7fd1e2a33e9467ee7a6360518e53376370228edaa",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypotonia explicitly reported, mild for patient3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001276",
+              "label": "Hypertonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61f0395086850642bf55317cdac4bc303244121a9f06268143fea0e30331fcff",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Hypotonia reported (mild in patient3); absence of hypertonia at all ages/body regions not established.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypertelorism corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Global developmental delay explicitly listed.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010864",
+              "label": "Severe intellectual disability"
+            }
+          },
+          "snapshot_sha256": "14303bb6dff9d2476153d12bfbf8c1b1581f5902b16558e3abc784b07c0f984d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Individual Table1 explicitly reports severeID.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002317",
+              "label": "Unsteady gait"
+            }
+          },
+          "snapshot_sha256": "753bae04c8acb2cd14051f8bbdb5b3114cdd9575efde9f1278de2827a2e62f82",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Unsteadiness explicitly described; gait-specific interpretation is broader because walking milestones/examination are not detailed.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Autistic features reported; no standardized diagnostic assessment supplied.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002353",
+              "label": "EEG abnormality"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "016d271ab7c29a9d9043d1b661a6ae73fb5138a51921c3c13b1dae054cbe8ed5",
+          "assessment": {
+            "status": "supported",
+            "statement": "EEG explicitly normal at1year; no lifetime normality inferred.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Seizures explicitly absent in this individual Table1 column at assessment.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001272",
+              "label": "Cerebellar atrophy"
+            }
+          },
+          "snapshot_sha256": "321fdd7d1ac78300f13f98fdb048dec89e802f4a5947ba678fd9980310da496c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Cerebellar atrophy explicitly reported in individual MRI row; cross-sectional scan alone does not independently establish progression.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033725",
+              "label": "Thin corpus callosum"
+            }
+          },
+          "snapshot_sha256": "46e89517a2809531e4acbda0a00736d04c295a09bcc1007bfc99860ddefc0cb2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thin corpus callosum explicitly reported in individual MRI row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006956",
+              "label": "Lateral ventricle dilatation"
+            }
+          },
+          "snapshot_sha256": "cd961766ca2ef2f6037a2ea94881b6bac79a226df6093d6826f32082072f571a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dilated lateral ventricles explicitly reported; ex-vacuo and left-predominant for patient1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Height85cm +0.1SD supports no short stature at assessment.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F1-P2 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F1-P2 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient2 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/GTF3C3/PMID_40040844_F2_P3.json",
+      "packet_sha256": "e7ff40ac9c3a54c1ab417396dae6049a5fc7f9f50b8b3669307d466b7f09d3f1",
+      "case_id": "TC_8275fe1abc57c48d",
+      "role": "selected",
+      "packet_subject_id": "F2-P3",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source classification is VUS for missense allele, not independently proven clinical diagnosis; exact genomic coordinates not independently verified."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "F2-P3, male17years; one of four new subjects, not historical comparison patients.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F2-P3 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F2-P3 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient3 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "homozygous NM_012086.5:c.514T>G p.Cys172Gly matches packet coding/protein descriptors. Source reports transcript but not explicit GRCh38 genomic positions; exact genomic mapping in packet not independently sequence-validated.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F2-P3 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F2-P3 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient3 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": [
+          "Coding/protein identity and zygosity supported; genomic coordinates lack direct source verification."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Fig1A/D show homozygous affected child and both parents heterozygous; both affected sisters share the allele in family1. Family2 unaffected genotyped brother is heterozygous.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F2-P3 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F2-P3 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient3 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Homozygous recessive variant supported with both parents heterozygous; no compound-heterozygous cis/trans claim.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F2-P3 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F2-P3 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient3 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "SupplementTable4 explicitly classifies all three missense alleles VUS (C172G PM2/PP3; V427F PP1/PM2/PP3; A509T PM2/PP3), despite stronger association language and packet causal labels. Four new cases/three families and zebrafish F0 loss-of-function support gene association. C172G/V427F mRNA fails to rescue several morphology measures as efficiently as WT, supporting function but not a clinical pathogenic reclassification.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F2-P3 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F2-P3 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient3 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          },
+          {
+            "source_id": "supp2",
+            "locator": "TableS4 classifications and discordant predictions"
+          },
+          {
+            "source_id": "fig4",
+            "locator": "A-F exact tested variants"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All individual positive and negative packet assertions checked against mainTable1 and TableS3, not cohort prevalence. Missing observations kept unresolved, short versus thin CC distinguished; no frozen packet edits.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 F2-P3 column; clinical and genetics results"
+          },
+          {
+            "source_id": "tableimage",
+            "locator": "F2-P3 individual column"
+          },
+          {
+            "source_id": "supp1",
+            "locator": "TableS3 patient3 row"
+          },
+          {
+            "source_id": "fig1",
+            "locator": "A/D pedigree and Sanger traces"
+          }
+        ],
+        "limitations": [
+          "Source support is not independent clinical confirmation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c514TtoG_GTF3C3_NM_012086v5",
+            "geneContext": {
+              "valueId": "HGNC:4666",
+              "symbol": "GTF3C3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_012086.5:c.514T>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.196791358A>C"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_036218.1:p.(Cys172Gly)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 196791358,
+              "ref": "A",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "5000090d423d97008ec69d676883c5743f0f59bbbd8d3174fb0582b7ec9fb5a3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "homozygous NM_012086.5:c.514T>G p.Cys172Gly matches packet coding/protein descriptors. Source reports transcript but not explicit GRCh38 genomic positions; exact genomic mapping in packet not independently sequence-validated.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Coding/protein identity and zygosity supported; genomic coordinates lack direct source verification."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002307",
+              "label": "Drooling"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9d7d8146bb9036fda18340d02f69948511335f929848e8afff5948ff0ccf366c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Drooling is not reported for this patient; only patient2 has an explicit positive. Omission does not establish absence.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000319",
+              "label": "Smooth philtrum"
+            }
+          },
+          "snapshot_sha256": "dfd43d1141bc298d1a58233458e5791b60ffce6866cc34baf669fac66c7bee2c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Smooth philtrum corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000179",
+              "label": "Thick lower lip vermilion"
+            }
+          },
+          "snapshot_sha256": "90687293e9e74d680e38518445d564956fd2d785c8d4acfa291d509c94d8b162",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thick lower lip vermilion corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000341",
+              "label": "Narrow forehead"
+            }
+          },
+          "snapshot_sha256": "8a5534f583fe6a6bb7e10a47f45953cb741913449f2d193d9e2d723c21b85866",
+          "assessment": {
+            "status": "supported",
+            "statement": "Narrow forehead corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100876",
+              "label": "Infra-orbital crease"
+            }
+          },
+          "snapshot_sha256": "e8f11256dc820c7a495594c6dbabd70de9122d2e5ce42f2fb15e1e0a28653c78",
+          "assessment": {
+            "status": "supported",
+            "statement": "Infra-orbital crease corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000276",
+              "label": "Long face"
+            }
+          },
+          "snapshot_sha256": "3a0b9394f92d065f914def4df47d9a57b3c564b6db1e89a821a7dc40bd9e69c4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Long face corresponds to explicit individual facial description in TableS3 and Figure2A caption (e.g. bifrontal narrowing/narrow forehead, full lower lip/thick lower vermilion). Photographs inspected; no extra diagnosis inferred from appearance.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011451",
+              "label": "Primary microcephaly"
+            }
+          },
+          "snapshot_sha256": "97a944b4509a0fcda5eb4e46f05a33936ed80dffd5fdb1bc599385079333f44b",
+          "assessment": {
+            "status": "supported",
+            "statement": "BirthOFC33cm -2.2SD; currentOFC49.8cm -3.5SD. Microcephaly already measured at birth supports primary microcephaly.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005709",
+              "label": "2-3 toe cutaneous syndactyly"
+            }
+          },
+          "snapshot_sha256": "f76e0ce1b923974d74c6be64b68f3b6203d94f3c50501dafd511030a4044d34a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Bilateral syndactyly of toesII/III explicit, but source does not distinguish cutaneous from bony syndactyly.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            }
+          },
+          "snapshot_sha256": "dfed0eeba81852313a1b62b7fd1e2a33e9467ee7a6360518e53376370228edaa",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypotonia explicitly reported, mild for patient3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001276",
+              "label": "Hypertonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61f0395086850642bf55317cdac4bc303244121a9f06268143fea0e30331fcff",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Hypotonia reported (mild in patient3); absence of hypertonia at all ages/body regions not established.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000488",
+              "label": "Retinopathy"
+            }
+          },
+          "snapshot_sha256": "35640b538e605850600b09ffbf32bd783e6a5f5cc1bd6d4dc625fd9861c3cf0a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Retinopathy explicitly in patient3 Other findings or feeding/GI row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Developmental delay plus intellectual disability reported; specific multidomain milestone detail is not supplied.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002342",
+              "label": "Moderate intellectual disability"
+            }
+          },
+          "snapshot_sha256": "d6fd0472f648702c0d5a5b4fc88a5297653a81953fab5c3b4a2a5e251aa06aaf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Individual Table1 explicitly reports moderateID.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002317",
+              "label": "Unsteady gait"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d00d81ce3cc518e16e19a92c9b0ebc8c2638cb68d6046c40706297297d3ebd49",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicit individual assessment of gait stability; excluded unsteadiness is not demonstrated.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": [
+              "Source support is not independent clinical confirmation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Seizures explicitly absent in this individual Table1 column at assessment.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012110",
+              "label": "Hypoplasia of the pons"
+            }
+          },
+          "snapshot_sha256": "08bf199f0ad11f2662deb6d5518ddf7cb2c672f826e6210a40c3c4f8314696f6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Pontocerebellar hypoplasia explicitly in patient3 MRI row; pons and cerebellum are both named.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001321",
+              "label": "Cerebellar hypoplasia"
+            }
+          },
+          "snapshot_sha256": "6398b1ceccfc8a715026f7a996bef8553019840f6dcb9d529a8881c494260136",
+          "assessment": {
+            "status": "supported",
+            "statement": "Pontocerebellar hypoplasia explicitly in patient3 MRI row; pons and cerebellum are both named.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009879",
+              "label": "Simplified gyral pattern"
+            }
+          },
+          "snapshot_sha256": "082bbda9f55da0e51aad760b31749917a5df6ddde96b561851c7956901d34e01",
+          "assessment": {
+            "status": "supported",
+            "statement": "Diffuse simplified gyral pattern explicitly reported for patient3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012450",
+              "label": "Chronic constipation"
+            }
+          },
+          "snapshot_sha256": "b7f53fd54f140de8808bd8211ca451bd81cb461dd9466ef65f669b5cdc57161d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Chronic constipation explicitly in patient3 Other findings or feeding/GI row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008081",
+              "label": "Pes valgus"
+            }
+          },
+          "snapshot_sha256": "a3d0409985edea2193b82d053931ca9d1714d92a25c7d73de92fe5f264426d1a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Pes valgus explicitly in patient3 Other findings or feeding/GI row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            }
+          },
+          "snapshot_sha256": "1b50d63adae74dce026ec2e71a5ac3acb68f40de41c49c079a589c966bdfa5f6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Height158.7cm -3.2SD supports short stature.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 F2-P3 column; clinical and genetics results"
+              },
+              {
+                "source_id": "tableimage",
+                "locator": "F2-P3 individual column"
+              },
+              {
+                "source_id": "supp1",
+                "locator": "TableS3 patient3 row"
+              },
+              {
+                "source_id": "fig1",
+                "locator": "A/D pedigree and Sanger traces"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "All distributed main/supplement components consumed; raw supporting data available only on request were not obtained, no contact made. Full reading does not remove scientific uncertainty or reproduce the experiments.",
+    "TableS4 classifies all three missense variants VUS. REVEL0.558/0.370/0.262, MutPred uncertain V427F and benign-supporting A509T; M-CAP/PrimateAI tolerate V427F. Multiple correlated in-silico predictions and AlphaFold/PremPS modelling do not independently prove damaging structure or function.",
+    "Four new patients from three families, two siblings not independent. Four prior patients are comparison summaries, not newly phenotyped; original historical papers not read in this review. No burden/control association test or full alternative-candidate list supplied. Large ROH37.4/13Mb can contain other candidates; no exclusion of all multilocus explanations.",
+    "Internal consanguinity conflict: narrative says2/3families, Table1 and pedigrees explicitly show only family1 consanguineous; family2 has13MbROH but reported no consanguinity. ROH alone does not establish known pedigree relationship.",
+    "Family3 parent-label inconsistency: Fig1A motherC/T and fatherG/A versus Results and Fig1D fatherR717Ter/motherA509T. Trans inheritance remains supported but precise parent assignment is qualified. Table1P4 slightly short CC does not support packet thinCC. Negative drooling/unsteady-gait claims generally reflect unreported features.",
+    "F0 crispants are mosaic with representative ICE91%indels/KO84, per-fish KO scores around60-85%; this is not a stable exact-allele homozygous line or proof every cell is biallelic null. Topfive predicted off-target loci negative bySanger do not exclude all off-target/editing effects. Authors explicitly call forF1line. ReducedRNA suggests but does not directly demonstrate NMD.",
+    "Morphology and behavioural analysis unblinded; random acquisition by coauthors does not erase observer bias. Sample size experience-based. Fish-level observations nested in experiments; overallMethods3replicates but figures pool fish counts without detailed hierarchical model.",
+    "Brain area reduced while gross head area nonsignificant in Fig3D. Fig3caption reverses panelsC/D relative to plotted eye/head labels. Smaller body/eye and brain do not establish a specific human microcephaly mechanism independent of generalized developmental effects.",
+    "HumanWTmRNA rescue supports conserved function; C172G/V427F fail efficient rescue. No protein-expression/abundance matching, no exact human patient model, and A509T/R717Ter untested. Fig4panels lack contemporaneous uninjectedKO control; rescue inference partly compares separate Fig3experiment. Nonsignificant WT-rescue difference is not equivalence; residual activity not quantified. No therapeutic rescue claim follows.",
+    "PTZ-induced relative locomotion is normalized to low basal swimming; altered baseline can amplify ratios. Elevated pERK is compatible with neuronal activation but not electrophysiological proof of seizures; no EEG recordings, and no pERKdifference at30minutes. Repeated minute-wise comparisons and field/cell sample structure limit inference.",
+    "POLR3 target/pre-tRNA abundance reductions measured in whole larvae pools20, N4-5, not direct nascent transcription rate or brain-specific target-gene program. Changes can reflect RNA turnover/development/cell composition. Methodsnormalizeelf1alpha but Fig4normalizeshprt; both primers supplied, exact normalization workflow not fully reconciled. ControlWT values fixed1 and nonparametric testing deserve paired-data clarification.",
+    "Graphical abstract eightpatients/sixfamilies combines new and historical subjects. Dysmorphic percentages in Results imply denominator9 (e.g.56%,89%,78%) despite eight total, unexplained. SupplementTable5 known-positive6/8microcephaly treats twoNA as denominator; absence of data is not absence. TableS5cerebellar4/6 aggregates hypoplasia/atrophy despite apparent six imaging descriptions with cerebellar involvement, unresolved count.",
+    "No comparative drug effectiveness or N1002K/BubR1 rescue tested. S1structure is prediction only; reported significant changes mean computational prediction, not measured conformational change."
+  ]
+}

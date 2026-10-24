@@ -1,0 +1,875 @@
+{
+  "schema_version": 1,
+  "pmid": "28369633",
+  "title": "Mutations in XLF/NHEJ1/Cernunnos gene results in downregulation of telomerase genes expression and telomere shortening.",
+  "reviewer": {
+    "id": "reader-6",
+    "reviewed_at_utc": "2026-10-24T17:18:08.770268+00:00",
+    "method": "Read complete publisher rendering3368lines,all7figures,allunique main-table cells and renderings,complete six-primer TableS1 DOCX text/data/pixels. All9phenotypes/allele/sixdimensions assessed;aggregate-only exposure retained."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Prior aggregate compact-cohort performance and source-audit coverage were seen in the biology/laboratory task context. No per-case ranking output for this assigned review queue was consulted. This is an exposed post-inference audit, not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "3b6001f7026a80b5e1e533e7ac16216c16599f2a7d2ceb61060df1263b3737d6",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main",
+      "pmid": "28369633",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/28369633/retrieval-followup/20261024T134531258086Z-cb427d1ff3/publisher-rendering.txt",
+      "sha256": "250c07422135609778c5f40e556aa566d22fd9b250bc332f5a90baf03572f0df",
+      "kind": "text",
+      "description": "Entire3368line publisher rendering read, including duplicated DOM tables, methods and references."
+    },
+    {
+      "id": "html",
+      "pmid": "28369633",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/28369633/retrieval-followup/20261024T134531258086Z-cb427d1ff3/response.body",
+      "sha256": "529894885f51249b25ef8d0002b7edc488ff33cd9f85da3be6b09eddaa17bb69",
+      "kind": "text",
+      "description": "Exact public publisher HTML for identity and component inventory."
+    },
+    {
+      "id": "inventory",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/retrieval-followup/28369633/oup-public-rendering-assets.json",
+      "sha256": "2f2641be229d945fdc1f9b76740aec9973cfd416898f6d8eeea699ff9b3aa7d8",
+      "kind": "metadata",
+      "description": "Held official image/supplement source URLs, hashes and capture receipts."
+    },
+    {
+      "id": "tabledata",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/main-tables.json",
+      "sha256": "d028519ca018fc484fe40139cfb4694eafe8166adc107c1b273d4885aa98c111",
+      "kind": "data",
+      "description": "Exact two unique HTML tables, all cells read; four identical DOM occurrences per table deduplicated."
+    },
+    {
+      "id": "tablerender",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/main-tables.pdf",
+      "sha256": "193a7ca5af65be041513f0a9d9bc680f118f28cb4822f4dba4da1f9e7eed86ea",
+      "kind": "pdf",
+      "description": "Two reviewer-rendered table pages inspected."
+    },
+    {
+      "id": "rendercode",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/render_tables.py",
+      "sha256": "cfbcc9202556ed80d0b5c54aef1b338e777b67074c2dcddad4942659635349cf",
+      "kind": "text",
+      "description": "Rendering code for original held HTML cell extraction."
+    },
+    {
+      "id": "supp",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/supplement.docx",
+      "sha256": "74809faadb685abdbc74949757b749ea2ed34929c9197af42025205831e0577e",
+      "kind": "data",
+      "description": "Exact held DOCX copy, one six-primer table plus headings; no embedded figures."
+    },
+    {
+      "id": "supptext",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/supplement.visible.txt",
+      "sha256": "3617d785b486f2e51d77429e3017964ececad0fa6bc6eccc599a37f671e7c5bb",
+      "kind": "text",
+      "description": "All paragraphs and table cells read."
+    },
+    {
+      "id": "supppdf",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/supplement.pdf",
+      "sha256": "b09de23c97b292bc5791322081f5d0c8d5533fb502fd54933ffb50b4cecffdd4",
+      "kind": "pdf",
+      "description": "One rendered page, all pixels inspected."
+    },
+    {
+      "id": "fig1",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/fig1.jpg",
+      "sha256": "245346cdfbea6af4328b0eb8fc185a901920d5a961a1eaa5437fba696b7e6d21",
+      "kind": "image",
+      "description": "Exact held publisher JPEG copied without alteration and whole image viewed."
+    },
+    {
+      "id": "fig2",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/fig2.jpg",
+      "sha256": "0130310f834c3abb1fa12457878758c94b6262e3d348ef5cfd4c3261c976ad73",
+      "kind": "image",
+      "description": "Exact held publisher JPEG copied without alteration and whole image viewed."
+    },
+    {
+      "id": "fig3",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/fig3.jpg",
+      "sha256": "fef3e36a58a8916e079ccab71082951a449e7a8e6720186be0c66d4d192983c1",
+      "kind": "image",
+      "description": "Exact held publisher JPEG copied without alteration and whole image viewed."
+    },
+    {
+      "id": "fig4",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/fig4.jpg",
+      "sha256": "76fbda879c1c6ffddc9063d0f28ecf0661df4f9cd9a8cdf42618cd637f8e652a",
+      "kind": "image",
+      "description": "Exact held publisher JPEG copied without alteration and whole image viewed."
+    },
+    {
+      "id": "fig5",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/fig5.jpg",
+      "sha256": "554653aa3be9ad2ef33c7173571f6cb54d398a35dff19b9100035d06946c2597",
+      "kind": "image",
+      "description": "Exact held publisher JPEG copied without alteration and whole image viewed."
+    },
+    {
+      "id": "fig6",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/fig6.jpg",
+      "sha256": "e8f964343cadc260d2dea7e0011774097946044d7aa1d43e8ae1b4d9630f2faa",
+      "kind": "image",
+      "description": "Exact held publisher JPEG copied without alteration and whole image viewed."
+    },
+    {
+      "id": "fig7",
+      "pmid": "28369633",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-6/assets/28369633/fig7.jpg",
+      "sha256": "93734defa0500f727d1432e8db9e2b36e9dbfec538dc4e4cd664ec4d9812e659",
+      "kind": "image",
+      "description": "Exact held publisher JPEG copied without alteration and whole image viewed."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Mutations in XLF/NHEJ1/Cernunnos gene results in downregulation of telomerase genes expression and telomere shortening.",
+    "evidence": [
+      {
+        "source_id": "html",
+        "locator": "Exact title, authorCarrillo, DOI10.1093/hmg/ddx098 and sourceURL"
+      }
+    ],
+    "note": "Matches held PMID28369633 publisher identity verification and article contents."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 7,
+      "table": 2,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "html",
+        "locator": "All section headings, Figures1–7, Tables1–2, one ddx098_Supp.docx link"
+      }
+    ],
+    "note": "Repeated table HTML is duplicate display markup, not extra source components. Supplement contains TableS1 only."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 3368,
+      "extent_source_id": "main",
+      "extent_evidence": [
+        {
+          "source_id": "main",
+          "locator": "Complete component has 3368 lines."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 3368,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "All text through52references and copyright, including clinical history, all methods/captions/table text."
+        }
+      ],
+      "note": "All text through52references and copyright, including clinical history, all methods/captions/table text."
+    },
+    {
+      "id": "fig1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig1",
+      "extent_evidence": [
+        {
+          "source_id": "fig1",
+          "locator": "Complete component has 1 items."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig1",
+          "locator": "All Figure1 panels: A–I. Published520px image; no raw quantitative measurements inferred."
+        }
+      ],
+      "note": "All Figure1 panels: A–I. Published520px image; no raw quantitative measurements inferred."
+    },
+    {
+      "id": "fig2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig2",
+      "extent_evidence": [
+        {
+          "source_id": "fig2",
+          "locator": "Complete component has 1 items."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig2",
+          "locator": "All Figure2 panels: A–E. Published520px image; no raw quantitative measurements inferred."
+        }
+      ],
+      "note": "All Figure2 panels: A–E. Published520px image; no raw quantitative measurements inferred."
+    },
+    {
+      "id": "fig3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig3",
+      "extent_evidence": [
+        {
+          "source_id": "fig3",
+          "locator": "Complete component has 1 items."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig3",
+          "locator": "All Figure3 panels: A–E. Published520px image; no raw quantitative measurements inferred."
+        }
+      ],
+      "note": "All Figure3 panels: A–E. Published520px image; no raw quantitative measurements inferred."
+    },
+    {
+      "id": "fig4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig4",
+      "extent_evidence": [
+        {
+          "source_id": "fig4",
+          "locator": "Complete component has 1 items."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig4",
+          "locator": "All Figure4 panels: A–C. Published520px image; no raw quantitative measurements inferred."
+        }
+      ],
+      "note": "All Figure4 panels: A–C. Published520px image; no raw quantitative measurements inferred."
+    },
+    {
+      "id": "fig5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig5",
+      "extent_evidence": [
+        {
+          "source_id": "fig5",
+          "locator": "Complete component has 1 items."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig5",
+          "locator": "All Figure5 panels: A–E. Published520px image; no raw quantitative measurements inferred."
+        }
+      ],
+      "note": "All Figure5 panels: A–E. Published520px image; no raw quantitative measurements inferred."
+    },
+    {
+      "id": "fig6",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig6",
+      "extent_evidence": [
+        {
+          "source_id": "fig6",
+          "locator": "Complete component has 1 items."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig6",
+          "locator": "All Figure6 panels: A–C. Published520px image; no raw quantitative measurements inferred."
+        }
+      ],
+      "note": "All Figure6 panels: A–C. Published520px image; no raw quantitative measurements inferred."
+    },
+    {
+      "id": "fig7",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig7",
+      "extent_evidence": [
+        {
+          "source_id": "fig7",
+          "locator": "Complete component has 1 items."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig7",
+          "locator": "All Figure7 panels: whole model. Published520px image; no raw quantitative measurements inferred."
+        }
+      ],
+      "note": "All Figure7 panels: whole model. Published520px image; no raw quantitative measurements inferred."
+    },
+    {
+      "id": "Table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "data",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "tabledata",
+      "extent_evidence": [
+        {
+          "source_id": "tabledata",
+          "locator": "Complete component has 1 items."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "data",
+          "source_id": "tabledata",
+          "locator": "All cells of unique table1: 13rows x7cols."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "tablerender",
+          "locator": "Reviewer-rendered exact source cells page1; complete table."
+        }
+      ],
+      "note": "All cells of unique table1: 13rows x7cols."
+    },
+    {
+      "id": "Table2",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "data",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "tabledata",
+      "extent_evidence": [
+        {
+          "source_id": "tabledata",
+          "locator": "Complete component has 1 items."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "data",
+          "source_id": "tabledata",
+          "locator": "All cells of unique table2: 11rows x3cols."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "tablerender",
+          "locator": "Reviewer-rendered exact source cells page2; complete table."
+        }
+      ],
+      "note": "All cells of unique table2: 11rows x3cols."
+    },
+    {
+      "id": "supplement1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "data",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supptext",
+      "extent_evidence": [
+        {
+          "source_id": "supptext",
+          "locator": "Complete component has 1 items."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supptext",
+          "locator": "All21paragraphs including blanks and all7x5table cells read."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "data",
+          "source_id": "supp",
+          "locator": "All six primer pairs, temperatures and product sizes; complete original DOCX."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supppdf",
+          "locator": "Entire one-page DOCX rendering inspected."
+        }
+      ],
+      "note": "All21paragraphs including blanks and all7x5table cells read."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/NHEJ1/PMID_28369633_P1.json",
+      "packet_sha256": "45a3b59579dab8dc7424cca32db71301cb58aaceb44e4a3e2738ee1d5ce0c9ad",
+      "case_id": "TC_fe16621aa184221b",
+      "role": "selected",
+      "packet_subject_id": "P1",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "No excluded phenotypes in packet. Case1 distinguished from patients2/3 and historical table cases."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Current Patient1 is the male child first admitted at10months, with investigations at6years and death at8years; packet matches. Historical Table2 P1 is a different cited patient.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results first section; Methods Patients; Table2"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Homozygous c.169C>T,p.Arg57stop matches Sanger and Table1. Source uses hg19 position220022916, packet hg38 position219158194 and versioned transcript.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results WES and Table1"
+          }
+        ],
+        "limitations": [
+          "Version/coordinate normalization is not independently reproduced."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Both parents, brother and several relatives heterozygous; parents consanguineous. Sanger segregation supports recessive transmission.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results WES;Figure1C"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous affected child with each parent heterozygous supports the biallelic state.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results WES;Figure1B–C"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors diagnose XLF/Cernunnos syndrome after identifying homozygous truncating NHEJ1 and little/no bone-marrow protein.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results WES;Figure1D"
+          }
+        ],
+        "limitations": [
+          "Source attribution is supported but no independent clinical reclassification. Telomerase mechanism is supported by knockdown and other patient fibroblasts, not direct rescue of this allele."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Packet covers key immune/hematologic/growth features but omits marrow aplasia, transfusion dependence, transplant outcome and measured growth percentiles.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results clinical history"
+          }
+        ],
+        "limitations": [
+          "Telomere age6 is measurement age, not demonstrated first onset."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c169CtoT_NHEJ1_NM_024782v3",
+            "geneContext": {
+              "valueId": "HGNC:25737",
+              "symbol": "NHEJ1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_024782.3:c.169C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.219158194G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_079058.1:p.(Arg57Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 219158194,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "869e86264b2a763781f3512de626a46294b42ff8e6c6023c704f5250eb80b36c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Homozygous c.169C>T/Arg57Ter agrees; versioned RefSeq/hg38 representation extends beyond source hg19 position.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 andFigure1B"
+              }
+            ],
+            "limitations": [
+              "No remapping or reference sequence equivalence check performed."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031413",
+              "label": "Short telomere length"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P6Y"
+              }
+            }
+          },
+          "snapshot_sha256": "44014e8004d69a45e4c702f1e38e6badec23e74aed73337d0c6a17ce7794c0f6",
+          "assessment": {
+            "status": "qualified",
+            "statement": "At age6 telomeres7.4kb by Southern, below first percentile; later Figure5E qPCR gives7.3±.15kb. Age6 establishes detection, not biological onset.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results first section;Figures1A/5E"
+              }
+            ],
+            "limitations": [
+              "Source supports clinical finding with limited timing/measurement specificity."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004313",
+              "label": "Decreased circulating immunoglobulin concentration"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P10M"
+              }
+            }
+          },
+          "snapshot_sha256": "a4d015b6768b916749398c79531c5fbb3998c31b58902172e8afde35e74b9062",
+          "assessment": {
+            "status": "supported",
+            "statement": "Severe hypogammaglobulinemia diagnosed at10month pneumonia admission.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results clinical history"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001873",
+              "label": "Thrombocytopenia"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P4Y"
+              }
+            }
+          },
+          "snapshot_sha256": "e49164749c9d5ce041250f00f905936341a10c35353302936e65c3ff4e9d6097",
+          "assessment": {
+            "status": "supported",
+            "statement": "Mild thrombocytopenia begins at4years and worsens.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results clinical history"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001903",
+              "label": "Anemia"
+            }
+          },
+          "snapshot_sha256": "abde46fc81336b652b8919df231c7f3f919ba9ae32e889f067e1ce7edc3631e9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Pancytopenia with transfusion dependence supports anemia, but no individual hemoglobin series is reported.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results clinical history"
+              }
+            ],
+            "limitations": [
+              "Source supports clinical finding with limited timing/measurement specificity."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001888",
+              "label": "Decreased total lymphocyte count"
+            }
+          },
+          "snapshot_sha256": "f6be6912374e556f6936e22afa58928cde4db3a0915b19058f5e5c348e711eb3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Discussion explicitly describes progressive lymphocytopenia in Patient1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Discussion final clinical paragraph"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001876",
+              "label": "Pancytopenia"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P6Y"
+              }
+            }
+          },
+          "snapshot_sha256": "9859cc6a69b54ef25b347ecae0de51407f5663611a9ea9615ec48f4cd8f66354",
+          "assessment": {
+            "status": "supported",
+            "statement": "Mild pancytopenia two years after age4, then progressive severe pancytopenia and marrow aplasia.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results clinical history"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            }
+          },
+          "snapshot_sha256": "e7d47e7cef106c2491d6243b1322a1b3f13cc7281e1e45b213cb4436c9f23d7c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit relevant prior history.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results clinical history"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002090",
+              "label": "Pneumonia"
+            }
+          },
+          "snapshot_sha256": "f1d2debc84c853b81856950a767393d252eb4cc3892ef6a9fc4ad437e76adc83",
+          "assessment": {
+            "status": "supported",
+            "statement": "Right upper-lobe pneumonia at10months.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results clinical history"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002721",
+              "label": "Immunodeficiency"
+            }
+          },
+          "snapshot_sha256": "2fa66137f1fe37ade83810d377324fa570175521ed5b2354a54991be04fb9cee",
+          "assessment": {
+            "status": "supported",
+            "statement": "Diagnosed at10months;lifelong IVIG every3weeks.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Results clinical history"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "All main sections,seven whole figures,two tables and complete TableS1 DOCX read. Pixel inspection used held520px publisher figures; not raw source data/blot densitometry.",
+    "Text Patient2 c.C622T/p.R178* is internally discordant as coding nomenclature; not relevant allele for mapped Patient1 and not corrected speculatively.",
+    "Figure5C patient fibroblast NHP2 bars around.25–.30 contrast prose20%inhibition; NOP10 barsaround.33–.4 contrast30%inhibition. Figure6A displays significant modestp21 increases despite text says not significant. Exact visual observations retained, no new statistics.",
+    "No measured telomere shortening after4day knockdown in293T; patient fibroblast shortening and knockdown activity findings are distinct. Direct p53/p21 causality remains unestablished by authors.",
+    "Methods frequency-filter directions/zygosity wording contain apparent inconsistencies; no claim that WES pipeline was independently reproduced. E-MTAB-3858 is a source accession only, not newly downloaded/read dataset."
+  ]
+}

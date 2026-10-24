@@ -35,8 +35,27 @@ def analyse(data):
             if len(v)!=group['n']:
                 raise ValueError('Observation count changed')
             panels[name].append(dict(label=group['label'],n=len(v),median=statistics.median(v),units=group['units']))
+    tpr = {}
+    if set(data['tpr_2026']['panels']) != {'Figure 4B', 'Figure 4F'}:
+        raise ValueError('TPR source panel missing or unexpected')
+    for name, groups in data['tpr_2026']['panels'].items():
+        if len(groups) != {'Figure 4B': 4, 'Figure 4F': 3}[name]:
+            raise ValueError('TPR source group missing or unexpected')
+        tpr[name] = []
+        for group in groups:
+            v = values(group['observations'])
+            if len(v) != group['n'] or any(x < 0 for x in v):
+                raise ValueError('Invalid TPR timing observations')
+            median = statistics.median(v)
+            if type(group['printed_median']) not in (int, float) or not math.isfinite(group['printed_median']):
+                raise ValueError('Invalid published TPR comparator')
+            if abs(median - group['printed_median']) >= 0.1:
+                raise ValueError('TPR median no longer reproduces the published figure')
+            tpr[name].append(dict(label=group['label'], n=len(v), median=median,
+                                  units=group['units'], printed_median=group['printed_median']))
     return dict(scope=data['scope'],upcp_aneuploidy=upcp,upcp_mutant_survival=survival,
                 engineered_bubr1_panels=panels,
+                tpr_2026_panels=tpr, tpr_2026_limits=data['tpr_2026']['limitations'],
                 published_source_discrepancies=data['engineered_bubr1']['discrepancies'],
                 limitations=['Published experiments recomputed, not independently repeated.',
                              'No replicate nesting for pooled cells; no new inferential tests.',

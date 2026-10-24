@@ -1,4 +1,4 @@
-# Published BubR1 rescue: source-data reanalysis
+# Published BubR1 function and rescue: source-data reanalysis
 
 Run offline with Python 3, without extra packages:
 
@@ -27,6 +27,30 @@ second extraction. This is not new biological replication.
   rescue construct. The seven groups retain all 271 supplied cell observations.
   All seven printed counts and rounded medians agree. Cells are not independent
   biological replicates; replicate nesting is unavailable.
+
+- **Zhang 2026, PMID 42477419**, DOI [10.1038/s42003-026-10384-9](https://doi.org/10.1038/s42003-026-10384-9):
+  Figure 4B medians reproduce as 650 minutes for WT and 60 for D137R
+  (27 and 39 cells). Figure 4F reproduces approximately 455, 295 and 175 minutes
+  for WT, C132A and C132E (40 cells each). All seven displayed groups in these
+  two panels retain their 261 observations and source cell addresses. Both
+  counts and rounded medians agree with the figures. The 27-cell WT group is
+  below the main methods statement of more than 30 cells per condition.
+
+The 2026 source workbook was independently parsed twice: all 2,647 numerical
+and 69 text cells agreed. All column summaries were reviewed; this is not a
+manual read of every numerical entry. The extra WLCM/4A series in source
+column AF was removed from the final Figure 4B, as explained in the peer-review
+response. It is not pooled with the separate Figure 4E series. The main figures,
+five-page supplement, reporting summary and complete peer-review text were read.
+The reporting summary discloses no blinding and no mycoplasma testing.
+
+The D137R/C132E experiments separate retained MCC assembly from impaired APC/C
+association and checkpoint function. The binding evidence is qualitative and
+does not come from the timing spreadsheet. Supplementary localization
+quantification covers multi-residue mutants, not these two individual mutants.
+The cell-level timing observations lack biological-repeat identifiers, so we
+report descriptive reproduction without treating cells as independent
+biological experiments or computing a new efficacy confidence interval.
 
 Song's peer-review responses acknowledge that a strict SAC-silencing assay was
 not performed. Nocodazole-arrest duration must not be relabelled as silencing

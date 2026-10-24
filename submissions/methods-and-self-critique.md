@@ -27,7 +27,7 @@ are tied with *BUB1B* on both severity sort keys, occupying ranks **53–61**; w
 **seven — VPS41, IGHV8-51-1, *BUB1B*, TUBB8B, PSG1, LILRB4, LBP — are tied on all three
 pre-registered sort keys**, every one at mean GQ 99.0. *BUB1B*'s position among those seven is
 decided by nothing the pre-registration specifies. **The honest unit is the tie block, not the
-rank.** The defensible claim is that a phenotype-blind recessive model puts *BUB1B* in the approximately the top quarter of 230 candidates under a rule that does not use phenotype or a gene list. **[OUR MEASUREMENT]**, re-derived
+rank.** The defensible claim is that a phenotype-blind recessive model puts *BUB1B* in approximately the top quarter of 230 candidates under a rule that does not use phenotype or a gene list. **[OUR MEASUREMENT]**, re-derived
 2026-08-30 by `python3 pipeline/vep_concordance.py`, which also reproduces the 55/230 above from
 the pre-registered rule. Re-annotating the same callset with **Ensembl VEP** moves *BUB1B* to
 **rank 42 of 184** with its own allele counts unchanged — see
@@ -74,7 +74,7 @@ it.** All four below were run on 2026-08-29.
 | **"neither candidate variant has a high SpliceAI prediction"** | five canonical splice-site pathogenic controls with a regression threshold ≥0.5 | 🔻 **The instrument was broken** — our own patch had it returning 0.00 for everything. Fixed; controls 5/5; low prediction scores reproduced; an experimental absence of splice effects remains unproven |
 | **"the PS3 ceiling has not moved in 19 months"** | recompute from a ClinVar release newer than the finding's own, by a separate implementation | ✅ **SURVIVES.** 21.6% vs 20.7%; *BUB1B* count reproduces **exactly** (35) |
 | **"no additional event was detected by these surveys"** | genome-wide SV survey; splice prediction; MAPQ callability | No SV or large splice-prediction signal detected within the analyses’ limits; callability 0.990 vs a 0.983 median. This does not exclude every additional cause. |
-**[OUR MEASUREMENT — every row above is a run in this repository on 2026-08-29, reproducible via `pipeline/mosaicism_test.py`, `pipeline/mosaicism_pass3.py`, `pipeline/spliceai_run.py` and `canary/run_canary.py`. The verdicts are the tests' own outputs.]**
+**[OUR MEASUREMENT — historical project runs on 2026-08-29. `pipeline/mosaicism_test.py` and `pipeline/mosaicism_pass3.py` are retained in the private working project, not distributed in this package. The package includes `pipeline/spliceai_run.py` and `canary/run_canary.py`; patient-data reruns require authorized inputs and local dependencies.]**
 
 > **One of four claims did not survive, and it was the most quotable one we had.**
 
@@ -84,7 +84,7 @@ Three of the four tests initially returned a **plausible negative from a broken 
 than an error — a patched encoder scoring noise, a contig-naming mismatch yielding empty output, a
 data fetch that wrote 26% of a file and exited zero. **None threw.**
 
-That pattern is the subject of `canary/`, a positive-control panel published with this submission,
+That pattern is the subject of `canary/`, a positive-control panel included in this local submission package,
 and the practical lesson is: **we did not catch these by being careful. We caught them by demanding
 that each instrument first produce a result we already knew.**
 
@@ -101,7 +101,7 @@ human time and LLM subscriptions were not apportioned to these runs; the table i
 | step | input | wall-clock | resources | output |
 |---|---|---|---|---|
 | FASTQ integrity + checksums | 8 files (4 lanes × 2 reads), 9.5–10 GiB each where logged, ≈ 80 GB compressed | minutes | `gzip -t`, `sha256sum` | `fastq.sha256` manifest; FASTQs deleted afterwards |
-| Whole-genome alignment, per lane | one lane pair | **2 h 38 m – 2 h 44 m** each (L001 2:41, L002 2:44, L003 2:38, L004 ≈ 3 h); four lanes sequentially ≈ **11.3 h** | `bwa mem -t 8` → `samtools sort`, GRCh38 no-alt + hs38d1 | four sorted lane CRAMs, ≈ 5.2 GB each |
+| Whole-genome alignment, per lane | one lane pair | **2 h 38 m – ≈ 3 h** each (L001 2:41, L002 2:44, L003 2:38, L004 ≈ 3 h); four lanes sequentially ≈ **11.3 h** | `bwa mem -t 8` → `samtools sort`, GRCh38 no-alt + hs38d1 | four sorted lane CRAMs, ≈ 5.2 GB each |
 | Merge + duplicate marking + QC + targeted re-call + pileups | four lane CRAMs | **49 min** (20:49 → 21:38) | `samtools markdup -@ 4` streaming, no `-S` (the read-name temp for `-S` hit 46 GB with zero output in 15 min and was dropped; it does not change primary-alignment duplicate calls, measured at both causal positions) | **`WGS_EX2312012_HGWCNDSX7.markdup.cram`, 19.9 GB + index** |
 | Depth per 500 kb window over the CRAM | 19.9 GB CRAM | ≈ 15 min | `mosdepth -t 4 -Q 60` | `depthQ60.regions.bed.gz` |
 | VEP on the rare-variant set | 313,417 variants | **10 min 28 s** | Docker `ensemblorg/ensembl-vep:release_116.1` (1.29 GB image), `--fork 6`, 28 GB offline cache mounted **read-only** from USB | 433,168 annotation rows; count conservation asserted by `pipeline/vep_check.py` |

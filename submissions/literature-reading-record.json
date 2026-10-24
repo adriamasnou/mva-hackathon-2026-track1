@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "recorded_at": "2026-10-24T11:37:48.304351+00:00",
-  "papers_assessed": 58,
-  "main_texts_read_available_versions": 58,
+  "recorded_at": "2026-10-24T17:18:02.508309+00:00",
+  "papers_assessed": 59,
+  "main_texts_read_available_versions": 59,
   "not_full_text": [],
   "scope": "Main-text coverage is distinct from figure, supplement and underlying-data coverage; inspect each record. No shelf-wide, systematic-review, independent-human-review or raw-data-validation claim.",
   "citation_manifest_coverage": {
     "manifest": {
       "path": "repo/citation-manifest.json",
-      "sha256": "2c718d68c92f191c4ff69013c21bd17272f0ee4b373fde5e24187a2efa2d9593",
-      "bytes": 13848
+      "sha256": "fee323e7cae1c71cc15dd98ca470d14652f67d1dab49a9429134c2617540c027",
+      "bytes": 14190
     },
-    "papers": 38,
-    "main_texts_covered": 38,
+    "papers": 39,
+    "main_texts_covered": 39,
     "missing_pmids": [],
     "title_mismatches": [],
-    "identity_receipt": "dossier/sweeps/evidence-2026-10-24/integration/citation-reading-coverage.json",
-    "identity_receipt_sha256": "c9bf294c2d796e157f4687bf26a3cfab49d745b60338f09f833b14f05a1dbd35"
+    "identity_receipt": "dossier/sweeps/evidence-2026-10-24/integration/citation-reading-coverage-tpr.json",
+    "identity_receipt_sha256": "44059cc32debe5f85dcf69195e7f983fbba985381bf08efabd3ee995d209a770"
   },
   "papers": [
     {
@@ -7009,6 +7009,105 @@
         "sha256": "d293600aeabe635eb65907a5d5735355a47525a63d67c2e79d2ca481b9d157aa",
         "method": "Exact PMID/DOI and normalized PubMed/Crossref title agreement."
       }
+    },
+    {
+      "pmid": "42477419",
+      "doi": "10.1038/s42003-026-10384-9",
+      "title": "BubR1 TPR domain supports the mitotic checkpoint by promoting MCC formation and MCC-APC/C interaction.",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42477419/",
+      "main_text_read": true,
+      "coverage": {
+        "main": "Complete publisher HTML main body, methods, captions, end matter and all 53 references read; UTF-8 extraction used.",
+        "read_components": [
+          "All five main figures, every displayed panel",
+          "All five supplementary PDF pages, Figures S1\u2013S3 including uncropped blots at enlarged resolution",
+          "Complete additional-file-description DOCX text",
+          "All seven reporting-summary pages viewed",
+          "Complete 27-page peer-review file text, including all responses and revision history; both embedded response figures on pages 12 and 23 visually inspected.",
+          "All 69 workbook text cells and all 51 numeric-column profiles inspected; all 2647 numeric cells independently cross-checked by two parsers; selected Figure 4B/4F timings recomputed"
+        ],
+        "gaps": [
+          "The 2647 individual numeric entries were not all manually read; computational inventory and column-summary audit are not an independent biological remeasurement.",
+          "No raw microscopy movies, lane-level densitometry or independent experimental replication.",
+          "No source data for all three separate live-cell biological repeats with replicate labels."
+        ],
+        "evidence_level": "Engineered HeLa TPR mutants; mechanism and selected arithmetic reproduction, not N1002K or treatment efficacy"
+      },
+      "review_group": "biology_followup_other_allele_or_disease_not_N1002K",
+      "source_records": [
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/main.html",
+          "sha256": "022a586214ea50982cb802e8fea883c3492e88ad8f7b4ae3a487d225269fe926",
+          "bytes": 457551
+        },
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/main.paragraphs.txt",
+          "sha256": "04b40d6a05d4ddecbaa07ff87631abe5da72ed283239329fd0539eba07e94a41",
+          "bytes": 40866
+        },
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/references.txt",
+          "sha256": "57265ba9bd773595ccfe9c44eb46a28da3764c23d7c0486ecf65abcc571e5df5",
+          "bytes": 11173
+        },
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/supplement.pdf",
+          "sha256": "7dd276be32e1dbd5528eb5b2e889866c0492ca03f2a1af583a9d9d3ab584b843",
+          "bytes": 21274388
+        },
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/source-data.xlsx",
+          "sha256": "d793bc309981fefad4a7bc5a8de852054563b0c29b1212d0221519674f9f5f90",
+          "bytes": 41329
+        },
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/42003_2026_10384_MOESM2_ESM.docx",
+          "sha256": "72e0cb5942c8ea77442c6c01c70454b212fa0d4517699bbe1c49b72616943f8f",
+          "bytes": 23887
+        },
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/42003_2026_10384_MOESM3_ESM.pdf",
+          "sha256": "f785773fbaaff0a8e1cab1ea9c0a111aafe4c1a746b995093bfab6cad1247cd2",
+          "bytes": 4655474
+        },
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/42003_2026_10384_MOESM4_ESM.pdf",
+          "sha256": "e364afd8c6c88db2b5253f022e75e1b790f422011eeda3dfb97ccbc1752acbf5",
+          "bytes": 455938
+        },
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/figure1.png",
+          "sha256": "5dcc193b9df66f979ac7c9e0c75d5ab00147616b8649061dc467d9da04da884e",
+          "bytes": 639961
+        },
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/figure2.png",
+          "sha256": "4b4a502317f6ade006dcad8861f4af96cac71adfdb4acc2492192dbfbcd5ea21",
+          "bytes": 1424060
+        },
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/figure3.png",
+          "sha256": "e9cfdb853754159055d673a35bb6d474ae05cddef1dc959e2a7c3aba95a60586",
+          "bytes": 1705544
+        },
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/figure4.png",
+          "sha256": "12af5c9ca13d09fa0ccb88ee648800b0e9cb7a25b04f3e412ab3b2fe0d5e982d",
+          "bytes": 1975970
+        },
+        {
+          "path": "papers-local/zhang2026-bubr1-tpr/figure5.png",
+          "sha256": "a2a3d28f4eca8e323b2cbeac61aad2d367ce8f23705a4685b5c5a995150adf8d",
+          "bytes": 1116559
+        }
+      ],
+      "identity_verification": {
+        "path": "papers-local/zhang2026-bubr1-tpr/pubmed-esummary.json",
+        "sha256": "b2cc970f1a23dd5dc28407d72b162ef6e8074d156bd7df7bd7648c001ee2f858",
+        "method": "Live NCBI esummary PMID, DOI, title and first author, compared with publisher and Europe PMC metadata."
+      },
+      "review_record": "dossier/sweeps/evidence-2026-10-24/integration/tpr-2026-reading.json",
+      "review_record_sha256": "aa56e8c96cb21e583e37f7480045f07288295e6339ff893ed9f03ebf8e118624"
     }
   ],
   "incremental_integration": {
@@ -7016,5 +7115,10 @@
     "base_reading_ledger": "dossier/sweeps/evidence-2026-10-24/integration/reading-base-51.json",
     "base_reading_ledger_sha256": "e877f1843f5aeb1d2e711b00edb3dd919adc92a17c814b27c5bdfebf8f0eeee3",
     "note": "Source-bank audit remains separate and in progress. These seven completed main-text reads do not close unreviewed supplementary or raw-data components."
+  },
+  "tpr_followup_integration": {
+    "script": "dossier/sweeps/evidence-2026-10-24/integration/finalize_tpr.py",
+    "source_review": "dossier/sweeps/evidence-2026-10-24/integration/tpr-2026-reading.json",
+    "note": "One additional main-text read; separate 334-paper source-bank inventory and frozen inference remain unchanged."
   }
 }
