@@ -1,0 +1,142 @@
+{
+  "pmid": "33875846",
+  "source_titles": [
+    "Combining exome/genome sequencing with data repository analysis reveals novel gene-disease associations for a wide range of genetic disorders"
+  ],
+  "selected_case_ids": [
+    "TC_b84b29aa658bfb5c"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "TAF4"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/TAF4/PMID_33875846_individual_row_24.json",
+      "sha256": "a5e6f330c6bf235fc6f527e687fd27b908c1b79a0ed3ddaed2b407c698074a37",
+      "case_id": "TC_b84b29aa658bfb5c",
+      "selected_record": true,
+      "subject": {
+        "id": "individual row 24",
+        "sex": "UNKNOWN_SEX"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620450",
+            "label": "Intellectual developmental disorder, autosomal dominant 73"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000446",
+            "label": "Narrow nasal bridge"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000325",
+            "label": "Triangular face"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010880",
+            "label": "Increased nuchal translucency"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000490",
+            "label": "Deeply set eye"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000750",
+            "label": "Delayed speech and language development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "nvgjVVMbyoSLT7sSXxyQltbq",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620450",
+              "label": "Intellectual developmental disorder, autosomal dominant 73"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "individual row 24",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c2845CtoT_TAF4_NM_003185v4",
+                    "geneContext": {
+                      "valueId": "HGNC:11537",
+                      "symbol": "TAF4"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_003185.4:c.2845C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000020.11:g.61999051G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_003176.2:p.(Gln949Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr20",
+                      "pos": 61999051,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

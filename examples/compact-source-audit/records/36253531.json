@@ -1,0 +1,413 @@
+{
+  "schema_version": 1,
+  "pmid": "36253531",
+  "title": "Biallelic loss of LDB3 leads to a lethal pediatric dilated cardiomyopathy",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T10:37:48.867036+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "b40c901546e0576ee6b2965aee2dc088581bfe63f8a48d94f5fcf5958f8f9261",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "36253531",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36253531/main.xml",
+      "sha256": "983df78714157ff180969db8fa1a78f6db89b8cad07697268a63c34247e05764",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "36253531",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36253531/main.complete.txt",
+      "sha256": "4c668ce4e7ef66426bf39a543c0018db3d06f55ed1c955721f974a5c80521d57",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "36253531",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/36253531/availability.json",
+      "sha256": "24dafa34a554662b518a96cbf3bf8201c7f7d60844d49495bbfc2298bbee17de",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "figure-1",
+      "pmid": "36253531",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36253531/cloud/PMC9823012.1/41431_2022_1204_Fig1_HTML.jpg",
+      "sha256": "f88fcd6e106ca4ae9a5779b35d1ee8d8e0f53dc19c64aabe2d69d0e3a1ec73c8",
+      "kind": "image",
+      "description": "Entire original figure inspected"
+    },
+    {
+      "id": "figure-2",
+      "pmid": "36253531",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36253531/cloud/PMC9823012.1/41431_2022_1204_Fig2_HTML.jpg",
+      "sha256": "defc2814351ec2e7fee830ef1fc37843ef5f61ba368e2352ca4edfa9718eb702",
+      "kind": "image",
+      "description": "Entire original figure inspected"
+    },
+    {
+      "id": "figure-3",
+      "pmid": "36253531",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36253531/cloud/PMC9823012.1/41431_2022_1204_Fig3_HTML.jpg",
+      "sha256": "2d60c8760b99cfef296ffd1ec58cab9c5a8e721dd9be20b563e28d8dd964389f",
+      "kind": "image",
+      "description": "Entire original figure inspected"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Biallelic loss of LDB3 leads to a lethal pediatric dilated cardiomyopathy",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 3,
+      "table": 0,
+      "supplement": 0
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 218,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–218"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 218,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–218"
+        }
+      ],
+      "note": "Full main article, all22 references, methods, captions and declarations read. Only Family4 maps to assigned packet. Family4 variant explicitly VUS, not pathogenic; authors withheld PVS1 because mechanism was being established. Figure1D protein label Gln632 conflicts with maintext/Fig3 Gln627. Family5 c.1216_1219 in Fig1E conflicts with c.1219_1222 maintext/Fig3. Family1 RNA is measured; protein absence predicted, not directly measured."
+    },
+    {
+      "id": "figure:Fig1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-1",
+      "extent_evidence": [
+        {
+          "source_id": "figure-1",
+          "locator": "all panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure-1",
+          "locator": "all panels, genotype labels and traces inspected"
+        }
+      ],
+      "note": "All5pedigrees inspected; Family4carrier parents and homozygous daughter, no deceased sibling genotype. Numbering discrepancies retained."
+    },
+    {
+      "id": "figure:Fig2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-2",
+      "extent_evidence": [
+        {
+          "source_id": "figure-2",
+          "locator": "all panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure-2",
+          "locator": "all panels, genotype labels and traces inspected"
+        }
+      ],
+      "note": "All cardiac imaging and EM panels A–J inspected; these concern Families1,3,5, not Family4."
+    },
+    {
+      "id": "figure:Fig3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-3",
+      "extent_evidence": [
+        {
+          "source_id": "figure-3",
+          "locator": "all panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure-3",
+          "locator": "all panels, genotype labels and traces inspected"
+        }
+      ],
+      "note": "Exon diagrams, gels, RNA traces and predicted protein panels inspected; Family1 allele-specific RNA measurement, protein diagram inference."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/LDB3/PMID_36253531_Family_4_proband.json",
+      "packet_sha256": "6b4f286ea1f8f48745f3f59ec805fc67d30a7c4883713d1517b22df2deffa9a3",
+      "case_id": "TC_428f25e3f77de770",
+      "role": "selected",
+      "packet_subject_id": "Family 4 proband",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Only Family4 packet; functional data from Family1 must not be transferred to this variant."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family4 proband III:3 is female aged8y with onset at5y, matching packet.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results Family4; Figure1D"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Family4 WES reports homozygous NM_007078.2:c.1881_1884del in an8MbROH, supported by pedigree genotype labeling.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results Family4; Figure1D"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Figure1D labels both parents heterozygous and proband homozygous; deceased affected siblings have no DNA available and cannot be genotypically confirmed.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results Family4; Figure1D"
+          }
+        ],
+        "limitations": [
+          "Sibling segregation not established. Parents called unrelated in narrative, whereas figure family relationships/consanguinity descriptions differ."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Same deletion reported homozygous with both parents labeled carriers; no compound heterozygote phase issue.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Figure1D"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "contradicted",
+        "statement": "Packet PATHOGENIC label conflicts with the source explicit Variant of Uncertain Significance for Family4 (PM2;PM3_P;PP3), and authors deliberately did not apply PVS1. Cross-family evidence supports gene-level association but is not a variant-specific clinical upgrade.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Methods; Results Family4"
+          }
+        ],
+        "limitations": [
+          "Direct functional RNA/EM data concern Family1, not this Family4 allele."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Both packet features directly supported: cardiomegaly diagnosed at5y and reduced LVEF. Exact EF, muscle examination and complete extra-cardiac phenotype absent for Family4.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results Family4"
+          }
+        ],
+        "limitations": [
+          "Sparse two-feature clinical description; do not borrow findings from other families."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1881_1884del_LDB3_NM_007078v3",
+            "geneContext": {
+              "valueId": "HGNC:15710",
+              "symbol": "LDB3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_007078.3:c.1881_1884del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000010.11:g.86718750_86718753del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_009009.1:p.(Gln627HisfsTer75)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr10",
+              "pos": 86718744,
+              "ref": "GAGAC",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "6cc6ab54905ed93920cd234b5a180cb0a444fb6391b16ddda0270ac76ba23dbf",
+          "assessment": {
+            "status": "qualified",
+            "statement": "c.1881_1884del p.Gln627HisfsTer75 matches maintext using NM_007078.2; packet uses .3. Figure1D instead labels Gln632. Packet HGVS/VCF deletion positions differ by repeat normalization, not independently checked.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results Family4; Figures1D/3A"
+              }
+            ],
+            "limitations": [
+              "Protein-label inconsistency and exact transcript/genomic normalization remain unresolved."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001640",
+              "label": "Cardiomegaly"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P5Y"
+              }
+            }
+          },
+          "snapshot_sha256": "8f0394ec2ce8237f4c8a286ee57d1c2651d4c5577a1d4252048981ff5bc1af41",
+          "assessment": {
+            "status": "supported",
+            "statement": "Cardiomegaly diagnosed at5y.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results Family4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012664",
+              "label": "Reduced left ventricular ejection fraction"
+            }
+          },
+          "snapshot_sha256": "980f0988bbc7a8cdb189f524f43f01cffc09dce569f4739517d5091bc0649764",
+          "assessment": {
+            "status": "supported",
+            "statement": "Low left ventricular ejection fraction explicitly reported, without numeric EF.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results Family4"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading."
+  ]
+}

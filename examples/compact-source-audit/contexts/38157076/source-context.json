@@ -1,0 +1,151 @@
+{
+  "pmid": "38157076",
+  "source_titles": [
+    "IL4Rα and IL17A Blockade Rescue Autoinflammation in SOCS1 Haploinsufficiency"
+  ],
+  "selected_case_ids": [
+    "TC_41aaee470f928ea5"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "SOCS1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SOCS1/PMID_38157076_patient.json",
+      "sha256": "ac62c953ace05fd4ec1932c0e69bbae15db1224cb426e41cf2c23f6c98013a14",
+      "case_id": "TC_41aaee470f928ea5",
+      "selected_record": true,
+      "subject": {
+        "id": "patient",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P25Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:619375",
+            "label": "Autoinflammatory syndrome, familial, with or without immunodeficiency"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P10Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002960",
+            "label": "Autoimmunity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003765",
+            "label": "Psoriasiform dermatitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001945",
+            "label": "Fever"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002090",
+            "label": "Pneumonia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000964",
+            "label": "Eczematoid dermatitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100686",
+            "label": "Enthesitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0025084",
+            "label": "Folliculitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031292",
+            "label": "Cutaneous abscess"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "KLqwh2xEtNIJwMCFbUobK53h",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:619375",
+              "label": "Autoinflammatory syndrome, familial, with or without immunodeficiency"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "patient",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c202_203delAC_SOCS1_NM_003745v2",
+                    "geneContext": {
+                      "valueId": "HGNC:19383",
+                      "symbol": "SOCS1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_003745.2:c.202_203delAC"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000016.10:g.11255277_11255278del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_003736.1:p.(Thr68AlafsTer48)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr16",
+                      "pos": 11255275,
+                      "ref": "CGT",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

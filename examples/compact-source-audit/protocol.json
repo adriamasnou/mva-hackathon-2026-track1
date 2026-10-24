@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "audit_id": "compact-source-audit-20261024",
+  "timing": "post_inference",
+  "preregistered": false,
+  "scope": "source_correspondence_not_clinical_validation",
+  "clinical_truth_established": false,
+  "immutable_inputs": "The 713 frozen cases, selected representatives, alternate packets, inference outputs and evaluations are read-only. Findings are a separate versioned annotation layer; do not drop cases or recompute favorable endpoints.",
+  "blinding": "Give new reviewers only inventory.json, their paper's source-context.json, source files and retrieval/identity receipts. Do not supply ranks, scores, recovery, outcome summaries or evaluator outputs. Disclose actual prior exposure as none, aggregate_only or per_case, with an explanatory note. Non-blinded reviewers remain eligible to adjudicate; their work is reported separately and never called blinded. Unknown exposure permits only a pending record. The audit was designed after inference and is not preregistered.",
+  "record_file": "One JSON object per PMID. Use adjudication.py template to generate every selected and alternate packet mapping, every variant descriptor, and every phenotype item. Never mark a generated template as reviewed.",
+  "record_required_fields": ["schema_version", "pmid", "title", "reviewer", "audit", "bindings", "artifacts", "identity", "component_inventory", "components", "packets", "access_issues", "limitations"],
+  "categories": {
+    "supported": "The checked primary source supports this specific packet assertion, within the explicit scope and version. Not clinical proof, independent replication, ACMG classification or treatment efficacy.",
+    "qualified": "There is usable source support but a material ambiguity, limitation, incomplete reporting or causal-confidence caveat is retained with evidence.",
+    "contradicted": "A locatable primary-source statement conflicts with the packet assertion. Record both assertions; never silently repair the frozen packet.",
+    "unresolved": "The available evidence cannot settle the assertion, or review/access is pending. State why and what is missing. An unresolved item is never counted as supported."
+  },
+  "assessment_fields": ["status", "statement", "evidence", "limitations"],
+  "packet_dimensions": ["patient_identity", "genotype", "segregation", "phase", "causal_confidence"],
+  "packet_item_coverage": "Review every variationDescriptor and every phenotypicFeatures item at its JSON pointer, retaining its canonical JSON SHA256. Also review phenotype completeness, negative features, age/sex context and candidate causal alternatives. Single-allele phase may be inapplicable: explain it with a source-backed assessment, not an invented phase measurement.",
+  "coverage": "Components separately represent main_text, each main figure, each main table and each supplement. Declare the discovered inventory, with hashed evidence for its extent and missing-access issues. Full text coverage requires all text units; figure pixels require pixels, not captions; supplements require their declared modalities and complete units. XML/text uses actual line count; PDF page extents need hashed extent evidence; tables/sheets/video frames must identify exact units and rendering. A contact sheet is not continuous movie playback.",
+  "hash_contract": "Raw-file SHA256 for inventory/context/source artifacts; canonical JSON SHA256 (UTF-8, sorted keys, compact separators, ensure_ascii=false) for packet descriptor/phenotype snapshots. Artifact files are rehashed by the validator. Paths are relative to an explicit artifact root and cannot escape it, including symlinks.",
+  "completion": "Partial mode accepts honest pending/unavailable review states, but never malformed reading claims, missing packet mappings, mismatched PMID/hashes, duplicate mappings or wrong item identities. --complete additionally requires every inventory paper, independently checked publication identity, a complete component inventory, full component coverage, all packet reviews adjudicated and no open access issue. Scientifically unresolved conclusions can remain after complete reading and are counted separately; complete audit is not universal support.",
+  "semantic_limit": "The validator verifies schema, local byte hashes, declared coverage and exact mapping. It cannot prove that a reviewer actually read/understood a paper, certify source identity from arbitrary prose, or establish clinical truth. Peer review and source comparison remain necessary.",
+  "workflow": [
+    "Freeze the retrieval inventory and keep the frozen benchmark/evaluations unchanged.",
+    "Generate a template for the assigned PMID. Verify publication identity and register the exact source versions and byte hashes.",
+    "Inventory main text, figures, tables and supplements from the source and publisher/PMC listing, including unavailable material. Record evidence for zero figures/tables/supplements too.",
+    "Read the complete available main text; inspect figure/table pixels and required supplement modalities. Record exact locators and coverage as performed.",
+    "Compare every selected AND alternate packet separately against its exact patient/family, all alleles, genotype, segregation, phase, phenotype items and causal-confidence limitations. Do not promote CAUSATIVE/SOLVED labels to evidence.",
+    "Validate partial records during work. Obtain independent spot checks of identity, contradictions and unresolved cases. Run --complete only when all paper and packet coverage requirements are met.",
+    "Report supported, qualified, contradicted and unresolved source assertions separately. Any later outcome-linked sensitivity analysis is explicitly post hoc and retains the original full-cohort result."
+  ]
+}

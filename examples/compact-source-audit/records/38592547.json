@@ -1,0 +1,1139 @@
+{
+  "schema_version": 1,
+  "pmid": "38592547",
+  "title": "Loss-of-function variants affecting the STAGA complex component SUPT7L cause a developmental disorder with generalized lipodystrophy",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T13:30:15.735756+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "8f5daba4fd8e535c732c3a35ad8623e77d64094390b005a736aefc27f7697ac4",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "38592547",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38592547/main.xml",
+      "sha256": "6f631d3cdb90a447760a26728ecd0cd168d85ecec4d784676c88779989cac6fd",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "38592547",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38592547/main.complete.txt",
+      "sha256": "c57a3610ac981c79622f4a7507a95c2431f3fadc7fe2112123717cecaf1d87ce",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "38592547",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/38592547/availability.json",
+      "sha256": "7a54696fdcf286790d7c99c71083e7e7a9ed30600d68b4e3df41085a2696d62f",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Loss-of-function variants affecting the STAGA complex component SUPT7L cause a developmental disorder with generalized lipodystrophy",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 4,
+      "table": 0,
+      "supplement": 4
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 464,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–464"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 464,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–464"
+        }
+      ],
+      "note": "Complete article including methods, results, allreferences and endmatter read. One proband, three technical replicates, WT rescue of DNA-damage cellular phenotype; figures/supplements still pending."
+    },
+    {
+      "id": "figure:Fig1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=Fig1]; Fig. 1Clinical and genetic characterization of proband II-1. (A) Facial appearance of the affected individual II-1 postnatal, and with 1 month, 7 months, and 6 years. Note, the thin skin leading to visibility of his subcutaneous veins and generalized lipodystrophy. (B) We detected the variants c.80G>A and c.255_258dup in SUPT7L in a heterozygous state in the parents (I-1 and I-2) and in a compound"
+    },
+    {
+      "id": "figure:Fig2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=Fig2]; Fig. 2Consequences of the SUPT7L variants on mRNA level. (A) Transcriptome sequencing data from the proband’s fibroblasts and a control. IGV alignment representing exon 2–3 of SUPT7L. In II-1 the duplication c.255_258dup is visible in approximately 50% of the reads (purple marks and boxes). The heterozygous variant c.80G>A was not detectable in any read, however split reads fusing exon 2 with a po"
+    },
+    {
+      "id": "figure:Fig3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=Fig3]; Fig. 3Consequences of the SUPT7L variants on protein level. (A) Immunofluorescence staining of SUPT7L in the nucleus. Representative images of SUPT7L (red) and nuclear envelope marker LAMIN A/C (green) in fibroblasts from individual II-1 and unaffected controls. SUPT7L is absent in II-1 cells. Scale: 20 μm. (B) Immunoblot detection of the STAGA complex components SUPT7L, SUPT3H and TAF10 in lysate"
+    },
+    {
+      "id": "figure:Fig4",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=Fig4]; Fig. 4SUPT7L loss of function causes gene expression changes and leads to an increased rate of DNA damage events. (A) Transcriptome analysis of fibroblasts from individual II-1 compared to unaffected controls. Shown are selected deregulated gene sets affecting DNA repair, cell cycle and transcription. Downregulated genes are shown in blue, not aberrant regulated genes in grey. The effect size repr"
+    },
+    {
+      "id": "supplement:MOESM1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=MOESM1]; Supplementary Material 1"
+    },
+    {
+      "id": "supplement:MOESM2",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=MOESM2]; Supplementary Material 2"
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material1_reqid_",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=db_ds_supplementary-material1_reqid_]; Supplementary Material 1"
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material2_reqid_",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=db_ds_supplementary-material2_reqid_]; Supplementary Material 2"
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SUPT7L/PMID_38592547_affected_individual_II_1.json",
+      "packet_sha256": "58ef844bd772fc6c6c0afd126e2971b53dd23cfbbe6abd0b987502fb10b5e7fa",
+      "case_id": "TC_1887a609d62838eb",
+      "role": "selected",
+      "packet_subject_id": "affected individual II-1",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Full maintext read; mainfigurepixels and supplements remain open. Not clinical validation."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact male affected individualII-1, child of healthy unrelated French parents, last described at6years.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinical description, Figure1legend"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Compound heterozygous SUPT7L NM_014860.3:c.255_258dup andc.80G>A, validated by parental Sanger sequencing.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Disease gene identification; Figure1legend"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "c.80G>A inherited from clinically unaffected motherI-2; c.255_258dup inherited from fatherI-1.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Par41–42"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Opposite parental origins establish trans phase.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Par41–42"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Novel candidate recessive gene association in one proband; patient fibroblasts lack detectable SUPT7L, show increased DNA-damagefoci, and WT complementation rescues this cellular endpoint. Independent HeLaKO recapitulates damage.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Functional results, Par44–59"
+          }
+        ],
+        "limitations": [
+          "No second affected individual identified; gene-level association rests on one family. Technical replicates do not provide independent patient replication.",
+          "One CRISPR clone and overexpression rescue support mechanism but do not establish organismal efficacy or all phenotype causality.",
+          "Methods describe3unaffected RNAseqcontrols, results4; data-availabilitystatement saysno datasetsgenerated despite RNAseq. Raw data not independently reproduced."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All29packetfeatures compared. Clinical narrative also includes umbilical hernia, renal asymmetry, reduced leptin, low growth parameters and poor eyecontact; packet is not exhaustive.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinical description"
+          }
+        ],
+        "limitations": [
+          "Several developmental findings and labs evolve by age. Congenital cataract and neonatal tooth timing need precise encoding.",
+          "Supplementary differential-diagnosis table not yet read."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c255_258dup_SUPT7L_NM_014860v3",
+            "geneContext": {
+              "valueId": "HGNC:30632",
+              "symbol": "SUPT7L"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_014860.3:c.255_258dup"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.27661145_27661148dup"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_055675.1:p.(Asn87ProfsTer12)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 27661144,
+              "ref": "T",
+              "alt": "TCTGG"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e0dbcb55403350756570be626c48ac1acb98eeb389de9d7094675a428ef63f77",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Exact DNA variant and heterozygosity match; predictedAsn87ProfsTer12 matches source.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Par41–44; Figure2legend"
+              }
+            ],
+            "limitations": [
+              "Genomic allele not independently normalized to GRCh38; source alignedGRCh37."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c80GtoA_SUPT7L_NM_014860v3",
+            "geneContext": {
+              "valueId": "HGNC:30632",
+              "symbol": "SUPT7L"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_014860.3:c.80G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.27661323C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_055675.1:p.(Arg27Gln)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 27661323,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "4c7c6d8fb4ded8a379cf0e6094b0f4dfce2a3dc3643eda015519f5645998f728",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Exact DNA variant and heterozygosity match; Arg27Gln is a predicted coding annotation, but fibroblastRNA demonstrates aberrant splice/exontruncation and frameshift, not expression of stable missense protein.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Par41–44; Figure2legend"
+              }
+            ],
+            "limitations": [
+              "GRCh38 genomic coordinates not independently normalized; source sequencing alignedGRCh37.",
+              "Reported67ntdeletion versusr.14_82del inclusive69nt is internally inconsistent; observed splice effect supported but exact RNA nomenclature needs resolution."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000695",
+              "label": "Natal tooth"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "f260be117fd8d72927410beb821850dbab2eb650f5d5856d84d5e1580300998c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Source describes a neonatal tooth, not an explicitly present-at-birth natal tooth.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": [
+              "Exact appearance atbirth versuswithinfirstmonth is not specified."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011220",
+              "label": "Prominent forehead"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003623",
+                "label": "Neonatal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "5698b457bec7a96a8583c583ee17a4ed2323e5e2d995e468ca8e96d3f6bf4ac1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Prominent forehead. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003623",
+                "label": "Neonatal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "6b2bd025acdc742592a979d333dec7bedc8fd901e43aa39e67e22c1a330db63a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Downslanted palpebral fissures. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0045075",
+              "label": "Sparse eyebrow"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003623",
+                "label": "Neonatal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "85b3382ee09593a69dc7c756933226daf0de4cb2f2cb74c79cce08fad4684a2d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Sparse eyebrow. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000325",
+              "label": "Triangular face"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003623",
+                "label": "Neonatal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "11ebade133b0917a8102103e5bcfb7ee7d3fd428dd4d7be1817fc348d6ae475b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Triangular face. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000260",
+              "label": "Wide anterior fontanel"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003593",
+                "label": "Infantile onset"
+              }
+            }
+          },
+          "snapshot_sha256": "2f0561529bacdc944cb7cf1d9d38645da6a1fa213492fef5f01683d2c670e6c3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Wide anterior fontanel. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005484",
+              "label": "Secondary microcephaly"
+            }
+          },
+          "snapshot_sha256": "15168d01a6e208ca6fc0886d01dab03e1c4026f9304396ee7b9c8abd6caeb246",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Secondary microcephaly. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001974",
+              "label": "Increased total leukocyte count"
+            }
+          },
+          "snapshot_sha256": "25a15df46a3e4e8cd71b2c3f886377bc25a43edc2481b76008c83605c953cfe3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Increased total leukocyte count. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000821",
+              "label": "Hypothyroidism"
+            }
+          },
+          "snapshot_sha256": "8fcddd13e432d733ebd1392be6c7532a2330c2d5580bf9d2723b923e521a1536",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hypothyroidism. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001873",
+              "label": "Thrombocytopenia"
+            }
+          },
+          "snapshot_sha256": "d901b0eeedefd54428cb6ad29a1218857c7f60fd8eaed8fd4e1952b67d37697f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Thrombocytopenia. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hypertelorism. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000519",
+              "label": "Developmental cataract"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "e33d4ed98b91497347497f9fadd4c0386072663817a1538d77f397384d42336e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Source says congenital cataracts; packet developmental-cataract terminology should retain neonatal/congenital timing.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": [
+              "Packet terminology is broader/differently timed than source."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002910",
+              "label": "Elevated circulating hepatic transaminase concentration"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P10M"
+              }
+            }
+          },
+          "snapshot_sha256": "a84ce35c74e7915e3cfa77ab760aadfc48aef1367d54f8e6f914904006373243",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Elevated circulating hepatic transaminase concentration. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002155",
+              "label": "Hypertriglyceridemia"
+            }
+          },
+          "snapshot_sha256": "07418197150be5408d930488de0f5d6962f299f7dbeba9e11263f0a34b2e4ab5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hypertriglyceridemia. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0040081",
+              "label": "Abnormal circulating creatine kinase concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "817239b96f713eaf5348ec55481cb611193642a84de959aeb6e3a9eaa6fb8b6a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "CK normal atbirth; sentence says CK/hepatic enzymes were elevatedtwofold at10months, with ambiguous scope of relative clause. A timeless CK exclusion is not secure.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": [
+              "Time-dependent laboratory values and ambiguous wording; supplement laboratory details pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000369",
+              "label": "Low-set ears"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "ec99bdb3c5bb2d553895c4ab93dccccc4f200230b6ade07c5688de56a2123e92",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Source describes deep-set ears; this may correspond to low-set in the authors clinical terminology, but exact placement not explicitly stated.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": [
+              "Deep-set and low-set terminology are not assumed identical without phenotype verification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002240",
+              "label": "Hepatomegaly"
+            }
+          },
+          "snapshot_sha256": "3e523cf76256005eb7fcbe2e2ad770bbb652476ed9fc1825dfc43d3783178b37",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hepatomegaly. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000023",
+              "label": "Inguinal hernia"
+            }
+          },
+          "snapshot_sha256": "b6cd8299335c8f0c7f2c311fc106b0d47b167a73926aa6df1237617d3d469177",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Inguinal hernia. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001344",
+              "label": "Absent speech"
+            }
+          },
+          "snapshot_sha256": "7f822ec40430b496de56f1832e57b86e49f4245c6df3680e098f62f26b26caaf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Absent speech. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011344",
+              "label": "Severe global developmental delay"
+            }
+          },
+          "snapshot_sha256": "1d0255212d7e2b33c933fe62f3f72fa97ffe3f3d0753760a886ef634bd625dc1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Severe global developmental delay. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P3M"
+              }
+            }
+          },
+          "snapshot_sha256": "b34bb99c3acbbda62d326bcaa836508f1d66cda226509f061c8e8647aeccdf66",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Motor delay. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001276",
+              "label": "Hypertonia"
+            }
+          },
+          "snapshot_sha256": "407962068b0666bf714d0fbe84ee071a2a99568330207feaf3fbd1dea87a69f3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hypertonia. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012385",
+              "label": "Camptodactyly"
+            }
+          },
+          "snapshot_sha256": "f999d42533c6043ae139e4ad98dc9758dc78b933aa546628c38e768707a8ecb1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Camptodactyly. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009064",
+              "label": "Generalized lipodystrophy"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "9b9ec643b3110e54422be11241dd03c96428c84f137c159016cdd62dede45dbb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Generalized lipodystrophy. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0034197",
+                "label": "Third trimester onset"
+              }
+            }
+          },
+          "snapshot_sha256": "79ddfdfeeef79578537b15c7a669b4e7d4e6715ed21e07ef9dba2b9a4589156c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Intrauterine growth retardation. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001518",
+              "label": "Small for gestational age"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "0fc74ab009bb2d1362efe118bdab22da925cc5ea4da03331fe71d82124feb869",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Birthweight−2.0SD andlength−3.1SD at36+4weeks support small size; exact gestation-adjusted centile reference not provided.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": [
+              "Measurement-based mapping, not an explicit SGA diagnostic statement."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010648",
+              "label": "Dermal translucency"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003623",
+                "label": "Neonatal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "1a49f64e8d2e5f27dc21c9841d15e47e9955e8d705c3421f864fceb681233cf9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Dermal translucency. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008070",
+              "label": "Sparse hair"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003623",
+                "label": "Neonatal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "2d089750705e894086455949bbc842c45ee8522c1c6466b9e15ddb9259a3980f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Sparse hair. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001698",
+              "label": "Pericardial effusion"
+            }
+          },
+          "snapshot_sha256": "4c7272a8296f317b20cac820b83c8378d43e0dbf0f773a7eb640a55b6c0b9b10",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Pericardial effusion. Explicit clinical description supports mapping.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinical description Par36,38,39"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading.",
+    "Single-family candidate disease association; strong cellular complementation evidence does not establish a clinically proven diagnosis or therapy.",
+    "No individual ranking outcomes consulted."
+  ]
+}

@@ -1,0 +1,614 @@
+{
+  "schema_version": 1,
+  "pmid": "39701103",
+  "title": "Bi-allelic variants in DAP3 result in reduced assembly of the mitoribosomal small subunit with altered apoptosis and a Perrault-syndrome-spectrum phenotype",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T13:36:32.432861+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "ce71dae382a3d3106567b7abb6a8b7ad528d9457dffde139c64b983b53e6dbbd",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "39701103",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39701103/main.xml",
+      "sha256": "0eb1cbe0ab452c10e9aa2f99305b2aa2bf45ba229fce3ddd8a6bf48aa31f8957",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "39701103",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39701103/main.complete.txt",
+      "sha256": "b1b03be6e630fbf3f98d56adccdd3eab9d9eea0065f03e6fd4c50cbd0dd2533a",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "39701103",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/39701103/availability.json",
+      "sha256": "68d7d21839fd928c08eb78f8ca7f3446282c3bc6ebc12766b9644fd1e6a6734d",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Bi-allelic variants in DAP3 result in reduced assembly of the mitoribosomal small subunit with altered apoptosis and a Perrault-syndrome-spectrum phenotype",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 6,
+      "table": 1,
+      "supplement": 3
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 410,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–410"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 410,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–410"
+        }
+      ],
+      "note": "Full mainarticle including all60references and webresources read. ExactmappedcaseF3, notF4 despite sharedGlu392Lys. Author gene-disease scoringmoderate11points. F1/F4partialcellularrescue notdirectF3experiment."
+    },
+    {
+      "id": "figure:undfig1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=undfig1]; "
+    },
+    {
+      "id": "figure:fig1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig1]; Figure 1Family pedigrees and characterization of the DAP3 deletion fusion product present in F1 and F2(A–E) Pedigrees for the five families; known segregation and variant details are listed. All variants are annotated against the DAP3 reference sequence GenBank: NM_004632.4.(F) PCR analysis of F1 and F2 DNA using gel electrophoresis to detect a fusion product for the 135 kb deletion. P, proband; M"
+    },
+    {
+      "id": "figure:fig2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig2]; Figure 2DAP3 variant residue-conservation status, variant locations, and structural context(A) Evolutionary conservation of affected DAP3 residues; a broad selection of species are highlighted. Variant amino acids highlighted in black, and yellow signifies matching to the associated human residue. Sequences were aligned via Jalview 2.11.2.7.38 The DAP3 reference sequences used for these species ar"
+    },
+    {
+      "id": "figure:fig3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig3]; Figure 3Functional and proteomic analyses of F1 and F4 proband fibroblasts reveal DAP3 variants induce mitochondrial respiratory chain defects and decreased expression levels of small mitoribosomal subunit and OXPHOS components(A) Mitochondrial respiratory chain enzyme activities in control (black), F1:II-1 (pink), and F4:II-1 (blue) fibroblast samples. Mean enzyme activities of three protein conc"
+    },
+    {
+      "id": "figure:fig4",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig4]; Figure 4Functional analyses of fibroblasts from affected individuals and recombinant DAP3 protein establish that DAP3 variants can diminish apoptotic sensitivity and destabilize DAP3 protein structure, impacting GTPase activity(A) Assessment of caspase-3/7 release after stimulation of intrinsic and extrinsic apoptotic pathways. Fibroblasts from affected indivudals were challenged in duplicate with"
+    },
+    {
+      "id": "figure:fig5",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig5]; Figure 5Lentiviral transduction of wild-type DAP3 increases protein levels of MRPS7, MRPS9, and OXPHOS components in F1:II-1 and F4:II-1 fibroblasts(A) Expression of DAP3 mRNA in control fibroblasts and fibroblasts from F1:II-1 after lentiviral transduction (LV) of DAP3 cDNA for 72 h or untransduced (UT). Each data point represents an averaged RQ value from triplicate reactions using cDNA from ind"
+    },
+    {
+      "id": "table:tbl1",
+      "kind": "table",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor table-wrap[@id=tbl1]; Table 1Phenotypic summary of individuals with DAP3 variants identified in this studyProband F1Proband F2Proband F3Proband F4Proband F5SexfemalefemalefemalefemalefemaleOriginUKUKTajikistanTunisiaIndiaGenotype(GenBank: NM_004632.4)c.1184G>A; 135 kb delc.395C>T; 135 kb delc.1174G>A; 1174G>Ac.1174G>A; 1174G>Ac.1139T>G; 1139T>GAmino acid change(NP_001186778.1)p.Cys395Tyr; ?p.Thr132Ile; ?p.Glu392Lys; Gl"
+    },
+    {
+      "id": "supplement:mmc1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=mmc1]; Document S1. Figures S1–S4, Tables S2–S10, and supplemental methods"
+    },
+    {
+      "id": "supplement:mmc2",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=mmc2]; Table S1. Mitoribosomal SSU proteins grouped on the basis of stage of assembly into the SSU and their associated disorders"
+    },
+    {
+      "id": "supplement:mmc3",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=mmc3]; Document S2. Article plus supplemental information"
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/DAP3/PMID_39701103_Proband_F3.json",
+      "packet_sha256": "eb375a7d9a7140ced44dc539bab146b70e7d9b8515d5ccb5ef08d7ef8cde08c4",
+      "case_id": "TC_4bdaa3db22c8c32f",
+      "role": "selected",
+      "packet_subject_id": "Proband F3",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Maintextfull; figures/tablepixels/supplementsstillopen. Prioraggregateoutcomesknown, noindividualranksconsulted."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "ExactfemaleF3probandfromTajikistan,19years, bilateralSNHL/primaryamenorrhea/mildID/developmentaldelay.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Resultsp0085; Table1F3"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "HomozygousDAP3 NM_004632.4:c.1174G>A, correspondingGlu392Lys; samecodingallele asF4 butdifferentperson.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "p0085; Table1"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "unresolved",
+        "statement": "WESreports homozygousvariant; mainnarrativedoesnot describeF3parentaltesting orconsanguinity.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "p0085; Table1F3"
+          }
+        ],
+        "limitations": [
+          "KnownsegregationdetailsreferredtoFigure1C; pixelreviewpending."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Reportedhomozygousgenotype doesnot requirecompoundphase; preciseparentalorigins notestablishedinreadtext.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1F3; p0085"
+          }
+        ],
+        "limitations": [
+          "No parentalconfirmationorcopynumberexclusion forF3 showninmainnarrative."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "FiveunrelatedfamilieswithbiallelicDAP3, reducedSSUproteins/CI-CIVfunction inF1/F4, partialWTcomplementation andGlu392Lysrecombinantfunctionalchanges supportassociation. AuthorscalculateClinGen-style11points,moderate.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Resultsp0090–0105; Discussionp0125"
+          }
+        ],
+        "limitations": [
+          "F3hasnoownfibroblastfunctionalassay; F4samevariantresults cannotdemonstrateallF3phenotypecausality.",
+          "Sourceassociation scoredmoderate, notdefinitive; severevariablepresentationnotexplainedbyGTPaseactivityalone.",
+          "Onlypartialproteinlevelrescue demonstrated; noclinicaltreatmentresult."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All9featureitemscompared. SourceexplicitlylimitsavailableF3clinicalinformation; hearingseverity/ageunknown andseveralfeaturesN/A.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "p0085; Table1"
+          }
+        ],
+        "limitations": [
+          "NA nevertreatedasabsence; noextrapolationofF4seizures/leukodystrophy/liverfailuretoF3."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1174GtoA_DAP3_NM_004632v4",
+            "geneContext": {
+              "valueId": "HGNC:2673",
+              "symbol": "DAP3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_004632.4:c.1174G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000001.11:g.155738219G>A"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr1",
+              "pos": 155738219,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "b45bcdfc6079a2b2d20e378078c97bf5bf0ba5e2c422672101e5ececd28d6ee0",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Exactcodingvariantc.1174G>A/homozygositymatchesF3; sourceaddsGlu392Lys absentfrompacketexpressionlist.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1F3 andp0085"
+              }
+            ],
+            "limitations": [
+              "PacketGRCh38g.155738219G>Anotindependentlynormalized."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000786",
+              "label": "Primary amenorrhea"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "c593994095430607945c71bfda4556f37ed5375d6bc71acbbc6ec85b2e24d14c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Primary amenorrhea. ExplicitF3clinicaldescription/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "p0085 F3paragraph; Table1F3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008209",
+              "label": "Premature ovarian insufficiency"
+            }
+          },
+          "snapshot_sha256": "2fdc824efcaf7b5fc04002368000acde6b91a46d1ca64122dc9821615f6a4761",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Premature ovarian insufficiency. ExplicitF3clinicaldescription/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "p0085 F3paragraph; Table1F3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012622",
+              "label": "Chronic kidney disease"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2964652cd0a121b9da3e23c96e75407bc0b103b0946aab74c89f42acce19ea2f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "SourceTable1F3listsminus forrenal dysfunction, supporting reported absence atassessment.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1F3"
+              }
+            ],
+            "limitations": [
+              "Narrativesaysno furtherclinicalinformationavailable; no detailednegativeexamination/laboratoryrecord. Renaldysfunction/retinopathyrowsarebroaderorfunctionallydifferentfromexactHPOlabel."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002240",
+              "label": "Hepatomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "92d186c16d6c93ee9a4267ef118a20b9f2b6a812767724afdf8d3794887c892d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "SourceTable1F3listsminus forhepatomegaly, supporting reported absence atassessment.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1F3"
+              }
+            ],
+            "limitations": [
+              "Narrativesaysno furtherclinicalinformationavailable; no detailednegativeexamination/laboratoryrecord. Renaldysfunction/retinopathyrowsarebroaderorfunctionallydifferentfromexactHPOlabel."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001399",
+              "label": "Hepatic failure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33976a954b6bf962b770acc2a82304ffcfff6a92b2dace385fdfb427a5d62acd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "SourceTable1F3listsminus fortransient liver failure, supporting reported absence atassessment.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1F3"
+              }
+            ],
+            "limitations": [
+              "Narrativesaysno furtherclinicalinformationavailable; no detailednegativeexamination/laboratoryrecord. Renaldysfunction/retinopathyrowsarebroaderorfunctionallydifferentfromexactHPOlabel."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000479",
+              "label": "Abnormal retinal morphology"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d485d5322d92d2f5e998fc47d812f7aa57fc043e84808802554668f5dada15c1",
+          "assessment": {
+            "status": "qualified",
+            "statement": "SourceTable1F3listsminus forretinopathy, supporting reported absence atassessment.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1F3"
+              }
+            ],
+            "limitations": [
+              "Narrativesaysno furtherclinicalinformationavailable; no detailednegativeexamination/laboratoryrecord. Renaldysfunction/retinopathyrowsarebroaderorfunctionallydifferentfromexactHPOlabel."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008619",
+              "label": "Bilateral sensorineural hearing impairment"
+            }
+          },
+          "snapshot_sha256": "d30391bb69ae59441ee39c72991bffd6c74ba7dfb2e49f918de5111425c1ca1a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Bilateral sensorineural hearing impairment. ExplicitF3clinicaldescription/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "p0085 F3paragraph; Table1F3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001256",
+              "label": "Intellectual disability, mild"
+            }
+          },
+          "snapshot_sha256": "9d0f11df4bb5b369512b18d57fb102c629377bca41d5de40681106164cfabeb5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Intellectual disability, mild. ExplicitF3clinicaldescription/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "p0085 F3paragraph; Table1F3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Global developmental delay. ExplicitF3clinicaldescription/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "p0085 F3paragraph; Table1F3"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading.",
+    "Proteinrestorationispartial, twofibroblastdonors; proteomiccomparison512samplesnot512healthyprospectivecontrolcases.",
+    "MainTable1F4SNHLdiagnosis8y versusnarrative2y isinternaldiscordance affectinganothercase, notmappedF3."
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "pmid": "39538375",
+  "source_titles": [
+    "AMOTL1 -Associated Multiple Congenital Anomalies (Craniofaciocardiohepatic Syndrome, CFCHS): A Novel Clinical Spectrum Including Craniofacial, Heart and Liver Abnormalities."
+  ],
+  "selected_case_ids": [],
+  "alternate_case_ids": [
+    "TC_8c30c37a076878fa"
+  ],
+  "genes": [
+    "AMOTL1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/AMOTL1/PMID_39538375_Woman.json",
+      "sha256": "a43ce45e09e10bf58b3804b3105f66d234210171ed7382d0b13df3bc3f4a2aad",
+      "case_id": "TC_8c30c37a076878fa",
+      "selected_record": false,
+      "subject": {
+        "id": "Woman",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P28Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621192",
+            "label": "Craniofaciocardiohepatic syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0410030",
+            "label": "Cleft lip"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000175",
+            "label": "Cleft palate"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002967",
+            "label": "Cubitus valgus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000520",
+            "label": "Proptosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000403",
+            "label": "Recurrent otitis media"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007018",
+            "label": "Attention deficit hyperactivity disorder"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000989",
+            "label": "Pruritus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001631",
+            "label": "Atrial septal defect"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002092",
+            "label": "Pulmonary arterial hypertension"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002910",
+            "label": "Elevated circulating hepatic transaminase concentration"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "iSyr8NlqdghGXWZlOz4rAhmH",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621192",
+              "label": "Craniofaciocardiohepatic syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Woman",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c469CtoT_AMOTL1_NM_130847v3",
+                    "geneContext": {
+                      "valueId": "HGNC:17811",
+                      "symbol": "AMOTL1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_130847.3:c.469C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000011.10:g.94799659C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_570899.1:p.(Arg157Cys)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr11",
+                      "pos": 94799659,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

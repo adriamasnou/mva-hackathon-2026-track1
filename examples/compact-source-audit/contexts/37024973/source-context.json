@@ -1,0 +1,330 @@
+{
+  "pmid": "37024973",
+  "source_titles": [
+    "Large-scale analysis of de novo mutations identifies risk genes for female infertility characterized by oocyte and early embryo defects."
+  ],
+  "selected_case_ids": [
+    "TC_685e5874e3fad23c",
+    "TC_9f64f545f62aced6",
+    "TC_e0f489574e2b6401"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "TUBA4A"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/TUBA4A/PMID_37024973_Trio_3_proband.json",
+      "sha256": "1dd9ece29b8a3c30f574a2820cee38eab3f7bc56ce2568e3a60367d5b1f279bd",
+      "case_id": "TC_685e5874e3fad23c",
+      "selected_record": true,
+      "subject": {
+        "id": "Trio 3 proband",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P38Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621231",
+            "label": "Oocyte/zygote/embryo maturation arrest 23"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P23Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0033336",
+            "label": "Zygotic cleavage failure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0033712",
+            "label": "Repeated implantation failure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008222",
+            "label": "Female infertility"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "TeD3BM04IP2FqwGkjpqmywk0",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621231",
+              "label": "Oocyte/zygote/embryo maturation arrest 23"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Trio 3 proband",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1040GtoA_TUBA4A_NM_006000v3",
+                    "geneContext": {
+                      "valueId": "HGNC:12407",
+                      "symbol": "TUBA4A"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_006000.3:c.1040G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.219250659C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005991.1:p.(Cys347Tyr)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 219250659,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/TUBA4A/PMID_37024973_Trio_2_proband.json",
+      "sha256": "84f68fe2d088dc41d395576edfbdb04f950b0ce9499ea4c081daff362eedd1bc",
+      "case_id": "TC_9f64f545f62aced6",
+      "selected_record": true,
+      "subject": {
+        "id": "Trio 2 proband",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P29Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621231",
+            "label": "Oocyte/zygote/embryo maturation arrest 23"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0025708",
+              "label": "Early young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0033336",
+            "label": "Zygotic cleavage failure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0033712",
+            "label": "Repeated implantation failure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008222",
+            "label": "Female infertility"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "O7O1AZVGtPUIVJIAn6uY2l4K",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621231",
+              "label": "Oocyte/zygote/embryo maturation arrest 23"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Trio 2 proband",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c857TtoC_TUBA4A_NM_006000v3",
+                    "geneContext": {
+                      "valueId": "HGNC:12407",
+                      "symbol": "TUBA4A"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_006000.3:c.857T>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.219250842A>G"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005991.1:p.(Leu286Pro)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 219250842,
+                      "ref": "A",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/TUBA4A/PMID_37024973_Trio_1_proband.json",
+      "sha256": "25fdc5ceb26878627aa77dfd1a55273793a536622603c306fac858cd004b6a44",
+      "case_id": "TC_e0f489574e2b6401",
+      "selected_record": true,
+      "subject": {
+        "id": "Trio 1 proband",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P32Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621231",
+            "label": "Oocyte/zygote/embryo maturation arrest 23"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P25Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0033336",
+            "label": "Zygotic cleavage failure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0033712",
+            "label": "Repeated implantation failure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008222",
+            "label": "Female infertility"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "SDRjt8qSwgssl5zSRg7jmA4S",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621231",
+              "label": "Oocyte/zygote/embryo maturation arrest 23"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Trio 1 proband",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c229GtoA_TUBA4A_NM_006000v3",
+                    "geneContext": {
+                      "valueId": "HGNC:12407",
+                      "symbol": "TUBA4A"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_006000.3:c.229G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.219251711C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005991.1:p.(Glu77Lys)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 219251711,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

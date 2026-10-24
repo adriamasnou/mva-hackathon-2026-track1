@@ -1,0 +1,130 @@
+{
+  "pmid": "31782611",
+  "source_titles": [
+    "Phenotypic expansion of POGZexcludedrelated intellectual disability syndrome (WhiteexcludedSutton syndrome)"
+  ],
+  "selected_case_ids": [
+    "TC_1a8a9cfb6a866933"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "POGZ"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/POGZ/PMID_31782611_PT2.json",
+      "sha256": "d9eb74ca79e43879fd131020cba0ea8cd12cc2426cf8f3c9ec19df92ba0c5644",
+      "case_id": "TC_1a8a9cfb6a866933",
+      "selected_record": true,
+      "subject": {
+        "id": "PT2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P28Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:616364",
+            "label": "White-Sutton syndrome"
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002194",
+            "label": "Delayed gross motor development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000750",
+            "label": "Delayed speech and language development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000729",
+            "label": "Autistic behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000407",
+            "label": "Sensorineural hearing impairment"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "dWd6xQ7qPMbWLoNvaMWRFq9F",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:616364",
+              "label": "White-Sutton syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "PT2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1483CtoT_POGZ_NM_015100v4",
+                    "geneContext": {
+                      "valueId": "HGNC:18801",
+                      "symbol": "POGZ"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_015100.4:c.1483C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.151423989G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_055915.2:p.(Arg495Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 151423989,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

@@ -1,0 +1,3787 @@
+{
+  "schema_version": 1,
+  "pmid": "39003500",
+  "title": "Biallelic NDC1 variants that interfere with ALADIN binding are associated with neuropathy and triple A-like syndrome",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T13:29:26.690472+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "4ea91374a2d9a266cff2f32196fe8a4a84ac7fb52831b555550fe7efb49823a7",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "39003500",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39003500/main.xml",
+      "sha256": "82f72622badcdd288c3bd5a99413ad22180e7130b89416b73b5c8fad6147aa37",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "39003500",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39003500/main.complete.txt",
+      "sha256": "d41db17a67e7dbca3c98b0926863538f283c34d9e2639a28fd5538fcf4e19286",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "39003500",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/39003500/availability.json",
+      "sha256": "15e6b51cabb2a3e7af257789bad584210cc4718be604c924106c26a73f8e5005",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "supp-note",
+      "pmid": "39003500",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39003500/cloud/PMC11375137.1/mmc1.pdf",
+      "sha256": "e2e5888668d47de7817bdbb79883914a040f8794845d68d4132a6e344295a576",
+      "kind": "pdf",
+      "description": "Supplemental methods, four-family clinical narratives, two supplementary figures"
+    },
+    {
+      "id": "supp-note-text",
+      "pmid": "39003500",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/39003500/mmc1.txt",
+      "sha256": "130a87e2656e14f6faa569806a1da8ecfd54204e7b2437f723e61bc3d25cc637",
+      "kind": "text",
+      "description": "Complete extracted supplement text read; figure pixels pending"
+    },
+    {
+      "id": "workbook-text",
+      "pmid": "39003500",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/39003500/workbooks.txt",
+      "sha256": "201a8d48b8c1ef12ca63e1c730e1f87fe95718f37d6a1129a966fafbe229ba72",
+      "kind": "text",
+      "description": "All nonempty cells in three original workbooks, with cell coordinates; all read"
+    },
+    {
+      "id": "supp-xlsx-2",
+      "pmid": "39003500",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39003500/cloud/PMC11375137.1/mmc2.xlsx",
+      "sha256": "5d9cb005734bfa811c1ff2bd0adebacdeaa61c848a08472f161df29505aab445",
+      "kind": "data",
+      "description": "Original workbook, all nonempty cell values read; visual rendering pending"
+    },
+    {
+      "id": "supp-xlsx-3",
+      "pmid": "39003500",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39003500/cloud/PMC11375137.1/mmc3.xlsx",
+      "sha256": "d4863d7c2eb5d70b0547b80e29b7658594ddf8d7c53a22a93c8089a47ac3ddac",
+      "kind": "data",
+      "description": "Original workbook, all nonempty cell values read; visual rendering pending"
+    },
+    {
+      "id": "supp-xlsx-4",
+      "pmid": "39003500",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39003500/cloud/PMC11375137.1/mmc4.xlsx",
+      "sha256": "aa0123390fc3c465d1d952bedb364566ab407cae68cc11bdc2242353e0aad395",
+      "kind": "data",
+      "description": "Original workbook, all nonempty cell values read; visual rendering pending"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Biallelic NDC1 variants that interfere with ALADIN binding are associated with neuropathy and triple A-like syndrome",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 4,
+      "table": 2,
+      "supplement": 5
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 362,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–362"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 362,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–362"
+        }
+      ],
+      "note": "Entire maintext/all53references/endmatter read. Table1/2 text read; figures/supplements/pixels andpacketadjudication pending. Intronicvariant haspatientRNA/minigene evidence; missense variants onlystructuralmodeling, notthosepatientfibroblastassays. Sourcecalls30aa deletion thoughinclusiveAla298-Lys328 spans31residues; Table1ID100% despite2-IIno; controlsn2legend vs3narrative retained."
+    },
+    {
+      "id": "figure:fig1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig1]; Figure 1Clinical features of affected individuals with NDC1 variants(A) Pedigrees of four families with biallelic NDC1 variants. Affected individuals are depicted in black.(B) Facial features of affected individuals 1-I, 1-II, 3-I, and 3-II. The lower panel in individual 1-I shows tongue fasciculations.(C) Schematic drawing of the NDC1 protein in the nuclear envelope. The identified NDC1 variants "
+    },
+    {
+      "id": "figure:fig2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig2]; Figure 2Functional analysis of the variant identified in family 1(A) Sashimi plot showing partial skipping of exon 9 NDC1 in both affected individuals from family 1. These samples were not treated with cycloheximide (CHX–).(B) Schematic representation of the effect of the homozygous NDC1:c.892-21G>A variant on splicing. In approximately 60% of the reads skipping of exon 9 is observed.(C) Minigene "
+    },
+    {
+      "id": "figure:fig3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig3]; Figure 3Modeling structural effects of missense variants in NDC1(A) View of the ALADIN-NDC1 heterodimers of the Xenopus laevis NPC. NDC1-ALADIN heterodimer showing that p.Ser569 and p.Ala574 are located close to the dimer interface. This panel is adapted from Huang et al.28(B) Close-up of p.Ala574 showing that this residue forms direct contacts with the ALADIN subunit (shown in blue space-filled p"
+    },
+    {
+      "id": "figure:fig4",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig4]; Figure 4NDC1 variants interfere with ALADIN recruitment and NPC insertion(A) Cell lines were stained with anti-ALADIN antibodies (red) and its localization was evaluated with confocal microscopy. n = 2 independent experiments, >10 fields per cell line were evaluated, n = 2 NDC1 individuals; family 1-I and family 1-II.(B) The number of NPCs was examined upon staining with the Mab-414 antibody (red)"
+    },
+    {
+      "id": "table:tbl1",
+      "kind": "table",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor table-wrap[@id=tbl1]; Table 1Summary of clinical features observed in individuals with biallelic NDC1 variantsInd 1-IInd 1-IIInd 2-IInd 2-IIInd 3-IInd 3-IIInd 4% of individualsVariant in NDC1: NM_018087.5c.892-21G>Ap.Ala298_Lys328delc.892-21G>Ap.Ala298_Lys328delc.892-21G>Ap.Ala298_Lys328delc.892-21G>Ap.Ala298_Lys328delc.1706C>Tp.Ser569Leuc.1706C>Tp.Ser569Leuc.1720G>Ap.Ala574ThrAge at last investigation (years)12101310±"
+    },
+    {
+      "id": "table:tbl2",
+      "kind": "table",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor table-wrap[@id=tbl2]; Table 2Comparison of the clinical features observed in individuals with NDC1 and AAAS variantsClinical manifestationsNDC1AAASAdrenal insufficiency–+Neurological features Dysphagia/achalasia++ Clinical signs of polyneuropathy++/− Hypotonia+/−+/− Hyporeflexia+– Muscular atrophy++/− Hypertonia+/−+ Tongue fasciculations/atrophy+/−+/− Epilepsy+/−+/− Facial weakness+/−+/− Developmental delay++Dysautonom"
+    },
+    {
+      "id": "supplement:mmc1",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 9,
+      "extent_source_id": "supp-note",
+      "extent_evidence": [
+        {
+          "source_id": "supp-note",
+          "locator": "all9 PDF pages, cover plus numbered1–8"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 9,
+          "mode": "text",
+          "source_id": "supp-note-text",
+          "locator": "entire extracted text including methods, all four case narratives, reference and two figure captions/labels"
+        }
+      ],
+      "note": "Text fully read; FigureS1/S2 pixels pending."
+    },
+    {
+      "id": "supplement:mmc2",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp-xlsx-2",
+      "extent_evidence": [
+        {
+          "source_id": "supp-xlsx-2",
+          "locator": "Sheet1 A1:H57; styled empty columns excluded"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "workbook-text",
+          "locator": "mmc2.xlsx: Sheet1 A1:H57; styled empty columns excluded, all nonempty cells"
+        }
+      ],
+      "note": "All cell values read. Workbook pixels not yet inspected; remains partial."
+    },
+    {
+      "id": "supplement:mmc3",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp-xlsx-3",
+      "extent_evidence": [
+        {
+          "source_id": "supp-xlsx-3",
+          "locator": "Sheet1 A1:D14"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "workbook-text",
+          "locator": "mmc3.xlsx: Sheet1 A1:D14, all nonempty cells"
+        }
+      ],
+      "note": "All cell values read. Workbook pixels not yet inspected; remains partial."
+    },
+    {
+      "id": "supplement:mmc4",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp-xlsx-4",
+      "extent_evidence": [
+        {
+          "source_id": "supp-xlsx-4",
+          "locator": "Sheet1 A1:D11"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "workbook-text",
+          "locator": "mmc4.xlsx: Sheet1 A1:D11, all nonempty cells"
+        }
+      ],
+      "note": "All cell values read. Workbook pixels not yet inspected; remains partial."
+    },
+    {
+      "id": "supplement:mmc5",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=mmc5]; Document S2. Article plus supplemental information"
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/NDC1/PMID_39003500_Family_1_individual_1.json",
+      "packet_sha256": "fbd1bbd67162dbaeaf9855a1500e2767e5dfcc1ec9b2fc6e6c4288ca05fb5267",
+      "case_id": "TC_5028b282e8d95621",
+      "role": "selected",
+      "packet_subject_id": "Family 1 individual 1",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Figure/table pixels remain unread. Clinical statements adjudicated from complete main text and full supplement text/cell values.",
+        "No individual ranking outcomes consulted; prior aggregate exposure disclosed."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact family/individual 1-I; sex and age12F,10M,13F,10F respectively agree with source TableS1 columnsB–E.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1 and family descriptions"
+          },
+          {
+            "source_id": "workbook-text",
+            "locator": "mmc2 Sheet1 B5:B11"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous NDC1 c.892-21G>A, shared by affected siblings of families1 and2; distinct from family3/4 missense alleles.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "NDC1 variants results; Table1"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Affected sibling pair homozygous; parents heterozygous, consistent recessive segregation. Family2 healthy sister heterozygous.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "NDC1 variants results; Figure1 legend"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous allele with heterozygous parents; no compound-heterozygous phase ambiguity.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "NDC1 variants results"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Recessive NDC1 association supported by two families with this splice allele, RNA exon9 skipping and minigene assays, altered ALADIN localization and NPC density in family1 cells.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "RNA analysis, functional results and Discussion"
+          }
+        ],
+        "limitations": [
+          "Family2 did not supply the same direct cellular assays; relatedness/founder possibility limits independence.",
+          "Source biological association does not constitute clinical proof or independent ACMG reclassification. No therapeutic rescue experiment.",
+          "Residual normal transcript exists; severity/penetrance and long-term adrenal course unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet feature compared for1-I; unsupported negatives, terminology overprecision and source contradictions retained explicitly.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1; Supplemental clinical narratives; TableS1"
+          }
+        ],
+        "limitations": [
+          "Source Table1 claims100%intellectual disability while2-II is listedno. Table2 minus means neverreported rather than excluded.",
+          "Clinical follow-up varies by family and time; absent adrenal insufficiency at assessment is not lifetime exclusion."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c892_21GtoA_NDC1_NM_018087v5",
+            "geneContext": {
+              "valueId": "HGNC:25525",
+              "symbol": "NDC1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_018087.5:c.892-21G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000001.11:g.53806538C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_060557.3:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr1",
+              "pos": 53806538,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "c089f66c5dae7f66298b7fbd34252a767eebcb374520e657cc827c89ef2d2e44",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Exact coding allele, homozygous state and transcriptNM_018087.5 match. Source S2 reports GRCh37chr1:54272211C>T; packet GRCh38 coordinate not independently lifted over.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc3 Sheet1 B2:B4"
+              }
+            ],
+            "limitations": [
+              "Packet p.? conservatively reflects DNA annotation; patient RNA supports r.892_984del, p.Ala298_Lys328del. Source calls30residues although93nt/inclusive298–328 imply31."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034368",
+              "label": "Urolithiasis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b45b2ff69707cda96341013fcb00d14d0e62991adf67c9972c22fdc417b34cd",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Urolithiasis. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B50; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012473",
+              "label": "Tongue atrophy"
+            }
+          },
+          "snapshot_sha256": "85ea0b2cc2f309e7d734cb32868ae467712d1506dac9e98f23c6b814a4077ba7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Tongue atrophy. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B36; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            }
+          },
+          "snapshot_sha256": "7464dd531646fde4b613619c2d8d042119320ad998e758c0b3296f9a1376e8e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: High palate. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B56; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            }
+          },
+          "snapshot_sha256": "8d20831251db00a4a9f41505a640736489915d6d6521fc75535fbcab38213b26",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Downslanted palpebral fissures. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B56; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003189",
+              "label": "Long nose"
+            }
+          },
+          "snapshot_sha256": "61411a0e9ef5eab6e906c686112120a3637f57a28e06203f3f0f30b8d19be209",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Long nose. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B56; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000460",
+              "label": "Narrow nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "979c8fa27b15424d4aa101481d3ae9e266a33f934c591c65e7b9d355a9af6e35",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes narrow nose, while source describes a long thin nose; likely polarity mismatch, recognizing terminology mapping.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B56; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030319",
+              "label": "Weakness of facial musculature"
+            }
+          },
+          "snapshot_sha256": "50d5a7764d18f1fcf2f035b83e5dcb9e80ff3b15aa6d6bdda0cf607a1f8a14e6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Weakness of facial musculature. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B56; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0430025",
+              "label": "Bilateral facial palsy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d4d01be6e312cd07b5d22232f665f8e3eb178fe8433ebbee7374915f32ce154b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Explicit exclusion of Bilateral facial palsy is not established by facial weakness or decreased reflexes alone.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B56; family 1-I"
+              }
+            ],
+            "limitations": [
+              "Explicit exclusion of Bilateral facial palsy is not established by facial weakness or decreased reflexes alone."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Microcephaly. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B23; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006532",
+              "label": "Recurrent pneumonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b23480eddcd5536cba955c4e1d3de14bd3410a97b3af366bea20098d064fcb27",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Recurrent pneumonia. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B46; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002015",
+              "label": "Dysphagia"
+            }
+          },
+          "snapshot_sha256": "e80d8a8ee221cea670673158f47e5622f1f8dcf9c40424d0fe4085e1e24e1f04",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Dysphagia. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B38; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002571",
+              "label": "Achalasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "781aa96a15c76bc5a4500996ab0e549d52820af2a7ff01fd8e90c7df746eed97",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Achalasia. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B45; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002572",
+              "label": "Episodic vomiting"
+            }
+          },
+          "snapshot_sha256": "c3e2761b1ed6413537ee3177b464410141e478ba78ddaa72b536cfac8bd1f626",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Episodic vomiting. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B45; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100749",
+              "label": "Chest pain"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c0d82d1de969cdf462b8f3449bc13e775a2241e14b0e419b587769f7403fbdec",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes chest pain; supplemental family1 narrative explicitly reports occasional chest pain for1-I, despite S1 normal ultrasound/ECG.",
+            "evidence": [
+              {
+                "source_id": "supp-note-text",
+                "locator": "Supplemental case report family1, numberedpage3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012378",
+              "label": "Fatigue"
+            }
+          },
+          "snapshot_sha256": "51b56e1abe839baa584efe52e3c6e4ec9b9eac291a9e741aafe75d1d3377cdff",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Fatigue. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B40; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200055",
+              "label": "Small hand"
+            }
+          },
+          "snapshot_sha256": "ab954f07a5d89da84d19b5f5dc7a8d06301fa8252b9b4695509e589105fe6f08",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Small hand. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B52; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003484",
+              "label": "Upper limb muscle weakness"
+            }
+          },
+          "snapshot_sha256": "05d1000ba02978ee1dae515ac777024953bf9349e73f1def75b69b6014c3ffd5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Upper limb muscle weakness. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B31; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007340",
+              "label": "Lower limb muscle weakness"
+            }
+          },
+          "snapshot_sha256": "c7ed9d26b229738c33f65dcad77ae587423c115138ff14dcf597a8df4e2d5c9b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Lower limb muscle weakness. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B31; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003438",
+              "label": "Absent Achilles reflex"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "902e5a08bc89d28eb1614dcae91314bd2909b007b07413adf6b6281676237a05",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Explicit exclusion of Absent Achilles reflex is not established by facial weakness or decreased reflexes alone.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B30; family 1-I"
+              }
+            ],
+            "limitations": [
+              "Explicit exclusion of Absent Achilles reflex is not established by facial weakness or decreased reflexes alone."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002600",
+              "label": "Hyporeflexia of lower limbs"
+            }
+          },
+          "snapshot_sha256": "c326dfc46ea26c847b6ceb32b6391a0cb617d595e7a7d81d8daf836d1c3e1415",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hyporeflexia of lower limbs. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B30; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012391",
+              "label": "Hyporeflexia of upper limbs"
+            }
+          },
+          "snapshot_sha256": "ee5addc9410ee052f80f12df13985e97cf0c13ca29dc01af73e1ef32ca82a560",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hyporeflexia of upper limbs. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B30; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002359",
+              "label": "Frequent falls"
+            }
+          },
+          "snapshot_sha256": "e95bd01815dfd0d0f6ac067619656e5a0942ea01ef27fa1170fa169e50f97df1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Frequent falls. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B40; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            }
+          },
+          "snapshot_sha256": "dfed0eeba81852313a1b62b7fd1e2a33e9467ee7a6360518e53376370228edaa",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hypotonia. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B35; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003198",
+              "label": "Myopathy"
+            }
+          },
+          "snapshot_sha256": "77377d62152bab0d5ca558a7b68f19e8ee815bc969df6b5a7b1959cc290517ce",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet asserts myopathy; EMG explicitly says no signs of myopathy, with demyelinating neuropathy and secondary axonal damage. Myopathic facial appearance is not an EMG myopathy diagnosis.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B37; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011731",
+              "label": "Abnormality of circulating cortisol level"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e9f6cd29b27b7085b9c2737a5505c90ad837cab2a93ebe8a40a74630fe2824c2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Abnormality of circulating cortisol level. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B49; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000522",
+              "label": "Alacrima"
+            }
+          },
+          "snapshot_sha256": "50f308906d60f60d77868472020be98bbcf84f4684f7a2bf192237acff0d3019",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Alacrima. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B32; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 firstwordsat3y supports delay, but clinical narrative says speech development normal; internal source inconsistency.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B28; family 1-I"
+              }
+            ],
+            "limitations": [
+              "S1 firstwordsat3y supports delay, but clinical narrative says speech development normal; internal source inconsistency."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001344",
+              "label": "Absent speech"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1c1e41b062bc67289352d351d52c5c398e5efb6e4053a8c2d8a3eaa057c0dd9f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Absent speech. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B29; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031936",
+              "label": "Delayed ability to walk"
+            }
+          },
+          "snapshot_sha256": "b839223f2a2cb628aa2cf31cd51e1c414f8ff66df9c510049723d8660b9e0963",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Delayed ability to walk. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B27; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d89b9910ff8d0011178fc229ffecca5f91e870cc5fccb6319222bf22f8d5828d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Borderline IQ75/71–81 and mainTable1 borderline classification; explicit exclusion of all intellectual disability is more categorical than evidence.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B25; family 1-I"
+              }
+            ],
+            "limitations": [
+              "Borderline IQ75/71–81 and mainTable1 borderline classification; explicit exclusion of all intellectual disability is more categorical than evidence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000739",
+              "label": "Anxiety"
+            }
+          },
+          "snapshot_sha256": "e5ab29299c90c138a790ce421b29ca468fe5dbb07d7f8ddd2ce3985af4dd193d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Anxiety. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B26; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001260",
+              "label": "Dysarthria"
+            }
+          },
+          "snapshot_sha256": "f6988c243535d0c801c792a3932fd5f940f087a730753cb11d4f35a9c3e3b95d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Dysarthria. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B29; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025373",
+              "label": "Interictal EEG abnormality"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ad32c999effb855dccd7daa58f3adcc00e3d8c28b186628257ce81e1dc34ceba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Interictal EEG abnormality. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B34; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Seizure. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B33; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001271",
+              "label": "Polyneuropathy"
+            }
+          },
+          "snapshot_sha256": "5daa5749e05b8cb069ab105f0d94ae9edcd13f12cbbb45138190b16ee70068fa",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Polyneuropathy. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B37; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Short stature. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B22; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "712b4e41abddedd66103adc88d715f8053bd08033f15f1e3e1eb6481a27dea88",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Postnatal growth retardation. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B20; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001611",
+              "label": "Hypernasal speech"
+            }
+          },
+          "snapshot_sha256": "17dbcabda127f0c76fcb55c839515cbf4f825b26c7ad3d3b6a786762acc22fc0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hypernasal speech. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B29; family 1-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031861",
+              "label": "Decreased heart rate variability"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33bb3414c4ae18625cf0b3bed0324283458389fecf03b5560315eee3d25fa406",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No autonomic disturbances besides alacrima and normal cardiac function are reported; direct HR-variability test result is not provided.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 B47; family 1-I"
+              }
+            ],
+            "limitations": [
+              "No autonomic disturbances besides alacrima and normal cardiac function are reported; direct HR-variability test result is not provided."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/NDC1/PMID_39003500_Family_1_individual_2.json",
+      "packet_sha256": "d4b1c149c350f9a8af2f6ca52101524fd41d022525e579b939d69223dd584860",
+      "case_id": "TC_5028b282e8d95621",
+      "role": "alternate",
+      "packet_subject_id": "Family 1 individual 2",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Figure/table pixels remain unread. Clinical statements adjudicated from complete main text and full supplement text/cell values.",
+        "No individual ranking outcomes consulted; prior aggregate exposure disclosed."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact family/individual 1-II; sex and age12F,10M,13F,10F respectively agree with source TableS1 columnsB–E.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1 and family descriptions"
+          },
+          {
+            "source_id": "workbook-text",
+            "locator": "mmc2 Sheet1 C5:C11"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous NDC1 c.892-21G>A, shared by affected siblings of families1 and2; distinct from family3/4 missense alleles.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "NDC1 variants results; Table1"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Affected sibling pair homozygous; parents heterozygous, consistent recessive segregation. Family2 healthy sister heterozygous.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "NDC1 variants results; Figure1 legend"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous allele with heterozygous parents; no compound-heterozygous phase ambiguity.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "NDC1 variants results"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Recessive NDC1 association supported by two families with this splice allele, RNA exon9 skipping and minigene assays, altered ALADIN localization and NPC density in family1 cells.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "RNA analysis, functional results and Discussion"
+          }
+        ],
+        "limitations": [
+          "Family2 did not supply the same direct cellular assays; relatedness/founder possibility limits independence.",
+          "Source biological association does not constitute clinical proof or independent ACMG reclassification. No therapeutic rescue experiment.",
+          "Residual normal transcript exists; severity/penetrance and long-term adrenal course unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet feature compared for1-II; unsupported negatives, terminology overprecision and source contradictions retained explicitly.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1; Supplemental clinical narratives; TableS1"
+          }
+        ],
+        "limitations": [
+          "Source Table1 claims100%intellectual disability while2-II is listedno. Table2 minus means neverreported rather than excluded.",
+          "Clinical follow-up varies by family and time; absent adrenal insufficiency at assessment is not lifetime exclusion."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c892_21GtoA_NDC1_NM_018087v5",
+            "geneContext": {
+              "valueId": "HGNC:25525",
+              "symbol": "NDC1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_018087.5:c.892-21G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000001.11:g.53806538C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_060557.3:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr1",
+              "pos": 53806538,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "c089f66c5dae7f66298b7fbd34252a767eebcb374520e657cc827c89ef2d2e44",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Exact coding allele, homozygous state and transcriptNM_018087.5 match. Source S2 reports GRCh37chr1:54272211C>T; packet GRCh38 coordinate not independently lifted over.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc3 Sheet1 B2:B4"
+              }
+            ],
+            "limitations": [
+              "Packet p.? conservatively reflects DNA annotation; patient RNA supports r.892_984del, p.Ala298_Lys328del. Source calls30residues although93nt/inclusive298–328 imply31."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034368",
+              "label": "Urolithiasis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b45b2ff69707cda96341013fcb00d14d0e62991adf67c9972c22fdc417b34cd",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Urolithiasis. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C50; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012473",
+              "label": "Tongue atrophy"
+            }
+          },
+          "snapshot_sha256": "85ea0b2cc2f309e7d734cb32868ae467712d1506dac9e98f23c6b814a4077ba7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Tongue atrophy. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C36; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            }
+          },
+          "snapshot_sha256": "7464dd531646fde4b613619c2d8d042119320ad998e758c0b3296f9a1376e8e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: High palate. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C56; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            }
+          },
+          "snapshot_sha256": "8d20831251db00a4a9f41505a640736489915d6d6521fc75535fbcab38213b26",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Downslanted palpebral fissures. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C56; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003189",
+              "label": "Long nose"
+            }
+          },
+          "snapshot_sha256": "61411a0e9ef5eab6e906c686112120a3637f57a28e06203f3f0f30b8d19be209",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Long nose. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C56; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000460",
+              "label": "Narrow nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "979c8fa27b15424d4aa101481d3ae9e266a33f934c591c65e7b9d355a9af6e35",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes narrow nose, while source describes a long thin nose; likely polarity mismatch, recognizing terminology mapping.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C56; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030319",
+              "label": "Weakness of facial musculature"
+            }
+          },
+          "snapshot_sha256": "50d5a7764d18f1fcf2f035b83e5dcb9e80ff3b15aa6d6bdda0cf607a1f8a14e6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Weakness of facial musculature. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C56; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0430025",
+              "label": "Bilateral facial palsy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d4d01be6e312cd07b5d22232f665f8e3eb178fe8433ebbee7374915f32ce154b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Explicit exclusion of Bilateral facial palsy is not established by facial weakness or decreased reflexes alone.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C56; family 1-II"
+              }
+            ],
+            "limitations": [
+              "Explicit exclusion of Bilateral facial palsy is not established by facial weakness or decreased reflexes alone."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Microcephaly. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C23; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006532",
+              "label": "Recurrent pneumonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b23480eddcd5536cba955c4e1d3de14bd3410a97b3af366bea20098d064fcb27",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Recurrent pneumonia. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C46; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002571",
+              "label": "Achalasia"
+            }
+          },
+          "snapshot_sha256": "106692aea0f372cf285f20d2deaf818bbe905558ca72c0821032323dd7c7cb41",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Only suspected achalasia is reported, not confirmed achalasia.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C45; family 1-II"
+              }
+            ],
+            "limitations": [
+              "Only suspected achalasia is reported, not confirmed achalasia."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002572",
+              "label": "Episodic vomiting"
+            }
+          },
+          "snapshot_sha256": "c3e2761b1ed6413537ee3177b464410141e478ba78ddaa72b536cfac8bd1f626",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Episodic vomiting. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C45; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            }
+          },
+          "snapshot_sha256": "2f75f0cec9f37b168994d1f28ca569a464f852938adfe5cb43e05e0ecb36264f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Feeding difficulties. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C38; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100749",
+              "label": "Chest pain"
+            }
+          },
+          "snapshot_sha256": "1ee8fd3c7c4ee068299754625e137d4c8c91b98ccb9a322ff00995ba163d4c7d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Chest pain. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C47; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012378",
+              "label": "Fatigue"
+            }
+          },
+          "snapshot_sha256": "51b56e1abe839baa584efe52e3c6e4ec9b9eac291a9e741aafe75d1d3377cdff",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Fatigue. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C40; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003484",
+              "label": "Upper limb muscle weakness"
+            }
+          },
+          "snapshot_sha256": "05d1000ba02978ee1dae515ac777024953bf9349e73f1def75b69b6014c3ffd5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Upper limb muscle weakness. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C31; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007340",
+              "label": "Lower limb muscle weakness"
+            }
+          },
+          "snapshot_sha256": "c7ed9d26b229738c33f65dcad77ae587423c115138ff14dcf597a8df4e2d5c9b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Lower limb muscle weakness. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C31; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003438",
+              "label": "Absent Achilles reflex"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "902e5a08bc89d28eb1614dcae91314bd2909b007b07413adf6b6281676237a05",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Explicit exclusion of Absent Achilles reflex is not established by facial weakness or decreased reflexes alone.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C30; family 1-II"
+              }
+            ],
+            "limitations": [
+              "Explicit exclusion of Absent Achilles reflex is not established by facial weakness or decreased reflexes alone."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002600",
+              "label": "Hyporeflexia of lower limbs"
+            }
+          },
+          "snapshot_sha256": "c326dfc46ea26c847b6ceb32b6391a0cb617d595e7a7d81d8daf836d1c3e1415",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hyporeflexia of lower limbs. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C30; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012391",
+              "label": "Hyporeflexia of upper limbs"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b541760df4d886dd892718f8e37dcfb9c965319aa4da9862b210c3902124a8e4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Source reports lower-limb hyporeflexia; absence of upper-limb hyporeflexia is not expressly established.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C30; family 1-II"
+              }
+            ],
+            "limitations": [
+              "Source reports lower-limb hyporeflexia; absence of upper-limb hyporeflexia is not expressly established."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            }
+          },
+          "snapshot_sha256": "dfed0eeba81852313a1b62b7fd1e2a33e9467ee7a6360518e53376370228edaa",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hypotonia. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C35; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003198",
+              "label": "Myopathy"
+            }
+          },
+          "snapshot_sha256": "77377d62152bab0d5ca558a7b68f19e8ee815bc969df6b5a7b1959cc290517ce",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet asserts myopathy; EMG explicitly says no signs of myopathy, with demyelinating neuropathy and secondary axonal damage. Myopathic facial appearance is not an EMG myopathy diagnosis.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C37; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011731",
+              "label": "Abnormality of circulating cortisol level"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e9f6cd29b27b7085b9c2737a5505c90ad837cab2a93ebe8a40a74630fe2824c2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Abnormality of circulating cortisol level. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C49; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000522",
+              "label": "Alacrima"
+            }
+          },
+          "snapshot_sha256": "50f308906d60f60d77868472020be98bbcf84f4684f7a2bf192237acff0d3019",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Alacrima. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C32; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Delayed speech and language development. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C28; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001344",
+              "label": "Absent speech"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1c1e41b062bc67289352d351d52c5c398e5efb6e4053a8c2d8a3eaa057c0dd9f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Absent speech. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C29; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031936",
+              "label": "Delayed ability to walk"
+            }
+          },
+          "snapshot_sha256": "b839223f2a2cb628aa2cf31cd51e1c414f8ff66df9c510049723d8660b9e0963",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Delayed ability to walk. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C27; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d89b9910ff8d0011178fc229ffecca5f91e870cc5fccb6319222bf22f8d5828d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Borderline IQ75/71–81 and mainTable1 borderline classification; explicit exclusion of all intellectual disability is more categorical than evidence.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C25; family 1-II"
+              }
+            ],
+            "limitations": [
+              "Borderline IQ75/71–81 and mainTable1 borderline classification; explicit exclusion of all intellectual disability is more categorical than evidence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000718",
+              "label": "Aggressive behavior"
+            }
+          },
+          "snapshot_sha256": "0f80bfd004f8d2725d032c0a9bd14068d39c6001eef40c3fcd905cca36063fd4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Aggressive behavior. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C26; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001260",
+              "label": "Dysarthria"
+            }
+          },
+          "snapshot_sha256": "f6988c243535d0c801c792a3932fd5f940f087a730753cb11d4f35a9c3e3b95d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Dysarthria. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C29; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025373",
+              "label": "Interictal EEG abnormality"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ad32c999effb855dccd7daa58f3adcc00e3d8c28b186628257ce81e1dc34ceba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Interictal EEG abnormality. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C34; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Seizure. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C33; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007220",
+              "label": "Demyelinating motor neuropathy"
+            }
+          },
+          "snapshot_sha256": "10397eff27d4558a7bfb8dbc7ca40085dc5161e1d39328a4bc4579ebbad2a69c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Demyelinating motor neuropathy. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C37; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Short stature. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C22; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "712b4e41abddedd66103adc88d715f8053bd08033f15f1e3e1eb6481a27dea88",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Postnatal growth retardation. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C20; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001611",
+              "label": "Hypernasal speech"
+            }
+          },
+          "snapshot_sha256": "17dbcabda127f0c76fcb55c839515cbf4f825b26c7ad3d3b6a786762acc22fc0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hypernasal speech. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C29; family 1-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031861",
+              "label": "Decreased heart rate variability"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33bb3414c4ae18625cf0b3bed0324283458389fecf03b5560315eee3d25fa406",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No autonomic disturbances besides alacrima and normal cardiac function are reported; direct HR-variability test result is not provided.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 C47; family 1-II"
+              }
+            ],
+            "limitations": [
+              "No autonomic disturbances besides alacrima and normal cardiac function are reported; direct HR-variability test result is not provided."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/NDC1/PMID_39003500_Family_2_individual_1.json",
+      "packet_sha256": "cee898f15c864263c69b1f47c292adbac41b41cac7599e761de3764164ca7b91",
+      "case_id": "TC_5028b282e8d95621",
+      "role": "alternate",
+      "packet_subject_id": "Family 2 individual 1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Figure/table pixels remain unread. Clinical statements adjudicated from complete main text and full supplement text/cell values.",
+        "No individual ranking outcomes consulted; prior aggregate exposure disclosed."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact family/individual 2-I; sex and age12F,10M,13F,10F respectively agree with source TableS1 columnsB–E.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1 and family descriptions"
+          },
+          {
+            "source_id": "workbook-text",
+            "locator": "mmc2 Sheet1 D5:D11"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous NDC1 c.892-21G>A, shared by affected siblings of families1 and2; distinct from family3/4 missense alleles.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "NDC1 variants results; Table1"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Affected sibling pair homozygous; parents heterozygous, consistent recessive segregation. Family2 healthy sister heterozygous.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "NDC1 variants results; Figure1 legend"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous allele with heterozygous parents; no compound-heterozygous phase ambiguity.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "NDC1 variants results"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Recessive NDC1 association supported by two families with this splice allele, RNA exon9 skipping and minigene assays, altered ALADIN localization and NPC density in family1 cells.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "RNA analysis, functional results and Discussion"
+          }
+        ],
+        "limitations": [
+          "Family2 did not supply the same direct cellular assays; relatedness/founder possibility limits independence.",
+          "Source biological association does not constitute clinical proof or independent ACMG reclassification. No therapeutic rescue experiment.",
+          "Residual normal transcript exists; severity/penetrance and long-term adrenal course unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet feature compared for2-I; unsupported negatives, terminology overprecision and source contradictions retained explicitly.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1; Supplemental clinical narratives; TableS1"
+          }
+        ],
+        "limitations": [
+          "Source Table1 claims100%intellectual disability while2-II is listedno. Table2 minus means neverreported rather than excluded.",
+          "Clinical follow-up varies by family and time; absent adrenal insufficiency at assessment is not lifetime exclusion."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c892_21GtoA_NDC1_NM_018087v5",
+            "geneContext": {
+              "valueId": "HGNC:25525",
+              "symbol": "NDC1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_018087.5:c.892-21G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000001.11:g.53806538C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_060557.3:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr1",
+              "pos": 53806538,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "c089f66c5dae7f66298b7fbd34252a767eebcb374520e657cc827c89ef2d2e44",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Exact coding allele, homozygous state and transcriptNM_018087.5 match. Source S2 reports GRCh37chr1:54272211C>T; packet GRCh38 coordinate not independently lifted over.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc3 Sheet1 B2:B4"
+              }
+            ],
+            "limitations": [
+              "Packet p.? conservatively reflects DNA annotation; patient RNA supports r.892_984del, p.Ala298_Lys328del. Source calls30residues although93nt/inclusive298–328 imply31."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034368",
+              "label": "Urolithiasis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b45b2ff69707cda96341013fcb00d14d0e62991adf67c9972c22fdc417b34cd",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Urolithiasis. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D50; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012473",
+              "label": "Tongue atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "66a3fb765edad36ca43639dae0452c68b1df491b676ed4da1c8d24950d21f816",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Tongue fasciculations are documented, but tongue atrophy is not explicitly excluded.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D36; family 2-I"
+              }
+            ],
+            "limitations": [
+              "Tongue fasciculations are documented, but tongue atrophy is not explicitly excluded."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001308",
+              "label": "Tongue fasciculations"
+            }
+          },
+          "snapshot_sha256": "91c2590902c42a0988985e14a20a3726b5efa8253b1a33e56be92f80966892b4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Tongue fasciculations. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D45; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            }
+          },
+          "snapshot_sha256": "dee5d947ac21a314d7d79787c31b9353f0bbc535903aceaff2561ad86ae68d6a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Microcephaly. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D23; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006532",
+              "label": "Recurrent pneumonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b23480eddcd5536cba955c4e1d3de14bd3410a97b3af366bea20098d064fcb27",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Recurrent pneumonia. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D46; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002571",
+              "label": "Achalasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "781aa96a15c76bc5a4500996ab0e549d52820af2a7ff01fd8e90c7df746eed97",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Achalasia. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D45; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002028",
+              "label": "Chronic diarrhea"
+            }
+          },
+          "snapshot_sha256": "e634537e978008de2ba3f6deacd51662ae77b23975c6d5ea7198333e2ca06274",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Frequent diarrhea-like bowel movements reported; duration and formal chronic-diarrhea diagnosis are unspecified.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D45; family 2-I"
+              }
+            ],
+            "limitations": [
+              "Frequent diarrhea-like bowel movements reported; duration and formal chronic-diarrhea diagnosis are unspecified."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            }
+          },
+          "snapshot_sha256": "2f75f0cec9f37b168994d1f28ca569a464f852938adfe5cb43e05e0ecb36264f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Feeding difficulties. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D38; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100749",
+              "label": "Chest pain"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c0d82d1de969cdf462b8f3449bc13e775a2241e14b0e419b587769f7403fbdec",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Source reports limited heart rate variability; this does not establish absence of chest pain.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D47; family 2-I"
+              }
+            ],
+            "limitations": [
+              "Source reports limited heart rate variability; this does not establish absence of chest pain."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010487",
+              "label": "Small hypothenar eminence"
+            }
+          },
+          "snapshot_sha256": "3f7111f0b6459d67ed1d3503a76d3f7e8b31c3aac7c0c29de647018df721338c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Small hypothenar eminence. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D52; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001182",
+              "label": "Tapered finger"
+            }
+          },
+          "snapshot_sha256": "bd74410afc6951ea3454c63e8ae1691428d4780c0b6fa1aaacd8064b0fa8256f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Tapered finger. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D52; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001761",
+              "label": "Pes cavus"
+            }
+          },
+          "snapshot_sha256": "a1cbc4068ebf8e354240a68a698926d0b8767d748384d5612c1a17fd1cd650eb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Pes cavus. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D53; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003438",
+              "label": "Absent Achilles reflex"
+            }
+          },
+          "snapshot_sha256": "53cd2c55e9384ff2cc80d93902cb88d3221ba7c52d14c0a6048666dbcb81bf67",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Absent Achilles reflex. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D30; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002600",
+              "label": "Hyporeflexia of lower limbs"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "af1f5d90487939b621a937763a50aa5d6615b75aae8fc66a58acae448846732a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Other reflexes hyperreflexic/normal but Achilles reflexes absent; blanket lower-limb exclusion requires this qualification.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D30; family 2-I"
+              }
+            ],
+            "limitations": [
+              "Other reflexes hyperreflexic/normal but Achilles reflexes absent; blanket lower-limb exclusion requires this qualification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003445",
+              "label": "EMG: neuropathic changes"
+            }
+          },
+          "snapshot_sha256": "d87b4d3a31cebf0791faa9a2bcb434c517df899a4fa61814e71828eba8ddaacf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: EMG: neuropathic changes. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D37; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002460",
+              "label": "Distal muscle weakness"
+            }
+          },
+          "snapshot_sha256": "cf5a7c61045aa6081228ae1c9bd0aafb72d3dbbf0231d93e5bc116c8ca3f619d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Distal muscle weakness. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D31; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011043",
+              "label": "Abnormal circulating adrenocorticotropin concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cc73489fac932ed27071a06e7b4316c7f6fe66990fcf5a6f31047b37e71f0cfb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Abnormal circulating adrenocorticotropin concentration. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D49; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031936",
+              "label": "Delayed ability to walk"
+            }
+          },
+          "snapshot_sha256": "b839223f2a2cb628aa2cf31cd51e1c414f8ff66df9c510049723d8660b9e0963",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Delayed ability to walk. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D27; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            }
+          },
+          "snapshot_sha256": "c444dd47b030fe9f7b2523d299496431fe54f2ce557f990c454810b00764e589",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Intellectual disability. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D25; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001260",
+              "label": "Dysarthria"
+            }
+          },
+          "snapshot_sha256": "f6988c243535d0c801c792a3932fd5f940f087a730753cb11d4f35a9c3e3b95d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Nasal speech is explicit; separate articulation impairment is not clearly documented for this individual.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D29; family 2-I"
+              }
+            ],
+            "limitations": [
+              "Nasal speech is explicit; separate articulation impairment is not clearly documented for this individual."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001347",
+              "label": "Hyperreflexia"
+            }
+          },
+          "snapshot_sha256": "22250eac2d6b47ae15628d8a367f9c8a3e49f2e1a1a4864776a733ce101f32f0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hyperreflexia. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D30; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025373",
+              "label": "Interictal EEG abnormality"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ad32c999effb855dccd7daa58f3adcc00e3d8c28b186628257ce81e1dc34ceba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Interictal EEG abnormality. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D34; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Seizure. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D33; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009830",
+              "label": "Peripheral neuropathy"
+            }
+          },
+          "snapshot_sha256": "3ea3b1a76c40eaf70697800f6d598658f058322b7fafbabb9293d2e7e22a6fb2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Peripheral neuropathy. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D40; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            }
+          },
+          "snapshot_sha256": "1b50d63adae74dce026ec2e71a5ac3acb68f40de41c49c079a589c966bdfa5f6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Short stature. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D22; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            }
+          },
+          "snapshot_sha256": "ab8d99e9bf4c6a4f7a7d1287ff5faf8bc1eff7c2af7b5ca3869aafece7b0f503",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Postnatal growth retardation. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D20; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000962",
+              "label": "Hyperkeratosis"
+            }
+          },
+          "snapshot_sha256": "453e5914920d713ca75d2c38c9b7de98464bc588805f06bceb6273725007ed46",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hyperkeratosis. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D57; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001611",
+              "label": "Hypernasal speech"
+            }
+          },
+          "snapshot_sha256": "17dbcabda127f0c76fcb55c839515cbf4f825b26c7ad3d3b6a786762acc22fc0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hypernasal speech. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D29; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031861",
+              "label": "Decreased heart rate variability"
+            }
+          },
+          "snapshot_sha256": "dc472317a45450eead3d126cdc35d2915ab7a3fd04459b70748b12a557a8f75c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Decreased heart rate variability. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 D47; family 2-I"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/NDC1/PMID_39003500_Family_2_individual_2.json",
+      "packet_sha256": "7bf2d0c430219f3b02dd700815cb4d022aae585e8e21e4ace2388f2400fab5e9",
+      "case_id": "TC_5028b282e8d95621",
+      "role": "alternate",
+      "packet_subject_id": "Family 2 individual 2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Figure/table pixels remain unread. Clinical statements adjudicated from complete main text and full supplement text/cell values.",
+        "No individual ranking outcomes consulted; prior aggregate exposure disclosed."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact family/individual 2-II; sex and age12F,10M,13F,10F respectively agree with source TableS1 columnsB–E.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1 and family descriptions"
+          },
+          {
+            "source_id": "workbook-text",
+            "locator": "mmc2 Sheet1 E5:E11"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous NDC1 c.892-21G>A, shared by affected siblings of families1 and2; distinct from family3/4 missense alleles.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "NDC1 variants results; Table1"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Affected sibling pair homozygous; parents heterozygous, consistent recessive segregation. Family2 healthy sister heterozygous.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "NDC1 variants results; Figure1 legend"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous allele with heterozygous parents; no compound-heterozygous phase ambiguity.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "NDC1 variants results"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Recessive NDC1 association supported by two families with this splice allele, RNA exon9 skipping and minigene assays, altered ALADIN localization and NPC density in family1 cells.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "RNA analysis, functional results and Discussion"
+          }
+        ],
+        "limitations": [
+          "Family2 did not supply the same direct cellular assays; relatedness/founder possibility limits independence.",
+          "Source biological association does not constitute clinical proof or independent ACMG reclassification. No therapeutic rescue experiment.",
+          "Residual normal transcript exists; severity/penetrance and long-term adrenal course unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet feature compared for2-II; unsupported negatives, terminology overprecision and source contradictions retained explicitly.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1; Supplemental clinical narratives; TableS1"
+          }
+        ],
+        "limitations": [
+          "Source Table1 claims100%intellectual disability while2-II is listedno. Table2 minus means neverreported rather than excluded.",
+          "Clinical follow-up varies by family and time; absent adrenal insufficiency at assessment is not lifetime exclusion."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c892_21GtoA_NDC1_NM_018087v5",
+            "geneContext": {
+              "valueId": "HGNC:25525",
+              "symbol": "NDC1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_018087.5:c.892-21G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000001.11:g.53806538C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_060557.3:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr1",
+              "pos": 53806538,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "c089f66c5dae7f66298b7fbd34252a767eebcb374520e657cc827c89ef2d2e44",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Exact coding allele, homozygous state and transcriptNM_018087.5 match. Source S2 reports GRCh37chr1:54272211C>T; packet GRCh38 coordinate not independently lifted over.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc3 Sheet1 B2:B4"
+              }
+            ],
+            "limitations": [
+              "Packet p.? conservatively reflects DNA annotation; patient RNA supports r.892_984del, p.Ala298_Lys328del. Source calls30residues although93nt/inclusive298–328 imply31."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034368",
+              "label": "Urolithiasis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b45b2ff69707cda96341013fcb00d14d0e62991adf67c9972c22fdc417b34cd",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Urolithiasis. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E50; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012473",
+              "label": "Tongue atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "66a3fb765edad36ca43639dae0452c68b1df491b676ed4da1c8d24950d21f816",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Tongue fasciculations are documented, but tongue atrophy is not explicitly excluded.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E36; family 2-II"
+              }
+            ],
+            "limitations": [
+              "Tongue fasciculations are documented, but tongue atrophy is not explicitly excluded."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001308",
+              "label": "Tongue fasciculations"
+            }
+          },
+          "snapshot_sha256": "91c2590902c42a0988985e14a20a3726b5efa8253b1a33e56be92f80966892b4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Tongue fasciculations. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E45; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Microcephaly. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E23; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006532",
+              "label": "Recurrent pneumonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b23480eddcd5536cba955c4e1d3de14bd3410a97b3af366bea20098d064fcb27",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Recurrent pneumonia. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E46; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002571",
+              "label": "Achalasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "781aa96a15c76bc5a4500996ab0e549d52820af2a7ff01fd8e90c7df746eed97",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Achalasia. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E45; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb57ff08999d38194e0a98237b37f9865603ea25fd0ee0c22e9894cd09f04112",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Feeding difficulties. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E38; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100749",
+              "label": "Chest pain"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c0d82d1de969cdf462b8f3449bc13e775a2241e14b0e419b587769f7403fbdec",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Source reports limited heart rate variability; this does not establish absence of chest pain.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E47; family 2-II"
+              }
+            ],
+            "limitations": [
+              "Source reports limited heart rate variability; this does not establish absence of chest pain."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010487",
+              "label": "Small hypothenar eminence"
+            }
+          },
+          "snapshot_sha256": "3f7111f0b6459d67ed1d3503a76d3f7e8b31c3aac7c0c29de647018df721338c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Small hypothenar eminence. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E52; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001182",
+              "label": "Tapered finger"
+            }
+          },
+          "snapshot_sha256": "bd74410afc6951ea3454c63e8ae1691428d4780c0b6fa1aaacd8064b0fa8256f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Tapered finger. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E52; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003438",
+              "label": "Absent Achilles reflex"
+            }
+          },
+          "snapshot_sha256": "53cd2c55e9384ff2cc80d93902cb88d3221ba7c52d14c0a6048666dbcb81bf67",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Absent Achilles reflex. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E30; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002600",
+              "label": "Hyporeflexia of lower limbs"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "af1f5d90487939b621a937763a50aa5d6615b75aae8fc66a58acae448846732a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Other reflexes hyperreflexic/normal but Achilles reflexes absent; blanket lower-limb exclusion requires this qualification.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E30; family 2-II"
+              }
+            ],
+            "limitations": [
+              "Other reflexes hyperreflexic/normal but Achilles reflexes absent; blanket lower-limb exclusion requires this qualification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002460",
+              "label": "Distal muscle weakness"
+            }
+          },
+          "snapshot_sha256": "cf5a7c61045aa6081228ae1c9bd0aafb72d3dbbf0231d93e5bc116c8ca3f619d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Distal muscle weakness. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E31; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003693",
+              "label": "Distal amyotrophy"
+            }
+          },
+          "snapshot_sha256": "02882e57a3181f55b93f5114f9bed0aacb2487dd9798876313f047e85a87d3b5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Distal amyotrophy. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E54; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011043",
+              "label": "Abnormal circulating adrenocorticotropin concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cc73489fac932ed27071a06e7b4316c7f6fe66990fcf5a6f31047b37e71f0cfb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Abnormal circulating adrenocorticotropin concentration. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E49; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031936",
+              "label": "Delayed ability to walk"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c860db5451e7462a2f246bc8408096f1d333fbd829621e7eb3e526df5ea9ab8b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Delayed ability to walk. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E27; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001260",
+              "label": "Dysarthria"
+            }
+          },
+          "snapshot_sha256": "f6988c243535d0c801c792a3932fd5f940f087a730753cb11d4f35a9c3e3b95d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Nasal speech is explicit; separate articulation impairment is not clearly documented for this individual.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E29; family 2-II"
+              }
+            ],
+            "limitations": [
+              "Nasal speech is explicit; separate articulation impairment is not clearly documented for this individual."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025373",
+              "label": "Interictal EEG abnormality"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ad32c999effb855dccd7daa58f3adcc00e3d8c28b186628257ce81e1dc34ceba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Interictal EEG abnormality. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E34; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded: Seizure. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E33; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009830",
+              "label": "Peripheral neuropathy"
+            }
+          },
+          "snapshot_sha256": "3ea3b1a76c40eaf70697800f6d598658f058322b7fafbabb9293d2e7e22a6fb2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Peripheral neuropathy. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E40; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Height−1.49SD falls above conventional−2SD threshold, supporting packet exclusion by measurement; narrative nevertheless calls mild short stature.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E22; family 2-II"
+              }
+            ],
+            "limitations": [
+              "Height−1.49SD falls above conventional−2SD threshold, supporting packet exclusion by measurement; narrative nevertheless calls mild short stature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            }
+          },
+          "snapshot_sha256": "ab8d99e9bf4c6a4f7a7d1287ff5faf8bc1eff7c2af7b5ca3869aafece7b0f503",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Postnatal growth retardation. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E20; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000962",
+              "label": "Hyperkeratosis"
+            }
+          },
+          "snapshot_sha256": "453e5914920d713ca75d2c38c9b7de98464bc588805f06bceb6273725007ed46",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hyperkeratosis. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E57; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001611",
+              "label": "Hypernasal speech"
+            }
+          },
+          "snapshot_sha256": "17dbcabda127f0c76fcb55c839515cbf4f825b26c7ad3d3b6a786762acc22fc0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hypernasal speech. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E29; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031861",
+              "label": "Decreased heart rate variability"
+            }
+          },
+          "snapshot_sha256": "dc472317a45450eead3d126cdc35d2915ab7a3fd04459b70748b12a557a8f75c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Decreased heart rate variability. Source cell and clinical narrative compared.",
+            "evidence": [
+              {
+                "source_id": "workbook-text",
+                "locator": "mmc2 Sheet1 E47; family 2-II"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading.",
+    "All supplemental method/case text and all three workbook cell contents read. Main figures, table pixels, supplementalfigurepixels and combinedmmc5file remain open.",
+    "Two versus three controls in NPC comparison legend/narrative inconsistent; no independent assay reproduction."
+  ]
+}

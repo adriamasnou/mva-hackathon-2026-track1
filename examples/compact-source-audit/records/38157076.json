@@ -1,0 +1,542 @@
+{
+  "schema_version": 1,
+  "pmid": "38157076",
+  "title": "IL4Rα and IL17A Blockade Rescue Autoinflammation in SOCS1 Haploinsufficiency",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T15:00:20.630923+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "b9e5246af086134a700d68f7b21340ab2758bef12c379979c2926405503ec35d",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "38157076",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38157076/cloud/PMC11218038.319/PMC11218038.319.xml",
+      "sha256": "c9c64527855a165245f245de026df0c8679dc94d4b399bd1c12d8d3fcaba264c",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "38157076",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38157076/cloud/PMC11218038.319/PMC11218038.319.txt",
+      "sha256": "a697a1606608838ace4e3deaf703655f6e2214a83fe84842a03e34e0e0896011",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "38157076",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38157076/cloud/PMC11218038.319/PMC11218038.319.xml.fetch.json",
+      "sha256": "9e2c93f0f273370846237c162055ea3bbcece6864529354bf991f69738c4162e",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "IL4Rα and IL17A Blockade Rescue Autoinflammation in SOCS1 Haploinsufficiency",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 4,
+      "table": 2,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 325,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–325"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 325,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–325"
+        }
+      ],
+      "note": "Fullmaintext, fourfigurecaptions, twoentiretables andall27references read."
+    },
+    {
+      "id": "figure:F1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F1]; Fig. 1Identification of a heterozygous SOCS1 mutation in a patient with severe dermatitis and psoriatic arthritis. A Clinical timeline mapping key disease features (blue) throughout time relative to treatment with dupilumab and secukinumab therapy. Labeled arrows (I–VI) indicate the timing at which photographs were taken, with roman numerals corresponding to those in B and C. B Dermatitis of the a"
+    },
+    {
+      "id": "figure:F2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F2]; Fig. 2SOCS1 T68fs fails to inhibit cytokine signaling by loss-of-expression. A SOCS1 mRNA levels by qPCR in A549 cells transduced with either empty vector (EV), WT SOCS1, or T68fs SOCS1. P-values for individual comparisons from statistical testing shown above. B Western blotting for Flag-tagged SOCS1 transfected into HEK239T cells. Immunoblotting by polyclonal SOCS1 antibodies or anti-Flag antibod"
+    },
+    {
+      "id": "figure:F3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F3]; Fig. 3Mass cytometry demonstrates monocyte and γδ T-cell skewing in peripheral blood. A Relative frequency of immune cell subsets in the patient (at two time points, P_T1 and P_T2) and healthy donors (n = 10). Color intensity indicates log2 fold-change of absolute frequency over the median frequency of the healthy donors. Abbreviations: Patient (P or “SOCS1”), healthy donor (HD), effector memory ("
+    },
+    {
+      "id": "figure:F4",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F4]; Fig. 4SOCS1 T68fs immune cells hyper-respond to cytokine. A Interferon-alpha stimulation (1000 IU/mL) of whole blood and analysis of STAT1 phosphorylation by mass cytometry as measured by mean signal intensity (MSI) and percent positive relative to unstimulated. B Interferon-gamma stimulation (10 ng/mL) of whole blood and analysis of STAT1 phosphorylation as above. C IL2 (10 ng/mL) of whole blood "
+    },
+    {
+      "id": "table:T1",
+      "kind": "table",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor table-wrap[@id=T1]; Table 1Hematologic and immunologic parameters. (A) Peripheral blood immunophenotyping. (B) Quantitative immunoglobulin concentrations. (C) Autoimmune assays, including serologies, complement levels, and HLA genotyping. (D) Serological testing for vaccine responsesA. Peripheral blood phenotypingTestReference range and unitsResultWhite blood cell3.4–10.8 × 10E3/μL6.5Hemoglobin13.0–17.7 g/dL14.6Plate"
+    },
+    {
+      "id": "table:T2",
+      "kind": "table",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor table-wrap[@id=T2]; Table 2Clinical and immunologic phenotypes reported in SOCS1 haploinsufficiencyStudyVariantAgePredominant clinical phenotypeAuto-immunityAuto-inflammationLymphoproliferative diseaseSkin diseaseMajor infectious complicationsAtopyQuant. immunoglobulinsMajor immune cell phenotypesSystemic immune therapiesThaventhiran 2020 [9]1Y64*5HIES, purulent infectionsAIN, AIHA, ITP, alopecia totalis--EczemaPneum"
+    },
+    {
+      "id": "supplement:SD1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=SD1]; supplemental material"
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SOCS1/PMID_38157076_patient.json",
+      "packet_sha256": "ac62c953ace05fd4ec1932c0e69bbae15db1224cb426e41cf2c23f6c98013a14",
+      "case_id": "TC_41aaee470f928ea5",
+      "role": "selected",
+      "packet_subject_id": "patient",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Fullmainread; supplemental2figurecomponentsandmainpixelsnotread."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "New25-year-old adopted male with childhoodinfection/FTT, arthritisfrom10years and severe chronicdermatitis; distinct fromTable2historicalpatients.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results;Table2"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous SOCS1 c.202_203delAC confirmed inbloodmRNAbySanger andWES. Codingdeletion matchespacket.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticsequencing;Results;Figure1"
+          }
+        ],
+        "limitations": [
+          "Source describesThr68fsAla*49 whereaspacketThr68AlafsTer48; exacttranslatedframeshiftterminus unverified.",
+          "Sourcegenomic/transcriptversion notprovided; hg38coordinate independentlyunverified."
+        ]
+      },
+      "segregation": {
+        "status": "unresolved",
+        "statement": "Patientadopted; familysequencing explicitlydeferred; mutationinheritanceunknown.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "ResultsSequencing"
+          }
+        ],
+        "limitations": [
+          "GenericMethodstext mentionscandidatedenovomutations but doesnotestablishthisalleledenovo."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Singleheterozygouscandidate; no compoundphaseclaim.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "ResultsSequencing"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Mutantallele clonedfrompatientblood; engineeredcellmRNAexpressed butproteinundetectable bytwoantibodies and JAK-STATinhibitionlost. Patientbloodhyperresponse toIFN-I/II/IL2 supportsSOCS1dysregulation.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results;Figures2–4"
+          }
+        ],
+        "limitations": [
+          "No parental/geneticsegregation orisogenicrescue; belowimmunoblotdetection isnotabsoluteabsenceproof.",
+          "Onepatient with10healthycontrols; patientmasscytometryondualmAbtherapy, nopretreatmentsamples, drugconfoundingexplicitlyacknowledged.",
+          "Clinicalremission onsecukinumabplusdupilumab andrelapsewithmisseddupilumab suggestbenefit; uncontrolledcombinedtreatment cannotisolateeachdrug orprovebenefitforothers.",
+          "BlockedIL4/13pSTAT6 validatespathwayblockade, not correctionofallotherhyperactivepathways.",
+          "Sourcecausal label notclinicallyprovenbythisaudit."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All8packetfeatures reviewedagainstnewpatient; autoimmunitylabelretainsqualification.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results;Tables1–2"
+          }
+        ],
+        "limitations": [
+          "PatientTable1showsIgA54–86belowreference90–386 despitegrosslynormal narrative; cannotgeneralizenormalallimmunoglobulins.",
+          "PacketdoesnotrepresentFTT/sinusitis/nailpitting/sacroiliitis orclinicaltreatmentcourse."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c202_203delAC_SOCS1_NM_003745v2",
+            "geneContext": {
+              "valueId": "HGNC:19383",
+              "symbol": "SOCS1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003745.2:c.202_203delAC"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.11255277_11255278del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003736.1:p.(Thr68AlafsTer48)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 11255275,
+              "ref": "CGT",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "258e64e5822c13837587e66abdb8506ee99646f18b4f2975128dd19445ec0265",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous SOCS1 c.202_203delAC confirmed inbloodmRNAbySanger andWES. Codingdeletion matchespacket.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Geneticsequencing;Results;Figure1"
+              }
+            ],
+            "limitations": [
+              "Source describesThr68fsAla*49 whereaspacketThr68AlafsTer48; exacttranslatedframeshiftterminus unverified.",
+              "Sourcegenomic/transcriptversion notprovided; hg38coordinate independentlyunverified."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002960",
+              "label": "Autoimmunity"
+            }
+          },
+          "snapshot_sha256": "6050dc0ab5572b5321a8ac7cc8064ed89b70455bca48517c66ffa25db2f8c20f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Immunodysregulation/psoriaticarthritispresent, but sourcecharacterizescurrentcase chieflyasautoinflammatory andTable2autoimmunitydash; autoantibodiesallnegative.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results;Discussion;Table1C;Table2"
+              }
+            ],
+            "limitations": [
+              "BroadautoimmunityHPO labelnotdistinctlyestablished; negativeautoantibodiesalone donotexcludeeveryautoimmunemechanism."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003765",
+              "label": "Psoriasiform dermatitis"
+            }
+          },
+          "snapshot_sha256": "0b3367c17ebaa4ddeacead9e99f1ef01187a4bd5e934fed698312b86b4e587fa",
+          "assessment": {
+            "status": "supported",
+            "statement": "Psoriasiform dermatitis explicitlyreported incurrentpatientclinicalhistory/table, includingMSSA-positive skinabscesses.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinicalcourse;Table2 thisreportrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001945",
+              "label": "Fever"
+            }
+          },
+          "snapshot_sha256": "5b68b5368604bed6d0f181cd62407a26ec90b981d65e16b807c7017cd47cf419",
+          "assessment": {
+            "status": "supported",
+            "statement": "Fever explicitlyreported incurrentpatientclinicalhistory/table, includingMSSA-positive skinabscesses.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinicalcourse;Table2 thisreportrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002090",
+              "label": "Pneumonia"
+            }
+          },
+          "snapshot_sha256": "f1d2debc84c853b81856950a767393d252eb4cc3892ef6a9fc4ad437e76adc83",
+          "assessment": {
+            "status": "supported",
+            "statement": "Pneumonia explicitlyreported incurrentpatientclinicalhistory/table, includingMSSA-positive skinabscesses.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinicalcourse;Table2 thisreportrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000964",
+              "label": "Eczematoid dermatitis"
+            }
+          },
+          "snapshot_sha256": "59e9568fa53da6419818c35dddc2130050e73ef80c1a097a373680626a6e96b5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Eczematoid dermatitis explicitlyreported incurrentpatientclinicalhistory/table, includingMSSA-positive skinabscesses.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinicalcourse;Table2 thisreportrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100686",
+              "label": "Enthesitis"
+            }
+          },
+          "snapshot_sha256": "25361b5a171720a09332cb76e2f51bcf47fc08d9a4536971f60143c1bd606819",
+          "assessment": {
+            "status": "supported",
+            "statement": "Enthesitis explicitlyreported incurrentpatientclinicalhistory/table, includingMSSA-positive skinabscesses.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinicalcourse;Table2 thisreportrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025084",
+              "label": "Folliculitis"
+            }
+          },
+          "snapshot_sha256": "2872710fc7b28f4d91ae06bcb88188a0d67f61b35e73baf922e35d2029b7bea9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Folliculitis explicitlyreported incurrentpatientclinicalhistory/table, includingMSSA-positive skinabscesses.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinicalcourse;Table2 thisreportrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031292",
+              "label": "Cutaneous abscess"
+            }
+          },
+          "snapshot_sha256": "c8f35020179e798182b024adfecf674934418e8a4a20f861a8f1ae62d46522a1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Cutaneous abscess explicitlyreported incurrentpatientclinicalhistory/table, includingMSSA-positive skinabscesses.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinicalcourse;Table2 thisreportrow"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inferenceaggregateexposure;noper-caseranks.",
+    "Table2clinicalage10 meansonset, notcurrent25yearage.",
+    "AllsourceTablesreadtext; images/supplementunread."
+  ]
+}

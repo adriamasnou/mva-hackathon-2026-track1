@@ -1,0 +1,327 @@
+{
+  "pmid": "40119724",
+  "source_titles": [
+    "Identification of IDH3G, encoding the gamma subunit of mitochondrial isocitrate dehydrogenase, as a novel candidate gene for X-linked retinitis pigmentosa."
+  ],
+  "selected_case_ids": [
+    "TC_2cbd683ff1d3e0fa",
+    "TC_ce4cd426289c995f"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "IDH3G"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/IDH3G/PMID_40119724_Proband_D.json",
+      "sha256": "0c80596efa391cad4c30eb110af87faffc3ad33bc6b603762a72b9acbd40ef2e",
+      "case_id": "TC_2cbd683ff1d3e0fa",
+      "selected_record": true,
+      "subject": {
+        "id": "Proband D",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P69Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:301148",
+            "label": "Retinitis pigmentosa 99"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0007737",
+            "label": "Bone spicule pigmentation of the retina"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007722",
+            "label": "Retinal pigment epithelial atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000543",
+            "label": "Optic disc pallor"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032037",
+            "label": "Mildly reduced visual acuity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001133",
+            "label": "Constriction of peripheral visual field"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0030529",
+            "label": "Ring scotoma"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000662",
+            "label": "Nyctalopia"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011003",
+            "label": "High myopia"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "XkfNmexTFRfUKWYIqTRSDtIh",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:301148",
+              "label": "Retinitis pigmentosa 99"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Proband D",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1129CtoT_IDH3G_NM_004135v4",
+                    "geneContext": {
+                      "valueId": "HGNC:5386",
+                      "symbol": "IDH3G"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_004135.4:c.1129C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000023.11:g.153785925G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_004126.1:p.(Gln377Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chrX",
+                      "pos": 153785925,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000134",
+                      "label": "hemizygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IDH3G/PMID_40119724_Proband_A.json",
+      "sha256": "33454619b3dfb26c7960b6c63aaef220161e3e0d2c10cea13808f7770f49906e",
+      "case_id": "TC_ce4cd426289c995f",
+      "selected_record": true,
+      "subject": {
+        "id": "Proband A",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P50Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:301148",
+            "label": "Retinitis pigmentosa 99"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0008043",
+            "label": "Retinal arteriolar constriction"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0025159",
+            "label": "Hypoautofluorescent retinal lesion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0030629",
+            "label": "Perifoveal ring of hyperautofluorescence"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007737",
+            "label": "Bone spicule pigmentation of the retina"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034362",
+            "label": "Dull foveal reflex"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007722",
+            "label": "Retinal pigment epithelial atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000543",
+            "label": "Optic disc pallor"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032037",
+            "label": "Mildly reduced visual acuity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001133",
+            "label": "Constriction of peripheral visual field"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0030529",
+            "label": "Ring scotoma"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000662",
+            "label": "Nyctalopia"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011003",
+            "label": "High myopia"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "pmmWZr8vkGImiVFZML7VPNaj",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:301148",
+              "label": "Retinitis pigmentosa 99"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Proband A",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c325CtoG_IDH3G_NM_004135v4",
+                    "geneContext": {
+                      "valueId": "HGNC:5386",
+                      "symbol": "IDH3G"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_004135.4:c.325C>G"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000023.11:g.153789733G>C"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_004126.1:p.(Arg109Gly)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chrX",
+                      "pos": 153789733,
+                      "ref": "G",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000134",
+                      "label": "hemizygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

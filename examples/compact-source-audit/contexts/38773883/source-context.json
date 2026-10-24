@@ -1,0 +1,184 @@
+{
+  "pmid": "38773883",
+  "source_titles": [
+    "Functional studies in yeast confirm the pathogenicity of a new GINS3 Meier-Gorlin syndrome variant."
+  ],
+  "selected_case_ids": [],
+  "alternate_case_ids": [
+    "TC_85991b4b1d19ac96"
+  ],
+  "genes": [
+    "GINS3"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/GINS3/PMID_38773883_Female_individual_with_Asp24Asn.json",
+      "sha256": "d7dae0eff515c5acc904bc2afd62165f7890a6354c17ef65b6b290b63d03128f",
+      "case_id": "TC_85991b4b1d19ac96",
+      "selected_record": false,
+      "subject": {
+        "id": "Female individual with Asp24Asn",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P8Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621512",
+            "label": "Meier-Gorlin syndrome 9"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002202",
+            "label": "Pleural effusion"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002107",
+            "label": "Pneumothorax"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0100750",
+            "label": "Atelectasis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000270",
+            "label": "Delayed cranial suture closure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002645",
+            "label": "Wormian bones"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008551",
+            "label": "Microtia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001640",
+            "label": "Cardiomegaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0006387",
+            "label": "Wide distal femoral metaphysis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003025",
+            "label": "Metaphyseal irregularity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002750",
+            "label": "Delayed skeletal maturation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "bgWxWfVCVG5QQ38mB2TEuVMB",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621512",
+              "label": "Meier-Gorlin syndrome 9"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Female individual with Asp24Asn",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c70GtoA_GINS3_NM_022770v4",
+                    "geneContext": {
+                      "valueId": "HGNC:25851",
+                      "symbol": "GINS3"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_022770.4:c.70G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000016.10:g.58392671G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_073607.2:p.(Asp24Asn)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr16",
+                      "pos": 58392671,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

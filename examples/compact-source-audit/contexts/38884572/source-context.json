@@ -1,0 +1,630 @@
+{
+  "pmid": "38884572",
+  "source_titles": [
+    "De novo and inherited monoallelic variants in TUBA4A cause ataxia and spasticity."
+  ],
+  "selected_case_ids": [
+    "TC_4fb821ab4eee70a9",
+    "TC_e9d1945a56aa9fd0"
+  ],
+  "alternate_case_ids": [
+    "TC_4fb821ab4eee70a9"
+  ],
+  "genes": [
+    "TUBA4A"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/TUBA4A/PMID_38884572_Family_2_Patient_2.json",
+      "sha256": "0bad1987b0f68f19ad3dd9d74c5a55cc5c7b8672141264655d3a76dd8c7d21f1",
+      "case_id": "TC_4fb821ab4eee70a9",
+      "selected_record": true,
+      "subject": {
+        "id": "Family 2 Patient 2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P47Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621226",
+            "label": "Spastic ataxia 11, autosomal dominant"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P22Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003236",
+            "label": "Elevated circulating creatine kinase concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001394",
+            "label": "Cirrhosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000639",
+            "label": "Nystagmus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000009",
+            "label": "Functional abnormality of the bladder"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001257",
+            "label": "Spasticity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003487",
+            "label": "Babinski sign"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002075",
+            "label": "Dysdiadochokinesis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002497",
+            "label": "Spastic ataxia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001310",
+            "label": "Dysmetria"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011448",
+            "label": "Ankle clonus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001260",
+            "label": "Dysarthria"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000726",
+            "label": "Dementia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001288",
+            "label": "Gait disturbance"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001272",
+            "label": "Cerebellar atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003458",
+            "label": "EMG: myopathic abnormalities"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003484",
+            "label": "Upper limb muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007340",
+            "label": "Lower limb muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003698",
+            "label": "Difficulty standing"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003202",
+            "label": "Skeletal muscle atrophy"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "rxYdv9KeCfgwRXExPWaQKyTH",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621226",
+              "label": "Spastic ataxia 11, autosomal dominant"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Family 2 Patient 2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c518CtoG_TUBA4A_NM_006000v3",
+                    "geneContext": {
+                      "valueId": "HGNC:12407",
+                      "symbol": "TUBA4A"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_006000.3:c.518C>G"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.219251181G>C"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005991.1:p.(Pro173Arg)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 219251181,
+                      "ref": "G",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/TUBA4A/PMID_38884572_Family_3_Patient_3.json",
+      "sha256": "9bdd63752e8196428654649c72626d764898968e085fd174700262f8b659f051",
+      "case_id": "TC_4fb821ab4eee70a9",
+      "selected_record": false,
+      "subject": {
+        "id": "Family 3 Patient 3",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P20Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621226",
+            "label": "Spastic ataxia 11, autosomal dominant"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P2Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003236",
+            "label": "Elevated circulating creatine kinase concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001394",
+            "label": "Cirrhosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000009",
+            "label": "Functional abnormality of the bladder"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001257",
+            "label": "Spasticity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003487",
+            "label": "Babinski sign"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001251",
+            "label": "Ataxia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002075",
+            "label": "Dysdiadochokinesis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011448",
+            "label": "Ankle clonus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001260",
+            "label": "Dysarthria"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001288",
+            "label": "Gait disturbance"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001272",
+            "label": "Cerebellar atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003484",
+            "label": "Upper limb muscle weakness"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0007340",
+            "label": "Lower limb muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003698",
+            "label": "Difficulty standing"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003202",
+            "label": "Skeletal muscle atrophy"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "NqyHjqFM24FZFFAQJbWYW1T2",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621226",
+              "label": "Spastic ataxia 11, autosomal dominant"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Family 3 Patient 3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c518CtoG_TUBA4A_NM_006000v3",
+                    "geneContext": {
+                      "valueId": "HGNC:12407",
+                      "symbol": "TUBA4A"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_006000.3:c.518C>G"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.219251181G>C"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005991.1:p.(Pro173Arg)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 219251181,
+                      "ref": "G",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/TUBA4A/PMID_38884572_Family_1_Patient_1.json",
+      "sha256": "5bc9067210fba2ece5e01ae2c78cbfc7b64c04cb27fb7d054fbebcc889b02bec",
+      "case_id": "TC_e9d1945a56aa9fd0",
+      "selected_record": true,
+      "subject": {
+        "id": "Family 1 Patient 1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P36Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621226",
+            "label": "Spastic ataxia 11, autosomal dominant"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P24Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003236",
+            "label": "Elevated circulating creatine kinase concentration"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001394",
+            "label": "Cirrhosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001152",
+            "label": "Saccadic smooth pursuit"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000009",
+            "label": "Functional abnormality of the bladder"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001257",
+            "label": "Spasticity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003487",
+            "label": "Babinski sign"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002075",
+            "label": "Dysdiadochokinesis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001310",
+            "label": "Dysmetria"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001260",
+            "label": "Dysarthria"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000726",
+            "label": "Dementia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001288",
+            "label": "Gait disturbance"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001347",
+            "label": "Hyperreflexia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001272",
+            "label": "Cerebellar atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003458",
+            "label": "EMG: myopathic abnormalities"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003484",
+            "label": "Upper limb muscle weakness"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0007340",
+            "label": "Lower limb muscle weakness"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003698",
+            "label": "Difficulty standing"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003202",
+            "label": "Skeletal muscle atrophy"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "NXx6vOFdzA1bSAXYTc589lFe",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621226",
+              "label": "Spastic ataxia 11, autosomal dominant"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Family 1 Patient 1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c517CtoT_TUBA4A_NM_006000v3",
+                    "geneContext": {
+                      "valueId": "HGNC:12407",
+                      "symbol": "TUBA4A"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_006000.3:c.517C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.219251182G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005991.1:p.(Pro173Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 219251182,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

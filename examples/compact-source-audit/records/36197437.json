@@ -1,0 +1,3786 @@
+{
+  "schema_version": 1,
+  "pmid": "36197437",
+  "title": "FOSL2 truncating variants in the last exon cause a neurodevelopmental disorder with scalp and enamel defects.",
+  "reviewer": {
+    "id": "reader-3",
+    "reviewed_at_utc": "2026-10-24T10:28:15.423962+00:00",
+    "method": "Read complete 56233-character accepted-manuscript extraction in contiguous untruncated chunks, all four main figures and complete case/variant Table1 pixels. Read all five supplement pages as text and pixels; publisher DOCX text also read for comparison."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Required HANDOFF was read and includes aggregate compact-cohort metrics. No per-case inference ranks, scores or outcomes opened or used. This is a post-inference audit, not blinded validation."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "c244d40da606d7b19734c3d88457085936ff9c9dd153068b76b70dbfb91bfab9",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main",
+      "pmid": "36197437",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36197437/retrieval-followup/20261024T101536243751Z-efcd1e200a/response.body.layout.txt",
+      "sha256": "16261cb41b600605b67fbe42628c1dd4f66c157fc290c2ad18e3893aa1f4ea49",
+      "kind": "text",
+      "description": "Complete accepted manuscript pdftotext -layout extraction."
+    },
+    {
+      "id": "article",
+      "pmid": "36197437",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36197437/retrieval-followup/20261024T101536243751Z-efcd1e200a/response.body",
+      "sha256": "b21733119c62f628cc53710f139edc1372224053b39d82cab1b1bf46cf381963",
+      "kind": "pdf",
+      "description": "Public HAL accepted manuscript https://univ-rennes.hal.science/hal-03954791v1/file/Cospain%20et%20al%20-%202022%20-%20FOSL2%20truncating%20variants%20in%20the%20last%20exon.pdf"
+    },
+    {
+      "id": "supp",
+      "pmid": "36197437",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36197437/reviewer-3/supp.pdf",
+      "sha256": "e1449fe96f32abefbcdcf321379866a7f1daa84775e1e5cbf2da58a68ab0a932",
+      "kind": "pdf",
+      "description": "Public HAL five-page Supplementary_information.pdf, exact paper supplemental information."
+    },
+    {
+      "id": "supp_text",
+      "pmid": "36197437",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36197437/reviewer-3/supp.txt",
+      "sha256": "14a7fd6ffe5c27b14424e16faf581f1efed6052b01ceff11934b4d6ea95e3cbe",
+      "kind": "text",
+      "description": "Complete supplement text extraction."
+    },
+    {
+      "id": "publisher_supp",
+      "pmid": "36197437",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36197437/reviewer-3/mmc1.docx",
+      "sha256": "852ba272d531912f45695b23b492be2267a619cd6fb1f883a95f5323b02486c8",
+      "kind": "data",
+      "description": "Publisher supplement https://ars.els-cdn.com/content/image/1-s2.0-S1098360022009376-mmc1.docx; text read, same case/table contents as HAL supplemental PDF. Duplicate format, not a separate dataset."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "FOSL2 truncating variants in the last exon cause a neurodevelopmental disorder with scalp and enamel defects.",
+    "evidence": [
+      {
+        "source_id": "article",
+        "locator": "HAL cover and manuscript title pages: exact title, authors and DOI10.1016/j.gim.2022.09.002"
+      },
+      {
+        "source_id": "supp",
+        "locator": "Supplement subject FOSL2, cases and FigureS1 identical to main cross-references"
+      }
+    ],
+    "note": "Accepted manuscript rather than version-of-record PDF. Canonical PMID36197437 maps to exact title/DOI; PMID not printed in manuscript. Publisher supplement text cross-checked with HAL supplement."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 4,
+      "table": 1,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "article",
+        "locator": "Entire manuscript references Figures1–4, Table1 and one Supplementary Information file"
+      },
+      {
+        "source_id": "supp",
+        "locator": "Complete five-page file contains immunological methods/results, TableS1, neuropsychological narratives, FigureS1"
+      }
+    ],
+    "note": "Same supplement is held in HAL PDF and publisher DOCX formats, not two separate scientific supplements. No underlying clinical/raw sequencing data read."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 1375,
+      "extent_source_id": "main",
+      "extent_evidence": [
+        {
+          "source_id": "main",
+          "locator": "All29 PDF pages including repository cover"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1375,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Entire56233-character extraction read in chunks0–24000–47000–end, including refs and case table"
+        }
+      ],
+      "note": "Full manuscript text consumed; raster figures separately read."
+    },
+    {
+      "id": "fig1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Figure1, PDFpage26"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Figure1 all panels, PDFpage26"
+        }
+      ],
+      "note": "All main figure panels visually inspected."
+    },
+    {
+      "id": "fig2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Figure2, PDFpage27"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Figure2 all panels, PDFpage27"
+        }
+      ],
+      "note": "All main figure panels visually inspected."
+    },
+    {
+      "id": "fig3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Figure3, PDFpage28"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Figure3 all panels, PDFpage28"
+        }
+      ],
+      "note": "All main figure panels visually inspected."
+    },
+    {
+      "id": "fig4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Figure4, PDFpage29"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Figure4 all panels, PDFpage29"
+        }
+      ],
+      "note": "All main figure panels visually inspected."
+    },
+    {
+      "id": "table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Table1, PDFpage25, all11 patient columns and variant/phenotype rows"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Table1 allvalues and footnotes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "PDFpage25 complete table at2300pixel rendering"
+        }
+      ],
+      "note": "All11 source individuals, including nine mapped packets, inspected."
+    },
+    {
+      "id": "supp1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 5,
+      "extent_source_id": "supp",
+      "extent_evidence": [
+        {
+          "source_id": "supp",
+          "locator": "Five-page supplement PDF"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 5,
+          "mode": "text",
+          "source_id": "supp_text",
+          "locator": "Entire12115-character extraction and publisherDOCX text read"
+        },
+        {
+          "start": 1,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "supp",
+          "locator": "Allfive pages rendered and inspected; TableS1 allcells, allneurocaseparagraphs, FigureS1A/B"
+        }
+      ],
+      "note": "All supplemental text, table and figure consumed. Duplicate publisherDOCX text matches case/source findings; no separate DOCX layout-reading claim."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/FOSL2/PMID_36197437_case_6.json",
+      "packet_sha256": "18d81e320ab264a2f3e72cfdb744f80c8c8c833fdffd9ecf3c7971a0ff9870ff",
+      "case_id": "TC_aec896115157e0d1",
+      "role": "selected",
+      "packet_subject_id": "case 6",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Single-publication discovery cohort, no independent clinical pathogenicity certification.",
+        "Blank Other features cells do not demonstrate normal brainMRI."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual#6 inTable1, not another person sharing its allele. Female with mildDD/ID, ASD, postnatal growthretardation, bilateral cataractsage1 and scalp/enamel defects. Corrected11bp deletion c579_589del; earlier denovoDB10bp representation is not silently interchangeable.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#6"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_005253.3:c.579_589del p.Ser194Alafs*61; hg19chr2:g.28634913_28634923del. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. Prior c580_589del p.Pro195Alafs*22 representation explicitly corrected in Table1footnote; retain distinction.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#6"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          },
+          {
+            "source_id": "main",
+            "locator": "Molecularresults; Table1footnotes"
+          }
+        ],
+        "limitations": [
+          "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Reported denovo heterozygous variant, confirmed by parentaltesting as described in molecularresults.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Genetic analyses and Table1 siblingfootnote"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single dominant heterozygousFOSL2 allele; compoundheterozygous cis/transphase is not a requirement.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#6"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Raw read-level phasing not performed; pedigree segregation assessed separately."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Convergent last-exon heterozygous truncations in11 individuals/10families with shared scalp/enamel/NDD findings support syndrome association. Transcript/protein experiments are variant-specific, not evidence that every truncation is ordinary loss of function. Female with mildDD/ID, ASD, postnatal growthretardation, bilateral cataractsage1 and scalp/enamel defects. Corrected11bp deletion c579_589del; earlier denovoDB10bp representation is not silently interchangeable.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results/Discussion, Figures3–4"
+          },
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#6"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "OnlyR199* andQ207* directlytested in mouseprotein c-JUNinteraction/stability system; NMDescape measured in selected patientRNAs.",
+          "Mechanismgain/dominantnegative not conclusively distinguished; no rescue or therapeuticcomparison."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet positive and exclusion checked against exact individualTable1 column and supplementarycaseparagraph. Female with mildDD/ID, ASD, postnatal growthretardation, bilateral cataractsage1 and scalp/enamel defects. Corrected11bp deletion c579_589del; earlier denovoDB10bp representation is not silently interchangeable.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#6"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Missing MRI features are unresolved, not negatives.",
+          "DD/IDcombinedrow and selective-mutismencoding limitations preserved."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c579_589del_FOSL2_NM_005253v4",
+            "geneContext": {
+              "valueId": "HGNC:3798",
+              "symbol": "FOSL2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005253.4:c.579_589del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.28412046_28412056del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005244.1:p.(Ser194AlafsTer61)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 28412045,
+              "ref": "TTAGCCCCGAGG",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "35f854aa5af9befb0768b016c0629c2a9a1c799c0a904ab10b38b9cd9a071f4f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous NM_005253.3:c.579_589del p.Ser194Alafs*61; hg19chr2:g.28634913_28634923del. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. Prior c580_589del p.Pro195Alafs*22 representation explicitly corrected in Table1footnote; retain distinction.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 PDFpage25 individual#6"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+              },
+              {
+                "source_id": "main",
+                "locator": "Molecularresults; Table1footnotes"
+              }
+            ],
+            "limitations": [
+              "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007385",
+              "label": "Aplasia cutis congenita of scalp"
+            }
+          },
+          "snapshot_sha256": "bb6b2f28d10b48da8b3559e182eb451d1d968f6dc738961ce1f249c92d2a84a5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Aplasia cutis congenita of scalp matches individual#6 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#6, Aplasia cutis congenita of scalp correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000518",
+              "label": "Cataract"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P1Y"
+              }
+            }
+          },
+          "snapshot_sha256": "1ae86b91eea2e6b4b6e02a6e0501e119aeb7e56a7c80e49a822a50ce65d48f8d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Cataract matches individual#6 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#6, Cataract correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Seizure matches individual#6 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#6, Seizure correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "253267a47ab1d0b57c991235377b32dc3cd8d0352aad3c4433b3eebadfd3dcf4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Intrauterine growth retardation matches individual#6 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#6, Intrauterine growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            }
+          },
+          "snapshot_sha256": "ab8d99e9bf4c6a4f7a7d1287ff5faf8bc1eff7c2af7b5ca3869aafece7b0f503",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Postnatal growth retardation matches individual#6 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#6, Postnatal growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Global developmental delay matches individual#6 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#6, Global developmental delay correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Autistic behavior matches individual#6 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#6, Autistic behavior correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006297",
+              "label": "Enamel hypoplasia"
+            }
+          },
+          "snapshot_sha256": "365e054673866d70ca1ca090700fe852193078fd34d6ae65c1cb1fb3d7897bf7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Enamel hypoplasia matches individual#6 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#6, Enamel hypoplasia correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200012",
+              "label": "Short corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61ef0a44a7d77c48f8d0d0d050b7fa4e58ff404915c2988d75961da20f7b8500",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesShort corpus callosum; Table1 Otherfeatures is blank forindividual#6, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#6, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001320",
+              "label": "Cerebellar vermis hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f6afa02afb026cdc6efc2444cb0d0ffbdb579c5d9d404e59b8dec958673c4a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesCerebellar vermis hypoplasia; Table1 Otherfeatures is blank forindividual#6, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#6, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FOSL2/PMID_36197437_case_1.json",
+      "packet_sha256": "1db890ee85d26e9a8db4c1c3540507abd4b9e05e8f98df4c0fe5da8481a1545f",
+      "case_id": "TC_c4c99ec5e2eff3db",
+      "role": "selected",
+      "packet_subject_id": "case 1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Single-publication discovery cohort, no independent clinical pathogenicity certification.",
+        "Blank Other features cells do not demonstrate normal brainMRI."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual#1 inTable1, not another person sharing its allele. Female, scalp aplasia/enamel defects, growth restriction and ASD; Table1 borderline DD/ID but supplemental WISC IQ90 age6, so categorical globalDD is not established. Specific polysaccharide antibody deficiency is additional explicit source finding.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#1"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_005253.3:c.595C>T p.Arg199*; hg19chr2:g.28634929C>T. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#1"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          },
+          {
+            "source_id": "main",
+            "locator": "Molecularresults; Table1footnotes"
+          }
+        ],
+        "limitations": [
+          "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Reported denovo heterozygous variant, confirmed by parentaltesting as described in molecularresults.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Genetic analyses and Table1 siblingfootnote"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single dominant heterozygousFOSL2 allele; compoundheterozygous cis/transphase is not a requirement.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#1"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Raw read-level phasing not performed; pedigree segregation assessed separately."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Convergent last-exon heterozygous truncations in11 individuals/10families with shared scalp/enamel/NDD findings support syndrome association. Transcript/protein experiments are variant-specific, not evidence that every truncation is ordinary loss of function. Female, scalp aplasia/enamel defects, growth restriction and ASD; Table1 borderline DD/ID but supplemental WISC IQ90 age6, so categorical globalDD is not established. Specific polysaccharide antibody deficiency is additional explicit source finding.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results/Discussion, Figures3–4"
+          },
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#1"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "OnlyR199* andQ207* directlytested in mouseprotein c-JUNinteraction/stability system; NMDescape measured in selected patientRNAs.",
+          "Mechanismgain/dominantnegative not conclusively distinguished; no rescue or therapeuticcomparison."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet positive and exclusion checked against exact individualTable1 column and supplementarycaseparagraph. Female, scalp aplasia/enamel defects, growth restriction and ASD; Table1 borderline DD/ID but supplemental WISC IQ90 age6, so categorical globalDD is not established. Specific polysaccharide antibody deficiency is additional explicit source finding.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#1"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Missing MRI features are unresolved, not negatives.",
+          "DD/IDcombinedrow and selective-mutismencoding limitations preserved."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c595CtoT_FOSL2_NM_005253v4",
+            "geneContext": {
+              "valueId": "HGNC:3798",
+              "symbol": "FOSL2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005253.4:c.595C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.28412062C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005244.1:p.(Arg199Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 28412062,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "c2b799fcbcc369672268698f5b07aef5461950323928b9d42a65d118fe424840",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous NM_005253.3:c.595C>T p.Arg199*; hg19chr2:g.28634929C>T. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 PDFpage25 individual#1"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+              },
+              {
+                "source_id": "main",
+                "locator": "Molecularresults; Table1footnotes"
+              }
+            ],
+            "limitations": [
+              "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007385",
+              "label": "Aplasia cutis congenita of scalp"
+            }
+          },
+          "snapshot_sha256": "bb6b2f28d10b48da8b3559e182eb451d1d968f6dc738961ce1f249c92d2a84a5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Aplasia cutis congenita of scalp matches individual#1 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#1, Aplasia cutis congenita of scalp correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000518",
+              "label": "Cataract"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a91fcbbd86bedd3cd8270747be4eba8b0539bc551f69d31b00c26cf105d26281",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Cataract matches individual#1 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#1, Cataract correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Seizure matches individual#1 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#1, Seizure correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            }
+          },
+          "snapshot_sha256": "e7d47e7cef106c2491d6243b1322a1b3f13cc7281e1e45b213cb4436c9f23d7c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Intrauterine growth retardation matches individual#1 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#1, Intrauterine growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            }
+          },
+          "snapshot_sha256": "ab8d99e9bf4c6a4f7a7d1287ff5faf8bc1eff7c2af7b5ca3869aafece7b0f503",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Postnatal growth retardation matches individual#1 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#1, Postnatal growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 says Borderline DD/ID; supplement WISC IQ90 age6. GlobalDD cannot be unequivocally established from that combinedcategory.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 case#1 DD/ID"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Page4 Patient#1"
+              }
+            ],
+            "limitations": [
+              "No documented delay in multipledevelopmental domains."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Autistic behavior matches individual#1 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#1, Autistic behavior correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006297",
+              "label": "Enamel hypoplasia"
+            }
+          },
+          "snapshot_sha256": "365e054673866d70ca1ca090700fe852193078fd34d6ae65c1cb1fb3d7897bf7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Enamel hypoplasia matches individual#1 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#1, Enamel hypoplasia correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200012",
+              "label": "Short corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61ef0a44a7d77c48f8d0d0d050b7fa4e58ff404915c2988d75961da20f7b8500",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesShort corpus callosum; Table1 Otherfeatures is blank forindividual#1, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#1, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001320",
+              "label": "Cerebellar vermis hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f6afa02afb026cdc6efc2444cb0d0ffbdb579c5d9d404e59b8dec958673c4a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesCerebellar vermis hypoplasia; Table1 Otherfeatures is blank forindividual#1, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#1, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FOSL2/PMID_36197437_case_2.json",
+      "packet_sha256": "7f0ccdd7da77754f5ef5d843ac905a4443590fdcbe8bc2ce8457a06fabd04b03",
+      "case_id": "TC_c4c99ec5e2eff3db",
+      "role": "alternate",
+      "packet_subject_id": "case 2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Single-publication discovery cohort, no independent clinical pathogenicity certification.",
+        "Blank Other features cells do not demonstrate normal brainMRI."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual#2 inTable1, not another person sharing its allele. Female sister of case3; mildDD/ID, delayed speech and KABC-II score60 age4, growth restriction and seizures. Main narrative severe adult regression attributed tocase2 conflicts with individual Table1/supplement locating severe regression in case7.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#2"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_005253.3:c.595C>T p.Arg199*; hg19chr2:g.28634929C>T. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#2"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          },
+          {
+            "source_id": "main",
+            "locator": "Molecularresults; Table1footnotes"
+          }
+        ],
+        "limitations": [
+          "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Two affected sisters, parents bloodnegative; parentalgermlinemosaicism presumed, not measured in gonads. Not two independent confirmed denovo events.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Genetic analyses and Table1 siblingfootnote"
+          }
+        ],
+        "limitations": [
+          "Germlinemosaicism inferred from sibling recurrence, not directly assayed."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single dominant heterozygousFOSL2 allele; compoundheterozygous cis/transphase is not a requirement.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#2"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Raw read-level phasing not performed; pedigree segregation assessed separately."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Convergent last-exon heterozygous truncations in11 individuals/10families with shared scalp/enamel/NDD findings support syndrome association. Transcript/protein experiments are variant-specific, not evidence that every truncation is ordinary loss of function. Female sister of case3; mildDD/ID, delayed speech and KABC-II score60 age4, growth restriction and seizures. Main narrative severe adult regression attributed tocase2 conflicts with individual Table1/supplement locating severe regression in case7.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results/Discussion, Figures3–4"
+          },
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#2"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "OnlyR199* andQ207* directlytested in mouseprotein c-JUNinteraction/stability system; NMDescape measured in selected patientRNAs.",
+          "Mechanismgain/dominantnegative not conclusively distinguished; no rescue or therapeuticcomparison."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet positive and exclusion checked against exact individualTable1 column and supplementarycaseparagraph. Female sister of case3; mildDD/ID, delayed speech and KABC-II score60 age4, growth restriction and seizures. Main narrative severe adult regression attributed tocase2 conflicts with individual Table1/supplement locating severe regression in case7.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#2"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Missing MRI features are unresolved, not negatives.",
+          "DD/IDcombinedrow and selective-mutismencoding limitations preserved."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c595CtoT_FOSL2_NM_005253v4",
+            "geneContext": {
+              "valueId": "HGNC:3798",
+              "symbol": "FOSL2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005253.4:c.595C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.28412062C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005244.1:p.(Arg199Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 28412062,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "c2b799fcbcc369672268698f5b07aef5461950323928b9d42a65d118fe424840",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous NM_005253.3:c.595C>T p.Arg199*; hg19chr2:g.28634929C>T. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 PDFpage25 individual#2"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+              },
+              {
+                "source_id": "main",
+                "locator": "Molecularresults; Table1footnotes"
+              }
+            ],
+            "limitations": [
+              "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007385",
+              "label": "Aplasia cutis congenita of scalp"
+            }
+          },
+          "snapshot_sha256": "bb6b2f28d10b48da8b3559e182eb451d1d968f6dc738961ce1f249c92d2a84a5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Aplasia cutis congenita of scalp matches individual#2 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#2, Aplasia cutis congenita of scalp correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000518",
+              "label": "Cataract"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a91fcbbd86bedd3cd8270747be4eba8b0539bc551f69d31b00c26cf105d26281",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Cataract matches individual#2 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#2, Cataract correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            }
+          },
+          "snapshot_sha256": "48676c3701994966952c6afa26b3d2a47be69e0754311248381fa7cc3631da7a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Seizure matches individual#2 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#2, Seizure correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            }
+          },
+          "snapshot_sha256": "e7d47e7cef106c2491d6243b1322a1b3f13cc7281e1e45b213cb4436c9f23d7c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Intrauterine growth retardation matches individual#2 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#2, Intrauterine growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            }
+          },
+          "snapshot_sha256": "ab8d99e9bf4c6a4f7a7d1287ff5faf8bc1eff7c2af7b5ca3869aafece7b0f503",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Postnatal growth retardation matches individual#2 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#2, Postnatal growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Global developmental delay matches individual#2 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#2, Global developmental delay correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f37a617c9079a8c3ca1b69beb3c8d31339d617d796fa0ab93a407c75efb77d3e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Autistic behavior matches individual#2 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#2, Autistic behavior correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006297",
+              "label": "Enamel hypoplasia"
+            }
+          },
+          "snapshot_sha256": "365e054673866d70ca1ca090700fe852193078fd34d6ae65c1cb1fb3d7897bf7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Enamel hypoplasia matches individual#2 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#2, Enamel hypoplasia correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200012",
+              "label": "Short corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61ef0a44a7d77c48f8d0d0d050b7fa4e58ff404915c2988d75961da20f7b8500",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesShort corpus callosum; Table1 Otherfeatures is blank forindividual#2, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#2, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001320",
+              "label": "Cerebellar vermis hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f6afa02afb026cdc6efc2444cb0d0ffbdb579c5d9d404e59b8dec958673c4a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesCerebellar vermis hypoplasia; Table1 Otherfeatures is blank forindividual#2, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#2, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FOSL2/PMID_36197437_case_3.json",
+      "packet_sha256": "7b060281bbc7a443616abadd3339fab3318ac207cbdfb6ed961d8e0e54141444",
+      "case_id": "TC_c4c99ec5e2eff3db",
+      "role": "alternate",
+      "packet_subject_id": "case 3",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Single-publication discovery cohort, no independent clinical pathogenicity certification.",
+        "Blank Other features cells do not demonstrate normal brainMRI."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual#3 inTable1, not another person sharing its allele. Female sister of case2; normal psychomotor development and noASD per supplement; scalp/enamel defects. IUGR notavailable, not negative.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_005253.3:c.595C>T p.Arg199*; hg19chr2:g.28634929C>T. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          },
+          {
+            "source_id": "main",
+            "locator": "Molecularresults; Table1footnotes"
+          }
+        ],
+        "limitations": [
+          "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Two affected sisters, parents bloodnegative; parentalgermlinemosaicism presumed, not measured in gonads. Not two independent confirmed denovo events.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Genetic analyses and Table1 siblingfootnote"
+          }
+        ],
+        "limitations": [
+          "Germlinemosaicism inferred from sibling recurrence, not directly assayed."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single dominant heterozygousFOSL2 allele; compoundheterozygous cis/transphase is not a requirement.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Raw read-level phasing not performed; pedigree segregation assessed separately."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Convergent last-exon heterozygous truncations in11 individuals/10families with shared scalp/enamel/NDD findings support syndrome association. Transcript/protein experiments are variant-specific, not evidence that every truncation is ordinary loss of function. Female sister of case2; normal psychomotor development and noASD per supplement; scalp/enamel defects. IUGR notavailable, not negative.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results/Discussion, Figures3–4"
+          },
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "OnlyR199* andQ207* directlytested in mouseprotein c-JUNinteraction/stability system; NMDescape measured in selected patientRNAs.",
+          "Mechanismgain/dominantnegative not conclusively distinguished; no rescue or therapeuticcomparison."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet positive and exclusion checked against exact individualTable1 column and supplementarycaseparagraph. Female sister of case2; normal psychomotor development and noASD per supplement; scalp/enamel defects. IUGR notavailable, not negative.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Missing MRI features are unresolved, not negatives.",
+          "DD/IDcombinedrow and selective-mutismencoding limitations preserved."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c595CtoT_FOSL2_NM_005253v4",
+            "geneContext": {
+              "valueId": "HGNC:3798",
+              "symbol": "FOSL2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005253.4:c.595C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.28412062C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005244.1:p.(Arg199Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 28412062,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "c2b799fcbcc369672268698f5b07aef5461950323928b9d42a65d118fe424840",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous NM_005253.3:c.595C>T p.Arg199*; hg19chr2:g.28634929C>T. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 PDFpage25 individual#3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+              },
+              {
+                "source_id": "main",
+                "locator": "Molecularresults; Table1footnotes"
+              }
+            ],
+            "limitations": [
+              "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007385",
+              "label": "Aplasia cutis congenita of scalp"
+            }
+          },
+          "snapshot_sha256": "bb6b2f28d10b48da8b3559e182eb451d1d968f6dc738961ce1f249c92d2a84a5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Aplasia cutis congenita of scalp matches individual#3 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#3, Aplasia cutis congenita of scalp correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000518",
+              "label": "Cataract"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a91fcbbd86bedd3cd8270747be4eba8b0539bc551f69d31b00c26cf105d26281",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Cataract matches individual#3 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#3, Cataract correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Seizure matches individual#3 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#3, Seizure correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "712b4e41abddedd66103adc88d715f8053bd08033f15f1e3e1eb6481a27dea88",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Postnatal growth retardation matches individual#3 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#3, Postnatal growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "03152f286100abc72cad1120d8999d8a2e43113a3ec457babb1c73e5930869b4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Global developmental delay matches individual#3 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#3, Global developmental delay correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f37a617c9079a8c3ca1b69beb3c8d31339d617d796fa0ab93a407c75efb77d3e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Autistic behavior matches individual#3 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#3, Autistic behavior correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006297",
+              "label": "Enamel hypoplasia"
+            }
+          },
+          "snapshot_sha256": "365e054673866d70ca1ca090700fe852193078fd34d6ae65c1cb1fb3d7897bf7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Enamel hypoplasia matches individual#3 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#3, Enamel hypoplasia correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200012",
+              "label": "Short corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61ef0a44a7d77c48f8d0d0d050b7fa4e58ff404915c2988d75961da20f7b8500",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesShort corpus callosum; Table1 Otherfeatures is blank forindividual#3, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#3, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001320",
+              "label": "Cerebellar vermis hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f6afa02afb026cdc6efc2444cb0d0ffbdb579c5d9d404e59b8dec958673c4a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesCerebellar vermis hypoplasia; Table1 Otherfeatures is blank forindividual#3, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#3, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FOSL2/PMID_36197437_case_7.json",
+      "packet_sha256": "e49f49c494c458d8a936678b5b786f3cd82c6b5c822f0e4673c5d4368e3c8c91",
+      "case_id": "TC_4578748b3344f337",
+      "role": "selected",
+      "packet_subject_id": "case 7",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Single-publication discovery cohort, no independent clinical pathogenicity certification.",
+        "Blank Other features cells do not demonstrate normal brainMRI."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual#7 inTable1, not another person sharing its allele. Female with severeDD/ID, ASD, IUGR, congenital bilateral cataracts, scalp/enamel defects. Supplemental assessment explicitly describes pubertyregression, majoranxiety/stereotypies and Vinelandadaptiveage3y5m atage20.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#7"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_005253.3:c.605del p.Pro202Glnfs*18; hg19chr2:g.28634939del. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#7"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          },
+          {
+            "source_id": "main",
+            "locator": "Molecularresults; Table1footnotes"
+          }
+        ],
+        "limitations": [
+          "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Reported denovo heterozygous variant, confirmed by parentaltesting as described in molecularresults.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Genetic analyses and Table1 siblingfootnote"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single dominant heterozygousFOSL2 allele; compoundheterozygous cis/transphase is not a requirement.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#7"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Raw read-level phasing not performed; pedigree segregation assessed separately."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Convergent last-exon heterozygous truncations in11 individuals/10families with shared scalp/enamel/NDD findings support syndrome association. Transcript/protein experiments are variant-specific, not evidence that every truncation is ordinary loss of function. Female with severeDD/ID, ASD, IUGR, congenital bilateral cataracts, scalp/enamel defects. Supplemental assessment explicitly describes pubertyregression, majoranxiety/stereotypies and Vinelandadaptiveage3y5m atage20.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results/Discussion, Figures3–4"
+          },
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#7"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "OnlyR199* andQ207* directlytested in mouseprotein c-JUNinteraction/stability system; NMDescape measured in selected patientRNAs.",
+          "Mechanismgain/dominantnegative not conclusively distinguished; no rescue or therapeuticcomparison."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet positive and exclusion checked against exact individualTable1 column and supplementarycaseparagraph. Female with severeDD/ID, ASD, IUGR, congenital bilateral cataracts, scalp/enamel defects. Supplemental assessment explicitly describes pubertyregression, majoranxiety/stereotypies and Vinelandadaptiveage3y5m atage20.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#7"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Missing MRI features are unresolved, not negatives.",
+          "DD/IDcombinedrow and selective-mutismencoding limitations preserved."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c605del_FOSL2_NM_005253v4",
+            "geneContext": {
+              "valueId": "HGNC:3798",
+              "symbol": "FOSL2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005253.4:c.605del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.28412072del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005244.1:p.(Pro202GlnfsTer18)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 28412067,
+              "ref": "GC",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "c3bd21deb5c642b08df8b4663e76b3fd478c11e3b4f2008d1eb7b58b8b706fe2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous NM_005253.3:c.605del p.Pro202Glnfs*18; hg19chr2:g.28634939del. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 PDFpage25 individual#7"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+              },
+              {
+                "source_id": "main",
+                "locator": "Molecularresults; Table1footnotes"
+              }
+            ],
+            "limitations": [
+              "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007385",
+              "label": "Aplasia cutis congenita of scalp"
+            }
+          },
+          "snapshot_sha256": "bb6b2f28d10b48da8b3559e182eb451d1d968f6dc738961ce1f249c92d2a84a5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Aplasia cutis congenita of scalp matches individual#7 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#7, Aplasia cutis congenita of scalp correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000518",
+              "label": "Cataract"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "1fc67408b18187103a137bb95d11744d93696f4225fe37c150b5b9b516399655",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Cataract matches individual#7 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#7, Cataract correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            }
+          },
+          "snapshot_sha256": "e7d47e7cef106c2491d6243b1322a1b3f13cc7281e1e45b213cb4436c9f23d7c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Intrauterine growth retardation matches individual#7 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#7, Intrauterine growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "712b4e41abddedd66103adc88d715f8053bd08033f15f1e3e1eb6481a27dea88",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Postnatal growth retardation matches individual#7 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#7, Postnatal growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Global developmental delay matches individual#7 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#7, Global developmental delay correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Autistic behavior matches individual#7 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#7, Autistic behavior correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006297",
+              "label": "Enamel hypoplasia"
+            }
+          },
+          "snapshot_sha256": "365e054673866d70ca1ca090700fe852193078fd34d6ae65c1cb1fb3d7897bf7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Enamel hypoplasia matches individual#7 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#7, Enamel hypoplasia correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200012",
+              "label": "Short corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61ef0a44a7d77c48f8d0d0d050b7fa4e58ff404915c2988d75961da20f7b8500",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesShort corpus callosum; Table1 Otherfeatures is blank forindividual#7, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#7, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001320",
+              "label": "Cerebellar vermis hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f6afa02afb026cdc6efc2444cb0d0ffbdb579c5d9d404e59b8dec958673c4a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesCerebellar vermis hypoplasia; Table1 Otherfeatures is blank forindividual#7, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#7, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FOSL2/PMID_36197437_case_8.json",
+      "packet_sha256": "f58d1cb8ebc3bedcb5514d50c1dc78030b674bf77d1df0d46b6f79cc659aff1e",
+      "case_id": "TC_4578748b3344f337",
+      "role": "alternate",
+      "packet_subject_id": "case 8",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Single-publication discovery cohort, no independent clinical pathogenicity certification.",
+        "Blank Other features cells do not demonstrate normal brainMRI."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual#8 inTable1, not another person sharing its allele. Female with mildDD/ID, ASD, receptive-language difficulties, dyslexia/dyscalculia/dysgraphia, prenatal/postnatalgrowthrestriction, congenitalbilateral cataracts and scalp/enamel defects.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#8"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_005253.3:c.605del p.Pro202Glnfs*18; hg19chr2:g.28634939del. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#8"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          },
+          {
+            "source_id": "main",
+            "locator": "Molecularresults; Table1footnotes"
+          }
+        ],
+        "limitations": [
+          "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Reported denovo heterozygous variant, confirmed by parentaltesting as described in molecularresults.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Genetic analyses and Table1 siblingfootnote"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single dominant heterozygousFOSL2 allele; compoundheterozygous cis/transphase is not a requirement.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#8"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Raw read-level phasing not performed; pedigree segregation assessed separately."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Convergent last-exon heterozygous truncations in11 individuals/10families with shared scalp/enamel/NDD findings support syndrome association. Transcript/protein experiments are variant-specific, not evidence that every truncation is ordinary loss of function. Female with mildDD/ID, ASD, receptive-language difficulties, dyslexia/dyscalculia/dysgraphia, prenatal/postnatalgrowthrestriction, congenitalbilateral cataracts and scalp/enamel defects.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results/Discussion, Figures3–4"
+          },
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#8"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "OnlyR199* andQ207* directlytested in mouseprotein c-JUNinteraction/stability system; NMDescape measured in selected patientRNAs.",
+          "Mechanismgain/dominantnegative not conclusively distinguished; no rescue or therapeuticcomparison."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet positive and exclusion checked against exact individualTable1 column and supplementarycaseparagraph. Female with mildDD/ID, ASD, receptive-language difficulties, dyslexia/dyscalculia/dysgraphia, prenatal/postnatalgrowthrestriction, congenitalbilateral cataracts and scalp/enamel defects.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#8"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Missing MRI features are unresolved, not negatives.",
+          "DD/IDcombinedrow and selective-mutismencoding limitations preserved."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c605del_FOSL2_NM_005253v4",
+            "geneContext": {
+              "valueId": "HGNC:3798",
+              "symbol": "FOSL2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005253.4:c.605del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.28412072del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005244.1:p.(Pro202GlnfsTer18)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 28412067,
+              "ref": "GC",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "c3bd21deb5c642b08df8b4663e76b3fd478c11e3b4f2008d1eb7b58b8b706fe2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous NM_005253.3:c.605del p.Pro202Glnfs*18; hg19chr2:g.28634939del. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 PDFpage25 individual#8"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+              },
+              {
+                "source_id": "main",
+                "locator": "Molecularresults; Table1footnotes"
+              }
+            ],
+            "limitations": [
+              "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007385",
+              "label": "Aplasia cutis congenita of scalp"
+            }
+          },
+          "snapshot_sha256": "bb6b2f28d10b48da8b3559e182eb451d1d968f6dc738961ce1f249c92d2a84a5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Aplasia cutis congenita of scalp matches individual#8 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#8, Aplasia cutis congenita of scalp correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000518",
+              "label": "Cataract"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "1fc67408b18187103a137bb95d11744d93696f4225fe37c150b5b9b516399655",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Cataract matches individual#8 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#8, Cataract correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Seizure matches individual#8 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#8, Seizure correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            }
+          },
+          "snapshot_sha256": "e7d47e7cef106c2491d6243b1322a1b3f13cc7281e1e45b213cb4436c9f23d7c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Intrauterine growth retardation matches individual#8 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#8, Intrauterine growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            }
+          },
+          "snapshot_sha256": "ab8d99e9bf4c6a4f7a7d1287ff5faf8bc1eff7c2af7b5ca3869aafece7b0f503",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Postnatal growth retardation matches individual#8 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#8, Postnatal growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Global developmental delay matches individual#8 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#8, Global developmental delay correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Autistic behavior matches individual#8 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#8, Autistic behavior correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006297",
+              "label": "Enamel hypoplasia"
+            }
+          },
+          "snapshot_sha256": "365e054673866d70ca1ca090700fe852193078fd34d6ae65c1cb1fb3d7897bf7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Enamel hypoplasia matches individual#8 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#8, Enamel hypoplasia correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200012",
+              "label": "Short corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61ef0a44a7d77c48f8d0d0d050b7fa4e58ff404915c2988d75961da20f7b8500",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesShort corpus callosum; Table1 Otherfeatures is blank forindividual#8, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#8, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001320",
+              "label": "Cerebellar vermis hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f6afa02afb026cdc6efc2444cb0d0ffbdb579c5d9d404e59b8dec958673c4a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesCerebellar vermis hypoplasia; Table1 Otherfeatures is blank forindividual#8, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#8, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FOSL2/PMID_36197437_case_4.json",
+      "packet_sha256": "1dc08d4e778706fd8ab97161a640f72366b568944aa32632ffc0fbbe6acadb92",
+      "case_id": "TC_179cf15ceab5c8f2",
+      "role": "selected",
+      "packet_subject_id": "case 4",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Single-publication discovery cohort, no independent clinical pathogenicity certification.",
+        "Blank Other features cells do not demonstrate normal brainMRI."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual#4 inTable1, not another person sharing its allele. Female with scalp/enamel defects, IUGR and congenital bilateral cataracts; good speech and only selective mutism, not establishedASD/autistic behavior.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#4"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_005253.3:c.619C>T p.Gln207*; hg19chr2:g.28634953C>T. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#4"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          },
+          {
+            "source_id": "main",
+            "locator": "Molecularresults; Table1footnotes"
+          }
+        ],
+        "limitations": [
+          "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Reported denovo heterozygous variant, confirmed by parentaltesting as described in molecularresults.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Genetic analyses and Table1 siblingfootnote"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single dominant heterozygousFOSL2 allele; compoundheterozygous cis/transphase is not a requirement.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#4"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Raw read-level phasing not performed; pedigree segregation assessed separately."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Convergent last-exon heterozygous truncations in11 individuals/10families with shared scalp/enamel/NDD findings support syndrome association. Transcript/protein experiments are variant-specific, not evidence that every truncation is ordinary loss of function. Female with scalp/enamel defects, IUGR and congenital bilateral cataracts; good speech and only selective mutism, not establishedASD/autistic behavior.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results/Discussion, Figures3–4"
+          },
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#4"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "OnlyR199* andQ207* directlytested in mouseprotein c-JUNinteraction/stability system; NMDescape measured in selected patientRNAs.",
+          "Mechanismgain/dominantnegative not conclusively distinguished; no rescue or therapeuticcomparison."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet positive and exclusion checked against exact individualTable1 column and supplementarycaseparagraph. Female with scalp/enamel defects, IUGR and congenital bilateral cataracts; good speech and only selective mutism, not establishedASD/autistic behavior.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#4"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Missing MRI features are unresolved, not negatives.",
+          "DD/IDcombinedrow and selective-mutismencoding limitations preserved."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c619CtoT_FOSL2_NM_005253v4",
+            "geneContext": {
+              "valueId": "HGNC:3798",
+              "symbol": "FOSL2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005253.4:c.619C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.28412086C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005244.1:p.(Gln207Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 28412086,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e15af6ffb3c3123e18ea86be9ebb4eb41867ccf642a45ef4ce339dfe7a2be65b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous NM_005253.3:c.619C>T p.Gln207*; hg19chr2:g.28634953C>T. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 PDFpage25 individual#4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+              },
+              {
+                "source_id": "main",
+                "locator": "Molecularresults; Table1footnotes"
+              }
+            ],
+            "limitations": [
+              "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007385",
+              "label": "Aplasia cutis congenita of scalp"
+            }
+          },
+          "snapshot_sha256": "bb6b2f28d10b48da8b3559e182eb451d1d968f6dc738961ce1f249c92d2a84a5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Aplasia cutis congenita of scalp matches individual#4 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#4, Aplasia cutis congenita of scalp correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000518",
+              "label": "Cataract"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "1fc67408b18187103a137bb95d11744d93696f4225fe37c150b5b9b516399655",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Cataract matches individual#4 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#4, Cataract correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Seizure matches individual#4 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#4, Seizure correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            }
+          },
+          "snapshot_sha256": "e7d47e7cef106c2491d6243b1322a1b3f13cc7281e1e45b213cb4436c9f23d7c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Intrauterine growth retardation matches individual#4 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#4, Intrauterine growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "712b4e41abddedd66103adc88d715f8053bd08033f15f1e3e1eb6481a27dea88",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Postnatal growth retardation matches individual#4 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#4, Postnatal growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "03152f286100abc72cad1120d8999d8a2e43113a3ec457babb1c73e5930869b4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Global developmental delay matches individual#4 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#4, Global developmental delay correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Source reports only selective mutism with good speech; this does not establish autistic behavior. Table1 places selective mutism inASDrow, requiring qualification.",
+            "evidence": [
+              {
+                "source_id": "supp",
+                "locator": "Page4 Patient#4"
+              },
+              {
+                "source_id": "article",
+                "locator": "Table1 case#4 ASDrow"
+              }
+            ],
+            "limitations": [
+              "Semantic mapping selective mutism→autistic behavior unsupported; no formalASDdiagnosis reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006297",
+              "label": "Enamel hypoplasia"
+            }
+          },
+          "snapshot_sha256": "365e054673866d70ca1ca090700fe852193078fd34d6ae65c1cb1fb3d7897bf7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Enamel hypoplasia matches individual#4 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#4, Enamel hypoplasia correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200012",
+              "label": "Short corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61ef0a44a7d77c48f8d0d0d050b7fa4e58ff404915c2988d75961da20f7b8500",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesShort corpus callosum; Table1 Otherfeatures is blank forindividual#4, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#4, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001320",
+              "label": "Cerebellar vermis hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f6afa02afb026cdc6efc2444cb0d0ffbdb579c5d9d404e59b8dec958673c4a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesCerebellar vermis hypoplasia; Table1 Otherfeatures is blank forindividual#4, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#4, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FOSL2/PMID_36197437_case_5.json",
+      "packet_sha256": "1a52e42c976e900c00b3f6314b7c1d5a281ff01b64273a9c47b95898f7087606",
+      "case_id": "TC_179cf15ceab5c8f2",
+      "role": "alternate",
+      "packet_subject_id": "case 5",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Single-publication discovery cohort, no independent clinical pathogenicity certification.",
+        "Blank Other features cells do not demonstrate normal brainMRI."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual#5 inTable1, not another person sharing its allele. Male infant, unilateral cataractat4months/scalp defect. Normal development at3months does not establish normal laterdevelopment; Table1 other unavailable fields are not negatives.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_005253.3:c.619C>T p.Gln207*; hg19chr2:g.28634953C>T. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          },
+          {
+            "source_id": "main",
+            "locator": "Molecularresults; Table1footnotes"
+          }
+        ],
+        "limitations": [
+          "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Reported denovo heterozygous variant, confirmed by parentaltesting as described in molecularresults.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Genetic analyses and Table1 siblingfootnote"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single dominant heterozygousFOSL2 allele; compoundheterozygous cis/transphase is not a requirement.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Raw read-level phasing not performed; pedigree segregation assessed separately."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Convergent last-exon heterozygous truncations in11 individuals/10families with shared scalp/enamel/NDD findings support syndrome association. Transcript/protein experiments are variant-specific, not evidence that every truncation is ordinary loss of function. Male infant, unilateral cataractat4months/scalp defect. Normal development at3months does not establish normal laterdevelopment; Table1 other unavailable fields are not negatives.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results/Discussion, Figures3–4"
+          },
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "OnlyR199* andQ207* directlytested in mouseprotein c-JUNinteraction/stability system; NMDescape measured in selected patientRNAs.",
+          "Mechanismgain/dominantnegative not conclusively distinguished; no rescue or therapeuticcomparison."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet positive and exclusion checked against exact individualTable1 column and supplementarycaseparagraph. Male infant, unilateral cataractat4months/scalp defect. Normal development at3months does not establish normal laterdevelopment; Table1 other unavailable fields are not negatives.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Missing MRI features are unresolved, not negatives.",
+          "DD/IDcombinedrow and selective-mutismencoding limitations preserved."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c619CtoT_FOSL2_NM_005253v4",
+            "geneContext": {
+              "valueId": "HGNC:3798",
+              "symbol": "FOSL2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005253.4:c.619C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.28412086C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005244.1:p.(Gln207Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 28412086,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e15af6ffb3c3123e18ea86be9ebb4eb41867ccf642a45ef4ce339dfe7a2be65b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous NM_005253.3:c.619C>T p.Gln207*; hg19chr2:g.28634953C>T. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 PDFpage25 individual#5"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+              },
+              {
+                "source_id": "main",
+                "locator": "Molecularresults; Table1footnotes"
+              }
+            ],
+            "limitations": [
+              "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007385",
+              "label": "Aplasia cutis congenita of scalp"
+            }
+          },
+          "snapshot_sha256": "bb6b2f28d10b48da8b3559e182eb451d1d968f6dc738961ce1f249c92d2a84a5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Aplasia cutis congenita of scalp matches individual#5 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#5, Aplasia cutis congenita of scalp correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000518",
+              "label": "Cataract"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P4M"
+              }
+            }
+          },
+          "snapshot_sha256": "86fcefbad28653548f567c2fe439ea81be78be7329d48cebe7ceb0aee96f7b2f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Cataract matches individual#5 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#5, Cataract correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "253267a47ab1d0b57c991235377b32dc3cd8d0352aad3c4433b3eebadfd3dcf4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Intrauterine growth retardation matches individual#5 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#5, Intrauterine growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200012",
+              "label": "Short corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61ef0a44a7d77c48f8d0d0d050b7fa4e58ff404915c2988d75961da20f7b8500",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesShort corpus callosum; Table1 Otherfeatures is blank forindividual#5, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#5, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001320",
+              "label": "Cerebellar vermis hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f6afa02afb026cdc6efc2444cb0d0ffbdb579c5d9d404e59b8dec958673c4a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet excludesCerebellar vermis hypoplasia; Table1 Otherfeatures is blank forindividual#5, not an explicit negativeMRI finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#5, Otherfeatures"
+              }
+            ],
+            "limitations": [
+              "NormalbrainMRI or feature-specificabsence not reported."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FOSL2/PMID_36197437_case_9.json",
+      "packet_sha256": "0c5782795b3607f168e518946adc0a182bff30a52b750509260339cb44d69aa2",
+      "case_id": "TC_37e3a0b32cf20ceb",
+      "role": "selected",
+      "packet_subject_id": "case 9",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Single-publication discovery cohort, no independent clinical pathogenicity certification.",
+        "Blank Other features cells do not demonstrate normal brainMRI."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual#9 inTable1, not another person sharing its allele. Female with severeDD/ID, seizures, growthrestriction, shortcorpuscallosum and vermishypoplasia, scalp/enameldefects. Adultautonomyregression documented. Separate paternallyinheritedFLG variant explains ichthyosisvulgaris; not everyfeature attributed toFOSL2.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#9"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_005253.3:c.662_663del p.Val221Glufs*37; hg19chr2:g.28634996_28634997del. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#9"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          },
+          {
+            "source_id": "main",
+            "locator": "Molecularresults; Table1footnotes"
+          }
+        ],
+        "limitations": [
+          "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Reported denovo heterozygous variant, confirmed by parentaltesting as described in molecularresults.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Genetic analyses and Table1 siblingfootnote"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single dominant heterozygousFOSL2 allele; compoundheterozygous cis/transphase is not a requirement.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#9"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Raw read-level phasing not performed; pedigree segregation assessed separately."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Convergent last-exon heterozygous truncations in11 individuals/10families with shared scalp/enamel/NDD findings support syndrome association. Transcript/protein experiments are variant-specific, not evidence that every truncation is ordinary loss of function. Female with severeDD/ID, seizures, growthrestriction, shortcorpuscallosum and vermishypoplasia, scalp/enameldefects. Adultautonomyregression documented. Separate paternallyinheritedFLG variant explains ichthyosisvulgaris; not everyfeature attributed toFOSL2.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results/Discussion, Figures3–4"
+          },
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#9"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "OnlyR199* andQ207* directlytested in mouseprotein c-JUNinteraction/stability system; NMDescape measured in selected patientRNAs.",
+          "Mechanismgain/dominantnegative not conclusively distinguished; no rescue or therapeuticcomparison."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet positive and exclusion checked against exact individualTable1 column and supplementarycaseparagraph. Female with severeDD/ID, seizures, growthrestriction, shortcorpuscallosum and vermishypoplasia, scalp/enameldefects. Adultautonomyregression documented. Separate paternallyinheritedFLG variant explains ichthyosisvulgaris; not everyfeature attributed toFOSL2.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1 PDFpage25 individual#9"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+          }
+        ],
+        "limitations": [
+          "Missing MRI features are unresolved, not negatives.",
+          "DD/IDcombinedrow and selective-mutismencoding limitations preserved."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c662_663del_FOSL2_NM_005253v4",
+            "geneContext": {
+              "valueId": "HGNC:3798",
+              "symbol": "FOSL2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005253.4:c.662_663del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.28412129_28412130del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005244.1:p.(Val221GlufsTer37)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 28412127,
+              "ref": "GGT",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "2ba11fa5b7749947006eea10e5d479c7ad6fb95b47d236b84f19a5f9b330e3a8",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous NM_005253.3:c.662_663del p.Val221Glufs*37; hg19chr2:g.28634996_28634997del. Packet uses NM_005253.4 and hg38; coding/protein notation agrees. ",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 PDFpage25 individual#9"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Page4 individual neuropsychological narratives; pages2–3 immune findings where applicable"
+              },
+              {
+                "source_id": "main",
+                "locator": "Molecularresults; Table1footnotes"
+              }
+            ],
+            "limitations": [
+              "No independent reference-sequence liftover/indel-normalization performed; sourcehg19 and packethg38 coordinates retained."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007385",
+              "label": "Aplasia cutis congenita of scalp"
+            }
+          },
+          "snapshot_sha256": "bb6b2f28d10b48da8b3559e182eb451d1d968f6dc738961ce1f249c92d2a84a5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Aplasia cutis congenita of scalp matches individual#9 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#9, Aplasia cutis congenita of scalp correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000518",
+              "label": "Cataract"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a91fcbbd86bedd3cd8270747be4eba8b0539bc551f69d31b00c26cf105d26281",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Cataract matches individual#9 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#9, Cataract correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            }
+          },
+          "snapshot_sha256": "48676c3701994966952c6afa26b3d2a47be69e0754311248381fa7cc3631da7a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Seizure matches individual#9 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#9, Seizure correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            }
+          },
+          "snapshot_sha256": "e7d47e7cef106c2491d6243b1322a1b3f13cc7281e1e45b213cb4436c9f23d7c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Intrauterine growth retardation matches individual#9 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#9, Intrauterine growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            }
+          },
+          "snapshot_sha256": "ab8d99e9bf4c6a4f7a7d1287ff5faf8bc1eff7c2af7b5ca3869aafece7b0f503",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Postnatal growth retardation matches individual#9 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#9, Postnatal growth retardation correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Global developmental delay matches individual#9 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#9, Global developmental delay correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f37a617c9079a8c3ca1b69beb3c8d31339d617d796fa0ab93a407c75efb77d3e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit negative Autistic behavior matches individual#9 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#9, Autistic behavior correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006297",
+              "label": "Enamel hypoplasia"
+            }
+          },
+          "snapshot_sha256": "365e054673866d70ca1ca090700fe852193078fd34d6ae65c1cb1fb3d7897bf7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Enamel hypoplasia matches individual#9 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#9, Enamel hypoplasia correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200012",
+              "label": "Short corpus callosum"
+            }
+          },
+          "snapshot_sha256": "1dda0caa73e6897a6d6b76b7196ce2df8344cd576085e0644446d1b5e15a177a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Short corpus callosum matches individual#9 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#9, Short corpus callosum correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001320",
+              "label": "Cerebellar vermis hypoplasia"
+            }
+          },
+          "snapshot_sha256": "d98e636d78a09a3284ba2e36859910175aeb6779dc0395b055caa2ef24bc5bb8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Positive finding Cerebellar vermis hypoplasia matches individual#9 Table1 and case narrative; negative is limited to reported assessment/timepoint.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1 individual#9, Cerebellar vermis hypoplasia correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Complete reading of accepted manuscript and associated five-page supplement; duplicate publisher supplement text also read. Underlying clinicalrecords, raw sequencing, original microCTvolumes and rawexperimentalimages not read.",
+    "Protein last-exon truncations preserve AP-1bZIP/c-JUNinteraction and suggest increasedstability, unlike simple NMD-mediatedhaploinsufficiency. Fig4C/D deliberatelyusesWT20µg,R199*4µg,Q207*2µg; rawbandintensities cannot establish comparativehalflives.",
+    "TableS1 #9CD8=995 vsupper920, #11Bcells=665 vsupper570, #7tetanusSI10 vsnormal>11 qualify prose claimingallnormal. #9Tcellsprinted2,11 is unresolvedtypography, not silently2110.",
+    "Main narrativeimmunology labels#1,#2,#9 differfromsupplementactual#7,#9,#11; sourcecase-number discrepancy retained.",
+    "Case#2vs#7regression/severity sourceinconsistency retained. Case#9FLG secondcause kept separate.",
+    "No outcome/rank files read; casesandresultsleftunchanged."
+  ]
+}

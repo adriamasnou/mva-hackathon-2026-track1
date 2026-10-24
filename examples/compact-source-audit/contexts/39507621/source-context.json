@@ -1,0 +1,219 @@
+{
+  "pmid": "39507621",
+  "source_titles": [
+    "Case report: Adult patient with WWOX developmental and epileptic encephalopathy: 40 years of observation"
+  ],
+  "selected_case_ids": [
+    "TC_9bcc12b738e0f9bd"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "WWOX"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/WWOX/PMID_39507621_patient.json",
+      "sha256": "40db4ace3da77c4f4ae8da134d5f2fb83aad7e309bac9280a5cb877502dcbf44",
+      "case_id": "TC_9bcc12b738e0f9bd",
+      "selected_record": true,
+      "subject": {
+        "id": "patient",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P40Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:616211",
+            "label": "Developmental and epileptic encephalopathy 28"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4M"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0032792",
+            "label": "Tonic seizure"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P1Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011173",
+            "label": "Focal behavior arrest seizure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032755",
+            "label": "Focal impaired awareness autonomic seizure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032794",
+            "label": "Myoclonic seizure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011097",
+            "label": "Epileptic spasm"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002069",
+            "label": "Bilateral tonic-clonic seizure"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002376",
+            "label": "Developmental regression"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P12Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002273",
+            "label": "Tetraparesis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002353",
+            "label": "EEG abnormality"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011448",
+            "label": "Ankle clonus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001558",
+            "label": "Decreased fetal movement"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000582",
+            "label": "Upslanted palpebral fissure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002553",
+            "label": "Highly arched eyebrow"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000316",
+            "label": "Hypertelorism"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003487",
+            "label": "Babinski sign"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "1NU8wZjVIeb6Jjh3dFsFT2vq",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:616211",
+              "label": "Developmental and epileptic encephalopathy 28"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "patient",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c35CtoT_WWOX_NM_016373v4",
+                    "geneContext": {
+                      "valueId": "HGNC:12799",
+                      "symbol": "WWOX"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016373.4:c.35C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000016.10:g.78099813C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057457.1:p.(Thr12Met)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr16",
+                      "pos": 78099813,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

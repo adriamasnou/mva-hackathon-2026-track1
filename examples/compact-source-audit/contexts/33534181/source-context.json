@@ -1,0 +1,170 @@
+{
+  "pmid": "33534181",
+  "source_titles": [
+    "A novel SPINK5 donor splice site variant in a child with Netherton syndrome."
+  ],
+  "selected_case_ids": [
+    "TC_658d90d7038333ce"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "SPINK5"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SPINK5/PMID_33534181_patient.json",
+      "sha256": "1d656e1e552a762fbed1ca55990dd22323556176094970927656c84000cbbba4",
+      "case_id": "TC_658d90d7038333ce",
+      "selected_record": true,
+      "subject": {
+        "id": "patient",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P3Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:256500",
+            "label": "Netherton syndrome"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P14D"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003193",
+            "label": "Allergic rhinitis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002099",
+            "label": "Asthma"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0007381",
+            "label": "Congenital exfoliative erythroderma"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000964",
+            "label": "Eczematoid dermatitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000962",
+            "label": "Hyperkeratosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0025810",
+            "label": "Ichthyosis linearis circumflexa"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P3Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0025474",
+            "label": "Erythematous plaque"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P3Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0025811",
+            "label": "Trichorrhexis invaginata"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0100658",
+            "label": "Cellulitis"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "Mhe631HnskQO6aJGocxConXs",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:256500",
+              "label": "Netherton syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "patient",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c2015_5GtoA_SPINK5_NM_006846v4",
+                    "geneContext": {
+                      "valueId": "HGNC:15464",
+                      "symbol": "SPINK5"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_006846.4:c.2015+5G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000005.10:g.148114494G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_006837.2:p.?"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr5",
+                      "pos": 148114494,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

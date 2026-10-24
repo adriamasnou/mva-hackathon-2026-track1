@@ -1,0 +1,340 @@
+{
+  "pmid": "25835445",
+  "source_titles": [
+    "Mutations in a TGF-β ligand, TGFB3, cause syndromic aortic aneurysms and dissections"
+  ],
+  "selected_case_ids": [
+    "TC_1833231941cff195"
+  ],
+  "alternate_case_ids": [
+    "TC_1833231941cff195"
+  ],
+  "genes": [
+    "TGFB3"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/TGFB3/PMID_25835445_8_III_1.json",
+      "sha256": "8e3463e6fa67eecfd14188a44aa36801fa542f13ad3436b30e1e8bb897602443",
+      "case_id": "TC_1833231941cff195",
+      "selected_record": true,
+      "subject": {
+        "id": "8-III:1*",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P30Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:615582",
+            "label": "Loeys-Dietz syndrome 5"
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0031649",
+            "label": "Aortic rupture"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0005112",
+            "label": "Abdominal aortic aneurysm"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004933",
+            "label": "Ascending aortic dissection"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001634",
+            "label": "Mitral valve prolapse"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001382",
+            "label": "Joint hypermobility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012385",
+            "label": "Camptodactyly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001166",
+            "label": "Arachnodactyly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001270",
+            "label": "Motor delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "Zcz3Fu7azau1CfRP8JXwEiJh",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:615582",
+              "label": "Loeys-Dietz syndrome 5"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "8-III:1*",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1202TtoC_TGFB3_NM_003239v5",
+                    "geneContext": {
+                      "valueId": "HGNC:11769",
+                      "symbol": "TGFB3"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_003239.5:c.1202T>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000014.9:g.75959224A>G"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_003230.1:p.(Leu401Pro)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr14",
+                      "pos": 75959224,
+                      "ref": "A",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/TGFB3/PMID_25835445_8_II_1.json",
+      "sha256": "773dda727c6d56190f624cef84e2f87b8c2d059e3af611197495ddbe32b441bb",
+      "case_id": "TC_1833231941cff195",
+      "selected_record": false,
+      "subject": {
+        "id": "8-II:1*",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P50Y"
+          }
+        },
+        "vitalStatus": {
+          "status": "DECEASED"
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:615582",
+            "label": "Loeys-Dietz syndrome 5"
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0031649",
+            "label": "Aortic rupture"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0005112",
+            "label": "Abdominal aortic aneurysm"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P50Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004933",
+            "label": "Ascending aortic dissection"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P43Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002616",
+            "label": "Aortic root aneurysm"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P42Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001634",
+            "label": "Mitral valve prolapse"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000023",
+            "label": "Inguinal hernia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001166",
+            "label": "Arachnodactyly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001270",
+            "label": "Motor delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000316",
+            "label": "Hypertelorism"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000098",
+            "label": "Tall stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "NWsiLHrsEIjWwL86i2WsKWdx",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:615582",
+              "label": "Loeys-Dietz syndrome 5"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "8-II:1*",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1202TtoC_TGFB3_NM_003239v5",
+                    "geneContext": {
+                      "valueId": "HGNC:11769",
+                      "symbol": "TGFB3"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_003239.5:c.1202T>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000014.9:g.75959224A>G"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_003230.1:p.(Leu401Pro)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr14",
+                      "pos": 75959224,
+                      "ref": "A",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

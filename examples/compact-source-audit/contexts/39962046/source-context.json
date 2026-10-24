@@ -1,0 +1,2371 @@
+{
+  "pmid": "39962046",
+  "source_titles": [
+    "RNA methyltransferase SPOUT1/CENP-32 links mitotic spindle organization with the neurodevelopmental disorder SpADMiSS."
+  ],
+  "selected_case_ids": [
+    "TC_061d18643ee89fe9",
+    "TC_fcab6722559755c6",
+    "TC_df33553c7035e17c",
+    "TC_2019993fe0bd8fad"
+  ],
+  "alternate_case_ids": [
+    "TC_2019993fe0bd8fad"
+  ],
+  "genes": [
+    "SPOUT1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SPOUT1/PMID_39962046_H_II_1.json",
+      "sha256": "fadece198c8f00c782ba0148ed96e73d0da2c63c8ac669b7c76fcd87267238f6",
+      "case_id": "TC_061d18643ee89fe9",
+      "selected_record": true,
+      "subject": {
+        "id": "H-II-1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P7Y6M"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621154",
+            "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002197",
+            "label": "Generalized-onset seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0007359",
+            "label": "Focal-onset seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002373",
+            "label": "Febrile seizure (within the age range of 3 months to 6 years)"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011097",
+            "label": "Epileptic spasm"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0032792",
+            "label": "Tonic seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0025373",
+            "label": "Interictal EEG abnormality"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002120",
+            "label": "Cerebral cortical atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002119",
+            "label": "Ventriculomegaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000961",
+            "label": "Cyanosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002013",
+            "label": "Vomiting"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "1CqVIJS9qzjb2D0GN9QZCKLh",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621154",
+              "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "H-II-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1054CtoT_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.1054C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128823755G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Arg352Cys)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128823755,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "H-II-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1016AtoG_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.1016A>G"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128823793T>C"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Tyr339Cys)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128823793,
+                      "ref": "T",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPOUT1/PMID_39962046_D_III_5.json",
+      "sha256": "a1857b37056338060accf71995ffcf8a4e5ef808a2d666fc60d5f0b581d22095",
+      "case_id": "TC_fcab6722559755c6",
+      "selected_record": true,
+      "subject": {
+        "id": "D-III-5",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y6M"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621154",
+            "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0010296",
+            "label": "Ankyloglossia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002705",
+            "label": "High, narrow palate"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002007",
+            "label": "Frontal bossing"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004482",
+            "label": "Relative macrocephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030799",
+            "label": "Scaphocephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001137",
+            "label": "Alternating esotropia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000639",
+            "label": "Nystagmus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000540",
+            "label": "Hypermetropia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100021",
+            "label": "Cerebral palsy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001257",
+            "label": "Spasticity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034353",
+            "label": "Appendicular spasticity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002020",
+            "label": "Gastroesophageal reflux"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "4nzOkWSSzwxnGuNJPNQwhdHg",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621154",
+              "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "D-III-5",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c877GtoA_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.877G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128824109C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Gly293Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128824109,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "D-III-5",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c940CtoT_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.940C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128823869G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Leu314Phe)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128823869,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPOUT1/PMID_39962046_A_III_2.json",
+      "sha256": "8686a5c8869b569cad86b59a207dc011e878014db1ad1a0c140ac577cb03b91a",
+      "case_id": "TC_df33553c7035e17c",
+      "selected_record": true,
+      "subject": {
+        "id": "A-III-2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y6M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621154",
+            "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002098",
+            "label": "Respiratory distress"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000268",
+            "label": "Dolichocephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100309",
+            "label": "Subdural hemorrhage"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000369",
+            "label": "Low-set ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012469",
+            "label": "Infantile spasms"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002521",
+            "label": "Hypsarrhythmia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002510",
+            "label": "Spastic tetraplegia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002283",
+            "label": "Global brain atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000961",
+            "label": "Cyanosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0031273",
+            "label": "Shock"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004387",
+            "label": "Enterocolitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002020",
+            "label": "Gastroesophageal reflux"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002013",
+            "label": "Vomiting"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011471",
+            "label": "Gastrostomy tube feeding in infancy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002421",
+            "label": "Poor head control"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001028",
+            "label": "Hemangioma"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "JcHOcyvkAwPU6XOb7wj4kBfK",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621154",
+              "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "A-III-2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c730GtoA_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.730G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128824852C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Gly244Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128824852,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "A-III-2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c292GtoA_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.292G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128827108C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Gly98Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128827108,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPOUT1/PMID_39962046_E_V_6.json",
+      "sha256": "733c7adebe25b019e39cfccfb1417bf7c5e67f14e30c1e4b41c23e9820c03655",
+      "case_id": "TC_2019993fe0bd8fad",
+      "selected_record": true,
+      "subject": {
+        "id": "E-V-6",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y6M"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621154",
+            "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002104",
+            "label": "Apnea"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000431",
+            "label": "Wide nasal bridge"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000414",
+            "label": "Bulbous nose"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000268",
+            "label": "Dolichocephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000518",
+            "label": "Cataract"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031165",
+            "label": "Multifocal seizures"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0025373",
+            "label": "Interictal EEG abnormality"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0006970",
+            "label": "Periventricular leukomalacia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034295",
+            "label": "Reduced cerebral white matter volume"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000961",
+            "label": "Cyanosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0007598",
+            "label": "Bilateral single transverse palmar creases"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002013",
+            "label": "Vomiting"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "IZTK3mXaxzAYNuwP3UfaqzLq",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621154",
+              "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "E-V-6",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c292GtoA_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.292G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128827108C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Gly98Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128827108,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPOUT1/PMID_39962046_K_II_1.json",
+      "sha256": "b47e83da6b65217b0f1f4f4c7b0167aef592e7f3a65cb1160a76b6e31ef1a8ed",
+      "case_id": "TC_2019993fe0bd8fad",
+      "selected_record": false,
+      "subject": {
+        "id": "K-II-1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y6M"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621154",
+            "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002705",
+            "label": "High, narrow palate"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000348",
+            "label": "High forehead"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012469",
+            "label": "Infantile spasms"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002521",
+            "label": "Hypsarrhythmia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100021",
+            "label": "Cerebral palsy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001257",
+            "label": "Spasticity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034353",
+            "label": "Appendicular spasticity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033725",
+            "label": "Thin corpus callosum"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000961",
+            "label": "Cyanosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002013",
+            "label": "Vomiting"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "3D7ZHOhnMDwVseArfVNtoeDO",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621154",
+              "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "K-II-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c292GtoA_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.292G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128827108C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Gly98Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128827108,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPOUT1/PMID_39962046_L_II_1.json",
+      "sha256": "40d2535151d4aa859bdd35a29fbbed3b7dafad6eba0746435a1616972c6a65a5",
+      "case_id": "TC_2019993fe0bd8fad",
+      "selected_record": false,
+      "subject": {
+        "id": "L-II-1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P7Y6M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621154",
+            "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000555",
+            "label": "Leukocoria"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000639",
+            "label": "Nystagmus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100021",
+            "label": "Cerebral palsy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001257",
+            "label": "Spasticity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034353",
+            "label": "Appendicular spasticity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002283",
+            "label": "Global brain atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007371",
+            "label": "Corpus callosum atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000238",
+            "label": "Hydrocephalus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002119",
+            "label": "Ventriculomegaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0040197",
+            "label": "Encephalomalacia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "iiHKIHlGw0DJdZGCxMSxTOKG",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621154",
+              "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "L-II-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c292GtoA_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.292G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128827108C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Gly98Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128827108,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPOUT1/PMID_39962046_L_II_2.json",
+      "sha256": "9fe0036bbeb5f9e88483136fb401fb7d4de810ba92162db223bcf08a95328443",
+      "case_id": "TC_2019993fe0bd8fad",
+      "selected_record": false,
+      "subject": {
+        "id": "L-II-2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y6M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621154",
+            "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100021",
+            "label": "Cerebral palsy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034353",
+            "label": "Appendicular spasticity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "IqlXOgi4TMwOrWqApC8Jw6oA",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621154",
+              "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "L-II-2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c292GtoA_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.292G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128827108C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Gly98Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128827108,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPOUT1/PMID_39962046_M_V_2.json",
+      "sha256": "59ce4d8a9227695da8bdb331b1e528e973d29e02df7958ff22e30476f928230f",
+      "case_id": "TC_2019993fe0bd8fad",
+      "selected_record": false,
+      "subject": {
+        "id": "M-V-2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y6M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621154",
+            "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000322",
+            "label": "Short philtrum"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000348",
+            "label": "High forehead"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000414",
+            "label": "Bulbous nose"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000518",
+            "label": "Cataract"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000543",
+            "label": "Optic disc pallor"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000369",
+            "label": "Low-set ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000378",
+            "label": "Cupped ear"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001250",
+            "label": "Seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0025373",
+            "label": "Interictal EEG abnormality"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002521",
+            "label": "Hypsarrhythmia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0100021",
+            "label": "Cerebral palsy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001257",
+            "label": "Spasticity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034353",
+            "label": "Appendicular spasticity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000737",
+            "label": "Irritability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032398",
+            "label": "Dysgyria"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0033725",
+            "label": "Thin corpus callosum"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000961",
+            "label": "Cyanosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002013",
+            "label": "Vomiting"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "TRjsjwWpQ66PVnSfO5OXbK3d",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621154",
+              "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "M-V-2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c292GtoA_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.292G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128827108C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Gly98Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128827108,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPOUT1/PMID_39962046_N_IV_2.json",
+      "sha256": "cd07b87a5d1a08f2cf6bb259e8959bb7036789f668a46408e92575a4be36e977",
+      "case_id": "TC_2019993fe0bd8fad",
+      "selected_record": false,
+      "subject": {
+        "id": "N-IV-2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y6M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621154",
+            "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000343",
+            "label": "Long philtrum"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000348",
+            "label": "High forehead"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001876",
+            "label": "Pancytopenia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100021",
+            "label": "Cerebral palsy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001257",
+            "label": "Spasticity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034353",
+            "label": "Appendicular spasticity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "1Fvgo8V3eYGj1uRIcq8RK2nz",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621154",
+              "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "N-IV-2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c292GtoA_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.292G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128827108C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Gly98Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128827108,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPOUT1/PMID_39962046_O_II_1.json",
+      "sha256": "bc4e75888923491dbdd354c32d420b2d38ff900f656d0d2e11d7dfdd8d3a4c24",
+      "case_id": "TC_2019993fe0bd8fad",
+      "selected_record": false,
+      "subject": {
+        "id": "O-II-1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P7Y6M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621154",
+            "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007663",
+            "label": "Reduced visual acuity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002197",
+            "label": "Generalized-onset seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0031165",
+            "label": "Multifocal seizures"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002373",
+            "label": "Febrile seizure (within the age range of 3 months to 6 years)"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011097",
+            "label": "Epileptic spasm"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0032792",
+            "label": "Tonic seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0025373",
+            "label": "Interictal EEG abnormality"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002283",
+            "label": "Global brain atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012510",
+            "label": "Extra-axial cerebrospinal fluid accumulation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002188",
+            "label": "Delayed CNS myelination"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002119",
+            "label": "Ventriculomegaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000961",
+            "label": "Cyanosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002013",
+            "label": "Vomiting"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "1E76j0KeiqHFAZURZBMLEqQO",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621154",
+              "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "O-II-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c292GtoA_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.292G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128827108C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Gly98Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128827108,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPOUT1/PMID_39962046_P_III_3.json",
+      "sha256": "b68556d9a12d68336e4fad016b7a540a40d0202b32c307af5fc67ce113b45d05",
+      "case_id": "TC_2019993fe0bd8fad",
+      "selected_record": false,
+      "subject": {
+        "id": "P-III-3",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P7Y6M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621154",
+            "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000582",
+            "label": "Upslanted palpebral fissure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001873",
+            "label": "Thrombocytopenia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001903",
+            "label": "Anemia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002248",
+            "label": "Hematemesis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002249",
+            "label": "Melena"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000518",
+            "label": "Cataract"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000378",
+            "label": "Cupped ear"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100021",
+            "label": "Cerebral palsy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001257",
+            "label": "Spasticity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034353",
+            "label": "Appendicular spasticity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012510",
+            "label": "Extra-axial cerebrospinal fluid accumulation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002019",
+            "label": "Constipation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "pSxFHRFNADwWaWH6XcopL2x9",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621154",
+              "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "P-III-3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c292GtoA_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.292G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128827108C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Gly98Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128827108,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPOUT1/PMID_39962046_P_III_4.json",
+      "sha256": "0ee2d1b204575409622b2bfa5b09cc1b468a90f7d34ead96cc617b3e81075d0d",
+      "case_id": "TC_2019993fe0bd8fad",
+      "selected_record": false,
+      "subject": {
+        "id": "P-III-4",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y6M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621154",
+            "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0010804",
+            "label": "Tented upper lip vermilion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000307",
+            "label": "Pointed chin"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000582",
+            "label": "Upslanted palpebral fissure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000325",
+            "label": "Triangular face"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000555",
+            "label": "Leukocoria"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000369",
+            "label": "Low-set ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002197",
+            "label": "Generalized-onset seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0007359",
+            "label": "Focal-onset seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002373",
+            "label": "Febrile seizure (within the age range of 3 months to 6 years)"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011097",
+            "label": "Epileptic spasm"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0032792",
+            "label": "Tonic seizure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0025373",
+            "label": "Interictal EEG abnormality"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012510",
+            "label": "Extra-axial cerebrospinal fluid accumulation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000961",
+            "label": "Cyanosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002013",
+            "label": "Vomiting"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "OyybBpxZM5AAlrPXtC9ZDNYI",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621154",
+              "label": "Neurodevelopmental disorder with poor growth, seizures, and brain abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "P-III-4",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c292GtoA_SPOUT1_NM_016390v4",
+                    "geneContext": {
+                      "valueId": "HGNC:26933",
+                      "symbol": "SPOUT1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_016390.4:c.292G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.128827108C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057474.2:p.(Gly98Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 128827108,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

@@ -1,0 +1,311 @@
+{
+  "pmid": "31021519",
+  "source_titles": [
+    "Mutation update for the SATB2 gene."
+  ],
+  "selected_case_ids": [
+    "TC_767d92b9fd9dd1a9",
+    "TC_d7b27e20763f349a"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "SATB2"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SATB2/PMID_31021519_SATB2_43_from_Zarate_et_al_2018a.json",
+      "sha256": "72be949c452f3fbe82053950ca6b4616f5216883aedef1ad5349368e535bd475",
+      "case_id": "TC_767d92b9fd9dd1a9",
+      "selected_record": true,
+      "subject": {
+        "id": "SATB2-43 from Zarate et al., 2018a",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P1Y9M"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:612313",
+            "label": "Glass syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000164",
+            "label": "Abnormality of the dentition"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000175",
+            "label": "Cleft palate"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001250",
+            "label": "Seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001510",
+            "label": "Growth delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0008872",
+            "label": "Feeding difficulties in infancy"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410263",
+            "label": "Brain imaging abnormality"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "iAs50hr7GElk2RsamKMcNYTz",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:612313",
+              "label": "Glass syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "SATB2-43 from Zarate et al., 2018a",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1972_1973del_SATB2_NM_001172509v1",
+                    "geneContext": {
+                      "valueId": "HGNC:21637",
+                      "symbol": "SATB2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001172509.1:c.1972_1973del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.199272444_199272445del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001165980.1:p.(Thr658HisfsTer30)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 199272439,
+                      "ref": "GGT",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SATB2/PMID_31021519_individual_SATB2_127.json",
+      "sha256": "7adac40c0b8e99d686d70623149a2fcd7d1cd54cec350c10fa350a4d489f3e63",
+      "case_id": "TC_d7b27e20763f349a",
+      "selected_record": true,
+      "subject": {
+        "id": "individual SATB2-127",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P8Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:612313",
+            "label": "Glass syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000164",
+            "label": "Abnormality of the dentition"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000175",
+            "label": "Cleft palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000750",
+            "label": "Delayed speech and language development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001250",
+            "label": "Seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001510",
+            "label": "Growth delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031936",
+            "label": "Delayed ability to walk"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008872",
+            "label": "Feeding difficulties in infancy"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410263",
+            "label": "Brain imaging abnormality"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "ilGTSMKiPPfpU99fDAIyCFzr",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:612313",
+              "label": "Glass syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "individual SATB2-127",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c988CtoT_SATB2_NM_001172509v1",
+                    "geneContext": {
+                      "valueId": "HGNC:21637",
+                      "symbol": "SATB2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001172509.1:c.988C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.199348886G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001165980.1:p.(Gln330Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 199348886,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

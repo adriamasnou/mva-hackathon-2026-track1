@@ -1,0 +1,1185 @@
+{
+  "pmid": "39106866",
+  "source_titles": [
+    "Expanding the genetic and phenotypic landscape of replication factor C complex-related disorders: RFC4 deficiency is linked to a multisystemic disorder."
+  ],
+  "selected_case_ids": [
+    "TC_68e347607eb4f76e",
+    "TC_6de5c7a0152650cc",
+    "TC_41c72f6753c247ac",
+    "TC_c5c6bf1524fb7f6d"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "RFC4"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/RFC4/PMID_39106866_Individual_4.json",
+      "sha256": "f348f21dbc68a6c5fff38758eff116bc8a8399b3860079adf57db0809941f412",
+      "case_id": "TC_68e347607eb4f76e",
+      "selected_record": true,
+      "subject": {
+        "id": "Individual 4",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P6M"
+          }
+        },
+        "vitalStatus": {
+          "status": "DECEASED"
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621010",
+            "label": "Morimoto-Ryu-Malicdan neuromuscular syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003623",
+              "label": "Neonatal onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002094",
+            "label": "Dyspnea"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0008619",
+            "label": "Bilateral sensorineural hearing impairment"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001152",
+            "label": "Saccadic smooth pursuit interruptions"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000639",
+            "label": "Nystagmus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001508",
+            "label": "Failure to thrive"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001511",
+            "label": "Intrauterine growth retardation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001629",
+            "label": "Ventricular septal defect"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002080",
+            "label": "Intention tremor"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0007015",
+            "label": "Poor gross motor coordination"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001251",
+            "label": "Ataxia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002194",
+            "label": "Delayed gross motor development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032988",
+            "label": "Persistent head lag"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P6M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002059",
+            "label": "Cerebral atrophy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001272",
+            "label": "Cerebellar atrophy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0009113",
+            "label": "Diaphragmatic weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003198",
+            "label": "Myopathy"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "178k3qJQNKjS7YTQ4RkV4ORb",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621010",
+              "label": "Morimoto-Ryu-Malicdan neuromuscular syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Individual 4",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1064_1065del_RFC4_NM_002916v5",
+                    "geneContext": {
+                      "valueId": "HGNC:9972",
+                      "symbol": "RFC4"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002916.5:c.1064_1065del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000003.12:g.186789998_186789999del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_002907.1:p.(Val355AspfsTer11)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr3",
+                      "pos": 186789995,
+                      "ref": "TCA",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "Individual 4",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c947_950del_RFC4_NM_002916v5",
+                    "geneContext": {
+                      "valueId": "HGNC:9972",
+                      "symbol": "RFC4"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002916.5:c.947_950del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000003.12:g.186790188_186790191del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_002907.1:p.(Glu316ValfsTer22)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr3",
+                      "pos": 186790187,
+                      "ref": "ATTTT",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/RFC4/PMID_39106866_Individual_2.json",
+      "sha256": "9e795924a11d2c2edb50731e3606bc20cf3454f6a877e93f59135ff3cec06d19",
+      "case_id": "TC_6de5c7a0152650cc",
+      "selected_record": true,
+      "subject": {
+        "id": "Individual 2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P28Y"
+          }
+        },
+        "vitalStatus": {
+          "status": "DECEASED"
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621010",
+            "label": "Morimoto-Ryu-Malicdan neuromuscular syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0001363",
+            "label": "Craniosynostosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002747",
+            "label": "Respiratory insufficiency due to muscle weakness"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002094",
+            "label": "Dyspnea"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002091",
+            "label": "Restrictive ventilatory defect"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0008619",
+            "label": "Bilateral sensorineural hearing impairment"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000518",
+            "label": "Cataract"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001152",
+            "label": "Saccadic smooth pursuit interruptions"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000639",
+            "label": "Nystagmus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000486",
+            "label": "Strabismus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000545",
+            "label": "Myopia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004326",
+            "label": "Cachexia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0009830",
+            "label": "Peripheral neuropathy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001337",
+            "label": "Tremor"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002080",
+            "label": "Intention tremor"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0007015",
+            "label": "Poor gross motor coordination"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002073",
+            "label": "Progressive cerebellar ataxia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000709",
+            "label": "Psychosis"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001260",
+            "label": "Dysarthria"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002194",
+            "label": "Delayed gross motor development"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002527",
+            "label": "Falls"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001332",
+            "label": "Dystonia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002059",
+            "label": "Cerebral atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001272",
+            "label": "Cerebellar atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000771",
+            "label": "Gynecomastia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000938",
+            "label": "Osteopenia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001840",
+            "label": "Metatarsus adductus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010665",
+            "label": "Bilateral coxa valga"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001324",
+            "label": "Muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0009113",
+            "label": "Diaphragmatic weakness"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003198",
+            "label": "Myopathy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003202",
+            "label": "Skeletal muscle atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001761",
+            "label": "Pes cavus"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "jbzoqd2TKTTRh4Pwk3AMQVE6",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621010",
+              "label": "Morimoto-Ryu-Malicdan neuromuscular syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Individual 2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c290_5GtoT_RFC4_NM_002916v5",
+                    "geneContext": {
+                      "valueId": "HGNC:9972",
+                      "symbol": "RFC4"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002916.5:c.290+5G>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000003.12:g.186797530C>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_002907.1:p.?"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr3",
+                      "pos": 186797530,
+                      "ref": "C",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "Individual 2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c980_982dup_RFC4_NM_002916v5",
+                    "geneContext": {
+                      "valueId": "HGNC:9972",
+                      "symbol": "RFC4"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002916.5:c.980_982dup"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000003.12:g.186790157_186790159dup"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_002907.1:p.(Ile327dup)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr3",
+                      "pos": 186790155,
+                      "ref": "G",
+                      "alt": "GTGA"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/RFC4/PMID_39106866_Individual_6.json",
+      "sha256": "a60b3f460891f4710d063bb7243a044eb9cda79309358ca0da222acec76a9c00",
+      "case_id": "TC_41c72f6753c247ac",
+      "selected_record": true,
+      "subject": {
+        "id": "Individual 6",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P21Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621010",
+            "label": "Morimoto-Ryu-Malicdan neuromuscular syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003236",
+            "label": "Elevated circulating creatine kinase concentration"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002747",
+            "label": "Respiratory insufficiency due to muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002094",
+            "label": "Dyspnea"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002091",
+            "label": "Restrictive ventilatory defect"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000365",
+            "label": "Hearing impairment"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001152",
+            "label": "Saccadic smooth pursuit interruptions"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000639",
+            "label": "Nystagmus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004325",
+            "label": "Decreased body weight"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0009830",
+            "label": "Peripheral neuropathy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002080",
+            "label": "Intention tremor"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002311",
+            "label": "Incoordination"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007015",
+            "label": "Poor gross motor coordination"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001251",
+            "label": "Ataxia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001260",
+            "label": "Dysarthria"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002194",
+            "label": "Delayed gross motor development"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002527",
+            "label": "Falls"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0030051",
+            "label": "Tip-toe gait"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002059",
+            "label": "Cerebral atrophy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001272",
+            "label": "Cerebellar atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003691",
+            "label": "Scapular winging"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003690",
+            "label": "Limb muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0009113",
+            "label": "Diaphragmatic weakness"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003198",
+            "label": "Myopathy"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "UhupDGJEZyChKAwaOAfj2WnL",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621010",
+              "label": "Morimoto-Ryu-Malicdan neuromuscular syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Individual 6",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c784del_RFC4_NM_002916v5",
+                    "geneContext": {
+                      "valueId": "HGNC:9972",
+                      "symbol": "RFC4"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002916.5:c.784del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000003.12:g.186791742del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_002907.1:p.(Ile262LeufsTer7)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr3",
+                      "pos": 186791741,
+                      "ref": "AT",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "Individual 6",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c907_909del_RFC4_NM_002916v5",
+                    "geneContext": {
+                      "valueId": "HGNC:9972",
+                      "symbol": "RFC4"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002916.5:c.907_909del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000003.12:g.186790232_186790234del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_002907.1:p.(Ala303del)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr3",
+                      "pos": 186790228,
+                      "ref": "TTGC",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/RFC4/PMID_39106866_Individual_7.json",
+      "sha256": "7f590f0b0a297e5edfd4a01de31b2c9ef4e8067b655040b0c50b407190c88175",
+      "case_id": "TC_c5c6bf1524fb7f6d",
+      "selected_record": true,
+      "subject": {
+        "id": "Individual 7",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621010",
+            "label": "Morimoto-Ryu-Malicdan neuromuscular syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0006543",
+            "label": "Cardiorespiratory arrest"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P2Y8M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002747",
+            "label": "Respiratory insufficiency due to muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002094",
+            "label": "Dyspnea"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002091",
+            "label": "Restrictive ventilatory defect"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000365",
+            "label": "Hearing impairment"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001152",
+            "label": "Saccadic smooth pursuit interruptions"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000639",
+            "label": "Nystagmus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004325",
+            "label": "Decreased body weight"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001511",
+            "label": "Intrauterine growth retardation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000961",
+            "label": "Cyanosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002080",
+            "label": "Intention tremor"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0007015",
+            "label": "Poor gross motor coordination"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001251",
+            "label": "Ataxia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0025336",
+            "label": "Delayed ability to sit"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001288",
+            "label": "Gait disturbance"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002059",
+            "label": "Cerebral atrophy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001272",
+            "label": "Cerebellar atrophy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003798",
+            "label": "Nemaline bodies"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0009113",
+            "label": "Diaphragmatic weakness"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003557",
+            "label": "Increased variability in muscle fiber diameter"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100297",
+            "label": "Increased endomysial connective tissue"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003803",
+            "label": "Type 1 muscle fiber predominance"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003198",
+            "label": "Myopathy"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "CHcBsVcEX8SGzxrMP7kCHn8Q",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621010",
+              "label": "Morimoto-Ryu-Malicdan neuromuscular syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Individual 7",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c824_826del_RFC4_NM_002916v5",
+                    "geneContext": {
+                      "valueId": "HGNC:9972",
+                      "symbol": "RFC4"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002916.5:c.824_826del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000003.12:g.186790384_186790386del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_002907.1:p.(Asp275del)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr3",
+                      "pos": 186790381,
+                      "ref": "CCAT",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

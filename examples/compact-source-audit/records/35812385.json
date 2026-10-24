@@ -1,0 +1,947 @@
+{
+  "schema_version": 1,
+  "pmid": "35812385",
+  "title": "Case Report: Refractory Cytopenia With a Switch From a Transient Monosomy 7 to a Disease-Ameliorating del(20q) in a NHEJ1-Deficient Long-term Survivor",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T11:13:48.623761+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "8cedcc29013a5431c793ba67d1a559a6b2ca86925056d94ec286a6c3101a8c1f",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "35812385",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35812385/main.xml",
+      "sha256": "09e310a394a46fd4feed5ef7305d53bef10b02c4324398b4d2a7ed03140286d6",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "35812385",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35812385/main.complete.txt",
+      "sha256": "cb4b09f730a7778858d3a0116b603c06a76b1aa22bee145a624f061aaef68a80",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/35812385/availability.json",
+      "sha256": "fd741f40130a1639e60b9460ab9f0c3b54371165d77633dc585847de3864a440",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "figure-1",
+      "pmid": "35812385",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35812385/cloud/PMC9263211.1/fimmu-13-869047-g001.jpg",
+      "sha256": "1534b25dc04795e9e9e28d7f76eca9180911c842c27ef626e9de307fe43bc7d7",
+      "kind": "image",
+      "description": "Full original figure inspected including all panel labels"
+    },
+    {
+      "id": "figure-2",
+      "pmid": "35812385",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35812385/cloud/PMC9263211.1/fimmu-13-869047-g002.jpg",
+      "sha256": "4060f7bb73b71f5e02a1f3825c071ecef317d0b97372f036e2b738842c8d0d30",
+      "kind": "image",
+      "description": "Full original figure inspected including all panel labels"
+    },
+    {
+      "id": "supp-zip",
+      "pmid": "35812385",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35812385/cloud/PMC9263211.1/DataSheet_1.zip",
+      "sha256": "de08acf46f61df552780075dd158fb3972d68b6306490ff5fa931767de3df699",
+      "kind": "data",
+      "description": "Original supplementary archive; one PDF component"
+    },
+    {
+      "id": "supp-figure",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/Supplemental Figure 1.PDF",
+      "sha256": "d7fd36abeb8768a9abebb8d0d59c66dadc287fc2ff29d8a9d26b683cc1d1b5a8",
+      "kind": "pdf",
+      "description": "Complete single-page Supplemental Figure1"
+    },
+    {
+      "id": "supp-figure-render",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/supp-1.png",
+      "sha256": "49689e4ec792d918921abe2b81a2fde3f710d1c5ea350dc9d8d65da873f3639e",
+      "kind": "image",
+      "description": "Entire supplementary figure pixels read"
+    },
+    {
+      "id": "supp-docx",
+      "pmid": "35812385",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35812385/cloud/PMC9263211.1/Table_1.docx",
+      "sha256": "2d166b09ec9cb4fce8818ff53f474355691885a4697cd5302c0492c6a43d6359",
+      "kind": "data",
+      "description": "Original Table1 immunophenotypes at6,13,22years"
+    },
+    {
+      "id": "docx-text",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/docx.txt",
+      "sha256": "dd8313392041a2ab717e36fea2d803d3eee7054304646b95224248b6f74679ab",
+      "kind": "text",
+      "description": "Complete text/tables extracted and read"
+    },
+    {
+      "id": "docx-page-1",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/docx/page-1.png",
+      "sha256": "d53c291a3f78ee4344bac9bc0804a50a9761c2d80807b5e39e10a3dd8dbe846e",
+      "kind": "image",
+      "description": "Canonical DOCX rendered page inspected"
+    },
+    {
+      "id": "docx-page-2",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/docx/page-2.png",
+      "sha256": "3dc63999b0492f0fdbc29f1bad3d4ff378a200fc32fec5596f973ac9637bf8c8",
+      "kind": "image",
+      "description": "Canonical DOCX rendered page inspected"
+    },
+    {
+      "id": "supp-xlsx",
+      "pmid": "35812385",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35812385/cloud/PMC9263211.1/Table_2.xlsx",
+      "sha256": "62c5b761aed3dc3daeb1f0ed8d6ef9edcf78c705e9d50481ac9d03edd0cf9c24",
+      "kind": "data",
+      "description": "Original single-sheet microarray findings including all long gene lists"
+    },
+    {
+      "id": "xlsx-text",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/xlsx.txt",
+      "sha256": "55fb4194112a576a52f7c6f88cd355ee3c73edfa552e27fa8f9b594de8ba181d",
+      "kind": "text",
+      "description": "All populated cells A1:M10 including long gene lists read"
+    },
+    {
+      "id": "xlsx-wide-pdf",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/wide/Table_2.pdf",
+      "sha256": "0d82bc5b6f3fd4941f9c051509e00f42a6d73fa22352c500d8f44ee842f11b58",
+      "kind": "pdf",
+      "description": "Unpaginated view of original workbook, original data unchanged"
+    },
+    {
+      "id": "xlsx-tile-1-1",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/wide/tile-1-1.png",
+      "sha256": "284d0e9a896b9eae4c262724076b404ad9cfa454241d6562542901c9e2463828",
+      "kind": "image",
+      "description": "Overlapping tile of complete unpaginated workbook view"
+    },
+    {
+      "id": "xlsx-tile-1-2",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/wide/tile-1-2.png",
+      "sha256": "4a32ea47a04abb261c1fe02631ff2e4ad2eda02afa51c7d979105a694ce33d46",
+      "kind": "image",
+      "description": "Overlapping tile of complete unpaginated workbook view"
+    },
+    {
+      "id": "xlsx-tile-1-3",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/wide/tile-1-3.png",
+      "sha256": "07920c5559bda060ae1dc03dcad65b4c6f3cfe3e7fa5fa1e704c278a1db1285b",
+      "kind": "image",
+      "description": "Overlapping tile of complete unpaginated workbook view"
+    },
+    {
+      "id": "xlsx-tile-2-1",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/wide/tile-2-1.png",
+      "sha256": "86c7920c786a69d345efd6d2bd5722abcd964fcd5898605a81439d5a7fbadc1a",
+      "kind": "image",
+      "description": "Overlapping tile of complete unpaginated workbook view"
+    },
+    {
+      "id": "xlsx-tile-2-2",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/wide/tile-2-2.png",
+      "sha256": "776c08731b6817af1dc5d9ebd317daee22968be578a7490bf59b6c11e738da74",
+      "kind": "image",
+      "description": "Overlapping tile of complete unpaginated workbook view"
+    },
+    {
+      "id": "xlsx-tile-2-3",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/wide/tile-2-3.png",
+      "sha256": "4ea63e00823484acd0344ca3ee64655351c5341cba1d095a371c620c4588dbc1",
+      "kind": "image",
+      "description": "Overlapping tile of complete unpaginated workbook view"
+    },
+    {
+      "id": "xlsx-tile-3-1",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/wide/tile-3-1.png",
+      "sha256": "b01a0146e2066daf4f90cc9a6d8c7dc4904e0040a7ade4985cc57f3332097e62",
+      "kind": "image",
+      "description": "Overlapping tile of complete unpaginated workbook view"
+    },
+    {
+      "id": "xlsx-tile-3-2",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/wide/tile-3-2.png",
+      "sha256": "3907f025bca1ae6a94a55216c8b8a9b7a48110447b48e9b1564244f2919b4c96",
+      "kind": "image",
+      "description": "Overlapping tile of complete unpaginated workbook view"
+    },
+    {
+      "id": "xlsx-tile-3-3",
+      "pmid": "35812385",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/35812385/wide/tile-3-3.png",
+      "sha256": "85d4e61acdb9838c00bc29ede8ac05d11d4e5b363fec11af2fb86fae492f4dba",
+      "kind": "image",
+      "description": "Overlapping tile of complete unpaginated workbook view"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Case Report: Refractory Cytopenia With a Switch From a Transient Monosomy 7 to a Disease-Ameliorating del(20q) in a NHEJ1-Deficient Long-term Survivor",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 2,
+      "table": 0,
+      "supplement": 3
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 365,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–365"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 365,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–365"
+        }
+      ],
+      "note": "Complete main text including all75references and endmatter read. Both mainfigures, supplementalfigure, both DOCX tablepages and all XLSX cells/pixels read. Original print view clipped long columns; unpaginated rendering inspected in9overlapping tiles to close that gap."
+    },
+    {
+      "id": "figure:f1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-1",
+      "extent_evidence": [
+        {
+          "source_id": "figure-1",
+          "locator": "all panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure-1",
+          "locator": "whole figure all panels"
+        }
+      ],
+      "note": "Figure1 pedigree/Sanger and CADD; Figure2 chromosome20 array and deletion/gain map."
+    },
+    {
+      "id": "figure:f2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-2",
+      "extent_evidence": [
+        {
+          "source_id": "figure-2",
+          "locator": "all panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure-2",
+          "locator": "whole figure all panels"
+        }
+      ],
+      "note": "Figure1 pedigree/Sanger and CADD; Figure2 chromosome20 array and deletion/gain map."
+    },
+    {
+      "id": "supplement:SM1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "supp-figure",
+      "extent_evidence": [
+        {
+          "source_id": "supp-zip",
+          "locator": "single Supplemental Figure1 PDF member"
+        },
+        {
+          "source_id": "supp-figure",
+          "locator": "page1"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supp-figure",
+          "locator": "all plots, axes and legend"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp-figure-render",
+          "locator": "all plots, axes and legend"
+        }
+      ],
+      "note": "Longitudinal blood counts2001–2022 all plotted points inspected; hemoglobin G/L axislabel appears inconsistent with8–14values/maintextg/dL. Fluctuating counts do not demonstrate causal rescue."
+    },
+    {
+      "id": "supplement:SM2",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 2,
+      "extent_source_id": "supp-docx",
+      "extent_evidence": [
+        {
+          "source_id": "supp-docx",
+          "locator": "entire document renders to2pages"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "text",
+          "source_id": "docx-text",
+          "locator": "complete table headings, values, reference intervals and footnotes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "docx-page-1",
+          "locator": "entire page including all tablecells and footnotes"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "docx-page-2",
+          "locator": "entire page including all tablecells and footnotes"
+        }
+      ],
+      "note": "IgA<6at6y,24at13y(withinprovidedrange),<10at22y; CD19lowallages,CD4low,naiveCD4reduced. T-cellfunctionreducedearly,normal22y. Temporal distinctions retained."
+    },
+    {
+      "id": "supplement:SM3",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "data",
+        "pixels"
+      ],
+      "unit_type": "sheets",
+      "unit_count": 1,
+      "extent_source_id": "supp-xlsx",
+      "extent_evidence": [
+        {
+          "source_id": "supp-xlsx",
+          "locator": "single worksheet A1:M10"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "data",
+          "source_id": "supp-xlsx",
+          "locator": "entire worksheet A1:M10, all populated cells and gene lists"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "xlsx-tile-1-1",
+          "locator": "rowtile1/3,columntile1/3; all9tiles jointly cover whole page without clipped longgene columns"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "xlsx-tile-1-2",
+          "locator": "rowtile1/3,columntile2/3; all9tiles jointly cover whole page without clipped longgene columns"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "xlsx-tile-1-3",
+          "locator": "rowtile1/3,columntile3/3; all9tiles jointly cover whole page without clipped longgene columns"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "xlsx-tile-2-1",
+          "locator": "rowtile2/3,columntile1/3; all9tiles jointly cover whole page without clipped longgene columns"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "xlsx-tile-2-2",
+          "locator": "rowtile2/3,columntile2/3; all9tiles jointly cover whole page without clipped longgene columns"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "xlsx-tile-2-3",
+          "locator": "rowtile2/3,columntile3/3; all9tiles jointly cover whole page without clipped longgene columns"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "xlsx-tile-3-1",
+          "locator": "rowtile3/3,columntile1/3; all9tiles jointly cover whole page without clipped longgene columns"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "xlsx-tile-3-2",
+          "locator": "rowtile3/3,columntile2/3; all9tiles jointly cover whole page without clipped longgene columns"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "xlsx-tile-3-3",
+          "locator": "rowtile3/3,columntile3/3; all9tiles jointly cover whole page without clipped longgene columns"
+        }
+      ],
+      "note": "All9CN/LOH rows: del20q22.124Mb244genes includingL3MBTL1/SGK2; chr2ROHcontainsNHEJ1; additionalROH3,7,8,9,14,21;20p11.21gain78.558kbGINS1/NINL. EIF6retained. Gene-list content and coordinates read in full."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/NHEJ1/PMID_35812385_Case_Report.json",
+      "packet_sha256": "7257bb474e8ce6e0a28665fb84a70bb5103d70a774dc8887cddc6590b3262068",
+      "case_id": "TC_5834e5f2c5217030",
+      "role": "selected",
+      "packet_subject_id": "Case Report",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Primary-source correspondence only; clinical disease causality and somatic-clone benefit are not proven by this audit."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Single26-year-old Pakistani male case from consanguineous family matches packet CaseReport.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Case Report firstparagraph; Figure1A"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous NHEJ1 c.236T>C p.Leu79Pro identified by targeted sequencing and Sanger confirmation.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "CaseReport sequencing paragraph; Figure1A"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Both parents heterozygous for the same change, with normal bloodcounts; proband homozygous.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "CaseReport; Figure1A Sanger and pedigree"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygosity and two heterozygous parents support biallelic inheritance; not a compoundheterozygous phase inference.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "CaseReport; Figure1A"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors attribute phenotype to NHEJ1 Leu79Pro; genotype/segregation and phenotype support association, but this is not a demonstrated allele-specific functional defect or therapeutic rescue.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Discussion; CaseReport molecularfindings"
+          }
+        ],
+        "limitations": [
+          "Authors explicitly state no functional or radiosensitivity assay was performed. CADD31 is predictive, not functional measurement.",
+          "Proposed del20q amelioration is observational; parentalorigin/imprinting and NHEJ1 somaticreversion were not demonstrated.",
+          "Broad ROH and GINS1/NINL duplication are additional findings without an established second molecular diagnosis."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "contradicted",
+        "statement": "Packet excludes pancytopenia despite explicit pancytopenia and simultaneous low leukocytes, hemoglobin and platelets in the source. Other features omit neutropenia, CD4/naive-T-cell abnormalities, skin hyperpigmentation and clonal cytogenetic evolution.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "CaseReport initialcounts and20-yearcourse; SupplementaryTable1"
+          },
+          {
+            "source_id": "docx-text",
+            "locator": "full immunophenotype and CBC table"
+          }
+        ],
+        "limitations": []
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c236TtoC_NHEJ1_NM_024782v3",
+            "geneContext": {
+              "valueId": "HGNC:25737",
+              "symbol": "NHEJ1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_024782.3:c.236T>C"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.219157626A>G"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_079058.1:p.(Leu79Pro)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 219157626,
+              "ref": "A",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "33d5556dfe9765cbf8ac1d483d9e128559c9f58aefd9ba3513cbead1da52520b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "c.236T>C/Leu79Pro and homozygous state match exactly at coding/protein level.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "CaseReport molecularparagraph; Figure1A"
+              }
+            ],
+            "limitations": [
+              "Paper NM_024782.2/GRCh37 differs from packetNM_024782.3/hg38; genomic normalization not independently reproduced."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            }
+          },
+          "snapshot_sha256": "dee5d947ac21a314d7d79787c31b9353f0bbc535903aceaff2561ad86ae68d6a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Microcephaly with head circumference below3rdpercentile reported.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "CaseReport firstexamination"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030084",
+              "label": "Clinodactyly"
+            }
+          },
+          "snapshot_sha256": "1f792ab996d09ba07bbfa53c817e5c65649f4012734176135ddff69e402a7093",
+          "assessment": {
+            "status": "supported",
+            "statement": "Bilateral hand clinodactyly reported.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "CaseReport firstexamination"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031413",
+              "label": "Short telomere length"
+            }
+          },
+          "snapshot_sha256": "1e9716bd32cd5ce0cb07953c029334abfd51d87b871fcbcbcbbfdbab8b085d9b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ratio0.57 was below1stpercentile0.61 of90healthycontrols.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "CaseReport telomereinvestigation"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002720",
+              "label": "Decreased circulating IgA concentration"
+            }
+          },
+          "snapshot_sha256": "d0dc53e10d03c4215d67db28c6a27cd3ca8e09c0dbd94e05809b0f5f3df04471",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgA markedly reduced at6and22years.",
+            "evidence": [
+              {
+                "source_id": "docx-text",
+                "locator": "SupplementalTable1 IgArow"
+              }
+            ],
+            "limitations": [
+              "At13years24mg/dL is within supplied22–274range; not persistently decreased."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001873",
+              "label": "Thrombocytopenia"
+            }
+          },
+          "snapshot_sha256": "d901b0eeedefd54428cb6ad29a1218857c7f60fd8eaed8fd4e1952b67d37697f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Platelets109x10^9/L initially and persistent lowplatelets documented.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "CaseReport initialCBC; FigureS1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001903",
+              "label": "Anemia"
+            }
+          },
+          "snapshot_sha256": "abde46fc81336b652b8919df231c7f3f919ba9ae32e889f067e1ce7edc3631e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hemoglobin9.2g/dL initially with continuing mildanemia.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "CaseReport initialCBC; FigureS1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010976",
+              "label": "Decreased total B cell count"
+            }
+          },
+          "snapshot_sha256": "d271c8dbe1f949ea6f4b8b6acbb9834ba3da11d46c275dbeac2d328fe25c29bb",
+          "assessment": {
+            "status": "supported",
+            "statement": "CD19 counts0.023/0.08/0.02x10^9/L at6/13/22years allbelow referenceinterval.",
+            "evidence": [
+              {
+                "source_id": "docx-text",
+                "locator": "SupplementalTable1 CD19row"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001876",
+              "label": "Pancytopenia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "244c8f5cb6222b2d85f37c819a1903a928ebe28c5bdf5b6b5e3cd30814e967e6",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Excluded=true conflicts with explicit pancytopenia and initial WBC1.47,hemoglobin9.2,platelets109.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "CaseReport initialCBC andstablepancytopenia narrative"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001945",
+              "label": "Fever"
+            }
+          },
+          "snapshot_sha256": "5b68b5368604bed6d0f181cd62407a26ec90b981d65e16b807c7017cd47cf419",
+          "assessment": {
+            "status": "supported",
+            "statement": "Fever atinitialclinic5.5years reported.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "CaseReport firstpresentation"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008897",
+              "label": "Postnatal growth retardation"
+            }
+          },
+          "snapshot_sha256": "ab8d99e9bf4c6a4f7a7d1287ff5faf8bc1eff7c2af7b5ca3869aafece7b0f503",
+          "assessment": {
+            "status": "supported",
+            "statement": "Growthretardation explicitly described.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "CaseReport firstexamination"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002837",
+              "label": "Recurrent bronchitis"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003623",
+                "label": "Neonatal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "33757e4d04ed3a506050344341eaaf2ed67ece989b9a829088f43a73235a8a78",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Recurrentbronchitis/infection susceptibility sincebirth reported.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "CaseReport firstparagraph"
+              }
+            ],
+            "limitations": [
+              "Neonatal ontology encoding derives from sincebirth; exact firstepisode date not given."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012735",
+              "label": "Cough"
+            }
+          },
+          "snapshot_sha256": "0ce74984971c43df78504902fb582c46a35bd7553feb7692fd543c8ed9a3c626",
+          "assessment": {
+            "status": "supported",
+            "statement": "Cough atinitialpresentation reported.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "CaseReport firstpresentation"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002863",
+              "label": "Myelodysplasia"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P5Y6M"
+              }
+            }
+          },
+          "snapshot_sha256": "b43db3f4732a41d8daea775d404f08d188d5ad8641d726171de4e89e7a37ce25",
+          "assessment": {
+            "status": "supported",
+            "statement": "Restricted,dysplastic erythropoiesis at5.5years diagnosed as refractorycytopenia, laterdysplasiaresolved.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "CaseReport initialBMandfollowup"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading.",
+    "Direct source contradiction: excluded pancytopenia. NHEJ1 functional/radiosensitivity measurements absent; del20q disease-amelioration remains mechanistic hypothesis."
+  ]
+}

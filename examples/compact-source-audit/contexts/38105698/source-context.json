@@ -1,0 +1,346 @@
+{
+  "pmid": "38105698",
+  "source_titles": [
+    "Genetic analysis of novel pathogenic gene HROB in a family with primary ovarian insufficiency"
+  ],
+  "selected_case_ids": [
+    "TC_04cbfc9506c95024"
+  ],
+  "alternate_case_ids": [
+    "TC_04cbfc9506c95024"
+  ],
+  "genes": [
+    "HROB"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/HROB/PMID_38105698_girl.json",
+      "sha256": "96a0e2ba6601ca6ef6662919d1795935df44609ce0e4597275677c659af78360",
+      "case_id": "TC_04cbfc9506c95024",
+      "selected_record": true,
+      "subject": {
+        "id": "girl",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P11Y6M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620897",
+            "label": "Ovarian dysgenesis 11"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P11Y6M"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000786",
+            "label": "Primary amenorrhea"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012569",
+            "label": "Delayed menarche"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011969",
+            "label": "Elevated circulating luteinizing hormone level"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008232",
+            "label": "Elevated circulating follicle stimulating hormone level"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031103",
+            "label": "Decreased circulating antimullerian hormone circulation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010463",
+            "label": "Aplasia of the ovary"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "MgXHAKimP8Zjmidfag8NXcIm",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620897",
+              "label": "Ovarian dysgenesis 11"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "girl",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1351CtoT_HROB_NM_001171251v3",
+                    "geneContext": {
+                      "valueId": "HGNC:28460",
+                      "symbol": "HROB"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001171251.3:c.1351C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000017.11:g.44152679C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001164722.1:p.(Arg451Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr17",
+                      "pos": 44152679,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "girl",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c718CtoT_HROB_NM_001171251v3",
+                    "geneContext": {
+                      "valueId": "HGNC:28460",
+                      "symbol": "HROB"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001171251.3:c.718C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000017.11:g.44148521C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001164722.1:p.(Arg240Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr17",
+                      "pos": 44148521,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/HROB/PMID_38105698_proband.json",
+      "sha256": "b7fa2c38e050811266720d769de81ad580afc0699587f00f047684b4181b731d",
+      "case_id": "TC_04cbfc9506c95024",
+      "selected_record": false,
+      "subject": {
+        "id": "proband",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P13Y6M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620897",
+            "label": "Ovarian dysgenesis 11"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P13Y6M"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000786",
+            "label": "Primary amenorrhea"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012569",
+            "label": "Delayed menarche"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011969",
+            "label": "Elevated circulating luteinizing hormone level"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008232",
+            "label": "Elevated circulating follicle stimulating hormone level"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031103",
+            "label": "Decreased circulating antimullerian hormone circulation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010463",
+            "label": "Aplasia of the ovary"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "Q2dJTMabC7u6JVeVnQ7UKeeg",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620897",
+              "label": "Ovarian dysgenesis 11"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "proband",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c718CtoT_HROB_NM_001171251v3",
+                    "geneContext": {
+                      "valueId": "HGNC:28460",
+                      "symbol": "HROB"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001171251.3:c.718C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000017.11:g.44148521C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001164722.1:p.(Arg240Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr17",
+                      "pos": 44148521,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "proband",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1351CtoT_HROB_NM_001171251v3",
+                    "geneContext": {
+                      "valueId": "HGNC:28460",
+                      "symbol": "HROB"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001171251.3:c.1351C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000017.11:g.44152679C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001164722.1:p.(Arg451Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr17",
+                      "pos": 44152679,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

@@ -1,0 +1,2885 @@
+{
+  "schema_version": 1,
+  "pmid": "40519748",
+  "title": "Identification and characterization of short-chain dehydrogenase/reductase 3 (DHRS3) deficiency, a retinoic acid embryopathy of humans",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T14:08:49.335504+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "84f7bc6caa618b2ef22cd5d397c58f6ef295963b2656fd3e860c6e6bd7276417",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "40519748",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40519748/main.xml",
+      "sha256": "3dfe5351f84cddd6a6192d097e6e7b62ca37e7e8b661ff53d65b75fae2d3f0f2",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "40519748",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40519748/main.complete.txt",
+      "sha256": "4bc3b85ccd7ccbc71b58c29873ad65bfec25687374fd697da61306c2d9bac412",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "40519748",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/40519748/availability.json",
+      "sha256": "7bbda578988e1fb1d1863aa062e355e6d5fee3c4d315929c372eac992c7a654e",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "supp-pdf",
+      "pmid": "40519748",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40519748/cloud/PMC12167057.1/mmc1.pdf",
+      "sha256": "f6a71fb1314be805a59d2e696dde1a7b8fc1f0163811290e9012ca4f18d97c06",
+      "kind": "pdf",
+      "description": "36page supplement"
+    },
+    {
+      "id": "supp-text",
+      "pmid": "40519748",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/40519748/supplement.txt",
+      "sha256": "5915eb04b317d1076e008daa61075c6a2901821560e410dc22a195db3d2e9de4",
+      "kind": "text",
+      "description": "Layout extraction ofsupplement; clinicalpages1–5read"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Identification and characterization of short-chain dehydrogenase/reductase 3 (DHRS3) deficiency, a retinoic acid embryopathy of humans",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 7,
+      "table": 2,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 509,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–509"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 509,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–509"
+        }
+      ],
+      "note": "Complete mainarticle,2tables,7figurelegends,79references,endmatterread. Twelveindividualsscreened;onlyfivewith2variants supportcoherentDHRS3embryopathy."
+    },
+    {
+      "id": "figure:fig1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig1]; Figure 1Schematic of all-trans retinoic acid (RA) metabolism and related human congenital disorders. RA, the active metabolite, is obligatorily derived from 2 dietary sources, all-trans-retinol (ROL) (vitamin A) and β-carotene (provitamin A) and derivatives. Oxidation of RAL, the intermediate metabolite from both of these sources, to RA occurs irreversibly, whereas oxidation of ROL to RAL is rever"
+    },
+    {
+      "id": "figure:fig2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig2]; Figure 2Clinical features of patients harboring homozygous DHRS3 variants. A. III-4 and (B) III-1 from family 1, with promoter/5′-UTR deletion. In (A), facial appearance at age 6 months, 3-dimensional computed tomography scan at 1 month. Note fused right coronal suture (black arrow, top image) and widely patent left coronal suture (white arrow, bottom image). B. Facial appearance at age 6 months, "
+    },
+    {
+      "id": "figure:fig3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig3]; Figure 3Homozygous deletion of promoter and part of 5′-UTR in family 1 abrogates DHRS3 expression. A. Upper panel, schematic of the deletion breakpoints showing positions of primers used for polymerase chain reaction (PCR) analysis. Lower panel, genotyping of family 1 members using PCR-containing primers F1, R1, and R2; predicted sizes of F1-R1 and F1-R2 products are 506 bp and 314 bp, respectivel"
+    },
+    {
+      "id": "figure:fig4",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig4]; Figure 4Structure of DHRS3 and encoded protein and location of homozygous variants. A. Scale diagram of gene showing exons numbered 1 to 6. Taller vertical lines denote the coding regions of exons, flanked by 5′- and 3′-UTRs at each end. The positions of the 3926-bp deletion and 4 nucleotide substitutions are indicated in red. B. Cartoon of protein. Alternating gray blocks of different shades indi"
+    },
+    {
+      "id": "figure:fig5",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig5]; Figure 5Measurement of all-trans-retinol (ROL) and all-trans retinoic acid (RA) in plasma of individuals from families 1, 2, 3, and 5. A. ROL (nmol/mL) levels for each set of family samples were determined by high-performance liquid chromatography with UV spectroscopy. B. RA measurements (pmol/mL) determined by liquid chromatography-multistage-tandem mass spectrometry. The x-axis labels indicate t"
+    },
+    {
+      "id": "figure:fig6",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig6]; Figure 6In vitro measurement of DHRS3 activity. Cell lines stably transfected with the variants p.Val110Ile (V110I), p.Gly115Asp (G115D), p.Val171Met (V171M), p.Glu244Gln (E244Q), or wild-type (WT) construct were treated with 1 μM RAL for 3 hours and assayed for RA production to assess the DHRS3 loss of function. Measured retinoid levels were normalized to the average green fluorescent protein (GF"
+    },
+    {
+      "id": "figure:fig7",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig7]; Figure 7Dhrs3−/− mutant mice exhibit axial and cranial skeletal anomalies. A and B. Alcian blue staining of cartilage reveals distinct C1 and C2 vertebrae in E14.5 Dhrs3+/+ mouse embryos and their fusion (white asterisk) in Dhrs3−/− embryos, which is consistent with upregulated RA signaling during embryogenesis. C and D. Alizarin red and Alcian blue staining of bone and cartilage, respectively, il"
+    },
+    {
+      "id": "table:tbl1",
+      "kind": "table",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor table-wrap[@id=tbl1]; Table 1Clinical assessment of individuals homozygous for variants in DHRS3aFamilyCountry of OriginDNA VariantbProtein VariantbIndividualSexCraniofacialCardiacThoracolumbar ScoliosisBrain ImagingDevelopmental Delay/Intellectual DisabilityAdditional FeaturesCraniosynostosisMidface HypoplasiaOther1Pakistang.12617576_12621501delNAIII-1FBC, ?LLa+Hypertelorism, broad nasal bridge, bulbous nasal tipAtria"
+    },
+    {
+      "id": "table:tbl2",
+      "kind": "table",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor table-wrap[@id=tbl2]; Table 2Homozygous variants of DHRS3 assessed in this workVariantaConsequencedbSNP IDgnomAD v4.1.0 Maximum MAFCADD Score (GRCh38)REVEL Score (GRCh38)AlphaMissense ScoreAscertainmentCountry/Region of AncestryHomozygousIndividualsPhenotypic Information (Table 1)RA MeasurementsFunctional Analysis (RNA or Expression Constructs)Structural ModelingACMG CriteriaPathogenicity (See Discussion)g.12617576_ 12"
+    },
+    {
+      "id": "supplement:mmc1",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 36,
+      "extent_source_id": "supp-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "supp-pdf",
+          "locator": "36pages"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 5,
+          "mode": "text",
+          "source_id": "supp-text",
+          "locator": "PDFpages1–5, completeFamily1–5clinicalcasereports"
+        }
+      ],
+      "note": "Completeclinicalcasereportsreadtext; remainingmethods/results/figures/tablesandallpixelsunread."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/DHRS3/PMID_40519748_Family_3_individual_II_2.json",
+      "packet_sha256": "a581664469ce413900d09df9041600ba9873540a166eb9a14879a43c38c5825c",
+      "case_id": "TC_21d150c4cb6e21e4",
+      "role": "selected",
+      "packet_subject_id": "Family 3 individual II-2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Mainfull;clinicalsupplementpages1–5textread. Noindividualrankoutputsconsulted."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "ExactII-2,52ySpanishfemale,parentsfromsamevillagebutreportednonconsanguineous,unaffectedbrotherII-3. MainFigure2captionIII-2isnumberingtypo; clinicalreportandTable1II-2agree.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical reports Family3,PDFpages3–4"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous NM_004753.7:c.511G>A, NP_004744.2:Val171Met, GRCh38NC_000001.11:g.12578905C>T explicitlymatchesTable2.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table2; Identificationofmissensevariants"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "BothparentsheterozygousandhealthybrotherhomozygousWT.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical reports Family3,PDFpages3–4"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Singlehomozygousallele; bothparentsheterozygousconfirmrecessiveinheritance.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical reports Family3,PDFpages3–4"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "V171Mthreecases/twofamilieswithcoherentcraniosynostosis,scoliosisandcardiacpattern,plus5UTRdeletionfamily;cellassayreducesRALreductionandincreasesRA. Thispatienthasdirectplasmaretinoidmeasurement. AuthorsclassifyV171Mpathogenic.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table2; RetinoidResults;Discussion"
+          }
+        ],
+        "limitations": [
+          "EmbryonicRAlevelsnotmeasured;adultplasmaandmouse-nullphenotypesareindirectforhumanembryopathy.",
+          "Plasmapointsaremultiplealiquotsextractedfromindividuals,notindependentpatients;familyspecificnotionalreferenceintervalsanddietaryconfounding.",
+          "GFP-normalizedoverexpressionassaynotpurifiedcatalyticmeasurement; backgroundretinoidmetabolismcontributes.",
+          "DamagingDHRS3variantdoesnotnecessarilycauseclinicaldisease:V110I/G115Dlikelybenign,E244QVUS.",
+          "Clinicalclassificationreported,notsourcelabelclinicallyprovenbythisaudit."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "AllmappedfeaturescomparedwiththeexactclinicalreportandTable1;unknownindividualnegativespreserved.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical reports Family3,PDFpages3–4"
+          }
+        ],
+        "limitations": [
+          "Remaining31supplementpagesandallfigure/tablepixelsnotread."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c511GtoA_DHRS3_NM_004753v7",
+            "geneContext": {
+              "valueId": "HGNC:17693",
+              "symbol": "DHRS3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_004753.7:c.511G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000001.11:g.12578905C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_004744.2:p.(Val171Met)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr1",
+              "pos": 12578905,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "52cb63196097509a1f02ae7071885806dc97b87fa15db21b8506e8fd7d8a2322",
+          "assessment": {
+            "status": "supported",
+            "statement": "Exactcoding,protein,genomicvariantandhomozygousstateagreewithTable2.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table2"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100333",
+              "label": "Unilateral cleft lip"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "05940dcba242bf232e68c2058d6582735f5cbc55ec17634a3f8ae973ee7b6874",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Unilateral cleft lip (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100334",
+              "label": "Unilateral cleft palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3c02f793a6858c6b4d9220583d6b79b4fcade18bc00234dad63ce60c311de248",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Unilateral cleft palate (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002705",
+              "label": "High, narrow palate"
+            }
+          },
+          "snapshot_sha256": "23ae90011f8b2977efcacf28f6b5a41deaa8967d5cd23ab42e0a48a66c14165f",
+          "assessment": {
+            "status": "supported",
+            "statement": "High, narrow palate (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011800",
+              "label": "Midface retrusion"
+            }
+          },
+          "snapshot_sha256": "bc9fc4de33dd49d9c5b50ae9ee5526f902d2bacd5ea3c61440158ec15e4244e2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Midface retrusion (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000431",
+              "label": "Wide nasal bridge"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "aa8cc06e208ce537b647bcdf69fb85b32cbbe067fffdadbd93161bfb1f34383c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Wide nasal bridge (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000414",
+              "label": "Bulbous nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1b5bef6ca90eb02dea6cf0ad981ba795900ee54302dd4d0e5da7d0baca7a177a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bulbous nose (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000324",
+              "label": "Facial asymmetry"
+            }
+          },
+          "snapshot_sha256": "1997031266292880b3e370888c6ca65a7f2a55204e8158ed62bed05032568c7e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Facial asymmetry (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011316",
+              "label": "Left unicoronal synostosis"
+            }
+          },
+          "snapshot_sha256": "7098538e0be47237355bfc36cbea8e33bb83881f6da812532410a2e8f6df77de",
+          "assessment": {
+            "status": "supported",
+            "statement": "Left unicoronal synostosis (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011318",
+              "label": "Bicoronal synostosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "22697ae23085894c7d339c4918b1c4ba3f7cf9177c17d69f5cac295a3bbbc829",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Unicoronalclinicaldiagnosis supportsnonbicoronalpresentation.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011321",
+              "label": "Left unilambdoid synostosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "808c130c6371455e118d2b27dd325d4af54c721182d5d3805efce03ded3a0ace",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Left unilambdoid synostosis (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000256",
+              "label": "Macrocephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f5b9b8adf0ca32082848fafc6622946d2ba3692b68f69863a3cb2faa820c02f2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "OFC−2.2SDat52y supportsnonmacrocephalicstateatassessment.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0040196",
+              "label": "Mild microcephaly"
+            }
+          },
+          "snapshot_sha256": "a0cd57f68328871adcffc2acb2288ad5f568a58bfb10e730c99888e94b03cbec",
+          "assessment": {
+            "status": "supported",
+            "statement": "Mild microcephaly (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000248",
+              "label": "Brachycephaly"
+            }
+          },
+          "snapshot_sha256": "e9f4e3e641c03b0210092d9ff3b5d55c977ffbf7b07d329eb1d7f6e9bd8add9e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Brachycephaly (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002162",
+              "label": "Low posterior hairline"
+            }
+          },
+          "snapshot_sha256": "009307276ab3037940fb35c3280e880e3b98cbfd490aeea9579f850f8b378042",
+          "assessment": {
+            "status": "supported",
+            "statement": "Low posterior hairline (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000475",
+              "label": "Broad neck"
+            }
+          },
+          "snapshot_sha256": "285a398b2b9c0d7c1adb02b72b909ea5dab0a3aea0a42ea43ef54e9e7a4775d8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Broad neck (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypertelorism (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000520",
+              "label": "Proptosis"
+            }
+          },
+          "snapshot_sha256": "ef8be0fb3545f7c614cbba84a033248526c9482bc7f618cc6617025a1eb47b22",
+          "assessment": {
+            "status": "supported",
+            "statement": "Proptosis (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000369",
+              "label": "Low-set ears"
+            }
+          },
+          "snapshot_sha256": "d3ebc814e2fe4068a3cc114824711c68bd531b6879885d4e754d52ab1ba1ee65",
+          "assessment": {
+            "status": "supported",
+            "statement": "Low-set ears (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008551",
+              "label": "Microtia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "529f86050ebb91b58f1b84d7219c219de73d47d9dd41ef616e58827a2b42cf1f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Microtia (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008513",
+              "label": "Bilateral conductive hearing impairment"
+            }
+          },
+          "snapshot_sha256": "43451a2d5eba93b1f497a752d372665e919b126497f02cf7a176128ac8a6ca33",
+          "assessment": {
+            "status": "supported",
+            "statement": "Bilateral conductive hearing impairment (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008598",
+              "label": "Mild conductive hearing impairment"
+            }
+          },
+          "snapshot_sha256": "da7cdb33d7c8095a1f3b784977d9aad542e37c0fe1e6cdaf2a1ac6c7f57009c9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Mild conductive hearing impairment (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011342",
+              "label": "Mild global developmental delay"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003593",
+                "label": "Infantile onset"
+              }
+            }
+          },
+          "snapshot_sha256": "4cfee96a9c2f2f24f9d569be48db0ef2d9fb935c311c8a27565f9a54b8cc133f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "MildDDreported,butmotor/languagemilestonesnormalandnoformalpsychometrictesting.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011343",
+              "label": "Moderate global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f7c1629a939295e0caa99e147206ab0cc7ab043bbfe3d88c253141fb270fb893",
+          "assessment": {
+            "status": "qualified",
+            "statement": "MildDDclassificationprovidesseveritycontrastonly.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011344",
+              "label": "Severe global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f193eed31aeb2860b229e51bb50a9d1b65fe941e87ad375b6b4555a96d82698",
+          "assessment": {
+            "status": "qualified",
+            "statement": "MildDDclassificationprovidesseveritycontrastonly.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002616",
+              "label": "Aortic root aneurysm"
+            }
+          },
+          "snapshot_sha256": "ac63b3673fd106d0e45a1b26c76453b075b6f50bc3695e068a1c0454e8ffc4a3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Aorticrootdilatationreported;aneurysmthreshold/dimensionsnotprovided.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005295",
+              "label": "Pseudocoarctation of the aorta"
+            }
+          },
+          "snapshot_sha256": "ab8ca5421900014c779f8436529a8f4261a1d38d91a094b1818c9800a55fe09c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Pseudocoarctation of the aorta (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031664",
+              "label": "Systolic heart murmur"
+            }
+          },
+          "snapshot_sha256": "da99733e003f216c3d661b432cdb0b23c9bcf25f14eb2f1facb158edceedf29c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Systolic heart murmur (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001631",
+              "label": "Atrial septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb3b341d3b228f4383f619ab3c58f06ed8fa35761f5484b5949d160df704ab32",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Atrial septal defect (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001655",
+              "label": "Patent foramen ovale"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d18511ac0ca1ac831ee2ec0ae297a62841a847f4d44b53168c0ab2945de80225",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Patent foramen ovale (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000023",
+              "label": "Inguinal hernia"
+            }
+          },
+          "snapshot_sha256": "b6cd8299335c8f0c7f2c311fc106b0d47b167a73926aa6df1237617d3d469177",
+          "assessment": {
+            "status": "supported",
+            "statement": "Inguinal hernia (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002944",
+              "label": "Thoracolumbar scoliosis"
+            }
+          },
+          "snapshot_sha256": "1f4187a707ec2cc642cb27baaad97a31cb2edd97ddb669ecec15dff7fe4a3d72",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thoracolumbar scoliosis (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family3,PDFpages3–4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/DHRS3/PMID_40519748_Family_4_individual_II_1.json",
+      "packet_sha256": "00ff0cf511b016817a335ac73edbd4884deba658b1da6730c70d435a36de9dba",
+      "case_id": "TC_21d150c4cb6e21e4",
+      "role": "alternate",
+      "packet_subject_id": "Family 4 individual II-1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Mainfull;clinicalsupplementpages1–5textread. Noindividualrankoutputsconsulted."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "ExactFamily4II-1Mexicanmale22y,affectedbrotheroftheII-2female; bilateralcoronal fusion,microtia,ASD.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical reports Family4,PDFpage4"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous NM_004753.7:c.511G>A, NP_004744.2:Val171Met, GRCh38NC_000001.11:g.12578905C>T explicitlymatchesTable2.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table2; Identificationofmissensevariants"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Bothaffected siblingshomozygous;consanguineousparents. Individualparentalgenotypesnotstatedintheclinicalparagraph.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical reports Family4,PDFpage4"
+          }
+        ],
+        "limitations": [
+          "SupplementalFigure1pedigreepixelsnotinspected."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Singlehomozygousallele; bothsiblingshomozygousbutparentaltracesunreviewed.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical reports Family4,PDFpage4"
+          }
+        ],
+        "limitations": [
+          "Noindependentparentaltraceinspection."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "V171Mthreecases/twofamilieswithcoherentcraniosynostosis,scoliosisandcardiacpattern,plus5UTRdeletionfamily;cellassayreducesRALreductionandincreasesRA. NoFamily4RAmeasurement;biochemicalsupportfromsamealleleFamily3andengineeredcells. AuthorsclassifyV171Mpathogenic.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table2; RetinoidResults;Discussion"
+          }
+        ],
+        "limitations": [
+          "EmbryonicRAlevelsnotmeasured;adultplasmaandmouse-nullphenotypesareindirectforhumanembryopathy.",
+          "Plasmapointsaremultiplealiquotsextractedfromindividuals,notindependentpatients;familyspecificnotionalreferenceintervalsanddietaryconfounding.",
+          "GFP-normalizedoverexpressionassaynotpurifiedcatalyticmeasurement; backgroundretinoidmetabolismcontributes.",
+          "DamagingDHRS3variantdoesnotnecessarilycauseclinicaldisease:V110I/G115Dlikelybenign,E244QVUS.",
+          "Clinicalclassificationreported,notsourcelabelclinicallyprovenbythisaudit."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "AllmappedfeaturescomparedwiththeexactclinicalreportandTable1;unknownindividualnegativespreserved.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical reports Family4,PDFpage4"
+          }
+        ],
+        "limitations": [
+          "Remaining31supplementpagesandallfigure/tablepixelsnotread."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c511GtoA_DHRS3_NM_004753v7",
+            "geneContext": {
+              "valueId": "HGNC:17693",
+              "symbol": "DHRS3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_004753.7:c.511G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000001.11:g.12578905C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_004744.2:p.(Val171Met)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr1",
+              "pos": 12578905,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "52cb63196097509a1f02ae7071885806dc97b87fa15db21b8506e8fd7d8a2322",
+          "assessment": {
+            "status": "supported",
+            "statement": "Exactcoding,protein,genomicvariantandhomozygousstateagreewithTable2.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table2"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100333",
+              "label": "Unilateral cleft lip"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "05940dcba242bf232e68c2058d6582735f5cbc55ec17634a3f8ae973ee7b6874",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Unilateral cleft lip (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100334",
+              "label": "Unilateral cleft palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3c02f793a6858c6b4d9220583d6b79b4fcade18bc00234dad63ce60c311de248",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Unilateral cleft palate (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011800",
+              "label": "Midface retrusion"
+            }
+          },
+          "snapshot_sha256": "bc9fc4de33dd49d9c5b50ae9ee5526f902d2bacd5ea3c61440158ec15e4244e2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Midface retrusion (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000431",
+              "label": "Wide nasal bridge"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "aa8cc06e208ce537b647bcdf69fb85b32cbbe067fffdadbd93161bfb1f34383c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Wide nasal bridge (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000414",
+              "label": "Bulbous nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1b5bef6ca90eb02dea6cf0ad981ba795900ee54302dd4d0e5da7d0baca7a177a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bulbous nose (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000325",
+              "label": "Triangular face"
+            }
+          },
+          "snapshot_sha256": "92805d6aa828aa4d7268c4c7bef7fb5e8c62908da62957596bec8b4084b029f0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Triangular face (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011315",
+              "label": "Unicoronal synostosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a1849a600b02daa1d99124c768506679105acc66bdb5242e11fc93bc429fe0bc",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Bicoronal fusionisbilateralratherthanexclusiveunicoronalpresentation.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011318",
+              "label": "Bicoronal synostosis"
+            }
+          },
+          "snapshot_sha256": "acc758ec00deca2cc78e3adbaf2e9f8a591dc632b34ff2b23a1cc98a73e50b50",
+          "assessment": {
+            "status": "supported",
+            "statement": "Bicoronal synostosis (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011321",
+              "label": "Left unilambdoid synostosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "808c130c6371455e118d2b27dd325d4af54c721182d5d3805efce03ded3a0ace",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Left unilambdoid synostosis (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000256",
+              "label": "Macrocephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f5b9b8adf0ca32082848fafc6622946d2ba3692b68f69863a3cb2faa820c02f2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Macrocephaly (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0040196",
+              "label": "Mild microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "27e9ad70d66e18a3170e48b103f20b2661f932bdbb37bf98de06b7e9d7b3415e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Mild microcephaly (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c75e654012c14dea90453d61fde221f4dca1c2729c3ea61db1e002c4f5fd16eb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypertelorism (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000520",
+              "label": "Proptosis"
+            }
+          },
+          "snapshot_sha256": "ef8be0fb3545f7c614cbba84a033248526c9482bc7f618cc6617025a1eb47b22",
+          "assessment": {
+            "status": "supported",
+            "statement": "Proptosis (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008551",
+              "label": "Microtia"
+            }
+          },
+          "snapshot_sha256": "0f2651bd178116894d7953a428071e02148cc4338b4022f7e010e8f6def5f8c2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Microtia (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000407",
+              "label": "Sensorineural hearing impairment"
+            }
+          },
+          "snapshot_sha256": "e526bf81dbd29888a1e98284d7b7b17d36cdfc9d927075ecb0fe3a502b52c150",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sensorineural hearing impairment (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011342",
+              "label": "Mild global developmental delay"
+            }
+          },
+          "snapshot_sha256": "035eec9213c33b8502f9a45210d6100e1a3a89c5e3d2625fa6b59f5072136d90",
+          "assessment": {
+            "status": "qualified",
+            "statement": "MainTablemildDD/ID; supplementborderlineintellectualfunctioning, notunambiguouslyglobaldelay.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011343",
+              "label": "Moderate global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f7c1629a939295e0caa99e147206ab0cc7ab043bbfe3d88c253141fb270fb893",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Mild/borderlineclassificationatassessment,notlifetimeexclusion.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011344",
+              "label": "Severe global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f193eed31aeb2860b229e51bb50a9d1b65fe941e87ad375b6b4555a96d82698",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Mild/borderlineclassificationatassessment,notlifetimeexclusion.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002616",
+              "label": "Aortic root aneurysm"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8ecdc809d87279408af3a79388dda27eee4447df457666e2d9e87ecb62b5293c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Aortic root aneurysm (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005295",
+              "label": "Pseudocoarctation of the aorta"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "265f75bab5affb6a8f81a753d8d085e310be7a9bb8cdc2a811d28767ff352580",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Pseudocoarctation of the aorta (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001631",
+              "label": "Atrial septal defect"
+            }
+          },
+          "snapshot_sha256": "5c32eceba551f7260d1850c75971787614d81f63ea55f27a3f70ecc31bae2508",
+          "assessment": {
+            "status": "supported",
+            "statement": "Atrial septal defect (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001655",
+              "label": "Patent foramen ovale"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d18511ac0ca1ac831ee2ec0ae297a62841a847f4d44b53168c0ab2945de80225",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Patent foramen ovale (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002944",
+              "label": "Thoracolumbar scoliosis"
+            }
+          },
+          "snapshot_sha256": "1f4187a707ec2cc642cb27baaad97a31cb2edd97ddb669ecec15dff7fe4a3d72",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thoracolumbar scoliosis (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001245",
+              "label": "Small thenar eminence"
+            }
+          },
+          "snapshot_sha256": "554a6fe0809f13b9893db71e1c89439c1f7cccdf11a653619fd59edecccb5cf4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Small thenar eminence (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010487",
+              "label": "Small hypothenar eminence"
+            }
+          },
+          "snapshot_sha256": "3f7111f0b6459d67ed1d3503a76d3f7e8b31c3aac7c0c29de647018df721338c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Small hypothenar eminence (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/DHRS3/PMID_40519748_Family_4_individual_II_2.json",
+      "packet_sha256": "5837fa3b8c743a1c5fa666732d450d932b82df50a2ddf8b7324f5d98bd44773a",
+      "case_id": "TC_21d150c4cb6e21e4",
+      "role": "alternate",
+      "packet_subject_id": "Family 4 individual II-2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Mainfull;clinicalsupplementpages1–5textread. Noindividualrankoutputsconsulted."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "ExactFamily4II-2Mexicanfemale18yclinicalreport(16yphotograph),affected sisterofII-1; bilateralcoronal fusion,tarsalfusion,analfistula.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical reports Family4,PDFpage4"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous NM_004753.7:c.511G>A, NP_004744.2:Val171Met, GRCh38NC_000001.11:g.12578905C>T explicitlymatchesTable2.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table2; Identificationofmissensevariants"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Bothaffected siblingshomozygous;consanguineousparents. Individualparentalgenotypesnotstatedintheclinicalparagraph.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical reports Family4,PDFpage4"
+          }
+        ],
+        "limitations": [
+          "SupplementalFigure1pedigreepixelsnotinspected."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Singlehomozygousallele; bothsiblingshomozygousbutparentaltracesunreviewed.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical reports Family4,PDFpage4"
+          }
+        ],
+        "limitations": [
+          "Noindependentparentaltraceinspection."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "V171Mthreecases/twofamilieswithcoherentcraniosynostosis,scoliosisandcardiacpattern,plus5UTRdeletionfamily;cellassayreducesRALreductionandincreasesRA. NoFamily4RAmeasurement;biochemicalsupportfromsamealleleFamily3andengineeredcells. AuthorsclassifyV171Mpathogenic.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table2; RetinoidResults;Discussion"
+          }
+        ],
+        "limitations": [
+          "EmbryonicRAlevelsnotmeasured;adultplasmaandmouse-nullphenotypesareindirectforhumanembryopathy.",
+          "Plasmapointsaremultiplealiquotsextractedfromindividuals,notindependentpatients;familyspecificnotionalreferenceintervalsanddietaryconfounding.",
+          "GFP-normalizedoverexpressionassaynotpurifiedcatalyticmeasurement; backgroundretinoidmetabolismcontributes.",
+          "DamagingDHRS3variantdoesnotnecessarilycauseclinicaldisease:V110I/G115Dlikelybenign,E244QVUS.",
+          "Clinicalclassificationreported,notsourcelabelclinicallyprovenbythisaudit."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "AllmappedfeaturescomparedwiththeexactclinicalreportandTable1;unknownindividualnegativespreserved.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical reports Family4,PDFpage4"
+          }
+        ],
+        "limitations": [
+          "Remaining31supplementpagesandallfigure/tablepixelsnotread."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c511GtoA_DHRS3_NM_004753v7",
+            "geneContext": {
+              "valueId": "HGNC:17693",
+              "symbol": "DHRS3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_004753.7:c.511G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000001.11:g.12578905C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_004744.2:p.(Val171Met)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr1",
+              "pos": 12578905,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "52cb63196097509a1f02ae7071885806dc97b87fa15db21b8506e8fd7d8a2322",
+          "assessment": {
+            "status": "supported",
+            "statement": "Exactcoding,protein,genomicvariantandhomozygousstateagreewithTable2.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table2"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100333",
+              "label": "Unilateral cleft lip"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "05940dcba242bf232e68c2058d6582735f5cbc55ec17634a3f8ae973ee7b6874",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Unilateral cleft lip (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100334",
+              "label": "Unilateral cleft palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3c02f793a6858c6b4d9220583d6b79b4fcade18bc00234dad63ce60c311de248",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Unilateral cleft palate (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011800",
+              "label": "Midface retrusion"
+            }
+          },
+          "snapshot_sha256": "bc9fc4de33dd49d9c5b50ae9ee5526f902d2bacd5ea3c61440158ec15e4244e2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Midface retrusion (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000431",
+              "label": "Wide nasal bridge"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "aa8cc06e208ce537b647bcdf69fb85b32cbbe067fffdadbd93161bfb1f34383c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Wide nasal bridge (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000414",
+              "label": "Bulbous nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1b5bef6ca90eb02dea6cf0ad981ba795900ee54302dd4d0e5da7d0baca7a177a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bulbous nose (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000325",
+              "label": "Triangular face"
+            }
+          },
+          "snapshot_sha256": "92805d6aa828aa4d7268c4c7bef7fb5e8c62908da62957596bec8b4084b029f0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Triangular face (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011315",
+              "label": "Unicoronal synostosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a1849a600b02daa1d99124c768506679105acc66bdb5242e11fc93bc429fe0bc",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Bicoronal fusionisbilateralratherthanexclusiveunicoronalpresentation.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011318",
+              "label": "Bicoronal synostosis"
+            }
+          },
+          "snapshot_sha256": "acc758ec00deca2cc78e3adbaf2e9f8a591dc632b34ff2b23a1cc98a73e50b50",
+          "assessment": {
+            "status": "supported",
+            "statement": "Bicoronal synostosis (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011321",
+              "label": "Left unilambdoid synostosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "808c130c6371455e118d2b27dd325d4af54c721182d5d3805efce03ded3a0ace",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Left unilambdoid synostosis (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000256",
+              "label": "Macrocephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f5b9b8adf0ca32082848fafc6622946d2ba3692b68f69863a3cb2faa820c02f2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Macrocephaly (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0040196",
+              "label": "Mild microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "27e9ad70d66e18a3170e48b103f20b2661f932bdbb37bf98de06b7e9d7b3415e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Mild microcephaly (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c75e654012c14dea90453d61fde221f4dca1c2729c3ea61db1e002c4f5fd16eb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypertelorism (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000520",
+              "label": "Proptosis"
+            }
+          },
+          "snapshot_sha256": "ef8be0fb3545f7c614cbba84a033248526c9482bc7f618cc6617025a1eb47b22",
+          "assessment": {
+            "status": "supported",
+            "statement": "Proptosis (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008551",
+              "label": "Microtia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "529f86050ebb91b58f1b84d7219c219de73d47d9dd41ef616e58827a2b42cf1f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Microtia (excluded) isnotexplicitlyestablishedfortheindividual; nonmentionoroccurrenceinanotherfamilycannotproveanegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Specificnegative/thresholdrequiresunreviewedsourceevidenceorclarification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000407",
+              "label": "Sensorineural hearing impairment"
+            }
+          },
+          "snapshot_sha256": "e526bf81dbd29888a1e98284d7b7b17d36cdfc9d927075ecb0fe3a502b52c150",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sensorineural hearing impairment (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011342",
+              "label": "Mild global developmental delay"
+            }
+          },
+          "snapshot_sha256": "035eec9213c33b8502f9a45210d6100e1a3a89c5e3d2625fa6b59f5072136d90",
+          "assessment": {
+            "status": "qualified",
+            "statement": "MainTablemildDD/ID; supplementborderlineintellectualfunctioning.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011343",
+              "label": "Moderate global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f7c1629a939295e0caa99e147206ab0cc7ab043bbfe3d88c253141fb270fb893",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Mild/borderlineclassificationatassessment,notlifetimeexclusion.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011344",
+              "label": "Severe global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f193eed31aeb2860b229e51bb50a9d1b65fe941e87ad375b6b4555a96d82698",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Mild/borderlineclassificationatassessment,notlifetimeexclusion.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002616",
+              "label": "Aortic root aneurysm"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8ecdc809d87279408af3a79388dda27eee4447df457666e2d9e87ecb62b5293c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Tablecardiacnegativeprovidesbroadnegative; noaorticrootmeasurementshown.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005295",
+              "label": "Pseudocoarctation of the aorta"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "265f75bab5affb6a8f81a753d8d085e310be7a9bb8cdc2a811d28767ff352580",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Tablecardiacnegativeprovidesbroadnegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001631",
+              "label": "Atrial septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb3b341d3b228f4383f619ab3c58f06ed8fa35761f5484b5949d160df704ab32",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Tablecardiacnegativeprovidesbroadnegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001655",
+              "label": "Patent foramen ovale"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d18511ac0ca1ac831ee2ec0ae297a62841a847f4d44b53168c0ab2945de80225",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Tablecardiacnegativeprovidesbroadnegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalterminology/severity/aggregatecategoryqualificationabove."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008368",
+              "label": "Tarsal synostosis"
+            }
+          },
+          "snapshot_sha256": "153283a32b1a8fd9680984a99b0df2dc85a777671ba972e940171f5b6603fc03",
+          "assessment": {
+            "status": "supported",
+            "statement": "Tarsal synostosis (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002944",
+              "label": "Thoracolumbar scoliosis"
+            }
+          },
+          "snapshot_sha256": "1f4187a707ec2cc642cb27baaad97a31cb2edd97ddb669ecec15dff7fe4a3d72",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thoracolumbar scoliosis (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010447",
+              "label": "Anal fistula"
+            }
+          },
+          "snapshot_sha256": "aa5915fb363a3b9569a1a551965fa03c8073741139f558635fad080921fc32b5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Anal fistula (present) explicitlyreportedforindividualinclinicalnarrative/mainTable1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical reports Family4,PDFpage4"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Table1 matchingfamily/individualrow"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading.",
+    "Family3individualnumberIII-2inFigure2captionvsII-2Table1/supplement; resolvedbyage,family,alleleandphenotypematch.",
+    "MainDataAvailabilitynamesFamily1III-2GSwheremethodsdescribeIII-1;dataidentityneedsseparatecheckifrawdatasetused.",
+    "Country-levelnutrientproductiondoesnotmeasureindividualdiet;nohumaninterventionorclinicalbenefittest."
+  ]
+}

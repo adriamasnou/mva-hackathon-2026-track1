@@ -1,0 +1,185 @@
+{
+  "pmid": "41000458",
+  "source_titles": [
+    "Whole Exome Sequencing Identifies Novel Homozygous LGI1 Variant Mimicking ADAM22-Related Pathologies in a Moroccan Family."
+  ],
+  "selected_case_ids": [
+    "TC_41439bf8bbd3c840"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "LGI1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/LGI1/PMID_41000458_patient_VI_1.json",
+      "sha256": "d49b9c790d866d2761f7cf622eff8fea3e6c62108c967c09c7625ab259993cdf",
+      "case_id": "TC_41439bf8bbd3c840",
+      "selected_record": true,
+      "subject": {
+        "id": "patient VI.1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P4Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621475",
+            "label": "Developmental and epileptic encephalopathy 121"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P1D"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0025190",
+            "label": "Bilateral tonic-clonic seizure with generalized onset"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P3M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007334",
+            "label": "Bilateral tonic-clonic seizure with focal onset"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P3M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011169",
+            "label": "Generalized clonic seizure"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P1D"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0040129",
+            "label": "Abnormal nerve conduction velocity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0010841",
+            "label": "Multifocal epileptiform discharges"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011344",
+            "label": "Severe global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000817",
+            "label": "Reduced eye contact"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008936",
+            "label": "Axial hypotonia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012389",
+            "label": "Appendicular hypotonia"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "qB2zfd7Zcqi5fOq85DBUqGnm",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621475",
+              "label": "Developmental and epileptic encephalopathy 121"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "patient VI.1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c245TtoC_LGI1_NM_005097v4",
+                    "geneContext": {
+                      "valueId": "HGNC:6572",
+                      "symbol": "LGI1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_005097.4:c.245T>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000010.11:g.93758789T>C"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_005088.1:p.(Ile82Thr)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr10",
+                      "pos": 93758789,
+                      "ref": "T",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

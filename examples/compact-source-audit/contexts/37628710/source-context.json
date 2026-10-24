@@ -1,0 +1,151 @@
+{
+  "pmid": "37628710",
+  "source_titles": [
+    "A Splicing Variant in RDH8 Is Associated with Autosomal Recessive Stargardt Macular Dystrophy."
+  ],
+  "selected_case_ids": [
+    "TC_afd830c1ea5f0742"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "RDH8"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/RDH8/PMID_37628710_proposita_II_2.json",
+      "sha256": "4ce85d2a86979bdc9c178b11f4f9b276df95b5bd767d15360a823ecbd81cedbd",
+      "case_id": "TC_afd830c1ea5f0742",
+      "selected_record": true,
+      "subject": {
+        "id": "proposita II:2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P62Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621259",
+            "label": "Stargardt disease 5"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P40Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0007722",
+            "label": "Retinal pigment epithelial atrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031528",
+            "label": "Subretinal deposits"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012045",
+            "label": "Retinal flecks"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:6000367",
+            "label": "Central thinning of the outer nuclear layer of the retina"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007906",
+            "label": "Ocular hypertension"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032037",
+            "label": "Mildly reduced visual acuity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000512",
+            "label": "Abnormal electroretinogram"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000822",
+            "label": "Hypertension"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "IPzDQ9M7xHxkNnIU8z136H1v",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621259",
+              "label": "Stargardt disease 5"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "proposita II:2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c262_1GtoA_RDH8_NM_015725v4",
+                    "geneContext": {
+                      "valueId": "HGNC:14423",
+                      "symbol": "RDH8"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_015725.4:c.262+1G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000019.10:g.10017216G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_056540.3:p.?"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr19",
+                      "pos": 10017216,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

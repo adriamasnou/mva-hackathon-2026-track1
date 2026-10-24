@@ -1,0 +1,1984 @@
+{
+  "schema_version": 1,
+  "pmid": "37875108",
+  "title": "Human MCTS1-dependent translation of JAK2 is essential for IFN-γ immunity to mycobacteria",
+  "reviewer": {
+    "id": "reviewer-2",
+    "reviewed_at_utc": "2026-10-24T15:18:02.977039+00:00",
+    "method": "Complete main-source reading in bounded nontruncated segments, visual figure/table inspection where stated, individual source-packet adjudication. Missing coverage remains explicit."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited user context describes cohort results as source-label recovery and prior project validation limitations; no compact-cohort per-case ranking/score/result files opened. Assigned source contexts and primary sources only were used for adjudication."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "400003cfdb7e65e06dabcd76383de980417eada05964728be12b308bb302306f",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/PMC10841658.1.txt",
+      "sha256": "51329b5f080bc714bdd5ea4f093112a7af1e8eda51ec06674dd423f2685408ea",
+      "kind": "text",
+      "description": "Accepted author manuscript in PMC, not publisher final typeset text"
+    },
+    {
+      "id": "xml",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/PMC10841658.1.xml",
+      "sha256": "9ed5973de7d98d054d9e703112c00c17a7051acac695b6b01797aac396e9545c",
+      "kind": "xml",
+      "description": "Accepted author manuscript in PMC, not publisher final typeset text"
+    },
+    {
+      "id": "pdf",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/PMC10841658.1.pdf",
+      "sha256": "a6556ed4e81c7c9919d04163dadb79e69d11f3262e0dc072ae98fe1e9f4fa622",
+      "kind": "pdf",
+      "description": "Accepted author manuscript in PMC, not publisher final typeset text"
+    },
+    {
+      "id": "fig1",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/nihms-1935775-f0001.jpg",
+      "sha256": "153ff2fa6222c56888d34a617cba52171bfb687392dc390d8d1b1af72dfa3cd8",
+      "kind": "image",
+      "description": "Allpanelsinspected"
+    },
+    {
+      "id": "fig2",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/nihms-1935775-f0002.jpg",
+      "sha256": "c569e0de353368e8d8b1032102d7aa6667f5bd88cd329cf0541f60674cfe0a64",
+      "kind": "image",
+      "description": "Allpanelsinspected"
+    },
+    {
+      "id": "fig3",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/nihms-1935775-f0003.jpg",
+      "sha256": "2f2cdb87d5a3dc05a0a534abf4aad9e7eebdafb8e05379becf564b6e84932444",
+      "kind": "image",
+      "description": "Allpanelsinspected"
+    },
+    {
+      "id": "fig4",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/nihms-1935775-f0004.jpg",
+      "sha256": "fba7252e18d46ca970476b3c977879a77e77c3dc1da16067a3297a5405422a4c",
+      "kind": "image",
+      "description": "Allpanelsinspected"
+    },
+    {
+      "id": "fig5",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/nihms-1935775-f0005.jpg",
+      "sha256": "6a2ac0b894f84205c28f3120c3f847953568d1749ee312375cd087f7d4536d3e",
+      "kind": "image",
+      "description": "Allpanelsinspected"
+    },
+    {
+      "id": "fig6",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/nihms-1935775-f0006.jpg",
+      "sha256": "ca8e165f6404c1efa0d4ceaebbba95db87da46ba85a0e31a300c4e99354764cb",
+      "kind": "image",
+      "description": "Allpanelsinspected"
+    },
+    {
+      "id": "fig7",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/nihms-1935775-f0007.jpg",
+      "sha256": "a858fa5150068aeac808b7f7a38e25ba4c2084d9367dfd5b62d86c554cc3b7d3",
+      "kind": "image",
+      "description": "Allpanelsinspected"
+    },
+    {
+      "id": "fig8",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/nihms-1935775-f0008.jpg",
+      "sha256": "74244c9c682afe799e97e33875e37036893c750e1d44e050eeb75ca84c11fd18",
+      "kind": "image",
+      "description": "Allpanelsinspected"
+    },
+    {
+      "id": "supp1",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/NIHMS1935775-supplement-1.pdf",
+      "sha256": "08d805f92bcab1ed92e2304ee388a2d3e9ef2e0989848063a9060a6f8d0466ca",
+      "kind": "pdf",
+      "description": "Originalsupplement"
+    },
+    {
+      "id": "supp1txt",
+      "pmid": "37875108",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/37875108/supp1txt.txt",
+      "sha256": "1706b937bb5919c86cd07a53db25fc2c09d8f41f048ff0edf8e9038e7e7c66d5",
+      "kind": "text",
+      "description": "AllPDFembeddedtext"
+    },
+    {
+      "id": "supp1png",
+      "pmid": "37875108",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/37875108/supp1png.png",
+      "sha256": "1cf16a01cc4edaf2acd9d3065a54c58dfc61e59d49854092b5be8c3b9803c2ca",
+      "kind": "image",
+      "description": "WholeSIfigurepixels"
+    },
+    {
+      "id": "supp2",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/NIHMS1935775-supplement-2.pdf",
+      "sha256": "18a5a7d9a1c794f6e002af929e1caf6b46f1c680b584daa8394efdb3eefe40b7",
+      "kind": "pdf",
+      "description": "Originalsupplement"
+    },
+    {
+      "id": "supp2txt",
+      "pmid": "37875108",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/37875108/supp2txt.txt",
+      "sha256": "d686cca596bd6c8f29d06eefc1320086b84a9ddabbfea0858c7f472dcd594dc9",
+      "kind": "text",
+      "description": "AllPDFembeddedtext"
+    },
+    {
+      "id": "supp2png",
+      "pmid": "37875108",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/37875108/supp2png.png",
+      "sha256": "70ed49d581621442e75dd398e33ad00a61baffdd4b27b61abd438895ce79a743",
+      "kind": "image",
+      "description": "WholeSIfigurepixels"
+    },
+    {
+      "id": "supp3",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/NIHMS1935775-supplement-3.pdf",
+      "sha256": "cace79fc6fd38ecff7fe72120dbf73687929b91b86b670feb762398e49ea32a3",
+      "kind": "pdf",
+      "description": "Originalsupplement"
+    },
+    {
+      "id": "supp4",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/NIHMS1935775-supplement-4.pdf",
+      "sha256": "e23c6623fefd808770cf8d30002f01534b17904713735ec9b66447b8505ec525",
+      "kind": "pdf",
+      "description": "Originalsupplement"
+    },
+    {
+      "id": "supp5",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/NIHMS1935775-supplement-5.pdf",
+      "sha256": "f748d3f4af6f8578ab5de7714f7a3ddb2c807c17d49ba372116c83fe3184c3ae",
+      "kind": "pdf",
+      "description": "Originalsupplement"
+    },
+    {
+      "id": "supp6",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/NIHMS1935775-supplement-6.pdf",
+      "sha256": "f0e866c5dbc19d3987a1148e9bce3e924ac980441e7fe3462385f892e04dd08d",
+      "kind": "pdf",
+      "description": "Originalsupplement"
+    },
+    {
+      "id": "supp7",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/NIHMS1935775-supplement-7.pdf",
+      "sha256": "beba2e54c0366f60c5772bd4c0aca457dc030c7c120be9137a85b5dca5cbfcd2",
+      "kind": "pdf",
+      "description": "Originalsupplement"
+    },
+    {
+      "id": "supp8",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/NIHMS1935775-supplement-8.pdf",
+      "sha256": "af742a9f82f09f0c872bcd30e2f4629aee03c692b6f01c811688a69c016f0237",
+      "kind": "pdf",
+      "description": "Originalsupplement"
+    },
+    {
+      "id": "supp9",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/NIHMS1935775-supplement-9.xlsx",
+      "sha256": "48c82a08e9194b9b3094544ba088bc4f2c33f0aad3d2d464f2a290b22dffd019",
+      "kind": "data",
+      "description": "Originalsupplement"
+    },
+    {
+      "id": "supp10",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/NIHMS1935775-supplement-10.xlsx",
+      "sha256": "27cc93555374a06e633cad0bc2016afff6d0a90a43ff6a19b78b068779228e3c",
+      "kind": "data",
+      "description": "Originalsupplement"
+    },
+    {
+      "id": "supp11",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/NIHMS1935775-supplement-11.xlsx",
+      "sha256": "68a27d5878a4723eb975dd34a4bb23a5b31a87271bba7b29db431dfc100260b2",
+      "kind": "data",
+      "description": "Originalsupplement"
+    },
+    {
+      "id": "supp12",
+      "pmid": "37875108",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37875108/cloud/PMC10841658.1/NIHMS1935775-supplement-12.pdf",
+      "sha256": "6ed48f5ebc1ddd25d877d6af10256fa62b6ed0cb9f61925e738406fd4ba7ebd6",
+      "kind": "pdf",
+      "description": "Originalsupplement"
+    },
+    {
+      "id": "supp12txt",
+      "pmid": "37875108",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/37875108/supp12txt.txt",
+      "sha256": "cf9fe56eabfd381583c934913fd100167e4920aa1d951c371c91dea65063cce7",
+      "kind": "text",
+      "description": "All9pages25654chars andalltables text"
+    },
+    {
+      "id": "s12p1",
+      "pmid": "37875108",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/37875108/s12p1.png",
+      "sha256": "f091bb72ce044de9bd96625928fbf34324eae1902b93065caf934670a08ddd47",
+      "kind": "image",
+      "description": "TableS1all7patientcolumns"
+    },
+    {
+      "id": "s12p2",
+      "pmid": "37875108",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/37875108/s12p2.png",
+      "sha256": "43e68d7d4d6eb500aa9aa1d58716d32450325f7f6a825cd113a8c54d3f78715d",
+      "kind": "image",
+      "description": "TableS1all7patientcolumns"
+    },
+    {
+      "id": "s12p3",
+      "pmid": "37875108",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/37875108/s12p3.png",
+      "sha256": "2a04c418d1f4cd44e299475cbbd44b6014eed55eee9ca45134459afb4439fd93",
+      "kind": "image",
+      "description": "TableS1all7patientcolumns"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Human MCTS1-dependent translation of JAK2 is essential for IFN-γ immunity to mycobacteria",
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "PMID37875108 PMCID10841658 DOI10.1016/j.cell.2023.09.024 title/authors"
+      },
+      {
+        "source_id": "main",
+        "locator": "Cell186(23)5114–5134.e27,2023;author manuscript version1"
+      }
+    ],
+    "note": "Exact article identity, PMC accepted manuscript with unedited disclaimer; final copyediting differences unassessed."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 8,
+      "table": 1,
+      "supplement": 12
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "7numbered figures+graphicalabstract,Keyresources table,12supplements"
+      }
+    ],
+    "note": "8figureimagesheld;S1–8 PDFs;S3/S5/S8dataXLSX;9pagePDFTablesS1/S2/S4/S6/S7. No missinglocalassets."
+  },
+  "components": [
+    {
+      "id": "main",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 847,
+      "extent_source_id": "main",
+      "extent_evidence": [
+        {
+          "source_id": "main",
+          "locator": "All170172characters includingmethods/resources/113references"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 847,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Complete source"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Figure1"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Fullfigurelegend"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig1",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Figure2"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Fullfigurelegend"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig2",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Figure3"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Fullfigurelegend"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig3",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Figure4"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Fullfigurelegend"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig4",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Figure5"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Fullfigurelegend"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig5",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig6",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Figure6"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Fullfigurelegend"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig6",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig7",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Figure7"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Fullfigurelegend"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig7",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "fig8",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Graphicalabstract"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Graphicalabstract context"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig8",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Source component inspected as stated."
+    },
+    {
+      "id": "resources",
+      "kind": "table",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Keyresources table"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Allresource/reagent/sequence/software rows"
+        }
+      ],
+      "note": "Fulltextread; tablelayoutpixelsnotread."
+    },
+    {
+      "id": "supp1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp1",
+      "extent_evidence": [
+        {
+          "source_id": "supp1",
+          "locator": "Wholeoriginalsupplement"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supp1txt",
+          "locator": "Complete source"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "CompleteS1legend"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp1png",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Alltextlabels/legendandpixelsread."
+    },
+    {
+      "id": "supp2",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp2",
+      "extent_evidence": [
+        {
+          "source_id": "supp2",
+          "locator": "Wholeoriginalsupplement"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supp2txt",
+          "locator": "Complete source"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "CompleteS2legend"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp2png",
+          "locator": "Allpanels"
+        }
+      ],
+      "note": "Alltextlabels/legendandpixelsread."
+    },
+    {
+      "id": "supp3",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp3",
+      "extent_evidence": [
+        {
+          "source_id": "supp3",
+          "locator": "Wholeoriginalsupplement"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "FigureS3fulllegend only, PDFpixels/textlabelsnotread"
+        }
+      ],
+      "note": "Onlyexplicitcoverage read;S3–8figurepixels/labels andXLSXdataunread;S12pages4–9pixelsunread."
+    },
+    {
+      "id": "supp4",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp4",
+      "extent_evidence": [
+        {
+          "source_id": "supp4",
+          "locator": "Wholeoriginalsupplement"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "FigureS4fulllegend only, PDFpixels/textlabelsnotread"
+        }
+      ],
+      "note": "Onlyexplicitcoverage read;S3–8figurepixels/labels andXLSXdataunread;S12pages4–9pixelsunread."
+    },
+    {
+      "id": "supp5",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp5",
+      "extent_evidence": [
+        {
+          "source_id": "supp5",
+          "locator": "Wholeoriginalsupplement"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "FigureS5fulllegend only, PDFpixels/textlabelsnotread"
+        }
+      ],
+      "note": "Onlyexplicitcoverage read;S3–8figurepixels/labels andXLSXdataunread;S12pages4–9pixelsunread."
+    },
+    {
+      "id": "supp6",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp6",
+      "extent_evidence": [
+        {
+          "source_id": "supp6",
+          "locator": "Wholeoriginalsupplement"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "FigureS6fulllegend only, PDFpixels/textlabelsnotread"
+        }
+      ],
+      "note": "Onlyexplicitcoverage read;S3–8figurepixels/labels andXLSXdataunread;S12pages4–9pixelsunread."
+    },
+    {
+      "id": "supp7",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp7",
+      "extent_evidence": [
+        {
+          "source_id": "supp7",
+          "locator": "Wholeoriginalsupplement"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "FigureS7fulllegend only, PDFpixels/textlabelsnotread"
+        }
+      ],
+      "note": "Onlyexplicitcoverage read;S3–8figurepixels/labels andXLSXdataunread;S12pages4–9pixelsunread."
+    },
+    {
+      "id": "supp8",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp8",
+      "extent_evidence": [
+        {
+          "source_id": "supp8",
+          "locator": "Wholeoriginalsupplement"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "FigureS8fulllegend only, PDFpixels/textlabelsnotread"
+        }
+      ],
+      "note": "Onlyexplicitcoverage read;S3–8figurepixels/labels andXLSXdataunread;S12pages4–9pixelsunread."
+    },
+    {
+      "id": "supp9",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp9",
+      "extent_evidence": [
+        {
+          "source_id": "supp9",
+          "locator": "Wholeoriginalsupplement"
+        }
+      ],
+      "coverage": [],
+      "note": "Onlyexplicitcoverage read;S3–8figurepixels/labels andXLSXdataunread;S12pages4–9pixelsunread."
+    },
+    {
+      "id": "supp10",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp10",
+      "extent_evidence": [
+        {
+          "source_id": "supp10",
+          "locator": "Wholeoriginalsupplement"
+        }
+      ],
+      "coverage": [],
+      "note": "Onlyexplicitcoverage read;S3–8figurepixels/labels andXLSXdataunread;S12pages4–9pixelsunread."
+    },
+    {
+      "id": "supp11",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "supp11",
+      "extent_evidence": [
+        {
+          "source_id": "supp11",
+          "locator": "Wholeoriginalsupplement"
+        }
+      ],
+      "coverage": [],
+      "note": "Onlyexplicitcoverage read;S3–8figurepixels/labels andXLSXdataunread;S12pages4–9pixelsunread."
+    },
+    {
+      "id": "supp12",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 9,
+      "extent_source_id": "supp12",
+      "extent_evidence": [
+        {
+          "source_id": "supp12",
+          "locator": "Wholeoriginalsupplement"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 9,
+          "mode": "text",
+          "source_id": "supp12txt",
+          "locator": "Complete source"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "s12p1",
+          "locator": "AllTableS1rows"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "s12p2",
+          "locator": "AllTableS1rows"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "s12p3",
+          "locator": "AllTableS1rows"
+        }
+      ],
+      "note": "Onlyexplicitcoverage read;S3–8figurepixels/labels andXLSXdataunread;S12pages4–9pixelsunread."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/MCTS1/PMID_37875108_Patient_3.json",
+      "packet_sha256": "b42eb597a7f8bd619c0832fd0da322884f3bedc8828c2880e98e78e446abce38",
+      "case_id": "TC_8fd3c8c6ca617dbd",
+      "role": "selected",
+      "packet_subject_id": "Patient 3",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Acceptedmanuscript maycontainunrepairedcopyeditingerrors; sourceinternalconflictsretained.",
+        "HGVSrepeatnormalization/transcriptENST00000371317.10vsNM_014060.3not independentlyremapped."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact P3 male/ancestry andsubject mapping verified.Age12matchesS1/main.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "CaseReports KindredC P3;TableS1individualcolumn"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Hemizygous c.164+1_164+4delGTAA; aberrantsplicing mainlyK4_C55delinsN verified bySanger/functionalexpression inFig1/S1.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "ResultsLOE;Fig1A/B;S1"
+          }
+        ],
+        "limitations": [
+          "Genomicrepeatrepresentation/transcriptmappingunperformed."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Motherheterozygous,fatherWT,affectedboyhemizygous;testedunaffected siblingsWT;someP3sistersuntyped.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Fig1A;S1A–C"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "HemizygousmaleXallele;notcompoundheterozygousphase.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Fig1A;S1A–C"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Strongsourceevidence:5independentpLOFfamilies, adjustedcasecontrolenrichment,patientproteindeficiency/mutantLOFreporters;isogenicMCTS1andJAK2rescueofIL23response. P3exontrapping90.5%exon2skip/9.5%exon2+3skip;blood<3%normalsplicing.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "ResultsFigs1–7;S1–2"
+          }
+        ],
+        "limitations": [
+          "JAK2rescuenotperformedinpatientPBMCs,othertranslationaltargetsnotexcluded;patientsyoung,phenotype/penetranceincomplete.",
+          "Gene-levelcausalityevidencenotindependentclinicalreclassificationorcomparativedrugbenefit."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Everypositive/negativepacketassertioncomparedwithindividualCaseReportandTableS1allrows. FinaldiseasecategorymustnoterasepriorlocalBCGitis.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "CaseReports KindredC P3;TableS1individualcolumn"
+          }
+        ],
+        "limitations": [
+          "Unreportednegativesremainunresolved; ageanddisease-stageconflictsretained.",
+          "Biochemicalcandidateevidenceisnotmeasurementofeveryclinicalphenotype."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c164_1_164_4del_MCTS1_NM_014060v3",
+            "geneContext": {
+              "valueId": "HGNC:23357",
+              "symbol": "MCTS1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_014060.3:c.164+1_164+4del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000023.11:g.120605562_120605565del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_054779.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chrX",
+              "pos": 120605559,
+              "ref": "GGTAA",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000134",
+              "label": "hemizygous"
+            }
+          },
+          "snapshot_sha256": "408365da94a92189e3bb2d715ec64616ca7561268ac5f4545ce95d2fc906e1e3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Codingalleleandhemizygositymatch c.164+1_164+4delGTAA; aberrantsplicing mainlyK4_C55delinsN.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Fig1A/B;S1;ResultsLOE"
+              }
+            ],
+            "limitations": [
+              "ENST00000371317.10vsNM_014060.3/transcriptandhg38left-rightnormalizedcoordinatesnotindependentlyproved."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002754",
+              "label": "Osteomyelitis"
+            }
+          },
+          "snapshot_sha256": "2751338ada24512e4e05c01057942092d60a21752a84e168c9ab81f93641edf3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Distaltibialbiopsy/culture-provenBCGosteomyelitisage3y,5.2x1.1cmlesion.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredC P3;TableS1individualcolumn"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001954",
+              "label": "Recurrent fever"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f03205f8efbadf3a5f8af71b89b8e9f278dc151ff07d6a0da41db540afd8d7ff",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P3narrativeandS1do notstatepresenceorabsenceofrecurrentfever.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredC P3;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "Omissionnotnegative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3da3d0fa5a0298a54d11f959b7518ea72d80ed868975d71219bbfc2a7dff80cf",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1currentorganomegalyNo;P3noorganomegalyreported.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredC P3;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "Currentabsence notlifetimeexclusion; sourcehaslimitedtime-specifichistory."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002240",
+              "label": "Hepatomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "92d186c16d6c93ee9a4267ef118a20b9f2b6a812767724afdf8d3794887c892d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1currentorganomegalyNo;P3noorganomegalyreported.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredC P3;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "Currentabsence notlifetimeexclusion; sourcehaslimitedtime-specifichistory."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020087",
+              "label": "BCGosis"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P1Y"
+              }
+            }
+          },
+          "snapshot_sha256": "5fd35db50c715a16ef552a616e778c84b423688bcc0f582cebcf8dad30738de7",
+          "assessment": {
+            "status": "qualified",
+            "statement": "DisseminatedBCGdiseaseverified bymycobacterialcultureandclinicalspread;onsetpacketisfirstlocaldisease,notnecessarilydissemination.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredC P3;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "P1firstlocal7m/dissemination14m;P3local1y/bone3y;P2local3mthenprogression."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020086",
+              "label": "BCGitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d32eaaf7889fd07d1ec023dc7b7c4d7dcdac2a1bd76f9215232c69d94eca4a50",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "PacketexcludesBCGitis,butP3CaseReportexplicitlystatesBCGitisat1year(leftaxillary)beforelaterdisseminateddisease. S1finalBCGosisclassificationdoesnotnegateearlierlocalBCGitis.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredC P3;TableS1individualcolumn"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "03152f286100abc72cad1120d8999d8a2e43113a3ec457babb1c73e5930869b4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P3performingwellschool/normalS1language,normalgrowthactivity.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredC P3;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "Noformalall-domainmilestonetable; broadnegativeinferredfromnormalfunction."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004313",
+              "label": "Decreased circulating immunoglobulin concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ec084bbd1475e548b0bf853cabdb4b0d987717a6e27e7d5b13cf8c6fad43440f",
+          "assessment": {
+            "status": "supported",
+            "statement": "CaseP3explicitnormalIgG/IgM/IgA,TableS1values742/38/47mgdl.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredC P3;TableS1individualcolumn"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/MCTS1/PMID_37875108_Patient_2.json",
+      "packet_sha256": "dfeb8d90e5ab229274e24b5aed09f9621b60c19c3dbc014de8b883feb9105c8e",
+      "case_id": "TC_d7c2b67868347f26",
+      "role": "selected",
+      "packet_subject_id": "Patient 2",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Acceptedmanuscript maycontainunrepairedcopyeditingerrors; sourceinternalconflictsretained.",
+        "HGVSrepeatnormalization/transcriptENST00000371317.10vsNM_014060.3not independentlyremapped."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact P2 male/ancestry andsubject mapping verified.Age18matchesS1/main.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "CaseReports KindredB P2;TableS1individualcolumn"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Hemizygous c.213dupT p.R72Ter verified bySanger/functionalexpression inFig1/S1.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "ResultsLOE;Fig1A/B;S1"
+          }
+        ],
+        "limitations": [
+          "Genomicrepeatrepresentation/transcriptmappingunperformed.",
+          "Fig1B/S1B labelc207_208insT,main/S1tablec213dupT;likelyrepeatnormalization butnotindependentlyproved. TableS1p.P72*typo vs R72*main/figure."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Motherheterozygous,fatherWT,affectedboyhemizygous;sisterheterozygous.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Fig1A;S1A–C"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "HemizygousmaleXallele;notcompoundheterozygousphase.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Fig1A;S1A–C"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Strongsourceevidence:5independentpLOFfamilies, adjustedcasecontrolenrichment,patientproteindeficiency/mutantLOFreporters;isogenicMCTS1andJAK2rescueofIL23response. Alleledrivesnodetectableproteinandreinitiationactivity.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "ResultsFigs1–7;S1–2"
+          }
+        ],
+        "limitations": [
+          "JAK2rescuenotperformedinpatientPBMCs,othertranslationaltargetsnotexcluded;patientsyoung,phenotype/penetranceincomplete.",
+          "Gene-levelcausalityevidencenotindependentclinicalreclassificationorcomparativedrugbenefit."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Everypositive/negativepacketassertioncomparedwithindividualCaseReportandTableS1allrows. FinaldiseasecategorymustnoterasepriorlocalBCGitis.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "CaseReports KindredB P2;TableS1individualcolumn"
+          }
+        ],
+        "limitations": [
+          "Unreportednegativesremainunresolved; ageanddisease-stageconflictsretained.",
+          "Biochemicalcandidateevidenceisnotmeasurementofeveryclinicalphenotype."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c213dup_MCTS1_NM_014060v3",
+            "geneContext": {
+              "valueId": "HGNC:23357",
+              "symbol": "MCTS1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_014060.3:c.213dup"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000023.11:g.120606127dup"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_054779.1:p.(Arg72Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chrX",
+              "pos": 120606121,
+              "ref": "C",
+              "alt": "CT"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000134",
+              "label": "hemizygous"
+            }
+          },
+          "snapshot_sha256": "8a4f480c92bf0cbf96bbbc2d3be1f9ecab8947f4e4374770dc3dd2ab7d3e683b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Codingalleleandhemizygositymatch c.213dupT p.R72Ter.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Fig1A/B;S1;ResultsLOE"
+              }
+            ],
+            "limitations": [
+              "ENST00000371317.10vsNM_014060.3/transcriptandhg38left-rightnormalizedcoordinatesnotindependentlyproved.",
+              "S1/tablep.P72*conflictsR72*main;Fig1B/S1Bc207_208insTvs c213dupT needsrepeatnormalization."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002754",
+              "label": "Osteomyelitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "601553fa916ec757ea3b6856667098d39b3a6a3349349742b4a69311c782475c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P2case/S1notdescribeosteomyelitis; noexplicitnegativeboneassessment.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredB P2;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "Unreportednotprovenabsent."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001954",
+              "label": "Recurrent fever"
+            }
+          },
+          "snapshot_sha256": "8f782c7a6fe2a90e3135c72a00a8f76cfb2a19cfad3392bdf6bfc6f600a8e5fd",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2highfeverduringinitialBCGosisandsevererelapse2y9m; recurrenceconsistentwithnarrative.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredB P2;TableS1individualcolumn"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3da3d0fa5a0298a54d11f959b7518ea72d80ed868975d71219bbfc2a7dff80cf",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1currentorganomegalyNo;serialabdominalultrasoundsnormalorgansizesP2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredB P2;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "Currentabsence notlifetimeexclusion; sourcehaslimitedtime-specifichistory."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002240",
+              "label": "Hepatomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "92d186c16d6c93ee9a4267ef118a20b9f2b6a812767724afdf8d3794887c892d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1currentorganomegalyNo;serialabdominalultrasoundsnormalorgansizesP2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredB P2;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "Currentabsence notlifetimeexclusion; sourcehaslimitedtime-specifichistory."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020087",
+              "label": "BCGosis"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P3M"
+              }
+            }
+          },
+          "snapshot_sha256": "eeca4b0deefc6a7af4cab617455a1230e654c9ff383db23c79d7f9eda59adb5c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "DisseminatedBCGdiseaseverified bymycobacterialcultureandclinicalspread;onsetpacketisfirstlocaldisease,notnecessarilydissemination.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredB P2;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "P1firstlocal7m/dissemination14m;P3local1y/bone3y;P2local3mthenprogression."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020086",
+              "label": "BCGitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d32eaaf7889fd07d1ec023dc7b7c4d7dcdac2a1bd76f9215232c69d94eca4a50",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "PacketexcludesBCGitis,butP2CaseReportexplicitlystatesBCGitisat3months(leftgroin)beforelaterdisseminateddisease. S1finalBCGosisclassificationdoesnotnegateearlierlocalBCGitis.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredB P2;TableS1individualcolumn"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "03152f286100abc72cad1120d8999d8a2e43113a3ec457babb1c73e5930869b4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P2normalneurologicassessmentafterlearningdifficultyage5,normalS1language/academics.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredB P2;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "Noformalall-domainmilestonetable; broadnegativeinferredfromnormalfunction."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004313",
+              "label": "Decreased circulating immunoglobulin concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ec084bbd1475e548b0bf853cabdb4b0d987717a6e27e7d5b13cf8c6fad43440f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P2TableS1IgG1038/IgM67/IgA68mgdl,clinicallywell.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredB P2;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "Noage-specificreferenceprinted; numericvaluesandhealthydescriptionnotformalnegativeassayinterpretation."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/MCTS1/PMID_37875108_Patient_1.json",
+      "packet_sha256": "28ab47d960de76c97673585c8e492d80841e3ed76b871254703f32b45a7dc279",
+      "case_id": "TC_ec39b2d4477e7841",
+      "role": "selected",
+      "packet_subject_id": "Patient 1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Acceptedmanuscript maycontainunrepairedcopyeditingerrors; sourceinternalconflictsretained.",
+        "HGVSrepeatnormalization/transcriptENST00000371317.10vsNM_014060.3not independentlyremapped."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Exact P1 male/ancestry andsubject mapping verified. Packetlastencounter1y/deceased agreesS1died1y butmainResults saysdied2y;2017birth2019deathnarrative supportsapprox2y.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "CaseReports KindredA P1;TableS1individualcolumn"
+          }
+        ],
+        "limitations": [
+          "Deathageinternalconflict1vs2, notsilentlyresolved."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Hemizygous c.225_226insG p.P77AfsTer22 verified bySanger/functionalexpression inFig1/S1.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "ResultsLOE;Fig1A/B;S1"
+          }
+        ],
+        "limitations": [
+          "Genomicrepeatrepresentation/transcriptmappingunperformed."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Motherheterozygous,fatherWT,affectedboyhemizygous;testedunaffected siblingsWT;someP3sistersuntyped.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Fig1A;S1A–C"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "HemizygousmaleXallele;notcompoundheterozygousphase.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Fig1A;S1A–C"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Strongsourceevidence:5independentpLOFfamilies, adjustedcasecontrolenrichment,patientproteindeficiency/mutantLOFreporters;isogenicMCTS1andJAK2rescueofIL23response. Alleledrivesnodetectableproteinandreinitiationactivity.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "ResultsFigs1–7;S1–2"
+          }
+        ],
+        "limitations": [
+          "JAK2rescuenotperformedinpatientPBMCs,othertranslationaltargetsnotexcluded;patientsyoung,phenotype/penetranceincomplete.",
+          "Gene-levelcausalityevidencenotindependentclinicalreclassificationorcomparativedrugbenefit."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Everypositive/negativepacketassertioncomparedwithindividualCaseReportandTableS1allrows. FinaldiseasecategorymustnoterasepriorlocalBCGitis.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "CaseReports KindredA P1;TableS1individualcolumn"
+          }
+        ],
+        "limitations": [
+          "Unreportednegativesremainunresolved; ageanddisease-stageconflictsretained.",
+          "Biochemicalcandidateevidenceisnotmeasurementofeveryclinicalphenotype."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c225_226insG_MCTS1_NM_014060v3",
+            "geneContext": {
+              "valueId": "HGNC:23357",
+              "symbol": "MCTS1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_014060.3:c.225_226insG"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000023.11:g.120606142dup"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_054779.1:p.(Pro77AlafsTer22)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chrX",
+              "pos": 120606139,
+              "ref": "A",
+              "alt": "AG"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000134",
+              "label": "hemizygous"
+            }
+          },
+          "snapshot_sha256": "f872138072abba5048aa6b9b4f04fc2073a93951c533b42fe2b0e45d6d235b6e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Codingalleleandhemizygositymatch c.225_226insG p.P77AfsTer22.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Fig1A/B;S1;ResultsLOE"
+              }
+            ],
+            "limitations": [
+              "ENST00000371317.10vsNM_014060.3/transcriptandhg38left-rightnormalizedcoordinatesnotindependentlyproved."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002754",
+              "label": "Osteomyelitis"
+            }
+          },
+          "snapshot_sha256": "2751338ada24512e4e05c01057942092d60a21752a84e168c9ab81f93641edf3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Multiplebone/rib/vertebral/iliumlesionsat14m.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredA P1;TableS1individualcolumn"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001954",
+              "label": "Recurrent fever"
+            }
+          },
+          "snapshot_sha256": "8f782c7a6fe2a90e3135c72a00a8f76cfb2a19cfad3392bdf6bfc6f600a8e5fd",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1explicitrecurrentfeverage14m.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredA P1;TableS1individualcolumn"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            }
+          },
+          "snapshot_sha256": "a9dc192bb81a5d54d7ac2a389feee23da043715c9bfd9f500536aca55909c288",
+          "assessment": {
+            "status": "supported",
+            "statement": "HepatosplenomegalyconfirmedCT; splenicabscesses.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredA P1;TableS1individualcolumn"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002240",
+              "label": "Hepatomegaly"
+            }
+          },
+          "snapshot_sha256": "3e523cf76256005eb7fcbe2e2ad770bbb652476ed9fc1825dfc43d3783178b37",
+          "assessment": {
+            "status": "supported",
+            "statement": "HepatosplenomegalyconfirmedCT; splenicabscesses.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredA P1;TableS1individualcolumn"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020087",
+              "label": "BCGosis"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P7M"
+              }
+            }
+          },
+          "snapshot_sha256": "75a696e0ea6a784086ea6fdc72106126620ce9f5f410fc3d99e869c4747da9d8",
+          "assessment": {
+            "status": "qualified",
+            "statement": "DisseminatedBCGdiseaseverified bymycobacterialmetagenomicabscessandclinicalspread;onsetpacketisfirstlocaldisease,notnecessarilydissemination.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredA P1;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "P1firstlocal7m/dissemination14m;P3local1y/bone3y;P2local3mthenprogression."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020086",
+              "label": "BCGitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d32eaaf7889fd07d1ec023dc7b7c4d7dcdac2a1bd76f9215232c69d94eca4a50",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P1initiallocalaxillarydrainingnodeat7m then disseminatedBCGosis14m;source doesnotexplicitlyexcludeBCGitis.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredA P1;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "FinalBCGosisnotproofneverlocaldisease; noexplicitnegative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "03152f286100abc72cad1120d8999d8a2e43113a3ec457babb1c73e5930869b4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P1noindividualmilestonesprovided;S1developmentrowsdash.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "CaseReports KindredA P1;TableS1individualcolumn"
+              }
+            ],
+            "limitations": [
+              "NoevidencefornegativeGDDfromemptycells."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Complete170172characteracceptedmainincludingSTARmethods,Keyresourcestable/113refs,all7main+graphicalabstractpixelsread. S1/S2fulltextandpixels,all9pageTablesS1/S2/S4/S6/S7textread;TableS1all7patients/all3pagespixelsread. Other6SIfigurelegendstextreadbutfigurepixels/labelsnot;XLSXS3/S5/S8unread;KeyresourceandS12p4–9tablepixelsunread. Rawomics/blotsnotrequested/reanalysed.",
+    "ThreeassignedpacketsP1–3. P2/P3BCGitisNEGdirectlycontradictedbyexplicitlocalBCGitisbeforeBCGosis; P1BCGitisabsenceunsupported. P1death1yTableS1vs2ymain/2017birth2019deathinternalconflict;packet1yconsistenttable,notcorrectedbyassumption. P2boneabsence/P3feverabsence/P1GDDabsenceunreported. P2/P3currentorganomegalyNo supportscurrentnotlifetimeabsence.",
+    "Fiveindependentindexfamilies,6genotypedmalesincludingunexposedasymptomaticP7;P6deceasedsuspectedbutnoDNA. P7notBCGvaccinatedso doesnotestimatepenetrance. Mainallfamiliesnonconsanguineous conflictsP5CaseReportconsanguineous. P4age6vs7followupversion;lowIgs/monthlyIVIGqualifiesisolatedotherwisehealthy. P5mildhepatosplenomegaly/cirrhosisnarrativevsS1currentNoorganomegaly.",
+    "MCTS1pLOF5/422vs0/1932controlsFirthlogisticP.00013adjustedfirst5ancestryPCs. Controlsarein-housegeneticallyunexplainedotherinfections(excludingCMC) accordingmethods,notrepresentativepopulation;mainalsoincludeshealthywording. pLI.87andgnomADv2absencecontextual,notabsolutelethalityorcurrentfrequencyproof. FourpatientblastomicsincludesrelatedP5/P7,notfourindependentfamilies.",
+    "MCTS1lostproteinandDENRreduced. Mutantsfailreinitiationreporter,WTpartialrescue;samefunctionalA133_K181delconstructforP4/P5/P7deletions. P3blood<3%normalsplicingandCOS7zeroWTnotliteralzeroeverytissue. Fig1B/S1Bc207_208insT vsmainc213dupT/P2repeatnormalizationunproved;S1pP72*typo vsR72*main. P4g120610122_120614250inclusive4129vsreported4128bp;P5span5620replaced3net5617vsreported5619 requirescoordinateverification.",
+    "Mechanisticstrength:ribosomefootprints+reporter5UTRtwo-stuORFmutagenesis,patientfibroblast/TblastJAK2decrease3–5fold,MCTS1rescue,andJAK2rescueinengineeredHEKIL23cells connecttranslationtoIL23response. NoJAK2rescuepatientPBMCsasauthorsacknowledge;notexclusiveproofofallclinicalmechanism. IFNAR1/IRF8/othersaffectedtoo; IFNresponsesintacttestedcontext,notallinfectionresponse.",
+    "IL12intactinexpandedTblasts,butfreshPBMCIFNg~10foldlowerwithIL12 and23foldlowerwithIL23;Fig6AIL12differenceNS,sointact/defectivecellcontextsseparate. CryopreservationablateshealthyIL23-onlyresponseandrequiresIL1betacostimulation;preanalyticsmatter. 291responsivegenesselectedincontrols andnoneindividuallysignificantpatientdoesnotmeanzerobiologicalresponse;Fig6Cshowsattenuation. RelatedP5/P7andselectsampleavailabilitylimitindependence.",
+    "SinglecellResults7controls4patients vsMethods6controls2patients discrepancy unresolved;partlyreusespriorpublisheddata. MethodsHarmonyremovesgenotype/stimulationforclustering, pseudobulkDESeq2reported. Fullrawreanalysisnotperformed. DENRoverlapusesP<.1inbothsetsnotusual.05. MainGCGLeucodonannotationtypo (GCGalanine) andFig7captionIFNbeta vsmeasuredIFNg,Fig5FcrossreferenceG are manuscriptinconsistencies.",
+    "Gandotinibtested0.001–10uM whilecitedbiochemicalIC50JAK2.003/JAK1.0198/TYK2.044/JAK3.048uM;atmanytestedconcentrationsselectivitynotabsolute,soinhibitorcurvealonecannotisolateJAK2. GeneticJAK2rescueprovidesindependentevidence. NKexperiment6replicatesfrom2donorsnot6independentdonors. Noantimycobacterialclinicaldrugcomparison;P1dieddespiteIFNg+multipleATB,P2recoveredoncombinedtherapyuncontrolled.",
+    "TableS1CBCnormalblanketclaimhasexceptions:infectionP1WBC34.1/neut27.76/Hb8;healthyP5monocytes1.66vsupper.775andplatelets60atage3(201age4),P4mildneutrophilia/platelets437;needclinicalcontextnotallnormal. S7P4serologiesonIVIGcannotestablishnaturalinfection/vaccineprotection. TableS6TPO/MPLrowhypothyroidism appearsnomenclatureconflation;reviewtableisnotindependentclinicalevidence."
+  ]
+}

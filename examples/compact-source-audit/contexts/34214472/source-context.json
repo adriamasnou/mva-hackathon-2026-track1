@@ -1,0 +1,452 @@
+{
+  "pmid": "34214472",
+  "source_titles": [
+    "Humans with inherited T cell CD28 deficiency are susceptible to skin papillomaviruses but are otherwise healthy"
+  ],
+  "selected_case_ids": [
+    "TC_5691e41a64522c5c"
+  ],
+  "alternate_case_ids": [
+    "TC_5691e41a64522c5c"
+  ],
+  "genes": [
+    "CD28"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/CD28/PMID_34214472_patient_P1.json",
+      "sha256": "951cc9fe418649b6f1a46fea1d943474c1b37b8a54bbba419fe6c8c776c72383",
+      "case_id": "TC_5691e41a64522c5c",
+      "selected_record": true,
+      "subject": {
+        "id": "patient P1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P30Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620901",
+            "label": "Immunodeficiency 123 with HPV-related verrucosis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P8Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0031382",
+            "label": "Decreased anti-CD3/28-induced T-cell proliferation"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0031402",
+            "label": "Reduced antigen-specific T cell proliferation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032247",
+            "label": "Persistent CMV viremia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0020072",
+            "label": "Persistent EBV viremia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032163",
+            "label": "Molluscum contagiosum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002719",
+            "label": "Recurrent infections"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0500093",
+            "label": "Food allergy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0033510",
+            "label": "Cutaneous horn"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032215",
+            "label": "Disseminated cutaneous warts"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032301",
+            "label": "Genital warts"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0550004",
+            "label": "Verruca plana"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "wBvHQkH4x0NjnOx0OZ4CFnk2",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620901",
+              "label": "Immunodeficiency 123 with HPV-related verrucosis"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "patient P1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c52GtoA_CD28_NM_006139v4",
+                    "geneContext": {
+                      "valueId": "HGNC:1653",
+                      "symbol": "CD28"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_006139.4:c.52G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.203706748G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_006130.1:p.(Gly18Arg)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 203706748,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/CD28/PMID_34214472_patient_P2.json",
+      "sha256": "da400301e921e8de408f1b17efc229d7186d35bb4c60b148ac6edcd204a93f15",
+      "case_id": "TC_5691e41a64522c5c",
+      "selected_record": false,
+      "subject": {
+        "id": "patient P2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P40Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620901",
+            "label": "Immunodeficiency 123 with HPV-related verrucosis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P10Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000403",
+            "label": "Recurrent otitis media"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032247",
+            "label": "Persistent CMV viremia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0020072",
+            "label": "Persistent EBV viremia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032163",
+            "label": "Molluscum contagiosum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033510",
+            "label": "Cutaneous horn"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0032215",
+            "label": "Disseminated cutaneous warts"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032301",
+            "label": "Genital warts"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0550004",
+            "label": "Verruca plana"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "jxiMXbvpR3pb8A8FhmnorIwg",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620901",
+              "label": "Immunodeficiency 123 with HPV-related verrucosis"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "patient P2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c52GtoA_CD28_NM_006139v4",
+                    "geneContext": {
+                      "valueId": "HGNC:1653",
+                      "symbol": "CD28"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_006139.4:c.52G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.203706748G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_006130.1:p.(Gly18Arg)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 203706748,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/CD28/PMID_34214472_patient_P3.json",
+      "sha256": "5001959153b4aa092f4cbb269d3817c5cc55b2a8b087381d3437d6f4059490ed",
+      "case_id": "TC_5691e41a64522c5c",
+      "selected_record": false,
+      "subject": {
+        "id": "patient P3",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P12Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620901",
+            "label": "Immunodeficiency 123 with HPV-related verrucosis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P8Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0020072",
+            "label": "Persistent EBV viremia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032163",
+            "label": "Molluscum contagiosum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002719",
+            "label": "Recurrent infections"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0500093",
+            "label": "Food allergy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033510",
+            "label": "Cutaneous horn"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0032215",
+            "label": "Disseminated cutaneous warts"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032301",
+            "label": "Genital warts"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0550004",
+            "label": "Verruca plana"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "zahtDVaSoH9X7Zz3u9JqU9jm",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620901",
+              "label": "Immunodeficiency 123 with HPV-related verrucosis"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "patient P3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c52GtoA_CD28_NM_006139v4",
+                    "geneContext": {
+                      "valueId": "HGNC:1653",
+                      "symbol": "CD28"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_006139.4:c.52G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.203706748G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_006130.1:p.(Gly18Arg)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 203706748,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

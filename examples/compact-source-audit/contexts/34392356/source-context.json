@@ -1,0 +1,111 @@
+{
+  "pmid": "34392356",
+  "source_titles": [
+    "Whole-exome sequencing of consanguineous families with infertile men and women identifies homologous mutations in SPATA22 and MEIOB"
+  ],
+  "selected_case_ids": [
+    "TC_46e0322b4c09e850"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "MEIOB"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/MEIOB/PMID_34392356_PK_INF_602.json",
+      "sha256": "bf67aa5a286576ecc6b071d11d25785119068a96061e8ecd0a6785b2720a7b0b",
+      "case_id": "TC_46e0322b4c09e850",
+      "selected_record": true,
+      "subject": {
+        "id": "PK-INF-602",
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620686",
+            "label": "Premature ovarian failure 23"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0008222",
+            "label": "Female infertility"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "9h78yJxkVhJYyDh8psBTuai9",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620686",
+              "label": "Premature ovarian failure 23"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "PK-INF-602",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c683_1GtoA_MEIOB_NM_001163560v3",
+                    "geneContext": {
+                      "valueId": "HGNC:28569",
+                      "symbol": "MEIOB"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001163560.3:c.683-1G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000016.10:g.1853135C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001157032.1:p.?"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr16",
+                      "pos": 1853135,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

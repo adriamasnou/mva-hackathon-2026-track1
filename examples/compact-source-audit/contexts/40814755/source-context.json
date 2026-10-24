@@ -1,0 +1,903 @@
+{
+  "pmid": "40814755",
+  "source_titles": [
+    "Biallelic Variants in the DARS2 Gene as a Novel Cause of Axonal Charcot-Marie-Tooth Disease."
+  ],
+  "selected_case_ids": [
+    "TC_fec79bd2595da5be",
+    "TC_995bc3326a03b717"
+  ],
+  "alternate_case_ids": [
+    "TC_fec79bd2595da5be",
+    "TC_995bc3326a03b717"
+  ],
+  "genes": [
+    "DARS2"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/DARS2/PMID_40814755_Ind_B1.json",
+      "sha256": "0177dd1780e3230c52e7aedb953774cb6811867769fb48824c888f4e50865f61",
+      "case_id": "TC_fec79bd2595da5be",
+      "selected_record": true,
+      "subject": {
+        "id": "Ind. B1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P48Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621485",
+            "label": "Charcot-Marie-Tooth disease, axonal, type 2LL"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P10Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0033748",
+            "label": "Hypoesthesia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002197",
+            "label": "Generalized-onset seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033383",
+            "label": "Decreased compound muscle action potential amplitude"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003376",
+            "label": "Steppage gait"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003596",
+              "label": "Middle age onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001257",
+            "label": "Spasticity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0100543",
+            "label": "Cognitive impairment"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001761",
+            "label": "Pes cavus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001765",
+            "label": "Hammertoe"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0009046",
+            "label": "Difficulty running"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P10Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002460",
+            "label": "Distal muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003693",
+            "label": "Distal amyotrophy"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "d9peSf7cHT5fGeCPFnIbftv2",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621485",
+              "label": "Charcot-Marie-Tooth disease, axonal, type 2LL"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Ind. B1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c713CtoT_DARS2_NM_018122v5",
+                    "geneContext": {
+                      "valueId": "HGNC:25538",
+                      "symbol": "DARS2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_018122.5:c.713C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.173836989C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_060592.2:p.(Ser238Phe)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 173836989,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "Ind. B1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c74del_DARS2_NM_018122v5",
+                    "geneContext": {
+                      "valueId": "HGNC:25538",
+                      "symbol": "DARS2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_018122.5:c.74del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.173825303del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_060592.2:p.(Ile25ThrfsTer38)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 173825302,
+                      "ref": "AT",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/DARS2/PMID_40814755_Ind_B2.json",
+      "sha256": "0d68b0696648aac1595550368d65d0174f31b8ea34c295d63c8fc5488c7019d8",
+      "case_id": "TC_fec79bd2595da5be",
+      "selected_record": false,
+      "subject": {
+        "id": "Ind. B2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P50Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621485",
+            "label": "Charcot-Marie-Tooth disease, axonal, type 2LL"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P10Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002197",
+            "label": "Generalized-onset seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033383",
+            "label": "Decreased compound muscle action potential amplitude"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001288",
+            "label": "Gait disturbance"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P10Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001284",
+            "label": "Areflexia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001257",
+            "label": "Spasticity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001251",
+            "label": "Ataxia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002460",
+            "label": "Distal muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003693",
+            "label": "Distal amyotrophy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0025406",
+            "label": "Asthenia"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "X6kO4zGhScCqgrW6Kzd894ad",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621485",
+              "label": "Charcot-Marie-Tooth disease, axonal, type 2LL"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Ind. B2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c713CtoT_DARS2_NM_018122v5",
+                    "geneContext": {
+                      "valueId": "HGNC:25538",
+                      "symbol": "DARS2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_018122.5:c.713C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.173836989C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_060592.2:p.(Ser238Phe)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 173836989,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "Ind. B2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c74del_DARS2_NM_018122v5",
+                    "geneContext": {
+                      "valueId": "HGNC:25538",
+                      "symbol": "DARS2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_018122.5:c.74del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.173825303del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_060592.2:p.(Ile25ThrfsTer38)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 173825302,
+                      "ref": "AT",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/DARS2/PMID_40814755_Ind_A1.json",
+      "sha256": "ddb8d519a173e8d12d934e37a11fe67dccb4e703e385d51fd0266981e3eb1d2c",
+      "case_id": "TC_995bc3326a03b717",
+      "selected_record": true,
+      "subject": {
+        "id": "Ind. A1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P21Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621485",
+            "label": "Charcot-Marie-Tooth disease, axonal, type 2LL"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P7Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002151",
+            "label": "Increased circulating lactate concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002403",
+            "label": "Positive Romberg sign"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002197",
+            "label": "Generalized-onset seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0040129",
+            "label": "Abnormal nerve conduction velocity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033383",
+            "label": "Decreased compound muscle action potential amplitude"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0031629",
+            "label": "Impaired tandem gait"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034052",
+            "label": "Impaired toe-walking ability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002119",
+            "label": "Ventriculomegaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033725",
+            "label": "Thin corpus callosum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003390",
+            "label": "Sensory axonal neuropathy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007002",
+            "label": "Motor axonal neuropathy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002460",
+            "label": "Distal muscle weakness"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P9Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008944",
+            "label": "Distal lower limb amyotrophy"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P9Y"
+            }
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "T7C36dLoNOLioy64Y0fXO3LJ",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621485",
+              "label": "Charcot-Marie-Tooth disease, axonal, type 2LL"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Ind. A1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c713CtoT_DARS2_NM_018122v5",
+                    "geneContext": {
+                      "valueId": "HGNC:25538",
+                      "symbol": "DARS2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_018122.5:c.713C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.173836989C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_060592.2:p.(Ser238Phe)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 173836989,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "Ind. A1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1006CtoT_DARS2_NM_018122v5",
+                    "geneContext": {
+                      "valueId": "HGNC:25538",
+                      "symbol": "DARS2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_018122.5:c.1006C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.173839532C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_060592.2:p.(Arg336Cys)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 173839532,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/DARS2/PMID_40814755_Ind_A2.json",
+      "sha256": "6949289b9ad1cc9df63954c9f3091e7703bddace64c4cdc530c5585071d04272",
+      "case_id": "TC_995bc3326a03b717",
+      "selected_record": false,
+      "subject": {
+        "id": "Ind. A2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P19Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621485",
+            "label": "Charcot-Marie-Tooth disease, axonal, type 2LL"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P7Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002151",
+            "label": "Increased circulating lactate concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002403",
+            "label": "Positive Romberg sign"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002197",
+            "label": "Generalized-onset seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033383",
+            "label": "Decreased compound muscle action potential amplitude"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0031629",
+            "label": "Impaired tandem gait"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034052",
+            "label": "Impaired toe-walking ability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002119",
+            "label": "Ventriculomegaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033725",
+            "label": "Thin corpus callosum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003390",
+            "label": "Sensory axonal neuropathy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007002",
+            "label": "Motor axonal neuropathy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002460",
+            "label": "Distal muscle weakness"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P9Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008944",
+            "label": "Distal lower limb amyotrophy"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P9Y"
+            }
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "Bp94C9d5iDySFE5Dsn4jy986",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621485",
+              "label": "Charcot-Marie-Tooth disease, axonal, type 2LL"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Ind. A2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c713CtoT_DARS2_NM_018122v5",
+                    "geneContext": {
+                      "valueId": "HGNC:25538",
+                      "symbol": "DARS2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_018122.5:c.713C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.173836989C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_060592.2:p.(Ser238Phe)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 173836989,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "Ind. A2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1006CtoT_DARS2_NM_018122v5",
+                    "geneContext": {
+                      "valueId": "HGNC:25538",
+                      "symbol": "DARS2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_018122.5:c.1006C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.173839532C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_060592.2:p.(Arg336Cys)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 173839532,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

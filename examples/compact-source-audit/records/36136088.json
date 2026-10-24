@@ -1,0 +1,3438 @@
+{
+  "schema_version": 1,
+  "pmid": "36136088",
+  "title": "BiP inactivation due to loss of the deAMPylation function of FICD causes a motor neuron disease.",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T14:56:22.745931+00:00",
+    "method": "Entire article layout text read; per-component visual coverage separately recorded."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "524ca8f1ee3909709fe4ab9defd0088b2f0c3ec2954f12aff6c80e01df4ac8f7",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-pdf",
+      "pmid": "36136088",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36136088/retrieval-followup/20261024-reassigned-institutional-a58992b9/response.body",
+      "sha256": "33e992d7d5cb1cb0cd6756e60a84122be4242c7ac034c1169a6a93359a5b6b8c",
+      "kind": "pdf",
+      "description": "Retrieved article PDF acceptedAuthorManuscript"
+    },
+    {
+      "id": "main-text",
+      "pmid": "36136088",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36136088/retrieval-followup/20261024-reassigned-institutional-a58992b9/response.body.layout.txt",
+      "sha256": "aa204ea545d780900f0efa687a4d087732b4888112533d24eee59a9d478c4d89",
+      "kind": "text",
+      "description": "Full layout extraction read"
+    },
+    {
+      "id": "verification",
+      "pmid": "36136088",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/retrieval-followup/36136088/verification.json",
+      "sha256": "d98e62e2b2e1d64f44c52aa26558f1c5d228e0165688c55d3959fe7f40e5e80f",
+      "kind": "metadata",
+      "description": "Primary identity/version/extent receipt"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "BiP inactivation due to loss of the deAMPylation function of FICD causes a motor neuron disease.",
+    "evidence": [
+      {
+        "source_id": "main-pdf",
+        "locator": "Title/authors/DOI"
+      },
+      {
+        "source_id": "verification",
+        "locator": "PMID, title and DOI identity verification"
+      }
+    ],
+    "note": "Antwerp cover exact FICD title/DOI10.1016/j.gim.2022.08.019; title/authors repeated after cover,26-page author manuscript with full body, references and figure legends. Correctly reassigned from wrong search grouping; original mismatch retained."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 4,
+      "table": 1,
+      "supplement": 3
+    },
+    "evidence": [
+      {
+        "source_id": "main-text",
+        "locator": "Entire main article component references"
+      }
+    ],
+    "note": "MainFigures1–4, Table1; SupplementalTable1 and SupplementalFigures1–2 explicitlylisted, contents unheld."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 1220,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "All 26 physical pages"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines1–1220"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1220,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "Full extraction"
+        }
+      ],
+      "note": "Full accepted-manuscript26physicalpages read including all31references, allfigurelegends and supplementlegends. MainTable1 and figureplates are not embedded in thismanuscript."
+    },
+    {
+      "id": "figure:1",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "figure1"
+        }
+      ],
+      "coverage": [],
+      "note": "Only citation/legend in acceptedmanuscript; substantive table/figure asset unheld."
+    },
+    {
+      "id": "figure:2",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "figure2"
+        }
+      ],
+      "coverage": [],
+      "note": "Only citation/legend in acceptedmanuscript; substantive table/figure asset unheld."
+    },
+    {
+      "id": "figure:3",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "figure3"
+        }
+      ],
+      "coverage": [],
+      "note": "Only citation/legend in acceptedmanuscript; substantive table/figure asset unheld."
+    },
+    {
+      "id": "figure:4",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "figure4"
+        }
+      ],
+      "coverage": [],
+      "note": "Only citation/legend in acceptedmanuscript; substantive table/figure asset unheld."
+    },
+    {
+      "id": "table:1",
+      "kind": "table",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "table1"
+        }
+      ],
+      "coverage": [],
+      "note": "Only citation/legend in acceptedmanuscript; substantive table/figure asset unheld."
+    },
+    {
+      "id": "supplement:1",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Only citation/legend in acceptedmanuscript; substantive table/figure asset unheld."
+    },
+    {
+      "id": "supplement:2",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Only citation/legend in acceptedmanuscript; substantive table/figure asset unheld."
+    },
+    {
+      "id": "supplement:3",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Only citation/legend in acceptedmanuscript; substantive table/figure asset unheld."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/FICD/PMID_36136088_Family_1_II_1.json",
+      "packet_sha256": "c3a665ead739b614c6182aef58d8814375da279b7f84e35ec16f13106e6f1322",
+      "case_id": "TC_8225d45f49134e04",
+      "role": "selected",
+      "packet_subject_id": "Family 1, II.1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Allmainfigureplates, clinicalTable1 andsupplements unheld."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Family 1, II.1 partof fourfamily cohort; family2II2/II3 explicitlyidentified asfibroblastdonors, family3II1 cited inMRI.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinicaldescription;Cellculture;Figure1legend"
+          }
+        ],
+        "limitations": [
+          "MainTable1 and pedigreeplate absent; exactpacketage/sex andindividualclinicalcolumn notchecked."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Families1–3 homozygous NM_007076.3:c.1121G>A p.Arg374His, matchingpackettranscript/coding/protein/state.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticresults;Figure1legend"
+          }
+        ],
+        "limitations": [
+          "GRCh38chr12:108519219G>A notexplicitlyreported or independentlymapped."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Sangerconfirmation and phenotypesegregation reported; allfamilies share likelyfounderhaplotype.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticresults;Figure1legend"
+          }
+        ],
+        "limitations": [
+          "Pedigree and SupplementalTable1 haplotype notheld; individualparentgenotypes uninspected.",
+          "Sharedfounder limits geneticindependence; fourfamilies not fourindependentmutations."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Mappedfamilies1–3 homozygousArg374His, notfamily4compoundheterozygousArg374His/Gly370Glufs53.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticresults"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Functionalevidence comesfromfamily2donorfibroblasts, notthispatient. FourfamilieswithrecessiveFICDvariants and compatiblemotorphenotype support association.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results;Discussion;ACMG/AMPGuidelines"
+          }
+        ],
+        "limitations": [
+          "Authors state variants wouldqualifylikelypathogenic IF FICDwereestablisheddiseasegene; frozenPATHOGENIC isstrongerthanthisconditionalclassification.",
+          "No isogeniccorrection/rescue; no motorneuronmodel; BiPAMPylation surrogate ratherthandirectquantifiedfoldingrescue.",
+          "IncreasedAMPylation activity cannot be ruledout; claim is notexclusive isolateddeAMPylasedefect.",
+          "SingleLC3BIIlevel notautophagicflux; proteasomesubstrateactivity notproof ofimpairedERretrotranslocation.",
+          "Tunicamycin inducesBiPabundance butdoesnot rescueactivity/viability; therapeuticfoldingenhancement isproposednotmeasured."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Everymappedfeatureassessed againstavailablemain; clinicalTable1 missing so mostindividualdetailsunresolved.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinicaldescription;Table1citation"
+          }
+        ],
+        "limitations": [
+          "Thisis fullmaintextreading, notfullclinicalcomponentcoverage."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1121GtoA_FICD_NM_007076v3",
+            "geneContext": {
+              "valueId": "HGNC:18416",
+              "symbol": "FICD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_007076.3:c.1121G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000012.12:g.108519219G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_009007.2:p.(Arg374His)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr12",
+              "pos": 108519219,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "b937ed0dcf672360018f497f2a950bbc1ac886c22afcf672fa97309bfa183b2a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Families1–3 homozygous NM_007076.3:c.1121G>A p.Arg374His, matchingpackettranscript/coding/protein/state.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Geneticresults;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "GRCh38chr12:108519219G>A notexplicitlyreported or independentlymapped."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000012",
+              "label": "Urinary urgency"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d463de48edec453dee21db0954bfceb086f015f13123d8609f56d1e22d811004",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Urinary urgency absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001152",
+              "label": "Saccadic smooth pursuit interruptions"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "987319ea968af6329f43740b44776bce4324467f72077388ccc4ecf2eae9cb11",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Saccadic smooth pursuit interruptions absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000407",
+              "label": "Sensorineural hearing impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "17e465157bf67f935d000cd21d04c8478cf88d8c782a91ec7f1144a41d313e31",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Sensorineural hearing impairment absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daf75a0de3b94ed300f1a23bf5f19a8ef6ea28b30902775a2860918197810c8f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Motor delay absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010831",
+              "label": "Impaired proprioception"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f951c7c871d01c3cd6b5a81e9d96219ac1b8326ea33a01e16fadee7aed541222",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Impaired proprioception absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006937",
+              "label": "Impaired distal tactile sensation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1ffebbdabd92d25251e125fac3f46315c38cb8774bc5977c6c293cf378c6f731",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Impaired distal tactile sensation absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010829",
+              "label": "Impaired temperature sensation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "13f411df378529b6db99d9e4fcaeace19d0d66da93ce8a7a227eb085934ed4a4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Impaired temperature sensation absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003487",
+              "label": "Babinski sign"
+            }
+          },
+          "snapshot_sha256": "c5b1967746b255a6678fc6b904c838af6bc4a20a876004b69eb77d516fb7655d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Babinski sign presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002313",
+              "label": "Spastic paraparesis"
+            }
+          },
+          "snapshot_sha256": "d7b40c9f6d7b9bab15de8e4225087bce0b02890625e1687cad498acf0b8b5e74",
+          "assessment": {
+            "status": "supported",
+            "statement": "Allfivepatients explicitly have lowerlimbpredominantspasticparaparesis.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006986",
+              "label": "Upper limb spasticity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5396daae010de363ad59bc2db1d8746f6d01fd9b9863560d077d94d68936127e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Upper limb spasticity absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002345",
+              "label": "Action tremor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6f686daa4511a4f0fdd6b9f712d3c0695300a48b66c0c5bbf15c4fa19a80cef9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Action tremor absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002346",
+              "label": "Head tremor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "950eb0bc365ef6481b41239ea4fd4fb4515e6e40bec244b115f248dc869be39a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Head tremor absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001251",
+              "label": "Ataxia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "88b760646e8545ddd7b5ae43b5eb89037456dff8dfa5f87cf23a7b2b94f3a2bc",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Ataxia absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000716",
+              "label": "Depression"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a5b33c62103b2f169581fb2f265fc5ee1e981552553ab2d9bf7e64ec80d6fde1",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Depression absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100543",
+              "label": "Cognitive impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1fba7c21b651879f2518b72769ed2d72dd0dbe119584098051f13041ec184372",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Cognitive impairment absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002395",
+              "label": "Lower limb hyperreflexia"
+            }
+          },
+          "snapshot_sha256": "80667ed3cd43e95e09e9682ca9dd216d721edc88922cc1041cdc00f9803c325d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Lower limb hyperreflexia presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007350",
+              "label": "Upper limb hyperreflexia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fde9cf812aa3cf9158ad50efb475ee1b1fec08aa9438dc7f4c0f84558044cf0d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Upper limb hyperreflexia absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002505",
+              "label": "Loss of ambulation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c8dfae52863edc5653724455d2a4bf372e5d01f9558055ae76a1b9a6f5b67e7c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Loss of ambulation absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002317",
+              "label": "Unsteady gait"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d00d81ce3cc518e16e19a92c9b0ebc8c2638cb68d6046c40706297297d3ebd49",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Unsteady gait absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030051",
+              "label": "Tip-toe gait"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "749e0e5bd945eddb12574fd942ca0ce31d56f932f7eae1c6447949ed4099f6dd",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Tip-toe gait absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009830",
+              "label": "Peripheral neuropathy"
+            }
+          },
+          "snapshot_sha256": "3ea3b1a76c40eaf70697800f6d598658f058322b7fafbabb9293d2e7e22a6fb2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Mildmostlymotorperipheralneuropathy inallfourtestedindividuals reported.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Table1neededto identifywhichofthefiveindividuals lackedtesting."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025406",
+              "label": "Asthenia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "afcfde257a531037ecde03f10f03e65ba9b41d4188d33655937949b28cf2a421",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Asthenia absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003484",
+              "label": "Upper limb muscle weakness"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "320388906728a2f3a3e9979896e881a6051331abee3837a350f4d3fa1de383d9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Upper limb muscle weakness absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007340",
+              "label": "Lower limb muscle weakness"
+            }
+          },
+          "snapshot_sha256": "c7ed9d26b229738c33f65dcad77ae587423c115138ff14dcf597a8df4e2d5c9b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Allfivepatients explicitly have lowerlimbpredominantspasticparaparesis.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002359",
+              "label": "Frequent falls"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "85ba29e5b6e77066d31df425ae2560f54575b1fe914e64f70e08e104a27dddfa",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Frequent falls absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003693",
+              "label": "Distal amyotrophy"
+            }
+          },
+          "snapshot_sha256": "02882e57a3181f55b93f5114f9bed0aacb2487dd9798876313f047e85a87d3b5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Distal amyotrophy presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FICD/PMID_36136088_Family_2_II_2.json",
+      "packet_sha256": "781055d7265d5e059967327b9c574dacf3e9c9570ce42d36977ca57bf6ded612",
+      "case_id": "TC_8225d45f49134e04",
+      "role": "alternate",
+      "packet_subject_id": "Family 2, II.2",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Allmainfigureplates, clinicalTable1 andsupplements unheld."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Family 2, II.2 partof fourfamily cohort; family2II2/II3 explicitlyidentified asfibroblastdonors, family3II1 cited inMRI.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinicaldescription;Cellculture;Figure1legend"
+          }
+        ],
+        "limitations": [
+          "MainTable1 and pedigreeplate absent; exactpacketage/sex andindividualclinicalcolumn notchecked."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Families1–3 homozygous NM_007076.3:c.1121G>A p.Arg374His, matchingpackettranscript/coding/protein/state.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticresults;Figure1legend"
+          }
+        ],
+        "limitations": [
+          "GRCh38chr12:108519219G>A notexplicitlyreported or independentlymapped."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Sangerconfirmation and phenotypesegregation reported; allfamilies share likelyfounderhaplotype.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticresults;Figure1legend"
+          }
+        ],
+        "limitations": [
+          "Pedigree and SupplementalTable1 haplotype notheld; individualparentgenotypes uninspected.",
+          "Sharedfounder limits geneticindependence; fourfamilies not fourindependentmutations."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Mappedfamilies1–3 homozygousArg374His, notfamily4compoundheterozygousArg374His/Gly370Glufs53.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticresults"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Directfibroblastdonor fromfamily2: highAMPylatedBiP, persistenceafter5h tunicamycin andincreased4daystresssusceptibility. FourfamilieswithrecessiveFICDvariants and compatiblemotorphenotype support association.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results;Discussion;ACMG/AMPGuidelines"
+          }
+        ],
+        "limitations": [
+          "Authors state variants wouldqualifylikelypathogenic IF FICDwereestablisheddiseasegene; frozenPATHOGENIC isstrongerthanthisconditionalclassification.",
+          "No isogeniccorrection/rescue; no motorneuronmodel; BiPAMPylation surrogate ratherthandirectquantifiedfoldingrescue.",
+          "IncreasedAMPylation activity cannot be ruledout; claim is notexclusive isolateddeAMPylasedefect.",
+          "SingleLC3BIIlevel notautophagicflux; proteasomesubstrateactivity notproof ofimpairedERretrotranslocation.",
+          "Tunicamycin inducesBiPabundance butdoesnot rescueactivity/viability; therapeuticfoldingenhancement isproposednotmeasured."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Everymappedfeatureassessed againstavailablemain; clinicalTable1 missing so mostindividualdetailsunresolved.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinicaldescription;Table1citation"
+          }
+        ],
+        "limitations": [
+          "Thisis fullmaintextreading, notfullclinicalcomponentcoverage."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1121GtoA_FICD_NM_007076v3",
+            "geneContext": {
+              "valueId": "HGNC:18416",
+              "symbol": "FICD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_007076.3:c.1121G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000012.12:g.108519219G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_009007.2:p.(Arg374His)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr12",
+              "pos": 108519219,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "b937ed0dcf672360018f497f2a950bbc1ac886c22afcf672fa97309bfa183b2a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Families1–3 homozygous NM_007076.3:c.1121G>A p.Arg374His, matchingpackettranscript/coding/protein/state.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Geneticresults;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "GRCh38chr12:108519219G>A notexplicitlyreported or independentlymapped."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000012",
+              "label": "Urinary urgency"
+            }
+          },
+          "snapshot_sha256": "e11e759726a976913faa0d5e94582a1362b8e6c05f7f73c9b278c32e28fefb07",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Urinary urgency presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001152",
+              "label": "Saccadic smooth pursuit interruptions"
+            }
+          },
+          "snapshot_sha256": "67aed04d4e7b9c471f14d502a7b1a5bf96da36ad321f2bec65e8de029052d9df",
+          "assessment": {
+            "status": "supported",
+            "statement": "Family2bothlongdurationindividuals reportedcerebellar/pyramidalinvolvement: Saccadic smooth pursuit interruptions.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000407",
+              "label": "Sensorineural hearing impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "17e465157bf67f935d000cd21d04c8478cf88d8c782a91ec7f1144a41d313e31",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Sensorineural hearing impairment absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daf75a0de3b94ed300f1a23bf5f19a8ef6ea28b30902775a2860918197810c8f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Motor delay absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006886",
+              "label": "Impaired distal vibration sensation"
+            }
+          },
+          "snapshot_sha256": "79920fe02207408c86424a4b8f3c7c7a9c6162511413991d15067125e9f80943",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Impaired distal vibration sensation presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006937",
+              "label": "Impaired distal tactile sensation"
+            }
+          },
+          "snapshot_sha256": "80a08d577080b5e1c82af5b2a7b3552737a3a68249730efe35025e752b2da264",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Impaired distal tactile sensation presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010829",
+              "label": "Impaired temperature sensation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "13f411df378529b6db99d9e4fcaeace19d0d66da93ce8a7a227eb085934ed4a4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Impaired temperature sensation absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003487",
+              "label": "Babinski sign"
+            }
+          },
+          "snapshot_sha256": "c5b1967746b255a6678fc6b904c838af6bc4a20a876004b69eb77d516fb7655d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Babinski sign presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002313",
+              "label": "Spastic paraparesis"
+            }
+          },
+          "snapshot_sha256": "d7b40c9f6d7b9bab15de8e4225087bce0b02890625e1687cad498acf0b8b5e74",
+          "assessment": {
+            "status": "supported",
+            "statement": "Allfivepatients explicitly have lowerlimbpredominantspasticparaparesis.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006986",
+              "label": "Upper limb spasticity"
+            }
+          },
+          "snapshot_sha256": "e2e58ef62d13801a4754818e4369a27c218e963770fb24b8bc26c2cf2532cfca",
+          "assessment": {
+            "status": "supported",
+            "statement": "Family2bothlongdurationindividuals reportedcerebellar/pyramidalinvolvement: Upper limb spasticity.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002345",
+              "label": "Action tremor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6f686daa4511a4f0fdd6b9f712d3c0695300a48b66c0c5bbf15c4fa19a80cef9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Action tremor absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002346",
+              "label": "Head tremor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "950eb0bc365ef6481b41239ea4fd4fb4515e6e40bec244b115f248dc869be39a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Head tremor absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001251",
+              "label": "Ataxia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "88b760646e8545ddd7b5ae43b5eb89037456dff8dfa5f87cf23a7b2b94f3a2bc",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludesataxia; mainClinicaldescription explicitlystates saccadicpursuit andlimbataxia documented forbothaffectedindividualsoffamily2.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "MissingTable1couldcontain a conflictingindividualclassification; flag text-versuspacketconflict withoutsilentlyresolvingit."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000716",
+              "label": "Depression"
+            }
+          },
+          "snapshot_sha256": "770085e024612c8607cd97e9744cf46fa8ef995ef95a2bedc9995c0c7df0bd3e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Depression presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100543",
+              "label": "Cognitive impairment"
+            }
+          },
+          "snapshot_sha256": "00c999e2c1da8227b620eaab36394882a6dad2b2efd4e69ef223ef514575a6bf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Cognitive impairment presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002395",
+              "label": "Lower limb hyperreflexia"
+            }
+          },
+          "snapshot_sha256": "80667ed3cd43e95e09e9682ca9dd216d721edc88922cc1041cdc00f9803c325d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Lower limb hyperreflexia presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007350",
+              "label": "Upper limb hyperreflexia"
+            }
+          },
+          "snapshot_sha256": "1fb2275a6faab7c8904eec3458f2a819db35641b5661ff09907c369190f4d38f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Upper limb hyperreflexia presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002505",
+              "label": "Loss of ambulation"
+            }
+          },
+          "snapshot_sha256": "d74a1246707ab008b04833718f90c5b2d5b16e1b2c6cd93e331a406d4752ef36",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Loss of ambulation presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002317",
+              "label": "Unsteady gait"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d00d81ce3cc518e16e19a92c9b0ebc8c2638cb68d6046c40706297297d3ebd49",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Unsteady gait absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030051",
+              "label": "Tip-toe gait"
+            }
+          },
+          "snapshot_sha256": "d0f2e651d48d723434f2f508d7acb2fcaab38245fae4b753bbb2b07423c25b2d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Tip-toe gait presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009830",
+              "label": "Peripheral neuropathy"
+            }
+          },
+          "snapshot_sha256": "3ea3b1a76c40eaf70697800f6d598658f058322b7fafbabb9293d2e7e22a6fb2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Mildmostlymotorperipheralneuropathy inallfourtestedindividuals reported.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Table1neededto identifywhichofthefiveindividuals lackedtesting."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025406",
+              "label": "Asthenia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "afcfde257a531037ecde03f10f03e65ba9b41d4188d33655937949b28cf2a421",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Asthenia absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003484",
+              "label": "Upper limb muscle weakness"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "320388906728a2f3a3e9979896e881a6051331abee3837a350f4d3fa1de383d9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Upper limb muscle weakness absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007340",
+              "label": "Lower limb muscle weakness"
+            }
+          },
+          "snapshot_sha256": "c7ed9d26b229738c33f65dcad77ae587423c115138ff14dcf597a8df4e2d5c9b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Allfivepatients explicitly have lowerlimbpredominantspasticparaparesis.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002359",
+              "label": "Frequent falls"
+            }
+          },
+          "snapshot_sha256": "e95bd01815dfd0d0f6ac067619656e5a0942ea01ef27fa1170fa169e50f97df1",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Frequent falls presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003693",
+              "label": "Distal amyotrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9236f1f7d1b7d71c129e80a98e011287a592b900bab127981d5c9c27bcdae169",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Distal amyotrophy absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FICD/PMID_36136088_Family_2_II_3.json",
+      "packet_sha256": "0b2ba5dd9e242ed28b800679a6e8200b93d8753928b2ce29963ff80949c9982e",
+      "case_id": "TC_8225d45f49134e04",
+      "role": "alternate",
+      "packet_subject_id": "Family 2, II.3",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Allmainfigureplates, clinicalTable1 andsupplements unheld."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Family 2, II.3 partof fourfamily cohort; family2II2/II3 explicitlyidentified asfibroblastdonors, family3II1 cited inMRI.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinicaldescription;Cellculture;Figure1legend"
+          }
+        ],
+        "limitations": [
+          "MainTable1 and pedigreeplate absent; exactpacketage/sex andindividualclinicalcolumn notchecked."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Families1–3 homozygous NM_007076.3:c.1121G>A p.Arg374His, matchingpackettranscript/coding/protein/state.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticresults;Figure1legend"
+          }
+        ],
+        "limitations": [
+          "GRCh38chr12:108519219G>A notexplicitlyreported or independentlymapped."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Sangerconfirmation and phenotypesegregation reported; allfamilies share likelyfounderhaplotype.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticresults;Figure1legend"
+          }
+        ],
+        "limitations": [
+          "Pedigree and SupplementalTable1 haplotype notheld; individualparentgenotypes uninspected.",
+          "Sharedfounder limits geneticindependence; fourfamilies not fourindependentmutations."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Mappedfamilies1–3 homozygousArg374His, notfamily4compoundheterozygousArg374His/Gly370Glufs53.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticresults"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Directfibroblastdonor fromfamily2: highAMPylatedBiP, persistenceafter5h tunicamycin andincreased4daystresssusceptibility. FourfamilieswithrecessiveFICDvariants and compatiblemotorphenotype support association.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results;Discussion;ACMG/AMPGuidelines"
+          }
+        ],
+        "limitations": [
+          "Authors state variants wouldqualifylikelypathogenic IF FICDwereestablisheddiseasegene; frozenPATHOGENIC isstrongerthanthisconditionalclassification.",
+          "No isogeniccorrection/rescue; no motorneuronmodel; BiPAMPylation surrogate ratherthandirectquantifiedfoldingrescue.",
+          "IncreasedAMPylation activity cannot be ruledout; claim is notexclusive isolateddeAMPylasedefect.",
+          "SingleLC3BIIlevel notautophagicflux; proteasomesubstrateactivity notproof ofimpairedERretrotranslocation.",
+          "Tunicamycin inducesBiPabundance butdoesnot rescueactivity/viability; therapeuticfoldingenhancement isproposednotmeasured."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Everymappedfeatureassessed againstavailablemain; clinicalTable1 missing so mostindividualdetailsunresolved.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinicaldescription;Table1citation"
+          }
+        ],
+        "limitations": [
+          "Thisis fullmaintextreading, notfullclinicalcomponentcoverage."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1121GtoA_FICD_NM_007076v3",
+            "geneContext": {
+              "valueId": "HGNC:18416",
+              "symbol": "FICD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_007076.3:c.1121G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000012.12:g.108519219G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_009007.2:p.(Arg374His)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr12",
+              "pos": 108519219,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "b937ed0dcf672360018f497f2a950bbc1ac886c22afcf672fa97309bfa183b2a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Families1–3 homozygous NM_007076.3:c.1121G>A p.Arg374His, matchingpackettranscript/coding/protein/state.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Geneticresults;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "GRCh38chr12:108519219G>A notexplicitlyreported or independentlymapped."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000012",
+              "label": "Urinary urgency"
+            }
+          },
+          "snapshot_sha256": "e11e759726a976913faa0d5e94582a1362b8e6c05f7f73c9b278c32e28fefb07",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Urinary urgency presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001152",
+              "label": "Saccadic smooth pursuit interruptions"
+            }
+          },
+          "snapshot_sha256": "67aed04d4e7b9c471f14d502a7b1a5bf96da36ad321f2bec65e8de029052d9df",
+          "assessment": {
+            "status": "supported",
+            "statement": "Family2bothlongdurationindividuals reportedcerebellar/pyramidalinvolvement: Saccadic smooth pursuit interruptions.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000407",
+              "label": "Sensorineural hearing impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "17e465157bf67f935d000cd21d04c8478cf88d8c782a91ec7f1144a41d313e31",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Sensorineural hearing impairment absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daf75a0de3b94ed300f1a23bf5f19a8ef6ea28b30902775a2860918197810c8f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Motor delay absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006886",
+              "label": "Impaired distal vibration sensation"
+            }
+          },
+          "snapshot_sha256": "79920fe02207408c86424a4b8f3c7c7a9c6162511413991d15067125e9f80943",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Impaired distal vibration sensation presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006937",
+              "label": "Impaired distal tactile sensation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1ffebbdabd92d25251e125fac3f46315c38cb8774bc5977c6c293cf378c6f731",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Impaired distal tactile sensation absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010829",
+              "label": "Impaired temperature sensation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "13f411df378529b6db99d9e4fcaeace19d0d66da93ce8a7a227eb085934ed4a4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Impaired temperature sensation absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003487",
+              "label": "Babinski sign"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f33b46135fb138a92731444e0463b72e6e667b3f6cdd59e329924f10d83618bb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Babinski sign absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002313",
+              "label": "Spastic paraparesis"
+            }
+          },
+          "snapshot_sha256": "d7b40c9f6d7b9bab15de8e4225087bce0b02890625e1687cad498acf0b8b5e74",
+          "assessment": {
+            "status": "supported",
+            "statement": "Allfivepatients explicitly have lowerlimbpredominantspasticparaparesis.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006986",
+              "label": "Upper limb spasticity"
+            }
+          },
+          "snapshot_sha256": "e2e58ef62d13801a4754818e4369a27c218e963770fb24b8bc26c2cf2532cfca",
+          "assessment": {
+            "status": "supported",
+            "statement": "Family2bothlongdurationindividuals reportedcerebellar/pyramidalinvolvement: Upper limb spasticity.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002174",
+              "label": "Postural tremor"
+            }
+          },
+          "snapshot_sha256": "ee90e45ee27b78538db93a53402f7f90060050f36a7a009d9a0a481f2d2552b6",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Family2II3 upperlimbtremor waspresentingsymptom andmostimpairing; cerebellarlimbataxiadescribed forbothfamily2individuals.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Exacttremorsubtype/headdistribution requiresmissingTable1; broadtremor cannotestablishallsubtypes."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002080",
+              "label": "Intention tremor"
+            }
+          },
+          "snapshot_sha256": "9356cf9de8021b87abc77154ed751fa56a6e18baf004c23c895a4ae9cfb520b6",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Family2II3 upperlimbtremor waspresentingsymptom andmostimpairing; cerebellarlimbataxiadescribed forbothfamily2individuals.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Exacttremorsubtype/headdistribution requiresmissingTable1; broadtremor cannotestablishallsubtypes."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002346",
+              "label": "Head tremor"
+            }
+          },
+          "snapshot_sha256": "bf1cc4f816b5a741948b7d8e25f5b5f54bb59d628be80f10a39af0b2229f75b4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Family2II3 upperlimbtremor waspresentingsymptom andmostimpairing; cerebellarlimbataxiadescribed forbothfamily2individuals.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Exacttremorsubtype/headdistribution requiresmissingTable1; broadtremor cannotestablishallsubtypes."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002066",
+              "label": "Gait ataxia"
+            }
+          },
+          "snapshot_sha256": "37792628332a5e436bc0a6bc09b9d2d9ed163ad679cc1ee489412b4db873b02b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Gait ataxia presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002070",
+              "label": "Limb ataxia"
+            }
+          },
+          "snapshot_sha256": "742e17dc8c3e2cc28f63ce10fb28fd350b3d4c8065fe4735e77264a4583f6626",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Family2II3 upperlimbtremor waspresentingsymptom andmostimpairing; cerebellarlimbataxiadescribed forbothfamily2individuals.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "MissingTable1preventsindividualseveritycheck."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000716",
+              "label": "Depression"
+            }
+          },
+          "snapshot_sha256": "770085e024612c8607cd97e9744cf46fa8ef995ef95a2bedc9995c0c7df0bd3e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Depression presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100543",
+              "label": "Cognitive impairment"
+            }
+          },
+          "snapshot_sha256": "00c999e2c1da8227b620eaab36394882a6dad2b2efd4e69ef223ef514575a6bf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Cognitive impairment presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002395",
+              "label": "Lower limb hyperreflexia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f4ff1f2972223982538d37820a3b2cce91297d53c8cde7ca967951fed430627c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Lower limb hyperreflexia absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007350",
+              "label": "Upper limb hyperreflexia"
+            }
+          },
+          "snapshot_sha256": "1fb2275a6faab7c8904eec3458f2a819db35641b5661ff09907c369190f4d38f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Upper limb hyperreflexia presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002505",
+              "label": "Loss of ambulation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c8dfae52863edc5653724455d2a4bf372e5d01f9558055ae76a1b9a6f5b67e7c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Loss of ambulation absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002317",
+              "label": "Unsteady gait"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d00d81ce3cc518e16e19a92c9b0ebc8c2638cb68d6046c40706297297d3ebd49",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Unsteady gait absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030051",
+              "label": "Tip-toe gait"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "749e0e5bd945eddb12574fd942ca0ce31d56f932f7eae1c6447949ed4099f6dd",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Tip-toe gait absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009830",
+              "label": "Peripheral neuropathy"
+            }
+          },
+          "snapshot_sha256": "3ea3b1a76c40eaf70697800f6d598658f058322b7fafbabb9293d2e7e22a6fb2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Mildmostlymotorperipheralneuropathy inallfourtestedindividuals reported.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Table1neededto identifywhichofthefiveindividuals lackedtesting."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025406",
+              "label": "Asthenia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "afcfde257a531037ecde03f10f03e65ba9b41d4188d33655937949b28cf2a421",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Asthenia absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003484",
+              "label": "Upper limb muscle weakness"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "320388906728a2f3a3e9979896e881a6051331abee3837a350f4d3fa1de383d9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Upper limb muscle weakness absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007340",
+              "label": "Lower limb muscle weakness"
+            }
+          },
+          "snapshot_sha256": "c7ed9d26b229738c33f65dcad77ae587423c115138ff14dcf597a8df4e2d5c9b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Allfivepatients explicitly have lowerlimbpredominantspasticparaparesis.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002359",
+              "label": "Frequent falls"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "85ba29e5b6e77066d31df425ae2560f54575b1fe914e64f70e08e104a27dddfa",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Frequent falls absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003693",
+              "label": "Distal amyotrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9236f1f7d1b7d71c129e80a98e011287a592b900bab127981d5c9c27bcdae169",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Distal amyotrophy absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FICD/PMID_36136088_Family_3_II_1.json",
+      "packet_sha256": "93dc1c48714d44b87312c91e439a76262652abd02f9e10b644907e19066f63b7",
+      "case_id": "TC_8225d45f49134e04",
+      "role": "alternate",
+      "packet_subject_id": "Family 3, II.1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Allmainfigureplates, clinicalTable1 andsupplements unheld."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Family 3, II.1 partof fourfamily cohort; family2II2/II3 explicitlyidentified asfibroblastdonors, family3II1 cited inMRI.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinicaldescription;Cellculture;Figure1legend"
+          }
+        ],
+        "limitations": [
+          "MainTable1 and pedigreeplate absent; exactpacketage/sex andindividualclinicalcolumn notchecked."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Families1–3 homozygous NM_007076.3:c.1121G>A p.Arg374His, matchingpackettranscript/coding/protein/state.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticresults;Figure1legend"
+          }
+        ],
+        "limitations": [
+          "GRCh38chr12:108519219G>A notexplicitlyreported or independentlymapped."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Sangerconfirmation and phenotypesegregation reported; allfamilies share likelyfounderhaplotype.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticresults;Figure1legend"
+          }
+        ],
+        "limitations": [
+          "Pedigree and SupplementalTable1 haplotype notheld; individualparentgenotypes uninspected.",
+          "Sharedfounder limits geneticindependence; fourfamilies not fourindependentmutations."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Mappedfamilies1–3 homozygousArg374His, notfamily4compoundheterozygousArg374His/Gly370Glufs53.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Geneticresults"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Functionalevidence comesfromfamily2donorfibroblasts, notthispatient. FourfamilieswithrecessiveFICDvariants and compatiblemotorphenotype support association.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results;Discussion;ACMG/AMPGuidelines"
+          }
+        ],
+        "limitations": [
+          "Authors state variants wouldqualifylikelypathogenic IF FICDwereestablisheddiseasegene; frozenPATHOGENIC isstrongerthanthisconditionalclassification.",
+          "No isogeniccorrection/rescue; no motorneuronmodel; BiPAMPylation surrogate ratherthandirectquantifiedfoldingrescue.",
+          "IncreasedAMPylation activity cannot be ruledout; claim is notexclusive isolateddeAMPylasedefect.",
+          "SingleLC3BIIlevel notautophagicflux; proteasomesubstrateactivity notproof ofimpairedERretrotranslocation.",
+          "Tunicamycin inducesBiPabundance butdoesnot rescueactivity/viability; therapeuticfoldingenhancement isproposednotmeasured."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Everymappedfeatureassessed againstavailablemain; clinicalTable1 missing so mostindividualdetailsunresolved.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinicaldescription;Table1citation"
+          }
+        ],
+        "limitations": [
+          "Thisis fullmaintextreading, notfullclinicalcomponentcoverage."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1121GtoA_FICD_NM_007076v3",
+            "geneContext": {
+              "valueId": "HGNC:18416",
+              "symbol": "FICD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_007076.3:c.1121G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000012.12:g.108519219G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_009007.2:p.(Arg374His)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr12",
+              "pos": 108519219,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "b937ed0dcf672360018f497f2a950bbc1ac886c22afcf672fa97309bfa183b2a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Families1–3 homozygous NM_007076.3:c.1121G>A p.Arg374His, matchingpackettranscript/coding/protein/state.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Geneticresults;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "GRCh38chr12:108519219G>A notexplicitlyreported or independentlymapped."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000012",
+              "label": "Urinary urgency"
+            }
+          },
+          "snapshot_sha256": "e11e759726a976913faa0d5e94582a1362b8e6c05f7f73c9b278c32e28fefb07",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Urinary urgency presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001152",
+              "label": "Saccadic smooth pursuit interruptions"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "987319ea968af6329f43740b44776bce4324467f72077388ccc4ecf2eae9cb11",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Saccadic smooth pursuit interruptions absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000649",
+              "label": "Abnormality of visual evoked potentials"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5e393f5359d786616c3624dd8bb2c054ddf13ab0cde645b68a58865b49bd1d9a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Abnormality of visual evoked potentials absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000407",
+              "label": "Sensorineural hearing impairment"
+            }
+          },
+          "snapshot_sha256": "e526bf81dbd29888a1e98284d7b7b17d36cdfc9d927075ecb0fe3a502b52c150",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Sensorineural hearing impairment presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daf75a0de3b94ed300f1a23bf5f19a8ef6ea28b30902775a2860918197810c8f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Motor delay absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006886",
+              "label": "Impaired distal vibration sensation"
+            }
+          },
+          "snapshot_sha256": "79920fe02207408c86424a4b8f3c7c7a9c6162511413991d15067125e9f80943",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Impaired distal vibration sensation presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006937",
+              "label": "Impaired distal tactile sensation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1ffebbdabd92d25251e125fac3f46315c38cb8774bc5977c6c293cf378c6f731",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Impaired distal tactile sensation absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010829",
+              "label": "Impaired temperature sensation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "13f411df378529b6db99d9e4fcaeace19d0d66da93ce8a7a227eb085934ed4a4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Impaired temperature sensation absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003487",
+              "label": "Babinski sign"
+            }
+          },
+          "snapshot_sha256": "c5b1967746b255a6678fc6b904c838af6bc4a20a876004b69eb77d516fb7655d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Babinski sign presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002313",
+              "label": "Spastic paraparesis"
+            }
+          },
+          "snapshot_sha256": "d7b40c9f6d7b9bab15de8e4225087bce0b02890625e1687cad498acf0b8b5e74",
+          "assessment": {
+            "status": "supported",
+            "statement": "Allfivepatients explicitly have lowerlimbpredominantspasticparaparesis.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006986",
+              "label": "Upper limb spasticity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5396daae010de363ad59bc2db1d8746f6d01fd9b9863560d077d94d68936127e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Upper limb spasticity absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002345",
+              "label": "Action tremor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6f686daa4511a4f0fdd6b9f712d3c0695300a48b66c0c5bbf15c4fa19a80cef9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Action tremor absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002346",
+              "label": "Head tremor"
+            }
+          },
+          "snapshot_sha256": "bf1cc4f816b5a741948b7d8e25f5b5f54bb59d628be80f10a39af0b2229f75b4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Head tremor presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001251",
+              "label": "Ataxia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "88b760646e8545ddd7b5ae43b5eb89037456dff8dfa5f87cf23a7b2b94f3a2bc",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Ataxia absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000716",
+              "label": "Depression"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a5b33c62103b2f169581fb2f265fc5ee1e981552553ab2d9bf7e64ec80d6fde1",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Depression absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002354",
+              "label": "Memory impairment"
+            }
+          },
+          "snapshot_sha256": "61edb995b2530736dc47dd5db3d4cca4f810f9eb3b4b241e8ae9a4d186345e9e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Memory impairment presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002395",
+              "label": "Lower limb hyperreflexia"
+            }
+          },
+          "snapshot_sha256": "80667ed3cd43e95e09e9682ca9dd216d721edc88922cc1041cdc00f9803c325d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Lower limb hyperreflexia presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007350",
+              "label": "Upper limb hyperreflexia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fde9cf812aa3cf9158ad50efb475ee1b1fec08aa9438dc7f4c0f84558044cf0d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Upper limb hyperreflexia absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002505",
+              "label": "Loss of ambulation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c8dfae52863edc5653724455d2a4bf372e5d01f9558055ae76a1b9a6f5b67e7c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Loss of ambulation absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002317",
+              "label": "Unsteady gait"
+            }
+          },
+          "snapshot_sha256": "753bae04c8acb2cd14051f8bbdb5b3114cdd9575efde9f1278de2827a2e62f82",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Unsteady gait presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030051",
+              "label": "Tip-toe gait"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "749e0e5bd945eddb12574fd942ca0ce31d56f932f7eae1c6447949ed4099f6dd",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Tip-toe gait absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009830",
+              "label": "Peripheral neuropathy"
+            }
+          },
+          "snapshot_sha256": "3ea3b1a76c40eaf70697800f6d598658f058322b7fafbabb9293d2e7e22a6fb2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Mildmostlymotorperipheralneuropathy inallfourtestedindividuals reported.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Table1neededto identifywhichofthefiveindividuals lackedtesting."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025406",
+              "label": "Asthenia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "afcfde257a531037ecde03f10f03e65ba9b41d4188d33655937949b28cf2a421",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Asthenia absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003484",
+              "label": "Upper limb muscle weakness"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "320388906728a2f3a3e9979896e881a6051331abee3837a350f4d3fa1de383d9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Upper limb muscle weakness absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007340",
+              "label": "Lower limb muscle weakness"
+            }
+          },
+          "snapshot_sha256": "c7ed9d26b229738c33f65dcad77ae587423c115138ff14dcf597a8df4e2d5c9b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Allfivepatients explicitly have lowerlimbpredominantspasticparaparesis.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002359",
+              "label": "Frequent falls"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "85ba29e5b6e77066d31df425ae2560f54575b1fe914e64f70e08e104a27dddfa",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Frequent falls absence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003693",
+              "label": "Distal amyotrophy"
+            }
+          },
+          "snapshot_sha256": "02882e57a3181f55b93f5114f9bed0aacb2487dd9798876313f047e85a87d3b5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Distal amyotrophy presence cannotbeassigned tothisindividual fromaggregatenarrativewithoutclinicalTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Clinicaldescription"
+              }
+            ],
+            "limitations": [
+              "Aggregatecounts andabsenceofmention do notestablishindividualstatus."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "figure:1",
+      "status": "open",
+      "detail": "Acceptedmanuscript holds legend/reference only; substantive component notavailable inheldcopy.",
+      "evidence": [
+        {
+          "source_id": "main-text",
+          "locator": "Table1 citations; Figurelegends and SupplementalMaterial"
+        }
+      ]
+    },
+    {
+      "component_id": "figure:2",
+      "status": "open",
+      "detail": "Acceptedmanuscript holds legend/reference only; substantive component notavailable inheldcopy.",
+      "evidence": [
+        {
+          "source_id": "main-text",
+          "locator": "Table1 citations; Figurelegends and SupplementalMaterial"
+        }
+      ]
+    },
+    {
+      "component_id": "figure:3",
+      "status": "open",
+      "detail": "Acceptedmanuscript holds legend/reference only; substantive component notavailable inheldcopy.",
+      "evidence": [
+        {
+          "source_id": "main-text",
+          "locator": "Table1 citations; Figurelegends and SupplementalMaterial"
+        }
+      ]
+    },
+    {
+      "component_id": "figure:4",
+      "status": "open",
+      "detail": "Acceptedmanuscript holds legend/reference only; substantive component notavailable inheldcopy.",
+      "evidence": [
+        {
+          "source_id": "main-text",
+          "locator": "Table1 citations; Figurelegends and SupplementalMaterial"
+        }
+      ]
+    },
+    {
+      "component_id": "table:1",
+      "status": "open",
+      "detail": "Acceptedmanuscript holds legend/reference only; substantive component notavailable inheldcopy.",
+      "evidence": [
+        {
+          "source_id": "main-text",
+          "locator": "Table1 citations; Figurelegends and SupplementalMaterial"
+        }
+      ]
+    },
+    {
+      "component_id": "supplement:1",
+      "status": "open",
+      "detail": "Acceptedmanuscript holds legend/reference only; substantive component notavailable inheldcopy.",
+      "evidence": [
+        {
+          "source_id": "main-text",
+          "locator": "Table1 citations; Figurelegends and SupplementalMaterial"
+        }
+      ]
+    },
+    {
+      "component_id": "supplement:2",
+      "status": "open",
+      "detail": "Acceptedmanuscript holds legend/reference only; substantive component notavailable inheldcopy.",
+      "evidence": [
+        {
+          "source_id": "main-text",
+          "locator": "Table1 citations; Figurelegends and SupplementalMaterial"
+        }
+      ]
+    },
+    {
+      "component_id": "supplement:3",
+      "status": "open",
+      "detail": "Acceptedmanuscript holds legend/reference only; substantive component notavailable inheldcopy.",
+      "evidence": [
+        {
+          "source_id": "main-text",
+          "locator": "Table1 citations; Figurelegends and SupplementalMaterial"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Post-inferenceaggregateexposure;noper-caseranksconsulted.",
+    "Figure4legend writesP>0.001 whileclaimingsignificance; plotting/sourcevaluesunheld.",
+    "Methods immunofluorescence usesHEK293 versusResults/legendU2OS; experimentalcellidentityinconsistency.",
+    "Autophagicflux and proteasomeretrotranslocation notdirectlyestablished."
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "pmid": "36917008",
+  "source_titles": [
+    "A neomorphic mutation in the interferon activation domain of IRF4 causes a dominant primary immunodeficiency."
+  ],
+  "selected_case_ids": [
+    "TC_32d92865849d6a71"
+  ],
+  "alternate_case_ids": [
+    "TC_32d92865849d6a71"
+  ],
+  "genes": [
+    "IRF4"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/IRF4/PMID_36917008_P1.json",
+      "sha256": "0434a0b46c8e8d108e36962bc75372d0fae58aed639a0e70e0b030582e1002e7",
+      "case_id": "TC_32d92865849d6a71",
+      "selected_record": true,
+      "subject": {
+        "id": "P1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P60Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621097",
+            "label": "Immunodeficiency 131"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P6M"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0410378",
+            "label": "Decreased naive CD4-positive T cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410391",
+            "label": "Increased CD4+ memory T cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410392",
+            "label": "Increased CD8+ memory T cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410377",
+            "label": "Decreased naive CD8 T cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0033207",
+            "label": "Increased CD21low B cell proportion"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P60Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0040089",
+            "label": "Abnormal total natural killer cell count"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003139",
+            "label": "Panhypogammaglobulinemia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002216",
+            "label": "Premature graying of hair"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002037",
+            "label": "Inflammation of the large intestine"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012203",
+            "label": "Onychomycosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001433",
+            "label": "Hepatosplenomegaly"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P56Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002028",
+            "label": "Chronic diarrhea"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P6M"
+            }
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "ROfCHDhxr82ZKrchL20A2W4I",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621097",
+              "label": "Immunodeficiency 131"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "P1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1075TtoC_IRF4_NM_002460v4",
+                    "geneContext": {
+                      "valueId": "HGNC:6119",
+                      "symbol": "IRF4"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002460.4:c.1075T>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000006.12:g.401753T>C"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr6",
+                      "pos": 401753,
+                      "ref": "T",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IRF4/PMID_36917008_P2.json",
+      "sha256": "f58e5f530f4cf8d973826d9e0ded18174c4823caadc5a6eaa7dff7a485c2c173",
+      "case_id": "TC_32d92865849d6a71",
+      "selected_record": false,
+      "subject": {
+        "id": "P2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P9Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621097",
+            "label": "Immunodeficiency 131"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000509",
+            "label": "Conjunctivitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100776",
+            "label": "Recurrent pharyngitis"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410378",
+            "label": "Decreased naive CD4-positive T cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410391",
+            "label": "Increased CD4+ memory T cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410392",
+            "label": "Increased CD8+ memory T cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410377",
+            "label": "Decreased naive CD8 T cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0033207",
+            "label": "Increased CD21low B cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0040089",
+            "label": "Abnormal total natural killer cell count"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003139",
+            "label": "Panhypogammaglobulinemia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002216",
+            "label": "Premature graying of hair"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000403",
+            "label": "Recurrent otitis media"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0005353",
+            "label": "Recurrent herpes"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032170",
+            "label": "Severe varicella zoster infection"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "ovt3Q5CMtajKmDHTIVxxYCmh",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621097",
+              "label": "Immunodeficiency 131"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "P2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1075TtoC_IRF4_NM_002460v4",
+                    "geneContext": {
+                      "valueId": "HGNC:6119",
+                      "symbol": "IRF4"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002460.4:c.1075T>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000006.12:g.401753T>C"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr6",
+                      "pos": 401753,
+                      "ref": "T",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IRF4/PMID_36917008_P3.json",
+      "sha256": "d984d21c8d9cb36e73cb4ca4eeefd9d35a4f3dca2fb39b6a1b3921d19021d93c",
+      "case_id": "TC_32d92865849d6a71",
+      "selected_record": false,
+      "subject": {
+        "id": "P3",
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621097",
+            "label": "Immunodeficiency 131"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000509",
+            "label": "Conjunctivitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100776",
+            "label": "Recurrent pharyngitis"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410378",
+            "label": "Decreased naive CD4-positive T cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410391",
+            "label": "Increased CD4+ memory T cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410392",
+            "label": "Increased CD8+ memory T cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410377",
+            "label": "Decreased naive CD8 T cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0033207",
+            "label": "Increased CD21low B cell proportion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0040089",
+            "label": "Abnormal total natural killer cell count"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003139",
+            "label": "Panhypogammaglobulinemia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002216",
+            "label": "Premature graying of hair"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032163",
+            "label": "Molluscum contagiosum"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000403",
+            "label": "Recurrent otitis media"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012203",
+            "label": "Onychomycosis"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002028",
+            "label": "Chronic diarrhea"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "tBy47C37AcWq2XuZzOFrDe8P",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621097",
+              "label": "Immunodeficiency 131"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "P3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1075TtoC_IRF4_NM_002460v4",
+                    "geneContext": {
+                      "valueId": "HGNC:6119",
+                      "symbol": "IRF4"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002460.4:c.1075T>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000006.12:g.401753T>C"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr6",
+                      "pos": 401753,
+                      "ref": "T",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

@@ -1,0 +1,471 @@
+{
+  "pmid": "10756346",
+  "source_titles": [
+    "Clustering of mutations associated with mild Marfan-like phenotypes in the 3' region of FBN1 suggests a potential genotype-phenotype correlation"
+  ],
+  "selected_case_ids": [
+    "TC_0112c8f1f15fd999",
+    "TC_df7562c569c4c850"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "FBN1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/FBN1/PMID_10756346_Patient_B13.json",
+      "sha256": "5618bf396b1a52a4c7388d27cf0f9dea77a82ea5ec87f66f46d95ca0f22bb654",
+      "case_id": "TC_0112c8f1f15fd999",
+      "selected_record": true,
+      "subject": {
+        "id": "Patient B13",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P13Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:154700",
+            "label": "Marfan syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003621",
+              "label": "Juvenile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0004970",
+            "label": "Ascending tubular aorta aneurysm"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002107",
+            "label": "Pneumothorax"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001166",
+            "label": "Arachnodactyly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000768",
+            "label": "Pectus carinatum"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000767",
+            "label": "Pectus excavatum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002647",
+            "label": "Aortic dissection"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002616",
+            "label": "Aortic root aneurysm"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P6Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004959",
+            "label": "Descending thoracic aorta aneurysm"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001083",
+            "label": "Ectopia lentis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001382",
+            "label": "Joint hypermobility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001634",
+            "label": "Mitral valve prolapse"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000518",
+            "label": "Cataract"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000541",
+            "label": "Retinal detachment"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001519",
+            "label": "Disproportionate tall stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001635",
+            "label": "Congestive heart failure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030053",
+            "label": "Stiff skin"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "TkgD3dyBal2BvVdG3iDRhAuL",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:154700",
+              "label": "Marfan syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Patient B13",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c7565GtoC_FBN1_NM_000138v5",
+                    "geneContext": {
+                      "valueId": "HGNC:3603",
+                      "symbol": "FBN1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_000138.5:c.7565G>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000015.10:g.48421957C>G"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_000129.3:p.(Cys2522Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr15",
+                      "pos": 48421957,
+                      "ref": "C",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FBN1/PMID_10756346_Patient_B55.json",
+      "sha256": "555227eb401d18c4dd69325ce2d2904e4aaacbb8a34aa2504196378fb1877375",
+      "case_id": "TC_df7562c569c4c850",
+      "selected_record": true,
+      "subject": {
+        "id": "Patient B55",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P40Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:154700",
+            "label": "Marfan syndrome"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P40Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0004970",
+            "label": "Ascending tubular aorta aneurysm"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002107",
+            "label": "Pneumothorax"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001166",
+            "label": "Arachnodactyly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000768",
+            "label": "Pectus carinatum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000767",
+            "label": "Pectus excavatum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001065",
+            "label": "Striae distensae"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012499",
+            "label": "Descending aortic dissection"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P40Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002616",
+            "label": "Aortic root aneurysm"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004959",
+            "label": "Descending thoracic aorta aneurysm"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001083",
+            "label": "Ectopia lentis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001382",
+            "label": "Joint hypermobility"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000268",
+            "label": "Dolichocephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001634",
+            "label": "Mitral valve prolapse"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000278",
+            "label": "Retrognathia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000518",
+            "label": "Cataract"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000490",
+            "label": "Deeply set eye"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000541",
+            "label": "Retinal detachment"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001519",
+            "label": "Disproportionate tall stature"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001635",
+            "label": "Congestive heart failure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030053",
+            "label": "Stiff skin"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "V7chPeyIi4s7B05E9P7Wu6Ua",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:154700",
+              "label": "Marfan syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Patient B55",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c7331_2AtoG_FBN1_NM_000138v5",
+                    "geneContext": {
+                      "valueId": "HGNC:3603",
+                      "symbol": "FBN1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_000138.5:c.7331-2A>G"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000015.10:g.48425493T>C"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_000129.3:p.?"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr15",
+                      "pos": 48425493,
+                      "ref": "T",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

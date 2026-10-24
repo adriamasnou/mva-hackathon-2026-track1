@@ -1,0 +1,227 @@
+{
+  "pmid": "33381903",
+  "source_titles": [
+    "Biallelic loss of OTUD7A causes severe muscular hypotonia, intellectual disability, and seizures"
+  ],
+  "selected_case_ids": [
+    "TC_f7d9df84289c736c"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "OTUD7A"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/OTUD7A/PMID_33381903_Patient.json",
+      "sha256": "6d231ae2d57342ae54650dc4c7fbbdd2a7a7c113dad37dc5ed71281a8c184a2b",
+      "case_id": "TC_f7d9df84289c736c",
+      "selected_record": true,
+      "subject": {
+        "id": "Patient",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P3Y8M"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620790",
+            "label": "Neurodevelopmental disorder with hypotonia and seizures"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003623",
+              "label": "Neonatal onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0025336",
+            "label": "Delayed ability to sit"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031936",
+            "label": "Delayed ability to walk"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012704",
+            "label": "Widened subarachnoid space"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033725",
+            "label": "Thin corpus callosum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002373",
+            "label": "Febrile seizure (within the age range of 3 months to 6 years)"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P1Y2M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003623",
+              "label": "Neonatal onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003623",
+              "label": "Neonatal onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012469",
+            "label": "Infantile spasms"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0032724",
+            "label": "Focal impaired awareness tonic seizure"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P3Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007270",
+            "label": "Atypical absence seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002521",
+            "label": "Hypsarrhythmia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000750",
+            "label": "Delayed speech and language development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000400",
+            "label": "Macrotia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000494",
+            "label": "Downslanted palpebral fissures"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010804",
+            "label": "Tented upper lip vermilion"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "gFLYsnIWYOHujCdhep0hN07V",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620790",
+              "label": "Neurodevelopmental disorder with hypotonia and seizures"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Patient",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1146del_OTUD7A_NM_001382637v1",
+                    "geneContext": {
+                      "valueId": "HGNC:20718",
+                      "symbol": "OTUD7A"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001382637.1:c.1146del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000015.10:g.31501716del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001369566.1:p.(Glu382AspfsTer11)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr15",
+                      "pos": 31501714,
+                      "ref": "GT",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

@@ -1,0 +1,546 @@
+{
+  "schema_version": 1,
+  "pmid": "40232843",
+  "title": "Genetic inactivation of FAAP100 causes Fanconi anemia due to disruption of the monoubiquitin ligase core complex",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T13:38:27.036701+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "64d8ed3ca6e16a4e76443467c9a7deac433ef6b1119266818b40a1594f9ece63",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "40232843",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40232843/main.xml",
+      "sha256": "685620098fa5b09360715ec85ea36048128bccdf6a487f061ecb5213510bfb56",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "40232843",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40232843/main.complete.txt",
+      "sha256": "3df29791a4f7cf15ca325cc2461446b214c3df59843ab36a193e3d59a0b62b04",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "40232843",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/40232843/availability.json",
+      "sha256": "e2a84910d2115e0577c933a3a354c33481c785c141ddb015f72254e988ce6621",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Genetic inactivation of FAAP100 causes Fanconi anemia due to disruption of the monoubiquitin ligase core complex",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 6,
+      "table": 0,
+      "supplement": 3
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 401,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–401"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 401,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–401"
+        }
+      ],
+      "note": "Entiremainarticle, all53references,6figurecaptions and endmatterread. Onefetalcase1176 withdirectcells; multivertebrateexperimentalmodels; WTbutnotT542Pcomplementation."
+    },
+    {
+      "id": "figure:F1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F1]; Figure 1Origin, location, segregation, and implications of the FAAP100 variant.(A) Pedigree of a fetus with FA-suggestive phenotype (III-2, affected individual; solid and slashed circle, marked with a red arrow, ID no. 1176) and family. Squares denote males; circles denote females. Genotyped individuals of the core family are indicated by an asterisk, unassessed genotypes by a question mark, and p"
+    },
+    {
+      "id": "figure:F2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F2]; Figure 2Ectopic expression of FAAP100WT or FAAP100T542P in FAAP100-deficient cells.(A) Metaphase micrographs of FAAP100T542P-mutant 1176 cells after exposure of the cultures to MMC (100 ng/mL, 48 hours). Parental 1176 cells and mock- or mutation-transduced (+vectorpLVX or +FAAP100T542P) 1176 cells show distinctly increased chromosome breakage, mostly of the chromatid type, whereas WT transduced 11"
+    },
+    {
+      "id": "figure:F3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F3]; Figure 3FANCD2 monoubiquitylation capacity of FAAP100-inactivated human and avian cell lines.(A) FAAP100T542P mutant 1176 cells (parental) lacked FANCD2 monoubiquitylation (◄D2) on immunoblots. FANCD2 monoubiquitylation was restored only in 1176+FAAP100WT transduced cells (◄D2-Ub), but not in 1176+FAAP100T542P or mock transduced cells. FA-L was a monoubiquitylation-deficient FA control. (B) FAAP10"
+    },
+    {
+      "id": "figure:F4",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F4]; Figure 4Cellular FA phenotype of faap100-KO zebrafish.(A) Schematic of the CRISPR/Cas9-mediated faap100 gene–KO (si:dkey-57h18.1). (B) Growth curves show slower proliferation of primary cell cultures from faap100–/– fish (circles) than from faap100+/+ fish (squares). The mean ± SD for multiples of the initial cell number of 3 independent subcultures is shown for each time point, with day 0 counts "
+    },
+    {
+      "id": "figure:F5",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F5]; Figure 5Characteristics of the Faap100–/– mouse.(A) Proportions and numbers of female (red) and male (blue) Faap100+/+, Faap100+/–, and Faap100–/– mouse offspring from heterozygous mating. (B) Faap100–/– mice show significantly lower birth weight. Box-and-whisker plots: single value (■, ●, ▲), median (─), mean (□), IQR (─), whiskers (–), and range (x). n = 24 (Faap100+/+), n = 73 (Faap100+/–), and"
+    },
+    {
+      "id": "figure:F6",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F6]; Figure 6Ligase activity, interaction, and subcellular localization studies with FAAP100T542P.(A) Reconstitution of FANCD2 monoubiquitylation using purified proteins, including HA-ubiquitin, UBE1, UBE2T, and FANCD2-FANCI complex and, as indicated, FAAP100WT or FAAP100T542P, FANCB, and/or FANCL. FANCD2 immunoblot: ◄D2-Ub, monoubiquitylated; ◄D2, nonubiquitylated. (B) Quantitation of results from A. "
+    },
+    {
+      "id": "supplement:SD1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=SD1]; Supplemental data"
+    },
+    {
+      "id": "supplement:SD2",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=SD2]; Unedited blot and gel images"
+    },
+    {
+      "id": "supplement:SD3",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=SD3]; Supporting data values"
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/FAAP100/PMID_40232843_III_2_ID_no_1176.json",
+      "packet_sha256": "ccfbca1a2b64647e979809c689ef63b63ff54259690bbbdb161771006b260710",
+      "case_id": "TC_a27d51a39f5514e6",
+      "role": "selected",
+      "packet_subject_id": "III-2, ID no. 1176",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Fullmaintextread; figurepixels andall3supplementcomponentsopen. Noindividualranksconsulted."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exactfemale fetusIII-2/1176, firstcousinparents, fetalcellcollection21+1weeks; pregnancy discontinued forseveremalformations.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Resultsfirsttwosections; Figure1legend"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "HomozygousNM_025161.6:c.1624A>C, GRCh38chr17:81547458T>G, Thr542Pro, verifiedbySanger andexpressedcDNA.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Resultsvariantidentification/expression"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Recessivesegregationincorefamily; bothunaffectedparents heterozygous andhave sufficientFANCD2monoubiquitylation.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Variantidentification; patientcellresults; Figure1Clegend"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygousvariant withbothparentsheterozygous; compoundheterozygousphase notapplicable.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Patientcellresults; Figure1Clegend"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Direct1176cellularMMC/CDDPsensitivity, breakage,G2arrest, absentFANCD2monoubiquitylation/foci, WTbutnotvariantcomplementation andmechanisticBLP100failure give convergentfunctional support. Animal/cellKOmodelsconsistent.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results andDiscussion"
+          }
+        ],
+        "limitations": [
+          "Onlyonehumanfamily; fetuspregnancytermination prevents postnatalBMF/cancerriskmeasurement.",
+          "Mouse6monthpilotnoBMF; animalsincompletelyrecapitulatehumanFA. No clinicaldruginterventionestablished.",
+          "ComputationalVUS/LPpredictionsnot a formalindependentclinicalclassification; genotypecausalitysupportedasresearchassociation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All6mappedfeatures explicitly supported inmaintext. DetailedfetalmalformationimagesSupplementalFigure2notyetinspected.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Variantidentification; Figure1Dlegend"
+          }
+        ],
+        "limitations": [
+          "Prenatalfeaturesonly; no postnatalclinicaltrajectory orlongtermcancerphenotypesmeasured."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1624AtoC_FAAP100_NM_025161v6",
+            "geneContext": {
+              "valueId": "HGNC:26171",
+              "symbol": "FAAP100"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_025161.6:c.1624A>C"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000017.11:g.81547458T>G"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_079437.5:p.(Thr542Pro)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr17",
+              "pos": 81547458,
+              "ref": "T",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "0aea4d672934f846cf72ce68c928c756e7e3d1ce9badbc43fd165c8463b3a5aa",
+          "assessment": {
+            "status": "supported",
+            "statement": "Packetcoding, genomic, proteinandhomozygousstateallmatchmainResultsandSangerdescription. Abstractc.1642A>Cisdiscordant withbodyc.1624A>C andThr542Pro; packetusesbody-supportedallele.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Variantidentification/expression; Figure1Clegend"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000238",
+              "label": "Hydrocephalus"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0034198",
+                "label": "Second trimester onset"
+              }
+            }
+          },
+          "snapshot_sha256": "d453ad02b5476a10fbac1d0dbfd4aa49b766e9d74927e0bba7b2d0f0fb7f2314",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hydrocephalus. Directlyreported forfetus1176.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results: AvariantinFAAP100revealsassociationwithFA; patientcellcomplementationresults"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002247",
+              "label": "Duodenal atresia"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0034198",
+                "label": "Second trimester onset"
+              }
+            }
+          },
+          "snapshot_sha256": "ca51c8eae11beb828d9b0622649c001d6218efc1b19a12729d28300e5ed5b078",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Duodenal atresia. Directlyreported forfetus1176.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results: AvariantinFAAP100revealsassociationwithFA; patientcellcomplementationresults"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032188",
+              "label": "Cellular hypersensitivity to mitomycin C"
+            }
+          },
+          "snapshot_sha256": "afa11dc8b94a4a1d525be1af2e063026a360efb73f5144e20db8162311edd55e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Cellular hypersensitivity to mitomycin C. Directlyreported forfetus1176 andtestedinfetalderivedcells.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results: AvariantinFAAP100revealsassociationwithFA; patientcellcomplementationresults"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006433",
+              "label": "Radial ray deficiency"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0034198",
+                "label": "Second trimester onset"
+              }
+            }
+          },
+          "snapshot_sha256": "3f4a768adc435b0c33294db5bdce18ab871061f7cc785e42a5bd4851f56d176f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Radial ray deficiency. Directlyreported forfetus1176.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results: AvariantinFAAP100revealsassociationwithFA; patientcellcomplementationresults"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0034198",
+                "label": "Second trimester onset"
+              }
+            }
+          },
+          "snapshot_sha256": "a67a4c12cf616a4e12b2b8b6fdcb216c7b171e4ee543b6faecd2c411b5dd81ae",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Intrauterine growth retardation. Directlyreported forfetus1176.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results: AvariantinFAAP100revealsassociationwithFA; patientcellcomplementationresults"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001629",
+              "label": "Ventricular septal defect"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0034198",
+                "label": "Second trimester onset"
+              }
+            }
+          },
+          "snapshot_sha256": "e03d537a253df2619d5a730649bc6786245b59d376b98703d98e69aa729872a8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Ventricular septal defect. Directlyreported forfetus1176.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results: AvariantinFAAP100revealsassociationwithFA; patientcellcomplementationresults"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading.",
+    "Internalnomenclaturediscordances: abstractc.1642A>Cvsbodyc.1624A>C; secondaryabstractaliasFANCYvsprimaryabstract/body/methodsFANCX. Noexternalrenameinferred.",
+    "BothWTandmutantoverexpress in1176cellsbutonlyWTrestoresfunction: abundancealone doesnotdemonstratefunction. TheseareFAAP100experiments, notBUB1Bdrugrescue."
+  ]
+}

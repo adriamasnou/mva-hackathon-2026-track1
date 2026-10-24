@@ -1,0 +1,430 @@
+{
+  "pmid": "38609546",
+  "source_titles": [
+    "Biallelic human SHARPIN loss of function induces autoinflammation and immunodeficiency"
+  ],
+  "selected_case_ids": [
+    "TC_13f636333e2a3def",
+    "TC_b9381c81750f00c1"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "SHARPIN"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SHARPIN/PMID_38609546_patient_P2.json",
+      "sha256": "041dbf86e4c58b4f4fc37a0722a2084de152cb6f5ff684103409f624a1dc5679",
+      "case_id": "TC_13f636333e2a3def",
+      "selected_record": true,
+      "subject": {
+        "id": "patient P2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P4Y"
+          }
+        },
+        "vitalStatus": {
+          "status": "DECEASED"
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620795",
+            "label": "Autoinflammation with episodic fever and immune dysregulation"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P5M"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002240",
+            "label": "Hepatomegaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001744",
+            "label": "Splenomegaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002583",
+            "label": "Colitis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002573",
+            "label": "Hematochezia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003565",
+            "label": "Elevated erythrocyte sedimentation rate"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P5M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001974",
+            "label": "Increased total leukocyte count"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P5M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001954",
+            "label": "Recurrent fever"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P5M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001369",
+            "label": "Arthritis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0011850",
+            "label": "Parotitis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002716",
+            "label": "Lymphadenopathy"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P5M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0006568",
+            "label": "Increased hepatic glycogen content"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000389",
+            "label": "Chronic otitis media"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004313",
+            "label": "Decreased circulating immunoglobulin concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030057",
+            "label": "Autoimmune antibody positivity"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "jwOOyaw0ZsjJCrEcqSGgDGTI",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620795",
+              "label": "Autoinflammation with episodic fever and immune dysregulation"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "patient P2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c613_614del_SHARPIN_NM_030974v4",
+                    "geneContext": {
+                      "valueId": "HGNC:25321",
+                      "symbol": "SHARPIN"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_030974.4:c.613_614del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000008.11:g.144099748_144099749del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_112236.3:p.(Leu205GlufsTer21)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr8",
+                      "pos": 144099747,
+                      "ref": "CAG",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SHARPIN/PMID_38609546_patient_P1.json",
+      "sha256": "0ecb201df955574086ae5dc4f3d4e511b5803de70b5ea927cf242321b0ef127f",
+      "case_id": "TC_b9381c81750f00c1",
+      "selected_record": true,
+      "subject": {
+        "id": "patient P1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P14Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620795",
+            "label": "Autoinflammation with episodic fever and immune dysregulation"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002240",
+            "label": "Hepatomegaly"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001744",
+            "label": "Splenomegaly"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002583",
+            "label": "Colitis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002573",
+            "label": "Hematochezia"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P8Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001954",
+            "label": "Recurrent fever"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001369",
+            "label": "Arthritis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011850",
+            "label": "Parotitis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002716",
+            "label": "Lymphadenopathy"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0006568",
+            "label": "Increased hepatic glycogen content"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P14Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000389",
+            "label": "Chronic otitis media"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P16Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004313",
+            "label": "Decreased circulating immunoglobulin concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030057",
+            "label": "Autoimmune antibody positivity"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "QpkdZ16VEsMWBxjdc3mizRTG",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620795",
+              "label": "Autoinflammation with episodic fever and immune dysregulation"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "patient P1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c220dup_SHARPIN_NM_030974v4",
+                    "geneContext": {
+                      "valueId": "HGNC:25321",
+                      "symbol": "SHARPIN"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_030974.4:c.220dup"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000008.11:g.144103210dup"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_112236.3:p.(Leu74ProfsTer86)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr8",
+                      "pos": 144103206,
+                      "ref": "A",
+                      "alt": "AG"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

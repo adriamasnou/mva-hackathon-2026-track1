@@ -1,0 +1,254 @@
+{
+  "pmid": "30044643",
+  "source_titles": [
+    "SOX17 Mutations in Japanese Patients with Pulmonary Arterial Hypertension."
+  ],
+  "selected_case_ids": [
+    "TC_c713dea172b5379b"
+  ],
+  "alternate_case_ids": [
+    "TC_c713dea172b5379b"
+  ],
+  "genes": [
+    "SOX17"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SOX17/PMID_30044643_Case_2.json",
+      "sha256": "e5abce813a2b39f37e800442fa112981b2b361e05bd28771df0d3a929c5d7f34",
+      "case_id": "TC_c713dea172b5379b",
+      "selected_record": true,
+      "subject": {
+        "id": "Case 2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P51Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621248",
+            "label": "Pulmonary hypertension, primary, 7"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P51Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002092",
+            "label": "Pulmonary arterial hypertension"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0005317",
+            "label": "Increased pulmonary vascular resistance"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001631",
+            "label": "Atrial septal defect"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001655",
+            "label": "Patent foramen ovale"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0006530",
+            "label": "Abnormal pulmonary interstitial morphology"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "NPjoDGlx2wmvXbe0ALPLTyfp",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621248",
+              "label": "Pulmonary hypertension, primary, 7"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Case 2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c209GtoA_SOX17_NM_022454v4",
+                    "geneContext": {
+                      "valueId": "HGNC:18122",
+                      "symbol": "SOX17"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_022454.4:c.209G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000008.11:g.54458347G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_071899.1:p.(Arg70Gln)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr8",
+                      "pos": 54458347,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SOX17/PMID_30044643_Case_3.json",
+      "sha256": "ec0097b89cc3c7bc7b59691c56eff39aea46ab074829438e6996c7d72559f616",
+      "case_id": "TC_c713dea172b5379b",
+      "selected_record": false,
+      "subject": {
+        "id": "Case 3",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P25Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621248",
+            "label": "Pulmonary hypertension, primary, 7"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P25Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002092",
+            "label": "Pulmonary arterial hypertension"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0005317",
+            "label": "Increased pulmonary vascular resistance"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001631",
+            "label": "Atrial septal defect"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001655",
+            "label": "Patent foramen ovale"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0006530",
+            "label": "Abnormal pulmonary interstitial morphology"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "yorhIs3gYSIvCHQV2VYER30M",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621248",
+              "label": "Pulmonary hypertension, primary, 7"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Case 3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c209GtoA_SOX17_NM_022454v4",
+                    "geneContext": {
+                      "valueId": "HGNC:18122",
+                      "symbol": "SOX17"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_022454.4:c.209G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000008.11:g.54458347G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_071899.1:p.(Arg70Gln)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr8",
+                      "pos": 54458347,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

@@ -1,0 +1,720 @@
+{
+  "schema_version": 1,
+  "pmid": "39183344",
+  "title": "Biallelic NEXN variants and fetal onset dilated cardiomyopathy: two independent case reports and revision of literature",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T10:43:27.246235+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "3264d13122a8473cecb7c534da20ca93f51acee8da987dc69b15c8f965b04b03",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "39183344",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39183344/main.xml",
+      "sha256": "024fb1c7fd08020b90a4c0a06f83b11239d0c47afe64457aeccbb50e30c7e42c",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "39183344",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39183344/main.complete.txt",
+      "sha256": "4bbb276adbc1d92b0deeb257b7604be24943e84c2dd79306d9bfa2456ff7689f",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "39183344",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/39183344/availability.json",
+      "sha256": "033ab8c0e7a7a41b3ad101909a0180502c365aa11762706a1ec9a1c593fb043b",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "fig-1",
+      "pmid": "39183344",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39183344/cloud/PMC11346034.1/13052_2024_1678_Fig1_HTML.jpg",
+      "sha256": "36f3b4ec107f3b35a15d2f6edaae901733eb3544ec83508dbf8038f2bf8ca21e",
+      "kind": "image",
+      "description": "Original echo figure, all pixels inspected"
+    },
+    {
+      "id": "fig-2",
+      "pmid": "39183344",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39183344/cloud/PMC11346034.1/13052_2024_1678_Fig2_HTML.jpg",
+      "sha256": "f0627c506c2bef9021fa6967092cdda06fd7523b2d4c500fa6d8a00db5a1048e",
+      "kind": "image",
+      "description": "Original echo figure, all pixels inspected"
+    },
+    {
+      "id": "main-pdf",
+      "pmid": "39183344",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39183344/cloud/PMC11346034.1/PMC11346034.1.pdf",
+      "sha256": "bbb494c6a565e7f9f48111687b2c897ee0ae38b5d04884341733f657c4233f50",
+      "kind": "pdf",
+      "description": "Original main article PDF"
+    },
+    {
+      "id": "table-pixels",
+      "pmid": "39183344",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/39183344/page-6.png",
+      "sha256": "6812a3d533e80bf4b3e2772e2b33578b5d89c9664c58a59b11cadb59dd1dd2f2",
+      "kind": "image",
+      "description": "Table1 full page inspected"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Biallelic NEXN variants and fetal onset dilated cardiomyopathy: two independent case reports and revision of literature",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 2,
+      "table": 1,
+      "supplement": 0
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 305,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–305"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 305,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–305"
+        }
+      ],
+      "note": "Full article including24 references, both case histories, Table1 and all declarations read. All echo figure pixels and Table1 PDF page6 inspected. Only P1 maps to frozen packet. P2 is source VUS and has extra cytogenetic findings, not transferable to P1. Table1 P2 protein suffix fs conflicts with maintext in-frame deletion. Claims of first prolonged survivors conflict with Table1 earlier10y survivor; not used as cohort evidence."
+    },
+    {
+      "id": "figure:Fig1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig-1",
+      "extent_evidence": [
+        {
+          "source_id": "fig-1",
+          "locator": "whole figure"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig-1",
+          "locator": "whole echo image and measurement labels"
+        }
+      ],
+      "note": "Figure1 distances23.9/26.9mm; Figure2 EF26.1%, EDV9.2ml, ESV6.8ml visible. Static images do not independently verify dynamic function."
+    },
+    {
+      "id": "figure:Fig2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig-2",
+      "extent_evidence": [
+        {
+          "source_id": "fig-2",
+          "locator": "whole figure"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig-2",
+          "locator": "whole echo image and measurement labels"
+        }
+      ],
+      "note": "Figure1 distances23.9/26.9mm; Figure2 EF26.1%, EDV9.2ml, ESV6.8ml visible. Static images do not independently verify dynamic function."
+    },
+    {
+      "id": "table:Tab1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "page6 Table1"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "Table1 all rows and footnotes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table-pixels",
+          "locator": "entire Table1"
+        }
+      ],
+      "note": "All historical and two current cases inspected; no absent-data NR treated as negative."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/NEXN/PMID_39183344_Patient_1.json",
+      "packet_sha256": "e77e3d3e7483ed402c1633b7cc2c465eaf592cdb5a7cc432c8b7ba807c7e1b51",
+      "case_id": "TC_dc22f511acfb898a",
+      "role": "selected",
+      "packet_subject_id": "Patient 1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source-reported likely pathogenic association; no reclassification or frozen case modification."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "P1 male lastfollowup24months, prenatal onset24weeks matches packet age2y and gestational onset.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Case1 Par10–19"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "TrioWES identifies homozygous NM_144573.4:c.1156dup (Met386fs); both parents heterozygous.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Case1 Par16"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Both parents confirmed carriers; three asymptomatic siblings not genetically tested. Mother has mild hypokinetic nondilated cardiomyopathy; father lacks diagnostic cardiomyopathy at followup.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Case1 Par16–19"
+          }
+        ],
+        "limitations": [
+          "Earlier pregnancy losses have no genotypes; dominant carrier phenotype age-dependent and not completely absent."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous variant with both parents heterozygous supports biparental inheritance, not a compound-heterozygote phase inference.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Case1 Par16"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source classifies P1 variant likely pathogenic (class4), supports recessive NEXN association with fetal cardiomyopathy and segregation; no variant-specific molecular functional assay.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Case1 Par16; Discussion"
+          }
+        ],
+        "limitations": [
+          "Source classification is likely pathogenic, not independently clinically proven pathogenicity."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Detailed cardiac and developmental course supports most packet findings; no pleural effusion postnatally and appropriate development at24months are time-limited negatives. Fatigue was described as a risk prevented by tube feeding.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Case1 Par10–15"
+          }
+        ],
+        "limitations": [
+          "Packet omits prematurity, respiratory support and thin akinetic proximal septum; prevention does not prove observed fatigue."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1156dup_NEXN_NM_144573v4",
+            "geneContext": {
+              "valueId": "HGNC:29557",
+              "symbol": "NEXN"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_144573.4:c.1156dup"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000001.11:g.77933384dup"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_653174.3:p.(Met386AsnfsTer15)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr1",
+              "pos": 77933378,
+              "ref": "C",
+              "alt": "CA"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "e321fc4636f015f95ad311e71d9936524d3cb6070d16046e4200004d99a6d568",
+          "assessment": {
+            "status": "qualified",
+            "statement": "NM_144573.4:c.1156dup matches source, which abbreviates protein to Met386fs. Packet expanded protein and hg38 repeat-normalized VCF are not directly provided by hg19 source.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par16"
+              }
+            ],
+            "limitations": [
+              "Exact genomic normalization and expanded stop not independently checked."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001790",
+              "label": "Nonimmune hydrops fetalis"
+            },
+            "onset": {
+              "gestationalAge": {
+                "weeks": 24,
+                "days": 0
+              }
+            }
+          },
+          "snapshot_sha256": "108e32b2c882d438941542eb61f9b5ed664d1eeb218a2f3e6b162ccdaebc903c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Hydrops at24weeks explicitly reported; nonimmune subtype is inferred from cardiomyopathy context rather than documented antibody evaluation.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par10–11"
+              }
+            ],
+            "limitations": [
+              "Nonimmune qualifier not explicitly established."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002202",
+              "label": "Pleural effusion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "638dc3e9c208f84092dbedadd287dbdf3c33a3abd0c32b32139b8ee09668da51",
+          "assessment": {
+            "status": "supported",
+            "statement": "No pleural effusion on postnatal echo.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par11"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001561",
+              "label": "Polyhydramnios"
+            },
+            "onset": {
+              "gestationalAge": {
+                "weeks": 24,
+                "days": 0
+              }
+            }
+          },
+          "snapshot_sha256": "986a8c9333e0b1231aeb0fbb81268c4b340cba6cd01d735245da56168c5e4e52",
+          "assessment": {
+            "status": "supported",
+            "statement": "Polyhydramnios at24weeks.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par10"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "03152f286100abc72cad1120d8999d8a2e43113a3ec457babb1c73e5930869b4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Psychomotor development adequate at24months.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par15"
+              }
+            ],
+            "limitations": [
+              "Time-limited normal assessment, not lifelong absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:4000141",
+              "label": "Left ventricular dilatation"
+            },
+            "onset": {
+              "gestationalAge": {
+                "weeks": 24,
+                "days": 0
+              }
+            }
+          },
+          "snapshot_sha256": "6ce6c1b1952b0bf9c40cfd2999550728218023ef528600beb3784f52077d4300",
+          "assessment": {
+            "status": "supported",
+            "statement": "LV dilation at24weeks.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par10"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200128",
+              "label": "Biventricular hypertrophy"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "6c05a5dc11811cf30b91e377ec0b79c6f415807091a89df46e7838302382481a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Biventricular hypertrophy at birth.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par11; Figure1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006673",
+              "label": "Reduced systolic function"
+            },
+            "onset": {
+              "gestationalAge": {
+                "weeks": 24,
+                "days": 0
+              }
+            }
+          },
+          "snapshot_sha256": "16bd7e5684adba29f8b837a96169073290701750e66f9a44a03ae75deeb9b0f6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Severely reduced fetal biventricular systolic function at24weeks.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par10"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001653",
+              "label": "Mitral regurgitation"
+            }
+          },
+          "snapshot_sha256": "ebaf119c221211523327685f6d9fe8d58d8c335219276da0d266ee7675bf6077",
+          "assessment": {
+            "status": "supported",
+            "statement": "Both atrioventricular valves with severe regurgitation includes mitral valve.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par11"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005180",
+              "label": "Tricuspid regurgitation"
+            }
+          },
+          "snapshot_sha256": "a493593ca5ad2b0c897152d42ebb8596f2cde846937860afe473f368fb220a5d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Both atrioventricular valves with severe regurgitation includes tricuspid valve.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par11"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034307",
+              "label": "Elevated left ventricular end-diastolic diameter"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "e7a5c70fbee2148ac8223d63b0798a437c49406c3986186719a0c68ebc951277",
+          "assessment": {
+            "status": "supported",
+            "statement": "LV enddiastolic diameter24mm,+3z at birth.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par11; Figure1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012666",
+              "label": "Severely reduced left ventricular ejection fraction"
+            }
+          },
+          "snapshot_sha256": "2845e8012de70b55ec350f3d779d61b2ba5d41dc94eae128aff99db82133826d",
+          "assessment": {
+            "status": "supported",
+            "statement": "LVEF26% at birth,25–30% during admission; later improves35–40%.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par11–15; Figure2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001649",
+              "label": "Tachycardia"
+            }
+          },
+          "snapshot_sha256": "e06d7ac0a84b66e6b15d473a4931b3d8e121d9fbee6809ebf91d66466c79d028",
+          "assessment": {
+            "status": "supported",
+            "statement": "Recurrent rapid atrial ectopic tachycardia treated with amiodarone.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par12"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033454",
+              "label": "Tube feeding"
+            }
+          },
+          "snapshot_sha256": "2e60ef62ab77209897ba4dacc58a2d927d3ab3f15261da1587984a82699cbf97",
+          "assessment": {
+            "status": "supported",
+            "statement": "Occasional tube feeding maintained despite full enteral feeding at3weeks.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par13"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012378",
+              "label": "Fatigue"
+            }
+          },
+          "snapshot_sha256": "51b56e1abe839baa584efe52e3c6e4ec9b9eac291a9e741aafe75d1d3377cdff",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Tube feeding used to prevent fatigue, without explicit observed fatigue episode.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case1 Par13"
+              }
+            ],
+            "limitations": [
+              "Preventive rationale does not establish a positive symptom."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading."
+  ]
+}

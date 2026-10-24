@@ -124,7 +124,7 @@ The resulting protocol distinguishes an informative negative from an imprecise e
 
 ## Compact source-bank boundary
 
-The separate [compact benchmark](compact-public-validation.md) cites 322 source publications through its case metadata. PMID 37054711 is the only overlap with this 51-main-text ledger; the other 321 are not recorded as read. No new reads or complete case-label adjudication are claimed for that larger source bank. The citation-manifest coverage above concerns the submission’s reviewed literature, not every publication referenced by an imported dataset. **[OUR MEASUREMENT — source-reading crosscheck]**
+The separate [compact benchmark](compact-public-validation.md) cites 322 selected-source publications; alternate records add 12 more. At its initial crosscheck, PMID 37054711 was the only overlap with the older 51-main-text ledger. That historical 321-paper gap is now being addressed in a separate [post-inference source-review snapshot](../examples/compact-source-audit/README.md): at 16:44 UTC on 24 October it held 137 full-main-text reads, 62 complete paper reviews, 708 adjudicated packet mappings and 157 case signatures with every linked paper/packet complete. The fixed inventory is 334 publications, 1,389 mappings and 713 signatures. These counts must not be added to this page's older ledger without deduplicating papers. Partial components, reviewer outcome exposure and unresolved scientific conclusions remain recorded. No source review establishes clinical truth or changes the frozen benchmark. **[OUR MEASUREMENT — separate review snapshot]**
 
 
 ## Biology source follow-up (24 October 2026)
