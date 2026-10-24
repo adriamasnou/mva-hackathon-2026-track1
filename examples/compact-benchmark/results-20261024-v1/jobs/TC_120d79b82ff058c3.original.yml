@@ -1,0 +1,116 @@
+phenopacket:
+  id: TC_120d79b82ff058c3.original
+  subject:
+    id: PUBLIC_CASE
+    sex: FEMALE
+  phenotypicFeatures:
+  - type:
+      id: HP:0000160
+  - type:
+      id: HP:0000194
+  - type:
+      id: HP:0000233
+  - type:
+      id: HP:0000337
+  - type:
+      id: HP:0000431
+  - type:
+      id: HP:0000446
+  - type:
+      id: HP:0000490
+  - type:
+      id: HP:0000494
+  - type:
+      id: HP:0000678
+  - type:
+      id: HP:0000689
+  - type:
+      id: HP:0000750
+  - type:
+      id: HP:0001263
+  - type:
+      id: HP:0001763
+  - type:
+      id: HP:0002194
+  - type:
+      id: HP:0004467
+  - type:
+      id: HP:0007018
+  - type:
+      id: HP:0010819
+  - type:
+      id: HP:0011220
+  - type:
+      id: HP:0011968
+  htsFiles:
+  - uri: /Volumes/easystore/MVA-public-exomiser-2512/runs/public-temporal-compact-20261024/inputs/TC_120d79b82ff058c3.vcf
+    htsFormat: VCF
+    genomeAssembly: hg38
+  metaData:
+    created: '2026-10-24T00:00:00Z'
+    createdBy: adriamasnou-public-benchmark
+    resources:
+    - id: hp
+      name: human phenotype ontology
+      url: http://purl.obolibrary.org/obo/hp.owl
+      version: Exomiser-2512-bundled-HPO
+      namespacePrefix: HP
+      iriPrefix: http://purl.obolibrary.org/obo/HP_
+    phenopacketSchemaVersion: 1.0
+analysis:
+  analysisMode: PASS_ONLY
+  inheritanceModes:
+    AUTOSOMAL_DOMINANT: 0.1
+    AUTOSOMAL_RECESSIVE_COMP_HET: 2.0
+    AUTOSOMAL_RECESSIVE_HOM_ALT: 0.1
+    X_DOMINANT: 0.1
+    X_RECESSIVE_COMP_HET: 2.0
+    X_RECESSIVE_HOM_ALT: 0.1
+    MITOCHONDRIAL: 0.2
+  frequencySources:
+  - UK10K
+  - GNOMAD_E_AFR
+  - GNOMAD_E_AMR
+  - GNOMAD_E_EAS
+  - GNOMAD_E_NFE
+  - GNOMAD_E_SAS
+  - GNOMAD_G_AFR
+  - GNOMAD_G_AMR
+  - GNOMAD_G_EAS
+  - GNOMAD_G_NFE
+  - GNOMAD_G_SAS
+  pathogenicitySources:
+  - REVEL
+  - MVP
+  - ALPHA_MISSENSE
+  - SPLICE_AI
+  steps:
+  - failedVariantFilter: {}
+  - variantEffectFilter:
+      remove:
+      - FIVE_PRIME_UTR_EXON_VARIANT
+      - FIVE_PRIME_UTR_INTRON_VARIANT
+      - THREE_PRIME_UTR_EXON_VARIANT
+      - THREE_PRIME_UTR_INTRON_VARIANT
+      - NON_CODING_TRANSCRIPT_EXON_VARIANT
+      - UPSTREAM_GENE_VARIANT
+      - INTERGENIC_VARIANT
+      - REGULATORY_REGION_VARIANT
+      - CODING_TRANSCRIPT_INTRON_VARIANT
+      - NON_CODING_TRANSCRIPT_INTRON_VARIANT
+      - DOWNSTREAM_GENE_VARIANT
+  - frequencyFilter:
+      maxFrequency: 2.0
+  - pathogenicityFilter:
+      keepNonPathogenic: true
+  - inheritanceFilter: {}
+  - omimPrioritiser: {}
+  - hiPhivePrioritiser: {}
+outputOptions:
+  outputContributingVariantsOnly: false
+  numGenes: 0
+  outputDirectory: /Volumes/easystore/MVA-public-exomiser-2512/runs/public-temporal-compact-20261024/results
+  outputFileName: TC_120d79b82ff058c3.original
+  outputFormats:
+  - JSON
+  - TSV_GENE

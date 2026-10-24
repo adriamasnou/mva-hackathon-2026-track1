@@ -1,0 +1,19 @@
+--- frozen/helper
++++ correction-v2/helper
+@@ -1,4 +1,4 @@
+-"""Exact allele / joint best-mode helper for the canonical temporal adapter.
++"""Versioned post-freeze correction: omitted primitive mode score is zero.
+ 
+ No CLI, inference, aggregation, imports of active audit code, or file writes.
+ Uses the audit_public_execution.py mode_contributions logic with exact matching
+@@ -52,7 +52,9 @@
+         if isinstance(score, bool) or not isinstance(score, (int, float)) or not math.isfinite(score):
+             raise ValueError('Invalid gene score')
+         for mode in target.get('geneScores', []):
+-            value = mode.get('combinedScore')
++            # Installed Exomiser 15.1.0 writes primitive doubles with NON_DEFAULT.
++            # Absence is suppressed zero; explicit null remains invalid.
++            value = mode.get('combinedScore', 0.0)
+             if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
+                 raise ValueError('Invalid inheritance-mode score')
+             if value > score:

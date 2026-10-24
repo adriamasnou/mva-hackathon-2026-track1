@@ -1,0 +1,65 @@
+--- frozen/adapter
++++ correction-v2/adapter
+@@ -1,8 +1,9 @@
+ #!/usr/bin/env python3
+ """Evaluate a later authorized run; this script never executes Exomiser.
+ 
+-Reuse existing tie ranks and exact source-allele audit, not the old twelve-case
+-aggregate/export CLIs. Iterate all planned cases, including preparation failures.
++Explicit post-freeze copy with one semantic correction: mode-score default zero.
++The original evaluator and its literal result remain retained. Inputs, endpoints,
++tie ranking, denominator and inclusion rules are unchanged. Iterate all planned cases, including preparation failures.
+ """
+ import argparse
+ from collections import Counter, defaultdict
+@@ -14,7 +15,10 @@
+ 
+ sys.dont_write_bytecode = True
+ HERE = Path(__file__).resolve().parent
+-ROOT = HERE.parents[2]
++ROOT = HERE.parents[3]
++FROZEN_ADAPTER = HERE.parent / "evaluate_adapter.py"
++FROZEN_HELPER = HERE.parent.parent / "evaluate_temporal_compact.py"
++CORRECTION = HERE / "correction-receipt.json"
+ BASE = ROOT / 'repo/examples/public-benchmark'
+ ARMS = ('original', 'none')
+ 
+@@ -29,7 +33,7 @@
+ ranking = module('evaluate')
+ exporter = module('export_results')
+ runner = module('run')
+-HELPER = HERE.parent / 'evaluate_temporal_compact.py'
++HELPER = HERE / 'joint_mode.py'
+ helper_spec = importlib.util.spec_from_file_location('temporal_joint_mode', HELPER)
+ joint_mode = importlib.util.module_from_spec(helper_spec)
+ helper_spec.loader.exec_module(joint_mode)
+@@ -168,9 +172,15 @@
+     protocol = execution.get('design_records', {}).get('protocol-before-inference.json', {}).get('content', {})
+     if protocol.get('case_manifest_sha256') != runner.sha(a.cases):
+         raise ValueError('Full case ledger was not hashed into the execution protocol')
+-    if protocol.get('temporal_evaluator_sha256') != runner.sha(__file__):
++    correction = json.loads(CORRECTION.read_text())
++    for name in ('evaluate_adapter.py', 'joint_mode.py'):
++        if correction['corrected_component_sha256'][name] != runner.sha(HERE / name):
++            raise ValueError('Versioned correction code differs from correction receipt')
++    if correction['frozen_adapter_sha256'] != runner.sha(FROZEN_ADAPTER) or correction['frozen_helper_sha256'] != runner.sha(FROZEN_HELPER):
++        raise ValueError('Original frozen evaluator/helper changed')
++    if protocol.get('temporal_evaluator_sha256') != runner.sha(FROZEN_ADAPTER):
+         raise ValueError('Temporal evaluator was not pinned before execution')
+-    if protocol.get('joint_mode_helper_sha256') != runner.sha(HELPER):
++    if protocol.get('joint_mode_helper_sha256') != runner.sha(FROZEN_HELPER):
+         raise ValueError('Joint-mode helper was not pinned before execution')
+     for name in ('evaluate.py', 'export_results.py'):
+         if protocol.get('reused_evaluation_sha256', {}).get(name) != runner.sha(BASE / name):
+@@ -184,6 +194,11 @@
+         raise ValueError('Unexpected, duplicated, or blocked-case jobs')
+     results = [case_result(c, arm, index.get((c['case_id'], arm)), execution) for c in cases for arm in ARMS]
+     output = {'scope': 'Constructed compact source-label recovery; not clinical accuracy, knowledge holdout or a head-to-head reproduction.',
++              'analysis_version': 'post-freeze-correction-v2',
++              'correction_receipt_sha256': runner.sha(CORRECTION),
++              'frozen_evaluator_sha256': runner.sha(FROZEN_ADAPTER),
++              'frozen_helper_sha256': runner.sha(FROZEN_HELPER),
++              'corrected_helper_sha256': runner.sha(HELPER),
+               'execution_status': execution['status'], 'execution_sha256': runner.sha(a.work / 'execution.json'),
+               'case_manifest_sha256': runner.sha(a.cases), 'evaluator_sha256': runner.sha(__file__),
+               'primary_rule': 'Conservative worst-tied source-gene rank among genes with at least one PASSED allele; every exact source allele must be represented in that gene and PASSED. No phase or joint causality claim.',

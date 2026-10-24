@@ -1,0 +1,31 @@
+{
+  "recorded_utc": "2026-10-24T09:05:54.828918+00:00",
+  "exit_code": 0,
+  "checks": [
+    "GeneScore.empty().combinedScore() equals primitive 0.0",
+    "same ObjectMapper mix-ins/inclusion as installed writer suppress combinedScore at zero",
+    "nonzero .125 remains serialized"
+  ],
+  "scope": "Empirical synthetic serialization of installed GeneScore with the ObjectMapper configuration shown by installed JsonResultsWriter bytecode; no inference, data alteration or actual writeFile call.",
+  "code_sha256": "97ed353ac88667be4cb562339839669aa7551c5609eca766bd2e3584c24fb7d8",
+  "stdout_sha256": "a8815cc298616d8d824b44c3c728087b663c7ea3c4d09c18cd5051bd2d9915ff",
+  "library_sha256": {
+    "pipeline/exomiser/exomiser-cli-15.1.0/lib/exomiser-core-15.1.0.jar": "e4451ebfb4a7db34cc8217c9fd81b9de47194aa1f172973c577aa3af960ef7d4",
+    "pipeline/exomiser/exomiser-cli-15.1.0/lib/jackson-annotations-2.18.2.jar": "581bd61000ef7648943f781ca05689e56d03f6052748365a8e2b3a9b5d3fa32f",
+    "pipeline/exomiser/exomiser-cli-15.1.0/lib/jackson-core-2.18.2.jar": "d8054ae7c0d1c2d2f55d28e46026ebe5892881f3fab5f439233184381c3b4a1f",
+    "pipeline/exomiser/exomiser-cli-15.1.0/lib/jackson-databind-2.18.2.jar": "4b364e6850dc89172fcf1d4dd26b8ff5488eda44ff4657e22dd265203dd5ab3c"
+  },
+  "compile_command": [
+    "/opt/homebrew/opt/openjdk@21/bin/javac",
+    "-cp",
+    "/Users/adriamasnou/mva-hackathon/pipeline/exomiser/exomiser-cli-15.1.0/lib/*",
+    "/tmp/mva-mode-score-probe-20261024/ModeScoreProbe.java"
+  ],
+  "run_note": "Compile into a temporary directory, then java -cp temporary_directory:installed_lib/* ModeScoreProbe. Do not place generated classes in the repository.",
+  "run_command": [
+    "/opt/homebrew/opt/openjdk@21/bin/java",
+    "-cp",
+    "/tmp/mva-mode-score-probe-20261024:/Users/adriamasnou/mva-hackathon/pipeline/exomiser/exomiser-cli-15.1.0/lib/*",
+    "ModeScoreProbe"
+  ]
+}

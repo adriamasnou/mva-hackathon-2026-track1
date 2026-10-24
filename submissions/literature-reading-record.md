@@ -121,3 +121,7 @@ The resulting protocol distinguishes an informative negative from an imprecise e
 - [40520915](https://pubmed.ncbi.nlm.nih.gov/40520915/) — Efficacy results from a 12-month double-blind randomized trial of arimoclomol for treatment of Niemann-Pick disease type C (NPC): Presenting a rescored 4-domain NPC Clinical Severity Scale. Main text read; component coverage in JSON.
 - [41121346](https://pubmed.ncbi.nlm.nih.gov/41121346/) — An optimized variant prioritization process for rare disease diagnostics: recommendations for Exomiser and Genomiser. Main text read; component coverage in JSON.
 - [42283221](https://pubmed.ncbi.nlm.nih.gov/42283221/) — Effects of Lysine Deacetylation Inhibition Alone or in Combination With Arimoclomol on TDP-43 Proteinopathy. Main text read; component coverage in JSON.
+
+## Compact source-bank boundary
+
+The separate [compact benchmark](compact-public-validation.md) cites 322 source publications through its case metadata. PMID 37054711 is the only overlap with this 51-main-text ledger; the other 321 are not recorded as read. No new reads or complete case-label adjudication are claimed for that larger source bank. The citation-manifest coverage above concerns the submission’s reviewed literature, not every publication referenced by an imported dataset. **[OUR MEASUREMENT — source-reading crosscheck]**

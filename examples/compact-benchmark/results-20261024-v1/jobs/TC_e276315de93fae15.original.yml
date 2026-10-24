@@ -1,0 +1,134 @@
+phenopacket:
+  id: TC_e276315de93fae15.original
+  subject:
+    id: PUBLIC_CASE
+    sex: FEMALE
+  phenotypicFeatures:
+  - type:
+      id: HP:0000243
+  - type:
+      id: HP:0000358
+  - type:
+      id: HP:0000470
+  - type:
+      id: HP:0000486
+  - type:
+      id: HP:0000579
+  - type:
+      id: HP:0000737
+  - type:
+      id: HP:0000739
+  - type:
+      id: HP:0000744
+  - type:
+      id: HP:0000956
+  - type:
+      id: HP:0000957
+  - type:
+      id: HP:0001140
+  - type:
+      id: HP:0001513
+  - type:
+      id: HP:0001545
+  - type:
+      id: HP:0001763
+  - type:
+      id: HP:0002650
+  - type:
+      id: HP:0004792
+  - type:
+      id: HP:0006610
+  - type:
+      id: HP:0006889
+  - type:
+      id: HP:0007018
+  - type:
+      id: HP:0008551
+  - type:
+      id: HP:0009898
+  - type:
+      id: HP:0009905
+  - type:
+      id: HP:0009909
+  - type:
+      id: HP:0010055
+  - type:
+      id: HP:0011332
+  - type:
+      id: HP:0012433
+  - type:
+      id: HP:0025325
+  - type:
+      id: HP:5200021
+  htsFiles:
+  - uri: /Volumes/easystore/MVA-public-exomiser-2512/runs/public-temporal-compact-20261024/inputs/TC_e276315de93fae15.vcf
+    htsFormat: VCF
+    genomeAssembly: hg38
+  metaData:
+    created: '2026-10-24T00:00:00Z'
+    createdBy: adriamasnou-public-benchmark
+    resources:
+    - id: hp
+      name: human phenotype ontology
+      url: http://purl.obolibrary.org/obo/hp.owl
+      version: Exomiser-2512-bundled-HPO
+      namespacePrefix: HP
+      iriPrefix: http://purl.obolibrary.org/obo/HP_
+    phenopacketSchemaVersion: 1.0
+analysis:
+  analysisMode: PASS_ONLY
+  inheritanceModes:
+    AUTOSOMAL_DOMINANT: 0.1
+    AUTOSOMAL_RECESSIVE_COMP_HET: 2.0
+    AUTOSOMAL_RECESSIVE_HOM_ALT: 0.1
+    X_DOMINANT: 0.1
+    X_RECESSIVE_COMP_HET: 2.0
+    X_RECESSIVE_HOM_ALT: 0.1
+    MITOCHONDRIAL: 0.2
+  frequencySources:
+  - UK10K
+  - GNOMAD_E_AFR
+  - GNOMAD_E_AMR
+  - GNOMAD_E_EAS
+  - GNOMAD_E_NFE
+  - GNOMAD_E_SAS
+  - GNOMAD_G_AFR
+  - GNOMAD_G_AMR
+  - GNOMAD_G_EAS
+  - GNOMAD_G_NFE
+  - GNOMAD_G_SAS
+  pathogenicitySources:
+  - REVEL
+  - MVP
+  - ALPHA_MISSENSE
+  - SPLICE_AI
+  steps:
+  - failedVariantFilter: {}
+  - variantEffectFilter:
+      remove:
+      - FIVE_PRIME_UTR_EXON_VARIANT
+      - FIVE_PRIME_UTR_INTRON_VARIANT
+      - THREE_PRIME_UTR_EXON_VARIANT
+      - THREE_PRIME_UTR_INTRON_VARIANT
+      - NON_CODING_TRANSCRIPT_EXON_VARIANT
+      - UPSTREAM_GENE_VARIANT
+      - INTERGENIC_VARIANT
+      - REGULATORY_REGION_VARIANT
+      - CODING_TRANSCRIPT_INTRON_VARIANT
+      - NON_CODING_TRANSCRIPT_INTRON_VARIANT
+      - DOWNSTREAM_GENE_VARIANT
+  - frequencyFilter:
+      maxFrequency: 2.0
+  - pathogenicityFilter:
+      keepNonPathogenic: true
+  - inheritanceFilter: {}
+  - omimPrioritiser: {}
+  - hiPhivePrioritiser: {}
+outputOptions:
+  outputContributingVariantsOnly: false
+  numGenes: 0
+  outputDirectory: /Volumes/easystore/MVA-public-exomiser-2512/runs/public-temporal-compact-20261024/results
+  outputFileName: TC_e276315de93fae15.original
+  outputFormats:
+  - JSON
+  - TSV_GENE

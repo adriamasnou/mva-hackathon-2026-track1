@@ -58,3 +58,11 @@ python3 -S analysis/rescue_decision/simulation/frozen-source/verify.py --folder 
 ```
 
 The canary self-test injects faults into synthetic checker inputs. Its [separate measured SpliceAI controls](../canary/README.md) document actual inference. The simulation command checks retained results and an independently launched exact seeded rerun; [full execution instructions](../analysis/rescue_decision/simulation/README.md) require the pinned scientific runtime. The [public Exomiser recipe](../examples/public-benchmark/README.md) requires the named Java runtime and large public databases; it is a separate computational evaluation. No check here measures N1002K rescue, clinical benefit or family usability.
+
+The [compact companion](compact-public-validation.md) provides a separate 713-signature constructed benchmark. Its figure shows the HPO ablation, surviving gene universe and stricter joint-mode result; the original parser failure and corrected baseline are both retained. Verify the raw results offline from the package root:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 examples/compact-benchmark/verify.py examples/compact-benchmark/results-20261024-v1
+```
+
+In the 64 constructed source pairs, original-HPO top-1 with both source alleles PASSED was 58/64, but requiring both alleles within one best-scoring mode reduced it to 42/64. Without HPO, the corresponding counts were 59/64 and 2/64. A correct gene rank therefore does not establish that the complete source genotype determines the winning score. These are source-label metrics, not clinical or phase validation. **[OUR MEASUREMENT; OUR INFERENCE]**

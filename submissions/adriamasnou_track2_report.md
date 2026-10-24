@@ -82,6 +82,8 @@ The [rescue-decision prototype](rescue-decision-validation.md) makes functional,
 
 **Executed public evaluation.** Across 96 genomic jobs, original-HPO top-1/5/10 recovery was **6/7/8 (HG002) and 7/8/8 (HG001) of nine primary source labels**; five have material source qualifications. Phenotype-only recovered **4/8/8**; candidate universes differ. COG8/SLC35C1 no-HPO best modes use only one of two source alleles. [Full evaluation and portable outputs](public-validation.md); [separate FGFR2 reconstructions](generalisation-public-case.md). These semi-synthetic checks establish execution and ranking behaviour, not clinical accuracy or drug rescue. **[OUR MEASUREMENT]**
 
+A separate [ten-hypothesis benchmark](compact-public-validation.md) completed 1,418 jobs across 713 source signatures. Original-HPO top-1 was **556/681 autosomal signatures versus 430/681 without HPO**, after a disclosed parser correction. Its source labels remain unadjudicated; this is not clinical accuracy. **[OUR MEASUREMENT]**
+
 ## 6. What is delivered, and what remains unknown
 
 Delivered: the analysis and source trail, a conditional named candidate, explicit functional and exposure gates, portable code, public-data lookup, family-oriented explanation and a proposed laboratory plan. The molecular diagnosis remains consistent with *BUB1B*-MVA, with unresolved phase and allele-specific functional evidence. No clinical reclassification or treatment claim follows from the computational work alone.

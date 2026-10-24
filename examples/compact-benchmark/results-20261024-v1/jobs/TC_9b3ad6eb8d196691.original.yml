@@ -1,0 +1,172 @@
+phenopacket:
+  id: TC_9b3ad6eb8d196691.original
+  subject:
+    id: PUBLIC_CASE
+    sex: FEMALE
+  phenotypicFeatures:
+  - type:
+      id: HP:0000064
+  - type:
+      id: HP:0000105
+  - type:
+      id: HP:0000286
+  - type:
+      id: HP:0000340
+  - type:
+      id: HP:0000341
+  - type:
+      id: HP:0000407
+  - type:
+      id: HP:0000414
+  - type:
+      id: HP:0000437
+  - type:
+      id: HP:0000482
+  - type:
+      id: HP:0000568
+  - type:
+      id: HP:0000581
+  - type:
+      id: HP:0000582
+  - type:
+      id: HP:0000609
+  - type:
+      id: HP:0000938
+  - type:
+      id: HP:0001182
+  - type:
+      id: HP:0001263
+  - type:
+      id: HP:0001385
+  - type:
+      id: HP:0001545
+  - type:
+      id: HP:0001640
+  - type:
+      id: HP:0001744
+  - type:
+      id: HP:0001747
+  - type:
+      id: HP:0001873
+  - type:
+      id: HP:0001875
+  - type:
+      id: HP:0001888
+  - type:
+      id: HP:0001903
+  - type:
+      id: HP:0001978
+  - type:
+      id: HP:0002020
+  - type:
+      id: HP:0002059
+  - type:
+      id: HP:0002155
+  - type:
+      id: HP:0002240
+  - type:
+      id: HP:0002421
+  - type:
+      id: HP:0002719
+  - type:
+      id: HP:0002779
+  - type:
+      id: HP:0003762
+  - type:
+      id: HP:0005487
+  - type:
+      id: HP:0006895
+  - type:
+      id: HP:0007676
+  - type:
+      id: HP:0008232
+  - type:
+      id: HP:0011471
+  - type:
+      id: HP:0011969
+  - type:
+      id: HP:0012521
+  - type:
+      id: HP:0020062
+  - type:
+      id: HP:0025733
+  - type:
+      id: HP:0031020
+  - type:
+      id: HP:0033281
+  - type:
+      id: HP:0033725
+  - type:
+      id: HP:0034311
+  htsFiles:
+  - uri: /Volumes/easystore/MVA-public-exomiser-2512/runs/public-temporal-compact-20261024/inputs/TC_9b3ad6eb8d196691.vcf
+    htsFormat: VCF
+    genomeAssembly: hg38
+  metaData:
+    created: '2026-10-24T00:00:00Z'
+    createdBy: adriamasnou-public-benchmark
+    resources:
+    - id: hp
+      name: human phenotype ontology
+      url: http://purl.obolibrary.org/obo/hp.owl
+      version: Exomiser-2512-bundled-HPO
+      namespacePrefix: HP
+      iriPrefix: http://purl.obolibrary.org/obo/HP_
+    phenopacketSchemaVersion: 1.0
+analysis:
+  analysisMode: PASS_ONLY
+  inheritanceModes:
+    AUTOSOMAL_DOMINANT: 0.1
+    AUTOSOMAL_RECESSIVE_COMP_HET: 2.0
+    AUTOSOMAL_RECESSIVE_HOM_ALT: 0.1
+    X_DOMINANT: 0.1
+    X_RECESSIVE_COMP_HET: 2.0
+    X_RECESSIVE_HOM_ALT: 0.1
+    MITOCHONDRIAL: 0.2
+  frequencySources:
+  - UK10K
+  - GNOMAD_E_AFR
+  - GNOMAD_E_AMR
+  - GNOMAD_E_EAS
+  - GNOMAD_E_NFE
+  - GNOMAD_E_SAS
+  - GNOMAD_G_AFR
+  - GNOMAD_G_AMR
+  - GNOMAD_G_EAS
+  - GNOMAD_G_NFE
+  - GNOMAD_G_SAS
+  pathogenicitySources:
+  - REVEL
+  - MVP
+  - ALPHA_MISSENSE
+  - SPLICE_AI
+  steps:
+  - failedVariantFilter: {}
+  - variantEffectFilter:
+      remove:
+      - FIVE_PRIME_UTR_EXON_VARIANT
+      - FIVE_PRIME_UTR_INTRON_VARIANT
+      - THREE_PRIME_UTR_EXON_VARIANT
+      - THREE_PRIME_UTR_INTRON_VARIANT
+      - NON_CODING_TRANSCRIPT_EXON_VARIANT
+      - UPSTREAM_GENE_VARIANT
+      - INTERGENIC_VARIANT
+      - REGULATORY_REGION_VARIANT
+      - CODING_TRANSCRIPT_INTRON_VARIANT
+      - NON_CODING_TRANSCRIPT_INTRON_VARIANT
+      - DOWNSTREAM_GENE_VARIANT
+  - frequencyFilter:
+      maxFrequency: 2.0
+  - pathogenicityFilter:
+      keepNonPathogenic: true
+  - inheritanceFilter: {}
+  - omimPrioritiser: {}
+  - hiPhivePrioritiser: {}
+outputOptions:
+  outputContributingVariantsOnly: false
+  numGenes: 0
+  outputDirectory: /Volumes/easystore/MVA-public-exomiser-2512/runs/public-temporal-compact-20261024/results
+  outputFileName: TC_9b3ad6eb8d196691.original
+  outputFormats:
+  - JSON
+  - TSV_GENE

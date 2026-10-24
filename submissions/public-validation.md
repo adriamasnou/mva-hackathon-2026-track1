@@ -109,3 +109,7 @@ Each genomic export retains all 48 executed jobs and complete compact gene-score
 ## Interpretation limits
 
 The selected cases are published resolved small-variant reports with at least three positive HPO terms. Structural, mitochondrial, unresolved and complex multigene cases were excluded. The background combinations, genotype assignments and perturbations are constructed. Source-label qualifications, shared knowledge sources and developer-led review prevent a clinical accuracy claim. These results demonstrate execution, retained provenance and phenotype/background sensitivity across several genes. Nothing in this evaluation measures N1002K function, arimoclomol rescue, likely patient benefit or superiority to another proposal.
+
+## Separate compact extension
+
+The [compact public companion](compact-public-validation.md) reports 713 constructed source signatures using ten hypotheses each, with 1,418 completed jobs and an independently checked parser correction. Its larger source bank is not clinically adjudicated and does not change the source-support groups or nine-label denominator above. **[OUR MEASUREMENT; OUR INFERENCE about scope]**

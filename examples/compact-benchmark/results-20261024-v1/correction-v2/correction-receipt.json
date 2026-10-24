@@ -1,0 +1,30 @@
+{
+  "recorded_utc": "2026-10-24T09:00:12.696873+00:00",
+  "state": "EXPLICIT_POST_FREEZE_CORRECTION_WHILE_INFERENCE_RUNNING",
+  "reason": "The frozen helper treated an absent inheritance-mode combinedScore as invalid. Exomiser 15.1.0 represents this value as primitive double and writes JSON with NON_DEFAULT inclusion, suppressing zero. One unrelated zero mode could invalidate an otherwise evaluable case. Discovered while exporting raw source-gene evidence from the previous 12-case benchmark; not selected to improve compact outcomes.",
+  "semantic_change": "Only absent mode combinedScore defaults to 0.0. Explicit null, bool and nonfinite scores remain invalid. Missing contribution evidence remains unknown and cannot establish joint recovery.",
+  "unchanged": [
+    "all 713 source signatures",
+    "source/decoy genotypes and HPO lists",
+    "both original/no-HPO arms",
+    "fixed strata and failed-case denominators",
+    "primary exact-source-alleles-PASSED endpoint",
+    "worst-tied ranking among genes with PASSED alleles",
+    "case and gene-macro metrics",
+    "strict one-best-mode joint recovery endpoint",
+    "all raw outputs",
+    "original frozen evaluator/helper and original literal evaluation"
+  ],
+  "frozen_adapter_sha256": "198d3b74454e242fd532ee742ddc14feac6b40e614c71152fe71382f394b0c06",
+  "frozen_helper_sha256": "68d59df66a44ef20d6c8e7e3f24e12977d34978b0f996577a37692032c9ee64e",
+  "frozen_case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+  "corrected_component_sha256": {
+    "evaluate_adapter.py": "2b96f446dff975d5ac43cfecaa1f2bd7731d3d7044a3b7483e46257a36a37c45",
+    "joint_mode.py": "e608d67baa986cb04ca8cd44ade05bfa33fceebd778fa85aba5f2bf97d7399ea"
+  },
+  "evidence_sha256": {
+    "installed-JsonResultsWriter-javap.txt": "cc08bdef212ae66afe262b8b6b89606e2e4956865699149280d50f1b4f56ed81",
+    "installed-GeneScore-javap.txt": "9363b4e7064b3d42d6a3c93e4f20cda9ea88c4100abad506905438cfa7350733"
+  },
+  "review_limit": "Post-freeze implementation correction, not externally preregistered. Original and corrected metrics must be reported side by side, with every affected case/arm enumerated by independent audit."
+}
