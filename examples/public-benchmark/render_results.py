@@ -43,7 +43,7 @@ def main():
     cmap=plt.get_cmap('viridis_r').copy();cmap.set_bad('#eeeeee')
     plt.rcParams.update({'font.family':'sans-serif','font.size':10})
     fig,axes=plt.subplots(1,2,figsize=(12.4,8.9),sharey=True)
-    fig.subplots_adjust(left=.13,right=.88,bottom=.22,top=.83,wspace=.12)
+    fig.subplots_adjust(left=.13,right=.88,bottom=.30,top=.83,wspace=.12)
     for panel,(ax,matrix,title) in enumerate(zip(axes,values,['Public HG002 background','Public HG001 background'])):
         artist=ax.imshow(matrix,norm=LogNorm(vmin=1,vmax=vmax),cmap=cmap,aspect='auto')
         ax.set_xticks(range(4),labels,rotation=25,ha='right')
@@ -62,10 +62,11 @@ def main():
     fig.colorbar(artist,cax=cax,label='Conservative source-gene rank (log scale)')
     fig.suptitle('Public multi-case evaluation: every source label and phenotype arm',x=.5,y=.97,fontsize=16,fontweight='bold')
     fig.text(.13,.89,'Semi-synthetic inputs • Exomiser 15.1.0 / data 2512 • ClinVar filter-bypass whitelist disabled',fontsize=10)
-    fig.text(.13,.105,'Primary comparison: nine autosomal source-label cases, with source qualifications retained.\n'
+    fig.text(.13,.065,'Primary comparison: nine autosomal source-label cases, with source qualifications retained.\n'
              'PAX4: disputed causal truth. ZIC3/OFD1: limited technical cases without X background.\n'
              'Cells show exact-score rank intervals; color uses the worst tied rank. Gray retains missing/unscored outcomes.\n'
-             'Two backgrounds are paired tests, not twice as many independent disease cases. No clinical accuracy claim.',
+             'Two backgrounds are paired tests, not twice as many independent disease cases. No clinical accuracy claim.\n'
+             'COG8/SLC35C1, No HPO: best-scoring mode uses only one of two source alleles in both backgrounds.',
              fontsize=9,linespacing=1.6)
     a.output.parent.mkdir(parents=True,exist_ok=True)
     fig.savefig(a.output,dpi=180,facecolor='white')
