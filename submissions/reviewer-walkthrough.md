@@ -59,7 +59,7 @@ python3 -S analysis/rescue_decision/simulation/frozen-source/verify.py --folder 
 
 The canary self-test injects faults into synthetic checker inputs. Its [separate measured SpliceAI controls](../canary/README.md) document actual inference. The simulation command checks retained results and an independently launched exact seeded rerun; [full execution instructions](../analysis/rescue_decision/simulation/README.md) require the pinned scientific runtime. The [public Exomiser recipe](../examples/public-benchmark/README.md) requires the named Java runtime and large public databases; it is a separate computational evaluation. No check here measures N1002K rescue, clinical benefit or family usability.
 
-The [compact companion](compact-public-validation.md) provides a separate 713-signature constructed benchmark. Its figure shows the HPO ablation, surviving gene universe and stricter joint-mode result; the original parser failure and corrected baseline are both retained. Verify the raw results offline from the package root:
+The [compact companion](compact-public-validation.md) provides a separate 713-signature, ten-hypothesis constructed benchmark. Use it to inspect the effect of removing HPO and whether both source alleles contribute within one best-scoring mode. These checks expose limitations hidden by gene-level recovery; they do not establish general diagnostic accuracy. The original parser failure and corrected baseline are both retained. Verify the raw results offline from the package root:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 examples/compact-benchmark/verify.py examples/compact-benchmark/results-20261024-v1

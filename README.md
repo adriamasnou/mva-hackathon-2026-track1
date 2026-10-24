@@ -54,3 +54,11 @@ python3 analysis/bub1b_targeted_analysis.py /path/to/authorized-input.vcf.gz
 ```
 
 Historical computational results are distinguished from tests performed for the current package. Proposed laboratory experiments are not represented as completed. Publication and challenge submission are separate steps; this local package does not itself establish either.
+
+## Reuse and acknowledgement
+
+Original submission text, code and derived outputs are offered under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/), with attribution to adriamasnou, in accordance with the challenge terms. Third-party materials retain their own licences and attribution requirements. This notice grants no access to, or redistribution rights over, the gated challenge data.
+
+This work was made possible through the Hackathon, organized by Sage Bionetworks in partnership with the MVA Society, Hugging Face, and BEACON (The Benchmarking, Evaluation, and Assessment Consortium for Science), with prize sponsorship from AWS and Anthropic. We are deeply grateful to the child and their family who generously contributed their data and their story to advance research into this rare disease. We acknowledge their trust in making this Hackathon possible.
+
+Challenge reference: [Rare Disease, Real Kid. The 2026 MVA Hackathon, Synapse syn76251147](https://www.synapse.org/Synapse:syn76251147/wiki/642892). This identifies the challenge; it is not a claim to have recovered the prescribed dataset citation. Before a subsequent publication, obtain the current dataset reference from that page as required by the challenge rules.
