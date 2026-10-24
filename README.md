@@ -2,6 +2,8 @@
 
 **adriamasnou · Track 2 · 24 October 2026**
 
+**Delivered:** Track 2 submission 1 for `adriamasnou` was accepted, observed at approximately **22:58 UTC on 24 October 2026** (not an exact server timestamp). The [repository is public](https://github.com/adriamasnou/mva-hackathon-2026-track1). Watch the [hosted pitch](https://youtu.be/o5jYh3RoDGw): 177 seconds, unlisted, with English captions.
+
 We propose **arimoclomol for conditional preclinical testing** in BUB1B-MVA. The candidate must improve chromosome-segregation function at relevant exposure; more protein alone is insufficient. No drug rescue or treatment in this child has been performed.
 
 ## Start here
@@ -55,7 +57,7 @@ This repository contains code, a small number of named variant findings and publ
 python3 analysis/bub1b_targeted_analysis.py /path/to/authorized-input.vcf.gz
 ```
 
-Historical computational results are distinguished from tests performed for the current package. Proposed laboratory experiments are not represented as completed. Publication and challenge submission are separate steps; this local package does not itself establish either.
+Historical computational results are distinguished from tests performed for the current package. Proposed laboratory experiments are not represented as completed. The [delivery receipt summary](DELIVERY-RECEIPT.json) records the submitted version and approximate acceptance observation; the full platform receipt is retained separately outside this repository.
 
 ## Reuse and acknowledgement
 
