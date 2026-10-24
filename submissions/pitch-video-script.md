@@ -2,26 +2,26 @@
 
 **177 seconds (2:57).** Neutral synthetic narration and silent visuals share this timeline. Software checks do not establish biological rescue. Sentence captions follow measured local speech segments.
 
-## 00:00:00.000–00:00:23.800 — slide 1
+## 00:00:00.000–00:00:21.067 — slide 1
 
-For a child with mosaic variegated aneuploidy, a plausible medicine is only a starting point. We propose arimoclomol for laboratory testing, with explicit rules for deciding whether it deserves to advance. We have not demonstrated drug rescue or treated this child. Our contribution is a testable proposal, supported by working tools that others can use.
+We propose arimoclomol for laboratory testing in BUB one B related mosaic variegated aneuploidy. The aim is better chromosome separation through restoration of functional Bub R one. The key unknown is whether the N one thousand and two K variant retains function that a drug can rescue. No drug rescue has been demonstrated.
 
-## 00:00:23.800–00:00:51.600 — slide 2
+## 00:00:21.067–00:00:49.067 — slide 2
 
-The two identified variants affect the gene that makes Bub R one, a protein involved in chromosome separation. Their phase is inferred. The exact protein consequences remain unmeasured. The missense variant could reduce abundance, impair function, do both, or remain indeterminate. The proposed experiment compares full-length normal and altered protein at matched abundance. An isolated fragment's melting curve cannot settle that question.
+Arimoclomol has a documented human exposure record and a conditional stress-response rationale. N M N has stronger direct evidence of increased Bub R one protein, in mouse systems. Four P B A can also increase inducible Hsp70 in a different cell model. None establishes N one thousand and two K rescue. We would compare these candidates on function and cell fate at qualified exposures. Another candidate can replace our lead.
 
-## 00:00:51.600–00:01:33.833 — slide 3
+## 00:00:49.067–00:01:19.267 — slide 3
 
-The protocol has four gates. Gate A establishes the variant's effect using full-length protein at matched abundance. Gate B qualifies measurement, pathway response and exposure. Gate C measures chromosome segregation while separately tracking division and cell fate. Gate D applies prespecified confidence bounds. More protein alone cannot pass. Neither can apparent improvement from stopping division or selectively losing abnormal cells. Failed controls are indeterminate. An interval touching the worthwhile-benefit threshold is inconclusive. Only an interval entirely below that threshold rules out the programme's worthwhile benefit at that exposure. These are proposed research rules, not clinical thresholds.
+First, compare full-length normal and variant protein at matched abundance. Then measure segregation errors alongside division, death and arrest. Confidence bounds must clear a prespecified worthwhile benefit, with exposure and fate criteria also satisfied. A protein increase alone cannot advance the programme. The protocol includes construct specifications and public price evidence. Laboratory acceptance, imaging qualification and the complete budget remain open.
 
-## 00:01:33.833–00:02:03.800 — slide 4
+## 00:01:19.267–00:01:53.767 — slide 4
 
-The offline navigator links genes to candidate conditions and shows each source's association role. Twenty-eight selected queries passed, with complete review of every returned source association: forty-seven gene and register-row pairs. This was a developer evaluation using the same source snapshots, not independent clinical validation. All register rows remain visible, including unmapped entries. A match does not establish eligibility. Queries stay on the device.
+Here are three recorded executions using synthetic inputs. In the first, protein rises forty percent, but the functional interval stays below the illustrative benefit threshold. The programme rules out that worthwhile benefit. In the second, the surviving cells look better, but selective loss triggers do not advance. In the third, exposure measurement fails, so the result is technically indeterminate. The intervals are supplied, not fitted from observations. These examples demonstrate working decision software, not experimental drug effects.
 
-## 00:02:03.800–00:02:35.700 — slide 5
+## 00:01:53.767–00:02:24.033 — slide 5
 
-We implemented these rescue-decision rules as a research software prototype. All forty frozen synthetic cases matched their expected decisions, including protein-only signals, selective killing, missing data and confidence-boundary cases. This verifies software behaviour, not biological rescue. Separately, real Splice A I inference passes six controls. Its checker rejects nine injected failures. Laboratory function, exposure and independent replication remain unmeasured.
+The offline navigator shows the source behind a gene-to-condition connection. This is the actual BUB one B lookup. Twenty-eight selected queries passed, covering forty-seven reviewed associations. That developer audit shares the tool's sources, so clinical validity remains untested. A match does not establish family eligibility. Separately, our public ranking benchmark retains all seven hundred and thirteen signatures, failures and source qualifications for inspection.
 
-## 00:02:35.700–00:02:57.000 — slide 6
+## 00:02:24.033–00:02:57.000 — slide 6
 
-The next step is a laboratory test of full-length variant function and exposure-limited rescue. The proposal says what would advance the candidate and what would stop it. The reusable tools, source trail and plain-language explanation are delivered now. Clinical benefit remains to be earned. That is the standard we want this work judged against.
+The credit plan funds evidence checks, public validation and reusable analysis tools, with an initial service-qualification step and spending caps. Its outputs are corrected claim records, a new evaluation registered before inference, and reproducible analysis releases. Credits do not fund the laboratory programme. What we deliver now is a testable drug proposal and working tools that expose unsupported conclusions. The next biological result must determine which candidate, if any, advances.

@@ -4,8 +4,8 @@
   "title": "Heterozygous UBR5 variants result in a neurodevelopmental syndrome with developmental delay, autism, and intellectual disability.",
   "reviewer": {
     "id": "reader-3",
-    "reviewed_at_utc": "2026-10-24T10:34:17.048309+00:00",
-    "method": "Complete accepted manuscript text read in contiguous chunks, allsix mainfigures pixels, Table1 allthreepages, Table2 textallrows/pixelsmappedpatientpages. BothsupplementPDFpages read text/pixels; exactsixpatientS1columns read alldata and faithfulrendering."
+    "reviewed_at_utc": "2026-10-24T18:34:05.451633+00:00",
+    "method": "Composite review with preserved attribution. Predecessor reader-3 at 2026-10-24T10:34:17.048309+00:00 reported: Complete accepted manuscript text read in contiguous chunks, allsix mainfigures pixels, Table1 allthreepages, Table2 textallrows/pixelsmappedpatientpages. BothsupplementPDFpages read text/pixels; exactsixpatientS1columns read alldata and faithfulrendering. Continuation reader-3-continuation-20261024 personally inspected accepted-manuscript PDFpages29/30/32/34 and read all exact stored values for23previouslyunread S1individualcolumns in eight fully inspected wrapped derivative pages, rows1:19. Merged rangeA3:A4 only; no patient merges or cellcomments. This continuation does not claim personally rereading other inherited text,figures,supplements or sixassigned case adjudications. Exact prior canonical retained in continuation/prior-39721588-record.json."
   },
   "audit": {
     "timing": "post_inference",
@@ -13,8 +13,8 @@
     "scope": "source_correspondence_not_clinical_validation",
     "clinical_truth_established": false,
     "ranking_outcomes_seen": true,
-    "outcome_exposure": "aggregate_only",
-    "exposure_note": "Required HANDOFF was read and includes aggregate compact-cohort metrics. No per-case inference ranks, scores or outcomes opened or used. This is a post-inference audit, not blinded validation."
+    "outcome_exposure": "per_case",
+    "exposure_note": "Continuation required HANDOFF reading exposed historical public-control HG002/FGFR2 case-specific rank and aggregate history. No target-case inference ranks, inference-output files or benchmark outcome summaries consulted. Not blinded. Predecessor declaration retained verbatim in continuation/prior-39721588-record.json."
   },
   "bindings": {
     "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
@@ -71,6 +71,14 @@
       "sha256": "6a29ee6ebe9cbc2909087ef423c4aefbf901a314cd12048ffadc66a67c9ca27e",
       "kind": "pdf",
       "description": "Exact patientcolumns17,2,8,4,23,1 rendered allrows2–19; blanks explicitlyshown."
+    },
+    {
+      "id": "s1remaining",
+      "pmid": "39721588",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/39721588/S1-remaining-wrapped.pdf",
+      "sha256": "8d077a1bcfb39e30217011034441e59f8e13ccc8e5f407870478e88f30faaea7",
+      "kind": "pdf",
+      "description": "Eight wrapped exact-cell derivative pages for remaining23individuals, Sheet1rows1:19. All pages/cells personally read by continuation; source workbook unchanged. A3:A4 merged feature label on row3, row4 contains protein notation."
     }
   ],
   "identity": {
@@ -336,7 +344,7 @@
     {
       "id": "table2",
       "kind": "table",
-      "status": "partial",
+      "status": "full",
       "required_modes": [
         "text",
         "pixels"
@@ -392,9 +400,37 @@
           "mode": "pixels",
           "source_id": "article",
           "locator": "PDFpage33"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Accepted-manuscript PDFpage29, personally inspected by continuation"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Accepted-manuscript PDFpage30, personally inspected by continuation"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Accepted-manuscript PDFpage32, personally inspected by continuation"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Accepted-manuscript PDFpage34, personally inspected by continuation"
         }
       ],
-      "note": "Alltextread, mappedvariantpagesvisuallychecked; remainingTable2pages29/30/32/34notvisuallyinspected."
+      "note": "Composite: all Table2text and five pages of pixels are inherited. Continuation personally inspected remaining PDFpages29/30/32/34, completing table pixel extent; source classification labels preserved as reported."
     },
     {
       "id": "supp_fig",
@@ -434,7 +470,7 @@
     {
       "id": "supp_s1",
       "kind": "supplement",
-      "status": "partial",
+      "status": "full",
       "required_modes": [
         "data",
         "pixels"
@@ -532,9 +568,331 @@
           "mode": "pixels",
           "source_id": "s1_pixels",
           "locator": "Individual1allcells rendered onPDFpage6"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual3 complete stored cells rows1:19 personally read via exact-cell derivative page1; original identity/hash verified"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page1, individual3, allrows1:19"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual5 complete stored cells rows1:19 personally read via exact-cell derivative page1; original identity/hash verified"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page1, individual5, allrows1:19"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual6 complete stored cells rows1:19 personally read via exact-cell derivative page1; original identity/hash verified"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page1, individual6, allrows1:19"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual7 complete stored cells rows1:19 personally read via exact-cell derivative page2; original identity/hash verified"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page2, individual7, allrows1:19"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual9 complete stored cells rows1:19 personally read via exact-cell derivative page2; original identity/hash verified"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page2, individual9, allrows1:19"
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual10 complete stored cells rows1:19 personally read via exact-cell derivative page2; original identity/hash verified"
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page2, individual10, allrows1:19"
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual11 complete stored cells rows1:19 personally read via exact-cell derivative page3; original identity/hash verified"
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page3, individual11, allrows1:19"
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual12 complete stored cells rows1:19 personally read via exact-cell derivative page3; original identity/hash verified"
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page3, individual12, allrows1:19"
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual13 complete stored cells rows1:19 personally read via exact-cell derivative page3; original identity/hash verified"
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page3, individual13, allrows1:19"
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual14 complete stored cells rows1:19 personally read via exact-cell derivative page4; original identity/hash verified"
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page4, individual14, allrows1:19"
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual15 complete stored cells rows1:19 personally read via exact-cell derivative page4; original identity/hash verified"
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page4, individual15, allrows1:19"
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual16 complete stored cells rows1:19 personally read via exact-cell derivative page4; original identity/hash verified"
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page4, individual16, allrows1:19"
+        },
+        {
+          "start": 18,
+          "end": 18,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual18 complete stored cells rows1:19 personally read via exact-cell derivative page5; original identity/hash verified"
+        },
+        {
+          "start": 18,
+          "end": 18,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page5, individual18, allrows1:19"
+        },
+        {
+          "start": 19,
+          "end": 19,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual19 complete stored cells rows1:19 personally read via exact-cell derivative page5; original identity/hash verified"
+        },
+        {
+          "start": 19,
+          "end": 19,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page5, individual19, allrows1:19"
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual20 complete stored cells rows1:19 personally read via exact-cell derivative page5; original identity/hash verified"
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page5, individual20, allrows1:19"
+        },
+        {
+          "start": 21,
+          "end": 21,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual21 complete stored cells rows1:19 personally read via exact-cell derivative page6; original identity/hash verified"
+        },
+        {
+          "start": 21,
+          "end": 21,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page6, individual21, allrows1:19"
+        },
+        {
+          "start": 22,
+          "end": 22,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual22 complete stored cells rows1:19 personally read via exact-cell derivative page6; original identity/hash verified"
+        },
+        {
+          "start": 22,
+          "end": 22,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page6, individual22, allrows1:19"
+        },
+        {
+          "start": 24,
+          "end": 24,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual24 complete stored cells rows1:19 personally read via exact-cell derivative page6; original identity/hash verified"
+        },
+        {
+          "start": 24,
+          "end": 24,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page6, individual24, allrows1:19"
+        },
+        {
+          "start": 25,
+          "end": 25,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual25 complete stored cells rows1:19 personally read via exact-cell derivative page7; original identity/hash verified"
+        },
+        {
+          "start": 25,
+          "end": 25,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page7, individual25, allrows1:19"
+        },
+        {
+          "start": 26,
+          "end": 26,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual26 complete stored cells rows1:19 personally read via exact-cell derivative page7; original identity/hash verified"
+        },
+        {
+          "start": 26,
+          "end": 26,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page7, individual26, allrows1:19"
+        },
+        {
+          "start": 27,
+          "end": 27,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual27 complete stored cells rows1:19 personally read via exact-cell derivative page7; original identity/hash verified"
+        },
+        {
+          "start": 27,
+          "end": 27,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page7, individual27, allrows1:19"
+        },
+        {
+          "start": 28,
+          "end": 28,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual28 complete stored cells rows1:19 personally read via exact-cell derivative page8; original identity/hash verified"
+        },
+        {
+          "start": 28,
+          "end": 28,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page8, individual28, allrows1:19"
+        },
+        {
+          "start": 29,
+          "end": 29,
+          "mode": "data",
+          "source_id": "s1",
+          "locator": "Individual29 complete stored cells rows1:19 personally read via exact-cell derivative page8; original identity/hash verified"
+        },
+        {
+          "start": 29,
+          "end": 29,
+          "mode": "pixels",
+          "source_id": "s1remaining",
+          "locator": "Page8, individual29, allrows1:19"
         }
       ],
-      "note": "Allsixmappedindividualcolumnsread completely; other23patientsnotfullyread."
+      "note": "Composite: six mappedpatient columns are saved predecessor data/pixel reading. Continuation personally read remaining23individuals allrows1:19 in eight faithful wrapped derivative pages, including blanks, genotype/protein/inheritance, familyhistory and allphenotypecells. Only merged rangeA3:A4; no patient-column merges or cellcomments. Extraction/rendering alone is not treated as reading."
     }
   ],
   "packets": [
@@ -2902,12 +3260,13 @@
   ],
   "access_issues": [],
   "limitations": [
-    "Allacceptedmanuscripttextandsixmainfiguresread; Table2pixelsremainpartial, S1onlysixmappedpatientcolumnsfullyread. Noall29supplementpatientclaim.",
+    "Saved predecessor main-text, figure, other supplement and sixassigned case reviews retain attribution. Continuation completed four remainingTable2pixel pages and23remainingS1patient columns in data/pixels; allcomponent coverage now complete as composite review. No claim that continuation personally read inherited components.",
     "Cohortincludes1homozygousGly2482Sercase18thatDiscussionconsiderslikelybenign/nonexplanatorydespiteTable2VUS; aggregationmustnotbecome29confirmeddiagnoses.",
     "Discussioncalls maternalmosaicTyr542Ilefs*20 likelypathogenic, Table2VUS; noautomaticupgrade.",
     "Proband8mainTable1epilepsynegativeconflictswithS1fever/infection-associatedepilepsy. Proband1and8PierreRobinpacketpositiveslackindividualsourcesupport.",
     "Proband17spliceconsequencep.? remainsunmeasured; fiveothermappedvariantsautoubiquitinationdecreasedbutassayisnotpatientclinicalcausality.",
     "Sourceonecase18consanguinityS1contradictsintroductoryallnonconsanguineousdescription. Intro29age2–16alsooverlooks Table1infant0.63y.",
-    "Rawrestrictedgenomes/exomesnotread; noresults/rankingsopenedandnoevaluationchanges."
+    "Raw restricted genomes/exomes not read. No target-case outcome/ranking files consulted or evaluation changes made; historical public-control HANDOFF per_case exposure is disclosed in audit.",
+    "Continuation source checks: Table2individual12 p.Asp1692Asn is labelledLP despite reported NoDecrease and BS3strong; classification is retained as authors assertion, not independently reclassified. S1individuals27/29 had duoexome with fatherunavailable and blank inheritance, so de novo status is unestablished. S1individual19 explicitly de novo whereas Table2inheritance is blank. Individual3has PierreRobinsequence; this does not supply the absent individual1/8 evidence. S1individual18 consanguinity/heterozygous relatives and severe phenotype do not establish explanatory pathogenicity of homozygousGly2482Ser."
   ]
 }

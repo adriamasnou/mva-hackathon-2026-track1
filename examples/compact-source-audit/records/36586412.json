@@ -1,0 +1,3396 @@
+{
+  "schema_version": 1,
+  "pmid": "36586412",
+  "title": "Deleterious, protein-altering variants in the transcriptional coregulator ZMYM3 in 27 individuals with a neurodevelopmental delay phenotype",
+  "reviewer": {
+    "id": "reader9",
+    "reviewed_at_utc": "2026-10-24T18:36:18.691284+00:00",
+    "method": "Independent public-source comparison, all assigned selected and alternate packet members retained. No inference output opened."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Mandatory HANDOFF.md exposes historical public-control per-case ranks and aggregate outcomes. Conservatively declared per_case; no target-case outcomes or inference files consulted for this audit."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "9afa6b5a4eedb785b4cec78ff1c5b55d879b438a4295551af68523d886e411f5",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-layout",
+      "pmid": "36586412",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/claude-readers/run-20261024T181003Z/inputs/36586412/originals/held-layout.txt",
+      "sha256": "f3cabffffde2fc708bf7cb1501398c467a7aa978c3b3a55424c7c314d4d17d10",
+      "kind": "text",
+      "description": "Entire53-page combined PDF extraction read, including39 main references,27 case reports, supplementary methods and33 supplementary references. Blank/image-only pages inspected visually."
+    },
+    {
+      "id": "main-pdf",
+      "pmid": "36586412",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/claude-readers/run-20261024T181003Z/inputs/36586412/originals/article-and-supplement.pdf",
+      "sha256": "a1a76f5e76ee584f399633b900d2d2d81a09cf52f80dd18eb1932c1a0edf49dd",
+      "kind": "pdf",
+      "description": "Public published13-page article plus cover and39-page supplemental PDF, assembled in supplied public source packet."
+    },
+    {
+      "id": "identity-metadata",
+      "pmid": "36586412",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/36586412/identity.json",
+      "sha256": "60b0a0cb4579e320978926d067afa37d1aca0b2cc7d6f2a3e47eaa8d88a6cdcf",
+      "kind": "metadata",
+      "description": "Exact PMID/DOI identity."
+    },
+    {
+      "id": "workbook",
+      "pmid": "36586412",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/claude-readers/run-20261024T181003Z/inputs/36586412/originals/supplement-tables.xlsx",
+      "sha256": "50f5583b3585abcd8e57e4040e9e87304ad20e5da5bcca289df81bcd8f43a6c3",
+      "kind": "data",
+      "description": "All five sheets;956 populated cells actually read, including sequence cells, formulas and explanatory notes."
+    },
+    {
+      "id": "workbook-cells",
+      "pmid": "36586412",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-9/assets/36586412-workbook-cells.json",
+      "sha256": "bfe13f29f89596726e54569012995e0d79963206b9207a961923776fc7c57e4d",
+      "kind": "data",
+      "description": "Coordinate-preserving independent openpyxl extraction; all956 populated cell values/formulas read."
+    },
+    {
+      "id": "workbook-metadata",
+      "pmid": "36586412",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-9/assets/36586412-workbook-metadata.json",
+      "sha256": "d9ec2172148666285715f101448d4bb485de6a28866fa359ce0d63af533292c7",
+      "kind": "data",
+      "description": "All six formula caches read; no comments, hyperlinks, embedded images/charts or hidden sheets."
+    },
+    {
+      "id": "source-context",
+      "pmid": "36586412",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/claude-readers/run-20261024T181003Z/inputs/36586412/public-source-context.json",
+      "sha256": "a4f26a002d633cf24eb33a6eeaa5518d88b96d02296209bf0c1d9bbcc6b328be",
+      "kind": "metadata",
+      "description": "Public frozen packet fields; no inference outputs."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Deleterious, protein-altering variants in the transcriptional coregulator ZMYM3 in 27 individuals with a neurodevelopmental delay phenotype",
+    "evidence": [
+      {
+        "source_id": "main-layout",
+        "locator": "PDF pp1-3, title and DOI10.1016/j.ajhg.2022.12.007"
+      },
+      {
+        "source_id": "identity-metadata",
+        "locator": "PMID36586412"
+      }
+    ],
+    "note": "Published AJHG110:215-227 plus matching supplemental title and authors; exact identity verified."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 14,
+      "table": 3,
+      "supplement": 2
+    },
+    "evidence": [
+      {
+        "source_id": "main-layout",
+        "locator": "Full article, supplemental case reports/methods/legends; Figures1-4 and S1-S10; main Table1 and two unnumbered methods tables"
+      },
+      {
+        "source_id": "workbook-cells",
+        "locator": "Five sheets TablesS1-S5, including all occupied cells and notes"
+      }
+    ],
+    "note": "Four main figures plus ten supplemental figures; main Table1 plus sequencing-methods and construct-coordinate tables. Supplemental PDF text and five-sheet workbook are two supplement components. Workbook tables assessed in data mode as a supplement, not counted again as pixel tables."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "pages",
+      "unit_count": 14,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF pages1-14: cover plus published pages215-227, all sections and39references."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 14,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "PDF pages1-14: cover plus published pages215-227, all sections and39references."
+        }
+      ],
+      "note": "PDF pages1-14: cover plus published pages215-227, all sections and39references."
+    },
+    {
+      "id": "figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure1, PDF page4; all panels, labels and legends inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "Figure1, PDF page4; all panels, labels and legends inspected."
+        }
+      ],
+      "note": "Figure1, PDF page4; all panels, labels and legends inspected."
+    },
+    {
+      "id": "figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure2, PDF page8; all panels, labels and legends inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "Figure2, PDF page8; all panels, labels and legends inspected."
+        }
+      ],
+      "note": "Figure2, PDF page8; all panels, labels and legends inspected."
+    },
+    {
+      "id": "figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure3, PDF page9; all panels, labels and legends inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "Figure3, PDF page9; all panels, labels and legends inspected."
+        }
+      ],
+      "note": "Figure3, PDF page9; all panels, labels and legends inspected."
+    },
+    {
+      "id": "figure4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure4, PDF page10; all panels, labels and legends inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "Figure4, PDF page10; all panels, labels and legends inspected."
+        }
+      ],
+      "note": "Figure4, PDF page10; all panels, labels and legends inspected."
+    },
+    {
+      "id": "table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 2,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF pages5-6, published218-219; complete27-person table and footnotes."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "PDF pages5-6, published218-219; complete27-person table and footnotes."
+        },
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF pages5-6, published218-219; complete27-person table and footnotes."
+        }
+      ],
+      "note": "PDF pages5-6, published218-219; complete27-person table and footnotes."
+    },
+    {
+      "id": "supplement-pdf-text",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "pages",
+      "unit_count": 39,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF pages15-53 inclusive, all case reports, methods, table cells/legends and33references. Unit1 maps to PDF15. Image-only pages31-32 contain pedigrees, inspected under FigureS1."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 39,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "PDF pages15-53 inclusive, all case reports, methods, table cells/legends and33references. Unit1 maps to PDF15. Image-only pages31-32 contain pedigrees, inspected under FigureS1."
+        }
+      ],
+      "note": "PDF pages15-53 inclusive, all case reports, methods, table cells/legends and33references. Unit1 maps to PDF15. Image-only pages31-32 contain pedigrees, inspected under FigureS1."
+    },
+    {
+      "id": "supp-figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "FigureS1, PDF pages30-32; all panels and labels inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "FigureS1, PDF pages30-32; all panels and labels inspected."
+        }
+      ],
+      "note": "FigureS1, PDF pages30-32; all panels and labels inspected."
+    },
+    {
+      "id": "supp-figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "FigureS2, PDF pages33; all panels and labels inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "FigureS2, PDF pages33; all panels and labels inspected."
+        }
+      ],
+      "note": "FigureS2, PDF pages33; all panels and labels inspected."
+    },
+    {
+      "id": "supp-figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "FigureS3, PDF pages34; all panels and labels inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "FigureS3, PDF pages34; all panels and labels inspected."
+        }
+      ],
+      "note": "FigureS3, PDF pages34; all panels and labels inspected."
+    },
+    {
+      "id": "supp-figure4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "FigureS4, PDF pages35; all panels and labels inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "FigureS4, PDF pages35; all panels and labels inspected."
+        }
+      ],
+      "note": "FigureS4, PDF pages35; all panels and labels inspected."
+    },
+    {
+      "id": "supp-figure5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "FigureS5, PDF pages36; all panels and labels inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "FigureS5, PDF pages36; all panels and labels inspected."
+        }
+      ],
+      "note": "FigureS5, PDF pages36; all panels and labels inspected."
+    },
+    {
+      "id": "supp-figure6",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "FigureS6, PDF pages37; all panels and labels inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "FigureS6, PDF pages37; all panels and labels inspected."
+        }
+      ],
+      "note": "FigureS6, PDF pages37; all panels and labels inspected."
+    },
+    {
+      "id": "supp-figure7",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "FigureS7, PDF pages38; all panels and labels inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "FigureS7, PDF pages38; all panels and labels inspected."
+        }
+      ],
+      "note": "FigureS7, PDF pages38; all panels and labels inspected."
+    },
+    {
+      "id": "supp-figure8",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "FigureS8, PDF pages39; all panels and labels inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "FigureS8, PDF pages39; all panels and labels inspected."
+        }
+      ],
+      "note": "FigureS8, PDF pages39; all panels and labels inspected."
+    },
+    {
+      "id": "supp-figure9",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "FigureS9, PDF pages40; all panels and labels inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "FigureS9, PDF pages40; all panels and labels inspected."
+        }
+      ],
+      "note": "FigureS9, PDF pages40; all panels and labels inspected."
+    },
+    {
+      "id": "supp-figure10",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "FigureS10, PDF pages41; all panels and labels inspected."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "FigureS10, PDF pages41; all panels and labels inspected."
+        }
+      ],
+      "note": "FigureS10, PDF pages41; all panels and labels inspected."
+    },
+    {
+      "id": "supp-methods-sequencing-table",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Unnumbered sequencing methods table, PDF42; all8patient rows and4columns."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "Unnumbered sequencing methods table, PDF42; all8patient rows and4columns."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "Unnumbered sequencing methods table, PDF42; all8patient rows and4columns."
+        }
+      ],
+      "note": "Unnumbered sequencing methods table, PDF42; all8patient rows and4columns."
+    },
+    {
+      "id": "supp-methods-construct-table",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 2,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Unnumbered construct-coordinate table, PDF48-49, all three constructs, exon intervals and PAM edits."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "Unnumbered construct-coordinate table, PDF48-49, all three constructs, exon intervals and PAM edits."
+        },
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "Unnumbered construct-coordinate table, PDF48-49, all three constructs, exon intervals and PAM edits."
+        }
+      ],
+      "note": "Unnumbered construct-coordinate table, PDF48-49, all three constructs, exon intervals and PAM edits."
+    },
+    {
+      "id": "supplement-workbook",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "sheets",
+      "unit_count": 5,
+      "extent_source_id": "workbook",
+      "extent_evidence": [
+        {
+          "source_id": "workbook",
+          "locator": "All five sheets read: TableS1 374 populated cells, S2 310, S3 181, S4 52, S5 39; all sequence strings and all formulas plus six caches. Formatting-only trailing rows do not count as clinical data."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 5,
+          "mode": "data",
+          "source_id": "workbook-cells",
+          "locator": "All five sheets read: TableS1 374 populated cells, S2 310, S3 181, S4 52, S5 39; all sequence strings and all formulas plus six caches. Formatting-only trailing rows do not count as clinical data."
+        }
+      ],
+      "note": "All five sheets read: TableS1 374 populated cells, S2 310, S3 181, S4 52, S5 39; all sequence strings and all formulas plus six caches. Formatting-only trailing rows do not count as clinical data."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/ZMYM3/PMID_36586412_Individual_15.json",
+      "packet_sha256": "11498023c4f13298949ae58e3b264e096cbb6886e1e70237db3046ac62995d19",
+      "case_id": "TC_e61987a5cea9a36b",
+      "role": "selected",
+      "packet_subject_id": "Individual 15",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Frozen packet preserved unchanged; all allele representations and phenotype items independently compared.",
+        "Original paper claims and source-internal inconsistencies are retained; no target-case inference outcomes were consulted."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Individual 15 is male evaluated at16years3months (P16Y3M), matching packet sex, age and individual identifier.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Hemizygous NM_005096.3:c.3820C>T, NP_005087.1:p.Arg1274Trp, NC_000023.11:g.71241327G>A matches Table1, TableS1 and experimental coordinate table.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Table1 PDF6; construct table PDF49; TableS1 row23"
+          },
+          {
+            "source_id": "workbook-cells",
+            "locator": "TableS1 A23:M23"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Main table and pedigree designate de novo and show both parents negative; methods list an Autism/ID duo with mother, not a trio. Hemizygous male X allele is not transmitted by father.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Table1 PDF6; FigS1 PDF32; sequencing methods PDF42"
+          }
+        ],
+        "limitations": [
+          "Reported de novo status supported; full trio/paternity verification is not documented in the methods for this individual."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single hemizygous X-linked variant in a male; no two-allele phase question.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Table1 PDF6; FigS1 PDF32"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Arg1274Trp has variant-specific reduced chromatin occupancy and cytoplasmic localization in engineered HepG2 cells, supporting a hypomorphic effect. This strengthens the proposed gene association but does not itself establish the packet SOLVED/CAUSATIVE/PATHOGENIC clinical classification. UNKNOWN_ACTIONABILITY is consistent with no demonstrated clinical intervention.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Figures4/S7; Results PDF9-11; Discussion PDF12; ACMG EVIDENCE CODES PDF46"
+          }
+        ],
+        "limitations": [
+          "No formal ACMG classification applied by authors; engineered hepatoma cells are not patient neurons.",
+          "Modeling predicts stabilization at a low-confidence residue (pLDDT34.87), so hypomorphism must not be restated as proven protein destabilization."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Packet omits prominent ears, large nose, thin extremities/decreased muscle mass, knobby knuckles, aggression/impulsivity/emotional outbursts, and wrongly excludes myopia and aortic-root dilation.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+          }
+        ],
+        "limitations": [
+          "Many packet negatives represent absence of reporting rather than explicit primary-source exclusions.",
+          "Source association/functional evidence is not a new clinical diagnosis."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c3820CtoT_ZMYM3_NM_005096v3",
+            "geneContext": {
+              "valueId": "HGNC:13054",
+              "symbol": "ZMYM3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005096.3:c.3820C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000023.11:g.71241327G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005087.1:p.(Arg1274Trp)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chrX",
+              "pos": 71241327,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000134",
+              "label": "hemizygous"
+            }
+          },
+          "snapshot_sha256": "17e135b5ca34f4b4ca26f9bbdd2259e483f59de2e31497550f5686d75580dfe2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hemizygous NM_005096.3:c.3820C>T, NP_005087.1:p.Arg1274Trp, NC_000023.11:g.71241327G>A matches Table1, TableS1 and experimental coordinate table.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 PDF6; construct table PDF49; TableS1 row23"
+              },
+              {
+                "source_id": "workbook-cells",
+                "locator": "TableS1 A23:M23"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011800",
+              "label": "Midface retrusion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8977ea4d67149de11c81e29edb6023eb5854fe8801cbef6c0f05948a95f4ad4b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Midface retrusion is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000280",
+              "label": "Coarse facial features"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a49cbc501e9ca3ac28cd99ccb7788a4a48487333ef25f0c57a4ae32cdb7c14d3",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Coarse facial features is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000325",
+              "label": "Triangular face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8f3e7117d4522889f24170aa39192763ef94219dfed6c0f0fd86c521d1302a73",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Triangular face is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000276",
+              "label": "Long face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f86a163e69de2c34bbc0ab608b5c76cff3bc82a4ccd6b0f6c902ea4a1c9fee58",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Long face is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009890",
+              "label": "High anterior hairline"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6ed393200bb72c9baaa97f2cbd3dba8efb536a27478f272c8f513f203b9fba6c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "High anterior hairline is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000278",
+              "label": "Retrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "66dda0282a422dd164068df1af84aa261c849aca4e56fdc28993d0323e42e4c2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Retrognathia is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000303",
+              "label": "Mandibular prognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9686a6ed16020d67e61eb736722e8206137fea9544009c298158de5e4956e614",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Mandibular prognathia is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c75e654012c14dea90453d61fde221f4dca1c2729c3ea61db1e002c4f5fd16eb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypertelorism is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000506",
+              "label": "Telecanthus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f1f19b29e7dd998e34567da624965e91307b05997cb48f8f273e80c790dc32b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Telecanthus is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000637",
+              "label": "Long palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fe74a18fce0d4419b5ea90f8088861dca044c2216a525243371ce9f6b5625127",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Long palpebral fissure is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000582",
+              "label": "Upslanted palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5867461b798c329bd0bddddb67e84eb665b91c9df85237c30adf17460594bcc0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Upslanted palpebral fissure is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1e78f075d7d5e88f72df7de1f0ab14b655ba5d68bfc8adc2914cf5d7ebde009e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Downslanted palpebral fissures is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000431",
+              "label": "Wide nasal bridge"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "aa8cc06e208ce537b647bcdf69fb85b32cbbe067fffdadbd93161bfb1f34383c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Wide nasal bridge is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000233",
+              "label": "Thin vermilion border"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "83d8163deaa9a3eb13928fe4b39865a2a3216f0f43a07fd33163bf31b909ed02",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Thin vermilion border is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000343",
+              "label": "Long philtrum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6ed0c52c1a5702542a97038db9ee6692d282239a275c74b59b99e5435150966b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Long philtrum is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009928",
+              "label": "Thick nasal alae"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b2e0a74d72c1d6dca8622c7c860d959708b8d7d86d1834cad6387c33e7760115",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Thick nasal alae is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005280",
+              "label": "Depressed nasal bridge"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "21fe9b14fb5b68f364eb1048773ec5d9f37599cabd6f77076884d98d07dd8fb0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Depressed nasal bridge is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000369",
+              "label": "Low-set ears"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ea3c99f77d325f2810bba05cb968302cbc1008c58ed25bc0410c8d56e3480627",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Low-set ears is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000378",
+              "label": "Cupped ear"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "451c76852f92356897a8afd8457972d77ae02fa1a3f4481cff2706c7b7c153ec",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Cupped ear is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011220",
+              "label": "Prominent forehead"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "622aac9bf7a431fcec387854f8ebdd66d735b945084497ab65200278db5d0cd0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Prominent forehead is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000490",
+              "label": "Deeply set eye"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c455e07ca56f5d1ba66e43e3f6fc8761828fa9ac79e7c7596733a76d4d0a8cdf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Deeply set eye is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000286",
+              "label": "Epicanthus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3d1a3807e547a1db3644b4e3e18feea0a9f55f6f1520aa0e0ea2e761eaa116e4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Epicanthus is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000047",
+              "label": "Hypospadias"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "65995d70157ae0d4a592eeee51c5de5d9e0aa854e0459cb05a6018f2941cffc4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 15, consistent with but less specific than the packet exclusion of Hypospadias.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "supported",
+            "statement": "Case narrative or Table1 explicitly supports Autistic behavior.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            }
+          },
+          "snapshot_sha256": "c444dd47b030fe9f7b2523d299496431fe54f2ce557f990c454810b00764e589",
+          "assessment": {
+            "status": "supported",
+            "statement": "Case narrative or Table1 explicitly supports Intellectual disability.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            }
+          },
+          "snapshot_sha256": "0c23f286da3cc9f5294730531056b36482123ec2bc9f963bea5f94b46dcd72a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Case narrative or Table1 explicitly supports Motor delay.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Case narrative or Table1 explicitly supports Delayed speech and language development.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            }
+          },
+          "snapshot_sha256": "dee5d947ac21a314d7d79787c31b9353f0bbc535903aceaff2561ad86ae68d6a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Case narrative or Table1 explicitly supports Microcephaly.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002019",
+              "label": "Constipation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "32c743816de94ceb709f5d808e277998caff2f2c2ae4ccb6715547c487fdb28e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Constipation is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001382",
+              "label": "Joint hypermobility"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e731a557c51d369a1d2b75f670f0a5d82dd2823d5908574c0e0858aa47927dec",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Joint hypermobility is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002579",
+              "label": "Gastrointestinal dysmotility"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0b068da2a2226156505baedd88ed2f355aa9be7036c754c49ed990ec49faddf7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Gastrointestinal dysmotility is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002046",
+              "label": "Heat intolerance"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e8e44e90d71d72e3e234b1a1ebee74a1e3eb32e0adfe67932e10cbf4781cf1eb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Heat intolerance is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002808",
+              "label": "Kyphosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "74ef7bf1541c3a34e7743cb3245acdec57d8ee002a95d29f656fbddc0a5378b0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Kyphosis is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short stature is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003067",
+              "label": "Madelung deformity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ae6373e0360f58ed4165ec848576869602870f36bf021b9b74dc749a63e28d5b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Madelung deformity is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001627",
+              "label": "Abnormal heart morphology"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "89faa9eb6c2a84ad663686288010c692ebdab71086912d547d3225ae6707c590",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes abnormal heart morphology; case report documents mildly dilated aortic root.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001737",
+              "label": "Pancreatic cysts"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ebaaedc281623dfb60701732c31bcc34b4e8326f4bc32c1a3df8ae8533c08dac",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Pancreatic cysts is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000545",
+              "label": "Myopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cdbdfc9d0104b0a4698b5dc9ddaf3e503f6b3493a8670b367009e0104567bfc3",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes myopia; case report explicitly says he wears glasses to treat myopia.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000488",
+              "label": "Retinopathy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "99502ded54fd032ed1c511cb29dbab7d84e930b40c6f71c5327669fca35affa6",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Retinopathy is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/39",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002580",
+              "label": "Volvulus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ca380a9f64fd9d08ade08add4863761d6c15dc758a94a1a996886aba6a470347",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Volvulus is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/40",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012531",
+              "label": "Pain"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a5e64b9598944c9f5f462bc91392d7a5e05dd9ab89d1c7163fb50dc98b9eea7f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Pain is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/41",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            }
+          },
+          "snapshot_sha256": "af9432aa355687ec52f5e2082beacd6942f48279d4c240829f2997d4a6e11d2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Case narrative or Table1 explicitly supports Scoliosis.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/42",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012378",
+              "label": "Fatigue"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "169d701e7471954b4a24b0b4beb127eff862a9bc37681717514fab4667fa967b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Fatigue is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/43",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002020",
+              "label": "Gastroesophageal reflux"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4079b47a877e8de26b6388a10c28d9867f51e29ffadcb19d68cb70544944e0f9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Gastroesophageal reflux is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/44",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000107",
+              "label": "Renal cyst"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8cad72b4f0c4bfdd3587cfe05cf3d81a0129be9ebdaf16e5663c7891cad46ddb",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 15, consistent with but less specific than the packet exclusion of Renal cyst.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/45",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000086",
+              "label": "Ectopic kidney"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d87bb34089b21af3f76af99ada73054869322d8d20bf65b200e6fe62e2860dca",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 15, consistent with but less specific than the packet exclusion of Ectopic kidney.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/46",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000062",
+              "label": "Ambiguous genitalia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4060f398319109e27dced0021f1ff7bdfa40ef1d5df8a63e21a5a65febd3fa48",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 15, consistent with but less specific than the packet exclusion of Ambiguous genitalia.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/47",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000028",
+              "label": "Cryptorchidism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "113fc3096de3743c404fec18aaa6c67386250d5fc414452f484a10049697f742",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 15, consistent with but less specific than the packet exclusion of Cryptorchidism.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/48",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000805",
+              "label": "Enuresis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "010936dc65e162c35bc8a8798d03c2da15e8cc98e1b0df7dc3f30768db20b739",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 15, consistent with but less specific than the packet exclusion of Enuresis.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/49",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000076",
+              "label": "Vesicoureteral reflux"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d0578779302ef3c97b49fa342e02fc153b13e354e61ddb2c1f8949e3540b39f3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 15, consistent with but less specific than the packet exclusion of Vesicoureteral reflux.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/50",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000126",
+              "label": "Hydronephrosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d1db2a09ec1646187389834cd8039f9f59ce8c5a647c8b60ab2a080fcc45b130",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 15, consistent with but less specific than the packet exclusion of Hydronephrosis.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/51",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012330",
+              "label": "Pyelonephritis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "472eb83c310760dafa20f9b0d7fe99a0468291c479a96d371ad1388057acb50c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 15, consistent with but less specific than the packet exclusion of Pyelonephritis.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 15, PDF24; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/ZMYM3/PMID_36586412_Individual_19.json",
+      "packet_sha256": "59873be2a68cccf2bc479795dd677ef26a7adcd64701863435d3f7637a78876b",
+      "case_id": "TC_8f8d187fb6a43812",
+      "role": "selected",
+      "packet_subject_id": "Individual 19",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Frozen packet preserved unchanged; all allele representations and phenotype items independently compared.",
+        "Original paper claims and source-internal inconsistencies are retained; no target-case inference outcomes were consulted."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Individual 19 is female evaluated at17months (P1Y5M), matching packet sex, age and individual identifier.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "contradicted",
+        "statement": "Coding, protein and GRCh38 locus match: NM_005096.3:c.2255A>G, NP_005087.1:p.Tyr752Cys, NC_000023.11:g.71247404T>C. Packet allelicState is HEMIZYGOUS, but this female is explicitly HETEROZYGOUS in main Table1 and her case report.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Table1 PDF6; case report PDF26-27; TableS1 row28"
+          },
+          {
+            "source_id": "workbook-cells",
+            "locator": "TableS1 A28:M28"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Trio Autism/ID panel identifies de novo ZMYM3 variant; Sanger confirms proband while parents have high-quality NGS and did not require Sanger confirmation. FigS1 shows both parents negative.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Methods table PDF42; case report PDF27; FigS1 PDF32"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Source is a heterozygous de novo X-linked variant, not a hemizygous state. No compound-heterozygous phase question. No X-inactivation result is reported for Individual19.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Table1 PDF6; Results PDF7; case report PDF26-27"
+          }
+        ],
+        "limitations": [
+          "X-inactivation results for Individuals18 and20 cannot be transferred to Individual19."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Paper proposes ZMYM3 association, but Individual19 has a de novo ZMYM3 VUS plus paternal SCN2A c.1421T>A VUS, considered a poor fit by authors. Tyr752Cys has modeling evidence, not a patient-variant cell assay. Packet SOLVED/CAUSATIVE/PATHOGENIC and named OMIM diagnosis are stronger than this source establishes; infantile developmental presentation is supported. UNKNOWN_ACTIONABILITY matches the absence of demonstrated therapy.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Case report PDF26-27; Discussion PDF11-12; ACMG EVIDENCE CODES PDF46; modeling TableS2 row15"
+          }
+        ],
+        "limitations": [
+          "Authors explicitly did not apply ACMG codes and say most variants would remain VUSs.",
+          "No individual-level functional demonstration for Tyr752Cys; absence of formal ID assessment in this young child must be retained."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Packet misses cardiac abnormalities, epicanthal folds, short nose, soft skin, poor weight gain, balance impairment and family connective-tissue history; it miscodes a heterozygous female as hemizygous. Speech improved after therapy.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+          }
+        ],
+        "limitations": [
+          "Many packet negatives represent absence of reporting rather than explicit primary-source exclusions.",
+          "Source association/functional evidence is not a new clinical diagnosis."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c2255AtoG_ZMYM3_NM_005096v3",
+            "geneContext": {
+              "valueId": "HGNC:13054",
+              "symbol": "ZMYM3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005096.3:c.2255A>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000023.11:g.71247404T>C"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005087.1:p.(Tyr752Cys)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chrX",
+              "pos": 71247404,
+              "ref": "T",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000134",
+              "label": "hemizygous"
+            }
+          },
+          "snapshot_sha256": "d13c43fbce5959d80715e200beb5489b2acb872d17728d2c0f543ec371aa3b35",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Coding, protein and GRCh38 locus match: NM_005096.3:c.2255A>G, NP_005087.1:p.Tyr752Cys, NC_000023.11:g.71247404T>C. Packet allelicState is HEMIZYGOUS, but this female is explicitly HETEROZYGOUS in main Table1 and her case report.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 PDF6; case report PDF26-27; TableS1 row28"
+              },
+              {
+                "source_id": "workbook-cells",
+                "locator": "TableS1 A28:M28"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011800",
+              "label": "Midface retrusion"
+            }
+          },
+          "snapshot_sha256": "bc9fc4de33dd49d9c5b50ae9ee5526f902d2bacd5ea3c61440158ec15e4244e2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Case report says flat midface; packet uses midface retrusion.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "Reasonable morphological abstraction, but exact term differs."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000325",
+              "label": "Triangular face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8f3e7117d4522889f24170aa39192763ef94219dfed6c0f0fd86c521d1302a73",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Triangular face is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000276",
+              "label": "Long face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f86a163e69de2c34bbc0ab608b5c76cff3bc82a4ccd6b0f6c902ea4a1c9fee58",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Long face is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009890",
+              "label": "High anterior hairline"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6ed393200bb72c9baaa97f2cbd3dba8efb536a27478f272c8f513f203b9fba6c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "High anterior hairline is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000278",
+              "label": "Retrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "66dda0282a422dd164068df1af84aa261c849aca4e56fdc28993d0323e42e4c2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Retrognathia is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000303",
+              "label": "Mandibular prognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9686a6ed16020d67e61eb736722e8206137fea9544009c298158de5e4956e614",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Mandibular prognathia is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c75e654012c14dea90453d61fde221f4dca1c2729c3ea61db1e002c4f5fd16eb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypertelorism is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000506",
+              "label": "Telecanthus"
+            }
+          },
+          "snapshot_sha256": "a94bee4369f5bf5381d159868d04b6d2df16372ef5a9157412b733d93cb14c53",
+          "assessment": {
+            "status": "supported",
+            "statement": "Case narrative or Table1 explicitly supports Telecanthus.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000637",
+              "label": "Long palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fe74a18fce0d4419b5ea90f8088861dca044c2216a525243371ce9f6b5625127",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Long palpebral fissure is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000582",
+              "label": "Upslanted palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5867461b798c329bd0bddddb67e84eb665b91c9df85237c30adf17460594bcc0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Upslanted palpebral fissure is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1e78f075d7d5e88f72df7de1f0ab14b655ba5d68bfc8adc2914cf5d7ebde009e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Downslanted palpebral fissures is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000431",
+              "label": "Wide nasal bridge"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "aa8cc06e208ce537b647bcdf69fb85b32cbbe067fffdadbd93161bfb1f34383c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Wide nasal bridge is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000233",
+              "label": "Thin vermilion border"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "83d8163deaa9a3eb13928fe4b39865a2a3216f0f43a07fd33163bf31b909ed02",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Thin vermilion border is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000343",
+              "label": "Long philtrum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6ed0c52c1a5702542a97038db9ee6692d282239a275c74b59b99e5435150966b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Long philtrum is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009928",
+              "label": "Thick nasal alae"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b2e0a74d72c1d6dca8622c7c860d959708b8d7d86d1834cad6387c33e7760115",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Thick nasal alae is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005280",
+              "label": "Depressed nasal bridge"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "21fe9b14fb5b68f364eb1048773ec5d9f37599cabd6f77076884d98d07dd8fb0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Depressed nasal bridge is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000369",
+              "label": "Low-set ears"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ea3c99f77d325f2810bba05cb968302cbc1008c58ed25bc0410c8d56e3480627",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Low-set ears is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000378",
+              "label": "Cupped ear"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "451c76852f92356897a8afd8457972d77ae02fa1a3f4481cff2706c7b7c153ec",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Cupped ear is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011220",
+              "label": "Prominent forehead"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "622aac9bf7a431fcec387854f8ebdd66d735b945084497ab65200278db5d0cd0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Prominent forehead is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000490",
+              "label": "Deeply set eye"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c455e07ca56f5d1ba66e43e3f6fc8761828fa9ac79e7c7596733a76d4d0a8cdf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Deeply set eye is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000286",
+              "label": "Epicanthus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3d1a3807e547a1db3644b4e3e18feea0a9f55f6f1520aa0e0ea2e761eaa116e4",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes epicanthus; case report explicitly reports bilateral epicanthal folds.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000047",
+              "label": "Hypospadias"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "65995d70157ae0d4a592eeee51c5de5d9e0aa854e0459cb05a6018f2941cffc4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 19, consistent with but less specific than the packet exclusion of Hypospadias.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000708",
+              "label": "Atypical behavior"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "101c62fed110d7e9609db1e5701fccf09317947e7561919f5531f23f80162b5a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 behavioral problems No and narrative no ASD concerns support a broad negative, while mild textural sensitivities are documented.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "A broad behavioral exclusion is not proof of absence of every atypical behavior."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            }
+          },
+          "snapshot_sha256": "0c23f286da3cc9f5294730531056b36482123ec2bc9f963bea5f94b46dcd72a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Case narrative or Table1 explicitly supports Motor delay.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Speech delay was historical; after therapy she graduated from speech therapy.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "Packet should retain temporal improvement; source does not establish persistent impairment at all later times."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008936",
+              "label": "Axial hypotonia"
+            }
+          },
+          "snapshot_sha256": "689eeac5c2fc3d940f93547c5204d8da7ecb5e5209fa1493711e741557eb5d87",
+          "assessment": {
+            "status": "supported",
+            "statement": "Case narrative or Table1 explicitly supports Axial hypotonia.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "supported",
+            "statement": "OFC6th percentile and length18th percentile at evaluation support the encoded exclusion at that examination.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002019",
+              "label": "Constipation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "32c743816de94ceb709f5d808e277998caff2f2c2ae4ccb6715547c487fdb28e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Constipation is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001382",
+              "label": "Joint hypermobility"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e731a557c51d369a1d2b75f670f0a5d82dd2823d5908574c0e0858aa47927dec",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Joint hypermobility is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002579",
+              "label": "Gastrointestinal dysmotility"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0b068da2a2226156505baedd88ed2f355aa9be7036c754c49ed990ec49faddf7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Gastrointestinal dysmotility is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002046",
+              "label": "Heat intolerance"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e8e44e90d71d72e3e234b1a1ebee74a1e3eb32e0adfe67932e10cbf4781cf1eb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Heat intolerance is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002808",
+              "label": "Kyphosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "74ef7bf1541c3a34e7743cb3245acdec57d8ee002a95d29f656fbddc0a5378b0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Kyphosis is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "OFC6th percentile and length18th percentile at evaluation support the encoded exclusion at that examination.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003067",
+              "label": "Madelung deformity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ae6373e0360f58ed4165ec848576869602870f36bf021b9b74dc749a63e28d5b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Madelung deformity is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001627",
+              "label": "Abnormal heart morphology"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "89faa9eb6c2a84ad663686288010c692ebdab71086912d547d3225ae6707c590",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes abnormal heart morphology; case report documents an ASD that closed, plus PDA, PFO and persistent left superior vena cava to the coronary sinus on7-month echocardiogram.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001737",
+              "label": "Pancreatic cysts"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ebaaedc281623dfb60701732c31bcc34b4e8326f4bc32c1a3df8ae8533c08dac",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Pancreatic cysts is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000545",
+              "label": "Myopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cdbdfc9d0104b0a4698b5dc9ddaf3e503f6b3493a8670b367009e0104567bfc3",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Myopia is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000488",
+              "label": "Retinopathy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "99502ded54fd032ed1c511cb29dbab7d84e930b40c6f71c5327669fca35affa6",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Retinopathy is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002580",
+              "label": "Volvulus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ca380a9f64fd9d08ade08add4863761d6c15dc758a94a1a996886aba6a470347",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Volvulus is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/39",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012531",
+              "label": "Pain"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a5e64b9598944c9f5f462bc91392d7a5e05dd9ab89d1c7163fb50dc98b9eea7f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Pain is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/40",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6db568d0dd760bea978b8846d66cb918c3bc978c8bb480f209e63a73a910f4bc",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Scoliosis is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/41",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012378",
+              "label": "Fatigue"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "169d701e7471954b4a24b0b4beb127eff862a9bc37681717514fab4667fa967b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Fatigue is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/42",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002020",
+              "label": "Gastroesophageal reflux"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4079b47a877e8de26b6388a10c28d9867f51e29ffadcb19d68cb70544944e0f9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Gastroesophageal reflux is not explicitly excluded in the individual narrative/table. Omission from a selected clinical or facial-feature list cannot establish absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative found. Clinical photographs not used to invent negative examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/43",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000107",
+              "label": "Renal cyst"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8cad72b4f0c4bfdd3587cfe05cf3d81a0129be9ebdaf16e5663c7891cad46ddb",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 19, consistent with but less specific than the packet exclusion of Renal cyst.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/44",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000086",
+              "label": "Ectopic kidney"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d87bb34089b21af3f76af99ada73054869322d8d20bf65b200e6fe62e2860dca",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 19, consistent with but less specific than the packet exclusion of Ectopic kidney.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/45",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000062",
+              "label": "Ambiguous genitalia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4060f398319109e27dced0021f1ff7bdfa40ef1d5df8a63e21a5a65febd3fa48",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 19, consistent with but less specific than the packet exclusion of Ambiguous genitalia.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/46",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000805",
+              "label": "Enuresis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "010936dc65e162c35bc8a8798d03c2da15e8cc98e1b0df7dc3f30768db20b739",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 19, consistent with but less specific than the packet exclusion of Enuresis.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/47",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000076",
+              "label": "Vesicoureteral reflux"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d0578779302ef3c97b49fa342e02fc153b13e354e61ddb2c1f8949e3540b39f3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 19, consistent with but less specific than the packet exclusion of Vesicoureteral reflux.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/48",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000126",
+              "label": "Hydronephrosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d1db2a09ec1646187389834cd8039f9f59ce8c5a647c8b60ab2a080fcc45b130",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 19, consistent with but less specific than the packet exclusion of Hydronephrosis.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/49",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012330",
+              "label": "Pyelonephritis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "472eb83c310760dafa20f9b0d7fe99a0468291c479a96d371ad1388057acb50c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists genitourinary anomalies No for Individual 19, consistent with but less specific than the packet exclusion of Pyelonephritis.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Supplemental case report Individual 19, PDF26-27; Table1 PDF6; Fig2 PDF8"
+              }
+            ],
+            "limitations": [
+              "No feature-specific exam or test is given for each genitourinary negative."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source-correspondence audit, not blinded or independent clinical validation.",
+    "Reader9 records directory and predecessor reviewer-1 filename search contained no records for these four PMIDs on arrival; no predecessor reading credit invented. Curated subscription inputs were prepared but Claude used zero tokens and performed no review.",
+    "TableS2 figure cross-references are offset relative to final supplement numbering; assessed by content rather than blindly following labels. TableS2 motif-count cells disagree with TableS3 for some unassigned variants (e.g.Tyr1137Asn and Ser1173Asn).",
+    "Supplement sequencing table labels Individual23 p.Arg454Cys, while main/case report/TableS1 say p.Cys454Arg; Individual22 methods paragraph says Individual21. These source typos were not propagated.",
+    "All956 populated workbook cells read; sequences transcribed/read as source content, not independently validated for laboratory use. No source workbook altered or recalculated."
+  ]
+}

@@ -1,0 +1,1643 @@
+{
+  "schema_version": 1,
+  "pmid": "33964205",
+  "title": "Cochlear supporting cells require GAS2 for cytoskeletal architecture and hearing",
+  "reviewer": {
+    "id": "reader11",
+    "reviewed_at_utc": "2026-10-24T19:16:11.600846+00:00",
+    "method": "Independent public-source comparison, all assigned selected and alternate packet members retained. No inference output opened."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Mandatory HANDOFF.md exposes historical public-control per-case ranks and aggregate outcomes. Conservatively declared per_case; no target-case outcomes or inference files consulted for this audit."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "7038a5b5328256f8fe0402c0381258325affc8ed2d0a22bda8a90f6a5856f489",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-pdf",
+      "pmid": "33964205",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer11/33964205/main.pdf",
+      "sha256": "ef79b736258be53b0b60187e9b8866490d0e3494bb7acc364177f480c961e0e6",
+      "kind": "pdf",
+      "description": "Held public full article; copied hash-verified from retrieval-followup."
+    },
+    {
+      "id": "main-layout",
+      "pmid": "33964205",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer11/33964205/main-layout.txt",
+      "sha256": "21e4c2305f91bbfa1a171b56272f7851c733cef6ae341d96b7b81d7494f687dc",
+      "kind": "text",
+      "description": "Layout-preserving extracted text, actually read for declared pages."
+    },
+    {
+      "id": "retrieval",
+      "pmid": "33964205",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer11/33964205/provenance.json",
+      "sha256": "d071067dab1006a2e30f45c009ddfb4212d41bee929c59b80b60ef1d0cf972b0",
+      "kind": "metadata",
+      "description": "Public source retrieval identity and provenance; retrieval alone is not reading."
+    },
+    {
+      "id": "supp-access",
+      "pmid": "33964205",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer11/33964205/supplement-receipt.json",
+      "sha256": "08104b8eaf29f1b6113e3e2a6df608b521ea426a9f63d1338859354f283b859c",
+      "kind": "access_log",
+      "description": "Public PMC supplemental PDF request returned HTTP200 HTML challenge,1817bytes; no PDF or supplement reading."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Cochlear supporting cells require GAS2 for cytoskeletal architecture and hearing",
+    "evidence": [
+      {
+        "source_id": "main-pdf",
+        "locator": "Title, authors and DOI on first article page"
+      }
+    ],
+    "note": "Identity independently confirmed from held full article."
+  },
+  "component_inventory": {
+    "status": "incomplete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 16,
+      "table": 4,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "main-pdf",
+        "locator": "Graphical abstract plus7main figures,1key resources table,8explicit supplementary figures and3supplementary tables; advertised supplemental PDF unavailable. Additional unadvertised files cannot be excluded."
+      }
+    ],
+    "note": "Graphical abstract plus7main figures,1key resources table,8explicit supplementary figures and3supplementary tables; advertised supplemental PDF unavailable. Additional unadvertised files cannot be excluded."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "pages",
+      "unit_count": 24,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Physical PDF pages 1–24, including all main-text references/end matter."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 24,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "Physical PDF pages 1–24, including all main-text references/end matter."
+        }
+      ],
+      "note": "Physical PDF pages 1–24, including all main-text references/end matter."
+    },
+    {
+      "id": "GraphicalAbstract",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p2, full diagram"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p2, full diagram"
+        }
+      ],
+      "note": "PDF p2, full diagram"
+    },
+    {
+      "id": "Figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p5, all panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p5, all panels"
+        }
+      ],
+      "note": "PDF p5, all panels"
+    },
+    {
+      "id": "Figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p6, all panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p6, all panels"
+        }
+      ],
+      "note": "PDF p6, all panels"
+    },
+    {
+      "id": "Figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p8, all panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p8, all panels"
+        }
+      ],
+      "note": "PDF p8, all panels"
+    },
+    {
+      "id": "Figure4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p9, all panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p9, all panels"
+        }
+      ],
+      "note": "PDF p9, all panels"
+    },
+    {
+      "id": "Figure5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p10, all panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p10, all panels"
+        }
+      ],
+      "note": "PDF p10, all panels"
+    },
+    {
+      "id": "Figure6",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p11, all panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p11, all panels"
+        }
+      ],
+      "note": "PDF p11, all panels"
+    },
+    {
+      "id": "Figure7",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p12, all panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p12, all panels"
+        }
+      ],
+      "note": "PDF p12, all panels"
+    },
+    {
+      "id": "KeyResourcesTable",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF pp18–19, every row and column"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "PDF pp18–19, every row and column"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF pp18–19, every row and column"
+        }
+      ],
+      "note": "PDF pp18–19, every row and column"
+    },
+    {
+      "id": "SupplementPDF",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "pages",
+      "unit_count": null,
+      "extent_source_id": "supp-access",
+      "extent_evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "PMC8137675 advertises NIHMS1697407-supplement-Supplemental_Information.pdf; web timed out and direct public URL returned challenge HTML. FiguresS1–S8 and TablesS1–S3 remain unread."
+        }
+      ],
+      "coverage": [],
+      "note": "PMC8137675 advertises NIHMS1697407-supplement-Supplemental_Information.pdf; web timed out and direct public URL returned challenge HTML. FiguresS1–S8 and TablesS1–S3 remain unread."
+    },
+    {
+      "id": "FigureS1",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Explicitly referenced figureS1; contained in unavailable supplemental PDF."
+        }
+      ],
+      "coverage": [],
+      "note": "Explicitly referenced figureS1; contained in unavailable supplemental PDF."
+    },
+    {
+      "id": "FigureS2",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Explicitly referenced figureS2; contained in unavailable supplemental PDF."
+        }
+      ],
+      "coverage": [],
+      "note": "Explicitly referenced figureS2; contained in unavailable supplemental PDF."
+    },
+    {
+      "id": "FigureS3",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Explicitly referenced figureS3; contained in unavailable supplemental PDF."
+        }
+      ],
+      "coverage": [],
+      "note": "Explicitly referenced figureS3; contained in unavailable supplemental PDF."
+    },
+    {
+      "id": "FigureS4",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Explicitly referenced figureS4; contained in unavailable supplemental PDF."
+        }
+      ],
+      "coverage": [],
+      "note": "Explicitly referenced figureS4; contained in unavailable supplemental PDF."
+    },
+    {
+      "id": "FigureS5",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Explicitly referenced figureS5; contained in unavailable supplemental PDF."
+        }
+      ],
+      "coverage": [],
+      "note": "Explicitly referenced figureS5; contained in unavailable supplemental PDF."
+    },
+    {
+      "id": "FigureS6",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Explicitly referenced figureS6; contained in unavailable supplemental PDF."
+        }
+      ],
+      "coverage": [],
+      "note": "Explicitly referenced figureS6; contained in unavailable supplemental PDF."
+    },
+    {
+      "id": "FigureS7",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Explicitly referenced figureS7; contained in unavailable supplemental PDF."
+        }
+      ],
+      "coverage": [],
+      "note": "Explicitly referenced figureS7; contained in unavailable supplemental PDF."
+    },
+    {
+      "id": "FigureS8",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Explicitly referenced figureS8; contained in unavailable supplemental PDF."
+        }
+      ],
+      "coverage": [],
+      "note": "Explicitly referenced figureS8; contained in unavailable supplemental PDF."
+    },
+    {
+      "id": "TableS1",
+      "kind": "table",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Explicitly referenced tableS1; contained in unavailable supplemental PDF."
+        }
+      ],
+      "coverage": [],
+      "note": "Explicitly referenced tableS1; contained in unavailable supplemental PDF."
+    },
+    {
+      "id": "TableS2",
+      "kind": "table",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Explicitly referenced tableS2; contained in unavailable supplemental PDF."
+        }
+      ],
+      "coverage": [],
+      "note": "Explicitly referenced tableS2; contained in unavailable supplemental PDF."
+    },
+    {
+      "id": "TableS3",
+      "kind": "table",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Explicitly referenced tableS3; contained in unavailable supplemental PDF."
+        }
+      ],
+      "coverage": [],
+      "note": "Explicitly referenced tableS3; contained in unavailable supplemental PDF."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/GAS2/PMID_33964205_individual_V_2.json",
+      "packet_sha256": "3a370ce999204bebd25f72cc8c11947730b39a97dafbc78faae8f1b3358b9b7c",
+      "case_id": "TC_ab97bf943d31da30",
+      "role": "selected",
+      "packet_subject_id": "individual V.2",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "All packet items adjudicated against the fully read main article; supplementary figures/tables remain inaccessible and unread."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Packet male sibling label matches pedigree familyW19–1278; V.2/V.5 diagnosed at1year, V.6/V.7 at newborn screening.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Homozygous GAS2 c.723+1G>A is explicit in all four affected siblings; source NM_005256.3 and GRCh37 g.22777500G>A differ from packet NM_001143830.3 and GRCh38 g.22755954G>A.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": [
+          "Transcript/assembly equivalence not independently normalized; protein p.? is consistent with source."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Four affected siblings homozygous, both unaffected consanguineous parents heterozygous, V.3/V.4 wild type; Sanger confirmation and pedigree agree.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous state with heterozygous parents establishes the recessive segregation; no two distinct variants requiring compound phase.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source argues causality from segregating splice disruption, intron6 retention in V.5 cells and knockout mouse phenotype. Formal packet PATHOGENIC/SOLVED and later OMIM disease number exceed explicit classification in source.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": [
+          "One family; co-segregating compound-heterozygous TMPRSS4 variants discounted by authors on expression/function grounds; no human GAS2 protein truncation directly demonstrated."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Core hearing loss and delayed speech are represented. Source adds bilateral high-frequency pattern, normal vestibular function for all four, and mild low-frequency progression for V.2.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": [
+          "V.5 packet omits normal vestibular testing; unread TableS2 prevents exhaustive audiological comparison."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c723_1GtoA_GAS2_NM_001143830v3",
+            "geneContext": {
+              "valueId": "HGNC:4167",
+              "symbol": "GAS2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001143830.3:c.723+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000011.10:g.22755954G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001137302.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr11",
+              "pos": 22755954,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "f796300f29ed3febeecc4b00de41bc467757deaae7c66486d407f787fa8258ee",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Homozygous GAS2 c.723+1G>A is explicit in all four affected siblings; source NM_005256.3 and GRCh37 g.22777500G>A differ from packet NM_001143830.3 and GRCh38 g.22755954G>A.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": [
+              "Transcript/assembly equivalence not independently normalized; protein p.? is consistent with source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000407",
+              "label": "Sensorineural hearing impairment"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P1Y"
+              }
+            }
+          },
+          "snapshot_sha256": "b4c21c6d8801b667807a9826377be9235a9e5b8e1ec1dee6f5fcbaebd1e73204",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sensorineural hearing loss with recorded age at diagnosis/onset matches individual-specific text.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Delayed speech and language is explicitly reported in all affected subjects.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001999",
+              "label": "Abnormal facial shape"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be875f7b2546d3573ff96fbd996b45f79a8c2f4ed7b536e471dce6ab9384ceea",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No dysmorphic characteristics on physical examination supports the broad negative facial-shape term.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": [
+              "Source gives a broad normal dysmorphology examination, not detailed facial measurements."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001751",
+              "label": "Abnormal vestibular function"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "542472e56d84d4c0abdb2491ae6e42169f6bbe6074b33db30f5fa36f669576b8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Normal vestibular function explicitly reported; V.2 underwent full battery and V.6/V.7 video head impulse testing.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/GAS2/PMID_33964205_individual_V_5.json",
+      "packet_sha256": "7731832113b92143925644be458058a5caf9e965b3c67b3857dbaf2735ae1ecd",
+      "case_id": "TC_ab97bf943d31da30",
+      "role": "alternate",
+      "packet_subject_id": "individual V.5",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "All packet items adjudicated against the fully read main article; supplementary figures/tables remain inaccessible and unread."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Packet male sibling label matches pedigree familyW19–1278; V.2/V.5 diagnosed at1year, V.6/V.7 at newborn screening.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Homozygous GAS2 c.723+1G>A is explicit in all four affected siblings; source NM_005256.3 and GRCh37 g.22777500G>A differ from packet NM_001143830.3 and GRCh38 g.22755954G>A.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": [
+          "Transcript/assembly equivalence not independently normalized; protein p.? is consistent with source."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Four affected siblings homozygous, both unaffected consanguineous parents heterozygous, V.3/V.4 wild type; Sanger confirmation and pedigree agree.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous state with heterozygous parents establishes the recessive segregation; no two distinct variants requiring compound phase.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source argues causality from segregating splice disruption, intron6 retention in V.5 cells and knockout mouse phenotype. Formal packet PATHOGENIC/SOLVED and later OMIM disease number exceed explicit classification in source.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": [
+          "One family; co-segregating compound-heterozygous TMPRSS4 variants discounted by authors on expression/function grounds; no human GAS2 protein truncation directly demonstrated."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Core hearing loss and delayed speech are represented. Source adds bilateral high-frequency pattern, normal vestibular function for all four, and mild low-frequency progression for V.2.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": [
+          "V.5 packet omits normal vestibular testing; unread TableS2 prevents exhaustive audiological comparison."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c723_1GtoA_GAS2_NM_001143830v3",
+            "geneContext": {
+              "valueId": "HGNC:4167",
+              "symbol": "GAS2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001143830.3:c.723+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000011.10:g.22755954G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001137302.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr11",
+              "pos": 22755954,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "f796300f29ed3febeecc4b00de41bc467757deaae7c66486d407f787fa8258ee",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Homozygous GAS2 c.723+1G>A is explicit in all four affected siblings; source NM_005256.3 and GRCh37 g.22777500G>A differ from packet NM_001143830.3 and GRCh38 g.22755954G>A.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": [
+              "Transcript/assembly equivalence not independently normalized; protein p.? is consistent with source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000407",
+              "label": "Sensorineural hearing impairment"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P1Y"
+              }
+            }
+          },
+          "snapshot_sha256": "b4c21c6d8801b667807a9826377be9235a9e5b8e1ec1dee6f5fcbaebd1e73204",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sensorineural hearing loss with recorded age at diagnosis/onset matches individual-specific text.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Delayed speech and language is explicitly reported in all affected subjects.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001999",
+              "label": "Abnormal facial shape"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be875f7b2546d3573ff96fbd996b45f79a8c2f4ed7b536e471dce6ab9384ceea",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No dysmorphic characteristics on physical examination supports the broad negative facial-shape term.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": [
+              "Source gives a broad normal dysmorphology examination, not detailed facial measurements."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/GAS2/PMID_33964205_individual_V_6.json",
+      "packet_sha256": "58e256c1c567b1691ff6757db1b09338912f76911d99ddeb1ec476c6147f6b34",
+      "case_id": "TC_ab97bf943d31da30",
+      "role": "alternate",
+      "packet_subject_id": "individual V.6",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "All packet items adjudicated against the fully read main article; supplementary figures/tables remain inaccessible and unread."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Packet male sibling label matches pedigree familyW19–1278; V.2/V.5 diagnosed at1year, V.6/V.7 at newborn screening.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Homozygous GAS2 c.723+1G>A is explicit in all four affected siblings; source NM_005256.3 and GRCh37 g.22777500G>A differ from packet NM_001143830.3 and GRCh38 g.22755954G>A.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": [
+          "Transcript/assembly equivalence not independently normalized; protein p.? is consistent with source."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Four affected siblings homozygous, both unaffected consanguineous parents heterozygous, V.3/V.4 wild type; Sanger confirmation and pedigree agree.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous state with heterozygous parents establishes the recessive segregation; no two distinct variants requiring compound phase.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source argues causality from segregating splice disruption, intron6 retention in V.5 cells and knockout mouse phenotype. Formal packet PATHOGENIC/SOLVED and later OMIM disease number exceed explicit classification in source.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": [
+          "One family; co-segregating compound-heterozygous TMPRSS4 variants discounted by authors on expression/function grounds; no human GAS2 protein truncation directly demonstrated."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Core hearing loss and delayed speech are represented. Source adds bilateral high-frequency pattern, normal vestibular function for all four, and mild low-frequency progression for V.2.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": [
+          "V.5 packet omits normal vestibular testing; unread TableS2 prevents exhaustive audiological comparison."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c723_1GtoA_GAS2_NM_001143830v3",
+            "geneContext": {
+              "valueId": "HGNC:4167",
+              "symbol": "GAS2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001143830.3:c.723+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000011.10:g.22755954G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001137302.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr11",
+              "pos": 22755954,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "f796300f29ed3febeecc4b00de41bc467757deaae7c66486d407f787fa8258ee",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Homozygous GAS2 c.723+1G>A is explicit in all four affected siblings; source NM_005256.3 and GRCh37 g.22777500G>A differ from packet NM_001143830.3 and GRCh38 g.22755954G>A.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": [
+              "Transcript/assembly equivalence not independently normalized; protein p.? is consistent with source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000407",
+              "label": "Sensorineural hearing impairment"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "84bf632a1f3152b55bb8c17beef392d5ecde54801a401779824b4f5fb52fac02",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sensorineural hearing loss with recorded age at diagnosis/onset matches individual-specific text.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Delayed speech and language is explicitly reported in all affected subjects.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001999",
+              "label": "Abnormal facial shape"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be875f7b2546d3573ff96fbd996b45f79a8c2f4ed7b536e471dce6ab9384ceea",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No dysmorphic characteristics on physical examination supports the broad negative facial-shape term.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": [
+              "Source gives a broad normal dysmorphology examination, not detailed facial measurements."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001751",
+              "label": "Abnormal vestibular function"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "542472e56d84d4c0abdb2491ae6e42169f6bbe6074b33db30f5fa36f669576b8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Normal vestibular function explicitly reported; V.2 underwent full battery and V.6/V.7 video head impulse testing.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/GAS2/PMID_33964205_individual_V_7.json",
+      "packet_sha256": "5a038ab0b7e6612b4de2a50cc2092382e73fe72c2a7a28342e1608f8dd68c7cb",
+      "case_id": "TC_ab97bf943d31da30",
+      "role": "alternate",
+      "packet_subject_id": "individual V.7",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "All packet items adjudicated against the fully read main article; supplementary figures/tables remain inaccessible and unread."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Packet male sibling label matches pedigree familyW19–1278; V.2/V.5 diagnosed at1year, V.6/V.7 at newborn screening.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Homozygous GAS2 c.723+1G>A is explicit in all four affected siblings; source NM_005256.3 and GRCh37 g.22777500G>A differ from packet NM_001143830.3 and GRCh38 g.22755954G>A.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": [
+          "Transcript/assembly equivalence not independently normalized; protein p.? is consistent with source."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Four affected siblings homozygous, both unaffected consanguineous parents heterozygous, V.3/V.4 wild type; Sanger confirmation and pedigree agree.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous state with heterozygous parents establishes the recessive segregation; no two distinct variants requiring compound phase.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source argues causality from segregating splice disruption, intron6 retention in V.5 cells and knockout mouse phenotype. Formal packet PATHOGENIC/SOLVED and later OMIM disease number exceed explicit classification in source.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": [
+          "One family; co-segregating compound-heterozygous TMPRSS4 variants discounted by authors on expression/function grounds; no human GAS2 protein truncation directly demonstrated."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Core hearing loss and delayed speech are represented. Source adds bilateral high-frequency pattern, normal vestibular function for all four, and mild low-frequency progression for V.2.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+          }
+        ],
+        "limitations": [
+          "V.5 packet omits normal vestibular testing; unread TableS2 prevents exhaustive audiological comparison."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c723_1GtoA_GAS2_NM_001143830v3",
+            "geneContext": {
+              "valueId": "HGNC:4167",
+              "symbol": "GAS2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001143830.3:c.723+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000011.10:g.22755954G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001137302.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr11",
+              "pos": 22755954,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "f796300f29ed3febeecc4b00de41bc467757deaae7c66486d407f787fa8258ee",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Homozygous GAS2 c.723+1G>A is explicit in all four affected siblings; source NM_005256.3 and GRCh37 g.22777500G>A differ from packet NM_001143830.3 and GRCh38 g.22755954G>A.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": [
+              "Transcript/assembly equivalence not independently normalized; protein p.? is consistent with source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000407",
+              "label": "Sensorineural hearing impairment"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "84bf632a1f3152b55bb8c17beef392d5ecde54801a401779824b4f5fb52fac02",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sensorineural hearing loss with recorded age at diagnosis/onset matches individual-specific text.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Delayed speech and language is explicitly reported in all affected subjects.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001999",
+              "label": "Abnormal facial shape"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be875f7b2546d3573ff96fbd996b45f79a8c2f4ed7b536e471dce6ab9384ceea",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No dysmorphic characteristics on physical examination supports the broad negative facial-shape term.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": [
+              "Source gives a broad normal dysmorphology examination, not detailed facial measurements."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001751",
+              "label": "Abnormal vestibular function"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "542472e56d84d4c0abdb2491ae6e42169f6bbe6074b33db30f5fa36f669576b8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Normal vestibular function explicitly reported; V.2 underwent full battery and V.6/V.7 video head impulse testing.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "PDF pp11–14, Figure7 pp12, Clinical evaluation p23"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "SupplementPDF",
+      "status": "open",
+      "detail": "PMC8137675 advertises NIHMS1697407-supplement-Supplemental_Information.pdf; web timed out and direct public URL returned challenge HTML. FiguresS1–S8 and TablesS1–S3 remain unread.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "PMC8137675 advertises NIHMS1697407-supplement-Supplemental_Information.pdf; web timed out and direct public URL returned challenge HTML. FiguresS1–S8 and TablesS1–S3 remain unread."
+        }
+      ]
+    },
+    {
+      "component_id": "FigureS1",
+      "status": "open",
+      "detail": "Supplement PDF unavailable; no reading claimed.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "HTTP200 challenge body, not PDF"
+        }
+      ]
+    },
+    {
+      "component_id": "FigureS2",
+      "status": "open",
+      "detail": "Supplement PDF unavailable; no reading claimed.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "HTTP200 challenge body, not PDF"
+        }
+      ]
+    },
+    {
+      "component_id": "FigureS3",
+      "status": "open",
+      "detail": "Supplement PDF unavailable; no reading claimed.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "HTTP200 challenge body, not PDF"
+        }
+      ]
+    },
+    {
+      "component_id": "FigureS4",
+      "status": "open",
+      "detail": "Supplement PDF unavailable; no reading claimed.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "HTTP200 challenge body, not PDF"
+        }
+      ]
+    },
+    {
+      "component_id": "FigureS5",
+      "status": "open",
+      "detail": "Supplement PDF unavailable; no reading claimed.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "HTTP200 challenge body, not PDF"
+        }
+      ]
+    },
+    {
+      "component_id": "FigureS6",
+      "status": "open",
+      "detail": "Supplement PDF unavailable; no reading claimed.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "HTTP200 challenge body, not PDF"
+        }
+      ]
+    },
+    {
+      "component_id": "FigureS7",
+      "status": "open",
+      "detail": "Supplement PDF unavailable; no reading claimed.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "HTTP200 challenge body, not PDF"
+        }
+      ]
+    },
+    {
+      "component_id": "FigureS8",
+      "status": "open",
+      "detail": "Supplement PDF unavailable; no reading claimed.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "HTTP200 challenge body, not PDF"
+        }
+      ]
+    },
+    {
+      "component_id": "TableS1",
+      "status": "open",
+      "detail": "Supplement PDF unavailable; no reading claimed.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "HTTP200 challenge body, not PDF"
+        }
+      ]
+    },
+    {
+      "component_id": "TableS2",
+      "status": "open",
+      "detail": "Supplement PDF unavailable; no reading claimed.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "HTTP200 challenge body, not PDF"
+        }
+      ]
+    },
+    {
+      "component_id": "TableS3",
+      "status": "open",
+      "detail": "Supplement PDF unavailable; no reading claimed.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "HTTP200 challenge body, not PDF"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Post-inference source-correspondence audit, not blinded or independent clinical validation.",
+    "Reader11 records directory and predecessor reviewer-1 filename search contained no records for these six PMIDs on arrival; queue records existing_main_text_read=false. No predecessor reading credit invented. Curated subscription inputs were prepared but Claude used zero tokens and performed no review.",
+    "All24physical main PDF pages read, including STAR Methods and complete reference list; no supplemental text, pixels or tables read. Supplement inventory is bounded by explicit main-text references."
+  ]
+}

@@ -4,8 +4,8 @@
   "title": "Genotypic Categorization of Loeys-Dietz Syndrome Based on 24 Novel Families and Literature Data",
   "reviewer": {
     "id": "reader-3",
-    "reviewed_at_utc": "2026-10-24T15:40:56.445326+00:00",
-    "method": "Complete main text read in contiguous untruncated chunks; all mainfigurepanels andTables1/2 inspected in PDFpixels. FullS1primertext/pixels; fullS2extractedtext read after whitespace compression, mapped Family13/17/18 columns and adjacent13-18originalPDFvectors enlarged and visually inspected. All106packetphenotypes individually assessed. OtherS2columns not pixel-verified, retained partial."
+    "reviewed_at_utc": "2026-10-24T18:31:05.124501+00:00",
+    "method": "Composite review with preserved attribution. Predecessor reader-3 at 2026-10-24T15:40:56.445326+00:00 reported: Complete main text read in contiguous untruncated chunks; all mainfigurepanels andTables1/2 inspected in PDFpixels. FullS1primertext/pixels; fullS2extractedtext read after whitespace compression, mapped Family13/17/18 columns and adjacent13-18originalPDFvectors enlarged and visually inspected. All106packetphenotypes individually assessed. OtherS2columns not pixel-verified, retained partial. Continuation reader-3-continuation-20261024 personally inspected original-vector enlarged crops of all27 remaining S2 patient columns, seven complete-column pages plus eight boundary/legend crops. This continuation does not claim personally rereading inherited main text, figures, S1, mapped S2columns17-23 or case adjudications. Exact prior canonical record retained in continuation/prior-31569402-record.json."
   },
   "audit": {
     "timing": "post_inference",
@@ -13,8 +13,8 @@
     "scope": "source_correspondence_not_clinical_validation",
     "clinical_truth_established": false,
     "ranking_outcomes_seen": true,
-    "outcome_exposure": "aggregate_only",
-    "exposure_note": "Required HANDOFF contains aggregate compact-cohort metrics. No per-case inference ranks, scores or outcomes opened or used. Post-inference source audit, not blinded validation."
+    "outcome_exposure": "per_case",
+    "exposure_note": "Continuation required HANDOFF reading exposed historical public-control HG002/FGFR2 case-specific rank and aggregate history. No target-case inference ranks, inference-output files or benchmark outcome summaries consulted. Not blinded. Predecessor declaration preserved verbatim in continuation/prior-31569402-record.json."
   },
   "bindings": {
     "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
@@ -87,6 +87,22 @@
       "sha256": "0580a6fe8b326e3fb341011e70e39fc463b3590c4bc86330410b8aafbfc3b1bb",
       "kind": "pdf",
       "description": "Two enlarged vector crops preserving original labels/Family13-18columns"
+    },
+    {
+      "id": "s2remaining",
+      "pmid": "31569402",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/31569402/s2-remaining-crops.pdf",
+      "sha256": "0ff975ac0874e2f3a421d2cb7778225c2f42d906d918765b9ba0c875b11e889b",
+      "kind": "pdf",
+      "description": "Seven enlarged original-vector source table crops, patient columns1-16 and24-34; labels repeated. All pages personally inspected by continuation; boundary text completed in s2boundary."
+    },
+    {
+      "id": "s2boundary",
+      "pmid": "31569402",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/31569402/s2-boundary-crops.pdf",
+      "sha256": "ddaeace9d36dd0f17538b10cafc7c2c44f6db3ce28d01dbb56c6c71436b5405a",
+      "kind": "pdf",
+      "description": "Eight original-vector crops personally inspected: Family3 surgery,Family6 aortic root,Family9 surgery,Family19 aortic root,Family22 surgery,Family8 additional features,Family23I additional features,source legend."
     }
   ],
   "identity": {
@@ -287,7 +303,7 @@
     {
       "id": "s2",
       "kind": "supplement",
-      "status": "partial",
+      "status": "full",
       "required_modes": [
         "text",
         "pixels"
@@ -315,9 +331,37 @@
           "mode": "pixels",
           "source_id": "crops",
           "locator": "pp1-2 sourceFamily13I,14I/II,15I,16I,17I,18I full columns"
+        },
+        {
+          "start": 1,
+          "end": 16,
+          "mode": "pixels",
+          "source_id": "s2remaining",
+          "locator": "Pages1-4 all rows, plus s2boundary pages1-3/6 for clipped long entries"
+        },
+        {
+          "start": 24,
+          "end": 34,
+          "mode": "pixels",
+          "source_id": "s2remaining",
+          "locator": "Pages5-7 all rows, plus s2boundary pages4-5/7 for clipped entries"
+        },
+        {
+          "start": 1,
+          "end": 16,
+          "mode": "pixels",
+          "source_id": "s2boundary",
+          "locator": "Pages1-3/6 supplement seven full-column crops; page8 source legend"
+        },
+        {
+          "start": 24,
+          "end": 34,
+          "mode": "pixels",
+          "source_id": "s2boundary",
+          "locator": "Pages4-5/7 supplement seven full-column crops; page8 source legend"
         }
       ],
-      "note": "Three mapped columns and adjacent13-18columns verified in original PDF pixels. Other27columns text only."
+      "note": "Composite coverage: all34-column text and columns17-23 pixels are predecessor work. Continuation personally read remaining27columns in original-vector enlarged crops, then all clipped boundary text and legend in eight additional crops. All original cell symbols, family/patient headers, genotype strings and long entries retained. No automated-read claim."
     }
   ],
   "packets": [
@@ -3622,13 +3666,14 @@
   ],
   "access_issues": [],
   "limitations": [
-    "Allmaintext, allFigure1panels/Table1/Table2 and fullprimerS1text/pixels read. WholeS2textread; onlyFamily13-18sevenpatientcolumns pixelverified. Remaining27columns not pixelinspected. No externalLOVDdatabase/rawchromatograms independently checked.",
+    "Saved predecessor work covers main text/figures/main tables, S1 and allS2text plus seven mapped/adjacent columns. Continuation personally completed remaining27S2columns in enlarged original-vector pixels, including boundary entries/legend. Assigned packet judgments remain unchanged and attributed to predecessor; no externalLOVDdatabase or rawchromatograms independently checked.",
     "Ten definite packetphenotype contradictions across all3mappedpatients: Family18 scars/translucency/talipes; Family17 bruising/translucency/talipes/epicanthus; Family13 bruising/scars/translucency. MiliaNA doesnot establish either positive ornegative; softskin differs fromhyperextensibility; blueorduskysclerae combinedrow limits subtype conclusions.",
     "Family13 vascular findings are aorticroot/ascendingaorta58mm/aorticarchaneurysm andisthmicdissection42mmat9y, not demonstratedcerebralarterydilation. Family17aorticdissection34y and ascendingaorta/aorticarch/descendingaortareplacement, sourceage37y. Family18aorticectasia at3y despite many vascularfieldsNA; omittedmajorvascularphenotypes shouldnot be inferredabsent.",
     "Clinicalseries34individuals24families is not34independentfamilies. Gene-specificclinicaldenominators excludeunavailabledata; Table1symbols are literaturefrequencybands not patientpresence. Retrospective specialistclinic ascertainment, agevariation, familyclustering andonlyoneTGFB2patient preclude robust comparative penetrance or naturalhistory estimates.",
     "Novelmissensepathogenicclassification is asserted using domain, populationabsence, prediction andphenotypematch; no pervariant functionaltest/explicitACMGcombination shown. SpliceRNAexperiments concern otherTGFBR2c263+6C>T andSMAD3c1009+1G>A variants, not the3mappedmissensealleles.",
     "SMAD3methods mistakenly repeats TGFBR2NM_003242.5; SupplementS1 correctly givesNM_005902.4. Discussion says3SMAD3families whereasresults/Table2 list4. BroadlesssevereSMAD3/TGFB2 conclusions are smallselectedcohort comparisons, not controlledriskestimates.",
     "Authorsreport sixgeneLDSscreening outcomes but methodsPCRtargets onlyTGFBR1/2,SMAD3,TGFB2; noSMAD2/TGFB3primerassays shown. NegativeSMAD2/TGFB3 finding may reflect selection/testingdetail gap, not validated exhaustivecoverage.",
-    "Literaturereview EnglishPubMedkeywordsearch andcitationfollowup described, but noflowdiagram/searchdatefullquery/riskofbias or deduplication analysis. NewlyobservedTGFB2cervicalinstability singlecase cannot establish incidence. No clinical drugrescue orBUBR1N1002Kevidence."
+    "Literaturereview EnglishPubMedkeywordsearch andcitationfollowup described, but noflowdiagram/searchdatefullquery/riskofbias or deduplication analysis. NewlyobservedTGFB2cervicalinstability singlecase cannot establish incidence. No clinical drugrescue orBUBR1N1002Kevidence.",
+    "Continuation verified additional S2source details without extending packet attribution: Family9 heart transplantation was reported after an intraoperative complication at aortic-root replacement; Family22 coronary angioplasty and Family23I spontaneous pneumothorax are explicitly recorded. Family1 protein label is printed p.A(sp400Gly), a source typographical form preserved rather than silently corrected. NA and NV remain distinct from negative signs; source novel-variant boldface is a source assertion, not independent classification."
   ]
 }

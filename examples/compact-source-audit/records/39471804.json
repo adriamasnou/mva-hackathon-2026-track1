@@ -4,8 +4,8 @@
   "title": "Homozygous variants in WDR83OS lead to a neurodevelopmental disorder with hypercholanemia.",
   "reviewer": {
     "id": "reader-3",
-    "reviewed_at_utc": "2026-10-24T14:47:24.974039+00:00",
-    "method": "Complete 40-page main-plus-supplement PDF text read in bounded contiguous chunks; all seven main graphical figures including abstract, two main tables, S1-S5 plates and S2 primers inspected in pixels. Entire S1 workbook values read; five mapped patient columns rendered and inspected. Every packet phenotype checked against individual source cells and narratives. No inference outcomes consulted."
+    "reviewed_at_utc": "2026-10-24T18:28:05.714850+00:00",
+    "method": "Composite review with preserved attribution. Predecessor reader-3 at 2026-10-24T14:47:24.974039+00:00 reported: Complete 40-page main-plus-supplement PDF text read in bounded contiguous chunks; all seven main graphical figures including abstract, two main tables, S1-S5 plates and S2 primers inspected in pixels. Entire S1 workbook values read; five mapped patient columns rendered and inspected. Every packet phenotype checked against individual source cells and narratives. No inference outcomes consulted. Continuation reader-3-continuation-20261024 personally inspected all12 wrapped derivative pages of TableS1 columns C:H and K:M, rows1:86, after observing clipped original-format cells. This continuation does not claim personally rereading inherited main text, figures, five mapped columns or case adjudications. Exact prior record is preserved in continuation/prior-39471804-record.json."
   },
   "audit": {
     "timing": "post_inference",
@@ -13,8 +13,8 @@
     "scope": "source_correspondence_not_clinical_validation",
     "clinical_truth_established": false,
     "ranking_outcomes_seen": true,
-    "outcome_exposure": "aggregate_only",
-    "exposure_note": "Required HANDOFF contains aggregate compact-cohort metrics. No per-case inference ranks, scores or outcomes opened or used. Post-inference source audit, not blinded validation."
+    "outcome_exposure": "per_case",
+    "exposure_note": "Continuation required HANDOFF reading exposed historical public-control HG002/FGFR2 case-specific rank and aggregate history. No target-case inference ranks, inference-output files or benchmark outcome summaries consulted. Not blinded. Predecessor declaration is retained verbatim in continuation/prior-39471804-record.json; current declaration is conservative for this composite record."
   },
   "bindings": {
     "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
@@ -63,6 +63,14 @@
       "sha256": "cc46566bf8367b5bc033105280c724d0c1528495a630bd83aa599aeffc36d670",
       "kind": "pdf",
       "description": "Rendered exact cells of B/I/J/N/O mapped patients, all eight pages visually inspected"
+    },
+    {
+      "id": "s1unmappedwrapped",
+      "pmid": "39471804",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-3/assets/39471804/S1-unmapped-wrapped.pdf",
+      "sha256": "27a5513cea9f155593876f755ba1bdbd4fde4661606ce00f1277046e798fc0ab",
+      "kind": "pdf",
+      "description": "12-page wrapped reading derivative of exact stored cells for C:H and K:M, rows1:86; all12 pages personally inspected by continuation reviewer. Merged labels repeated; blanks explicit; formula literal retained at F28; no source workbook modification."
     }
   ],
   "identity": {
@@ -417,7 +425,7 @@
     {
       "id": "tableS1",
       "kind": "supplement",
-      "status": "partial",
+      "status": "full",
       "required_modes": [
         "data",
         "pixels"
@@ -459,9 +467,30 @@
           "mode": "pixels",
           "source_id": "s1mapped",
           "locator": "N/O Family9 probands1/2"
+        },
+        {
+          "start": 2,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "s1unmappedwrapped",
+          "locator": "Pages1-4: C:E / Family2 probands1-3, rows1:86"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "s1unmappedwrapped",
+          "locator": "Pages5-8: F:H / Families3-5, rows1:86"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "s1unmappedwrapped",
+          "locator": "Pages9-12: K:M / Family8 probands1-3, rows1:86"
         }
       ],
-      "note": "All workbook data read, mapped patient cells visually checked. Nine unmapped patient columns have no pixel inspection; not falsely declared whole-workbook visual completion."
+      "note": "Composite coverage: original all14-column data reading and mapped B/I/J/N/O pixel reading remain attributed to predecessor reader-3. Continuation personally read all12 wrapped derivative pages for nine remaining columns, including labels, blanks, symbols, footnotes and long cells. Original-format rendering clipped cells; wrapped derivative preserves stored values, repeats merged labels and labels blanks. No automated-read claim."
     }
   ],
   "packets": [
@@ -11915,7 +11944,7 @@
   ],
   "access_issues": [],
   "limitations": [
-    "All main text and relevant mapped-case sources read; TableS1 data for all14 individuals read, but nine unmapped columns not inspected in pixels. No raw controlled-access exomes, raw fish data or independent sequence remapping read/performed.",
+    "Main text, figures, supplements, all14-column data and five mapped-column pixel reading are saved predecessor work. Continuation completed the nine remaining TableS1 column pixel gaps via12 personally inspected wrapped derivative pages; inherited case judgments remain attributed. No raw controlled-access exomes, raw fish data or independent sequence remapping read/performed.",
     "14 affected/9 families includes three previously published Family2 individuals; 11 new patients from eight families. Shared 0.6Mb splice-allele haplotype in F2/F5/F8 qualifies independent recurrence. F4 haplotype unavailable.",
     "F3 de novo ATP2B1 c.2570A>G p.Gln857Arg co-occurs with homozygous WDR83OS deletion; F8 two siblings also homozygous LARP7 c.452del p.Lys151Argfs*22, third LARP7 heterozygous and inherited83kb1p31.1del VUS. These do not permit exclusive WDR83OS attribution.",
     "F6 c.156+2T>A exon2 skipping is predicted; prior RT-PCR concerned c.156+1G>T in Family2. F7 first-exon c.50+1G>T transcript/protein outcome remains unknown. SpliceAI .99/.83 are prediction scores, not established99%/83% clinical probabilities despite source wording.",
@@ -11924,6 +11953,7 @@
     "Figure4/S4 y axes label log2 fold change but methods describe2^-delta-delta-Ct; normalized reference bars near1. Figure4 caption says biological triplicates, methods four biological replicates. Behavior methods say light acclimation/5-minute light-dark transitions; Figure6/S4 captions and plots show dark30minutes/10-minute periods. Exact implementation is internally inconsistent.",
     "TableS1 discloses more enzyme/bilirubin exceptions than the main summary: ALT above printed range in F2P1,F4,F5,F9P2; AST in F2P1/P3,F3,F4,F5,F9P2; GGT F4,F5,F9P2; direct bilirubin F2P1/P2,F5,F7. ALP130 F8P2 is within printed44-147, contrary to13 elevated assertion. No pediatric range adjustment established.",
     "F1 lower-lip source conflict; F6 absent speech/high palate/finger contractures oppose packet exclusions. F9P1 feeding/high palate exclusions oppose source, eye-spacing conflicts internally. F9P2 non-verbal/high palate oppose exclusions; cranial nerves/table versus weak gag narrative conflict. F7 GDD exclusion opposes narrative. Low-grade VUR positives in F7/F9 belong to F8P2 source column, not these patients.",
-    "F9P1 anthropometrics internally inconsistent (S1 birth length34cm/head55cm; narrative later107cm versus table77.5cm at21months, same78%); do not silently repair or treat source percentiles as validated. S1 F8 ages/labels differ from narrative; no reassignment made."
+    "F9P1 anthropometrics internally inconsistent (S1 birth length34cm/head55cm; narrative later107cm versus table77.5cm at21months, same78%); do not silently repair or treat source percentiles as validated. S1 F8 ages/labels differ from narrative; no reassignment made.",
+    "Continuation TableS1 checks preserve additional internal inconsistencies: Family4 evaluation age2years versus walking32months; Family2P1 birth head31cm labelled positive2.6SD; Family5 serum bile acids34U/L versus column reference in umol/L; Family8P3 weight/height/head values carry discordant percentile descriptions. No silent correction, pediatric range normalization or new packet reassignment. Family8P2 ALP130 remains within printed44-147; grade2VUR remains in that column. These nine columns are outside the five assigned packet identities."
   ]
 }
