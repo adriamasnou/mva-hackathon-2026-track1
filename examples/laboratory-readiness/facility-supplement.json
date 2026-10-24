@@ -1,0 +1,180 @@
+{
+  "status": "PUBLIC_WEB_EVIDENCE_ONLY_NO_CONTACT_OR_QUOTE",
+  "reviewed_at_utc": "2026-10-24T14:37:00Z",
+  "scope": "Additional published microscopy unit rates and access restrictions. This does not establish provider acceptance, assay suitability, availability, an executable schedule, or total project cost.",
+  "sources": [
+    {
+      "id": "uv-2026",
+      "provider": "Universitat de Valencia, UCIM microscopy",
+      "price_year": 2026,
+      "tier": "external users",
+      "currency": "EUR",
+      "unit": "hour",
+      "rates": {
+        "DMi8_live_fluorescence": 33.96,
+        "temperature_and_CO2_separate_row": 9.05,
+        "technician_operator": 105.26
+      },
+      "sources": [
+        "uv-prices",
+        "uv-equipment",
+        "uv-access"
+      ],
+      "published_access": "Self-service after training is preferred; assisted sessions also offered. Booking registration requires a separate request. No request was made.",
+      "published_capability": "Equipment listing identifies live-cell DMi8 and mitosis imaging applications; no demonstrated throughput for this protocol.",
+      "conditional_arithmetic": {
+        "assumed_hours": 288,
+        "assumed_environment_separately_additive": true,
+        "instrument_plus_environment_EUR": 12386.88
+      },
+      "excluded_or_unknown": [
+        "whether environmental rate is additional for the exact booking",
+        "training",
+        "operator hours",
+        "sample preparation",
+        "cell construction and culture",
+        "analysis",
+        "tax treatment",
+        "transport",
+        "booking acceptance and capacity"
+      ],
+      "project_quote_received": false,
+      "project_total": null
+    },
+    {
+      "id": "lumc-current-page",
+      "provider": "LUMC Light Microscopy Facility",
+      "price_year": null,
+      "currency": "EUR",
+      "source": "lumc-prices",
+      "external_academic": {
+        "widefield_per_hour": 24,
+        "confocal_per_hour": 36,
+        "training_session": 100
+      },
+      "external_nonacademic": {
+        "widefield_per_hour": 60,
+        "confocal_per_hour": 90,
+        "training_session": 250
+      },
+      "conditional_288h_widefield_EUR": {
+        "academic_eligibility_unconfirmed": 6912,
+        "nonacademic_eligibility_unconfirmed": 17280
+      },
+      "limitations": [
+        "The inspected page does not state an effective date.",
+        "User tier is not established; UOC library access is not academic sponsorship.",
+        "Environmental control, operator and analysis scope, tax treatment, project acceptance and throughput are unconfirmed.",
+        "Low IncuCyte rates on the same page are not substituted for chromosome-segregation imaging without optical qualification."
+      ],
+      "project_quote_received": false,
+      "project_total": null
+    },
+    {
+      "id": "crg-access-policy",
+      "provider": "CRG ALMU",
+      "policy_date": "2026-02-03",
+      "sources": [
+        "crg-access",
+        "crg-capabilities",
+        "crg-rates-r1"
+      ],
+      "published_rules": {
+        "staff_training_mandatory": true,
+        "training_request_advance_weeks": 2,
+        "normal_live_cell_overnight_bookings_per_person_per_week": 3,
+        "exceptions_require_arrangement": true
+      },
+      "rate_revision": "R1 valid 2026-07-01; R0 is older",
+      "currency": "EUR",
+      "Academic_CERCA_rates_excluding_VAT": {
+        "widefield_per_hour": 35.28,
+        "confocal_per_hour": 51.35,
+        "operation_supervision_per_hour": 82.5,
+        "analysis_per_hour": 89.16
+      },
+      "conditional_schedule_inference": "If each of six 48-hour runs consumes two overnight bookings, one operator needs 12 such bookings across at least four weekly quota periods under the normal limit. The meaning of a booking, exceptions, calendar availability and accepted design remain unconfirmed. This is not a promised completion time.",
+      "project_quote_received": false,
+      "project_total": null
+    }
+  ],
+  "funding": {
+    "cash_prize_commitment": 0,
+    "Claude_credits_for_laboratory": 0
+  },
+  "decision": "Keep full budget and provider-specific timetable unresolved. Use explicit external-user prices where available and retain all exclusions. No contact, account registration, reservation or expenditure authorized or performed.",
+  "capture_metadata": [
+    {
+      "id": "uv-prices",
+      "url": "https://www.uv.es/uvweb/servicio-central-soporte-investigacion-experimental/es/organizacion/ucim/secciones-ucim/microscopia/tarifas-1285876879607.html",
+      "retrieved_at_utc": "2026-10-24T14:34:45.883486+00:00",
+      "status": 200,
+      "final_url": "https://www.uv.es/uvweb/servicio-central-soporte-investigacion-experimental/es/organizacion/ucim/secciones-ucim/microscopia/tarifas-1285876879607.html",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 73864,
+      "sha256": "6a382882c946872b03fd5d8f02b96faee59edd13e842616725b7fc78e380caf1"
+    },
+    {
+      "id": "uv-access",
+      "url": "https://www.uv.es/uvweb/servicio-central-soporte-investigacion-experimental/es/organizacion/ucim/secciones-ucim/microscopia/procedimiento-1285876879568.html",
+      "retrieved_at_utc": "2026-10-24T14:34:45.886437+00:00",
+      "status": 200,
+      "final_url": "https://www.uv.es/uvweb/servicio-central-soporte-investigacion-experimental/es/organizacion/ucim/secciones-ucim/microscopia/procedimiento-1285876879568.html",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 66368,
+      "sha256": "fb19a179f1221a4874b3af5f7cafb9eba2925515350680ac2a981e5def78f008"
+    },
+    {
+      "id": "uv-equipment",
+      "url": "https://www.uv.es/uvweb/servicio-central-soporte-investigacion-experimental/es/organizacion/ucim/secciones-ucim/microscopia/equipos-1285868582559.html",
+      "retrieved_at_utc": "2026-10-24T14:34:45.886974+00:00",
+      "status": 200,
+      "final_url": "https://www.uv.es/uvweb/servicio-central-soporte-investigacion-experimental/es/organizacion/ucim/secciones-ucim/microscopia/equipos-1285868582559.html",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 79692,
+      "sha256": "f5b188a3479fd4b1816ced181c27c36d9d222837b222eb1184b9a07e3dc97e8a"
+    },
+    {
+      "id": "lumc-prices",
+      "url": "https://www.lumc.nl/en/research/facilities/light-microscopy-facility/pricing/",
+      "retrieved_at_utc": "2026-10-24T14:34:50.375213+00:00",
+      "status": 200,
+      "final_url": "https://www.lumc.nl/en/research/facilities/light-microscopy-facility/pricing/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 193854,
+      "sha256": "264e00c270164f7ce6a6011eee5129e37cf8e0abf61c145bd2a12753c0a59ec2"
+    },
+    {
+      "id": "crg-access",
+      "url": "https://www.crg.eu/sites/default/files/crg/almu_access_policy.pdf",
+      "retrieved_at_utc": "2026-10-24T14:34:50.422949+00:00",
+      "status": 200,
+      "final_url": "https://www.crg.eu/sites/default/files/crg/almu_access_policy.pdf",
+      "content_type": "application/pdf",
+      "bytes": 118542,
+      "sha256": "a75fe829287c59f05a801c8088961e5f96823c0422adfe0ee558cd7209564110"
+    },
+    {
+      "id": "crg-rates-r1",
+      "url": "https://www.crg.eu/sites/default/files/crg/advanced_light_microscopy_unit_web_fees2026_r1.pdf",
+      "retrieved_at_utc": "2026-10-24T14:34:51.171357+00:00",
+      "status": 200,
+      "final_url": "https://www.crg.eu/sites/default/files/crg/advanced_light_microscopy_unit_web_fees2026_r1.pdf",
+      "content_type": "application/pdf",
+      "bytes": 626907,
+      "sha256": "fe0a3e3d7b937cad979ad56df9cd7eeefe91aea5dcec7e17b907ba236a94ce67"
+    },
+    {
+      "id": "crg-capabilities",
+      "url": "https://www.crg.eu/en/programmes-groups/advanced-light-microscopy-unit",
+      "retrieved_at_utc": "2026-10-24T14:34:51.861658+00:00",
+      "status": 200,
+      "final_url": "https://www.crg.eu/en/programmes-groups/advanced-light-microscopy-unit",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 96657,
+      "sha256": "6bbb97953208892538c31ae86eac8eb3131eec136ae6f39dcff9af16aa74eb1f"
+    }
+  ],
+  "provenance": "Parent official-source web review incorporated as supplemental metadata; seven retained capture hashes independently rechecked. Raw captures and private paths are not shipped.",
+  "project_total": null
+}

@@ -1,0 +1,150 @@
+{
+  "imaging_preflight": {
+    "status": "proposed development only; not efficacy or a powered defect test",
+    "wells": 4,
+    "conditions": [
+      "WT replacement depleted",
+      "N1002K replacement depleted",
+      "empty depleted",
+      "WT nondepleted"
+    ],
+    "clones_per_construct": 1,
+    "culture_preparations": 1,
+    "vehicle_only": true,
+    "fields_per_well": 8,
+    "channels": 2,
+    "positions_per_cycle": 32,
+    "images_per_cycle": 64,
+    "cadence_minutes_proposed_not_accepted": 3
+  },
+  "imaging_main_feasibility": {
+    "wells_per_plate": 42,
+    "fields_per_well": 8,
+    "channels": 2,
+    "positions_per_cycle": 336,
+    "images_per_cycle": 672,
+    "proposed_cycle_seconds": 180,
+    "maximum_mean_seconds_per_image_including_all_overhead": 0.26785714285714285,
+    "single_plate_48h_runs": 6,
+    "reserved_plate_hours_if_that_design_accepted": 288,
+    "status": "UNCONFIRMED; demonstrate exposure, autofocus, stage and channel-switch cycle; counterbalance staggered cultures or use accepted multiposition capacity; otherwise downsize/recalculate"
+  },
+  "model_titration": {
+    "genotypes": 5,
+    "induction_levels_ng_mL": [
+      0,
+      1,
+      10,
+      100
+    ],
+    "depletion_conditions": 2,
+    "culture_blocks": 3,
+    "clones_per_genotype": 1,
+    "assays": 2,
+    "wells": 240
+  },
+  "arimoclomol_pilot": {
+    "main_wells": 756,
+    "additional_controls": 51,
+    "total": 807,
+    "media_mL_main": 113.39999999999999,
+    "arimoclomol_mg_main_no_overage": 0.090487368,
+    "media_with_20percent_handling_mL_main": 136.07999999999998
+  },
+  "comparator_window_pilot": {
+    "genotypes": 2,
+    "PBA_uM": [
+      100,
+      300,
+      1000
+    ],
+    "NMN_uM": [
+      50,
+      100,
+      500
+    ],
+    "vehicle_conditions": 2,
+    "times_h": [
+      24,
+      48
+    ],
+    "culture_blocks": 3,
+    "assays": 2,
+    "wells": 192
+  },
+  "four_way_comparison": {
+    "genotypes": 2,
+    "conditions": 4,
+    "culture_blocks": 3,
+    "clones": 2,
+    "assays": 3,
+    "times": 1,
+    "wells": 144,
+    "status": "pilot design; final confirmatory n unknown"
+  },
+  "HSP_dependency_pilot": {
+    "genotypes": 2,
+    "RNAi_conditions": [
+      "NC1",
+      "HSPA1A_B_duplex1",
+      "HSPA1A_B_duplex2"
+    ],
+    "drug_conditions": 2,
+    "culture_blocks": 3,
+    "assays": 3,
+    "wells": 108
+  },
+  "LCMS_arimoclomol_scope": {
+    "cell_conditions_samples": 144,
+    "matched_vehicle_samples": 36,
+    "cell_free_stability_samples": 48,
+    "binding_free_total_samples": 48,
+    "subtotal_samples_before_calibration_QC": 276,
+    "calibration_QC_and_method_development": null
+  },
+  "flow_precision": {
+    "samples": 576,
+    "compensation_tubes": 24,
+    "cells_per_sample": 500000,
+    "minimum_loaded_cells": 300000000,
+    "cells_with20percent_handling": 360000000.0,
+    "staining_volume_uL_per_sample": 50,
+    "primary_positive_samples": 432,
+    "primary_ug_at_5ug_mL": 108.0,
+    "primary_ug_20percent_overage": 129.6,
+    "excludes": "titration, specificity, WB and repeat failures"
+  },
+  "HTS_1760": {
+    "plates": 6,
+    "all_wells": 2304,
+    "candidate_cells_per_well_to_qualify": 50000,
+    "cells_at_candidate_scale": 115200000,
+    "cells_if_unminiaturized_500000": 1152000000,
+    "staining_uL": 20,
+    "primary_ug_at_5ug_mL": 230.39999999999998,
+    "primary_ug_with20percent_overage": 276.47999999999996,
+    "events_at25000_each": 57600000,
+    "acquisition_hours_at_1000_events_second_excluding_every_overhead": 16.0,
+    "sample_cycle_hours_at60seconds_per_well": 38.4,
+    "warning": "event-rate arithmetic is not demonstrated throughput; 50k loaded may fail 25k retained; scale back up if recovery fails"
+  },
+  "HTS_confirm_per_hit": {
+    "doses": 10,
+    "starting_uM": 30,
+    "dilution_factor": 3,
+    "independent_days": 3,
+    "wells_per_day_dose": 1,
+    "total_wells_per_hit": 30,
+    "plus": "vehicle/reference/fluorescence/counter-screen/fate and function controls separate"
+  },
+  "fragment_production": {
+    "constructs": 4,
+    "independent_preps_each": 3,
+    "preps": 12,
+    "requested_final_mass_mg_each": 0.5,
+    "total_mg": 6,
+    "purity_requested_percent": 90,
+    "target_monomer_percent": 80,
+    "numbers_status": "proposed RFQ acceptance criteria, not existing yield"
+  }
+}

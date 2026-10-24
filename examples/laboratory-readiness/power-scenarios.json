@@ -1,0 +1,46 @@
+{
+  "status": "prospective examples only; final n requires pilot variance, biologically justified margins, multiplicity and cluster simulation",
+  "unit": "independent paired culture-day difference in error proportion, clones/cells nested",
+  "formula": "ceil((z_0.975+z_0.90)^2 * SD_difference^2 / (expected_effect - minimum_worthwhile_effect)^2)",
+  "rows": [
+    {
+      "SD_difference": 0.025,
+      "effect_above_margin": 0.025,
+      "normal_approximate_n": 11,
+      "planning_minimum_blocks": 11
+    },
+    {
+      "SD_difference": 0.025,
+      "effect_above_margin": 0.05,
+      "normal_approximate_n": 3,
+      "planning_minimum_blocks": 6
+    },
+    {
+      "SD_difference": 0.05,
+      "effect_above_margin": 0.025,
+      "normal_approximate_n": 43,
+      "planning_minimum_blocks": 43
+    },
+    {
+      "SD_difference": 0.05,
+      "effect_above_margin": 0.05,
+      "normal_approximate_n": 11,
+      "planning_minimum_blocks": 11
+    },
+    {
+      "SD_difference": 0.1,
+      "effect_above_margin": 0.025,
+      "normal_approximate_n": 169,
+      "planning_minimum_blocks": 169
+    },
+    {
+      "SD_difference": 0.1,
+      "effect_above_margin": 0.05,
+      "normal_approximate_n": 43,
+      "planning_minimum_blocks": 43
+    }
+  ],
+  "power": 0.9,
+  "two_sided_alpha": 0.05,
+  "not_accounted": "small-n t critical values, variance uncertainty, failed cultures, dose selection/multiple comparisons, clone correlations; counts are not released confirmatory sample sizes"
+}

@@ -4,19 +4,21 @@
 
 | | |
 |---|---|
-| **Version** | 1.3 — 2026-10-23; published methods, control scope and instrument adaptation corrected |
+| **Version** | 1.4 — 2026-10-24; current costing, execution dependencies and source-method alignment |
 | **Author** | adriamasnou · *Rare Disease, Real Kid: The MVA Hackathon 2026* |
 | **Licence** | CC BY 4.0 |
-| **Companion document** | [`n1002k-reagent-specification.md`](n1002k-reagent-specification.md) — construct design, all four orderable sequences, costings |
+| **Companion document** | [`n1002k-reagent-specification.md`](n1002k-reagent-specification.md) — verified insert designs; complete vectors and order specifications remain unresolved |
 | **Biosafety** | **BSL-1.** *E. coli* K-12/B-derivative expression host; synthetic dsDNA; no human material, no pathogen, no controlled-access data |
-| **Estimated reagent cost** | **≈ $630** — four constructs including two controls (list prices, §Materials) |
-| **Estimated timeline** | **~3 weeks** elapsed; ~4 days hands-on (§Timing) |
+| **Cost status** | **USD 629.92 conditional fragment DNA/QC illustration only**; protein production, reagents, instruments, labour and landed charges are unquoted |
+| **Timeline status** | **Unconfirmed**; no accepted provider timetable or laboratory booking |
 
 ---
 
 ## Scope and scientific premise
 
 This is a **proposed fragment biophysics sub-study**, not a validated assay or an executed experiment. Its decisions were drafted before data collection but have not been registered as a final statistical protocol. The [full-length functional and exposure plan](functional-rescue-plan.md) governs candidate advancement.
+
+Use the [current laboratory readiness package](laboratory-execution-readiness.md) and [optional module A10](../examples/laboratory-readiness/proposed-modules.md) for release dependencies. The earlier approximately $630 reagent-budget and three-week completion estimates are withdrawn: the former was only partial DNA/QC arithmetic, and neither a whole-study cost nor a schedule has been accepted by a provider. No purchase or experiment is authorized by this specification.
 
 The retained literature supports instability for some MVA-associated BubR1 variants, but does not establish N1002K function. Phase and nonsense-mediated decay for the identified pair are unmeasured. The protocol therefore makes no claim that all protein in the child is N1002K. PMID 20516114. **[OUR INFERENCE]**
 
@@ -41,12 +43,14 @@ The C-terminal domain contributes structural and non-catalytic functions; the pr
 
 **Four proposed constructs, with controls qualified before interpretation.**
 
-| Construct | Proposed role | Residue in 721–1,044? | Dated materials estimate |
-|---|---|---|---|
-| WT | baseline | — | ≈$87 + vector $35–55 |
-| N1002K | variant under test | 1002 | as above |
-| K795A | candidate destabilising comparator | 795 | as above |
-| Q921H | candidate WT-like fragment comparator, unqualified; WT-like in the reported full-length cellular assays | 921 | as above |
+| Construct | Proposed role | Residue in 721–1,044? |
+|---|---|---|
+| WT | baseline | — |
+| N1002K | variant under test | 1002 |
+| K795A | candidate destabilising comparator | 795 |
+| Q921H | candidate WT-like fragment comparator, unqualified; WT-like in the reported full-length cellular assays | 921 |
+
+Exact vector, tag/junctions, synthesis route, sequence QC and project pricing require provider acceptance. The [current budget ledger](../examples/laboratory-readiness/budget-calculations.json) retains the conditional DNA illustration separately from unknown experimental costs.
 
 Brnich et al. require assay controls, a demonstrated dynamic range and justified thresholds before interpreting functional evidence (PMID 31892348). Merely adding two constructs does not meet those requirements or establish an ACMG evidence strength. A WT–variant comparison alone cannot establish calibration.
 
@@ -54,12 +58,12 @@ K795A has published thermal measurements on **full-length GST-BUBR1**: WT 39.1 �
 
 Isolated full-length Q921H was WT-like in cellular abundance and chromosome segregation (PMID 20516114, Fig 4D, middle panel), and in the reported alignment and checkpoint assays (Fig S2A–B). Those direct functional results do not validate neutral fragment thermostability, every possible BubR1 function or clinical benignity. Q921H also occurs in cis with L844F in an affected family (PMID 15475955). Qualify its proposed WT-like role in the fragment assay before using it as a negative folding comparator. If either comparator fails its prespecified qualification criteria, redesign the control set and classify the assay as indeterminate.
 
-> **CRITICAL** — Order all four constructs as **cloned, sequence-verified genes** (e.g. Twist *Clonal
-> Genes*, specified *"100% sequence perfect, NGS verified"*), **not** as linear gene fragments. Order
-> them **in the same run**. The measurement is a ΔTm between constructs that must differ from WT only
-> at the intended codon; two synthesis batches introduce differences the experiment cannot separate from
-> the variant. See companion document §3 for the full rationale and a documented trap involving
-> silent siRNA-resistance edits present in the deposited pLAP-BUBR1 plasmids.
+> **CRITICAL — proposed release requirement:** use complete, sequence-verified expression plasmids
+> in a matched backbone. A delivered linear insert is not an expression-ready plasmid. Record synthesis
+> and cloning batches and balance them where practicable; different batches do not by themselves
+> establish sequence differences. Verify that the completed constructs differ only at the intended
+> edits. The [sequence specification](n1002k-reagent-specification.md) distinguishes the source
+> plasmids' silent siRNA-resistance edits from the new CDS-only replacement design.
 >
 > **CRITICAL** — The fragment is **internal to the ORF**: no start codon, no stop codon. Ensure the
 > destination vector supplies an N-terminal HIS₆ tag **in frame**, and that a stop codon is present —
@@ -82,10 +86,10 @@ Isolated full-length Q921H was WT-like in cellular abundance and chromosome segr
 | **AMP-PNP** | **Sigma** | Sigma-Aldrich / Merck | Non-hydrolysable ATP analogue |
 | MgCl₂, EDTA | — | any | Nucleotide-condition panel |
 
-⚠️ **Catalogue numbers are deliberately not given** for items where we could not verify a current
-part number. Supplier and product identity are given instead; source locally. The two figures we did
-verify against live vendor pricing on 2026-08-31 are Twist Clonal Genes (9¢/bp, +$35–55 cloning) and
-Plasmidsaurus whole-plasmid sequencing ($15/sample, 1-day turnaround).
+Items without a verified current SKU remain procurement dependencies. Historical supplier identities
+above describe the source method; they do not establish current stock, price, service scope or delivery.
+Use the [24 October provider ledger](../examples/laboratory-readiness/provider-evidence.json) for
+dated public evidence and unresolved price classes. No generic advertised turnaround is a project commitment.
 
 ### Equipment
 
@@ -132,21 +136,22 @@ four-condition panel exactly as in ref 1:
 
 ## Procedure
 
-### Stage 1 · Construct preparation ● TIMING 1–2 weeks, mostly waiting
+### Stage 1 · Construct preparation — provider-dependent timing
 
-1. Order all four constructs — WT, N1002K, K795A, Q921H; sequences in the companion document §3 — as
-   cloned, sequence-verified genes per §Materials. **TIMING** 4–7 business
-   days express, 10 standard.
+1. Once the project is approved, procure matched WT, N1002K, K795A and Q921H expression constructs
+   from the verified insert designs and an accepted complete vector specification. Obtain the actual
+   delivery commitment; no express-service timescale is assumed.
 2. Transform into the cloning host; prepare plasmid DNA.
-3. **Verify by whole-plasmid sequencing** (e.g. Plasmidsaurus, $15/sample, overnight).
+3. **Verify by whole-plasmid sequencing**, using an accepted service and current quote.
    **CRITICAL STEP** — The acceptance criterion is **each construct differs from WT only at its
    intended codon — one base for N1002K and Q921H, two adjacent bases for K795A — and nothing else
    differs anywhere in any of the four plasmids.** Not
    "the edit is present" — *only* the edit is present. Whole-plasmid rather than Sanger sequencing,
    because polymerase-based steps introduce second-site mutations that a targeted amplicon cannot see.
-   ■ **PAUSE POINT** — plasmid stocks are stable indefinitely at −20 °C.
+   ■ **PAUSE POINT** — store under the laboratory's qualified conditions; record storage age and
+   freeze–thaw history and recheck quality before use. No indefinite stability is assumed.
 
-### Stage 2 · Expression ● TIMING 2 days
+### Stage 2 · Expression — source conditions; elapsed time requires qualification
 
 4. Transform all four plasmids into the expression host **in parallel, on the same day, from the same
    competent-cell batch.**
@@ -161,7 +166,7 @@ four-condition panel exactly as in ref 1:
 6. Harvest by centrifugation, **15 min at 4,000 g**.
    ■ **PAUSE POINT** — pellets may be frozen at −80 °C.
 
-### Stage 3 · Purification ● TIMING 1–2 days
+### Stage 3 · Purification — yield and timing require qualification
 
 7. Resuspend pellets in **lysis buffer** (20 mM HEPES/NaOH pH 7.4, 300 mM NaCl, 1 mM TCEP) with
    protease inhibitors and DNase I.
@@ -183,7 +188,7 @@ four-condition panel exactly as in ref 1:
     express cannot produce a melting curve, and a flat curve would otherwise be interpreted as a
     result. ? **TROUBLESHOOTING**
 
-### Stage 4 · Thermal denaturation ● TIMING 1 day
+### Stage 4 · Thermal denaturation — instrument-dependent timing
 
 14. Prepare all four constructs at matched concentration in each of the four conditions in §Reagent setup.
     The published WT-fragment fluorescence curves used **1 µM protein** (ref 1, Fig S3G).
@@ -210,7 +215,7 @@ four-condition panel exactly as in ref 1:
     control qualification; it does not replace calibration or a confirmatory power calculation.
     ? **TROUBLESHOOTING**
 
-### Stage 5 · Orthogonal confirmation (recommended) ● TIMING 0.5 day
+### Stage 5 · Orthogonal confirmation (recommended) — instrument-dependent timing
 
 20. Acquire far-UV CD spectra for WT and N1002K (and the comparators, if material allows), with and
     without **10 mM MgCl₂ plus 250 µM AMP-PNP**. The published WT-fragment experiment used **2.5 µM
@@ -222,15 +227,12 @@ four-condition panel exactly as in ref 1:
 
 ## Timing
 
-| Stage | Hands-on | Elapsed |
-|---|---|---|
-| 1 · Construct preparation | ~0.5 day | **1–2 weeks** (synthesis + sequencing turnaround) |
-| 2 · Expression | ~0.5 day | 2 days |
-| 3 · Purification | ~1.5 days | 1–2 days |
-| 4 · Thermal denaturation | ~1 day | 1 day |
-| 5 · CD (optional) | ~0.5 day | 0.5 day |
-| **× 3 independent preparations** | | add ~1 week |
-| **Total** | **~4 days** | **~3 weeks** |
+No elapsed-time or hands-on total is validated. The critical path is accepted vector/design →
+manufacture and sequence QC → expression/yield qualification → matched purification →
+instrument qualification → independent preparations and measurements → analysis. Material failure,
+re-engineering and booking availability can change it. Obtain separate manufacturing, protein-production,
+instrument and analysis commitments before issuing a calendar schedule. The source's 18 h induction
+and per-temperature equilibration settings are method parameters, not whole-study turnaround estimates.
 
 ---
 
@@ -238,7 +240,7 @@ four-condition panel exactly as in ref 1:
 
 | Step | Problem | Possible reason | Solution |
 |---|---|---|---|
-| 3 | Sequencing shows differences beyond the intended edit | Second-site mutation from a polymerase step; or comparator is an Addgene-derived plasmid carrying silent siRNA-resistance edits (`c.2823C>A`, `c.2826G>A` — **both inside this fragment**) | Re-order; or if comparing against a deposited plasmid, expect and account for those two synonymous differences. See companion §4a.1 |
+| 3 | Sequencing shows differences beyond the intended edit | Second-site mutation from a polymerase step; or comparator is an Addgene-derived plasmid carrying silent siRNA-resistance edits (`c.2823C>A`, `c.2826G>A` — **both inside this fragment**) | Resolve the discrepancy against the frozen [sequence specification](n1002k-reagent-specification.md) before release; do not compare unmatched backbones or unexplained sequence differences. |
 | 13 | No expression, or insoluble product | Internal fragment, no native start/stop; frame error at the tag junction | Re-check frame across the cloning junction; confirm a stop codon is present; try lower induction temperature |
 | 13 | One construct expresses, the other does not | A genuinely destabilising variant can reduce soluble yield | **This is itself informative — record it.** Do not discard; note yield for both and proceed with whatever is obtainable |
 | 15 | Noisy or non-sigmoidal melting curve | Protein concentration too low; aggregation; buffer mismatch | Confirm concentration; centrifuge before loading; verify buffer identity between constructs |
