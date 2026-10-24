@@ -1,6 +1,6 @@
 # Final review and submission checklist
 
-Delivery status updated on 24 October 2026 from the participant’s confirmed publication and submission actions. The [delivery receipt summary](DELIVERY-RECEIPT.json) records the submitted version; the full platform receipt is retained separately outside this repository.
+Delivery status updated on 24 October 2026 from verified publication and submission receipts. The [delivery receipt summary](DELIVERY-RECEIPT.json) records the submitted version; the full platform receipt is retained separately outside this repository.
 
 - Report: [adriamasnou_track2_report.pdf](submissions/adriamasnou_track2_report.pdf), with [editable source](submissions/adriamasnou_track2_report.md).
 - Required methods form: [adriamasnou_methods_description.xlsx](submissions/adriamasnou_methods_description.xlsx). Provider tiers are the participant-confirmed Claude Max 20x and ChatGPT Pro 200. The form also discloses xAI Grok Expert assistance with public-source searches; its account tier was not independently verified. Retention settings have not been independently verified.
