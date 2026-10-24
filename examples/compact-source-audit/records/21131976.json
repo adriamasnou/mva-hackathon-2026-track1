@@ -1,0 +1,559 @@
+{
+  "schema_version": 1,
+  "pmid": "21131976",
+  "title": "Mutations in genes encoding subunits of RNA polymerases I and III cause Treacher Collins syndrome",
+  "reviewer": {
+    "id": "reviewer-2",
+    "reviewed_at_utc": "2026-10-24T21:32:32.130079+00:00",
+    "method": "Sole authorized successor Herschel for this exact PMID; actual source reading only; no extraction-only or metadata read credit."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Conservative per_case exposure, post-inference and not blinded. Earlier HANDOFF disclosed aggregate HG0026/7/8, HG0017/8/8, phenotype4/8/8 of9, compact556/653/665 versus430/649/665 of681, historical FGFR2 rank1 score0.9654. Editorial reading after18:54:47Z exposed CTCF phenotype rank132 versus genomic1/1, DOCK8 rank2 versus22/15, all3modes8/9top10, COG8/SLC35C1 one-allele exceptions, constructed pairs58/64 versus42/64 and no-HPO59/64 versus2/64. Later narrative review repeated aggregates, source-audit coverage and actual synthetic rescue outputs. At this succession checkpoint HANDOFF reread exposed latest21:22:28UTC audit281/334mains,161completepapers,1237/1389mappings,338/713cases,292validrecords and historical release aggregates; source-quality sensitivity621inputs/713cases/1426arms/162categories and B43/D5FBN1 crossassignment mention. No benchmark/inference outcome files or case outcomes were opened or consulted for these source reviews. Earlier reviews cannot retroactively be called blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "1ff59a3ca985dba2dd7a6ea3c9e86069c9bfaaf01f372d5842656ad2b1c52bb2",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "scope-ack",
+      "pmid": "21131976",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/21131976-successor/receipts/scope-acknowledgment.json",
+      "sha256": "e870b8381efe6b04b66f71178d402be1b8ae1b7b721a615bce989cc888e0b445",
+      "kind": "metadata",
+      "description": "Authorization acknowledgment, not source evidence"
+    },
+    {
+      "id": "epmc",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/21131976/europepmc.json",
+      "sha256": "7bca80060492e135a9f672d4a39e3f19a7f596d6c16a2b42f4310cfa12a984b1",
+      "kind": "metadata",
+      "description": "PMID/title/DOI metadata"
+    },
+    {
+      "id": "publisher",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/21131976/retrieval-followup/20261024T104647217127Z-ef49c7c4e2/response.body",
+      "sha256": "e34b0db73d73a4666c0e60e9d80b70f0ed70e4f40158a48bce460162189b7e7b",
+      "kind": "text",
+      "description": "Publisher subscription preview; bibliographic identity and single supplementary PDF link"
+    },
+    {
+      "id": "publisher-receipt",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/21131976/retrieval-followup/20261024T104647217127Z-ef49c7c4e2/receipt.json",
+      "sha256": "8d97dee2f5df3e8f5cf66b50ae57c79348567a5a237129be8fbb23bb8481b6c6",
+      "kind": "access_log",
+      "description": "Retained public journal retrieval provenance"
+    },
+    {
+      "id": "supp-pdf",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/21131976/retrieval-followup/20261024T101625691756Z-72786d0450/response.body",
+      "sha256": "3fe00f7439039319989fafb5812736621900a6f93ddae56065a605010b4c9a82",
+      "kind": "pdf",
+      "description": "Exact nine-page Supplementary Methods/Text/Figures PDF"
+    },
+    {
+      "id": "supp-text",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/21131976/retrieval-followup/20261024T101625691756Z-72786d0450/response.body.layout.txt",
+      "sha256": "fe3dbeff29678e7d4d949bfe30367eeec5d91aa55cd52a192ad88b65257c8638",
+      "kind": "text",
+      "description": "Entire layout extraction read; figure captions on pp6-9 only in pixels and PDF"
+    },
+    {
+      "id": "supp-receipt",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/21131976/retrieval-followup/20261024T101625691756Z-72786d0450/receipt.json",
+      "sha256": "4a9bb4682927f4acca1b4d1a995a1833f4f76d4d1bd24b79c89cdbdce9acdbd5",
+      "kind": "metadata",
+      "description": "DOI-bound public supplement download provenance"
+    },
+    {
+      "id": "supp-extent",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/21131976/supplement.pdfinfo.txt",
+      "sha256": "676ca9f86a3f6b59a5c28f48e04b0e01e8d2b818f0c989a6a2cb52d70dfa826f",
+      "kind": "metadata",
+      "description": "PDFinfo9pageextent"
+    },
+    {
+      "id": "supp-p1",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/21131976/supplement-1.png",
+      "sha256": "181791ca765e436232c042596222acc869e376e635365cb93a6eefcf634a9680",
+      "kind": "image",
+      "description": "Full supplementary PDF page1, inspected"
+    },
+    {
+      "id": "supp-p2",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/21131976/supplement-2.png",
+      "sha256": "65e486acd93698bd37c38ffdf7cc9ad69866c2a6e057a09d190b9ce91a0a064a",
+      "kind": "image",
+      "description": "Full supplementary PDF page2, inspected"
+    },
+    {
+      "id": "supp-p3",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/21131976/supplement-3.png",
+      "sha256": "e0ed5e4d92f189182128b09d0159ddb7384aafb5eeaf911b4ed9f7137062346e",
+      "kind": "image",
+      "description": "Full supplementary PDF page3, inspected"
+    },
+    {
+      "id": "supp-p4",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/21131976/supplement-4.png",
+      "sha256": "331072a5247d7213c66427736a5f1f9ca946585d0ff7b9a60711bc97be32b991",
+      "kind": "image",
+      "description": "Full supplementary PDF page4, inspected"
+    },
+    {
+      "id": "supp-p5",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/21131976/supplement-5.png",
+      "sha256": "cfbeca0491366026cf00bacabfe85b67cd933a042dff2c42af54a06fa0183e2d",
+      "kind": "image",
+      "description": "Full supplementary PDF page5, inspected"
+    },
+    {
+      "id": "supp-p6",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/21131976/supplement-6.png",
+      "sha256": "b6e9e0f237139b3f94bb62a3993d7d5cdd2d88908a0b9aaa7b5ad6be45e6cc2b",
+      "kind": "image",
+      "description": "Full supplementary PDF page6, inspected"
+    },
+    {
+      "id": "supp-p7",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/21131976/supplement-7.png",
+      "sha256": "7d7b85018f6ccdacc82335d3e9bca3467bdc748e9f91ec99ac38eca4522e6c56",
+      "kind": "image",
+      "description": "Full supplementary PDF page7, inspected"
+    },
+    {
+      "id": "supp-p8",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/21131976/supplement-8.png",
+      "sha256": "aab3ae0a9364a800e20ef762fee8c987d0006a56c43c2259800f302f65362a90",
+      "kind": "image",
+      "description": "Full supplementary PDF page8, inspected"
+    },
+    {
+      "id": "supp-p9",
+      "pmid": "21131976",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/21131976/supplement-9.png",
+      "sha256": "8d8bd924fcd706675f9ba0eedafd3834c79b6470684f712fd1d0610dbf0f88b7",
+      "kind": "image",
+      "description": "Full supplementary PDF page9, inspected"
+    },
+    {
+      "id": "reading-supplement-final",
+      "pmid": "21131976",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/21131976-successor/receipts/supplement-final-reading.json",
+      "sha256": "a80236bc8c052d158a214a191d1cecf92a7bdc4362207bfa8bc19615d0695d22",
+      "kind": "metadata",
+      "description": "Immutable explicit checkpoint; only declared coverage counts"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Mutations in genes encoding subunits of RNA polymerases I and III cause Treacher Collins syndrome",
+    "evidence": [
+      {
+        "source_id": "epmc",
+        "locator": "PMID21131976 and DOI10.1038/ng.724"
+      },
+      {
+        "source_id": "supp-pdf",
+        "locator": "p1 full article title, authors and DOI footer"
+      },
+      {
+        "source_id": "publisher",
+        "locator": "Article heading and exact supplement link"
+      }
+    ],
+    "note": "Publisher supplement title/authors/DOI verified against metadata; published main article body unavailable. Supplement is not misclassified as main text."
+  },
+  "component_inventory": {
+    "status": "incomplete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": null,
+      "table": null,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "publisher",
+        "locator": "Supplementary information exact PDF link"
+      }
+    ],
+    "note": "Publisher preview lists one Supplementary Text and Figures PDF, nine pages held and read. Main figures/tables cannot be inventoried without full main text."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "unavailable",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Publisher returns subscription preview, not full main text; prior repository metadata pages are not a main paper."
+    },
+    {
+      "id": "supplement",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 9,
+      "extent_source_id": "supp-extent",
+      "extent_evidence": [
+        {
+          "source_id": "supp-extent",
+          "locator": "Supplement p1title,pp2-4methods,p5Tables1-2,pp6-9Figs1-4."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 5,
+          "mode": "text",
+          "source_id": "supp-text",
+          "locator": "Entire extraction read, including title/authors, all methods and primer listings, cohort description, all cells/footnotes of Tables1-2."
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "mode": "text",
+          "source_id": "supp-pdf",
+          "locator": "Text read visually in full PDF page rasters: all panels, genotype labels and complete Figs1-4 captions, absent from layout extraction."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp-p1",
+          "locator": "Entire page1; all figure/table/text regions inspected"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "supp-p2",
+          "locator": "Entire page2; all figure/table/text regions inspected"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "supp-p3",
+          "locator": "Entire page3; all figure/table/text regions inspected"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "supp-p4",
+          "locator": "Entire page4; all figure/table/text regions inspected"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "supp-p5",
+          "locator": "Entire page5; all figure/table/text regions inspected"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "supp-p6",
+          "locator": "Entire page6; all figure/table/text regions inspected"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "supp-p7",
+          "locator": "Entire page7; all figure/table/text regions inspected"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "supp-p8",
+          "locator": "Entire page8; all figure/table/text regions inspected"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "supp-p9",
+          "locator": "Entire page9; all figure/table/text regions inspected"
+        }
+      ],
+      "note": "Supplement p1title,pp2-4methods,p5Tables1-2,pp6-9Figs1-4."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/POLR1D/PMID_21131976_EsM5513.json",
+      "packet_sha256": "9194a27a14974c0b06d7ab316b5310890afa4810e23456f9f1908c7a277e378f",
+      "case_id": "TC_34ab880eb1273777",
+      "role": "selected",
+      "packet_subject_id": "EsM5513",
+      "review_status": "pending",
+      "category": "unresolved",
+      "limitations": [
+        "Supplement-only preliminary item assessments saved; packet remains pending/unresolved because full main text is required. EsM5513 row checked against all three phenotype items and exact subject; molecular allele/segregation/phase remain unresolved."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Exact EsM5513 row appears in SupplementaryTable1, listed as fetus in sex column; packet UNKNOWN_SEX is not contradicted, but fetal context is omitted.",
+        "evidence": [
+          {
+            "source_id": "supp-pdf",
+            "locator": "p5Table1 EsM5513 row"
+          }
+        ],
+        "limitations": [
+          "Main text not read; gestational age and biological sex not stated in this table."
+        ]
+      },
+      "genotype": {
+        "status": "unresolved",
+        "statement": "The supplement places EsM5513 among POLR1D mutation carriers but does not state its specific c.232_233del / p.Ser78GlnfsTer3 allele.",
+        "evidence": [
+          {
+            "source_id": "supp-pdf",
+            "locator": "p5Table1;pp6-9Figs1-4"
+          }
+        ],
+        "limitations": [
+          "Full main variant table unavailable; packet allele and hg38 coordinate equivalence unverified."
+        ]
+      },
+      "segregation": {
+        "status": "unresolved",
+        "statement": "EsM5513 has negative family history in Table1. It is not among Fig4 pedigrees, so parental molecular segregation is not established.",
+        "evidence": [
+          {
+            "source_id": "supp-pdf",
+            "locator": "p5Table1 EsM5513; p9Fig4"
+          }
+        ],
+        "limitations": [
+          "Negative family history does not prove de novo inheritance."
+        ]
+      },
+      "phase": {
+        "status": "unresolved",
+        "statement": "Packet has one heterozygous allele, but exact genotype is unconfirmed without the main; no phase measurement for EsM5513 is in the supplement.",
+        "evidence": [
+          {
+            "source_id": "supp-pdf",
+            "locator": "p5Table1; p9Fig4"
+          }
+        ],
+        "limitations": [
+          "Do not infer molecular phase or parental origin."
+        ]
+      },
+      "causal_confidence": {
+        "status": "unresolved",
+        "statement": "Source supplemental title/table associates POLR1D mutations with TCS; exact EsM5513 allele argument and packet PATHOGENIC/SOLVED status cannot be audited from supplement alone.",
+        "evidence": [
+          {
+            "source_id": "supp-pdf",
+            "locator": "p1title;p5Table1"
+          }
+        ],
+        "limitations": [
+          "No clinical truth claim; full main remains unavailable."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All three positive packet phenotypes align broadly with Table1. Source adds fetal context and negative family history; n.r. and slash entries are not clinical negatives.",
+        "evidence": [
+          {
+            "source_id": "supp-pdf",
+            "locator": "p5Table1 EsM5513 and legend"
+          }
+        ],
+        "limitations": [
+          "Packet omits fetal context; main potentially contains additional information."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c232_233del_POLR1D_NM_015972v4",
+            "geneContext": {
+              "valueId": "HGNC:20422",
+              "symbol": "POLR1D"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_015972.4:c.232_233del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000013.11:g.27623080_27623081del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_057056.1:p.(Ser78GlnfsTer3)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr13",
+              "pos": 27623075,
+              "ref": "CAG",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "5fbb1671c1300589c6cb6635232b57b40b16676aaeb72d2f234ba6b899660379",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The supplement places EsM5513 among POLR1D mutation carriers but does not state its specific c.232_233del / p.Ser78GlnfsTer3 allele.",
+            "evidence": [
+              {
+                "source_id": "supp-pdf",
+                "locator": "p5Table1;pp6-9Figs1-4"
+              }
+            ],
+            "limitations": [
+              "Full main variant table unavailable; packet allele and hg38 coordinate equivalence unverified."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            }
+          },
+          "snapshot_sha256": "4288b41b99551912ca3fa5ad7e93bfd78790d71201dcef8f9d21b2ff60c00b44",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Hypoplasia of mandible is + for EsM5513; supports small mandible concept but is not an exact HPO mapping made by the source.",
+            "evidence": [
+              {
+                "source_id": "supp-pdf",
+                "locator": "p5Table1 EsM5513, hypoplasia of mandible"
+              }
+            ],
+            "limitations": [
+              "Packet micrognathia terminology normalized from source hypoplasia; no full-main review."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000175",
+              "label": "Cleft palate"
+            }
+          },
+          "snapshot_sha256": "5fcb9f5da61cdbc91fd8b137e7fafe3fe3832af85e93b4c0437328035bd4b96d",
+          "assessment": {
+            "status": "supported",
+            "statement": "The exact EsM5513 row marks cleft palate present (+).",
+            "evidence": [
+              {
+                "source_id": "supp-pdf",
+                "locator": "p5Table1 EsM5513, cleft palate"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008551",
+              "label": "Microtia"
+            }
+          },
+          "snapshot_sha256": "0f2651bd178116894d7953a428071e02148cc4338b4022f7e010e8f6def5f8c2",
+          "assessment": {
+            "status": "supported",
+            "statement": "The exact EsM5513 row marks microtia present (+).",
+            "evidence": [
+              {
+                "source_id": "supp-pdf",
+                "locator": "p5Table1 EsM5513, microtia"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "main_text",
+      "status": "open",
+      "detail": "Publisher subscription preview only; no main article held. Existing attempts not repeated.",
+      "evidence": [
+        {
+          "source_id": "publisher",
+          "locator": "Access options: preview of subscription content"
+        }
+      ]
+    },
+    {
+      "component_id": null,
+      "status": "open",
+      "detail": "Main figure/table inventory unresolved without full main.",
+      "evidence": [
+        {
+          "source_id": "publisher",
+          "locator": "Access wall before references"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "All nine held supplement pages read, including four complete figure pixels/captions and both clinical tables. Main, main inventory and final one-packet adjudication unavailable. Source correspondence only; no clinical validation."
+  ]
+}

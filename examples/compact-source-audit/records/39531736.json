@@ -1,0 +1,2364 @@
+{
+  "schema_version": 1,
+  "pmid": "39531736",
+  "title": "HMGCS1 variants cause rigid spine syndrome amenable to mevalonic acid treatment in an animal model.",
+  "reviewer": {
+    "id": "reader-1-successor-hmgcs1-20261024",
+    "reviewed_at_utc": "2026-10-24T21:22:08.955811+00:00",
+    "method": "Read all 948 lines of complete held PMC article, all seven original figure images and all Table 1 cells plus faithful HTML-cell render. Compared all four assigned selected/alternate packets, all six allele descriptors and all 54 phenotype items. Supplement remains inaccessible and unread; partial audit, not independent experimental replication."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Logical reader-1 successor retains prior parent-session per-case outcome exposure. This is a post-inference, non-blinded, non-preregistered source audit. No new ranking outputs opened during these two source reviews."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "9fc26bc53f9f09c08e7a59a6858be840b685cc19805785ad0210fc7c4435773b",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-html",
+      "pmid": "39531736",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39531736/retrieval-followup/20261024T103841316139Z-baa1581569/response.body",
+      "sha256": "0782a0609f80ef31a6dc5730f7bb01ea8559dee58ef4a2f4a4b4e43fa8e0673a",
+      "kind": "text",
+      "description": "Original held full PMC published article HTML; exact identity and entire article content inspected, acquisition earlier than successor."
+    },
+    {
+      "id": "main-text",
+      "pmid": "39531736",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-1/39531736/main-article.txt",
+      "sha256": "a6bba0b64c6d22eba2cadc91e7993f20f300621db8e22124195891359854ffa1",
+      "kind": "text",
+      "description": "Complete 948-line article-only extraction read in full, including authors, methods, results, table cells, captions, discussion, disclosures and references."
+    },
+    {
+      "id": "extract-receipt",
+      "pmid": "39531736",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-1/39531736/extraction-provenance.json",
+      "sha256": "f533bd2ea3e74b653b905e1f900431ceef819cea722b985a9de4a93597bf6e65",
+      "kind": "metadata",
+      "description": "Exact extraction source and output hashes, no mechanical reading credit."
+    },
+    {
+      "id": "held-receipt",
+      "pmid": "39531736",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/39531736/retrieval-followup/20261024T103841316139Z-baa1581569/receipt.json",
+      "sha256": "0fd9dcfacbeabc5d35266d4f03332bc0793719aa4a1d46a128816c7d264132e5",
+      "kind": "access_log",
+      "description": "Original retrieval receipt for PMC full article."
+    },
+    {
+      "id": "retrieval",
+      "pmid": "39531736",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/39531736/retrieval-reader1.json",
+      "sha256": "596af315461065753638781ac8d35036b632c71672a0e4fd64b769dbba8ae87a",
+      "kind": "access_log",
+      "description": "Seven publisher figure assets and two failed PDF responses; failures explicitly named HTML."
+    },
+    {
+      "id": "followup",
+      "pmid": "39531736",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/39531736/retrieval-reader1-followup.json",
+      "sha256": "3876f39197aa65034f496f6571cde4a1f67f909eaafaa04e9d4be16f58fa5181",
+      "kind": "access_log",
+      "description": "Permitted public repository, preprint and Europe PMC follow-up outcomes."
+    },
+    {
+      "id": "table-html",
+      "pmid": "39531736",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-1/39531736/table-1-original.html",
+      "sha256": "7b370a57eb210e7a92217961807b4874946243f978c0f681db44195e81f26f62",
+      "kind": "text",
+      "description": "Exact original table element from held PMC HTML, retaining cells and colspan."
+    },
+    {
+      "id": "table-cells",
+      "pmid": "39531736",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-1/39531736/table-1-cells.json",
+      "sha256": "b23ef8670692fcf6577687f334e9ea019d61455447fe06a1ae7b528d0697f9a3",
+      "kind": "data",
+      "description": "Directly parsed 22 by 6 table grid, preserving SPA1 header span; no retyped data."
+    },
+    {
+      "id": "table-render",
+      "pmid": "39531736",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-1/39531736/table-1-dom-render.png",
+      "sha256": "9bd1f1480e5779a6b06e063ea87d897097156f8a216692ab4b872f71ceff8ead",
+      "kind": "image",
+      "description": "Entire table visually read from a deterministic rendering of original HTML cells. Reviewer layout, not publisher PDF; all rows/columns and source header span retained."
+    },
+    {
+      "id": "table-provenance",
+      "pmid": "39531736",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-1/39531736/table-1-render-provenance.json",
+      "sha256": "d7202b09e755e97c8e25149acea4a7538eedfa4fe01446a872ec58673e229ab9",
+      "kind": "metadata",
+      "description": "Source HTML hash, DOM extraction, original colspan and rendering method."
+    },
+    {
+      "id": "bridges-inventory",
+      "pmid": "39531736",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/39531736/bridges-inventory-receipt.json",
+      "sha256": "91d2f0812525b90173759f3d7baf8e869e475a0d2425c4a841913b2ef8c18aab",
+      "kind": "metadata",
+      "description": "Public linked underlying-data inventory: Figure 6 bundle 16 files, Figure 7 bundle 10 files. Metadata inspected; raw data not obtained/read/reanalysed."
+    },
+    {
+      "id": "figure-1",
+      "pmid": "39531736",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/39531736/figure-1.jpg",
+      "sha256": "777d4c7c2378fc94ca501b640ff6b36503d6d8ae55143ee454f03d78a5d62da0",
+      "kind": "image",
+      "description": "Original Figure 1 public NCBI CDN image; all panels visually inspected."
+    },
+    {
+      "id": "figure-2",
+      "pmid": "39531736",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/39531736/figure-2.jpg",
+      "sha256": "c9d29a63c1d888086587401db861244fd58e642c245ab92b0b92371d0ab99afc",
+      "kind": "image",
+      "description": "Original Figure 2 public NCBI CDN image; all panels visually inspected."
+    },
+    {
+      "id": "figure-3",
+      "pmid": "39531736",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/39531736/figure-3.jpg",
+      "sha256": "3c16528296b641c5647f8a93f630b4adb06bcea52b65c462cd73ab9bf4e94958",
+      "kind": "image",
+      "description": "Original Figure 3 public NCBI CDN image; all panels visually inspected."
+    },
+    {
+      "id": "figure-4",
+      "pmid": "39531736",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/39531736/figure-4.jpg",
+      "sha256": "f652d73d6c984cd14c05b121f093a71da98ad66cf786e8d13c00f937aa991ebc",
+      "kind": "image",
+      "description": "Original Figure 4 public NCBI CDN image; all panels visually inspected."
+    },
+    {
+      "id": "figure-5",
+      "pmid": "39531736",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/39531736/figure-5.jpg",
+      "sha256": "e40acc75ff64f50a85211df9325f0c3f2cc5f83572a04b7ca4f6819f77000de7",
+      "kind": "image",
+      "description": "Original Figure 5 public NCBI CDN image; all panels visually inspected."
+    },
+    {
+      "id": "figure-6",
+      "pmid": "39531736",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/39531736/figure-6.jpg",
+      "sha256": "9b668a9895e4d52f5942e62abc9bfd6b7378ee6aa9cc04d8facba6583f560f91",
+      "kind": "image",
+      "description": "Original Figure 6 public NCBI CDN image; all panels visually inspected."
+    },
+    {
+      "id": "figure-7",
+      "pmid": "39531736",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/39531736/figure-7.jpg",
+      "sha256": "802eb26cd739c3ae52aa980c98daab9448259dd30e2687bd5a03c2a7f844aa2d",
+      "kind": "image",
+      "description": "Original Figure 7 public NCBI CDN image; all panels visually inspected."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "HMGCS1 variants cause rigid spine syndrome amenable to mevalonic acid treatment in an animal model.",
+    "evidence": [
+      {
+        "source_id": "main-html",
+        "locator": "citation metadata and article: PMID39531736, PMC12073982, DOI10.1093/brain/awae371; Dofash et al.; Brain148(5):1707-1722; published 12 November 2024, issue May2025."
+      }
+    ],
+    "note": "Full published PMC article, not merely an abstract or repository title. Held source hash independently recomputed; stale availability failure is not inherited as a reading result."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 7,
+      "table": 1,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "main-html",
+        "locator": "Entire article: Figures1-7, Table1, sole repeated supplementary asset awae371_supplementary_data.pdf (5.3MB); Supplementary material and Associated Data repeat the same file."
+      },
+      {
+        "source_id": "bridges-inventory",
+        "locator": "Linked Monash collection7354282 contains raw Figure6 and Figure7 data bundles, separately inventoried."
+      }
+    ],
+    "note": "Inventory of published article components is complete; reading is not. Supplementary PDF contains referenced methods, FigureS1-S8 and TableS1 but its exact page extent cannot be checked. The separately deposited underlying-data bundles are inventory-only, outside any claim of published-component reading or independent replication."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 948,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-text",
+          "locator": "All948 lines of full article-only extraction."
+        }
+      ],
+      "coverage": [
+        {
+          "source_id": "main-text",
+          "locator": "Complete lines1-948, all article sections and captions.",
+          "mode": "text",
+          "start": 1,
+          "end": 948
+        }
+      ],
+      "note": "Complete held HTML text read; figure pixels and original table structure checked separately. A full main-text read does not close supplement access."
+    },
+    {
+      "id": "figure_1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-1",
+      "extent_evidence": [
+        {
+          "source_id": "figure-1",
+          "locator": "One complete original Figure1 JPEG."
+        }
+      ],
+      "coverage": [
+        {
+          "source_id": "figure-1",
+          "locator": "All panels/axes/labels in original Figure1.",
+          "mode": "pixels",
+          "start": 1,
+          "end": 1
+        }
+      ],
+      "note": "All four pedigrees, variant keys and clinical photographs read. SPA1 two affected homozygous siblings, carrier parents; JPN1 maternalQ29L/paternalframeshift and two unaffected frameshift carriers; ITA1 maternalG297V/paternalR430K. USA1 is not an assigned packet."
+    },
+    {
+      "id": "figure_2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-2",
+      "extent_evidence": [
+        {
+          "source_id": "figure-2",
+          "locator": "One complete original Figure2 JPEG."
+        }
+      ],
+      "coverage": [
+        {
+          "source_id": "figure-2",
+          "locator": "All panels/axes/labels in original Figure2.",
+          "mode": "pixels",
+          "start": 1,
+          "end": 1
+        }
+      ],
+      "note": "All six MRI panels and four biopsy rows read: SPA1/P1 cervical and thigh changes; ITA1/P4 thigh and leg changes. JPN1/P3 age5 versus20 rimmed-vacuole progression. H&E, GT and oxidative stains/scale labels inspected; no new image diagnosis inferred."
+    },
+    {
+      "id": "figure_3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-3",
+      "extent_evidence": [
+        {
+          "source_id": "figure-3",
+          "locator": "One complete original Figure3 JPEG."
+        }
+      ],
+      "coverage": [
+        {
+          "source_id": "figure-3",
+          "locator": "All panels/axes/labels in original Figure3.",
+          "mode": "pixels",
+          "start": 1,
+          "end": 1
+        }
+      ],
+      "note": "All exon/protein diagrams, eight sequence alignment rows, RNA-seq panel and structural models read. P3 expression53% with41/41Q29L and1/44frameshift reads; no patient genomic VCF normalization can be validated from the screenshot. Models are predictions."
+    },
+    {
+      "id": "figure_4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-4",
+      "extent_evidence": [
+        {
+          "source_id": "figure-4",
+          "locator": "One complete original Figure4 JPEG."
+        }
+      ],
+      "coverage": [
+        {
+          "source_id": "figure-4",
+          "locator": "All panels/axes/labels in original Figure4.",
+          "mode": "pixels",
+          "start": 1,
+          "end": 1
+        }
+      ],
+      "note": "All A-F graphs and blot lanes/controls read. Adult/fetal/cell expression, differentiation time course, recombinant standard, P1 versus two controls, mouse EDL/soleus. P1 abundance appears comparable; not a quantified rescue assay."
+    },
+    {
+      "id": "figure_5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-5",
+      "extent_evidence": [
+        {
+          "source_id": "figure-5",
+          "locator": "One complete original Figure5 JPEG."
+        }
+      ],
+      "coverage": [
+        {
+          "source_id": "figure-5",
+          "locator": "All panels/axes/labels in original Figure5.",
+          "mode": "pixels",
+          "start": 1,
+          "end": 1
+        }
+      ],
+      "note": "All A-F panels read. Thermal-shift curves and three biological averages: S447P/M70T/C268S lower melting temperature; Q29L does not share that reported change. CD spectra at15/25/55/95C overlap; no exact digitization performed."
+    },
+    {
+      "id": "figure_6",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-6",
+      "extent_evidence": [
+        {
+          "source_id": "figure-6",
+          "locator": "One complete original Figure6 JPEG."
+        }
+      ],
+      "coverage": [
+        {
+          "source_id": "figure-6",
+          "locator": "All panels/axes/labels in original Figure6.",
+          "mode": "pixels",
+          "start": 1,
+          "end": 1
+        }
+      ],
+      "note": "All A-G panels read: images, movement assay, mixed-progeny survival curves, four variant partial-rescue curves, ultrastructure, density and membrane-detachment plots. Survival panels include mixed-genotype progeny; do not reinterpret percent survival as exclusively mutant denominator. Raw data not reanalysed."
+    },
+    {
+      "id": "figure_7",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-7",
+      "extent_evidence": [
+        {
+          "source_id": "figure-7",
+          "locator": "One complete original Figure7 JPEG."
+        }
+      ],
+      "coverage": [
+        {
+          "source_id": "figure-7",
+          "locator": "All panels/axes/labels in original Figure7.",
+          "mode": "pixels",
+          "start": 1,
+          "end": 1
+        }
+      ],
+      "note": "All A-F panels read: dose survival to6dpf, two dose image pairs, minimal swimming scatter, ultrastructure, density and membrane detachment with95%CI. Animal rescue is partial and not a human treatment result; treatment does not restore normal development."
+    },
+    {
+      "id": "table_1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "data",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "table-html",
+      "extent_evidence": [
+        {
+          "source_id": "table-html",
+          "locator": "Sole complete Table1;22 rows,6 columns, SPA1 spans P1 and P2."
+        }
+      ],
+      "coverage": [
+        {
+          "source_id": "table-cells",
+          "locator": "All22 rows and6 columns parsed directly from original HTML.",
+          "mode": "data",
+          "start": 1,
+          "end": 1
+        },
+        {
+          "source_id": "table-render",
+          "locator": "Entire faithful cell/colspan rendering; all five patients and every row visually inspected.",
+          "mode": "pixels",
+          "start": 1,
+          "end": 1
+        }
+      ],
+      "note": "Text/data and visual column attribution inspected. Rendering uses original DOM cells with reviewer-generated layout, not original PDF typography. Main/table disagreements are retained."
+    },
+    {
+      "id": "supplement_1",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": null,
+      "extent_source_id": "main-html",
+      "extent_evidence": [
+        {
+          "source_id": "main-html",
+          "locator": "Linked awae371_supplementary_data.pdf,5.3MB; referenced methods,S1-S8,TableS1."
+        }
+      ],
+      "coverage": [],
+      "note": "Full supplementary PDF not obtained: PMC challenge response and Europe PMC non-OA distribution refusal. No caption-derived reading credit."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/HMGCS1/PMID_39531736_Family_SPA1_individual_P1.json",
+      "packet_sha256": "6b4022876e77807150e481700599c2aa56b318a296ce5a5d87217f86ea0ad760",
+      "case_id": "TC_de2b9a00ab931f18",
+      "role": "selected",
+      "packet_subject_id": "Family SPA1 individual P1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Adjudicated against complete available main article; whole-paper audit remains partial because supplement is inaccessible.",
+        "Formal pathogenicity and some exact negative/representation assertions remain unresolved or qualified, rather than presumed true from SOLVED labels."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family SPA1 individual P1 matches the paper: male, last follow-up27years, onset2years, alive. P2 and P3 death status and ages are explicit; P1/P4 alive status explicit.",
+        "evidence": [
+          {
+            "source_id": "table-cells",
+            "locator": "Table1 P1 column, identity/onset/follow-up/death rows."
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous c.1339T>C,p.Ser447Pro in both affected SPA1 siblings.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic investigations, lines538-544; Figure1 pedigree key."
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Both unaffected SPA1 parents are heterozygous, confirmed by Sanger sequencing; both affected siblings are homozygous.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic investigations, lines538-544; original Figure1A checked."
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous single variant in both affected siblings, with both parents heterozygous. Separate cis/trans ambiguity is not applicable.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic investigations, lines538-544; original Figure1A checked."
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "unresolved",
+        "statement": "Source presents biallelic HMGCS1 variants as a new rigid-spine myopathy association, supported by segregation and functional experiments on four missense variants. Packet SOLVED/CAUSATIVE is compatible with the proposed association, but its formal ACMG PATHOGENIC assignment cannot be verified from the available article; missing Supplementary Table1 prevents closing that assertion.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Abstract, Genetic investigations, functional results, Discussion and Supplementary material."
+          }
+        ],
+        "limitations": [
+          "No formal ACMG criterion-level classification identified in reviewed main text; missing supplement is not evidence of a lower classification. No independent clinical reclassification performed.",
+          "S447P and Q29L have partial rescue evidence in zebrafish; Q29L retains/increases the initial enzymatic rate. Reduced animal rescue is not proof of a single loss-of-activity mechanism.",
+          "OMIM621433 disease naming is packet annotation, not an independently verified current database assertion."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All assigned phenotype items, explicit negatives, sex, age, disease onset and death status have been checked. Packet is a selected abstraction: severity, respiratory course, muscle-biopsy evolution, absence of ophthalmoparesis/voice abnormality and additional patient-specific findings are not exhaustively represented.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinical findings lines396-398; Table1 lines402-529; MRI/pathology and Genetic investigations."
+          }
+        ],
+        "limitations": [
+          "Missing supplement may contain more patient-level findings and genotype details. Generic feature presence should not be read as an exhaustive phenotype or as severity/age equivalence.",
+          "Table/narrative counts differ for dorsolumbar rigidity, distal weakness and scapular winging; MRI and episodic-worsening rows also differ from narrative descriptions. These are source inconsistencies, not repaired packet values."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1339TtoC_HMGCS1_NM_001098272v3",
+            "geneContext": {
+              "valueId": "HGNC:5007",
+              "symbol": "HMGCS1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001098272.3:c.1339T>C"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000005.10:g.43292608A>G"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001091742.1:p.(Ser447Pro)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr5",
+              "pos": 43292608,
+              "ref": "A",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "a45848d5e080020339080b894157ff18607954e18e700e296ee75dda6f323c69",
+          "assessment": {
+            "status": "qualified",
+            "statement": "NM_001098272.3:c.1339T>C; NC_000005.10:g.43292608A>G; NP_001091742.1:p.(Ser447Pro); homozygous. The cDNA/protein allele and patient match Genetic investigations and Figure1; full genomic representation remains unverified.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Genetic investigations lines538-544; Figure1/3 captions and variant positions."
+              }
+            ],
+            "limitations": [
+              "Main article confirms cDNA/protein change and allelic state but does not provide the packet's exact genomic HGVS/VCF coordinates or versioned NM/NP accession in the reviewed text; Supplementary Table1 remains inaccessible. Those identifiers are not silently validated."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003691",
+              "label": "Scapular winging"
+            }
+          },
+          "snapshot_sha256": "00781eba875a1e087b0c3162580dc0744f87206496812dac03251d2c5e4168ef",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P1: present Scapular winging. Table1 explicitly says Yes and Figure1 clinical panels are concordant.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P1 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "Narrative gives scapular winging3/5 while Table1 has4/5. Patient-specific table attribution is retained without reconciling the aggregate discrepancy."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            }
+          },
+          "snapshot_sha256": "af9432aa355687ec52f5e2082beacd6942f48279d4c240829f2997d4a6e11d2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1: present Scoliosis. The corresponding Scoliosis row explicitly records Yes.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P1 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003306",
+              "label": "Spinal rigidity"
+            }
+          },
+          "snapshot_sha256": "ad33b88025a242c43fc0ad2a705d81761de5974881601ec6da7082841dc51507",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1: present Spinal rigidity. Cervical rigidity is Yes in all five columns; both cervical and dorsolumbar rows say Yes for this patient. The generic packet feature is supported; narrative dorsolumbar4/5 versus table5/5 is an unresolved internal detail.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P1 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003701",
+              "label": "Proximal muscle weakness"
+            }
+          },
+          "snapshot_sha256": "aa3f7d1740de879278b35eb7a5e9470ebbc4322cd4c2738f7af5c08100378608",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1: present Proximal muscle weakness. The corresponding Proximal limb weakness row explicitly records Yes.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P1 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002460",
+              "label": "Distal muscle weakness"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "02e156b752ac8e5da4e5062ac83b803c71ee67a11500198c2dba030b1cb835c5",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1: excluded Distal muscle weakness. Table1 says No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P1 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001283",
+              "label": "Bulbar palsy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "781bc408c6c1d50edb806825b932b11378c4996e51027a8ad5da19851f3ff2fd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P1: excluded Bulbar palsy. Table1 explicitly says No for bulbar weakness.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P1 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "The source records bulbar weakness, not a separate formal bulbar-palsy examination; absence supports the abstraction with this terminology limitation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012548",
+              "label": "Fatty replacement of skeletal muscle"
+            }
+          },
+          "snapshot_sha256": "d0f2baa5c4a39a787c77d40813e3c63b22521063931d26a7e42db2de88afc063",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1: present Fatty replacement of skeletal muscle. MRI describes posterior-thigh changes for P1/P4, cervical paraspinal fat replacement for P1 and soleus involvement for P4.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Muscle MRI paragraph and Figure2A caption, lines530-533."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100614",
+              "label": "Myositis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e8d78a467bea5e1099e3782c7332e2baafec9810670ce6e534db51a609b582d9",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1: excluded Myositis. The source explicitly states no indication of myositis in any biopsy; this patient was among P1/P3/P4/P5 biopsied.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Muscle biopsy paragraph, line534; Figure2B."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030319",
+              "label": "Weakness of facial musculature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2d8374549c520d1d9aaf4a050ac813fdd4a0e1f4482e8cf546f76c105dab5c27",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1: excluded Weakness of facial musculature. The corresponding Facial weakness row explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P1 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3a127a8dbb9cbee1edd518029e0ba016d63f5c393adf2c3598edc1e619b74b4f",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1: excluded High palate. The corresponding High arched palate row explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P1 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e033332deff34bfb43d8333aa3e2b1ba4e4dbf229f9098646b172fe5a88ca401",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1: excluded Ptosis. The corresponding Ptosis row explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P1 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003236",
+              "label": "Elevated circulating creatine kinase concentration"
+            }
+          },
+          "snapshot_sha256": "3533a9736e36165b7ecbb618942d0085d003799254c4d353520f752a6df367b2",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1: present Elevated circulating creatine kinase concentration. Table1 CK range190–7890IU/l; clinical narrative explicitly calls CK variably elevated.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P1 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032341",
+              "label": "Reduced forced vital capacity"
+            }
+          },
+          "snapshot_sha256": "a2f6df863006f81996bcfb201973298272b229e1e8b52e4b0f21c1bce16eef91",
+          "assessment": {
+            "status": "supported",
+            "statement": "P1: present Reduced forced vital capacity. Table1 explicitly records restrictive FVC 1.51L(37%).",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P1 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012664",
+              "label": "Reduced left ventricular ejection fraction"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0aa178d2d4483413b324e7c3bee3d4f9d278a158601452bf38684fcfd44bcc9e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P1: excluded Reduced left ventricular ejection fraction. Table1 says No under cardiac involvement.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P1 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "No individual LVEF value is supplied; the packet maps a broader absence of cardiac involvement to a narrower negative LVEF feature."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/HMGCS1/PMID_39531736_Family_SPA1_individual_P2.json",
+      "packet_sha256": "f64f8e564594fcfeea0d7d120c44b9f3f8d20db5eb7a8ebd735cae3053a1a9ec",
+      "case_id": "TC_de2b9a00ab931f18",
+      "role": "alternate",
+      "packet_subject_id": "Family SPA1 individual P2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Adjudicated against complete available main article; whole-paper audit remains partial because supplement is inaccessible.",
+        "Formal pathogenicity and some exact negative/representation assertions remain unresolved or qualified, rather than presumed true from SOLVED labels."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family SPA1 individual P2 matches the paper: female, last follow-up15years, onset2years, deceased. P2 and P3 death status and ages are explicit; P1/P4 alive status explicit.",
+        "evidence": [
+          {
+            "source_id": "table-cells",
+            "locator": "Table1 P2 column, identity/onset/follow-up/death rows."
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous c.1339T>C,p.Ser447Pro in both affected SPA1 siblings.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic investigations, lines538-544; Figure1 pedigree key."
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Both unaffected SPA1 parents are heterozygous, confirmed by Sanger sequencing; both affected siblings are homozygous.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic investigations, lines538-544; original Figure1A checked."
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous single variant in both affected siblings, with both parents heterozygous. Separate cis/trans ambiguity is not applicable.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic investigations, lines538-544; original Figure1A checked."
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "unresolved",
+        "statement": "Source presents biallelic HMGCS1 variants as a new rigid-spine myopathy association, supported by segregation and functional experiments on four missense variants. Packet SOLVED/CAUSATIVE is compatible with the proposed association, but its formal ACMG PATHOGENIC assignment cannot be verified from the available article; missing Supplementary Table1 prevents closing that assertion.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Abstract, Genetic investigations, functional results, Discussion and Supplementary material."
+          }
+        ],
+        "limitations": [
+          "No formal ACMG criterion-level classification identified in reviewed main text; missing supplement is not evidence of a lower classification. No independent clinical reclassification performed.",
+          "S447P and Q29L have partial rescue evidence in zebrafish; Q29L retains/increases the initial enzymatic rate. Reduced animal rescue is not proof of a single loss-of-activity mechanism.",
+          "OMIM621433 disease naming is packet annotation, not an independently verified current database assertion."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All assigned phenotype items, explicit negatives, sex, age, disease onset and death status have been checked. Packet is a selected abstraction: severity, respiratory course, muscle-biopsy evolution, absence of ophthalmoparesis/voice abnormality and additional patient-specific findings are not exhaustively represented.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinical findings lines396-398; Table1 lines402-529; MRI/pathology and Genetic investigations."
+          }
+        ],
+        "limitations": [
+          "Missing supplement may contain more patient-level findings and genotype details. Generic feature presence should not be read as an exhaustive phenotype or as severity/age equivalence.",
+          "Table/narrative counts differ for dorsolumbar rigidity, distal weakness and scapular winging; MRI and episodic-worsening rows also differ from narrative descriptions. These are source inconsistencies, not repaired packet values."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1339TtoC_HMGCS1_NM_001098272v3",
+            "geneContext": {
+              "valueId": "HGNC:5007",
+              "symbol": "HMGCS1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001098272.3:c.1339T>C"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000005.10:g.43292608A>G"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001091742.1:p.(Ser447Pro)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr5",
+              "pos": 43292608,
+              "ref": "A",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "a45848d5e080020339080b894157ff18607954e18e700e296ee75dda6f323c69",
+          "assessment": {
+            "status": "qualified",
+            "statement": "NM_001098272.3:c.1339T>C; NC_000005.10:g.43292608A>G; NP_001091742.1:p.(Ser447Pro); homozygous. The cDNA/protein allele and patient match Genetic investigations and Figure1; full genomic representation remains unverified.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Genetic investigations lines538-544; Figure1/3 captions and variant positions."
+              }
+            ],
+            "limitations": [
+              "Main article confirms cDNA/protein change and allelic state but does not provide the packet's exact genomic HGVS/VCF coordinates or versioned NM/NP accession in the reviewed text; Supplementary Table1 remains inaccessible. Those identifiers are not silently validated."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003691",
+              "label": "Scapular winging"
+            }
+          },
+          "snapshot_sha256": "00781eba875a1e087b0c3162580dc0744f87206496812dac03251d2c5e4168ef",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P2: present Scapular winging. Table1 explicitly says Yes and Figure1 clinical panels are concordant.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P2 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "Narrative gives scapular winging3/5 while Table1 has4/5. Patient-specific table attribution is retained without reconciling the aggregate discrepancy."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            }
+          },
+          "snapshot_sha256": "af9432aa355687ec52f5e2082beacd6942f48279d4c240829f2997d4a6e11d2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2: present Scoliosis. The corresponding Scoliosis row explicitly records Yes.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P2 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003306",
+              "label": "Spinal rigidity"
+            }
+          },
+          "snapshot_sha256": "ad33b88025a242c43fc0ad2a705d81761de5974881601ec6da7082841dc51507",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2: present Spinal rigidity. Cervical rigidity is Yes in all five columns; both cervical and dorsolumbar rows say Yes for this patient. The generic packet feature is supported; narrative dorsolumbar4/5 versus table5/5 is an unresolved internal detail.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P2 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003701",
+              "label": "Proximal muscle weakness"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d966857228984a96f6acd3c2c77c273b262deabe28e14e8f4389e804b6464bb0",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2: excluded Proximal muscle weakness. The corresponding Proximal limb weakness row explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P2 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002460",
+              "label": "Distal muscle weakness"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "02e156b752ac8e5da4e5062ac83b803c71ee67a11500198c2dba030b1cb835c5",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2: excluded Distal muscle weakness. Table1 says No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P2 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001283",
+              "label": "Bulbar palsy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "781bc408c6c1d50edb806825b932b11378c4996e51027a8ad5da19851f3ff2fd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P2: excluded Bulbar palsy. Table1 explicitly says No for bulbar weakness.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P2 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "The source records bulbar weakness, not a separate formal bulbar-palsy examination; absence supports the abstraction with this terminology limitation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030319",
+              "label": "Weakness of facial musculature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2d8374549c520d1d9aaf4a050ac813fdd4a0e1f4482e8cf546f76c105dab5c27",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2: excluded Weakness of facial musculature. The corresponding Facial weakness row explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P2 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            }
+          },
+          "snapshot_sha256": "7464dd531646fde4b613619c2d8d042119320ad998e758c0b3296f9a1376e8e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2: present High palate. The corresponding High arched palate row explicitly records Yes.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P2 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e033332deff34bfb43d8333aa3e2b1ba4e4dbf229f9098646b172fe5a88ca401",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2: excluded Ptosis. The corresponding Ptosis row explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P2 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003236",
+              "label": "Elevated circulating creatine kinase concentration"
+            }
+          },
+          "snapshot_sha256": "3533a9736e36165b7ecbb618942d0085d003799254c4d353520f752a6df367b2",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2: present Elevated circulating creatine kinase concentration. Table1 CK range430–4100IU/l; clinical narrative explicitly calls CK variably elevated.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P2 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032341",
+              "label": "Reduced forced vital capacity"
+            }
+          },
+          "snapshot_sha256": "a2f6df863006f81996bcfb201973298272b229e1e8b52e4b0f21c1bce16eef91",
+          "assessment": {
+            "status": "supported",
+            "statement": "P2: present Reduced forced vital capacity. Table1 explicitly records restrictive FVC 56%.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P2 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012664",
+              "label": "Reduced left ventricular ejection fraction"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0aa178d2d4483413b324e7c3bee3d4f9d278a158601452bf38684fcfd44bcc9e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P2: excluded Reduced left ventricular ejection fraction. Table1 says No under cardiac involvement.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P2 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "No individual LVEF value is supplied; the packet maps a broader absence of cardiac involvement to a narrower negative LVEF feature."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/HMGCS1/PMID_39531736_Family_ITA1_individual_P4.json",
+      "packet_sha256": "6526227e8eb25df182adef63f3bde93ed2cc2bb56ecdfb7fc074004a0ff6c7ee",
+      "case_id": "TC_760ad0a4823c0609",
+      "role": "selected",
+      "packet_subject_id": "Family ITA1 individual P4",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Adjudicated against complete available main article; whole-paper audit remains partial because supplement is inaccessible.",
+        "Formal pathogenicity and some exact negative/representation assertions remain unresolved or qualified, rather than presumed true from SOLVED labels."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family ITA1 individual P4 matches the paper: male, last follow-up38years, onset4years, alive. P2 and P3 death status and ages are explicit; P1/P4 alive status explicit.",
+        "evidence": [
+          {
+            "source_id": "table-cells",
+            "locator": "Table1 P4 column, identity/onset/follow-up/death rows."
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Compound heterozygous c.890G>T,p.Gly297Val and c.1289G>A,p.Arg430Lys in ITA1/P4.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic investigations, lines538-544; Figure1 pedigree key."
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Maternal Gly297Val and paternal Arg430Lys are explicitly reported and match the pedigree.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic investigations, lines538-544; original Figure1A checked."
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Opposite parental origins explicitly establish the two variants in trans.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic investigations, lines538-544; original Figure1A checked."
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "unresolved",
+        "statement": "Source presents biallelic HMGCS1 variants as a new rigid-spine myopathy association, supported by segregation and functional experiments on four missense variants. Packet SOLVED/CAUSATIVE is compatible with the proposed association, but its formal ACMG PATHOGENIC assignment cannot be verified from the available article; missing Supplementary Table1 prevents closing that assertion.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Abstract, Genetic investigations, functional results, Discussion and Supplementary material."
+          }
+        ],
+        "limitations": [
+          "No formal ACMG criterion-level classification identified in reviewed main text; missing supplement is not evidence of a lower classification. No independent clinical reclassification performed.",
+          "P4 Gly297Val/Arg430Lys were not among the four functionally tested variants.",
+          "OMIM621433 disease naming is packet annotation, not an independently verified current database assertion."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All assigned phenotype items, explicit negatives, sex, age, disease onset and death status have been checked. Packet is a selected abstraction: severity, respiratory course, muscle-biopsy evolution, absence of ophthalmoparesis/voice abnormality and additional patient-specific findings are not exhaustively represented.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinical findings lines396-398; Table1 lines402-529; MRI/pathology and Genetic investigations."
+          }
+        ],
+        "limitations": [
+          "Missing supplement may contain more patient-level findings and genotype details. Generic feature presence should not be read as an exhaustive phenotype or as severity/age equivalence.",
+          "Table/narrative counts differ for dorsolumbar rigidity, distal weakness and scapular winging; MRI and episodic-worsening rows also differ from narrative descriptions. These are source inconsistencies, not repaired packet values."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1289GtoA_HMGCS1_NM_001098272v3",
+            "geneContext": {
+              "valueId": "HGNC:5007",
+              "symbol": "HMGCS1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001098272.3:c.1289G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000005.10:g.43292868C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001091742.1:p.(Arg430Lys)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr5",
+              "pos": 43292868,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "14ab1dfc8a00c4eef6989681aef84997514140e3c7b87bae797fe7868f7ff2f5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "NM_001098272.3:c.1289G>A; NC_000005.10:g.43292868C>T; NP_001091742.1:p.(Arg430Lys); heterozygous. The cDNA/protein allele and patient match Genetic investigations and Figure1; full genomic representation remains unverified.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Genetic investigations lines538-544; Figure1/3 captions and variant positions."
+              }
+            ],
+            "limitations": [
+              "Main article confirms cDNA/protein change and allelic state but does not provide the packet's exact genomic HGVS/VCF coordinates or versioned NM/NP accession in the reviewed text; Supplementary Table1 remains inaccessible. Those identifiers are not silently validated."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c890GtoT_HMGCS1_NM_001098272v3",
+            "geneContext": {
+              "valueId": "HGNC:5007",
+              "symbol": "HMGCS1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001098272.3:c.890G>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000005.10:g.43295767C>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001091742.1:p.(Gly297Val)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr5",
+              "pos": 43295767,
+              "ref": "C",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "1acbf7f90c5b0ebe3f49a0da653462ce12584d537c074769f0129b35165bf761",
+          "assessment": {
+            "status": "qualified",
+            "statement": "NM_001098272.3:c.890G>T; NC_000005.10:g.43295767C>A; NP_001091742.1:p.(Gly297Val); heterozygous. The cDNA/protein allele and patient match Genetic investigations and Figure1; full genomic representation remains unverified.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Genetic investigations lines538-544; Figure1/3 captions and variant positions."
+              }
+            ],
+            "limitations": [
+              "Main article confirms cDNA/protein change and allelic state but does not provide the packet's exact genomic HGVS/VCF coordinates or versioned NM/NP accession in the reviewed text; Supplementary Table1 remains inaccessible. Those identifiers are not silently validated."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003691",
+              "label": "Scapular winging"
+            }
+          },
+          "snapshot_sha256": "00781eba875a1e087b0c3162580dc0744f87206496812dac03251d2c5e4168ef",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P4: present Scapular winging. Table1 explicitly says Yes and Figure1 clinical panels are concordant.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P4 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "Narrative gives scapular winging3/5 while Table1 has4/5. Patient-specific table attribution is retained without reconciling the aggregate discrepancy."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            }
+          },
+          "snapshot_sha256": "af9432aa355687ec52f5e2082beacd6942f48279d4c240829f2997d4a6e11d2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "P4: present Scoliosis. The corresponding Scoliosis row explicitly records Yes.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P4 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003306",
+              "label": "Spinal rigidity"
+            }
+          },
+          "snapshot_sha256": "ad33b88025a242c43fc0ad2a705d81761de5974881601ec6da7082841dc51507",
+          "assessment": {
+            "status": "supported",
+            "statement": "P4: present Spinal rigidity. Cervical rigidity is Yes in all five columns; both cervical and dorsolumbar rows say Yes for this patient. The generic packet feature is supported; narrative dorsolumbar4/5 versus table5/5 is an unresolved internal detail.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P4 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003701",
+              "label": "Proximal muscle weakness"
+            }
+          },
+          "snapshot_sha256": "aa3f7d1740de879278b35eb7a5e9470ebbc4322cd4c2738f7af5c08100378608",
+          "assessment": {
+            "status": "supported",
+            "statement": "P4: present Proximal muscle weakness. The corresponding Proximal limb weakness row explicitly records Yes.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P4 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002460",
+              "label": "Distal muscle weakness"
+            }
+          },
+          "snapshot_sha256": "cf5a7c61045aa6081228ae1c9bd0aafb72d3dbbf0231d93e5bc116c8ca3f619d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P4: present Distal muscle weakness. Table1 says Yes(mild).",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P4 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "Narrative reports distal weakness2/5, but Table1 shows3/5. Patient-specific positive table value retained; no patient is silently removed."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001283",
+              "label": "Bulbar palsy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "781bc408c6c1d50edb806825b932b11378c4996e51027a8ad5da19851f3ff2fd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P4: excluded Bulbar palsy. Table1 explicitly says No for bulbar weakness.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P4 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "The source records bulbar weakness, not a separate formal bulbar-palsy examination; absence supports the abstraction with this terminology limitation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012548",
+              "label": "Fatty replacement of skeletal muscle"
+            }
+          },
+          "snapshot_sha256": "d0f2baa5c4a39a787c77d40813e3c63b22521063931d26a7e42db2de88afc063",
+          "assessment": {
+            "status": "supported",
+            "statement": "P4: present Fatty replacement of skeletal muscle. MRI describes posterior-thigh changes for P1/P4, cervical paraspinal fat replacement for P1 and soleus involvement for P4.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Muscle MRI paragraph and Figure2A caption, lines530-533."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100614",
+              "label": "Myositis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e8d78a467bea5e1099e3782c7332e2baafec9810670ce6e534db51a609b582d9",
+          "assessment": {
+            "status": "supported",
+            "statement": "P4: excluded Myositis. The source explicitly states no indication of myositis in any biopsy; this patient was among P1/P3/P4/P5 biopsied.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Muscle biopsy paragraph, line534; Figure2B."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030319",
+              "label": "Weakness of facial musculature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2d8374549c520d1d9aaf4a050ac813fdd4a0e1f4482e8cf546f76c105dab5c27",
+          "assessment": {
+            "status": "supported",
+            "statement": "P4: excluded Weakness of facial musculature. The corresponding Facial weakness row explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P4 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3a127a8dbb9cbee1edd518029e0ba016d63f5c393adf2c3598edc1e619b74b4f",
+          "assessment": {
+            "status": "supported",
+            "statement": "P4: excluded High palate. The corresponding High arched palate row explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P4 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e033332deff34bfb43d8333aa3e2b1ba4e4dbf229f9098646b172fe5a88ca401",
+          "assessment": {
+            "status": "supported",
+            "statement": "P4: excluded Ptosis. The corresponding Ptosis row explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P4 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003236",
+              "label": "Elevated circulating creatine kinase concentration"
+            }
+          },
+          "snapshot_sha256": "3533a9736e36165b7ecbb618942d0085d003799254c4d353520f752a6df367b2",
+          "assessment": {
+            "status": "supported",
+            "statement": "P4: present Elevated circulating creatine kinase concentration. Table1 CK range274–939IU/l; clinical narrative explicitly calls CK variably elevated.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P4 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032341",
+              "label": "Reduced forced vital capacity"
+            }
+          },
+          "snapshot_sha256": "a2f6df863006f81996bcfb201973298272b229e1e8b52e4b0f21c1bce16eef91",
+          "assessment": {
+            "status": "supported",
+            "statement": "P4: present Reduced forced vital capacity. Table1 explicitly records restrictive FVC 1.11L(26%).",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P4 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012664",
+              "label": "Reduced left ventricular ejection fraction"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0aa178d2d4483413b324e7c3bee3d4f9d278a158601452bf38684fcfd44bcc9e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P4: excluded Reduced left ventricular ejection fraction. Table1 cardiac involvement cell reports LVEF55–60%.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P4 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "Source does not explicitly call reduced LVEF absent or supply a normal-range threshold. No new clinical threshold inference is used to verify this packet negative."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/HMGCS1/PMID_39531736_Family_JPN1_individual_P3.json",
+      "packet_sha256": "ea98d81f88696ea1aeb75f9e976a6113363f3fcbbd56e9d92ae4d87939a85d11",
+      "case_id": "TC_3a6b0f8afbea473d",
+      "role": "selected",
+      "packet_subject_id": "Family JPN1 individual P3",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Adjudicated against complete available main article; whole-paper audit remains partial because supplement is inaccessible.",
+        "Formal pathogenicity and some exact negative/representation assertions remain unresolved or qualified, rather than presumed true from SOLVED labels."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family JPN1 individual P3 matches the paper: female, last follow-up36years, onset2years, deceased. P2 and P3 death status and ages are explicit; P1/P4 alive status explicit.",
+        "evidence": [
+          {
+            "source_id": "table-cells",
+            "locator": "Table1 P3 column, identity/onset/follow-up/death rows."
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Compound heterozygous c.86A>T,p.Gln29Leu and c.344_345del,p.Ser115Trpfs*12 in JPN1/P3.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic investigations, lines538-544; Figure1 pedigree key."
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Maternal Gln29Leu and paternal Ser115Trpfs*12; two unaffected siblings carry the frameshift.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic investigations, lines538-544; original Figure1A checked."
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Opposite parental origins explicitly establish the two reported variants in trans.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic investigations, lines538-544; original Figure1A checked."
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "unresolved",
+        "statement": "Source presents biallelic HMGCS1 variants as a new rigid-spine myopathy association, supported by segregation and functional experiments on four missense variants. Packet SOLVED/CAUSATIVE is compatible with the proposed association, but its formal ACMG PATHOGENIC assignment cannot be verified from the available article; missing Supplementary Table1 prevents closing that assertion.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Abstract, Genetic investigations, functional results, Discussion and Supplementary material."
+          }
+        ],
+        "limitations": [
+          "No formal ACMG criterion-level classification identified in reviewed main text; missing supplement is not evidence of a lower classification. No independent clinical reclassification performed.",
+          "S447P and Q29L have partial rescue evidence in zebrafish; Q29L retains/increases the initial enzymatic rate. Reduced animal rescue is not proof of a single loss-of-activity mechanism.",
+          "OMIM621433 disease naming is packet annotation, not an independently verified current database assertion."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All assigned phenotype items, explicit negatives, sex, age, disease onset and death status have been checked. Packet is a selected abstraction: severity, respiratory course, muscle-biopsy evolution, absence of ophthalmoparesis/voice abnormality and additional patient-specific findings are not exhaustively represented.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinical findings lines396-398; Table1 lines402-529; MRI/pathology and Genetic investigations."
+          }
+        ],
+        "limitations": [
+          "Missing supplement may contain more patient-level findings and genotype details. Generic feature presence should not be read as an exhaustive phenotype or as severity/age equivalence.",
+          "Table/narrative counts differ for dorsolumbar rigidity, distal weakness and scapular winging; MRI and episodic-worsening rows also differ from narrative descriptions. These are source inconsistencies, not repaired packet values."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c344_345del_HMGCS1_NM_001098272v3",
+            "geneContext": {
+              "valueId": "HGNC:5007",
+              "symbol": "HMGCS1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001098272.3:c.344_345del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000005.10:g.43298622_43298623del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001091742.1:p.(Ser115TrpfsTer12)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr5",
+              "pos": 43298620,
+              "ref": "CAG",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "a543ed8b15b68066d5bbdeabed551b7dc80d7ee49c0a13797fa6216f9393bfdf",
+          "assessment": {
+            "status": "qualified",
+            "statement": "NM_001098272.3:c.344_345del; NC_000005.10:g.43298622_43298623del; NP_001091742.1:p.(Ser115TrpfsTer12); heterozygous. The cDNA/protein allele and patient match Genetic investigations and Figure1; full genomic representation remains unverified.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Genetic investigations lines538-544; Figure1/3 captions and variant positions."
+              }
+            ],
+            "limitations": [
+              "Main article confirms cDNA/protein change and allelic state but does not provide the packet's exact genomic HGVS/VCF coordinates or versioned NM/NP accession in the reviewed text; Supplementary Table1 remains inaccessible. Those identifiers are not silently validated.",
+              "Packet g.43298622_43298623del versus VCF pos43298620 CAG>C may reflect repeat/left/right normalization; reference-sequence equivalence has not been established, and the offset alone is not called a contradiction."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c86AtoT_HMGCS1_NM_001098272v3",
+            "geneContext": {
+              "valueId": "HGNC:5007",
+              "symbol": "HMGCS1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001098272.3:c.86A>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000005.10:g.43298880T>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001091742.1:p.(Gln29Leu)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr5",
+              "pos": 43298880,
+              "ref": "T",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e13645c497847b3812fe15f4008e97aa3231d3eff565d23bfd51dc9faba9fcd4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "NM_001098272.3:c.86A>T; NC_000005.10:g.43298880T>A; NP_001091742.1:p.(Gln29Leu); heterozygous. The cDNA/protein allele and patient match Genetic investigations and Figure1; full genomic representation remains unverified.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Genetic investigations lines538-544; Figure1/3 captions and variant positions."
+              }
+            ],
+            "limitations": [
+              "Main article confirms cDNA/protein change and allelic state but does not provide the packet's exact genomic HGVS/VCF coordinates or versioned NM/NP accession in the reviewed text; Supplementary Table1 remains inaccessible. Those identifiers are not silently validated."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003691",
+              "label": "Scapular winging"
+            }
+          },
+          "snapshot_sha256": "00781eba875a1e087b0c3162580dc0744f87206496812dac03251d2c5e4168ef",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P3: present Scapular winging. Table1 explicitly says Yes and Figure1 clinical panels are concordant.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P3 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "Narrative gives scapular winging3/5 while Table1 has4/5. Patient-specific table attribution is retained without reconciling the aggregate discrepancy."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            }
+          },
+          "snapshot_sha256": "af9432aa355687ec52f5e2082beacd6942f48279d4c240829f2997d4a6e11d2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3: present Scoliosis. The corresponding Scoliosis row explicitly records Yes.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P3 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003306",
+              "label": "Spinal rigidity"
+            }
+          },
+          "snapshot_sha256": "ad33b88025a242c43fc0ad2a705d81761de5974881601ec6da7082841dc51507",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3: present Spinal rigidity. Cervical rigidity is Yes in all five columns; both cervical and dorsolumbar rows say Yes for this patient. The generic packet feature is supported; narrative dorsolumbar4/5 versus table5/5 is an unresolved internal detail.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P3 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003701",
+              "label": "Proximal muscle weakness"
+            }
+          },
+          "snapshot_sha256": "aa3f7d1740de879278b35eb7a5e9470ebbc4322cd4c2738f7af5c08100378608",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3: present Proximal muscle weakness. The corresponding Proximal limb weakness row explicitly records Yes.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P3 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002460",
+              "label": "Distal muscle weakness"
+            }
+          },
+          "snapshot_sha256": "cf5a7c61045aa6081228ae1c9bd0aafb72d3dbbf0231d93e5bc116c8ca3f619d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P3: present Distal muscle weakness. Table1 says Yes(mild).",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P3 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "Narrative reports distal weakness2/5, but Table1 shows3/5. Patient-specific positive table value retained; no patient is silently removed."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001283",
+              "label": "Bulbar palsy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "781bc408c6c1d50edb806825b932b11378c4996e51027a8ad5da19851f3ff2fd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P3: excluded Bulbar palsy. Table1 explicitly says No for bulbar weakness.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P3 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "The source records bulbar weakness, not a separate formal bulbar-palsy examination; absence supports the abstraction with this terminology limitation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100614",
+              "label": "Myositis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e8d78a467bea5e1099e3782c7332e2baafec9810670ce6e534db51a609b582d9",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3: excluded Myositis. The source explicitly states no indication of myositis in any biopsy; this patient was among P1/P3/P4/P5 biopsied.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Muscle biopsy paragraph, line534; Figure2B."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030319",
+              "label": "Weakness of facial musculature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2d8374549c520d1d9aaf4a050ac813fdd4a0e1f4482e8cf546f76c105dab5c27",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3: excluded Weakness of facial musculature. The corresponding Facial weakness row explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P3 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003805",
+              "label": "Rimmed vacuoles"
+            }
+          },
+          "snapshot_sha256": "55428dfc04d20b59de4461775b8b72ff82d32a1ff0f48c5c2e45afb6615d66d2",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3: present Rimmed vacuoles. P3 age20 biopsy has rimmed vacuoles, absent at age5. Packet presence is supported at later follow-up; not asserted at onset.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Muscle biopsy paragraph and Figure2B caption, lines532-534."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            }
+          },
+          "snapshot_sha256": "7464dd531646fde4b613619c2d8d042119320ad998e758c0b3296f9a1376e8e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3: present High palate. The corresponding High arched palate row explicitly records Yes.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P3 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e033332deff34bfb43d8333aa3e2b1ba4e4dbf229f9098646b172fe5a88ca401",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3: excluded Ptosis. The corresponding Ptosis row explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P3 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003236",
+              "label": "Elevated circulating creatine kinase concentration"
+            }
+          },
+          "snapshot_sha256": "3533a9736e36165b7ecbb618942d0085d003799254c4d353520f752a6df367b2",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3: present Elevated circulating creatine kinase concentration. Table1 CK range400–2000IU/l; clinical narrative explicitly calls CK variably elevated.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P3 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032341",
+              "label": "Reduced forced vital capacity"
+            }
+          },
+          "snapshot_sha256": "a2f6df863006f81996bcfb201973298272b229e1e8b52e4b0f21c1bce16eef91",
+          "assessment": {
+            "status": "supported",
+            "statement": "P3: present Reduced forced vital capacity. Table1 explicitly records restrictive FVC 0.44L(16%).",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P3 column, corresponding named row."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012664",
+              "label": "Reduced left ventricular ejection fraction"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0aa178d2d4483413b324e7c3bee3d4f9d278a158601452bf38684fcfd44bcc9e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P3: excluded Reduced left ventricular ejection fraction. Table1 cardiac involvement cell reports LVEF57%.",
+            "evidence": [
+              {
+                "source_id": "table-cells",
+                "locator": "Table1 P3 column, corresponding named row."
+              }
+            ],
+            "limitations": [
+              "Source does not explicitly call reduced LVEF absent or supply a normal-range threshold. No new clinical threshold inference is used to verify this packet negative."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "supplement_1",
+      "status": "open",
+      "detail": "PMC supplementary PDF endpoint returns an HTML proof-of-work page; no challenge bypass attempted. EuropePMC supplementaryFiles explicitly refuses non-OA distribution, fullTextXML fails500. Publisher/preprint PDF403. Supplement remains unread, including detailed methods, S1-S8 and TableS1.",
+      "evidence": [
+        {
+          "source_id": "retrieval",
+          "locator": "supplement.pdf.failure.html response, exact URL and hash."
+        },
+        {
+          "source_id": "followup",
+          "locator": "europepmc-supp.zip contains XML error, not ZIP; preprint and fullTextXML failures."
+        }
+      ]
+    },
+    {
+      "component_id": "main_text",
+      "status": "resolved",
+      "detail": "Full published PMC HTML was already held despite stale FULLTEXT_RETRIEVAL_FAILURE availability state; complete article extracted/read. No source bank or shared availability files changed.",
+      "evidence": [
+        {
+          "source_id": "held-receipt",
+          "locator": "HTTP200text/html original source and SHA256."
+        },
+        {
+          "source_id": "extract-receipt",
+          "locator": "Exact full article extraction hash."
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Post-inference per-case-exposed audit; not blinded, clinical validation or independent laboratory replication.",
+    "Supplement inaccessible. Published PDF unavailable; full main read from original PMC HTML, figures from original CDN assets, table from directly parsed original HTML with transparent derivative rendering.",
+    "Linked Monash Figure6/7 raw datasets were inventoried only (26files, approximately9.08GB); no claim that their images, spreadsheets or videos have been read or experiments reproduced.",
+    "Mevalonate evidence is partial animal rescue, not demonstrated patient efficacy. P4 variants are untested in the reported four-variant functional set.",
+    "Formal PATHOGENIC and packet genomic-coordinate equivalence not established by the available main article; no clinical or database reclassification invented."
+  ]
+}

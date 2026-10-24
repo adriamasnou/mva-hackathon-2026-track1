@@ -1,0 +1,901 @@
+{
+  "schema_version": 1,
+  "pmid": "35534203",
+  "title": "Biallelic mutations in ARMC12 cause asthenozoospermia and multiple midpiece defects in humans and mice",
+  "reviewer": {
+    "id": "reviewer-2",
+    "reviewed_at_utc": "2026-10-24T21:29:20.578661+00:00",
+    "method": "Sole authorized successor Herschel for this exact PMID; actual source reading only; no extraction-only or metadata read credit."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Conservative per_case exposure, post-inference and not blinded. Earlier HANDOFF disclosed aggregate HG0026/7/8, HG0017/8/8, phenotype4/8/8 of9, compact556/653/665 versus430/649/665 of681, historical FGFR2 rank1 score0.9654. Editorial reading after18:54:47Z exposed CTCF phenotype rank132 versus genomic1/1, DOCK8 rank2 versus22/15, all3modes8/9top10, COG8/SLC35C1 one-allele exceptions, constructed pairs58/64 versus42/64 and no-HPO59/64 versus2/64. Later narrative review repeated aggregates, source-audit coverage and actual synthetic rescue outputs. At this succession checkpoint HANDOFF reread exposed latest21:22:28UTC audit281/334mains,161completepapers,1237/1389mappings,338/713cases,292validrecords and historical release aggregates; source-quality sensitivity621inputs/713cases/1426arms/162categories and B43/D5FBN1 crossassignment mention. No benchmark/inference outcome files or case outcomes were opened or consulted for these source reviews. Earlier reviews cannot retroactively be called blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "d0523f48338e632b639caeaf58ac6def30c3a38cddf72d28427fdb08fbd4cf42",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "scope-ack",
+      "pmid": "35534203",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/35534203-successor/receipts/scope-acknowledgment.json",
+      "sha256": "35aafd493f815aaf6f32c41d3a3a1ab7a8eef8fdb9b19ff0455ab0c166aea9f3",
+      "kind": "metadata",
+      "description": "Authorization acknowledgment, not source evidence"
+    },
+    {
+      "id": "epmc",
+      "pmid": "35534203",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35534203/europepmc.json",
+      "sha256": "2cc0ab0e477f2ac5784dec6bace9908c50224fe0597a9c4427c9c96eaeed850c",
+      "kind": "metadata",
+      "description": "PMID/title/DOI metadata only; not a full article"
+    },
+    {
+      "id": "crossref",
+      "pmid": "35534203",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35534203/crossref.json",
+      "sha256": "da832737b8874ad04fcd8990ff229cc3697c644ba19dafe6e9ea2f0a7142d366",
+      "kind": "metadata",
+      "description": "Publisher bibliographic metadata"
+    },
+    {
+      "id": "openalex",
+      "pmid": "35534203",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35534203/retrieval-followup/20261024T101603571860Z-4d8c754360/response.body",
+      "sha256": "c26bf875e1652b233edb0f3e95f08c83a0bea0820693fe4b1b9b6fdd0ca4e32f",
+      "kind": "metadata",
+      "description": "Two locations only: publisher and PubMed; no fulltext PDF location"
+    },
+    {
+      "id": "main-access",
+      "pmid": "35534203",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35534203/retrieval-followup/20261024T101926461892Z-11345ce2e4/receipt.json",
+      "sha256": "d0c11c62a479d0f3ee25837d02198c3ab70aed168a6e799fa710b9ea8c8da4c3",
+      "kind": "access_log",
+      "description": "Prior retained request, HTTP403; not retried"
+    },
+    {
+      "id": "main-access-body",
+      "pmid": "35534203",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35534203/retrieval-followup/20261024T101926461892Z-11345ce2e4/response.body",
+      "sha256": "59ce07e3d496642df222dabc5d96947bac1da7085a68a591ceac8ebdcdd478b4",
+      "kind": "text",
+      "description": "Access-denial response visually textual read; not article evidence"
+    },
+    {
+      "id": "supp-access",
+      "pmid": "35534203",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35534203/retrieval-followup/20261024T103147129446Z-5d7ff08d9d/receipt.json",
+      "sha256": "47f8d51deb2c7cb5ade89342fe7b7bd2b68293e5d1f5c0e35aeec251a8dd0e8f",
+      "kind": "access_log",
+      "description": "Prior retained request, HTTP403; not retried"
+    },
+    {
+      "id": "supp-access-body",
+      "pmid": "35534203",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35534203/retrieval-followup/20261024T103147129446Z-5d7ff08d9d/response.body",
+      "sha256": "ed77155b2329d3d107ea123166b97992a3cf46213c6167d89673a7d05332539c",
+      "kind": "text",
+      "description": "Access-denial response visually textual read; not article evidence"
+    },
+    {
+      "id": "reading-access-final",
+      "pmid": "35534203",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/35534203-successor/receipts/access-final-reading.json",
+      "sha256": "54fdcbed51344c40f395e08b81da76cd58e55c4707c8cffe95bb9a6a29550b3d",
+      "kind": "metadata",
+      "description": "Immutable explicit checkpoint; only declared coverage counts"
+    }
+  ],
+  "identity": {
+    "status": "unresolved",
+    "title": "Biallelic mutations in ARMC12 cause asthenozoospermia and multiple midpiece defects in humans and mice",
+    "evidence": [
+      {
+        "source_id": "epmc",
+        "locator": "resultList.result[0] title, PMID and DOI"
+      },
+      {
+        "source_id": "crossref",
+        "locator": "message title and DOI"
+      }
+    ],
+    "note": "PMID/title/DOI agree in metadata: Biallelic mutations in ARMC12 cause asthenozoospermia and multiple midpiece defects in humans and mice; 10.1136/jmedgenet-2021-108137. No full article version held, so identity remains unresolved at source-version level."
+  },
+  "component_inventory": {
+    "status": "incomplete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": null,
+      "table": null,
+      "supplement": null
+    },
+    "evidence": [
+      {
+        "source_id": "main-access",
+        "locator": "HTTP403 receipt"
+      },
+      {
+        "source_id": "supp-access",
+        "locator": "Known supplementary-material-1.pdf URL and HTTP403"
+      }
+    ],
+    "note": "No full publisher inventory: main figures/tables and number of supplements unknown. At least one linked supplementary PDF is inaccessible."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "unavailable",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Retained publisher response is Cloudflare denial, not main text. No main reading credit."
+    },
+    {
+      "id": "supplement-1",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Known supplementary PDF URL, but held response is HTTP403 challenge, not PDF. Full inventory unknown."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/ARMC12/PMID_35534203_Family_W0031_II_1_P3.json",
+      "packet_sha256": "044fc235dcded54bdc424d4a4169c693bc802f3799a4ec66d920f045f4119e3e",
+      "case_id": "TC_8429401dbdb8b85b",
+      "role": "selected",
+      "packet_subject_id": "Family W0031:II-1-P3",
+      "review_status": "pending",
+      "category": "unresolved",
+      "limitations": [
+        "Frozen packet inspected: Family W0031:II-1-P3. Main text and supplementary source unavailable, so all source correspondence and age/onset/negative phenotype, allele, segregation, phase and causal-confidence assertions remain pending. Metadata abstract cannot adjudicate this individual."
+      ],
+      "patient_identity": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "genotype": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "segregation": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "phase": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "causal_confidence": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c686GtoA_ARMC12_NM_001286574v2",
+            "geneContext": {
+              "valueId": "HGNC:21099",
+              "symbol": "ARMC12"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001286574.2:c.686G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.35747643G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001273503.1:p.(Cys229Tyr)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 35747643,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "cfedea7c279a297c5e8b1b452e0b24cc55c09875664860eb7621cd36f1b53185",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c632GtoA_ARMC12_NM_001286574v2",
+            "geneContext": {
+              "valueId": "HGNC:21099",
+              "symbol": "ARMC12"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001286574.2:c.632G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.35747589G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001273503.1:p.(Arg211Gln)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 35747589,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "734d0d16bb50315b2efe0fe2368879970b243003bdcbcb04684fca2da670e70a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003251",
+              "label": "Male infertility"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "939eb5970d117ed027bfcecb8f2f9b0f384cfd93fa04e767982d4fe343d2c0ac",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034011",
+              "label": "Reduced progressive sperm motility"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "bd0b3beb87e0e01cae8776a76e52c004cef8e04db5f7d57f5a7b36bfd7dd03b5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030346",
+              "label": "Abnormal circulating follicle-stimulating hormone concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "008c070e21d6c9f5df478cb91841aae90088fb5528884baaa47eff419891eef7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030345",
+              "label": "Abnormal circulating luteinizing hormone concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cb54ad7e5447ec9c44ec39272c99829eb1add03741ea8f3ac9956a7fc8575954",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000798",
+              "label": "Oligozoospermia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bb36e0f77eccee7bd0f818378af9fdc0943052b6c919b97d258c989524301bcf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/ARMC12/PMID_35534203_Family_R0036_II_1.json",
+      "packet_sha256": "f13a1488a2d49b9969964c263dc220f6d2205ba724728020062ab60e83d71dfd",
+      "case_id": "TC_685de80809418c2f",
+      "role": "selected",
+      "packet_subject_id": "Family R0036:II-1",
+      "review_status": "pending",
+      "category": "unresolved",
+      "limitations": [
+        "Frozen packet inspected: Family R0036:II-1. Main text and supplementary source unavailable, so all source correspondence and age/onset/negative phenotype, allele, segregation, phase and causal-confidence assertions remain pending. Metadata abstract cannot adjudicate this individual."
+      ],
+      "patient_identity": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "genotype": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "segregation": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "phase": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "causal_confidence": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c635TtoC_ARMC12_NM_001286574v2",
+            "geneContext": {
+              "valueId": "HGNC:21099",
+              "symbol": "ARMC12"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001286574.2:c.635T>C"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.35747592T>C"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001273503.1:p.(Leu212Pro)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 35747592,
+              "ref": "T",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "da5c4eacc66e8355910bb16b828489e202f021ab2b6ee07018166fb0cbb7b2d6",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003251",
+              "label": "Male infertility"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "939eb5970d117ed027bfcecb8f2f9b0f384cfd93fa04e767982d4fe343d2c0ac",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034011",
+              "label": "Reduced progressive sperm motility"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "bd0b3beb87e0e01cae8776a76e52c004cef8e04db5f7d57f5a7b36bfd7dd03b5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030346",
+              "label": "Abnormal circulating follicle-stimulating hormone concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "008c070e21d6c9f5df478cb91841aae90088fb5528884baaa47eff419891eef7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030345",
+              "label": "Abnormal circulating luteinizing hormone concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cb54ad7e5447ec9c44ec39272c99829eb1add03741ea8f3ac9956a7fc8575954",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000798",
+              "label": "Oligozoospermia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bb36e0f77eccee7bd0f818378af9fdc0943052b6c919b97d258c989524301bcf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/ARMC12/PMID_35534203_R0036_II_3_P2.json",
+      "packet_sha256": "e9eb36580d55c19a65edb667b6d1af53a27d73f14f13ea53ae33bddcfb57f75e",
+      "case_id": "TC_685de80809418c2f",
+      "role": "alternate",
+      "packet_subject_id": "R0036:II-3-P2",
+      "review_status": "pending",
+      "category": "unresolved",
+      "limitations": [
+        "Frozen packet inspected: R0036:II-3-P2. Main text and supplementary source unavailable, so all source correspondence and age/onset/negative phenotype, allele, segregation, phase and causal-confidence assertions remain pending. Metadata abstract cannot adjudicate this individual."
+      ],
+      "patient_identity": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "genotype": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "segregation": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "phase": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "causal_confidence": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c635TtoC_ARMC12_NM_001286574v2",
+            "geneContext": {
+              "valueId": "HGNC:21099",
+              "symbol": "ARMC12"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001286574.2:c.635T>C"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.35747592T>C"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001273503.1:p.(Leu212Pro)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 35747592,
+              "ref": "T",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "da5c4eacc66e8355910bb16b828489e202f021ab2b6ee07018166fb0cbb7b2d6",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003251",
+              "label": "Male infertility"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "939eb5970d117ed027bfcecb8f2f9b0f384cfd93fa04e767982d4fe343d2c0ac",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034011",
+              "label": "Reduced progressive sperm motility"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "bd0b3beb87e0e01cae8776a76e52c004cef8e04db5f7d57f5a7b36bfd7dd03b5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030346",
+              "label": "Abnormal circulating follicle-stimulating hormone concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "008c070e21d6c9f5df478cb91841aae90088fb5528884baaa47eff419891eef7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030345",
+              "label": "Abnormal circulating luteinizing hormone concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cb54ad7e5447ec9c44ec39272c99829eb1add03741ea8f3ac9956a7fc8575954",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000798",
+              "label": "Oligozoospermia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bb36e0f77eccee7bd0f818378af9fdc0943052b6c919b97d258c989524301bcf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "main_text",
+      "status": "open",
+      "detail": "Publisher DOI route blocked by Cloudflare. Held body says Sorry, you have been blocked. No retry or bypass.",
+      "evidence": [
+        {
+          "source_id": "main-access",
+          "locator": "HTTP403"
+        },
+        {
+          "source_id": "main-access-body",
+          "locator": "title and body access denial"
+        }
+      ]
+    },
+    {
+      "component_id": "supplement-1",
+      "status": "open",
+      "detail": "Public supplementary PDF request returned JavaScript/cookies challenge HTTP403. No PDF available.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "HTTP403"
+        },
+        {
+          "source_id": "supp-access-body",
+          "locator": "Just a moment; enable JavaScript/cookies"
+        }
+      ]
+    },
+    {
+      "component_id": null,
+      "status": "open",
+      "detail": "Complete publisher component inventory unavailable.",
+      "evidence": [
+        {
+          "source_id": "main-access",
+          "locator": "HTTP403"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No main text, figure, table or supplement reading credit. Three packet mappings (two selected, one alternate) remain pending across two case signatures. Metadata and retained access-denial bodies were inspected; no network retry, browser or institutional access attempted."
+  ]
+}

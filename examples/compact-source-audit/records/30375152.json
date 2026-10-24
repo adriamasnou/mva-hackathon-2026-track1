@@ -1,0 +1,643 @@
+{
+  "schema_version": 1,
+  "pmid": "30375152",
+  "title": "Using human sequencing to guide craniofacial research",
+  "reviewer": {
+    "id": "reviewer-2",
+    "reviewed_at_utc": "2026-10-24T21:30:40.194917+00:00",
+    "method": "Exact user-reserved logical reader-2 succession batch; independent full-source correspondence audit with incremental actual-reading locators."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Mandatory HANDOFF.md exposed aggregate public-validation outcomes and historical GIAB HG002 FGFR2 rank1 at0.9654. Conservative per_case disclosure; not blinded. No benchmark outcome files or case inference ranks/scores consulted for this review."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "9417cdde4dc73eb78543395fb8c59ff18b59bad5bee0959e32633942e5f2dae1",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "xml",
+      "pmid": "30375152",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/30375152/cloud/PMC8796141.1/PMC8796141.1.xml",
+      "sha256": "e88e27f5df8d1b75835dcb7aad2f3fc7e3e587492313e25b2805c4583778d97e",
+      "kind": "xml",
+      "description": "NIH author manuscript PMC8796141.1, PMID30375152, DOI10.1002/dvg.23259; not the held June2018 bioRxiv preprint."
+    },
+    {
+      "id": "identity-metadata",
+      "pmid": "30375152",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/30375152/identity.json",
+      "sha256": "473437ad8f1dd0f20dc962e25a66fead764f1b5c475a2169a5ddc54a1b155cfb",
+      "kind": "metadata",
+      "description": "Held EuropePMC bibliographic identity; no read credit."
+    },
+    {
+      "id": "crossref",
+      "pmid": "30375152",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/30375152/crossref.json",
+      "sha256": "bdcbc7923a9e42726dae39e7334246047c6a1197d318812088abaf1b9d42b5a1",
+      "kind": "metadata",
+      "description": "Held independent DOI/title metadata; no read credit."
+    },
+    {
+      "id": "main-text",
+      "pmid": "30375152",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/assets/30375152/main-all-elements.txt",
+      "sha256": "cffbe228b3871e6ca149704eba02fa49727335854cf1cf7ae872b82a6670cb93",
+      "kind": "text",
+      "description": "Complete article body/back-matter text extraction including source element IDs; preparation not reading credit."
+    },
+    {
+      "id": "parent-retrieval-request",
+      "pmid": "30375152",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/receipts/30375152/parent-retrieval-request-20261024T2132.json",
+      "sha256": "78d189431702fab35db902238f6b7ad9b98f06dbf041ab01152589b6d2413f9a",
+      "kind": "access_log",
+      "description": "Final-version figure/table access request; no reading credit."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Using human sequencing to guide craniofacial research",
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "front/article-meta: article-title, PMID30375152, DOI10.1002/dvg.23259, NIHMS1693495, Genesis57(1)e23259"
+      },
+      {
+        "source_id": "crossref",
+        "locator": "message.DOI,title,published"
+      }
+    ],
+    "note": "Identity matched held author manuscript to PMID/DOI/title. Main version is PMC8796141.1 NIH author manuscript of the 2018-online/2019-issue article. Separate held PDF explicitly identifies bioRxiv10.1101/356717 posted2018-06-27 and differs in author list; no silent version substitution."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 5,
+      "table": 2,
+      "supplement": 0
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "All fig(F1–F5),table-wrap(T1–T2), no supplementary-material; front has-supplement=no"
+      }
+    ],
+    "note": "Complete inventory from held author manuscript; figure graphics are referenced but pixels unavailable for this version. Related preprint is an alternate version, not an article supplement."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "unread",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 120,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-text",
+          "locator": "Complete component"
+        }
+      ],
+      "coverage": [],
+      "note": "Not read."
+    },
+    {
+      "id": "F1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Complete component"
+        }
+      ],
+      "coverage": [],
+      "note": "No actual reading yet; JATS text/caption is not figure-pixel coverage."
+    },
+    {
+      "id": "F2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Complete component"
+        }
+      ],
+      "coverage": [],
+      "note": "No actual reading yet; JATS text/caption is not figure-pixel coverage."
+    },
+    {
+      "id": "F3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Complete component"
+        }
+      ],
+      "coverage": [],
+      "note": "No actual reading yet; JATS text/caption is not figure-pixel coverage."
+    },
+    {
+      "id": "F4",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Complete component"
+        }
+      ],
+      "coverage": [],
+      "note": "No actual reading yet; JATS text/caption is not figure-pixel coverage."
+    },
+    {
+      "id": "F5",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Complete component"
+        }
+      ],
+      "coverage": [],
+      "note": "No actual reading yet; JATS text/caption is not figure-pixel coverage."
+    },
+    {
+      "id": "T1",
+      "kind": "table",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Complete component"
+        }
+      ],
+      "coverage": [],
+      "note": "No actual reading yet; JATS text/caption is not figure-pixel coverage."
+    },
+    {
+      "id": "T2",
+      "kind": "table",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Complete component"
+        }
+      ],
+      "coverage": [],
+      "note": "No actual reading yet; JATS text/caption is not figure-pixel coverage."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/AMOTL1/PMID_30375152_proband.json",
+      "packet_sha256": "f2af5f5836c879905d703d84788f6d4d056b1c816e636574c7fd53258ea15356",
+      "case_id": "TC_8c30c37a076878fa",
+      "role": "selected",
+      "packet_subject_id": "proband",
+      "review_status": "pending",
+      "category": "unresolved",
+      "limitations": [
+        "No new case adjudication performed."
+      ],
+      "patient_identity": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "genotype": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "segregation": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "phase": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "causal_confidence": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c469CtoT_AMOTL1_NM_130847v3",
+            "geneContext": {
+              "valueId": "HGNC:17811",
+              "symbol": "AMOTL1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_130847.3:c.469C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000011.10:g.94799659C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_570899.1:p.(Arg157Cys)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr11",
+              "pos": 94799659,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "fca8f3740b69ede23d5c5a327d4ffa0ee46fc74af79bd594a2bbfbc12b23f51f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000162",
+              "label": "Glossoptosis"
+            }
+          },
+          "snapshot_sha256": "9d0475f8a6df4dfd8b71f319c42416adb4167d4663665eccd763aadc6e103ad4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100333",
+              "label": "Unilateral cleft lip"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "db3b8277f8cb0d89ca3a99abedf1b8d80f8b069bab2ab44325927fdd31b0bf11",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000175",
+              "label": "Cleft palate"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "e04f8c92b2dc3c1c6fd23648dcc724009bad1b4c08ca8767cd8e63a3b6a54681",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            }
+          },
+          "snapshot_sha256": "4288b41b99551912ca3fa5ad7e93bfd78790d71201dcef8f9d21b2ff60c00b44",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002280",
+              "label": "Enlarged cisterna magna"
+            }
+          },
+          "snapshot_sha256": "b7f4f9057f70e2587a0637f80bf17ef1a9a298552fe6080b54c931c6be023b5f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005616",
+              "label": "Accelerated skeletal maturation"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P14Y"
+              }
+            }
+          },
+          "snapshot_sha256": "de2b2ff732d2bc332b4a466b577064f489877f60ea8b9ce91dab21326f4b6e32",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002870",
+              "label": "Obstructive sleep apnea"
+            }
+          },
+          "snapshot_sha256": "d5e424dc6fed357203de29b000fd702c5d78e7ca7d75c13c56bbe5a0eaed451b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001636",
+              "label": "Tetralogy of Fallot"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "76ceef802d0d9869bcf75a65da33f0b1bfd542f85906860db7b790f2c6cd2004",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011568",
+              "label": "Double orifice mitral valve"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "a357b8c32c3e01ebf05a26e0446675099820a6da7067b687a59f2995af28030e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001629",
+              "label": "Ventricular septal defect"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "fd4c4e2b90148bd6bd1d6e41545ff7448dfd0b9e2c39e8826dab5fa9104be3b8",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "F1",
+      "status": "open",
+      "detail": "Published-version figure pixels not held; related June2018 preprint version must not be silently substituted. Parent retrieval requested.",
+      "evidence": [
+        {
+          "source_id": "parent-retrieval-request",
+          "locator": "needed_component and held-version distinction"
+        }
+      ]
+    },
+    {
+      "component_id": "F2",
+      "status": "open",
+      "detail": "Published-version figure pixels not held; related June2018 preprint version must not be silently substituted. Parent retrieval requested.",
+      "evidence": [
+        {
+          "source_id": "parent-retrieval-request",
+          "locator": "needed_component and held-version distinction"
+        }
+      ]
+    },
+    {
+      "component_id": "F3",
+      "status": "open",
+      "detail": "Published-version figure pixels not held; related June2018 preprint version must not be silently substituted. Parent retrieval requested.",
+      "evidence": [
+        {
+          "source_id": "parent-retrieval-request",
+          "locator": "needed_component and held-version distinction"
+        }
+      ]
+    },
+    {
+      "component_id": "F4",
+      "status": "open",
+      "detail": "Published-version figure pixels not held; related June2018 preprint version must not be silently substituted. Parent retrieval requested.",
+      "evidence": [
+        {
+          "source_id": "parent-retrieval-request",
+          "locator": "needed_component and held-version distinction"
+        }
+      ]
+    },
+    {
+      "component_id": "F5",
+      "status": "open",
+      "detail": "Published-version figure pixels not held; related June2018 preprint version must not be silently substituted. Parent retrieval requested.",
+      "evidence": [
+        {
+          "source_id": "parent-retrieval-request",
+          "locator": "needed_component and held-version distinction"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Unblinded source correspondence; source assertions are not clinical truth.",
+    "Full extraction/component enumeration/metadata verification add no reading credit. Main text and all cases remain pending actual reading.",
+    "Published-version figures unavailable; preprint provenance remains distinct."
+  ]
+}

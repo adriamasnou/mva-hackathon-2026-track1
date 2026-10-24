@@ -1,0 +1,1412 @@
+{
+  "schema_version": 1,
+  "pmid": "40119724",
+  "title": "Identification of IDH3G, encoding the gamma subunit of mitochondrial isocitrate dehydrogenase, as a novel candidate gene for X-linked retinitis pigmentosa.",
+  "reviewer": {
+    "id": "reader-1-successor-idh3g-20261024",
+    "reviewed_at_utc": "2026-10-24T21:13:06.902220+00:00",
+    "method": "Read the entire 14-page published paper, including references and disclosures, all five main figures and Table 1; read the entire five-page supplement and all Supplementary Figures 1-5. Inspected all 19 full-page renders and additional S3 crops. Compared both assigned selected packets, both variant descriptors and all 20 phenotype items. No alternate packets are assigned. This is source-correspondence review, not clinical reclassification or new experimental analysis."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Successor inherits prior parent-session exposure to individual-case outcome-linked work and aggregate benchmark results. Per-case exposure is retained conservatively; this review is post-inference, non-blinded and not preregistered. No ranking outputs were newly opened during this narrowly scoped source reading."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "088c656b8cb3d4670dfa4be0e0f4033abebf4b776a4048e3ec7b72cd5feeab40",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-pdf",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/published.pdf",
+      "sha256": "60139396e584e391f628f2d7a2a5d80d78aa690d1a94d1a631f7fb28cf7254df",
+      "kind": "pdf",
+      "description": "Published open-access version, DOI 10.1016/j.gim.2025.101418, all 14 pages read."
+    },
+    {
+      "id": "main-layout",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/published.txt",
+      "sha256": "34e29ee33563c63dc91e8180b65dadd27ac6fe3997860eae0193bc162273daf6",
+      "kind": "text",
+      "description": "Complete layout extraction, read with original page renders; rotated Table 1 verified visually."
+    },
+    {
+      "id": "supp-pdf",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/supplement.pdf",
+      "sha256": "4c81d79fdf7cc8c7ba41b21adb3b143a484bb85bea23248e572df48f88551f11",
+      "kind": "pdf",
+      "description": "Sole published supplementary file, five pages containing Supplementary Figures 1-5; text and pixels read."
+    },
+    {
+      "id": "supp-layout",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/supplement.txt",
+      "sha256": "123186fdb5e517631b8f23799f013a10443afddcc0202da37d8e0d5ad841bf9e",
+      "kind": "text",
+      "description": "Supplement layout extraction; visual-only figure content checked in renders."
+    },
+    {
+      "id": "retrieval",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/retrieval.json",
+      "sha256": "d3fde839c5ac85e51df3edc19be5309ebed3bce41721d9236c99700f0a8b4264",
+      "kind": "access_log",
+      "description": "Parent acquisition receipt with exact official main and supplementary asset URLs and verified hashes; no reading credit inherited."
+    },
+    {
+      "id": "extent-check",
+      "pmid": "40119724",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-1/40119724/extent-verification.json",
+      "sha256": "5093957422c76bcee2167c28a64a6234fc6e73a196d31906eb1fe3bc7d66f5da",
+      "kind": "metadata",
+      "description": "PDF page extents independently checked using pdfinfo."
+    },
+    {
+      "id": "main-page-1",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-01.png",
+      "sha256": "4acb980e8e2104e7a3f0e3e27ce55f0c8b857ca8d2bbefb69044cc100993a6d4",
+      "kind": "image",
+      "description": "Entire published page 1, visually inspected."
+    },
+    {
+      "id": "main-page-2",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-02.png",
+      "sha256": "f5c728ae420e97f2c70e3a140cca19b7ef0ebc02e1a913b47afd13c9ac805ce3",
+      "kind": "image",
+      "description": "Entire published page 2, visually inspected."
+    },
+    {
+      "id": "main-page-3",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-03.png",
+      "sha256": "f40e8d0ffc33d5cc0f815a4ebed7993c365d0a62964cd9b3a5611a9c97b56f42",
+      "kind": "image",
+      "description": "Entire published page 3, visually inspected."
+    },
+    {
+      "id": "main-page-4",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-04.png",
+      "sha256": "423f4c5182aa893bb66e5abd696d0dba615b2cfcc67cba2105a0e948b2428e6d",
+      "kind": "image",
+      "description": "Entire published page 4, visually inspected."
+    },
+    {
+      "id": "main-page-5",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-05.png",
+      "sha256": "788ba28ff164eb8a3fb4c9f2c93cd7d0a82bcf93862ad53ef9f38951ee104c69",
+      "kind": "image",
+      "description": "Entire published page 5, visually inspected."
+    },
+    {
+      "id": "main-page-6",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-06.png",
+      "sha256": "4c1523f290471b212d0092fbd0bef73fef07bff53cdb69a893cb84667cbe3ff7",
+      "kind": "image",
+      "description": "Entire published page 6, visually inspected."
+    },
+    {
+      "id": "main-page-7",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-07.png",
+      "sha256": "9e0743520cfa61b371a5038aeac1c7ca90d7e50a4982174fef4e45247326ca15",
+      "kind": "image",
+      "description": "Entire published page 7, visually inspected."
+    },
+    {
+      "id": "main-page-8",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-08.png",
+      "sha256": "10f8e10eae26733a496584518cf5e2d46164685e52d5ea48e93689deac3988bd",
+      "kind": "image",
+      "description": "Entire published page 8, visually inspected."
+    },
+    {
+      "id": "main-page-9",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-09.png",
+      "sha256": "8812ec854c6c57bade10b9f409094f5ce84725506534baebca1d1670ed0913a8",
+      "kind": "image",
+      "description": "Entire published page 9, visually inspected."
+    },
+    {
+      "id": "main-page-10",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-10.png",
+      "sha256": "0f5264276d7350ca187800a88e453c53e68d241aab30031b7f06a2097ef8908b",
+      "kind": "image",
+      "description": "Entire published page 10, visually inspected."
+    },
+    {
+      "id": "main-page-11",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-11.png",
+      "sha256": "24b840c17e52e4611a22ebd894deac0d3be2ea7272e7fd6e4880c6a502bfc189",
+      "kind": "image",
+      "description": "Entire published page 11, visually inspected."
+    },
+    {
+      "id": "main-page-12",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-12.png",
+      "sha256": "24f275bd4858610ba3ab917e4ed849c20d31c0df8245276f40506d4b152fe9c6",
+      "kind": "image",
+      "description": "Entire published page 12, visually inspected."
+    },
+    {
+      "id": "main-page-13",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-13.png",
+      "sha256": "bcd0d489068110749cae783828b716ce01027fa31c06aa87b3333f8cf87c296f",
+      "kind": "image",
+      "description": "Entire published page 13, visually inspected."
+    },
+    {
+      "id": "main-page-14",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/published-14.png",
+      "sha256": "4e2b088de7a17f6480e923aca510c323187262e8f2872770b5b601987818db6b",
+      "kind": "image",
+      "description": "Entire published page 14, visually inspected."
+    },
+    {
+      "id": "supp-page-1",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/supplement-1.png",
+      "sha256": "edee79481ee646e73e70fecd84f7f88ba45b3f7bb92c15e7debc8e21130d7055",
+      "kind": "image",
+      "description": "Entire supplementary page 1, all content visually inspected."
+    },
+    {
+      "id": "supp-page-2",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/supplement-2.png",
+      "sha256": "4b9dc6731425ffacb0a17a9af61e2b19d1ed9acf7e516eaea1913a3b13e95880",
+      "kind": "image",
+      "description": "Entire supplementary page 2, all content visually inspected."
+    },
+    {
+      "id": "supp-page-3",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/supplement-3.png",
+      "sha256": "148d5176c3b6eb8486fbfd735064244f4081b329fa147ea34878a08afe69aa45",
+      "kind": "image",
+      "description": "Entire supplementary page 3, all content visually inspected."
+    },
+    {
+      "id": "supp-page-4",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/supplement-4.png",
+      "sha256": "94bee1b7f0adf0a4dcced4059eda6ff2f3d4a4db10ef8227c90988e97a528617",
+      "kind": "image",
+      "description": "Entire supplementary page 4, all content visually inspected."
+    },
+    {
+      "id": "supp-page-5",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/supplement-5.png",
+      "sha256": "6d4f71fc2696302d497c876ae5d83bb6e65ea6c01278e5c5366954c13d68aa42",
+      "kind": "image",
+      "description": "Entire supplementary page 5, all content visually inspected."
+    },
+    {
+      "id": "supp3-detail-left",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/supplement-S3-left-3.png",
+      "sha256": "631e8b6cf9729752d4f46de1794d9fd1888928523b70b9e9354bd075cc6bb38d",
+      "kind": "image",
+      "description": "Readable original-PDF crop of Supplementary Figure 3; all four grids and five rows inspected across two crops."
+    },
+    {
+      "id": "supp3-detail-right",
+      "pmid": "40119724",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/40119724/reader1-successor-renders/supplement-S3-right-3.png",
+      "sha256": "3ee7852fa55473667c0f3ac5aea1ce596d2d9987498560d903114daac6d7a2a4",
+      "kind": "image",
+      "description": "Readable original-PDF crop of Supplementary Figure 3; all four grids and five rows inspected across two crops."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Identification of IDH3G, encoding the gamma subunit of mitochondrial isocitrate dehydrogenase, as a novel candidate gene for X-linked retinitis pigmentosa.",
+    "evidence": [
+      {
+        "source_id": "main-pdf",
+        "locator": "Page 1: complete title, Lorenzo Bianco et al., Genetics in Medicine 27 (2025), 101418, DOI 10.1016/j.gim.2025.101418."
+      }
+    ],
+    "note": "Exact title and DOI match source context and parent acquisition; author list, journal and publication details checked on original first-page pixels."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 5,
+      "table": 1,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "main-pdf",
+        "locator": "All pages 1-14: Figures 1-5 on pages 6,7,9,10,11; Table 1 on page 8; references to Supplementary Figures 1-5 and Additional Information on page 12."
+      },
+      {
+        "source_id": "supp-pdf",
+        "locator": "All five pages: consecutively labeled Supplementary Figures 1-5 with captions; no supplementary tables or movies in this file."
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "Parent receipt: official GIM main PDF and sole Supplementary Material PDF mmc1.pdf URLs."
+      },
+      {
+        "source_id": "extent-check",
+        "locator": "pdfs.published.pages=14; pdfs.supplement.pages=5."
+      }
+    ],
+    "note": "Supplement is counted once as its single published PDF, containing five separately inspected figures. Raw underlying data are offered on request (main page 11); this audit does not claim access to unshared raw data."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 14,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "All 14 numbered PDF pages, independently checked by pdfinfo."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 14,
+          "mode": "text",
+          "source_id": "main-pdf",
+          "locator": "All main text, captions, Table 1, disclosures and references across pages 1-14; full layout extraction read and every page viewed."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-page-1",
+          "locator": "Entire main PDF page 1."
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "main-page-2",
+          "locator": "Entire main PDF page 2."
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "main-page-3",
+          "locator": "Entire main PDF page 3."
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "main-page-4",
+          "locator": "Entire main PDF page 4."
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "main-page-5",
+          "locator": "Entire main PDF page 5."
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "main-page-6",
+          "locator": "Entire main PDF page 6."
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "main-page-7",
+          "locator": "Entire main PDF page 7."
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "main-page-8",
+          "locator": "Entire main PDF page 8."
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "main-page-9",
+          "locator": "Entire main PDF page 9."
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "main-page-10",
+          "locator": "Entire main PDF page 10."
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "mode": "pixels",
+          "source_id": "main-page-11",
+          "locator": "Entire main PDF page 11."
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "main-page-12",
+          "locator": "Entire main PDF page 12."
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "mode": "pixels",
+          "source_id": "main-page-13",
+          "locator": "Entire main PDF page 13."
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "mode": "pixels",
+          "source_id": "main-page-14",
+          "locator": "Entire main PDF page 14."
+        }
+      ],
+      "note": "No abstract-only or automatic-extraction reading credit. Two-column text and rotated table checked against pixels."
+    },
+    {
+      "id": "figure_1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure 1, main page 6, one complete figure-bearing page."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-page-6",
+          "locator": "All panels and legend of Figure 1, main page 6."
+        }
+      ],
+      "note": "All five pedigrees and variant/screening legends inspected. A: carrier mother V1/=, unaffected father and three siblings =/=. D: two carrier sisters V4/=; mother drawn as carrier but no sequence arrow/genotype shown, so maternal molecular confirmation is not inferred."
+    },
+    {
+      "id": "figure_2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure 2, main page 7, one complete figure-bearing page."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-page-7",
+          "locator": "All panels and legend of Figure 2, main page 7."
+        }
+      ],
+      "note": "Both panels inspected: RP34 locus and IDH3G mapping, tolerance curve, positions of all four SNVs and domain boundary 56-378. Predictive diagram is not functional evidence."
+    },
+    {
+      "id": "figure_3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure 3, main page 9, one complete figure-bearing page."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-page-9",
+          "locator": "All panels and legend of Figure 3, main page 9."
+        }
+      ],
+      "note": "All bilateral CFP, SW-AF and OCT images for A (50 years) and E (25 years) inspected. A has named pigment migration, arterial narrowing, disc pallor, parafoveal ring and atrophy; central outer-retinal structure is retained."
+    },
+    {
+      "id": "figure_4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure 4, main page 10, one complete figure-bearing page."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-page-10",
+          "locator": "All panels and legend of Figure 4, main page 10."
+        }
+      ],
+      "note": "Panels A-C read: tissue and cell-type expression graphs including missing-data asterisks; in situ retinal section; both rows of IDH3G/ARR3 and IDH3G/ATP-beta co-staining images with layer labels."
+    },
+    {
+      "id": "figure_5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure 5, main page 11, one complete figure-bearing page."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-page-11",
+          "locator": "All panels and legend of Figure 5, main page 11."
+        }
+      ],
+      "note": "All western blot lanes, controls and relative expression bars read. Mutant abundance is lower; Gln377* lacks Myc signal because stop precedes tag. Bars are shown without raw values/error intervals; no digitized result or catalytic assay inferred."
+    },
+    {
+      "id": "table_1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Table 1, main page 8, one complete rotated table."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-pdf",
+          "locator": "All five variant rows, all headings, classifications, criteria and footnote on page 8; compared with layout extraction."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-page-8",
+          "locator": "Entire Table 1, all five rows and footnote; rotation accounted for."
+        }
+      ],
+      "note": "All five rows classify variants LP. A: g.153789733G>C/c.325C>G/Arg109Gly, LP(PM2,PP3,PS3). D: g.153785925G>A/c.1129C>T/Gln377*, LP(PM2,PM4,PS3). Population values and all predictor columns inspected without current-database revalidation."
+    },
+    {
+      "id": "supplement_1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 5,
+      "extent_source_id": "supp-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "supp-pdf",
+          "locator": "Entire five-page Supplementary Material PDF; S1-S5 each occupy one page."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 5,
+          "mode": "text",
+          "source_id": "supp-pdf",
+          "locator": "All supplementary labels and captions, cross-read with the complete layout extraction and pixels."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp-page-1",
+          "locator": "Entire supplementary page 1, Supplementary Figure 1."
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "supp-page-2",
+          "locator": "Entire supplementary page 2, Supplementary Figure 2."
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "supp-page-3",
+          "locator": "Entire supplementary page 3, Supplementary Figure 3."
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "supp-page-4",
+          "locator": "Entire supplementary page 4, Supplementary Figure 4."
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "supp-page-5",
+          "locator": "Entire supplementary page 5, Supplementary Figure 5."
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "supp3-detail-left",
+          "locator": "S3 readable left crop, collectively all four grids and five rows."
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "supp3-detail-right",
+          "locator": "S3 readable right crop, collectively all four grids and five rows."
+        }
+      ],
+      "note": "S1: three alignment blocks, eight species, four marked residues and mismatches. S2: bilateral B65/C60/D69 fundus images. S3: all four 5x3 grids (IDH3G/Myc, IDH3G/ATP-beta, COX5B/Myc, IDH3G/Mitotracker), WT plus four variants; Gln377* tag absence retained. S4: all four OCR time-course plots, legends, error bars and intervention markers; visually lower curves do not override the paper's nonsignificant result. S5: panels A and B, holoenzyme and four WT/variant model pairs; no demonstrated functional rescue."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/IDH3G/PMID_40119724_Proband_D.json",
+      "packet_sha256": "0c80596efa391cad4c30eb110af87faffc3ad33bc6b603762a72b9acbd40ef2e",
+      "case_id": "TC_2cbd683ff1d3e0fa",
+      "role": "selected",
+      "packet_subject_id": "Proband D",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Contradicted category records a specific source/packet disagreement, not a disproved clinical diagnosis or gene association.",
+        "Source proposes a candidate gene and calls the variants likely pathogenic; no independent reclassification, database update or raw sequencing validation performed."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Proband D matches the North American male with Gln377*; supplement labels his fundus photographs at age 69, agreeing with the packet.",
+        "evidence": [
+          {
+            "source_id": "supp-page-2",
+            "locator": "Supplementary Figure 2, bottom row explicitly labeled Proband D (69 yrs); main pages 2 and 5 establish site and sex."
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "NM_004135.4:c.1129C>T; NP_004126.1:p.(Gln377Ter), printed p.(Gln377*) in source; NC_000023.11:g.153785925G>A (hg38); hemizygous. The assigned person and variant agree with source Results, pedigree key and Table 1.",
+        "evidence": [
+          {
+            "source_id": "main-pdf",
+            "locator": "Results page 5; Figure 1 page 6; Table 1 page 8; methods page 3 specifies hg38."
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Figure 1 shows D hemizygous V4 and two unaffected sisters heterozygous V4/=. This is compatible with X-linked inheritance; the mother is depicted as a carrier.",
+        "evidence": [
+          {
+            "source_id": "main-page-6",
+            "locator": "Figure 1, Proband D pedigree and sequencing arrows."
+          }
+        ],
+        "limitations": [
+          "No sequencing arrow or explicit molecular genotype is supplied for D's mother; do not call maternal transmission molecularly confirmed or de novo. Family sampling is limited."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "A single hemizygous X-linked allele is reported in this male; biallelic cis/trans phase is inapplicable, not an additional experimental phase measurement.",
+        "evidence": [
+          {
+            "source_id": "main-pdf",
+            "locator": "Page 5 Results, Figure 1 page 6 and Table 1 page 8."
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "contradicted",
+        "statement": "The packet explicitly assigns ACMG PATHOGENIC and SOLVED/CAUSATIVE. The source formally classifies this variant as LIKELY PATHOGENIC (Table 1 and page 10), and states that further research is needed to confirm the IDH3G-XLRP association. The formal pathogenicity level therefore disagrees; this does not falsify the proposed diagnosis.",
+        "evidence": [
+          {
+            "source_id": "main-pdf",
+            "locator": "Table 1 page 8, LP classification; Discussion/conclusion page 10; functional limits pages 6 and 9."
+          }
+        ],
+        "limitations": [
+          "Both variants have lower protein expression in COS-1 overexpression experiments, but no statistically significant respiration decrease was demonstrated; patient-derived mechanistic validation is not supplied.",
+          "The later OMIM disease name/identifier in the packet is not independently established by this article; current external classification was outside this source-only audit."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All assigned phenotype items, negatives and onset annotations were checked. The packet is a selected feature abstraction: severe rod/cone dysfunction on full-field ERG, retained central macular function and absence of relevant systemic conditions are additionally discussed. The article gives no exhaustive patient-level clinical table. Disease label RP99/OMIM:301148 is a later annotation not verified in this article.",
+        "evidence": [
+          {
+            "source_id": "main-pdf",
+            "locator": "Page 5 clinical phenotype; Figures 3 and S2; page 10 candidate-gene conclusion."
+          }
+        ],
+        "limitations": [
+          "Exact onset dates and some individual measures are unreported. Cataract/angle-closure findings are partly aggregated and cannot safely be assigned to A or D.",
+          "Page 5 says two participants (20%) although five probands are described; this internal denominator inconsistency is retained without allocating the finding to either packet."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1129CtoT_IDH3G_NM_004135v4",
+            "geneContext": {
+              "valueId": "HGNC:5386",
+              "symbol": "IDH3G"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_004135.4:c.1129C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000023.11:g.153785925G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_004126.1:p.(Gln377Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chrX",
+              "pos": 153785925,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000134",
+              "label": "hemizygous"
+            }
+          },
+          "snapshot_sha256": "062524deb130c80da776da51fa80b53ffd4207906d7a37f69331deb40f883d28",
+          "assessment": {
+            "status": "supported",
+            "statement": "NM_004135.4:c.1129C>T; NP_004126.1:p.(Gln377Ter), printed p.(Gln377*) in source; NC_000023.11:g.153785925G>A (hg38); hemizygous. Gene/transcript/protein and genomic change, VCF position/reference/alternate and hemizygous state correspond to the source.",
+            "evidence": [
+              {
+                "source_id": "main-pdf",
+                "locator": "Table 1 page 8, matching row; Figure 1 variant key page 6 and Results page 5."
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007737",
+              "label": "Bone spicule pigmentation of the retina"
+            }
+          },
+          "snapshot_sha256": "49249ecfb3a48e26b6215fdf1a4f49d65d78f75bb718dd02d21efd05d122f586",
+          "assessment": {
+            "status": "qualified",
+            "statement": "D's bilateral fundus photographs show advanced pigmentary/atrophic retinal changes consistent with the packet's bone-spicule retinal pigmentation. The caption describes typical RP findings but does not individually name this feature for D.",
+            "evidence": [
+              {
+                "source_id": "supp-page-2",
+                "locator": "Supplementary Figure 2 bottom row (D age 69); main page 5 general RP phenotype."
+              }
+            ],
+            "limitations": [
+              "Image-based source correspondence is less specific than an explicit patient-level textual finding; this is not a new clinical image diagnosis."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007722",
+              "label": "Retinal pigment epithelial atrophy"
+            }
+          },
+          "snapshot_sha256": "439ab30ba77018585425be8d5f3117954ca2d2f5b16467c01f4140600d626f00",
+          "assessment": {
+            "status": "qualified",
+            "statement": "D's bilateral fundus photographs show advanced pigmentary/atrophic retinal changes consistent with the packet's retinal pigment epithelial atrophy. The caption describes typical RP findings but does not individually name this feature for D.",
+            "evidence": [
+              {
+                "source_id": "supp-page-2",
+                "locator": "Supplementary Figure 2 bottom row (D age 69); main page 5 general RP phenotype."
+              }
+            ],
+            "limitations": [
+              "Image-based source correspondence is less specific than an explicit patient-level textual finding; this is not a new clinical image diagnosis."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000543",
+              "label": "Optic disc pallor"
+            }
+          },
+          "snapshot_sha256": "a4a920b018bcad5a10271aad20621968690c410ced04a604629fe271b6de4762",
+          "assessment": {
+            "status": "qualified",
+            "statement": "D's bilateral fundus photographs show advanced pigmentary/atrophic retinal changes consistent with the packet's optic disc pallor. The caption describes typical RP findings but does not individually name this feature for D.",
+            "evidence": [
+              {
+                "source_id": "supp-page-2",
+                "locator": "Supplementary Figure 2 bottom row (D age 69); main page 5 general RP phenotype."
+              }
+            ],
+            "limitations": [
+              "Image-based source correspondence is less specific than an explicit patient-level textual finding; this is not a new clinical image diagnosis."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032037",
+              "label": "Mildly reduced visual acuity"
+            }
+          },
+          "snapshot_sha256": "078c9d143a600a8e4a99792a6cfd100112571647b35b5c77048ec0f2677daa40",
+          "assessment": {
+            "status": "qualified",
+            "statement": "The B/C/D group retains mildly reduced acuity on average (median 0.1 logMAR better eye and 0.2 worse eye), compatible with D's packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-pdf",
+                "locator": "Page 5 clinical phenotype, seventh-decade B/C/D group."
+              }
+            ],
+            "limitations": [
+              "Only group medians are given; D's individual acuities are not reported, so a patient-specific severity cannot be confirmed."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001133",
+              "label": "Constriction of peripheral visual field"
+            }
+          },
+          "snapshot_sha256": "1c4eaffa55904990fbee4e46e1da40a24759b9b00b5db877b756dec658352efb",
+          "assessment": {
+            "status": "supported",
+            "statement": "B, C and D are explicitly described with severe bilateral visual-field constriction to 10-30 degrees horizontal diameter using V4e.",
+            "evidence": [
+              {
+                "source_id": "main-pdf",
+                "locator": "Page 5 clinical phenotype, B/C/D-specific field statement."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030529",
+              "label": "Ring scotoma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "16ffe8f717de9d972b7c3987c6f18663b57aac7f55fa25745ffcf6db8f714aa4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicit absence of ring scotoma for D is reported. A's positive ring scotoma cannot supply D's negative finding; a fundus photograph cannot settle the perimetric assertion.",
+            "evidence": [
+              {
+                "source_id": "main-pdf",
+                "locator": "Page 5 clinical phenotype: B/C/D field constriction and separately A annular scotoma; supplement page 2 contains photographs only."
+              }
+            ],
+            "limitations": [
+              "D-specific perimetry or an explicit negative clinical statement is needed. Non-mention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000662",
+              "label": "Nyctalopia"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "0df273139d198fd90330e009adba7de7cb3efdaec0ba56dfadcb868340ebea2a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Night blindness is explicitly the presenting symptom in all five probands, including D. Diagnosis occurred in the third/fourth decade, but symptom onset is not separately dated.",
+            "evidence": [
+              {
+                "source_id": "main-pdf",
+                "locator": "Page 5 clinical phenotype, all-case statement."
+              }
+            ],
+            "limitations": [
+              "Packet young-adult symptom/disease onset is not independently established by the age-at-diagnosis statement."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011003",
+              "label": "High myopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a8aaafc80ad495c122c4ec545340ce4e4b113f7cbb523235d99934fd3deff013",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded high myopia agrees with the explicit statement that none of the five participants was highly myopic.",
+            "evidence": [
+              {
+                "source_id": "main-pdf",
+                "locator": "Page 5 clinical phenotype; abstract page 1."
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IDH3G/PMID_40119724_Proband_A.json",
+      "packet_sha256": "33454619b3dfb26c7960b6c63aaef220161e3e0d2c10cea13808f7770f49906e",
+      "case_id": "TC_ce4cd426289c995f",
+      "role": "selected",
+      "packet_subject_id": "Proband A",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Contradicted category records a specific source/packet disagreement, not a disproved clinical diagnosis or gene association.",
+        "Source proposes a candidate gene and calls the variants likely pathogenic; no independent reclassification, database update or raw sequencing validation performed."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Proband A matches the French male, age 50, with Arg109Gly; age/sex and image label agree with the packet.",
+        "evidence": [
+          {
+            "source_id": "main-pdf",
+            "locator": "Pages 2 and 5; Figure 1 page 6 and Figure 3 page 9."
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "NM_004135.4:c.325C>G; NP_004126.1:p.(Arg109Gly); NC_000023.11:g.153789733G>C (hg38); hemizygous. The assigned person and variant agree with source Results, pedigree key and Table 1.",
+        "evidence": [
+          {
+            "source_id": "main-pdf",
+            "locator": "Results page 5; Figure 1 page 6; Table 1 page 8; methods page 3 specifies hg38."
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Figure 1 shows A hemizygous V1, an unaffected heterozygous mother, and wild-type father plus three siblings; matches the reported X-linked family pattern.",
+        "evidence": [
+          {
+            "source_id": "main-page-6",
+            "locator": "Figure 1, Proband A pedigree, variant key and colored sequencing arrows."
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "A single hemizygous X-linked allele is reported in this male; biallelic cis/trans phase is inapplicable, not an additional experimental phase measurement.",
+        "evidence": [
+          {
+            "source_id": "main-pdf",
+            "locator": "Page 5 Results, Figure 1 page 6 and Table 1 page 8."
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "contradicted",
+        "statement": "The packet explicitly assigns ACMG PATHOGENIC and SOLVED/CAUSATIVE. The source formally classifies this variant as LIKELY PATHOGENIC (Table 1 and page 10), and states that further research is needed to confirm the IDH3G-XLRP association. The formal pathogenicity level therefore disagrees; this does not falsify the proposed diagnosis.",
+        "evidence": [
+          {
+            "source_id": "main-pdf",
+            "locator": "Table 1 page 8, LP classification; Discussion/conclusion page 10; functional limits pages 6 and 9."
+          }
+        ],
+        "limitations": [
+          "Both variants have lower protein expression in COS-1 overexpression experiments, but no statistically significant respiration decrease was demonstrated; patient-derived mechanistic validation is not supplied.",
+          "The later OMIM disease name/identifier in the packet is not independently established by this article; current external classification was outside this source-only audit."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All assigned phenotype items, negatives and onset annotations were checked. The packet is a selected feature abstraction: severe rod/cone dysfunction on full-field ERG, retained central macular function and absence of relevant systemic conditions are additionally discussed. The article gives no exhaustive patient-level clinical table. Disease label RP99/OMIM:301148 is a later annotation not verified in this article.",
+        "evidence": [
+          {
+            "source_id": "main-pdf",
+            "locator": "Page 5 clinical phenotype; Figures 3 and S2; page 10 candidate-gene conclusion."
+          }
+        ],
+        "limitations": [
+          "Exact onset dates and some individual measures are unreported. Cataract/angle-closure findings are partly aggregated and cannot safely be assigned to A or D.",
+          "Page 5 says two participants (20%) although five probands are described; this internal denominator inconsistency is retained without allocating the finding to either packet."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c325CtoG_IDH3G_NM_004135v4",
+            "geneContext": {
+              "valueId": "HGNC:5386",
+              "symbol": "IDH3G"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_004135.4:c.325C>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000023.11:g.153789733G>C"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_004126.1:p.(Arg109Gly)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chrX",
+              "pos": 153789733,
+              "ref": "G",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000134",
+              "label": "hemizygous"
+            }
+          },
+          "snapshot_sha256": "39ba73c90a9135e3b590648b31b26103e6f7229066eadf3ad667f276a7c83b3b",
+          "assessment": {
+            "status": "supported",
+            "statement": "NM_004135.4:c.325C>G; NP_004126.1:p.(Arg109Gly); NC_000023.11:g.153789733G>C (hg38); hemizygous. Gene/transcript/protein and genomic change, VCF position/reference/alternate and hemizygous state correspond to the source.",
+            "evidence": [
+              {
+                "source_id": "main-pdf",
+                "locator": "Table 1 page 8, matching row; Figure 1 variant key page 6 and Results page 5."
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008043",
+              "label": "Retinal arteriolar constriction"
+            }
+          },
+          "snapshot_sha256": "601367ff791ab0bf41f33ff9d11851db337c2b6fcec3334c8537a6821d74c9e6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Arterial narrowing is explicitly described for A in Figure 3 and accords with the viewed images.",
+            "evidence": [
+              {
+                "source_id": "main-page-9",
+                "locator": "Figure 3, A images and caption."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025159",
+              "label": "Hypoautofluorescent retinal lesion"
+            }
+          },
+          "snapshot_sha256": "3c89dfb46b33adf64ed2c5b7cc0f9d440fd03efe4ab4d2a017d2b657c97e2fba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Nummular hypoautofluorescent patches outside temporal arcades is explicitly described for A in Figure 3 and accords with the viewed images.",
+            "evidence": [
+              {
+                "source_id": "main-page-9",
+                "locator": "Figure 3, A images and caption."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030629",
+              "label": "Perifoveal ring of hyperautofluorescence"
+            }
+          },
+          "snapshot_sha256": "519ef7fd35365e469b2826ed55a635b7d160e01ca43ca53a6d7634322cbfb8e8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Classic parafoveal hyperautofluorescent ring is explicitly described for A in Figure 3 and accords with the viewed images.",
+            "evidence": [
+              {
+                "source_id": "main-page-9",
+                "locator": "Figure 3, A images and caption."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007737",
+              "label": "Bone spicule pigmentation of the retina"
+            }
+          },
+          "snapshot_sha256": "49249ecfb3a48e26b6215fdf1a4f49d65d78f75bb718dd02d21efd05d122f586",
+          "assessment": {
+            "status": "supported",
+            "statement": "Intraretinal bone-spicule-like pigment migration is explicitly described for A in Figure 3 and accords with the viewed images.",
+            "evidence": [
+              {
+                "source_id": "main-page-9",
+                "locator": "Figure 3, A images and caption."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034362",
+              "label": "Dull foveal reflex"
+            }
+          },
+          "snapshot_sha256": "243d2e5c8e5ce83b80f0dad09f25cc6a70d92ae6bacb6cac1a735bdaf7f39ff8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Blunted foveal reflex is explicitly described for A in Figure 3 and accords with the viewed images.",
+            "evidence": [
+              {
+                "source_id": "main-page-9",
+                "locator": "Figure 3, A images and caption."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007722",
+              "label": "Retinal pigment epithelial atrophy"
+            }
+          },
+          "snapshot_sha256": "439ab30ba77018585425be8d5f3117954ca2d2f5b16467c01f4140600d626f00",
+          "assessment": {
+            "status": "supported",
+            "statement": "Midperipheral retinal pigment epithelium atrophy is explicitly described for A in Figure 3 and accords with the viewed images.",
+            "evidence": [
+              {
+                "source_id": "main-page-9",
+                "locator": "Figure 3, A images and caption."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000543",
+              "label": "Optic disc pallor"
+            }
+          },
+          "snapshot_sha256": "a4a920b018bcad5a10271aad20621968690c410ced04a604629fe271b6de4762",
+          "assessment": {
+            "status": "supported",
+            "statement": "Optic disc pallor is explicitly described for A in Figure 3 and accords with the viewed images.",
+            "evidence": [
+              {
+                "source_id": "main-page-9",
+                "locator": "Figure 3, A images and caption."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032037",
+              "label": "Mildly reduced visual acuity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a9760be4670c8c8d48f7b007d8b87c9c66650310b9da5b4dad0dee6131a97df0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded mildly reduced visual acuity agrees with A's measured 0.0 logMAR / 20/20 best-corrected acuity in both eyes.",
+            "evidence": [
+              {
+                "source_id": "main-pdf",
+                "locator": "Clinical phenotype paragraph, page 5."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001133",
+              "label": "Constriction of peripheral visual field"
+            }
+          },
+          "snapshot_sha256": "1c4eaffa55904990fbee4e46e1da40a24759b9b00b5db877b756dec658352efb",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet asserts peripheral visual-field constriction. The source instead states no substantial peripheral field restriction using V4e in A; it reports a bilateral midperipheral annular scotoma with preserved central sensitivity. These are distinct field descriptions.",
+            "evidence": [
+              {
+                "source_id": "main-pdf",
+                "locator": "Page 5 clinical phenotype, A-specific sentences."
+              }
+            ],
+            "limitations": [
+              "The source qualifier concerns substantial restriction with V4e; it does not prove absence of every possible defect at other stimulus sizes."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030529",
+              "label": "Ring scotoma"
+            }
+          },
+          "snapshot_sha256": "57c2c448039fced2e7177e9da32952d4fdccadf6a93b5613b411c09d29d1b229",
+          "assessment": {
+            "status": "supported",
+            "statement": "A has a bilateral midperipheral annular scotoma approximately 10-40 degrees from fixation, matching ring scotoma.",
+            "evidence": [
+              {
+                "source_id": "main-pdf",
+                "locator": "Page 5 clinical phenotype, A-specific perimetry."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000662",
+              "label": "Nyctalopia"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "0df273139d198fd90330e009adba7de7cb3efdaec0ba56dfadcb868340ebea2a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Night blindness is explicitly the presenting symptom in all five probands, including A. Diagnosis occurred in the third/fourth decade; exact symptom onset is not separately dated.",
+            "evidence": [
+              {
+                "source_id": "main-pdf",
+                "locator": "Page 5 clinical phenotype, all-case statement."
+              }
+            ],
+            "limitations": [
+              "Packet young-adult symptom and disease onset should not be equated automatically with the reported age at clinical diagnosis."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011003",
+              "label": "High myopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a8aaafc80ad495c122c4ec545340ce4e4b113f7cbb523235d99934fd3deff013",
+          "assessment": {
+            "status": "supported",
+            "statement": "Excluded high myopia agrees with the explicit statement that none of the five participants was highly myopic.",
+            "evidence": [
+              {
+                "source_id": "main-pdf",
+                "locator": "Page 5 clinical phenotype; also abstract page 1."
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": null,
+      "status": "resolved",
+      "detail": "Official full main and sole supplementary PDF acquired by parent; hashes reverified and all published components read by successor. No contact or browser use performed.",
+      "evidence": [
+        {
+          "source_id": "retrieval",
+          "locator": "Exact URLs, byte counts and SHA256 values for published.pdf and supplement.pdf."
+        },
+        {
+          "source_id": "extent-check",
+          "locator": "Both PDF page counts verified."
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Post-inference, per-case-exposed, non-blinded source audit; this does not clinically validate the benchmark or independently replicate laboratory results.",
+    "Paper proposes a candidate association with five unrelated probands. Reduced protein abundance is not a measured reduction in enzymatic activity; the Seahorse result was not statistically significant.",
+    "No underlying raw genomic, perimetry, blot densitometry or Seahorse data were obtained; only the published components are complete.",
+    "Supplementary alignment and protein models are inspected evidence, not newly computed predictions. Figure 5 bars were not digitized or used as exact quantitative measurements.",
+    "Both packets have a formal PATHOGENIC versus source LP disagreement. A additionally has the peripheral-field wording conflict; D's negative ring-scotoma assertion is unresolved. Frozen packets are unchanged."
+  ]
+}

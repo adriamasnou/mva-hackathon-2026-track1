@@ -1,0 +1,2389 @@
+{
+  "schema_version": 1,
+  "pmid": "31337854",
+  "title": "Comprehensive genetic analysis of 57 families with clinically suspected Cornelia de Lange syndrome",
+  "reviewer": {
+    "id": "reviewer-2",
+    "reviewed_at_utc": "2026-10-24T21:30:07.505611+00:00",
+    "method": "Sole authorized successor Herschel for this exact PMID; actual source reading only; no extraction-only or metadata read credit."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Conservative per_case exposure, post-inference and not blinded. Earlier HANDOFF disclosed aggregate HG0026/7/8, HG0017/8/8, phenotype4/8/8 of9, compact556/653/665 versus430/649/665 of681, historical FGFR2 rank1 score0.9654. Editorial reading after18:54:47Z exposed CTCF phenotype rank132 versus genomic1/1, DOCK8 rank2 versus22/15, all3modes8/9top10, COG8/SLC35C1 one-allele exceptions, constructed pairs58/64 versus42/64 and no-HPO59/64 versus2/64. Later narrative review repeated aggregates, source-audit coverage and actual synthetic rescue outputs. At this succession checkpoint HANDOFF reread exposed latest21:22:28UTC audit281/334mains,161completepapers,1237/1389mappings,338/713cases,292validrecords and historical release aggregates; source-quality sensitivity621inputs/713cases/1426arms/162categories and B43/D5FBN1 crossassignment mention. No benchmark/inference outcome files or case outcomes were opened or consulted for these source reviews. Earlier reviews cannot retroactively be called blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "fc85210117a86dbcc412d54913830894012590e13c4bf0a61f8da85958881547",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "scope-ack",
+      "pmid": "31337854",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/31337854-successor/receipts/scope-acknowledgment.json",
+      "sha256": "21c8f150979422f88ed52eba6563db3fdbd31277e36c78d92f69060f3aa95b93",
+      "kind": "metadata",
+      "description": "Authorization acknowledgment, not source evidence"
+    },
+    {
+      "id": "epmc",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31337854/europepmc.json",
+      "sha256": "0cd88ca6a0cddede34746ab6e517da809271fa62dc85a4cee45fe1e80b801957",
+      "kind": "metadata",
+      "description": "PMID/title/DOI metadata"
+    },
+    {
+      "id": "publisher",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31337854/retrieval-followup/20261024T101924823086Z-77920c2bfc/response.body",
+      "sha256": "f9ac0c915f0dc9ec641f1cbe30139ea5f5b65efff8d8fd055803168f0242001c",
+      "kind": "text",
+      "description": "Retained publisher HTML; access wall, references, identity and two supplement links; not main text"
+    },
+    {
+      "id": "publisher-receipt",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31337854/retrieval-followup/20261024T101924823086Z-77920c2bfc/receipt.json",
+      "sha256": "15e575116b7f2f11a8c613bbe60644291eacc94633131d6b68974b486ff41bb8",
+      "kind": "access_log",
+      "description": "Retained public journal retrieval provenance"
+    },
+    {
+      "id": "repository-failure",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31337854/retrieval-followup/20261024T101558199027Z-4f84a47e66/receipt.json",
+      "sha256": "db6d64270eb91d30ce1136fe6a7a93ff102d742d9834943ce1ce3b6e8607f0a2",
+      "kind": "access_log",
+      "description": "Repository PDF connection failed, not retried"
+    },
+    {
+      "id": "supp-pdf",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31337854/retrieval-followup/20261024T101609194427Z-f5762b9b7f/response.body",
+      "sha256": "bd1bdb91d431e2aeeaf84940b3704b8a1e8c698eb30d14f928b9adbd26fb242c",
+      "kind": "pdf",
+      "description": "Publisher Supplementary Information, nine pages"
+    },
+    {
+      "id": "supp-text",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31337854/retrieval-followup/20261024T101609194427Z-f5762b9b7f/response.body.layout.txt",
+      "sha256": "df0d4835cad2d27f90bf84036c2d8e73767556d4103420be3f102a5fde4b6776",
+      "kind": "text",
+      "description": "Complete 323-line Poppler layout extraction read in two untruncated ranges, checked against all nine page pixels"
+    },
+    {
+      "id": "supp-receipt",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31337854/retrieval-followup/20261024T101609194427Z-f5762b9b7f/receipt.json",
+      "sha256": "490e87cc752de2f9b5456e1516af27f8adbf1ecac68c36d6dab80a8d42a0db06",
+      "kind": "metadata",
+      "description": "Exact public supplement URL and retained hash"
+    },
+    {
+      "id": "supp-extent",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/supplement.pdfinfo.txt",
+      "sha256": "bc54f52ef143ddccffe7f7fd068069b1fd258b9762f21c7d5e346176f9eb8a02",
+      "kind": "metadata",
+      "description": "PDFinfo extent:9pages"
+    },
+    {
+      "id": "table-docx",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31337854/retrieval-followup/20261024T105418903886Z-1aa5bd93c6/response.body",
+      "sha256": "13886a64bee09ae06953fbdf2cd56b6ea51053c9e63869823080289a7b129150",
+      "kind": "data",
+      "description": "Publisher TableS1 DOCX;8embeddedEMFimages"
+    },
+    {
+      "id": "table-receipt",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31337854/retrieval-followup/20261024T105418903886Z-1aa5bd93c6/receipt.json",
+      "sha256": "53cf0fcea8bf36f6a2921a44f638d0b97d397bbebf2578602e6db3fec09aa5b7",
+      "kind": "metadata",
+      "description": "Publisher exact TableS1 link and SHA"
+    },
+    {
+      "id": "table-render",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/table-s1-render/table-s1.pdf",
+      "sha256": "4f394fdcbd28b6ac5b2d8f710f57464e4b72ce7e0b4a69ed87940c4f4849e495",
+      "kind": "pdf",
+      "description": "LibreOffice rendering of exact TableS1 DOCX; possible image clipping under investigation"
+    },
+    {
+      "id": "supp-p1",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/supplement-1.png",
+      "sha256": "745a3a30c6d9d4ee960dca763ea920a1e5bae695c0296b18f9e9b9784bf918bc",
+      "kind": "image",
+      "description": "Publisher supplementary PDF page1, viewed fully"
+    },
+    {
+      "id": "supp-p2",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/supplement-2.png",
+      "sha256": "00879223b299f17d87ed10f9c14b65fb60ecfb136cecdf209b63634cfb64abdd",
+      "kind": "image",
+      "description": "Publisher supplementary PDF page2, viewed fully"
+    },
+    {
+      "id": "supp-p3",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/supplement-3.png",
+      "sha256": "c376cbdb7049da3512d54516e03bc6e45a49a050847cc206e1fb9108fedd22a2",
+      "kind": "image",
+      "description": "Publisher supplementary PDF page3, viewed fully"
+    },
+    {
+      "id": "supp-p4",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/supplement-4.png",
+      "sha256": "c88faded2d115ad01b926786ce1ecb65e93547b7c5d36df3cb1d2d1691ae1cce",
+      "kind": "image",
+      "description": "Publisher supplementary PDF page4, viewed fully"
+    },
+    {
+      "id": "supp-p5",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/supplement-5.png",
+      "sha256": "5e9f430456bd96d492e3ce9fbd3344ab5025c13ce43df4a75b8e1201c7ee831b",
+      "kind": "image",
+      "description": "Publisher supplementary PDF page5, viewed fully"
+    },
+    {
+      "id": "supp-p6",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/supplement-6.png",
+      "sha256": "f9bb8c7b00c04c8f4e28b3b4437fe7de822c9187c996dc7f6e66f20276ea740e",
+      "kind": "image",
+      "description": "Publisher supplementary PDF page6, viewed fully"
+    },
+    {
+      "id": "supp-p7",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/supplement-7.png",
+      "sha256": "364485bf2c9067969a43b73b6a84dfd70cf2ee0ed42c254f241a129452a3a050",
+      "kind": "image",
+      "description": "Publisher supplementary PDF page7, viewed fully"
+    },
+    {
+      "id": "supp-p8",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/supplement-8.png",
+      "sha256": "fd87e0e298fd19b3a13adde85c3b0dbe1b4496b1c035e5e8848c2503f57405da",
+      "kind": "image",
+      "description": "Publisher supplementary PDF page8, viewed fully"
+    },
+    {
+      "id": "supp-p9",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/supplement-9.png",
+      "sha256": "4e1ccf68b50cf43239dc2a3e05c5d48ac2d0e3ffaf9e83d9d30a8f127cff2798",
+      "kind": "image",
+      "description": "Publisher supplementary PDF page9, viewed fully"
+    },
+    {
+      "id": "table-p1",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/table-s1-render/page-1.png",
+      "sha256": "6d1f8791bec98950c17e9188e7b57057228702a56c2784a3f4bae6a25be55ab9",
+      "kind": "image",
+      "description": "TableS1 rendered page1; image crop limits under investigation"
+    },
+    {
+      "id": "table-p2",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/table-s1-render/page-2.png",
+      "sha256": "4b65344b456f41f179c51b4c9925909bdb38344c4372a8974e3d6ca8497d2cbf",
+      "kind": "image",
+      "description": "TableS1 rendered page2; image crop limits under investigation"
+    },
+    {
+      "id": "table-p3",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/table-s1-render/page-3.png",
+      "sha256": "634263037b2c53467bdf25ef663db0e45a324f453f5c7bfb9e01a8df48b70f24",
+      "kind": "image",
+      "description": "TableS1 rendered page3; image crop limits under investigation"
+    },
+    {
+      "id": "table-p4",
+      "pmid": "31337854",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader2-successor/31337854/table-s1-render/page-4.png",
+      "sha256": "dbd7d50621a4a273d9b08410a5eaa0773b0167572f35d3f5d05b546a56f005f8",
+      "kind": "image",
+      "description": "TableS1 rendered page4; image crop limits under investigation"
+    },
+    {
+      "id": "reading-supp-info-full",
+      "pmid": "31337854",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/31337854-successor/receipts/supp-info-full-reading.json",
+      "sha256": "9f9049db2ea0253379210038db908c92679c519d40b847821115b7804003d92c",
+      "kind": "metadata",
+      "description": "Immutable explicit checkpoint; only declared coverage counts"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Comprehensive genetic analysis of 57 families with clinically suspected Cornelia de Lange syndrome",
+    "evidence": [
+      {
+        "source_id": "epmc",
+        "locator": "PMID31337854 title and DOI10.1038/s10038-019-0643-z"
+      },
+      {
+        "source_id": "publisher",
+        "locator": "citation_title/DOI, article heading and Supplementary information section"
+      },
+      {
+        "source_id": "supp-receipt",
+        "locator": "Exact DOI-bound supplement download"
+      },
+      {
+        "source_id": "table-receipt",
+        "locator": "Exact DOI-bound TableS1 download"
+      }
+    ],
+    "note": "Published 2019 article identity and linked supplements match metadata and publisher page. The main article body is not held; identity verification is not fulltext credit."
+  },
+  "component_inventory": {
+    "status": "incomplete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": null,
+      "table": null,
+      "supplement": 2
+    },
+    "evidence": [
+      {
+        "source_id": "publisher",
+        "locator": "Supplementary information two explicit links"
+      }
+    ],
+    "note": "Publisher Supplementary information lists TableS1 DOCX and Supplementary information PDF, both held. Main body gated, so main figure/table counts remain unknown."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "unavailable",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Journal HTML contains access wall, not main body; repository PDF transport failure. No main reading credit."
+    },
+    {
+      "id": "supplement-info",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 9,
+      "extent_source_id": "supp-extent",
+      "extent_evidence": [
+        {
+          "source_id": "supp-extent",
+          "locator": "Nine-page publisher PDF: FigsS1-S3 and TablesS2-S5; TableS1 separate."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 9,
+          "mode": "text",
+          "source_id": "supp-text",
+          "locator": "Entire extraction lines1-323 plus page pixels: all figure legends/table values and footnotes. S1p1,S2pp2-4,S3p5,S2tablepp6-7,S3tablep7,S4p8,S5p9."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp-p1",
+          "locator": "Entire page1, all panels, tables and text inspected"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "supp-p2",
+          "locator": "Entire page2, all panels, tables and text inspected"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "supp-p3",
+          "locator": "Entire page3, all panels, tables and text inspected"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "supp-p4",
+          "locator": "Entire page4, all panels, tables and text inspected"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "supp-p5",
+          "locator": "Entire page5, all panels, tables and text inspected"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "supp-p6",
+          "locator": "Entire page6, all panels, tables and text inspected"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "supp-p7",
+          "locator": "Entire page7, all panels, tables and text inspected"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "supp-p8",
+          "locator": "Entire page8, all panels, tables and text inspected"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "supp-p9",
+          "locator": "Entire page9, all panels, tables and text inspected"
+        }
+      ],
+      "note": "Nine-page publisher PDF: FigsS1-S3 and TablesS2-S5; TableS1 separate."
+    },
+    {
+      "id": "supplement-table-s1",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 8,
+      "extent_source_id": "table-render",
+      "extent_evidence": [
+        {
+          "source_id": "table-render",
+          "locator": "DOCX render8pages. Eight EMF images contain table content; rendering completeness under investigation."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table-p1",
+          "locator": "Entire rendered page1 inspected; not yet full source-content credit because possible image clipping."
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "table-p2",
+          "locator": "Entire rendered page2 inspected; not yet full source-content credit because possible image clipping."
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "table-p3",
+          "locator": "Entire rendered page3 inspected; not yet full source-content credit because possible image clipping."
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "table-p4",
+          "locator": "Entire rendered page4 inspected; not yet full source-content credit because possible image clipping."
+        }
+      ],
+      "note": "DOCX render8pages. Eight EMF images contain table content; rendering completeness under investigation."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/NIPBL/PMID_31337854_Patient_49.json",
+      "packet_sha256": "fa388cadb685397cd91c50cef90dfb2e433848806e12ba25cc0fc97cf7bcc854",
+      "case_id": "TC_c408baf830fc4893",
+      "role": "selected",
+      "packet_subject_id": "Patient 49",
+      "review_status": "pending",
+      "category": "unresolved",
+      "limitations": [
+        "No new case adjudication performed."
+      ],
+      "patient_identity": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "genotype": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "segregation": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "phase": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "causal_confidence": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c6448CtoG_NIPBL_NM_133433v4",
+            "geneContext": {
+              "valueId": "HGNC:28862",
+              "symbol": "NIPBL"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_133433.4:c.6448C>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000005.10:g.37045547C>G"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_597677.2:p.(Leu2150Val)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr5",
+              "pos": 37045547,
+              "ref": "C",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "b0f8db57a1a3e88dd2854ef203dc6359e78736f36dc6847a2445464169e75978",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            }
+          },
+          "snapshot_sha256": "c444dd47b030fe9f7b2523d299496431fe54f2ce557f990c454810b00764e589",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f37a617c9079a8c3ca1b69beb3c8d31339d617d796fa0ab93a407c75efb77d3e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007018",
+              "label": "Attention deficit hyperactivity disorder"
+            }
+          },
+          "snapshot_sha256": "c552a77fbe6b6c556de28d977a1e60f571d5859985dd4611f6932fa80c9f96ef",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100716",
+              "label": "Self-injurious behavior"
+            }
+          },
+          "snapshot_sha256": "d1a314a0adec70d2e0652058220ce7a2a99d3b8da0d5d0bc4dc68d266ae8e82a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000739",
+              "label": "Anxiety"
+            }
+          },
+          "snapshot_sha256": "e5ab29299c90c138a790ce421b29ca468fe5dbb07d7f8ddd2ce3985af4dd193d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000718",
+              "label": "Aggressive behavior"
+            }
+          },
+          "snapshot_sha256": "0f80bfd004f8d2725d032c0a9bd14068d39c6001eef40c3fcd905cca36063fd4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009623",
+              "label": "Proximal placement of thumb"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e932ff66c449c924faedd064b60d700010ee09fb95f5f10beb782db739d3c2ec",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001007",
+              "label": "Hirsutism"
+            }
+          },
+          "snapshot_sha256": "35973aadbc87d472bba314ce9e34f9a46288514e2ccae872a85bff6fa4a5a720",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000219",
+              "label": "Thin upper lip vermilion"
+            }
+          },
+          "snapshot_sha256": "99c27d160c5710ce25431f2c1160d2daf7fa32c356981881d551b4b815fce314",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007665",
+              "label": "Curly eyelashes"
+            }
+          },
+          "snapshot_sha256": "ded8e7949d931dbfa988ba054fde19dd423417c31a8f4ca77580aeaeb85b54c9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000527",
+              "label": "Long eyelashes"
+            }
+          },
+          "snapshot_sha256": "bf13ab09053d8df3852d49064cafa56c5f358416850a7c5d77a93bc5b0bb28ff",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e033332deff34bfb43d8333aa3e2b1ba4e4dbf229f9098646b172fe5a88ca401",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009829",
+              "label": "Phocomelia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c5e5f41ed4c88acd86d9430329d9e5768d85ed6e57cb765325f468d5abeaf7e0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410030",
+              "label": "Cleft lip"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5a93e1b09ba78ec9501e27d2dad76018fd7a9a23de075a7048f84c8a6ffbee80",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000175",
+              "label": "Cleft palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "957c01067f0f046de0fbc8fce87578a45f7b5f8583352f18e0a3530172ac9c94",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3a127a8dbb9cbee1edd518029e0ba016d63f5c393adf2c3598edc1e619b74b4f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005280",
+              "label": "Depressed nasal bridge"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "21fe9b14fb5b68f364eb1048773ec5d9f37599cabd6f77076884d98d07dd8fb0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002714",
+              "label": "Downturned corners of mouth"
+            }
+          },
+          "snapshot_sha256": "8fbdd40f275af16bcb46891e09bc44963a4a02d82471082ab32026da211f9882",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000343",
+              "label": "Long philtrum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6ed0c52c1a5702542a97038db9ee6692d282239a275c74b59b99e5435150966b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000463",
+              "label": "Anteverted nares"
+            }
+          },
+          "snapshot_sha256": "a92a33d05f8bed45f2348ab4b318bee7f5a5b1e78b435bd93cabb2d28a462cb7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000687",
+              "label": "Widely spaced teeth"
+            }
+          },
+          "snapshot_sha256": "2bf9c117daa9cd15d668ef1522ba3218e0bd4098bfee9c5bffedc1edb0991272",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000365",
+              "label": "Hearing impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f5217f5bb3ce68d4e4ca41ccfd1243869f4272d9be7d9c3101fba1c01a0df407",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000954",
+              "label": "Single transverse palmar crease"
+            }
+          },
+          "snapshot_sha256": "88f11f4eade3186abf074ccc1612e915a2cd4e74979414458dcc2fd9fa062d26",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000470",
+              "label": "Short neck"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b9b79d3eeb05d601d415095d5c983ed4dee5a56d264b281ba85834f33414f241",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000776",
+              "label": "Congenital diaphragmatic hernia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fcee5146bd1d8145936d600970b4f254feacafef17bf5c152cd55409b5710735",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000664",
+              "label": "Synophrys"
+            }
+          },
+          "snapshot_sha256": "70013c53d6885e8062be9362e97b9479ebd41fd0424ad161ef1621b013f52330",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000545",
+              "label": "Myopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cdbdfc9d0104b0a4698b5dc9ddaf3e503f6b3493a8670b367009e0104567bfc3",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            }
+          },
+          "snapshot_sha256": "4288b41b99551912ca3fa5ad7e93bfd78790d71201dcef8f9d21b2ff60c00b44",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            }
+          },
+          "snapshot_sha256": "e7d47e7cef106c2491d6243b1322a1b3f13cc7281e1e45b213cb4436c9f23d7c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002020",
+              "label": "Gastroesophageal reflux"
+            }
+          },
+          "snapshot_sha256": "6112ad37d5c92f39220139319f831b5466b4f54d53ce0afe57116d9e76f52a70",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001377",
+              "label": "Limited elbow extension"
+            }
+          },
+          "snapshot_sha256": "ee6d9479c55308993ab79445b2f122090418b53f635a6eb1515726a011e0d89b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004209",
+              "label": "Clinodactyly of the 5th finger"
+            }
+          },
+          "snapshot_sha256": "194c928812d75a2e51f03b1ff6c2f1a495bd26a1ed4eb33c66d73266a03b15b5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002553",
+              "label": "Highly arched eyebrow"
+            }
+          },
+          "snapshot_sha256": "a7e494d9f16421b88d87fb27a8a1aeb38fe7142e74ec9e3f5f5216740ab4e81d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200055",
+              "label": "Small hand"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9ab19abd6619789c7d6c2af3d12a2763e70695c41a665275436415f7f53444c7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/39",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012165",
+              "label": "Oligodactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "588ed18d38c7c1a9b8b532a0e53c2c0bf533a1e17382e992e34602d8ef35477b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/40",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001642",
+              "label": "Pulmonic stenosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6d3a50313407283dc16cd1e34811874cedd7d6a5604cfce2845f2569242ca6a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/41",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001629",
+              "label": "Ventricular septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d19f83639125fcf466505f3b2812b7ce76ac91f1b42acb57e91cae123b3910e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/42",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001631",
+              "label": "Atrial septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb3b341d3b228f4383f619ab3c58f06ed8fa35761f5484b5949d160df704ab32",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/43",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001636",
+              "label": "Tetralogy of Fallot"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "52a30fb48d051cf51409e6964290037f2958f99a75fba20f7a46a7012aabb20d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/44",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004383",
+              "label": "Hypoplastic left heart"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8199dd8acf7907d9867c5c1e4c0d551c16cc34673b5f9d65b2af64baa6090376",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/45",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001647",
+              "label": "Bicuspid aortic valve"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1e7edc69dd8a3e6e8feebfee89691ab52c1bbfb58a2fac6950bb728053efb7f1",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/NIPBL/PMID_31337854_Patient_55.json",
+      "packet_sha256": "86653c10578b6b6bb50f2af8bbff1b41b3b1857eec382abb1cf6f90e41aebe55",
+      "case_id": "TC_9d5fdb44197f6580",
+      "role": "selected",
+      "packet_subject_id": "Patient 55",
+      "review_status": "pending",
+      "category": "unresolved",
+      "limitations": [
+        "No new case adjudication performed."
+      ],
+      "patient_identity": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "genotype": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "segregation": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "phase": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "causal_confidence": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "Not yet compared with the primary source.",
+        "evidence": [],
+        "limitations": [
+          "Source review pending."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c7079GtoT_NIPBL_NM_133433v4",
+            "geneContext": {
+              "valueId": "HGNC:28862",
+              "symbol": "NIPBL"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_133433.4:c.7079G>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000005.10:g.37052382G>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_597677.2:p.(Gly2360Val)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr5",
+              "pos": 37052382,
+              "ref": "G",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "40c430424d4e2a5467901ecf9a9651c63e70aaeb93d95faa5a1f620789795cb9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            }
+          },
+          "snapshot_sha256": "c444dd47b030fe9f7b2523d299496431fe54f2ce557f990c454810b00764e589",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f37a617c9079a8c3ca1b69beb3c8d31339d617d796fa0ab93a407c75efb77d3e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007018",
+              "label": "Attention deficit hyperactivity disorder"
+            }
+          },
+          "snapshot_sha256": "c552a77fbe6b6c556de28d977a1e60f571d5859985dd4611f6932fa80c9f96ef",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100716",
+              "label": "Self-injurious behavior"
+            }
+          },
+          "snapshot_sha256": "d1a314a0adec70d2e0652058220ce7a2a99d3b8da0d5d0bc4dc68d266ae8e82a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000739",
+              "label": "Anxiety"
+            }
+          },
+          "snapshot_sha256": "e5ab29299c90c138a790ce421b29ca468fe5dbb07d7f8ddd2ce3985af4dd193d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000718",
+              "label": "Aggressive behavior"
+            }
+          },
+          "snapshot_sha256": "0f80bfd004f8d2725d032c0a9bd14068d39c6001eef40c3fcd905cca36063fd4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009623",
+              "label": "Proximal placement of thumb"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e932ff66c449c924faedd064b60d700010ee09fb95f5f10beb782db739d3c2ec",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001007",
+              "label": "Hirsutism"
+            }
+          },
+          "snapshot_sha256": "35973aadbc87d472bba314ce9e34f9a46288514e2ccae872a85bff6fa4a5a720",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000219",
+              "label": "Thin upper lip vermilion"
+            }
+          },
+          "snapshot_sha256": "99c27d160c5710ce25431f2c1160d2daf7fa32c356981881d551b4b815fce314",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007665",
+              "label": "Curly eyelashes"
+            }
+          },
+          "snapshot_sha256": "ded8e7949d931dbfa988ba054fde19dd423417c31a8f4ca77580aeaeb85b54c9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000527",
+              "label": "Long eyelashes"
+            }
+          },
+          "snapshot_sha256": "bf13ab09053d8df3852d49064cafa56c5f358416850a7c5d77a93bc5b0bb28ff",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e033332deff34bfb43d8333aa3e2b1ba4e4dbf229f9098646b172fe5a88ca401",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009829",
+              "label": "Phocomelia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c5e5f41ed4c88acd86d9430329d9e5768d85ed6e57cb765325f468d5abeaf7e0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0410030",
+              "label": "Cleft lip"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5a93e1b09ba78ec9501e27d2dad76018fd7a9a23de075a7048f84c8a6ffbee80",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000175",
+              "label": "Cleft palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "957c01067f0f046de0fbc8fce87578a45f7b5f8583352f18e0a3530172ac9c94",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3a127a8dbb9cbee1edd518029e0ba016d63f5c393adf2c3598edc1e619b74b4f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005280",
+              "label": "Depressed nasal bridge"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "21fe9b14fb5b68f364eb1048773ec5d9f37599cabd6f77076884d98d07dd8fb0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002714",
+              "label": "Downturned corners of mouth"
+            }
+          },
+          "snapshot_sha256": "8fbdd40f275af16bcb46891e09bc44963a4a02d82471082ab32026da211f9882",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000343",
+              "label": "Long philtrum"
+            }
+          },
+          "snapshot_sha256": "6d6b23add387908ac74d4348994afa0c296605f5fac54bb0e256fc6e2d82d746",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000463",
+              "label": "Anteverted nares"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33e7c71d758332f4fd81389057f23ed16eddd7a20af0598fb1bd898eb897c6c5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            }
+          },
+          "snapshot_sha256": "1b50d63adae74dce026ec2e71a5ac3acb68f40de41c49c079a589c966bdfa5f6",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000687",
+              "label": "Widely spaced teeth"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b9805fb039bf60b0b469dd990eb9ae36ca8f101b8e8cf519bbeab3649d4765c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000365",
+              "label": "Hearing impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f5217f5bb3ce68d4e4ca41ccfd1243869f4272d9be7d9c3101fba1c01a0df407",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000954",
+              "label": "Single transverse palmar crease"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "83a8526ca5d5a3638249655ec88a55e2ff6be317b6f2e93e7bd4078be63539a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000470",
+              "label": "Short neck"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b9b79d3eeb05d601d415095d5c983ed4dee5a56d264b281ba85834f33414f241",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000776",
+              "label": "Congenital diaphragmatic hernia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fcee5146bd1d8145936d600970b4f254feacafef17bf5c152cd55409b5710735",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000664",
+              "label": "Synophrys"
+            }
+          },
+          "snapshot_sha256": "70013c53d6885e8062be9362e97b9479ebd41fd0424ad161ef1621b013f52330",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000545",
+              "label": "Myopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cdbdfc9d0104b0a4698b5dc9ddaf3e503f6b3493a8670b367009e0104567bfc3",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            }
+          },
+          "snapshot_sha256": "dee5d947ac21a314d7d79787c31b9353f0bbc535903aceaff2561ad86ae68d6a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            }
+          },
+          "snapshot_sha256": "4288b41b99551912ca3fa5ad7e93bfd78790d71201dcef8f9d21b2ff60c00b44",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            }
+          },
+          "snapshot_sha256": "e7d47e7cef106c2491d6243b1322a1b3f13cc7281e1e45b213cb4436c9f23d7c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002020",
+              "label": "Gastroesophageal reflux"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4079b47a877e8de26b6388a10c28d9867f51e29ffadcb19d68cb70544944e0f9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001377",
+              "label": "Limited elbow extension"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f76f963457168db62dfda9202a0b868884241e645c88bb79f7207228d6d917f1",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004209",
+              "label": "Clinodactyly of the 5th finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5f1bd4668fec817d68730fc2af210eb8407c5bc21a9de9806444d6757420600b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002553",
+              "label": "Highly arched eyebrow"
+            }
+          },
+          "snapshot_sha256": "a7e494d9f16421b88d87fb27a8a1aeb38fe7142e74ec9e3f5f5216740ab4e81d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200055",
+              "label": "Small hand"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9ab19abd6619789c7d6c2af3d12a2763e70695c41a665275436415f7f53444c7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/39",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012165",
+              "label": "Oligodactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "588ed18d38c7c1a9b8b532a0e53c2c0bf533a1e17382e992e34602d8ef35477b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/40",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001642",
+              "label": "Pulmonic stenosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6d3a50313407283dc16cd1e34811874cedd7d6a5604cfce2845f2569242ca6a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/41",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001629",
+              "label": "Ventricular septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d19f83639125fcf466505f3b2812b7ce76ac91f1b42acb57e91cae123b3910e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/42",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001631",
+              "label": "Atrial septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb3b341d3b228f4383f619ab3c58f06ed8fa35761f5484b5949d160df704ab32",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/43",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001636",
+              "label": "Tetralogy of Fallot"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "52a30fb48d051cf51409e6964290037f2958f99a75fba20f7a46a7012aabb20d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/44",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004383",
+              "label": "Hypoplastic left heart"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8199dd8acf7907d9867c5c1e4c0d551c16cc34673b5f9d65b2af64baa6090376",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/45",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001647",
+              "label": "Bicuspid aortic valve"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1e7edc69dd8a3e6e8feebfee89691ab52c1bbfb58a2fac6950bb728053efb7f1",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Not yet compared with the primary source.",
+            "evidence": [],
+            "limitations": [
+              "Source review pending."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "main_text",
+      "status": "open",
+      "detail": "Full main text inaccessible: publisher access wall and retained repository connection failure. No retries.",
+      "evidence": [
+        {
+          "source_id": "publisher",
+          "locator": "Log in or create a free account to read this content"
+        },
+        {
+          "source_id": "repository-failure",
+          "locator": "curl_exit7,HTTP0"
+        }
+      ]
+    },
+    {
+      "component_id": null,
+      "status": "open",
+      "detail": "Main figure/table inventory unknown without full article.",
+      "evidence": [
+        {
+          "source_id": "publisher",
+          "locator": "Access wall before references"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Main text unavailable; both packet reviews remain pending. Nine-page Supplementary information read fully, source claims not clinical truth. TableS1 DOCX rendered pages1-4 inspected, remaining pages5-8 and rendering completeness pending."
+  ]
+}
