@@ -1,0 +1,1554 @@
+{
+  "schema_version": 1,
+  "pmid": "37713809",
+  "title": "Deficiency in AK9 causes asthenozoospermia and male infertility by destabilising sperm nucleotide homeostasis.",
+  "reviewer": {
+    "id": "reviewer-7",
+    "reviewed_at_utc": "2026-10-24T18:21:34.878873+00:00",
+    "method": "Incremental primary-source correspondence audit; template and inventory preparation are not reading credit. Coverage and packet assessments are saved only as actually reviewed."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Before source review on 2026-10-24, mandatory HANDOFF.md exposed aggregate public-validation outcomes (including top1/5/10 totals and corrected case/gene-macro deltas), source-audit aggregate coverage and the historical GIAB HG002 FGFR2 rank 1 at 0.9654. Conservative per_case declaration; not blinded. No benchmark outcome files or case inference ranks/scores were consulted for this source review."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "32a61cf57f9379c1234b968ab2ca047d3dbbdab553652dab55b7cfa0a6e26054",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "xml",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/main.xml",
+      "sha256": "e9ccc598def8d0e6883189a124130b9fc0399420e5257e1f9df38bd52c046a15",
+      "kind": "xml",
+      "description": "Held Europe PMC full-article JATS; retrieval is not reading."
+    },
+    {
+      "id": "main-text",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/main.complete.txt",
+      "sha256": "e6f8a3a848c674506a11bc60a9db8333798bbe1a063ececfbc3b3f8315a2ace7",
+      "kind": "text",
+      "description": "Held complete text extraction with source element locators; extraction is not reading."
+    },
+    {
+      "id": "F1",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/gr1.jpg",
+      "sha256": "978c12270dbbc883b8618310c8d0089bd5a86b6a38eb7c2a1e79ae735f2a5ed6",
+      "kind": "image",
+      "description": "Original F1"
+    },
+    {
+      "id": "F2",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/gr2.jpg",
+      "sha256": "c7238e5269c30361a752e91099160f11036f889633cb7f2b133475dd39a37fe7",
+      "kind": "image",
+      "description": "Original F2"
+    },
+    {
+      "id": "F3",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/gr3.jpg",
+      "sha256": "e7fcebd9c5da332e46059ddc644decc8881cf807460452c1152ee002d93732a9",
+      "kind": "image",
+      "description": "Original F3"
+    },
+    {
+      "id": "F4",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/gr4.jpg",
+      "sha256": "098f2ba7b0b6b35567ba53f4c5ff15de620867d3a947eced1d2922317d2e893f",
+      "kind": "image",
+      "description": "Original F4"
+    },
+    {
+      "id": "F5",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/gr5.jpg",
+      "sha256": "acb9a8924f9958baa4041261fc74dc76efec6923065943f2694e839fe0c03eff",
+      "kind": "image",
+      "description": "Original F5"
+    },
+    {
+      "id": "F6",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/gr6.jpg",
+      "sha256": "06df4fc9f8f856430a9f1f44ea2b169ac9a7eaf048f6a3a09f1e5420c716cef3",
+      "kind": "image",
+      "description": "Original F6"
+    },
+    {
+      "id": "F7",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/gr7.jpg",
+      "sha256": "d2c9856d245042b515a5aa8125af3bd338bd418c312b2f782f0f01c2c7554284",
+      "kind": "image",
+      "description": "Original F7"
+    },
+    {
+      "id": "SF1",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/figs1.jpg",
+      "sha256": "4e6d5910e2f41a6b6a07734c749cd7f9c3de7f930a24b0c84327af92421227cb",
+      "kind": "image",
+      "description": "Original SF1"
+    },
+    {
+      "id": "SF2",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/figs2.jpg",
+      "sha256": "04fb34a929f01f24f893770fec7977950277603a10abc5c9fe76d4cda884d67d",
+      "kind": "image",
+      "description": "Original SF2"
+    },
+    {
+      "id": "SF3",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/figs3.jpg",
+      "sha256": "621fd70d527a25703a24decb9cd169524c32d44a758a65a2ca1d366c28fc2037",
+      "kind": "image",
+      "description": "Original SF3"
+    },
+    {
+      "id": "SF4",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/figs4.jpg",
+      "sha256": "2604d4b17c6e0165b8a02f68138bcdf638eb5ee46b52e2a0c5a4cfea325dc17e",
+      "kind": "image",
+      "description": "Original SF4"
+    },
+    {
+      "id": "SF5",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/figs5.jpg",
+      "sha256": "a04c0b963c9ef3443f5431c1a0c0a2a5913a6aad96335a603f151f542e29380b",
+      "kind": "image",
+      "description": "Original SF5"
+    },
+    {
+      "id": "SF6",
+      "pmid": "37713809",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37713809/cloud/PMC10507140.1/figs6.jpg",
+      "sha256": "31b262e40d144dcca8539a9fc46ee1c3a36e858fe7b10688c24b4caa3b02e378",
+      "kind": "image",
+      "description": "Original SF6"
+    },
+    {
+      "id": "T1",
+      "pmid": "37713809",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-7/assets/37713809/main-p7.png",
+      "sha256": "f06b4b73b980eaf3d9a7c143307685741facd9f6191b3e4815882c70ece6c703",
+      "kind": "image",
+      "description": "All Table1 pixels including headers and footnotes"
+    },
+    {
+      "id": "T2",
+      "pmid": "37713809",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-7/assets/37713809/main-p10.png",
+      "sha256": "745809920fdd0cf3eb77c9c109dcb2d5c941c6e17a48753d41db2bf2d33125f0",
+      "kind": "image",
+      "description": "All Table2 pixels including headers and footnotes"
+    },
+    {
+      "id": "T3",
+      "pmid": "37713809",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-7/assets/37713809/main-p16.png",
+      "sha256": "ef28aaeaeffd0849ee2a6dfbb33553d45a3a16653b4cfad8ff78acdf214d589b",
+      "kind": "image",
+      "description": "All Table3 pixels including headers and footnotes"
+    },
+    {
+      "id": "SM1-pdf",
+      "pmid": "37713809",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-7/assets/37713809/mmc1.pdf",
+      "sha256": "e723ab94950a89a276f5d099d54a7c1201a8c3b702d4fda15b3ae0d4ad9c1431",
+      "kind": "pdf",
+      "description": "Recovered208page supplemental file; MD5 expected1c86cf648bae51d3c1c5b6de150c17cd; includes antibody datasheets and unrelated cited articles"
+    },
+    {
+      "id": "SM1-text",
+      "pmid": "37713809",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-7/assets/37713809/mmc1.txt",
+      "sha256": "682b80f44ee4dbbcd629630078ebf085d58642e76500030babb0ed93c92501e7",
+      "kind": "text",
+      "description": "208page extraction, not reading credit"
+    },
+    {
+      "id": "corrigendum-html",
+      "pmid": "37713809",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-7/assets/37713809/corrigendum.html",
+      "sha256": "19411372d7f14e809df09460e2b71f64edf4bdd21afd1cf57f1ae9d1cee086a7",
+      "kind": "text",
+      "description": "Full public PMC corrigendum HTML, retrieved2026-10-24"
+    },
+    {
+      "id": "corrigendum-text",
+      "pmid": "37713809",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-7/assets/37713809/corrigendum-text.txt",
+      "sha256": "f6b99fc0dd4e93d4dd6fbdae36a699437bc06116fea5415b0cc98b1d9ad304ab",
+      "kind": "text",
+      "description": "Complete main-element text from corrigendum, read in full"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Deficiency in AK9 causes asthenozoospermia and male infertility by destabilising sperm nucleotide homeostasis.",
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "Title and identifiers, PMC10507140.1/DOI10.1016/j.ebiom.2023.104798; correction-forward PMC10793085"
+      }
+    ],
+    "note": "Published eBioMedicine2023 source; linked2024 corrigendum identified and text read via public PMC search result, corrected figure not yet obtained."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 13,
+      "table": 3,
+      "supplement": 3
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "7main+6suppfigs, 3main tables, mmc1 plus unresolved cited TablesS1–S5 and corrigendum"
+      }
+    ],
+    "note": "Includes explicit unresolved correction and missing source-table components, not merely retrieved assets."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 701,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-text",
+          "locator": "Extent: 701 lines"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 701,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "Full extraction read in consecutive ranges1–98,99–210,211–322,323–413,414–575,576–end"
+        }
+      ],
+      "note": "Not read."
+    },
+    {
+      "id": "F1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "F1",
+      "extent_evidence": [
+        {
+          "source_id": "F1",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "F1",
+          "locator": "All labelled panels of F1"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "F2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "F2",
+      "extent_evidence": [
+        {
+          "source_id": "F2",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "F2",
+          "locator": "All labelled panels of F2"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "F3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "F3",
+      "extent_evidence": [
+        {
+          "source_id": "F3",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "F3",
+          "locator": "All labelled panels of F3"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "F4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "F4",
+      "extent_evidence": [
+        {
+          "source_id": "F4",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "F4",
+          "locator": "All labelled panels of F4"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "F5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "F5",
+      "extent_evidence": [
+        {
+          "source_id": "F5",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "F5",
+          "locator": "All labelled panels of F5"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "F6",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "F6",
+      "extent_evidence": [
+        {
+          "source_id": "F6",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "F6",
+          "locator": "All labelled panels of F6"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "F7",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "F7",
+      "extent_evidence": [
+        {
+          "source_id": "F7",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "F7",
+          "locator": "All labelled panels of F7"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "SF1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "SF1",
+      "extent_evidence": [
+        {
+          "source_id": "SF1",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "SF1",
+          "locator": "All labelled panels of SF1"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "SF2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "SF2",
+      "extent_evidence": [
+        {
+          "source_id": "SF2",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "SF2",
+          "locator": "All labelled panels of SF2"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "SF3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "SF3",
+      "extent_evidence": [
+        {
+          "source_id": "SF3",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "SF3",
+          "locator": "All labelled panels of SF3"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "SF4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "SF4",
+      "extent_evidence": [
+        {
+          "source_id": "SF4",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "SF4",
+          "locator": "All labelled panels of SF4"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "SF5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "SF5",
+      "extent_evidence": [
+        {
+          "source_id": "SF5",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "SF5",
+          "locator": "All labelled panels of SF5"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "SF6",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "SF6",
+      "extent_evidence": [
+        {
+          "source_id": "SF6",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "SF6",
+          "locator": "All labelled panels of SF6"
+        }
+      ],
+      "note": "Figure read; SF2 has a published correction, so original imaging labels cannot be treated as definitive."
+    },
+    {
+      "id": "T1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "pixels",
+        "text"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "T1",
+      "extent_evidence": [
+        {
+          "source_id": "T1",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "T1",
+          "locator": "Table1 page7 all five case columns/three outcomes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "Table1 all cells"
+        }
+      ],
+      "note": "Not read."
+    },
+    {
+      "id": "T2",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "pixels",
+        "text"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "T2",
+      "extent_evidence": [
+        {
+          "source_id": "T2",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "T2",
+          "locator": "Table2 page10 all five case columns/three outcomes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "Table2 all cells"
+        }
+      ],
+      "note": "Not read."
+    },
+    {
+      "id": "T3",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "pixels",
+        "text"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "T3",
+      "extent_evidence": [
+        {
+          "source_id": "T3",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "T3",
+          "locator": "Table3 page16 all five case columns/three outcomes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "Table3 all cells"
+        }
+      ],
+      "note": "Not read."
+    },
+    {
+      "id": "SM1",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 208,
+      "extent_source_id": "SM1-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "SM1-pdf",
+          "locator": "Extent: 208 pages"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 16,
+          "mode": "text",
+          "source_id": "SM1-text",
+          "locator": "Pages1–16 antibody datasheets, text only"
+        }
+      ],
+      "note": "Only pages1–16 text actually read. Remaining192pages not read; programmatic page-heading scan is not reading. No extra unrelated-paper review initiated."
+    },
+    {
+      "id": "cited-tables",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Main references TablesS1–S5; not identified as a suitable source component in held package."
+    },
+    {
+      "id": "corrigendum",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "corrigendum-html",
+      "extent_evidence": [
+        {
+          "source_id": "corrigendum-html",
+          "locator": "Extent: 1 items"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "corrigendum-text",
+          "locator": "Entire2024corrigendum: corrects SupplementFigureS2b,c for control/R0022/R0038/R0052; conclusions unchanged per authors"
+        }
+      ],
+      "note": "2024corrigendum text read via PMC search; corrected FigureS2 not yet durably held/inspected."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/AK9/PMID_37713809_F013_II_1.json",
+      "packet_sha256": "21722abb5cd651c186171d41a5f75f771b8a70cd2d587b626d9a81de570431ef",
+      "case_id": "TC_91110d555f92ea2d",
+      "role": "selected",
+      "packet_subject_id": "F013 II-1",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Main-source adjudication completed; full-source review remains incomplete due supplementary coverage/access gaps."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "F013 II-1 is the affected male in the specified consanguineous pedigree; age at ICSI 31years. All five paper cases compared to distinguish the two packet subjects.",
+        "evidence": [
+          {
+            "source_id": "T3",
+            "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Source reports homozygous c.4872_4875dupGTTA/p.Cys1626Valfs*16 AK9 frameshift; Figure1 genotype matches packet.",
+        "evidence": [
+          {
+            "source_id": "T1",
+            "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Both parents are heterozygous carriers in the consanguineous pedigree; tested-family co-segregation reported.",
+        "evidence": [
+          {
+            "source_id": "F1",
+            "locator": "Figure1a"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygosity with both parents heterozygous supports one inherited mutant copy from each parent; not a two-variant phase inference.",
+        "evidence": [
+          {
+            "source_id": "F1",
+            "locator": "Figure1a"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors propose recessive AK9-associated asthenozoospermia using five families, sperm analysis and KO mice; detailed metabolic/proteomic human assays focus on F013.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results and Discussion"
+          }
+        ],
+        "limitations": [
+          "Source hypothesis/evidence only; no independent clinical causality or treatment recommendation. Missing cited supplementary tables and incomplete208page bundle limit this review."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All10 frozen phenotypes reviewed for each patient. Packet omits quantitative motility, biochemical context and source fertility intervention outcomes; no therapeutic advice inferred.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+          }
+        ],
+        "limitations": [
+          "MainTable2 vitality reference is printed≤40% despite recruitment viability≥58%; F013 total motility lower bound3.6% is below its progressive+nonprogressive minima0.6+4.5. Internal inconsistencies retained."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c4872_4875dup_AK9_NM_001145128v3",
+            "geneContext": {
+              "valueId": "HGNC:33814",
+              "symbol": "AK9"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001145128.3:c.4872_4875dup"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.109499216_109499219dup"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001138600.2:p.(Cys1626ValfsTer16)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 109499214,
+              "ref": "A",
+              "alt": "ATAAC"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "4432f30bffb26f31efdb3ec147c375c27f9bc7b46c3244791ae11d7bc453a9c3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Homozygous coding/protein change matches Table1. Original genomic coordinates are hg19/NC_000006.11, whereas packet gives hg38/NC_000006.12; equivalence and repeat normalization were not independently established.",
+            "evidence": [
+              {
+                "source_id": "T1",
+                "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Different assembly and transcript representation retained as uncertainty."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003251",
+              "label": "Male infertility"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "939eb5970d117ed027bfcecb8f2f9b0f384cfd93fa04e767982d4fe343d2c0ac",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Primary infertility explicitly reported; age31/40 is recorded at ICSI. Exact young-adult onset is not given.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Age at observation is not onset age."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034011",
+              "label": "Reduced progressive sperm motility"
+            }
+          },
+          "snapshot_sha256": "29cc30cdde07d6c33066e31fcad05241e0a4b48a55b4776e067d9e2474e7232f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced progressive sperm motility agrees with the corresponding Table2 value/reference threshold.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012207",
+              "label": "Reduced sperm motility"
+            }
+          },
+          "snapshot_sha256": "0d43e6d77a7c4ac80c3258b5ec78300fe6877df087dc4c17b52c873c2075a412",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced sperm motility agrees with the corresponding Table2 value/reference threshold.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000798",
+              "label": "Oligozoospermia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bb36e0f77eccee7bd0f818378af9fdc0943052b6c919b97d258c989524301bcf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sperm concentrations 19.6–34.4million/ml exceed source threshold15, supporting negative oligozoospermia.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:6000135",
+              "label": "Low semen volume"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "13e886d18c9aaa1e38ecb3d60bf09ecb4d9330f0a160283b0138a845e539dd09",
+          "assessment": {
+            "status": "supported",
+            "statement": "Semen volume 2.2–3.5ml exceeds1.5ml source threshold.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033393",
+              "label": "Irregularly shaped sperm tail"
+            }
+          },
+          "snapshot_sha256": "f267c29a73067b7904e574732743f6dfdd0bfd28986aeef2b82039267595c3e7",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Irregular caliber3% versus reference<2% is the likely mapping. Main prose describes normal overall morphology/ultrastructure; packet positive is threshold-derived.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Caliber is narrower than generic tail shape; source overall narrative remains normal."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032558",
+              "label": "Absent sperm flagella"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4c1c91fcd106d9a8e0bd7e60fe49e0cf1eea0cf57145dd8cc0091c928c678ea3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Absent flagella4%/3% is within source reference limits, so the packet exclusion describes no pathological excess, not literal absence of these sperm morphologies.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Population-of-sperm threshold versus patient-level absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034811",
+              "label": "Bent sperm flagella"
+            }
+          },
+          "snapshot_sha256": "ce0410f1ae97d410f81a400113709dd5d216f25f28ae052680c9c0405d58a595",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Angulation13% sits at reference<13% boundary; the encoded positive/negative is derived from proportions, not absolute presence or absence.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Quantitative threshold mapping differs from an explicit binary clinical observation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032559",
+              "label": "Short sperm flagella"
+            }
+          },
+          "snapshot_sha256": "a66d8d8f108d79576397692bf8c0be974119ba91fd6d3216e2967d66e4cf0e07",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Short flagella5% exceeds source reference<1%, while authors describe overall normal morphology; retain both observations.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Quantitative threshold mapping differs from an explicit binary clinical observation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032560",
+              "label": "Coiled sperm flagella"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ea82365ba37e5b7a566c86bf1f77ad1b8bc23e52bb0d84ebd46f5ec19304644c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Coiled flagella14%/16% is within source reference limits, so the packet exclusion describes no pathological excess, not literal absence of these sperm morphologies.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding F013 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Population-of-sperm threshold versus patient-level absence."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/AK9/PMID_37713809_R0008_II_1.json",
+      "packet_sha256": "9b73073dd82b0a96734670ed79f6396996d0c498d3c74bc6c9cdee33ffd397d8",
+      "case_id": "TC_cb25e84a5299a29d",
+      "role": "selected",
+      "packet_subject_id": "R0008 II-1",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Main-source adjudication completed; full-source review remains incomplete due supplementary coverage/access gaps."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "R0008 II-1 is the affected male in the specified consanguineous pedigree; age at ICSI 40years. All five paper cases compared to distinguish the two packet subjects.",
+        "evidence": [
+          {
+            "source_id": "T3",
+            "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Source reports homozygous c.2005dupT/p.Cys669Leufs*4 AK9 frameshift; Figure1 genotype matches packet.",
+        "evidence": [
+          {
+            "source_id": "T1",
+            "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Both parents are heterozygous carriers in the consanguineous pedigree; tested-family co-segregation reported.",
+        "evidence": [
+          {
+            "source_id": "F1",
+            "locator": "Figure1b"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygosity with both parents heterozygous supports one inherited mutant copy from each parent; not a two-variant phase inference.",
+        "evidence": [
+          {
+            "source_id": "F1",
+            "locator": "Figure1b"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors propose recessive AK9-associated asthenozoospermia using five families, sperm analysis and KO mice; detailed metabolic/proteomic human assays focus on F013.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results and Discussion"
+          }
+        ],
+        "limitations": [
+          "Source hypothesis/evidence only; no independent clinical causality or treatment recommendation. Missing cited supplementary tables and incomplete208page bundle limit this review."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All10 frozen phenotypes reviewed for each patient. Packet omits quantitative motility, biochemical context and source fertility intervention outcomes; no therapeutic advice inferred.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+          }
+        ],
+        "limitations": [
+          "MainTable2 vitality reference is printed≤40% despite recruitment viability≥58%; F013 total motility lower bound3.6% is below its progressive+nonprogressive minima0.6+4.5. Internal inconsistencies retained."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c2005dup_AK9_NM_001145128v3",
+            "geneContext": {
+              "valueId": "HGNC:33814",
+              "symbol": "AK9"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001145128.3:c.2005dup"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.109585232dup"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001138600.2:p.(Cys669LeufsTer4)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 109585231,
+              "ref": "C",
+              "alt": "CA"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "5c69adb91dadf4066d911ce7510a7edad4095e0a9c86b5446f0234b168e24ebf",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Homozygous coding/protein change matches Table1. Original genomic coordinates are hg19/NC_000006.11, whereas packet gives hg38/NC_000006.12; equivalence and repeat normalization were not independently established.",
+            "evidence": [
+              {
+                "source_id": "T1",
+                "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Different assembly and transcript representation retained as uncertainty."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003251",
+              "label": "Male infertility"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "939eb5970d117ed027bfcecb8f2f9b0f384cfd93fa04e767982d4fe343d2c0ac",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Primary infertility explicitly reported; age31/40 is recorded at ICSI. Exact young-adult onset is not given.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Age at observation is not onset age."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034011",
+              "label": "Reduced progressive sperm motility"
+            }
+          },
+          "snapshot_sha256": "29cc30cdde07d6c33066e31fcad05241e0a4b48a55b4776e067d9e2474e7232f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced progressive sperm motility agrees with the corresponding Table2 value/reference threshold.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012207",
+              "label": "Reduced sperm motility"
+            }
+          },
+          "snapshot_sha256": "0d43e6d77a7c4ac80c3258b5ec78300fe6877df087dc4c17b52c873c2075a412",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced sperm motility agrees with the corresponding Table2 value/reference threshold.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000798",
+              "label": "Oligozoospermia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bb36e0f77eccee7bd0f818378af9fdc0943052b6c919b97d258c989524301bcf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sperm concentrations 22.2–54.2million/ml exceed source threshold15, supporting negative oligozoospermia.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:6000135",
+              "label": "Low semen volume"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "13e886d18c9aaa1e38ecb3d60bf09ecb4d9330f0a160283b0138a845e539dd09",
+          "assessment": {
+            "status": "supported",
+            "statement": "Semen volume 3.8–4.5ml exceeds1.5ml source threshold.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033393",
+              "label": "Irregularly shaped sperm tail"
+            }
+          },
+          "snapshot_sha256": "f267c29a73067b7904e574732743f6dfdd0bfd28986aeef2b82039267595c3e7",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Irregular caliber2% at the boundary of reference<2% is the likely mapping. Main prose describes normal overall morphology/ultrastructure; packet positive is threshold-derived.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Caliber is narrower than generic tail shape; source overall narrative remains normal."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032558",
+              "label": "Absent sperm flagella"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4c1c91fcd106d9a8e0bd7e60fe49e0cf1eea0cf57145dd8cc0091c928c678ea3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Absent flagella4%/3% is within source reference limits, so the packet exclusion describes no pathological excess, not literal absence of these sperm morphologies.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Population-of-sperm threshold versus patient-level absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034811",
+              "label": "Bent sperm flagella"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b764d17b9921c96bd2b78b533375dc0cd9fcd7641adcd12ecec413b28fb807bc",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Angulation9% is within reference<13%; the encoded positive/negative is derived from proportions, not absolute presence or absence.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Quantitative threshold mapping differs from an explicit binary clinical observation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032559",
+              "label": "Short sperm flagella"
+            }
+          },
+          "snapshot_sha256": "a66d8d8f108d79576397692bf8c0be974119ba91fd6d3216e2967d66e4cf0e07",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Short flagella2% exceeds source reference<1%, while authors describe overall normal morphology; retain both observations.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Quantitative threshold mapping differs from an explicit binary clinical observation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032560",
+              "label": "Coiled sperm flagella"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ea82365ba37e5b7a566c86bf1f77ad1b8bc23e52bb0d84ebd46f5ec19304644c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Coiled flagella14%/16% is within source reference limits, so the packet exclusion describes no pathological excess, not literal absence of these sperm morphologies.",
+            "evidence": [
+              {
+                "source_id": "T2",
+                "locator": "Tables1–3 corresponding R0008 II-1 column; Results genetic/clinical paragraphs; Figure1a,b"
+              }
+            ],
+            "limitations": [
+              "Population-of-sperm threshold versus patient-level absence."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "cited-tables",
+      "status": "open",
+      "detail": "Linked208page mmc1 starts with antibody data and includes unrelated papers; no verified TablesS1–S5 located yet. Do not substitute main narrative for unseen tables.",
+      "evidence": [
+        {
+          "source_id": "main-text",
+          "locator": "Results references to SupplementTablesS1–S5"
+        }
+      ]
+    },
+    {
+      "component_id": "corrigendum",
+      "status": "open",
+      "detail": "EuropePMC XML500, PMCcloud404, direct web pagechallenge. Indexed PMC text states chest CTs from incorrect patients were included; corrected controls/R0022/R0038/R0052 imaging needs durable retrieval.",
+      "evidence": [
+        {
+          "source_id": "xml",
+          "locator": "correction-forward PMC10793085"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Post-inference, unblinded source-correspondence audit; source assertions are not clinical truth.",
+    "Unreviewed components and packets remain explicitly pending."
+  ]
+}

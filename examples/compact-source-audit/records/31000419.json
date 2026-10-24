@@ -1,0 +1,984 @@
+{
+  "schema_version": 1,
+  "pmid": "31000419",
+  "title": "A truncating MEIOB mutation responsible for familial primary ovarian insufficiency abolishes its interaction with its partner SPATA22 and their recruitment to DNA double-strand breaks",
+  "reviewer": {
+    "id": "reviewer-8",
+    "reviewed_at_utc": "2026-10-24T18:17:48.206102+00:00",
+    "method": "Direct full source reading and visual inspection where recorded; item-by-item selected/alternate packet comparison. Mechanical extraction/inventory is not read credit."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Required full HANDOFF.md read on 2026-10-24 exposed aggregate source-audit counts, HG002/HG001/phenotype-only top1/5/10 summaries, compact 556/653/665 versus 430/649/665 of 681, corrected deltas, and the historical public FGFR2 rank 1 at 0.9654. Conservatively per_case, not blinded. No case ranking/outcome files were consulted for this review; only assigned source contexts, identities, availability, held primary sources and the adjudication validator were used."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "3d47a353854d87852251b21dee00b1e732c0ed12054ccf986a71f6dc1f4e52e3",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "text",
+      "pmid": "31000419",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31000419/main.complete.txt",
+      "sha256": "b97edaf0ba51c3ab32b2285d9dcd3876ca6c43696d1336fbf3d62824714dcdb5",
+      "kind": "text",
+      "description": "Held primary article version; reading coverage declared separately."
+    },
+    {
+      "id": "xml",
+      "pmid": "31000419",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31000419/main.xml",
+      "sha256": "be635506be5556d99e950fd40621bcba6c3796788e6ed7cdf8fbec3052b8f6c4",
+      "kind": "xml",
+      "description": "Held primary article version; reading coverage declared separately."
+    },
+    {
+      "id": "pdf",
+      "pmid": "31000419",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31000419/cloud/PMC6491878.1/PMC6491878.1.pdf",
+      "sha256": "9f577741864e9a39af0c88d9b5159d9331fd212f9c2a321f77a0d1ba98f02d50",
+      "kind": "pdf",
+      "description": "Held primary article version; reading coverage declared separately."
+    },
+    {
+      "id": "metadata",
+      "pmid": "31000419",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/31000419/identity.json",
+      "sha256": "01360cac8cfdc0e6ad8b3b3983c630d89684bdb155d550341f15272bbf70a44c",
+      "kind": "metadata",
+      "description": "Independent exact PMID/DOI identity receipt."
+    },
+    {
+      "id": "f0025-asset",
+      "pmid": "31000419",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31000419/cloud/PMC6491878.1/ga1.jpg",
+      "sha256": "24660c2e98c7f79b87454841fd593af38469a74055c73e36632d2c0b9bdacafe",
+      "kind": "image",
+      "description": "Primary linked figure; not automatically read."
+    },
+    {
+      "id": "f0005-asset",
+      "pmid": "31000419",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31000419/cloud/PMC6491878.1/gr1.jpg",
+      "sha256": "a0630f92aa3d755db160b716759a670ca8205ad15297246272ca7eb64e928120",
+      "kind": "image",
+      "description": "Primary linked figure; not automatically read."
+    },
+    {
+      "id": "f0010-asset",
+      "pmid": "31000419",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31000419/cloud/PMC6491878.1/gr2.jpg",
+      "sha256": "d210906aed0400c994f07dd701b93ddb13e244f98dc1afc570c72266b7a27667",
+      "kind": "image",
+      "description": "Primary linked figure; not automatically read."
+    },
+    {
+      "id": "f0015-asset",
+      "pmid": "31000419",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31000419/cloud/PMC6491878.1/gr3.jpg",
+      "sha256": "4887a5e53978fc91abc6ff7544fb924723fbd976a8a7ba3f3aa4ee791b833446",
+      "kind": "image",
+      "description": "Primary linked figure; not automatically read."
+    },
+    {
+      "id": "f0020-asset",
+      "pmid": "31000419",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31000419/cloud/PMC6491878.1/gr4.jpg",
+      "sha256": "5439dc7872609bb4c915c588a49f22a795b02501ed47c358c02f10e273707de8",
+      "kind": "image",
+      "description": "Primary linked figure; not automatically read."
+    },
+    {
+      "id": "ec0005-asset",
+      "pmid": "31000419",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31000419/cloud/PMC6491878.1/mmc1.pdf",
+      "sha256": "dcf0b9a5b23c16299579d2cb5b99a31dfbbd4d00acef5040a52914748ae5ad3f",
+      "kind": "pdf",
+      "description": "Primary linked supplement; not automatically read."
+    },
+    {
+      "id": "s1-text",
+      "pmid": "31000419",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-8/assets/31000419/s1.txt",
+      "sha256": "c022f179a513d6838e7fb80a52e838248c3b1f4f0f2651ff4f09d145c7b0d8e2",
+      "kind": "text",
+      "description": "Complete layout extraction of mmc1.pdf."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "A truncating MEIOB mutation responsible for familial primary ovarian insufficiency abolishes its interaction with its partner SPATA22 and their recruitment to DNA double-strand breaks",
+    "evidence": [
+      {
+        "source_id": "pdf",
+        "locator": "Title/author/journal/DOI first page"
+      },
+      {
+        "source_id": "xml",
+        "locator": "article-meta article-id and title-group"
+      },
+      {
+        "source_id": "metadata",
+        "locator": "metadata PMID and DOI"
+      }
+    ],
+    "note": "Caburet et al., EBioMedicine 2019;42:524-531, DOI 10.1016/j.ebiom.2019.03.075; held publisher PDF title/authors/date agree with exact PMID metadata and XML. Supplemental mmc1.pdf is linked appendix."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 5,
+      "table": 1,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "Full article figure/table/supplement listing; repeated exact asset links deduplicated."
+      }
+    ],
+    "note": "All components in held primary XML inventoried; explicit zero counts reflect absence in the full article listing. No retrieval or enumeration is reading credit."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 290,
+      "extent_source_id": "text",
+      "extent_evidence": [
+        {
+          "source_id": "text",
+          "locator": "Complete held extraction; line extents independently counted. Full reading is not claimed until covered."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 290,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "All 290 lines read in consecutive 1-150 and 151-290 portions; Table 1 additionally read in layout PDF p5."
+        }
+      ],
+      "note": "Complete held extraction; line extents independently counted. Full reading is not claimed until covered."
+    },
+    {
+      "id": "f0025",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Primary XML fig @id=f0025; Unlabelled Image"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "f0025-asset",
+          "locator": "Complete graphical abstract / Figure 1 / Figure 2 / Figure 3 / Figure 4 as applicable, all panels, annotations, legends."
+        }
+      ],
+      "note": "Primary XML fig @id=f0025; Unlabelled Image"
+    },
+    {
+      "id": "f0005",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Primary XML fig @id=f0005; Fig. 1Identification of a splicing-altering mutation in the coding sequence of MEIOB in a consanguineous POF family.Pedigree of the MO13 family. Double lines indicate consanguineous unions. The black arrow indicates the proband and blue arrows point to the family members that could be analysed by exome sequencing. The genotypes for the mutation in the MEIOB gene are indicated below each person, as"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "f0005-asset",
+          "locator": "Complete graphical abstract / Figure 1 / Figure 2 / Figure 3 / Figure 4 as applicable, all panels, annotations, legends."
+        }
+      ],
+      "note": "Primary XML fig @id=f0005; Fig. 1Identification of a splicing-altering mutation in the coding sequence of MEIOB in a consanguineous POF family.Pedigree of the MO13 family. Double lines indicate consanguineous unions. The black arrow indicates the proband and blue arrows point to the family members that could be analysed by exome sequencing. The genotypes for the mutation in the MEIOB gene are indicated below each person, as"
+    },
+    {
+      "id": "t0005",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Primary XML table-wrap @id=t0005; Table 1Hormonal dosage results for the MO13 patient III-11 at age 30 (May 2017).Table 1HormonesDosages in patientNormal rangesFollicular phaseOvulatory phaseLuteal phaseMenopauseFSH (IU/l)48.82.9–126.3–241.5–717–95LH (IU/l)46.41.5–89.6–800.2–6.58–33Estradiol (nmol/l)0.1490.06–0.540.16–0.780.34–2.1< 0.2AMH (ng/ml)< 0.12.2–6.8Progesterone (nmol/l)2.20.3–32–915–600.3–3Testosterone (nmol/l)0.80.4–2Pro"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Table 1 every hormonal row, all reference columns and footnote."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "pdf",
+          "locator": "PDF p5 Table 1, including patient III-11 at age 30 (May 2017) and normal-reference columns."
+        }
+      ],
+      "note": "Primary XML table-wrap @id=t0005; Table 1Hormonal dosage results for the MO13 patient III-11 at age 30 (May 2017).Table 1HormonesDosages in patientNormal rangesFollicular phaseOvulatory phaseLuteal phaseMenopauseFSH (IU/l)48.82.9–126.3–241.5–717–95LH (IU/l)46.41.5–89.6–800.2–6.58–33Estradiol (nmol/l)0.1490.06–0.540.16–0.780.34–2.1< 0.2AMH (ng/ml)< 0.12.2–6.8Progesterone (nmol/l)2.20.3–32–915–600.3–3Testosterone (nmol/l)0.80.4–2Pro"
+    },
+    {
+      "id": "f0010",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Primary XML fig @id=f0010; Fig. 2Exon 12 skipping induced by the MEIOB pathogenic variant.a- Representation of the human MEIOB gene and its mutated form (from Ensembl, reference transcript NM_001163560.2). The structure of the normal protein is shown below for the longest isoform of 471 amino acids, with coding exons as bars with alternate colours. The mutation (red arrow) lies at the very end of exon 12, which encodes 61 a"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "f0010-asset",
+          "locator": "Complete graphical abstract / Figure 1 / Figure 2 / Figure 3 / Figure 4 as applicable, all panels, annotations, legends."
+        }
+      ],
+      "note": "Primary XML fig @id=f0010; Fig. 2Exon 12 skipping induced by the MEIOB pathogenic variant.a- Representation of the human MEIOB gene and its mutated form (from Ensembl, reference transcript NM_001163560.2). The structure of the normal protein is shown below for the longest isoform of 471 amino acids, with coding exons as bars with alternate colours. The mutation (red arrow) lies at the very end of exon 12, which encodes 61 a"
+    },
+    {
+      "id": "f0015",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Primary XML fig @id=f0015; Fig. 3The MEIOB-truncating mutation disrupts MEIOB-SPATA22 interaction.a- Schematic representation of MEIOB constructs. The wild-type MEIOBMF contains 3 OB-fold domains and a C-terminal cMyc-FLAG tag (in green). The third OB-fold domain contains an additional Zinc ribbon domain and a helix-turn-helix (HtH), encoded by the end of exon 11 and exons 12, 13, and part of exon 14, and corresponds to the"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "f0015-asset",
+          "locator": "Complete graphical abstract / Figure 1 / Figure 2 / Figure 3 / Figure 4 as applicable, all panels, annotations, legends."
+        }
+      ],
+      "note": "Primary XML fig @id=f0015; Fig. 3The MEIOB-truncating mutation disrupts MEIOB-SPATA22 interaction.a- Schematic representation of MEIOB constructs. The wild-type MEIOBMF contains 3 OB-fold domains and a C-terminal cMyc-FLAG tag (in green). The third OB-fold domain contains an additional Zinc ribbon domain and a helix-turn-helix (HtH), encoded by the end of exon 11 and exons 12, 13, and part of exon 14, and corresponds to the"
+    },
+    {
+      "id": "f0020",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Primary XML fig @id=f0020; Fig. 4The MEIOB-truncating mutation disrupts MEIOB-SPATA22 recruitment to DNA damage foci.a-b- The truncated form of MEIOB is stable when expressed in HeLa cells. a- Western blot showing the expression of the wild-type (MEIOBMF) and the truncated forms (MEIOBMF-mut) of MEIOB transfected in HeLa cells. The ProSieve QuadColor protein marker 4,6 kDa–300 kDa (Lonza) was run on the left (Ladder). b- ME"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "f0020-asset",
+          "locator": "Complete graphical abstract / Figure 1 / Figure 2 / Figure 3 / Figure 4 as applicable, all panels, annotations, legends."
+        }
+      ],
+      "note": "Primary XML fig @id=f0020; Fig. 4The MEIOB-truncating mutation disrupts MEIOB-SPATA22 recruitment to DNA damage foci.a-b- The truncated form of MEIOB is stable when expressed in HeLa cells. a- Western blot showing the expression of the wild-type (MEIOBMF) and the truncated forms (MEIOBMF-mut) of MEIOB transfected in HeLa cells. The ProSieve QuadColor protein marker 4,6 kDa–300 kDa (Lonza) was run on the left (Ladder). b- ME"
+    },
+    {
+      "id": "ec0005",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 6,
+      "extent_source_id": "ec0005-asset",
+      "extent_evidence": [
+        {
+          "source_id": "ec0005-asset",
+          "locator": "Six pages: Tables S1-S4 and Figures S1-S3."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 6,
+          "mode": "text",
+          "source_id": "s1-text",
+          "locator": "All six pages text, every table row including oligonucleotides/antibodies and all captions."
+        },
+        {
+          "start": 1,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "ec0005-asset",
+          "locator": "All six pages directly inspected through preserved s1-1.png to s1-6.png. Figure S1 unaffected-sister panel visibly duplicates mutant T-only call, contradicting main Figure 1 C/C."
+        }
+      ],
+      "note": "Primary XML supplementary-material @id=ec0005; Supplementary material: Supplementary Tables S1 to S4 and Supplementary Figures S1 to S3Image 1"
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/MEIOB/PMID_31000419_III_10.json",
+      "packet_sha256": "86e0304d2690c2069c6f70c3971b65b51c7f6b0fd4c03ba4da0ceeb9c2daa6a7",
+      "case_id": "TC_695b78b776fc8b08",
+      "role": "selected",
+      "packet_subject_id": "III-10",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Main text WES coverage range 67-74 omits 84.7 in Table S1; Table S1 sample labels and Figure S1 duplicated unaffected-sister label/call are source defects."
+      ],
+      "patient_identity": {
+        "status": "contradicted",
+        "statement": "III-10 is the affected female proband, but last encounter 24y predates explicitly reported FSH testing at 25y.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+          }
+        ],
+        "limitations": [
+          "Packet symptom-onset age is not last follow-up."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Homozygous chr16:g.1839255C>T (hg38), NM_001163560.2:c.1218G>A is directly reported; packet transcript .3 differs. Nominal p.Thr406= annotation appears in Figure 2 but observed exon 12 skipping produces C-terminal truncation (p.Cys345Trpfs*8).",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results molecular paragraphs and Figure 2A-B"
+          }
+        ],
+        "limitations": [
+          "Packet synonymous protein annotation alone does not represent measured splice consequence; transcript version update not independently normalized."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Both sisters homozygous, mother heterozygous and unaffected sister III-13 C/C are shown in main Figure 1; father not sampled. Supplement S1A labels unaffected sister MO13-11 and shows same T-only call as affected sister, inconsistent with main pedigree.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; Results WES/Sanger; supplement Figure S1"
+          }
+        ],
+        "limitations": [
+          "Source inconsistency preserved; do not use faulty supplement panel as independent segregation proof."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Homozygous call in affected sisters is supported by main Sanger/pedigree. Parental double-first-cousin relation supports inherited recessive model, but no paternal genotype or direct haplotype transmission is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1 and Results first three paragraphs"
+          }
+        ],
+        "limitations": [
+          "Two parental contributions inferred, not independently molecularly phased."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors attribute familial POI to MEIOB variant. Minigene and proband leukocyte RNA show exon 12 skipping; HEK293 co-IP and HeLa damage-localization assays support impaired SPATA22 interaction. These are not a direct assay of patient ovarian meiosis.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results; Figures 2-4; Discussion"
+          }
+        ],
+        "limitations": [
+          "One consanguineous family; candidate filtering used fertility annotation; NMD inference is not quantitative proof; source attribution not clinical recertification."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Major endocrine features represented, but dates are collapsed; uterine septum surgery, molar pregnancy and early loss omitted.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+          }
+        ],
+        "limitations": [
+          "Source phenotype is a retrospective clinical narrative, not uniformly dated onset data."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1218GtoA_MEIOB_NM_001163560v3",
+            "geneContext": {
+              "valueId": "HGNC:28569",
+              "symbol": "MEIOB"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001163560.3:c.1218G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.1839255C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001157032.1:p.(Thr406=)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 1839255,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "64d1261e4dbe2580ef9a4c9e7546e228147e8a45a6203003299d93b115d44215",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Homozygous chr16:g.1839255C>T (hg38), NM_001163560.2:c.1218G>A is directly reported; packet transcript .3 differs. Nominal p.Thr406= annotation appears in Figure 2 but observed exon 12 skipping produces C-terminal truncation (p.Cys345Trpfs*8).",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results molecular paragraphs and Figure 2A-B"
+              }
+            ],
+            "limitations": [
+              "Packet synonymous protein annotation alone does not represent measured splice consequence; transcript version update not independently normalized."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000876",
+              "label": "Oligomenorrhea"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P24Y"
+              }
+            }
+          },
+          "snapshot_sha256": "7360ac4c711173955e42cee8a7116da7c588e2f2b07e63c255a87709c42e42a7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Onset 24y in III-10 explicitly stated.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008222",
+              "label": "Female infertility"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "4716eeef7a63bbec67ac12cea7f072be614e33df763537b2f5593999dac9a849",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Infertility/POI described in the affected sister; young-adult category is a broad mapping.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+              }
+            ],
+            "limitations": [
+              "Exact age of infertility onset not established from the reported pregnancies/menstrual history."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008232",
+              "label": "Elevated circulating follicle stimulating hormone level"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P24Y"
+              }
+            }
+          },
+          "snapshot_sha256": "01196f3d5c937e6f9fb5f7a17bb20b328ed4b5db01723f0fd3583feb8a3c7844",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "III-10 FSH 25.36 IU/L was measured at 25y, not packet 24y.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+              }
+            ],
+            "limitations": [
+              "Presence supported, packet measurement/onset precision exceeds evidence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031103",
+              "label": "Decreased circulating antimullerian hormone circulation"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P24Y"
+              }
+            }
+          },
+          "snapshot_sha256": "2e2f195b0ae28a4bfd2159b731ddc2d078817136016d80d911080628b35cb9fb",
+          "assessment": {
+            "status": "qualified",
+            "statement": "AMH 0.22 ng/ml accompanies age25 testing.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+              }
+            ],
+            "limitations": [
+              "Low level supported; exact packet onset 24y is not explicitly dated for this measurement."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033085",
+              "label": "Reduced antral follicle count"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P24Y"
+              }
+            }
+          },
+          "snapshot_sha256": "868480ae8496eca6595a11df16e92e3950b0f1ad1a5b7843d6f8b39e4c6dae6f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "AFC 3 explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+              }
+            ],
+            "limitations": [
+              "Precise onset 24y is not independently established."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/MEIOB/PMID_31000419_III_11.json",
+      "packet_sha256": "96e4436229f06d6b12d8342f3f8f050b75d062a250ead6496c7e8e609b167eed",
+      "case_id": "TC_695b78b776fc8b08",
+      "role": "alternate",
+      "packet_subject_id": "III-11",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Main text WES coverage range 67-74 omits 84.7 in Table S1; Table S1 sample labels and Figure S1 duplicated unaffected-sister label/call are source defects."
+      ],
+      "patient_identity": {
+        "status": "contradicted",
+        "statement": "III-11 is the affected sister, but last encounter 19y predates hormone testing at 30y, explicitly dated May 2017 in Table 1.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+          }
+        ],
+        "limitations": [
+          "Packet symptom-onset age is not last follow-up."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Homozygous chr16:g.1839255C>T (hg38), NM_001163560.2:c.1218G>A is directly reported; packet transcript .3 differs. Nominal p.Thr406= annotation appears in Figure 2 but observed exon 12 skipping produces C-terminal truncation (p.Cys345Trpfs*8).",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results molecular paragraphs and Figure 2A-B"
+          }
+        ],
+        "limitations": [
+          "Packet synonymous protein annotation alone does not represent measured splice consequence; transcript version update not independently normalized."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Both sisters homozygous, mother heterozygous and unaffected sister III-13 C/C are shown in main Figure 1; father not sampled. Supplement S1A labels unaffected sister MO13-11 and shows same T-only call as affected sister, inconsistent with main pedigree.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; Results WES/Sanger; supplement Figure S1"
+          }
+        ],
+        "limitations": [
+          "Source inconsistency preserved; do not use faulty supplement panel as independent segregation proof."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Homozygous call in affected sisters is supported by main Sanger/pedigree. Parental double-first-cousin relation supports inherited recessive model, but no paternal genotype or direct haplotype transmission is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1 and Results first three paragraphs"
+          }
+        ],
+        "limitations": [
+          "Two parental contributions inferred, not independently molecularly phased."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors attribute familial POI to MEIOB variant. Minigene and proband leukocyte RNA show exon 12 skipping; HEK293 co-IP and HeLa damage-localization assays support impaired SPATA22 interaction. These are not a direct assay of patient ovarian meiosis.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results; Figures 2-4; Discussion"
+          }
+        ],
+        "limitations": [
+          "One consanguineous family; candidate filtering used fertility annotation; NMD inference is not quantitative proof; source attribution not clinical recertification."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Major endocrine features represented, but dates are collapsed; normal development/menarche, normal uterus, later age30 evaluation and additional hormonal results omitted.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+          }
+        ],
+        "limitations": [
+          "Source phenotype is a retrospective clinical narrative, not uniformly dated onset data."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1218GtoA_MEIOB_NM_001163560v3",
+            "geneContext": {
+              "valueId": "HGNC:28569",
+              "symbol": "MEIOB"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001163560.3:c.1218G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.1839255C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001157032.1:p.(Thr406=)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 1839255,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "64d1261e4dbe2580ef9a4c9e7546e228147e8a45a6203003299d93b115d44215",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Homozygous chr16:g.1839255C>T (hg38), NM_001163560.2:c.1218G>A is directly reported; packet transcript .3 differs. Nominal p.Thr406= annotation appears in Figure 2 but observed exon 12 skipping produces C-terminal truncation (p.Cys345Trpfs*8).",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results molecular paragraphs and Figure 2A-B"
+              }
+            ],
+            "limitations": [
+              "Packet synonymous protein annotation alone does not represent measured splice consequence; transcript version update not independently normalized."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000876",
+              "label": "Oligomenorrhea"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P16Y"
+              }
+            }
+          },
+          "snapshot_sha256": "50b95ec7a579379769481b40d87035ae675d1cb76779a1b7b5c7f53aa427ae34",
+          "assessment": {
+            "status": "supported",
+            "statement": "Onset 16y in III-11 explicitly stated.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008222",
+              "label": "Female infertility"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011462",
+                "label": "Young adult onset"
+              }
+            }
+          },
+          "snapshot_sha256": "4716eeef7a63bbec67ac12cea7f072be614e33df763537b2f5593999dac9a849",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Infertility/POI described in the affected sister; young-adult category is a broad mapping.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+              }
+            ],
+            "limitations": [
+              "Exact age of infertility onset not established from the reported pregnancies/menstrual history."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000869",
+              "label": "Secondary amenorrhea"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P19Y"
+              }
+            }
+          },
+          "snapshot_sha256": "37bc71ce5b95107e3d0359f3cf29d72221df145daa092dcc27413dde5f306065",
+          "assessment": {
+            "status": "supported",
+            "statement": "III-11 amenorrhea began at 19y explicitly.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008232",
+              "label": "Elevated circulating follicle stimulating hormone level"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P19Y"
+              }
+            }
+          },
+          "snapshot_sha256": "a340fdf2bb4e835e26409119e2addb75a3739e4d11cf6a31ef2e1c3389f8a46f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "III-11 FSH rose from 22.7 to 48.8; Table 1 assigns 48.8 to age 30; elevated levels are described after amenorrhea19.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+              }
+            ],
+            "limitations": [
+              "Presence supported, packet measurement/onset precision exceeds evidence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031103",
+              "label": "Decreased circulating antimullerian hormone circulation"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P19Y"
+              }
+            }
+          },
+          "snapshot_sha256": "37ad051b435af98f0a925643625152bab888370751ed9d06243b3ac2bd934d75",
+          "assessment": {
+            "status": "qualified",
+            "statement": "AMH <0.1 ng/ml is reported and confirmed in Table 1 at age30.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+              }
+            ],
+            "limitations": [
+              "Low level supported; exact packet onset 19y is not explicitly dated for this measurement."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033085",
+              "label": "Reduced antral follicle count"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P19Y"
+              }
+            }
+          },
+          "snapshot_sha256": "cd6a35635b65e64d7b7330811ad875314b49d48c12a476b4a87c2033f3cea0df",
+          "assessment": {
+            "status": "qualified",
+            "statement": "AFC 0 explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results clinical paragraphs; Figure 1; Table 1 (III-11 at age 30)"
+              }
+            ],
+            "limitations": [
+              "Precise onset 19y is not independently established."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference, non-blinded source correspondence only; no clinical truth or therapeutic inference.",
+    "The Fig S1A lower panel is internally inconsistent (unaffected sister label MO13-11 and T-only read summary); retained explicitly, without treating it as confirming a normal genotype."
+  ]
+}

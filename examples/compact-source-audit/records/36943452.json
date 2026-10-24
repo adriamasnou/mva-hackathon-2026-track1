@@ -1,0 +1,4264 @@
+{
+  "schema_version": 1,
+  "pmid": "36943452",
+  "title": "Homozygous loss-of-function variants in FILIP1 cause autosomal recessive arthrogryposis multiplex congenita with microcephaly",
+  "reviewer": {
+    "id": "reader9",
+    "reviewed_at_utc": "2026-10-24T18:23:05.037145+00:00",
+    "method": "Independent public-source comparison, all assigned selected and alternate packet members retained. No inference output opened."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Mandatory HANDOFF.md exposes historical public-control per-case ranks and aggregate outcomes. Conservatively declared per_case; no target-case outcomes or inference files consulted for this audit."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "218f26d7074f61fcdca762baa75baa472f70d1c43125a2a2349a41580b37718c",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-layout",
+      "pmid": "36943452",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/claude-readers/run-20261024T181003Z/inputs/36943452/article-layout.txt",
+      "sha256": "34ed9dcbca2ab8f81fa3ded13776373e7b4f28aaf71fa5ad26ca57682c011ecd",
+      "kind": "text",
+      "description": "Complete pdftotext -layout extraction of ten-page published article; all pages and references read by reader9."
+    },
+    {
+      "id": "main-pdf",
+      "pmid": "36943452",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/claude-readers/run-20261024T181003Z/inputs/36943452/originals/article.pdf",
+      "sha256": "64c129e2d7aab4aeabdf8eb218cf7e68a37c609bea66e92079e245ff871122a0",
+      "kind": "pdf",
+      "description": "Published Human Genetics 142:543-552 article."
+    },
+    {
+      "id": "main-xml",
+      "pmid": "36943452",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/claude-readers/run-20261024T181003Z/inputs/36943452/originals/pmc.xml",
+      "sha256": "4434c4d905b817a44c458684200c16128f8f416898775301332f1c9da3cf581a",
+      "kind": "xml",
+      "description": "Public PMC article inventory, exact PMID and no supplementary-material nodes."
+    },
+    {
+      "id": "identity-metadata",
+      "pmid": "36943452",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/36943452/identity.json",
+      "sha256": "5a3dc28b6dbdaf86a5fde6cf69903a18b6be1f424a4aaa2ae17f797eaec15908",
+      "kind": "metadata",
+      "description": "Exact PMID/DOI metadata and public retrieval provenance."
+    },
+    {
+      "id": "figure1",
+      "pmid": "36943452",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/claude-readers/run-20261024T181003Z/inputs/36943452/originals/figure-1.jpg",
+      "sha256": "e78c7c53eb6ce15a0dd6372d838fb41b29e9450bd368ebeba196cb8b434f5412",
+      "kind": "image",
+      "description": "Full figure 1, every panel inspected."
+    },
+    {
+      "id": "figure2",
+      "pmid": "36943452",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/claude-readers/run-20261024T181003Z/inputs/36943452/originals/figure-2.jpg",
+      "sha256": "e0a53ff28260e4aaae5fd4c29393aade30486f153c09078b8f03608269c5b389",
+      "kind": "image",
+      "description": "Full figure 2, every panel inspected."
+    },
+    {
+      "id": "figure3",
+      "pmid": "36943452",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/claude-readers/run-20261024T181003Z/inputs/36943452/originals/figure-3.jpg",
+      "sha256": "54601b3d7fdba7a4e4a50e6a2dbc276ab4397a296fd2d2425bf5871628c2dc40",
+      "kind": "image",
+      "description": "Full figure 3, every panel inspected."
+    },
+    {
+      "id": "table1-image",
+      "pmid": "36943452",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/claude-readers/run-20261024T181003Z/inputs/36943452/pages/article/page-05.png",
+      "sha256": "cda1ff642807a6297be2c590ac2726364411e5b45b793a0897d82edc30b6a9e0",
+      "kind": "image",
+      "description": "Full page 547; all five patient columns and table footnote inspected."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Homozygous loss-of-function variants in FILIP1 cause autosomal recessive arthrogryposis multiplex congenita with microcephaly",
+    "evidence": [
+      {
+        "source_id": "main-layout",
+        "locator": "page 543 title, authors, DOI 10.1007/s00439-023-02528-2"
+      },
+      {
+        "source_id": "identity-metadata",
+        "locator": "PMID 36943452 / PMC10060356"
+      }
+    ],
+    "note": "Published ten-page version; title, author group, DOI and PMID agree."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 3,
+      "table": 1,
+      "supplement": 0
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "Complete article: three fig, one table-wrap, zero supplementary-material; back matter ends with references."
+      },
+      {
+        "source_id": "main-layout",
+        "locator": "pages 543-552"
+      }
+    ],
+    "note": "Full article and references inspected. No supplement is advertised in this version; raw exome data are restricted and were neither sought nor accessed."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "pages",
+      "unit_count": 10,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "All published pages 543-552, including methods, discussion, declarations and 30 reference entries."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 10,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "All published pages 543-552, including methods, discussion, declarations and 30 reference entries."
+        }
+      ],
+      "note": "All published pages 543-552, including methods, discussion, declarations and 30 reference entries."
+    },
+    {
+      "id": "figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 3,
+      "extent_source_id": "figure1",
+      "extent_evidence": [
+        {
+          "source_id": "figure1",
+          "locator": "Figure 1: all panels and labels; figure 2 pedigrees, chromatograms and copy-number bars; figure 3 gene/protein schematic."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "figure1",
+          "locator": "Figure 1: all panels and labels; figure 2 pedigrees, chromatograms and copy-number bars; figure 3 gene/protein schematic."
+        }
+      ],
+      "note": "Figure 1: all panels and labels; figure 2 pedigrees, chromatograms and copy-number bars; figure 3 gene/protein schematic."
+    },
+    {
+      "id": "figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 3,
+      "extent_source_id": "figure2",
+      "extent_evidence": [
+        {
+          "source_id": "figure2",
+          "locator": "Figure 2: all panels and labels; figure 2 pedigrees, chromatograms and copy-number bars; figure 3 gene/protein schematic."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "figure2",
+          "locator": "Figure 2: all panels and labels; figure 2 pedigrees, chromatograms and copy-number bars; figure 3 gene/protein schematic."
+        }
+      ],
+      "note": "Figure 2: all panels and labels; figure 2 pedigrees, chromatograms and copy-number bars; figure 3 gene/protein schematic."
+    },
+    {
+      "id": "figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 1,
+      "extent_source_id": "figure3",
+      "extent_evidence": [
+        {
+          "source_id": "figure3",
+          "locator": "Figure 3: all panels and labels; figure 2 pedigrees, chromatograms and copy-number bars; figure 3 gene/protein schematic."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure3",
+          "locator": "Figure 3: all panels and labels; figure 2 pedigrees, chromatograms and copy-number bars; figure 3 gene/protein schematic."
+        }
+      ],
+      "note": "Figure 3: all panels and labels; figure 2 pedigrees, chromatograms and copy-number bars; figure 3 gene/protein schematic."
+    },
+    {
+      "id": "table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "table1-image",
+      "extent_evidence": [
+        {
+          "source_id": "table1-image",
+          "locator": "Table 1, page 547: all five columns, positive/negative/N/A cells and SD footnote."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "Table 1, page 547: all five columns, positive/negative/N/A cells and SD footnote."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table1-image",
+          "locator": "Table 1, page 547: all five columns, positive/negative/N/A cells and SD footnote."
+        }
+      ],
+      "note": "Table 1, page 547: all five columns, positive/negative/N/A cells and SD footnote."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/FILIP1/PMID_36943452_Family_2_individual_III_3.json",
+      "packet_sha256": "83d66cdfcb2f882818a9cee7720fe0b02a38490629c374aee81493d354509cf0",
+      "case_id": "TC_8130661595c9c982",
+      "role": "selected",
+      "packet_subject_id": "Family 2 individual III.3",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Frozen packet retained unchanged; each sibling and selected/alternate role assessed separately.",
+        "Coordinates were not reannotated against a genomic reference."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact Family 2 individual III.3, male, matches the pedigree and the reported age 7 years.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Paper reports homozygous FILIP1 c.2665C>T, p.Arg889*; coding/protein change and dosage match the packet. Paper uses NM_015687.4 whereas packet uses NM_015687.5 and hg38 genomic representation.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Genetic results pp548-549; Fig2b; Fig3"
+          }
+        ],
+        "limitations": [
+          "Transcript version and genomic coordinate conversion not independently established by this paper."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Sanger confirmation in affected individual and heterozygous carrier parents; all healthy siblings are heterozygous.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Methods p544; Genetic results p548; Fig2a-b"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single homozygous variant; heterozygous parental segregation supports one inherited copy from each parent. No compound-heterozygous phase question.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Genetic results p548; Fig2a-b"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors associate biallelic truncating FILIP1 variants with congenital arthrogryposis and report pathogenic classification; five cases in three consanguineous families, segregation and biological precedent support the proposed association.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Genetic results pp548-549; Discussion pp549-550"
+          }
+        ],
+        "limitations": [
+          "No patient-specific functional assay demonstrates the precise loss-of-function mechanism; no independent clinical validation or treatment result.",
+          "SOLVED/CAUSATIVE packet labels are source assertions, not new clinical proof."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet phenotype items compared individually. Paper additionally reports reduced palmar/plantar skin folds; normal brain imaging and normal IQ; mild left-ventricular dilation in narrative despite Table1/discussion reporting no heart anomaly.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+          }
+        ],
+        "limitations": [
+          "Packet is not a complete case history. Numerous encoded negatives are not explicit primary-source negatives; source-internal discrepancies retained."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c2665CtoT_FILIP1_NM_015687v5",
+            "geneContext": {
+              "valueId": "HGNC:21015",
+              "symbol": "FILIP1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_015687.5:c.2665C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.75313167G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_056502.1:p.(Arg889Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 75313167,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "71186a9a3ae9b00ffe1933bcacab8393147413a683c23edb010d1210756d6bbc",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Paper reports homozygous FILIP1 c.2665C>T, p.Arg889*; coding/protein change and dosage match the packet. Paper uses NM_015687.4 whereas packet uses NM_015687.5 and hg38 genomic representation.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Genetic results pp548-549; Fig2b; Fig3"
+              }
+            ],
+            "limitations": [
+              "Transcript version and genomic coordinate conversion not independently established by this paper."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034665",
+              "label": "Shoulder contracture"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb676abaa5b89ec5ef00c384ede4973a3c1773f0a7a09725fa9858507ccd1602",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 2 individual III.3 reports absence of Shoulder contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034391",
+              "label": "Elbow contracture"
+            }
+          },
+          "snapshot_sha256": "3ed0911f3bf962acfa8d0e74f0a54a00daa8bf1252045746bad4b5ece3e296d8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 2 individual III.3 reports presence of Elbow contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001239",
+              "label": "Wrist flexion contracture"
+            }
+          },
+          "snapshot_sha256": "3aecd02247f85302c8706a6fd33dfb7145e22114cf610f8c5fef6ce31a0119c2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table 1 reports wrist contractures, but does not specify flexion direction.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "The more specific flexion assertion is not explicitly established."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003273",
+              "label": "Hip contracture"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "436da21350127d9d5686877897f3587073c63f90e3cd79e49f2d5e751e498f74",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 2 individual III.3 reports absence of Hip contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034671",
+              "label": "Knee contracture"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "26a61e68f6706ae6061b0a8705adcdab13954165fedb3a7f607a3d91e536a12b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 2 individual III.3 reports absence of Knee contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005656",
+              "label": "Positional foot deformity"
+            }
+          },
+          "snapshot_sha256": "5adc25e13db075b764af536e5c356af3dd2d43a0569eb82ad2329be51c64c2de",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 2 individual III.3 reports presence of Positional foot deformity.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001838",
+              "label": "Rocker bottom foot"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5dd7feb24bb47e5f595b7d472ab164a18ef97bf9524bc2e758a82df4bd890576",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Rocker bottom foot is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001762",
+              "label": "Talipes equinovarus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "88377a3b02d35a9ed9068bf6dc21624cbea6f8163c5471abc8a8382866bb82af",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes talipes equinovarus, but the case narrative and Fig1b report bilateral club feet. The packet simultaneously includes positional foot deformity.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Clinical description p546; Fig1b legend p545; Table1 p547"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012385",
+              "label": "Camptodactyly"
+            }
+          },
+          "snapshot_sha256": "f999d42533c6043ae139e4ad98dc9758dc78b933aa546628c38e768707a8ecb1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 2 individual III.3 reports presence of Camptodactyly.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010557",
+              "label": "Overlapping fingers"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2d295fe93395be1b8d26da029d5a13501b41ed854676d97389de228eb85ff2cb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 2 individual III.3 reports absence of Overlapping fingers.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001159",
+              "label": "Syndactyly"
+            }
+          },
+          "snapshot_sha256": "e4c62be211c2b7fd3d60131ebda7863ecefc51e58fa8ec781ccf8a6c7b23d845",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 2 individual III.3 reports presence of Syndactyly.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "03152f286100abc72cad1120d8999d8a2e43113a3ec457babb1c73e5930869b4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Case has normal mental function and no major developmental delay apart from hand-use limitations.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "Formal developmental assessment is not provided for every domain; avoid treating a broad HPO abstraction as an independent diagnosis."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3130a4e428d7f480e192ff02afa4aed6779b4c705d4ee60a000c29b3bd4d4555",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly supports the encoded Delayed speech and language development state.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daf75a0de3b94ed300f1a23bf5f19a8ef6ea28b30902775a2860918197810c8f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Paper reports no major delay, but sitting at 10 months and walking at 16 months warrant retaining milestone context.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "Normal mental function is not a complete normal-motor examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010648",
+              "label": "Dermal translucency"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "003b5e77b707589300f416593588604b067d579930c2da77baab8f076c745136",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 2 individual III.3 reports absence of Dermal translucency.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002996",
+              "label": "Limited elbow movement"
+            }
+          },
+          "snapshot_sha256": "91a072172e8f4f0e049e9e059690d51e5c8b49d25ee9bb912f97fbb2d263066e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Limited elbow movement or its corresponding restricted joint movement for Family 2 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            }
+          },
+          "snapshot_sha256": "dee5d947ac21a314d7d79787c31b9353f0bbc535903aceaff2561ad86ae68d6a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Head circumference 48.5 cm (-3.2 SD) supports the encoded presence/absence at examination.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reported height is above -2 SD, consistent with the encoded exclusion of short stature.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100021",
+              "label": "Cerebral palsy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b94230ee91d50c718778296baade79ac86c467c00ce651c249f38babfb728a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Cerebral palsy is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001558",
+              "label": "Decreased fetal movement"
+            }
+          },
+          "snapshot_sha256": "3846a5b89105e54eebdd9c93a41346992eee600141400d272b3b724bf70afed6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Decreased fetal movement or its corresponding restricted joint movement for Family 2 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            }
+          },
+          "snapshot_sha256": "dfed0eeba81852313a1b62b7fd1e2a33e9467ee7a6360518e53376370228edaa",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Hypotonia or its corresponding restricted joint movement for Family 2 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            }
+          },
+          "snapshot_sha256": "af9432aa355687ec52f5e2082beacd6942f48279d4c240829f2997d4a6e11d2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 2 individual III.3 reports presence of Scoliosis.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002808",
+              "label": "Kyphosis"
+            }
+          },
+          "snapshot_sha256": "00b15f77757397337b20a8ed47dfe4f0214fab04617f252f9bf1e60a6a3d8e00",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Kyphosis or its corresponding restricted joint movement for Family 2 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000448",
+              "label": "Prominent nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1648956ff4848a7267c6eddc426a6026119534bb34957fae1b9b577000a2f044",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Prominent nose is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000276",
+              "label": "Long face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f86a163e69de2c34bbc0ab608b5c76cff3bc82a4ccd6b0f6c902ea4a1c9fee58",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Long face is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000325",
+              "label": "Triangular face"
+            }
+          },
+          "snapshot_sha256": "92805d6aa828aa4d7268c4c7bef7fb5e8c62908da62957596bec8b4084b029f0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Triangular face or its corresponding restricted joint movement for Family 2 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            }
+          },
+          "snapshot_sha256": "8d20831251db00a4a9f41505a640736489915d6d6521fc75535fbcab38213b26",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Downslanted palpebral fissures or its corresponding restricted joint movement for Family 2 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000286",
+              "label": "Epicanthus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3d1a3807e547a1db3644b4e3e18feea0a9f55f6f1520aa0e0ea2e761eaa116e4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Epicanthus is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000463",
+              "label": "Anteverted nares"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33e7c71d758332f4fd81389057f23ed16eddd7a20af0598fb1bd898eb897c6c5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Anteverted nares is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000465",
+              "label": "Webbed neck"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e0fd26f5f2879718c043d4bc7b98c60cdc8d92fa9980afbdcacd09b5da214d7c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Webbed neck is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000470",
+              "label": "Short neck"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b9b79d3eeb05d601d415095d5c983ed4dee5a56d264b281ba85834f33414f241",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short neck is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000475",
+              "label": "Broad neck"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a3d0a541554e35ab9432c297ed8b558ea5b80158b5f82e37cfa099023ff7e1a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Broad neck is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000193",
+              "label": "Bifid uvula"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0d0460ee5bdb7bb738569c2a90a563469ca28da3b1eb33a1fa32a9c4abddceff",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bifid uvula is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000294",
+              "label": "Low anterior hairline"
+            }
+          },
+          "snapshot_sha256": "6e556f2e83d0db8dc47d73a5bfe09a873e319d1287fd60c665e326328dcadeed",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Low anterior hairline or its corresponding restricted joint movement for Family 2 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000343",
+              "label": "Long philtrum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6ed0c52c1a5702542a97038db9ee6692d282239a275c74b59b99e5435150966b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Long philtrum is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3a127a8dbb9cbee1edd518029e0ba016d63f5c393adf2c3598edc1e619b74b4f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "High palate is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            }
+          },
+          "snapshot_sha256": "4288b41b99551912ca3fa5ad7e93bfd78790d71201dcef8f9d21b2ff60c00b44",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Micrognathia or its corresponding restricted joint movement for Family 2 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002000",
+              "label": "Short columella"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "763a5f26678e11136dd5f98b1e81bae73d3529d77cdedb4de86f4f84b32c8605",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short columella is not explicitly excluded for Family 2 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 2 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FILIP1/PMID_36943452_Family_1_individual_III_1.json",
+      "packet_sha256": "098e7b3fcc35d30e933a075d0dd9cb0c471a25cdd687f675d42908de16758130",
+      "case_id": "TC_0fad511b12b6d5ce",
+      "role": "selected",
+      "packet_subject_id": "Family 1 individual III.1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Frozen packet retained unchanged; each sibling and selected/alternate role assessed separately.",
+        "Coordinates were not reannotated against a genomic reference."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact Family 1 individual III.1, male, matches the pedigree and the reported age 12 years.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Paper reports homozygous FILIP1 c.463G>T, p.Glu155*; coding/protein change and dosage match the packet. Paper uses NM_015687.4 whereas packet uses NM_015687.5 and hg38 genomic representation.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Genetic results pp548-549; Fig2b; Fig3"
+          }
+        ],
+        "limitations": [
+          "Transcript version and genomic coordinate conversion not independently established by this paper."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Sanger confirmation in affected individual and heterozygous carrier parents; all three affected brothers are homozygous.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Methods p544; Genetic results p548; Fig2a-b"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single homozygous variant; heterozygous parental segregation supports one inherited copy from each parent. No compound-heterozygous phase question.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Genetic results p548; Fig2a-b"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors associate biallelic truncating FILIP1 variants with congenital arthrogryposis and report pathogenic classification; five cases in three consanguineous families, segregation and biological precedent support the proposed association.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Genetic results pp548-549; Discussion pp549-550"
+          }
+        ],
+        "limitations": [
+          "No patient-specific functional assay demonstrates the precise loss-of-function mechanism; no independent clinical validation or treatment result.",
+          "SOLVED/CAUSATIVE packet labels are source assertions, not new clinical proof."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet phenotype items compared individually. Paper additionally reports reduced palmar/plantar skin folds; anterior atlas-arch cleft on spinal MRI.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+          }
+        ],
+        "limitations": [
+          "Packet is not a complete case history. Numerous encoded negatives are not explicit primary-source negatives; source-internal discrepancies retained."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c463GtoT_FILIP1_NM_015687v5",
+            "geneContext": {
+              "valueId": "HGNC:21015",
+              "symbol": "FILIP1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_015687.5:c.463G>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.75353705C>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_056502.1:p.(Glu155Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 75353705,
+              "ref": "C",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "217d78ccd7391172a521e9fa6ccedab10d72bab167998cc510780696ff5351e0",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Paper reports homozygous FILIP1 c.463G>T, p.Glu155*; coding/protein change and dosage match the packet. Paper uses NM_015687.4 whereas packet uses NM_015687.5 and hg38 genomic representation.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Genetic results pp548-549; Fig2b; Fig3"
+              }
+            ],
+            "limitations": [
+              "Transcript version and genomic coordinate conversion not independently established by this paper."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034665",
+              "label": "Shoulder contracture"
+            }
+          },
+          "snapshot_sha256": "4d8f0739f08bba8d5d7e2c5a304fc70b00e0d315243ca09a89f8280e987fb1b6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.1 reports presence of Shoulder contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034391",
+              "label": "Elbow contracture"
+            }
+          },
+          "snapshot_sha256": "3ed0911f3bf962acfa8d0e74f0a54a00daa8bf1252045746bad4b5ece3e296d8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.1 reports presence of Elbow contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001239",
+              "label": "Wrist flexion contracture"
+            }
+          },
+          "snapshot_sha256": "3aecd02247f85302c8706a6fd33dfb7145e22114cf610f8c5fef6ce31a0119c2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table 1 reports wrist contractures, but does not specify flexion direction.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "The more specific flexion assertion is not explicitly established."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003273",
+              "label": "Hip contracture"
+            }
+          },
+          "snapshot_sha256": "18df76867950887b1fe9714e164159db5ef86581c95c044267ac83e70152535a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.1 reports presence of Hip contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034671",
+              "label": "Knee contracture"
+            }
+          },
+          "snapshot_sha256": "5defbd63b831be2e866e198b57da04979bc136e06948ab3c97528a8f941fa22d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.1 reports presence of Knee contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005656",
+              "label": "Positional foot deformity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a05ebe848e88e15d9141dca1f3b7e6639b20c31c545e97cfbfd5212aea5898f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.1 reports absence of Positional foot deformity.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001838",
+              "label": "Rocker bottom foot"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5dd7feb24bb47e5f595b7d472ab164a18ef97bf9524bc2e758a82df4bd890576",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Rocker bottom foot is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012385",
+              "label": "Camptodactyly"
+            }
+          },
+          "snapshot_sha256": "f999d42533c6043ae139e4ad98dc9758dc78b933aa546628c38e768707a8ecb1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.1 reports presence of Camptodactyly.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010557",
+              "label": "Overlapping fingers"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2d295fe93395be1b8d26da029d5a13501b41ed854676d97389de228eb85ff2cb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.1 reports absence of Overlapping fingers.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001159",
+              "label": "Syndactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daad0d477d85856268a78cb17b0874078f0db733274eb2391fcb8f5026eeb784",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.1 reports absence of Syndactyly.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "03152f286100abc72cad1120d8999d8a2e43113a3ec457babb1c73e5930869b4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Motor development generally normal with poor active speech and reduced fine motor skills.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "Formal developmental assessment is not provided for every domain; avoid treating a broad HPO abstraction as an independent diagnosis."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly supports the encoded Delayed speech and language development state.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daf75a0de3b94ed300f1a23bf5f19a8ef6ea28b30902775a2860918197810c8f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly supports the encoded Motor delay state.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003691",
+              "label": "Scapular winging"
+            }
+          },
+          "snapshot_sha256": "00781eba875a1e087b0c3162580dc0744f87206496812dac03251d2c5e4168ef",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Scapular winging or its corresponding restricted joint movement for Family 1 individual III.1.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010648",
+              "label": "Dermal translucency"
+            }
+          },
+          "snapshot_sha256": "2c505d81926295db6970da19833e1caf546f844650f30546464e159252ae6e9a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.1 reports presence of Dermal translucency.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002996",
+              "label": "Limited elbow movement"
+            }
+          },
+          "snapshot_sha256": "91a072172e8f4f0e049e9e059690d51e5c8b49d25ee9bb912f97fbb2d263066e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Limited elbow movement or its corresponding restricted joint movement for Family 1 individual III.1.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008800",
+              "label": "Limited hip movement"
+            }
+          },
+          "snapshot_sha256": "904ac6e610c1b5493686b99227a9f8a2151bb74350a2ddca92ace25965a06216",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Limited hip movement or its corresponding restricted joint movement for Family 1 individual III.1.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            }
+          },
+          "snapshot_sha256": "dee5d947ac21a314d7d79787c31b9353f0bbc535903aceaff2561ad86ae68d6a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Head circumference 51.8 cm (-2.1 SD) supports the encoded presence/absence at examination.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reported height is above -2 SD, consistent with the encoded exclusion of short stature.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100021",
+              "label": "Cerebral palsy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b94230ee91d50c718778296baade79ac86c467c00ce651c249f38babfb728a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Cerebral palsy is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001558",
+              "label": "Decreased fetal movement"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f4d117df1fec69efb595045ff66aac6f41d5ddae6782ae0b19f2e0f6630177d7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Decreased fetal movement is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4a1bfc1bd5599f694602bb5a9c71ff1934f02d19f1529197116397e70f25b7f7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypotonia is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            }
+          },
+          "snapshot_sha256": "af9432aa355687ec52f5e2082beacd6942f48279d4c240829f2997d4a6e11d2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.1 reports presence of Scoliosis.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002808",
+              "label": "Kyphosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "74ef7bf1541c3a34e7743cb3245acdec57d8ee002a95d29f656fbddc0a5378b0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Kyphosis is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000767",
+              "label": "Pectus excavatum"
+            }
+          },
+          "snapshot_sha256": "19a73115cb8f3adaaa4f5ca4eb71895a03d00389c6969c5d48c22c925e2741a7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Pectus excavatum or its corresponding restricted joint movement for Family 1 individual III.1.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000448",
+              "label": "Prominent nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1648956ff4848a7267c6eddc426a6026119534bb34957fae1b9b577000a2f044",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Prominent nose is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000276",
+              "label": "Long face"
+            }
+          },
+          "snapshot_sha256": "3a0b9394f92d065f914def4df47d9a57b3c564b6db1e89a821a7dc40bd9e69c4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Long face or its corresponding restricted joint movement for Family 1 individual III.1.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000325",
+              "label": "Triangular face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8f3e7117d4522889f24170aa39192763ef94219dfed6c0f0fd86c521d1302a73",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Triangular face is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            }
+          },
+          "snapshot_sha256": "8d20831251db00a4a9f41505a640736489915d6d6521fc75535fbcab38213b26",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Downslanted palpebral fissures or its corresponding restricted joint movement for Family 1 individual III.1.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000286",
+              "label": "Epicanthus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3d1a3807e547a1db3644b4e3e18feea0a9f55f6f1520aa0e0ea2e761eaa116e4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Epicanthus is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000463",
+              "label": "Anteverted nares"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33e7c71d758332f4fd81389057f23ed16eddd7a20af0598fb1bd898eb897c6c5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Anteverted nares is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000465",
+              "label": "Webbed neck"
+            }
+          },
+          "snapshot_sha256": "b10f65c98eea54a9b5d0aae96a23e1a11147e2e57ede601981853de7b5a6ac17",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Webbed neck or its corresponding restricted joint movement for Family 1 individual III.1.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000470",
+              "label": "Short neck"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b9b79d3eeb05d601d415095d5c983ed4dee5a56d264b281ba85834f33414f241",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short neck is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000475",
+              "label": "Broad neck"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a3d0a541554e35ab9432c297ed8b558ea5b80158b5f82e37cfa099023ff7e1a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Broad neck is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000193",
+              "label": "Bifid uvula"
+            }
+          },
+          "snapshot_sha256": "4d248a199ecd1f64e95eedb8121a606d18e39a28220c64a530194e71c6790f0f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Bifid uvula or its corresponding restricted joint movement for Family 1 individual III.1.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000294",
+              "label": "Low anterior hairline"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8af816b8704a744ac4cc009db8c3fe2e5d8c9e9e1ef94ff8aafdb8f2e79f625f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Low anterior hairline is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000343",
+              "label": "Long philtrum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6ed0c52c1a5702542a97038db9ee6692d282239a275c74b59b99e5435150966b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Long philtrum is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            }
+          },
+          "snapshot_sha256": "7464dd531646fde4b613619c2d8d042119320ad998e758c0b3296f9a1376e8e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports High palate or its corresponding restricted joint movement for Family 1 individual III.1.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            }
+          },
+          "snapshot_sha256": "4288b41b99551912ca3fa5ad7e93bfd78790d71201dcef8f9d21b2ff60c00b44",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Micrognathia or its corresponding restricted joint movement for Family 1 individual III.1.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/39",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002000",
+              "label": "Short columella"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "763a5f26678e11136dd5f98b1e81bae73d3529d77cdedb4de86f4f84b32c8605",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short columella is not explicitly excluded for Family 1 individual III.1. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.1"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FILIP1/PMID_36943452_Family_1_individual_III_2.json",
+      "packet_sha256": "832456616521ad7444ae5931ceb00f65d949fe1fd9cc14c19ae4ffb84ccadccd",
+      "case_id": "TC_0fad511b12b6d5ce",
+      "role": "alternate",
+      "packet_subject_id": "Family 1 individual III.2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Frozen packet retained unchanged; each sibling and selected/alternate role assessed separately.",
+        "Coordinates were not reannotated against a genomic reference."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact Family 1 individual III.2, male, matches the pedigree and the reported age 6 years.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Paper reports homozygous FILIP1 c.463G>T, p.Glu155*; coding/protein change and dosage match the packet. Paper uses NM_015687.4 whereas packet uses NM_015687.5 and hg38 genomic representation.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Genetic results pp548-549; Fig2b; Fig3"
+          }
+        ],
+        "limitations": [
+          "Transcript version and genomic coordinate conversion not independently established by this paper."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Sanger confirmation in affected individual and heterozygous carrier parents; all three affected brothers are homozygous.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Methods p544; Genetic results p548; Fig2a-b"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single homozygous variant; heterozygous parental segregation supports one inherited copy from each parent. No compound-heterozygous phase question.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Genetic results p548; Fig2a-b"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors associate biallelic truncating FILIP1 variants with congenital arthrogryposis and report pathogenic classification; five cases in three consanguineous families, segregation and biological precedent support the proposed association.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Genetic results pp548-549; Discussion pp549-550"
+          }
+        ],
+        "limitations": [
+          "No patient-specific functional assay demonstrates the precise loss-of-function mechanism; no independent clinical validation or treatment result.",
+          "SOLVED/CAUSATIVE packet labels are source assertions, not new clinical proof."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet phenotype items compared individually. Paper additionally reports reduced palmar/plantar skin folds; shortened dorsal leg muscles and right-foot equinus.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+          }
+        ],
+        "limitations": [
+          "Packet is not a complete case history. Numerous encoded negatives are not explicit primary-source negatives; source-internal discrepancies retained."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c463GtoT_FILIP1_NM_015687v5",
+            "geneContext": {
+              "valueId": "HGNC:21015",
+              "symbol": "FILIP1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_015687.5:c.463G>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.75353705C>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_056502.1:p.(Glu155Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 75353705,
+              "ref": "C",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "217d78ccd7391172a521e9fa6ccedab10d72bab167998cc510780696ff5351e0",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Paper reports homozygous FILIP1 c.463G>T, p.Glu155*; coding/protein change and dosage match the packet. Paper uses NM_015687.4 whereas packet uses NM_015687.5 and hg38 genomic representation.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Genetic results pp548-549; Fig2b; Fig3"
+              }
+            ],
+            "limitations": [
+              "Transcript version and genomic coordinate conversion not independently established by this paper."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034665",
+              "label": "Shoulder contracture"
+            }
+          },
+          "snapshot_sha256": "4d8f0739f08bba8d5d7e2c5a304fc70b00e0d315243ca09a89f8280e987fb1b6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.2 reports presence of Shoulder contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034391",
+              "label": "Elbow contracture"
+            }
+          },
+          "snapshot_sha256": "3ed0911f3bf962acfa8d0e74f0a54a00daa8bf1252045746bad4b5ece3e296d8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.2 reports presence of Elbow contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001239",
+              "label": "Wrist flexion contracture"
+            }
+          },
+          "snapshot_sha256": "3aecd02247f85302c8706a6fd33dfb7145e22114cf610f8c5fef6ce31a0119c2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table 1 reports wrist contractures, but does not specify flexion direction.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "The more specific flexion assertion is not explicitly established."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003273",
+              "label": "Hip contracture"
+            }
+          },
+          "snapshot_sha256": "18df76867950887b1fe9714e164159db5ef86581c95c044267ac83e70152535a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.2 reports presence of Hip contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034671",
+              "label": "Knee contracture"
+            }
+          },
+          "snapshot_sha256": "5defbd63b831be2e866e198b57da04979bc136e06948ab3c97528a8f941fa22d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.2 reports presence of Knee contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001838",
+              "label": "Rocker bottom foot"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5dd7feb24bb47e5f595b7d472ab164a18ef97bf9524bc2e758a82df4bd890576",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Rocker bottom foot is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001762",
+              "label": "Talipes equinovarus"
+            }
+          },
+          "snapshot_sha256": "be7d08ed640bf9aea5b610597d90c2f389185d2d365306f82445685cad6b09ee",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Talipes equinovarus or its corresponding restricted joint movement for Family 1 individual III.2.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012385",
+              "label": "Camptodactyly"
+            }
+          },
+          "snapshot_sha256": "f999d42533c6043ae139e4ad98dc9758dc78b933aa546628c38e768707a8ecb1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.2 reports presence of Camptodactyly.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010557",
+              "label": "Overlapping fingers"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2d295fe93395be1b8d26da029d5a13501b41ed854676d97389de228eb85ff2cb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.2 reports absence of Overlapping fingers.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001159",
+              "label": "Syndactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daad0d477d85856268a78cb17b0874078f0db733274eb2391fcb8f5026eeb784",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.2 reports absence of Syndactyly.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Mild motor and speech delays reported; global delay is a broader HPO abstraction.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "Formal developmental assessment is not provided for every domain; avoid treating a broad HPO abstraction as an independent diagnosis."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly supports the encoded Delayed speech and language development state.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            }
+          },
+          "snapshot_sha256": "0c23f286da3cc9f5294730531056b36482123ec2bc9f963bea5f94b46dcd72a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly supports the encoded Motor delay state.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003691",
+              "label": "Scapular winging"
+            }
+          },
+          "snapshot_sha256": "00781eba875a1e087b0c3162580dc0744f87206496812dac03251d2c5e4168ef",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Scapular winging or its corresponding restricted joint movement for Family 1 individual III.2.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010648",
+              "label": "Dermal translucency"
+            }
+          },
+          "snapshot_sha256": "2c505d81926295db6970da19833e1caf546f844650f30546464e159252ae6e9a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.2 reports presence of Dermal translucency.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002996",
+              "label": "Limited elbow movement"
+            }
+          },
+          "snapshot_sha256": "91a072172e8f4f0e049e9e059690d51e5c8b49d25ee9bb912f97fbb2d263066e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Limited elbow movement or its corresponding restricted joint movement for Family 1 individual III.2.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010501",
+              "label": "Limitation of knee mobility"
+            }
+          },
+          "snapshot_sha256": "5b80c463e7dae2a355d82daa4c5fd8f9b908941eef8b41c48795a4ac6f51b31a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Limitation of knee mobility or its corresponding restricted joint movement for Family 1 individual III.2.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008800",
+              "label": "Limited hip movement"
+            }
+          },
+          "snapshot_sha256": "904ac6e610c1b5493686b99227a9f8a2151bb74350a2ddca92ace25965a06216",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Limited hip movement or its corresponding restricted joint movement for Family 1 individual III.2.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Head circumference 51 cm (-1.5 SD) supports the encoded presence/absence at examination.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reported height is above -2 SD, consistent with the encoded exclusion of short stature.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100021",
+              "label": "Cerebral palsy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b94230ee91d50c718778296baade79ac86c467c00ce651c249f38babfb728a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Cerebral palsy is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001558",
+              "label": "Decreased fetal movement"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f4d117df1fec69efb595045ff66aac6f41d5ddae6782ae0b19f2e0f6630177d7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Decreased fetal movement is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4a1bfc1bd5599f694602bb5a9c71ff1934f02d19f1529197116397e70f25b7f7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypotonia is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            }
+          },
+          "snapshot_sha256": "af9432aa355687ec52f5e2082beacd6942f48279d4c240829f2997d4a6e11d2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.2 reports presence of Scoliosis.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002808",
+              "label": "Kyphosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "74ef7bf1541c3a34e7743cb3245acdec57d8ee002a95d29f656fbddc0a5378b0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Kyphosis is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000448",
+              "label": "Prominent nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1648956ff4848a7267c6eddc426a6026119534bb34957fae1b9b577000a2f044",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Prominent nose is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000276",
+              "label": "Long face"
+            }
+          },
+          "snapshot_sha256": "3a0b9394f92d065f914def4df47d9a57b3c564b6db1e89a821a7dc40bd9e69c4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Long face or its corresponding restricted joint movement for Family 1 individual III.2.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000325",
+              "label": "Triangular face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8f3e7117d4522889f24170aa39192763ef94219dfed6c0f0fd86c521d1302a73",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Triangular face is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            }
+          },
+          "snapshot_sha256": "8d20831251db00a4a9f41505a640736489915d6d6521fc75535fbcab38213b26",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Downslanted palpebral fissures or its corresponding restricted joint movement for Family 1 individual III.2.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000286",
+              "label": "Epicanthus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3d1a3807e547a1db3644b4e3e18feea0a9f55f6f1520aa0e0ea2e761eaa116e4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Epicanthus is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000463",
+              "label": "Anteverted nares"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33e7c71d758332f4fd81389057f23ed16eddd7a20af0598fb1bd898eb897c6c5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Anteverted nares is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000465",
+              "label": "Webbed neck"
+            }
+          },
+          "snapshot_sha256": "b10f65c98eea54a9b5d0aae96a23e1a11147e2e57ede601981853de7b5a6ac17",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Webbed neck or its corresponding restricted joint movement for Family 1 individual III.2.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000470",
+              "label": "Short neck"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b9b79d3eeb05d601d415095d5c983ed4dee5a56d264b281ba85834f33414f241",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short neck is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000475",
+              "label": "Broad neck"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a3d0a541554e35ab9432c297ed8b558ea5b80158b5f82e37cfa099023ff7e1a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Broad neck is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000193",
+              "label": "Bifid uvula"
+            }
+          },
+          "snapshot_sha256": "4d248a199ecd1f64e95eedb8121a606d18e39a28220c64a530194e71c6790f0f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Bifid uvula or its corresponding restricted joint movement for Family 1 individual III.2.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000294",
+              "label": "Low anterior hairline"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8af816b8704a744ac4cc009db8c3fe2e5d8c9e9e1ef94ff8aafdb8f2e79f625f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Low anterior hairline is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000343",
+              "label": "Long philtrum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6ed0c52c1a5702542a97038db9ee6692d282239a275c74b59b99e5435150966b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Long philtrum is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            }
+          },
+          "snapshot_sha256": "7464dd531646fde4b613619c2d8d042119320ad998e758c0b3296f9a1376e8e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports High palate or its corresponding restricted joint movement for Family 1 individual III.2.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            }
+          },
+          "snapshot_sha256": "4288b41b99551912ca3fa5ad7e93bfd78790d71201dcef8f9d21b2ff60c00b44",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Micrognathia or its corresponding restricted joint movement for Family 1 individual III.2.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/39",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002000",
+              "label": "Short columella"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "763a5f26678e11136dd5f98b1e81bae73d3529d77cdedb4de86f4f84b32c8605",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short columella is not explicitly excluded for Family 1 individual III.2. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.2"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FILIP1/PMID_36943452_Family_1_individual_III_3.json",
+      "packet_sha256": "1e4ea359ede3cd7fe271ce9f93b8a3b1ce1378f2e9cbe3eedd6a8ed67d5547a3",
+      "case_id": "TC_0fad511b12b6d5ce",
+      "role": "alternate",
+      "packet_subject_id": "Family 1 individual III.3",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Frozen packet retained unchanged; each sibling and selected/alternate role assessed separately.",
+        "Coordinates were not reannotated against a genomic reference."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact Family 1 individual III.3, male, matches the pedigree and the reported age 5 years.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Paper reports homozygous FILIP1 c.463G>T, p.Glu155*; coding/protein change and dosage match the packet. Paper uses NM_015687.4 whereas packet uses NM_015687.5 and hg38 genomic representation.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Genetic results pp548-549; Fig2b; Fig3"
+          }
+        ],
+        "limitations": [
+          "Transcript version and genomic coordinate conversion not independently established by this paper."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Sanger confirmation in affected individual and heterozygous carrier parents; all three affected brothers are homozygous.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Methods p544; Genetic results p548; Fig2a-b"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single homozygous variant; heterozygous parental segregation supports one inherited copy from each parent. No compound-heterozygous phase question.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Genetic results p548; Fig2a-b"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors associate biallelic truncating FILIP1 variants with congenital arthrogryposis and report pathogenic classification; five cases in three consanguineous families, segregation and biological precedent support the proposed association.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Genetic results pp548-549; Discussion pp549-550"
+          }
+        ],
+        "limitations": [
+          "No patient-specific functional assay demonstrates the precise loss-of-function mechanism; no independent clinical validation or treatment result.",
+          "SOLVED/CAUSATIVE packet labels are source assertions, not new clinical proof."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet phenotype items compared individually. Paper additionally reports reduced palmar/plantar skin folds; left renal hypoplasia, absent from packet.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+          }
+        ],
+        "limitations": [
+          "Packet is not a complete case history. Numerous encoded negatives are not explicit primary-source negatives; source-internal discrepancies retained."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c463GtoT_FILIP1_NM_015687v5",
+            "geneContext": {
+              "valueId": "HGNC:21015",
+              "symbol": "FILIP1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_015687.5:c.463G>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.75353705C>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_056502.1:p.(Glu155Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 75353705,
+              "ref": "C",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "217d78ccd7391172a521e9fa6ccedab10d72bab167998cc510780696ff5351e0",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Paper reports homozygous FILIP1 c.463G>T, p.Glu155*; coding/protein change and dosage match the packet. Paper uses NM_015687.4 whereas packet uses NM_015687.5 and hg38 genomic representation.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Genetic results pp548-549; Fig2b; Fig3"
+              }
+            ],
+            "limitations": [
+              "Transcript version and genomic coordinate conversion not independently established by this paper."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034665",
+              "label": "Shoulder contracture"
+            }
+          },
+          "snapshot_sha256": "4d8f0739f08bba8d5d7e2c5a304fc70b00e0d315243ca09a89f8280e987fb1b6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.3 reports presence of Shoulder contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034391",
+              "label": "Elbow contracture"
+            }
+          },
+          "snapshot_sha256": "3ed0911f3bf962acfa8d0e74f0a54a00daa8bf1252045746bad4b5ece3e296d8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.3 reports presence of Elbow contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001239",
+              "label": "Wrist flexion contracture"
+            }
+          },
+          "snapshot_sha256": "3aecd02247f85302c8706a6fd33dfb7145e22114cf610f8c5fef6ce31a0119c2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table 1 reports wrist contractures, but does not specify flexion direction.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "The more specific flexion assertion is not explicitly established."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003273",
+              "label": "Hip contracture"
+            }
+          },
+          "snapshot_sha256": "18df76867950887b1fe9714e164159db5ef86581c95c044267ac83e70152535a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.3 reports presence of Hip contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034671",
+              "label": "Knee contracture"
+            }
+          },
+          "snapshot_sha256": "5defbd63b831be2e866e198b57da04979bc136e06948ab3c97528a8f941fa22d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.3 reports presence of Knee contracture.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005656",
+              "label": "Positional foot deformity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a05ebe848e88e15d9141dca1f3b7e6639b20c31c545e97cfbfd5212aea5898f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.3 reports absence of Positional foot deformity.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001838",
+              "label": "Rocker bottom foot"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5dd7feb24bb47e5f595b7d472ab164a18ef97bf9524bc2e758a82df4bd890576",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Rocker bottom foot is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012385",
+              "label": "Camptodactyly"
+            }
+          },
+          "snapshot_sha256": "f999d42533c6043ae139e4ad98dc9758dc78b933aa546628c38e768707a8ecb1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.3 reports presence of Camptodactyly.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010557",
+              "label": "Overlapping fingers"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2d295fe93395be1b8d26da029d5a13501b41ed854676d97389de228eb85ff2cb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.3 reports absence of Overlapping fingers.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001159",
+              "label": "Syndactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daad0d477d85856268a78cb17b0874078f0db733274eb2391fcb8f5026eeb784",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.3 reports absence of Syndactyly.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Mild motor and speech delays reported; global delay is a broader HPO abstraction.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "Formal developmental assessment is not provided for every domain; avoid treating a broad HPO abstraction as an independent diagnosis."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly supports the encoded Delayed speech and language development state.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            }
+          },
+          "snapshot_sha256": "0c23f286da3cc9f5294730531056b36482123ec2bc9f963bea5f94b46dcd72a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly supports the encoded Motor delay state.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010648",
+              "label": "Dermal translucency"
+            }
+          },
+          "snapshot_sha256": "2c505d81926295db6970da19833e1caf546f844650f30546464e159252ae6e9a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.3 reports presence of Dermal translucency.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002996",
+              "label": "Limited elbow movement"
+            }
+          },
+          "snapshot_sha256": "91a072172e8f4f0e049e9e059690d51e5c8b49d25ee9bb912f97fbb2d263066e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Limited elbow movement or its corresponding restricted joint movement for Family 1 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100021",
+              "label": "Cerebral palsy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b94230ee91d50c718778296baade79ac86c467c00ce651c249f38babfb728a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Cerebral palsy is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001558",
+              "label": "Decreased fetal movement"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f4d117df1fec69efb595045ff66aac6f41d5ddae6782ae0b19f2e0f6630177d7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Decreased fetal movement is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4a1bfc1bd5599f694602bb5a9c71ff1934f02d19f1529197116397e70f25b7f7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypotonia is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            }
+          },
+          "snapshot_sha256": "af9432aa355687ec52f5e2082beacd6942f48279d4c240829f2997d4a6e11d2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table 1 Family 1 individual III.3 reports presence of Scoliosis.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002808",
+              "label": "Kyphosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "74ef7bf1541c3a34e7743cb3245acdec57d8ee002a95d29f656fbddc0a5378b0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Kyphosis is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000448",
+              "label": "Prominent nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1648956ff4848a7267c6eddc426a6026119534bb34957fae1b9b577000a2f044",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Prominent nose is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000276",
+              "label": "Long face"
+            }
+          },
+          "snapshot_sha256": "3a0b9394f92d065f914def4df47d9a57b3c564b6db1e89a821a7dc40bd9e69c4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Long face or its corresponding restricted joint movement for Family 1 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000325",
+              "label": "Triangular face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8f3e7117d4522889f24170aa39192763ef94219dfed6c0f0fd86c521d1302a73",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Triangular face is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            }
+          },
+          "snapshot_sha256": "8d20831251db00a4a9f41505a640736489915d6d6521fc75535fbcab38213b26",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Downslanted palpebral fissures or its corresponding restricted joint movement for Family 1 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000286",
+              "label": "Epicanthus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3d1a3807e547a1db3644b4e3e18feea0a9f55f6f1520aa0e0ea2e761eaa116e4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Epicanthus is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000463",
+              "label": "Anteverted nares"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33e7c71d758332f4fd81389057f23ed16eddd7a20af0598fb1bd898eb897c6c5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Anteverted nares is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000465",
+              "label": "Webbed neck"
+            }
+          },
+          "snapshot_sha256": "b10f65c98eea54a9b5d0aae96a23e1a11147e2e57ede601981853de7b5a6ac17",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Webbed neck or its corresponding restricted joint movement for Family 1 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000470",
+              "label": "Short neck"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b9b79d3eeb05d601d415095d5c983ed4dee5a56d264b281ba85834f33414f241",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short neck is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000475",
+              "label": "Broad neck"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a3d0a541554e35ab9432c297ed8b558ea5b80158b5f82e37cfa099023ff7e1a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Broad neck is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000193",
+              "label": "Bifid uvula"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0d0460ee5bdb7bb738569c2a90a563469ca28da3b1eb33a1fa32a9c4abddceff",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bifid uvula is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000294",
+              "label": "Low anterior hairline"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8af816b8704a744ac4cc009db8c3fe2e5d8c9e9e1ef94ff8aafdb8f2e79f625f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Low anterior hairline is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000343",
+              "label": "Long philtrum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6ed0c52c1a5702542a97038db9ee6692d282239a275c74b59b99e5435150966b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Long philtrum is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3a127a8dbb9cbee1edd518029e0ba016d63f5c393adf2c3598edc1e619b74b4f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "High palate is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            }
+          },
+          "snapshot_sha256": "4288b41b99551912ca3fa5ad7e93bfd78790d71201dcef8f9d21b2ff60c00b44",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinical description directly reports Micrognathia or its corresponding restricted joint movement for Family 1 individual III.3.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002000",
+              "label": "Short columella"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "763a5f26678e11136dd5f98b1e81bae73d3529d77cdedb4de86f4f84b32c8605",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short columella is not explicitly excluded for Family 1 individual III.3. Omission from a selected list of facial/clinical findings is not proof of absence.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Results clinical description pp545-548; Table 1 column Family 1 individual III.3"
+              }
+            ],
+            "limitations": [
+              "No explicit patient-specific negative statement or tabulated negative for this feature."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source-correspondence audit, not blinded or independent clinical validation.",
+    "Reader9 records directory and predecessor reviewer-1 filename search contained no records for these four PMIDs on arrival; no predecessor reading credit invented. Curated subscription inputs were prepared but Claude used zero tokens and performed no review."
+  ]
+}

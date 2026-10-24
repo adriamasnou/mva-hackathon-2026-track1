@@ -1,0 +1,2706 @@
+{
+  "schema_version": 1,
+  "pmid": "39641441",
+  "title": "Does It Run in Your Family? Inherited Truncating PSMD12 Variants Broaden the Phenotypic Spectrum of Stankiewicz-Isidor Syndrome.",
+  "reviewer": {
+    "id": "Codex-parent-primary-text",
+    "reviewed_at_utc": "2026-10-24T18:25:44.153359+00:00",
+    "method": "Parent read the entire available publisher article rendering, abstract through all31references, in overlapping untruncated tool displays; all626 displayed web lines retained by exact deduplication. Reviewed all three packet fields individually. Figure legend and all Table1 cells read as text. Figure pixels, original table layout and DOCX remain unread. Grok supplied access lead, not clinical evidence."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Mandatory HANDOFF exposes aggregate benchmark results and historical public HG002/FGFR2 rank. Conservatively per_case, not blinded; no target-case outcomes consulted."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "c9ce918dc9e78a58edc3311855a8bbdd3f21c2989df33060fbb0aa096d2fe38a",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main",
+      "pmid": "39641441",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/parent/39641441-assets/publisher-web-rendering.txt",
+      "sha256": "fb5c58a58b11f55508a8c3b42ac50ececd1baf2afd9e02e6f71f8f5d44f5fc4c",
+      "kind": "text",
+      "description": "Complete publisher text via web tool cached rendering, linesL0-L625 deduplicated with equality checks; not an original downloaded PDF. URLhttps://onlinelibrary.wiley.com/doi/full/10.1002/ajmg.a.63953"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Does It Run in Your Family? Inherited Truncating PSMD12 Variants Broaden the Phenotypic Spectrum of Stankiewicz-Isidor Syndrome.",
+    "evidence": [
+      {
+        "source_id": "main",
+        "locator": "L20 title;L22-L230 authors;L232 publicationdate;L234 DOI;L562 citation"
+      }
+    ],
+    "note": "Matches PMID39641441 and DOI10.1002/ajmg.a.63953; eight-page institutional PDF metadata independently matched, but PDF download HTTP403 and screenshot tool returned no visible pixels."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 1,
+      "table": 1,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "main",
+        "locator": "Whole article; Figure1 L274-L279, Table1 L332-L345, sole linked ajmga63953-sup-0001-Supinfo.docx L399-L405"
+      }
+    ],
+    "note": "Inventory at file/component level. DOCX described as DataS1 and cited for TableS1; internal supplemental extent unverified until file obtained."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 626,
+      "extent_source_id": "main",
+      "extent_evidence": [
+        {
+          "source_id": "main",
+          "locator": "All626 web-rendered linesL0-L625 retained"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 626,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "All body, acknowledgments, declarations, caption, Table1 cells and31reference entries read. PublisherLx corresponds to local line x+1."
+        }
+      ],
+      "note": "Available publisher web text fully read; no claim of entire PDF pixels."
+    },
+    {
+      "id": "figure:1",
+      "kind": "figure",
+      "status": "unavailable",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main",
+      "extent_evidence": [
+        {
+          "source_id": "main",
+          "locator": "Figure1caption L274-L279"
+        }
+      ],
+      "coverage": [],
+      "note": "Caption read; pixels not returned by web PDF screenshot calls, direct PDF download403. No visual phenotype interpretation."
+    },
+    {
+      "id": "table:1",
+      "kind": "table",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main",
+      "extent_evidence": [
+        {
+          "source_id": "main",
+          "locator": "Table1 L332-L345"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "All three columns and10clinical-category rows plus note L332-L345."
+        }
+      ],
+      "note": "All cell text read; original layout/pixels unavailable. HPO assignments are source descriptions, not revalidated ontology mappings."
+    },
+    {
+      "id": "supp:docx",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels",
+        "data"
+      ],
+      "unit_type": "pages",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "ajmga63953-sup-0001-Supinfo.docx,122.6KB, contains DataS1/supportinginformation and cited TableS1. Downloadclick failed; no content assumed."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/PSMD12/PMID_39641441_F1p1.json",
+      "packet_sha256": "65b21fb74808678e38d5bc876a8d4eacb8fd727405cb9818a51b1057ab43e9da",
+      "case_id": "TC_3f26e97e2f2412f7",
+      "role": "selected",
+      "packet_subject_id": "F1p1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source correspondence only, not new clinical truth.",
+        "Figures and supplementary clinical matrix inaccessible.",
+        "Transcript-version difference and unsupported negatives remain explicit."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family1 older daughter, assessed18years, ovarian teratoma17years.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L308-L310"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous c.865C>T p.Arg289* in PSMD12 is explicitly reported in all three Family1 members.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L302-L306"
+          }
+        ],
+        "limitations": [
+          "Source transcriptNM_002816.3 differs from packetNM_002816.5; coding change agrees but transcript-version and genomic-coordinate equivalence not independently remapped."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Paternally inherited in both siblings; grandparents tested, establishing de novo occurrence in the father.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L302-L303"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single reported heterozygous allele; no compound-heterozygous phase inference.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L302-L303"
+          }
+        ],
+        "limitations": [
+          "No independent genotype or parentage testing performed."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors classify the variant pathogenic by ACMG and describe prior occurrence plus familial segregation.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L303-L306;L374"
+          }
+        ],
+        "limitations": [
+          "Supporting methods unavailable; criteria codes and assay details not independently reclassified. Source-label support is not new clinical validation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All supplied positive/negative terms and onset annotations were compared with available main text.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L308-L320;Table1L332-L345"
+          }
+        ],
+        "limitations": [
+          "The three related source subjects share one compact case signature, not three independent cases. SupplementaryTableS1 may resolve negatives, but is unread. The packet omits some reported details."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c865CtoT_PSMD12_NM_002816v5",
+            "geneContext": {
+              "valueId": "HGNC:9557",
+              "symbol": "PSMD12"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002816.5:c.865C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000017.11:g.67345788G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_002807.1:p.(Arg289Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr17",
+              "pos": 67345788,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "5261a407abf195d34ded7344d05d83baa938042a85ba1871bf1ab0c8ad3c9a9b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Coding change, protein consequence and heterozygosity correspond to source; exact transcript/protein version and hg38coordinate remain packet-level specifications.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L302-L306"
+              }
+            ],
+            "limitations": [
+              "No independent sequence remapping."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003623",
+                "label": "Neonatal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "3bed047dbdfecd5a6840d9fd15b402e4c88c5f5ac9b067441c489edd93d71c3e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Feeding difficulties.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001397",
+              "label": "Hepatic steatosis"
+            }
+          },
+          "snapshot_sha256": "9a03c307a73822396cdb3b1c7ec2134ab994884228ab09aab99b8cb28544c7a6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Hepatic steatosis.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033757",
+              "label": "Pancreatic steatosis"
+            }
+          },
+          "snapshot_sha256": "bff7db2a8a07fedb8a1c146fac8dcc0c3600f3fcd9be0a5d03bdf59cd564a0ba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Pancreatic steatosis.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000678",
+              "label": "Dental crowding"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "40c0268f20012d481a931df715b49a575794d555510ef86f5bd1335b690d56dd",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Dental crowding in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000689",
+              "label": "Dental malocclusion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b545459a083960d8e498d357ba677b6392ff7a1a4f295a46d9be41dc9e73d128",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Dental malocclusion in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000677",
+              "label": "Oligodontia"
+            }
+          },
+          "snapshot_sha256": "31c5b711e273237304ce9d1c7d05c9d58f3456d8ba33565bf7decea52a543663",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Oligodontia.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000175",
+              "label": "Cleft palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "957c01067f0f046de0fbc8fce87578a45f7b5f8583352f18e0a3530172ac9c94",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Cleft palate in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010809",
+              "label": "Broad uvula"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c72e9e690b376ba27c4a298d1aae4592063d97112485fc820fda9a0da4ff5688",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Broad uvula in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000582",
+              "label": "Upslanted palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5867461b798c329bd0bddddb67e84eb665b91c9df85237c30adf17460594bcc0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Upslanted palpebral fissure in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0045025",
+              "label": "Narrow palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "73386f569e3d653c468b95cf937ee08c7979a8053fc20abbca1c8d5237078229",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Narrow palpebral fissure in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009765",
+              "label": "Low hanging columella"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e089de84e39fa5e0eb8aa20077e903747ebfd88a62e19c7395acca67b72cecac",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Low hanging columella in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            }
+          },
+          "snapshot_sha256": "4288b41b99551912ca3fa5ad7e93bfd78790d71201dcef8f9d21b2ff60c00b44",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Micrognathia.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000248",
+              "label": "Brachycephaly"
+            }
+          },
+          "snapshot_sha256": "e9f4e3e641c03b0210092d9ff3b5d55c977ffbf7b07d329eb1d7f6e9bd8add9e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Brachycephaly.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Hypertelorism.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000358",
+              "label": "Posteriorly rotated ears"
+            }
+          },
+          "snapshot_sha256": "69de827a482e8db6d1917cd36728ba56e0cf10f5042d19b998515bbdfbc1414e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Posteriorly rotated ears.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000403",
+              "label": "Recurrent otitis media"
+            }
+          },
+          "snapshot_sha256": "d3b4bafe53c8fc627fe0533d68d7355920f084cf348a84d9009ef49d2cff1922",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Recurrent otitis media.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Global developmental delay.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001256",
+              "label": "Mild intellectual disability"
+            }
+          },
+          "snapshot_sha256": "159e5b28a640533fa8e7da536280581b734434da485f11813eb29caf54f386c4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Mild intellectual disability.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002414",
+              "label": "Spina bifida"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "55bfbbb0088a32aa104fa228852ad8a8d2339842d83c70d18fc32c0983ad490c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Spina bifida in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006386",
+              "label": "Hypoplastic distal radial epiphyses"
+            }
+          },
+          "snapshot_sha256": "57249a0dfa7cffbae9c7125b283ea25851157484e544f524356834dd1dfd368f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Bilateral thinned distal radial epiphyses are reported; the packet maps this to hypoplastic distal radial epiphyses.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310;Table1L340"
+              }
+            ],
+            "limitations": [
+              "Original radiographs not independently measured."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:6000503",
+              "label": "4-5 toe cutaneous syndactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b3c9c72f29da7fa106568c092032c6cca7eaf5c82ef0264136d9eb1d5c408af1",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of 4-5 toe cutaneous syndactyly in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004691",
+              "label": "2-3 toe syndactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5159eab70408f68fc75520556a3c2f180c4fdb9973a550855b8787b008c4f0bc",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of 2-3 toe syndactyly in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001182",
+              "label": "Tapered finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "41459c4bd2763e08b6caf7fc03b7dc6758e5e589fb361d45471d74f93ec56622",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Tapered finger in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001156",
+              "label": "Brachydactyly"
+            }
+          },
+          "snapshot_sha256": "09cd3651cd1b9688b8b6b1e512cddd925efd7a55361d789533fa531c3383e61a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Brachydactyly.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003623",
+                "label": "Neonatal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "27ee07c6a186cb72b385088a68567863e5bb0d7db2dc7ea0498a6f843f720c50",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Hypotonia.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            }
+          },
+          "snapshot_sha256": "1b50d63adae74dce026ec2e71a5ac3acb68f40de41c49c079a589c966bdfa5f6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Short stature.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001513",
+              "label": "Obesity"
+            }
+          },
+          "snapshot_sha256": "0224270c9b82098c18325cf24a119e310e7af88bcdba6b610bff3698f467627f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Obesity.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000956",
+              "label": "Acanthosis nigricans"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4edcd15d677fd5d0dce33ee3f875204ca341b6cf36ce36c6a6e3de5d84dea915",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Acanthosis nigricans in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001065",
+              "label": "Striae distensae"
+            }
+          },
+          "snapshot_sha256": "2dc34b6bbfcc3a14dcbf1919f095972c3bc18991d84ba17615cd5738d1792de9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Striae distensae.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001061",
+              "label": "Acne"
+            }
+          },
+          "snapshot_sha256": "e927480f15318bc97ca5bd0813c2db24137a620ba38dbc1a09cb4d023f54bdbe",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Acne.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:6001189",
+              "label": "Onychoheterotopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d2aaad00d6bc679f72528c8c6a46278a550be559551d384d02b42c00614bf7ed",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Onychoheterotopia in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030148",
+              "label": "Heart murmur"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "66aca29f52146b610a3ac186a8c11b0bc8213cfe6a4540cae76a30110b3427f2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Heart murmur in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001629",
+              "label": "Ventricular septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d19f83639125fcf466505f3b2812b7ce76ac91f1b42acb57e91cae123b3910e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Normal echocardiography in both siblings supports no detected septal defect at the reported evaluation.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312"
+              }
+            ],
+            "limitations": [
+              "This is an investigation-based absence at follow-up, not a lifetime guarantee."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002643",
+              "label": "Neonatal respiratory distress"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f081c601db16f0970c66b9a9782327115a26800202d93692a9eb3b60d3b86766",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Neonatal respiratory distress in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012226",
+              "label": "Ovarian teratoma"
+            }
+          },
+          "snapshot_sha256": "07527ef56510b8f4bd0b5169c9612698509f4a02ea782bdc7c34e622b4d60961",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Ovarian teratoma.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009797",
+              "label": "Cholesteatoma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cfd4850927a2b984912dcb30c29d2c3702010b32325b0a7e5c23ba1156afe2e5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Cholesteatoma in F1p1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L308-L310"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/PSMD12/PMID_39641441_F1p2.json",
+      "packet_sha256": "687c727137471ad66a65dd867908b9ceb1ea96541a1cc427e98583d777b0e3eb",
+      "case_id": "TC_3f26e97e2f2412f7",
+      "role": "alternate",
+      "packet_subject_id": "F1p2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source correspondence only, not new clinical truth.",
+        "Figures and supplementary clinical matrix inaccessible.",
+        "Transcript-version difference and unsupported negatives remain explicit."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family1 younger brother, assessed15years, born36+4weeks with IUGR.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L310-L313"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous c.865C>T p.Arg289* in PSMD12 is explicitly reported in all three Family1 members.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L302-L306"
+          }
+        ],
+        "limitations": [
+          "Source transcriptNM_002816.3 differs from packetNM_002816.5; coding change agrees but transcript-version and genomic-coordinate equivalence not independently remapped."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Paternally inherited in both siblings; grandparents tested, establishing de novo occurrence in the father.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L302-L303"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single reported heterozygous allele; no compound-heterozygous phase inference.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L302-L303"
+          }
+        ],
+        "limitations": [
+          "No independent genotype or parentage testing performed."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors classify the variant pathogenic by ACMG and describe prior occurrence plus familial segregation.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L303-L306;L374"
+          }
+        ],
+        "limitations": [
+          "Supporting methods unavailable; criteria codes and assay details not independently reclassified. Source-label support is not new clinical validation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All supplied positive/negative terms and onset annotations were compared with available main text.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L308-L320;Table1L332-L345"
+          }
+        ],
+        "limitations": [
+          "The three related source subjects share one compact case signature, not three independent cases. SupplementaryTableS1 may resolve negatives, but is unread. The packet omits some reported details."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c865CtoT_PSMD12_NM_002816v5",
+            "geneContext": {
+              "valueId": "HGNC:9557",
+              "symbol": "PSMD12"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002816.5:c.865C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000017.11:g.67345788G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_002807.1:p.(Arg289Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr17",
+              "pos": 67345788,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "5261a407abf195d34ded7344d05d83baa938042a85ba1871bf1ab0c8ad3c9a9b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Coding change, protein consequence and heterozygosity correspond to source; exact transcript/protein version and hg38coordinate remain packet-level specifications.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L302-L306"
+              }
+            ],
+            "limitations": [
+              "No independent sequence remapping."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000678",
+              "label": "Dental crowding"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "40c0268f20012d481a931df715b49a575794d555510ef86f5bd1335b690d56dd",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Dental crowding in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000689",
+              "label": "Dental malocclusion"
+            }
+          },
+          "snapshot_sha256": "c96b494328192c7c3f43866d5b92318ba101e01d743660f9486eaec3ab262dbf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Dental malocclusion.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000677",
+              "label": "Oligodontia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0aa154c84fa847823beca8e1485d94e90e04efcc2761c3f7a1fef6f0a0c8b220",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Oligodontia in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000175",
+              "label": "Cleft palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "957c01067f0f046de0fbc8fce87578a45f7b5f8583352f18e0a3530172ac9c94",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Cleft palate in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            }
+          },
+          "snapshot_sha256": "7464dd531646fde4b613619c2d8d042119320ad998e758c0b3296f9a1376e8e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports High palate.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010809",
+              "label": "Broad uvula"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c72e9e690b376ba27c4a298d1aae4592063d97112485fc820fda9a0da4ff5688",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Broad uvula in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000582",
+              "label": "Upslanted palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5867461b798c329bd0bddddb67e84eb665b91c9df85237c30adf17460594bcc0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Upslanted palpebral fissure in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0045025",
+              "label": "Narrow palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "73386f569e3d653c468b95cf937ee08c7979a8053fc20abbca1c8d5237078229",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Narrow palpebral fissure in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009765",
+              "label": "Low hanging columella"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e089de84e39fa5e0eb8aa20077e903747ebfd88a62e19c7395acca67b72cecac",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Low hanging columella in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Hypertelorism.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000358",
+              "label": "Posteriorly rotated ears"
+            }
+          },
+          "snapshot_sha256": "69de827a482e8db6d1917cd36728ba56e0cf10f5042d19b998515bbdfbc1414e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Posteriorly rotated ears.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000369",
+              "label": "Low-set ears"
+            }
+          },
+          "snapshot_sha256": "d3ebc814e2fe4068a3cc114824711c68bd531b6879885d4e754d52ab1ba1ee65",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Low-set ears.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Delayed speech and language development.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Global developmental delay.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001256",
+              "label": "Mild intellectual disability"
+            }
+          },
+          "snapshot_sha256": "159e5b28a640533fa8e7da536280581b734434da485f11813eb29caf54f386c4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Mild intellectual disability.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002414",
+              "label": "Spina bifida"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "55bfbbb0088a32aa104fa228852ad8a8d2339842d83c70d18fc32c0983ad490c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Spina bifida in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:6000503",
+              "label": "4-5 toe cutaneous syndactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b3c9c72f29da7fa106568c092032c6cca7eaf5c82ef0264136d9eb1d5c408af1",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of 4-5 toe cutaneous syndactyly in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004691",
+              "label": "2-3 toe syndactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5159eab70408f68fc75520556a3c2f180c4fdb9973a550855b8787b008c4f0bc",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of 2-3 toe syndactyly in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001182",
+              "label": "Tapered finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "41459c4bd2763e08b6caf7fc03b7dc6758e5e589fb361d45471d74f93ec56622",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Tapered finger in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001761",
+              "label": "Pes cavus"
+            }
+          },
+          "snapshot_sha256": "a1cbc4068ebf8e354240a68a698926d0b8767d748384d5612c1a17fd1cd650eb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Pes cavus.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Normal growth parameters at15support absence of short stature at this examination.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L311"
+              }
+            ],
+            "limitations": [
+              "No explicit numerical height or lifelong absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001518",
+              "label": "Small for gestational age"
+            }
+          },
+          "snapshot_sha256": "0332ec1ed1de76e57d4415df6018ee78199c3791976a28406b06ff0f604103ab",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Small for gestational age.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011461",
+                "label": "Fetal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "10882d4e10fc14c788471a4b1fb7a5acc27b04a8b41c9b3b47e61e3ee3418132",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Intrauterine growth retardation.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000956",
+              "label": "Acanthosis nigricans"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4edcd15d677fd5d0dce33ee3f875204ca341b6cf36ce36c6a6e3de5d84dea915",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Acanthosis nigricans in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001061",
+              "label": "Acne"
+            }
+          },
+          "snapshot_sha256": "e927480f15318bc97ca5bd0813c2db24137a620ba38dbc1a09cb4d023f54bdbe",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Acne.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:6001189",
+              "label": "Onychoheterotopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d2aaad00d6bc679f72528c8c6a46278a550be559551d384d02b42c00614bf7ed",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Onychoheterotopia in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030148",
+              "label": "Heart murmur"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "66aca29f52146b610a3ac186a8c11b0bc8213cfe6a4540cae76a30110b3427f2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Heart murmur in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001629",
+              "label": "Ventricular septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d19f83639125fcf466505f3b2812b7ce76ac91f1b42acb57e91cae123b3910e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Normal echocardiography in both siblings supports no detected septal defect at the reported evaluation.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312"
+              }
+            ],
+            "limitations": [
+              "This is an investigation-based absence at follow-up, not a lifetime guarantee."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002643",
+              "label": "Neonatal respiratory distress"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f081c601db16f0970c66b9a9782327115a26800202d93692a9eb3b60d3b86766",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Neonatal respiratory distress in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009797",
+              "label": "Cholesteatoma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cfd4850927a2b984912dcb30c29d2c3702010b32325b0a7e5c23ba1156afe2e5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Cholesteatoma in F1p2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L310-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/PSMD12/PMID_39641441_F1p3.json",
+      "packet_sha256": "d89029a5346b878b1822c2351d52a59387fd91bbe4a3405f47b6fabbe05de855",
+      "case_id": "TC_3f26e97e2f2412f7",
+      "role": "alternate",
+      "packet_subject_id": "F1p3",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source correspondence only, not new clinical truth.",
+        "Figures and supplementary clinical matrix inaccessible.",
+        "Transcript-version difference and unsupported negatives remain explicit."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family1 father, retrospectively evaluated with learning difficulties, height160cm and overweight.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L312-L313"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous c.865C>T p.Arg289* in PSMD12 is explicitly reported in all three Family1 members.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L302-L306"
+          }
+        ],
+        "limitations": [
+          "Source transcriptNM_002816.3 differs from packetNM_002816.5; coding change agrees but transcript-version and genomic-coordinate equivalence not independently remapped."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Paternally inherited in both siblings; grandparents tested, establishing de novo occurrence in the father.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L302-L303"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single reported heterozygous allele; no compound-heterozygous phase inference.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L302-L303"
+          }
+        ],
+        "limitations": [
+          "No independent genotype or parentage testing performed."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors classify the variant pathogenic by ACMG and describe prior occurrence plus familial segregation.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L303-L306;L374"
+          }
+        ],
+        "limitations": [
+          "Supporting methods unavailable; criteria codes and assay details not independently reclassified. Source-label support is not new clinical validation."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All supplied positive/negative terms and onset annotations were compared with available main text.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "L308-L320;Table1L332-L345"
+          }
+        ],
+        "limitations": [
+          "The three related source subjects share one compact case signature, not three independent cases. SupplementaryTableS1 may resolve negatives, but is unread. The packet omits some reported details."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c865CtoT_PSMD12_NM_002816v5",
+            "geneContext": {
+              "valueId": "HGNC:9557",
+              "symbol": "PSMD12"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002816.5:c.865C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000017.11:g.67345788G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_002807.1:p.(Arg289Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr17",
+              "pos": 67345788,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "5261a407abf195d34ded7344d05d83baa938042a85ba1871bf1ab0c8ad3c9a9b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Coding change, protein consequence and heterozygosity correspond to source; exact transcript/protein version and hg38coordinate remain packet-level specifications.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L302-L306"
+              }
+            ],
+            "limitations": [
+              "No independent sequence remapping."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000678",
+              "label": "Dental crowding"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "40c0268f20012d481a931df715b49a575794d555510ef86f5bd1335b690d56dd",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Dental crowding in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000689",
+              "label": "Dental malocclusion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b545459a083960d8e498d357ba677b6392ff7a1a4f295a46d9be41dc9e73d128",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Dental malocclusion in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000677",
+              "label": "Oligodontia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0aa154c84fa847823beca8e1485d94e90e04efcc2761c3f7a1fef6f0a0c8b220",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Oligodontia in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000175",
+              "label": "Cleft palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "957c01067f0f046de0fbc8fce87578a45f7b5f8583352f18e0a3530172ac9c94",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Cleft palate in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010809",
+              "label": "Broad uvula"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c72e9e690b376ba27c4a298d1aae4592063d97112485fc820fda9a0da4ff5688",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Broad uvula in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000337",
+              "label": "Broad forehead"
+            }
+          },
+          "snapshot_sha256": "7807b85461125b852877ebe908d6ab63323c036636d85c907a18bcfc6d5e87f4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Broad forehead.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002007",
+              "label": "Frontal bossing"
+            }
+          },
+          "snapshot_sha256": "813330582cf485d1426c57a251646392c4f708fc2a4749f2937d2d5153f593d3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Frontal bossing.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000582",
+              "label": "Upslanted palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5867461b798c329bd0bddddb67e84eb665b91c9df85237c30adf17460594bcc0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Upslanted palpebral fissure in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0045025",
+              "label": "Narrow palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "73386f569e3d653c468b95cf937ee08c7979a8053fc20abbca1c8d5237078229",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Narrow palpebral fissure in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009765",
+              "label": "Low hanging columella"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e089de84e39fa5e0eb8aa20077e903747ebfd88a62e19c7395acca67b72cecac",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Low hanging columella in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001256",
+              "label": "Mild intellectual disability"
+            }
+          },
+          "snapshot_sha256": "159e5b28a640533fa8e7da536280581b734434da485f11813eb29caf54f386c4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Father has learning difficulties/poor educational outcome; cohort summary assigns five mild and one moderate ID, consistent with this mapping.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312;L348"
+              }
+            ],
+            "limitations": [
+              "No individual formal IQ given for the father."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002414",
+              "label": "Spina bifida"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "55bfbbb0088a32aa104fa228852ad8a8d2339842d83c70d18fc32c0983ad490c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Spina bifida in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:6000503",
+              "label": "4-5 toe cutaneous syndactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b3c9c72f29da7fa106568c092032c6cca7eaf5c82ef0264136d9eb1d5c408af1",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of 4-5 toe cutaneous syndactyly in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004691",
+              "label": "2-3 toe syndactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5159eab70408f68fc75520556a3c2f180c4fdb9973a550855b8787b008c4f0bc",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of 2-3 toe syndactyly in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001182",
+              "label": "Tapered finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "41459c4bd2763e08b6caf7fc03b7dc6758e5e589fb361d45471d74f93ec56622",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Tapered finger in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001156",
+              "label": "Brachydactyly"
+            }
+          },
+          "snapshot_sha256": "09cd3651cd1b9688b8b6b1e512cddd925efd7a55361d789533fa531c3383e61a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicit source description supports Brachydactyly.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Absent short stature is not established: adult height160cm is reported, and the discussion calls5of6subjects short; this may conflict with the packet negative.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312;L363"
+              }
+            ],
+            "limitations": [
+              "Population-specific height interpretation and individual supplementary assignment unavailable; do not convert160cmalone into a definitive clinical classification."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025502",
+              "label": "Overweight"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003621",
+                "label": "Juvenile onset"
+              }
+            }
+          },
+          "snapshot_sha256": "d3c13f6344dccddf1de923e4c5277445604da5697ade184e15e9e06a57f337f9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Father is overweight with tendency to gain weight since adolescence; juvenile-onset category is approximate.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312"
+              }
+            ],
+            "limitations": [
+              "Adolescence does not establish an exact onset or narrow juvenile age window."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000956",
+              "label": "Acanthosis nigricans"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4edcd15d677fd5d0dce33ee3f875204ca341b6cf36ce36c6a6e3de5d84dea915",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Acanthosis nigricans in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:6001189",
+              "label": "Onychoheterotopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d2aaad00d6bc679f72528c8c6a46278a550be559551d384d02b42c00614bf7ed",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Onychoheterotopia in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030148",
+              "label": "Heart murmur"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "66aca29f52146b610a3ac186a8c11b0bc8213cfe6a4540cae76a30110b3427f2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Heart murmur in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001629",
+              "label": "Ventricular septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d19f83639125fcf466505f3b2812b7ce76ac91f1b42acb57e91cae123b3910e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Ventricular septal defect in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002643",
+              "label": "Neonatal respiratory distress"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f081c601db16f0970c66b9a9782327115a26800202d93692a9eb3b60d3b86766",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Neonatal respiratory distress in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009797",
+              "label": "Cholesteatoma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cfd4850927a2b984912dcb30c29d2c3702010b32325b0a7e5c23ba1156afe2e5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "The available main text does not explicitly establish absence of Cholesteatoma in F1p3.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "L312-L313"
+              }
+            ],
+            "limitations": [
+              "Omission or description in another family member is not a negative finding; TableS1 unavailable."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "figure:1",
+      "status": "open",
+      "detail": "Publisher/institutional original image not held; web PDF screenshots yielded no visible pixels.",
+      "evidence": [
+        {
+          "source_id": "main",
+          "locator": "Figure1 L274-L279"
+        }
+      ]
+    },
+    {
+      "component_id": "table:1",
+      "status": "open",
+      "detail": "Original table layout not visually inspected.",
+      "evidence": [
+        {
+          "source_id": "main",
+          "locator": "Table1 L332-L345"
+        }
+      ]
+    },
+    {
+      "component_id": "supp:docx",
+      "status": "open",
+      "detail": "Named DOCX download unavailable in current retrieval. All supplementary clinical negatives remain unverified.",
+      "evidence": [
+        {
+          "source_id": "main",
+          "locator": "L403 sole supporting file"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Unblinded, conservatively per-case exposed source review; no target-case ranking consulted.",
+    "Complete available main text including31references and textualTable1; Figure1pixels, tablelayout and soleDOCX remain incomplete.",
+    "No clinical or experimental reproduction; six-member cohort penetrance claim does not establish universal penetrance.",
+    "Tumour co-occurrence and developmental hypotheses are not established causal findings."
+  ]
+}

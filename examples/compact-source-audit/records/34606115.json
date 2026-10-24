@@ -3,9 +3,9 @@
   "pmid": "34606115",
   "title": "End-Truncated LAMB1 Causes a Hippocampal Memory Defect and a Leukoencephalopathy.",
   "reviewer": {
-    "id": "reviewer-2",
-    "reviewed_at_utc": "2026-10-24T17:11:32.417144+00:00",
-    "method": "Complete main-source reading in bounded nontruncated segments, visual figure/table inspection where stated, individual source-packet adjudication. Missing coverage remains explicit."
+    "id": "reviewer-2; reader-2-resume-20261024 (Table S1 follow-up)",
+    "reviewed_at_utc": "2026-10-24T18:07:48.458104+00:00",
+    "method": "Complete main-source reading in bounded nontruncated segments, visual figure/table inspection where stated, individual source-packet adjudication. Missing coverage remains explicit. Original main, figures, tables, packet assessments and Table S2 coverage are inherited reviewer-2 work, not personally reread at this resume. Resumed reader independently reread only Table S1 text and its one-page pixels. Exact prior record preserved at dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/history/34606115-before-s1-resume-573e2c5ecd4d1f68.json."
   },
   "audit": {
     "timing": "post_inference",
@@ -13,8 +13,8 @@
     "scope": "source_correspondence_not_clinical_validation",
     "clinical_truth_established": false,
     "ranking_outcomes_seen": true,
-    "outcome_exposure": "aggregate_only",
-    "exposure_note": "Inherited user context describes cohort results as source-label recovery and prior project validation limitations; no compact-cohort per-case ranking/score/result files opened. Assigned source contexts and primary sources only were used for adjudication."
+    "outcome_exposure": "per_case",
+    "exposure_note": "Original reviewer declared aggregate_only. Resumed follow-up: Mandatory HANDOFF.md read at resume exposed aggregate benchmark outcomes and a historical HG002/FGFR2 public-control case-specific rank. Conservatively declared per_case; this old public-control exposure is distinct from target-case outcomes: no target-case inference/result files or additional outcome summaries were consulted for this review. This is post-inference source correspondence, not blinded validation. Earlier canonical reviews are inherited work and are not claimed as this reviewer reading."
   },
   "bindings": {
     "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
@@ -143,6 +143,22 @@
       "sha256": "4354a3ea58b3e609fc61b474cd761b50ec9d698ad56a73799a2518952c43b518",
       "kind": "image",
       "description": "Complete scientific figure/table page visually inspected"
+    },
+    {
+      "id": "s1resume_png",
+      "pmid": "34606115",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/34606115/s1-resume-render/page-1.png",
+      "sha256": "f491e43b3e4f545e01246f65acf92170af2e0a8392111c6cec54dec9403c6f1c",
+      "kind": "image",
+      "description": "Single full Table S1 page rendered by bundled LibreOffice; personally inspected by resumed reader."
+    },
+    {
+      "id": "s1resume_pdf",
+      "pmid": "34606115",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/34606115/s1-resume-render/ana26242-sup-0001-tables1.pdf",
+      "sha256": "bb1f1a84b0961c08f7506393885f8747e35cea2a275a78aa8e25d005fa965847",
+      "kind": "pdf",
+      "description": "Durable one-page DOCX rendering corresponding to inspected PNG."
     }
   ],
   "identity": {
@@ -482,7 +498,7 @@
     {
       "id": "supp1",
       "kind": "supplement",
-      "status": "partial",
+      "status": "full",
       "required_modes": [
         "text",
         "pixels"
@@ -503,9 +519,16 @@
           "mode": "text",
           "source_id": "s1text",
           "locator": "All paragraphs and all42data cells plus headers read"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "s1resume_png",
+          "locator": "Entire single page: title, six-column headings and all seven gene rows directly inspected."
         }
       ],
-      "note": "All text/data consumed; native DOCX page pixels not inspected."
+      "note": "Prior reviewer-2 text coverage preserved; resumed reader independently reread extracted Table S1 text and inspected its complete one-page rendering, including all seven gene rows. Table S2 remains partial."
     },
     {
       "id": "supp2",
@@ -2001,7 +2024,7 @@
   ],
   "access_issues": [],
   "limitations": [
-    "Complete published main14pages, all6mainfigures and3tables read in text/pixels. TableS1 all text/cells read; native DOCX pixels pending. TableS2 onlyrows1–11 read; remaining4397rows and all workbook pixels unread. Rawgenomes, originalblots and cDNAsequence traces not examined. No contacts or data rerun.",
+    "Prior reviewer reported complete main14pages, all6mainfigures and3tables read in text/pixels; inherited coverage retained. TableS1 is now full: resumed reader personally reread every text/cell and inspected its single page. TableS2 still onlyrows1–11 read by prior reviewer; remaining4397rows and all workbook pixels unread. Rawgenomes, originalblots and cDNAsequence traces not examined. No contacts or data rerun.",
     "Discovery used207selected European-ancestry CSVD cases and566 FREX controls after QC, not initial258exomes. Four carriers vs0 controls p0.005 does not survive exome-wide correction. Additional26exomes yieldfifthcarrier, while public-control comparisons use all258 including ancestry/QC exclusions; differing case sets and variant-calling pipelines limit comparability. Post-selection of seven nominal genes and non-NMD region is not an independent patient replication. Controls lack uniform MRI phenotyping; late-onset penetrance remains unknown.",
     "Counts Table2: allPTVs5/258 vs203/71702 and86/62784; nonNMD4/258 vs1/71702 and2/62784 (8.05e-10,4.09e-9). These are reported rather than independently rerun. QC arithmetic: initial573FREX minus7highmissing minus1related wouldyield565, yet566 stated; possible overlap exclusions not specified. S1 LFNG gnomADp0.0003 is smaller thanLAMB1p0.00097 despite prose callingLAMB1 topgene againstbothdatabases. This doesnot negate LAMB1 nonNMD region association but qualifies ordering claim.",
     "Page969 NMD escape rule says >50–55bp upstream oflastjunction; this appears directionally reversed from intended last-exon/near-terminal escape logic (Figure2). c5161dup newstop occurs downstreamofalteration; alteredbaseposition itself isnotstopposition. Actual cDNA ofF2-8/F3-6 reportedly equallyexpressedWT/mutant but underlyingtraces/oligos onlyavailableonrequest. Do not generalize alltruncatingvariants as same mechanism; F5splice functionalconsequenceunknown.",

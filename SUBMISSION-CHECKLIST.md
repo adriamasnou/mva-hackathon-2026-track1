@@ -3,7 +3,7 @@
 Prepared locally on 24 October 2026. This checklist is not a submission receipt.
 
 - Report: [adriamasnou_track2_report.pdf](submissions/adriamasnou_track2_report.pdf), with [editable source](submissions/adriamasnou_track2_report.md).
-- Required methods form: [adriamasnou_methods_description.xlsx](submissions/adriamasnou_methods_description.xlsx). Provider tiers are the participant-confirmed Claude Max 20x and ChatGPT Pro 200. Retention settings have not been independently verified.
+- Required methods form: [adriamasnou_methods_description.xlsx](submissions/adriamasnou_methods_description.xlsx). Provider tiers are the participant-confirmed Claude Max 20x and ChatGPT Pro 200. The form also discloses xAI Grok Expert assistance with public-source searches; its account tier was not independently verified. Retention settings have not been independently verified.
 - Pitch option 1: [neutral synthetic narration](submissions/pitch/pitch-narrated.mp4), measured 177.000 seconds.
 - Pitch option 2: [silent visuals](submissions/pitch/pitch-silent.mp4), [editable slides](submissions/pitch/pitch-editable.pptx) and [timed script](submissions/pitch-video-script.md) for participant narration.
 - [Notes for judges](submissions/notes-for-judges.md) fit the 150-word limit.
@@ -15,7 +15,7 @@ Prepared locally on 24 October 2026. This checklist is not a submission receipt.
 - [Reviewer walkthrough](submissions/reviewer-walkthrough.md) provides working lookup and synthetic false-rescue examples.
 - [Public multi-case evaluation](submissions/public-validation.md) reports both completed 48-job genome batches and twelve phenotype-only jobs, with [paired results](examples/public-benchmark/results/paired-summary.json) and [portable outputs](examples/public-benchmark/results/). Nine primary source labels remain nine across both backgrounds; five have material source qualifications. The writeup preserves the COG8/SLC35C1 no-HPO best-mode limitation and both source-support partitions.
 
-- [Compact public companion](submissions/compact-public-validation.md) adds 1,418 completed jobs, every planned failure, disclosed parser correction and portable raw-output verification. Its [post-inference source-review snapshot](examples/compact-source-audit/README.md) includes 178 full-main-text reads, 80 complete paper reviews and 843 adjudicated packet mappings. The original results remain a constructed source-label benchmark; source review does not establish clinical truth.
+- [Compact public companion](submissions/compact-public-validation.md) adds 1,418 completed jobs, every planned failure, disclosed parser correction and portable raw-output verification. Its [post-inference source-review snapshot](examples/compact-source-audit/README.md) includes 210 full-main-text reads, 102 complete paper reviews and 920 adjudicated packet mappings. The original results remain a constructed source-label benchmark; source review does not establish clinical truth.
 
 Before submitting, the participant should review the report and methods form, choose the final narration, check pronunciation/captions, and create a judge-accessible video URL. Confirm the repository URL exposes the reviewed files under the challenge's access rules; local files and a private remote alone do not establish judge access. Record the actual submission receipt and the version submitted. No hosted pitch URL or Track 2 submission receipt exists in this package.
 
