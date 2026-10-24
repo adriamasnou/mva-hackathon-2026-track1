@@ -1,0 +1,2055 @@
+{
+  "schema_version": 1,
+  "pmid": "32433956",
+  "title": "MAU2 and NIPBL Variants Impair the Heterodimerization of the Cohesin Loader Subunits and Cause Cornelia de Lange Syndrome.",
+  "reviewer": {
+    "id": "reader-2-resume-20261024",
+    "reviewed_at_utc": "2026-10-24T20:23:36.085973+00:00",
+    "method": "Current resumed reviewer read all stated source-text units and inspected the stated pixel components directly. Record serialized after manual source comparison; script execution/extraction is not reading."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Mandatory HANDOFF.md read at resume exposed aggregate benchmark outcomes and a historical HG002/FGFR2 public-control case-specific rank. Conservatively declared per_case; this old public-control exposure is distinct from target-case outcomes: no target-case inference/result files or additional outcome summaries were consulted for this review. This is post-inference source correspondence, not blinded validation. Earlier canonical reviews are inherited work and are not claimed as this reviewer reading."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "15a6afbc143e3ee365d43716e45d726f3e4d745af5dd73aef6bddc42e2565cd6",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "pdf",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32433956/retrieval-followup/20261024T101654109503Z-25a2f619ba/response.body",
+      "sha256": "1da3ed8dc72d4693b9e9b641dd5e573eb91d3430eb69b35f5bbd7ad15aabc5b6",
+      "kind": "pdf",
+      "description": "Public Zaguan publisher-version original,3072608bytes,23pages. Entire main personally read including methods/references; not inherited reading."
+    },
+    {
+      "id": "text",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32433956/retrieval-followup/20261024T101654109503Z-25a2f619ba/response.body.layout.txt",
+      "sha256": "2ea5b25a4c99827ddc9fea72f134f57900ec85c6ce58dc914113a795c2a2a8a7",
+      "kind": "text",
+      "description": "Entire1397splitlines personally read in bounded sections. Layout extraction preserves columns; pixels checked throughout."
+    },
+    {
+      "id": "metadata",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32433956/europepmc.json",
+      "sha256": "8b684c96f99ed0013cd8e6589414c04b58cc2e589266ef1050077b7e53a4aa95",
+      "kind": "metadata",
+      "description": "Identity fields checked: PMID32433956, title, authors, DOI10.1016/j.celrep.2020.107647. No complete metadata reading claim."
+    },
+    {
+      "id": "main_receipt",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/32433956/retrieval-followup/20261024T101654109503Z-25a2f619ba/receipt.json",
+      "sha256": "8e18514675fe6ad84d2f7cadc919d4bb01c2a8cf8aa19f32de2d7a0220a5bd63",
+      "kind": "access_log",
+      "description": "Held public repository provenance receipt; original hash/bytes independently verified."
+    },
+    {
+      "id": "supp_pdf",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/32433956/retrieval-followup/20261024T201852276010Z-f7ac896e8b/response.body",
+      "sha256": "5799ffee64aea1d99994841a6a16e8331067eda67a6339b31821417228b6c0b4",
+      "kind": "pdf",
+      "description": "Public publisher mmc1.pdf,2152545bytes,13pages; all seven figuresS1-S7 and tablesS1/S2/S5/S6/S7 personally read. Garbled/absent extraction text resolved directly from legible pixels."
+    },
+    {
+      "id": "supp_text",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/32433956/retrieval-followup/20261024T201852276010Z-f7ac896e8b/response.body.layout.txt",
+      "sha256": "5cd6a30fc53c0c4a9c18f5523433280a565aa8ab07a48b83fea0e795552b966c",
+      "kind": "text",
+      "description": "All881splitlines inspected; garbled font encoding and absent TableS5 text mean extraction alone is insufficient. Original pixels supply those readings."
+    },
+    {
+      "id": "supp_receipt",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/32433956/retrieval-followup/20261024T201852276010Z-f7ac896e8b/receipt.json",
+      "sha256": "2f67f2b5a5c8ad1ecb4197949bfd2325e12413375ee15c90a0c5a322a6ec48d8",
+      "kind": "access_log",
+      "description": "Public CDN200 acquisition receipt; title/authors and component contents manually matched."
+    },
+    {
+      "id": "wb_manifest",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supplement-workbooks-manifest.json",
+      "sha256": "7deb7b9a74fb26ed04815ca454f7e2d7293df1972e7aa653f5ff14ac2a169092",
+      "kind": "metadata",
+      "description": "Workbook identity, extents and hashes; preparation not reading."
+    },
+    {
+      "id": "p1",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-01.png",
+      "sha256": "44909fcd273369c1b5854b4cbe4471747bc59e8b6edc9c00421ad3cf41ad505f",
+      "kind": "image",
+      "description": "Entire main PDFpage1 personally inspected."
+    },
+    {
+      "id": "p2",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-02.png",
+      "sha256": "ddc4ff4d9121f668a4fb9d38736af21dbbd6f91fd3e3ddae06f3598ee60d7517",
+      "kind": "image",
+      "description": "Entire main PDFpage2 personally inspected."
+    },
+    {
+      "id": "p3",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-03.png",
+      "sha256": "ab1a8f8b8947f48c90ec56c0c0bc4890cc599fa0c5ccd2ec0305667474ffd923",
+      "kind": "image",
+      "description": "Entire main PDFpage3 personally inspected."
+    },
+    {
+      "id": "p4",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-04.png",
+      "sha256": "327516d8cd4835fe3be01906fb0189ea4ca3a9fbe542bcd63c44f69b6ac694ab",
+      "kind": "image",
+      "description": "Entire main PDFpage4 personally inspected."
+    },
+    {
+      "id": "p5",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-05.png",
+      "sha256": "45f7e51f2e3b8b992b4deb2043d76e1ade5a80e78a8a5f143ff7bb490de120fc",
+      "kind": "image",
+      "description": "Entire main PDFpage5 personally inspected."
+    },
+    {
+      "id": "p6",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-06.png",
+      "sha256": "0b4f7b73bdfb66bf16c79a0aefdedc16f94bc7d2694afb1b9f4d46390bb8067b",
+      "kind": "image",
+      "description": "Entire main PDFpage6 personally inspected."
+    },
+    {
+      "id": "p7",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-07.png",
+      "sha256": "7a1d03665ddcc77d811938bbfaf254889f7977b6b65c92cab807f1813ef2e27a",
+      "kind": "image",
+      "description": "Entire main PDFpage7 personally inspected."
+    },
+    {
+      "id": "p8",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-08.png",
+      "sha256": "88c51dfe4a0d14723a1ff1528cf34943d1d5cfca86a49edc1cc843d0f17e56e5",
+      "kind": "image",
+      "description": "Entire main PDFpage8 personally inspected."
+    },
+    {
+      "id": "p9",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-09.png",
+      "sha256": "0db5830d5007f901bc991e0f6b89697cc6ccacd831cde65d23aba3dc74208549",
+      "kind": "image",
+      "description": "Entire main PDFpage9 personally inspected."
+    },
+    {
+      "id": "p10",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-10.png",
+      "sha256": "48aab25d77d1126ebe0cba5cb2c3a6bfe21c122d64d8cf6ac6a273be56865fac",
+      "kind": "image",
+      "description": "Entire main PDFpage10 personally inspected."
+    },
+    {
+      "id": "p11",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-11.png",
+      "sha256": "4ad190c7a42bded342823906d41689d05f59d2c44dfe508e9c9df6ff56fe227e",
+      "kind": "image",
+      "description": "Entire main PDFpage11 personally inspected."
+    },
+    {
+      "id": "p12",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-12.png",
+      "sha256": "1f45046c6070351b723329c0870d27e3f485c91c93a6154dce8e924abe354c92",
+      "kind": "image",
+      "description": "Entire main PDFpage12 personally inspected."
+    },
+    {
+      "id": "p13",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-13.png",
+      "sha256": "82742e5cc52034e64315abbfb29d04c6a966495f676b28839972b88d3f807c35",
+      "kind": "image",
+      "description": "Entire main PDFpage13 personally inspected."
+    },
+    {
+      "id": "p14",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-14.png",
+      "sha256": "403c76715b0d8cf7e7f40ceff5dd1e8c48f74384650cea30c9c5771702ffb640",
+      "kind": "image",
+      "description": "Entire main PDFpage14 personally inspected."
+    },
+    {
+      "id": "p15",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-15.png",
+      "sha256": "1338737bd28a168ee12619287370f3d7f567d164ac08bc0e43c6235a0ee3c02f",
+      "kind": "image",
+      "description": "Entire main PDFpage15 personally inspected."
+    },
+    {
+      "id": "p16",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-16.png",
+      "sha256": "03dbe64406c7e16a88620a59c61bef361766be16fd80689d34a81b32acbbac6b",
+      "kind": "image",
+      "description": "Entire main PDFpage16 personally inspected."
+    },
+    {
+      "id": "p17",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-17.png",
+      "sha256": "de389a2fe0aa20f10c90582972bf884bc331069fb920020b06adae54d0f70cfa",
+      "kind": "image",
+      "description": "Entire main PDFpage17 personally inspected."
+    },
+    {
+      "id": "p18",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-18.png",
+      "sha256": "6bc2157499ef18550dbc0fa7cd1452ed302a5beef47da798598adb69556f0875",
+      "kind": "image",
+      "description": "Entire main PDFpage18 personally inspected."
+    },
+    {
+      "id": "p19",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-19.png",
+      "sha256": "c89689f983ba3e6bbcbff5bf21627fa03aa455c52c43012b8e9b888f4d1038a6",
+      "kind": "image",
+      "description": "Entire main PDFpage19 personally inspected."
+    },
+    {
+      "id": "p20",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-20.png",
+      "sha256": "3464811b22d3d491e07fd321656612269e6b8cb57a81756b209406aa01bf42c3",
+      "kind": "image",
+      "description": "Entire main PDFpage20 personally inspected."
+    },
+    {
+      "id": "p21",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-21.png",
+      "sha256": "b10feb81c8f8130539cd07f884e3f3576d4b8cc41ec6da915c0c7d7b357333d5",
+      "kind": "image",
+      "description": "Entire main PDFpage21 personally inspected."
+    },
+    {
+      "id": "p22",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-22.png",
+      "sha256": "0c0340d4262f3b8f44a9ca6ee3bc4bdd3704f26b89bc1c72ead79922a419c3ae",
+      "kind": "image",
+      "description": "Entire main PDFpage22 personally inspected."
+    },
+    {
+      "id": "p23",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/main-23.png",
+      "sha256": "3efa5221f591e0a7b0f0b1ece2740fcd891f8728ae0e739d453f10a55e575921",
+      "kind": "image",
+      "description": "Entire main PDFpage23 personally inspected."
+    },
+    {
+      "id": "sp1",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-01.png",
+      "sha256": "23e4d970d53411bc930c1f7690223b05f763691183e08ee87dd28bfdac43becb",
+      "kind": "image",
+      "description": "Entire supplement PDFpage1 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "sp2",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-02.png",
+      "sha256": "80fe182c9cec412586519ed3eeac72d3b2677bac3bd47f4042d0c3e7f818afa7",
+      "kind": "image",
+      "description": "Entire supplement PDFpage2 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "sp3",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-03.png",
+      "sha256": "b2c424d8efdd9b2adbc32652ef4ce1aa5da66457e781776fe993b9a901e8572d",
+      "kind": "image",
+      "description": "Entire supplement PDFpage3 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "sp4",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-04.png",
+      "sha256": "ff29610ae383177432fdc70b51d2faa55e036a059ba5b0a8f27d99cb0a512ec4",
+      "kind": "image",
+      "description": "Entire supplement PDFpage4 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "sp5",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-05.png",
+      "sha256": "bfd0a5d87b326663246497566773768d8ded7b23d2b32fe7617964aeb7705a04",
+      "kind": "image",
+      "description": "Entire supplement PDFpage5 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "sp6",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-06.png",
+      "sha256": "265c8024637147b19659e89e9f235b56e79cb90e8906675538306899f418e239",
+      "kind": "image",
+      "description": "Entire supplement PDFpage6 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "sp7",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-07.png",
+      "sha256": "b1e85c22510fc780ad2d4e13d1abe087eaf0525277b7e4f63d1f7bedc558fc01",
+      "kind": "image",
+      "description": "Entire supplement PDFpage7 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "sp8",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-08.png",
+      "sha256": "ebd2134995adc182f8ef58f8ac4823e971de023ee09c0a27111a607f4372b207",
+      "kind": "image",
+      "description": "Entire supplement PDFpage8 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "sp9",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-09.png",
+      "sha256": "a8cd969d91d44129f6e1ce2af6b46e38150ee41e03d097f2bfc8b417a6fe7896",
+      "kind": "image",
+      "description": "Entire supplement PDFpage9 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "sp10",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-10.png",
+      "sha256": "f5b796bd0ec8f27ad4225578ad1d1de9db82662e4e5d812276078eb7a8cc9edd",
+      "kind": "image",
+      "description": "Entire supplement PDFpage10 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "sp11",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-11.png",
+      "sha256": "66da32d58bba59d2c75289e451363587943c2d0a4018fe756e1786f3e0ba756b",
+      "kind": "image",
+      "description": "Entire supplement PDFpage11 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "sp12",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-12.png",
+      "sha256": "c277f3ae30df9c2f95bf5db2a04daf7c385e25a10e0f8d00f3e5b5f1e5646abf",
+      "kind": "image",
+      "description": "Entire supplement PDFpage12 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "sp13",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/supp-13.png",
+      "sha256": "f5c2550f5e31cbe520ddff42e3e4f7b1876453891023ead7ed03335258360357",
+      "kind": "image",
+      "description": "Entire supplement PDFpage13 personally inspected; all text/panels/table cells read."
+    },
+    {
+      "id": "fig1_detail",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/figure1-ABC-detail.png",
+      "sha256": "59c8e7566e24a68621d742d74492b8f1ef09a7c118e1b53d4f96ba656a513120",
+      "kind": "image",
+      "description": "Enlarged originalFigure1A-C pixels directly inspected; traces/counts/conservation."
+    },
+    {
+      "id": "S3",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/32433956/retrieval-followup/20261024T202106081523Z-22537eb2f8/response.body",
+      "sha256": "2e7aa7476256a51c0f4a1370df012d5a2cb8755597808d91826e59514d18c4cd",
+      "kind": "data",
+      "description": "PublisherS3 workbook,74839bytes;one sheet upregulated,479rows x15columns. Onlyrows1-7headings read; remainingdata and allpixels unread."
+    },
+    {
+      "id": "S3_text",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/S3-sheet1.jsonl",
+      "sha256": "dabcb7e16e745cc7d87aa51204efa3dc2e4b276ea9f85a08511c6eeee22f41b2",
+      "kind": "text",
+      "description": "Complete structural extraction; onlyrows1-7 personally read. No automated-reading claim."
+    },
+    {
+      "id": "S4",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/32433956/retrieval-followup/20261024T202106081325Z-e64d16a0ff/response.body",
+      "sha256": "203b7d91f221e878f5bc7ccefd7d9e6aee6491098768fb24e3c5940517042731",
+      "kind": "data",
+      "description": "PublisherS4 workbook,100615bytes;one sheet downregulated,642rows x15columns. Onlyrows1-7headings read; remainingdata and allpixels unread."
+    },
+    {
+      "id": "S4_text",
+      "pmid": "32433956",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/32433956/S4-sheet1.jsonl",
+      "sha256": "a82f0ae126e28b9bb6f0a6449818a29b67033aa8e6d45ea48b02856cb4b4d4a6",
+      "kind": "text",
+      "description": "Complete structural extraction; onlyrows1-7 personally read. No automated-reading claim."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "MAU2 and NIPBL Variants Impair the Heterodimerization of the Cohesin Loader Subunits and Cause Cornelia de Lange Syndrome.",
+    "evidence": [
+      {
+        "source_id": "metadata",
+        "locator": "PMID32433956 and DOI"
+      },
+      {
+        "source_id": "p2",
+        "locator": "Parenti etal.,CellReports31:107647,May19,2020"
+      },
+      {
+        "source_id": "supp_pdf",
+        "locator": "Title/authors match; supplementsS1-S7"
+      },
+      {
+        "source_id": "wb_manifest",
+        "locator": "Separately labelled TablesS3/S4"
+      }
+    ],
+    "note": "Held public repository publisher original verified by title/authors/DOI and bytes/hash. Newly obtained public publisher supplements individually matched. Every cited artifact durable and hashed; no inherited material claimed personally read."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 8,
+      "table": 1,
+      "supplement": 3
+    },
+    "evidence": [
+      {
+        "source_id": "pdf",
+        "locator": "Entiremain:7numberedfigures,graphicalabstract,KeyResourcestable;referencesS1-S7figures/TablesS1-S7"
+      },
+      {
+        "source_id": "supp_pdf",
+        "locator": "13pagescover+S1-S7figures+S1/S2/S5/S6/S7tables"
+      },
+      {
+        "source_id": "wb_manifest",
+        "locator": "SeparateS3/S4workbooks"
+      }
+    ],
+    "note": "Three supplement containers cover all numbered supplements identified from main and supplement. Supplement figures/tables are inside PDF component, not double-counted. Two workbooks remain partial; no whole-paper completion claim. GEO/SRAraw data cited in article but not downloaded or reanalyzed."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 23,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "All23pages including graphical abstract, references and STARMethods personally read. No wet-lab design or execution; methods read only for appraisal."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 23,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Entire main:1397splitlines"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p1",
+          "locator": "EntirePDFpage1"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "p2",
+          "locator": "EntirePDFpage2"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "p3",
+          "locator": "EntirePDFpage3"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "p4",
+          "locator": "EntirePDFpage4"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "p5",
+          "locator": "EntirePDFpage5"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "p6",
+          "locator": "EntirePDFpage6"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "p7",
+          "locator": "EntirePDFpage7"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "p8",
+          "locator": "EntirePDFpage8"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "p9",
+          "locator": "EntirePDFpage9"
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "p10",
+          "locator": "EntirePDFpage10"
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "mode": "pixels",
+          "source_id": "p11",
+          "locator": "EntirePDFpage11"
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "p12",
+          "locator": "EntirePDFpage12"
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "mode": "pixels",
+          "source_id": "p13",
+          "locator": "EntirePDFpage13"
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "mode": "pixels",
+          "source_id": "p14",
+          "locator": "EntirePDFpage14"
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "mode": "pixels",
+          "source_id": "p15",
+          "locator": "EntirePDFpage15"
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "mode": "pixels",
+          "source_id": "p16",
+          "locator": "EntirePDFpage16"
+        },
+        {
+          "start": 17,
+          "end": 17,
+          "mode": "pixels",
+          "source_id": "p17",
+          "locator": "EntirePDFpage17"
+        },
+        {
+          "start": 18,
+          "end": 18,
+          "mode": "pixels",
+          "source_id": "p18",
+          "locator": "EntirePDFpage18"
+        },
+        {
+          "start": 19,
+          "end": 19,
+          "mode": "pixels",
+          "source_id": "p19",
+          "locator": "EntirePDFpage19"
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "mode": "pixels",
+          "source_id": "p20",
+          "locator": "EntirePDFpage20"
+        },
+        {
+          "start": 21,
+          "end": 21,
+          "mode": "pixels",
+          "source_id": "p21",
+          "locator": "EntirePDFpage21"
+        },
+        {
+          "start": 22,
+          "end": 22,
+          "mode": "pixels",
+          "source_id": "p22",
+          "locator": "EntirePDFpage22"
+        },
+        {
+          "start": 23,
+          "end": 23,
+          "mode": "pixels",
+          "source_id": "p23",
+          "locator": "EntirePDFpage23"
+        }
+      ],
+      "note": "All23pages including graphical abstract, references and STARMethods personally read. No wet-lab design or execution; methods read only for appraisal."
+    },
+    {
+      "id": "graphical_abstract",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "Graphical abstract personally inspected, including distinction between MAU2 deletion and engineered NIPBL c.39dup."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "pdf",
+          "locator": "Graphicalabstract labels"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p1",
+          "locator": "Entire graphicalabstract"
+        }
+      ],
+      "note": "Graphical abstract personally inspected, including distinction between MAU2 deletion and engineered NIPBL c.39dup."
+    },
+    {
+      "id": "figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 7,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "A-G:trio traces/readcounts,conservation,yeast structure,interaction assay. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 7,
+          "mode": "text",
+          "source_id": "pdf",
+          "locator": "Figure1 labels and full caption"
+        },
+        {
+          "start": 1,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "p4",
+          "locator": "Figure1 A-G:trio traces/readcounts,conservation,yeast structure,interaction assay"
+        }
+      ],
+      "note": "A-G:trio traces/readcounts,conservation,yeast structure,interaction assay. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+    },
+    {
+      "id": "figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 2,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "A-B:expression correlation andGOterms. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "text",
+          "source_id": "pdf",
+          "locator": "Figure2 labels and full caption"
+        },
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "p5",
+          "locator": "Figure2 A-B:expression correlation andGOterms"
+        }
+      ],
+      "note": "A-B:expression correlation andGOterms. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+    },
+    {
+      "id": "figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 5,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "A-E:mutant genomic/cDNA traces,blots,MAU2quantification,co-IP;caption continuesPDF7. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 5,
+          "mode": "text",
+          "source_id": "pdf",
+          "locator": "Figure3 labels and full caption"
+        },
+        {
+          "start": 1,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "p6",
+          "locator": "Figure3 A-E:mutant genomic/cDNA traces,blots,MAU2quantification,co-IP;caption continuesPDF7"
+        }
+      ],
+      "note": "A-E:mutant genomic/cDNA traces,blots,MAU2quantification,co-IP;caption continuesPDF7. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+    },
+    {
+      "id": "figure4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 3,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "A-C:alternative initiation readingframes,reporter,IVTTblot. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 3,
+          "mode": "text",
+          "source_id": "pdf",
+          "locator": "Figure4 labels and full caption"
+        },
+        {
+          "start": 1,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "p8",
+          "locator": "Figure4 A-C:alternative initiation readingframes,reporter,IVTTblot"
+        }
+      ],
+      "note": "A-C:alternative initiation readingframes,reporter,IVTTblot. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+    },
+    {
+      "id": "figure5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 7,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "A-G:chromatidspreads,cohesioncounts,mitoticindices,FISHimageanddistances. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 7,
+          "mode": "text",
+          "source_id": "pdf",
+          "locator": "Figure5 labels and full caption"
+        },
+        {
+          "start": 1,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "p9",
+          "locator": "Figure5 A-G:chromatidspreads,cohesioncounts,mitoticindices,FISHimageanddistances"
+        }
+      ],
+      "note": "A-G:chromatidspreads,cohesioncounts,mitoticindices,FISHimageanddistances. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+    },
+    {
+      "id": "figure6",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 6,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "A-F:fractionation,ChIPheatmaps,featuredistribution,TSSprofile,volcano,GOterms;captionPDF11. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 6,
+          "mode": "text",
+          "source_id": "pdf",
+          "locator": "Figure6 labels and full caption"
+        },
+        {
+          "start": 1,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "p10",
+          "locator": "Figure6 A-F:fractionation,ChIPheatmaps,featuredistribution,TSSprofile,volcano,GOterms;captionPDF11"
+        }
+      ],
+      "note": "A-F:fractionation,ChIPheatmaps,featuredistribution,TSSprofile,volcano,GOterms;captionPDF11. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+    },
+    {
+      "id": "figure7",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 6,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "A-F:splice schematic,cellline table,RNAlevels,alleleexpression,blot,MAU2quantification. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 6,
+          "mode": "text",
+          "source_id": "pdf",
+          "locator": "Figure7 labels and full caption"
+        },
+        {
+          "start": 1,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "p12",
+          "locator": "Figure7 A-F:splice schematic,cellline table,RNAlevels,alleleexpression,blot,MAU2quantification"
+        }
+      ],
+      "note": "A-F:splice schematic,cellline table,RNAlevels,alleleexpression,blot,MAU2quantification. All panels personally inspected. Figure3C/E reuse explicitly disclosed by authors, not hidden duplication."
+    },
+    {
+      "id": "key_resources",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 3,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "All three pages of KeyResources personally read. Printed MAU2/NIPBL siRNA entries are identical; source annotation inconsistency retained, no sequence correction or experiment proposed."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 3,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "STARMethods e1-e3 all resource rows"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p17",
+          "locator": "KeyResources PDFpage17"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "p18",
+          "locator": "KeyResources PDFpage18"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "p19",
+          "locator": "KeyResources PDFpage19"
+        }
+      ],
+      "note": "All three pages of KeyResources personally read. Printed MAU2/NIPBL siRNA entries are identical; source annotation inconsistency retained, no sequence correction or experiment proposed."
+    },
+    {
+      "id": "supplement_pdf",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 13,
+      "extent_source_id": "supp_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "supp_pdf",
+          "locator": "All13pages read:cover,S1-S7figures,TablesS1/S2/S5/S6/S7. TableS2 all14rows;S1both10rowGOsets;S5all10rows;S6all19samples;S7all18samples. TableS3/S4 are separate workbooks, not included in this credit."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 13,
+          "mode": "text",
+          "source_id": "supp_pdf",
+          "locator": "Entire supplement text including raster-only/garbled-caption content read from original pixels"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "sp1",
+          "locator": "Entirepage1"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "sp2",
+          "locator": "Entirepage2"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "sp3",
+          "locator": "Entirepage3"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "sp4",
+          "locator": "Entirepage4"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "sp5",
+          "locator": "Entirepage5"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "sp6",
+          "locator": "Entirepage6"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "sp7",
+          "locator": "Entirepage7"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "sp8",
+          "locator": "Entirepage8"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "sp9",
+          "locator": "Entirepage9"
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "sp10",
+          "locator": "Entirepage10"
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "mode": "pixels",
+          "source_id": "sp11",
+          "locator": "Entirepage11"
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "sp12",
+          "locator": "Entirepage12"
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "mode": "pixels",
+          "source_id": "sp13",
+          "locator": "Entirepage13"
+        }
+      ],
+      "note": "All13pages read:cover,S1-S7figures,TablesS1/S2/S5/S6/S7. TableS2 all14rows;S1both10rowGOsets;S5all10rows;S6all19samples;S7all18samples. TableS3/S4 are separate workbooks, not included in this credit."
+    },
+    {
+      "id": "S3",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "lines",
+      "unit_count": 479,
+      "extent_source_id": "S3_text",
+      "extent_evidence": [
+        {
+          "source_id": "S3_text",
+          "locator": "S3:rows8-479and all pixel review remain. Headings independently establish identity; extraction does not count as reading."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 7,
+          "mode": "text",
+          "source_id": "S3_text",
+          "locator": "Rows1-7 title, inclusion rule,clone headings and columnlabels"
+        }
+      ],
+      "note": "S3:rows8-479and all pixel review remain. Headings independently establish identity; extraction does not count as reading."
+    },
+    {
+      "id": "S4",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "lines",
+      "unit_count": 642,
+      "extent_source_id": "S4_text",
+      "extent_evidence": [
+        {
+          "source_id": "S4_text",
+          "locator": "S4:rows8-642and all pixel review remain. Headings independently establish identity; extraction does not count as reading."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 7,
+          "mode": "text",
+          "source_id": "S4_text",
+          "locator": "Rows1-7 title, inclusion rule,clone headings and columnlabels"
+        }
+      ],
+      "note": "S4:rows8-642and all pixel review remain. Headings independently establish identity; extraction does not count as reading."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/MAU2/PMID_32433956_patient.json",
+      "packet_sha256": "c6d3d3e81bc072e06a77994e1c439939fb7000fd1335f0e07d74c695b9090024",
+      "case_id": "TC_2f0f637334f8bb7a",
+      "role": "selected",
+      "packet_subject_id": "patient",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "All assigned fullpacket fields and all33features personally checked; no alternates in assigned context.",
+        "Source correspondence only; no current diagnostic reassessment or independent variant normalization."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Unique male MAU2 deletion case matches coding/protein variant, severe CdLS and gestational30weekIUGR. Source reports current age14 but last clinical evaluation at10; packet timeAtLastEncounter14 should retain that distinction. Clinical diagnosis made at2years.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "STARMethods Detailed characterization,e3;Results pp2-3"
+          }
+        ],
+        "limitations": [
+          "Source current age is not necessarily age of last examination. CdLS7/OMIM621570 is later nomenclature; source uses CdLS without that subtype number."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Source reports monoallelic MAU2 NM_015329:c.927_947del, p.(Gln310_Ala316del), a21bp in-frame deletion, concordant with packet coding/protein call and heterozygous interpretation. Figure1B gives34%of54patientreads.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results p2;Figure1A-C;STARMethods e3"
+          }
+        ],
+        "limitations": [
+          "Transcript version .4 and protein accession .3 are not specified in publication. Source alignment useshg19, while packet useshg38. Exact GRCh38genomic mapping and equivalence of VCFleft-aligned deletion19342815-19342835 versus hgvs.g19342820-19342840 were not independently normalized.",
+          "34%allele fraction is not itself proof of mosaicism; no cross-tissue quantification supplied."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Trio sequencing and Sanger traces support source-reported de novo variant: Figure1B patient34%of54reads,mother0%of58,father0%of45. Both parents reported healthy/nonconsanguineous.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure1A/B and STARMethods e3"
+          }
+        ],
+        "limitations": [
+          "Parentage and low-level parental/germline mosaicism not independently assessed; zero observed parental reads is not absolute absence."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "One heterozygous MAU2 allele; no compound-heterozygous cis/trans question is presented.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results p2;Figure1A/B"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors attribute CdLS to this novel de novo in-frame deletion. Conserved region, reduced mammalian interaction to46%ofwildtype, yeast two-hybrid findings and patient-fibroblast expression overlap support biological plausibility.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results pp2-4;Figures1/2,S1/S2;Discussion"
+          }
+        ],
+        "limitations": [
+          "Single affected MAU2 individual; no independent recurrent pedigree or isogenic patient rescue in this source. Packet formalPATHOGENIC label exceeds a reproduced contemporary ACMG assessment; source pathogenic attribution retained as source claim.",
+          "RNA comparison uses one maleMAU2donor,one femaleNIPBLdonor andone femalecontrol in triplicate; excluding sex-chromosome genes does not eliminate donor confounding. R=.79 is a gene-level correlation, not independent patient replication.",
+          "Most subsequent functional experiments concern engineered homozygousNIPBLc.39dup celllines or a different NIPBLsplice-site patient. Their alternative-initiation mechanism is not shown to rescue the MAU2 patient; authors explicitly do not expect MAU2deletion to trigger it.",
+          "Protein instability/NIPBLhaploinsufficiency in the MAU2case is a proposed mechanistic chain; interaction/readouts do not establish every causal step in the patient."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All33packetpositivefeatures individually checked against complete clinical narrative. Source also reports prematurity34weeks,longphiltrum,higharchedpalate,earlywheelchairdependence,firstwordsat2withoutfurtherverbaldevelopment,and inability to sit unsupported/walk. These are omitted or compressed. No excluded findings are supplied in packet.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "STARMethods e3,entireclinicalparagraph"
+          }
+        ],
+        "limitations": [
+          "Currentage14 versus examinationage10 needs distinction; onset30weeks refers to IUGR detection rather than syndromic diagnosis then. Earlyfeedingdifficulty is not explicitly dated to first28days. Smallfeet does not establish specifically reduced footlength."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c927_947del_MAU2_NM_015329v4",
+            "geneContext": {
+              "valueId": "HGNC:29140",
+              "symbol": "MAU2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_015329.4:c.927_947del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000019.10:g.19342820_19342840del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_056144.3:p.(Gln310_Ala316del)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr19",
+              "pos": 19342814,
+              "ref": "GAAGGCGCAGAAGTACACGGAC",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "7b4d42b849aa45d44d66d4b88e3c2766ba4b51f6651756bc67980d1c34dcb3d5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Source reports monoallelic MAU2 NM_015329:c.927_947del, p.(Gln310_Ala316del), a21bp in-frame deletion, concordant with packet coding/protein call and heterozygous interpretation. Figure1B gives34%of54patientreads.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Results p2;Figure1A-C;STARMethods e3"
+              }
+            ],
+            "limitations": [
+              "Transcript version .4 and protein accession .3 are not specified in publication. Source alignment useshg19, while packet useshg38. Exact GRCh38genomic mapping and equivalence of VCFleft-aligned deletion19342815-19342835 versus hgvs.g19342820-19342840 were not independently normalized.",
+              "34%allele fraction is not itself proof of mosaicism; no cross-tissue quantification supplied."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000028",
+              "label": "Cryptorchidism"
+            }
+          },
+          "snapshot_sha256": "2201f0ab0ac08957bd688ef0f5bd4e65383760b33ff01b37dcfe5ae2cd588e10",
+          "assessment": {
+            "status": "supported",
+            "statement": "Cryptorchidism explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000319",
+              "label": "Smooth philtrum"
+            }
+          },
+          "snapshot_sha256": "dfd43d1141bc298d1a58233458e5791b60ffce6866cc34baf669fac66c7bee2c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Philtrum described as long and smooth; smoothcomponent matches.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000233",
+              "label": "Thin vermilion border"
+            }
+          },
+          "snapshot_sha256": "4e542325de969954cfdda043e1f93b36b0cfe0752cc98eda8dedf8ff4abbba84",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thin lips supports thin vermilion terminology.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002714",
+              "label": "Downturned corners of mouth"
+            }
+          },
+          "snapshot_sha256": "8fbdd40f275af16bcb46891e09bc44963a4a02d82471082ab32026da211f9882",
+          "assessment": {
+            "status": "supported",
+            "statement": "Downturned corners of the mouth explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000294",
+              "label": "Low anterior hairline"
+            }
+          },
+          "snapshot_sha256": "6e556f2e83d0db8dc47d73a5bfe09a873e319d1287fd60c665e326328dcadeed",
+          "assessment": {
+            "status": "supported",
+            "statement": "Low anterior hairline explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000527",
+              "label": "Long eyelashes"
+            }
+          },
+          "snapshot_sha256": "bf13ab09053d8df3852d49064cafa56c5f358416850a7c5d77a93bc5b0bb28ff",
+          "assessment": {
+            "status": "supported",
+            "statement": "Long eyelashes explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002553",
+              "label": "Highly arched eyebrow"
+            }
+          },
+          "snapshot_sha256": "a7e494d9f16421b88d87fb27a8a1aeb38fe7142e74ec9e3f5f5216740ab4e81d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Arched eyebrows reported, consistent with HPO highlyarched eyebrows.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000664",
+              "label": "Synophrys"
+            }
+          },
+          "snapshot_sha256": "70013c53d6885e8062be9362e97b9479ebd41fd0424ad161ef1621b013f52330",
+          "assessment": {
+            "status": "supported",
+            "statement": "Synophrys explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005280",
+              "label": "Depressed nasal bridge"
+            }
+          },
+          "snapshot_sha256": "c2c116b06dd4a12e8512ec903b169a0a7194dedbe0e7650ef9bedaa13d93390a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Flat nasal bridge supports depressed nasal bridge.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002162",
+              "label": "Low posterior hairline"
+            }
+          },
+          "snapshot_sha256": "009307276ab3037940fb35c3280e880e3b98cbfd490aeea9579f850f8b378042",
+          "assessment": {
+            "status": "supported",
+            "statement": "Low posterior hairline explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011451",
+              "label": "Primary microcephaly"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "0976d5786b187230313db23dc4f5fb0027ff3da79042a62ad07b16ad7a849861",
+          "assessment": {
+            "status": "supported",
+            "statement": "BirthOFC27cm(-3.17SD) and later microcephaly support congenital/primary microcephaly; age10OFC47cm(-4.96SD).",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000248",
+              "label": "Brachycephaly"
+            }
+          },
+          "snapshot_sha256": "e9f4e3e641c03b0210092d9ff3b5d55c977ffbf7b07d329eb1d7f6e9bd8add9e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Brachycephaly explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011410",
+              "label": "Caesarean section"
+            }
+          },
+          "snapshot_sha256": "9d81a90d528097a7c2aebbc114f52ab51b80207dd4507033468dd1893ad867a8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Caesarean delivery at34gestationalweeks explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            }
+          },
+          "snapshot_sha256": "1b50d63adae74dce026ec2e71a5ac3acb68f40de41c49c079a589c966bdfa5f6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Height121cm(-4.96SD) atage10supports short stature.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            },
+            "onset": {
+              "gestationalAge": {
+                "weeks": 30,
+                "days": 0
+              }
+            }
+          },
+          "snapshot_sha256": "2b669275f58a2957433e4630a9abf11792473e1c129e627c699b013742dfa81b",
+          "assessment": {
+            "status": "supported",
+            "statement": "IUGR explicitly detected at30thweekofpregnancy, matching packet timing.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001518",
+              "label": "Small for gestational age"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "0fc74ab009bb2d1362efe118bdab22da925cc5ea4da03331fe71d82124feb869",
+          "assessment": {
+            "status": "supported",
+            "statement": "Birthweight1330g(-2.46SD),length39.5cm(-2.42SD) at34weeks support smallforgestationalage atbirth.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001007",
+              "label": "Hirsutism"
+            }
+          },
+          "snapshot_sha256": "35973aadbc87d472bba314ce9e34f9a46288514e2ccae872a85bff6fa4a5a720",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hirsutism explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypertelorism explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            }
+          },
+          "snapshot_sha256": "54464f016709001622b86a345d70ba17dab8e162cf855064c192bd2f3c44364b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ptosis explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000545",
+              "label": "Myopia"
+            }
+          },
+          "snapshot_sha256": "e2b2a0983f7e27418bf52efc8f7d46a420dee26d57e2ed0a3472fa51645e35c9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Myopia explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002020",
+              "label": "Gastroesophageal reflux"
+            }
+          },
+          "snapshot_sha256": "6112ad37d5c92f39220139319f831b5466b4f54d53ce0afe57116d9e76f52a70",
+          "assessment": {
+            "status": "supported",
+            "statement": "Very early gastroesophageal reflux disease explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003623",
+                "label": "Neonatal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "3bed047dbdfecd5a6840d9fd15b402e4c88c5f5ac9b067441c489edd93d71c3e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Early feeding difficulties reported; packet specifically assigns neonatal onset.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": [
+              "Early does not explicitly establish first28days; presence supported, exactonsetqualified."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000358",
+              "label": "Posteriorly rotated ears"
+            }
+          },
+          "snapshot_sha256": "69de827a482e8db6d1917cd36728ba56e0cf10f5042d19b998515bbdfbc1414e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Posteriorly rotated ears explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000369",
+              "label": "Low-set ears"
+            }
+          },
+          "snapshot_sha256": "d3ebc814e2fe4068a3cc114824711c68bd531b6879885d4e754d52ab1ba1ee65",
+          "assessment": {
+            "status": "supported",
+            "statement": "Low-set ears explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010864",
+              "label": "Severe intellectual disability"
+            }
+          },
+          "snapshot_sha256": "14303bb6dff9d2476153d12bfbf8c1b1581f5902b16558e3abc784b07c0f984d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Severe intellectual disability explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            }
+          },
+          "snapshot_sha256": "0c23f286da3cc9f5294730531056b36482123ec2bc9f963bea5f94b46dcd72a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Delayed motor development explicitly reported; unable to sit unassisted or walk.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Delayed speech explicitly reported; firstwordsat2with no subsequent verbal development.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001257",
+              "label": "Spasticity"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003623",
+                "label": "Neonatal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "9b2dd65839170e970fd40c7c8b3a8f95f555100962a2296bef4693c9aab05e3d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Generalized spasticity from the very first weeks of life supports neonatal onset.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007109",
+              "label": "Periventricular cysts"
+            }
+          },
+          "snapshot_sha256": "f1ae44014e09ce7cf88369e5f2e5a9cf3bb005fd2a46ceeccfe25f0c4263c891",
+          "assessment": {
+            "status": "supported",
+            "statement": "MRI showed periventricular cysts.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002119",
+              "label": "Ventriculomegaly"
+            }
+          },
+          "snapshot_sha256": "993f816c45a75051fd382dc72aecbe204b6c72aae2633c986ca79e58daaab898",
+          "assessment": {
+            "status": "supported",
+            "statement": "MRI showed mild ventriculomegaly.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033725",
+              "label": "Thin corpus callosum"
+            }
+          },
+          "snapshot_sha256": "46e89517a2809531e4acbda0a00736d04c295a09bcc1007bfc99860ddefc0cb2",
+          "assessment": {
+            "status": "supported",
+            "statement": "MRI showed thin corpus callosum.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001773",
+              "label": "Short foot"
+            }
+          },
+          "snapshot_sha256": "58dca127a77c13188a4c551269ba69fdd324fcadd68c03a3a8e32b2862e16e2f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Small feet explicitly reported; packet maps this to short foot.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": [
+              "Smallfoot may involve multiple dimensions; footlength not measured or explicitly described asshort."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004209",
+              "label": "Clinodactyly of the 5th finger"
+            }
+          },
+          "snapshot_sha256": "194c928812d75a2e51f03b1ff6c2f1a495bd26a1ed4eb33c66d73266a03b15b5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinodactyly of fifthfinger explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "STARMethods e3 Detailed characterization of the MAU2 patient"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Mandatory HANDOFF.md read at resume exposed aggregate benchmark outcomes and a historical HG002/FGFR2 public-control case-specific rank. Conservatively declared per_case; this old public-control exposure is distinct from target-case outcomes: no target-case inference/result files or additional outcome summaries were consulted for this review. This is post-inference source correspondence, not blinded validation. Earlier canonical reviews are inherited work and are not claimed as this reviewer reading.",
+    "All23mainpages and13supplementPDFpages personally read in textandpixels. Two separate expressionworkbooksS3/S4 onlyrows1-7read;rows8-endandallpixels remain. Inherited earlier reviews retain predecessor attribution.",
+    "SourceHumanSubjects sayswholeexome whileResults and detailed methods saywholegenome; this internal sequencing-method wording discrepancy remains.",
+    "Figure1Breadcount evidence supports reporteddenovo, not quantitative mosaicism. Genomicnormalization and transcriptversion not independently verified.",
+    "Figure3C/Eblotreuse is expressly disclosed in caption. Nohidden-duplication allegation.",
+    "Figure5heading no cohesiondefects is broader than data:HEK293clone2 hassignificant reductioninnormalcohesion andincreasedmitoticindex;HT1080doesnotrecapitulate andauthorssuggestclonalvariation. FISHnonsignificance isnot equivalenceproof.",
+    "NIPBL/cohesin positions broadly retained but occupancy/peakcounts decrease; geneexpression notfullynormal. MAU2lowresidual levels remain; do not interpret asuniversal dispensability orcompleteabsence.",
+    "Figure7C uses3controls includingAG0090; mainprose emphasizes2. CellIDAG0885 inFigure7B/prose versusAG0085inFigure7C. Alternativeinitiation in patientLCL inferred, notsite-mapped as in engineeredIVTTreporter.",
+    "FigureS7Ascattercaption reverses cloneaxes relative to labels and axes include erroneoussign/orderlabels. FigureS7Bcolorlegend differsfromcaption, and differsfrommainFigure6consistentclone-filteredsubset. Do not infer precise individualgenes from colorsalone.",
+    "TableS2lists14primerrows whereasS6shows17locusplots;453/187/185 areabsentfromtable. TableS7usesclonec.10/c.2.1 labels versusmainc.1/c.2; identityequivalence notsilentlyassumed.",
+    "Printed MAU2 andNIPBLsiRNA sequences identical inKeyResources/methods; recordedassourceannotationdefect withoutcorrectionor operationaladvice.",
+    "SupplementS1GOtable prints some P/FDRvaluesas0; this is reportingprecision,notliteralzero probability. Gene-levelstatisticalsignificance isnotindependentclinicalreplication.",
+    "No rawGEO/SRAdatareanalyzed; no treatmentrecommendation, wet-labdesign/execution,contact,or outcome-fileinspection."
+  ]
+}

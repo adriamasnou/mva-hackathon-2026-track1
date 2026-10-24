@@ -1,0 +1,2616 @@
+{
+  "schema_version": 1,
+  "pmid": "38884572",
+  "title": "De novo and inherited monoallelic variants in TUBA4A cause ataxia and spasticity.",
+  "reviewer": {
+    "id": "reader-2-resume-20261024",
+    "reviewed_at_utc": "2026-10-24T20:15:34.183639+00:00",
+    "method": "Current resumed reviewer read all stated source-text units and inspected the stated pixel components directly. Record serialized after manual source comparison; script execution/extraction is not reading."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Mandatory HANDOFF.md read at resume exposed aggregate benchmark outcomes and a historical HG002/FGFR2 public-control case-specific rank. Conservatively declared per_case; this old public-control exposure is distinct from target-case outcomes: no target-case inference/result files or additional outcome summaries were consulted for this review. This is post-inference source correspondence, not blinded validation. Earlier canonical reviews are inherited work and are not claimed as this reviewer reading."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "a9786161e4e079650d7aaa1fce38aed6b9b60b2620f54edc51e357771dbf4fc2",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "pdf",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38884572/retrieval-followup/20261024T101617953389Z-af1651225e/response.body",
+      "sha256": "5e1e013901ba4d894ee7491640cede2da55a48181003fe519682b9d9f3c994a7",
+      "kind": "pdf",
+      "description": "HAL public manuscript1153866bytes;16pages incl cover and final blankpage. All pages personally read. Embedded raster figures/table absent from extracted text were separately read."
+    },
+    {
+      "id": "text",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38884572/retrieval-followup/20261024T101617953389Z-af1651225e/response.body.layout.txt",
+      "sha256": "ed80c3a22ec66e5dfcf013410cee79e82738c9187b5b0f75e71e371f66be1c56",
+      "kind": "text",
+      "description": "All545splitlines personally read. Text extraction omits raster figures/captions/table; those were read directly from pixels, not inferred from prose."
+    },
+    {
+      "id": "metadata",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38884572/europepmc.json",
+      "sha256": "42acc5d24a4a2c0d8ac54fda757ce3a027d7bcfc19126370637dcd91cb2ea97d",
+      "kind": "metadata",
+      "description": "Identity metadata checked: PMID38884572 DOI10.1093/brain/awae193 title/authors match; no full metadata reading claim."
+    },
+    {
+      "id": "main_receipt",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38884572/retrieval-followup/20261024T101617953389Z-af1651225e/receipt.json",
+      "sha256": "36a99d2d309e196ca57f355e22847ae91ddd942658c9d2938ff7d2d45af1b5ef",
+      "kind": "access_log",
+      "description": "Held public HAL download receipt with original bytes/hash; read for provenance."
+    },
+    {
+      "id": "prep",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/preparation.json",
+      "sha256": "de7f53e428fba57631e7aee6cf79e932236bc18ff037415f144903286a3fc04a",
+      "kind": "metadata",
+      "description": "Preparation extent16pages; preparation alone not reading."
+    },
+    {
+      "id": "p1",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-01.png",
+      "sha256": "a941420eabccb3e812cac7807ef51a6ce6b50cc994b7378e747b3a6248ec83c2",
+      "kind": "image",
+      "description": "Entirepage1 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p2",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-02.png",
+      "sha256": "6c2877a062ea757d300adc41154293ce6d9781d38d7201e71f1c11d178ff6037",
+      "kind": "image",
+      "description": "Entirepage2 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p3",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-03.png",
+      "sha256": "37141910e8c68bd4ab7d8d255645f2ae304ead598317180a29a1dd34cf2ff393",
+      "kind": "image",
+      "description": "Entirepage3 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p4",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-04.png",
+      "sha256": "b88d3c927abbbb3bdc3389ee82f9fe031c5d560941cb5ccf0d87e926f77de24d",
+      "kind": "image",
+      "description": "Entirepage4 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p5",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-05.png",
+      "sha256": "6a8ce6949af04bb65fc5e1c905ca30a94e3b528a685528f89b6f468f74640fae",
+      "kind": "image",
+      "description": "Entirepage5 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p6",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-06.png",
+      "sha256": "6192d896bd2bfb6af8986a0e068b0ff5cc819f68906f7c3b1fa6fceff6c14db8",
+      "kind": "image",
+      "description": "Entirepage6 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p7",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-07.png",
+      "sha256": "f3943e1de0c71841462a46db96fd66b3cab7a30372eb80abe5c9e4b5c0f94a55",
+      "kind": "image",
+      "description": "Entirepage7 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p8",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-08.png",
+      "sha256": "66fe3d3c32c8a87b27c194fd5c52c66e177e1bea8564a97a26677e023466c124",
+      "kind": "image",
+      "description": "Entirepage8 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p9",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-09.png",
+      "sha256": "e4f966f690f409cdb41c7bc2bc294fb261d8ffaab42a45f73229b12871032895",
+      "kind": "image",
+      "description": "Entirepage9 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p10",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-10.png",
+      "sha256": "aa1cd8b3bdba43f76df39dc305e0259e3429f18fd24c539d1877295579171f7a",
+      "kind": "image",
+      "description": "Entirepage10 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p11",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-11.png",
+      "sha256": "456da1610680bb2288bfe238bf70b76e931ba3177a57a6c61bb2aeb51b801e77",
+      "kind": "image",
+      "description": "Entirepage11 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p12",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-12.png",
+      "sha256": "ed020c61b858d6e451eff481da2689de1498a888490bff9ef381442d35a8c27f",
+      "kind": "image",
+      "description": "Entirepage12 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p13",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-13.png",
+      "sha256": "b0c0ac35e7508b7484c47408848ca4bdfc86ea0b79fb9d60c4c26527827e03a3",
+      "kind": "image",
+      "description": "Entirepage13 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p14",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-14.png",
+      "sha256": "511b6aeb26a728e1aa534065dfc6b917437292f1e01a54861a46375544ac93ba",
+      "kind": "image",
+      "description": "Entirepage14 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p15",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-15.png",
+      "sha256": "a7f2d97c1ad18c592d304c640072332b7d16201e702760de7fea5c0dff8095a4",
+      "kind": "image",
+      "description": "Entirepage15 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "p16",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/main-16.png",
+      "sha256": "563c42039f76f9a7c21a91ab0ca848d22ffaa6964b8be74105281079918461d3",
+      "kind": "image",
+      "description": "Entirepage16 personally inspected including reference pages and final blankpage."
+    },
+    {
+      "id": "figure1-embedded",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/figure1-embedded.png",
+      "sha256": "609c35ffa2f9b9c3d5d04b651d44d5be375fcb3874e9de65cced856d3418b108",
+      "kind": "image",
+      "description": "Original embedded pixels extracted losslessly for direct legible inspection; all panels and captions/table cells personally read."
+    },
+    {
+      "id": "figure2-embedded",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/figure2-embedded.png",
+      "sha256": "cc1eb9f387fc1018cff615de17c8aa894a0675320e591522f4fcbac60b26cf4e",
+      "kind": "image",
+      "description": "Original embedded pixels extracted losslessly for direct legible inspection; all panels and captions/table cells personally read."
+    },
+    {
+      "id": "figure2-part1",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/figure2-part1.png",
+      "sha256": "396a67c682c604489d32af3a57814846cad3e7e5293c0fdbc550675990e2f492",
+      "kind": "image",
+      "description": "Original embedded pixels extracted losslessly for direct legible inspection; all panels and captions/table cells personally read."
+    },
+    {
+      "id": "figure2-part2",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/figure2-part2.png",
+      "sha256": "cc1eb9f387fc1018cff615de17c8aa894a0675320e591522f4fcbac60b26cf4e",
+      "kind": "image",
+      "description": "Original embedded pixels extracted losslessly for direct legible inspection; all panels and captions/table cells personally read."
+    },
+    {
+      "id": "figure3-embedded",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/figure3-embedded.png",
+      "sha256": "8e5013803f5413fbbe04445cff656ed5edfc866de293c1707b61905a53050447",
+      "kind": "image",
+      "description": "Original embedded pixels extracted losslessly for direct legible inspection; all panels and captions/table cells personally read."
+    },
+    {
+      "id": "figure3-part1",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/figure3-part1.png",
+      "sha256": "aa34e684e7370a417ccd67faea832e0fa5520c008f0492092a72a3f0f06665f4",
+      "kind": "image",
+      "description": "Original embedded pixels extracted losslessly for direct legible inspection; all panels and captions/table cells personally read."
+    },
+    {
+      "id": "figure3-part2",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/figure3-part2.png",
+      "sha256": "8e5013803f5413fbbe04445cff656ed5edfc866de293c1707b61905a53050447",
+      "kind": "image",
+      "description": "Original embedded pixels extracted losslessly for direct legible inspection; all panels and captions/table cells personally read."
+    },
+    {
+      "id": "table1-embedded",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/38884572/table1-embedded.png",
+      "sha256": "530260d8bcf702877d56c86a736644c5ec82c5b9ea3a265e780fe69cc018a6a0",
+      "kind": "image",
+      "description": "Original embedded pixels extracted losslessly for direct legible inspection; all panels and captions/table cells personally read."
+    },
+    {
+      "id": "receipt_20261024T201248269571Z-138b519d71",
+      "pmid": "38884572",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/retrieval-followup/38884572/attempts/20261024T201248269571Z-138b519d71.json",
+      "sha256": "e333a2e84a760abb60c0af15fec0d7f3bb712cd4cb43b0d7b3eccc4fccb3d8ec",
+      "kind": "access_log",
+      "description": "Public publisher/repository retrieval receipt;403 is access failure, not evidence of absent supplements."
+    },
+    {
+      "id": "receipt_20261024T201248269571Z-138b519d71_body",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/38884572/retrieval-followup/20261024T201248269571Z-138b519d71/response.body",
+      "sha256": "f572a6fcf7fc5b9bc5f4ae37919b978e6a7c33de7bc71dd40454c6bf16ac99eb",
+      "kind": "metadata",
+      "description": "Retained raw public access response or HAL metadata; not an article reading claim."
+    },
+    {
+      "id": "receipt_20261024T201248271011Z-9fb196e9a9",
+      "pmid": "38884572",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/retrieval-followup/38884572/attempts/20261024T201248271011Z-9fb196e9a9.json",
+      "sha256": "d744affae35769e2125d8c8dbfbadb0f97a3c7c4285eb692ab3c8419345b5f72",
+      "kind": "access_log",
+      "description": "Public publisher/repository retrieval receipt;403 is access failure, not evidence of absent supplements."
+    },
+    {
+      "id": "receipt_20261024T201248271011Z-9fb196e9a9_body",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/38884572/retrieval-followup/20261024T201248271011Z-9fb196e9a9/response.body",
+      "sha256": "57020ce2114161033af33d803770a427700cfca4e76ae8716e3b10898472bf49",
+      "kind": "metadata",
+      "description": "Retained raw public access response or HAL metadata; not an article reading claim."
+    },
+    {
+      "id": "receipt_20261024T201332801277Z-71c9d6fdd0",
+      "pmid": "38884572",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/retrieval-followup/38884572/attempts/20261024T201332801277Z-71c9d6fdd0.json",
+      "sha256": "677d97f0cd0f20d2131595e7bb728c886e737a0c17fac9b1fb1b0e43a6617c63",
+      "kind": "access_log",
+      "description": "Public publisher/repository retrieval receipt;403 is access failure, not evidence of absent supplements."
+    },
+    {
+      "id": "receipt_20261024T201332801277Z-71c9d6fdd0_body",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/38884572/retrieval-followup/20261024T201332801277Z-71c9d6fdd0/response.body",
+      "sha256": "95769eb326e23b8cd1b7a9b82d884a713a9724f49b2794ac5b967d8cd706de83",
+      "kind": "metadata",
+      "description": "Retained raw public access response or HAL metadata; not an article reading claim."
+    },
+    {
+      "id": "receipt_20261024T201332801743Z-99698dce2f",
+      "pmid": "38884572",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/retrieval-followup/38884572/attempts/20261024T201332801743Z-99698dce2f.json",
+      "sha256": "a3dc5b454268b8801caaa8582357354b2556770974e7a26807baa22561971ee8",
+      "kind": "access_log",
+      "description": "Public publisher/repository retrieval receipt;403 is access failure, not evidence of absent supplements."
+    },
+    {
+      "id": "receipt_20261024T201332801743Z-99698dce2f_body",
+      "pmid": "38884572",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/38884572/retrieval-followup/20261024T201332801743Z-99698dce2f/response.body",
+      "sha256": "95769eb326e23b8cd1b7a9b82d884a713a9724f49b2794ac5b967d8cd706de83",
+      "kind": "metadata",
+      "description": "Retained raw public access response or HAL metadata; not an article reading claim."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "De novo and inherited monoallelic variants in TUBA4A cause ataxia and spasticity.",
+    "evidence": [
+      {
+        "source_id": "metadata",
+        "locator": "PMID38884572 DOI10.1093/brain/awae193"
+      },
+      {
+        "source_id": "p1",
+        "locator": "HAL cover, title/authors/DOI and Brain147(11)3681-3689"
+      },
+      {
+        "source_id": "pdf",
+        "locator": "Original verified1153866bytes SHA2565e1e013901ba4d894ee7491640cede2da55a48181003fe519682b9d9f3c994a7"
+      }
+    ],
+    "note": "Legal public HAL manuscript, deposited27December2024. Article identity verified; exact equivalence to published version and supplements remains limited. All cited artifacts durable under project/easystore with verified hashes."
+  },
+  "component_inventory": {
+    "status": "incomplete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 3,
+      "table": 1,
+      "supplement": null
+    },
+    "evidence": [
+      {
+        "source_id": "pdf",
+        "locator": "All16pages:3figures/1table"
+      },
+      {
+        "source_id": "text",
+        "locator": "SupplementaryMethods,Tables1-3,Figures1-2 cited"
+      }
+    ],
+    "note": "All held main components enumerated/read. At least six logical supplement components cited; publisher inventory inaccessible, so exact supplement extent/count remains unknown. No whole-paper completion claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 16,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "Full held manuscript personally read, including methods/references and raster-only caption/table text. Published-version textual equivalence not independently established; title/DOI identity verified."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 16,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "All545extractedlines"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p1",
+          "locator": "Entirepage1"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "p2",
+          "locator": "Entirepage2"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "p3",
+          "locator": "Entirepage3"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "p4",
+          "locator": "Entirepage4"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "p5",
+          "locator": "Entirepage5"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "p6",
+          "locator": "Entirepage6"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "p7",
+          "locator": "Entirepage7"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "p8",
+          "locator": "Entirepage8"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "p9",
+          "locator": "Entirepage9"
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "p10",
+          "locator": "Entirepage10"
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "mode": "pixels",
+          "source_id": "p11",
+          "locator": "Entirepage11"
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "p12",
+          "locator": "Entirepage12"
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "mode": "pixels",
+          "source_id": "p13",
+          "locator": "Entirepage13"
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "mode": "pixels",
+          "source_id": "p14",
+          "locator": "Entirepage14"
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "mode": "pixels",
+          "source_id": "p15",
+          "locator": "Entirepage15"
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "mode": "pixels",
+          "source_id": "p16",
+          "locator": "Entirepage16"
+        }
+      ],
+      "note": "Full held manuscript personally read, including methods/references and raster-only caption/table text. Published-version textual equivalence not independently established; title/DOI identity verified."
+    },
+    {
+      "id": "figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "Entire figure and caption personally read; image-caption characters are not in layout extraction."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "pdf",
+          "locator": "Entire raster caption forFigure1, directly read"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p6",
+          "locator": "EntireFigure1inpagecontext"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure1-embedded",
+          "locator": "All panels/labels at original embedded resolution"
+        }
+      ],
+      "note": "Entire figure and caption personally read; image-caption characters are not in layout extraction."
+    },
+    {
+      "id": "figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "Entire figure and caption personally read; image-caption characters are not in layout extraction."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "pdf",
+          "locator": "Entire raster caption forFigure2, directly read"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p7",
+          "locator": "EntireFigure2inpagecontext"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure2-part1",
+          "locator": "All panels/labels at original embedded resolution"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure2-part2",
+          "locator": "All panels/labels at original embedded resolution"
+        }
+      ],
+      "note": "Entire figure and caption personally read; image-caption characters are not in layout extraction."
+    },
+    {
+      "id": "figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "Entire figure and caption personally read; image-caption characters are not in layout extraction."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "pdf",
+          "locator": "Entire raster caption forFigure3, directly read"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p11",
+          "locator": "EntireFigure3inpagecontext"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure3-part1",
+          "locator": "All panels/labels at original embedded resolution"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure3-part2",
+          "locator": "All panels/labels at original embedded resolution"
+        }
+      ],
+      "note": "Entire figure and caption personally read; image-caption characters are not in layout extraction."
+    },
+    {
+      "id": "table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "All12case columns reviewed, including every assigned case and alternate. Plus/minus/NA/question-mark/normal distinguished; Other features list not assumed exhaustive."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "pdf",
+          "locator": "All12patients, every row, coding/protein calls and footnote read directly"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table1-embedded",
+          "locator": "Entire clinical table at embedded resolution"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p9",
+          "locator": "Table in page context"
+        }
+      ],
+      "note": "All12case columns reviewed, including every assigned case and alternate. Plus/minus/NA/question-mark/normal distinguished; Other features list not assumed exhaustive."
+    },
+    {
+      "id": "supp_methods",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": "text",
+      "extent_evidence": [
+        {
+          "source_id": "text",
+          "locator": "Supplementary material: detailed cell/imaging and statistical methods cited in main"
+        }
+      ],
+      "coverage": [],
+      "note": "Supplementary material: detailed cell/imaging and statistical methods unavailable; page/item extent not known."
+    },
+    {
+      "id": "supp_table1",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": "text",
+      "extent_evidence": [
+        {
+          "source_id": "text",
+          "locator": "SupplementaryTable1: burden-analysis detail cited in main"
+        }
+      ],
+      "coverage": [],
+      "note": "SupplementaryTable1: burden-analysis detail unavailable; page/item extent not known."
+    },
+    {
+      "id": "supp_table2",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": "text",
+      "extent_evidence": [
+        {
+          "source_id": "text",
+          "locator": "SupplementaryTable2: variant annotations/classification cited in main"
+        }
+      ],
+      "coverage": [],
+      "note": "SupplementaryTable2: variant annotations/classification unavailable; page/item extent not known."
+    },
+    {
+      "id": "supp_table3",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": "text",
+      "extent_evidence": [
+        {
+          "source_id": "text",
+          "locator": "SupplementaryTable3 cited for clinical progression and structural predictions; scope unresolved cited in main"
+        }
+      ],
+      "coverage": [],
+      "note": "SupplementaryTable3 cited for clinical progression and structural predictions; scope unresolved unavailable; page/item extent not known."
+    },
+    {
+      "id": "supp_figure1",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": "text",
+      "extent_evidence": [
+        {
+          "source_id": "text",
+          "locator": "SupplementaryFigure1: brain MRI cited in main"
+        }
+      ],
+      "coverage": [],
+      "note": "SupplementaryFigure1: brain MRI unavailable; page/item extent not known."
+    },
+    {
+      "id": "supp_figure2",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": "text",
+      "extent_evidence": [
+        {
+          "source_id": "text",
+          "locator": "SupplementaryFigure2: protein modeling cited in main"
+        }
+      ],
+      "coverage": [],
+      "note": "SupplementaryFigure2: protein modeling unavailable; page/item extent not known."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/TUBA4A/PMID_38884572_Family_2_Patient_2.json",
+      "packet_sha256": "0bad1987b0f68f19ad3dd9d74c5a55cc5c7b8672141264655d3a76dd8c7d21f1",
+      "case_id": "TC_4fb821ab4eee70a9",
+      "role": "selected",
+      "packet_subject_id": "Family 2 Patient 2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "All assigned packet features examined; absent supplement detail remains unresolved.",
+        "Source correspondence only; no independent diagnosis or contemporary ACMG reassessment.",
+        "Main clinical table and raster figure captions personally read; extracted text alone is incomplete."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family2/Patient2 maps by c.518C>G p.Pro173Arg, evaluation age47, onset age22 and clinical pattern. Table1 male sex agrees with packet.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Family2/Patient2 header; sex/age/onset/genetic rows"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Monoallelic/heterozygous TUBA4A NM_006000.3:c.518C>G, p.Pro173Arg matches Table1, main prose and Figure2; protein residue and transcript match packet.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Genetic rows; mainMethods and Results"
+          }
+        ],
+        "limitations": [
+          "Main gives coding/protein calls but not the packet GRCh38 genomic coordinate. Exact NC_000002.12/VCF mapping not independently established; supplement annotation unavailable."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Patient2 variant explicitly de novo in Table1 and Figure2; both parents shown tested and unaffected, and Methods states Sanger segregation of available relatives.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Inheritance row; Figure2A and caption"
+          }
+        ],
+        "limitations": [
+          "Raw parental sequence traces/parentage testing not supplied in held material. This is source-reported de novo, not independently regenerated."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single heterozygous TUBA4A allele; no within-gene compound-heterozygous cis/trans question.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Genetics rows; mainResults monoallelic variants"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors attribute the ataxia phenotype to de novo p.Pro173Arg; Pro173 recurrence, conservation, structural predictions and patient-cell observations support disease association. Patient2 fibroblasts were directly examined.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Genetic rows; Figures1-3; mainResults/Discussion"
+          }
+        ],
+        "limitations": [
+          "Discussion distinguishes1pathogenic,4likely pathogenic and4possibly pathogenic alleles, while per-allele classification table is inaccessible. Packet PATHOGENIC cannot be independently confirmed from held evidence.",
+          "Only3affected cell donors and2parental controls; measured cells/microtubules are not independent affected individuals. No isogenic rescue or causal mechanism uniquely demonstrated.",
+          "Dominant negative effect is a hypothesis; partial loss/gain of function explicitly not excluded.",
+          "Gene burden includes six selected case variants but two were later not retained; the0.45% seven-case estimate includes alleles calledVUS inResults. These counts are not uniform confirmed diagnoses."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Packet captures multiple Table1features but detailed coordination/standing findings are not supplied in held main text. Learning disabilities are reported inPatients2/3 but omitted from this packet.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Clinical rows; mainClinicalfindings"
+          }
+        ],
+        "limitations": [
+          "Supplementary clinical descriptions/MRI unavailable; aggregate cohort findings not assigned to individual patients.",
+          "Minus in a dedicated feature row supports a negative; absence from the Other features list is less conclusive."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c518CtoG_TUBA4A_NM_006000v3",
+            "geneContext": {
+              "valueId": "HGNC:12407",
+              "symbol": "TUBA4A"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_006000.3:c.518C>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.219251181G>C"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005991.1:p.(Pro173Arg)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 219251181,
+              "ref": "G",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "39e0efab9faad87ee4a48b62ec4cb823af2646b1c6691c7a6a00c6a5278c2577",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Monoallelic/heterozygous TUBA4A NM_006000.3:c.518C>G, p.Pro173Arg matches Table1, main prose and Figure2; protein residue and transcript match packet.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Genetic rows; mainMethods and Results"
+              }
+            ],
+            "limitations": [
+              "Main gives coding/protein calls but not the packet GRCh38 genomic coordinate. Exact NC_000002.12/VCF mapping not independently established; supplement annotation unavailable."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003236",
+              "label": "Elevated circulating creatine kinase concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a5003846eb7b7cf9836ecbfee933e37bebd7c87d29d6f42d3d8f002a2f75817",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No increasedCPK is listed for this case, but no normalCK result is supplied.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Other features"
+              }
+            ],
+            "limitations": [
+              "No test value or explicit normal assessment for this case."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001394",
+              "label": "Cirrhosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "73176497b43c52ca917248b4ebed7ada3eb29ef80d7fd71badae1c7539873e40",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Otherfeatures row is a dash forPatient2, supporting no additional reported cirrhosis.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Other features"
+              }
+            ],
+            "limitations": [
+              "No liver-specific negative test or assessment; publication omission is not definitive exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000639",
+              "label": "Nystagmus"
+            }
+          },
+          "snapshot_sha256": "80a6461efe4404a5e6141af2c9147c90e357c02039cef90f5688674f862741fd",
+          "assessment": {
+            "status": "supported",
+            "statement": "Nystagmus explicitly listed.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Eye movements"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000009",
+              "label": "Functional abnormality of the bladder"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9ce88e16223f27c33f72887aec292ddbb44ebef722d8df798db7ba2d85f01735",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dedicated bladder-dysfunction row is negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Bladder dysfunction"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001257",
+              "label": "Spasticity"
+            }
+          },
+          "snapshot_sha256": "c42dd8368ddbb3c87b1066b5181600cefa61a140e963e6cb3cdd7a360eb4c165",
+          "assessment": {
+            "status": "supported",
+            "statement": "Spasticity positive.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Spasticity"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003487",
+              "label": "Babinski sign"
+            }
+          },
+          "snapshot_sha256": "c5b1967746b255a6678fc6b904c838af6bc4a20a876004b69eb77d516fb7655d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Extensor plantar reflex positive (++inPatient3), supporting Babinski sign.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Extensor plantar reflex"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002075",
+              "label": "Dysdiadochokinesis"
+            }
+          },
+          "snapshot_sha256": "1d0ca23ef8201c649e01f33f6d964392ce1fa782d52410e97fe977fa695a0382",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Dysdiadochokinesis presence is not stated in the held main clinical table or narrative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: All clinical rows; mainClinicalfindings"
+              }
+            ],
+            "limitations": [
+              "Ataxia alone does not establish this specific coordination sign; supplement unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002497",
+              "label": "Spastic ataxia"
+            }
+          },
+          "snapshot_sha256": "eaba9572673d7604293267692f7458ff8e80329d1827c9cefe5c6c0c20adbf6b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Initialsymptoms spasticataxia with positive ataxia/spasticity corroboration.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Initial symptoms, Ataxia, Spasticity"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001310",
+              "label": "Dysmetria"
+            }
+          },
+          "snapshot_sha256": "3238bee74d5c38cf37640b77ff65d771654de8782442b73c4945dac525c220a2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Dysmetria is not individually documented in held main clinical table/narrative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Allclinicalrows; mainClinicalfindings"
+              }
+            ],
+            "limitations": [
+              "Cerebellar ataxia alone does not establish this specific sign; supplement unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011448",
+              "label": "Ankle clonus"
+            }
+          },
+          "snapshot_sha256": "1738a0bdb14ca948fd7be1935ef2bb2322a9f0bc0065fdb9bfe0af6220927e90",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ankle clonus explicitly positive.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Ankle clonus"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001260",
+              "label": "Dysarthria"
+            }
+          },
+          "snapshot_sha256": "f6988c243535d0c801c792a3932fd5f940f087a730753cb11d4f35a9c3e3b95d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dysarthria explicitly positive.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Dysarthria"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000726",
+              "label": "Dementia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d2ecd5e622bde6f358cc9e1c66ead01189c0605e10f7d991a03a4ff4f3b00f38",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Cognitive decline is explicitly negative forPatients1/2, supporting no reported dementia.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Cognitive decline"
+              }
+            ],
+            "limitations": [
+              "No formal dementia assessment provided; broader construct than source row."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001288",
+              "label": "Gait disturbance"
+            }
+          },
+          "snapshot_sha256": "8fb7a84e18814f9b114a4be736e63bc646551b005cb7476e1c09dfc4b82bf805",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ataxia at onset and cohort-wide gait disturbance support gait disturbance.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Initial symptoms and Ataxia rows; mainClinicalfindings"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001272",
+              "label": "Cerebellar atrophy"
+            }
+          },
+          "snapshot_sha256": "321fdd7d1ac78300f13f98fdb048dec89e802f4a5947ba678fd9980310da496c",
+          "assessment": {
+            "status": "supported",
+            "statement": "BrainMRI markedCA+, defined as cerebellar atrophy in table footnote.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: BrainMRI"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6db568d0dd760bea978b8846d66cb918c3bc978c8bb480f209e63a73a910f4bc",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Otherfeatures dash supports no reported scoliosis forPatient2.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Other features"
+              }
+            ],
+            "limitations": [
+              "No dedicated spine assessment; the Otherfeatures list need not be exhaustive."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003458",
+              "label": "EMG: myopathic abnormalities"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c0ce8e4fc7db771811bf6d7031fb451c0bcb3bf3d0430abba3b470aa729f7bb9",
+          "assessment": {
+            "status": "supported",
+            "statement": "EMG explicitly Normal, supporting excluded myopathic abnormalities at that assessment.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: EMG"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003484",
+              "label": "Upper limb muscle weakness"
+            }
+          },
+          "snapshot_sha256": "05d1000ba02978ee1dae515ac777024953bf9349e73f1def75b69b6014c3ffd5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Upper-limb weakness positive.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: ULweakness"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007340",
+              "label": "Lower limb muscle weakness"
+            }
+          },
+          "snapshot_sha256": "c7ed9d26b229738c33f65dcad77ae587423c115138ff14dcf597a8df4e2d5c9b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Lower-limb weakness positive (marked++inPatient3).",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: LLweakness"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003698",
+              "label": "Difficulty standing"
+            }
+          },
+          "snapshot_sha256": "a5bb690ed0a464dc60822a14e3bc63542965f12aa90b1cca10c975af034bf449",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Difficulty standing presence is not individually documented in the held main.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: All clinical rows; mainClinicalfindings"
+              }
+            ],
+            "limitations": [
+              "Gait ataxia does not establish the specific standing assessment; supplement unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003202",
+              "label": "Skeletal muscle atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b6d7861988839064ff693461c0f10262b48ebcf22a24e4d3105d95f6d7a5f3f1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Amyotrophy explicitly negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient2: Amyotrophy"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/TUBA4A/PMID_38884572_Family_3_Patient_3.json",
+      "packet_sha256": "9bdd63752e8196428654649c72626d764898968e085fd174700262f8b659f051",
+      "case_id": "TC_4fb821ab4eee70a9",
+      "role": "alternate",
+      "packet_subject_id": "Family 3 Patient 3",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "All assigned packet features examined; absent supplement detail remains unresolved.",
+        "Source correspondence only; no independent diagnosis or contemporary ACMG reassessment.",
+        "Main clinical table and raster figure captions personally read; extracted text alone is incomplete."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Family3/Patient3 maps by c.518C>G p.Pro173Arg, evaluation age20, onset age2 and clinical pattern. Table1 calls Patient3 female, agreeing with packet, while Figure2A draws a square male symbol.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Family3/Patient3 header; sex/age/onset/genetic rows"
+          }
+        ],
+        "limitations": [
+          "Sex inconsistency between table and pedigree left unresolved; same numbered patient otherwise matches."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Monoallelic/heterozygous TUBA4A NM_006000.3:c.518C>G, p.Pro173Arg matches Table1, main prose and Figure2; protein residue and transcript match packet.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Genetic rows; mainMethods and Results"
+          }
+        ],
+        "limitations": [
+          "Main gives coding/protein calls but not the packet GRCh38 genomic coordinate. Exact NC_000002.12/VCF mapping not independently established; supplement annotation unavailable."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Patient3 variant explicitly de novo in Table1 and Figure2; both parents shown tested and unaffected, and Methods states Sanger segregation of available relatives.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Inheritance row; Figure2A and caption"
+          }
+        ],
+        "limitations": [
+          "Raw parental sequence traces/parentage testing not supplied in held material. This is source-reported de novo, not independently regenerated."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single heterozygous TUBA4A allele; no within-gene compound-heterozygous cis/trans question.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Genetics rows; mainResults monoallelic variants"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors attribute the ataxia phenotype to de novo p.Pro173Arg; Pro173 recurrence, conservation, structural predictions and patient-cell observations support disease association. Patient3 was not among the three fibroblast donors; Patient2 shares the allele.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Genetic rows; Figures1-3; mainResults/Discussion"
+          }
+        ],
+        "limitations": [
+          "Discussion distinguishes1pathogenic,4likely pathogenic and4possibly pathogenic alleles, while per-allele classification table is inaccessible. Packet PATHOGENIC cannot be independently confirmed from held evidence.",
+          "Only3affected cell donors and2parental controls; measured cells/microtubules are not independent affected individuals. No isogenic rescue or causal mechanism uniquely demonstrated.",
+          "Dominant negative effect is a hypothesis; partial loss/gain of function explicitly not excluded.",
+          "Gene burden includes six selected case variants but two were later not retained; the0.45% seven-case estimate includes alleles calledVUS inResults. These counts are not uniform confirmed diagnoses."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Packet captures multiple Table1features but detailed coordination/standing findings are not supplied in held main text. Learning disabilities are reported inPatients2/3 but omitted from this packet.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Clinical rows; mainClinicalfindings"
+          }
+        ],
+        "limitations": [
+          "Supplementary clinical descriptions/MRI unavailable; aggregate cohort findings not assigned to individual patients.",
+          "Minus in a dedicated feature row supports a negative; absence from the Other features list is less conclusive."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c518CtoG_TUBA4A_NM_006000v3",
+            "geneContext": {
+              "valueId": "HGNC:12407",
+              "symbol": "TUBA4A"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_006000.3:c.518C>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.219251181G>C"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005991.1:p.(Pro173Arg)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 219251181,
+              "ref": "G",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "39e0efab9faad87ee4a48b62ec4cb823af2646b1c6691c7a6a00c6a5278c2577",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Monoallelic/heterozygous TUBA4A NM_006000.3:c.518C>G, p.Pro173Arg matches Table1, main prose and Figure2; protein residue and transcript match packet.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Genetic rows; mainMethods and Results"
+              }
+            ],
+            "limitations": [
+              "Main gives coding/protein calls but not the packet GRCh38 genomic coordinate. Exact NC_000002.12/VCF mapping not independently established; supplement annotation unavailable."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003236",
+              "label": "Elevated circulating creatine kinase concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a5003846eb7b7cf9836ecbfee933e37bebd7c87d29d6f42d3d8f002a2f75817",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No increasedCPK is listed for this case, but no normalCK result is supplied.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: Other features"
+              }
+            ],
+            "limitations": [
+              "No test value or explicit normal assessment for this case."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001394",
+              "label": "Cirrhosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "73176497b43c52ca917248b4ebed7ada3eb29ef80d7fd71badae1c7539873e40",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Cirrhosis is not listed for this case; Otherfeatures contains another finding, not an exhaustive negative assessment.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: Other features"
+              }
+            ],
+            "limitations": [
+              "No liver-specific negative test or assessment; publication omission is not definitive exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000009",
+              "label": "Functional abnormality of the bladder"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9ce88e16223f27c33f72887aec292ddbb44ebef722d8df798db7ba2d85f01735",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dedicated bladder-dysfunction row is negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: Bladder dysfunction"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001257",
+              "label": "Spasticity"
+            }
+          },
+          "snapshot_sha256": "c42dd8368ddbb3c87b1066b5181600cefa61a140e963e6cb3cdd7a360eb4c165",
+          "assessment": {
+            "status": "supported",
+            "statement": "Spasticity positive.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: Spasticity"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003487",
+              "label": "Babinski sign"
+            }
+          },
+          "snapshot_sha256": "c5b1967746b255a6678fc6b904c838af6bc4a20a876004b69eb77d516fb7655d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Extensor plantar reflex positive (++inPatient3), supporting Babinski sign.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: Extensor plantar reflex"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001251",
+              "label": "Ataxia"
+            }
+          },
+          "snapshot_sha256": "0ff8418dbcd34ab7ee0bdf8e667a2c5540033226e2460ecb406ac70803567a68",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ataxia explicitly positive and initial symptom.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: Initial symptoms, Ataxia"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002075",
+              "label": "Dysdiadochokinesis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0e7df4c913d29e47cf89a68d6c42966a966bdb75aff7235ca1a7959106f166cc",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Dysdiadochokinesis exclusion is not stated in the held main clinical table or narrative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: All clinical rows; mainClinicalfindings"
+              }
+            ],
+            "limitations": [
+              "Ataxia alone does not establish this specific coordination sign; supplement unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011448",
+              "label": "Ankle clonus"
+            }
+          },
+          "snapshot_sha256": "1738a0bdb14ca948fd7be1935ef2bb2322a9f0bc0065fdb9bfe0af6220927e90",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ankle clonus explicitly positive.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: Ankle clonus"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001260",
+              "label": "Dysarthria"
+            }
+          },
+          "snapshot_sha256": "f6988c243535d0c801c792a3932fd5f940f087a730753cb11d4f35a9c3e3b95d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dysarthria explicitly positive.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: Dysarthria"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001288",
+              "label": "Gait disturbance"
+            }
+          },
+          "snapshot_sha256": "8fb7a84e18814f9b114a4be736e63bc646551b005cb7476e1c09dfc4b82bf805",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ataxia at onset and cohort-wide gait disturbance support gait disturbance.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: Initial symptoms and Ataxia rows; mainClinicalfindings"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001272",
+              "label": "Cerebellar atrophy"
+            }
+          },
+          "snapshot_sha256": "321fdd7d1ac78300f13f98fdb048dec89e802f4a5947ba678fd9980310da496c",
+          "assessment": {
+            "status": "supported",
+            "statement": "BrainMRI markedCA+, defined as cerebellar atrophy in table footnote.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: BrainMRI"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            }
+          },
+          "snapshot_sha256": "af9432aa355687ec52f5e2082beacd6942f48279d4c240829f2997d4a6e11d2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Scoliosis explicitly listed forPatient3.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: Other features"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003484",
+              "label": "Upper limb muscle weakness"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "320388906728a2f3a3e9979896e881a6051331abee3837a350f4d3fa1de383d9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Upper-limb weakness negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: ULweakness"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007340",
+              "label": "Lower limb muscle weakness"
+            }
+          },
+          "snapshot_sha256": "c7ed9d26b229738c33f65dcad77ae587423c115138ff14dcf597a8df4e2d5c9b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Lower-limb weakness positive (marked++inPatient3).",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: LLweakness"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003698",
+              "label": "Difficulty standing"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3dc3e7a812b0f77474100dc55d73842361486ec4ff8a1a98f49d235b8acdc366",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Difficulty standing exclusion is not individually documented in the held main.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: All clinical rows; mainClinicalfindings"
+              }
+            ],
+            "limitations": [
+              "Gait ataxia does not establish the specific standing assessment; supplement unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003202",
+              "label": "Skeletal muscle atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b6d7861988839064ff693461c0f10262b48ebcf22a24e4d3105d95f6d7a5f3f1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Amyotrophy explicitly negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient3: Amyotrophy"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/TUBA4A/PMID_38884572_Family_1_Patient_1.json",
+      "packet_sha256": "5bc9067210fba2ece5e01ae2c78cbfc7b64c04cb27fb7d054fbebcc889b02bec",
+      "case_id": "TC_e9d1945a56aa9fd0",
+      "role": "selected",
+      "packet_subject_id": "Family 1 Patient 1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "All assigned packet features examined; absent supplement detail remains unresolved.",
+        "Source correspondence only; no independent diagnosis or contemporary ACMG reassessment.",
+        "Main clinical table and raster figure captions personally read; extracted text alone is incomplete."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family1/Patient1 maps by c.517C>T p.Pro173Ser, evaluation age36, onset age24 and clinical pattern. Table1 male sex agrees with packet.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Family1/Patient1 header; sex/age/onset/genetic rows"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Monoallelic/heterozygous TUBA4A NM_006000.3:c.517C>T, p.Pro173Ser matches Table1, main prose and Figure2; protein residue and transcript match packet.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Genetic rows; mainMethods and Results"
+          }
+        ],
+        "limitations": [
+          "Main gives coding/protein calls but not the packet GRCh38 genomic coordinate. Exact NC_000002.12/VCF mapping not independently established; supplement annotation unavailable."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Patient1 variant explicitly de novo in Table1 and Figure2; both parents shown tested and unaffected, and Methods states Sanger segregation of available relatives.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Inheritance row; Figure2A and caption"
+          }
+        ],
+        "limitations": [
+          "Raw parental sequence traces/parentage testing not supplied in held material. This is source-reported de novo, not independently regenerated."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single heterozygous TUBA4A allele; no within-gene compound-heterozygous cis/trans question.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Genetics rows; mainResults monoallelic variants"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors attribute the ataxia phenotype to de novo p.Pro173Ser; Pro173 recurrence, conservation, structural predictions and patient-cell observations support disease association. Patient1 fibroblasts were directly examined.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Genetic rows; Figures1-3; mainResults/Discussion"
+          }
+        ],
+        "limitations": [
+          "Discussion distinguishes1pathogenic,4likely pathogenic and4possibly pathogenic alleles, while per-allele classification table is inaccessible. Packet PATHOGENIC cannot be independently confirmed from held evidence.",
+          "Only3affected cell donors and2parental controls; measured cells/microtubules are not independent affected individuals. No isogenic rescue or causal mechanism uniquely demonstrated.",
+          "Dominant negative effect is a hypothesis; partial loss/gain of function explicitly not excluded.",
+          "Gene burden includes six selected case variants but two were later not retained; the0.45% seven-case estimate includes alleles calledVUS inResults. These counts are not uniform confirmed diagnoses."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Packet captures multiple Table1features but detailed coordination/standing findings are not supplied in held main text. Source indicates a cerebellar presentation without spasticity; disease-label spastic ataxia must not be treated as a positive spasticity finding.",
+        "evidence": [
+          {
+            "source_id": "table1-embedded",
+            "locator": "Clinical rows; mainClinicalfindings"
+          }
+        ],
+        "limitations": [
+          "Supplementary clinical descriptions/MRI unavailable; aggregate cohort findings not assigned to individual patients.",
+          "Minus in a dedicated feature row supports a negative; absence from the Other features list is less conclusive."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c517CtoT_TUBA4A_NM_006000v3",
+            "geneContext": {
+              "valueId": "HGNC:12407",
+              "symbol": "TUBA4A"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_006000.3:c.517C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.219251182G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005991.1:p.(Pro173Ser)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 219251182,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "5bc124fc77f97e4d15f8fae15d8d9a0d5075b6cd57ddd2d4b9aca7c451d93684",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Monoallelic/heterozygous TUBA4A NM_006000.3:c.517C>T, p.Pro173Ser matches Table1, main prose and Figure2; protein residue and transcript match packet.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Genetic rows; mainMethods and Results"
+              }
+            ],
+            "limitations": [
+              "Main gives coding/protein calls but not the packet GRCh38 genomic coordinate. Exact NC_000002.12/VCF mapping not independently established; supplement annotation unavailable."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003236",
+              "label": "Elevated circulating creatine kinase concentration"
+            }
+          },
+          "snapshot_sha256": "3533a9736e36165b7ecbb618942d0085d003799254c4d353520f752a6df367b2",
+          "assessment": {
+            "status": "supported",
+            "statement": "IncreasedCPK explicitly listed forPatient1.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Other features"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001394",
+              "label": "Cirrhosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "73176497b43c52ca917248b4ebed7ada3eb29ef80d7fd71badae1c7539873e40",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Cirrhosis is not listed for this case; Otherfeatures contains another finding, not an exhaustive negative assessment.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Other features"
+              }
+            ],
+            "limitations": [
+              "No liver-specific negative test or assessment; publication omission is not definitive exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001152",
+              "label": "Saccadic smooth pursuit"
+            }
+          },
+          "snapshot_sha256": "9025fac4f52b601a9fcab1e719850f7f8bcaed4947bfa013c7c9765eae00ce96",
+          "assessment": {
+            "status": "supported",
+            "statement": "Eye movements explicitly saccadic pursuit.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Eye movements"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000009",
+              "label": "Functional abnormality of the bladder"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9ce88e16223f27c33f72887aec292ddbb44ebef722d8df798db7ba2d85f01735",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dedicated bladder-dysfunction row is negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Bladder dysfunction"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001257",
+              "label": "Spasticity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "615562e4142a03f965ec8d9a70bf25645c0651830025ee8c20377b216abf48c7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Spasticity negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Spasticity"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003487",
+              "label": "Babinski sign"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f33b46135fb138a92731444e0463b72e6e667b3f6cdd59e329924f10d83618bb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Extensor plantar reflex negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Extensor plantar reflex"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002075",
+              "label": "Dysdiadochokinesis"
+            }
+          },
+          "snapshot_sha256": "1d0ca23ef8201c649e01f33f6d964392ce1fa782d52410e97fe977fa695a0382",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Dysdiadochokinesis presence is not stated in the held main clinical table or narrative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: All clinical rows; mainClinicalfindings"
+              }
+            ],
+            "limitations": [
+              "Ataxia alone does not establish this specific coordination sign; supplement unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001310",
+              "label": "Dysmetria"
+            }
+          },
+          "snapshot_sha256": "3238bee74d5c38cf37640b77ff65d771654de8782442b73c4945dac525c220a2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Dysmetria is not individually documented in held main clinical table/narrative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Allclinicalrows; mainClinicalfindings"
+              }
+            ],
+            "limitations": [
+              "Cerebellar ataxia alone does not establish this specific sign; supplement unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001260",
+              "label": "Dysarthria"
+            }
+          },
+          "snapshot_sha256": "f6988c243535d0c801c792a3932fd5f940f087a730753cb11d4f35a9c3e3b95d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dysarthria explicitly positive.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Dysarthria"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000726",
+              "label": "Dementia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d2ecd5e622bde6f358cc9e1c66ead01189c0605e10f7d991a03a4ff4f3b00f38",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Cognitive decline is explicitly negative forPatients1/2, supporting no reported dementia.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Cognitive decline"
+              }
+            ],
+            "limitations": [
+              "No formal dementia assessment provided; broader construct than source row."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001288",
+              "label": "Gait disturbance"
+            }
+          },
+          "snapshot_sha256": "8fb7a84e18814f9b114a4be736e63bc646551b005cb7476e1c09dfc4b82bf805",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ataxia at onset and cohort-wide gait disturbance support gait disturbance.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Initial symptoms and Ataxia rows; mainClinicalfindings"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001347",
+              "label": "Hyperreflexia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bd72ce0ee63b76100103e9ea99fbeac4e82fd684024571f9cb74873c9e42fc80",
+          "assessment": {
+            "status": "supported",
+            "statement": "Increased deep-tendon reflex explicitly negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Increased deep tendon reflex"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001272",
+              "label": "Cerebellar atrophy"
+            }
+          },
+          "snapshot_sha256": "321fdd7d1ac78300f13f98fdb048dec89e802f4a5947ba678fd9980310da496c",
+          "assessment": {
+            "status": "supported",
+            "statement": "BrainMRI markedCA+, defined as cerebellar atrophy in table footnote.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: BrainMRI"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6db568d0dd760bea978b8846d66cb918c3bc978c8bb480f209e63a73a910f4bc",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Patient1Otherfeatures lists increasedCPK, without a specific scoliosis negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Other features"
+              }
+            ],
+            "limitations": [
+              "No dedicated spine assessment; the Otherfeatures list need not be exhaustive."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003458",
+              "label": "EMG: myopathic abnormalities"
+            }
+          },
+          "snapshot_sha256": "21bdabe8b9bd64c095cf76931f679db72bae6a5e352a6b887cf060444b33c61f",
+          "assessment": {
+            "status": "supported",
+            "statement": "EMG explicitly myopathic signs.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: EMG"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003484",
+              "label": "Upper limb muscle weakness"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "320388906728a2f3a3e9979896e881a6051331abee3837a350f4d3fa1de383d9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Upper-limb weakness negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: ULweakness"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007340",
+              "label": "Lower limb muscle weakness"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "613979e25066cae6d93667a342b415db586e459abbc2eaee77d5a8d586bea46c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Lower-limb weakness negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: LLweakness"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003698",
+              "label": "Difficulty standing"
+            }
+          },
+          "snapshot_sha256": "a5bb690ed0a464dc60822a14e3bc63542965f12aa90b1cca10c975af034bf449",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Difficulty standing presence is not individually documented in the held main.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: All clinical rows; mainClinicalfindings"
+              }
+            ],
+            "limitations": [
+              "Gait ataxia does not establish the specific standing assessment; supplement unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003202",
+              "label": "Skeletal muscle atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b6d7861988839064ff693461c0f10262b48ebcf22a24e4d3105d95f6d7a5f3f1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Amyotrophy explicitly negative.",
+            "evidence": [
+              {
+                "source_id": "table1-embedded",
+                "locator": "Table1 Patient1: Amyotrophy"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "supp_methods",
+      "status": "open",
+      "detail": "HAL API lists only the held mainPDF. Publisher DOI and candidate public supplement ZIP/PDF paths returned403; no bypass attempted. Supplementary material: detailed cell/imaging and statistical methods not held/read.",
+      "evidence": [
+        {
+          "source_id": "receipt_20261024T201248269571Z-138b519d71",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201248271011Z-9fb196e9a9",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201332801277Z-71c9d6fdd0",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201332801743Z-99698dce2f",
+          "locator": "Public route receipt"
+        }
+      ]
+    },
+    {
+      "component_id": "supp_table1",
+      "status": "open",
+      "detail": "HAL API lists only the held mainPDF. Publisher DOI and candidate public supplement ZIP/PDF paths returned403; no bypass attempted. SupplementaryTable1: burden-analysis detail not held/read.",
+      "evidence": [
+        {
+          "source_id": "receipt_20261024T201248269571Z-138b519d71",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201248271011Z-9fb196e9a9",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201332801277Z-71c9d6fdd0",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201332801743Z-99698dce2f",
+          "locator": "Public route receipt"
+        }
+      ]
+    },
+    {
+      "component_id": "supp_table2",
+      "status": "open",
+      "detail": "HAL API lists only the held mainPDF. Publisher DOI and candidate public supplement ZIP/PDF paths returned403; no bypass attempted. SupplementaryTable2: variant annotations/classification not held/read.",
+      "evidence": [
+        {
+          "source_id": "receipt_20261024T201248269571Z-138b519d71",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201248271011Z-9fb196e9a9",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201332801277Z-71c9d6fdd0",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201332801743Z-99698dce2f",
+          "locator": "Public route receipt"
+        }
+      ]
+    },
+    {
+      "component_id": "supp_table3",
+      "status": "open",
+      "detail": "HAL API lists only the held mainPDF. Publisher DOI and candidate public supplement ZIP/PDF paths returned403; no bypass attempted. SupplementaryTable3 cited for clinical progression and structural predictions; scope unresolved not held/read.",
+      "evidence": [
+        {
+          "source_id": "receipt_20261024T201248269571Z-138b519d71",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201248271011Z-9fb196e9a9",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201332801277Z-71c9d6fdd0",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201332801743Z-99698dce2f",
+          "locator": "Public route receipt"
+        }
+      ]
+    },
+    {
+      "component_id": "supp_figure1",
+      "status": "open",
+      "detail": "HAL API lists only the held mainPDF. Publisher DOI and candidate public supplement ZIP/PDF paths returned403; no bypass attempted. SupplementaryFigure1: brain MRI not held/read.",
+      "evidence": [
+        {
+          "source_id": "receipt_20261024T201248269571Z-138b519d71",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201248271011Z-9fb196e9a9",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201332801277Z-71c9d6fdd0",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201332801743Z-99698dce2f",
+          "locator": "Public route receipt"
+        }
+      ]
+    },
+    {
+      "component_id": "supp_figure2",
+      "status": "open",
+      "detail": "HAL API lists only the held mainPDF. Publisher DOI and candidate public supplement ZIP/PDF paths returned403; no bypass attempted. SupplementaryFigure2: protein modeling not held/read.",
+      "evidence": [
+        {
+          "source_id": "receipt_20261024T201248269571Z-138b519d71",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201248271011Z-9fb196e9a9",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201332801277Z-71c9d6fdd0",
+          "locator": "Public route receipt"
+        },
+        {
+          "source_id": "receipt_20261024T201332801743Z-99698dce2f",
+          "locator": "Public route receipt"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Mandatory HANDOFF.md read at resume exposed aggregate benchmark outcomes and a historical HG002/FGFR2 public-control case-specific rank. Conservatively declared per_case; this old public-control exposure is distinct from target-case outcomes: no target-case inference/result files or additional outcome summaries were consulted for this review. This is post-inference source correspondence, not blinded validation. Earlier canonical reviews are inherited work and are not claimed as this reviewer reading.",
+    "All three full packets, including alternate Family3/Patient3, personally examined with main text and every main figure/table. Entire held manuscript read; supplement inventory/access incomplete.",
+    "Table1Patient3 female agrees with packet but Figure2square indicates male; do not silently choose an authoritative sex source.",
+    "Patient1onset24/evaluation36;Patient2onset22/evaluation47;Patient3onset2/evaluation20. Patients2/3learningdisabilities omitted from packets. No outcome rank files consulted; the article reports an Exomiser variant-filter threshold in its own burden analysis, not this project inference results.",
+    "Discussion incorrectly names Patients2/3 for acetylation findings where Methods/Results/Figure3 specify1/2/7. Patient3functional evidence must not be claimed from that sentence.",
+    "Figure2conservation panel labels residue316mutantR although table/figure1/prose sayCys316Tyr; case4annotation discrepancy does not change assigned Pro173alleles.",
+    "Table1Patient12onset54/evaluation62 differs from prose lateonset62; article cohort range2-60 differs from that isolated prose62. Not silently reconciled.",
+    "No evidence of universally lower TUBA4A abundance: western ratios nonsignificant, microtubule-associated isoform ratio rises forP173R/H28R and falls forP173S. Tyrosination rises inall3; acetylation lowerP173R/H28R but notP173S. Mechanism remains nonunique.",
+    "Figure3caption30fibroblasts percondition with individual microtubules quantified; normal distribution assumed, not formallytested. Biological donor replication limited; exact statistical test and supplementary methods unavailable.",
+    "H28Rfamily includes younger unaffected heterozygous sister; mother negative/father unavailable. VUSgroup cannot be treated as fullypenetrant proven causal despite altered patientfibroblast readouts.",
+    "Published source classifies several variantsVUS. 100KGPburden6casevariants includes2notretained;4retainedcases includeVUSp.Asp33Val/p.Leu259Val. Gene association evidence and confirmed diagnostic yield are distinct.",
+    "No unlisted negatives inferred as established, no raw-data reanalysis, no current population-database lookup, no contacts. Published methods read only for appraisal; no wet-lab design/execution."
+  ]
+}

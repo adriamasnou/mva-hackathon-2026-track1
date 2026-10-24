@@ -1,0 +1,873 @@
+{
+  "schema_version": 1,
+  "pmid": "36208065",
+  "title": "ERI1: A case report of an autosomal recessive syndrome associated with developmental delay and distal limb abnormalities",
+  "reviewer": {
+    "id": "Codex-reader-4-successor-Hypatia",
+    "reviewed_at_utc": "2026-10-24T20:22:56.687943+00:00",
+    "method": "Reader-4 successor personally read all six original pages, both complete multipanel figures, all Table1 cells and all references; all three rendered supplement pages, both embedded figures and every assessment score. Compared all exact packet fields; no inference outputs or browser use."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Conservative per_case declaration: mandatory HANDOFF and inherited project/report context exposed historical public control and per-case narratives before this succession. No inference-output file, target-case ranking, or per-case outcome was opened or consulted for this seven-paper audit. This review is post-inference and not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "e23ea37c6a07aa91178ca7c9437da9400e2710bece8428c017a0b67df955694c",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "predecessor-record",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/predecessor-record.json",
+      "sha256": "e75aff5f85e803dc3899aef6a40a8365c8838bcce8796ee8244e456c5bf61f55",
+      "kind": "metadata",
+      "description": "Exact unchanged predecessor canonical record, retained before succession."
+    },
+    {
+      "id": "identity-metadata",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36208065/europepmc.json",
+      "sha256": "3d4dbd0a3edb82c49d9edbf0b65eca74bb5d31fcdc1a7dce6b54d58f2c142185",
+      "kind": "metadata",
+      "description": "Held exact-PMID Europe PMC identity response; not full-text reading."
+    },
+    {
+      "id": "reader4_search2",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/web-receipts/reader4_search2.txt",
+      "sha256": "4d9cdc6279b62051d4bb386e03e2b33d27cd37c4b612119a1cd08b4ca18ee2d1",
+      "kind": "access_log",
+      "description": "Shared seven-paper public retrieval receipt; only the entries for this PMID/DOI apply. No whole-file reading credit."
+    },
+    {
+      "id": "reader4_open1",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/web-receipts/reader4_open1.txt",
+      "sha256": "b00b2564ac79a6a1af09d4e65e7b6d74bfca10d3fd2dc76f3a0efe5db530dc5d",
+      "kind": "access_log",
+      "description": "Shared seven-paper public retrieval receipt; only the entries for this PMID/DOI apply. No whole-file reading credit."
+    },
+    {
+      "id": "reader4_sources3",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/web-receipts/reader4_sources3.txt",
+      "sha256": "896ea37767fd6464d13c50ee7c22cdb02f99136aaf1e7799b3c86effb8c6a9ce",
+      "kind": "access_log",
+      "description": "Shared seven-paper public retrieval receipt; only the entries for this PMID/DOI apply. No whole-file reading credit."
+    },
+    {
+      "id": "reader4_sources4",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/web-receipts/reader4_sources4.txt",
+      "sha256": "e28ecc1d2129f67a1bd42aaabbb4ad12ad86ceb875a2f745ee2d02334700d41a",
+      "kind": "access_log",
+      "description": "Shared seven-paper public retrieval receipt; only the entries for this PMID/DOI apply. No whole-file reading credit."
+    },
+    {
+      "id": "reader4_sources5",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/web-receipts/reader4_sources5.txt",
+      "sha256": "1e642efa42eedc405f5757228371636067591daafe6496091031b1eb1b601ca1",
+      "kind": "access_log",
+      "description": "Shared seven-paper public retrieval receipt; only the entries for this PMID/DOI apply. No whole-file reading credit."
+    },
+    {
+      "id": "http-supplement",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/http-public/supplement.json",
+      "sha256": "f0dcf38e0b42521b86030eaa4a1874446499683468f50768ddc0f3fc49d54d05",
+      "kind": "access_log",
+      "description": "Unauthenticated public HTTP access receipt; a failed response is not an article."
+    },
+    {
+      "id": "http-supplement-curl",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/http-public/supplement-curl.json",
+      "sha256": "ee2d4222adca043855dcf309987ffad2017b62110306393ae54a77296f1ff0ae",
+      "kind": "access_log",
+      "description": "Final public GET with system TLS trust; 403 HTML or timeout, not scientific content."
+    },
+    {
+      "id": "uoc_pdf",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/uoc-final-originals/36208065/published.pdf",
+      "sha256": "cd70b3a0e6c077e2b16cabc4adf9f41b66bff988a4331123910a8cb040a7c012",
+      "kind": "pdf",
+      "description": "Unchanged published original, held through parent authorized institutional access; actual reading separately recorded."
+    },
+    {
+      "id": "uoc_retrieval",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/uoc-final-originals/36208065/retrieval.json",
+      "sha256": "4c3126998365e2189da424e7d2885aa50d5fe22a0e5335f28ecaa77ae01f59b9",
+      "kind": "metadata",
+      "description": "Parent retrieval provenance and expected original hashes."
+    },
+    {
+      "id": "pre_uoc_record",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/uoc-reading/pre-uoc-record.json",
+      "sha256": "06f98aba57bc94e3bb8b2f6af63ad8ed1a8e5789a2b1bdcbc6570870b33acac9",
+      "kind": "metadata",
+      "description": "Exact previous reader-4 record; preserves actual prior coverage and judgments."
+    },
+    {
+      "id": "uoc_layout",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/uoc-reading/published.layout.txt",
+      "sha256": "20f93e5e8944d2f63acdc6973b53934b31e3705e66f8af9806d6471cc32ac27d",
+      "kind": "text",
+      "description": "Full layout extraction checked against all original page images."
+    },
+    {
+      "id": "uoc_page1",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/uoc-reading/page-1.png",
+      "sha256": "382a0c9c904889a9751480b34b407b70c2a2bca40cf9ecb830e16f42a9b40610",
+      "kind": "image",
+      "description": "Unaltered original PDF page 1, personally inspected."
+    },
+    {
+      "id": "uoc_page2",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/uoc-reading/page-2.png",
+      "sha256": "1fd283c9ce419b4f0b114266830cbe71b4dc439ddf926a3ebf557cad1e52707e",
+      "kind": "image",
+      "description": "Unaltered original PDF page 2, personally inspected."
+    },
+    {
+      "id": "uoc_page3",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/uoc-reading/page-3.png",
+      "sha256": "caaf2b8944eb23d4d2bf7edebd6c13bca3b8577166a52d0c097081e650c5a0a7",
+      "kind": "image",
+      "description": "Unaltered original PDF page 3, personally inspected."
+    },
+    {
+      "id": "uoc_page4",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/uoc-reading/page-4.png",
+      "sha256": "77be61f30d4bd03e1f52245b63067b69ea400271e6acee702a8d34ab3384e165",
+      "kind": "image",
+      "description": "Unaltered original PDF page 4, personally inspected."
+    },
+    {
+      "id": "uoc_page5",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/uoc-reading/page-5.png",
+      "sha256": "cac0ea9cb14ec0034568b067603aba3862a7aa4d4042a025a2e628a02ec508ae",
+      "kind": "image",
+      "description": "Unaltered original PDF page 5, personally inspected."
+    },
+    {
+      "id": "uoc_page6",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/uoc-reading/page-6.png",
+      "sha256": "6fe70be54a8ed22194f7b3caec67823518ea743763304ae195a072f9d32af129",
+      "kind": "image",
+      "description": "Unaltered original PDF page 6, personally inspected."
+    },
+    {
+      "id": "sup_docx",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/uoc-final-originals/36208065/supplement.docx",
+      "sha256": "6069f4055e6a9b167accf00482517033cb95c2638611eede2c675ffe9a08b2d5",
+      "kind": "data",
+      "description": "Unchanged publisher DOCX, three numbered sections in one file."
+    },
+    {
+      "id": "sup_pdf",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/uoc-reading/supplement-render/supplement.pdf",
+      "sha256": "7ee147aeefa4a7dcbd1f2c56132b67cd459da189a96874b1875bbfe659fc14f2",
+      "kind": "pdf",
+      "description": "Bundled LibreOffice rendering of entire original DOCX; all three pages inspected."
+    },
+    {
+      "id": "sup_page1",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/uoc-reading/supplement-render/page-1.png",
+      "sha256": "8807e3d64d20af2579416b72f20b301f4ce0219fdedf41233ef9d594c613541d",
+      "kind": "image",
+      "description": "Full rendered supplement page 1, personally read."
+    },
+    {
+      "id": "sup_page2",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/uoc-reading/supplement-render/page-2.png",
+      "sha256": "90629931a88c3057426a6a780c4b7e6b2173e265c8c251e23b81cf5281886fe6",
+      "kind": "image",
+      "description": "Full rendered supplement page 2, personally read."
+    },
+    {
+      "id": "sup_page3",
+      "pmid": "36208065",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/reader4-successor/36208065/uoc-reading/supplement-render/page-3.png",
+      "sha256": "29f02c34459ee79774694411c33fe3a7e42d5b9fbc786d2f984c79010e8940d2",
+      "kind": "image",
+      "description": "Full rendered supplement page 3, personally read."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "ERI1: A case report of an autosomal recessive syndrome associated with developmental delay and distal limb abnormalities",
+    "evidence": [
+      {
+        "source_id": "uoc_pdf",
+        "locator": "First article page: title, authors and DOI; complete original pagination"
+      }
+    ],
+    "note": "Held published original agrees with exact-PMID identity; all physical pages checked."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 2,
+      "table": 1,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "uoc_pdf",
+        "locator": "Entire original, all figure/table captions and supplemental citations"
+      }
+    ],
+    "note": "Full original enumerates Figures1/2 and Table1. Its Supplements1–3 are three sections of the single publisher supplemental DOCX, not three files. Entire DOCX content and both embedded images checked; no other supplement cited."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 6,
+      "extent_source_id": "uoc_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "uoc_pdf",
+          "locator": "Complete physical PDF extent"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 6,
+          "mode": "text",
+          "source_id": "uoc_pdf",
+          "locator": "Full main text, declarations, captions and entire reference list"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "uoc_page1",
+          "locator": "Entire physical page 1"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "uoc_page2",
+          "locator": "Entire physical page 2"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "uoc_page3",
+          "locator": "Entire physical page 3"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "uoc_page4",
+          "locator": "Entire physical page 4"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "uoc_page5",
+          "locator": "Entire physical page 5"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "uoc_page6",
+          "locator": "Entire physical page 6"
+        }
+      ],
+      "note": "Every physical page actually read; reference-list reading does not imply reading the cited publications."
+    },
+    {
+      "id": "figure_1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 5,
+      "extent_source_id": "uoc_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "uoc_pdf",
+          "locator": "p.66 Figure1a–e, all hand/foot views, facial photograph and complete legend"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 5,
+          "mode": "text",
+          "source_id": "uoc_pdf",
+          "locator": "p.66 Figure1a–e, all hand/foot views, facial photograph and complete legend"
+        },
+        {
+          "start": 1,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "uoc_page3",
+          "locator": "p.66 Figure1a–e, all hand/foot views, facial photograph and complete legend"
+        }
+      ],
+      "note": "No new diagnosis inferred from photographs."
+    },
+    {
+      "id": "figure_2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 4,
+      "extent_source_id": "uoc_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "uoc_pdf",
+          "locator": "p.67 Figure2a–d, every radiographic view and complete legend"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 4,
+          "mode": "text",
+          "source_id": "uoc_pdf",
+          "locator": "p.67 Figure2a–d, every radiographic view and complete legend"
+        },
+        {
+          "start": 1,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "uoc_page4",
+          "locator": "p.67 Figure2a–d, every radiographic view and complete legend"
+        }
+      ],
+      "note": "All indicated text and pixels personally inspected; no reading inferred from extraction alone."
+    },
+    {
+      "id": "table_1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "uoc_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "uoc_pdf",
+          "locator": "p.68 Table1, both case columns and all rows"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "uoc_pdf",
+          "locator": "p.68 Table1, both case columns and all rows"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "uoc_page5",
+          "locator": "p.68 Table1, both case columns and all rows"
+        }
+      ],
+      "note": "Normal cardiac examination without echocardiography is expressly qualified in the current-case column."
+    },
+    {
+      "id": "supplement_materials",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 3,
+      "extent_source_id": "sup_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "sup_pdf",
+          "locator": "Entire three-page DOCX rendering, Supplements1–3"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 3,
+          "mode": "text",
+          "source_id": "sup_pdf",
+          "locator": "Every caption, species/accession label, clinical test and score; axis labels"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "sup_page1",
+          "locator": "Entire supplement page 1"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "sup_page2",
+          "locator": "Entire supplement page 2"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "sup_page3",
+          "locator": "Entire supplement page 3"
+        }
+      ],
+      "note": "S1: ten-species alignment, not functional testing. S2: all neuropsychological scores. S3: both entire weight/stature plots, plotted observations and axes; no exact values invented from chart pixels."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/ERI1/PMID_36208065_7_year_old_female.json",
+      "packet_sha256": "61d79a9bda9b53d6ef163500c233eed43467ab99bc8fd99143f2399e07a8421f",
+      "case_id": "TC_4b7c7049c3d30658",
+      "role": "selected",
+      "packet_subject_id": "7-year-old female",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Entire original and supplemental file read; every immutable packet feature and allele reviewed. Unresolved negatives reflect source silence, not unread components.",
+        "All six physical pages, both figures, table, three supplemental sections and references reviewed; no independent normalization or new functional evidence."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Packet maps to the seven-year-old female; source specifies neuropsychological assessment at seven years one month. Congenital skeletal findings and later neurodevelopmental findings are distinguished.",
+        "evidence": [
+          {
+            "source_id": "uoc_pdf",
+            "locator": "p.65 Case presentation; pp.66–68 Discussion/Table1; supplemental sections1–3"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Source reports homozygous ERI1 NM_153332.3:c.352A>T, p.Lys118Ter; packet uses transcript version .4 and adds genomic/VCF chr8:9011606 A>T.",
+        "evidence": [
+          {
+            "source_id": "uoc_pdf",
+            "locator": "p.65 trio-exome paragraph; p.68 Table1"
+          }
+        ],
+        "limitations": [
+          "Reference-version equivalence and genomic coordinates are not independently normalized; the primary does not print the genomic coordinate."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Trio exome confirms both healthy parents heterozygous and daughter homozygous; parents are nonconsanguineous.",
+        "evidence": [
+          {
+            "source_id": "uoc_pdf",
+            "locator": "p.65 Case presentation; pp.66–68 Discussion/Table1; supplemental sections1–3"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Homozygous child with both parents confirmed heterozygous supports recessive inheritance.",
+        "evidence": [
+          {
+            "source_id": "uoc_pdf",
+            "locator": "p.65 trio-exome paragraph"
+          }
+        ],
+        "limitations": [
+          "No independent sequence or read-level phasing performed."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors propose ERI1 loss of function as the cause of the phenotype; packet SOLVED/CAUSATIVE and PATHOGENIC are stronger formal assertions than the paper supplies. No explicit ACMG class is given. The supplement contains conservation, not a functional assay.",
+        "evidence": [
+          {
+            "source_id": "uoc_pdf",
+            "locator": "pp.65–68; Supplement1"
+          }
+        ],
+        "limitations": [
+          "Single new nonsense-variant case; prior deletion includes MFHAS1; animal/model analogy does not measure this human variant. Syndrome name/OMIM identifier are later packet terminology not printed in the primary."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Packet captures selected facial, visual and developmental findings but omits the defining distal-limb abnormalities. Low-set-ear and autism exclusions are not explicitly established; global delay requires qualification.",
+        "evidence": [
+          {
+            "source_id": "uoc_pdf",
+            "locator": "p.65; Figures1–2; Table1; Supplement2"
+          }
+        ],
+        "limitations": [
+          "Not an exhaustive clinical representation; no negative finding inferred from omission."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c352AtoT_ERI1_NM_153332v4",
+            "geneContext": {
+              "valueId": "HGNC:23994",
+              "symbol": "ERI1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_153332.4:c.352A>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000008.11:g.9011606A>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_699163.2:p.(Lys118Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr8",
+              "pos": 9011606,
+              "ref": "A",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "47fc12f7b7eb9999b52ebb0a9b07761c981590c50d87a59c720bed1fe7d4c0a2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Source reports homozygous ERI1 NM_153332.3:c.352A>T, p.Lys118Ter; packet uses transcript version .4 and adds genomic/VCF chr8:9011606 A>T.",
+            "evidence": [
+              {
+                "source_id": "uoc_pdf",
+                "locator": "p.65 trio-exome paragraph; Supplement1 NP_699163.2 alignment"
+              }
+            ],
+            "limitations": [
+              "Reference-version equivalence and genomic coordinates are not independently normalized; the primary does not print the genomic coordinate."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000358",
+              "label": "Posteriorly rotated ears"
+            }
+          },
+          "snapshot_sha256": "69de827a482e8db6d1917cd36728ba56e0cf10f5042d19b998515bbdfbc1414e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Slightly posteriorly rotated ears explicitly described.",
+            "evidence": [
+              {
+                "source_id": "uoc_pdf",
+                "locator": "p.65 examination; Table1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000369",
+              "label": "Low-set ears"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ea3c99f77d325f2810bba05cb968302cbc1008c58ed25bc0410c8d56e3480627",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicit assessment excludes low-set ears.",
+            "evidence": [
+              {
+                "source_id": "uoc_pdf",
+                "locator": "p.65 examination; Figure1e; Table1"
+              }
+            ],
+            "limitations": [
+              "No exact negative finding documented; photographs or a list of cognitive tests cannot substitute for that exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000483",
+              "label": "Astigmatism"
+            }
+          },
+          "snapshot_sha256": "6263e87265f429cfa02a09ae86f38198a065947d6bdc016f2b00b6228b5e9f42",
+          "assessment": {
+            "status": "supported",
+            "statement": "Bilateral astigmatism, right worse than left, explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "uoc_pdf",
+                "locator": "p.65 ophthalmology; Table1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            }
+          },
+          "snapshot_sha256": "54464f016709001622b86a345d70ba17dab8e162cf855064c192bd2f3c44364b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Mild right upper eyelid ptosis is explicit.",
+            "evidence": [
+              {
+                "source_id": "uoc_pdf",
+                "locator": "p.65 ophthalmology/examination; Table1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000545",
+              "label": "Myopia"
+            }
+          },
+          "snapshot_sha256": "e2b2a0983f7e27418bf52efc8f7d46a420dee26d57e2ed0a3472fa51645e35c9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Bilateral myopia explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "uoc_pdf",
+                "locator": "p.65 ophthalmology; Table1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000717",
+              "label": "Autism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "55c74840dada3c0109e111ad50c6b30ef417e6c0daaf12b412627f269a9a6c36",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No autism exclusion or autism-specific diagnostic assessment is reported for this child. The introduction discusses an unrelated ASD gene-association study.",
+            "evidence": [
+              {
+                "source_id": "uoc_pdf",
+                "locator": "p.65 introduction/case; Supplement2"
+              }
+            ],
+            "limitations": [
+              "No exact negative finding documented; photographs or a list of cognitive tests cannot substitute for that exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            }
+          },
+          "snapshot_sha256": "c444dd47b030fe9f7b2523d299496431fe54f2ce557f990c454810b00764e589",
+          "assessment": {
+            "status": "supported",
+            "statement": "Mild intellectual disability documented, full-scale IQ69.",
+            "evidence": [
+              {
+                "source_id": "uoc_pdf",
+                "locator": "p.65; Table1; Supplement2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Developmental delay is reported, with speech and later intellectual/adaptive impairments; early motor milestones are explicitly described as on time.",
+            "evidence": [
+              {
+                "source_id": "uoc_pdf",
+                "locator": "p.65 developmental history; Supplement2"
+              }
+            ],
+            "limitations": [
+              "Global developmental delay is broader than the described early speech delay; later testing supports multidomain impairment but no formal early GDD diagnosis is documented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "First word18months, two-word sentences24months, full sentences4.5years and continuing speech difficulties explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "uoc_pdf",
+                "locator": "p.65 case presentation"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000960",
+              "label": "Sacral dimple"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "86b510139712b5a3afa0b800990e5dc6730b65065bcb0226f79953f9ef572ffd",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sacral dimple was found during neonatal hospital stay, supporting congenital onset.",
+            "evidence": [
+              {
+                "source_id": "uoc_pdf",
+                "locator": "p.65 birth/neonatal history; Table1"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "main_text",
+      "status": "resolved",
+      "detail": "Previous public access barrier resolved by parent-supplied lawful original; complete text and pixels now read.",
+      "evidence": [
+        {
+          "source_id": "uoc_pdf",
+          "locator": "Complete original"
+        },
+        {
+          "source_id": "uoc_retrieval",
+          "locator": "Parent provenance and hashes"
+        }
+      ]
+    },
+    {
+      "component_id": "supplement_materials",
+      "status": "resolved",
+      "detail": "Parent supplied lawful original DOCX; all text, images and rendered pages read.",
+      "evidence": [
+        {
+          "source_id": "sup_pdf",
+          "locator": "Complete supplement"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Conservative per_case declaration: mandatory HANDOFF and inherited project/report context exposed historical public control and per-case narratives before this succession. No inference-output file, target-case ranking, or per-case outcome was opened or consulted for this seven-paper audit. This review is post-inference and not blinded.",
+    "Source correspondence only. No explicit low-set-ear/autism exclusions. Formal PATHOGENIC classification and later syndrome label are not supplied by the original.",
+    "Supplement1 conservation is not a loss-of-function experiment; underlying author-request data were not accessed. Growth-chart visual review does not establish exact unprinted measurements."
+  ]
+}

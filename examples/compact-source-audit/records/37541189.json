@@ -1,0 +1,3503 @@
+{
+  "schema_version": 1,
+  "pmid": "37541189",
+  "title": "HNRNPC haploinsufficiency affects alternative splicing of intellectual disability-associated genes and causes a neurodevelopmental disorder",
+  "reviewer": {
+    "id": "reader-2-resume-20261024",
+    "reviewed_at_utc": "2026-10-24T20:10:32.875074+00:00",
+    "method": "Current resumed reviewer read all stated source-text units and inspected the stated pixel components directly. Record serialized after manual source comparison; script execution/extraction is not reading."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Mandatory HANDOFF.md read at resume exposed aggregate benchmark outcomes and a historical HG002/FGFR2 public-control case-specific rank. Conservatively declared per_case; this old public-control exposure is distinct from target-case outcomes: no target-case inference/result files or additional outcome summaries were consulted for this review. This is post-inference source correspondence, not blinded validation. Earlier canonical reviews are inherited work and are not claimed as this reviewer reading."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "cca729809167de2579e1e24ade8c7b6486adf6cd7e2e2e3466396bf545df34f0",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "pdf",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37541189/retrieval-followup/20261024T110428335249Z-d0b87a0227/response.body",
+      "sha256": "5a7765d7512cf0d0c8aad9ec65028454463b1ceb8adaccb8152af1cb0ecbe4a5",
+      "kind": "pdf",
+      "description": "Original public hnrnp.org/pdf/hnrnpc/hnrnpc.pdf;5137807bytes; title/authors/DOI and all23pages personally checked."
+    },
+    {
+      "id": "text",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37541189/retrieval-followup/20261024T110428335249Z-d0b87a0227/response.body.layout.txt",
+      "sha256": "f9190d7ac0d0ec3fad28ce04765bc428ec958d9f7d05fae764ed0e1a3c9f486d",
+      "kind": "text",
+      "description": "All1389layout lines read, including entire methods, all captions and references; cross-checked against all23pages."
+    },
+    {
+      "id": "supp_pdf",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37541189/retrieval-followup/20261024T111536704910Z-536c05826c/response.body",
+      "sha256": "9ee9b80fff802f0c51c8c9d9d9f9a6b4af907745e8c191fd522c21228cac713e",
+      "kind": "pdf",
+      "description": "Publisher public mmc1.pdf;6898232bytes; complete20page supplement personally read."
+    },
+    {
+      "id": "supp_text",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37541189/retrieval-followup/20261024T111536704910Z-536c05826c/response.body.layout.txt",
+      "sha256": "87e5ce4779eb81c917dbd1f0d33c5b2afefea7a117d780808729430aefa67ad1",
+      "kind": "text",
+      "description": "All512supplement lines read, with all20pages and dense S6C enlarged plots."
+    },
+    {
+      "id": "S4",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37541189/retrieval-followup/20261024T111536704799Z-9db83ff92d/response.body",
+      "sha256": "c414228dfaaf8cfc07b693f68901ab269da8353119048ee20acb32fcb2381b1d",
+      "kind": "data",
+      "description": "Publisher mmc2.xlsx;28917bytes; sole Table S4 Clinical details, A1:N143, all13individual columns and all cells personally read."
+    },
+    {
+      "id": "S4_text",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/sheet-1.jsonl",
+      "sha256": "639379e7df1ef71acd0dab9dfa5984c73fff2696c46b6168d47498b796af15ba",
+      "kind": "text",
+      "description": "All143rows A:N read; rows92-143 blank; merged-cell nulls not treated as negative clinical findings."
+    },
+    {
+      "id": "prep",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/preparation.json",
+      "sha256": "04345bb3881bb411517ae7439bb948bc85ffd6b93980a7ebee6abf5c70bd525e",
+      "kind": "metadata",
+      "description": "Durable preparation/extent record; preparation itself is not reading. Original identity/hash/bytes verified."
+    },
+    {
+      "id": "clinical_manifest",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-render-manifest.json",
+      "sha256": "08af2e3804c7de4a9ee886241c0e53ce536d1fa2694beab62be35211f17d2bb1",
+      "kind": "metadata",
+      "description": "Durable preparation/extent record; preparation itself is not reading. Original identity/hash/bytes verified."
+    },
+    {
+      "id": "wb_manifest",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supplement-workbooks-manifest.json",
+      "sha256": "4a5dc96d300a611245da6af011fa84740cf78c0266edc1a08e5ca1bc79d151ad",
+      "kind": "metadata",
+      "description": "Durable preparation/extent record; preparation itself is not reading. Original identity/hash/bytes verified."
+    },
+    {
+      "id": "small_manifest",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/small-supp-render-manifest.json",
+      "sha256": "e9c9400ba015b28b4758ec6ff453f58ca7712c588cfafbe0ff22ce8ce4e3f7e0",
+      "kind": "metadata",
+      "description": "Durable preparation/extent record; preparation itself is not reading. Original identity/hash/bytes verified."
+    },
+    {
+      "id": "main1",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-01.png",
+      "sha256": "f0a7d174ab1e83bdcbfe011adebc890c07beb4270e5ce4b7405619095347de3a",
+      "kind": "image",
+      "description": "Entire main page1 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main2",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-02.png",
+      "sha256": "a9724515ce3e37a0011018749d56a485b9f7925b730f8d577ba0b342c417a3ed",
+      "kind": "image",
+      "description": "Entire main page2 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main3",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-03.png",
+      "sha256": "a9a3f1d303142503d130b02e8ea244141b6af1514822f3d6e4aa398a4323c90c",
+      "kind": "image",
+      "description": "Entire main page3 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main4",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-04.png",
+      "sha256": "649d338b9700295c211d66eacf65341f2436b42abb525b55ab6b753706d69bd9",
+      "kind": "image",
+      "description": "Entire main page4 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main5",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-05.png",
+      "sha256": "0914d0e18a904f4f62704aee3589e9c0fc17c911c3c2ca1f0911280bc28c6ae1",
+      "kind": "image",
+      "description": "Entire main page5 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main6",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-06.png",
+      "sha256": "ad10c3b1f3560db7ad207e8b8566c776035306c012b0886636bdaac61e64c636",
+      "kind": "image",
+      "description": "Entire main page6 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main7",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-07.png",
+      "sha256": "f45341fcd4883b56efc55dd376c85a8fcf4924d67bd7243cdaa0f40bf2f4e493",
+      "kind": "image",
+      "description": "Entire main page7 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main8",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-08.png",
+      "sha256": "99362f8936a9d952a87ac80f415bceae393894a914609724d90caad25c83b1b2",
+      "kind": "image",
+      "description": "Entire main page8 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main9",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-09.png",
+      "sha256": "bd37a363b5ec8b804dd60c5d1fb3d5876ad1af5a03052c99909197cdde2aa988",
+      "kind": "image",
+      "description": "Entire main page9 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main10",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-10.png",
+      "sha256": "b07e03ed0281c1ce9ffc8fd71a6487d484c960db57366719f6f1169cc95bd92b",
+      "kind": "image",
+      "description": "Entire main page10 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main11",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-11.png",
+      "sha256": "42bfa07edbe12e2034b08d96aa82fca851f614f303f0bc5f9944ca95d0efee3f",
+      "kind": "image",
+      "description": "Entire main page11 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main12",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-12.png",
+      "sha256": "9d0378ed08c73dbbc76fcb3f9b7e59821a15abf71ae783cc4e7bf11e4ff08576",
+      "kind": "image",
+      "description": "Entire main page12 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main13",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-13.png",
+      "sha256": "649bb7ac2e5cd514e71484fcd47f0462ed343ca40f06f4fc8a3bc1baa153059a",
+      "kind": "image",
+      "description": "Entire main page13 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main14",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-14.png",
+      "sha256": "1b46db357ca7e4a753c3eaaa9d7dd86aaafd92a5207f3ffaca6add221581a61a",
+      "kind": "image",
+      "description": "Entire main page14 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main15",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-15.png",
+      "sha256": "e283bb1d6904ab0da5a036a5b5c4cd95e081de4de58ec39bd0795682c30306ed",
+      "kind": "image",
+      "description": "Entire main page15 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main16",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-16.png",
+      "sha256": "9582b7e8815bcbb840727284065dc93678a5c62fac9e419552b4c13bb763bc4b",
+      "kind": "image",
+      "description": "Entire main page16 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main17",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-17.png",
+      "sha256": "4c2a789d5ffa44a1c08826f643027186b3fe9f6e92f494937ece44c2cb0a81f8",
+      "kind": "image",
+      "description": "Entire main page17 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main18",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-18.png",
+      "sha256": "f5bd7dd51794e11a2787dd0dd63f2f10076122aa68402a3c1fbd5dff6a9591d0",
+      "kind": "image",
+      "description": "Entire main page18 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main19",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-19.png",
+      "sha256": "5622cd5340d7a256fd7a665fba74ddfcf1aaf817746ba04015555a38c05be368",
+      "kind": "image",
+      "description": "Entire main page19 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main20",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-20.png",
+      "sha256": "b47f997f3be435891ef8fd075320d8bc06a7337808b04f96e92f9ae8db5e7cfb",
+      "kind": "image",
+      "description": "Entire main page20 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main21",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-21.png",
+      "sha256": "2389455b742d8fb43f7f9837040301110f0dd68caea7b5076071580df9350609",
+      "kind": "image",
+      "description": "Entire main page21 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main22",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-22.png",
+      "sha256": "f5601bba3d4c87bbd8b89e17d46c39c93574ce793f4e9535bfc6c7777cb50ce0",
+      "kind": "image",
+      "description": "Entire main page22 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "main23",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/main-23.png",
+      "sha256": "bb25b52f52a8b2197a591584b65c2d4480877fc8dc7fb085dec46dd50989796b",
+      "kind": "image",
+      "description": "Entire main page23 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp1",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-01.png",
+      "sha256": "fc6bd95f788a3b80f56a3b6973276d1d1fcce7ad4580f6375ea96ff584e0e8ae",
+      "kind": "image",
+      "description": "Entire supp page1 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp2",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-02.png",
+      "sha256": "7de83435d3d796fe9ce2eaa0906e0c120f22537d9ee4146effda802d2fe60e8e",
+      "kind": "image",
+      "description": "Entire supp page2 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp3",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-03.png",
+      "sha256": "02382c32b0d222a87de37fba53e2bce5266c04658864403005d4daf0601f2b59",
+      "kind": "image",
+      "description": "Entire supp page3 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp4",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-04.png",
+      "sha256": "e196ff4f92a03695287051288f2895c7d1f3bbe8694393165ecc02e9f9c51604",
+      "kind": "image",
+      "description": "Entire supp page4 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp5",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-05.png",
+      "sha256": "e93bd7ddb815a45dd6f5883ef33dee4699e1698feff8ee5ca66cb2e850ccaddb",
+      "kind": "image",
+      "description": "Entire supp page5 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp6",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-06.png",
+      "sha256": "dc5552dfe4896f7fc02afd8ae14e5cc5e9413822bda65e3ef6ba9163b3e77ed4",
+      "kind": "image",
+      "description": "Entire supp page6 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp7",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-07.png",
+      "sha256": "0c04db40ff1c97ed57e30068fc3edeefe1c4c2626d73cd017d6747ebc26b33b8",
+      "kind": "image",
+      "description": "Entire supp page7 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp8",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-08.png",
+      "sha256": "c0a94da1ef2aa7f4c64d4bb452cc8e28788cc539fca91e687c23dbd75fb1d01e",
+      "kind": "image",
+      "description": "Entire supp page8 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp9",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-09.png",
+      "sha256": "fcd1bbf7143459d3ec58b988a25f33a102da82d7e26478c38c7ba0bb93a9c6ec",
+      "kind": "image",
+      "description": "Entire supp page9 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp10",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-10.png",
+      "sha256": "cbb44f16876e4955344af3ed5e41b47dd3f27d6006b632f70aeb6792a889bbfd",
+      "kind": "image",
+      "description": "Entire supp page10 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp11",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-11.png",
+      "sha256": "5a0bc824841b11708c2958dba0556b1072c0e70161ed4def88a8a62182ca1b03",
+      "kind": "image",
+      "description": "Entire supp page11 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp12",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-12.png",
+      "sha256": "a3c448e3b78934674958b89cdc5d620c9ff335425101179b2181e98b68525f84",
+      "kind": "image",
+      "description": "Entire supp page12 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp13",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-13.png",
+      "sha256": "7d34605c75d5b7fdc60fe2a14b4030d052bef7140e4208013d6cfac1fc27546b",
+      "kind": "image",
+      "description": "Entire supp page13 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp14",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-14.png",
+      "sha256": "7b0ffe74161b1c19c40c9377d895b572d37af34c4b3ddb8b7d71f36a755e8149",
+      "kind": "image",
+      "description": "Entire supp page14 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp15",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-15.png",
+      "sha256": "82326dc9cf381fbda623328e693f41e2d7c232ca5f943d9fcdb978fb1bab6c0c",
+      "kind": "image",
+      "description": "Entire supp page15 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp16",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-16.png",
+      "sha256": "8eb05368832d449b4124f0bc411f49b7f98b7c34236a0502410c0153737c2cdc",
+      "kind": "image",
+      "description": "Entire supp page16 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp17",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-17.png",
+      "sha256": "c4cca6a183b441f1fcdf3ad6016939e99753ed804465e024531e77b55d345e2c",
+      "kind": "image",
+      "description": "Entire supp page17 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp18",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-18.png",
+      "sha256": "7fa5834aa636b8938beb18206543e91f97a864c554be86d9a0707db9e8bf280b",
+      "kind": "image",
+      "description": "Entire supp page18 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp19",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-19.png",
+      "sha256": "c4ffb5826325e4f5deeb91a3c8457d34dc3fcbf1a04d428dac1b48ed5cdfe8c6",
+      "kind": "image",
+      "description": "Entire supp page19 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "supp20",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/supp-20.png",
+      "sha256": "b7cb3bf48d24a7b230ab0cc064e8080cd4ccd944d72fdfd89a001732b24aa3a6",
+      "kind": "image",
+      "description": "Entire supp page20 personally inspected;130dpi derivative."
+    },
+    {
+      "id": "S6C-left-wide",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S6C-left-wide.png",
+      "sha256": "29aa21508ba2ad2f5b661d2834aab492a58f0e9bd07a55b74f00c2a1241b86e9",
+      "kind": "image",
+      "description": "Personally inspected enlarged S6C plot labels and every distribution; source page8 retained."
+    },
+    {
+      "id": "S6C-right-wide",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S6C-right-wide.png",
+      "sha256": "4860b43368d7f3faf3a76424963c41e385cf6c390ab91f8efbc6b57abd9547b9",
+      "kind": "image",
+      "description": "Personally inspected enlarged S6C plot labels and every distribution; source page8 retained."
+    },
+    {
+      "id": "S6C-1",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S6C-1.png",
+      "sha256": "99e94e199d093507753be08c413a83fb7179a66b4c88131bf87a64a854584b67",
+      "kind": "image",
+      "description": "Personally inspected enlarged S6C plot labels and every distribution; source page8 retained."
+    },
+    {
+      "id": "S6C-2",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S6C-2.png",
+      "sha256": "e8b478e91536a9d702eeb12678bf13576c53da6239efc52db0d55fe99f8a0342",
+      "kind": "image",
+      "description": "Personally inspected enlarged S6C plot labels and every distribution; source page8 retained."
+    },
+    {
+      "id": "S6C-3",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S6C-3.png",
+      "sha256": "3bebacc1a3588c82675047c89f6a202bffc91532584b786ed41730df62bee901",
+      "kind": "image",
+      "description": "Personally inspected enlarged S6C plot labels and every distribution; source page8 retained."
+    },
+    {
+      "id": "S6C-4",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S6C-4.png",
+      "sha256": "4280bcccf569c7c8c84f954d9034f8acf0db032209877c19b8a5ca5c92708c9f",
+      "kind": "image",
+      "description": "Personally inspected enlarged S6C plot labels and every distribution; source page8 retained."
+    },
+    {
+      "id": "S6C-5",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S6C-5.png",
+      "sha256": "af6916f936ecac58adc9334e3c54ad5a3fa455966d1d6e7844446e3aa196aef4",
+      "kind": "image",
+      "description": "Personally inspected enlarged S6C plot labels and every distribution; source page8 retained."
+    },
+    {
+      "id": "clinical-A-F-1-23",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-A-F-1-23.png",
+      "sha256": "1bf5c9517cfcc18be437d24d44a67f774fc1648505f57ce77464eafbfa09ab01",
+      "kind": "image",
+      "description": "Personally inspected full rangeA1:F23; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-G-J-1-23",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-G-J-1-23.png",
+      "sha256": "a0bfcee695f6bab6fa50982810269c593fd77797ae36e91b8e147748993ea331",
+      "kind": "image",
+      "description": "Personally inspected full rangeG1:J23; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-K-N-1-23",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-K-N-1-23.png",
+      "sha256": "243b9c89e445c2193e82900f1afbd0780ab228c2d58d1145ea6da5046b06000a",
+      "kind": "image",
+      "description": "Personally inspected full rangeK1:N23; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-A-F-24-38",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-A-F-24-38.png",
+      "sha256": "d4ae389c463eed5d02617c9f5cd100a6e09bf7955dffb8d49153bb9e89206792",
+      "kind": "image",
+      "description": "Personally inspected full rangeA24:F38; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-G-J-24-38",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-G-J-24-38.png",
+      "sha256": "89a933997d2ea94293b81b0514182be14cc770831d22112496fb792c38ec3209",
+      "kind": "image",
+      "description": "Personally inspected full rangeG24:J38; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-K-N-24-38",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-K-N-24-38.png",
+      "sha256": "97ae64cd9b709ed1bce5efdfffc225365946e5e35ce3b299e0ba2adbcce60469",
+      "kind": "image",
+      "description": "Personally inspected full rangeK24:N38; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-A-F-39-57",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-A-F-39-57.png",
+      "sha256": "5194272cba6ea63627122d4b53b7253ce055be16cd12be728b34ea7c91cd0a22",
+      "kind": "image",
+      "description": "Personally inspected full rangeA39:F57; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-G-J-39-57",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-G-J-39-57.png",
+      "sha256": "5e7c74091dc4da41584c7ada6b824d67aeddbfd37f7ca79c78937e521cec714a",
+      "kind": "image",
+      "description": "Personally inspected full rangeG39:J57; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-K-N-39-57",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-K-N-39-57.png",
+      "sha256": "203eab7f4c1012bf6da069c2421dea71f83014029751e4d7a1954f21f1b19cda",
+      "kind": "image",
+      "description": "Personally inspected full rangeK39:N57; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-A-F-58-78",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-A-F-58-78.png",
+      "sha256": "315abfaee30dfedb85fb84a1b2bda9d003f1d2bc60a25449ba3d17df3f5b27b5",
+      "kind": "image",
+      "description": "Personally inspected full rangeA58:F78; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-G-J-58-78",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-G-J-58-78.png",
+      "sha256": "25f7ba638d0b0bacc5ba5e34ed0ee8253a1d6c003bfe8dde82223794a3cc9fde",
+      "kind": "image",
+      "description": "Personally inspected full rangeG58:J78; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-K-N-58-78",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-K-N-58-78.png",
+      "sha256": "9c2d28469b2f750d693bd40c749609333c8f9c301340581e5ac109a439d317e3",
+      "kind": "image",
+      "description": "Personally inspected full rangeK58:N78; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-A-F-79-91",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-A-F-79-91.png",
+      "sha256": "d13351ab6cbd81945e7081082afcdd7833e8af0a312e96b4c4e1137cffaab6a2",
+      "kind": "image",
+      "description": "Personally inspected full rangeA79:F91; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-G-J-79-91",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-G-J-79-91.png",
+      "sha256": "5cc127a3c989a0bd83229c5c5256f7bec25a50c324dd1d4dd6127d18ba15fc0c",
+      "kind": "image",
+      "description": "Personally inspected full rangeG79:J91; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-K-N-79-91",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-K-N-79-91.png",
+      "sha256": "1879c5a7e4bc99111874553d89c87cf6e540eba3118824d8b72e5131207cad09",
+      "kind": "image",
+      "description": "Personally inspected full rangeK79:N91; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "clinical-blank-tail",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/clinical-blank-tail.png",
+      "sha256": "985665a6243caf8e5837df930a7cde284e4f5f4b64757c63b23ec93d5dd56655",
+      "kind": "image",
+      "description": "Personally inspected full rangeA92:N143; original merges retained, display widths/wrap changed in memory."
+    },
+    {
+      "id": "S5",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/37541189/retrieval-followup/20261024T200258039404Z-0eaa2fdf53/response.body",
+      "sha256": "53155efda719f2cdf6fb02bca230ea2f9dcb6e5887801cde615795866799126a",
+      "kind": "data",
+      "description": "Publisher supplement S5; original 17236bytes. Full personal read."
+    },
+    {
+      "id": "S5_text1",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S5-sheet1.jsonl",
+      "sha256": "6e8ab057e31f48729ddbc889a96f71d188189cd601dc1b213f597a30b4fe8c91",
+      "kind": "text",
+      "description": "All-cell derivative of HNRNPC LOF gnomAD, 35rows x19columns. All rows personally read."
+    },
+    {
+      "id": "S5-view-1",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S5-view-1.png",
+      "sha256": "02ebba50a76f561632ef392816eda274f929ae9880d1420de992e51ae8ea0b46",
+      "kind": "image",
+      "description": "Personally inspectedA1:G12; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S5-view-2",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S5-view-2.png",
+      "sha256": "ffb07af55a5d95fc5430e4e631fb752fd85c6d0ad46c7ad2c113c1e90652a01e",
+      "kind": "image",
+      "description": "Personally inspectedH1:M12; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S5-view-3",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S5-view-3.png",
+      "sha256": "f6c9d3df03361d0b0d7f7e6f498c4a5ee0ecb28dd8bd7750bbe42d27a230a7ce",
+      "kind": "image",
+      "description": "Personally inspectedN1:S12; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S5-view-4",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S5-view-4.png",
+      "sha256": "f134d2327569405ada4e5afd3f1c4f49b98f93285b231f4e1f01fbcfa429d9cf",
+      "kind": "image",
+      "description": "Personally inspectedA13:G24; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S5-view-5",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S5-view-5.png",
+      "sha256": "ac01806057a09d8136c504306e8905787cf06ec3bc11a9396b7b6127d58c6739",
+      "kind": "image",
+      "description": "Personally inspectedH13:M24; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S5-view-6",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S5-view-6.png",
+      "sha256": "a4bc908db037d76e54c93f32681c5ee6af7532f747b9991a6feb4d2da021041e",
+      "kind": "image",
+      "description": "Personally inspectedN13:S24; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S5-view-7",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S5-view-7.png",
+      "sha256": "f558764cf7d1fb70004d868f570e6a0fdc920a780423eb55b2f7471ad9326090",
+      "kind": "image",
+      "description": "Personally inspectedA25:S35; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S6",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/37541189/retrieval-followup/20261024T200258039169Z-94e49f9577/response.body",
+      "sha256": "2dda49ac90825a30782e40d2a2e1fed12da78692654b0102305c8ef2d5286b94",
+      "kind": "data",
+      "description": "Publisher supplement S6; original 27059750bytes. Held and structurally inventoried only; contents unread."
+    },
+    {
+      "id": "S6_text1",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S6-sheet1.jsonl",
+      "sha256": "1c13f09ee556630d45fca60506fbaa734b585322b114101b683a73120201ebaf",
+      "kind": "text",
+      "description": "All-cell derivative of iPSCs, 60661rows x14columns. UNREAD; extraction is not reading."
+    },
+    {
+      "id": "S6_text2",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S6-sheet2.jsonl",
+      "sha256": "c683687abc58f1d9fedd40e585210a1a4783a93d0c9eb5f8eeb9cceafc52d83a",
+      "kind": "text",
+      "description": "All-cell derivative of HELA, 60661rows x12columns. UNREAD; extraction is not reading."
+    },
+    {
+      "id": "S6_text3",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S6-sheet3.jsonl",
+      "sha256": "f5167e6249f9a4c5fb8142762f8d6481b127c5be1f5ca3024c016259a0b6dd0d",
+      "kind": "text",
+      "description": "All-cell derivative of HEK, 60661rows x12columns. UNREAD; extraction is not reading."
+    },
+    {
+      "id": "S6_text4",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S6-sheet4.jsonl",
+      "sha256": "891be09337097d343ab628c2529ec2786367c1136d8b58d497b4f5c11bae1047",
+      "kind": "text",
+      "description": "All-cell derivative of THP-1, 60661rows x14columns. UNREAD; extraction is not reading."
+    },
+    {
+      "id": "S7",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/37541189/retrieval-followup/20261024T200258643669Z-019440ceeb/response.body",
+      "sha256": "80e99bef53b742d762070cec12a7dcdb5a526c120932cf1a8f02de5d5f816f42",
+      "kind": "data",
+      "description": "Publisher supplement S7; original 19571bytes. Full personal read."
+    },
+    {
+      "id": "S7_text1",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S7-sheet1.jsonl",
+      "sha256": "9b7b6bcdaa3f5ff780810e99a58bfd249cb6ad5b10e0b94ff1a87a1a2cc3b601",
+      "kind": "text",
+      "description": "All-cell derivative of result - summarized, 77rows x8columns. All rows personally read."
+    },
+    {
+      "id": "S7-view-1",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S7-view-1.png",
+      "sha256": "bb470665156387b779153b627e540a28cef2767bf10441b6cee825dd89053c84",
+      "kind": "image",
+      "description": "Personally inspectedA1:H10; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S7-view-2",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S7-view-2.png",
+      "sha256": "64ccbc969b8de7753ef78c9c8744713573ab0fc2ee7d67826e95bf35ec615c6b",
+      "kind": "image",
+      "description": "Personally inspectedA11:H20; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S7-view-3",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S7-view-3.png",
+      "sha256": "b55d07e005b6e01226156f90a07d636f855a452d829b274951f6c32f3f20dcd8",
+      "kind": "image",
+      "description": "Personally inspectedA21:H30; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S7-view-4",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S7-view-4.png",
+      "sha256": "40f956cf9bf48a887eba2076945c0faa107e7ec16a30cdf386c7f11e9c4c316f",
+      "kind": "image",
+      "description": "Personally inspectedA31:H40; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S7-view-5",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S7-view-5.png",
+      "sha256": "d97ee7a754cfcad66f1cc3cf7ea85dc614507532c77874fb7db301f9e15343b1",
+      "kind": "image",
+      "description": "Personally inspectedA41:H50; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S7-view-6",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S7-view-6.png",
+      "sha256": "ff1a39eed04a5baf6e2d3e8cc5ff3c548bdb052322b2b3d438c07be6acbc5f66",
+      "kind": "image",
+      "description": "Personally inspectedA51:H60; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S7-view-7",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S7-view-7.png",
+      "sha256": "39a40fa4d6eb0b7a66c15964f73355d9a2258426948d1af16df41d1aab4a1779",
+      "kind": "image",
+      "description": "Personally inspectedA61:H70; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S7-view-8",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S7-view-8.png",
+      "sha256": "00cbe2872d375c5e473f3ed3fd99c3884d4962d70d69266e789d91b049b7696f",
+      "kind": "image",
+      "description": "Personally inspectedA71:H77; Widths and wraps for legibility; S5 hidden columns exposed and footnote rows merged only in explicit display copy."
+    },
+    {
+      "id": "S8",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/37541189/retrieval-followup/20261024T200259213956Z-5f16d6e20f/response.body",
+      "sha256": "2f220e637699af92e1a828a2a5c2d868c148bffe7387a4387ac67aa7e8ac78cd",
+      "kind": "data",
+      "description": "Publisher supplement S8; original 7755216bytes. Held and structurally inventoried only; contents unread."
+    },
+    {
+      "id": "S8_text1",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S8-sheet1.jsonl",
+      "sha256": "cbb53575d5ef8e8428d4a212b9705810b09dac3ee4b881e24e4f6a28d1159e85",
+      "kind": "text",
+      "description": "All-cell derivative of Table S8 _ MAJIQ junctions, 50586rows x40columns. UNREAD; extraction is not reading."
+    },
+    {
+      "id": "S9",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/papers/37541189/retrieval-followup/20261024T200259897226Z-270022f0f9/response.body",
+      "sha256": "c93db8f82b50b0fa01bb9b067d117bd102f4caedc11b2be018923689bdb170cc",
+      "kind": "data",
+      "description": "Publisher supplement S9; original 184322bytes. Held and structurally inventoried only; contents unread."
+    },
+    {
+      "id": "S9_text1",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S9-sheet1.jsonl",
+      "sha256": "03976445837102363faea201bb9b2c65f9fd997c9a4dd184b18fe4d602bf233d",
+      "kind": "text",
+      "description": "All-cell derivative of Table S9 _ MAJIQ summary, 1197rows x27columns. UNREAD; extraction is not reading."
+    },
+    {
+      "id": "S5_display",
+      "pmid": "37541189",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/37541189/S5-display-copy.xlsx",
+      "sha256": "f2b4088c6b42ae02e3744f14d7ff9f3e1c9be7958c59550aa51210c1d54a1a83",
+      "kind": "data",
+      "description": "Explicit derivative only: hidden columns exposed and footnotes merged for legibility. Original S5 retained, unchanged."
+    },
+    {
+      "id": "receipt_20261024T200258039169Z-94e49f9577",
+      "pmid": "37541189",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/retrieval-followup/37541189/attempts/20261024T200258039169Z-94e49f9577.json",
+      "sha256": "14682cc9366eaacff4cfdbe6da14ed18ea6564424a15a8fdf76f5ffe34f72982",
+      "kind": "access_log",
+      "description": "Successful public publisher download receipt; body identity verified against internal sheet names and main supplement list."
+    },
+    {
+      "id": "receipt_20261024T200258039404Z-0eaa2fdf53",
+      "pmid": "37541189",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/retrieval-followup/37541189/attempts/20261024T200258039404Z-0eaa2fdf53.json",
+      "sha256": "950e39930bc9db97ca1fe483dc39b42de58422065dffb68e5fb8e728b1e6b27f",
+      "kind": "access_log",
+      "description": "Successful public publisher download receipt; body identity verified against internal sheet names and main supplement list."
+    },
+    {
+      "id": "receipt_20261024T200258643669Z-019440ceeb",
+      "pmid": "37541189",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/retrieval-followup/37541189/attempts/20261024T200258643669Z-019440ceeb.json",
+      "sha256": "8ea36ab16122ba9e51fcf1b50ad82d1985bae6487876278382dff2b7196d42bb",
+      "kind": "access_log",
+      "description": "Successful public publisher download receipt; body identity verified against internal sheet names and main supplement list."
+    },
+    {
+      "id": "receipt_20261024T200259213956Z-5f16d6e20f",
+      "pmid": "37541189",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/retrieval-followup/37541189/attempts/20261024T200259213956Z-5f16d6e20f.json",
+      "sha256": "fe930e7cbbe7f1ea6f7c93f3d3d7b24d5e8feff39ac7ee421111116f12e1c022",
+      "kind": "access_log",
+      "description": "Successful public publisher download receipt; body identity verified against internal sheet names and main supplement list."
+    },
+    {
+      "id": "receipt_20261024T200259897226Z-270022f0f9",
+      "pmid": "37541189",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/retrieval-followup/37541189/attempts/20261024T200259897226Z-270022f0f9.json",
+      "sha256": "81ad023a5ffff34b11c279b07b8cc2ee6174798699604baaf63e8034834b58df",
+      "kind": "access_log",
+      "description": "Successful public publisher download receipt; body identity verified against internal sheet names and main supplement list."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "HNRNPC haploinsufficiency affects alternative splicing of intellectual disability-associated genes and causes a neurodevelopmental disorder",
+    "evidence": [
+      {
+        "source_id": "main2",
+        "locator": "Niggl/Bouman et al.; AJHG110:1414-1435; DOI10.1016/j.ajhg.2023.07.005"
+      },
+      {
+        "source_id": "pdf",
+        "locator": "Original5137807bytes SHA2565a7765d7512cf0d0c8aad9ec65028454463b1ceb8adaccb8152af1cb0ecbe4a5"
+      }
+    ],
+    "note": "Public foundation-hosted publisher article matched by title/authors/DOI; publisher mmc1-7 supplement content matches article. Every cited artifact durable and hashed. No predecessor read attribution borrowed."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 7,
+      "table": 2,
+      "supplement": 7
+    },
+    "evidence": [
+      {
+        "source_id": "text",
+        "locator": "Entire main article and supplemental-information references"
+      },
+      {
+        "source_id": "supp_pdf",
+        "locator": "S1-S8figures; TablesS1-S3/S10 in20pages"
+      },
+      {
+        "source_id": "wb_manifest",
+        "locator": "S5-S9workbook extents"
+      },
+      {
+        "source_id": "S4",
+        "locator": "Clinical TableS4"
+      }
+    ],
+    "note": "Seven supplements = one20pagePDF and six workbooksS4-S9. S6/S8/S9 available but unread. Component enumeration complete; reading incomplete. Supplement figures/tables covered within PDF component, not double-counted. No raw repository reanalysis."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 23,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "Complete personal reading of main article and graphical abstract. Published methods considered only for evidence appraisal; no wet-lab design or execution."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 23,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Entire1389lines"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main1",
+          "locator": "Entirepage1"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "main2",
+          "locator": "Entirepage2"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "main3",
+          "locator": "Entirepage3"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "main4",
+          "locator": "Entirepage4"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "main5",
+          "locator": "Entirepage5"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "main6",
+          "locator": "Entirepage6"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "main7",
+          "locator": "Entirepage7"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "main8",
+          "locator": "Entirepage8"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "main9",
+          "locator": "Entirepage9"
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "main10",
+          "locator": "Entirepage10"
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "mode": "pixels",
+          "source_id": "main11",
+          "locator": "Entirepage11"
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "main12",
+          "locator": "Entirepage12"
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "mode": "pixels",
+          "source_id": "main13",
+          "locator": "Entirepage13"
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "mode": "pixels",
+          "source_id": "main14",
+          "locator": "Entirepage14"
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "mode": "pixels",
+          "source_id": "main15",
+          "locator": "Entirepage15"
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "mode": "pixels",
+          "source_id": "main16",
+          "locator": "Entirepage16"
+        },
+        {
+          "start": 17,
+          "end": 17,
+          "mode": "pixels",
+          "source_id": "main17",
+          "locator": "Entirepage17"
+        },
+        {
+          "start": 18,
+          "end": 18,
+          "mode": "pixels",
+          "source_id": "main18",
+          "locator": "Entirepage18"
+        },
+        {
+          "start": 19,
+          "end": 19,
+          "mode": "pixels",
+          "source_id": "main19",
+          "locator": "Entirepage19"
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "mode": "pixels",
+          "source_id": "main20",
+          "locator": "Entirepage20"
+        },
+        {
+          "start": 21,
+          "end": 21,
+          "mode": "pixels",
+          "source_id": "main21",
+          "locator": "Entirepage21"
+        },
+        {
+          "start": 22,
+          "end": 22,
+          "mode": "pixels",
+          "source_id": "main22",
+          "locator": "Entirepage22"
+        },
+        {
+          "start": 23,
+          "end": 23,
+          "mode": "pixels",
+          "source_id": "main23",
+          "locator": "Entirepage23"
+        }
+      ],
+      "note": "Complete personal reading of main article and graphical abstract. Published methods considered only for evidence appraisal; no wet-lab design or execution."
+    },
+    {
+      "id": "graphical_abstract",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Entiregraphical_abstractcaption"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main1",
+          "locator": "Allgraphical_abstractpanels/labels onpage1"
+        }
+      ],
+      "note": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+    },
+    {
+      "id": "figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Entirefigure1caption"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main8",
+          "locator": "Allfigure1panels/labels onpage8"
+        }
+      ],
+      "note": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+    },
+    {
+      "id": "figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Entirefigure2caption"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main11",
+          "locator": "Allfigure2panels/labels onpage11"
+        }
+      ],
+      "note": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+    },
+    {
+      "id": "figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Entirefigure3caption"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main12",
+          "locator": "Allfigure3panels/labels onpage12"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main13",
+          "locator": "Allfigure3panels/labels onpage13"
+        }
+      ],
+      "note": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+    },
+    {
+      "id": "figure4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Entirefigure4caption"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main16",
+          "locator": "Allfigure4panels/labels onpage16"
+        }
+      ],
+      "note": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+    },
+    {
+      "id": "figure5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Entirefigure5caption"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main17",
+          "locator": "Allfigure5panels/labels onpage17"
+        }
+      ],
+      "note": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+    },
+    {
+      "id": "figure6",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Entirefigure6caption"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main18",
+          "locator": "Allfigure6panels/labels onpage18"
+        }
+      ],
+      "note": "All panels personally inspected; conclusions limited to displayed evidence and specified conditions."
+    },
+    {
+      "id": "table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "Table1 denominators/percentages not silently harmonized; Table2 all13case variants read."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Table1complete text"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main9",
+          "locator": "Entire Table1, all rows/footnotes"
+        }
+      ],
+      "note": "Table1 denominators/percentages not silently harmonized; Table2 all13case variants read."
+    },
+    {
+      "id": "table2",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "Table1 denominators/percentages not silently harmonized; Table2 all13case variants read."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Table2complete text"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main10",
+          "locator": "Entire Table2, all rows/footnotes"
+        }
+      ],
+      "note": "Table1 denominators/percentages not silently harmonized; Table2 all13case variants read."
+    },
+    {
+      "id": "supplement_pdf",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 20,
+      "extent_source_id": "supp_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "supp_pdf",
+          "locator": "All S1-S8figures, TablesS1-S3/S10, acknowledgments, references and literature context read; no missing page or caption."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 20,
+          "mode": "text",
+          "source_id": "supp_text",
+          "locator": "All512lines"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp1",
+          "locator": "Entire supplementpage1"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "supp2",
+          "locator": "Entire supplementpage2"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "supp3",
+          "locator": "Entire supplementpage3"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "supp4",
+          "locator": "Entire supplementpage4"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "supp5",
+          "locator": "Entire supplementpage5"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "supp6",
+          "locator": "Entire supplementpage6"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "supp7",
+          "locator": "Entire supplementpage7"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "supp8",
+          "locator": "Entire supplementpage8"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "supp9",
+          "locator": "Entire supplementpage9"
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "supp10",
+          "locator": "Entire supplementpage10"
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "mode": "pixels",
+          "source_id": "supp11",
+          "locator": "Entire supplementpage11"
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "supp12",
+          "locator": "Entire supplementpage12"
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "mode": "pixels",
+          "source_id": "supp13",
+          "locator": "Entire supplementpage13"
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "mode": "pixels",
+          "source_id": "supp14",
+          "locator": "Entire supplementpage14"
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "mode": "pixels",
+          "source_id": "supp15",
+          "locator": "Entire supplementpage15"
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "mode": "pixels",
+          "source_id": "supp16",
+          "locator": "Entire supplementpage16"
+        },
+        {
+          "start": 17,
+          "end": 17,
+          "mode": "pixels",
+          "source_id": "supp17",
+          "locator": "Entire supplementpage17"
+        },
+        {
+          "start": 18,
+          "end": 18,
+          "mode": "pixels",
+          "source_id": "supp18",
+          "locator": "Entire supplementpage18"
+        },
+        {
+          "start": 19,
+          "end": 19,
+          "mode": "pixels",
+          "source_id": "supp19",
+          "locator": "Entire supplementpage19"
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "mode": "pixels",
+          "source_id": "supp20",
+          "locator": "Entire supplementpage20"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "S6C-left-wide",
+          "locator": "All S6C dense plots checked enlarged"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "S6C-right-wide",
+          "locator": "All S6C dense plots checked enlarged"
+        }
+      ],
+      "note": "All S1-S8figures, TablesS1-S3/S10, acknowledgments, references and literature context read; no missing page or caption."
+    },
+    {
+      "id": "clinical_S4",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 143,
+      "extent_source_id": "S4",
+      "extent_evidence": [
+        {
+          "source_id": "S4",
+          "locator": "Each item is a workbook row acrossA:N; all13individuals including both assigned cases and every alternative contributor in row24 read. Blank styled tail92-143 checked."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 143,
+          "mode": "text",
+          "source_id": "S4_text",
+          "locator": "All143rows, columnsA:N"
+        },
+        {
+          "start": 1,
+          "end": 23,
+          "mode": "pixels",
+          "source_id": "clinical-A-F-1-23",
+          "locator": "A1:F23"
+        },
+        {
+          "start": 1,
+          "end": 23,
+          "mode": "pixels",
+          "source_id": "clinical-G-J-1-23",
+          "locator": "G1:J23"
+        },
+        {
+          "start": 1,
+          "end": 23,
+          "mode": "pixels",
+          "source_id": "clinical-K-N-1-23",
+          "locator": "K1:N23"
+        },
+        {
+          "start": 24,
+          "end": 38,
+          "mode": "pixels",
+          "source_id": "clinical-A-F-24-38",
+          "locator": "A24:F38"
+        },
+        {
+          "start": 24,
+          "end": 38,
+          "mode": "pixels",
+          "source_id": "clinical-G-J-24-38",
+          "locator": "G24:J38"
+        },
+        {
+          "start": 24,
+          "end": 38,
+          "mode": "pixels",
+          "source_id": "clinical-K-N-24-38",
+          "locator": "K24:N38"
+        },
+        {
+          "start": 39,
+          "end": 57,
+          "mode": "pixels",
+          "source_id": "clinical-A-F-39-57",
+          "locator": "A39:F57"
+        },
+        {
+          "start": 39,
+          "end": 57,
+          "mode": "pixels",
+          "source_id": "clinical-G-J-39-57",
+          "locator": "G39:J57"
+        },
+        {
+          "start": 39,
+          "end": 57,
+          "mode": "pixels",
+          "source_id": "clinical-K-N-39-57",
+          "locator": "K39:N57"
+        },
+        {
+          "start": 58,
+          "end": 78,
+          "mode": "pixels",
+          "source_id": "clinical-A-F-58-78",
+          "locator": "A58:F78"
+        },
+        {
+          "start": 58,
+          "end": 78,
+          "mode": "pixels",
+          "source_id": "clinical-G-J-58-78",
+          "locator": "G58:J78"
+        },
+        {
+          "start": 58,
+          "end": 78,
+          "mode": "pixels",
+          "source_id": "clinical-K-N-58-78",
+          "locator": "K58:N78"
+        },
+        {
+          "start": 79,
+          "end": 91,
+          "mode": "pixels",
+          "source_id": "clinical-A-F-79-91",
+          "locator": "A79:F91"
+        },
+        {
+          "start": 79,
+          "end": 91,
+          "mode": "pixels",
+          "source_id": "clinical-G-J-79-91",
+          "locator": "G79:J91"
+        },
+        {
+          "start": 79,
+          "end": 91,
+          "mode": "pixels",
+          "source_id": "clinical-K-N-79-91",
+          "locator": "K79:N91"
+        },
+        {
+          "start": 92,
+          "end": 143,
+          "mode": "pixels",
+          "source_id": "clinical-blank-tail",
+          "locator": "A92:N143"
+        }
+      ],
+      "note": "Each item is a workbook row acrossA:N; all13individuals including both assigned cases and every alternative contributor in row24 read. Blank styled tail92-143 checked."
+    },
+    {
+      "id": "S5",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 35,
+      "extent_source_id": "S5",
+      "extent_evidence": [
+        {
+          "source_id": "S5",
+          "locator": "Entire sole sheet read. S5 hiddenD/N columns exposed in explicit display copy and footnotes merged for legibility; original retained. S7 all74target rows2-75 and blanktail76-77 read."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 35,
+          "mode": "text",
+          "source_id": "S5_text1",
+          "locator": "Every row and column including blank cells/hidden-column content"
+        },
+        {
+          "start": 1,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "S5-view-1",
+          "locator": "A1:G12"
+        },
+        {
+          "start": 1,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "S5-view-2",
+          "locator": "H1:M12"
+        },
+        {
+          "start": 1,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "S5-view-3",
+          "locator": "N1:S12"
+        },
+        {
+          "start": 13,
+          "end": 24,
+          "mode": "pixels",
+          "source_id": "S5-view-4",
+          "locator": "A13:G24"
+        },
+        {
+          "start": 13,
+          "end": 24,
+          "mode": "pixels",
+          "source_id": "S5-view-5",
+          "locator": "H13:M24"
+        },
+        {
+          "start": 13,
+          "end": 24,
+          "mode": "pixels",
+          "source_id": "S5-view-6",
+          "locator": "N13:S24"
+        },
+        {
+          "start": 25,
+          "end": 35,
+          "mode": "pixels",
+          "source_id": "S5-view-7",
+          "locator": "A25:S35"
+        }
+      ],
+      "note": "Entire sole sheet read. S5 hiddenD/N columns exposed in explicit display copy and footnotes merged for legibility; original retained. S7 all74target rows2-75 and blanktail76-77 read."
+    },
+    {
+      "id": "S6",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "sheets",
+      "unit_count": 4,
+      "extent_source_id": "S6",
+      "extent_evidence": [
+        {
+          "source_id": "wb_manifest",
+          "locator": "[{\"name\": \"iPSCs\", \"rows\": 60661, \"columns\": 14, \"state\": \"visible\"}, {\"name\": \"HELA\", \"rows\": 60661, \"columns\": 12, \"state\": \"visible\"}, {\"name\": \"HEK\", \"rows\": 60661, \"columns\": 12, \"state\": \"visible\"}, {\"name\": \"THP-1\", \"rows\": 60661, \"columns\": 14, \"state\": \"visible\"}]"
+        }
+      ],
+      "coverage": [],
+      "note": "Available public original and durable all-cell derivatives; not personally read. Remaining: iPSCs:all60661rows x14columns; HELA:all60661rows x12columns; HEK:all60661rows x12columns; THP-1:all60661rows x14columns"
+    },
+    {
+      "id": "S7",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 77,
+      "extent_source_id": "S7",
+      "extent_evidence": [
+        {
+          "source_id": "S7",
+          "locator": "Entire sole sheet77rows A:H read, all74target rows2-75 and blanktail76-77; all8pixel views checked."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 77,
+          "mode": "text",
+          "source_id": "S7_text1",
+          "locator": "Every row and column including blank cells/hidden-column content"
+        },
+        {
+          "start": 1,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "S7-view-1",
+          "locator": "A1:H10"
+        },
+        {
+          "start": 11,
+          "end": 20,
+          "mode": "pixels",
+          "source_id": "S7-view-2",
+          "locator": "A11:H20"
+        },
+        {
+          "start": 21,
+          "end": 30,
+          "mode": "pixels",
+          "source_id": "S7-view-3",
+          "locator": "A21:H30"
+        },
+        {
+          "start": 31,
+          "end": 40,
+          "mode": "pixels",
+          "source_id": "S7-view-4",
+          "locator": "A31:H40"
+        },
+        {
+          "start": 41,
+          "end": 50,
+          "mode": "pixels",
+          "source_id": "S7-view-5",
+          "locator": "A41:H50"
+        },
+        {
+          "start": 51,
+          "end": 60,
+          "mode": "pixels",
+          "source_id": "S7-view-6",
+          "locator": "A51:H60"
+        },
+        {
+          "start": 61,
+          "end": 70,
+          "mode": "pixels",
+          "source_id": "S7-view-7",
+          "locator": "A61:H70"
+        },
+        {
+          "start": 71,
+          "end": 77,
+          "mode": "pixels",
+          "source_id": "S7-view-8",
+          "locator": "A71:H77"
+        }
+      ],
+      "note": "Entire sole sheet77rows A:H read, all74target rows2-75 and blanktail76-77; all8pixel views checked."
+    },
+    {
+      "id": "S8",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "sheets",
+      "unit_count": 1,
+      "extent_source_id": "S8",
+      "extent_evidence": [
+        {
+          "source_id": "wb_manifest",
+          "locator": "[{\"name\": \"Table S8 _ MAJIQ junctions\", \"rows\": 50586, \"columns\": 40, \"state\": \"visible\"}]"
+        }
+      ],
+      "coverage": [],
+      "note": "Available public original and durable all-cell derivatives; not personally read. Remaining: Table S8 _ MAJIQ junctions:all50586rows x40columns"
+    },
+    {
+      "id": "S9",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "sheets",
+      "unit_count": 1,
+      "extent_source_id": "S9",
+      "extent_evidence": [
+        {
+          "source_id": "wb_manifest",
+          "locator": "[{\"name\": \"Table S9 _ MAJIQ summary\", \"rows\": 1197, \"columns\": 27, \"state\": \"visible\"}]"
+        }
+      ],
+      "coverage": [],
+      "note": "Available public original and durable all-cell derivatives; not personally read. Remaining: Table S9 _ MAJIQ summary:all1197rows x27columns"
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/HNRNPC/PMID_37541189_Individual_8.json",
+      "packet_sha256": "6c0cf5497f0146b69b97b0be78c79e0d9e49803170e114c153ccb5708b68058d",
+      "case_id": "TC_242c290efc7eb7bc",
+      "role": "selected",
+      "packet_subject_id": "Individual 8",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source correspondence; no new clinical diagnosis or contemporary ACMG reassessment.",
+        "Every assigned packet feature and allele inspected; missing clinical observations are not negative findings.",
+        "Bulk supplementsS6/S8/S9 remain unread; no complete-paper claim."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Male Individual8,7years at evaluation, maps to packet by the distinctive c.754del, severe growth/developmental phenotype and case-specific fibroblast work. Prenatal IUGR and nonambulatory/nonverbal childhood support early onset.",
+        "evidence": [
+          {
+            "source_id": "S4_text",
+            "locator": "ColumnI rows3-12,26-57"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_004500.4:c.754del, p.Asp252Thrfs*18, genomic GRCh38 g.21211454del matches source Table2 and S4; iso2 c.793del is the same reported allele. Packet VCF21211449 TC>T literally deletes21211450, whereas HGVS uses21211454.",
+        "evidence": [
+          {
+            "source_id": "S4_text",
+            "locator": "I7:I11; mainTable2; Figure1; S8RNAcoverage"
+          }
+        ],
+        "limitations": [
+          "Repeat-context left/right normalization could reconcile representations, but was not independently checked; do not claim exact VCF equivalence.",
+          "NMD escape is predicted and supported by transcript coverage, not a demonstrated50%protein decrease in this individual."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Individual8 is explicitly de novo in Table2 and S4 and was assessed in a trio; no parental transmission reported for this case.",
+        "evidence": [
+          {
+            "source_id": "S4_text",
+            "locator": "ColumnI row12 and23; mainTable2"
+          }
+        ],
+        "limitations": [
+          "Original parental traces/raw genotypes and parentage testing not supplied. Other cohort cases include unknown inheritance and unaffected mosaic mothers; these must not be generalized to this case."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single heterozygous HNRNPC variant; no within-gene compound-heterozygous phase question. De novo attribution is separate from cis/trans phasing.",
+        "evidence": [
+          {
+            "source_id": "S4_text",
+            "locator": "ColumnI rows7-12; mainTable2"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors implicate de novo HNRNPC frameshift in the neurodevelopmental phenotype and show altered splicing in Individual8 fibroblasts. Source explicitly classifies the allele likely pathogenic (PS2/PM2), qualifying packet PATHOGENIC/SOLVED certainty. A second de novo CUL1 c.1942C>G p.Leu648Val remains a possible contributor.",
+        "evidence": [
+          {
+            "source_id": "S4_text",
+            "locator": "I17:I24; mainResults/Figures3/S6/S8; TableS7"
+          }
+        ],
+        "limitations": [
+          "CUL1 expression not being reduced does not exclude altered function.",
+          "Fibroblast comparison is one patient and one control; selected MAJIQ probability threshold lowered to0.5 from0.95 assuming NMD escape leaves more protein. Clustering after selecting altered patient events is not independent validation.",
+          "No allele-specific protein measurement or complete bulk-table review."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Packet captures many clinical findings but omits marked short stature, major airway/cardiac/genital abnormalities, endocrine deficiencies, hearing/vision defects and the second CUL1 candidate. Several listed negatives are merely unlisted dysmorphisms; severeID and seizure subtypes exceed source specificity.",
+        "evidence": [
+          {
+            "source_id": "S4_text",
+            "locator": "I26:I88"
+          }
+        ],
+        "limitations": [
+          "Delayed myelination is historical and now normal in source.",
+          "Many excluded features have no direct negative assessment."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c754del_HNRNPC_NM_004500v4",
+            "geneContext": {
+              "valueId": "HGNC:5035",
+              "symbol": "HNRNPC"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_004500.4:c.754del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000014.9:g.21211454del"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr14",
+              "pos": 21211449,
+              "ref": "TC",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "73819c96d4556b961a4335de7ba33a20d31f76122673b26ad00ed11e3185ae50",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous NM_004500.4:c.754del, p.Asp252Thrfs*18, genomic GRCh38 g.21211454del matches source Table2 and S4; iso2 c.793del is the same reported allele. Packet VCF21211449 TC>T literally deletes21211450, whereas HGVS uses21211454.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "I7:I11; mainTable2; Figure1; S8RNAcoverage"
+              }
+            ],
+            "limitations": [
+              "Repeat-context left/right normalization could reconcile representations, but was not independently checked; do not claim exact VCF equivalence.",
+              "NMD escape is predicted and supported by transcript coverage, not a demonstrated50%protein decrease in this individual."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000248",
+              "label": "Brachycephaly"
+            }
+          },
+          "snapshot_sha256": "e9f4e3e641c03b0210092d9ff3b5d55c977ffbf7b07d329eb1d7f6e9bd8add9e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Brachycephaly explicitly listed.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I58"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000448",
+              "label": "Prominent nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1648956ff4848a7267c6eddc426a6026119534bb34957fae1b9b577000a2f044",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Individual8 does not list Prominent nose; this does not establish its explicit exclusion.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I56:I74"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "qualified",
+            "statement": "OFC for Individual8 is above−2SD (−1.28 at5y4m forI8;−1.72 at4y5m forI11), compatible with excluded microcephaly at the measured visit.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 row36"
+              }
+            ],
+            "limitations": [
+              "Not a lifelong negative or a standardized serial-growth assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000219",
+              "label": "Thin upper lip vermilion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5178875d3c853bb84a8a404aab512a33bd482a3da41a05daff8173761e21c645",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Individual8 does not list Thin upper lip vermilion; this does not establish its explicit exclusion.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I56:I74"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000319",
+              "label": "Smooth philtrum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "369de32ed9165b02357210c2e521e3de7e830a2e2d10eaff16509312973c8be5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Individual8 does not list Smooth philtrum; this does not establish its explicit exclusion.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I56:I74"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000311",
+              "label": "Round face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9ff2d5a78b88b50b4b43fe91e4593901b126515c23e6719077e0102259a07229",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Triangular face shape supports a non-round description at evaluation.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I61"
+              }
+            ],
+            "limitations": [
+              "No explicit lifelong exclusion of round face."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000490",
+              "label": "Deeply set eye"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c455e07ca56f5d1ba66e43e3f6fc8761828fa9ac79e7c7596733a76d4d0a8cdf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Individual8 does not list Deeply set eye; this does not establish its explicit exclusion.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I56:I74"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000601",
+              "label": "Hypotelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33ee545ecd880fba4beb0eb414c41440a573353a7f51c2a86b26135529d2cd3d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Hypertelorism is reported, consistent with absence of hypotelorism at examination.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I64"
+              }
+            ],
+            "limitations": [
+              "No direct intercanthal measurements; opposite descriptive finding, not a longitudinal exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypertelorism explicitly listed, separately from telecanthus.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I63:I64"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            }
+          },
+          "snapshot_sha256": "8d20831251db00a4a9f41505a640736489915d6d6521fc75535fbcab38213b26",
+          "assessment": {
+            "status": "supported",
+            "statement": "Downslanted palpebral fissures explicitly listed.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I65"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011147",
+              "label": "Typical absence seizure"
+            }
+          },
+          "snapshot_sha256": "8e711f3c699145bda764d074447c738061065d0080b231154b894cb16ea02c25",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Absence seizures reported.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I52"
+              }
+            ],
+            "limitations": [
+              "Typical versus atypical absence not specified."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002069",
+              "label": "Bilateral tonic-clonic seizure"
+            }
+          },
+          "snapshot_sha256": "02c73220e8454358953c25b8a5fdd7baeb6f80c050c6a37f6c85ed26df85b1dd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Generalized convulsions reported.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I52"
+              }
+            ],
+            "limitations": [
+              "Bilateral tonic-clonic semiology not explicitly specified."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031936",
+              "label": "Delayed ability to walk"
+            }
+          },
+          "snapshot_sha256": "b839223f2a2cb628aa2cf31cd51e1c414f8ff66df9c510049723d8660b9e0963",
+          "assessment": {
+            "status": "supported",
+            "statement": "Nonambulatory at7years and delayed gross motor skills substantiate delayed walking.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I40,I50"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001344",
+              "label": "Absent speech"
+            }
+          },
+          "snapshot_sha256": "7f822ec40430b496de56f1832e57b86e49f4245c6df3680e098f62f26b26caaf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Nonverbal in first-word and current speech fields.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I39:I41"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0040082",
+              "label": "Happy demeanor"
+            }
+          },
+          "snapshot_sha256": "0c20a279827e2cdd665ca95573f79860bb4b64b2a8236d72e5a0ac5706537ee7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Happy demeanor explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I56"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002870",
+              "label": "Obstructive sleep apnea"
+            }
+          },
+          "snapshot_sha256": "d5e424dc6fed357203de29b000fd702c5d78e7ca7d75c13c56bbe5a0eaed451b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Obstructive sleep apnea explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I57"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031987",
+              "label": "Diminished ability to concentrate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ae06c86b890eb6f45b2f0e4cb999085b29a13df7221b07432e9d9b5e851c0d1f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Individual8 does not list Diminished ability to concentrate; this does not establish its explicit exclusion.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I56:I74"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100034",
+              "label": "Motor tics"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "22efa245540bed0b265e7f83d7aec693514be91e979dd1f14ae7761c0fa5e0f1",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Source says no movement disorder, supporting no reported motor tics at evaluation.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 row54"
+              }
+            ],
+            "limitations": [
+              "Broad negative, no separate tic assessment described."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Delayed gross/fine motor, absent speech and moderate-severe intellectual impairment support global developmental delay.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I39:I51"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010864",
+              "label": "Intellectual disability, severe"
+            }
+          },
+          "snapshot_sha256": "a0b429cf1bb153b608a3a0478f6c0237effa1b2c18d07390347ab882e0321d43",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Source intellectual capacity is moderate-severe.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I46"
+              }
+            ],
+            "limitations": [
+              "Severe alone narrows the reported range; no formal standardized score supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010862",
+              "label": "Delayed fine motor development"
+            }
+          },
+          "snapshot_sha256": "4cef78a7b7015d4b9e21fcc8badfe239b9335031322b02b7c8753ca623ee0b5c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Fine motor skills delayed explicitly.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I51"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            }
+          },
+          "snapshot_sha256": "dfed0eeba81852313a1b62b7fd1e2a33e9467ee7a6360518e53376370228edaa",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypotonia explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I53"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001276",
+              "label": "Hypertonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61f0395086850642bf55317cdac4bc303244121a9f06268143fea0e30331fcff",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Hypotonia is recorded in combined hypo/hypertonia field.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I53"
+              }
+            ],
+            "limitations": [
+              "Does not specifically exclude hypertonia at all ages or body regions."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            }
+          },
+          "snapshot_sha256": "2f75f0cec9f37b168994d1f28ca569a464f852938adfe5cb43e05e0ecb36264f",
+          "assessment": {
+            "status": "supported",
+            "statement": "GER,dysphagia,G-tube and constipation explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I77"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            }
+          },
+          "snapshot_sha256": "e7d47e7cef106c2491d6243b1322a1b3f13cc7281e1e45b213cb4436c9f23d7c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Severe IUGR, small placenta and thin cord, birthweight1671g at36+6weeks explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I26:I31"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002188",
+              "label": "Delayed CNS myelination"
+            }
+          },
+          "snapshot_sha256": "568af7bbd7725ce5244f1f21fc9ae0ec176b8c9b4441281b3b40a6d0a6a7e0bc",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Delayed myelination explicitly documented, now normal.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 I55"
+              }
+            ],
+            "limitations": [
+              "Historical abnormality resolved; packet lacks timing/resolution."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/HNRNPC/PMID_37541189_Individual_11.json",
+      "packet_sha256": "f17ec2cdf9dfff89d5329c90f5d1a020832f7b8b349119e41bed0f0ee1897a17",
+      "case_id": "TC_861c8630a70a1528",
+      "role": "selected",
+      "packet_subject_id": "Individual 11",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source correspondence; no new clinical diagnosis or contemporary ACMG reassessment.",
+        "Every assigned packet feature and allele inspected; missing clinical observations are not negative findings.",
+        "Bulk supplementsS6/S8/S9 remain unread; no complete-paper claim."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Female Individual11 matches by c.296G>A p.Arg99Gln, age4years5months at evaluation, hearing/cochlear and ocular abnormalities, mildID and delayed speech/walking. Packet age4y5m matches evaluation, but source has later growth measurements at6y8m.",
+        "evidence": [
+          {
+            "source_id": "S4_text",
+            "locator": "L3:L12,L26:L57"
+          }
+        ],
+        "limitations": [
+          "Evaluation age is not demonstrably latest encounter; later height/weight snapshot6y8m prevents unqualified last-encounter correspondence."
+        ]
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Heterozygous NM_004500.4:c.296G>A p.Arg99Gln and GRCh38 g.21231018C>T exactly match Table2 and S4, including packet VCF coordinate/ref/alt.",
+        "evidence": [
+          {
+            "source_id": "S4_text",
+            "locator": "L7:L11; mainTable2/Figure6"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Individual11 is explicitly de novo in Table2 and S4 and was assessed in a trio; no parental transmission reported for this case.",
+        "evidence": [
+          {
+            "source_id": "S4_text",
+            "locator": "ColumnL row12 and23; mainTable2"
+          }
+        ],
+        "limitations": [
+          "Original parental traces/raw genotypes and parentage testing not supplied. Other cohort cases include unknown inheritance and unaffected mosaic mothers; these must not be generalized to this case."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single heterozygous HNRNPC variant; no within-gene compound-heterozygous phase question. De novo attribution is separate from cis/trans phasing.",
+        "evidence": [
+          {
+            "source_id": "S4_text",
+            "locator": "ColumnL rows7-12; mainTable2"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors include de novo Arg99Gln in HNRNPC-associated neurodevelopmental disorder; S4 gives likely pathogenic with PS2/PM2. Packet PATHOGENIC is stronger than the source class. The missense mechanism is expressly unresolved and gene-level haploinsufficiency cannot substitute for this allele-specific demonstration.",
+        "evidence": [
+          {
+            "source_id": "S4_text",
+            "locator": "L17:L24; mainFigure6 and Discussion"
+          }
+        ],
+        "limitations": [
+          "No Individual11 functional assay; low-confidence structural region prevents accurate effect prediction.",
+          "Missense cases may overlap or differ from deletion phenotypes; no independent contemporary ACMG reassessment.",
+          "Main describes WES trio while S4 says WGS trio for this individual; sequencing-method discrepancy left unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Positive speech/motor/ID and three facial features match; packet omits sensorineural hearing loss, cochlear malformations, colobomatous microphthalmia, premature thelarche and other dysmorphisms. Some exclusions lack direct negative findings.",
+        "evidence": [
+          {
+            "source_id": "S4_text",
+            "locator": "L26:L88"
+          }
+        ],
+        "limitations": [
+          "Fine-motor row contains difficulty abducting eyes, not normal fine-motor development; mainTable1 reports delay in3/3missense cases.",
+          "Brain myelination is not explicitly normal; cochlear MRI findings cannot establish absence of delayedCNSmyelination."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c296GtoA_HNRNPC_NM_004500v4",
+            "geneContext": {
+              "valueId": "HGNC:5035",
+              "symbol": "HNRNPC"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_004500.4:c.296G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000014.9:g.21231018C>T"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr14",
+              "pos": 21231018,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "3fa98472d3781fdd5d00aeadc60538bc2dab6a83f98de6795107b1cacbde2cfa",
+          "assessment": {
+            "status": "supported",
+            "statement": "Heterozygous NM_004500.4:c.296G>A p.Arg99Gln and GRCh38 g.21231018C>T exactly match Table2 and S4, including packet VCF coordinate/ref/alt.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "L7:L11; mainTable2/Figure6"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000248",
+              "label": "Brachycephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "79373c6d8799f069c375035ea2de4f48e964cd0d2abfddb4c251a4892680cfc4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Individual11 does not list Brachycephaly; this does not establish its explicit exclusion.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L56:L74"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000448",
+              "label": "Prominent nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1648956ff4848a7267c6eddc426a6026119534bb34957fae1b9b577000a2f044",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Individual11 does not list Prominent nose; this does not establish its explicit exclusion.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L56:L74"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "qualified",
+            "statement": "OFC for Individual11 is above−2SD (−1.28 at5y4m forI8;−1.72 at4y5m forI11), compatible with excluded microcephaly at the measured visit.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 row36"
+              }
+            ],
+            "limitations": [
+              "Not a lifelong negative or a standardized serial-growth assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000219",
+              "label": "Thin upper lip vermilion"
+            }
+          },
+          "snapshot_sha256": "99c27d160c5710ce25431f2c1160d2daf7fa32c356981881d551b4b815fce314",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thin upper lip explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L62"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000319",
+              "label": "Smooth philtrum"
+            }
+          },
+          "snapshot_sha256": "dfd43d1141bc298d1a58233458e5791b60ffce6866cc34baf669fac66c7bee2c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Smooth philtrum explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L63"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000311",
+              "label": "Round face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9ff2d5a78b88b50b4b43fe91e4593901b126515c23e6719077e0102259a07229",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Individual11 does not list Round face; this does not establish its explicit exclusion.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L56:L74"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000490",
+              "label": "Deeply set eye"
+            }
+          },
+          "snapshot_sha256": "d74352778d40587aec0d91b32f074890d0006fe5b099e79539cb28fe90793e0c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Deep-set eyes explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L60"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000601",
+              "label": "Hypotelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33ee545ecd880fba4beb0eb414c41440a573353a7f51c2a86b26135529d2cd3d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Individual11 does not list Hypotelorism; this does not establish its explicit exclusion.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L56:L74"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c75e654012c14dea90453d61fde221f4dca1c2729c3ea61db1e002c4f5fd16eb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Individual11 does not list Hypertelorism; this does not establish its explicit exclusion.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L56:L74"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1e78f075d7d5e88f72df7de1f0ab14b655ba5d68bfc8adc2914cf5d7ebde009e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Individual11 does not list Downslanted palpebral fissures; this does not establish its explicit exclusion.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L56:L74"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011147",
+              "label": "Typical absence seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d4a8fca4741588510717c6d6a73ddc87d32e74db7518d0c62b952f590f326b4a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Source explicitly says no seizures, supporting excluded absence seizures at evaluation.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L52"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002069",
+              "label": "Bilateral tonic-clonic seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "536c65d7da232404ef2c0159448c37634a177b06cd0dd3d11ca00e6da62512c0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Source explicitly says no seizures, supporting excluded bilateral tonic-clonic seizures at evaluation.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L52"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031936",
+              "label": "Delayed ability to walk"
+            }
+          },
+          "snapshot_sha256": "b839223f2a2cb628aa2cf31cd51e1c414f8ff66df9c510049723d8660b9e0963",
+          "assessment": {
+            "status": "supported",
+            "statement": "Walking at2years explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L40"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "First words at3years and few single words/signs support speech-language delay.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L39:L41"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001344",
+              "label": "Absent speech"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1c1e41b062bc67289352d351d52c5c398e5efb6e4053a8c2d8a3eaa057c0dd9f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Spoken single words documented; absent speech correctly excluded.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L39:L41"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0040082",
+              "label": "Happy demeanor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "93c79096015e47c2e5a97c6c97b8c8c0ee7dcb30289187ed5f9dae6a70ab0f1c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No behavioral anomalies is not a direct denial of happy demeanor.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L56"
+              }
+            ],
+            "limitations": [
+              "Normal positive demeanor may coexist with no behavioral abnormality; no explicit negative supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002360",
+              "label": "Sleep abnormality"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4a29b066017264574594ab32f2ca89c6395acc65e60147a38f1ac41167229fd6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sleeping-problem field explicitly No.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L57"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031987",
+              "label": "Diminished ability to concentrate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ae06c86b890eb6f45b2f0e4cb999085b29a13df7221b07432e9d9b5e851c0d1f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Behavioral anomalies field None supports no reported concentration problem.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L56"
+              }
+            ],
+            "limitations": [
+              "No dedicated attention assessment described; broad negative only."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100034",
+              "label": "Motor tics"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "22efa245540bed0b265e7f83d7aec693514be91e979dd1f14ae7761c0fa5e0f1",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Source says no movement disorder, supporting no reported motor tics at evaluation.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 row54"
+              }
+            ],
+            "limitations": [
+              "Broad negative, no separate tic assessment described."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Mild global delay explicitly reported with speech delay and mildID.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L39:L50"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001256",
+              "label": "Intellectual disability, mild"
+            }
+          },
+          "snapshot_sha256": "9d0f11df4bb5b369512b18d57fb102c629377bca41d5de40681106164cfabeb5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Mild intellectual impairment explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L46"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010862",
+              "label": "Delayed fine motor development"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a3d1960e8b3ad054b3397d210513f84d4018d9aecd9f8fcd7fc154d1ebee43d2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Fine-motor field contains difficulty abducting eyes rather than normal fine-motor skills; mainTable1 reports3/3missense cases with fine-motor delay. Exclusion is not established.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L51; mainTable1"
+              }
+            ],
+            "limitations": [
+              "Case-row ambiguity and group-table conflict cannot be resolved from the published material; no new diagnosis inferred."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4a1bfc1bd5599f694602bb5a9c71ff1934f02d19f1529197116397e70f25b7f7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Normal tone explicitly supports excluded hypotonia at evaluation.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L53"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001276",
+              "label": "Hypertonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61f0395086850642bf55317cdac4bc303244121a9f06268143fea0e30331fcff",
+          "assessment": {
+            "status": "supported",
+            "statement": "Normal tone explicitly supports excluded hypertonia at evaluation.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L53"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb57ff08999d38194e0a98237b37f9865603ea25fd0ee0c22e9894cd09f04112",
+          "assessment": {
+            "status": "supported",
+            "statement": "Feeding-problem field explicitly No.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L77"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "253267a47ab1d0b57c991235377b32dc3cd8d0352aad3c4433b3eebadfd3dcf4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Pregnancy normal apart fromUTI, birthweight3540g at40+4weeks supports no reported IUGR.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L26:L31"
+              }
+            ],
+            "limitations": [
+              "No serial prenatal growth records supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002188",
+              "label": "Delayed CNS myelination"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "85fb8e854b9a3dec7ca6cff34b3ce14af9b2c0ded04949d0deb03405873646d4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "MRI field lists cochlear anomalies, without a direct statement about CNSmyelination.",
+            "evidence": [
+              {
+                "source_id": "S4_text",
+                "locator": "TableS4 L55"
+              }
+            ],
+            "limitations": [
+              "Unlisted brain finding is not a negative assessment."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Mandatory HANDOFF.md read at resume exposed aggregate benchmark outcomes and a historical HG002/FGFR2 public-control case-specific rank. Conservatively declared per_case; this old public-control exposure is distinct from target-case outcomes: no target-case inference/result files or additional outcome summaries were consulted for this review. This is post-inference source correspondence, not blinded validation. Earlier canonical reviews are inherited work and are not claimed as this reviewer reading.",
+    "All main1389lines/23pages, supplement512lines/20pages, clinicalS4 all143rows/16views, populationS5 all35rows/7views and targetS7 all77rows/8views personally read. All assigned cases/alternatives inspected. S6/S8/S9 remain unread; no complete-paper claim.",
+    "Inherited canonical records remain attributed to their original reviewers; protected parent-completed records untouched.",
+    "Individual8 possible second CUL1 contributor and unverified VCF normalization; Individual11 later6y8m growth snapshot and ambiguous fine-motor row. Both source classifications likely pathogenic, not literal pathogenic.",
+    "I1 cell results reflect one affected donor and matched control; three clones are not three independent affected people. Protein about45.15%ofcontrol but mRNA16%decrease nonsignificant (adjustedp.81). This does not directly establish all missense mechanisms.",
+    "Dose perturbation experiments in murine/cell systems support dosage sensitivity; early migration delay absent byP7. No translation to patient treatment or experimental design is made.",
+    "Figure2B star convention versus prose p.006 differs; Table1 includes inconsistent denominators/percentages (shortstature total3/12 vs subgroup2/3 with others0; seizure/hypotonia1/3 labeled50%; deepseteyes2/3 labeled100%). Narrative sleep83%vs9/12 and microcephaly4/12vs4/13 should not be silently reconciled.",
+    "AS target prose73 and workbook74rows differ. Results28same+29unchanged+3opposite totals60 rather than61; discussion52%differs from results46%. All S7entries read, but no independent recalculation from raw reads. Corrected p-values in S7 are retained as source labels without assuming a multiple-testing method.",
+    "S6C CD55 printed distributions/means repeat across4cell types; POLD3 HEK/fibroblast printed means also repeat. These displayed repetitions warrant caution and checking against underlying tables; no allegation or corrected values inferred.",
+    "S5 consequences are transcript-dependent; iso2-only predictedLoF and in-frame/splice alternatives limit blanket LoF claims. Source labels synonymous Val213Val as missense and has differing written insertion lengths across genome builds; neither silently corrected. Population counts are publication-era data, not a current gnomAD lookup.",
+    "Article nomenclature/cross-reference discrepancies include Figure6 captionc.332G>A vs Table2c.322G>A forI12, S3captionpanel lettering/S6captionDvsC, and S1C/S2Creference. Assigned I11c.296G>A remains consistent.",
+    "Raw repositories and individualized diagnostic certainty not independently reproduced. Published methods were read only to appraise evidence; no wet-lab design/execution."
+  ]
+}

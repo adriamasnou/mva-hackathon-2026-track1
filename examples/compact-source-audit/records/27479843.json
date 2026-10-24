@@ -4,7 +4,7 @@
   "title": "Meta-analysis of 2,104 trios provides support for 10 new genes for intellectual disability",
   "reviewer": {
     "id": "reader11",
-    "reviewed_at_utc": "2026-10-24T19:16:11.737651+00:00",
+    "reviewed_at_utc": "2026-10-24T19:53:17.321705+00:00",
     "method": "Independent public-source comparison, all assigned selected and alternate packet members retained. No inference output opened."
   },
   "audit": {
@@ -14,7 +14,7 @@
     "clinical_truth_established": false,
     "ranking_outcomes_seen": true,
     "outcome_exposure": "per_case",
-    "exposure_note": "Mandatory HANDOFF.md exposes historical public-control per-case ranks and aggregate outcomes. Conservatively declared per_case; no target-case outcomes or inference files consulted for this audit."
+    "exposure_note": "Mandatory HANDOFF.md exposes historical public-control per-case ranks and aggregate outcomes; conservatively declared per_case. Before this continuation, the separate requested drug-comparison check also read report narrative summaries, so no blinding is claimed. No separate target-case inference outputs or per-case rank artifacts were opened or used in this source-reading continuation."
   },
   "bindings": {
     "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
@@ -1164,7 +1164,7 @@
     {
       "id": "sheet24",
       "kind": "supplement",
-      "status": "partial",
+      "status": "full",
       "required_modes": [
         "data"
       ],
@@ -1174,7 +1174,7 @@
       "extent_evidence": [
         {
           "source_id": "sheet24",
-          "locator": "Flattened sheet rows in workbook order; headers, initial rows and SETD2 rows inspected; all other rows remain unread."
+          "locator": "Original workbook rumc.undiagnosed.15022016.genes has 585 rows and 29 columns, including header; coverage intervals specify the rows actually read."
         }
       ],
       "coverage": [
@@ -1191,9 +1191,51 @@
           "mode": "data",
           "source_id": "sheet24",
           "locator": "Previously read SETD2 row440, retained; no additional coverage implied."
+        },
+        {
+          "start": 11,
+          "end": 135,
+          "mode": "data",
+          "source_id": "sheet24",
+          "locator": "Original workbook rumc.undiagnosed.15022016.genes, Excel rows 11–135; all 29 columns actually displayed and read, grouped as gene, B:N counts, O:V rates, W:AC p/q values; NA strings retained. Gene-level aggregate data, not inference outcomes."
+        },
+        {
+          "start": 136,
+          "end": 235,
+          "mode": "data",
+          "source_id": "sheet24",
+          "locator": "Original workbook rumc.undiagnosed.15022016.genes, Excel rows 136–235; all 29 columns actually displayed and read, grouped as gene, B:N counts, O:V rates, W:AC p/q values; NA strings retained. Gene-level aggregate data, not inference outcomes."
+        },
+        {
+          "start": 236,
+          "end": 335,
+          "mode": "data",
+          "source_id": "sheet24",
+          "locator": "Original workbook rumc.undiagnosed.15022016.genes, Excel rows 236–335; all 29 columns actually displayed and read, grouped as gene, B:N counts, O:V rates, W:AC p/q values; NA strings retained. Gene-level aggregate data, not inference outcomes."
+        },
+        {
+          "start": 336,
+          "end": 435,
+          "mode": "data",
+          "source_id": "sheet24",
+          "locator": "Original workbook rumc.undiagnosed.15022016.genes, Excel rows 336–435; all 29 columns actually displayed and read, grouped as gene, B:N counts, O:V rates, W:AC p/q values; NA strings retained. Gene-level aggregate data, not inference outcomes."
+        },
+        {
+          "start": 436,
+          "end": 535,
+          "mode": "data",
+          "source_id": "sheet24",
+          "locator": "Original workbook rumc.undiagnosed.15022016.genes, Excel rows 436–535; all 29 columns actually displayed and read, grouped as gene, B:N counts, O:V rates, W:AC p/q values; NA strings retained. Gene-level aggregate data, not inference outcomes."
+        },
+        {
+          "start": 536,
+          "end": 585,
+          "mode": "data",
+          "source_id": "sheet24",
+          "locator": "Original workbook rumc.undiagnosed.15022016.genes, Excel rows 536–585; all 29 columns actually displayed and read, grouped as gene, B:N counts, O:V rates, W:AC p/q values; NA strings retained. Gene-level aggregate data, not inference outcomes."
         }
       ],
-      "note": "Rows1–10 and440 read, all29columns; remaining574rows unread. Partial data reading, not workbook completion."
+      "note": "585 of 585 rows read across all 29 columns; 0 rows remain unread. Existing predecessor coverage retained. No change to packet judgments."
     },
     {
       "id": "sheet25",
@@ -2123,6 +2165,6 @@
   "limitations": [
     "Post-inference source-correspondence audit, not blinded or independent clinical validation.",
     "Reader11 records directory and predecessor reviewer-1 filename search contained no records for these six PMIDs on arrival; queue records existing_main_text_read=false. No predecessor reading credit invented. Curated subscription inputs were prepared but Claude used zero tokens and performed no review.",
-    "Eight supplementary workbooks remain partially read;MOESM27 clustering workbook now fully read; possession and parsing not counted as exhaustive reading. Supplementary checklist contains stale photo claim for Figure2 and some statistical transcription differences; final published figure contains schematic only."
+    "Seven supplementary workbooks remain partially read; MOESM24 and MOESM27 workbooks fully read; possession and parsing not counted as exhaustive reading. Supplementary checklist contains stale photo claim for Figure2 and some statistical transcription differences; final published figure contains schematic only."
   ]
 }
