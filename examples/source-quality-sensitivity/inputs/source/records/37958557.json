@@ -1,0 +1,732 @@
+{
+  "schema_version": 1,
+  "pmid": "37958557",
+  "title": "TRA2B Gene Splice Variant Linked to Seizures and Neurodevelopmental Delay: A Second Case Study",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T10:31:41.048725+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "b37ddbd9ba041dfc31b7caefc83040a13c157ebdeffa738f268ffcc7efc67590",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "37958557",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37958557/main.xml",
+      "sha256": "0b066d05636fa5f81a260f8c457050797a3b82159eec7edc197b852f9ce5c2da",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "37958557",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37958557/main.complete.txt",
+      "sha256": "e5f89636b3431224e4c5c9385a146b00e1d2fab27f814da1a2bc5b655b3d36a0",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "37958557",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/37958557/availability.json",
+      "sha256": "def61f069fa3cdecbf62220282c29b8a8baf27a33514e4d3e84006f68fd1e956",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "figure-1",
+      "pmid": "37958557",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37958557/cloud/PMC10648248.1/ijms-24-15572-g001.jpg",
+      "sha256": "33c1459379d39c9454a9b3d223686c525b32ad38fdb3c02c71a5f2337d1f12f2",
+      "kind": "image",
+      "description": "Original complete multipanel figure visually inspected"
+    },
+    {
+      "id": "figure-2",
+      "pmid": "37958557",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37958557/cloud/PMC10648248.1/ijms-24-15572-g002.jpg",
+      "sha256": "c66f1fa1a0e844def4de4490e04e628f2cf2242220f8fc41b1c2bbfcb595145d",
+      "kind": "image",
+      "description": "Original complete multipanel figure visually inspected"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "TRA2B Gene Splice Variant Linked to Seizures and Neurodevelopmental Delay: A Second Case Study",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 2,
+      "table": 0,
+      "supplement": 0
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 209,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–209"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 209,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–209"
+        }
+      ],
+      "note": "Complete article including all nine references, methods, captions and declarations read. Reported walking at four months contradicts later nonwalking description; do not adopt it as a developmental milestone. Figure 2 caption says reverse primer exon 9 whereas Methods says exon 7; retain assay-label discrepancy. Exon-2 deletion measured; dominant-negative protein mechanism inferred from prior work, not tested here."
+    },
+    {
+      "id": "figure:ijms-24-15572-f001",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-1",
+      "extent_evidence": [
+        {
+          "source_id": "figure-1",
+          "locator": "whole original figure"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure-1",
+          "locator": "all panels and labels inspected"
+        }
+      ],
+      "note": "MRI and hand/foot/scalp photographs inspected; supports reported morphology without independent radiologic diagnosis."
+    },
+    {
+      "id": "figure:ijms-24-15572-f002",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-2",
+      "extent_evidence": [
+        {
+          "source_id": "figure-2",
+          "locator": "whole original figure"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure-2",
+          "locator": "all panels and labels inspected"
+        }
+      ],
+      "note": "Pedigree, DNA Sanger, gel, cDNA Sanger and exon map inspected. Proband extra band and exon 1-to-3 junction support skipping; no protein measurement."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/TRA2B/PMID_37958557_proband_II_1.json",
+      "packet_sha256": "53bf2c3f3da87f5c4402583ba565a27f989dc477b21e7a856b92fe46e6f20dff",
+      "case_id": "TC_77848fbc21965b69",
+      "role": "selected",
+      "packet_subject_id": "proband II-1",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Source phenotype at 14 months is not lifelong absence. Alopecia may relate to topiramate, as authors acknowledge."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "The sole proband II-1 is a female aged 14 months, matching this selected packet.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "2.1 Clinical Evaluation first paragraph"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "WGS and Sanger confirm heterozygous NM_004593.3:c.170+1G>A. Fibroblast RNA demonstrates a 134-bp exon-2 skip.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "2.2–2.3; Figure 2"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Both parents test negative; maternity and paternity are reported confirmed. Parental germline mosaicism was not excluded.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "2.2 Whole Genome Sequencing"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "A single heterozygous splice allele is reported, so two-allele phase is not applicable.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "2.2–2.3"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "De novo origin and patient RNA exon skipping support the source pathogenic classification. The proposed shorter repressive protein/dominant-negative mechanism was not directly assayed in this patient. Alopecia may be drug associated.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "2.3 and Discussion"
+          }
+        ],
+        "limitations": [
+          "Single family; no protein assay here or independent clinical reclassification."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet features compared with clinical description; MRI white-matter abnormalities and regression omitted from the packet. Digestive and vision problems explicitly lack information.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "2.1 and Discussion"
+          }
+        ],
+        "limitations": [
+          "Onset timing is not equally precise for all features; no inference of absent findings from silence."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c170_1GtoA_TRA2B_NM_004593v3",
+            "geneContext": {
+              "valueId": "HGNC:10781",
+              "symbol": "TRA2B"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_004593.3:c.170+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000003.12:g.185926600C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_004584.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr3",
+              "pos": 185926600,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "bb256eabd8346123a511451d19bfec66923305067cb85bb9d81a06cb5dc13150",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Exact transcript and c.170+1G>A match. Packet p.? appropriately does not assert a directly measured protein consequence; source predicts p.Glu13Valfs*2 from RNA. Exact hg38 coordinate not specified in primary article.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.2–2.3; 4.2–4.3"
+              }
+            ],
+            "limitations": [
+              "Genomic-coordinate conversion remains unverified."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000158",
+              "label": "Macroglossia"
+            }
+          },
+          "snapshot_sha256": "1411afae6c2e29730db35780193e0b063a6e5871000f03335644aaa3321a4420",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macroglossia explicitly present matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000154",
+              "label": "Wide mouth"
+            }
+          },
+          "snapshot_sha256": "c5b63c68cb940ff7b5c3e879c569a3d0470742907eafb5def0040c2a15e3b51d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macrostomia matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000348",
+              "label": "High forehead"
+            }
+          },
+          "snapshot_sha256": "103bf72333d2dc95b86d467b9f6b3a3dcba466f0339ee28a03ee68719266ab46",
+          "assessment": {
+            "status": "supported",
+            "statement": "High forehead explicitly present matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004415",
+              "label": "Pulmonary artery stenosis"
+            }
+          },
+          "snapshot_sha256": "a6db11f1c4cc038d45706a093147cb56e22e6d21e709999f56a7cf4807bccf83",
+          "assessment": {
+            "status": "supported",
+            "statement": "Mild left pulmonary artery stenosis matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb57ff08999d38194e0a98237b37f9865603ea25fd0ee0c22e9894cd09f04112",
+          "assessment": {
+            "status": "supported",
+            "statement": "Feeding difficulties explicitly not reported matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004691",
+              "label": "2-3 toe syndactyly"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003577",
+                "label": "Congenital onset"
+              }
+            }
+          },
+          "snapshot_sha256": "6ad80250ee96879cfd716c1792657f26d3c1c21b99e57ebbcc597fcb19cefbc4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Cutaneous 2–3 toe syndactyly is described and photographed; congenital onset is plausible but not explicitly dated in the case narrative.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 and Figure 1b"
+              }
+            ],
+            "limitations": [
+              "Exact congenital onset not independently documented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004209",
+              "label": "Clinodactyly of the 5th finger"
+            }
+          },
+          "snapshot_sha256": "194c928812d75a2e51f03b1ff6c2f1a495bd26a1ed4eb33c66d73266a03b15b5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Clinodactyly of the 5th finger explicitly present matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001290",
+              "label": "Generalized hypotonia"
+            }
+          },
+          "snapshot_sha256": "b25631abdb1b0a21148ad8bffcadb33b5b7a7a0dab707b25e73524d167bfe016",
+          "assessment": {
+            "status": "supported",
+            "statement": "Global hypotonia matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000369",
+              "label": "Low-set ears"
+            }
+          },
+          "snapshot_sha256": "d3ebc814e2fe4068a3cc114824711c68bd531b6879885d4e754d52ab1ba1ee65",
+          "assessment": {
+            "status": "supported",
+            "statement": "Low-set ears explicitly present matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011344",
+              "label": "Severe global developmental delay"
+            }
+          },
+          "snapshot_sha256": "1d0255212d7e2b33c933fe62f3f72fa97ffe3f3d0753760a886ef634bd625dc1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Severe developmental delay with markedly delayed motor milestones matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002360",
+              "label": "Sleep disturbance"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7b663e501971105c56d9016feaa57ab1108b5a408f0cc1402b604e1f004fc0a1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sleep disturbance explicitly not reported matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002521",
+              "label": "Hypsarrhythmia"
+            }
+          },
+          "snapshot_sha256": "f00a2d2bbe3560b3abd8068bd41979ca9ff63e46284be23342ad3bb6e9a0eb84",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypsarrhythmia explicitly present matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012469",
+              "label": "Infantile spasms"
+            }
+          },
+          "snapshot_sha256": "332b9e0014c43cbae363b12f458f502033053f55efeed902cde48273ee8124b2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Infantile spasms explicitly present matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002119",
+              "label": "Ventriculomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4c85b83b33f5e08675bcbde6baa99ffface6333858512085937da3432336a001",
+          "assessment": {
+            "status": "supported",
+            "statement": "Normal volume and shape of cerebral ventricles matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025671",
+              "label": "Fetal pericardial effusion"
+            },
+            "onset": {
+              "gestationalAge": {
+                "weeks": 31,
+                "days": 0
+              }
+            }
+          },
+          "snapshot_sha256": "63208434e211e4945b0f3cb1faabefb6e1686f60150813b1510db888d98259a5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Pericardial effusion at 31 weeks matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001562",
+              "label": "Oligohydramnios"
+            },
+            "onset": {
+              "gestationalAge": {
+                "weeks": 31,
+                "days": 0
+              }
+            }
+          },
+          "snapshot_sha256": "d38d534173429611857229863bdcf6e742e93465f27464b464afb65953dcf1ff",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Pregnancy oligohydramnios is reported alongside pericardial effusion at 31 weeks; the wording does not independently date oligohydramnios onset.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 first paragraph"
+              }
+            ],
+            "limitations": [
+              "31-week onset may apply specifically to effusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002232",
+              "label": "Patchy alopecia"
+            }
+          },
+          "snapshot_sha256": "e0782512a083c9c9e4860b38cfc58608e3ff329168918e7997090e0a8a7261e5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Alopecia areata matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001655",
+              "label": "Patent foramen ovale"
+            }
+          },
+          "snapshot_sha256": "ae806fc4f898b6ec90448f0b99b4ba8d30bde514cb6374f0c1d9177300a7a955",
+          "assessment": {
+            "status": "supported",
+            "statement": "Patent foramen ovale explicitly present matches the packet feature.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "2.1 Clinical Evaluation; Figure 1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading."
+  ]
+}

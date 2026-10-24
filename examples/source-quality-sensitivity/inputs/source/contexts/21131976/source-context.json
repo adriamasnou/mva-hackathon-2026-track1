@@ -1,0 +1,117 @@
+{
+  "pmid": "21131976",
+  "source_titles": [
+    "Mutations in genes encoding subunits of RNA polymerases I and III cause Treacher Collins syndrome"
+  ],
+  "selected_case_ids": [
+    "TC_34ab880eb1273777"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "POLR1D"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/POLR1D/PMID_21131976_EsM5513.json",
+      "sha256": "9194a27a14974c0b06d7ab316b5310890afa4810e23456f9f1908c7a277e378f",
+      "case_id": "TC_34ab880eb1273777",
+      "selected_record": true,
+      "subject": {
+        "id": "EsM5513",
+        "sex": "UNKNOWN_SEX"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:613717",
+            "label": "Treacher Collins syndrome 2"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000347",
+            "label": "Micrognathia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000175",
+            "label": "Cleft palate"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008551",
+            "label": "Microtia"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "KWYeTPWjNUgeJqLXiH6vyoap",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:613717",
+              "label": "Treacher Collins syndrome 2"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "EsM5513",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c232_233del_POLR1D_NM_015972v4",
+                    "geneContext": {
+                      "valueId": "HGNC:20422",
+                      "symbol": "POLR1D"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_015972.4:c.232_233del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000013.11:g.27623080_27623081del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_057056.1:p.(Ser78GlnfsTer3)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr13",
+                      "pos": 27623075,
+                      "ref": "CAG",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

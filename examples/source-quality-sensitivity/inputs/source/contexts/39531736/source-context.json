@@ -1,0 +1,798 @@
+{
+  "pmid": "39531736",
+  "source_titles": [
+    "HMGCS1 variants cause rigid spine syndrome amenable to mevalonic acid treatment in an animal model."
+  ],
+  "selected_case_ids": [
+    "TC_de2b9a00ab931f18",
+    "TC_760ad0a4823c0609",
+    "TC_3a6b0f8afbea473d"
+  ],
+  "alternate_case_ids": [
+    "TC_de2b9a00ab931f18"
+  ],
+  "genes": [
+    "HMGCS1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/HMGCS1/PMID_39531736_Family_SPA1_individual_P1.json",
+      "sha256": "6b4022876e77807150e481700599c2aa56b318a296ce5a5d87217f86ea0ad760",
+      "case_id": "TC_de2b9a00ab931f18",
+      "selected_record": true,
+      "subject": {
+        "id": "Family SPA1 individual P1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P27Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621433",
+            "label": "Congenital myopathy 28 with rigid spine"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P2Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003691",
+            "label": "Scapular winging"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003306",
+            "label": "Spinal rigidity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003701",
+            "label": "Proximal muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002460",
+            "label": "Distal muscle weakness"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001283",
+            "label": "Bulbar palsy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012548",
+            "label": "Fatty replacement of skeletal muscle"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100614",
+            "label": "Myositis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030319",
+            "label": "Weakness of facial musculature"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000508",
+            "label": "Ptosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003236",
+            "label": "Elevated circulating creatine kinase concentration"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032341",
+            "label": "Reduced forced vital capacity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012664",
+            "label": "Reduced left ventricular ejection fraction"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "aapEZm8wD9RoS6HvqHkCZb5p",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621433",
+              "label": "Congenital myopathy 28 with rigid spine"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Family SPA1 individual P1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1339TtoC_HMGCS1_NM_001098272v3",
+                    "geneContext": {
+                      "valueId": "HGNC:5007",
+                      "symbol": "HMGCS1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001098272.3:c.1339T>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000005.10:g.43292608A>G"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001091742.1:p.(Ser447Pro)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr5",
+                      "pos": 43292608,
+                      "ref": "A",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/HMGCS1/PMID_39531736_Family_SPA1_individual_P2.json",
+      "sha256": "f64f8e564594fcfeea0d7d120c44b9f3f8d20db5eb7a8ebd735cae3053a1a9ec",
+      "case_id": "TC_de2b9a00ab931f18",
+      "selected_record": false,
+      "subject": {
+        "id": "Family SPA1 individual P2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P15Y"
+          }
+        },
+        "vitalStatus": {
+          "status": "DECEASED"
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621433",
+            "label": "Congenital myopathy 28 with rigid spine"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P2Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003691",
+            "label": "Scapular winging"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003306",
+            "label": "Spinal rigidity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003701",
+            "label": "Proximal muscle weakness"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002460",
+            "label": "Distal muscle weakness"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001283",
+            "label": "Bulbar palsy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030319",
+            "label": "Weakness of facial musculature"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000508",
+            "label": "Ptosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003236",
+            "label": "Elevated circulating creatine kinase concentration"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032341",
+            "label": "Reduced forced vital capacity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012664",
+            "label": "Reduced left ventricular ejection fraction"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "FyyXzWRscLBWsfDHSfbisfAI",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621433",
+              "label": "Congenital myopathy 28 with rigid spine"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Family SPA1 individual P2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1339TtoC_HMGCS1_NM_001098272v3",
+                    "geneContext": {
+                      "valueId": "HGNC:5007",
+                      "symbol": "HMGCS1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001098272.3:c.1339T>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000005.10:g.43292608A>G"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001091742.1:p.(Ser447Pro)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr5",
+                      "pos": 43292608,
+                      "ref": "A",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/HMGCS1/PMID_39531736_Family_ITA1_individual_P4.json",
+      "sha256": "6526227e8eb25df182adef63f3bde93ed2cc2bb56ecdfb7fc074004a0ff6c7ee",
+      "case_id": "TC_760ad0a4823c0609",
+      "selected_record": true,
+      "subject": {
+        "id": "Family ITA1 individual P4",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P38Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621433",
+            "label": "Congenital myopathy 28 with rigid spine"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P4Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003691",
+            "label": "Scapular winging"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003306",
+            "label": "Spinal rigidity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003701",
+            "label": "Proximal muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002460",
+            "label": "Distal muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001283",
+            "label": "Bulbar palsy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012548",
+            "label": "Fatty replacement of skeletal muscle"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100614",
+            "label": "Myositis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030319",
+            "label": "Weakness of facial musculature"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000508",
+            "label": "Ptosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003236",
+            "label": "Elevated circulating creatine kinase concentration"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032341",
+            "label": "Reduced forced vital capacity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012664",
+            "label": "Reduced left ventricular ejection fraction"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "qwM571KBG9N9xHitpMHN7mf9",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621433",
+              "label": "Congenital myopathy 28 with rigid spine"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Family ITA1 individual P4",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1289GtoA_HMGCS1_NM_001098272v3",
+                    "geneContext": {
+                      "valueId": "HGNC:5007",
+                      "symbol": "HMGCS1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001098272.3:c.1289G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000005.10:g.43292868C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001091742.1:p.(Arg430Lys)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr5",
+                      "pos": 43292868,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "Family ITA1 individual P4",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c890GtoT_HMGCS1_NM_001098272v3",
+                    "geneContext": {
+                      "valueId": "HGNC:5007",
+                      "symbol": "HMGCS1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001098272.3:c.890G>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000005.10:g.43295767C>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001091742.1:p.(Gly297Val)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr5",
+                      "pos": 43295767,
+                      "ref": "C",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/HMGCS1/PMID_39531736_Family_JPN1_individual_P3.json",
+      "sha256": "ea98d81f88696ea1aeb75f9e976a6113363f3fcbbd56e9d92ae4d87939a85d11",
+      "case_id": "TC_3a6b0f8afbea473d",
+      "selected_record": true,
+      "subject": {
+        "id": "Family JPN1 individual P3",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P36Y"
+          }
+        },
+        "vitalStatus": {
+          "status": "DECEASED"
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621433",
+            "label": "Congenital myopathy 28 with rigid spine"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P2Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003691",
+            "label": "Scapular winging"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003306",
+            "label": "Spinal rigidity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003701",
+            "label": "Proximal muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002460",
+            "label": "Distal muscle weakness"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001283",
+            "label": "Bulbar palsy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0100614",
+            "label": "Myositis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030319",
+            "label": "Weakness of facial musculature"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003805",
+            "label": "Rimmed vacuoles"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000508",
+            "label": "Ptosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003236",
+            "label": "Elevated circulating creatine kinase concentration"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032341",
+            "label": "Reduced forced vital capacity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012664",
+            "label": "Reduced left ventricular ejection fraction"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "OP83Wv04EhMQ9GB7xQvHOrBO",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621433",
+              "label": "Congenital myopathy 28 with rigid spine"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Family JPN1 individual P3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c344_345del_HMGCS1_NM_001098272v3",
+                    "geneContext": {
+                      "valueId": "HGNC:5007",
+                      "symbol": "HMGCS1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001098272.3:c.344_345del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000005.10:g.43298622_43298623del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001091742.1:p.(Ser115TrpfsTer12)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr5",
+                      "pos": 43298620,
+                      "ref": "CAG",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "Family JPN1 individual P3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c86AtoT_HMGCS1_NM_001098272v3",
+                    "geneContext": {
+                      "valueId": "HGNC:5007",
+                      "symbol": "HMGCS1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001098272.3:c.86A>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000005.10:g.43298880T>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001091742.1:p.(Gln29Leu)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr5",
+                      "pos": 43298880,
+                      "ref": "T",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

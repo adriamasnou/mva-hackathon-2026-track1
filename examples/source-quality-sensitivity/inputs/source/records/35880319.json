@@ -1,0 +1,2344 @@
+{
+  "schema_version": 1,
+  "pmid": "35880319",
+  "title": "PI4K2A deficiency causes innate error in intracellular trafficking with developmental and epileptic-dyskinetic encephalopathy",
+  "reviewer": {
+    "id": "reader-5",
+    "reviewed_at_utc": "2026-10-24T16:56:54.992272+00:00",
+    "method": "Full main text read including methods, all clinical descriptions, Table 1, discussion, captions, acknowledgements and references. Three figure images and all three Table 1 pages inspected. Each packet feature assessed separately. Supplement video held but not watched; no complete-paper claim."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "This actual reviewer saw aggregate benchmark results in the inherited conversation and HANDOFF.md before this reading assignment. No per-case ranking outputs were opened for these source reviews. Retrieval work exposed bibliographic identities and selected-case counts, not per-case inference ranks. This review is not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "581ee67b97fbad54c306714c92549fa39338e908a1f734d4ac7c3150aa706a36",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main",
+      "pmid": "35880319",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35880319/main.complete.txt",
+      "sha256": "4feb0717d172fc45c6efb69fb6406e444c1c04135e9cc2274dcf3cc7878ebd6b",
+      "kind": "text",
+      "description": "Complete primary JATS text including table, captions, methods, discussion and references; actually read."
+    },
+    {
+      "id": "xml",
+      "pmid": "35880319",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35880319/main.xml",
+      "sha256": "45d108259541dba2f449e28348631e896d13a5493e23e521aad75532fc09e618",
+      "kind": "xml",
+      "description": "Primary article XML; component inventory and identity."
+    },
+    {
+      "id": "pdf",
+      "pmid": "35880319",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35880319/cloud/PMC9463957.1/PMC9463957.1.pdf",
+      "sha256": "177f274ec02dce3085349f48bfe0060e3b32af66304ce8ab5cb2281749ad8d66",
+      "kind": "pdf",
+      "description": "Published article PDF; Table 1 pages 6–8 inspected."
+    },
+    {
+      "id": "fig1",
+      "pmid": "35880319",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35880319/cloud/PMC9463957.1/ACN3-9-1345-g002.jpg",
+      "sha256": "fa073bf6a1383b29c9f7a1319ffba2438fdab4306b29cbcb1c08b43ee6e74faa",
+      "kind": "image",
+      "description": "Actual Figure 1; mapping verified in JATS, not filename sequence."
+    },
+    {
+      "id": "fig2",
+      "pmid": "35880319",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35880319/cloud/PMC9463957.1/ACN3-9-1345-g003.jpg",
+      "sha256": "d4af0bfd459c57370092cead7d492c9be96bc0ee636e42a23cc7feadec5af233",
+      "kind": "image",
+      "description": "Actual Figure 2; mapping verified in JATS, not filename sequence."
+    },
+    {
+      "id": "fig3",
+      "pmid": "35880319",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35880319/cloud/PMC9463957.1/ACN3-9-1345-g001.jpg",
+      "sha256": "74fc72c3097c8bb9bdd5448da864b39ed806daab49f818b7df9cebd60151d074",
+      "kind": "image",
+      "description": "Actual Figure 3; mapping verified in JATS, not filename sequence."
+    },
+    {
+      "id": "tablepage1",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/table-page-06.png",
+      "sha256": "9b202b8ccfe951e3708ece2c5cd4f0629f13aec318cb0020d216a3234651091a",
+      "kind": "image",
+      "description": "PDF page 06, Table 1 segment 1, all columns visually read."
+    },
+    {
+      "id": "tablepage2",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/table-page-07.png",
+      "sha256": "af27817db316e5779d94e45e16197e30dbb94dc45fd372404cbc0d228f2723df",
+      "kind": "image",
+      "description": "PDF page 07, Table 1 segment 2, all columns visually read."
+    },
+    {
+      "id": "tablepage3",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/table-page-08.png",
+      "sha256": "219863b567c7b769e9fa05194131834ee020db966e138d39eb82cdefa8d315c8",
+      "kind": "image",
+      "description": "PDF page 08, Table 1 segment 3, all columns visually read."
+    },
+    {
+      "id": "videoS1",
+      "pmid": "35880319",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35880319/cloud/PMC9463957.1/ACN3-9-1345-s001.mp4",
+      "sha256": "774963709d2b69bc0029c5c753e764952770786ef0dba33505a81441b3ad5472",
+      "kind": "video",
+      "description": "Held 20.224-second supplement; ffprobe confirms H264 video,607 frames; not watched."
+    },
+    {
+      "id": "sequential_video_receipt",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/video-sequential-receipt.json",
+      "sha256": "4c6eb45b9748954bd1e8d3d46003c90d67e3642f4e2ad62793a5b3b683ce10e7",
+      "kind": "text",
+      "description": "Every decoded frame retained and inspected sequentially as140pxwide stills. Explicitly no continuous motion/audio review."
+    },
+    {
+      "id": "videoS1_probe_all",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/probe-with-frames.json",
+      "sha256": "e978be1d326fd19541876a4a6d321ecba91fac4469c5fe26ac69bc0972732739",
+      "kind": "text",
+      "description": "ffprobe all streams and video frames with timestamps; audio stream present."
+    },
+    {
+      "id": "videoS1_frames_1",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0001-0040.jpg",
+      "sha256": "160bdfb07b532348170a2e94fa81445c292a15be4b37c5794b30c191d153ec86",
+      "kind": "image",
+      "description": "Sequential stills frames1–40; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_2",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0041-0080.jpg",
+      "sha256": "f64caee9c9409597020330dafad69d730a0a6c2e68d6f7c5c338b6e9d8274653",
+      "kind": "image",
+      "description": "Sequential stills frames41–80; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_3",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0081-0120.jpg",
+      "sha256": "e30d0ed1da46dce5095d2ef9156aad74989670a86a66eae7d4efb7297d209715",
+      "kind": "image",
+      "description": "Sequential stills frames81–120; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_4",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0121-0160.jpg",
+      "sha256": "42039b36f90d442524b94f4fd692add7fcb1627237d242c82cf61db14283f12a",
+      "kind": "image",
+      "description": "Sequential stills frames121–160; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_5",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0161-0200.jpg",
+      "sha256": "d652b138c4a1d33133e1806ff048531d17bd7bd8519c565a296a5b5c36dcd8e7",
+      "kind": "image",
+      "description": "Sequential stills frames161–200; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_6",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0201-0240.jpg",
+      "sha256": "fcc7ded4e0a7299e03359ddb2851835af84056e80dbbf4866dae9007227e92b0",
+      "kind": "image",
+      "description": "Sequential stills frames201–240; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_7",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0241-0280.jpg",
+      "sha256": "80f34248b7fd4722f6ecdc23492787c88db9ee3640c52275dd6067fe2d06f3f9",
+      "kind": "image",
+      "description": "Sequential stills frames241–280; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_8",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0281-0320.jpg",
+      "sha256": "38cedd6eb210c32bd756da18adc0f598703d0fcdf09424c50d5b1bc3ec2c93b5",
+      "kind": "image",
+      "description": "Sequential stills frames281–320; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_9",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0321-0360.jpg",
+      "sha256": "18a2200ae78da7ef54126d1e6f63b96e8612cc2d34e2a80cde783b255b28b09f",
+      "kind": "image",
+      "description": "Sequential stills frames321–360; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_10",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0361-0400.jpg",
+      "sha256": "183c4cd6f2ff2cb8653bdf532c599f288bd487497268d71754e80908b4524fea",
+      "kind": "image",
+      "description": "Sequential stills frames361–400; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_11",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0401-0440.jpg",
+      "sha256": "d290a07674b54ff0e2cd2a54bbe02fe55d0eba851330d702bc04b52078690ac4",
+      "kind": "image",
+      "description": "Sequential stills frames401–440; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_12",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0441-0480.jpg",
+      "sha256": "3aec2cae7745d79030738ab0e5f4adec92fd5bfd38d2a03cd8e600eac67ae888",
+      "kind": "image",
+      "description": "Sequential stills frames441–480; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_13",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0481-0520.jpg",
+      "sha256": "98172f931ea8d5efa895afa276ebc9f9aaff7ec8e5d313ecbfc809e72ea5b2ee",
+      "kind": "image",
+      "description": "Sequential stills frames481–520; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_14",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0521-0560.jpg",
+      "sha256": "007693fae77bcf52daf8c4dd6e35d1f7d7eff5a65192f3c6550daf05bea08a1e",
+      "kind": "image",
+      "description": "Sequential stills frames521–560; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_15",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0561-0600.jpg",
+      "sha256": "a44111fb00d3dc0a59ed4b64c508f18655fc1a442142db2d9abb2d43d2d60f49",
+      "kind": "image",
+      "description": "Sequential stills frames561–600; all viewed. Spatially downscaled, no temporal skipping."
+    },
+    {
+      "id": "videoS1_frames_16",
+      "pmid": "35880319",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-5/artifacts/35880319/videoS1-sequential/frames-0601-0607.jpg",
+      "sha256": "66fae775d9ee7d85b7fc193c2e1e9c56918707ffa48f05741eca171e2e5c4070",
+      "kind": "image",
+      "description": "Sequential stills frames601–607; all viewed. Spatially downscaled, no temporal skipping."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "PI4K2A deficiency causes innate error in intracellular trafficking with developmental and epileptic-dyskinetic encephalopathy",
+    "evidence": [
+      {
+        "source_id": "main",
+        "locator": "Article title, PI4K2A molecular findings and Family 1/2 descriptions"
+      },
+      {
+        "source_id": "xml",
+        "locator": "article-id PMID 35880319"
+      }
+    ],
+    "note": "Inside-article title and PI4K2A Family 1/2 content match inventory; typographic hyphen variation only."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 3,
+      "table": 1,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "Three fig elements, one table-wrap, one supplementary-material: ACN3-9-1345-s001.mp4"
+      }
+    ],
+    "note": "Full JATS and Supporting information inspected. Video S1 is held, remains unread."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 251,
+      "extent_source_id": "main",
+      "extent_evidence": [
+        {
+          "source_id": "main",
+          "locator": "All 251 lines read; initial truncated clinical output reread in full at lines72–100; remainder through251 read."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 251,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "All 251 lines read; initial truncated clinical output reread in full at lines72–100; remainder through251 read."
+        }
+      ],
+      "note": "All 251 lines read; initial truncated clinical output reread in full at lines72–100; remainder through251 read."
+    },
+    {
+      "id": "figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig1",
+      "extent_evidence": [
+        {
+          "source_id": "fig1",
+          "locator": "Whole Figure 1 pixels inspected including all panels."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig1",
+          "locator": "Whole Figure 1 pixels inspected including all panels."
+        }
+      ],
+      "note": "Whole Figure 1 pixels inspected including all panels."
+    },
+    {
+      "id": "figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig2",
+      "extent_evidence": [
+        {
+          "source_id": "fig2",
+          "locator": "Whole Figure 2 pixels inspected including all panels."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig2",
+          "locator": "Whole Figure 2 pixels inspected including all panels."
+        }
+      ],
+      "note": "Whole Figure 2 pixels inspected including all panels."
+    },
+    {
+      "id": "figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig3",
+      "extent_evidence": [
+        {
+          "source_id": "fig3",
+          "locator": "Whole Figure 3 pixels inspected including all panels."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig3",
+          "locator": "Whole Figure 3 pixels inspected including all panels."
+        }
+      ],
+      "note": "Whole Figure 3 pixels inspected including all panels."
+    },
+    {
+      "id": "table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 3,
+      "extent_source_id": "pdf",
+      "extent_evidence": [
+        {
+          "source_id": "pdf",
+          "locator": "Table 1 spans printed pages1350–1352, PDFpages6–8; complete all three segments read."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 3,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Table 1 complete text; all rows and both Family columns"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "tablepage1",
+          "locator": "Table 1 segment1, PDFpage06"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "tablepage2",
+          "locator": "Table 1 segment2, PDFpage07"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "tablepage3",
+          "locator": "Table 1 segment3, PDFpage08"
+        }
+      ],
+      "note": "Table 1 spans printed pages1350–1352, PDFpages6–8; complete all three segments read."
+    },
+    {
+      "id": "videoS1",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "pixels",
+        "video"
+      ],
+      "unit_type": "frames",
+      "unit_count": 607,
+      "extent_source_id": "videoS1_probe_all",
+      "extent_evidence": [
+        {
+          "source_id": "videoS1_probe_all",
+          "locator": "Decoded frame inventory, with source duration and audio/video streams"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 40,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_1",
+          "locator": "All frames 1–40 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 41,
+          "end": 80,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_2",
+          "locator": "All frames 41–80 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 81,
+          "end": 120,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_3",
+          "locator": "All frames 81–120 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 121,
+          "end": 160,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_4",
+          "locator": "All frames 121–160 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 161,
+          "end": 200,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_5",
+          "locator": "All frames 161–200 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 201,
+          "end": 240,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_6",
+          "locator": "All frames 201–240 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 241,
+          "end": 280,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_7",
+          "locator": "All frames 241–280 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 281,
+          "end": 320,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_8",
+          "locator": "All frames 281–320 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 321,
+          "end": 360,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_9",
+          "locator": "All frames 321–360 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 361,
+          "end": 400,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_10",
+          "locator": "All frames 361–400 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 401,
+          "end": 440,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_11",
+          "locator": "All frames 401–440 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 441,
+          "end": 480,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_12",
+          "locator": "All frames 441–480 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 481,
+          "end": 520,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_13",
+          "locator": "All frames 481–520 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 521,
+          "end": 560,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_14",
+          "locator": "All frames 521–560 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 561,
+          "end": 600,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_15",
+          "locator": "All frames 561–600 actually inspected as ordered stills; no playback/audio claim."
+        },
+        {
+          "start": 601,
+          "end": 607,
+          "mode": "pixels",
+          "source_id": "videoS1_frames_16",
+          "locator": "All frames 601–607 actually inspected as ordered stills; no playback/audio claim."
+        }
+      ],
+      "note": "All607 decoded frames inspected in order via16contactsheets; original retained. Audio stream confirmed but not heard; continuous playback not viewed. Spatial scaling prevents exact fly counting/clinical movement classification. Parent native UI request in NATIVE-UI-REQUEST.json."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/PI4K2A/PMID_35880319_Family_1.json",
+      "packet_sha256": "6604136b0170874ead2ef375e8a2c42d7def011d37c11972c253492d4cee377c",
+      "case_id": "TC_52e8373cb8b738c0",
+      "role": "selected",
+      "packet_subject_id": "Family 1",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Unknown or unstated negative findings are not equivalent to documented absence.",
+        "Available supplementary video not yet watched."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Family 1 female patient matches clinical identity; packet age3y10m is age at death, whereas last measured follow-up was2y10m.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1"
+          }
+        ],
+        "limitations": [
+          "Age at death differs from last clinical measurement time."
+        ]
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Both patients homozygous PI4K2A c.925C>T p.Arg309Ter; exact transcript NM_018425.4 given in molecular findings.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Molecular findings; Table1; Figure1C"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Both parents of each patient heterozygous; Figure1 pedigree labels C/T parents and T/T affected child.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Molecular findings; Figure1A–C"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous variant with both parents heterozygous supports biparental recessive inheritance; not a compound-heterozygous phasing claim.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Molecular findings; Figure1A–C"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Recessive truncation supported by two unrelated families, loss of membrane association and failure to restore endosomal PI4P in engineered knockout cells.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Functional studies; Discussion paragraphs1–2; Figure2D–E"
+          }
+        ],
+        "limitations": [
+          "Only two new patients with same allele; functional assay uses engineered HEK293 cells rather than patient neurons.",
+          "Variant-specific biochemical support is not independent clinical diagnostic proof."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "contradicted",
+        "statement": "Packet fetal callosal onset is assigned to Family1 although Table1 and Patient2 text assign prenatal detection to Family2; exclusion of microcephaly conflicts with Family1 head circumference42cm,z−6.87 at follow-up. Both packets encode sensory-neuropathy absence although source says peripheral neuropathy Unknown. Omitted documented features include thumb contractures, sleep disturbance and constipation.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1"
+          }
+        ],
+        "limitations": []
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c925CtoT_PI4K2A_NM_018425v4",
+            "geneContext": {
+              "valueId": "HGNC:30031",
+              "symbol": "PI4K2A"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_018425.4:c.925C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000010.11:g.97662909C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_060895.1:p.(Arg309Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr10",
+              "pos": 97662909,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "dd9b561e03c36bfece8d5f816a108323718287477c71d7c980a82b9afe310aee",
+          "assessment": {
+            "status": "qualified",
+            "statement": "PI4K2A, homozygosity,c.925C>T,p.Arg309Ter match source; NM_018425.4 appears in molecular text; Table1 uses .3. Packet genomic HG38 coordinate is not printed/independently normalized in this review.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Molecular findings; Table1 genomic variant/zygosity"
+              }
+            ],
+            "limitations": [
+              "Genomic coordinate and protein accession-version normalization not independently established from paper."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001761",
+              "label": "Pes cavus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a96d0a0958dbaf1f08f5f6ace72d0450313e4c390bb8730c18df8bf413ed181b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Limb contractures row lists bilateral thumb contractures, unlike historical siblings with pes cavus.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Limb contractures"
+              }
+            ],
+            "limitations": [
+              "Unlisted pes cavus is not a documented specific negative examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Global developmental delay matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Clinical descriptions and developmental milestones"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            }
+          },
+          "snapshot_sha256": "0c23f286da3cc9f5294730531056b36482123ec2bc9f963bea5f94b46dcd72a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Motor delay matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Development/Motor delay Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002540",
+              "label": "Inability to walk"
+            }
+          },
+          "snapshot_sha256": "515d1964104b56b378517d1c7f2fee103eb9728a7bca88e8129397141acde415",
+          "assessment": {
+            "status": "supported",
+            "statement": "Inability to walk matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Development/Walking never attained"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031943",
+              "label": "Akathisia"
+            }
+          },
+          "snapshot_sha256": "f65a45fa847e2f8b2bdc78604a7056c08044a68fbfb735780ccf129b3abcdeae",
+          "assessment": {
+            "status": "supported",
+            "statement": "Akathisia matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Behavior/Irritability and akathisia Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002365",
+              "label": "Hypoplasia of the brainstem"
+            }
+          },
+          "snapshot_sha256": "baea78d37d1d88d53253d84ce21ac4945a20d1148666fb0ab4dd2a8b05b862cb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoplasia of the brainstem matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; MRI/hypoplastic brainstem"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012110",
+              "label": "Hypoplasia of the pons"
+            }
+          },
+          "snapshot_sha256": "08bf199f0ad11f2662deb6d5518ddf7cb2c672f826e6210a40c3c4f8314696f6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoplasia of the pons matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; MRI/brainstem predominantly pons"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002079",
+              "label": "Hypoplasia of the corpus callosum"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011461",
+                "label": "Fetal onset"
+              }
+            }
+          },
+          "snapshot_sha256": "4689ec2ade0e3188be5e41595c64ea453a84ba0e403348a61fb8dac0887dc77a",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Callosal abnormality supported, but fetal onset belongs to Family2; Family1 prenatal history explicitly No.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; MRI/dysgenesis and hypoplasia"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030303",
+              "label": "Hypoplastic anterior commissure"
+            }
+          },
+          "snapshot_sha256": "1ecf56fd33a40671bc17df5bef817764fbfc8bf36c121726ae1a69faa60cd768",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoplastic anterior commissure matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; MRI/hypoplastic anterior commissure"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034295",
+              "label": "Reduced cerebral white matter volume"
+            }
+          },
+          "snapshot_sha256": "f01ad7539a0ccbd16a7c1e359882e00f67362233be7aa4f60680fd0b2f908228",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced cerebral white matter volume matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; MRI/diffuse white matter volume loss"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002119",
+              "label": "Ventriculomegaly"
+            }
+          },
+          "snapshot_sha256": "993f816c45a75051fd382dc72aecbe204b6c72aae2633c986ca79e58daaab898",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ventriculomegaly matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; MRI/ventriculomegaly"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002280",
+              "label": "Enlarged cisterna magna"
+            }
+          },
+          "snapshot_sha256": "b7f4f9057f70e2587a0637f80bf17ef1a9a298552fe6080b54c931c6be023b5f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Enlarged cisterna magna matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; MRI/mega cisterna magna"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000737",
+              "label": "Irritability"
+            }
+          },
+          "snapshot_sha256": "8ae3c3f7b02a062ee5d406bd306b49a8ba4934e9592454f8182fce120194549f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Irritability matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Behavior/Irritability and akathisia Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001348",
+              "label": "Brisk reflexes"
+            }
+          },
+          "snapshot_sha256": "0870dd90656a2cba5183c49b7e559a662bac5687711eb4ea8dfa5700a34f4469",
+          "assessment": {
+            "status": "supported",
+            "statement": "Brisk reflexes matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Neurological examination/deep tendon reflexes3+"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002310",
+              "label": "Orofacial dyskinesia"
+            }
+          },
+          "snapshot_sha256": "bae51cdb1e4d8e43699ddfb57cd96ec3053231e5fecde53b44c065fa81455822",
+          "assessment": {
+            "status": "supported",
+            "statement": "Orofacial dyskinesia matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Neurological examination/dyskinetic movements"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001344",
+              "label": "Absent speech"
+            }
+          },
+          "snapshot_sha256": "7f822ec40430b496de56f1832e57b86e49f4245c6df3680e098f62f26b26caaf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Absent speech matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Development/no words and monosyllables never attained"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001336",
+              "label": "Myoclonus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "79025126a0c75e7787c6998625485a9a9e7c280f7f5a328ca31b4fd480e232d0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Neurological examination explicitly Myoclonus No; separate myoclonic seizures in Family1 are not the same feature.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Neurological examination/Myoclonus"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031960",
+              "label": "Arm dystonia"
+            }
+          },
+          "snapshot_sha256": "970a4f63b8b3a0e47fed7a770d587d4478a608722ad7e36afb6335b95cd837ea",
+          "assessment": {
+            "status": "supported",
+            "statement": "Arm dystonia matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Neurological examination/episodic arm dystonia"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000763",
+              "label": "Sensory neuropathy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b88bda9cb9f5de75946554f163978cfe39f3874687322600dd6aa5cef201177",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Source reports peripheral neuropathy Unknown, not sensory-neuropathy absence.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Sensory neuropathy"
+              }
+            ],
+            "limitations": [
+              "No documented sensory examination/electrophysiological negative result."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032792",
+              "label": "Tonic seizure"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P1Y4M"
+              }
+            }
+          },
+          "snapshot_sha256": "4124688642452a9a500bae77bc07ad09222823cdacf10a9ff248a64d8407553e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Tonic seizure matches the Family1 description/row; onset matches P1Y4M.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Seizure type tonic, onset16months"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032794",
+              "label": "Myoclonic seizure"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P1Y4M"
+              }
+            }
+          },
+          "snapshot_sha256": "b0e2597074d7e03415e7daa9803e4656f5ebb03ee4c77f6c9688cdde2cb07f35",
+          "assessment": {
+            "status": "supported",
+            "statement": "Myoclonic seizure matches the Family1 description/row; onset matches P1Y4M.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Seizure type myoclonic, onset16months"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011097",
+              "label": "Epileptic spasm"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "78137bad2b2124eed654a9f588ae7b7a02a7fb4356eff833a4296397c75e3e04",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Epileptic spasm is not the seizure/EEG/MRI finding reported for Family1; packet negative exceeds explicit source wording.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Seizure type epileptic spasms, onset6months"
+              }
+            ],
+            "limitations": [
+              "Descriptive list does not explicitly exclude every alternative feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002521",
+              "label": "Hypsarrhythmia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d1504aea0a3547e4b18e4f7d37fc40dafc0d7e19f94ac8670c3a8841f1d3db89",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Hypsarrhythmia is not the seizure/EEG/MRI finding reported for Family1; packet negative exceeds explicit source wording.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; EEG/hypsarrhythmia"
+              }
+            ],
+            "limitations": [
+              "Descriptive list does not explicitly exclude every alternative feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002179",
+              "label": "Opisthotonus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8fd1445fdfb6bf016f4eb29138f297a8feb0cfda340d7840a446e43c16b78c36",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Other neurological findings None contrasts with opisthotonic posturing in historical siblings; supports exclusion only as reporting inference.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Other neurological findings"
+              }
+            ],
+            "limitations": [
+              "No explicit targeted opisthotonus examination documented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008936",
+              "label": "Axial hypotonia"
+            }
+          },
+          "snapshot_sha256": "689eeac5c2fc3d940f93547c5204d8da7ecb5e5209fa1493711e741557eb5d87",
+          "assessment": {
+            "status": "supported",
+            "statement": "Axial hypotonia matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Neurological examination/muscle weakness"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003202",
+              "label": "Skeletal muscle atrophy"
+            }
+          },
+          "snapshot_sha256": "2a7c5b475d67576f987b24d8bac4c0a7729438775a8d70d2f8bc8983ac1c2daf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Skeletal muscle atrophy matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Neurological examination/muscle atrophy Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001257",
+              "label": "Spasticity"
+            }
+          },
+          "snapshot_sha256": "c42dd8368ddbb3c87b1066b5181600cefa61a140e963e6cb3cdd7a360eb4c165",
+          "assessment": {
+            "status": "supported",
+            "statement": "Spasticity matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Neurological examination/spasticity Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002719",
+              "label": "Recurrent infections"
+            }
+          },
+          "snapshot_sha256": "8b8cad52a7b0c5e2fa3761a5b4dd62a36daf32d5fedc6fc4a1e93dda9ce26b6d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Recurrent infections matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Miscellaneous/16 severe infections and hospitalizations"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb57ff08999d38194e0a98237b37f9865603ea25fd0ee0c22e9894cd09f04112",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1 explicitly reports Feeding difficulties No for Family1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Miscellaneous/Feeding difficulties"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000601",
+              "label": "Hypotelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33ee545ecd880fba4beb0eb414c41440a573353a7f51c2a86b26135529d2cd3d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Historical siblings have these dysmorphisms; Family1 only high arched palate and Family2 No structural abnormalities are listed.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Structural congenital abnormalities"
+              }
+            ],
+            "limitations": [
+              "Absence inferred from composite row rather than explicit feature-specific negative examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001508",
+              "label": "Failure to thrive"
+            }
+          },
+          "snapshot_sha256": "345530d804151ce8815170a44114bb90928ca700acf76267f7185db8d735c2f0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Failure to thrive matches the Family1 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Anthropometry/failure to thrive Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be809d419558367f5a8d26c6e7b96d9d348e8895370525fa5dc014af31b8cced",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Historical siblings have these dysmorphisms; Family1 only high arched palate and Family2 No structural abnormalities are listed.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Structural congenital abnormalities"
+              }
+            ],
+            "limitations": [
+              "Absence inferred from composite row rather than explicit feature-specific negative examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000411",
+              "label": "Protruding ear"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1a6ae009be745fd7b4ce16760bc0b560a96320a4091323deac2503b5ead38922",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Historical siblings have these dysmorphisms; Family1 only high arched palate and Family2 No structural abnormalities are listed.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Structural congenital abnormalities"
+              }
+            ],
+            "limitations": [
+              "Absence inferred from composite row rather than explicit feature-specific negative examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Excluded microcephaly conflicts with measured follow-up head circumference42cm,<1st percentile,z−6.87; normal birth circumference does not justify later exclusion.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 1 column; Results Clinical and neuroimaging findings Patient 1; Anthropometry/head circumference at last follow-up"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/PI4K2A/PMID_35880319_Family_2.json",
+      "packet_sha256": "f76f582c87fb6d510bc0185473b7b7113e1c16a1868d2a0c63e802b2e0b9704f",
+      "case_id": "TC_52e8373cb8b738c0",
+      "role": "alternate",
+      "packet_subject_id": "Family 2",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Unknown or unstated negative findings are not equivalent to documented absence.",
+        "Available supplementary video not yet watched."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family 2 female patient matches clinical identity; age2years matches source.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Both patients homozygous PI4K2A c.925C>T p.Arg309Ter; exact transcript NM_018425.4 given in molecular findings.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Molecular findings; Table1; Figure1C"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Both parents of each patient heterozygous; Figure1 pedigree labels C/T parents and T/T affected child.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Molecular findings; Figure1A–C"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Homozygous variant with both parents heterozygous supports biparental recessive inheritance; not a compound-heterozygous phasing claim.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Molecular findings; Figure1A–C"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Recessive truncation supported by two unrelated families, loss of membrane association and failure to restore endosomal PI4P in engineered knockout cells.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Results Functional studies; Discussion paragraphs1–2; Figure2D–E"
+          }
+        ],
+        "limitations": [
+          "Only two new patients with same allele; functional assay uses engineered HEK293 cells rather than patient neurons.",
+          "Variant-specific biochemical support is not independent clinical diagnostic proof."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "contradicted",
+        "statement": "Packet excludes anterior-commissure hypoplasia although both MRI text and Table1 Family2 explicitly report it. Both packets encode sensory-neuropathy absence although source says peripheral neuropathy Unknown. Omitted documented features include thumb contractures, sleep disturbance and constipation.",
+        "evidence": [
+          {
+            "source_id": "main",
+            "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2"
+          }
+        ],
+        "limitations": []
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c925CtoT_PI4K2A_NM_018425v4",
+            "geneContext": {
+              "valueId": "HGNC:30031",
+              "symbol": "PI4K2A"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_018425.4:c.925C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000010.11:g.97662909C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_060895.1:p.(Arg309Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr10",
+              "pos": 97662909,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "dd9b561e03c36bfece8d5f816a108323718287477c71d7c980a82b9afe310aee",
+          "assessment": {
+            "status": "qualified",
+            "statement": "PI4K2A, homozygosity,c.925C>T,p.Arg309Ter match source; NM_018425.4 appears in molecular text; Table1 uses .3. Packet genomic HG38 coordinate is not printed/independently normalized in this review.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Molecular findings; Table1 genomic variant/zygosity"
+              }
+            ],
+            "limitations": [
+              "Genomic coordinate and protein accession-version normalization not independently established from paper."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001761",
+              "label": "Pes cavus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a96d0a0958dbaf1f08f5f6ace72d0450313e4c390bb8730c18df8bf413ed181b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Limb contractures row lists bilateral thumb contractures, unlike historical siblings with pes cavus.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Limb contractures"
+              }
+            ],
+            "limitations": [
+              "Unlisted pes cavus is not a documented specific negative examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Global developmental delay matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Clinical descriptions and developmental milestones"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            }
+          },
+          "snapshot_sha256": "0c23f286da3cc9f5294730531056b36482123ec2bc9f963bea5f94b46dcd72a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Motor delay matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Development/Motor delay Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002540",
+              "label": "Inability to walk"
+            }
+          },
+          "snapshot_sha256": "515d1964104b56b378517d1c7f2fee103eb9728a7bca88e8129397141acde415",
+          "assessment": {
+            "status": "supported",
+            "statement": "Inability to walk matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Development/Walking never attained"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031943",
+              "label": "Akathisia"
+            }
+          },
+          "snapshot_sha256": "f65a45fa847e2f8b2bdc78604a7056c08044a68fbfb735780ccf129b3abcdeae",
+          "assessment": {
+            "status": "supported",
+            "statement": "Akathisia matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Behavior/Irritability and akathisia Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002365",
+              "label": "Hypoplasia of the brainstem"
+            }
+          },
+          "snapshot_sha256": "baea78d37d1d88d53253d84ce21ac4945a20d1148666fb0ab4dd2a8b05b862cb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoplasia of the brainstem matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; MRI/hypoplastic brainstem"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012110",
+              "label": "Hypoplasia of the pons"
+            }
+          },
+          "snapshot_sha256": "08bf199f0ad11f2662deb6d5518ddf7cb2c672f826e6210a40c3c4f8314696f6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoplasia of the pons matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; MRI/brainstem predominantly pons"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002079",
+              "label": "Hypoplasia of the corpus callosum"
+            }
+          },
+          "snapshot_sha256": "8ed3278b9b97a21e88cb1500a164b49a2725b0c9e656695e420f985f0de7a6b1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoplasia of the corpus callosum matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; MRI/dysgenesis and hypoplasia"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030303",
+              "label": "Hypoplastic anterior commissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b7734ea244c3e17a49d66cc922f4b3fb29a8d831e1b254c69e5b94186a7416aa",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Excluded feature conflicts with explicit hypoplastic anterior commissure in Family2 MRI narrative and Table1.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; MRI/hypoplastic anterior commissure"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034295",
+              "label": "Reduced cerebral white matter volume"
+            }
+          },
+          "snapshot_sha256": "f01ad7539a0ccbd16a7c1e359882e00f67362233be7aa4f60680fd0b2f908228",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced cerebral white matter volume matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; MRI/diffuse white matter volume loss"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002119",
+              "label": "Ventriculomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4c85b83b33f5e08675bcbde6baa99ffface6333858512085937da3432336a001",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Ventriculomegaly is not the seizure/EEG/MRI finding reported for Family2; packet negative exceeds explicit source wording.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; MRI/ventriculomegaly"
+              }
+            ],
+            "limitations": [
+              "Descriptive list does not explicitly exclude every alternative feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002280",
+              "label": "Enlarged cisterna magna"
+            }
+          },
+          "snapshot_sha256": "b7f4f9057f70e2587a0637f80bf17ef1a9a298552fe6080b54c931c6be023b5f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Enlarged cisterna magna matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; MRI/mega cisterna magna"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000737",
+              "label": "Irritability"
+            }
+          },
+          "snapshot_sha256": "8ae3c3f7b02a062ee5d406bd306b49a8ba4934e9592454f8182fce120194549f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Irritability matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Behavior/Irritability and akathisia Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001348",
+              "label": "Brisk reflexes"
+            }
+          },
+          "snapshot_sha256": "0870dd90656a2cba5183c49b7e559a662bac5687711eb4ea8dfa5700a34f4469",
+          "assessment": {
+            "status": "supported",
+            "statement": "Brisk reflexes matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Neurological examination/deep tendon reflexes3+"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002310",
+              "label": "Orofacial dyskinesia"
+            }
+          },
+          "snapshot_sha256": "bae51cdb1e4d8e43699ddfb57cd96ec3053231e5fecde53b44c065fa81455822",
+          "assessment": {
+            "status": "supported",
+            "statement": "Orofacial dyskinesia matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Neurological examination/dyskinetic movements"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001344",
+              "label": "Absent speech"
+            }
+          },
+          "snapshot_sha256": "7f822ec40430b496de56f1832e57b86e49f4245c6df3680e098f62f26b26caaf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Absent speech matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Development/no words and monosyllables never attained"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001336",
+              "label": "Myoclonus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "79025126a0c75e7787c6998625485a9a9e7c280f7f5a328ca31b4fd480e232d0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Neurological examination explicitly Myoclonus No; separate myoclonic seizures in Family1 are not the same feature.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Neurological examination/Myoclonus"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000763",
+              "label": "Sensory neuropathy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b88bda9cb9f5de75946554f163978cfe39f3874687322600dd6aa5cef201177",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Source reports peripheral neuropathy Unknown, not sensory-neuropathy absence.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Sensory neuropathy"
+              }
+            ],
+            "limitations": [
+              "No documented sensory examination/electrophysiological negative result."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032792",
+              "label": "Tonic seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2de9f74c5b4a403bfa611603aebebe5027c9f42142738abed5244c5ccde16079",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Tonic seizure is not the seizure/EEG/MRI finding reported for Family2; packet negative exceeds explicit source wording.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Seizure type tonic, onset16months"
+              }
+            ],
+            "limitations": [
+              "Descriptive list does not explicitly exclude every alternative feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032794",
+              "label": "Myoclonic seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2301876d082e763da08807a89cee0caa4c9841c474d893f8c25491c11a5e0be7",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Myoclonic seizure is not the seizure/EEG/MRI finding reported for Family2; packet negative exceeds explicit source wording.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Seizure type myoclonic, onset16months"
+              }
+            ],
+            "limitations": [
+              "Descriptive list does not explicitly exclude every alternative feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011097",
+              "label": "Epileptic spasm"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P6M"
+              }
+            }
+          },
+          "snapshot_sha256": "0284a5a738c81a4394e822daafda023d061c7648c91a5c4996d1ca039d438099",
+          "assessment": {
+            "status": "supported",
+            "statement": "Epileptic spasm matches the Family2 description/row; onset matches P6M.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Seizure type epileptic spasms, onset6months"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002521",
+              "label": "Hypsarrhythmia"
+            }
+          },
+          "snapshot_sha256": "f00a2d2bbe3560b3abd8068bd41979ca9ff63e46284be23342ad3bb6e9a0eb84",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypsarrhythmia matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; EEG/hypsarrhythmia"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002179",
+              "label": "Opisthotonus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8fd1445fdfb6bf016f4eb29138f297a8feb0cfda340d7840a446e43c16b78c36",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Other neurological findings None contrasts with opisthotonic posturing in historical siblings; supports exclusion only as reporting inference.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Other neurological findings"
+              }
+            ],
+            "limitations": [
+              "No explicit targeted opisthotonus examination documented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008936",
+              "label": "Axial hypotonia"
+            }
+          },
+          "snapshot_sha256": "689eeac5c2fc3d940f93547c5204d8da7ecb5e5209fa1493711e741557eb5d87",
+          "assessment": {
+            "status": "supported",
+            "statement": "Axial hypotonia matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Neurological examination/muscle weakness"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003202",
+              "label": "Skeletal muscle atrophy"
+            }
+          },
+          "snapshot_sha256": "2a7c5b475d67576f987b24d8bac4c0a7729438775a8d70d2f8bc8983ac1c2daf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Skeletal muscle atrophy matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Neurological examination/muscle atrophy Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001257",
+              "label": "Spasticity"
+            }
+          },
+          "snapshot_sha256": "c42dd8368ddbb3c87b1066b5181600cefa61a140e963e6cb3cdd7a360eb4c165",
+          "assessment": {
+            "status": "supported",
+            "statement": "Spasticity matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Neurological examination/spasticity Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002719",
+              "label": "Recurrent infections"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c3da490b0d2da948a7bacfda3524ef046dffa23cad72cb6cd0b9083a991e4564",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1 explicitly reports Recurrent infections No for Family2.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Miscellaneous/Recurrent infections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            }
+          },
+          "snapshot_sha256": "2f75f0cec9f37b168994d1f28ca569a464f852938adfe5cb43e05e0ecb36264f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Feeding difficulties matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Miscellaneous/feeding difficulties Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000601",
+              "label": "Hypotelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33ee545ecd880fba4beb0eb414c41440a573353a7f51c2a86b26135529d2cd3d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Historical siblings have these dysmorphisms; Family1 only high arched palate and Family2 No structural abnormalities are listed.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Structural congenital abnormalities"
+              }
+            ],
+            "limitations": [
+              "Absence inferred from composite row rather than explicit feature-specific negative examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001508",
+              "label": "Failure to thrive"
+            }
+          },
+          "snapshot_sha256": "345530d804151ce8815170a44114bb90928ca700acf76267f7185db8d735c2f0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Failure to thrive matches the Family2 description/row.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Anthropometry/failure to thrive Yes"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be809d419558367f5a8d26c6e7b96d9d348e8895370525fa5dc014af31b8cced",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Historical siblings have these dysmorphisms; Family1 only high arched palate and Family2 No structural abnormalities are listed.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Structural congenital abnormalities"
+              }
+            ],
+            "limitations": [
+              "Absence inferred from composite row rather than explicit feature-specific negative examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000411",
+              "label": "Protruding ear"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1a6ae009be745fd7b4ce16760bc0b560a96320a4091323deac2503b5ead38922",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Historical siblings have these dysmorphisms; Family1 only high arched palate and Family2 No structural abnormalities are listed.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Structural congenital abnormalities"
+              }
+            ],
+            "limitations": [
+              "Absence inferred from composite row rather than explicit feature-specific negative examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Head circumference48cm,10th percentile,z−1.26 supports absence of microcephaly at recorded age2years.",
+            "evidence": [
+              {
+                "source_id": "main",
+                "locator": "Table1 Family 2 column; Results Clinical and neuroimaging findings Patient 2; Anthropometry/head circumference"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Source correspondence only; aggregate-only prior exposure declared.",
+    "Publication internally differs on transcript version (.3 in Table1 versus .4 in molecular text), consanguinity degree and some anthropometric percentiles.",
+    "No per-case ranking output opened.",
+    "Video followup: complete sequential still-frame coverage recorded separately from unperformed continuous video/audio review. All videos have audio streams; component remains partial. No disease classification or exact climbing counts inferred from downscaled stills."
+  ]
+}

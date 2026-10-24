@@ -1,0 +1,1403 @@
+{
+  "schema_version": 1,
+  "pmid": "25835445",
+  "title": "Mutations in a TGF-β ligand, TGFB3, cause syndromic aortic aneurysms and dissections",
+  "reviewer": {
+    "id": "reader-2-resume-20261024",
+    "reviewed_at_utc": "2026-10-24T18:29:13.758372+00:00",
+    "method": "Current resumed reviewer read all stated source-text units and inspected the stated pixel components directly. Record serialized after manual source comparison; script execution/extraction is not reading."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Mandatory HANDOFF.md read at resume exposed aggregate benchmark outcomes and a historical HG002/FGFR2 public-control case-specific rank. Conservatively declared per_case; this old public-control exposure is distinct from target-case outcomes: no target-case inference/result files or additional outcome summaries were consulted for this review. This is post-inference source correspondence, not blinded validation. Earlier canonical reviews are inherited work and are not claimed as this reviewer reading."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "88f1f62fee26e1a51680bd95e473ac736bd39418b005ec3ce389bac485b3ed7b",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "text",
+      "pmid": "25835445",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/25835445/main.complete.txt",
+      "sha256": "e0d50c29933b342b4bf6caf1f7d6f88eb0abf395a24b3c0a177f328f96b3f262",
+      "kind": "text",
+      "description": "Entire353-line main source personally read."
+    },
+    {
+      "id": "xml",
+      "pmid": "25835445",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/25835445/main.xml",
+      "sha256": "9ae84ea20ffa98c37d7d7471e2fd1a2d6d7e6b4ff1bf7344b45902341cdbd3dc",
+      "kind": "xml",
+      "description": "Full primary XML identity, tables and component links."
+    },
+    {
+      "id": "sraw",
+      "pmid": "25835445",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/25835445/cloud/PMC4380321.1/mmc1.docx",
+      "sha256": "6b148ac7674229ef260648c74ee18bfebea6cbe5bcc20ba3b167a3034834fd04",
+      "kind": "data",
+      "description": "Original complete Online Data DOCX, preserved."
+    },
+    {
+      "id": "spdf",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/supp-render/mmc1.pdf",
+      "sha256": "f51383d8fbdb0b82306a65dd28d61a9ceabaa05f62e2dc88722597cda2c09bd3",
+      "kind": "pdf",
+      "description": "Nine-page headless rendering of originalDOCX."
+    },
+    {
+      "id": "stext",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/supp-layout.txt",
+      "sha256": "c2b041fd78c0a65eac0ccb4d9c19c98a73032678902b3b6604e181e385f4bf40",
+      "kind": "text",
+      "description": "Entire285-line supplement extraction personally read."
+    },
+    {
+      "id": "tablepdf",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/main-tables-xml.pdf",
+      "sha256": "40e45172c8a27b77fa4cc6f877d4e9813124b36b2940ec91218152926c90eb81",
+      "kind": "pdf",
+      "description": "Faithful display derivative of both originalXMLtables, preserving all cells/linebreaks/footnotes; not publisherPDF."
+    },
+    {
+      "id": "gr1",
+      "pmid": "25835445",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/25835445/cloud/PMC4380321.1/gr1.jpg",
+      "sha256": "e51496037d0771fbeab9348be1f3c90ab4f06fb78373939443f50695f39dca07",
+      "kind": "image",
+      "description": "Original full scientific image linked by mainXML; all panels personally inspected."
+    },
+    {
+      "id": "gr2",
+      "pmid": "25835445",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/25835445/cloud/PMC4380321.1/gr2.jpg",
+      "sha256": "f2d47c8250abb68f7c2439cce0fc5de0835b42e4d3379db319d44ede695c6cbb",
+      "kind": "image",
+      "description": "Original full scientific image linked by mainXML; all panels personally inspected."
+    },
+    {
+      "id": "gr3",
+      "pmid": "25835445",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/25835445/cloud/PMC4380321.1/gr3.jpg",
+      "sha256": "15c0750d5cb0b31c78a373488988472bbd1038b99affe4c751dd215e6b6ac6ed",
+      "kind": "image",
+      "description": "Original full scientific image linked by mainXML; all panels personally inspected."
+    },
+    {
+      "id": "gr4",
+      "pmid": "25835445",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/25835445/cloud/PMC4380321.1/gr4.jpg",
+      "sha256": "83bc915ecb39eec4f152bbc82c0b31268be9e633a0786f590914026c4ffbef39",
+      "kind": "image",
+      "description": "Original full scientific image linked by mainXML; all panels personally inspected."
+    },
+    {
+      "id": "gr5",
+      "pmid": "25835445",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/25835445/cloud/PMC4380321.1/gr5.jpg",
+      "sha256": "51880092d9bf573dbec130a84ec224773d33cc13fcfd12f4d1049c70503a12a1",
+      "kind": "image",
+      "description": "Original full scientific image linked by mainXML; all panels personally inspected."
+    },
+    {
+      "id": "gr6",
+      "pmid": "25835445",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/25835445/cloud/PMC4380321.1/gr6.jpg",
+      "sha256": "8f4266a3b4f80cc285dbacdc568b9b6366f94e7b8f7d2360d2abc26e5b6679c5",
+      "kind": "image",
+      "description": "Original full scientific image linked by mainXML; all panels personally inspected."
+    },
+    {
+      "id": "table1pixels",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/main-table-1.png",
+      "sha256": "8b8f3ca9ddb0af64afc62b9981c611488486d9ad65f5bd2ba4f551d1d30f6178",
+      "kind": "image",
+      "description": "CompleteXMLTable1 display directly inspected against original table markup/text."
+    },
+    {
+      "id": "table2pixels",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/main-table-2.png",
+      "sha256": "d121f0aebed75301180b6b1841c9e873850183f7b484fb9cb9e7cb9d4c18a703",
+      "kind": "image",
+      "description": "CompleteXMLTable2 display directly inspected against original table markup/text."
+    },
+    {
+      "id": "s1",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/supp-render/page-1.png",
+      "sha256": "d2a2e5fdbc6e7c4a724d888d5f6d3bcff0be7da768e5d5cd3fdf7d9cdaa3f7a6",
+      "kind": "image",
+      "description": "Fullsupplementpage1 personally inspected; ninth page contains only header/footer."
+    },
+    {
+      "id": "s2",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/supp-render/page-2.png",
+      "sha256": "696d31d378080a8f08544581f98fb9d859fa621d117ecad34a11bbed57a5be7d",
+      "kind": "image",
+      "description": "Fullsupplementpage2 personally inspected; ninth page contains only header/footer."
+    },
+    {
+      "id": "s3",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/supp-render/page-3.png",
+      "sha256": "592d4c6b5de8017c19c00bda82c3e41c20e6fc6a7eae88e1537879115a46e76e",
+      "kind": "image",
+      "description": "Fullsupplementpage3 personally inspected; ninth page contains only header/footer."
+    },
+    {
+      "id": "s4",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/supp-render/page-4.png",
+      "sha256": "df47c6c58f50e240f3321888a072b663e191513a0cfcd4bc4baac71ba79c8f16",
+      "kind": "image",
+      "description": "Fullsupplementpage4 personally inspected; ninth page contains only header/footer."
+    },
+    {
+      "id": "s5",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/supp-render/page-5.png",
+      "sha256": "7eced180730397ca25069e944260dbf5d3e09f6e638a6079bbc19e80b15b9d20",
+      "kind": "image",
+      "description": "Fullsupplementpage5 personally inspected; ninth page contains only header/footer."
+    },
+    {
+      "id": "s6",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/supp-render/page-6.png",
+      "sha256": "3994b910ac9dd4668203876f50bbe4cda3b7b3300fcdae444da813c617b25cd1",
+      "kind": "image",
+      "description": "Fullsupplementpage6 personally inspected; ninth page contains only header/footer."
+    },
+    {
+      "id": "s7",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/supp-render/page-7.png",
+      "sha256": "e62480ee553681d2347c70a66dece51d0c1399058bb39e610515f506e73af651",
+      "kind": "image",
+      "description": "Fullsupplementpage7 personally inspected; ninth page contains only header/footer."
+    },
+    {
+      "id": "s8",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/supp-render/page-8.png",
+      "sha256": "c2cdc83675b716f0fe2181b7af1a5c6348d465856088ffe1eafd4bf0f4b932a1",
+      "kind": "image",
+      "description": "Fullsupplementpage8 personally inspected; ninth page contains only header/footer."
+    },
+    {
+      "id": "s9",
+      "pmid": "25835445",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-2/assets/25835445/supp-render/page-9.png",
+      "sha256": "775fa5449786cc7554111ff04e4880aa04aca7d476a2c96e28741f65bc2e283d",
+      "kind": "image",
+      "description": "Fullsupplementpage9 personally inspected; ninth page contains only header/footer."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Mutations in a TGF-β ligand, TGFB3, cause syndromic aortic aneurysms and dissections",
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "PMID25835445;PMC4380321;DOI10.1016/j.jacc.2015.01.040;fulltitle/authors"
+      },
+      {
+        "source_id": "gr1",
+        "locator": "Bertoli-Avella et al.JACC2015;65(13):1324–36"
+      }
+    ],
+    "note": "PrimaryXMLidentifiers/title match; originalfigurefooter provides publication corroboration. No mainPDFheld; no publisher-page reading claimed."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 6,
+      "table": 2,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "Five numberedfigures plusCentralIllustration, twoTables, one uniqueOnlineDataDOCXlinked twice"
+      },
+      {
+        "source_id": "spdf",
+        "locator": "OnlineFigures1–2, OnlineTables1–6, DetailedMethods and finalblankpage"
+      }
+    ],
+    "note": "Full sourceXML with six originalJPEGs and originalDOCX provides complete available scientific component set. Main tables rendered from originalXML, not reconstructed from prose."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 353,
+      "extent_source_id": "text",
+      "extent_evidence": [
+        {
+          "source_id": "text",
+          "locator": "Entiremainread; reference citations are not claims of personally reading those separate papers."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 353,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "All text, methods, results, discussion, tables/captions, notes and45references"
+        }
+      ],
+      "note": "Entiremainread; reference citations are not claims of personally reading those separate papers."
+    },
+    {
+      "id": "central",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "gr1",
+      "extent_evidence": [
+        {
+          "source_id": "gr1",
+          "locator": "Complete conceptual patient-to-gene/pathway/phenotype illustration."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "gr1",
+          "locator": "Complete conceptual patient-to-gene/pathway/phenotype illustration."
+        }
+      ],
+      "note": "Complete conceptual patient-to-gene/pathway/phenotype illustration."
+    },
+    {
+      "id": "figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "gr2",
+      "extent_evidence": [
+        {
+          "source_id": "gr2",
+          "locator": "All eleven family pedigrees and genotype/patient symbols. Family8father/daughter mutation-positive; sampled-grandmother symbol has unknown clinical affection."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "gr2",
+          "locator": "All eleven family pedigrees and genotype/patient symbols. Family8father/daughter mutation-positive; sampled-grandmother symbol has unknown clinical affection."
+        }
+      ],
+      "note": "All eleven family pedigrees and genotype/patient symbols. Family8father/daughter mutation-positive; sampled-grandmother symbol has unknown clinical affection."
+    },
+    {
+      "id": "figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "gr3",
+      "extent_evidence": [
+        {
+          "source_id": "gr3",
+          "locator": "Complete clinical-photo panel with source subjectlabels, including8-II:1face and8-III:1feet."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "gr3",
+          "locator": "Complete clinical-photo panel with source subjectlabels, including8-II:1face and8-III:1feet."
+        }
+      ],
+      "note": "Complete clinical-photo panel with source subjectlabels, including8-II:1face and8-III:1feet."
+    },
+    {
+      "id": "figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "gr4",
+      "extent_evidence": [
+        {
+          "source_id": "gr4",
+          "locator": "All seven-exon domain diagram, variants and allninealignmentrows/fourresidues, including prior variants."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "gr4",
+          "locator": "All seven-exon domain diagram, variants and allninealignmentrows/fourresidues, including prior variants."
+        }
+      ],
+      "note": "All seven-exon domain diagram, variants and allninealignmentrows/fourresidues, including prior variants."
+    },
+    {
+      "id": "figure4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "gr5",
+      "extent_evidence": [
+        {
+          "source_id": "gr5",
+          "locator": "Whole homology-model dimer and four residue close-ups. Model-derived effects, not direct biochemical measurements."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "gr5",
+          "locator": "Whole homology-model dimer and four residue close-ups. Model-derived effects, not direct biochemical measurements."
+        }
+      ],
+      "note": "Whole homology-model dimer and four residue close-ups. Model-derived effects, not direct biochemical measurements."
+    },
+    {
+      "id": "figure5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "gr6",
+      "extent_evidence": [
+        {
+          "source_id": "gr6",
+          "locator": "All six histology/signaling panels: source3-III:1p.Asp263His and matchedcontrol; notfamily8."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "gr6",
+          "locator": "All six histology/signaling panels: source3-III:1p.Asp263His and matchedcontrol; notfamily8."
+        }
+      ],
+      "note": "All six histology/signaling panels: source3-III:1p.Asp263His and matchedcontrol; notfamily8."
+    },
+    {
+      "id": "table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "PrimaryXML table directly read with faithful display; no claim of originalPDFtable inspection."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "xml",
+          "locator": "Entiretable-wraptbl1 XMLincludingheaders, cells, footnotes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table1pixels",
+          "locator": "All rendered cells/footnotes ofXMLTable1"
+        }
+      ],
+      "note": "PrimaryXML table directly read with faithful display; no claim of originalPDFtable inspection."
+    },
+    {
+      "id": "table2",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "PrimaryXML table directly read with faithful display; no claim of originalPDFtable inspection."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "xml",
+          "locator": "Entiretable-wraptbl2 XMLincludingheaders, cells, footnotes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table2pixels",
+          "locator": "All rendered cells/footnotes ofXMLTable2"
+        }
+      ],
+      "note": "PrimaryXML table directly read with faithful display; no claim of originalPDFtable inspection."
+    },
+    {
+      "id": "supp",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 9,
+      "extent_source_id": "spdf",
+      "extent_evidence": [
+        {
+          "source_id": "spdf",
+          "locator": "Allninepages read. OnlineTable2all13subjects;Table3all7;Table4all9;Table5all6;Table6all8, plusprimerTable1andbothfigures. Blank/unknownfields not treated as negative."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 9,
+          "mode": "text",
+          "source_id": "stext",
+          "locator": "All285lines, bothfigurecaptions, allsixfulltables including allcasecolumns andmethods"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "s1",
+          "locator": "Completepage1;fullscientifictable/figureandfootnotes"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "s2",
+          "locator": "Completepage2;fullscientifictable/figureandfootnotes"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "s3",
+          "locator": "Completepage3;fullscientifictable/figureandfootnotes"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "s4",
+          "locator": "Completepage4;fullscientifictable/figureandfootnotes"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "s5",
+          "locator": "Completepage5;fullscientifictable/figureandfootnotes"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "s6",
+          "locator": "Completepage6;fullscientifictable/figureandfootnotes"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "s7",
+          "locator": "Completepage7;fullscientifictable/figureandfootnotes"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "s8",
+          "locator": "Completepage8;fullscientifictable/figureandfootnotes"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "s9",
+          "locator": "Completepage9;fullscientifictable/figureandfootnotes"
+        }
+      ],
+      "note": "Allninepages read. OnlineTable2all13subjects;Table3all7;Table4all9;Table5all6;Table6all8, plusprimerTable1andbothfigures. Blank/unknownfields not treated as negative."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/TGFB3/PMID_25835445_8_III_1.json",
+      "packet_sha256": "8e3463e6fa67eecfd14188a44aa36801fa542f13ad3436b30e1e8bb897602443",
+      "case_id": "TC_1833231941cff195",
+      "role": "selected",
+      "packet_subject_id": "8-III:1*",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Assignedselecteddaughter andalternatefather each individually adjudicated. Samecaseidpreserved, notindependentbenchmarkcases. Asterisk denotes mutation present, not part of patientclinicalidentity."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family8daughter8-III:1female30years matchesOnlineTable5andpedigree.",
+        "evidence": [
+          {
+            "source_id": "stext",
+            "locator": "OnlineTable5person/age/sexrows;Figure1family8"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "BothcarryheterozygousTGFB3c.1202T>C,p.Leu401Pro, explicitly family8mutation.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results;Figure1family8;Figure3;OnlineTable5"
+          }
+        ],
+        "limitations": [
+          "Source usesNM_003239.2 andNP_003230.1; packetNM_003239.5/hg38coordinate not independently normalized."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Mutation is present in father anddaughter; pedigree supports verticaltransmission withvariableexpressivity, including normaldaughterecho at30.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure1family8;OnlineTable5"
+          }
+        ],
+        "limitations": [
+          "Notallrelativesgenotyped; no completepenetranceestimate from thisfamily. No denovo claim forfamily8; family6denovo result cannot betransferred."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "OneheterozygousTGFB3allele in adominantfamily; no compoundheterozygous cis/trans question.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure1family8;Resultsheterozygousvariants"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Rarefamily-associatedp.Leu401Proinconservedcytokinedomain plus syndromicvascularphenotype and additionalTGFB3families support the proposed association.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results;Figures3–4;Discussion"
+          }
+        ],
+        "limitations": [
+          "Leu401Promodelpredictshydrophobic-contactchanges; no directfamily8protein or signalingassay. Aorticpathology/pSMAD2/pERK/TGFB1dataarefromfamily3p.Asp263His. Historicalabsencefromcontrolsnotupdated; independentclinicalpathogenicitynotestablished."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "All assignedfeatures compared with full main and completeOnlineData. Specificnegativefindings and some anatomy/event mappings exceed the recordedcase evidence.",
+        "evidence": [
+          {
+            "source_id": "stext",
+            "locator": "OnlineTable5;Figures1–2;Resultslimitations"
+          }
+        ],
+        "limitations": [
+          "Notallpatientswereevaluatedforallfeatures. Daughter-normal-echo doesnotproveabsenceofallvascularhistory; armspan doesnotestablishstature; sourceabdominaldissectionisnotananeurysmdiagnosis."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1202TtoC_TGFB3_NM_003239v5",
+            "geneContext": {
+              "valueId": "HGNC:11769",
+              "symbol": "TGFB3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003239.5:c.1202T>C"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000014.9:g.75959224A>G"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003230.1:p.(Leu401Pro)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr14",
+              "pos": 75959224,
+              "ref": "A",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "0f6cffaceb6870f53cf468ef87df807492579302accf4f530a3c407d56bdcd6a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygousc.1202T>C,p.Leu401Pro matches primarysource and mutation-presentasterisks for bothassignedindividuals.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Methodsreferenceaccessions;Results;Figure1family8;OnlineTable5"
+              }
+            ],
+            "limitations": [
+              "Version.2to.5andNC_000014.9:g.75959224A>G not directly verified from originalsource; coding/proteinmatch alone does not establish genomic normalization."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031649",
+              "label": "Aortic rupture"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c469447d2efd81c877669920b4bb1086a5340bd07aa5e0b76307fdf69a235a3e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Aortic rupture:packetexclusionnotexplicitlyestablishedforthissubject.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;entiremainandsupplement"
+              }
+            ],
+            "limitations": [
+              "Unlistedhistoryisnotanegative; enlargedarmspanisnotatallstaturemeasurement; no numericheight/motordevelopmenthistory given. Normaldaughterecho doesnotexcludeabdominalaorticdisease."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005112",
+              "label": "Abdominal aortic aneurysm"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb195e5ad340082a5204d960028745f92256b89fd4e4c5d36950581309d44bf0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Abdominal aortic aneurysm:packetexclusionnotexplicitlyestablishedforthissubject.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;entiremainandsupplement"
+              }
+            ],
+            "limitations": [
+              "Unlistedhistoryisnotanegative; enlargedarmspanisnotatallstaturemeasurement; no numericheight/motordevelopmenthistory given. Normaldaughterecho doesnotexcludeabdominalaorticdisease."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004933",
+              "label": "Ascending aortic dissection"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "133f3fdf597adfa01ae910a179020700827d09ef75360f052ae1955bb3f79773",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Normaldaughterechocardiography supports absence of anidentifiedechoabnormality atassessment.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5daughterAortarow"
+              }
+            ],
+            "limitations": [
+              "Specificfinding not separatelyreported; broadnormalstudydoesnotestablishlifelongabsence orcompletevascularsurvey."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001634",
+              "label": "Mitral valve prolapse"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0fd5a97a25b0d5d861b5785962c8112638a42a0611e34224a5b18c5ac23cd252",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Normaldaughterechocardiography supports absence of anidentifiedechoabnormality atassessment.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5daughterAortarow"
+              }
+            ],
+            "limitations": [
+              "Specificfinding not separatelyreported; broadnormalstudydoesnotestablishlifelongabsence orcompletevascularsurvey."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001382",
+              "label": "Joint hypermobility"
+            }
+          },
+          "snapshot_sha256": "6212f74029c9ba7cd995c7bf712370446d8eda7b0efa8ecc7a4f16450eefda14",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicitdaughterjointhypermobility.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;Figure2whereapplicable"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012385",
+              "label": "Camptodactyly"
+            }
+          },
+          "snapshot_sha256": "f999d42533c6043ae139e4ad98dc9758dc78b933aa546628c38e768707a8ecb1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Daughtercamptodactylyof4th/5thtoes;genericpackettermretainsfindingbutnotlocation.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;Figure2whereapplicable"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001166",
+              "label": "Arachnodactyly"
+            }
+          },
+          "snapshot_sha256": "6b8fe17b432c7d38eaa6cf8df1684c4bd7937b0b2e7f166c4c570d19b8311124",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicitarachnodactylyinbothassignedsubjects.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;Figure2whereapplicable"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            }
+          },
+          "snapshot_sha256": "af9432aa355687ec52f5e2082beacd6942f48279d4c240829f2997d4a6e11d2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Scoliosisinboth,mildinfather.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;Figure2whereapplicable"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daf75a0de3b94ed300f1a23bf5f19a8ef6ea28b30902775a2860918197810c8f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Motor delay:packetexclusionnotexplicitlyestablishedforthissubject.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;entiremainandsupplement"
+              }
+            ],
+            "limitations": [
+              "Unlistedhistoryisnotanegative; enlargedarmspanisnotatallstaturemeasurement; no numericheight/motordevelopmenthistory given. Normaldaughterecho doesnotexcludeabdominalaorticdisease."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short stature:packetexclusionnotexplicitlyestablishedforthissubject.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;entiremainandsupplement"
+              }
+            ],
+            "limitations": [
+              "Unlistedhistoryisnotanegative; enlargedarmspanisnotatallstaturemeasurement; no numericheight/motordevelopmenthistory given. Normaldaughterecho doesnotexcludeabdominalaorticdisease."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/TGFB3/PMID_25835445_8_II_1.json",
+      "packet_sha256": "773dda727c6d56190f624cef84e2f87b8c2d059e3af611197495ddbe32b441bb",
+      "case_id": "TC_1833231941cff195",
+      "role": "alternate",
+      "packet_subject_id": "8-II:1*",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Assignedselecteddaughter andalternatefather each individually adjudicated. Samecaseidpreserved, notindependentbenchmarkcases. Asterisk denotes mutation present, not part of patientclinicalidentity."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family8father8-II:1male50years,deceased, matchesOnlineTable5andpedigree.",
+        "evidence": [
+          {
+            "source_id": "stext",
+            "locator": "OnlineTable5person/age/sexrows;Figure1family8"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "BothcarryheterozygousTGFB3c.1202T>C,p.Leu401Pro, explicitly family8mutation.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results;Figure1family8;Figure3;OnlineTable5"
+          }
+        ],
+        "limitations": [
+          "Source usesNM_003239.2 andNP_003230.1; packetNM_003239.5/hg38coordinate not independently normalized."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Mutation is present in father anddaughter; pedigree supports verticaltransmission withvariableexpressivity, including normaldaughterecho at30.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure1family8;OnlineTable5"
+          }
+        ],
+        "limitations": [
+          "Notallrelativesgenotyped; no completepenetranceestimate from thisfamily. No denovo claim forfamily8; family6denovo result cannot betransferred."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "OneheterozygousTGFB3allele in adominantfamily; no compoundheterozygous cis/trans question.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure1family8;Resultsheterozygousvariants"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Rarefamily-associatedp.Leu401Proinconservedcytokinedomain plus syndromicvascularphenotype and additionalTGFB3families support the proposed association.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Results;Figures3–4;Discussion"
+          }
+        ],
+        "limitations": [
+          "Leu401Promodelpredictshydrophobic-contactchanges; no directfamily8protein or signalingassay. Aorticpathology/pSMAD2/pERK/TGFB1dataarefromfamily3p.Asp263His. Historicalabsencefromcontrolsnotupdated; independentclinicalpathogenicitynotestablished."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "All assignedfeatures compared with full main and completeOnlineData. Specificnegativefindings and some anatomy/event mappings exceed the recordedcase evidence.",
+        "evidence": [
+          {
+            "source_id": "stext",
+            "locator": "OnlineTable5;Figures1–2;Resultslimitations"
+          }
+        ],
+        "limitations": [
+          "Notallpatientswereevaluatedforallfeatures. Daughter-normal-echo doesnotproveabsenceofallvascularhistory; armspan doesnotestablishstature; sourceabdominaldissectionisnotananeurysmdiagnosis."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1202TtoC_TGFB3_NM_003239v5",
+            "geneContext": {
+              "valueId": "HGNC:11769",
+              "symbol": "TGFB3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003239.5:c.1202T>C"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000014.9:g.75959224A>G"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003230.1:p.(Leu401Pro)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr14",
+              "pos": 75959224,
+              "ref": "A",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "0f6cffaceb6870f53cf468ef87df807492579302accf4f530a3c407d56bdcd6a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygousc.1202T>C,p.Leu401Pro matches primarysource and mutation-presentasterisks for bothassignedindividuals.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Methodsreferenceaccessions;Results;Figure1family8;OnlineTable5"
+              }
+            ],
+            "limitations": [
+              "Version.2to.5andNC_000014.9:g.75959224A>G not directly verified from originalsource; coding/proteinmatch alone does not establish genomic normalization."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031649",
+              "label": "Aortic rupture"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c469447d2efd81c877669920b4bb1086a5340bd07aa5e0b76307fdf69a235a3e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Aortic rupture:packetexclusionnotexplicitlyestablishedforthissubject.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;entiremainandsupplement"
+              }
+            ],
+            "limitations": [
+              "Unlistedhistoryisnotanegative; enlargedarmspanisnotatallstaturemeasurement; no numericheight/motordevelopmenthistory given. Normaldaughterecho doesnotexcludeabdominalaorticdisease."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005112",
+              "label": "Abdominal aortic aneurysm"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P50Y"
+              }
+            }
+          },
+          "snapshot_sha256": "901cd989536fbf2bb0b204415d60a1abd581ef2a211c52fc46088768a6560001",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "At50source records abdominalaorticdissection, not abdominalaorticaneurysm.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5fatherAortarow"
+              }
+            ],
+            "limitations": [
+              "Dissectiondoesnotbyitselfestablishaneurysmaldiameter; no abdominalmeasurementgiven."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004933",
+              "label": "Ascending aortic dissection"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P43Y"
+              }
+            }
+          },
+          "snapshot_sha256": "5448b25fc3bd9a56163644e4d4ee896c98ad71be94969a6c0343cdd51b1e6b97",
+          "assessment": {
+            "status": "supported",
+            "statement": "TypeAdissectionat43withsupracoronaryreplacement supportsascendingaorticdissection andpacketage.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5fatherAortarow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002616",
+              "label": "Aortic root aneurysm"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P42Y"
+              }
+            }
+          },
+          "snapshot_sha256": "b3bb0227e77f1bebc11783478fe393982f673318450d7dc67ede8750954f6588",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "At42source specifies ascendingaorta60mm; packetassigns thisevent to theaorticroot.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5fatherAortarow"
+              }
+            ],
+            "limitations": [
+              "No root/sinusmeasurement or rootaneurysm stated forthissubject. Supracoronaryreplacement furtherrequires preserving the documentedanatomicdistinction."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001634",
+              "label": "Mitral valve prolapse"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0fd5a97a25b0d5d861b5785962c8112638a42a0611e34224a5b18c5ac23cd252",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Mitral valve prolapse:packetexclusionnotexplicitlyestablishedforthissubject.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;entiremainandsupplement"
+              }
+            ],
+            "limitations": [
+              "Unlistedhistoryisnotanegative; enlargedarmspanisnotatallstaturemeasurement; no numericheight/motordevelopmenthistory given. Normaldaughterecho doesnotexcludeabdominalaorticdisease."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000023",
+              "label": "Inguinal hernia"
+            }
+          },
+          "snapshot_sha256": "b6cd8299335c8f0c7f2c311fc106b0d47b167a73926aa6df1237617d3d469177",
+          "assessment": {
+            "status": "supported",
+            "statement": "Fatherbilateralinguinalherniasurgeryat39.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;Figure2whereapplicable"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001166",
+              "label": "Arachnodactyly"
+            }
+          },
+          "snapshot_sha256": "6b8fe17b432c7d38eaa6cf8df1684c4bd7937b0b2e7f166c4c570d19b8311124",
+          "assessment": {
+            "status": "supported",
+            "statement": "Explicitarachnodactylyinbothassignedsubjects.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;Figure2whereapplicable"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            }
+          },
+          "snapshot_sha256": "af9432aa355687ec52f5e2082beacd6942f48279d4c240829f2997d4a6e11d2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Scoliosisinboth,mildinfather.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;Figure2whereapplicable"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001270",
+              "label": "Motor delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daf75a0de3b94ed300f1a23bf5f19a8ef6ea28b30902775a2860918197810c8f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Motor delay:packetexclusionnotexplicitlyestablishedforthissubject.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;entiremainandsupplement"
+              }
+            ],
+            "limitations": [
+              "Unlistedhistoryisnotanegative; enlargedarmspanisnotatallstaturemeasurement; no numericheight/motordevelopmenthistory given. Normaldaughterecho doesnotexcludeabdominalaorticdisease."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "FatherhypertelorisminOnlineTable5andFigure2caption.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;Figure2whereapplicable"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000098",
+              "label": "Tall stature"
+            }
+          },
+          "snapshot_sha256": "052218994916bb94c40848c0d7d7ff563f8f71c011c926b1737224c8156ad91d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Tall stature:packetpositivenotexplicitlyestablishedforthissubject.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;entiremainandsupplement"
+              }
+            ],
+            "limitations": [
+              "Unlistedhistoryisnotanegative; enlargedarmspanisnotatallstaturemeasurement; no numericheight/motordevelopmenthistory given. Normaldaughterecho doesnotexcludeabdominalaorticdisease."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short stature:packetexclusionnotexplicitlyestablishedforthissubject.",
+            "evidence": [
+              {
+                "source_id": "stext",
+                "locator": "OnlineTable5family8columns;entiremainandsupplement"
+              }
+            ],
+            "limitations": [
+              "Unlistedhistoryisnotanegative; enlargedarmspanisnotatallstaturemeasurement; no numericheight/motordevelopmenthistory given. Normaldaughterecho doesnotexcludeabdominalaorticdisease."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Bothassignedcases and allotherclinicaltablecolumns fullyread;sourceblankfields,questionmarksandnoDNAstatusesretained. 43sourcepatientsarenot43fullyphenotypedorgenotypedindependentcarriers.",
+    "ReadmaininfullprimaryXML/extractionwithoriginalJPEGfigures;mainPDFnotheldandnotclaimedread. BothmainXMLtablesrenderedwithoutalteringdataforvisualcolumn/footnotechecks. SupplementDOCXrendered/readallninepages; page9blankexceptheader/footer.",
+    "Fatherhasascendingaorta60mmat42,typeAdissection43,typeB44withTEVAR,andabdominaldissection50. Packetrootaneurysm42andabdominalaneurysm50areunestablishedanatomy/eventmappings. Daughterhasnormalechoat30withskeletalfeatures; cannotinheritfathervascularphenotype.",
+    "Signalingevidenceisqualitativeimagecomparisoninonefamily3patientwithadvancedaorticdisease andonecontrol; notquantifiedcohortandnotLeu401Proassay. TGFB1signalismRNAin-situhybridization,notTGFB1proteinconcentration despitegeneralizedcaptionlanguage. Rednonnuclear signal isexplicitlynonspecificinfigurelegend.",
+    "Detailedmethodsreadassourcestudyevidenceonly;noexperimentproposedorexecuted. HomologymodelbuiltfromTGFB1with60%identity; residueeffectsarepredictions. MainDiscussionp.Arg263Histypo differsfromcorrectp.Asp263HisinResults/figures.",
+    "Family6alsohasSMAD3VUSanditsmaternalinheritance; notattributedtofamily8. CohortsummaryandcrossgenecomparisonTable2arenotcase-specificnegatives. Historicalsurveillancerecommendationsandtherapeuticoutlookwere readas2015authorstatements,notcurrentmedicaladvice."
+  ]
+}

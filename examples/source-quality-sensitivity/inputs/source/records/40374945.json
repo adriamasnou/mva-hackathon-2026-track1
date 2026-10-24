@@ -1,0 +1,3351 @@
+{
+  "schema_version": 1,
+  "pmid": "40374945",
+  "title": "Recessive variants in WSB2 encoding a substrate receptor of E3 ubiquitin ligase underlie a neurodevelopmental syndrome",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T11:19:11.530237+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "70fee7d840106c703104afec6485634855867d17e8df87b14615113653b0a7de",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "40374945",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40374945/main.xml",
+      "sha256": "2f7c4cabc609102552d39d84961e5dac49403579343a221b40adae2879854a9e",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "40374945",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40374945/main.complete.txt",
+      "sha256": "5e4e4a6564f5b11c14178541429159d32b50f2fef0e7957801f0dba40d57d901",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/40374945/availability.json",
+      "sha256": "cc973ca020aeca71b2d9d70d3036bc7ca6ae251407297dc55990be4175b562ee",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "fig-1",
+      "pmid": "40374945",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40374945/cloud/PMC12816127.1/41431_2025_1863_Fig1_HTML.jpg",
+      "sha256": "6627e84f5f51a6471b52723d79ee665e2b6fd95872a9a841677da0b0055e69d0",
+      "kind": "image",
+      "description": "Full originalfigure allpixels inspected"
+    },
+    {
+      "id": "fig-2",
+      "pmid": "40374945",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40374945/cloud/PMC12816127.1/41431_2025_1863_Fig2_HTML.jpg",
+      "sha256": "833cdec7cf879a00341d5c0a75ac0128840136f5b2356808c3164e90f4498aff",
+      "kind": "image",
+      "description": "Full originalfigure allpixels inspected"
+    },
+    {
+      "id": "fig-3",
+      "pmid": "40374945",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40374945/cloud/PMC12816127.1/41431_2025_1863_Fig3_HTML.jpg",
+      "sha256": "eff040a5eb063de9d9e4b87fdf8b5c290f481517df77f71a5421429d4a7dbb2b",
+      "kind": "image",
+      "description": "Full originalfigure allpixels inspected"
+    },
+    {
+      "id": "table-1",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/main-4.png",
+      "sha256": "2fb97d7487e386ceccefbeb18b375ce77debf26cd39d8b60d4a3d8f0d34136c4",
+      "kind": "image",
+      "description": "OriginalPDFpage containing complete main table visually read"
+    },
+    {
+      "id": "table-2",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/main-5.png",
+      "sha256": "3a3b284c79c700c67faacc7a9bfa7bc8c0906bb173d6d4d8d5dadcfc04d30920",
+      "kind": "image",
+      "description": "OriginalPDFpage containing complete main table visually read"
+    },
+    {
+      "id": "supp-docx",
+      "pmid": "40374945",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40374945/cloud/PMC12816127.1/41431_2025_1863_MOESM1_ESM.docx",
+      "sha256": "4e99f038630dac98dc9ed2a446aa74066066709488ed30fe5facaf29f2fee130",
+      "kind": "data",
+      "description": "Original supplementarydocument includingallfigures/tables"
+    },
+    {
+      "id": "supp-text",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/supp-text.txt",
+      "sha256": "3eed6825cab96236ddc46ec188c01269c89abef2ef67d2de5be13b69f3895268",
+      "kind": "text",
+      "description": "Complete DOCXtext andalltablecells read"
+    },
+    {
+      "id": "supp-pdf",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/41431_2025_1863_MOESM1_ESM.pdf",
+      "sha256": "97eaf78d2816cadc4ac21ddcc49837c26b7adf40c6499bcbce884e5a6304bd31",
+      "kind": "pdf",
+      "description": "Canonical rendered supplement22pages"
+    },
+    {
+      "id": "supp-page-1",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-1.png",
+      "sha256": "66d161a614139ec9cbe821a121ff4efd5d16ec2da2b58ad72b147ef318f979b7",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-2",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-2.png",
+      "sha256": "8c505390c40fdfb73a8818367496b5f6045354e36f298c42468ac5adca63af9f",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-3",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-3.png",
+      "sha256": "44a25e49b82ded55bab4f1b984f5f98a47ff274925b132d8f72b769484261356",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-4",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-4.png",
+      "sha256": "2172152d1eeb20dc734c4cb77eb7f0a36d11f257c00c3565561984d1b377dc5e",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-5",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-5.png",
+      "sha256": "ba85f2fa742aa882139568c53efcef303da5d51d2dea1259803448caa48b2b98",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-6",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-6.png",
+      "sha256": "b24696b2e7da3980ff7a44f06e458ba3ddf125a8396c3bcd43abea697bbb1955",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-7",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-7.png",
+      "sha256": "c01508465023891767e60092d59b35ed73fdcc8f732bca243cffa6ef5813c6d5",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-8",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-8.png",
+      "sha256": "1598830ceaaf0e90b52fa3de5b778ea0c55c71a7a61541cb097bdb132ba5e3a0",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-9",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-9.png",
+      "sha256": "c94de33df378b82a47b0c48d5888f4b9392089d7fe1750724b3c7ef0cbd25dd3",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-10",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-10.png",
+      "sha256": "6d02c7adb59893f47f56b7b925d522810fc534850875eb7e17d4e1703d14e3d5",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-11",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-11.png",
+      "sha256": "aa351173314d3388373cfaaa252b58bf0e67a74dc4ab9645c65389d92430875d",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-12",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-12.png",
+      "sha256": "86c1708e1999d202e4006e936eab5524b82c6b9f441482419ab9046aaabafffe",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-13",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-13.png",
+      "sha256": "371f1f0560cd3aecffc31f003a2dd90b2c4486b7aa1902a426e940464afe4bd7",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-14",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-14.png",
+      "sha256": "b12c962148c9bf16f592bf8e405b4fc473e04ed9713717620c088ab860e79839",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-15",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-15.png",
+      "sha256": "71f278ab5e9aa3d6cbcd2da5f8210454ed9ff3be65a4b0fd633558a2df5e70aa",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-16",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-16.png",
+      "sha256": "ca229e9d4ced8f7e9a1b304359efb8ba633c1ab9af39daca18dfc203184d45d6",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-17",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-17.png",
+      "sha256": "255ef0615796584b6d70fd456279277bd4b27459b7809fc22236bdf5674ad4a8",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-18",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-18.png",
+      "sha256": "72c3e61ec60e329ce456c78f14879ef883a1c2ac7160d56c0988bafd0db17889",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-19",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-19.png",
+      "sha256": "7d7dbd0f953c956de57dd81c7dd01fff053757f174fac40249b39fa340889ccc",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-20",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-20.png",
+      "sha256": "5457e70ed21f8e1e3fe01e701ccb96b94e8a11f441f0e70974ac26b69fdea513",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-21",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-21.png",
+      "sha256": "f965b89e649e0efef95d02f994643159507aa651a656c74b9efbde5e3e2c065d",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    },
+    {
+      "id": "supp-page-22",
+      "pmid": "40374945",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40374945/docx/page-22.png",
+      "sha256": "212e1f69b96bae1620859af2ccaece2bd8d5086a5039ea55cc73989573095a33",
+      "kind": "image",
+      "description": "Entire rendered supplementpage visually read"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Recessive variants in WSB2 encoding a substrate receptor of E3 ubiquitin ligase underlie a neurodevelopmental syndrome",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 3,
+      "table": 2,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim. Two XMLsupplementaryanchors link the identical DOCXasset; countone distinct supplement."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 380,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–380"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 380,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–380"
+        }
+      ],
+      "note": "Complete main text including55references and declarations, all3figures/2tables and complete22-pageDOCX supplement (allmethods,6figures,2tables,12references,consortiumlist) read. Mapped cases are Family3siblingsP3/P4."
+    },
+    {
+      "id": "figure:Fig1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig-1",
+      "extent_evidence": [
+        {
+          "source_id": "fig-1",
+          "locator": "allpanels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig-1",
+          "locator": "allpanels,labels,axes anddatapoints"
+        }
+      ],
+      "note": "Human variant mapping/model andP2MRI; mousebodyweight/retina/behavior. Mouseknockout data are not a humanArg374Gln functionaltest."
+    },
+    {
+      "id": "figure:Fig2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig-2",
+      "extent_evidence": [
+        {
+          "source_id": "fig-2",
+          "locator": "allpanels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig-2",
+          "locator": "allpanels,labels,axes anddatapoints"
+        }
+      ],
+      "note": "Human variant mapping/model andP2MRI; mousebodyweight/retina/behavior. Mouseknockout data are not a humanArg374Gln functionaltest."
+    },
+    {
+      "id": "figure:Fig3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig-3",
+      "extent_evidence": [
+        {
+          "source_id": "fig-3",
+          "locator": "allpanels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig-3",
+          "locator": "allpanels,labels,axes anddatapoints"
+        }
+      ],
+      "note": "Human variant mapping/model andP2MRI; mousebodyweight/retina/behavior. Mouseknockout data are not a humanArg374Gln functionaltest."
+    },
+    {
+      "id": "table:Tab1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "table-1",
+      "extent_evidence": [
+        {
+          "source_id": "table-1",
+          "locator": "Table1 allcells"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "Table1 allrowsall5patients andfootnotes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table-1",
+          "locator": "Table1 entiretable"
+        }
+      ],
+      "note": "Columns3and4 map to twoauditedsiblings; other3patients not imported into theirphenotypes."
+    },
+    {
+      "id": "table:Tab2",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "table-2",
+      "extent_evidence": [
+        {
+          "source_id": "table-2",
+          "locator": "Table2 allcells"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "Table2 allrowsall5patients andfootnotes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table-2",
+          "locator": "Table2 entiretable"
+        }
+      ],
+      "note": "Columns3and4 map to twoauditedsiblings; other3patients not imported into theirphenotypes."
+    },
+    {
+      "id": "supplement:MOESM1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 22,
+      "extent_source_id": "supp-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "supp-pdf",
+          "locator": "all22pages"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 22,
+          "mode": "text",
+          "source_id": "supp-text",
+          "locator": "allparagraphs,methods,legends,tables,references andconsortiumlist; imageembeddedtext readvisually"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp-page-1",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "supp-page-2",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "supp-page-3",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "supp-page-4",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "supp-page-5",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "supp-page-6",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "supp-page-7",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "supp-page-8",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "supp-page-9",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "supp-page-10",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "mode": "pixels",
+          "source_id": "supp-page-11",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "supp-page-12",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "mode": "pixels",
+          "source_id": "supp-page-13",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "mode": "pixels",
+          "source_id": "supp-page-14",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "mode": "pixels",
+          "source_id": "supp-page-15",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "mode": "pixels",
+          "source_id": "supp-page-16",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 17,
+          "end": 17,
+          "mode": "pixels",
+          "source_id": "supp-page-17",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 18,
+          "end": 18,
+          "mode": "pixels",
+          "source_id": "supp-page-18",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 19,
+          "end": 19,
+          "mode": "pixels",
+          "source_id": "supp-page-19",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "mode": "pixels",
+          "source_id": "supp-page-20",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 21,
+          "end": 21,
+          "mode": "pixels",
+          "source_id": "supp-page-21",
+          "locator": "wholepageallpanels/tablecells/labels"
+        },
+        {
+          "start": 22,
+          "end": 22,
+          "mode": "pixels",
+          "source_id": "supp-page-22",
+          "locator": "wholepageallpanels/tablecells/labels"
+        }
+      ],
+      "note": "S1pedigree confirmsP3=IV2/P4=IV4; S2knockoutmodel/tissueLacZ;S3metabolism;S4cardiac;S5histology;S6expression. S6captioncallsperiod10–11youngadulthood whereasplotcallsitchildhood; retainlabeldiscrepancy. TableS1 all5patients andTableS2 all6substrates read; no originalcitedsubstratestudies treatedasreadhere."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/WSB2/PMID_40374945_Patient_3.json",
+      "packet_sha256": "b10254aad8b0760ce7af17c3dabe7ec4bf86287959645e50fa55997e0398f74c",
+      "case_id": "TC_4dd7679fe4babc3c",
+      "role": "selected",
+      "packet_subject_id": "Patient 3",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Retainpatient-specifictemporalclinicaldetails; mousephenotypesnotassignedtohumans."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "13-year-old maleP3=IV2 in consanguineous AshkenaziJewishFamily3 matches packet.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table2; supplementaryFigureS1 andclinicalpresentation"
+          },
+          {
+            "source_id": "supp-text",
+            "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous NM_018639.5:c.1121G>A p.Arg374Gln, GRCh38chr12:118034290C>T; allcoding/protein/genomic fields match.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1 columns3/4; Results"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Affected siblings IV2/IV4 homozygous; both parents andunaffectedIV1/IV3 heterozygous; unaffectedIV5 noncarrier.",
+        "evidence": [
+          {
+            "source_id": "supp-page-9",
+            "locator": "FigureS1 pedigree/legend"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Biallelic homozygousvariant inherited from bothheterozygousparents; no compound-heterozygousphase assumption.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "FigureS1 pedigree; Results"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Novel recessiveWSB2 disease association supported byfourfamilies andmouseknockout; thispairhas theonlymissensevariant, modeledbutnotfunctionallytested inhumanvariant-specificassay.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Discussion; Results; Figure1B"
+          }
+        ],
+        "limitations": [
+          "Authors explicitly requestfutureinvitro andhumanvariantmousemodels; predictedinteraction disruption is not measuredE3ligase dysfunction.",
+          "Mousephenotyping useduncorrected p<.05 acrossmultipletests; knockoutoverlap doesnotprovepatientvariantcausality.",
+          "PacketPATHOGENIC/SOLVED/CAUSATIVE is a sourcelabel, not independently establishedclinicaltruth."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "Alllistedfeatures compared with patientnarrative andtables; severalexplicitexclusions are not independently documented negatives.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS1; clinicalpresentation P3"
+          }
+        ],
+        "limitations": [
+          "Omissionfrom dysmorphicfeaturelist doesnotestablishexclusion.",
+          "Possibleheterotopia mustretain uncertainty."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1121GtoA_WSB2_NM_018639v5",
+            "geneContext": {
+              "valueId": "HGNC:19222",
+              "symbol": "WSB2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_018639.5:c.1121G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000012.12:g.118034290C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_061109.1:p.(Arg374Gln)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr12",
+              "pos": 118034290,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "270431b1998b91df6276acc315d96498a352beb6ab35477ba00f83ee106d8a6d",
+          "assessment": {
+            "status": "supported",
+            "statement": "NM_018639.5:c.1121G>A /NP_061109.1:p.Arg374Gln /hg38chr12:118034290C>T homozygous matches primaryTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 P3/P4"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000081",
+              "label": "Duplicated collecting system"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c2680aa2120e614dcfaa5da3dd10e5430a5d50cc48b8f4ec1160a90f613936e5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 congenitalanomaliesrownegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Noindividualrenalultrasound/echocardiographic negativeprovided."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            }
+          },
+          "snapshot_sha256": "7464dd531646fde4b613619c2d8d042119320ad998e758c0b3296f9a1376e8e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "High-arched palate explicitlylisted.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000341",
+              "label": "Narrow forehead"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "519a4b73e060bc5cab8837d8801ced17116daca10fac8c88776d8cbbd43f8b39",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofNarrow forehead foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000294",
+              "label": "Low anterior hairline"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8af816b8704a744ac4cc009db8c3fe2e5d8c9e9e1ef94ff8aafdb8f2e79f625f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofLow anterior hairline foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000276",
+              "label": "Long face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f86a163e69de2c34bbc0ab608b5c76cff3bc82a4ccd6b0f6c902ea4a1c9fee58",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofLong face foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "supported",
+            "statement": "MainResults explicitlystates bothmissensesiblings had nomicrocephaly.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results genotype-phenotypedescription; Table2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000278",
+              "label": "Retrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "66dda0282a422dd164068df1af84aa261c849aca4e56fdc28993d0323e42e4c2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofRetrognathia foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be809d419558367f5a8d26c6e7b96d9d348e8895370525fa5dc014af31b8cced",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofMicrognathia foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006610",
+              "label": "Wide intermamillary distance"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3d37c8f05b6b8a5c5034f8fa229e1a658c84bd053a2a26332490ae3279aeb6af",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofWide intermamillary distance foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000615",
+              "label": "Abnormal pupil morphology"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ee76e03a73cdf5eb2052f7ae7069f4569456f084a9f4d1c685908b531e4c22f3",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofAbnormal pupil morphology foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000609",
+              "label": "Optic nerve hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a10483093be88daf3f9a3d03f23b261e1480c04b7ed4b99a96d1289b2c7c3a35",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofOptic nerve hypoplasia foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Mildhypertelorism explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000490",
+              "label": "Deeply set eye"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c455e07ca56f5d1ba66e43e3f6fc8761828fa9ac79e7c7596733a76d4d0a8cdf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofDeeply set eye foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000520",
+              "label": "Proptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9feb22c8efcd0463405cc92eb0dbf9d544aa42646a465208d3d47157c3e89270",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofProptosis foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000565",
+              "label": "Esotropia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "74279909da82999087739e9fd93effd65e4e6c97e35d1076199b806f7165541e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofEsotropia foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100704",
+              "label": "Cerebral visual impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2f002835a50971c71ef0b51e8543cafbe2c7dd9b815fe6ad8eaf3b06f8b14771",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofCerebral visual impairment foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007970",
+              "label": "Congenital ptosis"
+            }
+          },
+          "snapshot_sha256": "069413b5f816c0a574737a4134456c7ff3a59f0f4fdee411689f530f370b180f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Congenitalptosis explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000540",
+              "label": "Hypermetropia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "01d24e38ecbb395b2f9cea29bb0dcbab733b451b278366f22c53a9ba7d4e4311",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofHypermetropia foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001562",
+              "label": "Oligohydramnios"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6f4df962176c2eaa3929d8352660545fd6f257eed92c4e2f8f6aad5add7f54f6",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Pregnancy describeduneventful.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Amnioticfluidmeasurements notprovided."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000400",
+              "label": "Macrotia"
+            }
+          },
+          "snapshot_sha256": "d85c4967e765efa04b0c2ec83a000e604a515ad2bd0e6fc01697dafab79b5969",
+          "assessment": {
+            "status": "supported",
+            "statement": "Largeears explicitlylisted.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020206",
+              "label": "Simple ear"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "903a15144764cd252ac9058784548bccce2e8c53e02bc4d03bc1a2742d34c141",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofSimple ear foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002015",
+              "label": "Dysphagia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9872aa4d6680cd1b125714bc67d5ae10ca0030378dc41c8ff1e62659ec4fdf8f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 dysmotilityrownegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Broad dysmotilitynegative translatedtospecificDysphagia exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002019",
+              "label": "Constipation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "32c743816de94ceb709f5d808e277998caff2f2c2ae4ccb6715547c487fdb28e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 dysmotilityrownegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Broad dysmotilitynegative translatedtospecificConstipation exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001508",
+              "label": "Failure to thrive"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c98922b65593d23c85a231142a31fa7bb5b1c7afbae03fc9b7b6fedeeb80a4d6",
+          "assessment": {
+            "status": "supported",
+            "statement": "TableS1 failuretothriverow explicitlynegative forbothsiblings.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001518",
+              "label": "Small for gestational age"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e79c13790bc8d480693746366525308673048c35473da9a271e74fbcaeeffb26",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Birthweight percentile23.6(P3)/21.4(P4) supportsnon-SGAweight.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table2 birthmeasurements"
+              }
+            ],
+            "limitations": [
+              "Birthlengthunavailable; broadSGAexclusion isnot explicitlystated."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "253267a47ab1d0b57c991235377b32dc3cd8d0352aad3c4433b3eebadfd3dcf4",
+          "assessment": {
+            "status": "supported",
+            "statement": "MainResults explicitlystates bothmissensesiblings had noIUGR.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results genotype-phenotypedescription; Table2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "GDD reported inTable2 anddevelopmentalnarrative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002194",
+              "label": "Delayed gross motor development"
+            }
+          },
+          "snapshot_sha256": "155cf26d5f7c71324d35cf4c466ccec4fde6a8fc358547828e945d4c740985c5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Walking24months andgrossmotordelay explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010862",
+              "label": "Delayed fine motor development"
+            }
+          },
+          "snapshot_sha256": "4cef78a7b7015d4b9e21fcc8badfe239b9335031322b02b7c8753ca623ee0b5c",
+          "assessment": {
+            "status": "supported",
+            "statement": "TableS1 fine-motordelay positive.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Speechdelay explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002342",
+              "label": "Moderate intellectual disability"
+            }
+          },
+          "snapshot_sha256": "d6fd0472f648702c0d5a5b4fc88a5297653a81953fab5c3b4a2a5e251aa06aaf",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IQ46 documented; moderate category is a conventionalseveritytranslation.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Paper givesIQ46 ratherthanexplicitmoderate label."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            }
+          },
+          "snapshot_sha256": "48676c3701994966952c6afa26b3d2a47be69e0754311248381fa7cc3631da7a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Seizuresstarted10years andrespondedtotreatment.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001288",
+              "label": "Gait disturbance"
+            }
+          },
+          "snapshot_sha256": "8fb7a84e18814f9b114a4be736e63bc646551b005cb7476e1c09dfc4b82bf805",
+          "assessment": {
+            "status": "supported",
+            "statement": "Abnormalgait explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002072",
+              "label": "Chorea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c31a6b0509832d19daf6de5c22ec1a8a91c7fe609bc6e002b9897895e35f2d6a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofChorea foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000717",
+              "label": "Autism"
+            }
+          },
+          "snapshot_sha256": "f61c0a43e41d6690ac8ba1c0870a5637901638b36f23fc742b8c96195bdab962",
+          "assessment": {
+            "status": "supported",
+            "statement": "Autismspectrumdisorder explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000817",
+              "label": "Reduced eye contact"
+            }
+          },
+          "snapshot_sha256": "b20a06c72916ba130b4e6b328615ee96438d3ea1ec851ebab4438ca08438d201",
+          "assessment": {
+            "status": "supported",
+            "statement": "Poor eyecontact explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009879",
+              "label": "Simplified gyral pattern"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "349339678a2646ba665f34e4430958abd6cd0599b8edbb0ab7b01dc0885e4ddd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at6.5years; later11-yearMRIhasvermishypoplasia/possibleheterotopia.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002282",
+              "label": "Gray matter heterotopia"
+            }
+          },
+          "snapshot_sha256": "fa3c03ce5fa56b32db873164387e36988ab26cd570fd2487bddf21ab55b69ebe",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Source says possibleleftfrontalheterotopia, notdefinitefinding.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "TentativeMRI interpretation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0040326",
+              "label": "Hypoplasia of the olfactory bulb"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d5fca1bb848c62234a7af0ba3814b4ebe64d1a4c1a7cc9acd0e552b971e88317",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at6.5years; later11-yearMRIhasvermishypoplasia/possibleheterotopia.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/39",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001320",
+              "label": "Cerebellar vermis hypoplasia"
+            }
+          },
+          "snapshot_sha256": "d98e636d78a09a3284ba2e36859910175aeb6779dc0395b055caa2ef24bc5bb8",
+          "assessment": {
+            "status": "supported",
+            "statement": "MRI at11years showed vermishypoplasia.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/40",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003429",
+              "label": "CNS hypomyelination"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d96b4ba9e8ce073484d1afdeab457c3ceb3d3d3603676715a689915ccdf3c2c3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at6.5years; later11-yearMRIhasvermishypoplasia/possibleheterotopia.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/41",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033725",
+              "label": "Thin corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a84720fe09b95c7d82796d48f194353d3a7ade65180bd232b63736436eb1d046",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at6.5years; later11-yearMRIhasvermishypoplasia/possibleheterotopia.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/42",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025517",
+              "label": "Hypoplastic hippocampus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c48594e81d73514283a5da02cc94f99f44ac2faa872b14239a6860c9e7085ce7",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at6.5years; later11-yearMRIhasvermishypoplasia/possibleheterotopia.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/43",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001272",
+              "label": "Cerebellar atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "dfbb9a782193b4e392087f1fa0fe0986c9afa54adb28fb6326ac7daeec88a630",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at6.5years; later11-yearMRIhasvermishypoplasia/possibleheterotopia.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/44",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001629",
+              "label": "Ventricular septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d19f83639125fcf466505f3b2812b7ce76ac91f1b42acb57e91cae123b3910e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 congenitalanomaliesrownegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Noindividualrenalultrasound/echocardiographic negativeprovided."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/45",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001761",
+              "label": "Pes cavus"
+            }
+          },
+          "snapshot_sha256": "a1cbc4068ebf8e354240a68a698926d0b8767d748384d5612c1a17fd1cd650eb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Higharchedfeet withmetatarsaldeformity/valgus explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/46",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001845",
+              "label": "Overlapping toe"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "530860e8104186d0f5f9ae8db7e2173827a8d0a98c7e9fd91d6fbaee558d5dad",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofOverlapping toe foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/47",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001883",
+              "label": "Talipes"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5131a34c10cf980224a8de13ba72021451952a4dfaddac979cf1a048863e91b5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofTalipes foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/48",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004209",
+              "label": "Clinodactyly of the 5th finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5f1bd4668fec817d68730fc2af210eb8407c5bc21a9de9806444d6757420600b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofClinodactyly of the 5th finger foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/49",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100490",
+              "label": "Camptodactyly of finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ef4b47be163dadcebaaa08f007821a1e2eb28d9d2b407c9ef49e7bcce2788885",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofCamptodactyly of finger foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/50",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003445",
+              "label": "EMG: neuropathic changes"
+            }
+          },
+          "snapshot_sha256": "d87b4d3a31cebf0791faa9a2bcb434c517df899a4fa61814e71828eba8ddaacf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Age8EMG chronicdiffuseneurogenicchanges withnormalnerveconduction.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/51",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003593",
+                "label": "Infantile onset"
+              }
+            }
+          },
+          "snapshot_sha256": "6421abb34a08deb9ff065f92335feacd04299cdf7898eeb3712a77323521b7fd",
+          "assessment": {
+            "status": "supported",
+            "statement": "Infantilehypotonia explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/52",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001382",
+              "label": "Joint hypermobility"
+            }
+          },
+          "snapshot_sha256": "6212f74029c9ba7cd995c7bf712370446d8eda7b0efa8ecc7a4f16450eefda14",
+          "assessment": {
+            "status": "supported",
+            "statement": "Jointlaxity/hypermobility explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P3; TableS1 column3"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/WSB2/PMID_40374945_Patient_4.json",
+      "packet_sha256": "6691fda545d39b18580c11798df2164ccff67f8faf3f9843f33b071a8d60f5dd",
+      "case_id": "TC_4dd7679fe4babc3c",
+      "role": "alternate",
+      "packet_subject_id": "Patient 4",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Retainpatient-specifictemporalclinicaldetails; mousephenotypesnotassignedtohumans."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "9-year-old femaleP4=IV4 in consanguineous AshkenaziJewishFamily3 matches packet.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table2; supplementaryFigureS1 andclinicalpresentation"
+          },
+          {
+            "source_id": "supp-text",
+            "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous NM_018639.5:c.1121G>A p.Arg374Gln, GRCh38chr12:118034290C>T; allcoding/protein/genomic fields match.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1 columns3/4; Results"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Affected siblings IV2/IV4 homozygous; both parents andunaffectedIV1/IV3 heterozygous; unaffectedIV5 noncarrier.",
+        "evidence": [
+          {
+            "source_id": "supp-page-9",
+            "locator": "FigureS1 pedigree/legend"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Biallelic homozygousvariant inherited from bothheterozygousparents; no compound-heterozygousphase assumption.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "FigureS1 pedigree; Results"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Novel recessiveWSB2 disease association supported byfourfamilies andmouseknockout; thispairhas theonlymissensevariant, modeledbutnotfunctionallytested inhumanvariant-specificassay.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Discussion; Results; Figure1B"
+          }
+        ],
+        "limitations": [
+          "Authors explicitly requestfutureinvitro andhumanvariantmousemodels; predictedinteraction disruption is not measuredE3ligase dysfunction.",
+          "Mousephenotyping useduncorrected p<.05 acrossmultipletests; knockoutoverlap doesnotprovepatientvariantcausality.",
+          "PacketPATHOGENIC/SOLVED/CAUSATIVE is a sourcelabel, not independently establishedclinicaltruth."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "Alllistedfeatures compared with patientnarrative andtables; severalexplicitexclusions are not independently documented negatives.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS1; clinicalpresentation P4"
+          }
+        ],
+        "limitations": [
+          "Omissionfrom dysmorphicfeaturelist doesnotestablishexclusion.",
+          "NormalMRI/visionexams arebroad findings, not individualtestresultsforeachencodednegative."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1121GtoA_WSB2_NM_018639v5",
+            "geneContext": {
+              "valueId": "HGNC:19222",
+              "symbol": "WSB2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_018639.5:c.1121G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000012.12:g.118034290C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_061109.1:p.(Arg374Gln)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr12",
+              "pos": 118034290,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "270431b1998b91df6276acc315d96498a352beb6ab35477ba00f83ee106d8a6d",
+          "assessment": {
+            "status": "supported",
+            "statement": "NM_018639.5:c.1121G>A /NP_061109.1:p.Arg374Gln /hg38chr12:118034290C>T homozygous matches primaryTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 P3/P4"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000081",
+              "label": "Duplicated collecting system"
+            }
+          },
+          "snapshot_sha256": "3034555dd5f545dede60104b298307d93b13a26614d9fdb20bfd40ea9f9b518f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Renalultrasound doublecollectingduct explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            }
+          },
+          "snapshot_sha256": "7464dd531646fde4b613619c2d8d042119320ad998e758c0b3296f9a1376e8e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "High-arched palate explicitlylisted.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000341",
+              "label": "Narrow forehead"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "519a4b73e060bc5cab8837d8801ced17116daca10fac8c88776d8cbbd43f8b39",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofNarrow forehead foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000294",
+              "label": "Low anterior hairline"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8af816b8704a744ac4cc009db8c3fe2e5d8c9e9e1ef94ff8aafdb8f2e79f625f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofLow anterior hairline foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000276",
+              "label": "Long face"
+            }
+          },
+          "snapshot_sha256": "3a0b9394f92d065f914def4df47d9a57b3c564b6db1e89a821a7dc40bd9e69c4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Elongatedface explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "supported",
+            "statement": "MainResults explicitlystates bothmissensesiblings had nomicrocephaly.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results genotype-phenotypedescription; Table2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000278",
+              "label": "Retrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "66dda0282a422dd164068df1af84aa261c849aca4e56fdc28993d0323e42e4c2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofRetrognathia foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be809d419558367f5a8d26c6e7b96d9d348e8895370525fa5dc014af31b8cced",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofMicrognathia foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006610",
+              "label": "Wide intermamillary distance"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3d37c8f05b6b8a5c5034f8fa229e1a658c84bd053a2a26332490ae3279aeb6af",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofWide intermamillary distance foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000615",
+              "label": "Abnormal pupil morphology"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ee76e03a73cdf5eb2052f7ae7069f4569456f084a9f4d1c685908b531e4c22f3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Visionexaminationreportednormal andTableS1 eyeabnormalitiesnegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Specific encodedeyephenotype not individuallydocumented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000609",
+              "label": "Optic nerve hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a10483093be88daf3f9a3d03f23b261e1480c04b7ed4b99a96d1289b2c7c3a35",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Visionexaminationreportednormal andTableS1 eyeabnormalitiesnegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Specific encodedeyephenotype not individuallydocumented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c75e654012c14dea90453d61fde221f4dca1c2729c3ea61db1e002c4f5fd16eb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofHypertelorism foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000490",
+              "label": "Deeply set eye"
+            }
+          },
+          "snapshot_sha256": "d74352778d40587aec0d91b32f074890d0006fe5b099e79539cb28fe90793e0c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Deepseteyes explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000520",
+              "label": "Proptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9feb22c8efcd0463405cc92eb0dbf9d544aa42646a465208d3d47157c3e89270",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofProptosis foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000565",
+              "label": "Esotropia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "74279909da82999087739e9fd93effd65e4e6c97e35d1076199b806f7165541e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Visionexaminationreportednormal andTableS1 eyeabnormalitiesnegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Specific encodedeyephenotype not individuallydocumented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100704",
+              "label": "Cerebral visual impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2f002835a50971c71ef0b51e8543cafbe2c7dd9b815fe6ad8eaf3b06f8b14771",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Visionexaminationreportednormal andTableS1 eyeabnormalitiesnegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Specific encodedeyephenotype not individuallydocumented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e033332deff34bfb43d8333aa3e2b1ba4e4dbf229f9098646b172fe5a88ca401",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofPtosis foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000540",
+              "label": "Hypermetropia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "01d24e38ecbb395b2f9cea29bb0dcbab733b451b278366f22c53a9ba7d4e4311",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Visionexaminationreportednormal andTableS1 eyeabnormalitiesnegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Specific encodedeyephenotype not individuallydocumented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001562",
+              "label": "Oligohydramnios"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6f4df962176c2eaa3929d8352660545fd6f257eed92c4e2f8f6aad5add7f54f6",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofOligohydramnios foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000400",
+              "label": "Macrotia"
+            }
+          },
+          "snapshot_sha256": "d85c4967e765efa04b0c2ec83a000e604a515ad2bd0e6fc01697dafab79b5969",
+          "assessment": {
+            "status": "supported",
+            "statement": "Largeears explicitlylisted.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020206",
+              "label": "Simple ear"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "903a15144764cd252ac9058784548bccce2e8c53e02bc4d03bc1a2742d34c141",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofSimple ear foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002015",
+              "label": "Dysphagia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9872aa4d6680cd1b125714bc67d5ae10ca0030378dc41c8ff1e62659ec4fdf8f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 dysmotilityrownegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Broad dysmotilitynegative translatedtospecificDysphagia exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002019",
+              "label": "Constipation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "32c743816de94ceb709f5d808e277998caff2f2c2ae4ccb6715547c487fdb28e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 dysmotilityrownegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Broad dysmotilitynegative translatedtospecificConstipation exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001508",
+              "label": "Failure to thrive"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c98922b65593d23c85a231142a31fa7bb5b1c7afbae03fc9b7b6fedeeb80a4d6",
+          "assessment": {
+            "status": "supported",
+            "statement": "TableS1 failuretothriverow explicitlynegative forbothsiblings.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001518",
+              "label": "Small for gestational age"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e79c13790bc8d480693746366525308673048c35473da9a271e74fbcaeeffb26",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Birthweight percentile23.6(P3)/21.4(P4) supportsnon-SGAweight.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table2 birthmeasurements"
+              }
+            ],
+            "limitations": [
+              "Birthlengthunavailable; broadSGAexclusion isnot explicitlystated."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "253267a47ab1d0b57c991235377b32dc3cd8d0352aad3c4433b3eebadfd3dcf4",
+          "assessment": {
+            "status": "supported",
+            "statement": "MainResults explicitlystates bothmissensesiblings had noIUGR.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results genotype-phenotypedescription; Table2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "GDD reported inTable2 anddevelopmentalnarrative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002194",
+              "label": "Delayed gross motor development"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7f5162653d55105c908187fd55eee6a61fe7b6d3ba9b4610da4a99627dcd2610",
+          "assessment": {
+            "status": "supported",
+            "statement": "TableS1 explicitlynegative,walking16months.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010862",
+              "label": "Delayed fine motor development"
+            }
+          },
+          "snapshot_sha256": "4cef78a7b7015d4b9e21fcc8badfe239b9335031322b02b7c8753ca623ee0b5c",
+          "assessment": {
+            "status": "supported",
+            "statement": "TableS1 fine-motordelay positive.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Speechdelay explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            }
+          },
+          "snapshot_sha256": "c444dd47b030fe9f7b2523d299496431fe54f2ce557f990c454810b00764e589",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table2 listsGDD/ID butsupplement saysnoformalIQevaluation.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Table2 P4; Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Severity and formalIDdiagnosticassessment notdocumented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Narrative andTable2 explicitlydenyseizures.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001348",
+              "label": "Brisk reflexes"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1b7115954305e5ade2c2b3db9a012c242d8c58c46294c088627f55bdd2557443",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofBrisk reflexes foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002072",
+              "label": "Chorea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c31a6b0509832d19daf6de5c22ec1a8a91c7fe609bc6e002b9897895e35f2d6a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofChorea foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007018",
+              "label": "Attention deficit hyperactivity disorder"
+            }
+          },
+          "snapshot_sha256": "c552a77fbe6b6c556de28d977a1e60f571d5859985dd4611f6932fa80c9f96ef",
+          "assessment": {
+            "status": "supported",
+            "statement": "ADHD explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000717",
+              "label": "Autism"
+            }
+          },
+          "snapshot_sha256": "f61c0a43e41d6690ac8ba1c0870a5637901638b36f23fc742b8c96195bdab962",
+          "assessment": {
+            "status": "supported",
+            "statement": "Autismspectrumdisorder explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009879",
+              "label": "Simplified gyral pattern"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "349339678a2646ba665f34e4430958abd6cd0599b8edbb0ab7b01dc0885e4ddd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at3years.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0040326",
+              "label": "Hypoplasia of the olfactory bulb"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d5fca1bb848c62234a7af0ba3814b4ebe64d1a4c1a7cc9acd0e552b971e88317",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at3years.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001321",
+              "label": "Cerebellar hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e02a63045a6df38e5319b4598f9b905ee6b5f9e72b7faf495d1d080f45880f30",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at3years.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/39",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003429",
+              "label": "CNS hypomyelination"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d96b4ba9e8ce073484d1afdeab457c3ceb3d3d3603676715a689915ccdf3c2c3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at3years.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/40",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033725",
+              "label": "Thin corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a84720fe09b95c7d82796d48f194353d3a7ade65180bd232b63736436eb1d046",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at3years.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/41",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025517",
+              "label": "Hypoplastic hippocampus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c48594e81d73514283a5da02cc94f99f44ac2faa872b14239a6860c9e7085ce7",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at3years.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/42",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001272",
+              "label": "Cerebellar atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "dfbb9a782193b4e392087f1fa0fe0986c9afa54adb28fb6326ac7daeec88a630",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BroadnormalMRI reported at3years.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "No specificnegativereadout foreachencoded structure; normalearlyMRI doesnotestablishlifetimeabsence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/43",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001629",
+              "label": "Ventricular septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d19f83639125fcf466505f3b2812b7ce76ac91f1b42acb57e91cae123b3910e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofVentricular septal defect foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/44",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001761",
+              "label": "Pes cavus"
+            }
+          },
+          "snapshot_sha256": "a1cbc4068ebf8e354240a68a698926d0b8767d748384d5612c1a17fd1cd650eb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Higharchedfeet withmetatarsaldeformity/valgus explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/45",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001845",
+              "label": "Overlapping toe"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "530860e8104186d0f5f9ae8db7e2173827a8d0a98c7e9fd91d6fbaee558d5dad",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofOverlapping toe foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/46",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001883",
+              "label": "Talipes"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5131a34c10cf980224a8de13ba72021451952a4dfaddac979cf1a048863e91b5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofTalipes foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/47",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004209",
+              "label": "Clinodactyly of the 5th finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5f1bd4668fec817d68730fc2af210eb8407c5bc21a9de9806444d6757420600b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofClinodactyly of the 5th finger foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/48",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100490",
+              "label": "Camptodactyly of finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ef4b47be163dadcebaaa08f007821a1e2eb28d9d2b407c9ef49e7bcce2788885",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicitpatient-specific exclusion ofCamptodactyly of finger foundinnarrative/TableS1; absencefromlist isnot anegativetest.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": [
+              "Feature mayhavebeennotassessedorunreported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/49",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001382",
+              "label": "Joint hypermobility"
+            }
+          },
+          "snapshot_sha256": "6212f74029c9ba7cd995c7bf712370446d8eda7b0efa8ecc7a4f16450eefda14",
+          "assessment": {
+            "status": "supported",
+            "statement": "Jointlaxity/hypermobility explicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Supplementclinicalpresentation P4; TableS1 column4"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading.",
+    "Sourceaudit fullyread; specificnegativephenotypes remainunresolved andhumanmissensefunctionalvalidation remainsabsent."
+  ]
+}

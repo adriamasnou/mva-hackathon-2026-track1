@@ -1,0 +1,191 @@
+{
+  "pmid": "36659944",
+  "source_titles": [
+    "Identifying a novel frameshift pathogenic variant in a Chinese family with neurofibromatosis type 1 and review of literature"
+  ],
+  "selected_case_ids": [
+    "TC_9ef5ef1b0d2ca185"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "NF1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/NF1/PMID_36659944_Patient.json",
+      "sha256": "5ee2f6ff425fce9550d8643299936ab926c1b720f1bfb9910588663de130f412",
+      "case_id": "TC_9ef5ef1b0d2ca185",
+      "selected_record": true,
+      "subject": {
+        "id": "Patient",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P13Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:162200",
+            "label": "Neurofibromatosis, type 1"
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0009732",
+            "label": "Plexiform neurofibroma"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000997",
+            "label": "Axillary freckling"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0030052",
+            "label": "Inguinal freckling"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007565",
+            "label": "Multiple cafe-au-lait spots"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0009737",
+            "label": "Lisch nodules"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000767",
+            "label": "Pectus excavatum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002808",
+            "label": "Kyphosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002865",
+            "label": "Medullary thyroid carcinoma"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003002",
+            "label": "Breast carcinoma"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012032",
+            "label": "Lipoma"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003003",
+            "label": "Colon cancer"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0009733",
+            "label": "Glioma"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0006743",
+            "label": "Embryonal rhabdomyosarcoma"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "MMMysAoeZnb2hSb4XzanQbPA",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:162200",
+              "label": "Neurofibromatosis, type 1"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Patient",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c4552dup_NF1_NM_001042492v3",
+                    "geneContext": {
+                      "valueId": "HGNC:7765",
+                      "symbol": "NF1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001042492.3:c.4552dup"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000017.11:g.31260490dup"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001035957.1:p.(Ile1518AsnfsTer12)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr17",
+                      "pos": 31260486,
+                      "ref": "G",
+                      "alt": "GA"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

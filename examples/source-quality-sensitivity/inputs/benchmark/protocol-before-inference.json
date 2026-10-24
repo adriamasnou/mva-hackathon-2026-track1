@@ -1,0 +1,72 @@
+{
+  "state": "FROZEN_BEFORE_INFERENCE",
+  "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+  "temporal_evaluator_sha256": "198d3b74454e242fd532ee742ddc14feac6b40e614c71152fe71382f394b0c06",
+  "reused_evaluation_sha256": {
+    "evaluate.py": "d1bc310f45e7c08f7a107cf174ec26fae83286eaf0a6d9e61edceec264269de3",
+    "export_results.py": "fb51f7ecf53d7cce5ddef9047e43afb7da15b07be97eb6844eacc81fcffe5370"
+  },
+  "seed": "mva-temporal-compact-v1-20261024",
+  "arms": [
+    "original",
+    "none"
+  ],
+  "cohort": "Our exact-coordinate reconstruction: 713 temporal signatures, not author-exact 719. Every source label remains unadjudicated against its primary clinical paper.",
+  "denominators_per_arm": {
+    "all": {
+      "cases": 713,
+      "genes": 261
+    },
+    "primary_autosomal": {
+      "cases": 681,
+      "genes": 245
+    },
+    "technical_X": {
+      "cases": 32,
+      "genes": 16
+    },
+    "matching_fallback": {
+      "cases": 18,
+      "genes": 13,
+      "autosomal_cases": 11,
+      "X_cases": 7
+    },
+    "no_matching_fallback": {
+      "cases": 695
+    },
+    "two_allele": {
+      "cases": 64
+    }
+  },
+  "preparation_failures_per_arm": 4,
+  "planned_jobs": 1418,
+  "intended_case_arm_denominator": 1426,
+  "primary_endpoint": "Autosomal all-source-alleles-PASSED and source-gene top1 with conservative worst tie rank, denominator 681. Also equal-weight gene-macro top1 over 245 autosomal genes.",
+  "secondary_endpoints": [
+    "top5 and top10; top10 may be trivial in compact surviving universes",
+    "MRR using worst tied rank; every preparation/missing/invalid/filtered-source failure contributes zero",
+    "same endpoints for all713, technical X32, matching fallback18, no-fallback695 and pairs64",
+    "gene-only ranking reported separately, never replacing full-source-allele primary endpoint",
+    "case and gene-macro original-minus-none deltas; same denominator and same candidate VCF for both arms",
+    "all source alleles contributing to gene score recorded separately; no assertion of phase, trans configuration or joint causal validity",
+    "Stricter joint-best-mode recovery: primary full-source-allele recovery AND every source allele contributes within at least one individual best-scoring inheritance mode. Report every-best-mode separately; never union across different modes. Missing mode evidence stays unknown and cannot produce a strict success."
+  ],
+  "gene_macro": "Within each fixed stratum and arm, average each endpoint over all retained signatures of each source gene, then take the unweighted mean across every source gene including genes with only failed cases.",
+  "universe": "Per case retain 10 input hypotheses and 10 intended distinct gene labels, 10 or20 VCF alleles, total emitted gene count, genes with >=1PASSED variant, source-allele exact matches/filter/contribution status and each output gene score. Mapping can expand or shrink the scored gene universe.",
+  "failures": "All713 stay in ledger. Four female/hemizygous ambiguities remain preparation failures in overall/X strata; no synthetic clinical correction. Missing jobs/outputs and failed causal alleles remain endpoint failures. Terminal failed batch can retain hash-verified completed outputs; every missing case remains failure. A hash-verified empty gene output has zero emitted/filtered universe and nonrecovery; it does not establish why no gene was emitted.",
+  "X_limit": "All32 X cases technical-only; pseudoautosomal ploidy not adjudicated. Four ambiguous female hemizygous cases have no executable job.",
+  "decoy_genotype_limit": "Decoy genotype is an artificial source-state-matched construction. Pairs are synthetic unphased0/1+0/1. Benign allele labels do not validate the combined genotype or haplotype.",
+  "knowledge_limit": "2512 genotype/phenotype databases and current known gene/disease links remain. No temporal knowledge holdout, clinical accuracy, therapeutic benefit or direct comparison to author models.",
+  "review_required_before_execution": [],
+  "readiness_receipts": {
+    "draft-01/preparation-audit.json": "f14eeb2f324fbf1b20ffbd3ac1522791695554f808d826b3e9a48aa64944f652",
+    "draft-01/verification.json": "67288c5792429aaeecf5d55f58bbb1a182667cb2c9f40e1fc70cff28a245886e",
+    "reference-check/reference-check.json": "d861312bbc2ee0ec79635b10028fac167357ee0518293cd4cd9303650733ee3f",
+    "replay-verification.json": "86f9a760fe15402a27ec926de6f3c39566ddf866f5a222df3f62df8e8597c132"
+  },
+  "joint_mode_helper_sha256": "68d59df66a44ef20d6c8e7e3f24e12977d34978b0f996577a37692032c9ee64e",
+  "parent_integration": "Before inference: one canonical adapter plus an 80-line exact joint-mode helper; nine preparation/adapter tests and four helper tests pass. No compact outcomes exist.",
+  "frozen_utc": "2026-10-24T00:36:48.171586+00:00",
+  "parent_review": "Source/genotype/decoy rules, all fixed denominators, limitations and endpoints reviewed before execution; no compact outcomes seen.",
+  "source_draft_protocol_sha256": "f21acb0861ae0ae141d0710b267d1fa1cbac58d2c7340e9dd38472bf9445c15b"
+}

@@ -1,0 +1,156 @@
+{
+  "pmid": "38441205",
+  "source_titles": [
+    "A large single-center cohort of bare lymphocyte syndrome: Immunological and genetic features in Turkey"
+  ],
+  "selected_case_ids": [
+    "TC_5e50b10fcfd07e1d"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "RFX5"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/RFX5/PMID_38441205_P4.json",
+      "sha256": "2102d20a43c5006c4077ddc777fa724a92e8baa18681b1ee5890519ea72c81d2",
+      "case_id": "TC_5e50b10fcfd07e1d",
+      "selected_record": true,
+      "subject": {
+        "id": "P4",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y10M"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620816",
+            "label": "MHC class II deficiency 3"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P3M"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002754",
+            "label": "Osteomyelitis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003095",
+            "label": "Septic arthritis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0009098",
+            "label": "Chronic oral candidiasis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002110",
+            "label": "Bronchiectasis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0006532",
+            "label": "Recurrent pneumonia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004385",
+            "label": "Protracted diarrhea"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0100806",
+            "label": "Sepsis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0031390",
+            "label": "Reduced MHC II cell surface expression"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "9Ur7aEXdTXZrDNmd6sr0zOJ9",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620816",
+              "label": "MHC class II deficiency 3"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "P4",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1239_1240del_RFX5_NM_001025603v2",
+                    "geneContext": {
+                      "valueId": "HGNC:9986",
+                      "symbol": "RFX5"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001025603.2:c.1239_1240del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.151342800_151342801del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001020774.1:p.(Asn414GlnfsTer8)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 151342796,
+                      "ref": "TTC",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

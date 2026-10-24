@@ -1,0 +1,182 @@
+{
+  "pmid": "29484404",
+  "source_titles": [
+    "Novel compound heterozygous SPTA1 mutations in a patient with hereditary elliptocytosis"
+  ],
+  "selected_case_ids": [
+    "TC_f5c68e1b716da5a8"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "SPTA1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SPTA1/PMID_29484404_proband.json",
+      "sha256": "55846e78d15297826b26e0133f82a7cd5a9e1a71c52710818264ca2dc409c065",
+      "case_id": "TC_f5c68e1b716da5a8",
+      "selected_record": true,
+      "subject": {
+        "id": "proband",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P3Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:130600",
+            "label": "Elliptocytosis-2"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003623",
+              "label": "Neonatal onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0004445",
+            "label": "Elliptocytosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000952",
+            "label": "Jaundice"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032106",
+            "label": "Conjunctival icterus"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P3Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002240",
+            "label": "Hepatomegaly"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P3Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001744",
+            "label": "Splenomegaly"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P3Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410177",
+            "label": "Abnormal glucose-6-phosphate dehydrogenase level in blood"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004844",
+            "label": "Coombs-positive hemolytic anemia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001903",
+            "label": "Anemia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001923",
+            "label": "Reticulocytosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0005560",
+            "label": "Imbalanced hemoglobin synthesis"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "CktiyqHo6oGuVUrgQkkzkosY",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:130600",
+              "label": "Elliptocytosis-2"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "proband",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c161AtoC_SPTA1_NM_003126v4",
+                    "geneContext": {
+                      "valueId": "HGNC:11272",
+                      "symbol": "SPTA1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_003126.4:c.161A>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.158685211T>G"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_003117.2:p.(His54Pro)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 158685211,
+                      "ref": "T",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

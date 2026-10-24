@@ -1,0 +1,15 @@
+# Frozen source-review snapshot
+
+**Snapshot: 2026-10-24T20:31:09.272735+00:00.** Of the fixed **334-publication** inventory (322 selected-source publications plus 12 alternate-only publications), this release holds **272 valid review records**, **262 full-main-text reviews** and **147 all-component paper reviews**. **1169/1,389 source-packet mappings** have been adjudicated. **322/713 case signatures** have every linked selected/alternate packet and its paper components complete. These are different denominators; no partial paper is counted as complete.
+
+The audit took place **after inference**, is **not preregistered**, and preserves the original case labels, cohort, inference and scores. Declared reviewer exposure: 101 per_case, 171 aggregate_only. Aggregate-exposed reviews are not blinded. New source annotations do not retroactively turn source-label recovery into clinical diagnostic accuracy.
+
+Read [summary.json](summary.json) for every complete/incomplete paper and case, [protocol.json](protocol.json) for definitions, and [adjudicated-categories.json](adjudicated-categories.json) for categories restricted to adjudicated packets. Individual JSON records in `records/` contain publication identity, reviewer method/exposure, exact source-asset hashes, component coverage, all allele and phenotype assessments, contradictions and access gaps. Public source-packet contexts in `contexts/` preserve the selected and alternate mappings. [inventory.json](inventory.json) is the original inventory; its original `NOT_ADJUDICATED` fields are historical, superseded only by this separate annotation layer.
+
+“Complete” means every declared component and packet was inspected; scientifically unresolved conclusions may remain. “Contradicted” can mean a particular annotation is inconsistent with its source, not that the diagnosis is disproved. For example, the SOX17 record distinguishes a packet's pathogenic label from the paper's class-4 likely-pathogenic classification. Review counts and assertions are not evidence of clinical truth or treatment rescue.
+
+## Offline check
+
+From this directory run `python3 verify.py`. Python standard library only; no network, original articles, inference outputs or child data are opened. The check verifies shipped hashes, input bindings, complete packet mapping and reported-count arithmetic. Its success **does not independently validate article content, reading, clinical truth or underlying source-asset availability**. The local full validator checked the source assets before export; `summary.json` is that receipt, not a portable rerun of those asset checks.
+
+Source PDFs, images, videos and supplementary data are deliberately not redistributed here. Paths inside reviews identify the original local evidence and are not portable attachments. Retrieve original sources through their publishers/PMIDs and compare hashes where the same version is available. All delivered case contexts come from the public benchmark; no challenge child-level data are included. The manifest provides integrity within this release, not an external signature or proof against deliberate re-signing.

@@ -1,0 +1,120 @@
+{
+  "pmid": "36253531",
+  "source_titles": [
+    "Biallelic loss of LDB3 leads to a lethal pediatric dilated cardiomyopathy."
+  ],
+  "selected_case_ids": [
+    "TC_428f25e3f77de770"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "LDB3"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/LDB3/PMID_36253531_Family_4_proband.json",
+      "sha256": "6b4f286ea1f8f48745f3f59ec805fc67d30a7c4883713d1517b22df2deffa9a3",
+      "case_id": "TC_428f25e3f77de770",
+      "selected_record": true,
+      "subject": {
+        "id": "Family 4 proband",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P8Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621237",
+            "label": "Cardiomyopathy, dilated, 2L"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P5Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0001640",
+            "label": "Cardiomegaly"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P5Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012664",
+            "label": "Reduced left ventricular ejection fraction"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "mFcjII9CTqtJpkLmwhrsE5wT",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621237",
+              "label": "Cardiomyopathy, dilated, 2L"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Family 4 proband",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1881_1884del_LDB3_NM_007078v3",
+                    "geneContext": {
+                      "valueId": "HGNC:15710",
+                      "symbol": "LDB3"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_007078.3:c.1881_1884del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000010.11:g.86718750_86718753del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_009009.1:p.(Gln627HisfsTer75)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr10",
+                      "pos": 86718744,
+                      "ref": "GAGAC",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

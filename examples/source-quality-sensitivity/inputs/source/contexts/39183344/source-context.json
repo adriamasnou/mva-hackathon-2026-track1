@@ -1,0 +1,226 @@
+{
+  "pmid": "39183344",
+  "source_titles": [
+    "Biallelic NEXN variants and fetal onset dilated cardiomyopathy: two independent case reports and revision of literature."
+  ],
+  "selected_case_ids": [
+    "TC_dc22f511acfb898a"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "NEXN"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/NEXN/PMID_39183344_Patient_1.json",
+      "sha256": "e77e3d3e7483ed402c1633b7cc2c465eaf592cdb5a7cc432c8b7ba807c7e1b51",
+      "case_id": "TC_dc22f511acfb898a",
+      "selected_record": true,
+      "subject": {
+        "id": "Patient 1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621261",
+            "label": "Cardiomyopathy, dilated, 2M, autosomal recessive"
+          },
+          "onset": {
+            "gestationalAge": {
+              "weeks": 24,
+              "days": 0
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0001790",
+            "label": "Nonimmune hydrops fetalis"
+          },
+          "onset": {
+            "gestationalAge": {
+              "weeks": 24,
+              "days": 0
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002202",
+            "label": "Pleural effusion"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001561",
+            "label": "Polyhydramnios"
+          },
+          "onset": {
+            "gestationalAge": {
+              "weeks": 24,
+              "days": 0
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:4000141",
+            "label": "Left ventricular dilatation"
+          },
+          "onset": {
+            "gestationalAge": {
+              "weeks": 24,
+              "days": 0
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0200128",
+            "label": "Biventricular hypertrophy"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0006673",
+            "label": "Reduced systolic function"
+          },
+          "onset": {
+            "gestationalAge": {
+              "weeks": 24,
+              "days": 0
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001653",
+            "label": "Mitral regurgitation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0005180",
+            "label": "Tricuspid regurgitation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034307",
+            "label": "Elevated left ventricular end-diastolic diameter"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012666",
+            "label": "Severely reduced left ventricular ejection fraction"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001649",
+            "label": "Tachycardia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0033454",
+            "label": "Tube feeding"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012378",
+            "label": "Fatigue"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "JRCWuepUsDwCxq45pO3TqfoD",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621261",
+              "label": "Cardiomyopathy, dilated, 2M, autosomal recessive"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Patient 1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1156dup_NEXN_NM_144573v4",
+                    "geneContext": {
+                      "valueId": "HGNC:29557",
+                      "symbol": "NEXN"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_144573.4:c.1156dup"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.77933384dup"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_653174.3:p.(Met386AsnfsTer15)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 77933378,
+                      "ref": "C",
+                      "alt": "CA"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

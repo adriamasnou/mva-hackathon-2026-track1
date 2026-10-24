@@ -1,0 +1,658 @@
+{
+  "schema_version": 1,
+  "pmid": "22155372",
+  "title": "A novel gain-of-function KCNJ2 mutation associated with short-QT syndrome impairs inward rectification of Kir2.1 currents",
+  "reviewer": {
+    "id": "Codex-parent-KCNJ2",
+    "reviewed_at_utc": "2026-10-24T18:51:01.268580+00:00",
+    "method": "Read complete eight-page article,32references and all five figures: OCR read followed by visual reading of every whole page6\u201313 in held grant anthology. All six packet phenotype fields checked. Other anthology articles excluded."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "HANDOFF exposes aggregate outcomes and historical FGFR2 case rank; conservatively per_case. KCNJ2 benchmark rank not consulted."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "5effcbb6e2a1dfb52c2b0333787847e443c6b5f4849be5d03d8eea6a52075ac7",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main_pdf",
+      "pmid": "22155372",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/22155372/retrieval-followup/20261024T102836689800Z-515638df6e/response.body",
+      "sha256": "2a5e0bef3306197c5b0bec204acd8af05055c27aa3ea627c7e4f5f0e173f11e3",
+      "kind": "pdf",
+      "description": "Official MHLW grant anthology; target article PDFpages6\u201313,journal666\u2013673."
+    },
+    {
+      "id": "main_text",
+      "pmid": "22155372",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/parent/22155372-assets/article-pages6-13-ocr.txt",
+      "sha256": "367024c132a3165f30502b2184528da77865b1ee68657f4c64d7f384016b5a86",
+      "kind": "text",
+      "description": "Raw OCR of target eight pages; every page visually checked, OCR imperfections retained."
+    },
+    {
+      "id": "inventory_receipt",
+      "pmid": "22155372",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/parent/22155372-assets/component-inventory-receipt.json",
+      "sha256": "a6f77c6ff50c723a82012ab9fc11e51d12f589a252f00e266980cefcecbbd29b",
+      "kind": "metadata",
+      "description": "Observed official issue-listing component inventory and metadata discrepancy."
+    },
+    {
+      "id": "page6",
+      "pmid": "22155372",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/parent/22155372-assets/scan-06.png",
+      "sha256": "05e292198dea5651e8eb286f90a9209177d11c47addedce7cdb239b599548b6f",
+      "kind": "image",
+      "description": "Whole PDFpage6,journalpage666,visually read."
+    },
+    {
+      "id": "page7",
+      "pmid": "22155372",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/parent/22155372-assets/scan-07.png",
+      "sha256": "a6f3705dfd3dc22ee2af801db9b8d5e6e78af2fcb86214144f7529ea8ed78299",
+      "kind": "image",
+      "description": "Whole PDFpage7,journalpage667,visually read."
+    },
+    {
+      "id": "page8",
+      "pmid": "22155372",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/parent/22155372-assets/scan-08.png",
+      "sha256": "d58f60cdadd6e696e258625bdb9b7a7128bb46e6027234a6b0ce292ad08c1ead",
+      "kind": "image",
+      "description": "Whole PDFpage8,journalpage668,visually read."
+    },
+    {
+      "id": "page9",
+      "pmid": "22155372",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/parent/22155372-assets/scan-09.png",
+      "sha256": "65c32a54269726d2e10e5aadbeb21b612032ed404ee6567d4378889a8a9851fc",
+      "kind": "image",
+      "description": "Whole PDFpage9,journalpage669,visually read."
+    },
+    {
+      "id": "page10",
+      "pmid": "22155372",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/parent/22155372-assets/scan-10.png",
+      "sha256": "59ef7fdf2222c9b204bc84989a7e17dcb66d00f4d91bd652a31f287f3c67bd89",
+      "kind": "image",
+      "description": "Whole PDFpage10,journalpage670,visually read."
+    },
+    {
+      "id": "page11",
+      "pmid": "22155372",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/parent/22155372-assets/scan-11.png",
+      "sha256": "61c1d223646c634da2d4940be84ba17c8027e8ca7c142ce3d5332a143e8cbf69",
+      "kind": "image",
+      "description": "Whole PDFpage11,journalpage671,visually read."
+    },
+    {
+      "id": "page12",
+      "pmid": "22155372",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/parent/22155372-assets/scan-12.png",
+      "sha256": "458a01a2ee0a3e6620cc8ecf994f6ca251d9edee2370478c2d599a397152f4bf",
+      "kind": "image",
+      "description": "Whole PDFpage12,journalpage672,visually read."
+    },
+    {
+      "id": "page13",
+      "pmid": "22155372",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/parent/22155372-assets/scan-13.png",
+      "sha256": "7ddd142885d75b636f0e0825a934543f01111c30815ccf4c987fb18b9bd9b14f",
+      "kind": "image",
+      "description": "Whole PDFpage13,journalpage673,visually read."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "A novel gain-of-function KCNJ2 mutation associated with short-QT syndrome impairs inward rectification of Kir2.1 currents",
+    "evidence": [
+      {
+        "source_id": "main_pdf",
+        "locator": "PDFpage6 exact title,authors,DOI10.1093/cvr/cvr329,journal93:666\u2013673"
+      }
+    ],
+    "note": "Target occurs within20page anthology. Other articles and second download excluded from read credit."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 5,
+      "table": 0,
+      "supplement": 0
+    },
+    "evidence": [
+      {
+        "source_id": "main_pdf",
+        "locator": "All eight target pages, fivefigures,no numbered tables or supplement callouts"
+      },
+      {
+        "source_id": "inventory_receipt",
+        "locator": "Official issue lists supplements for adjacent papers but none for this article"
+      }
+    ],
+    "note": "Published component inventory; no claim of access to raw data or full reading of separately linked editorial22311718."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 8,
+      "extent_source_id": "main_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main_pdf",
+          "locator": "Target PDFpages6\u201313 only,eight pages"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 8,
+          "mode": "text",
+          "source_id": "main_text",
+          "locator": "All target OCR text including32references read"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page6",
+          "locator": "Whole journalpage666 visually read"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "page7",
+          "locator": "Whole journalpage667 visually read"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "page8",
+          "locator": "Whole journalpage668 visually read"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "page9",
+          "locator": "Whole journalpage669 visually read"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "page10",
+          "locator": "Whole journalpage670 visually read"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "page11",
+          "locator": "Whole journalpage671 visually read"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "page12",
+          "locator": "Whole journalpage672 visually read"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "page13",
+          "locator": "Whole journalpage673 visually read"
+        }
+      ],
+      "note": "Pixels repair OCR:WT APD90=28.2\u00b13.4ms,control123.3\u00b112.2ms,mutant9.4\u00b12.1ms. Figure5 caption refers toA\u2013D while displayed panels areA/B."
+    },
+    {
+      "id": "figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main_pdf",
+          "locator": "Figure1 PDFpage8"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page8",
+          "locator": "AllFigure1panels,labels,axes,caption"
+        }
+      ],
+      "note": "Visual read; no raw electrophysiology reanalysis."
+    },
+    {
+      "id": "figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main_pdf",
+          "locator": "Figure2 PDFpage9"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page9",
+          "locator": "AllFigure2panels,labels,axes,caption"
+        }
+      ],
+      "note": "Visual read; no raw electrophysiology reanalysis."
+    },
+    {
+      "id": "figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main_pdf",
+          "locator": "Figure3 PDFpage10"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page10",
+          "locator": "AllFigure3panels,labels,axes,caption"
+        }
+      ],
+      "note": "Visual read; no raw electrophysiology reanalysis."
+    },
+    {
+      "id": "figure4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main_pdf",
+          "locator": "Figure4 PDFpage11"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page11",
+          "locator": "AllFigure4panels,labels,axes,caption"
+        }
+      ],
+      "note": "Visual read; no raw electrophysiology reanalysis."
+    },
+    {
+      "id": "figure5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main_pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main_pdf",
+          "locator": "Figure5 PDFpage12"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page12",
+          "locator": "AllFigure5panels,labels,axes,caption"
+        }
+      ],
+      "note": "Visual read; no raw electrophysiology reanalysis."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/KCNJ2/PMID_22155372_8_year_old_girl.json",
+      "packet_sha256": "187bf12495712d1d26d91bd27aac04d0f645aba63a943f5df826c5a00f2845c5",
+      "case_id": "TC_f063a5bed6ec4f71",
+      "role": "selected",
+      "packet_subject_id": "8-year-old girl",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source-label audit,not clinical truth validation.",
+        "Two symptom-negative assertions and inheritance remain unresolved."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Single proband is explicitly an eight-year-old girl.",
+        "evidence": [
+          {
+            "source_id": "main_text",
+            "locator": "Abstract,Results3.1,Figure1; corresponding page visually checked"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous KCNJ2 c.902T>A,p.Met301Lys agrees; transcript version and hg38 position not independently established.",
+        "evidence": [
+          {
+            "source_id": "main_text",
+            "locator": "Results3.2,Figure2; corresponding page visually checked"
+          }
+        ],
+        "limitations": [
+          "No sequence remapping or raw genotype reanalysis."
+        ]
+      },
+      "segregation": {
+        "status": "unresolved",
+        "statement": "Family genetic testing was not performed; inheritance remains unknown.",
+        "evidence": [
+          {
+            "source_id": "main_text",
+            "locator": "Results3.1,Figure1; corresponding page visually checked"
+          }
+        ],
+        "limitations": [
+          "Normal relative ECGs do not establish de novo origin."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous allele is proposed, not a two-allele trans model.",
+        "evidence": [
+          {
+            "source_id": "main_text",
+            "locator": "Results3.2; corresponding page visually checked"
+          }
+        ],
+        "limitations": [
+          "Parental phase data unavailable."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors associate the variant with SQTS using clinical and functional evidence; no independently reproduced ACMG PATHOGENIC adjudication.",
+        "evidence": [
+          {
+            "source_id": "main_text",
+            "locator": "Results3.2\u20133.6,Discussion4.4\u20134.5; corresponding page visually checked"
+          }
+        ],
+        "limitations": [
+          "Transient expression differs from patient heart; extracardiac attribution uncertain."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All six packet fields checked; extracardiac features and induced arrhythmias described by the source are omitted.",
+        "evidence": [
+          {
+            "source_id": "main_text",
+            "locator": "Results3.1,Discussion4.5; corresponding page visually checked"
+          }
+        ],
+        "limitations": [
+          "Omission does not establish absence; extracardiac features may have another cause."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c902TtoA_KCNJ2_NM_000891v3",
+            "geneContext": {
+              "valueId": "HGNC:6263",
+              "symbol": "KCNJ2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_000891.3:c.902T>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000017.11:g.70175941T>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_000882.1:p.(Met301Lys)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr17",
+              "pos": 70175941,
+              "ref": "T",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "ba4382a646218ecbb8d6283baf44035d3d6c8eabc216ea92dc4ffec02121db52",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Coding substitution,protein consequence and heterozygosity match.",
+            "evidence": [
+              {
+                "source_id": "main_text",
+                "locator": "Results3.2,Figure2; corresponding page visually checked"
+              }
+            ],
+            "limitations": [
+              "Reference transcript and genomic coordinate not independently remapped."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004757",
+              "label": "Paroxysmal atrial fibrillation"
+            }
+          },
+          "snapshot_sha256": "8dd278bf984ebd94f12b7ffd728a9a7afd27bc50cb928171b7612f5f28cd0c54",
+          "assessment": {
+            "status": "supported",
+            "statement": "Paroxysmal atrial fibrillation explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "main_text",
+                "locator": "Results3.1,Figure1; corresponding page visually checked"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012232",
+              "label": "Shortened QT interval"
+            }
+          },
+          "snapshot_sha256": "d937934d24647543fb76fec120ea64f3ac310c4c595e7cc3118582e6c046aa7c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Short QT explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "main_text",
+                "locator": "Abstract,Results3.1,Figure1; corresponding page visually checked"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001962",
+              "label": "Palpitations"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a94ea49681141e9f86dccc7d0e90bbfb9acfb801d6d88492e10ca5b1ad769bd9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Absence of palpitations is not established.",
+            "evidence": [
+              {
+                "source_id": "main_text",
+                "locator": "All clinical descriptions; corresponding page visually checked"
+              }
+            ],
+            "limitations": [
+              "Source correspondence only; no independent clinical or experimental validation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031972",
+              "label": "Presyncope"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fd42750f83ec2a3fd9e8e18a4575f048995634441a0f4816aa62238246b11924",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Absence of presyncope is not established.",
+            "evidence": [
+              {
+                "source_id": "main_text",
+                "locator": "All clinical descriptions; corresponding page visually checked"
+              }
+            ],
+            "limitations": [
+              "Source correspondence only; no independent clinical or experimental validation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012663",
+              "label": "Mildly reduced left ventricular ejection fraction"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5f69de78a558bfde08c246b23e63ca427dde6db9d7cfe02cb5bdffc2f415014f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No significant echocardiographic abnormality reported; quantitative ejection fraction not supplied.",
+            "evidence": [
+              {
+                "source_id": "main_text",
+                "locator": "Results3.1; corresponding page visually checked"
+              }
+            ],
+            "limitations": [
+              "Source correspondence only; no independent clinical or experimental validation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001645",
+              "label": "Sudden cardiac death"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "354443f8cc7d792e09a67118a3e8092b93dd57be3dffa60de5143d2f7f2a46e1",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Proband alive at evaluation; negative sudden-death status is time-bounded.",
+            "evidence": [
+              {
+                "source_id": "main_text",
+                "locator": "Results3.1,Figure1; corresponding page visually checked"
+              }
+            ],
+            "limitations": [
+              "Source correspondence only; no independent clinical or experimental validation."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference review with conservative per-case outcome exposure.",
+    "No raw experimental replication or sequence remapping.",
+    "Raw OCR imperfect; every article page visually inspected.",
+    "Linked editorial not read in full; publisher correction/editorial metadata inconsistency retained."
+  ]
+}

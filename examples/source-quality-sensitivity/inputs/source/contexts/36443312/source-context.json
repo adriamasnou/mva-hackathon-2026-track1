@@ -1,0 +1,602 @@
+{
+  "pmid": "36443312",
+  "source_titles": [
+    "Loss of function of CMPK2 causes mitochondria deficiency and brain calcification"
+  ],
+  "selected_case_ids": [
+    "TC_e3bc4fc49d23daff",
+    "TC_19c31980d528c2d2"
+  ],
+  "alternate_case_ids": [
+    "TC_19c31980d528c2d2"
+  ],
+  "genes": [
+    "CMPK2"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/CMPK2/PMID_36443312_Family_2_II_1.json",
+      "sha256": "8469286174e5b3d3e3490f302528cc46355860bebd317276d7d2efbdc3ea62d0",
+      "case_id": "TC_e3bc4fc49d23daff",
+      "selected_record": true,
+      "subject": {
+        "id": "Family 2 II-1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P39Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621018",
+            "label": "Basal ganglia calcification, idiopathic, 10, autosomal recessive"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P32Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0100543",
+            "label": "Cognitive impairment"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P32Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001251",
+            "label": "Ataxia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001260",
+            "label": "Dysarthria"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P32Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001250",
+            "label": "Seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002315",
+            "label": "Headache"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0031627",
+            "label": "Globus pallidus calcification"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0025041",
+            "label": "Thalamic calcification"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007352",
+            "label": "Cerebellar calcifications"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007229",
+            "label": "Intracerebral periventricular calcifications"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002401",
+            "label": "Stroke-like episode"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003493",
+            "label": "Antinuclear antibody positivity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004363",
+            "label": "Abnormal circulating calcium concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0100529",
+            "label": "Abnormal blood phosphate concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003165",
+            "label": "Elevated circulating parathyroid hormone level"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "iRPXY2OX4STQZvuXcfdDlqEI",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621018",
+              "label": "Basal ganglia calcification, idiopathic, 10, autosomal recessive"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Family 2 II-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1AtoC_CMPK2_NM_207315v4",
+                    "geneContext": {
+                      "valueId": "HGNC:27015",
+                      "symbol": "CMPK2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_207315.4:c.1A>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.6865696T>G"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_997198.2:p.(Met1?)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 6865696,
+                      "ref": "T",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "Family 2 II-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1241AtoG_CMPK2_NM_207315v4",
+                    "geneContext": {
+                      "valueId": "HGNC:27015",
+                      "symbol": "CMPK2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_207315.4:c.1241A>G"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.6849959T>C"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_997198.2:p.(Tyr414Cys)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 6849959,
+                      "ref": "T",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/CMPK2/PMID_36443312_Family_1_II_3.json",
+      "sha256": "0773b07a8c91f611dbac34d8a0e8498de22305bfb270baf9d96dc565d675e3a1",
+      "case_id": "TC_19c31980d528c2d2",
+      "selected_record": true,
+      "subject": {
+        "id": "Family 1 II-3",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P44Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621018",
+            "label": "Basal ganglia calcification, idiopathic, 10, autosomal recessive"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P44Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0100543",
+            "label": "Cognitive impairment"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001251",
+            "label": "Ataxia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001260",
+            "label": "Dysarthria"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001250",
+            "label": "Seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002315",
+            "label": "Headache"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0031627",
+            "label": "Globus pallidus calcification"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0025041",
+            "label": "Thalamic calcification"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007352",
+            "label": "Cerebellar calcifications"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007229",
+            "label": "Intracerebral periventricular calcifications"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002401",
+            "label": "Stroke-like episode"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003493",
+            "label": "Antinuclear antibody positivity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004363",
+            "label": "Abnormal circulating calcium concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0100529",
+            "label": "Abnormal blood phosphate concentration"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "8cPSpBvbSaOV6Rf3h7y4d8bA",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621018",
+              "label": "Basal ganglia calcification, idiopathic, 10, autosomal recessive"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Family 1 II-3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c2TtoC_CMPK2_NM_207315v4",
+                    "geneContext": {
+                      "valueId": "HGNC:27015",
+                      "symbol": "CMPK2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_207315.4:c.2T>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.6865695A>G"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_997198.2:p.(Met1?)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 6865695,
+                      "ref": "A",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/CMPK2/PMID_36443312_Family_1_II_5.json",
+      "sha256": "99da349b3ff7b7aa31d11b38534c039d1a49f23234223b916a681c93da91e3ef",
+      "case_id": "TC_19c31980d528c2d2",
+      "selected_record": false,
+      "subject": {
+        "id": "Family 1 II-5",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P42Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621018",
+            "label": "Basal ganglia calcification, idiopathic, 10, autosomal recessive"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P40Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0100543",
+            "label": "Cognitive impairment"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001251",
+            "label": "Ataxia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001260",
+            "label": "Dysarthria"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001250",
+            "label": "Seizure"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002315",
+            "label": "Headache"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0031627",
+            "label": "Globus pallidus calcification"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0025041",
+            "label": "Thalamic calcification"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007352",
+            "label": "Cerebellar calcifications"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007229",
+            "label": "Intracerebral periventricular calcifications"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002401",
+            "label": "Stroke-like episode"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003493",
+            "label": "Antinuclear antibody positivity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004363",
+            "label": "Abnormal circulating calcium concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0100529",
+            "label": "Abnormal blood phosphate concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003165",
+            "label": "Elevated circulating parathyroid hormone level"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012229",
+            "label": "CSF pleocytosis"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "QWLQwhnBXt7Xl0hxXKZNrXTO",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621018",
+              "label": "Basal ganglia calcification, idiopathic, 10, autosomal recessive"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Family 1 II-5",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c2TtoC_CMPK2_NM_207315v4",
+                    "geneContext": {
+                      "valueId": "HGNC:27015",
+                      "symbol": "CMPK2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_207315.4:c.2T>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000002.12:g.6865695A>G"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_997198.2:p.(Met1?)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr2",
+                      "pos": 6865695,
+                      "ref": "A",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

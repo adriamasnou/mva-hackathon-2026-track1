@@ -74,3 +74,15 @@ PYTHONDONTWRITEBYTECODE=1 python3 examples/compact-benchmark/verify.py examples/
 ```
 
 In the 64 constructed source pairs, original-HPO top-1 with both source alleles PASSED was 58/64, but requiring both alleles within one best-scoring mode reduced it to 42/64. Without HPO, the corresponding counts were 59/64 and 2/64. A correct gene rank therefore does not establish that the complete source genotype determines the winning score. These are source-label metrics, not clinical or phase validation. **[OUR MEASUREMENT; OUR INFERENCE]**
+
+## Inspect the source-quality sensitivity
+
+Open the [offline source-quality viewer](../examples/source-quality-sensitivity/index.html). Its fixed reference retains every cohort and failure. Select **All 713 cases**, **Selected packet · source category** and **Top 5**: the unresolved category recovers 297 of 308 labels with original HPO versus 300 without. The supported category is empty and displays an undefined rate, rather than implying a zero-percent success rate. Expand the paired counts and exact case identifiers. **[OUR MEASUREMENT]**
+
+This companion deliberately retains the immutable 2026-10-24T20:31 source freeze even when the live review advances. It is a post hoc, non-blinded source-correspondence analysis, not an independent clinical validation. Verify all 713 cases and 162 categories with a separate parent calculation and byte-identical regenerated outputs:
+
+```sh
+python3 -B examples/source-quality-sensitivity/verify.py
+```
+
+The [instructions](../examples/source-quality-sensitivity/README.md) distinguish the calculations rerun here from the archived raw-inference verification and the source-reading claims. All 144 selector combinations passed execution checks; the visual layout has not been independently inspected.

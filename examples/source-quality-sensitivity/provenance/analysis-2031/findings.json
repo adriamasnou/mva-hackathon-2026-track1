@@ -1,0 +1,499 @@
+{
+  "private": true,
+  "post_hoc": true,
+  "outcome_exposure": "per_case",
+  "full_cohort_case_count": 713,
+  "all_source_stratum_categories": 162,
+  "zero_size_categories": 15,
+  "full_cohort_baselines": {
+    "all_713": {
+      "case_denominator": 713,
+      "gene_denominator": 261,
+      "arms": {
+        "original": {
+          "case_denominator": 713,
+          "top_k_counts": {
+            "1": 581,
+            "5": 681,
+            "10": 693
+          },
+          "top_k_rates": {
+            "1": 0.814866760168303,
+            "5": 0.9551192145862553,
+            "10": 0.9719495091164095
+          },
+          "status_counts": {
+            "scored": 693,
+            "not_scored": 16,
+            "preparation_failed": 4
+          },
+          "tie_cases": 1,
+          "all_source_alleles_passed_cases": 693
+        },
+        "none": {
+          "case_denominator": 713,
+          "top_k_counts": {
+            "1": 449,
+            "5": 677,
+            "10": 693
+          },
+          "top_k_rates": {
+            "1": 0.6297335203366059,
+            "5": 0.9495091164095372,
+            "10": 0.9719495091164095
+          },
+          "status_counts": {
+            "scored": 693,
+            "not_scored": 16,
+            "preparation_failed": 4
+          },
+          "tie_cases": 155,
+          "all_source_alleles_passed_cases": 693
+        }
+      },
+      "paired": {
+        "1": {
+          "both_recovered": 416,
+          "original_only": 165,
+          "none_only": 33,
+          "neither_recovered": 99,
+          "paired_case_denominator": 713,
+          "discordant_pair_denominator": 198,
+          "net_recovered_count_original_minus_none": 132
+        },
+        "5": {
+          "both_recovered": 666,
+          "original_only": 15,
+          "none_only": 11,
+          "neither_recovered": 21,
+          "paired_case_denominator": 713,
+          "discordant_pair_denominator": 26,
+          "net_recovered_count_original_minus_none": 4
+        },
+        "10": {
+          "both_recovered": 693,
+          "original_only": 0,
+          "none_only": 0,
+          "neither_recovered": 20,
+          "paired_case_denominator": 713,
+          "discordant_pair_denominator": 0,
+          "net_recovered_count_original_minus_none": 0
+        }
+      }
+    },
+    "primary_autosomal_681": {
+      "case_denominator": 681,
+      "gene_denominator": 245,
+      "arms": {
+        "original": {
+          "case_denominator": 681,
+          "top_k_counts": {
+            "1": 556,
+            "5": 653,
+            "10": 665
+          },
+          "top_k_rates": {
+            "1": 0.8164464023494861,
+            "5": 0.9588839941262849,
+            "10": 0.9765051395007343
+          },
+          "status_counts": {
+            "scored": 665,
+            "not_scored": 16
+          },
+          "tie_cases": 1,
+          "all_source_alleles_passed_cases": 665
+        },
+        "none": {
+          "case_denominator": 681,
+          "top_k_counts": {
+            "1": 430,
+            "5": 649,
+            "10": 665
+          },
+          "top_k_rates": {
+            "1": 0.631424375917768,
+            "5": 0.9530102790014684,
+            "10": 0.9765051395007343
+          },
+          "status_counts": {
+            "scored": 665,
+            "not_scored": 16
+          },
+          "tie_cases": 146,
+          "all_source_alleles_passed_cases": 665
+        }
+      },
+      "paired": {
+        "1": {
+          "both_recovered": 399,
+          "original_only": 157,
+          "none_only": 31,
+          "neither_recovered": 94,
+          "paired_case_denominator": 681,
+          "discordant_pair_denominator": 188,
+          "net_recovered_count_original_minus_none": 126
+        },
+        "5": {
+          "both_recovered": 638,
+          "original_only": 15,
+          "none_only": 11,
+          "neither_recovered": 17,
+          "paired_case_denominator": 681,
+          "discordant_pair_denominator": 26,
+          "net_recovered_count_original_minus_none": 4
+        },
+        "10": {
+          "both_recovered": 665,
+          "original_only": 0,
+          "none_only": 0,
+          "neither_recovered": 16,
+          "paired_case_denominator": 681,
+          "discordant_pair_denominator": 0,
+          "net_recovered_count_original_minus_none": 0
+        }
+      }
+    },
+    "technical_X_32": {
+      "case_denominator": 32,
+      "gene_denominator": 16,
+      "arms": {
+        "original": {
+          "case_denominator": 32,
+          "top_k_counts": {
+            "1": 25,
+            "5": 28,
+            "10": 28
+          },
+          "top_k_rates": {
+            "1": 0.78125,
+            "5": 0.875,
+            "10": 0.875
+          },
+          "status_counts": {
+            "scored": 28,
+            "preparation_failed": 4
+          },
+          "tie_cases": 0,
+          "all_source_alleles_passed_cases": 28
+        },
+        "none": {
+          "case_denominator": 32,
+          "top_k_counts": {
+            "1": 19,
+            "5": 28,
+            "10": 28
+          },
+          "top_k_rates": {
+            "1": 0.59375,
+            "5": 0.875,
+            "10": 0.875
+          },
+          "status_counts": {
+            "scored": 28,
+            "preparation_failed": 4
+          },
+          "tie_cases": 9,
+          "all_source_alleles_passed_cases": 28
+        }
+      },
+      "paired": {
+        "1": {
+          "both_recovered": 17,
+          "original_only": 8,
+          "none_only": 2,
+          "neither_recovered": 5,
+          "paired_case_denominator": 32,
+          "discordant_pair_denominator": 10,
+          "net_recovered_count_original_minus_none": 6
+        },
+        "5": {
+          "both_recovered": 28,
+          "original_only": 0,
+          "none_only": 0,
+          "neither_recovered": 4,
+          "paired_case_denominator": 32,
+          "discordant_pair_denominator": 0,
+          "net_recovered_count_original_minus_none": 0
+        },
+        "10": {
+          "both_recovered": 28,
+          "original_only": 0,
+          "none_only": 0,
+          "neither_recovered": 4,
+          "paired_case_denominator": 32,
+          "discordant_pair_denominator": 0,
+          "net_recovered_count_original_minus_none": 0
+        }
+      }
+    },
+    "fallback_18": {
+      "case_denominator": 18,
+      "gene_denominator": 13,
+      "arms": {
+        "original": {
+          "case_denominator": 18,
+          "top_k_counts": {
+            "1": 12,
+            "5": 13,
+            "10": 14
+          },
+          "top_k_rates": {
+            "1": 0.6666666666666666,
+            "5": 0.7222222222222222,
+            "10": 0.7777777777777778
+          },
+          "status_counts": {
+            "scored": 14,
+            "not_scored": 2,
+            "preparation_failed": 2
+          },
+          "tie_cases": 0,
+          "all_source_alleles_passed_cases": 14
+        },
+        "none": {
+          "case_denominator": 18,
+          "top_k_counts": {
+            "1": 6,
+            "5": 9,
+            "10": 14
+          },
+          "top_k_rates": {
+            "1": 0.3333333333333333,
+            "5": 0.5,
+            "10": 0.7777777777777778
+          },
+          "status_counts": {
+            "scored": 14,
+            "not_scored": 2,
+            "preparation_failed": 2
+          },
+          "tie_cases": 7,
+          "all_source_alleles_passed_cases": 14
+        }
+      },
+      "paired": {
+        "1": {
+          "both_recovered": 5,
+          "original_only": 7,
+          "none_only": 1,
+          "neither_recovered": 5,
+          "paired_case_denominator": 18,
+          "discordant_pair_denominator": 8,
+          "net_recovered_count_original_minus_none": 6
+        },
+        "5": {
+          "both_recovered": 9,
+          "original_only": 4,
+          "none_only": 0,
+          "neither_recovered": 5,
+          "paired_case_denominator": 18,
+          "discordant_pair_denominator": 4,
+          "net_recovered_count_original_minus_none": 4
+        },
+        "10": {
+          "both_recovered": 14,
+          "original_only": 0,
+          "none_only": 0,
+          "neither_recovered": 4,
+          "paired_case_denominator": 18,
+          "discordant_pair_denominator": 0,
+          "net_recovered_count_original_minus_none": 0
+        }
+      }
+    },
+    "without_fallback_695": {
+      "case_denominator": 695,
+      "gene_denominator": 257,
+      "arms": {
+        "original": {
+          "case_denominator": 695,
+          "top_k_counts": {
+            "1": 569,
+            "5": 668,
+            "10": 679
+          },
+          "top_k_rates": {
+            "1": 0.818705035971223,
+            "5": 0.9611510791366906,
+            "10": 0.9769784172661871
+          },
+          "status_counts": {
+            "scored": 679,
+            "not_scored": 14,
+            "preparation_failed": 2
+          },
+          "tie_cases": 1,
+          "all_source_alleles_passed_cases": 679
+        },
+        "none": {
+          "case_denominator": 695,
+          "top_k_counts": {
+            "1": 443,
+            "5": 668,
+            "10": 679
+          },
+          "top_k_rates": {
+            "1": 0.637410071942446,
+            "5": 0.9611510791366906,
+            "10": 0.9769784172661871
+          },
+          "status_counts": {
+            "scored": 679,
+            "not_scored": 14,
+            "preparation_failed": 2
+          },
+          "tie_cases": 148,
+          "all_source_alleles_passed_cases": 679
+        }
+      },
+      "paired": {
+        "1": {
+          "both_recovered": 411,
+          "original_only": 158,
+          "none_only": 32,
+          "neither_recovered": 94,
+          "paired_case_denominator": 695,
+          "discordant_pair_denominator": 190,
+          "net_recovered_count_original_minus_none": 126
+        },
+        "5": {
+          "both_recovered": 657,
+          "original_only": 11,
+          "none_only": 11,
+          "neither_recovered": 16,
+          "paired_case_denominator": 695,
+          "discordant_pair_denominator": 22,
+          "net_recovered_count_original_minus_none": 0
+        },
+        "10": {
+          "both_recovered": 679,
+          "original_only": 0,
+          "none_only": 0,
+          "neither_recovered": 16,
+          "paired_case_denominator": 695,
+          "discordant_pair_denominator": 0,
+          "net_recovered_count_original_minus_none": 0
+        }
+      }
+    },
+    "pairs_64": {
+      "case_denominator": 64,
+      "gene_denominator": 41,
+      "arms": {
+        "original": {
+          "case_denominator": 64,
+          "top_k_counts": {
+            "1": 58,
+            "5": 64,
+            "10": 64
+          },
+          "top_k_rates": {
+            "1": 0.90625,
+            "5": 1.0,
+            "10": 1.0
+          },
+          "status_counts": {
+            "scored": 64
+          },
+          "tie_cases": 0,
+          "all_source_alleles_passed_cases": 64
+        },
+        "none": {
+          "case_denominator": 64,
+          "top_k_counts": {
+            "1": 59,
+            "5": 64,
+            "10": 64
+          },
+          "top_k_rates": {
+            "1": 0.921875,
+            "5": 1.0,
+            "10": 1.0
+          },
+          "status_counts": {
+            "scored": 64
+          },
+          "tie_cases": 0,
+          "all_source_alleles_passed_cases": 64
+        }
+      },
+      "paired": {
+        "1": {
+          "both_recovered": 54,
+          "original_only": 4,
+          "none_only": 5,
+          "neither_recovered": 1,
+          "paired_case_denominator": 64,
+          "discordant_pair_denominator": 9,
+          "net_recovered_count_original_minus_none": -1
+        },
+        "5": {
+          "both_recovered": 64,
+          "original_only": 0,
+          "none_only": 0,
+          "neither_recovered": 0,
+          "paired_case_denominator": 64,
+          "discordant_pair_denominator": 0,
+          "net_recovered_count_original_minus_none": 0
+        },
+        "10": {
+          "both_recovered": 64,
+          "original_only": 0,
+          "none_only": 0,
+          "neither_recovered": 0,
+          "paired_case_denominator": 64,
+          "discordant_pair_denominator": 0,
+          "net_recovered_count_original_minus_none": 0
+        }
+      }
+    }
+  },
+  "all_713_source_category_denominators": {
+    "all_linked_paper_completion": {
+      "complete": 322,
+      "incomplete": 316,
+      "unreviewed": 75
+    },
+    "all_linked_packet_completion": {
+      "complete": 601,
+      "incomplete": 8,
+      "unreviewed": 104
+    },
+    "all_linked_paper_and_packet_completion": {
+      "complete": 322,
+      "incomplete": 316,
+      "unreviewed": 75
+    },
+    "selected_packet_category": {
+      "supported": 0,
+      "qualified": 93,
+      "contradicted": 205,
+      "unresolved": 308,
+      "unreviewed": 107
+    },
+    "selected_genotype_status": {
+      "supported": 153,
+      "qualified": 408,
+      "contradicted": 11,
+      "unresolved": 34,
+      "unreviewed": 107
+    },
+    "selected_causal_confidence": {
+      "supported": 1,
+      "qualified": 548,
+      "contradicted": 48,
+      "unresolved": 9,
+      "unreviewed": 107
+    },
+    "selected_phenotype_contradiction": {
+      "present": 148,
+      "none_recorded": 458,
+      "unreviewed": 107
+    }
+  },
+  "contradicted_selected_packets": 205,
+  "phenotype_only_recorded_contradictions": 125,
+  "nonphenotype_recorded_contradictions": 80,
+  "interpretation": "Source-label recovery only. Complete reading is not complete support; contradicted is not a disproved diagnosis. All favorable/adverse/empty strata retained. No inference p-values or causal claims."
+}

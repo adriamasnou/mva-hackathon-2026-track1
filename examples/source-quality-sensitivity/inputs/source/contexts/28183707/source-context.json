@@ -1,0 +1,203 @@
+{
+  "pmid": "28183707",
+  "source_titles": [
+    "Chédiak-Higashi syndrome with novel gene mutation"
+  ],
+  "selected_case_ids": [
+    "TC_9baf89ee2a1aa05a"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "LYST"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/LYST/PMID_28183707_Case_presentation.json",
+      "sha256": "0cd4c342360d7b9a4bdd9fd8b05a8be74abb969be02ef5ae1cd52f7daf5e0079",
+      "case_id": "TC_9baf89ee2a1aa05a",
+      "selected_record": true,
+      "subject": {
+        "id": "Case presentation",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y6M"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:214500",
+            "label": "Chediak-Higashi syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0008070",
+            "label": "Sparse hair"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P2Y6M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001010",
+            "label": "Hypopigmentation of the skin"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P1Y10M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000964",
+            "label": "Eczematoid dermatitis"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003593",
+              "label": "Infantile onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031292",
+            "label": "Cutaneous abscess"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P1Y6M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032499",
+            "label": "Giant neutrophil granules"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P2Y6M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003212",
+            "label": "Increased circulating IgE concentration"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P2Y6M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001433",
+            "label": "Hepatosplenomegaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001386",
+            "label": "Joint swelling"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002090",
+            "label": "Pneumonia"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P2Y6M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "AswOxVus2Zb7Wyz4jUP2L6KA",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:214500",
+              "label": "Chediak-Higashi syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Case presentation",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c6159_6160del_LYST_NM_000081v4",
+                    "geneContext": {
+                      "valueId": "HGNC:1968",
+                      "symbol": "LYST"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_000081.4:c.6159_6160del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.235762814_235762815del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_000072.2:p.(Met2053IlefsTer31)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 235762812,
+                      "ref": "TAC",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

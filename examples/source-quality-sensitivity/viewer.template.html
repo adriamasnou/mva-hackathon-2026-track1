@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Source-quality sensitivity · frozen 20:31 UTC</title>
+<style>
+:root{color-scheme:light;--ink:#233139;--muted:#56636a;--line:#ccd2d3;--paper:#fffefa;--wash:#f2f3ef;--a:#536978;--b:#a5afb6}
+*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:1440px;margin:auto;padding:40px 32px 80px}h1{font-size:clamp(28px,4vw,46px);line-height:1.12;letter-spacing:-.035em;margin:12px 0 16px}h2{font-size:23px;line-height:1.25;margin:0 0 12px}h3{font-size:18px;margin:0 0 8px}p{margin:8px 0 16px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:750}.lede{max-width:900px;font-size:19px}.muted,small{color:var(--muted)}small{font-size:13px}.notice{border-left:4px solid var(--a);padding:14px 20px;background:#e8edee;margin:24px 0}.notice p{margin:0}.stats{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}.stat{background:var(--paper);border:1px solid var(--line);padding:14px 20px;flex:1;min-width:150px}.stat strong{font-size:28px;display:block;line-height:1.2;font-variant-numeric:tabular-nums}.stat span{color:var(--muted);font-size:13px}
+section{margin-top:32px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:24px}.filters{display:flex;gap:18px;flex-wrap:wrap;border-top:3px solid var(--a)}label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:650}select,button{font:inherit;color:var(--ink);border:1px solid #87959e;border-radius:4px;background:white;padding:10px 12px;min-height:44px}select{max-width:100%}button{align-self:end;cursor:pointer;font-size:14px}a{color:#294e69;text-underline-offset:3px}a:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible,.scroll:focus-visible{outline:3px solid #657d90;outline-offset:3px}.scroll{overflow-x:auto;margin-top:16px}table{border-collapse:collapse;width:100%;font-size:14px;text-align:left}caption{text-align:left;font-weight:650;padding:0 0 10px}th,td{padding:13px 10px;border-bottom:1px solid var(--line);vertical-align:top}thead th{font-size:12px;background:#edf0ed;font-weight:750;white-space:nowrap}tbody th{font-weight:650;min-width:115px}td{font-variant-numeric:tabular-nums}.counts{white-space:nowrap}.dim-table{min-width:1050px}.dim-table .metric{min-width:160px}.empty-row{background:#f6f6f1}.bar-track{height:7px;background:#e5e8e9;margin:8px 0 4px;border-radius:2px;width:100%;overflow:hidden}.bar{height:100%;background:var(--a)}.bar.none{background:var(--b)}.legend{display:flex;flex-wrap:wrap;gap:20px;font-size:14px;margin:14px 0}.swatch{display:inline-block;width:17px;height:9px;margin-right:6px;background:var(--a)}.swatch.none{background:var(--b)}.dimension{margin-top:24px}.dim-description{max-width:1000px;color:var(--muted)}.pair-note{font-size:13px;color:var(--muted);margin-bottom:0}details{margin-top:14px}summary{cursor:pointer;font-weight:650;padding:8px 0}.technical-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:10px}.technical{border:1px solid var(--line);padding:14px;min-width:0}.technical p{font-size:13px;margin:5px 0}.ids{font-size:12px;max-height:180px;overflow:auto;overflow-wrap:anywhere;white-space:pre-wrap}.definitions{display:grid;grid-template-columns:1fr 1fr;gap:24px}.definitions p{font-size:14px}.definition-list dt{font-weight:700;margin-top:12px}.definition-list dd{margin:4px 0 12px;font-size:14px}.limits{padding-left:22px;max-width:1100px}.limits li{margin:9px 0}code{font-size:.9em;background:#e9ece9;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}pre{white-space:pre-wrap;background:#eef0ec;padding:16px;overflow-wrap:anywhere}.hash{font:12px/1.5 ui-monospace,SFMono-Regular,monospace;overflow-wrap:anywhere}footer{margin-top:36px;border-top:1px solid var(--line);padding-top:18px;font-size:13px;color:var(--muted)}.fixed-table{min-width:730px}noscript p{padding:20px;background:#e8edee}
+@media(max-width:700px){main{padding:24px 16px 48px}.panel{padding:18px}.definitions{grid-template-columns:1fr}.filters label{width:100%}.filters select{width:100%}.stat{min-width:130px}.lede{font-size:17px}}
+@media print{body{background:white}main{max-width:none;padding:0}.filters,button{display:none}.scroll{overflow:visible}.panel{padding:10px}table{font-size:10px}.dim-table{min-width:0}.dim-table .metric{min-width:0}.dimension{break-inside:avoid}h1{font-size:28px}details{display:none}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="eyebrow">Offline analytical companion · 24 October 2026 · source freeze 20:31 UTC</div>
+<h1>Source-quality sensitivity</h1>
+<p class="lede">Inspect the existing benchmark results alongside the frozen source annotations. All cases, both arms, all categories and all failures are retained.</p>
+<div class="notice"><p><strong>Post hoc and non-blinded, with explicit <code>per_case</code> outcome exposure.</strong> This is a descriptive analysis of source correspondence and source-label recovery. It does not establish clinical accuracy, clinical truth, an effect of HPO or review, or biological benefit.</p></div>
+<div class="stats" aria-label="Fixed scope, unaffected by filters">
+<div class="stat"><strong>713</strong><span>cases · 681 primary + 32 technical X</span></div>
+<div class="stat"><strong>1,426</strong><span>paired case/arm outcomes</span></div>
+<div class="stat"><strong>6 × 7</strong><span>cohorts × marginal dimensions</span></div>
+<div class="stat"><strong>162</strong><span>categories, including 15 empty</span></div>
+</div>
+</header>
+<noscript><p>Enable JavaScript to inspect the inline tables; no network is required. The complete machine-readable results are in <a href="provenance/analysis-2031/all-strata.json">all-strata.json</a> and the readable original findings are in <a href="provenance/analysis-2031/README.md">the original analysis README</a>.</p></noscript>
+
+<section class="panel" aria-labelledby="baseline-heading">
+<h2 id="baseline-heading">Fixed cohort reference</h2>
+<p>This reference always shows all six cohorts and all three thresholds. The selectors below do not change it. Cohorts overlap; do not add their denominators.</p>
+<div class="scroll" tabindex="0" aria-label="Full cohort reference table"><table class="fixed-table"><caption>Recovered source labels / all cases, including failures</caption><thead><tr><th scope="col">Frozen cohort</th><th scope="col">Cases / genes</th><th scope="col">Top 1<br>original HPO · no HPO</th><th scope="col">Top 5<br>original HPO · no HPO</th><th scope="col">Top 10<br>original HPO · no HPO</th></tr></thead><tbody id="baselines"></tbody></table></div>
+<p class="pair-note">“Original” is the original-HPO arm. Both displayed arms use the corrected-v2 evaluation; the literal pre-correction evaluation is retained separately in the package.</p>
+</section>
+
+<section aria-labelledby="explore-heading">
+<h2 id="explore-heading">Inspect every category</h2>
+<p>Select a cohort, one of seven dimensions (or all), and a threshold. Every category within a dimension stays visible, including zero-size groups. There is no category or outcome filter.</p>
+<div class="panel filters">
+<label for="cohort">Cohort<select id="cohort"></select></label>
+<label for="dimension">Source dimension<select id="dimension"></select></label>
+<label for="threshold">Recovery threshold<select id="threshold"><option value="1">Top 1</option><option value="5">Top 5</option><option value="10">Top 10</option></select></label>
+<button id="reset" type="button">Reset to full view</button>
+</div>
+<div class="legend" aria-label="Bar legend"><span><span class="swatch" aria-hidden="true"></span>Original HPO</span><span><span class="swatch none" aria-hidden="true"></span>No HPO</span><span>Bar length = recovered / all cases in that category (0–100%)</span></div>
+<p id="view-status" role="status" aria-live="polite" class="muted"></p>
+<p class="pair-note">Each paired cell is count / all paired cases. The four paired cells sum to that category's denominator. Discordant pairs = original-HPO-only + no-HPO-only; their split is also shown against the discordant denominator. An empty group has rate “—”, not 0%.</p>
+<div id="dimensions"></div>
+</section>
+
+<section class="panel" aria-labelledby="definitions-heading">
+<h2 id="definitions-heading">Definitions and interpretation</h2>
+<div class="definitions">
+<div><h3>What is counted</h3><p id="endpoint"></p><p id="failure-rule"></p><p>Counts refer to source-label recovery under the frozen benchmark rule. A source label is the recorded benchmark target, not independently established clinical truth. HPO means Human Phenotype Ontology; the original arm uses the frozen original HPO input and the no-HPO arm omits it.</p><p>Each dimension is a separate marginal partition of its cohort. Categories from different dimensions must not be added or treated as independent observations. Failures remain in every relevant denominator.</p><dl id="cohort-definitions" class="definition-list"></dl></div>
+<div><h3>What source categories mean</h3><p>“Supported”, “qualified”, “contradicted” and “unresolved” are preserved source-correspondence annotations. They are not diagnostic verdicts. “Complete” records coverage, not universal support. A contradicted packet can reflect phenotype-only or formal-classification disagreement; it does not mean a disproved diagnosis.</p><p>No source record or a pending selected-packet review maps to <strong>unreviewed</strong>, regardless of its raw template labels. Those raw labels remain preserved in the joined case data. “None recorded” means no contradicted phenotype item was recorded in an adjudicated selected packet; it is not proof that no discrepancy exists.</p><p>Selected-packet dimensions concern the frozen selected packet. Completion dimensions include every linked selected and alternate packet or paper, according to the definitions printed above each table.</p><dl id="method-definitions" class="definition-list"></dl></div>
+</div>
+</section>
+
+<section class="panel" aria-labelledby="limits-heading"><h2 id="limits-heading">Limits that remain</h2><ul id="limits" class="limits"></ul><p>All adverse results remain inspectable. For example, no-HPO top 5 is 300/316 versus 297/316 for incomplete linked-paper coverage, 300/308 versus 297/308 for unresolved selected packets, and 147/153 versus 146/153 for genotype-supported packets. In the fixed 64-pair cohort, no-HPO top 1 is 59/64 versus 58/64. These are descriptive counts, not causal estimates.</p></section>
+
+<section class="panel" aria-labelledby="reproduce-heading">
+<h2 id="reproduce-heading">Reproduce this companion offline</h2>
+<p>From the extracted package directory, using Python 3.11 or newer:</p><pre>python3 -B verify.py</pre>
+<p>The verifier hashes the complete package, runs the original 29 tests and eight packaging integrity controls, regenerates five deterministic outputs in a temporary directory and compares their exact bytes. It reruns the unchanged parent's independent calculation of all 713 cases, 1,426 arm rows and 162 categories. It also compares this inline data with the complete frozen JSON. No inference, network request or article review is performed; the package remains unchanged.</p>
+<p>The original raw-benchmark verification receipt is included and hash-checked. The full raw inference-output bundle is outside this companion; its original raw-output verification is not rerun here. Node.js, when installed, additionally checks script syntax and all selector combinations. Browser visual review is a separate step.</p>
+<p><a href="README.md">Package instructions</a> · <a href="provenance/analysis-2031/README.md">Original analysis</a> · <a href="provenance/analysis-2031/all-strata.json">All strata JSON</a> · <a href="provenance/analysis-2031/joined-cases.jsonl">713 joined cases</a> · <a href="provenance/analysis-2031/methods.json">Frozen methods</a> · <a href="provenance/parent/sensitivity-2031-independent-verification.json">Original parent receipt</a> · <a href="package-manifest.json">Package hashes</a></p>
+<p class="hash">Source manifest SHA256: <span id="source-sha"></span><br>All-strata JSON SHA256: <span id="strata-sha"></span></p>
+</section>
+<footer>Software and editorial implementation of an existing verified analysis. This companion preserves the exact 20:31 freeze, even if later source reviews exist. It contains authored public-source annotations and public benchmark records; no article PDFs or gated hackathon data are included. Local companion only.</footer>
+</main>
+<script id="frozen-data" type="application/json">@@FROZEN_DATA@@</script>
+<script id="viewer-code">
+'use strict';
+const DATA = JSON.parse(document.getElementById('frozen-data').textContent);
+const COHORT_LABELS = {all_713:'All 713 cases', primary_autosomal_681:'Primary autosomal · 681', technical_X_32:'Technical X · 32', fallback_18:'Fallback · 18', without_fallback_695:'Without fallback · 695', pairs_64:'Two-allele signatures · 64'};
+const COHORT_DEFINITIONS = {all_713:'Every frozen signature, including all preparation and ranking failures.', primary_autosomal_681:'Cases without a source allele on chromosome X; the frozen primary cohort.', technical_X_32:'Cases with at least one source allele on chromosome X; includes four preparation failures per arm.', fallback_18:'Single-allele signatures with at least one decoy whose matching tier is not type_and_consequence.', without_fallback_695:'The complement of the fixed 18 fallback cases.', pairs_64:'Frozen signatures containing two source alleles. This cohort overlaps the other cohorts; it is distinct from the paired-arm comparisons present for every case.'};
+const DIM_LABELS = {all_linked_paper_completion:'All linked papers · completion', all_linked_packet_completion:'All linked packets · completion', all_linked_paper_and_packet_completion:'All linked papers + packets · completion', selected_packet_category:'Selected packet · source category', selected_genotype_status:'Selected packet · genotype status', selected_causal_confidence:'Selected packet · causal confidence', selected_phenotype_contradiction:'Selected packet · phenotype contradiction'};
+const CATEGORY_LABELS = {complete:'Complete',incomplete:'Incomplete',unreviewed:'Unreviewed',supported:'Supported',qualified:'Qualified',contradicted:'Contradicted',unresolved:'Unresolved',present:'Present',none_recorded:'None recorded'};
+const PAIRS = ['both_recovered','original_only','none_only','neither_recovered'];
+const el = (tag,text,cls) => {const node=document.createElement(tag);if(text!==undefined)node.textContent=String(text);if(cls)node.className=cls;return node;};
+const byId = id => document.getElementById(id);
+const fraction = (n,d) => `${n}/${d}`;
+const rate = (n,d) => d ? `${(100*n/d).toFixed(1)}%` : '— (empty)';
+function definition(dim){return DATA.methods.definitions[dim] || DATA.methods.definitions.selected_categories;}
+function rowsFor(cohort,dimension,k){
+  const dims = dimension==='all' ? Object.keys(DATA.methods.dimensions) : [dimension];
+  return dims.map(dim=>({dimension:dim,rows:Object.entries(DATA.strata[cohort].source_audit_strata[dim]).map(([category,s])=>({category,summary:s,k,paired:s.paired[k]}))}));
+}
+function metricCell(s,arm,k){
+  const cell=el('td',undefined,'metric');const n=s.arms[arm].top_k_counts[k],d=s.case_denominator;
+  cell.append(el('strong',fraction(n,d),'counts'),el('br'),el('small',rate(n,d)));
+  const track=el('div',undefined,'bar-track');track.setAttribute('aria-hidden','true');const bar=el('div',undefined,arm==='none'?'bar none':'bar');bar.style.width=`${d?100*n/d:0}%`;track.append(bar);cell.append(track);return cell;
+}
+function diagnosticCard(category,s,k){
+  const card=el('div',undefined,'technical');card.append(el('h3',CATEGORY_LABELS[category]));
+  card.append(el('p',`${s.case_denominator} cases · ${s.gene_denominator} distinct source genes`));
+  for(const arm of ['original','none']){const a=s.arms[arm];const states=Object.entries(a.status_counts).map(([state,n])=>`${state}: ${n}`).join('; ')||'none (empty group)';card.append(el('p',`${arm==='original'?'Original HPO':'No HPO'} — statuses: ${states}. Tied source-gene ranks: ${a.tie_cases}/${s.case_denominator}; all source alleles passed: ${a.all_source_alleles_passed_cases}/${s.case_denominator}.`));}
+  const p=s.paired[k],d=p.discordant_pair_denominator;
+  card.append(el('p',`Within discordant pairs: original HPO only ${fraction(p.original_only,d)}; no HPO only ${fraction(p.none_only,d)}. ${d?'':'No discordant pairs; rates undefined.'}`));
+  const detail=el('details');detail.append(el('summary',`Exact case IDs (${s.case_ids.length})`),el('div',s.case_ids.join('\n')||'No cases in this category.','ids'));card.append(detail);return card;
+}
+function render(){
+  const cohort=byId('cohort').value,dimension=byId('dimension').value,k=byId('threshold').value;
+  const groups=rowsFor(cohort,dimension,k),container=byId('dimensions');container.replaceChildren();
+  let count=0,empty=0;
+  for(const group of groups){
+    const section=el('section',undefined,'panel dimension');section.dataset.dimension=group.dimension;
+    section.append(el('h2',DIM_LABELS[group.dimension]),el('p',definition(group.dimension),'dim-description'));
+    const scroll=el('div',undefined,'scroll');scroll.setAttribute('tabindex','0');scroll.setAttribute('aria-label',`${DIM_LABELS[group.dimension]} table`);
+    const table=el('table',undefined,'dim-table');table.append(el('caption',`${COHORT_LABELS[cohort]} · top ${k} · every declared category`));
+    const head=el('thead'),tr=el('tr');for(const label of ['Category','Cases / genes','Original HPO','No HPO','Both','Original only','No HPO only','Neither','Discordant']){const th=el('th',label);th.setAttribute('scope','col');tr.append(th);}head.append(tr);table.append(head);
+    const body=el('tbody'),diagnostics=el('div',undefined,'technical-grid');
+    for(const item of group.rows){const {category,summary:s,paired:p}=item;count++;if(!s.case_denominator)empty++;
+      const row=el('tr',undefined,s.case_denominator?'':'empty-row');row.dataset.category=category;row.dataset.denominator=String(s.case_denominator);
+      const title=el('th',CATEGORY_LABELS[category]);title.setAttribute('scope','row');row.append(title,el('td',`${s.case_denominator} / ${s.gene_denominator}`,'counts'),metricCell(s,'original',k),metricCell(s,'none',k));
+      for(const key of PAIRS){const cell=el('td',fraction(p[key],p.paired_case_denominator),'counts');cell.dataset.pair=key;row.append(cell);}
+      row.append(el('td',fraction(p.discordant_pair_denominator,p.paired_case_denominator),'counts'));body.append(row);diagnostics.append(diagnosticCard(category,s,k));
+    }
+    table.append(body);scroll.append(table);section.append(scroll);
+    const detail=el('details');detail.append(el('summary','Statuses, ties, discordant denominators and exact case IDs'),diagnostics);section.append(detail);container.append(section);
+  }
+  byId('view-status').textContent=`${COHORT_LABELS[cohort]} · top ${k} · ${groups.length} marginal dimension${groups.length===1?'':'s'} · ${count} categories shown (${empty} empty). The fixed reference and scope above are unchanged.`;
+}
+function init(){
+  for(const key of Object.keys(DATA.methods.cohorts)){const option=el('option',COHORT_LABELS[key]);option.value=key;byId('cohort').append(option);}
+  const all=el('option','All 7 dimensions');all.value='all';byId('dimension').append(all);
+  for(const key of Object.keys(DATA.methods.dimensions)){const option=el('option',DIM_LABELS[key]);option.value=key;byId('dimension').append(option);}
+  byId('cohort').value='all_713';byId('dimension').value='all';byId('threshold').value='1';
+  for(const [key,cohort] of Object.entries(DATA.strata)){const b=cohort.baseline,row=el('tr'),th=el('th',COHORT_LABELS[key]);th.setAttribute('scope','row');row.append(th,el('td',`${b.case_denominator} / ${b.gene_denominator}`));for(const k of ['1','5','10'])row.append(el('td',`${fraction(b.arms.original.top_k_counts[k],b.case_denominator)} · ${fraction(b.arms.none.top_k_counts[k],b.case_denominator)}`,'counts'));byId('baselines').append(row);}
+  byId('endpoint').textContent=DATA.methods.endpoint;byId('failure-rule').textContent=DATA.methods.failure_rule;
+  for(const [key,value] of Object.entries(COHORT_DEFINITIONS))byId('cohort-definitions').append(el('dt',COHORT_LABELS[key]),el('dd',value));
+  for(const key of ['paired','zero_size','partition','original_arm'])byId('method-definitions').append(el('dt',key.replaceAll('_',' ')),el('dd',DATA.methods.definitions[key]));
+  for(const item of DATA.methods.limitations)byId('limits').append(el('li',item));
+  byId('source-sha').textContent=DATA.methods.inputs.source_manifest_sha256;byId('strata-sha').textContent=DATA.hashes['all-strata.json'];
+  for(const id of ['cohort','dimension','threshold'])byId(id).addEventListener('change',render);
+  byId('reset').addEventListener('click',()=>{byId('cohort').value='all_713';byId('dimension').value='all';byId('threshold').value='1';render();});render();
+}
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+{
+  "pmid": "32816001",
+  "source_titles": [
+    "A missense mutation in the CSTF2 gene that impairs the function of the RNA recognition motif and causes defects in 3' end processing is associated with intellectual disability in humans"
+  ],
+  "selected_case_ids": [
+    "TC_986b0e0e76d8a6a9"
+  ],
+  "alternate_case_ids": [
+    "TC_986b0e0e76d8a6a9"
+  ],
+  "genes": [
+    "CSTF2"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/CSTF2/PMID_32816001_III_1.json",
+      "sha256": "1258f2bb0cb30d06860cd14dfe653cf12836a0085cc40819fc2680d1e7988b98",
+      "case_id": "TC_986b0e0e76d8a6a9",
+      "selected_record": true,
+      "subject": {
+        "id": "III:1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P6Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:301116",
+            "label": "Intellectual developmental disorder, X-linked 113"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000750",
+            "label": "Delayed speech and language development"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001270",
+            "label": "Motor delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001256",
+            "label": "Mild intellectual disability"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "FB02H6GudSUX9W40s6xDnWi3",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:301116",
+              "label": "Intellectual developmental disorder, X-linked 113"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "III:1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c149AtoC_CSTF2_NM_001325v3",
+                    "geneContext": {
+                      "valueId": "HGNC:2484",
+                      "symbol": "CSTF2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001325.3:c.149A>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000023.11:g.100822262A>C"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001316.1:p.(Asp50Ala)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chrX",
+                      "pos": 100822262,
+                      "ref": "A",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000134",
+                      "label": "hemizygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/CSTF2/PMID_32816001_II_1.json",
+      "sha256": "b3aeb5813bea52f291e8392e91fe7a216698ab1a3b4dbcbeb5c9e47cc88f1f38",
+      "case_id": "TC_986b0e0e76d8a6a9",
+      "selected_record": false,
+      "subject": {
+        "id": "II:1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P44Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:301116",
+            "label": "Intellectual developmental disorder, X-linked 113"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0001270",
+            "label": "Motor delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001256",
+            "label": "Mild intellectual disability"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "QRJ8bX1ZTyorYgme1dTrjO1i",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:301116",
+              "label": "Intellectual developmental disorder, X-linked 113"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "II:1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c149AtoC_CSTF2_NM_001325v3",
+                    "geneContext": {
+                      "valueId": "HGNC:2484",
+                      "symbol": "CSTF2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001325.3:c.149A>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000023.11:g.100822262A>C"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001316.1:p.(Asp50Ala)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chrX",
+                      "pos": 100822262,
+                      "ref": "A",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000134",
+                      "label": "hemizygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/CSTF2/PMID_32816001_II_2.json",
+      "sha256": "93c9110d2b430008877d7436cdac1f0d18d6e069a03b560149671df63742fadb",
+      "case_id": "TC_986b0e0e76d8a6a9",
+      "selected_record": false,
+      "subject": {
+        "id": "II:2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P46Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:301116",
+            "label": "Intellectual developmental disorder, X-linked 113"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0001270",
+            "label": "Motor delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001256",
+            "label": "Mild intellectual disability"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "LtPRwawDNlLIxrLGaNhpVWxM",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:301116",
+              "label": "Intellectual developmental disorder, X-linked 113"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "II:2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c149AtoC_CSTF2_NM_001325v3",
+                    "geneContext": {
+                      "valueId": "HGNC:2484",
+                      "symbol": "CSTF2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001325.3:c.149A>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000023.11:g.100822262A>C"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001316.1:p.(Asp50Ala)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chrX",
+                      "pos": 100822262,
+                      "ref": "A",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000134",
+                      "label": "hemizygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

@@ -1,0 +1,678 @@
+{
+  "pmid": "34606115",
+  "source_titles": [
+    "End-Truncated LAMB1 Causes a Hippocampal Memory Defect and a Leukoencephalopathy."
+  ],
+  "selected_case_ids": [
+    "TC_1377ac1a9c347062",
+    "TC_0880fd0fa73d9e44"
+  ],
+  "alternate_case_ids": [
+    "TC_0880fd0fa73d9e44"
+  ],
+  "genes": [
+    "LAMB1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/LAMB1/PMID_34606115_F1_8.json",
+      "sha256": "3e5d7afc581bca21f7998d1c081c0ffc942d20d402da85af4f95dac6ac417f5c",
+      "case_id": "TC_1377ac1a9c347062",
+      "selected_record": true,
+      "subject": {
+        "id": "F1-8",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P69Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621424",
+            "label": "Leukoencephalopathy without lacunae, adult-onset"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P63Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000819",
+            "label": "Diabetes mellitus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001095",
+            "label": "Hypertensive retinopathy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000757",
+            "label": "Lack of insight"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P63Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002354",
+            "label": "Memory impairment"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P63Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002077",
+            "label": "Migraine with aura"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001288",
+            "label": "Gait disturbance"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0032325",
+            "label": "Lacunar stroke"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000822",
+            "label": "Hypertension"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P49Y"
+            }
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "lbp75ZYlE1a4X1AYLg282s4Z",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621424",
+              "label": "Leukoencephalopathy without lacunae, adult-onset"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "F1-8",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c5250_5253del_LAMB1_NM_002291v3",
+                    "geneContext": {
+                      "valueId": "HGNC:6486",
+                      "symbol": "LAMB1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002291.3:c.5250_5253del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000007.14:g.107924062_107924065del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_002282.2:p.(Asn1750LysfsTer4)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr7",
+                      "pos": 107924058,
+                      "ref": "TTTGA",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/LAMB1/PMID_34606115_F3_4.json",
+      "sha256": "cf5a683ed3832da61840d421348aae812ecbfa3c0bc3b64071fd87dbd6f03651",
+      "case_id": "TC_0880fd0fa73d9e44",
+      "selected_record": true,
+      "subject": {
+        "id": "F3-4",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P75Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621424",
+            "label": "Leukoencephalopathy without lacunae, adult-onset"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P57Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0001342",
+            "label": "Cerebral hemorrhage"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P57Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000819",
+            "label": "Diabetes mellitus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003124",
+            "label": "Hypercholesterolemia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000757",
+            "label": "Lack of insight"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P65Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000741",
+            "label": "Apathy"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P57Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002354",
+            "label": "Memory impairment"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P65Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001289",
+            "label": "Confusion"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P57Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0033051",
+            "label": "Impaired executive functioning"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P57Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002077",
+            "label": "Migraine with aura"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001288",
+            "label": "Gait disturbance"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0032325",
+            "label": "Lacunar stroke"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000822",
+            "label": "Hypertension"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "OayReHQpnqX3a6HnIZNCUvCq",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621424",
+              "label": "Leukoencephalopathy without lacunae, adult-onset"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "F3-4",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c5161dup_LAMB1_NM_002291v3",
+                    "geneContext": {
+                      "valueId": "HGNC:6486",
+                      "symbol": "LAMB1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002291.3:c.5161dup"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000007.14:g.107924295dup"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_002282.2:p.(Met1721AsnfsTer5)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr7",
+                      "pos": 107924292,
+                      "ref": "A",
+                      "alt": "AT"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/LAMB1/PMID_34606115_F3_6.json",
+      "sha256": "67001d11c53409f51b9bb7d8f782a92d9c8c3b2444b2258488e79e403f83a01b",
+      "case_id": "TC_0880fd0fa73d9e44",
+      "selected_record": false,
+      "subject": {
+        "id": "F3-6",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P41Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621424",
+            "label": "Leukoencephalopathy without lacunae, adult-onset"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P27Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000819",
+            "label": "Diabetes mellitus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002354",
+            "label": "Memory impairment"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002077",
+            "label": "Migraine with aura"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001288",
+            "label": "Gait disturbance"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0025190",
+            "label": "Bilateral tonic-clonic seizure with generalized onset"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P27Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011147",
+            "label": "Typical absence seizure"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P27Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032325",
+            "label": "Lacunar stroke"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000822",
+            "label": "Hypertension"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "EhNUCjicRpRb3ipEK7XKa4NE",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621424",
+              "label": "Leukoencephalopathy without lacunae, adult-onset"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "F3-6",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c5161dup_LAMB1_NM_002291v3",
+                    "geneContext": {
+                      "valueId": "HGNC:6486",
+                      "symbol": "LAMB1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002291.3:c.5161dup"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000007.14:g.107924295dup"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_002282.2:p.(Met1721AsnfsTer5)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr7",
+                      "pos": 107924292,
+                      "ref": "A",
+                      "alt": "AT"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/LAMB1/PMID_34606115_F4_5.json",
+      "sha256": "e86d5a9b3bfada3186ab715f28fffcbcd444828bf5d89bbbb8a89fe294160f2b",
+      "case_id": "TC_0880fd0fa73d9e44",
+      "selected_record": false,
+      "subject": {
+        "id": "F4-5",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P27Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621424",
+            "label": "Leukoencephalopathy without lacunae, adult-onset"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P20Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000819",
+            "label": "Diabetes mellitus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033643",
+            "label": "Increased circulating very long-chain fatty acid concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002321",
+            "label": "Vertigo"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P23Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001260",
+            "label": "Dysarthria"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P20Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002354",
+            "label": "Memory impairment"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000726",
+            "label": "Dementia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002077",
+            "label": "Migraine with aura"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001288",
+            "label": "Gait disturbance"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0032325",
+            "label": "Lacunar stroke"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000822",
+            "label": "Hypertension"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "Rk1r57jLVeEHtr1DjbE8IvRo",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621424",
+              "label": "Leukoencephalopathy without lacunae, adult-onset"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "F4-5",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c5161dup_LAMB1_NM_002291v3",
+                    "geneContext": {
+                      "valueId": "HGNC:6486",
+                      "symbol": "LAMB1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_002291.3:c.5161dup"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000007.14:g.107924295dup"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_002282.2:p.(Met1721AsnfsTer5)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr7",
+                      "pos": 107924292,
+                      "ref": "A",
+                      "alt": "AT"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

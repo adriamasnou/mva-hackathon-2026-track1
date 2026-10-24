@@ -1,0 +1,225 @@
+{
+  "pmid": "23335590",
+  "source_titles": [
+    "Cellular interference in craniofrontonasal syndrome: males mosaic for mutations in the X-linked EFNB1 gene are more severely affected than true hemizygotes"
+  ],
+  "selected_case_ids": [
+    "TC_3d818205e46dd496"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "EFNB1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/EFNB1/PMID_23335590_Subject_4354.json",
+      "sha256": "99501655e9c4636168dd0a1b94821d9911e7b246233d0f28de8040059d33ffaf",
+      "case_id": "TC_3d818205e46dd496",
+      "selected_record": true,
+      "subject": {
+        "id": "Subject 4354",
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:304110",
+            "label": "Craniofrontonasal dysplasia"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000316",
+            "label": "Hypertelorism"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000508",
+            "label": "Ptosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004440",
+            "label": "Coronal craniosynostosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000175",
+            "label": "Cleft palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000494",
+            "label": "Downslanted palpebral fissures"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000369",
+            "label": "Low-set ears"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0410030",
+            "label": "Cleft lip"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000767",
+            "label": "Pectus excavatum"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000465",
+            "label": "Webbed neck"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000023",
+            "label": "Inguinal hernia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001537",
+            "label": "Umbilical hernia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001060",
+            "label": "Axillary pterygium"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001156",
+            "label": "Brachydactyly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001159",
+            "label": "Syndactyly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004209",
+            "label": "Clinodactyly of the 5th finger"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001807",
+            "label": "Ridged nail"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "Ekj61IaLZJ9lh3ACmFIiK8tU",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:304110",
+              "label": "Craniofrontonasal dysplasia"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Subject 4354",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c404CtoA_EFNB1_NM_004429v5",
+                    "geneContext": {
+                      "valueId": "HGNC:3226",
+                      "symbol": "EFNB1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_004429.5:c.404C>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000023.11:g.68838892C>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_004420.1:p.(Thr135Asn)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chrX",
+                      "pos": 68838892,
+                      "ref": "C",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000134",
+                      "label": "hemizygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

@@ -1,0 +1,1481 @@
+{
+  "schema_version": 1,
+  "pmid": "31898322",
+  "title": "Phenotypic spectrum of TGFB3 disease-causing variants in a Dutch-French cohort and first report of a homozygous patient",
+  "reviewer": {
+    "id": "reader11",
+    "reviewed_at_utc": "2026-10-24T18:42:07.882894+00:00",
+    "method": "Independent public-source comparison, all assigned selected and alternate packet members retained. No inference output opened."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Mandatory HANDOFF.md exposes historical public-control per-case ranks and aggregate outcomes. Conservatively declared per_case; no target-case outcomes or inference files consulted for this audit."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "0cd41f849600bf2ad1e5298cf6eb4c4a5573f038a4b1338243b7bc59dd9d674d",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-pdf",
+      "pmid": "31898322",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer11/31898322/main.pdf",
+      "sha256": "dbf169a2db0c52e7732f59368f1e3c73fa5c3020289e8ba45c022a153dee1c1c",
+      "kind": "pdf",
+      "description": "Held public full article; copied hash-verified from retrieval-followup."
+    },
+    {
+      "id": "main-layout",
+      "pmid": "31898322",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer11/31898322/main-layout.txt",
+      "sha256": "c71e8921eb1c517f329cc4b15b2c3e0a5d31b6ae1df1804575f0b31e923434aa",
+      "kind": "text",
+      "description": "Layout-preserving extracted text, actually read for declared pages."
+    },
+    {
+      "id": "retrieval",
+      "pmid": "31898322",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer11/31898322/provenance.json",
+      "sha256": "c568ecd77c866ffb37a495bd2d4f0a307ae5979b8bd2fae378fbe3037931e307",
+      "kind": "metadata",
+      "description": "Public source retrieval identity and provenance; retrieval alone is not reading."
+    },
+    {
+      "id": "supp-access",
+      "pmid": "31898322",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer11/31898322/supp.headers",
+      "sha256": "8740910822c5b96b6920902660876ca22f79e15e9eeadb3edb8bb977d67b0ab3",
+      "kind": "access_log",
+      "description": "Explicit publisher Appendix S1 URL returned HTTP403."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Phenotypic spectrum of TGFB3 disease-causing variants in a Dutch-French cohort and first report of a homozygous patient",
+    "evidence": [
+      {
+        "source_id": "main-pdf",
+        "locator": "Title, authors and DOI on first article page"
+      }
+    ],
+    "note": "Identity independently confirmed from held full article."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 1,
+      "table": 2,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "main-pdf",
+        "locator": "Main article 8 journal pages plus repository cover; Figure1; Tables1–2; AppendixS1 advertised on publisher page and in final article page."
+      }
+    ],
+    "note": "Main article 8 journal pages plus repository cover; Figure1; Tables1–2; AppendixS1 advertised on publisher page and in final article page."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "pages",
+      "unit_count": 9,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Physical PDF pages 1–9, including all main-text references/end matter."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 9,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "Physical PDF pages 1–9, including all main-text references/end matter."
+        }
+      ],
+      "note": "Physical PDF pages 1–9, including all main-text references/end matter."
+    },
+    {
+      "id": "Figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p8; inverted Kaplan–Meier aortic-disease curve"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p8; inverted Kaplan–Meier aortic-disease curve"
+        }
+      ],
+      "note": "PDF p8; inverted Kaplan–Meier aortic-disease curve"
+    },
+    {
+      "id": "Table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF pp4–6; all 32 rows and footnotes"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "PDF pp4–6; all 32 rows and footnotes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF pp4–6; all 32 rows and footnotes"
+        }
+      ],
+      "note": "PDF pp4–6; all 32 rows and footnotes"
+    },
+    {
+      "id": "Table2",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p7; all variant rows and footnotes"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "PDF p7; all variant rows and footnotes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p7; all variant rows and footnotes"
+        }
+      ],
+      "note": "PDF p7; all variant rows and footnotes"
+    },
+    {
+      "id": "AppendixS1",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "pages",
+      "unit_count": null,
+      "extent_source_id": "supp-access",
+      "extent_evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "Advertised cge13700-sup-0001-Supinfo.docx; public direct request returned HTTP403; not read."
+        }
+      ],
+      "coverage": [],
+      "note": "Advertised cge13700-sup-0001-Supinfo.docx; public direct request returned HTTP403; not read."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/TGFB3/PMID_31898322_case_5_index.json",
+      "packet_sha256": "b03e1589543682dfab1c449b721d475652d8f0d1331a395573169ce7cd3c4124",
+      "case_id": "TC_fbce52714fe9fc48",
+      "role": "selected",
+      "packet_subject_id": "case 5 index",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "AppendixS1 inaccessible. Main Table1 summarizes positive findings; omissions do not establish negative examinations."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Packet case5 index maps to male index case5, age21 at last evaluation.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "TGFB3 c.516+1G>A, p.? and heterozygosity agree; Table1 has a p. prefix typo resolved by Table2. Source uses NM_003239.4/GRCh37; packet NM_003239.5/GRCh38 coordinates are not independently normalized.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+          }
+        ],
+        "limitations": [
+          "Transcript-version and genomic-coordinate conversion unverified."
+        ]
+      },
+      "segregation": {
+        "status": "unresolved",
+        "statement": "Patient5 family history is ?; neither de novo origin nor transmitting parent established.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+          }
+        ],
+        "limitations": [
+          "Segregation not supplied for this case."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single heterozygous variant; no compound-heterozygous phase claim required.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+          }
+        ],
+        "limitations": [
+          "Parental origin unknown."
+        ]
+      },
+      "causal_confidence": {
+        "status": "contradicted",
+        "statement": "TGFB3-related connective-tissue disorder/LDS5 is consistent, but packet PATHOGENIC exceeds explicit source LP (likely pathogenic, class I); SOLVED/CAUSATIVE is a packet assertion rather than independent clinical validation.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+          }
+        ],
+        "limitations": []
+      },
+      "phenotype_completeness": {
+        "status": "contradicted",
+        "statement": "Scoliosis and downslanting palpebral fissures are wrongly excluded. Packet also omits myopia, high-arched palate, pectus carinatum, joint hypermobility, arachnodactyly, pes planus, sternoclavicular subluxation, striae, autoimmune thrombocytopenia and chronic diarrhea.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+          }
+        ],
+        "limitations": []
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c516_1GtoA_TGFB3_NM_003239v5",
+            "geneContext": {
+              "valueId": "HGNC:11769",
+              "symbol": "TGFB3"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003239.5:c.516+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000014.9:g.75971554C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003230.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr14",
+              "pos": 75971554,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "70c4034dafe000b60fa754d5b20e99db0f12c3ee6e9f123780b0c93551ddd9ba",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TGFB3 c.516+1G>A, p.? and heterozygosity agree; Table1 has a p. prefix typo resolved by Table2. Source uses NM_003239.4/GRCh37; packet NM_003239.5/GRCh38 coordinates are not independently normalized.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Transcript-version and genomic-coordinate conversion unverified."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005112",
+              "label": "Abdominal aortic aneurysm"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb195e5ad340082a5204d960028745f92256b89fd4e4c5d36950581309d44bf0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Abdominal aortic aneurysm: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033311",
+              "label": "Abdominal aortic dissection"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "20c4260e96cbc132c9531295c2d28c9ed72ac3ed6afaf3846b6bf582fc07a4ac",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Abdominal aortic dissection: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:4000067",
+              "label": "Iliac artery aneurysm"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a78bb8a7ec566fc788484be1a4c89e81cb078d40f114ddbf33894c61f8db10a9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Iliac artery aneurysm: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002616",
+              "label": "Aortic root aneurysm"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P16Y"
+              }
+            }
+          },
+          "snapshot_sha256": "e0dcaaa48e7cadc8f0a749041ba6846830400ebe381ab93b36e601d8cc7e4405",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Aortic root dilatation diagnosed at16 supports site/onset; packet aneurysm terminology is more specific than source dilatation without diameter.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "No aneurysm threshold/diameter reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012499",
+              "label": "Descending aortic dissection"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2bcf7deb6022b7f77c2db7152afd4aea5f26e71e0781dd0340289f58ed92b2bf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Descending aortic dissection: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001634",
+              "label": "Mitral valve prolapse"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0fd5a97a25b0d5d861b5785962c8112638a42a0611e34224a5b18c5ac23cd252",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Mitral valve prolapse: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001653",
+              "label": "Mitral regurgitation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fcc3ec9dec3a95a2adec761309db517120280ae12755efadfbc15e5563e6384b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Mitral regurgitation: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001659",
+              "label": "Aortic regurgitation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "958a71c66202aa7d44780ff50f7245fcbb9acfd82872ab0b95905fd597835d5a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Aortic regurgitation: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011675",
+              "label": "Arrhythmia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f2a0fd360dd43f0ccafb36b8cc49f13993b9ddf91b9a5f460ff6c9a5cfa3442b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Arrhythmia: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005302",
+              "label": "Carotid artery tortuosity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "300435f6d30afd4d49c38b15d0bd6ee9b3c97240380a7c42518013276a48c25c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Carotid artery tortuosity: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033981",
+              "label": "Vertebral artery tortuosity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2c431de17ad896e302b2961523c9b8449f9aed8a9cfaf5f31b14488f459ea837",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Vertebral artery tortuosity: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001644",
+              "label": "Dilated cardiomyopathy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4118e6de1f48f28bf3e404e4578bdde11dfd9e56a0b3a9920907b6d61aa8e134",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Dilated cardiomyopathy: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012385",
+              "label": "Camptodactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d2bc95589543e00d26b2957d867155e91e9c8aaf61b91fc26db8300e4ea71b73",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Camptodactyly: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002758",
+              "label": "Osteoarthritis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1da2cbe80057b52f39b32c0f5fb78bc53b74ac1321c9b03138cbe0fa1ce56257",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Osteoarthritis: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6db568d0dd760bea978b8846d66cb918c3bc978c8bb480f209e63a73a910f4bc",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Scoliosis: packet excluded=true conflicts with patient5 kyphoscoliosis/DPF.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003302",
+              "label": "Spondylolisthesis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "dac391c9f53f11b194ae52e86ce7b5a03b41a8e52ba1ab62fd0c369e28cf3f7d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Spondylolisthesis: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000175",
+              "label": "Cleft palate"
+            }
+          },
+          "snapshot_sha256": "5fcb9f5da61cdbc91fd8b137e7fafe3fe3832af85e93b4c0437328035bd4b96d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Cleft palate: explicitly described in patient5; height +3.5 SD supports tall stature.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011800",
+              "label": "Midface retrusion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8977ea4d67149de11c81e29edb6023eb5854fe8801cbef6c0f05948a95f4ad4b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Midface retrusion: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000278",
+              "label": "Retrognathia"
+            }
+          },
+          "snapshot_sha256": "f35f7adedbe6a956bd13d21603c9287130e590317a763b35cd2ba4e652ac1fd0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Retrognathia: explicitly described in patient5; height +3.5 SD supports tall stature.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000348",
+              "label": "High forehead"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9bd0f18bb0f324dcb8154763ae8ac6ea384b27e32b435d7bcfd5ec411f5faba4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "High forehead: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011094",
+              "label": "Increased overbite"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e5a2d8d064d3fc37b8fa3d8d19440c1e057e9fdabb5d3b192a47c0b6d64548ae",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Increased overbite: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e033332deff34bfb43d8333aa3e2b1ba4e4dbf229f9098646b172fe5a88ca401",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Ptosis: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002007",
+              "label": "Frontal bossing"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "563a5baa39ebd5f0941e591d045b7c0233e4fc03dce6c8be81cd6fc3404b63a0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Frontal bossing: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000369",
+              "label": "Low-set ears"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ea3c99f77d325f2810bba05cb968302cbc1008c58ed25bc0410c8d56e3480627",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Low-set ears: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1e78f075d7d5e88f72df7de1f0ab14b655ba5d68bfc8adc2914cf5d7ebde009e",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Downslanted palpebral fissures: packet excluded=true conflicts with patient5 kyphoscoliosis/DPF.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000276",
+              "label": "Long face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f86a163e69de2c34bbc0ab608b5c76cff3bc82a4ccd6b0f6c902ea4a1c9fee58",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Long face: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000319",
+              "label": "Smooth philtrum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "369de32ed9165b02357210c2e521e3de7e830a2e2d10eaff16509312973c8be5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Smooth philtrum: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000322",
+              "label": "Short philtrum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d43daa0a312399ef718ac4903fedc17e1e012e34aa834b7159450bfcccfff966",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short philtrum: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000520",
+              "label": "Proptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9feb22c8efcd0463405cc92eb0dbf9d544aa42646a465208d3d47157c3e89270",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Proptosis: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000678",
+              "label": "Dental crowding"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "40c0268f20012d481a931df715b49a575794d555510ef86f5bd1335b690d56dd",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Dental crowding: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000268",
+              "label": "Dolichocephaly"
+            }
+          },
+          "snapshot_sha256": "8660cfde18c8a5a7dc6aacef81d99bb192ca8c22e27fe61e2617f026950dd1ea",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dolichocephaly: explicitly described in patient5; height +3.5 SD supports tall stature.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001385",
+              "label": "Hip dysplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "aa6e250e87e1413d130df9b0ee866a1204e370f556ecacc7fac631ab998dc69b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hip dysplasia: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001762",
+              "label": "Talipes equinovarus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "88377a3b02d35a9ed9068bf6dc21624cbea6f8163c5471abc8a8382866bb82af",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Talipes equinovarus: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000592",
+              "label": "Blue sclerae"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "52685550ddb47e65cf44809a3db0c4ba776773d70f3011f2ba8dd3086d3800b6",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Blue sclerae: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c75e654012c14dea90453d61fde221f4dca1c2729c3ea61db1e002c4f5fd16eb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypertelorism: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003199",
+              "label": "Decreased muscle mass"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "34602579b9f9e2b930409690a5ab88bce71d8f926109c8845903ff0203a37cb4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Decreased muscle mass: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000098",
+              "label": "Tall stature"
+            }
+          },
+          "snapshot_sha256": "052218994916bb94c40848c0d7d7ff563f8f71c011c926b1737224c8156ad91d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Tall stature: explicitly described in patient5; height +3.5 SD supports tall stature.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010648",
+              "label": "Dermal translucency"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "003b5e77b707589300f416593588604b067d579930c2da77baab8f076c745136",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Dermal translucency: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000977",
+              "label": "Soft skin"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "41be6b8b6776a3172ab7c96549192bb5276d969450e23484b213999f30e1fdc3",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Soft skin: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/39",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002619",
+              "label": "Varicose veins"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5f574ca8eebbcfb53ce0c5c82dd68ecb35e82bf70259de52353b904a0b5ba81a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Varicose veins: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/40",
+          "snapshot": {
+            "type": {
+              "id": "HP:6000313",
+              "label": "Incomplete right bundle branch block"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b75c75d28386e06c1fd5805c1d047f9714cfb95b1a00ba972a7f550dead9ec13",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Incomplete right bundle branch block: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/41",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100309",
+              "label": "Subdural hemorrhage"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5fc49d040ca96cfc35f855f6fbc9364ab28019816e8ee2a32d6fe919f34335c0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Subdural hemorrhage: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/42",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002107",
+              "label": "Pneumothorax"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a37686194e2888384d7eb6c5a21eb681754cce7b67d14dea24e42f451c4d5b02",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Pneumothorax: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/43",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000486",
+              "label": "Strabismus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3b49b45ac128cc7c84ce063ac3ad39346a6f94fa91fddcf113a7541acdb44aa1",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Strabismus: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/44",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001822",
+              "label": "Hallux valgus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5584d70ea81f568570e0ff87648665408825fd0afe94649acfb20771454c3369",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hallux valgus: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/45",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001319",
+              "label": "Neonatal hypotonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "30b9a660dfb3aee443edf5e2479f3cb20a73520eb2921d699ec58d5c38efa717",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Neonatal hypotonia: case5 summary does not explicitly document absence; omission cannot substantiate excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Table1 patient5 (PDF p4), Table1 footnotes (p6), Table2 c.516+1G>A (p7)"
+              }
+            ],
+            "limitations": [
+              "Negative examination not documented in read primary text; appendix unavailable."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "AppendixS1",
+      "status": "open",
+      "detail": "Advertised cge13700-sup-0001-Supinfo.docx; public direct request returned HTTP403; not read.",
+      "evidence": [
+        {
+          "source_id": "supp-access",
+          "locator": "Advertised cge13700-sup-0001-Supinfo.docx; public direct request returned HTTP403; not read."
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Post-inference source-correspondence audit, not blinded or independent clinical validation.",
+    "Reader11 records directory and predecessor reviewer-1 filename search contained no records for these six PMIDs on arrival; queue records existing_main_text_read=false. No predecessor reading credit invented. Curated subscription inputs were prepared but Claude used zero tokens and performed no review."
+  ]
+}

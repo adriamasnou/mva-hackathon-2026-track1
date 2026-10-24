@@ -1,0 +1,3576 @@
+{
+  "schema_version": 1,
+  "pmid": "29513881",
+  "title": "Identification of a novel UMOD mutation (c.163G>A) in a Brazilian family with autosomal dominant tubulointerstitial kidney disease",
+  "reviewer": {
+    "id": "reviewer-8",
+    "reviewed_at_utc": "2026-10-24T18:12:43.905967+00:00",
+    "method": "Direct full source reading and visual inspection where recorded; item-by-item selected/alternate packet comparison. Mechanical extraction/inventory is not read credit."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Required full HANDOFF.md read on 2026-10-24 exposed aggregate source-audit counts, HG002/HG001/phenotype-only top1/5/10 summaries, compact 556/653/665 versus 430/649/665 of 681, corrected deltas, and the historical public FGFR2 rank 1 at 0.9654. Conservatively per_case, not blinded. No case ranking/outcome files were consulted for this review; only assigned source contexts, identities, availability, held primary sources and the adjudication validator were used."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "ffef2aa7697a69400348b0268b2060e5a8d069fee906152f88bbc6082f026f32",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "text",
+      "pmid": "29513881",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29513881/main.complete.txt",
+      "sha256": "b54b87de6d34b9a56e4357953c99b60750ff2bb3832e9ce240313dd28f3c2efc",
+      "kind": "text",
+      "description": "Held primary article version; reading coverage declared separately."
+    },
+    {
+      "id": "xml",
+      "pmid": "29513881",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29513881/main.xml",
+      "sha256": "6de6750e0cdba2742014edaa6cd6137ce55f82d60c2c1e3d922bcbba3a26d0d4",
+      "kind": "xml",
+      "description": "Held primary article version; reading coverage declared separately."
+    },
+    {
+      "id": "pdf",
+      "pmid": "29513881",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29513881/cloud/PMC5912098.1/PMC5912098.1.pdf",
+      "sha256": "030a52bded11ae959b1d76ff40d26501a5e096037b8f4292ee6b6a9999f5355a",
+      "kind": "pdf",
+      "description": "Held primary article version; reading coverage declared separately."
+    },
+    {
+      "id": "metadata",
+      "pmid": "29513881",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/29513881/identity.json",
+      "sha256": "79c5b5be5f58c8c2bf50d95b5a75ec94ea5fde7250dfa926fdcc958323128344",
+      "kind": "metadata",
+      "description": "Independent exact PMID/DOI identity receipt."
+    },
+    {
+      "id": "f01-asset",
+      "pmid": "29513881",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29513881/cloud/PMC5912098.1/1414-431X-bjmbr-1414-431X20176560-gf01.jpg",
+      "sha256": "2875ac0521bdfa4d27904d263a716fc7d4a1012cad2d44a12bed2fd936fd63ba",
+      "kind": "image",
+      "description": "Primary linked figure; not automatically read."
+    },
+    {
+      "id": "f02-asset",
+      "pmid": "29513881",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29513881/cloud/PMC5912098.1/1414-431X-bjmbr-1414-431X20176560-gf02.jpg",
+      "sha256": "14efbc960f93d2ed8955adf7dd8ae5b31d1298b3e903fb686fdc38bc98476a38",
+      "kind": "image",
+      "description": "Primary linked figure; not automatically read."
+    },
+    {
+      "id": "f03-asset",
+      "pmid": "29513881",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/29513881/cloud/PMC5912098.1/1414-431X-bjmbr-1414-431X20176560-gf03.jpg",
+      "sha256": "d5290c9a17900c9a02c01897b5a5e4209f707f2b6a61c8df0c691b3c6c4ad3b4",
+      "kind": "image",
+      "description": "Primary linked figure; not automatically read."
+    },
+    {
+      "id": "s1",
+      "pmid": "29513881",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-8/assets/29513881/supplement-http.response",
+      "sha256": "dac10d080f2c6400b9c9f9aadbf6ef78764a52a494ecf942c18db229ab560550",
+      "kind": "pdf",
+      "description": "Publisher-linked Table S1, one page, retrieved from original HTTP link redirecting to https://www.bjournal.org/supplementary_material/6560.pdf."
+    },
+    {
+      "id": "s1-text",
+      "pmid": "29513881",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-8/assets/29513881/supplement.txt",
+      "sha256": "cec1d9da60d6709cf5d77c00d33b2b89f6688d0b6c2b9adfdbc717267e5c00f4",
+      "kind": "text",
+      "description": "Complete pdftotext -layout extraction of Table S1."
+    },
+    {
+      "id": "s1-headers",
+      "pmid": "29513881",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-8/assets/29513881/supplement-http.headers",
+      "sha256": "6d9d0abb9cb8eeedf34bf9acc2525c5e1e2a7653f0f1d24983ee9aea99b9551b",
+      "kind": "access_log",
+      "description": "Redirect and HTTP 200 headers for S1."
+    },
+    {
+      "id": "s1-pixels",
+      "pmid": "29513881",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-8/assets/29513881/supplement-1.png",
+      "sha256": "7a4e28eae2fab724d2e819d11d0959d1f340ace22364ab5a488092c4896a867a",
+      "kind": "image",
+      "description": "Preserved raster of entire S1 read visually."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Identification of a novel UMOD mutation (c.163G>A) in a Brazilian family with autosomal dominant tubulointerstitial kidney disease",
+    "evidence": [
+      {
+        "source_id": "pdf",
+        "locator": "Title/author/journal/DOI first page"
+      },
+      {
+        "source_id": "xml",
+        "locator": "article-meta article-id and title-group"
+      },
+      {
+        "source_id": "metadata",
+        "locator": "metadata PMID and DOI"
+      }
+    ],
+    "note": "Lopes/Abreu et al., Brazilian Journal of Medical and Biological Research 2018;51(3):e6560, DOI 10.1590/1414-431X20176560; publisher PDF p1 matches PMID/PMC. Original publisher supplement link redirects to bjournal.org; S1 identifiers, ages, UMOD-positive/negative pedigree groups and clinical details correspond to this article."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 3,
+      "table": 0,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "Full article figure/table/supplement listing; repeated exact asset links deduplicated."
+      },
+      {
+        "source_id": "text",
+        "locator": "Lines 28-29, 44, 47, 79-83, explicit Supplementary Table S1"
+      }
+    ],
+    "note": "Three main figures, no main tables, and one external Table S1. S1 was not encoded as a JATS supplementary-material element; discovered in main text Supplementary Material and Figure 1 caption. Zero main tables does not omit S1."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 185,
+      "extent_source_id": "text",
+      "extent_evidence": [
+        {
+          "source_id": "text",
+          "locator": "Complete held extraction; line extents independently counted. Full reading is not claimed until covered."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 185,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "All lines 1-185 including references; complete extraction read."
+        }
+      ],
+      "note": "Complete held extraction; line extents independently counted. Full reading is not claimed until covered."
+    },
+    {
+      "id": "f01",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Primary XML fig @id=f01; Figure 1.Family pedigree. The arrow indicates the index case. The double arrow indicates the patient who donated a kidney and still had an estimated glomerular filtration rate (eGFR) of 66 mL·min-1/(1.73m2) at age 59. One transverse bar means death by unknown cause whereas two transverse bars mean death in hemodialysis. Black figures indicate end stage renal disease or eGFR <60 mL·min-1/(1.73m2). "
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "f01-asset",
+          "locator": "Whole figure inspected: all pedigree individuals, genotypes, shapes and arrows"
+        }
+      ],
+      "note": "Primary XML fig @id=f01; Figure 1.Family pedigree. The arrow indicates the index case. The double arrow indicates the patient who donated a kidney and still had an estimated glomerular filtration rate (eGFR) of 66 mL·min-1/(1.73m2) at age 59. One transverse bar means death by unknown cause whereas two transverse bars mean death in hemodialysis. Black figures indicate end stage renal disease or eGFR <60 mL·min-1/(1.73m2). "
+    },
+    {
+      "id": "f02",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Primary XML fig @id=f02; Figure 2.Renal biopsy photomicrography and ultrasound images. A, Normal glomerulus (hematoxylin-eosin; bar=50 µm). B, Tubulointerstitial area; mild interstitial fibrosis and tubular atrophy with mononuclear and eosinophilic inflammatory infiltrate (hematoxylin-eosin, bar=50 µm). C, Negative immunostaining of the glomerulus for immunoglobulin G. (A, B and C from case IV:6). D, Renal ultrasound imag"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "f02-asset",
+          "locator": "Whole figure inspected: histology A-C and ultrasound D"
+        }
+      ],
+      "note": "Primary XML fig @id=f02; Figure 2.Renal biopsy photomicrography and ultrasound images. A, Normal glomerulus (hematoxylin-eosin; bar=50 µm). B, Tubulointerstitial area; mild interstitial fibrosis and tubular atrophy with mononuclear and eosinophilic inflammatory infiltrate (hematoxylin-eosin, bar=50 µm). C, Negative immunostaining of the glomerulus for immunoglobulin G. (A, B and C from case IV:6). D, Renal ultrasound imag"
+    },
+    {
+      "id": "f03",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Primary XML fig @id=f03; Figure 3.Sequence analysis, evolutionary conservation and uromodulin protein diagram. A, UMOD gene analysis at exon 4 from the index case and two family members from other generations. The sequence analysis showed a novel heterozygous missense mutation, G163A, resulting in a G55S amino acid exchange. The arrow indicates the overlapping peaks at the site of nucleotide substitution. All positive pat"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "f03-asset",
+          "locator": "Whole figure inspected: sequence A, alignment B and domain C"
+        }
+      ],
+      "note": "Primary XML fig @id=f03; Figure 3.Sequence analysis, evolutionary conservation and uromodulin protein diagram. A, UMOD gene analysis at exon 4 from the index case and two family members from other generations. The sequence analysis showed a novel heterozygous missense mutation, G163A, resulting in a G55S amino acid exchange. The arrow indicates the overlapping peaks at the site of nucleotide substitution. All positive pat"
+    },
+    {
+      "id": "S1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "s1",
+      "extent_evidence": [
+        {
+          "source_id": "s1",
+          "locator": "Single-page Supplementary Table S1 including all positive and negative patient rows and missing-value footnote."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "s1-text",
+          "locator": "All table rows and notes, one-page complete layout extraction."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "s1-pixels",
+          "locator": "Entire page, all rows/cells, legend and missing-value footnote."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "s1",
+          "locator": "Entire one-page PDF inspected via preserved supplement-1.png raster."
+        }
+      ],
+      "note": "Single-page Supplementary Table S1 including all positive and negative patient rows and missing-value footnote."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/UMOD/PMID_29513881_III_11.json",
+      "packet_sha256": "662582c8e382d373fc945b5bc90d041ca69e28bf124e7e4a8157e378e3167c75",
+      "case_id": "TC_09a8a5f9ae1b0e17",
+      "role": "selected",
+      "packet_subject_id": "III:11",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Selected and all ten alternate packets individually compared; no patient merging or frozen edits."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact pedigree identifier, sex and age match Table S1 for III:11.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row III:11"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "S1 positive group and Figure 1 + sign identify III:11 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-53"
+          }
+        ],
+        "limitations": [
+          "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Multigenerational dominant segregation is reported and III:11 is genotypically positive; Figure 1 also shows clinically affected mutation-negative III:6. Reported LOD=2.58 with recombination frequency 0.15.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Do not infer complete penetrance or every parent-of-origin event; phenotype variability and affected noncarrier retained."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous UMOD variant is reported; two-variant phase not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-53; Figure 3"
+          }
+        ],
+        "limitations": [
+          "No additional haplotype or molecular phase measurement."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Family-level ADTKD-UMOD attribution rests on segregation, conservation and clinical pattern with negative REN/MUC1 testing; predictors are mixed and no allele-specific functional assay is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Case-series attribution only, not recertification of packet PATHOGENIC/SOLVED labels."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "The source reports additional renal/transplant/biopsy/anemia/UTI context and variable missingness. S1 blank cells mean data unavailable; dash means no dialysis. Individual negatives cannot be inferred from blank cells.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row III:11; footnote"
+          }
+        ],
+        "limitations": [
+          "Preserve main-versus-S1 gout conflict and index-case identifier ambiguity."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c163GtoA_UMOD_NM_003361v4",
+            "geneContext": {
+              "valueId": "HGNC:12559",
+              "symbol": "UMOD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003361.4:c.163G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.20349138C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003352.2:p.(Gly55Ser)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 20349138,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e27de6d7deb909f85e8ce0991e9edc94db076413aee6b23b55cdb11c2fd4f018",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 positive group and Figure 1 + sign identify III:11 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Figure 1; lines 47-53"
+              }
+            ],
+            "limitations": [
+              "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003259",
+              "label": "Elevated circulating creatinine concentration"
+            }
+          },
+          "snapshot_sha256": "72e219b4558ed059761c8dc8f59bf0e0d58de8f3871d5b16b0fd4593ad0a3293",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 reports creatinine 1.3 mg/dL; packet positive interpreted in age/sex context.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:11"
+              }
+            ],
+            "limitations": [
+              "No source-specific normal reference range; numerical value is more precise than HPO categorization."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003774",
+              "label": "Stage 5 chronic kidney disease"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P56Y"
+              }
+            }
+          },
+          "snapshot_sha256": "48196a048c2542ee1ff4ef204c7f7809d346102f4be48bc07bafb80f0ba08ba8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dialysis started at 56; subsequent living kidney transplant, eGFR 41.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:11"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000107",
+              "label": "Renal cyst"
+            }
+          },
+          "snapshot_sha256": "9d0e68d32f607c460284293dc4560090de261cf9cd595caf90e239eda3b7d6d5",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 ultrasound entry Cortical cyst supports packet positive.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:11"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004719",
+              "label": "Hyperechogenic kidneys"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "97fa3500138b4132e6527391c68c332048f95172bbc3a2e2bdcd0854a64b51ef",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "S1 lists Cortical cyst but does not explicitly exclude Hyperechogenic kidneys.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:11"
+              }
+            ],
+            "limitations": [
+              "Missing table values/non-mention are not measured negatives."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001997",
+              "label": "Gout"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b1029381646bc6275bc0c38897287283b2d94f8b861d41b0cd26600db9654bc9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Main text broadly says no gout in affected individuals; S1 does not individually document gout absence for this patient.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Abstract and lines 44,65,77; compare S1 IV:12"
+              }
+            ],
+            "limitations": [
+              "Internal main/supplement conflict prevents unqualified family-wide absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002149",
+              "label": "Hyperuricemia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a332dd789ce7b0407d45abe17fdd7b48870d381bad2097e1371a841453349c9b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 serum urate 5.2 mg/dL agrees with main-text normal urate claim.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:11"
+              }
+            ],
+            "limitations": [
+              "Reference intervals/treatment status not supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000790",
+              "label": "Hematuria"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7cd29cadc199bbc697a2053f4dd1565a13643fdbe72a9576c05636da701d246f",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 explicitly states no hematuria/no proteinuria for III:11.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:11"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000093",
+              "label": "Proteinuria"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0559a09fb747a0d45ad54624cb7e934e3d8b18ea42adb0f04c2f8b99ba4d9048",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 explicitly states no hematuria/no proteinuria for III:11.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:11"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/UMOD/PMID_29513881_III_2.json",
+      "packet_sha256": "f830ea08ea2ac8fe93c9280871c091534808f2579083f2c70214de504c246415",
+      "case_id": "TC_09a8a5f9ae1b0e17",
+      "role": "alternate",
+      "packet_subject_id": "III:2",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Selected and all ten alternate packets individually compared; no patient merging or frozen edits."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact pedigree identifier, sex and age match Table S1 for III:2.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row III:2"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "S1 positive group and Figure 1 + sign identify III:2 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-53"
+          }
+        ],
+        "limitations": [
+          "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Multigenerational dominant segregation is reported and III:2 is genotypically positive; Figure 1 also shows clinically affected mutation-negative III:6. Reported LOD=2.58 with recombination frequency 0.15.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Do not infer complete penetrance or every parent-of-origin event; phenotype variability and affected noncarrier retained."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous UMOD variant is reported; two-variant phase not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-53; Figure 3"
+          }
+        ],
+        "limitations": [
+          "No additional haplotype or molecular phase measurement."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Family-level ADTKD-UMOD attribution rests on segregation, conservation and clinical pattern with negative REN/MUC1 testing; predictors are mixed and no allele-specific functional assay is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Case-series attribution only, not recertification of packet PATHOGENIC/SOLVED labels."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "The source reports additional renal/transplant/biopsy/anemia/UTI context and variable missingness. S1 blank cells mean data unavailable; dash means no dialysis. Individual negatives cannot be inferred from blank cells.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row III:2; footnote"
+          }
+        ],
+        "limitations": [
+          "Preserve main-versus-S1 gout conflict and index-case identifier ambiguity."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c163GtoA_UMOD_NM_003361v4",
+            "geneContext": {
+              "valueId": "HGNC:12559",
+              "symbol": "UMOD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003361.4:c.163G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.20349138C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003352.2:p.(Gly55Ser)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 20349138,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e27de6d7deb909f85e8ce0991e9edc94db076413aee6b23b55cdb11c2fd4f018",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 positive group and Figure 1 + sign identify III:2 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Figure 1; lines 47-53"
+              }
+            ],
+            "limitations": [
+              "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003259",
+              "label": "Elevated circulating creatinine concentration"
+            }
+          },
+          "snapshot_sha256": "72e219b4558ed059761c8dc8f59bf0e0d58de8f3871d5b16b0fd4593ad0a3293",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 reports creatinine 1.2 mg/dL; packet positive interpreted in age/sex context.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:2"
+              }
+            ],
+            "limitations": [
+              "No source-specific normal reference range; numerical value is more precise than HPO categorization."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012623",
+              "label": "Stage 1 chronic kidney disease"
+            }
+          },
+          "snapshot_sha256": "f5546dbfae670afb3447e948e6fb7fc7849eba71785ecc1cbb35ad6917855b7b",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet says stage 1, while S1 reports eGFR 49 mL/min/1.73m2; it does not report stage 1.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003774",
+              "label": "Stage 5 chronic kidney disease"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ca811009c930fae31856b31cb4642bd10a0061fa0c3989b08a3c0271dca187a8",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No dialysis to date (dash in S1), with reported non-G5 renal function supports absence of documented stage-5 disease at observation.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:2"
+              }
+            ],
+            "limitations": [
+              "Does not predict future progression."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001997",
+              "label": "Gout"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b1029381646bc6275bc0c38897287283b2d94f8b861d41b0cd26600db9654bc9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Main text broadly says no gout in affected individuals; S1 does not individually document gout absence for this patient.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Abstract and lines 44,65,77; compare S1 IV:12"
+              }
+            ],
+            "limitations": [
+              "Internal main/supplement conflict prevents unqualified family-wide absence."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/UMOD/PMID_29513881_III_5.json",
+      "packet_sha256": "1ca068c216c08a8bfaace280b3e51cac4e67a6f4d8fa4253b8aa1b566b9d3645",
+      "case_id": "TC_09a8a5f9ae1b0e17",
+      "role": "alternate",
+      "packet_subject_id": "III:5",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Selected and all ten alternate packets individually compared; no patient merging or frozen edits."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact pedigree identifier, sex and age match Table S1 for III:5.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row III:5"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "S1 positive group and Figure 1 + sign identify III:5 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-53"
+          }
+        ],
+        "limitations": [
+          "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Multigenerational dominant segregation is reported and III:5 is genotypically positive; Figure 1 also shows clinically affected mutation-negative III:6. Reported LOD=2.58 with recombination frequency 0.15.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Do not infer complete penetrance or every parent-of-origin event; phenotype variability and affected noncarrier retained."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous UMOD variant is reported; two-variant phase not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-53; Figure 3"
+          }
+        ],
+        "limitations": [
+          "No additional haplotype or molecular phase measurement."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Family-level ADTKD-UMOD attribution rests on segregation, conservation and clinical pattern with negative REN/MUC1 testing; predictors are mixed and no allele-specific functional assay is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Case-series attribution only, not recertification of packet PATHOGENIC/SOLVED labels."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "The source reports additional renal/transplant/biopsy/anemia/UTI context and variable missingness. S1 blank cells mean data unavailable; dash means no dialysis. Individual negatives cannot be inferred from blank cells.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row III:5; footnote"
+          }
+        ],
+        "limitations": [
+          "Preserve main-versus-S1 gout conflict and index-case identifier ambiguity."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c163GtoA_UMOD_NM_003361v4",
+            "geneContext": {
+              "valueId": "HGNC:12559",
+              "symbol": "UMOD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003361.4:c.163G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.20349138C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003352.2:p.(Gly55Ser)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 20349138,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e27de6d7deb909f85e8ce0991e9edc94db076413aee6b23b55cdb11c2fd4f018",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 positive group and Figure 1 + sign identify III:5 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Figure 1; lines 47-53"
+              }
+            ],
+            "limitations": [
+              "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003259",
+              "label": "Elevated circulating creatinine concentration"
+            }
+          },
+          "snapshot_sha256": "72e219b4558ed059761c8dc8f59bf0e0d58de8f3871d5b16b0fd4593ad0a3293",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 reports creatinine 1.2 mg/dL; packet positive interpreted in age/sex context.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:5"
+              }
+            ],
+            "limitations": [
+              "No source-specific normal reference range; numerical value is more precise than HPO categorization."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012624",
+              "label": "Stage 2 chronic kidney disease"
+            }
+          },
+          "snapshot_sha256": "46838d782e5c516869180f8c7dd29d657051bef7c8e7ce1dc4483594245f7963",
+          "assessment": {
+            "status": "qualified",
+            "statement": "eGFR 66 in S1 supports G2 range; source says asymptomatic kidney donor.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:5"
+              }
+            ],
+            "limitations": [
+              "GFR category is an audit interpretation, not a source-stated stage diagnosis."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003774",
+              "label": "Stage 5 chronic kidney disease"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ca811009c930fae31856b31cb4642bd10a0061fa0c3989b08a3c0271dca187a8",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No dialysis to date (dash in S1), with reported non-G5 renal function supports absence of documented stage-5 disease at observation.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:5"
+              }
+            ],
+            "limitations": [
+              "Does not predict future progression."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000107",
+              "label": "Renal cyst"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8cad72b4f0c4bfdd3587cfe05cf3d81a0129be9ebdaf16e5663c7891cad46ddb",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 ultrasound entry Normal supports packet negative.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004719",
+              "label": "Hyperechogenic kidneys"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "97fa3500138b4132e6527391c68c332048f95172bbc3a2e2bdcd0854a64b51ef",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 ultrasound entry Normal supports packet negative.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001997",
+              "label": "Gout"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b1029381646bc6275bc0c38897287283b2d94f8b861d41b0cd26600db9654bc9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Main text broadly says no gout in affected individuals; S1 does not individually document gout absence for this patient.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Abstract and lines 44,65,77; compare S1 IV:12"
+              }
+            ],
+            "limitations": [
+              "Internal main/supplement conflict prevents unqualified family-wide absence."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/UMOD/PMID_29513881_III_8.json",
+      "packet_sha256": "542fe042122926361ea166724d12c8dc338cb33a377e65c9185201c79f4c422e",
+      "case_id": "TC_09a8a5f9ae1b0e17",
+      "role": "alternate",
+      "packet_subject_id": "III:8",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Selected and all ten alternate packets individually compared; no patient merging or frozen edits."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact pedigree identifier, sex and age match Table S1 for III:8.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row III:8"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "S1 positive group and Figure 1 + sign identify III:8 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-53"
+          }
+        ],
+        "limitations": [
+          "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Multigenerational dominant segregation is reported and III:8 is genotypically positive; Figure 1 also shows clinically affected mutation-negative III:6. Reported LOD=2.58 with recombination frequency 0.15.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Do not infer complete penetrance or every parent-of-origin event; phenotype variability and affected noncarrier retained."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous UMOD variant is reported; two-variant phase not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-53; Figure 3"
+          }
+        ],
+        "limitations": [
+          "No additional haplotype or molecular phase measurement."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Family-level ADTKD-UMOD attribution rests on segregation, conservation and clinical pattern with negative REN/MUC1 testing; predictors are mixed and no allele-specific functional assay is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Case-series attribution only, not recertification of packet PATHOGENIC/SOLVED labels."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "The source reports additional renal/transplant/biopsy/anemia/UTI context and variable missingness. S1 blank cells mean data unavailable; dash means no dialysis. Individual negatives cannot be inferred from blank cells.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row III:8; footnote"
+          }
+        ],
+        "limitations": [
+          "Preserve main-versus-S1 gout conflict and index-case identifier ambiguity."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c163GtoA_UMOD_NM_003361v4",
+            "geneContext": {
+              "valueId": "HGNC:12559",
+              "symbol": "UMOD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003361.4:c.163G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.20349138C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003352.2:p.(Gly55Ser)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 20349138,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e27de6d7deb909f85e8ce0991e9edc94db076413aee6b23b55cdb11c2fd4f018",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 positive group and Figure 1 + sign identify III:8 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Figure 1; lines 47-53"
+              }
+            ],
+            "limitations": [
+              "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003259",
+              "label": "Elevated circulating creatinine concentration"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P57Y"
+              }
+            }
+          },
+          "snapshot_sha256": "64302e724fe2f7eb20b8ca7fcd2f919dcefc875533247a9c1e51a2aabcb582c2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "S1 does not give a creatinine value or age-57 onset for III:8; index case narrative describes a different identifier (Figure 1/3 III:9).",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:8"
+              }
+            ],
+            "limitations": [
+              "Missing table values/non-mention are not measured negatives."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003774",
+              "label": "Stage 5 chronic kidney disease"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P60Y"
+              }
+            }
+          },
+          "snapshot_sha256": "02366985e1dbd74bb0e4cc48318a50c6af1237087231fd31bf75a23ce740ad72",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hemodialysis started at 60, eGFR <10.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000107",
+              "label": "Renal cyst"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8cad72b4f0c4bfdd3587cfe05cf3d81a0129be9ebdaf16e5663c7891cad46ddb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "S1 lists Hyperechoic kidneys but does not explicitly exclude Renal cyst.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:8"
+              }
+            ],
+            "limitations": [
+              "Missing table values/non-mention are not measured negatives."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004719",
+              "label": "Hyperechogenic kidneys"
+            }
+          },
+          "snapshot_sha256": "5e13797dfd52a9e9adef054bfb9bfe5c4208829e5ad315a875ceed02e8fe7c6b",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 ultrasound entry Hyperechoic kidneys supports packet positive.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001997",
+              "label": "Gout"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b1029381646bc6275bc0c38897287283b2d94f8b861d41b0cd26600db9654bc9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Main text broadly says no gout in affected individuals; S1 does not individually document gout absence for this patient.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Abstract and lines 44,65,77; compare S1 IV:12"
+              }
+            ],
+            "limitations": [
+              "Internal main/supplement conflict prevents unqualified family-wide absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002149",
+              "label": "Hyperuricemia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a332dd789ce7b0407d45abe17fdd7b48870d381bad2097e1371a841453349c9b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 serum urate 5.5 mg/dL agrees with main-text normal urate claim.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:8"
+              }
+            ],
+            "limitations": [
+              "Reference intervals/treatment status not supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000790",
+              "label": "Hematuria"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7cd29cadc199bbc697a2053f4dd1565a13643fdbe72a9576c05636da701d246f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "III:8 S1 row has no urine result. Index-case protein:creatinine 290 mg/g at 62 belongs to index case, identified as III:9, not III:8.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:8"
+              }
+            ],
+            "limitations": [
+              "Missing table values/non-mention are not measured negatives."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000093",
+              "label": "Proteinuria"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P62Y"
+              }
+            }
+          },
+          "snapshot_sha256": "8295d6a5e03c451fc9687a910316df81dc7eab8a0c792ea1bc8772cd78ea0396",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "III:8 S1 row has no urine result. Index-case protein:creatinine 290 mg/g at 62 belongs to index case, identified as III:9, not III:8.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:8"
+              }
+            ],
+            "limitations": [
+              "Missing table values/non-mention are not measured negatives."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/UMOD/PMID_29513881_III_9.json",
+      "packet_sha256": "0995349d942c23476bfc65f91d6f4439413ede3b8f673ce901562c81e68cc28a",
+      "case_id": "TC_09a8a5f9ae1b0e17",
+      "role": "alternate",
+      "packet_subject_id": "III:9",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Selected and all ten alternate packets individually compared; no patient merging or frozen edits."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact pedigree identifier, sex and age match Table S1 for III:9.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row III:9"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "S1 positive group and Figure 1 + sign identify III:9 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-53"
+          }
+        ],
+        "limitations": [
+          "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Multigenerational dominant segregation is reported and III:9 is genotypically positive; Figure 1 also shows clinically affected mutation-negative III:6. Reported LOD=2.58 with recombination frequency 0.15.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Do not infer complete penetrance or every parent-of-origin event; phenotype variability and affected noncarrier retained."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous UMOD variant is reported; two-variant phase not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-53; Figure 3"
+          }
+        ],
+        "limitations": [
+          "No additional haplotype or molecular phase measurement."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Family-level ADTKD-UMOD attribution rests on segregation, conservation and clinical pattern with negative REN/MUC1 testing; predictors are mixed and no allele-specific functional assay is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Case-series attribution only, not recertification of packet PATHOGENIC/SOLVED labels."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "The source reports additional renal/transplant/biopsy/anemia/UTI context and variable missingness. S1 blank cells mean data unavailable; dash means no dialysis. Individual negatives cannot be inferred from blank cells.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row III:9; footnote"
+          }
+        ],
+        "limitations": [
+          "Preserve main-versus-S1 gout conflict and index-case identifier ambiguity."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c163GtoA_UMOD_NM_003361v4",
+            "geneContext": {
+              "valueId": "HGNC:12559",
+              "symbol": "UMOD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003361.4:c.163G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.20349138C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003352.2:p.(Gly55Ser)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 20349138,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e27de6d7deb909f85e8ce0991e9edc94db076413aee6b23b55cdb11c2fd4f018",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 positive group and Figure 1 + sign identify III:9 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Figure 1; lines 47-53"
+              }
+            ],
+            "limitations": [
+              "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003259",
+              "label": "Elevated circulating creatinine concentration"
+            }
+          },
+          "snapshot_sha256": "72e219b4558ed059761c8dc8f59bf0e0d58de8f3871d5b16b0fd4593ad0a3293",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 reports creatinine 3.3 mg/dL; packet positive interpreted in age/sex context.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:9"
+              }
+            ],
+            "limitations": [
+              "No source-specific normal reference range; numerical value is more precise than HPO categorization."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003774",
+              "label": "Stage 5 chronic kidney disease"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P63Y"
+              }
+            }
+          },
+          "snapshot_sha256": "1386316fb0593a40f46535649e36ac7906a76f3db8fd5eff861c80404ab7d909",
+          "assessment": {
+            "status": "qualified",
+            "statement": "eGFR 14 at age 63 supports current G5-range impairment; first onset at age 63 is not explicitly established.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:9"
+              }
+            ],
+            "limitations": [
+              "Current observation is not onset."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000107",
+              "label": "Renal cyst"
+            }
+          },
+          "snapshot_sha256": "9d0e68d32f607c460284293dc4560090de261cf9cd595caf90e239eda3b7d6d5",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 ultrasound entry Cortical cyst supports packet positive.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:9"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004719",
+              "label": "Hyperechogenic kidneys"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "97fa3500138b4132e6527391c68c332048f95172bbc3a2e2bdcd0854a64b51ef",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes hyperechogenic kidneys; Figure 2D caption explicitly identifies hyperechogenic kidney with cortical cyst in III:9.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Figure 2 caption, lines 40-41"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001997",
+              "label": "Gout"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b1029381646bc6275bc0c38897287283b2d94f8b861d41b0cd26600db9654bc9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Main text broadly says no gout in affected individuals; S1 does not individually document gout absence for this patient.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Abstract and lines 44,65,77; compare S1 IV:12"
+              }
+            ],
+            "limitations": [
+              "Internal main/supplement conflict prevents unqualified family-wide absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002149",
+              "label": "Hyperuricemia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a332dd789ce7b0407d45abe17fdd7b48870d381bad2097e1371a841453349c9b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 serum urate 5.1 mg/dL agrees with main-text normal urate claim.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:9"
+              }
+            ],
+            "limitations": [
+              "Reference intervals/treatment status not supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000790",
+              "label": "Hematuria"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7cd29cadc199bbc697a2053f4dd1565a13643fdbe72a9576c05636da701d246f",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 explicitly states no hematuria/no proteinuria for III:9.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:9"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000093",
+              "label": "Proteinuria"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0559a09fb747a0d45ad54624cb7e934e3d8b18ea42adb0f04c2f8b99ba4d9048",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 explicitly states no hematuria/no proteinuria for III:9.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row III:9"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/UMOD/PMID_29513881_IV_10.json",
+      "packet_sha256": "00feaba578602b6c93cab179e216576f9a4b87f85729fbc1eb7116ef54ca2870",
+      "case_id": "TC_09a8a5f9ae1b0e17",
+      "role": "alternate",
+      "packet_subject_id": "IV:10",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Selected and all ten alternate packets individually compared; no patient merging or frozen edits."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact pedigree identifier, sex and age match Table S1 for IV:10.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row IV:10"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "S1 positive group and Figure 1 + sign identify IV:10 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-53"
+          }
+        ],
+        "limitations": [
+          "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Multigenerational dominant segregation is reported and IV:10 is genotypically positive; Figure 1 also shows clinically affected mutation-negative III:6. Reported LOD=2.58 with recombination frequency 0.15.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Do not infer complete penetrance or every parent-of-origin event; phenotype variability and affected noncarrier retained."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous UMOD variant is reported; two-variant phase not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-53; Figure 3"
+          }
+        ],
+        "limitations": [
+          "No additional haplotype or molecular phase measurement."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Family-level ADTKD-UMOD attribution rests on segregation, conservation and clinical pattern with negative REN/MUC1 testing; predictors are mixed and no allele-specific functional assay is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Case-series attribution only, not recertification of packet PATHOGENIC/SOLVED labels."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "The source reports additional renal/transplant/biopsy/anemia/UTI context and variable missingness. S1 blank cells mean data unavailable; dash means no dialysis. Individual negatives cannot be inferred from blank cells.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row IV:10; footnote"
+          }
+        ],
+        "limitations": [
+          "Preserve main-versus-S1 gout conflict and index-case identifier ambiguity."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c163GtoA_UMOD_NM_003361v4",
+            "geneContext": {
+              "valueId": "HGNC:12559",
+              "symbol": "UMOD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003361.4:c.163G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.20349138C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003352.2:p.(Gly55Ser)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 20349138,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e27de6d7deb909f85e8ce0991e9edc94db076413aee6b23b55cdb11c2fd4f018",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 positive group and Figure 1 + sign identify IV:10 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Figure 1; lines 47-53"
+              }
+            ],
+            "limitations": [
+              "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003259",
+              "label": "Elevated circulating creatinine concentration"
+            }
+          },
+          "snapshot_sha256": "72e219b4558ed059761c8dc8f59bf0e0d58de8f3871d5b16b0fd4593ad0a3293",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 reports creatinine 1.3 mg/dL; packet positive interpreted in age/sex context.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:10"
+              }
+            ],
+            "limitations": [
+              "No source-specific normal reference range; numerical value is more precise than HPO categorization."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012623",
+              "label": "Stage 1 chronic kidney disease"
+            }
+          },
+          "snapshot_sha256": "f5546dbfae670afb3447e948e6fb7fc7849eba71785ecc1cbb35ad6917855b7b",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet says stage 1, while S1 reports eGFR 65 mL/min/1.73m2; it does not report stage 1.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:10"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003774",
+              "label": "Stage 5 chronic kidney disease"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ca811009c930fae31856b31cb4642bd10a0061fa0c3989b08a3c0271dca187a8",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No dialysis to date (dash in S1), with reported non-G5 renal function supports absence of documented stage-5 disease at observation.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:10"
+              }
+            ],
+            "limitations": [
+              "Does not predict future progression."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001997",
+              "label": "Gout"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b1029381646bc6275bc0c38897287283b2d94f8b861d41b0cd26600db9654bc9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Main text broadly says no gout in affected individuals; S1 does not individually document gout absence for this patient.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Abstract and lines 44,65,77; compare S1 IV:12"
+              }
+            ],
+            "limitations": [
+              "Internal main/supplement conflict prevents unqualified family-wide absence."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/UMOD/PMID_29513881_IV_12.json",
+      "packet_sha256": "a311da225e25b0124ddee8ea5b93614d84afda5a155683569d92d096b57bd91f",
+      "case_id": "TC_09a8a5f9ae1b0e17",
+      "role": "alternate",
+      "packet_subject_id": "IV:12",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Selected and all ten alternate packets individually compared; no patient merging or frozen edits."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact pedigree identifier, sex and age match Table S1 for IV:12.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row IV:12"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "S1 positive group and Figure 1 + sign identify IV:12 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-53"
+          }
+        ],
+        "limitations": [
+          "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Multigenerational dominant segregation is reported and IV:12 is genotypically positive; Figure 1 also shows clinically affected mutation-negative III:6. Reported LOD=2.58 with recombination frequency 0.15.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Do not infer complete penetrance or every parent-of-origin event; phenotype variability and affected noncarrier retained."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous UMOD variant is reported; two-variant phase not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-53; Figure 3"
+          }
+        ],
+        "limitations": [
+          "No additional haplotype or molecular phase measurement."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Family-level ADTKD-UMOD attribution rests on segregation, conservation and clinical pattern with negative REN/MUC1 testing; predictors are mixed and no allele-specific functional assay is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Case-series attribution only, not recertification of packet PATHOGENIC/SOLVED labels."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "The source reports additional renal/transplant/biopsy/anemia/UTI context and variable missingness. S1 blank cells mean data unavailable; dash means no dialysis. Individual negatives cannot be inferred from blank cells.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row IV:12; footnote"
+          }
+        ],
+        "limitations": [
+          "Preserve main-versus-S1 gout conflict and index-case identifier ambiguity."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c163GtoA_UMOD_NM_003361v4",
+            "geneContext": {
+              "valueId": "HGNC:12559",
+              "symbol": "UMOD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003361.4:c.163G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.20349138C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003352.2:p.(Gly55Ser)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 20349138,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e27de6d7deb909f85e8ce0991e9edc94db076413aee6b23b55cdb11c2fd4f018",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 positive group and Figure 1 + sign identify IV:12 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Figure 1; lines 47-53"
+              }
+            ],
+            "limitations": [
+              "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003259",
+              "label": "Elevated circulating creatinine concentration"
+            }
+          },
+          "snapshot_sha256": "72e219b4558ed059761c8dc8f59bf0e0d58de8f3871d5b16b0fd4593ad0a3293",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 reports creatinine 2.3 mg/dL; packet positive interpreted in age/sex context.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:12"
+              }
+            ],
+            "limitations": [
+              "No source-specific normal reference range; numerical value is more precise than HPO categorization."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003774",
+              "label": "Stage 5 chronic kidney disease"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P44Y"
+              }
+            }
+          },
+          "snapshot_sha256": "2b3427182a6a872192318cabaf760cea4c82117c9cede0a0c21aaaf4294472b9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dialysis started at 44; subsequent deceased-donor kidney transplant, eGFR 32.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:12"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000107",
+              "label": "Renal cyst"
+            }
+          },
+          "snapshot_sha256": "9d0e68d32f607c460284293dc4560090de261cf9cd595caf90e239eda3b7d6d5",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 ultrasound entry Cortical cyst supports packet positive.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:12"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004719",
+              "label": "Hyperechogenic kidneys"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "97fa3500138b4132e6527391c68c332048f95172bbc3a2e2bdcd0854a64b51ef",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "S1 lists Cortical cyst but does not explicitly exclude Hyperechogenic kidneys.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:12"
+              }
+            ],
+            "limitations": [
+              "Missing table values/non-mention are not measured negatives."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001997",
+              "label": "Gout"
+            }
+          },
+          "snapshot_sha256": "38231991d65773929742947fdc0b18434cee6ed60c424ec4c77ddd0f97bc5650",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Main text broadly says no gout in affected individuals; S1 explicitly records Gout for IV:12, supporting packet positive but conflicting with main text.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Abstract and lines 44,65,77; compare S1 IV:12"
+              }
+            ],
+            "limitations": [
+              "Internal main/supplement conflict prevents unqualified family-wide absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002149",
+              "label": "Hyperuricemia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a332dd789ce7b0407d45abe17fdd7b48870d381bad2097e1371a841453349c9b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 serum urate 5.2 mg/dL agrees with main-text normal urate claim.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:12"
+              }
+            ],
+            "limitations": [
+              "Reference intervals/treatment status not supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000790",
+              "label": "Hematuria"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7cd29cadc199bbc697a2053f4dd1565a13643fdbe72a9576c05636da701d246f",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 explicitly states no hematuria/no proteinuria for IV:12.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:12"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000093",
+              "label": "Proteinuria"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0559a09fb747a0d45ad54624cb7e934e3d8b18ea42adb0f04c2f8b99ba4d9048",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 explicitly states no hematuria/no proteinuria for IV:12.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:12"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/UMOD/PMID_29513881_IV_13.json",
+      "packet_sha256": "ad9f897d7305d6f16223af62288484bee3523f9be8c7804361a08a5124ad9e09",
+      "case_id": "TC_09a8a5f9ae1b0e17",
+      "role": "alternate",
+      "packet_subject_id": "IV:13",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Selected and all ten alternate packets individually compared; no patient merging or frozen edits."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact pedigree identifier, sex and age match Table S1 for IV:13.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row IV:13"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "S1 positive group and Figure 1 + sign identify IV:13 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-53"
+          }
+        ],
+        "limitations": [
+          "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Multigenerational dominant segregation is reported and IV:13 is genotypically positive; Figure 1 also shows clinically affected mutation-negative III:6. Reported LOD=2.58 with recombination frequency 0.15.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Do not infer complete penetrance or every parent-of-origin event; phenotype variability and affected noncarrier retained."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous UMOD variant is reported; two-variant phase not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-53; Figure 3"
+          }
+        ],
+        "limitations": [
+          "No additional haplotype or molecular phase measurement."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Family-level ADTKD-UMOD attribution rests on segregation, conservation and clinical pattern with negative REN/MUC1 testing; predictors are mixed and no allele-specific functional assay is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Case-series attribution only, not recertification of packet PATHOGENIC/SOLVED labels."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "The source reports additional renal/transplant/biopsy/anemia/UTI context and variable missingness. S1 blank cells mean data unavailable; dash means no dialysis. Individual negatives cannot be inferred from blank cells.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row IV:13; footnote"
+          }
+        ],
+        "limitations": [
+          "Preserve main-versus-S1 gout conflict and index-case identifier ambiguity."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c163GtoA_UMOD_NM_003361v4",
+            "geneContext": {
+              "valueId": "HGNC:12559",
+              "symbol": "UMOD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003361.4:c.163G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.20349138C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003352.2:p.(Gly55Ser)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 20349138,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e27de6d7deb909f85e8ce0991e9edc94db076413aee6b23b55cdb11c2fd4f018",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 positive group and Figure 1 + sign identify IV:13 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Figure 1; lines 47-53"
+              }
+            ],
+            "limitations": [
+              "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012623",
+              "label": "Stage 1 chronic kidney disease"
+            }
+          },
+          "snapshot_sha256": "f5546dbfae670afb3447e948e6fb7fc7849eba71785ecc1cbb35ad6917855b7b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "S1 gives no eGFR measurement; a stage-1 CKD diagnosis is not explicitly established.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:13"
+              }
+            ],
+            "limitations": [
+              "Missing table values/non-mention are not measured negatives."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003774",
+              "label": "Stage 5 chronic kidney disease"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ca811009c930fae31856b31cb4642bd10a0061fa0c3989b08a3c0271dca187a8",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No dialysis to date (dash in S1), with missing eGFR supports absence of documented stage-5 disease at observation.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:13"
+              }
+            ],
+            "limitations": [
+              "Does not predict future progression."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001997",
+              "label": "Gout"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b1029381646bc6275bc0c38897287283b2d94f8b861d41b0cd26600db9654bc9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Main text broadly says no gout in affected individuals; S1 does not individually document gout absence for this patient.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Abstract and lines 44,65,77; compare S1 IV:12"
+              }
+            ],
+            "limitations": [
+              "Internal main/supplement conflict prevents unqualified family-wide absence."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/UMOD/PMID_29513881_IV_6.json",
+      "packet_sha256": "a079a31fef66a56d9533ce60356173638c5c3e87f9d5051e3d20ae6eef1db560",
+      "case_id": "TC_09a8a5f9ae1b0e17",
+      "role": "alternate",
+      "packet_subject_id": "IV:6",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Selected and all ten alternate packets individually compared; no patient merging or frozen edits."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact pedigree identifier, sex and age match Table S1 for IV:6.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row IV:6"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "S1 positive group and Figure 1 + sign identify IV:6 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-53"
+          }
+        ],
+        "limitations": [
+          "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Multigenerational dominant segregation is reported and IV:6 is genotypically positive; Figure 1 also shows clinically affected mutation-negative III:6. Reported LOD=2.58 with recombination frequency 0.15.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Do not infer complete penetrance or every parent-of-origin event; phenotype variability and affected noncarrier retained."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous UMOD variant is reported; two-variant phase not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-53; Figure 3"
+          }
+        ],
+        "limitations": [
+          "No additional haplotype or molecular phase measurement."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Family-level ADTKD-UMOD attribution rests on segregation, conservation and clinical pattern with negative REN/MUC1 testing; predictors are mixed and no allele-specific functional assay is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Case-series attribution only, not recertification of packet PATHOGENIC/SOLVED labels."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "The source reports additional renal/transplant/biopsy/anemia/UTI context and variable missingness. S1 blank cells mean data unavailable; dash means no dialysis. Individual negatives cannot be inferred from blank cells.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row IV:6; footnote"
+          }
+        ],
+        "limitations": [
+          "Preserve main-versus-S1 gout conflict and index-case identifier ambiguity."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c163GtoA_UMOD_NM_003361v4",
+            "geneContext": {
+              "valueId": "HGNC:12559",
+              "symbol": "UMOD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003361.4:c.163G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.20349138C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003352.2:p.(Gly55Ser)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 20349138,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e27de6d7deb909f85e8ce0991e9edc94db076413aee6b23b55cdb11c2fd4f018",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 positive group and Figure 1 + sign identify IV:6 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Figure 1; lines 47-53"
+              }
+            ],
+            "limitations": [
+              "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003259",
+              "label": "Elevated circulating creatinine concentration"
+            }
+          },
+          "snapshot_sha256": "72e219b4558ed059761c8dc8f59bf0e0d58de8f3871d5b16b0fd4593ad0a3293",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 reports creatinine 1.9 mg/dL; packet positive interpreted in age/sex context.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:6"
+              }
+            ],
+            "limitations": [
+              "No source-specific normal reference range; numerical value is more precise than HPO categorization."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012625",
+              "label": "Stage 3 chronic kidney disease"
+            }
+          },
+          "snapshot_sha256": "54b3b751c67f5838c46a5aab60d417199cf7774230e3d48eb922945a22050d96",
+          "assessment": {
+            "status": "qualified",
+            "statement": "eGFR 30 and biopsy interstitial nephritis are reported in S1.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:6"
+              }
+            ],
+            "limitations": [
+              "Stage terminology derived from numeric GFR; source not an independent staging validation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003774",
+              "label": "Stage 5 chronic kidney disease"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ca811009c930fae31856b31cb4642bd10a0061fa0c3989b08a3c0271dca187a8",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No dialysis to date (dash in S1), with reported non-G5 renal function supports absence of documented stage-5 disease at observation.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:6"
+              }
+            ],
+            "limitations": [
+              "Does not predict future progression."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000107",
+              "label": "Renal cyst"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8cad72b4f0c4bfdd3587cfe05cf3d81a0129be9ebdaf16e5663c7891cad46ddb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "S1 lists Hyperechoic kidneys but does not explicitly exclude Renal cyst.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:6"
+              }
+            ],
+            "limitations": [
+              "Missing table values/non-mention are not measured negatives."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004719",
+              "label": "Hyperechogenic kidneys"
+            }
+          },
+          "snapshot_sha256": "5e13797dfd52a9e9adef054bfb9bfe5c4208829e5ad315a875ceed02e8fe7c6b",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 ultrasound entry Hyperechoic kidneys supports packet positive.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:6"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001997",
+              "label": "Gout"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b1029381646bc6275bc0c38897287283b2d94f8b861d41b0cd26600db9654bc9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Main text broadly says no gout in affected individuals; S1 does not individually document gout absence for this patient.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Abstract and lines 44,65,77; compare S1 IV:12"
+              }
+            ],
+            "limitations": [
+              "Internal main/supplement conflict prevents unqualified family-wide absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002149",
+              "label": "Hyperuricemia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a332dd789ce7b0407d45abe17fdd7b48870d381bad2097e1371a841453349c9b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 serum urate 3.2 mg/dL agrees with main-text normal urate claim.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:6"
+              }
+            ],
+            "limitations": [
+              "Reference intervals/treatment status not supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000790",
+              "label": "Hematuria"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7cd29cadc199bbc697a2053f4dd1565a13643fdbe72a9576c05636da701d246f",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 explicitly states no hematuria/no proteinuria for IV:6.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:6"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000093",
+              "label": "Proteinuria"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0559a09fb747a0d45ad54624cb7e934e3d8b18ea42adb0f04c2f8b99ba4d9048",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 explicitly states no hematuria/no proteinuria for IV:6.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row IV:6"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/UMOD/PMID_29513881_V_2.json",
+      "packet_sha256": "021a5ff2ce05c3a19d530f4c10f01bff7918db83282c341e12964a4c6b5f8362",
+      "case_id": "TC_09a8a5f9ae1b0e17",
+      "role": "alternate",
+      "packet_subject_id": "V:2",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Selected and all ten alternate packets individually compared; no patient merging or frozen edits."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact pedigree identifier, sex and age match Table S1 for V:2.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row V:2"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "S1 positive group and Figure 1 + sign identify V:2 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-53"
+          }
+        ],
+        "limitations": [
+          "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Multigenerational dominant segregation is reported and V:2 is genotypically positive; Figure 1 also shows clinically affected mutation-negative III:6. Reported LOD=2.58 with recombination frequency 0.15.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Do not infer complete penetrance or every parent-of-origin event; phenotype variability and affected noncarrier retained."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous UMOD variant is reported; two-variant phase not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-53; Figure 3"
+          }
+        ],
+        "limitations": [
+          "No additional haplotype or molecular phase measurement."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Family-level ADTKD-UMOD attribution rests on segregation, conservation and clinical pattern with negative REN/MUC1 testing; predictors are mixed and no allele-specific functional assay is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Case-series attribution only, not recertification of packet PATHOGENIC/SOLVED labels."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "The source reports additional renal/transplant/biopsy/anemia/UTI context and variable missingness. S1 blank cells mean data unavailable; dash means no dialysis. Individual negatives cannot be inferred from blank cells.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row V:2; footnote"
+          }
+        ],
+        "limitations": [
+          "Preserve main-versus-S1 gout conflict and index-case identifier ambiguity."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c163GtoA_UMOD_NM_003361v4",
+            "geneContext": {
+              "valueId": "HGNC:12559",
+              "symbol": "UMOD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003361.4:c.163G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.20349138C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003352.2:p.(Gly55Ser)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 20349138,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e27de6d7deb909f85e8ce0991e9edc94db076413aee6b23b55cdb11c2fd4f018",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 positive group and Figure 1 + sign identify V:2 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Figure 1; lines 47-53"
+              }
+            ],
+            "limitations": [
+              "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003259",
+              "label": "Elevated circulating creatinine concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b8018a31a6846a8ee235d8fcdc9d95d84c0679ac945d338be5db23c1aa87b11c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 reports creatinine 0.89 mg/dL; packet negative interpreted in age/sex context.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:2"
+              }
+            ],
+            "limitations": [
+              "No source-specific normal reference range; numerical value is more precise than HPO categorization."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012623",
+              "label": "Stage 1 chronic kidney disease"
+            }
+          },
+          "snapshot_sha256": "f5546dbfae670afb3447e948e6fb7fc7849eba71785ecc1cbb35ad6917855b7b",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet says stage 1, while S1 reports eGFR 89 mL/min/1.73m2; it does not report stage 1.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003774",
+              "label": "Stage 5 chronic kidney disease"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ca811009c930fae31856b31cb4642bd10a0061fa0c3989b08a3c0271dca187a8",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No dialysis to date (dash in S1), with reported non-G5 renal function supports absence of documented stage-5 disease at observation.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:2"
+              }
+            ],
+            "limitations": [
+              "Does not predict future progression."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000107",
+              "label": "Renal cyst"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8cad72b4f0c4bfdd3587cfe05cf3d81a0129be9ebdaf16e5663c7891cad46ddb",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 ultrasound entry Normal supports packet negative.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004719",
+              "label": "Hyperechogenic kidneys"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "97fa3500138b4132e6527391c68c332048f95172bbc3a2e2bdcd0854a64b51ef",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 ultrasound entry Normal supports packet negative.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001997",
+              "label": "Gout"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b1029381646bc6275bc0c38897287283b2d94f8b861d41b0cd26600db9654bc9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Main text broadly says no gout in affected individuals; S1 does not individually document gout absence for this patient.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Abstract and lines 44,65,77; compare S1 IV:12"
+              }
+            ],
+            "limitations": [
+              "Internal main/supplement conflict prevents unqualified family-wide absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002149",
+              "label": "Hyperuricemia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a332dd789ce7b0407d45abe17fdd7b48870d381bad2097e1371a841453349c9b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 serum urate 2.7 mg/dL agrees with main-text normal urate claim.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:2"
+              }
+            ],
+            "limitations": [
+              "Reference intervals/treatment status not supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000790",
+              "label": "Hematuria"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7cd29cadc199bbc697a2053f4dd1565a13643fdbe72a9576c05636da701d246f",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 explicitly states no hematuria/no proteinuria for V:2.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000093",
+              "label": "Proteinuria"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0559a09fb747a0d45ad54624cb7e934e3d8b18ea42adb0f04c2f8b99ba4d9048",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 explicitly states no hematuria/no proteinuria for V:2.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:2"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/UMOD/PMID_29513881_V_8.json",
+      "packet_sha256": "99d73da71c1ed515bbbe31440561bf129a88bdf4f23f60770b023a17a7078bb0",
+      "case_id": "TC_09a8a5f9ae1b0e17",
+      "role": "alternate",
+      "packet_subject_id": "V:8",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Selected and all ten alternate packets individually compared; no patient merging or frozen edits."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact pedigree identifier, sex and age match Table S1 for V:8.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row V:8"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "S1 positive group and Figure 1 + sign identify V:8 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-53"
+          }
+        ],
+        "limitations": [
+          "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Multigenerational dominant segregation is reported and V:8 is genotypically positive; Figure 1 also shows clinically affected mutation-negative III:6. Reported LOD=2.58 with recombination frequency 0.15.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Figure 1; lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Do not infer complete penetrance or every parent-of-origin event; phenotype variability and affected noncarrier retained."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous UMOD variant is reported; two-variant phase not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-53; Figure 3"
+          }
+        ],
+        "limitations": [
+          "No additional haplotype or molecular phase measurement."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Family-level ADTKD-UMOD attribution rests on segregation, conservation and clinical pattern with negative REN/MUC1 testing; predictors are mixed and no allele-specific functional assay is reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 47-56"
+          }
+        ],
+        "limitations": [
+          "Case-series attribution only, not recertification of packet PATHOGENIC/SOLVED labels."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "The source reports additional renal/transplant/biopsy/anemia/UTI context and variable missingness. S1 blank cells mean data unavailable; dash means no dialysis. Individual negatives cannot be inferred from blank cells.",
+        "evidence": [
+          {
+            "source_id": "s1",
+            "locator": "Table S1, positive row V:8; footnote"
+          }
+        ],
+        "limitations": [
+          "Preserve main-versus-S1 gout conflict and index-case identifier ambiguity."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c163GtoA_UMOD_NM_003361v4",
+            "geneContext": {
+              "valueId": "HGNC:12559",
+              "symbol": "UMOD"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_003361.4:c.163G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000016.10:g.20349138C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_003352.2:p.(Gly55Ser)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr16",
+              "pos": 20349138,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "e27de6d7deb909f85e8ce0991e9edc94db076413aee6b23b55cdb11c2fd4f018",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 positive group and Figure 1 + sign identify V:8 as carrying the shared heterozygous c.163G>A/p.Gly55Ser UMOD allele.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Figure 1; lines 47-53"
+              }
+            ],
+            "limitations": [
+              "Modern NM_003361.4/hg38 coordinate normalization not independently shown by source."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003259",
+              "label": "Elevated circulating creatinine concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b8018a31a6846a8ee235d8fcdc9d95d84c0679ac945d338be5db23c1aa87b11c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "S1 reports creatinine 0.6 mg/dL; packet negative interpreted in age/sex context.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:8"
+              }
+            ],
+            "limitations": [
+              "No source-specific normal reference range; numerical value is more precise than HPO categorization."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012623",
+              "label": "Stage 1 chronic kidney disease"
+            }
+          },
+          "snapshot_sha256": "f5546dbfae670afb3447e948e6fb7fc7849eba71785ecc1cbb35ad6917855b7b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "S1 gives normal renal function/eGFR 128; a stage-1 CKD diagnosis is not explicitly established.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:8"
+              }
+            ],
+            "limitations": [
+              "Missing table values/non-mention are not measured negatives."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003774",
+              "label": "Stage 5 chronic kidney disease"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ca811009c930fae31856b31cb4642bd10a0061fa0c3989b08a3c0271dca187a8",
+          "assessment": {
+            "status": "qualified",
+            "statement": "No dialysis to date (dash in S1), with reported non-G5 renal function supports absence of documented stage-5 disease at observation.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:8"
+              }
+            ],
+            "limitations": [
+              "Does not predict future progression."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000107",
+              "label": "Renal cyst"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8cad72b4f0c4bfdd3587cfe05cf3d81a0129be9ebdaf16e5663c7891cad46ddb",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 ultrasound entry Normal supports packet negative.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004719",
+              "label": "Hyperechogenic kidneys"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "97fa3500138b4132e6527391c68c332048f95172bbc3a2e2bdcd0854a64b51ef",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1 ultrasound entry Normal supports packet negative.",
+            "evidence": [
+              {
+                "source_id": "s1",
+                "locator": "Table S1, positive row V:8"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001997",
+              "label": "Gout"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b1029381646bc6275bc0c38897287283b2d94f8b861d41b0cd26600db9654bc9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Main text broadly says no gout in affected individuals; S1 does not individually document gout absence for this patient.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Abstract and lines 44,65,77; compare S1 IV:12"
+              }
+            ],
+            "limitations": [
+              "Internal main/supplement conflict prevents unqualified family-wide absence."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference, non-blinded source correspondence only; no clinical truth or therapeutic inference.",
+    "S1 was newly retrieved after TLS hostname mismatch on HTTPS bjournal.com.br; exact original HTTP link successfully redirected to verified HTTPS www.bjournal.org. Retrieval headers preserved. The initial DNS/TLS failures are not missing-access claims after successful retrieval."
+  ]
+}

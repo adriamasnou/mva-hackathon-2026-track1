@@ -1,0 +1,931 @@
+{
+  "schema_version": 1,
+  "pmid": "28946922",
+  "title": "NBAS mutations cause acute liver failure: when acetaminophen is not a culprit",
+  "reviewer": {
+    "id": "reviewer-8",
+    "reviewed_at_utc": "2026-10-24T18:10:36.171234+00:00",
+    "method": "Direct full source reading and visual inspection where recorded; item-by-item selected/alternate packet comparison. Mechanical extraction/inventory is not read credit."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Required full HANDOFF.md read on 2026-10-24 exposed aggregate source-audit counts, HG002/HG001/phenotype-only top1/5/10 summaries, compact 556/653/665 versus 430/649/665 of 681, corrected deltas, and the historical public FGFR2 rank 1 at 0.9654. Conservatively per_case, not blinded. No case ranking/outcome files were consulted for this review; only assigned source contexts, identities, availability, held primary sources and the adjudication validator were used."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "7773f08afeae4395a9acc8b1eb5569440f7bdc1f7c2b1f44a1b24bd4976ada0e",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "text",
+      "pmid": "28946922",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/28946922/main.complete.txt",
+      "sha256": "f02d1982ae6aa4431e5ae6cafccc858ffebff15ac6ed1aeffb9149db63e0afbc",
+      "kind": "text",
+      "description": "Held primary article version; reading coverage declared separately."
+    },
+    {
+      "id": "xml",
+      "pmid": "28946922",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/28946922/main.xml",
+      "sha256": "be2594ea80f521e7c5ea287d2e6adf74600d78407ba7489bf5b856dff0646e3a",
+      "kind": "xml",
+      "description": "Held primary article version; reading coverage declared separately."
+    },
+    {
+      "id": "pdf",
+      "pmid": "28946922",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/28946922/cloud/PMC5613325.1/PMC5613325.1.pdf",
+      "sha256": "39225ba1eaa46d5ebeeb3b2c945a8532343a8944dbb4c9544c88a8d5f0c02900",
+      "kind": "pdf",
+      "description": "Held primary article version; reading coverage declared separately."
+    },
+    {
+      "id": "metadata",
+      "pmid": "28946922",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/28946922/identity.json",
+      "sha256": "4e6c03527c0589e16f53d3e332a3ae46897371eb0f410fd307fc096e46ad3afe",
+      "kind": "metadata",
+      "description": "Independent exact PMID/DOI identity receipt."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "NBAS mutations cause acute liver failure: when acetaminophen is not a culprit",
+    "evidence": [
+      {
+        "source_id": "pdf",
+        "locator": "Title/author/journal/DOI first page"
+      },
+      {
+        "source_id": "xml",
+        "locator": "article-meta article-id and title-group"
+      },
+      {
+        "source_id": "metadata",
+        "locator": "metadata PMID and DOI"
+      }
+    ],
+    "note": "Calvo et al., Italian Journal of Pediatrics 2017;43:88, DOI 10.1186/s13052-017-0406-4; title/authors/DOI on publisher PDF p1 agree with XML and PMID. Six-page article; no figures or supplementary materials in full XML listing."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 0,
+      "table": 1,
+      "supplement": 0
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "Full article figure/table/supplement listing; repeated exact asset links deduplicated."
+      }
+    ],
+    "note": "All components in held primary XML inventoried; explicit zero counts reflect absence in the full article listing. No retrieval or enumeration is reading credit."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 323,
+      "extent_source_id": "text",
+      "extent_evidence": [
+        {
+          "source_id": "text",
+          "locator": "Complete held extraction; line extents independently counted. Full reading is not claimed until covered."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 323,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "All lines 1-323, abstract through references/data availability, read in untruncated output."
+        }
+      ],
+      "note": "Complete held extraction; line extents independently counted. Full reading is not claimed until covered."
+    },
+    {
+      "id": "Tab1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Primary XML table-wrap @id=Tab1; Table 1Results of the diagnostic workupTestsResultReference RangeSerum APAP concentration (9 h after the last administration)7.2 mg/mL10.0–30.0 mg/mLPCR for CMV/EBV/HHV6/HHV1–2/ Adenovirus/Parvovirus B19/Paramixovirus/HBV/HCV/HIVNegativeNegativeSerology for HAV/HBV/HIV/HHV6/Parvovirus B19/HHV1–2/Paramixovirus/EnterovirusNegativeNegativePlasma aminoacidogram, acylcarnitine profile, urinary organic "
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Lines 43-44, full diagnostic workup table and NAD footnote."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "pdf",
+          "locator": "PDF p3, all Table 1 rows, column headers and footnote."
+        }
+      ],
+      "note": "Primary XML table-wrap @id=Tab1; Table 1Results of the diagnostic workupTestsResultReference RangeSerum APAP concentration (9 h after the last administration)7.2 mg/mL10.0–30.0 mg/mLPCR for CMV/EBV/HHV6/HHV1–2/ Adenovirus/Parvovirus B19/Paramixovirus/HBV/HCV/HIVNegativeNegativeSerology for HAV/HBV/HIV/HHV6/Parvovirus B19/HHV1–2/Paramixovirus/EnterovirusNegativeNegativePlasma aminoacidogram, acylcarnitine profile, urinary organic "
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/NBAS/PMID_28946922_Case_presentation.json",
+      "packet_sha256": "7f8cfb4d316e8c0df687cd689636a11971428cc7d1a95fe519dbc339a56057ed",
+      "case_id": "TC_cc56f4623f355d0a",
+      "role": "selected",
+      "packet_subject_id": "Case presentation",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Source-only audit. Treatment statements in the article are not adopted as recommendations."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Single boy with first episode at 11 months and last reported follow-up at 8 years matches packet; source also says now 7 in an earlier paragraph.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Case Presentation, lines 31-56; PDF pp2-3"
+          }
+        ],
+        "limitations": [
+          "Article contains evolving 7/8-year wording; final follow-up explicitly 8."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Source reports compound heterozygous NBAS NM_015909.3 c.809G>C (Gly270Ala) and c.2926del (Ser976Profs*16), consistent with biological alleles in packet.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Line 56; PDF pp2-3"
+          }
+        ],
+        "limitations": [
+          "Packet uses NM_015909.4 and hg38 representations, not independently normalized by this source."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "c.809G>C is explicitly paternal and c.2926del maternal.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Line 56; PDF pp2-3"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Opposite parental origins support in-trans compound heterozygosity, explicitly reported.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Line 56; PDF pp2-3"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors attribute recurrent fever-triggered liver failure to NBAS variants after extensive differential workup. Packet disease label names SOPH, while paper explicitly says this child lacks the syndromic SOPH-like features.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Lines 41-56 and 77-83"
+          }
+        ],
+        "limitations": [
+          "Case attribution/predictions are not independent functional or ACMG validation; broader NBAS spectrum should not imply SOPH manifestations."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Packet omits fever/vomiting/lethargy, encephalopathy, renal and lung complications, transplantation and interval recovery. It also encodes unqualified bilirubin absence despite a later rise.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Case Presentation, lines 31-56; PDF pp2-3"
+          }
+        ],
+        "limitations": [
+          "Temporal context is essential; broad negative dysmorphology expanded into unreported itemized negatives."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c2926del_NBAS_NM_015909v4",
+            "geneContext": {
+              "valueId": "HGNC:15625",
+              "symbol": "NBAS"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_015909.4:c.2926del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.15415558del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_056993.2:p.(Ser976ProfsTer16)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 15415556,
+              "ref": "GA",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "964f6655881673045911b2f98bed4d137653d5d0983fa3e2905a44bf24c89f6d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "NM_015909.4:c.2926del corresponds to one of the two source-reported alleles, with heterozygosity and parental origin stated.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Line 56; Table 1"
+              }
+            ],
+            "limitations": [
+              "Transcript version/hg38 coordinates are packet normalization, not directly given in article."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c809GtoC_NBAS_NM_015909v4",
+            "geneContext": {
+              "valueId": "HGNC:15625",
+              "symbol": "NBAS"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_015909.4:c.809G>C"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.15511288C>G"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_056993.2:p.(Gly270Ala)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 15511288,
+              "ref": "C",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "f3db47f71e656fa4c13130687e4e3d4022f18baab09515ab5090978fc92cd27d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "NM_015909.4:c.809G>C corresponds to one of the two source-reported alleles, with heterozygosity and parental origin stated.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Line 56; Table 1"
+              }
+            ],
+            "limitations": [
+              "Transcript version/hg38 coordinates are packet normalization, not directly given in article."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031964",
+              "label": "Elevated circulating alanine aminotransferase concentration"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P11M"
+              }
+            }
+          },
+          "snapshot_sha256": "f4a2c8ef9eb4ea157d3f7c2c06c383f3b9464ebcdd670873d54551e028d89c11",
+          "assessment": {
+            "status": "supported",
+            "statement": "ALT 6611 IU/L at first episode, 11 months.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 32-38; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031956",
+              "label": "Elevated circulating aspartate aminotransferase concentration"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P11M"
+              }
+            }
+          },
+          "snapshot_sha256": "f0599ed24d98e181d8e7c2c74ecb8414593709d63b1d9f164a3a5394dd6b3617",
+          "assessment": {
+            "status": "supported",
+            "statement": "AST 11735 IU/L at first episode, 11 months.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 32-38; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030948",
+              "label": "Elevated gamma-glutamyltransferase level"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P11M"
+              }
+            }
+          },
+          "snapshot_sha256": "3accc6a7b3a6451d0245e0fdebb28c81b018554326758c3904cb3582c0eb600e",
+          "assessment": {
+            "status": "supported",
+            "statement": "GGT 286 IU/L at first episode, later normal; onset 11 months.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 32-38; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001987",
+              "label": "Hyperammonemia"
+            }
+          },
+          "snapshot_sha256": "9b62840d42455d37430e5519f310045093eebc8ec6f3241aad1a45aaaea10f2e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ammonium 266-479 micrograms/dL during crises.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 32-38; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003573",
+              "label": "Increased total bilirubin"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b095a92bd433d1f1b7aaf5058fde3c73b23baffb04ab08341e9d0d03964b2300",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes increased total bilirubin without a time qualifier, but the first episode records increase to 2.18 mg/dL after initial normal bilirubin.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Line 32; PDF p2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006554",
+              "label": "Acute hepatic failure"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P11M"
+              }
+            }
+          },
+          "snapshot_sha256": "92495f8ff40302aee43c774acbb646bb0422a08e41d7bc35500c2bf0ab1c64d6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Acute liver failure at 11 months, with further severe recurrences.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 32-38; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008151",
+              "label": "Prolonged prothrombin time"
+            }
+          },
+          "snapshot_sha256": "d5999764d8a2ff98bda31dbc2fa2d916d5ceb379136094d989f728f1dd61b82e",
+          "assessment": {
+            "status": "supported",
+            "statement": "INR 2.07, later 3.27 and 5.06, supports clotting-time prolongation.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 32-38; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000325",
+              "label": "Triangular face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8f3e7117d4522889f24170aa39192763ef94219dfed6c0f0fd86c521d1302a73",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Triangular face.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002007",
+              "label": "Frontal bossing"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "563a5baa39ebd5f0941e591d045b7c0233e4fc03dce6c8be81cd6fc3404b63a0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Frontal bossing.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000490",
+              "label": "Deeply set eye"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c455e07ca56f5d1ba66e43e3f6fc8761828fa9ac79e7c7596733a76d4d0a8cdf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Deeply set eye.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000520",
+              "label": "Proptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9feb22c8efcd0463405cc92eb0dbf9d544aa42646a465208d3d47157c3e89270",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Proptosis.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000307",
+              "label": "Pointed chin"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fa515c061073c57281117f217e0abc3bf2e0475caa545473e53e3c6f3db73a17",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Pointed chin.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000341",
+              "label": "Narrow forehead"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "519a4b73e060bc5cab8837d8801ced17116daca10fac8c88776d8cbbd43f8b39",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Narrow forehead.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002714",
+              "label": "Downturned corners of mouth"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5396feea2bc43232786d468a1ffc5fe50d79ce1c0abb1e0995dd472b9e0c654a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Downturned corners of mouth.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1e78f075d7d5e88f72df7de1f0ab14b655ba5d68bfc8adc2914cf5d7ebde009e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Downslanted palpebral fissures.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000601",
+              "label": "Hypotelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33ee545ecd880fba4beb0eb414c41440a573353a7f51c2a86b26135529d2cd3d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Hypotelorism.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c75e654012c14dea90453d61fde221f4dca1c2729c3ea61db1e002c4f5fd16eb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Hypertelorism.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000506",
+              "label": "Telecanthus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4f1f19b29e7dd998e34567da624965e91307b05997cb48f8f273e80c790dc32b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Telecanthus.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000527",
+              "label": "Long eyelashes"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c9b8cfa94bca2bd78b38a642f05fd1b6695839d716f846b6ab156d7bd6615ff1",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Long eyelashes.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000278",
+              "label": "Retrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "66dda0282a422dd164068df1af84aa261c849aca4e56fdc28993d0323e42e4c2",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Retrognathia.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000212",
+              "label": "Gingival overgrowth"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b1c27dd27679beaef93d960baa161dcf014fcfac5d3392674b80ea4b3e6bad23",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Gingival overgrowth.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000470",
+              "label": "Short neck"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b9b79d3eeb05d601d415095d5c983ed4dee5a56d264b281ba85834f33414f241",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Paper says no syndromic features, but does not individually document an examination excluding Short neck.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Lines 41 and 80; Table 1"
+              }
+            ],
+            "limitations": [
+              "Broad absence of syndromic features cannot verify each specific HPO negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "03152f286100abc72cad1120d8999d8a2e43113a3ec457babb1c73e5930869b4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Normal neurodevelopment at age 8 supports broad absence of Global developmental delay at follow-up.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Line 53; line 80"
+              }
+            ],
+            "limitations": [
+              "No formal developmental/IQ assessment reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d89b9910ff8d0011178fc229ffecca5f91e870cc5fccb6319222bf22f8d5828d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Normal neurodevelopment at age 8 supports broad absence of Intellectual disability at follow-up.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Line 53; line 80"
+              }
+            ],
+            "limitations": [
+              "No formal developmental/IQ assessment reported."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference, non-blinded source correspondence only; no clinical truth or therapeutic inference."
+  ]
+}

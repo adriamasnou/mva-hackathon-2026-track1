@@ -1,0 +1,134 @@
+{
+  "pmid": "28106895",
+  "source_titles": [
+    "Identification of a novel NRL mutation in a Chinese family with retinitis pigmentosa by whole-exome sequencing"
+  ],
+  "selected_case_ids": [
+    "TC_634985983c146582"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "NRL"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/NRL/PMID_28106895_proband_II_2.json",
+      "sha256": "25d19c64e08fd0482ab3f9ff47ac77d5c6b4b4ab0cb07c56581897baaa7c631d",
+      "case_id": "TC_634985983c146582",
+      "selected_record": true,
+      "subject": {
+        "id": "proband II:2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P43Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:613750",
+            "label": "Retinitis pigmentosa 27"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0007663",
+            "label": "Reduced visual acuity"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007737",
+            "label": "Bone spicule pigmentation of the retina"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001123",
+            "label": "Visual field defect"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000662",
+            "label": "Nyctalopia"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011463",
+              "label": "Childhood onset"
+            }
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "ZLItdON87uQPFN6UykAFnikn",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:613750",
+              "label": "Retinitis pigmentosa 27"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "proband II:2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c147_149del_NRL_NM_001354768v3",
+                    "geneContext": {
+                      "valueId": "HGNC:8002",
+                      "symbol": "NRL"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001354768.3:c.147_149del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000014.9:g.24082701_24082703del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001341697.1:p.(Ser50del)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr14",
+                      "pos": 24082699,
+                      "ref": "TGAA",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

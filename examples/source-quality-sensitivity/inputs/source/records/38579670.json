@@ -1,0 +1,755 @@
+{
+  "schema_version": 1,
+  "pmid": "38579670",
+  "title": "Clustered de novo start-loss variants in GLUL result in a developmental and epileptic encephalopathy via stabilization of glutamine synthetase",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T15:25:06.970553+00:00",
+    "method": "Entire article layout text read; per-component visual coverage separately recorded."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "dea4b0d89ad07902deba0a2464075fc09979a8e882972bd1a994b1083507aa77",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-pdf",
+      "pmid": "38579670",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38579670/retrieval-followup/20261024T104114093694Z-631c8b876f/response.body",
+      "sha256": "8e57ab0c3864281e075bfa3b158e3b18f8ee7e760fbba5329ba1c06782a0fec0",
+      "kind": "pdf",
+      "description": "Retrieved article PDF publishedMainTextWithSupplementBundle"
+    },
+    {
+      "id": "main-text",
+      "pmid": "38579670",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38579670/retrieval-followup/20261024T104114093694Z-631c8b876f/response.body.layout.txt",
+      "sha256": "c99f9f0b47b62c910a6a621a8c6301a12f5cfb985b9bc77c49c5aa043e39f603",
+      "kind": "text",
+      "description": "Full layout extraction read"
+    },
+    {
+      "id": "verification",
+      "pmid": "38579670",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/retrieval-followup/38579670/verification.json",
+      "sha256": "3c8a10a0723a15ae7dae087b95401bee21f19d07238fb0abb2fd41b465d82b8a",
+      "kind": "metadata",
+      "description": "Primary identity/version/extent receipt"
+    },
+    {
+      "id": "table1-pixels",
+      "pmid": "38579670",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/38579670/table1.png",
+      "sha256": "129d360e1ab4cac941e386685724228a6fce79ffa179f33cf00d15a79b41b82d",
+      "kind": "image",
+      "description": "Renderedphysicalpage6allTable1columnsandfootnotes visuallyread"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Clustered de novo start-loss variants in GLUL result in a developmental and epileptic encephalopathy via stabilization of glutamine synthetase",
+    "evidence": [
+      {
+        "source_id": "main-pdf",
+        "locator": "Title/authors/DOI"
+      },
+      {
+        "source_id": "verification",
+        "locator": "PMID, title and DOI identity verification"
+      }
+    ],
+    "note": "24 physical pages. Publisher DocumentS2 PDF includes main article: matching title, authors and DOI on first two pages, journal 729–741 followed by supplemental material. External supplement completeness not inferred."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 5,
+      "table": 1,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "main-text",
+        "locator": "Entire main article component references"
+      }
+    ],
+    "note": "Distinct cited components enumerated from full text."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 1003,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "All 24 physical pages"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines1–1003"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1003,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "Full extraction"
+        }
+      ],
+      "note": "Full13pagepublishedarticle plusgraphicalabstractcover and10pagesupplement read; allmain/table/captions and42references, allS1–S5legends included."
+    },
+    {
+      "id": "figure:1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "figure1"
+        }
+      ],
+      "coverage": [],
+      "note": "Not yet inspected separately."
+    },
+    {
+      "id": "figure:2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "figure2"
+        }
+      ],
+      "coverage": [],
+      "note": "Not yet inspected separately."
+    },
+    {
+      "id": "figure:3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "figure3"
+        }
+      ],
+      "coverage": [],
+      "note": "Not yet inspected separately."
+    },
+    {
+      "id": "figure:4",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "figure4"
+        }
+      ],
+      "coverage": [],
+      "note": "Not yet inspected separately."
+    },
+    {
+      "id": "table:1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "table1"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "Table1allcells"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table1-pixels",
+          "locator": "WholeTable1"
+        }
+      ],
+      "note": "Allninecolumnsandfootnotesread;case7specificallychecked."
+    },
+    {
+      "id": "supplement:1",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 10,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "physicalpages15–24supplementbundle"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 10,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "physicalpages15–24alltext/legends"
+        }
+      ],
+      "note": "Allsupplementtextread; figureS1–S5pixelsnotinspected."
+    },
+    {
+      "id": "figure:graphical-abstract",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "physicalpage1graphicalabstract"
+        }
+      ],
+      "coverage": [],
+      "note": "Notvisuallyread."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/GLUL/PMID_38579670_Individual_7.json",
+      "packet_sha256": "93299d26ebbde91e7551cdf16936c664fc4ae6005d33b837e75718691d3a2d01",
+      "case_id": "TC_7bb1ee0273154b8d",
+      "role": "selected",
+      "packet_subject_id": "Individual 7",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Main/supplementfigurepixelsremainunread; clinicaltablepixelsread."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Individual7Italianfemale, c.-13-1G>A, seizures11months, matchesTable1column7; distinctfromspliceassaysubject8.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1column7"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_001033044.4c.-13-1G>A matchesexactcodingallele; p.? appropriatelyretained.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results;Table1"
+          }
+        ],
+        "limitations": [
+          "Genomecoordinate independentlyunverified.",
+          "Spliceassaytestedneighborc.-13-2A>G inindividual8, notthisallele; highSpliceAI scores do not replace variant-specific RNA evidence."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Parentage/de novo statusconfirmed bytrioexome for8/9, includingindividual7;exceptionindividual5unknown.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Methodsvariantdiscovery;Results;Table1"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Singleheterozygouscandidate; no compoundphaseclaim.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Clusteredstartloss/nearbysplicing variants supportGSstabilization disorder; proteinsretaincatalysisandloseglutaminefeedback.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "ResultsFigures1–4;Discussion"
+          }
+        ],
+        "limitations": [
+          "Mainpatient7allele supportedbyrecurrenceofmechanism/prediction ratherthanitsownRNA/proteinassay; fibroblasts1/6/8 andengineeredc1A>T.",
+          "MSNterminalcoverage incomplete; met18initiation inferred frompeptidealignment andmigrationsize.",
+          "Retainedenzymeactivity99%vsWT withn3; nonsignificance notformalequivalencetest.",
+          "Patientfibroblasts suggestWTandtruncatedcomplexstabilization, but mixeddecamerstoichiometrynotdirectlymeasured.",
+          "MouseIUEnegativeforprogenitors/gliogenesis/migration; individual3heterotopiacausedbyGLULnotestablished andcasepreviouslypublished.",
+          "MSO proposedonly; noGS-disorderdrugrescue/treatmenttest; toxicity/convulsantpotentialexplicit.",
+          "All9female mayreflectascertainment; cannotconcludemalelethality."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "contradicted",
+        "statement": "All14features reviewed; generalizedseizurenegativecontradictsprimarytable; otherseizurenegativesunsupported.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1column7"
+          }
+        ],
+        "limitations": [
+          "Jointperivascularspace/callosalrow supportsbothbutnoindividualMRIpixels.",
+          "Normalbiochemistryabstractsummary masksborderlinelowplasma2/7, CSFlow1/9andhigh7.",
+          "Drug-resistantallpatientsclaim qualifiedbyunknownresponse7andmarkedketogenicresponse2; do not ascriberefractorinessto7."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c_13_1GtoA_GLUL_NM_001033044v4",
+            "geneContext": {
+              "valueId": "HGNC:4341",
+              "symbol": "GLUL"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001033044.4:c.-13-1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000001.11:g.182388751C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001028216.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr1",
+              "pos": 182388751,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "2ae041399c266efd736e17e96e183a27f97cd9213a5aceef3f3ecb9a8ef8c45f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous NM_001033044.4c.-13-1G>A matchesexactcodingallele; p.? appropriatelyretained.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results;Table1"
+              }
+            ],
+            "limitations": [
+              "Genomecoordinate independentlyunverified.",
+              "Spliceassaytestedneighborc.-13-2A>G inindividual8, notthisallele; highSpliceAI scores do not replace variant-specific RNA evidence."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012469",
+              "label": "Infantile spasms"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e88c37543142e81320c963ab0fce07e18504597c334bd6e8331e115747cee013",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Source listsGTCS butdoesnotexplicitlyexclude Infantile spasms.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1column7"
+              }
+            ],
+            "limitations": [
+              "Unlistedseizuretypes notformalnegativehistory."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0500147",
+              "label": "Hypoglutaminemia"
+            }
+          },
+          "snapshot_sha256": "ac6e0ff3f6d310ceafd2a92ff8ea630175798803609544b686b126003b1b3b40",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Plasmaglutamine borderline low; positivehypoglutaminemiaoverstatescertaintywithoutvalue/reference.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1column7"
+              }
+            ],
+            "limitations": [
+              "Noactualconcentration/referenceintervalprovided."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0500198",
+              "label": "Decreased CSF glutamine concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ac9a333115a7964220c1c72cef9e95cc4bd721a5ff6ef03012a78eaa9b130f4e",
+          "assessment": {
+            "status": "supported",
+            "statement": "CSFglutaminehigh, supportingexcludedlowCSFglutamine; thisisnotnormalbiochemistry.",
+            "evidence": [
+              {
+                "source_id": "table1-pixels",
+                "locator": "Table1column7"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012736",
+              "label": "Profound global developmental delay"
+            }
+          },
+          "snapshot_sha256": "d5d2eeaf1a4554d0b2d24c210537533dddb406aa4a7f29432fe10658281702ae",
+          "assessment": {
+            "status": "qualified",
+            "statement": "GlobalDDpresent; prose severe-to-profoundacrosscohort butindividual7exactseverityunspecified.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinical;Table1column7"
+              }
+            ],
+            "limitations": [
+              "Profoundsubtype notindividuallydocumented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032794",
+              "label": "Myoclonic seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2301876d082e763da08807a89cee0caa4c9841c474d893f8c25491c11a5e0be7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Source listsGTCS butdoesnotexplicitlyexclude Myoclonic seizure.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1column7"
+              }
+            ],
+            "limitations": [
+              "Unlistedseizuretypes notformalnegativehistory."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032792",
+              "label": "Tonic seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2de9f74c5b4a403bfa611603aebebe5027c9f42142738abed5244c5ccde16079",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Source listsGTCS butdoesnotexplicitlyexclude Tonic seizure.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1column7"
+              }
+            ],
+            "limitations": [
+              "Unlistedseizuretypes notformalnegativehistory."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002197",
+              "label": "Generalized-onset seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f48dd3be87ab68419ef3ccb596a6fcab253087d36880f8465bbf6680e5da8e0c",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packetexcludesgeneralized-onsetseizure, butsourceindividual7hasGTCS andgeneralizedepilepsy.",
+            "evidence": [
+              {
+                "source_id": "table1-pixels",
+                "locator": "Table1column7seizuretype/epilepsytype"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007359",
+              "label": "Focal-onset seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "646c885b75964faf90aa006dc6971b11dbdd253a1cf47936f34d447a957414ee",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Source listsGTCS butdoesnotexplicitlyexclude Focal-onset seizure.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1column7"
+              }
+            ],
+            "limitations": [
+              "Unlistedseizuretypes notformalnegativehistory."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002069",
+              "label": "Bilateral tonic-clonic seizure"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P11M"
+              }
+            }
+          },
+          "snapshot_sha256": "f64f14be6163d4d4e62db289f44a726ba0da6a969762c00f62c3506a681db4eb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Bilateral tonic-clonic seizure reportedinTable1column7 orhypotoniainallsubjects; toniccloniconset11months matches.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinical;Table1column7"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012520",
+              "label": "Dilation of Virchow-Robin spaces"
+            }
+          },
+          "snapshot_sha256": "9a45df37dfd7798eb25de250c2ee3872699f7f1dd7255a81bb2122a30a665579",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dilation of Virchow-Robin spaces reportedinTable1column7 orhypotoniainallsubjects; toniccloniconset11months matches.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinical;Table1column7"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033725",
+              "label": "Thin corpus callosum"
+            }
+          },
+          "snapshot_sha256": "46e89517a2809531e4acbda0a00736d04c295a09bcc1007bfc99860ddefc0cb2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Thin corpus callosum reportedinTable1column7 orhypotoniainallsubjects; toniccloniconset11months matches.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinical;Table1column7"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0200134",
+              "label": "Epileptic encephalopathy"
+            }
+          },
+          "snapshot_sha256": "fbab9eb6b9be2f7a9c9bc62d8a4f48b57b302d3d55e31a64780ca8bf275383f6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Epileptic encephalopathy reportedinTable1column7 orhypotoniainallsubjects; toniccloniconset11months matches.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinical;Table1column7"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            }
+          },
+          "snapshot_sha256": "dfed0eeba81852313a1b62b7fd1e2a33e9467ee7a6360518e53376370228edaa",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypotonia reportedinTable1column7 orhypotoniainallsubjects; toniccloniconset11months matches.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinical;Table1column7"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003429",
+              "label": "CNS hypomyelination"
+            }
+          },
+          "snapshot_sha256": "d77966cbd600cb11cef0ef25bfd48cc16a38243f3f74e57ba95d5704521147aa",
+          "assessment": {
+            "status": "supported",
+            "statement": "CNS hypomyelination reportedinTable1column7 orhypotoniainallsubjects; toniccloniconset11months matches.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsclinical;Table1column7"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inferenceaggregateexposure;noper-caseranksconsulted.",
+    "Entire24pagebundletextread; onlyclinicaltablepixelsreviewed.",
+    "Normalblood/CSFlevels do notmeasurelocalbrainmetabolicflux; proposedATP/glutaminolysis/osmoticmechanismsremainuntested."
+  ]
+}

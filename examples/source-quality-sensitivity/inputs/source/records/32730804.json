@@ -1,0 +1,1662 @@
+{
+  "schema_version": 1,
+  "pmid": "32730804",
+  "title": "Variants in SCAF4 Cause a Neurodevelopmental Disorder and Are Associated with Impaired mRNA Processing",
+  "reviewer": {
+    "id": "reader11",
+    "reviewed_at_utc": "2026-10-24T18:46:58.085326+00:00",
+    "method": "Independent public-source comparison, all assigned selected and alternate packet members retained. No inference output opened."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Mandatory HANDOFF.md exposes historical public-control per-case ranks and aggregate outcomes. Conservatively declared per_case; no target-case outcomes or inference files consulted for this audit."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "cafcbfd96c6c45388404602fd4dd9cdf5d309de3928162202adca8994d48c524",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-pdf",
+      "pmid": "32730804",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer11/32730804/main.pdf",
+      "sha256": "322ba2fc6fe4e2b7e837407ce3a115b11310b8d46d0386c5b5765a60e074b046",
+      "kind": "pdf",
+      "description": "Held public full article; copied hash-verified from retrieval-followup."
+    },
+    {
+      "id": "main-layout",
+      "pmid": "32730804",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer11/32730804/main-layout.txt",
+      "sha256": "c52856a904a1be7066dd085213f47c37c57d87229fec1b5c9c1dbf13ef4cf043",
+      "kind": "text",
+      "description": "Layout-preserving extracted text, actually read for declared pages."
+    },
+    {
+      "id": "retrieval",
+      "pmid": "32730804",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer11/32730804/provenance.json",
+      "sha256": "96c29041427a6a73bdf9d5f3f36b0407aa9dde2d8fbc78a6b7912e43f9c73e6c",
+      "kind": "metadata",
+      "description": "Public source retrieval identity and provenance; retrieval alone is not reading."
+    },
+    {
+      "id": "TableS2",
+      "pmid": "32730804",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer11/32730804/TableS2.xlsx",
+      "sha256": "e3e51f39f05698f6663651827708afe7485a493089b18e3720c69e3d3b1b8ac8",
+      "kind": "data",
+      "description": "Public RNA-sequencing supplement workbook;6sheets125042rows, only42rows actually read."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Variants in SCAF4 Cause a Neurodevelopmental Disorder and Are Associated with Impaired mRNA Processing",
+    "evidence": [
+      {
+        "source_id": "main-pdf",
+        "locator": "Title, authors and DOI on first article page"
+      }
+    ],
+    "note": "Identity independently confirmed from held full article."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 12,
+      "table": 3,
+      "supplement": 2
+    },
+    "evidence": [
+      {
+        "source_id": "main-pdf",
+        "locator": "4main+8supplementalfigures; Table1,TablesS1/S3;17-page supplement and separateTableS2 six-sheet workbook; public article-plus-supplement bundle identity verified."
+      }
+    ],
+    "note": "4main+8supplementalfigures; Table1,TablesS1/S3;17-page supplement and separateTableS2 six-sheet workbook; public article-plus-supplement bundle identity verified."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "pages",
+      "unit_count": 11,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Physical PDF pages 1–11, including all main-text references/end matter."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 11,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "Physical PDF pages 1–11, including all main-text references/end matter."
+        }
+      ],
+      "note": "Physical PDF pages 1–11, including all main-text references/end matter."
+    },
+    {
+      "id": "Figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure1, all panels, PDF p2"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "Figure1, all panels, PDF p2"
+        }
+      ],
+      "note": "Figure1, all panels, PDF p2"
+    },
+    {
+      "id": "Figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure2, all panels, PDF p6"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "Figure2, all panels, PDF p6"
+        }
+      ],
+      "note": "Figure2, all panels, PDF p6"
+    },
+    {
+      "id": "Figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure3, all panels, PDF p8"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "Figure3, all panels, PDF p8"
+        }
+      ],
+      "note": "Figure3, all panels, PDF p8"
+    },
+    {
+      "id": "Figure4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Figure4, all panels, PDF p9"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "Figure4, all panels, PDF p9"
+        }
+      ],
+      "note": "Figure4, all panels, PDF p9"
+    },
+    {
+      "id": "Table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF pp4–5; all11 columns and notes"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "PDF pp4–5; all11 columns and notes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF pp4–5; all11 columns and notes"
+        }
+      ],
+      "note": "PDF pp4–5; all11 columns and notes"
+    },
+    {
+      "id": "SupplementPDF",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "pages",
+      "unit_count": 17,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Physical PDF pp12–28 (17 supplement pages): all legends, methods and17 references read."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 17,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "Physical PDF pp12–28 (17 supplement pages): all legends, methods and17 references read."
+        }
+      ],
+      "note": "Physical PDF pp12–28 (17 supplement pages): all legends, methods and17 references read."
+    },
+    {
+      "id": "FigureS1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p13, all panels; S2 caption continues p15."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p13, all panels; S2 caption continues p15."
+        }
+      ],
+      "note": "PDF p13, all panels; S2 caption continues p15."
+    },
+    {
+      "id": "FigureS2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p14, all panels; S2 caption continues p15."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p14, all panels; S2 caption continues p15."
+        }
+      ],
+      "note": "PDF p14, all panels; S2 caption continues p15."
+    },
+    {
+      "id": "FigureS3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p15, all panels; S2 caption continues p15."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p15, all panels; S2 caption continues p15."
+        }
+      ],
+      "note": "PDF p15, all panels; S2 caption continues p15."
+    },
+    {
+      "id": "FigureS4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p16, all panels; S2 caption continues p15."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p16, all panels; S2 caption continues p15."
+        }
+      ],
+      "note": "PDF p16, all panels; S2 caption continues p15."
+    },
+    {
+      "id": "FigureS5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p17, all panels; S2 caption continues p15."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p17, all panels; S2 caption continues p15."
+        }
+      ],
+      "note": "PDF p17, all panels; S2 caption continues p15."
+    },
+    {
+      "id": "FigureS6",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p18, all panels; S2 caption continues p15."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p18, all panels; S2 caption continues p15."
+        }
+      ],
+      "note": "PDF p18, all panels; S2 caption continues p15."
+    },
+    {
+      "id": "FigureS7",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p19, all panels; S2 caption continues p15."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p19, all panels; S2 caption continues p15."
+        }
+      ],
+      "note": "PDF p19, all panels; S2 caption continues p15."
+    },
+    {
+      "id": "FigureS8",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF p20, all panels; S2 caption continues p15."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF p20, all panels; S2 caption continues p15."
+        }
+      ],
+      "note": "PDF p20, all panels; S2 caption continues p15."
+    },
+    {
+      "id": "TableS1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF pp21–22; all rows and columns."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "PDF pp21–22; all rows and columns."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF pp21–22; all rows and columns."
+        }
+      ],
+      "note": "PDF pp21–22; all rows and columns."
+    },
+    {
+      "id": "TableS3",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF pp23; all rows and columns."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main-layout",
+          "locator": "PDF pp23; all rows and columns."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "main-pdf",
+          "locator": "PDF pp23; all rows and columns."
+        }
+      ],
+      "note": "PDF pp23; all rows and columns."
+    },
+    {
+      "id": "TableS2-workbook",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "items",
+      "unit_count": 125042,
+      "extent_source_id": "TableS2",
+      "extent_evidence": [
+        {
+          "source_id": "TableS2",
+          "locator": "Flattened sheet rows in order; entire27-row consequences sheet and first3rows of each other sheet read. Remaining125000rows unread."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "size factor corrected counts row1"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "size factor corrected counts row2"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "size factor corrected counts row3"
+        },
+        {
+          "start": 60131,
+          "end": 60131,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "DESeq data row1"
+        },
+        {
+          "start": 60132,
+          "end": 60132,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "DESeq data row2"
+        },
+        {
+          "start": 60133,
+          "end": 60133,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "DESeq data row3"
+        },
+        {
+          "start": 120261,
+          "end": 120261,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "GO terms diff. genes row1"
+        },
+        {
+          "start": 120262,
+          "end": 120262,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "GO terms diff. genes row2"
+        },
+        {
+          "start": 120263,
+          "end": 120263,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "GO terms diff. genes row3"
+        },
+        {
+          "start": 121634,
+          "end": 121634,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "spliced genes p<0.05 row1"
+        },
+        {
+          "start": 121635,
+          "end": 121635,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "spliced genes p<0.05 row2"
+        },
+        {
+          "start": 121636,
+          "end": 121636,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "spliced genes p<0.05 row3"
+        },
+        {
+          "start": 124577,
+          "end": 124577,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "GO terms spliced genes row1"
+        },
+        {
+          "start": 124578,
+          "end": 124578,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "GO terms spliced genes row2"
+        },
+        {
+          "start": 124579,
+          "end": 124579,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "GO terms spliced genes row3"
+        },
+        {
+          "start": 125016,
+          "end": 125016,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row1"
+        },
+        {
+          "start": 125017,
+          "end": 125017,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row2"
+        },
+        {
+          "start": 125018,
+          "end": 125018,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row3"
+        },
+        {
+          "start": 125019,
+          "end": 125019,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row4"
+        },
+        {
+          "start": 125020,
+          "end": 125020,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row5"
+        },
+        {
+          "start": 125021,
+          "end": 125021,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row6"
+        },
+        {
+          "start": 125022,
+          "end": 125022,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row7"
+        },
+        {
+          "start": 125023,
+          "end": 125023,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row8"
+        },
+        {
+          "start": 125024,
+          "end": 125024,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row9"
+        },
+        {
+          "start": 125025,
+          "end": 125025,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row10"
+        },
+        {
+          "start": 125026,
+          "end": 125026,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row11"
+        },
+        {
+          "start": 125027,
+          "end": 125027,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row12"
+        },
+        {
+          "start": 125028,
+          "end": 125028,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row13"
+        },
+        {
+          "start": 125029,
+          "end": 125029,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row14"
+        },
+        {
+          "start": 125030,
+          "end": 125030,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row15"
+        },
+        {
+          "start": 125031,
+          "end": 125031,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row16"
+        },
+        {
+          "start": 125032,
+          "end": 125032,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row17"
+        },
+        {
+          "start": 125033,
+          "end": 125033,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row18"
+        },
+        {
+          "start": 125034,
+          "end": 125034,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row19"
+        },
+        {
+          "start": 125035,
+          "end": 125035,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row20"
+        },
+        {
+          "start": 125036,
+          "end": 125036,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row21"
+        },
+        {
+          "start": 125037,
+          "end": 125037,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row22"
+        },
+        {
+          "start": 125038,
+          "end": 125038,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row23"
+        },
+        {
+          "start": 125039,
+          "end": 125039,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row24"
+        },
+        {
+          "start": 125040,
+          "end": 125040,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row25"
+        },
+        {
+          "start": 125041,
+          "end": 125041,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row26"
+        },
+        {
+          "start": 125042,
+          "end": 125042,
+          "mode": "data",
+          "source_id": "TableS2",
+          "locator": "consequences splicing row27"
+        }
+      ],
+      "note": "Flattened sheet rows in order; entire27-row consequences sheet and first3rows of each other sheet read. Remaining125000rows unread."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SCAF4/PMID_32730804_Individual_5.json",
+      "packet_sha256": "396ff205f5a23a0e61beab631b7fb0d9ae39bbaddaaf326ee5feccf52b657bc6",
+      "case_id": "TC_c377ef01a19fe709",
+      "role": "selected",
+      "packet_subject_id": "Individual 5",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Summary-table omissions do not establish negative findings. Transcriptome experiments used I1/I4/I9/I11, not I5."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Individual5 female age13 matches Table1 and Figure1C.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous de novo NM_020706.2:c.1423C>T p.Arg475* agrees; source GRCh37 chr21:33065697 differs from packet GRCh38 coordinate and was not independently lifted over.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+          }
+        ],
+        "limitations": [
+          "Genomic-coordinate normalization unverified."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "De novo inheritance is explicitly Sanger-confirmed for I5; family history negative.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single heterozygous allele; no compound-heterozygous phase required.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+          }
+        ],
+        "limitations": [
+          "Parental chromosome of origin not identified."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "SCAF4 truncation is among nine likely pathogenic variants; packet formal PATHOGENIC/SOLVED label and later syndrome naming are not independently established by this paper. I5 also carries de novo FREM2 c.8789A>G and paternal FREM2 c.6819A>C VUSs.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+          }
+        ],
+        "limitations": [
+          "No I5 functional RNA assay; formal ACMG classification and infantile disease-onset label not given."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Core mild delay/autism/seizures/VSD/hydronephrosis/hallux valgus match; packet omits possible speech regression, lordosis, II/III toe syndactyly and premature adrenarche.",
+        "evidence": [
+          {
+            "source_id": "main-layout",
+            "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+          }
+        ],
+        "limitations": [
+          "Many negative assertions exceed summary table detail."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1423CtoT_SCAF4_NM_020706v2",
+            "geneContext": {
+              "valueId": "HGNC:19304",
+              "symbol": "SCAF4"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_020706.2:c.1423C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000021.9:g.31693384G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_065757.1:p.(Arg475Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr21",
+              "pos": 31693384,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "06e2fe9cb1c8e43bdc717bfce0e72e21fb8fff4ba968d09279c0aa1dfff01eec",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous de novo NM_020706.2:c.1423C>T p.Arg475* agrees; source GRCh37 chr21:33065697 differs from packet GRCh38 coordinate and was not independently lifted over.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Genomic-coordinate normalization unverified."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Mild DD/ID and delayed two-word combinations after2 support developmental impairment; initial walking14m and firstwords14m were normal.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Global developmental delay broader than specifically described deficits."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031936",
+              "label": "Delayed ability to walk"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c860db5451e7462a2f246bc8408096f1d333fbd829621e7eb3e526df5ea9ab8b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Delayed ability to walk: matches I5 table; walking14months, hypotonia explicitly no, myoclonus at12, autism, resolvedVSD, unilateralhydronephrosis, halluxvalgus.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            }
+          },
+          "snapshot_sha256": "48676c3701994966952c6afa26b3d2a47be69e0754311248381fa7cc3631da7a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Seizure: matches I5 table; walking14months, hypotonia explicitly no, myoclonus at12, autism, resolvedVSD, unilateralhydronephrosis, halluxvalgus.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002079",
+              "label": "Hypoplasia of the corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "47e649fa70bba531b4dc7011111064a0945f0b560c3b0f6a4fd6b53e22e72c0e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Hypoplasia of the corpus callosum excluded is consistent with normalMRI summary, not an itemized negative structure assessment.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "MRI details not supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001272",
+              "label": "Cerebellar atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "dfbb9a782193b4e392087f1fa0fe0986c9afa54adb28fb6326ac7daeec88a630",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Cerebellar atrophy excluded is consistent with normalMRI summary, not an itemized negative structure assessment.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "MRI details not supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4a1bfc1bd5599f694602bb5a9c71ff1934f02d19f1529197116397e70f25b7f7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypotonia: matches I5 table; walking14months, hypotonia explicitly no, myoclonus at12, autism, resolvedVSD, unilateralhydronephrosis, halluxvalgus.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001276",
+              "label": "Hypertonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "61f0395086850642bf55317cdac4bc303244121a9f06268143fea0e30331fcff",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypertonia: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "supported",
+            "statement": "Autistic behavior: matches I5 table; walking14months, hypotonia explicitly no, myoclonus at12, autism, resolvedVSD, unilateralhydronephrosis, halluxvalgus.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000718",
+              "label": "Aggressive behavior"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "450f43059bf2f8df1e6d5f0d1e061e2d46f999f44e5bb0e4abeb086346e6e571",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Aggressive behavior: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100716",
+              "label": "Self-injurious behavior"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "af0cbb82407f46074c2d00d3f19bb6911eff52598fcf4b42f499ff9e3fd196cf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Self-injurious behavior: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001629",
+              "label": "Ventricular septal defect"
+            }
+          },
+          "snapshot_sha256": "e2caa25def18bdca7d13d84964ed1a0777e161da97c9d66f2b9e73e44ac92c47",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ventricular septal defect: matches I5 table; walking14months, hypotonia explicitly no, myoclonus at12, autism, resolvedVSD, unilateralhydronephrosis, halluxvalgus.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001647",
+              "label": "Bicuspid aortic valve"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1e7edc69dd8a3e6e8feebfee89691ab52c1bbfb58a2fac6950bb728053efb7f1",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bicuspid aortic valve: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012304",
+              "label": "Hypoplastic aortic arch"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7a332d408d80d3d86daef74fd334607425ff394a165458945bd3b107966dd629",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypoplastic aortic arch: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000122",
+              "label": "Unilateral renal agenesis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "57aeffd85a8479568cfbbe4183bcd7f0c1489ad9b94ec37af43def741c612f68",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Unilateral renal agenesis: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000003",
+              "label": "Multicystic kidney dysplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "772549193fafd0f0f3664aaba883bd8eed2a076e32da43d4cd02f7ce9ba01f3c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Multicystic kidney dysplasia: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000126",
+              "label": "Hydronephrosis"
+            }
+          },
+          "snapshot_sha256": "62b00325bfabea7502b107f94379bc5a42a67dc56c0df0d9e102fae0941f2870",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hydronephrosis: matches I5 table; walking14months, hypotonia explicitly no, myoclonus at12, autism, resolvedVSD, unilateralhydronephrosis, halluxvalgus.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002575",
+              "label": "Tracheoesophageal fistula"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "066843bfcbd1d745bdc039f9cef39b5cef9cc6cf69f70e562bce88f9b1dd88a0",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Tracheoesophageal fistula excluded is consistent with GI anomalies listed none.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Broad category negative rather than named item examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002023",
+              "label": "Anal atresia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ce1858cebca57a7bc39e4afe01ac20e76dd58c3100adf0a6c2a987831d38f658",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Anal atresia excluded is consistent with GI anomalies listed none.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Broad category negative rather than named item examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002808",
+              "label": "Kyphosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "74ef7bf1541c3a34e7743cb3245acdec57d8ee002a95d29f656fbddc0a5378b0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Kyphosis: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6db568d0dd760bea978b8846d66cb918c3bc978c8bb480f209e63a73a910f4bc",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Scoliosis: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001822",
+              "label": "Hallux valgus"
+            }
+          },
+          "snapshot_sha256": "56c584aa9d1f7f1aefad016f1e86bd788f3c19643879b2c4b195fb8f91b93da9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hallux valgus: matches I5 table; walking14months, hypotonia explicitly no, myoclonus at12, autism, resolvedVSD, unilateralhydronephrosis, halluxvalgus.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000767",
+              "label": "Pectus excavatum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9359c43aec7cba002c2eba88a9f30c8f7c9e84d15898d7db5cb09dc1e90b6133",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Pectus excavatum: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002144",
+              "label": "Tethered cord"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2115a8d6a68c9f56d61d81fbd63e43394594f3a546437219aa0a941fdaa43501",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Tethered cord: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Microcephaly excluded consistent with OFC-1.9SD and weight-0.61SD.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Anthropometric interpretation, not explicit named diagnosis exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000286",
+              "label": "Epicanthus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3d1a3807e547a1db3644b4e3e18feea0a9f55f6f1520aa0e0ea2e761eaa116e4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Epicanthus: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001513",
+              "label": "Obesity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2a996740fa285b963518ce7903a2fddcb0f37fe16a99602a4064c9cbb72b631a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Obesity excluded consistent with OFC-1.9SD and weight-0.61SD.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Anthropometric interpretation, not explicit named diagnosis exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002435",
+              "label": "Meningocele"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8d3cb0eeaef18c5e06d5e27d0815d6ba896dd52da943b4e8eac6c1dcef7d3e84",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Meningocele: no specific negative examination reported for I5; omission cannot prove excluded=true.",
+            "evidence": [
+              {
+                "source_id": "main-layout",
+                "locator": "Main Table1 Individual5, PDF pp4–5; TableS1 pp21–22"
+              }
+            ],
+            "limitations": [
+              "Summary table/photograph cannot establish this negative finding."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source-correspondence audit, not blinded or independent clinical validation.",
+    "Reader11 records directory and predecessor reviewer-1 filename search contained no records for these six PMIDs on arrival; queue records existing_main_text_read=false. No predecessor reading credit invented. Curated subscription inputs were prepared but Claude used zero tokens and performed no review.",
+    "TableS2 transcriptome workbook remains partial (42/125042 flattened rows). Private raw data advertised as not deposited were not requested or accessed."
+  ]
+}

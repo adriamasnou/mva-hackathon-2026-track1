@@ -1,0 +1,157 @@
+{
+  "pmid": "34890546",
+  "source_titles": [
+    "Monoallelic IFT140 pathogenic variants are an important cause of the autosomal dominant polycystic kidney-spectrum phenotype."
+  ],
+  "selected_case_ids": [
+    "TC_28c7f83f3df63a0e"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "IFT140"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/IFT140/PMID_34890546_440003_CRISP_406737.json",
+      "sha256": "e457d0dae3711dcc327e48ff160eb6abc9d5142ac42314e9aba06c2c5ad3130e",
+      "case_id": "TC_28c7f83f3df63a0e",
+      "selected_record": true,
+      "subject": {
+        "id": "440003 (CRISP) 406737",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P53Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621164",
+            "label": "Polycystic kidney disease 9, susceptibility to"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P41Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0012624",
+            "label": "Stage 2 chronic kidney disease"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012625",
+            "label": "Stage 3 chronic kidney disease"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012626",
+            "label": "Stage 4 chronic kidney disease"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0003774",
+            "label": "Stage 5 chronic kidney disease"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000093",
+            "label": "Proteinuria"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000113",
+            "label": "Polycystic kidney dysplasia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000822",
+            "label": "Hypertension"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001407",
+            "label": "Hepatic cysts"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "aCdorlp3mr8WHt2KQJp8eO7w",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621164",
+              "label": "Polycystic kidney disease 9, susceptibility to"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "440003 (CRISP) 406737",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c581del_IFT140_NM_014714v4",
+                    "geneContext": {
+                      "valueId": "HGNC:29077",
+                      "symbol": "IFT140"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_014714.4:c.581del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000016.10:g.1592231del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_055529.2:p.(Leu194CysfsTer2)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr16",
+                      "pos": 1592228,
+                      "ref": "CA",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

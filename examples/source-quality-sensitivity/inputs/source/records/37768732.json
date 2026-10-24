@@ -1,0 +1,968 @@
+{
+  "schema_version": 1,
+  "pmid": "37768732",
+  "title": "TBC1D32 variants disrupt retinal ciliogenesis and cause retinitis pigmentosa",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T14:05:16.469300+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "1ce0f29a0e239cf5150e6194c6985f4539dcbb3b9b5934bacfb23b487affd78f",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "37768732",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37768732/main.xml",
+      "sha256": "32aa44b1794ab2b95e792e07ebc401b1a915c7d621290450cbe508b51ff6e516",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "37768732",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37768732/main.complete.txt",
+      "sha256": "210f0c237e55a012753cb3c0c164a8c843f28749956e249537e67921d780a6e5",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "37768732",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/37768732/availability.json",
+      "sha256": "81eaf58caeeeda3aaa178038decc48d55783e32050bf65bbb463b4ffce29f99a",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "supp-pdf",
+      "pmid": "37768732",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/37768732/cloud/PMC10721274.1/jciinsight-8-169426-s081.pdf",
+      "sha256": "13d4905d98a47db094973d17e245c1b49c97ed92fd2aa0d73c58f3aca344c4e7",
+      "kind": "pdf",
+      "description": "19-page supplement"
+    },
+    {
+      "id": "supp-text",
+      "pmid": "37768732",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/37768732/supplement.txt",
+      "sha256": "cb5810340cad28af0d1b34e75cf068df450b2e20343df741f18b43f15a3b61dc",
+      "kind": "text",
+      "description": "Layout extraction; only listedcoverage inspected"
+    },
+    {
+      "id": "table-s1-pixels",
+      "pmid": "37768732",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/37768732/table-s1.png",
+      "sha256": "6af0af0d37d3bca151cc6157ced779a8d6c1598a88852b4ae3512871228b63fd",
+      "kind": "image",
+      "description": "Rendered supplementPDFpage1,allTableS1cells visually inspected"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "TBC1D32 variants disrupt retinal ciliogenesis and cause retinitis pigmentosa",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 10,
+      "table": 0,
+      "supplement": 2
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 473,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–473"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 473,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–473"
+        }
+      ],
+      "note": "Entiremainarticle,55references,all10figurelegends,endmatterread. Fourpatients/threefamilies; cellmodelsfrompatient1, notthemappedpatient2."
+    },
+    {
+      "id": "figure:F1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F1]; Figure 1Multimodal imaging of the patients.Patient 1: (A) Color fundus photograph showing pallor of the optic nerve head and reduced caliber of the retinal vessels. Note the abnormal visibility of the choroidal vessels due to RPE damage in the midperiphery. (B) Short-wavelength fundus autofluorescence (SW-FAF) showing a parafoveal ring characteristic of RP (white arrows). (C) SD-OCT macular scan s"
+    },
+    {
+      "id": "figure:F2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F2]; Figure 2tbc1d32 expression during Xenopus development and retinogenesis.(A) Lateral views of Xenopus embryo heads (anterior to the right) following tbc1d32 whole-mount in situ hybridization. Enlargement: at stage 25, epidermal cells are stained. tbc1d32 expression is also detected in the eye (black arrows) and later in the pronephric nephrostomes (black dotted arrows), brain (black arrowheads), an"
+    },
+    {
+      "id": "figure:F3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F3]; Figure 3Xenopus RPE phenotype following tbc1d32 knockdown.(A) Mo1 and Mo2 target sequences located in the 5′ untranslated region of tbc1d32 mRNA. (B) Diagram of the experimental design. (C) Upper panels, lateral views of 1 control and 2 morphant embryo heads with moderate and severe phenotypes (anterior to the right). Lower panels, transverse retinal sections of control and morphant embryos (dorsa"
+    },
+    {
+      "id": "figure:F4",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F4]; Figure 4Xenopus RPE and photoreceptor marker expression following tbc1d32 knockdown.(A) Diagram of the experimental design. Whole mount (B) or retinal sections (C) following in situ hybridization against mitf or ihh, respectively, on embryos injected with control Mo or tbc1d32 Mo1. Scatterplots represent the quantification of the integrated density of the staining per eye relative to control Mo; e"
+    },
+    {
+      "id": "figure:F5",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F5]; Figure 5Xenopus ciliogenesis following tbc1d32 knockdown.(A) Arl13b and γ-Tubulin (γ-Tub) immunolabeling on neural tube sections of stage 35–36 wild-type (WT), control Mo, or tbc1d32 Mo1 embryos. (B) Scatterplot shows the mean length of neural tube cilia. Each dot corresponds to the mean length for 1 embryo. (C) Immunolabeling of cilia markers, acetylated α-Tubulin (α-Tub), Arl13b, and γ-Tub, on r"
+    },
+    {
+      "id": "figure:F6",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F6]; Figure 6Morphology of the primary cilium in human fibroblasts.IF studies and single plane confocal imaging to assay ciliogenesis in control (A, C, and E) and TBC1D32 (B, D, and F) fibroblasts with antibodies directed against ARL13B and acetylated α-tubulin (Ac αTUB; A and B), GT335 (C and D), and PCN (E and F). (G) Quantification of cilium length in control and TBC1D32 fibroblasts. Data are repres"
+    },
+    {
+      "id": "figure:F7",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F7]; Figure 7Morphology of the human iPSC-derived RPE.IF studies and maximum intensity projection (MIP) confocal imaging of control (A) and TBC1D32 (B) iPSC-derived RPE using antibodies directed against ZO1 and ARL13B. White arrows indicate elongated cilia. The disrupted TBC1D32 RPE monolayer can be seen on the orthogonal planes as compared with control. Scale bars = 10 μm. (C) Quantification of the ci"
+    },
+    {
+      "id": "figure:F8",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F8]; Figure 8EMT-like phenotype in human TBC1D32 iPSC-derived RPE.IF studies and MIP confocal imaging of control (A) and TBC1D32 (B) iPSC-derived RPE using antibodies directed against vimentin and MERTK. The boxed area in B indicates areas of upregulated vimentin and disrupted MERTK expression. Scale bars = 20 µm. IF studies and MIP confocal imaging of control (C) and TBC1D32 (D) iPSC-derived RPE using"
+    },
+    {
+      "id": "figure:F9",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F9]; Figure 9Retinosome accumulation and altered secretion in human TBC1D32 iPSC-derived RPE.IF studies and MIP confocal imaging of control (A) and TBC1D32 (B) iPSC-derived RPE using antibodies directed against N-cadherin and CRALBP. Redistribution of N-cadherin and CRALBP can be seen on the orthogonal planes. Scale bars = 10 μm. (C) Representative Western blot analysis and quantification of 2 independ"
+    },
+    {
+      "id": "figure:F10",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F10]; Figure 10Morphology of human iPSC-derived retinal organoids.Brightfield microscopy of control (A) and TBC1D32 (B) retinal organoids at day 225 of differentiation showing the brush border. Scale bars = 100 μm. Higher magnification of the ONL of control (C) and TBC1D32 (D) organoids. Scale bars = 50 μm. IF studies and MIP confocal imaging of control (E, G, and I) and TBC1D32 (F, H, and J) organoids "
+    },
+    {
+      "id": "supplement:SD1",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 19,
+      "extent_source_id": "supp-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "supp-pdf",
+          "locator": "19PDFpages"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supp-text",
+          "locator": "PDFpage1 TableS1 allrows/columns"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table-s1-pixels",
+          "locator": "completePDFpage1render"
+        }
+      ],
+      "note": "TableS1entirepage readtextandpixels. Partialtailtextreadnotcountedaswholepages; otherpagesanddataworkbookremainopen."
+    },
+    {
+      "id": "supplement:SD2",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=SD2]; Supporting data values"
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/TBC1D32/PMID_37768732_Family_2_Patient_2.json",
+      "packet_sha256": "7667bcc4f4a6917f2da0779ced5cfbd79e43ecabce0202df907a0aa30bb4a74b",
+      "case_id": "TC_657dc6648ce6b890",
+      "role": "selected",
+      "packet_subject_id": "Family 2 Patient 2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Fullmain;TableS1readtextandpixels; othercomponentsopen. Noper-caseranksconsulted."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Patient2/Family2, Italianmale,34atfirstexam36atlastexam, childhoodnightblindness; chronicnonproteinuricCKDdiagnosed27years. Distinctfrompatient1cell-modeldonor.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS1Patient2row; mainClinicalfeatures"
+          },
+          {
+            "source_id": "main-text",
+            "locator": "Threeunrelatedfamiliesclinicalfeatures"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "c.18_27del Ser6Argfs*8 maternal; c.1141-1G>A paternal, compoundheterozygous. MainusesNM_001367760.1 whilepacketNM_152730.6.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "TBC1D32variantssegregatewithRP"
+          }
+        ],
+        "limitations": [
+          "Exacttranscript/genomiccoordinateequivalence not independentlyverified."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "WESandsubsequentfamilyassignment explicitlymaternaldeletion/paternalsplicevariant; fatherWBCsharesaberrantsplicing.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "TBC1D32variantssegregatewithRP"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Maternal andpaternaloriginestablishtransinpatient2.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "TBC1D32variantssegregatewithRP"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "ThreefamilieswithRP,segregatingbiallelicvariants,RNAaberrationsinpatient2andhumanpatient1retinalmodelsplusXenopusknockdown/partialWTrescue supportassociation.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "ResultsandDiscussion"
+          }
+        ],
+        "limitations": [
+          "Patient2hasWBCsplicingdata, butfibroblast/iPSC/RPE/organoidexperimentsallfrompatient1; twolinesarenottwoindependentpatients.",
+          "Noisogeniccorrectedhumancontrolorpatient2-specificrescue; manycell/technicalreplicatecounts.",
+          "Trp1171CysinotherfamilysourceVUS, despitebroaderpaperpathogenicwording.",
+          "Renalassociationisplausible, notprovedbyPKD1/2negative.",
+          "Sourcecorrespondencedoesnotclinicallyprovevariantlabels."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All16mappeditemschecked;TableS1wholepagereadtextandpixels. CKD/renalcystsandsuperiorvermisatrophyarealso reportedforpatient2 butnotincludedinpacket.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Clinicalfeatures;Discussion"
+          }
+        ],
+        "limitations": [
+          "Mainfigurepixelsandremaining18supplementpages/workbooknotfullyreviewed."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c18_27del_TBC1D32_NM_152730v6",
+            "geneContext": {
+              "valueId": "HGNC:21485",
+              "symbol": "TBC1D32"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_152730.6:c.18_27del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.121334408_121334417del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_689943.4:p.(Ser6ArgfsTer8)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 121334403,
+              "ref": "CCTGGTCCTCG",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "41b7acccfefbc52fa88323b9da4a04118f79d891713fa99d012501ceef17018e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Codingalleleandheterozygousstateagreewithpatient2. Splicevariantcausesup to7additionalPTCbearingRNAevents inpatient/fatherWBC; deletionpredictsframeshift.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "TBC1D32variantssegregatewithRP"
+              }
+            ],
+            "limitations": [
+              "Packettranscriptandhg38mappingnotindependentlyalignedtomaintranscript.",
+              "Noisogenicpatient2functionalcomplementationpresented."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1141_1GtoA_TBC1D32_NM_152730v6",
+            "geneContext": {
+              "valueId": "HGNC:21485",
+              "symbol": "TBC1D32"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_152730.6:c.1141-1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.121294661C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_689943.4:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 121294661,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "4ea4eff4584d4e186887841cedf69aa9103948ba24083558ef9c57b516d68cdb",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Codingalleleandheterozygousstateagreewithpatient2. Splicevariantcausesup to7additionalPTCbearingRNAevents inpatient/fatherWBC; deletionpredictsframeshift.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "TBC1D32variantssegregatewithRP"
+              }
+            ],
+            "limitations": [
+              "Packettranscriptandhg38mappingnotindependentlyalignedtomaintranscript.",
+              "Noisogenicpatient2functionalcomplementationpresented."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002007",
+              "label": "Frontal bossing"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "563a5baa39ebd5f0941e591d045b7c0233e4fc03dce6c8be81cd6fc3404b63a0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Frontalbossingnegative notexplicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "Specificity/absencequalificationinassessment; figuresnotusedasproofoffinding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007843",
+              "label": "Attenuation of retinal blood vessels"
+            }
+          },
+          "snapshot_sha256": "a72d1d1898b850a13fd63f6f86e3d8e54852957cec0bcea097be3d24093725bf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "MainFigure1describesattenuatedvesselsforpatient1; specificpatient2attenuationnotestablishedfromtext/S1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "Specificity/absencequalificationinassessment; figuresnotusedasproofoffinding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000568",
+              "label": "Microphthalmia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ff35700cf7363c6ee924973623fba3e103b5e0a9815c19d39be234742a01cacf",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Noocularmalformationsreportedforanypatient; supportsbroadnonmicrophthalmicpresentation.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "Specificity/absencequalificationinassessment; figuresnotusedasproofoffinding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000589",
+              "label": "Coloboma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c370c4e0a2b87645ed12455e93e698c3a4388325a5dbd085af9a523f25dc61ce",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Noocularmalformationsreported; specificcolobomanegativeisbroaderabstraction.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "Specificity/absencequalificationinassessment; figuresnotusedasproofoffinding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0040049",
+              "label": "Macular edema"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fe88124f27290f27b24e3a133b0d0f152ae04c4fbbc635dbd9654a6cf62576ed",
+          "assessment": {
+            "status": "supported",
+            "statement": "Maintextallpatientsnomacularedema.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000543",
+              "label": "Optic disc pallor"
+            }
+          },
+          "snapshot_sha256": "a4a920b018bcad5a10271aad20621968690c410ced04a604629fe271b6de4762",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Disc pallor describedforpatients1and3 inFigure1caption, notpatient2; do nottransfer.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "Specificity/absencequalificationinassessment; figuresnotusedasproofoffinding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025159",
+              "label": "Hypoautofluorescent retinal lesion"
+            }
+          },
+          "snapshot_sha256": "3c89dfb46b33adf64ed2c5b7cc0f9d440fd03efe4ab4d2a017d2b657c97e2fba",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1patient2multipleperipheralhypoautofluorescentspots.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030629",
+              "label": "Perifoveal ring of hyperautofluorescence"
+            }
+          },
+          "snapshot_sha256": "519ef7fd35365e469b2826ed55a635b7d160e01ca43ca53a6d7634322cbfb8e8",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1patient2hyperautofluorescentperifovealring; maincaptionincompletetemporalring.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c75e654012c14dea90453d61fde221f4dca1c2729c3ea61db1e002c4f5fd16eb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypertelorismnegative notexplicitlyreported.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "Specificity/absencequalificationinassessment; figuresnotusedasproofoffinding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007663",
+              "label": "Reduced visual acuity"
+            }
+          },
+          "snapshot_sha256": "df1bc7a58572be0ac6925730d63c22f8c86713c34a5437f3f2d3205632e269a2",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Visualacuity9/10botheyes; mildlybelow10/10butpreservedcentralvision, notseverereduction.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "Specificity/absencequalificationinassessment; figuresnotusedasproofoffinding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001133",
+              "label": "Constriction of peripheral visual field"
+            }
+          },
+          "snapshot_sha256": "1c4eaffa55904990fbee4e46e1da40a24759b9b00b5db877b756dec658352efb",
+          "assessment": {
+            "status": "supported",
+            "statement": "S1patient2fieldsRE20T35N20I10S,LE10T15N20I10S.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000662",
+              "label": "Nyctalopia"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0011463",
+                "label": "Childhood onset"
+              }
+            }
+          },
+          "snapshot_sha256": "1549f81ad7a887bc01872874abd772fde0f0bb6d6bd1f890d72107b1d97ffd79",
+          "assessment": {
+            "status": "supported",
+            "statement": "Childhoodnightblindness.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011003",
+              "label": "High myopia"
+            }
+          },
+          "snapshot_sha256": "ac90de0048a138fa433f99bea2ba9d19c3c76aa270508ac45b86307be1a3a20f",
+          "assessment": {
+            "status": "supported",
+            "statement": "RE−7.25D/LE−6.75D plusastigmatismconsistenthighmyopia.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031624",
+              "label": "Moderate myopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "93f43745cc5dac8522190ccf62e7d5861465f6922531c9d52e1da88cdad74291",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Highmyopiarefractionmakesmoderatecategoryinapplicableatmeasurement; notlifelongnegative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "Specificity/absencequalificationinassessment; figuresnotusedasproofoffinding."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007688",
+              "label": "Undetectable light- and dark-adapted electroretinogram"
+            }
+          },
+          "snapshot_sha256": "53b7edf7746df2b4e80396a42c9df28cebfad4578f63b6922e4eccf9de8b89a8",
+          "assessment": {
+            "status": "supported",
+            "statement": "Rod/coneresponsesnotdiscernableinS1/mainERGdescription.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "03152f286100abc72cad1120d8999d8a2e43113a3ec457babb1c73e5930869b4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Noreportedsystemicsymptomsandnonsyndromicpresentation; noformaldevelopmentaltestingdescribed.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS1patient2row; mainclinicalfeatures/Figure1caption"
+              },
+              {
+                "source_id": "main-text",
+                "locator": "Threeunrelatedfamiliesclinicalfeatures;Figure1legend"
+              }
+            ],
+            "limitations": [
+              "Specificity/absencequalificationinassessment; figuresnotusedasproofoffinding."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading.",
+    "Withinpaperpatient1deletionwrittenTCCTA(mainResults)andTCCT(Discussion); doesnotchangethismappedpatient2allele.",
+    "NormalIFT88distributiondoesnotbyitselfmeasureallanterogradeIFTfunction; mechanisticinferencequalified."
+  ]
+}

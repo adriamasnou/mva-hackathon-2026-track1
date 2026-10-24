@@ -1,0 +1,159 @@
+{
+  "pmid": "35991565",
+  "source_titles": [
+    "Novel MEIOB variants cause primary ovarian insufficiency and non-obstructive azoospermia"
+  ],
+  "selected_case_ids": [
+    "TC_bdc1f41e267f7a9c"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "MEIOB"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/MEIOB/PMID_35991565_Family_I_3.json",
+      "sha256": "51da27bf9546c1982958e5e2a2e6a361858fd7740144ad9cb4e3a0c9ad845abb",
+      "case_id": "TC_bdc1f41e267f7a9c",
+      "selected_record": true,
+      "subject": {
+        "id": "Family I Ⅴ3",
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620686",
+            "label": "Premature ovarian failure 23"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000876",
+            "label": "Oligomenorrhea"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008222",
+            "label": "Female infertility"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008232",
+            "label": "Elevated circulating follicle stimulating hormone level"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031103",
+            "label": "Decreased circulating antimullerian hormone circulation"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0033085",
+            "label": "Reduced antral follicle count"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "6SoXR1AVxdSM0AYRagqMkSXc",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620686",
+              "label": "Premature ovarian failure 23"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Family I Ⅴ3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1072_1073del_MEIOB_NM_001163560v3",
+                    "geneContext": {
+                      "valueId": "HGNC:28569",
+                      "symbol": "MEIOB"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001163560.3:c.1072_1073del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000016.10:g.1839400_1839401del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001157032.1:p.(Met358ValfsTer12)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr16",
+                      "pos": 1839399,
+                      "ref": "CAT",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

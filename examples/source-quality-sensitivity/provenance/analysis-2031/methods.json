@@ -1,0 +1,86 @@
+{
+  "private": true,
+  "post_hoc": true,
+  "preregistered": false,
+  "outcome_exposure": "per_case",
+  "scope": "Descriptive outcome-linked source-correspondence sensitivity; no clinical accuracy or causal effect.",
+  "inputs": {
+    "source_manifest_sha256": "ddf90f9eaebab874d45805f2345e05246a9fdd61a0d348259770b3c1d10854a0",
+    "cases_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "corrected_evaluation_sha256": "54f7e82cbe62cc8f41913b7f3c8069cba4dd4ae26a3769bfec5f5def893ab9b5"
+  },
+  "endpoint": "Conservative worst-tied source-gene rank among genes with at least one PASSED allele; every exact source allele must be represented in that gene and PASSED. No phase or joint causality claim.",
+  "failure_rule": "Preparation, missing-output, invalid-output and unrepresented/failed source-allele cases remain failures with reciprocal rank zero. Verified completed outputs from a terminal failed batch are retained alongside every missing failure.",
+  "dimensions": {
+    "all_linked_paper_completion": [
+      "complete",
+      "incomplete",
+      "unreviewed"
+    ],
+    "all_linked_packet_completion": [
+      "complete",
+      "incomplete",
+      "unreviewed"
+    ],
+    "all_linked_paper_and_packet_completion": [
+      "complete",
+      "incomplete",
+      "unreviewed"
+    ],
+    "selected_packet_category": [
+      "supported",
+      "qualified",
+      "contradicted",
+      "unresolved",
+      "unreviewed"
+    ],
+    "selected_genotype_status": [
+      "supported",
+      "qualified",
+      "contradicted",
+      "unresolved",
+      "unreviewed"
+    ],
+    "selected_causal_confidence": [
+      "supported",
+      "qualified",
+      "contradicted",
+      "unresolved",
+      "unreviewed"
+    ],
+    "selected_phenotype_contradiction": [
+      "present",
+      "none_recorded",
+      "unreviewed"
+    ]
+  },
+  "cohorts": {
+    "all_713": 713,
+    "primary_autosomal_681": 681,
+    "technical_X_32": 32,
+    "fallback_18": 18,
+    "without_fallback_695": 695,
+    "pairs_64": 64
+  },
+  "definitions": {
+    "all_linked_paper_completion": "complete if every linked paper is complete in frozen summary; unreviewed if no linked paper has a record; otherwise incomplete.",
+    "all_linked_packet_completion": "complete if every selected/alternate packet is adjudicated; unreviewed if none is adjudicated; otherwise incomplete.",
+    "all_linked_paper_and_packet_completion": "complete only if both preceding criteria complete; unreviewed if no linked paper record; otherwise incomplete. Must reproduce frozen322completecase membership.",
+    "selected_categories": "Use raw category/genotype/causal status only for adjudicated selected packets. No record or pending selected packet maps to explicitly unreviewed; raw pending labels remain in joined rows.",
+    "selected_phenotype_contradiction": "present means at least one selected packet phenotypicFeatures assessment is contradicted; none_recorded means zero such recorded items in an adjudicated packet, not absence of true discrepancy. Phenotype-completeness status retained separately.",
+    "zero_size": "Every declared category is emitted for every cohort, even n=0; rates null, never zero or NaN for empty denominators.",
+    "paired": "Both arms for every member of each stratum, including failures. Both recovered/original only/none only/neither sum to paired n. Discordant n separately reported.",
+    "partition": "Separate marginal strata for each named dimension, not a favorable intersection chosen from outcome results.",
+    "original_arm": "original denotes original-HPO arm; none denotes no-HPO arm. Original literal pre-correction evaluation is separately retained without replacing corrected results."
+  },
+  "limitations": [
+    "Source audit and this linkage are post inference and not blinded; analysis has explicit per_case exposure.",
+    "Review availability/completion is nonrandom and depends on access and reader coverage; subgroup contrasts do not estimate effects of review or phenotypes.",
+    "Contradicted packet can be phenotype-only or formal classification mismatch; it is not a disproved diagnosis. No frozen label is substituted.",
+    "Full component reading does not mean every source assertion is supported or causal confidence established.",
+    "Source-derived phenotype inputs and source labels may share knowledge with current databases; this is not an independent temporal holdout.",
+    "Ten constructed input hypotheses can map to smaller/different passing universes; top10 may be trivial.",
+    "Cases cluster by gene/publication and include alternate packets; no independence assumption, inference p-values or clinical accuracy claims.",
+    "No new source reading credits, source adjudication changes, inference reruns, provider contact or repository edits."
+  ]
+}

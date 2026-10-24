@@ -1,0 +1,510 @@
+{
+  "pmid": "35285020",
+  "source_titles": [
+    "Bi-allelic SPATA22 variants cause premature ovarian insufficiency and nonobstructive azoospermia due to meiotic arrest"
+  ],
+  "selected_case_ids": [
+    "TC_14f366eb1f565634"
+  ],
+  "alternate_case_ids": [
+    "TC_14f366eb1f565634"
+  ],
+  "genes": [
+    "SPATA22"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SPATA22/PMID_35285020_IV_2_IV_1.json",
+      "sha256": "c5ff081d9ce0751972ece392214967dfce9a66d5946172d63413512ab419546b",
+      "case_id": "TC_14f366eb1f565634",
+      "selected_record": true,
+      "subject": {
+        "id": "IV-2 IV-1",
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621002",
+            "label": "Premature ovarian failure 25"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0008209",
+            "label": "Premature ovarian insufficiency"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008232",
+            "label": "Elevated circulating follicle stimulating hormone level"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031103",
+            "label": "Decreased circulating antimullerian hormone circulation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000858",
+            "label": "Irregular menstruation"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P14Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002960",
+            "label": "Autoimmunity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0008222",
+            "label": "Female infertility"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "G55KLRtniyn7bCx1JSRy3S3z",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621002",
+              "label": "Premature ovarian failure 25"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "IV-2 IV-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c400CtoT_SPATA22_NM_001170698v2",
+                    "geneContext": {
+                      "valueId": "HGNC:30705",
+                      "symbol": "SPATA22"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001170698.2:c.400C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000017.11:g.3449079G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001164169.1:p.(Arg134Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr17",
+                      "pos": 3449079,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPATA22/PMID_35285020_brother_IV_4.json",
+      "sha256": "f31a8256eb14a11accde1e62c0cbc2055ba4ca929483a1510725816e574a1f1b",
+      "case_id": "TC_14f366eb1f565634",
+      "selected_record": false,
+      "subject": {
+        "id": "brother IV-4",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P21Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621001",
+            "label": "Spermatogenic failure 96"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0011961",
+            "label": "Non-obstructive azoospermia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003251",
+            "label": "Male infertility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000028",
+            "label": "Cryptorchidism"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030087",
+            "label": "Abnormal circulating testosterone concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030338",
+            "label": "Abnormal circulating gonadotropin concentration"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "noBhRB1THpupKiItwlmXZ6Nr",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621001",
+              "label": "Spermatogenic failure 96"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "brother IV-4",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c400CtoT_SPATA22_NM_001170698v2",
+                    "geneContext": {
+                      "valueId": "HGNC:30705",
+                      "symbol": "SPATA22"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001170698.2:c.400C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000017.11:g.3449079G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001164169.1:p.(Arg134Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr17",
+                      "pos": 3449079,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPATA22/PMID_35285020_proband_IV_3.json",
+      "sha256": "cb0d6027cf2ca0238a7601acee158025aeff792030644f902a997cfb7cdd9899",
+      "case_id": "TC_14f366eb1f565634",
+      "selected_record": false,
+      "subject": {
+        "id": "proband IV-3",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P23Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621001",
+            "label": "Spermatogenic failure 96"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0011961",
+            "label": "Non-obstructive azoospermia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031039",
+            "label": "Spermatocyte maturation arrest"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003251",
+            "label": "Male infertility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000028",
+            "label": "Cryptorchidism"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030087",
+            "label": "Abnormal circulating testosterone concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0030338",
+            "label": "Abnormal circulating gonadotropin concentration"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "GhBoawimWkfnCNcJfqjQSQqO",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621001",
+              "label": "Spermatogenic failure 96"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "proband IV-3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c400CtoT_SPATA22_NM_001170698v2",
+                    "geneContext": {
+                      "valueId": "HGNC:30705",
+                      "symbol": "SPATA22"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001170698.2:c.400C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000017.11:g.3449079G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001164169.1:p.(Arg134Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr17",
+                      "pos": 3449079,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SPATA22/PMID_35285020_sister_IV_2.json",
+      "sha256": "dba83ac631d90ca970715df1212a7d35eed5f0c55c763b1e873d82d436b8c9b4",
+      "case_id": "TC_14f366eb1f565634",
+      "selected_record": false,
+      "subject": {
+        "id": "sister IV-2",
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621002",
+            "label": "Premature ovarian failure 25"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0008209",
+            "label": "Premature ovarian insufficiency"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008232",
+            "label": "Elevated circulating follicle stimulating hormone level"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031103",
+            "label": "Decreased circulating antimullerian hormone circulation"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000858",
+            "label": "Irregular menstruation"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P13Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002960",
+            "label": "Autoimmunity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0008222",
+            "label": "Female infertility"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "ExXLqLPYzsWW74svnukAxxyb",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621002",
+              "label": "Premature ovarian failure 25"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "sister IV-2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c400CtoT_SPATA22_NM_001170698v2",
+                    "geneContext": {
+                      "valueId": "HGNC:30705",
+                      "symbol": "SPATA22"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001170698.2:c.400C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000017.11:g.3449079G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001164169.1:p.(Arg134Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr17",
+                      "pos": 3449079,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

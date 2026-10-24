@@ -1,0 +1,4900 @@
+{
+  "schema_version": 1,
+  "pmid": "36662884",
+  "title": "A multimorphic mutation in IRF4 causes human autosomal dominant combined immunodeficiency",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T16:49:46.035486+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "fda747e683236661a8736970be8c6ddebd97913bfe4932fe906998a6e709e4cb",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "36662884",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36662884/cloud/PMC10825898.1/PMC10825898.1.xml",
+      "sha256": "57c7eddd5a8ea5a0faa01444d236700f90151b1bf615caaa21872124185529cf",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "36662884",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36662884/cloud/PMC10825898.1/PMC10825898.1.txt",
+      "sha256": "16207821cd9080d1e68581408d118eda3e41e94f39d8b3dd9784dc0014fdcee0",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/36662884/availability.json",
+      "sha256": "d307609cf04870071d3b3dd4370d0b7de4ed0e0277b308d532ac32f7404b920f",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "accepted-pdf",
+      "pmid": "36662884",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36662884/retrieval-followup/20261024T102437085234Z-64a552c44e/response.body",
+      "sha256": "43b6b437e8f9cc77121108eec4056749d7c471d1be5232f9338f39586d60b42b",
+      "kind": "pdf",
+      "description": "123-page accepted manuscript with appended supplementary materials"
+    },
+    {
+      "id": "supp-text",
+      "pmid": "36662884",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36662884/retrieval-followup/20261024T102437085234Z-64a552c44e/response.body.layout.txt",
+      "sha256": "90de0c8379f4d942be78824f20ba28d43d6cf022c358167e2bc56dacdc7619ce",
+      "kind": "text",
+      "description": "Layout extraction of accepted manuscript and appended supplement; whole supplement read"
+    },
+    {
+      "id": "pdf-receipt",
+      "pmid": "36662884",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36662884/retrieval-followup/20261024T102437085234Z-64a552c44e/receipt.json",
+      "sha256": "bdfa151dd375d6726a9b3ccdc0524d26a9872e30e0f3217cf1e395577e28a888",
+      "kind": "metadata",
+      "description": "Retrieval receipt for accepted manuscript"
+    },
+    {
+      "id": "page57",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page57.png",
+      "sha256": "a090f03f1df6c98c8c879d48586a33b69b2e2480bcf3aced3a97c1cb9018d85d",
+      "kind": "image",
+      "description": "Inspected physical page57 of accepted manuscript"
+    },
+    {
+      "id": "page59",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page59.png",
+      "sha256": "8c2f023988a26a0ec6e775652949a1a733d95094746fadd581145ba6b46ea310",
+      "kind": "image",
+      "description": "Inspected physical page59 of accepted manuscript"
+    },
+    {
+      "id": "page61",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page61.png",
+      "sha256": "0029de925c315fc5df0f20b761e8df5788313052ce99a32d1680436aa5f17fc7",
+      "kind": "image",
+      "description": "Inspected physical page61 of accepted manuscript"
+    },
+    {
+      "id": "page63",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page63.png",
+      "sha256": "feba9d0243760e569cdbd730c326cd22210a512bfa4d18914794297b8f1a61a0",
+      "kind": "image",
+      "description": "Inspected physical page63 of accepted manuscript"
+    },
+    {
+      "id": "page65",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page65.png",
+      "sha256": "df5c1c056fcf26b1936ab270d21b11fc3273b15273f561fb12da1b53dc13c0b3",
+      "kind": "image",
+      "description": "Inspected physical page65 of accepted manuscript"
+    },
+    {
+      "id": "page67",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page67.png",
+      "sha256": "4481e84c38ec585da712b628e591a39ed927ba51c005d0aee9a27be4d7524936",
+      "kind": "image",
+      "description": "Inspected physical page67 of accepted manuscript"
+    },
+    {
+      "id": "page78",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page78.png",
+      "sha256": "56ea8b91d5aa07aa9cf142b06ae43c660cb2eee1dbb97c121d765845ccad33af",
+      "kind": "image",
+      "description": "Inspected physical page78 of accepted manuscript"
+    },
+    {
+      "id": "page80",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page80.png",
+      "sha256": "37085e6fceadff9d372566b915871251b76c1508cd3f39c8e944e891fb8bd1c7",
+      "kind": "image",
+      "description": "Inspected physical page80 of accepted manuscript"
+    },
+    {
+      "id": "page93",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page93.png",
+      "sha256": "0b5d45d26bdbaacc89566189ddb6f789ce87eb9697ad0a0cf2d641c18d659729",
+      "kind": "image",
+      "description": "Inspected physical page93 of accepted manuscript"
+    },
+    {
+      "id": "page94",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page94.png",
+      "sha256": "57e7976cb8695a3e3b84d0efd2908a1f67059592e6f4360eb5b02831ead281bb",
+      "kind": "image",
+      "description": "Inspected physical page94 of accepted manuscript"
+    },
+    {
+      "id": "page95",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page95.png",
+      "sha256": "281c0c2f5af1675c65a47bd19517b7d6016e25922b566886adc88faf482d1b93",
+      "kind": "image",
+      "description": "Inspected physical page95 of accepted manuscript"
+    },
+    {
+      "id": "page96",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page96.png",
+      "sha256": "f98dbe9fbed0b5c6aff7273588cb93c2a9671d451b72bcb2e349b36a4595b0a8",
+      "kind": "image",
+      "description": "Inspected physical page96 of accepted manuscript"
+    },
+    {
+      "id": "page98",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page98.png",
+      "sha256": "bccfc7badbaf951cc49c6bbec0994f8fb1963a06444dc43864b4028ca4a58d40",
+      "kind": "image",
+      "description": "Inspected physical page98 of accepted manuscript"
+    },
+    {
+      "id": "page100",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page100.png",
+      "sha256": "cf7e1f1b22fbf01299a80ca462f447c83720d0ec34a3f9f76d87214d132b29dd",
+      "kind": "image",
+      "description": "Inspected physical page100 of accepted manuscript"
+    },
+    {
+      "id": "page102",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page102.png",
+      "sha256": "7fc5d7d35eb7d4c81df97c14361c1ae1bce164c6a2910d1ad9d563ea98c39b19",
+      "kind": "image",
+      "description": "Inspected physical page102 of accepted manuscript"
+    },
+    {
+      "id": "page104",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page104.png",
+      "sha256": "f74047d8bb3d804ae298a77a0ce351fd4cce6fa9e9a93f22b4e7743c6ac6b154",
+      "kind": "image",
+      "description": "Inspected physical page104 of accepted manuscript"
+    },
+    {
+      "id": "page106",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page106.png",
+      "sha256": "64dbda803abffdb759acecd7aea7768762980a2fc57b88ed347775a040bf5a86",
+      "kind": "image",
+      "description": "Inspected physical page106 of accepted manuscript"
+    },
+    {
+      "id": "page108",
+      "pmid": "36662884",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/36662884/page108.png",
+      "sha256": "545e6a9e595c00d8cd7443208a5f0082e3584c9170de666793735080d4198dbf",
+      "kind": "image",
+      "description": "Inspected physical page108 of accepted manuscript"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "A multimorphic mutation in IRF4 causes human autosomal dominant combined immunodeficiency",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 6,
+      "table": 0,
+      "supplement": 5
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      },
+      {
+        "source_id": "supp-text",
+        "locator": "Physical pages34–35 complete supplement inventory"
+      }
+    ],
+    "note": "Six main figures, no main tables; one supplementary PDF plus four distinct listed data files. No complete-data claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 382,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–382"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 382,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–382"
+        }
+      ],
+      "note": "Complete PMC text read including all methods, figure legends, 77 references, consortium and declarations. Accepted manuscript supplemental text physical pages69–123 also read fully; visual coverage recorded separately."
+    },
+    {
+      "id": "figure:F1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "accepted-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "accepted-pdf",
+          "locator": "Figure1,physical page57"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page57",
+          "locator": "Figure1,all panels"
+        }
+      ],
+      "note": "All figure panels inspected as pixels; caption read in full main text."
+    },
+    {
+      "id": "figure:F2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "accepted-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "accepted-pdf",
+          "locator": "Figure2,physical page59"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page59",
+          "locator": "Figure2,all panels"
+        }
+      ],
+      "note": "All figure panels inspected as pixels; caption read in full main text."
+    },
+    {
+      "id": "figure:F3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "accepted-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "accepted-pdf",
+          "locator": "Figure3,physical page61"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page61",
+          "locator": "Figure3,all panels"
+        }
+      ],
+      "note": "All figure panels inspected as pixels; caption read in full main text."
+    },
+    {
+      "id": "figure:F4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "accepted-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "accepted-pdf",
+          "locator": "Figure4,physical page63"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page63",
+          "locator": "Figure4,all panels"
+        }
+      ],
+      "note": "All figure panels inspected as pixels; caption read in full main text."
+    },
+    {
+      "id": "figure:F5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "accepted-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "accepted-pdf",
+          "locator": "Figure5,physical page65"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page65",
+          "locator": "Figure5,all panels"
+        }
+      ],
+      "note": "All figure panels inspected as pixels; caption read in full main text."
+    },
+    {
+      "id": "figure:F6",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "accepted-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "accepted-pdf",
+          "locator": "Figure6,physical page67"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page67",
+          "locator": "Figure6,all panels"
+        }
+      ],
+      "note": "All figure panels inspected as pixels; caption read in full main text."
+    },
+    {
+      "id": "supplement:SD1",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 55,
+      "extent_source_id": "accepted-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "accepted-pdf",
+          "locator": "Physical pages69–123, supplementary methods, clinical summaries, FiguresS1–S9 and TablesS1–S13"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 55,
+          "mode": "text",
+          "source_id": "supp-text",
+          "locator": "Entire supplement physical pages69–123 including all clinical cases, methods, captions and tables"
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "page78",
+          "locator": "Physical page78"
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "page80",
+          "locator": "Physical page80"
+        },
+        {
+          "start": 25,
+          "end": 25,
+          "mode": "pixels",
+          "source_id": "page93",
+          "locator": "Physical page93"
+        },
+        {
+          "start": 26,
+          "end": 26,
+          "mode": "pixels",
+          "source_id": "page94",
+          "locator": "Physical page94"
+        },
+        {
+          "start": 27,
+          "end": 27,
+          "mode": "pixels",
+          "source_id": "page95",
+          "locator": "Physical page95"
+        },
+        {
+          "start": 28,
+          "end": 28,
+          "mode": "pixels",
+          "source_id": "page96",
+          "locator": "Physical page96"
+        },
+        {
+          "start": 30,
+          "end": 30,
+          "mode": "pixels",
+          "source_id": "page98",
+          "locator": "Physical page98"
+        },
+        {
+          "start": 32,
+          "end": 32,
+          "mode": "pixels",
+          "source_id": "page100",
+          "locator": "Physical page100"
+        },
+        {
+          "start": 34,
+          "end": 34,
+          "mode": "pixels",
+          "source_id": "page102",
+          "locator": "Physical page102"
+        },
+        {
+          "start": 36,
+          "end": 36,
+          "mode": "pixels",
+          "source_id": "page104",
+          "locator": "Physical page104"
+        },
+        {
+          "start": 38,
+          "end": 38,
+          "mode": "pixels",
+          "source_id": "page106",
+          "locator": "Physical page106"
+        },
+        {
+          "start": 40,
+          "end": 40,
+          "mode": "pixels",
+          "source_id": "page108",
+          "locator": "Physical page108"
+        }
+      ],
+      "note": "All supplemental text read. Pixels inspected for FiguresS1/S2, TableS1 both pages, TableS2, and first pages of patient immunology TablesS3–S9. Remaining visual pages open. Reference-value column of S6 is not another patient time point."
+    },
+    {
+      "id": "supplement:dataS1",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Data file S1 listed on accepted manuscript physical page35; separate file not held in this reading."
+    },
+    {
+      "id": "supplement:dataS2",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Data file S2 listed on accepted manuscript physical page35; separate file not held in this reading."
+    },
+    {
+      "id": "supplement:dataS3",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Data file S3 listed on accepted manuscript physical page35; separate file not held in this reading."
+    },
+    {
+      "id": "supplement:dataS4",
+      "kind": "supplement",
+      "status": "unavailable",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Data file S4 listed on accepted manuscript physical page35; separate file not held in this reading."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/IRF4/PMID_36662884_P1.json",
+      "packet_sha256": "79aeca7b2b4dcc27c3c3b79a22093b66c383906b929aa760aea1bf02884aa691",
+      "case_id": "TC_9ae9cb633764ec12",
+      "role": "selected",
+      "packet_subject_id": "P1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+        "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+        "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed.",
+        "No per-case ranking outcomes consulted. Source-label category is not clinical truth."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Packet P1 maps to explicitly numbered P1; sex, age/onset and individual history compared with TableS1 and clinical summary.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+          }
+        ],
+        "limitations": [
+          "TableS1 reflects an earlier assessment than narrative follow-up/HSCT; age is not a single invariant time point."
+        ]
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Heterozygous IRF4 c.284C>G,p.Thr95Arg confirmed across numbered patients.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95 and FigureS1 physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "P1–P5 have unaffected tested parents with WT genotypes and are reported de novo.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95; FigureS1A/B physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous causal candidate; no biallelic cis/trans question is posed.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:identification; Figure1A; TableS2"
+          }
+        ],
+        "limitations": [
+          "Single allele does not establish absence of other variants or all tissue mosaicism."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source attributes combined immunodeficiency to recurrent T95R with patient immune defects, direct biochemical multimorphic activity and heterozygous knock-in mouse phenocopy. Normal protein abundance does not imply normal function.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results and discussion; Figures1–6"
+          }
+        ],
+        "limitations": [
+          "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+          "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+          "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet features compared individually with the corresponding clinical summary and immunology table. Blank table cells remain unresolved; conflicts and time-dependent isotype/count distinctions are explicit.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+          }
+        ],
+        "limitations": [
+          "Source data are longitudinal, treatment-modified and not exhaustive. Primary raw data files still open."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c284CtoG_IRF4_NM_002460v4",
+            "geneContext": {
+              "valueId": "HGNC:6119",
+              "symbol": "IRF4"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002460.4:c.284C>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.394888C>G"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 394888,
+              "ref": "C",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "40340639c939bb42026df61eaf5359a001cd110f131d947ea185e510d5d3c5c5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "GRCh38chr6:394888C>G and c.284C>G,p.Thr95Arg match TableS2. Source uses NM_001195286.2; packet uses NM_002460.4.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS2 physical95; FigureS1"
+              }
+            ],
+            "limitations": [
+              "Exact genomic base corroborates locus; transcript equivalence was not independently realigned."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011108",
+              "label": "Recurrent sinusitis"
+            }
+          },
+          "snapshot_sha256": "d0ca75c17b11a5b064764173bc100fb32afda23ba799c785c4c275b3e542955c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 lists sinusitis; recurrence comes from the broader repeated respiratory history.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032218",
+              "label": "Decreased proportion of CD4-positive T cells"
+            }
+          },
+          "snapshot_sha256": "c9834d2cbcb20cdeb9ee81aab151e40000fc1827d1038a59079c2d83b74cf105",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS3 CD4 proportions18.82% and17.43% are below24–38.72%;31.6% at age10 is within range.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032219",
+              "label": "Increased proportion of CD4-positive T cells"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "85d1f06d79d19f4ea6743c69d2ac5638fec84c4aecdfa5e829d9bb818b646d99",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Measured CD4 proportions are normal or low, not high, at listed ages; this supports only those observations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Temporal or measurement specificity limits a categorical packet label."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030374",
+              "label": "Decreased proportion of memory B cells"
+            }
+          },
+          "snapshot_sha256": "59f2f0eeeb2a1b874cfe369152eaf95ece01f7bbdc0820bee42e25ee68b97a6b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS3 memory B proportions1.19% and0.19% below8.96–24.09%.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030381",
+              "label": "Increased transitional B cell proportion"
+            }
+          },
+          "snapshot_sha256": "c66ce63aad105c7af424cc9e2b61e6a1e70b754e11fac657c9e6c134296add1c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS3 transitional B proportions60.5% and37.95% above2.50–9.07%.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010976",
+              "label": "Decreased total B cell count"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P7Y"
+              }
+            }
+          },
+          "snapshot_sha256": "092797190a9c9aff13b9bcc349c62dc54528000e691a799d7ec0e363328de28c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Clinical narrative reports CD19 count104/uL at diagnosis age7; TableS3 records104 and55/uL at later measurements.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001880",
+              "label": "Increased total eosinophil count"
+            }
+          },
+          "snapshot_sha256": "87f29b02de964f6dee6e3f058b68f29598f33b7c73fcc62e060a8ca8cccf51a5",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Tissue biopsy eosinophils50–120/HPF do not establish increased total peripheral eosinophil count.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "No corresponding peripheral eosinophil count found."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002720",
+              "label": "Decreased circulating IgA concentration"
+            }
+          },
+          "snapshot_sha256": "d0dc53e10d03c4215d67db28c6a27cd3ca8e09c0dbd94e05809b0f5f3df04471",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS3 IgA0.02/undetectable/0.36/undetectable below listed age references.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032132",
+              "label": "Decreased circulating total IgG concentration"
+            }
+          },
+          "snapshot_sha256": "af9ccaf59df0c496aa08915f6822f8d02501973b8cfd20420dae5853c320ab34",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Baseline IgG1.96 and1.24g/L low; later normal values follow replacement.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002850",
+              "label": "Decreased circulating total IgM"
+            }
+          },
+          "snapshot_sha256": "c124705ab707a74946f3e4b2bdd796f46ac57bcf053cfa1004374fc312319344",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgM0.08/0.08/0.31g/L low; age12 value0.599 is within reference.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020072",
+              "label": "Persistent EBV viremia"
+            }
+          },
+          "snapshot_sha256": "47070f24078aa48354e6b11dbe03ce2a3fd8d48efc8be18b4a4fbf87329af32d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "One EBV DNA measurement1550copies/mL is described; persistent viremia is not established.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Serial persistence not demonstrated; skin EBV stain negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002878",
+              "label": "Respiratory failure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "517375292e41cd85c8858b664d18fae11e524ffbe0c1fd75ba6685d8620cc7de",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Respiratory failure: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:4000007",
+              "label": "Bronchoconstriction"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2b912bd6965332a7cf7a39406e4409d60c25f3b88c6ca7820fb2a2a78fdcb77d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchoconstriction: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006532",
+              "label": "Recurrent pneumonia"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P6M"
+              }
+            }
+          },
+          "snapshot_sha256": "95c758be0381c4f74ccca31944ae92f498dd06382ae0504cbaa5a1413c3a1e77",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Pneumonia from6months and recurrent episodes ages3–8.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011950",
+              "label": "Bronchiolitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fbb685b25a7e4fd18954c97a3e8206d425971c58472bfd38ac6ff9a5eb7ee28d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchiolitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002110",
+              "label": "Bronchiectasis"
+            }
+          },
+          "snapshot_sha256": "2984809524cecd286534355321b8a65154d3dc35866bdf11b8f5125907cb0e64",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Bronchiectasis documented by age8.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000988",
+              "label": "Skin rash"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P10Y"
+              }
+            }
+          },
+          "snapshot_sha256": "e498fcac02efe84bd56e6d5dd0b97cdbb3a54f9dcfea0a976273ec05952cf722",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Nonitching maculopapular limb rash at age10.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002583",
+              "label": "Colitis"
+            }
+          },
+          "snapshot_sha256": "6e10035082f528e7edb1ab9da8e0e8cf1caf2239e02e32fef68970b89baeb30b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Endoscopy and biopsy describe proctocolitis with marked tissue eosinophilia.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012203",
+              "label": "Onychomycosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8a0c8217da18709d6ae9110be7bc111491e4de70f23373785b907ac72c07e71f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Onychomycosis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020102",
+              "label": "Pneumocystis jirovecii pneumonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "64c37307958548368613b0b1c63d2236aed958642e79d2f08715d7543ff234de",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Pneumocystis jirovecii pneumonia: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032261",
+              "label": "Nontuberculous mycobacterial pulmonary infection"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7e99651550d9cfa255c731e36ed03cf85ee21e3b671ac51414b03508d8f4930f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Nontuberculous mycobacterial pulmonary infection: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            }
+          },
+          "snapshot_sha256": "a9dc192bb81a5d54d7ac2a389feee23da043715c9bfd9f500536aca55909c288",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 explicitly marks hepatosplenomegaly positive.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002716",
+              "label": "Lymphadenopathy"
+            }
+          },
+          "snapshot_sha256": "632966df325182a738e7d4eea6219c0bf497d8f99de1522c379dbaf000ae51cf",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 positive; enlarged abdominal lymph nodes in clinical narrative.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002240",
+              "label": "Hepatomegaly"
+            }
+          },
+          "snapshot_sha256": "3e523cf76256005eb7fcbe2e2ad770bbb652476ed9fc1825dfc43d3783178b37",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 explicitly marks hepatosplenomegaly positive.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002028",
+              "label": "Chronic diarrhea"
+            }
+          },
+          "snapshot_sha256": "e634537e978008de2ba3f6deacd51662ae77b23975c6d5ea7198333e2ca06274",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Chronic diarrhea began age3.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002027",
+              "label": "Abdominal pain"
+            }
+          },
+          "snapshot_sha256": "56f3307f81b54b1dd24f87ae193a63c03b9034e9972daeefa2da09d66550defd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Progressive abdominal pain from age11.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P1 physical pages75–77; TableS1 physical93–94; TableS3 physical96–97"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IRF4/PMID_36662884_P2.json",
+      "packet_sha256": "bd57c29eabdc070f0520531d9663122f1debb3fbe6e54332c3f81c4e24083f59",
+      "case_id": "TC_9ae9cb633764ec12",
+      "role": "alternate",
+      "packet_subject_id": "P2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+        "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+        "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed.",
+        "No per-case ranking outcomes consulted. Source-label category is not clinical truth."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Packet P2 maps to explicitly numbered P2; sex, age/onset and individual history compared with TableS1 and clinical summary.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+          }
+        ],
+        "limitations": [
+          "TableS1 reflects an earlier assessment than narrative follow-up/HSCT; age is not a single invariant time point."
+        ]
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Heterozygous IRF4 c.284C>G,p.Thr95Arg confirmed across numbered patients.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95 and FigureS1 physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "P1–P5 have unaffected tested parents with WT genotypes and are reported de novo.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95; FigureS1A/B physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous causal candidate; no biallelic cis/trans question is posed.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:identification; Figure1A; TableS2"
+          }
+        ],
+        "limitations": [
+          "Single allele does not establish absence of other variants or all tissue mosaicism."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source attributes combined immunodeficiency to recurrent T95R with patient immune defects, direct biochemical multimorphic activity and heterozygous knock-in mouse phenocopy. Normal protein abundance does not imply normal function.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results and discussion; Figures1–6"
+          }
+        ],
+        "limitations": [
+          "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+          "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+          "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet features compared individually with the corresponding clinical summary and immunology table. Blank table cells remain unresolved; conflicts and time-dependent isotype/count distinctions are explicit.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+          }
+        ],
+        "limitations": [
+          "Source data are longitudinal, treatment-modified and not exhaustive. Primary raw data files still open."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c284CtoG_IRF4_NM_002460v4",
+            "geneContext": {
+              "valueId": "HGNC:6119",
+              "symbol": "IRF4"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002460.4:c.284C>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.394888C>G"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 394888,
+              "ref": "C",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "40340639c939bb42026df61eaf5359a001cd110f131d947ea185e510d5d3c5c5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "GRCh38chr6:394888C>G and c.284C>G,p.Thr95Arg match TableS2. Source uses NM_001195286.2; packet uses NM_002460.4.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS2 physical95; FigureS1"
+              }
+            ],
+            "limitations": [
+              "Exact genomic base corroborates locus; transcript equivalence was not independently realigned."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011108",
+              "label": "Recurrent sinusitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "20f8b7d82ce592b177b50f5f6dfa8525b215a4bf8fabd66ca5c5c52d48e24833",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Recurrent sinusitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032218",
+              "label": "Decreased proportion of CD4-positive T cells"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0f3e08f1a7e98f14fd64925273e6b4ac0edd2742221f1080d01cba6214941bf9",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS4 CD4 proportions59/56% are above31–54%, not decreased at presentation.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Temporal or measurement specificity limits a categorical packet label."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004432",
+              "label": "Agammaglobulinemia"
+            }
+          },
+          "snapshot_sha256": "b211a5509b3997875dd2c4fa5663b2a07b2a3db8b40dbd31c886a2242a119327",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgG,IgA,IgM undetectable at presentation; replacement given.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031378",
+              "label": "Abnormal lymphocyte proliferation"
+            }
+          },
+          "snapshot_sha256": "f52a2b133a6653ff34d58d504c34bf43de63f08ce5c5c70a81473210de833973",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Clinical summary reports decreased PHA-induced lymphocyte proliferation with normal PWM response.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020071",
+              "label": "Viremia"
+            }
+          },
+          "snapshot_sha256": "7e7895e34081a9e3062593666ba63a0ac983477d5c711ce867463473837c0534",
+          "assessment": {
+            "status": "qualified",
+            "statement": "CMV viremia explicitly present.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002878",
+              "label": "Respiratory failure"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P11M"
+              }
+            }
+          },
+          "snapshot_sha256": "9b0f7b0449649e872429e7db682cc571c2ce862afdff3d6fa275d44be6037d33",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Respiratory failure at11months requiring mechanical ventilation.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:4000007",
+              "label": "Bronchoconstriction"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2b912bd6965332a7cf7a39406e4409d60c25f3b88c6ca7820fb2a2a78fdcb77d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchoconstriction: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006532",
+              "label": "Recurrent pneumonia"
+            }
+          },
+          "snapshot_sha256": "8c9c419c4c204cc42b56dc3a8cc742ef5c202a4a5837e38754d3a250fb13b222",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 recurrent respiratory infections and narrative PCP followed by E.coli ventilator-associated pneumonia.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011950",
+              "label": "Bronchiolitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fbb685b25a7e4fd18954c97a3e8206d425971c58472bfd38ac6ff9a5eb7ee28d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchiolitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002110",
+              "label": "Bronchiectasis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3bedfeb6b4a360e64d0c1d6d33e567d3ba8d848979b931e4bb285995681dbbe9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchiectasis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002583",
+              "label": "Colitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fbfcefcc89cbcf796ce330112a2d89aa66ca5735890ab39d0e73b0e73f526f5e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Colitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012203",
+              "label": "Onychomycosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8a0c8217da18709d6ae9110be7bc111491e4de70f23373785b907ac72c07e71f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Onychomycosis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020102",
+              "label": "Pneumocystis jirovecii pneumonia"
+            }
+          },
+          "snapshot_sha256": "981d5d9b6f4dcc609374555c2acf87321ff696ef2f6c59325a79f9538f0edfa3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Pneumocystis jirovecii pneumonia confirmed in clinical summary.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032261",
+              "label": "Nontuberculous mycobacterial pulmonary infection"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7e99651550d9cfa255c731e36ed03cf85ee21e3b671ac51414b03508d8f4930f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Nontuberculous mycobacterial pulmonary infection: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3da3d0fa5a0298a54d11f959b7518ea72d80ed868975d71219bbfc2a7dff80cf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Splenomegaly: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002716",
+              "label": "Lymphadenopathy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b3353709d4f7b1551d6280e9b0da4fff52068217bc1b6811771245ee8e6f101",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Lymphadenopathy: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002240",
+              "label": "Hepatomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "92d186c16d6c93ee9a4267ef118a20b9f2b6a812767724afdf8d3794887c892d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hepatomegaly: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002028",
+              "label": "Chronic diarrhea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a0520e832f0589a95e4bef0ad1a7d79a9f821e1c29e8392b8cbea7553d51454",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Chronic diarrhea: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001369",
+              "label": "Arthritis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d81bf20ff2f601accaeecb6a18c4af31500b58bb780282748237fd22aed00caa",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Rheumatoid arthritis is reported in the mother, not the child; child arthritis absence is not explicitly assessed.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P2 physical pages75–77; TableS1 physical93–94; TableS4 physical98–99"
+              }
+            ],
+            "limitations": [
+              "Relative phenotype must not be assigned to patient."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IRF4/PMID_36662884_P3.json",
+      "packet_sha256": "4eb47db740abc88d70e07088a8dbb73cecc8cfc05eade003577c2ab1d968bf69",
+      "case_id": "TC_9ae9cb633764ec12",
+      "role": "alternate",
+      "packet_subject_id": "P3",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+        "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+        "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed.",
+        "No per-case ranking outcomes consulted. Source-label category is not clinical truth."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Packet P3 maps to explicitly numbered P3; sex, age/onset and individual history compared with TableS1 and clinical summary.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+          }
+        ],
+        "limitations": [
+          "TableS1 reflects an earlier assessment than narrative follow-up/HSCT; age is not a single invariant time point."
+        ]
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Heterozygous IRF4 c.284C>G,p.Thr95Arg confirmed across numbered patients.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95 and FigureS1 physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "P1–P5 have unaffected tested parents with WT genotypes and are reported de novo.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95; FigureS1A/B physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous causal candidate; no biallelic cis/trans question is posed.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:identification; Figure1A; TableS2"
+          }
+        ],
+        "limitations": [
+          "Single allele does not establish absence of other variants or all tissue mosaicism."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source attributes combined immunodeficiency to recurrent T95R with patient immune defects, direct biochemical multimorphic activity and heterozygous knock-in mouse phenocopy. Normal protein abundance does not imply normal function.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results and discussion; Figures1–6"
+          }
+        ],
+        "limitations": [
+          "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+          "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+          "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet features compared individually with the corresponding clinical summary and immunology table. Blank table cells remain unresolved; conflicts and time-dependent isotype/count distinctions are explicit.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+          }
+        ],
+        "limitations": [
+          "Source data are longitudinal, treatment-modified and not exhaustive. Primary raw data files still open."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c284CtoG_IRF4_NM_002460v4",
+            "geneContext": {
+              "valueId": "HGNC:6119",
+              "symbol": "IRF4"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002460.4:c.284C>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.394888C>G"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 394888,
+              "ref": "C",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "40340639c939bb42026df61eaf5359a001cd110f131d947ea185e510d5d3c5c5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "GRCh38chr6:394888C>G and c.284C>G,p.Thr95Arg match TableS2. Source uses NM_001195286.2; packet uses NM_002460.4.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS2 physical95; FigureS1"
+              }
+            ],
+            "limitations": [
+              "Exact genomic base corroborates locus; transcript equivalence was not independently realigned."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011108",
+              "label": "Recurrent sinusitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "20f8b7d82ce592b177b50f5f6dfa8525b215a4bf8fabd66ca5c5c52d48e24833",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Recurrent sinusitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032219",
+              "label": "Increased proportion of CD4-positive T cells"
+            }
+          },
+          "snapshot_sha256": "1ee7d70db609408a0779ca73d1771ccffcf022a4647fe84afa7ccf72052198fa",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS5 CD4 percentages50–63% exceed corresponding28–47/31–47% intervals.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030374",
+              "label": "Decreased proportion of memory B cells"
+            }
+          },
+          "snapshot_sha256": "59f2f0eeeb2a1b874cfe369152eaf95ece01f7bbdc0820bee42e25ee68b97a6b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS5 repeatedly reduced memory B proportions with specified subset definitions.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002720",
+              "label": "Decreased circulating IgA concentration"
+            }
+          },
+          "snapshot_sha256": "d0dc53e10d03c4215d67db28c6a27cd3ca8e09c0dbd94e05809b0f5f3df04471",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS5 IgA values below age reference.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032132",
+              "label": "Decreased circulating total IgG concentration"
+            }
+          },
+          "snapshot_sha256": "af9ccaf59df0c496aa08915f6822f8d02501973b8cfd20420dae5853c320ab34",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgG2g/L at2.5months below2.7–11.8 before replacement.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002850",
+              "label": "Decreased circulating total IgM"
+            }
+          },
+          "snapshot_sha256": "c124705ab707a74946f3e4b2bdd796f46ac57bcf053cfa1004374fc312319344",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS5 persistently low/undetectable IgM.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004432",
+              "label": "Agammaglobulinemia"
+            }
+          },
+          "snapshot_sha256": "b211a5509b3997875dd2c4fa5663b2a07b2a3db8b40dbd31c886a2242a119327",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Clinical narrative calls presentation agammaglobulinemia; IgG was low rather than literally absent.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001508",
+              "label": "Failure to thrive"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003593",
+                "label": "Infantile onset"
+              }
+            }
+          },
+          "snapshot_sha256": "8aa0ecbb05bba1d180220737f722d9bbcfd42e3134df145670686da6c8d213a1",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Rotavirus diarrhea with failure to thrive at1.5months required enteral feeds; growth later recovered.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002878",
+              "label": "Respiratory failure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "517375292e41cd85c8858b664d18fae11e524ffbe0c1fd75ba6685d8620cc7de",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Respiratory failure: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:4000007",
+              "label": "Bronchoconstriction"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2b912bd6965332a7cf7a39406e4409d60c25f3b88c6ca7820fb2a2a78fdcb77d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchoconstriction: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011950",
+              "label": "Bronchiolitis"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P1M"
+              }
+            }
+          },
+          "snapshot_sha256": "dc4fe5cd7dec857061d19b04cd88a9ba0d7a53094e6fa3eed6ae40a6ad0b2240",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Bronchiolitis from age1month.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002110",
+              "label": "Bronchiectasis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3bedfeb6b4a360e64d0c1d6d33e567d3ba8d848979b931e4bb285995681dbbe9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchiectasis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002583",
+              "label": "Colitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fbfcefcc89cbcf796ce330112a2d89aa66ca5735890ab39d0e73b0e73f526f5e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Colitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012203",
+              "label": "Onychomycosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8a0c8217da18709d6ae9110be7bc111491e4de70f23373785b907ac72c07e71f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Onychomycosis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020102",
+              "label": "Pneumocystis jirovecii pneumonia"
+            }
+          },
+          "snapshot_sha256": "981d5d9b6f4dcc609374555c2acf87321ff696ef2f6c59325a79f9538f0edfa3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "PCP at6months and again9.5years after nonadherence to prophylaxis.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032261",
+              "label": "Nontuberculous mycobacterial pulmonary infection"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7e99651550d9cfa255c731e36ed03cf85ee21e3b671ac51414b03508d8f4930f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Nontuberculous mycobacterial pulmonary infection: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3da3d0fa5a0298a54d11f959b7518ea72d80ed868975d71219bbfc2a7dff80cf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Splenomegaly: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002716",
+              "label": "Lymphadenopathy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b3353709d4f7b1551d6280e9b0da4fff52068217bc1b6811771245ee8e6f101",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Lymphadenopathy: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002240",
+              "label": "Hepatomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "92d186c16d6c93ee9a4267ef118a20b9f2b6a812767724afdf8d3794887c892d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hepatomegaly: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002028",
+              "label": "Chronic diarrhea"
+            }
+          },
+          "snapshot_sha256": "e634537e978008de2ba3f6deacd51662ae77b23975c6d5ea7198333e2ca06274",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Prolonged early rotavirus diarrhea and later enteric viral infections documented.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P3 physical pages75–77; TableS1 physical93–94; TableS5 physical100–101"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IRF4/PMID_36662884_P4.json",
+      "packet_sha256": "7820161bdceb57c712ffd7df94cd8dce604084774f97251fc27a190d8393719e",
+      "case_id": "TC_9ae9cb633764ec12",
+      "role": "alternate",
+      "packet_subject_id": "P4",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+        "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+        "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed.",
+        "No per-case ranking outcomes consulted. Source-label category is not clinical truth."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Packet P4 maps to explicitly numbered P4; sex, age/onset and individual history compared with TableS1 and clinical summary.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+          }
+        ],
+        "limitations": [
+          "TableS1 reflects an earlier assessment than narrative follow-up/HSCT; age is not a single invariant time point."
+        ]
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Heterozygous IRF4 c.284C>G,p.Thr95Arg confirmed across numbered patients.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95 and FigureS1 physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "P1–P5 have unaffected tested parents with WT genotypes and are reported de novo.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95; FigureS1A/B physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous causal candidate; no biallelic cis/trans question is posed.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:identification; Figure1A; TableS2"
+          }
+        ],
+        "limitations": [
+          "Single allele does not establish absence of other variants or all tissue mosaicism."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source attributes combined immunodeficiency to recurrent T95R with patient immune defects, direct biochemical multimorphic activity and heterozygous knock-in mouse phenocopy. Normal protein abundance does not imply normal function.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results and discussion; Figures1–6"
+          }
+        ],
+        "limitations": [
+          "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+          "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+          "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet features compared individually with the corresponding clinical summary and immunology table. Blank table cells remain unresolved; conflicts and time-dependent isotype/count distinctions are explicit.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+          }
+        ],
+        "limitations": [
+          "Source data are longitudinal, treatment-modified and not exhaustive. Primary raw data files still open."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c284CtoG_IRF4_NM_002460v4",
+            "geneContext": {
+              "valueId": "HGNC:6119",
+              "symbol": "IRF4"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002460.4:c.284C>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.394888C>G"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 394888,
+              "ref": "C",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "40340639c939bb42026df61eaf5359a001cd110f131d947ea185e510d5d3c5c5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "GRCh38chr6:394888C>G and c.284C>G,p.Thr95Arg match TableS2. Source uses NM_001195286.2; packet uses NM_002460.4.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS2 physical95; FigureS1"
+              }
+            ],
+            "limitations": [
+              "Exact genomic base corroborates locus; transcript equivalence was not independently realigned."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011108",
+              "label": "Recurrent sinusitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "20f8b7d82ce592b177b50f5f6dfa8525b215a4bf8fabd66ca5c5c52d48e24833",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Recurrent sinusitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030388",
+              "label": "Decreased class-switched memory B cell proportion"
+            }
+          },
+          "snapshot_sha256": "a6a86ab409439564909bb962dadad6ab06693c299f974c752c6e5e6ae8613452",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS6 at4years switched memory B1.22% versus reference21.24(10.4–30.4).",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030381",
+              "label": "Increased transitional B cell proportion"
+            }
+          },
+          "snapshot_sha256": "c66ce63aad105c7af424cc9e2b61e6a1e70b754e11fac657c9e6c134296add1c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS6 at4years transitional B9.46% versus reference3.01(1.73–4.08).",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002720",
+              "label": "Decreased circulating IgA concentration"
+            }
+          },
+          "snapshot_sha256": "d0dc53e10d03c4215d67db28c6a27cd3ca8e09c0dbd94e05809b0f5f3df04471",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgA9mg/dL at1y5m; reference14–123 shown in last column.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032132",
+              "label": "Decreased circulating total IgG concentration"
+            }
+          },
+          "snapshot_sha256": "af9ccaf59df0c496aa08915f6822f8d02501973b8cfd20420dae5853c320ab34",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgG169mg/dL at1y5m; reference424–1051 shown in last column.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002850",
+              "label": "Decreased circulating total IgM"
+            }
+          },
+          "snapshot_sha256": "c124705ab707a74946f3e4b2bdd796f46ac57bcf053cfa1004374fc312319344",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgM6mg/dL at1y5m; reference48–168 shown in last column.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002878",
+              "label": "Respiratory failure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "517375292e41cd85c8858b664d18fae11e524ffbe0c1fd75ba6685d8620cc7de",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Respiratory failure: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:4000007",
+              "label": "Bronchoconstriction"
+            }
+          },
+          "snapshot_sha256": "8eff9dc0566157caf5360fe36840c527e1719e74dc58573fd3fc4ba481fda30d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 bronchospasms.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002205",
+              "label": "Recurrent respiratory infections"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003593",
+                "label": "Infantile onset"
+              }
+            }
+          },
+          "snapshot_sha256": "c972341831eaecb8b9372e72ca067d6763c419eddc71675402b3e527701180e5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Recurrent respiratory tract infections in narrative and TableS1.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011950",
+              "label": "Bronchiolitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fbb685b25a7e4fd18954c97a3e8206d425971c58472bfd38ac6ff9a5eb7ee28d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchiolitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002110",
+              "label": "Bronchiectasis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3bedfeb6b4a360e64d0c1d6d33e567d3ba8d848979b931e4bb285995681dbbe9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchiectasis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002583",
+              "label": "Colitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fbfcefcc89cbcf796ce330112a2d89aa66ca5735890ab39d0e73b0e73f526f5e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Colitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012203",
+              "label": "Onychomycosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8a0c8217da18709d6ae9110be7bc111491e4de70f23373785b907ac72c07e71f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Onychomycosis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020086",
+              "label": "BCGitis"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P2Y"
+              }
+            }
+          },
+          "snapshot_sha256": "23571574213656ad9f528b5ffa2389b59e62196c47cc1e1ff41b2ce6d8039cf5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Regional BCGitis age2 responded to antimycobacterial therapy.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020102",
+              "label": "Pneumocystis jirovecii pneumonia"
+            }
+          },
+          "snapshot_sha256": "981d5d9b6f4dcc609374555c2acf87321ff696ef2f6c59325a79f9538f0edfa3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "PCP is explicitly suspected, not microbiologically established.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Source suspicion must not become confirmed organism evidence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032261",
+              "label": "Nontuberculous mycobacterial pulmonary infection"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7e99651550d9cfa255c731e36ed03cf85ee21e3b671ac51414b03508d8f4930f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Nontuberculous mycobacterial pulmonary infection: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3da3d0fa5a0298a54d11f959b7518ea72d80ed868975d71219bbfc2a7dff80cf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Splenomegaly: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002716",
+              "label": "Lymphadenopathy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b3353709d4f7b1551d6280e9b0da4fff52068217bc1b6811771245ee8e6f101",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes lymphadenopathy, but TableS1 P4 is + and the narrative describes regional BCGitis.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002240",
+              "label": "Hepatomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "92d186c16d6c93ee9a4267ef118a20b9f2b6a812767724afdf8d3794887c892d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hepatomegaly: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002028",
+              "label": "Chronic diarrhea"
+            }
+          },
+          "snapshot_sha256": "e634537e978008de2ba3f6deacd51662ae77b23975c6d5ea7198333e2ca06274",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TableS1 chronic diarrhea, narrative prolonged diarrhea at15months.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004385",
+              "label": "Protracted diarrhea"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P1Y3M"
+              }
+            }
+          },
+          "snapshot_sha256": "0fdc2fa4c39bf25dc046b8e131d5877e91453c24046968e86d8687c0329f898d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Prolonged diarrhea at15months with2.5kg weight loss.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P4 physical pages75–77; TableS1 physical93–94; TableS6 physical102–103"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IRF4/PMID_36662884_P5.json",
+      "packet_sha256": "7a553e20449c07427838ef4dc0e1f27a54126f2f26a8c6fbe84c883e7ff6b854",
+      "case_id": "TC_9ae9cb633764ec12",
+      "role": "alternate",
+      "packet_subject_id": "P5",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+        "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+        "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed.",
+        "No per-case ranking outcomes consulted. Source-label category is not clinical truth."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Packet P5 maps to explicitly numbered P5; sex, age/onset and individual history compared with TableS1 and clinical summary.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+          }
+        ],
+        "limitations": [
+          "TableS1 reflects an earlier assessment than narrative follow-up/HSCT; age is not a single invariant time point."
+        ]
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Heterozygous IRF4 c.284C>G,p.Thr95Arg confirmed across numbered patients.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95 and FigureS1 physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "P1–P5 have unaffected tested parents with WT genotypes and are reported de novo.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95; FigureS1A/B physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous causal candidate; no biallelic cis/trans question is posed.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:identification; Figure1A; TableS2"
+          }
+        ],
+        "limitations": [
+          "Single allele does not establish absence of other variants or all tissue mosaicism."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source attributes combined immunodeficiency to recurrent T95R with patient immune defects, direct biochemical multimorphic activity and heterozygous knock-in mouse phenocopy. Normal protein abundance does not imply normal function.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results and discussion; Figures1–6"
+          }
+        ],
+        "limitations": [
+          "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+          "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+          "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet features compared individually with the corresponding clinical summary and immunology table. Blank table cells remain unresolved; conflicts and time-dependent isotype/count distinctions are explicit.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+          }
+        ],
+        "limitations": [
+          "Source data are longitudinal, treatment-modified and not exhaustive. Primary raw data files still open."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c284CtoG_IRF4_NM_002460v4",
+            "geneContext": {
+              "valueId": "HGNC:6119",
+              "symbol": "IRF4"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002460.4:c.284C>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.394888C>G"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 394888,
+              "ref": "C",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "40340639c939bb42026df61eaf5359a001cd110f131d947ea185e510d5d3c5c5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "GRCh38chr6:394888C>G and c.284C>G,p.Thr95Arg match TableS2. Source uses NM_001195286.2; packet uses NM_002460.4.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS2 physical95; FigureS1"
+              }
+            ],
+            "limitations": [
+              "Exact genomic base corroborates locus; transcript equivalence was not independently realigned."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011108",
+              "label": "Recurrent sinusitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "20f8b7d82ce592b177b50f5f6dfa8525b215a4bf8fabd66ca5c5c52d48e24833",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Recurrent sinusitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032218",
+              "label": "Decreased proportion of CD4-positive T cells"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0f3e08f1a7e98f14fd64925273e6b4ac0edd2742221f1080d01cba6214941bf9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Decreased proportion of CD4-positive T cells: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032219",
+              "label": "Increased proportion of CD4-positive T cells"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "85d1f06d79d19f4ea6743c69d2ac5638fec84c4aecdfa5e829d9bb818b646d99",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Increased proportion of CD4-positive T cells: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030388",
+              "label": "Decreased class-switched memory B cell proportion"
+            }
+          },
+          "snapshot_sha256": "a6a86ab409439564909bb962dadad6ab06693c299f974c752c6e5e6ae8613452",
+          "assessment": {
+            "status": "qualified",
+            "statement": "FigureS2D/E shows markedly reduced class-switched proportions; TableS7 switched memory counts0 and0.6/uL also low.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002720",
+              "label": "Decreased circulating IgA concentration"
+            }
+          },
+          "snapshot_sha256": "d0dc53e10d03c4215d67db28c6a27cd3ca8e09c0dbd94e05809b0f5f3df04471",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgA0.21g/L at17y6m below reference; infancy0.07 is within its age range.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032132",
+              "label": "Decreased circulating total IgG concentration"
+            }
+          },
+          "snapshot_sha256": "af9ccaf59df0c496aa08915f6822f8d02501973b8cfd20420dae5853c320ab34",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgG<0.35g/L at7.5months below2.42–11.08.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002850",
+              "label": "Decreased circulating total IgM"
+            }
+          },
+          "snapshot_sha256": "c124705ab707a74946f3e4b2bdd796f46ac57bcf053cfa1004374fc312319344",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgM<0.05 then<0.19 below age references.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002878",
+              "label": "Respiratory failure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "517375292e41cd85c8858b664d18fae11e524ffbe0c1fd75ba6685d8620cc7de",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes respiratory failure; second PCP episode at20months required mechanical ventilation.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Source clinical event conflicts with blanket lifetime exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:4000007",
+              "label": "Bronchoconstriction"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2b912bd6965332a7cf7a39406e4409d60c25f3b88c6ca7820fb2a2a78fdcb77d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchoconstriction: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002205",
+              "label": "Recurrent respiratory infections"
+            }
+          },
+          "snapshot_sha256": "d1091906188d973fbafa9ac84f6f04cd91e330cee26f5fa7858c07ced88380b5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Recurrent respiratory infections from4months.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011950",
+              "label": "Bronchiolitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fbb685b25a7e4fd18954c97a3e8206d425971c58472bfd38ac6ff9a5eb7ee28d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchiolitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002110",
+              "label": "Bronchiectasis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3bedfeb6b4a360e64d0c1d6d33e567d3ba8d848979b931e4bb285995681dbbe9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchiectasis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002583",
+              "label": "Colitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fbfcefcc89cbcf796ce330112a2d89aa66ca5735890ab39d0e73b0e73f526f5e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Colitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012203",
+              "label": "Onychomycosis"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P3Y"
+              }
+            }
+          },
+          "snapshot_sha256": "d49ecccb8e94854bcc7eec57035fe984a3ca06592b158cf20c721af69b97c485",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Persistent extensive onychomycosis from age3.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020102",
+              "label": "Pneumocystis jirovecii pneumonia"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P7M"
+              }
+            }
+          },
+          "snapshot_sha256": "fe99a1ab807a4b0378da6b8cc7eff9c542bed1c5fa7cef2d8329d54a6b6d7dfd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "PCP at7months and20months after prophylaxis stopped.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032261",
+              "label": "Nontuberculous mycobacterial pulmonary infection"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7e99651550d9cfa255c731e36ed03cf85ee21e3b671ac51414b03508d8f4930f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Nontuberculous mycobacterial pulmonary infection: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3da3d0fa5a0298a54d11f959b7518ea72d80ed868975d71219bbfc2a7dff80cf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Splenomegaly: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002716",
+              "label": "Lymphadenopathy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b3353709d4f7b1551d6280e9b0da4fff52068217bc1b6811771245ee8e6f101",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Lymphadenopathy: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002240",
+              "label": "Hepatomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "92d186c16d6c93ee9a4267ef118a20b9f2b6a812767724afdf8d3794887c892d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hepatomegaly: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002028",
+              "label": "Chronic diarrhea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a0520e832f0589a95e4bef0ad1a7d79a9f821e1c29e8392b8cbea7553d51454",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Chronic diarrhea: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P5 physical pages75–77; TableS1 physical93–94; TableS7 physical104–105"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IRF4/PMID_36662884_P6.json",
+      "packet_sha256": "0355bff8078cf2edcac39b28c9f933f052855bfcdfb06e998c1e49a06010dcba",
+      "case_id": "TC_9ae9cb633764ec12",
+      "role": "alternate",
+      "packet_subject_id": "P6",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+        "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+        "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed.",
+        "No per-case ranking outcomes consulted. Source-label category is not clinical truth."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Packet P6 maps to explicitly numbered P6; sex, age/onset and individual history compared with TableS1 and clinical summary.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+          }
+        ],
+        "limitations": [
+          "TableS1 reflects an earlier assessment than narrative follow-up/HSCT; age is not a single invariant time point."
+        ]
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Heterozygous IRF4 c.284C>G,p.Thr95Arg confirmed across numbered patients.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95 and FigureS1 physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "P6 and P7 are siblings inheriting the allele from a clinically healthy mosaic mother,4/124 blood WES reads; father0/76.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95; FigureS1A/B physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous causal candidate; no biallelic cis/trans question is posed.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:identification; Figure1A; TableS2"
+          }
+        ],
+        "limitations": [
+          "Single allele does not establish absence of other variants or all tissue mosaicism."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source attributes combined immunodeficiency to recurrent T95R with patient immune defects, direct biochemical multimorphic activity and heterozygous knock-in mouse phenocopy. Normal protein abundance does not imply normal function.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results and discussion; Figures1–6"
+          }
+        ],
+        "limitations": [
+          "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+          "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+          "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet features compared individually with the corresponding clinical summary and immunology table. Blank table cells remain unresolved; conflicts and time-dependent isotype/count distinctions are explicit.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+          }
+        ],
+        "limitations": [
+          "Source data are longitudinal, treatment-modified and not exhaustive. Primary raw data files still open."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c284CtoG_IRF4_NM_002460v4",
+            "geneContext": {
+              "valueId": "HGNC:6119",
+              "symbol": "IRF4"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002460.4:c.284C>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.394888C>G"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 394888,
+              "ref": "C",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "40340639c939bb42026df61eaf5359a001cd110f131d947ea185e510d5d3c5c5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "GRCh38chr6:394888C>G and c.284C>G,p.Thr95Arg match TableS2. Source uses NM_001195286.2; packet uses NM_002460.4.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS2 physical95; FigureS1"
+              }
+            ],
+            "limitations": [
+              "Exact genomic base corroborates locus; transcript equivalence was not independently realigned."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011108",
+              "label": "Recurrent sinusitis"
+            }
+          },
+          "snapshot_sha256": "d0ca75c17b11a5b064764173bc100fb32afda23ba799c785c4c275b3e542955c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Recurrent sinusitis in clinical summary.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031458",
+              "label": "Adenoiditis"
+            }
+          },
+          "snapshot_sha256": "37e1590eb2d465f3de8d0a9480cf1bec3f6534b063bb797d850befccf7812935",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Recurrent adenoiditis and adenoid hypertrophy with surgery at8years.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000265",
+              "label": "Mastoiditis"
+            }
+          },
+          "snapshot_sha256": "e7c5211628205122f6d7a00fc738942daf4e1f2d4f1cbd2467d69ec9e892e1f5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Otomastoiditis complicated by lateral sinus thrombosis.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030388",
+              "label": "Decreased class-switched memory B cell proportion"
+            }
+          },
+          "snapshot_sha256": "a6a86ab409439564909bb962dadad6ab06693c299f974c752c6e5e6ae8613452",
+          "assessment": {
+            "status": "qualified",
+            "statement": "FigureS2D class-switched proportions reduced; TableS8 absolute switched memory count4/uL below7–51.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002720",
+              "label": "Decreased circulating IgA concentration"
+            }
+          },
+          "snapshot_sha256": "d0dc53e10d03c4215d67db28c6a27cd3ca8e09c0dbd94e05809b0f5f3df04471",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgA undetectable at1year and<0.05 at8years.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032132",
+              "label": "Decreased circulating total IgG concentration"
+            }
+          },
+          "snapshot_sha256": "af9ccaf59df0c496aa08915f6822f8d02501973b8cfd20420dae5853c320ab34",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgG0.10 at1year and1.54g/L at8years, below references.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002850",
+              "label": "Decreased circulating total IgM"
+            }
+          },
+          "snapshot_sha256": "c124705ab707a74946f3e4b2bdd796f46ac57bcf053cfa1004374fc312319344",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgM undetectable at1year and<0.05 at8years.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004432",
+              "label": "Agammaglobulinemia"
+            }
+          },
+          "snapshot_sha256": "b211a5509b3997875dd2c4fa5663b2a07b2a3db8b40dbd31c886a2242a119327",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Agammaglobulinemia at age1 with low/undetectable isotypes.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012418",
+              "label": "Hypoxemia"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P6M"
+              }
+            }
+          },
+          "snapshot_sha256": "d5e7ebb6ccb663e351638fcb3d5ab0aff8d980c645c32e2b5e3c6091bbd5f6c3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Hypoxia first documented at5months.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020102",
+              "label": "Pneumocystis jirovecii pneumonia"
+            }
+          },
+          "snapshot_sha256": "981d5d9b6f4dcc609374555c2acf87321ff696ef2f6c59325a79f9538f0edfa3",
+          "assessment": {
+            "status": "qualified",
+            "statement": "PCP suspected at6months from clinical picture and cotrimoxazole response; no BAL/specific organism stain.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+              }
+            ],
+            "limitations": [
+              "Not microbiologically confirmed."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032261",
+              "label": "Nontuberculous mycobacterial pulmonary infection"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7e99651550d9cfa255c731e36ed03cf85ee21e3b671ac51414b03508d8f4930f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Nontuberculous mycobacterial pulmonary infection: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002028",
+              "label": "Chronic diarrhea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a0520e832f0589a95e4bef0ad1a7d79a9f821e1c29e8392b8cbea7553d51454",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Chronic diarrhea: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P6 physical pages75–77; TableS1 physical93–94; TableS8 physical106–107"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IRF4/PMID_36662884_P7.json",
+      "packet_sha256": "73d76d368aefd7fab47adf55c22e5dd64b09d0fe3ccf2c34ff9af268b7aa0318",
+      "case_id": "TC_9ae9cb633764ec12",
+      "role": "alternate",
+      "packet_subject_id": "P7",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+        "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+        "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed.",
+        "No per-case ranking outcomes consulted. Source-label category is not clinical truth."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Packet P7 maps to explicitly numbered P7; sex, age/onset and individual history compared with TableS1 and clinical summary.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+          }
+        ],
+        "limitations": [
+          "TableS1 reflects an earlier assessment than narrative follow-up/HSCT; age is not a single invariant time point."
+        ]
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Heterozygous IRF4 c.284C>G,p.Thr95Arg confirmed across numbered patients.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95 and FigureS1 physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "P6 and P7 are siblings inheriting the allele from a clinically healthy mosaic mother,4/124 blood WES reads; father0/76.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "TableS2 physical95; FigureS1A/B physical78"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "One heterozygous causal candidate; no biallelic cis/trans question is posed.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:identification; Figure1A; TableS2"
+          }
+        ],
+        "limitations": [
+          "Single allele does not establish absence of other variants or all tissue mosaicism."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source attributes combined immunodeficiency to recurrent T95R with patient immune defects, direct biochemical multimorphic activity and heterozygous knock-in mouse phenocopy. Normal protein abundance does not imply normal function.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results and discussion; Figures1–6"
+          }
+        ],
+        "limitations": [
+          "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+          "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+          "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet features compared individually with the corresponding clinical summary and immunology table. Blank table cells remain unresolved; conflicts and time-dependent isotype/count distinctions are explicit.",
+        "evidence": [
+          {
+            "source_id": "supp-text",
+            "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+          }
+        ],
+        "limitations": [
+          "Source data are longitudinal, treatment-modified and not exhaustive. Primary raw data files still open."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c284CtoG_IRF4_NM_002460v4",
+            "geneContext": {
+              "valueId": "HGNC:6119",
+              "symbol": "IRF4"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_002460.4:c.284C>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000006.12:g.394888C>G"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr6",
+              "pos": 394888,
+              "ref": "C",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "40340639c939bb42026df61eaf5359a001cd110f131d947ea185e510d5d3c5c5",
+          "assessment": {
+            "status": "qualified",
+            "statement": "GRCh38chr6:394888C>G and c.284C>G,p.Thr95Arg match TableS2. Source uses NM_001195286.2; packet uses NM_002460.4.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS2 physical95; FigureS1"
+              }
+            ],
+            "limitations": [
+              "Exact genomic base corroborates locus; transcript equivalence was not independently realigned."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030388",
+              "label": "Decreased class-switched memory B cell proportion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b7e589d01ac1c6b9096e97c5a8bb343f58fe6f55a903efdc418de89f519d553",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes reduced switched-memory proportion. FigureS2D shows low P7 proportion versus controls; normal absolute3/uL in TableS9 is a different measurement.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              },
+              {
+                "source_id": "page80",
+                "locator": "FigureS2D P7 point"
+              },
+              {
+                "source_id": "page108",
+                "locator": "TableS9 absolute switched memory3/uL"
+              }
+            ],
+            "limitations": [
+              "Research assay and clinical absolute count use different denominators."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002720",
+              "label": "Decreased circulating IgA concentration"
+            }
+          },
+          "snapshot_sha256": "d0dc53e10d03c4215d67db28c6a27cd3ca8e09c0dbd94e05809b0f5f3df04471",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgA0.02 at7months and<0.05 at3years, low.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032132",
+              "label": "Decreased circulating total IgG concentration"
+            }
+          },
+          "snapshot_sha256": "af9ccaf59df0c496aa08915f6822f8d02501973b8cfd20420dae5853c320ab34",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgG0.24g/L at7months and3years, low.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002850",
+              "label": "Decreased circulating total IgM"
+            }
+          },
+          "snapshot_sha256": "c124705ab707a74946f3e4b2bdd796f46ac57bcf053cfa1004374fc312319344",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgM0.03 at7months and<0.05 at3years, low.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004432",
+              "label": "Agammaglobulinemia"
+            }
+          },
+          "snapshot_sha256": "b211a5509b3997875dd2c4fa5663b2a07b2a3db8b40dbd31c886a2242a119327",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Agammaglobulinemia diagnosed in infancy.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002878",
+              "label": "Respiratory failure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "517375292e41cd85c8858b664d18fae11e524ffbe0c1fd75ba6685d8620cc7de",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Respiratory failure: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:4000007",
+              "label": "Bronchoconstriction"
+            }
+          },
+          "snapshot_sha256": "8eff9dc0566157caf5360fe36840c527e1719e74dc58573fd3fc4ba481fda30d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Recurrent bronchospasm from5months; TableS1 positive.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002110",
+              "label": "Bronchiectasis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3bedfeb6b4a360e64d0c1d6d33e567d3ba8d848979b931e4bb285995681dbbe9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Bronchiectasis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002583",
+              "label": "Colitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fbfcefcc89cbcf796ce330112a2d89aa66ca5735890ab39d0e73b0e73f526f5e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Colitis: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002719",
+              "label": "Recurrent infections"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c3da490b0d2da948a7bacfda3524ef046dffa23cad72cb6cd0b9083a991e4564",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes recurrent infections, whereas Figure1B describes7/7 recurrent respiratory infections and P7 has PCP followed by mycobacterial lymphadenitis.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Recurrent bronchospasm alone need not prove infection, but identified episodes and source cohort statement conflict."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0020102",
+              "label": "Pneumocystis jirovecii pneumonia"
+            },
+            "onset": {
+              "age": {
+                "iso8601duration": "P7M"
+              }
+            }
+          },
+          "snapshot_sha256": "fe99a1ab807a4b0378da6b8cc7eff9c542bed1c5fa7cef2d8329d54a6b6d7dfd",
+          "assessment": {
+            "status": "qualified",
+            "statement": "PCP confirmed at7months.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032261",
+              "label": "Nontuberculous mycobacterial pulmonary infection"
+            }
+          },
+          "snapshot_sha256": "f7853fcbbd71f598d6d50610e57216a09a1291a81b7a15c8b940937dbd8f398b",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "The positive nontuberculous mycobacterial PULMONARY label does not match cultured M.bovis from a cervical lymph node/tonsillar granulomatous disease.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Different organism category and anatomic site; no pulmonary mycobacterial infection documented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032252",
+              "label": "Granuloma"
+            }
+          },
+          "snapshot_sha256": "2957ec59d36a39f906df238741396a6aebe78b0eebab6ad3ff532f0a231da365",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Granulomas and acid-fast bacilli in tonsil and cervical lymph node.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Time, assay and treatment context retained; source statement is not an independent clinical examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3da3d0fa5a0298a54d11f959b7518ea72d80ed868975d71219bbfc2a7dff80cf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Splenomegaly: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002716",
+              "label": "Lymphadenopathy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b3353709d4f7b1551d6280e9b0da4fff52068217bc1b6811771245ee8e6f101",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludes lymphadenopathy; rapidly growing left cervical node was excised and cultured M.bovis.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002240",
+              "label": "Hepatomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "92d186c16d6c93ee9a4267ef118a20b9f2b6a812767724afdf8d3794887c892d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hepatomegaly: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002028",
+              "label": "Chronic diarrhea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a0520e832f0589a95e4bef0ad1a7d79a9f821e1c29e8392b8cbea7553d51454",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Chronic diarrhea: no explicit patient-specific absence established from the full narrative and relevant tables; blank cells are not negative examinations.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "Clinical summary P7 physical pages75–77; TableS1 physical93–94; TableS9 physical108–109"
+              }
+            ],
+            "limitations": [
+              "Do not turn nonreporting or another patient's findings into an exclusion."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": "supplement:dataS1",
+      "status": "open",
+      "detail": "Listed separate data file not held/read. Main and supplemental article text do not substitute for raw data.",
+      "evidence": [
+        {
+          "source_id": "supp-text",
+          "locator": "Physical page35 supplementary inventory"
+        }
+      ]
+    },
+    {
+      "component_id": "supplement:dataS2",
+      "status": "open",
+      "detail": "Listed separate data file not held/read. Main and supplemental article text do not substitute for raw data.",
+      "evidence": [
+        {
+          "source_id": "supp-text",
+          "locator": "Physical page35 supplementary inventory"
+        }
+      ]
+    },
+    {
+      "component_id": "supplement:dataS3",
+      "status": "open",
+      "detail": "Listed separate data file not held/read. Main and supplemental article text do not substitute for raw data.",
+      "evidence": [
+        {
+          "source_id": "supp-text",
+          "locator": "Physical page35 supplementary inventory"
+        }
+      ]
+    },
+    {
+      "component_id": "supplement:dataS4",
+      "status": "open",
+      "detail": "Listed separate data file not held/read. Main and supplemental article text do not substitute for raw data.",
+      "evidence": [
+        {
+          "source_id": "supp-text",
+          "locator": "Physical page35 supplementary inventory"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading.",
+    "Source correspondence only; no independent clinical diagnosis or reproduction of experiments.",
+    "Seven patients comprise six families; P6/P7 are siblings. Ascertainment does not establish population penetrance.",
+    "Cell-line overexpression, EBV-transformed cells and mouse models support mechanism but do not establish drug benefit; supplementary raw data remain unreviewed."
+  ]
+}

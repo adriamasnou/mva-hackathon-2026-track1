@@ -1,0 +1,154 @@
+{
+  "pmid": "25959430",
+  "source_titles": [
+    "Homozygous sequence variants in the NPR2 gene underlying Acromesomelic dysplasia Maroteaux type (AMDM) in consanguineous families"
+  ],
+  "selected_case_ids": [
+    "TC_8a536ca11ecc8d6c"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "NPR2"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/NPR2/PMID_25959430_individual_IV_2_family_A.json",
+      "sha256": "a22cbe49f82534781f57353ef4953c6877f02d2bc120c402921955403d038de6",
+      "case_id": "TC_8a536ca11ecc8d6c",
+      "selected_record": true,
+      "subject": {
+        "id": "individual IV-2, family A",
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:602875",
+            "label": "Acromesomelic dysplasia 1, Maroteaux type"
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0009381",
+            "label": "Short finger"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010049",
+            "label": "Short metacarpal"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010055",
+            "label": "Broad hallux"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001831",
+            "label": "Short toe"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0006009",
+            "label": "Broad phalanx"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001230",
+            "label": "Broad metacarpals"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003038",
+            "label": "Fibular hypoplasia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0005736",
+            "label": "Short tibia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "vh2SRa8bMncyIjC4poqSvwiz",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:602875",
+              "label": "Acromesomelic dysplasia 1, Maroteaux type"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "individual IV-2, family A",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1801CtoA_NPR2_NM_003995v4",
+                    "geneContext": {
+                      "valueId": "HGNC:7944",
+                      "symbol": "NPR2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_003995.4:c.1801C>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000009.12:g.35802593C>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_003986.2:p.(Arg601Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr9",
+                      "pos": 35802593,
+                      "ref": "C",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

@@ -1,0 +1,956 @@
+{
+  "schema_version": 1,
+  "pmid": "38105698",
+  "title": "原发性卵巢发育不全一家系HROB致病等位基因遗传学分析",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T10:21:38.028736+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "abc0348886dbf9674eac7e99c8535efe563a9fff7e3960bbd880ac607a1cc562",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "38105698",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38105698/main.xml",
+      "sha256": "fbf540a78ca3d9ace473a05ac0eed368f10bd6d3d76615a00839b4d15cd8648f",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "38105698",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38105698/main.complete.txt",
+      "sha256": "70ed05ccafee1c54cc4530f39922671f80b7aca1d80b90d86fd04ce093109568",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "38105698",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/38105698/availability.json",
+      "sha256": "41a7b496c6ad090893e37e748982d1be203a5bea186f86c82440de85d5adff60",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "main-pdf",
+      "pmid": "38105698",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38105698/reader-4-assets/PMC10764178.1/PMC10764178.1.pdf",
+      "sha256": "2633575aa2ce5f09034fd47dbefb8b7246cd003e7bef3d0b20a3c3ddef19e3e7",
+      "kind": "pdf",
+      "description": "Publisher PDF used for table pixels and layout verification"
+    },
+    {
+      "id": "pdf-layout",
+      "pmid": "38105698",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/38105698/layout.txt",
+      "sha256": "f20e4bb3ea906f065a3cbb7f58922045e6eb6f25b26df7536dda598151a978db",
+      "kind": "text",
+      "description": "Complete pdftotext -layout extraction of publisher PDF"
+    },
+    {
+      "id": "pixels-A1008-9292-2023-52-6-727-g001",
+      "pmid": "38105698",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38105698/reader-4-assets/PMC10764178.1/1008-9292-2023-52-6-727-g001.jpg",
+      "sha256": "99aa878be95c280c3096a2efb4b1c020042857bf97bde15b673c9ca3f49bd6e7",
+      "kind": "image",
+      "description": "Original figure inspected including all panels"
+    },
+    {
+      "id": "pixels-A1008-9292-2023-52-6-727-g002",
+      "pmid": "38105698",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38105698/reader-4-assets/PMC10764178.1/1008-9292-2023-52-6-727-g002.jpg",
+      "sha256": "c3fcb2aa7930c52c8786cf9f3913f65beab5208a01182afb4d93904b1061f14e",
+      "kind": "image",
+      "description": "Original figure inspected including all panels"
+    },
+    {
+      "id": "pixels-A1008-9292-2023-52-6-727-g003",
+      "pmid": "38105698",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38105698/reader-4-assets/PMC10764178.1/1008-9292-2023-52-6-727-g003.jpg",
+      "sha256": "634c2d9aca4aa55b961e246b79a9c89a62de98875e608c31128a0ef5dec14194",
+      "kind": "image",
+      "description": "Original figure inspected including all panels"
+    },
+    {
+      "id": "pixels-A1008-9292-2023-52-6-727-g004",
+      "pmid": "38105698",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38105698/reader-4-assets/PMC10764178.1/1008-9292-2023-52-6-727-g004.jpg",
+      "sha256": "d33c4fddf2cb4e8531f0ced2f7800f92aa177290446ba86d45701627271f5279",
+      "kind": "image",
+      "description": "Original figure inspected including all panels"
+    },
+    {
+      "id": "pdf-page-3",
+      "pmid": "38105698",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/38105698/page-3.png",
+      "sha256": "9a342204fc76042273feb14b0b1cb5eab2a78ef369bb420710e00dbb4333c1f1",
+      "kind": "image",
+      "description": "Rendered publisher PDF table page inspected"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "原发性卵巢发育不全一家系HROB致病等位基因遗传学分析",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 4,
+      "table": 1,
+      "supplement": 0
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 167,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–167"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 167,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–167"
+        }
+      ],
+      "note": "Complete Chinese main text and English translated abstract, all captions, Table 1 text, declarations and 14 references read. Prior concatenated output truncated at the end; tail was separately reread. Four figures and table pixels remain pending."
+    },
+    {
+      "id": "figure:A1008-9292-2023-52-6-727-g001",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pixels-A1008-9292-2023-52-6-727-g001",
+      "extent_evidence": [
+        {
+          "source_id": "pixels-A1008-9292-2023-52-6-727-g001",
+          "locator": "whole original figure"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "pixels-A1008-9292-2023-52-6-727-g001",
+          "locator": "all panels inspected"
+        }
+      ],
+      "note": "Ultrasound panels A/B show small cord-like uterine structures; absence of visible ovaries is not proof of anatomical aplasia."
+    },
+    {
+      "id": "figure:A1008-9292-2023-52-6-727-g002",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pixels-A1008-9292-2023-52-6-727-g002",
+      "extent_evidence": [
+        {
+          "source_id": "pixels-A1008-9292-2023-52-6-727-g002",
+          "locator": "whole original figure"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "pixels-A1008-9292-2023-52-6-727-g002",
+          "locator": "all panels inspected"
+        }
+      ],
+      "note": "Pedigree shows two affected sisters and unaffected parents/brother."
+    },
+    {
+      "id": "figure:A1008-9292-2023-52-6-727-g003",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pixels-A1008-9292-2023-52-6-727-g003",
+      "extent_evidence": [
+        {
+          "source_id": "pixels-A1008-9292-2023-52-6-727-g003",
+          "locator": "whole original figure"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "pixels-A1008-9292-2023-52-6-727-g003",
+          "locator": "all panels inspected"
+        }
+      ],
+      "note": "All five Sanger rows inspected: both sisters carry both variants; c.718 paternal, c.1351 maternal; brother carries paternal variant only."
+    },
+    {
+      "id": "figure:A1008-9292-2023-52-6-727-g004",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "pixels-A1008-9292-2023-52-6-727-g004",
+      "extent_evidence": [
+        {
+          "source_id": "pixels-A1008-9292-2023-52-6-727-g004",
+          "locator": "whole original figure"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "pixels-A1008-9292-2023-52-6-727-g004",
+          "locator": "all panels inspected"
+        }
+      ],
+      "note": "HROB exon/domain diagram with current stop alleles and two prior frameshifts; no functional data."
+    },
+    {
+      "id": "table:A1008-9292-2023-52-6-727-t001",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "PDF page 3, entire table"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "pdf-layout",
+          "locator": "PDF page 3, entire table read with column layout"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "pdf-page-3",
+          "locator": "PDF page 3, all cells inspected"
+        }
+      ],
+      "note": "Full table text and pixels compared; subject columns and reference ranges retained."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/HROB/PMID_38105698_girl.json",
+      "packet_sha256": "96a0e2ba6601ca6ef6662919d1795935df44609ce0e4597275677c659af78360",
+      "case_id": "TC_04cbfc9506c95024",
+      "role": "selected",
+      "packet_subject_id": "girl",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Two sisters from one family; no independent new clinical classification."
+      ],
+      "patient_identity": {
+        "status": "contradicted",
+        "statement": "Younger sister is explicitly 11 years 5 months in source English abstract, Chinese clinical section and Table 1, versus packet 11 years 6 months.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "English abstract; 病历摘要; Table 1"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Both sisters have compound heterozygous NM_001171251.3 c.718C>T p.Arg240* and c.1351C>T p.Arg451*, confirmed by WES/Sanger.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "遗传学检测结果, third paragraph"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "c.718C>T is paternal and c.1351C>T maternal; younger brother carries only the paternal allele.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "遗传学检测结果, third paragraph; Figure 3 caption"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Opposite parental inheritance directly supports trans phase of the two variants; this is not merely assumed from two heterozygous calls.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "遗传学检测结果, third paragraph"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source associates biallelic HROB truncating variants with POI, but calls both likely pathogenic (疑似致病) using PM2_supporting+PP4+PVS1; packet PATHOGENIC is stronger. No patient-specific variant functional assay is reported; mechanistic mouse/other-family data are cited.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "遗传学检测结果 final paragraph; 讨论"
+          }
+        ],
+        "limitations": [
+          "Classification-strength mismatch; this review is not independent ACMG classification."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Shared hormonal/ultrasound abnormalities are documented, with age-specific differences. Proband is <3rd height percentile; sister is 25th, despite discussion calling her somewhat short. Ovaries not visualized on ultrasound is not proof of complete agenesis.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "病历摘要; Table 1; 讨论"
+          }
+        ],
+        "limitations": [
+          "Age-sensitive amenorrhea diagnosis and anatomical aplasia must not be overinterpreted."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1351CtoT_HROB_NM_001171251v3",
+            "geneContext": {
+              "valueId": "HGNC:28460",
+              "symbol": "HROB"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001171251.3:c.1351C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000017.11:g.44152679C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001164722.1:p.(Arg451Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr17",
+              "pos": 44152679,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "972ca5aee0058719fed4cb5bcb7859d63fdd2d53c276143dd664cde6bc43e51b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Versioned NM_001171251.3 transcript and corresponding nonsense change directly match source; WES aligned to hg19 whereas packet supplies hg38 genomic coordinates.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "遗传学检测结果"
+              }
+            ],
+            "limitations": [
+              "No independent hg19-to-hg38 conversion performed in this reading."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c718CtoT_HROB_NM_001171251v3",
+            "geneContext": {
+              "valueId": "HGNC:28460",
+              "symbol": "HROB"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001171251.3:c.718C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000017.11:g.44148521C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001164722.1:p.(Arg240Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr17",
+              "pos": 44148521,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "add5dd72c4379ea4c07eaf96f947e43966bb099714d7887a7e48a6d6a088cb89",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Versioned NM_001171251.3 transcript and corresponding nonsense change directly match source; WES aligned to hg19 whereas packet supplies hg38 genomic coordinates.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "遗传学检测结果"
+              }
+            ],
+            "limitations": [
+              "No independent hg19-to-hg38 conversion performed in this reading."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000786",
+              "label": "Primary amenorrhea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "17236ce9429baacf6fc13c9f0fdc2f388ce10d571c54145c7d20ce6d68d9534a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet explicitly excludes primary amenorrhea; source reports absent menarche/POI without explicitly making that negative assertion. Given these ages, an absence cannot be established solely by wording.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "病历摘要; English abstract"
+              }
+            ],
+            "limitations": [
+              "Negative HPO assertion unsupported by explicit source statement."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012569",
+              "label": "Delayed menarche"
+            }
+          },
+          "snapshot_sha256": "91f7a7d494d8a9c6a6e68e811707112b57e6185052d24abeac1de5c10026c2a0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Delayed menarche directly corresponds to reported absent/delayed menarche or measured hormone abnormality.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "English abstract; 病历摘要; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011969",
+              "label": "Elevated circulating luteinizing hormone level"
+            }
+          },
+          "snapshot_sha256": "ee4f93384368a026f52617af4b68b3063ce28162ae49c6f5bfd74649cac59a02",
+          "assessment": {
+            "status": "supported",
+            "statement": "Elevated circulating luteinizing hormone level directly corresponds to reported absent/delayed menarche or measured hormone abnormality.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "English abstract; 病历摘要; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008232",
+              "label": "Elevated circulating follicle stimulating hormone level"
+            }
+          },
+          "snapshot_sha256": "2e755b791d2a013726bee97b1c231b2d31d730d42d6d3965ca42c48f13ad4c1e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Elevated circulating follicle stimulating hormone level directly corresponds to reported absent/delayed menarche or measured hormone abnormality.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "English abstract; 病历摘要; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031103",
+              "label": "Decreased circulating antimullerian hormone circulation"
+            }
+          },
+          "snapshot_sha256": "b868bc11856afd14acc573659112a0f3a7a5a343d7a23aa2d2b3d767812d7ce4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Decreased circulating antimullerian hormone circulation directly corresponds to reported absent/delayed menarche or measured hormone abnormality.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "English abstract; 病历摘要; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010463",
+              "label": "Aplasia of the ovary"
+            }
+          },
+          "snapshot_sha256": "efae4d516197961a885dd12e8837453a53a4e28756d508b987accc2d5304a02f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Ovaries were not visualized by ultrasound; authors diagnose ovarian insufficiency/dysgenesis. Complete anatomical aplasia is stronger than the observation.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "病历摘要; Table 1; Figure 1 caption"
+              }
+            ],
+            "limitations": [
+              "Nonvisualization is not direct proof of absent ovaries."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/HROB/PMID_38105698_proband.json",
+      "packet_sha256": "b7fa2c38e050811266720d769de81ad580afc0699587f00f047684b4181b731d",
+      "case_id": "TC_04cbfc9506c95024",
+      "role": "alternate",
+      "packet_subject_id": "proband",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Two sisters from one family; no independent new clinical classification."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Proband is female age 13 years 6 months, matching clinical section.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "English abstract; 病历摘要; Table 1"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Both sisters have compound heterozygous NM_001171251.3 c.718C>T p.Arg240* and c.1351C>T p.Arg451*, confirmed by WES/Sanger.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "遗传学检测结果, third paragraph"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "c.718C>T is paternal and c.1351C>T maternal; younger brother carries only the paternal allele.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "遗传学检测结果, third paragraph; Figure 3 caption"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Opposite parental inheritance directly supports trans phase of the two variants; this is not merely assumed from two heterozygous calls.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "遗传学检测结果, third paragraph"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Source associates biallelic HROB truncating variants with POI, but calls both likely pathogenic (疑似致病) using PM2_supporting+PP4+PVS1; packet PATHOGENIC is stronger. No patient-specific variant functional assay is reported; mechanistic mouse/other-family data are cited.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "遗传学检测结果 final paragraph; 讨论"
+          }
+        ],
+        "limitations": [
+          "Classification-strength mismatch; this review is not independent ACMG classification."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Shared hormonal/ultrasound abnormalities are documented, with age-specific differences. Proband is <3rd height percentile; sister is 25th, despite discussion calling her somewhat short. Ovaries not visualized on ultrasound is not proof of complete agenesis.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "病历摘要; Table 1; 讨论"
+          }
+        ],
+        "limitations": [
+          "Age-sensitive amenorrhea diagnosis and anatomical aplasia must not be overinterpreted."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c718CtoT_HROB_NM_001171251v3",
+            "geneContext": {
+              "valueId": "HGNC:28460",
+              "symbol": "HROB"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001171251.3:c.718C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000017.11:g.44148521C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001164722.1:p.(Arg240Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr17",
+              "pos": 44148521,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "add5dd72c4379ea4c07eaf96f947e43966bb099714d7887a7e48a6d6a088cb89",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Versioned NM_001171251.3 transcript and corresponding nonsense change directly match source; WES aligned to hg19 whereas packet supplies hg38 genomic coordinates.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "遗传学检测结果"
+              }
+            ],
+            "limitations": [
+              "No independent hg19-to-hg38 conversion performed in this reading."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1351CtoT_HROB_NM_001171251v3",
+            "geneContext": {
+              "valueId": "HGNC:28460",
+              "symbol": "HROB"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001171251.3:c.1351C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000017.11:g.44152679C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001164722.1:p.(Arg451Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr17",
+              "pos": 44152679,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "972ca5aee0058719fed4cb5bcb7859d63fdd2d53c276143dd664cde6bc43e51b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Versioned NM_001171251.3 transcript and corresponding nonsense change directly match source; WES aligned to hg19 whereas packet supplies hg38 genomic coordinates.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "遗传学检测结果"
+              }
+            ],
+            "limitations": [
+              "No independent hg19-to-hg38 conversion performed in this reading."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000786",
+              "label": "Primary amenorrhea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "17236ce9429baacf6fc13c9f0fdc2f388ce10d571c54145c7d20ce6d68d9534a",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Packet explicitly excludes primary amenorrhea; source reports absent menarche/POI without explicitly making that negative assertion. Given these ages, an absence cannot be established solely by wording.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "病历摘要; English abstract"
+              }
+            ],
+            "limitations": [
+              "Negative HPO assertion unsupported by explicit source statement."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012569",
+              "label": "Delayed menarche"
+            }
+          },
+          "snapshot_sha256": "91f7a7d494d8a9c6a6e68e811707112b57e6185052d24abeac1de5c10026c2a0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Delayed menarche directly corresponds to reported absent/delayed menarche or measured hormone abnormality.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "English abstract; 病历摘要; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011969",
+              "label": "Elevated circulating luteinizing hormone level"
+            }
+          },
+          "snapshot_sha256": "ee4f93384368a026f52617af4b68b3063ce28162ae49c6f5bfd74649cac59a02",
+          "assessment": {
+            "status": "supported",
+            "statement": "Elevated circulating luteinizing hormone level directly corresponds to reported absent/delayed menarche or measured hormone abnormality.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "English abstract; 病历摘要; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008232",
+              "label": "Elevated circulating follicle stimulating hormone level"
+            }
+          },
+          "snapshot_sha256": "2e755b791d2a013726bee97b1c231b2d31d730d42d6d3965ca42c48f13ad4c1e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Elevated circulating follicle stimulating hormone level directly corresponds to reported absent/delayed menarche or measured hormone abnormality.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "English abstract; 病历摘要; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031103",
+              "label": "Decreased circulating antimullerian hormone circulation"
+            }
+          },
+          "snapshot_sha256": "b868bc11856afd14acc573659112a0f3a7a5a343d7a23aa2d2b3d767812d7ce4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Decreased circulating antimullerian hormone circulation directly corresponds to reported absent/delayed menarche or measured hormone abnormality.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "English abstract; 病历摘要; Table 1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010463",
+              "label": "Aplasia of the ovary"
+            }
+          },
+          "snapshot_sha256": "efae4d516197961a885dd12e8837453a53a4e28756d508b987accc2d5304a02f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Ovaries were not visualized by ultrasound; authors diagnose ovarian insufficiency/dysgenesis. Complete anatomical aplasia is stronger than the observation.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "病历摘要; Table 1; Figure 1 caption"
+              }
+            ],
+            "limitations": [
+              "Nonvisualization is not direct proof of absent ovaries."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading."
+  ]
+}

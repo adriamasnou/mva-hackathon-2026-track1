@@ -1,0 +1,186 @@
+{
+  "pmid": "29997391",
+  "source_titles": [
+    "Exome sequencing in congenital ataxia identifies two new candidate genes and highlights a pathophysiological link between some congenital ataxias and early infantile epileptic encephalopathies."
+  ],
+  "selected_case_ids": [
+    "TC_ee5ef83a86a17975"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "SKOR2"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SKOR2/PMID_29997391_P15.json",
+      "sha256": "f6500a10fb1b1dc5bc6daab2a02a5bcf4ece82a225fa1fc80c703286bc85e58e",
+      "case_id": "TC_ee5ef83a86a17975",
+      "selected_record": true,
+      "subject": {
+        "id": "P15",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P10Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621386",
+            "label": "Valence-Farazi cerebellar ataxia syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003623",
+              "label": "Neonatal onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0001252",
+            "label": "Hypotonia"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003623",
+              "label": "Neonatal onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002650",
+            "label": "Scoliosis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P10Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0040010",
+            "label": "Small posterior fossa"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000639",
+            "label": "Nystagmus"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P10Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031936",
+            "label": "Delayed ability to walk"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001256",
+            "label": "Mild intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001251",
+            "label": "Ataxia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012110",
+            "label": "Hypoplasia of the pons"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007033",
+            "label": "Cerebellar dysplasia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007074",
+            "label": "Thick corpus callosum"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "cPE5L9eSJeGNHQqJEoqNFx3z",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621386",
+              "label": "Valence-Farazi cerebellar ataxia syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "P15",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c2750CtoG_SKOR2_NM_001278063v4",
+                    "geneContext": {
+                      "valueId": "HGNC:32695",
+                      "symbol": "SKOR2"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001278063.4:c.2750C>G"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000018.10:g.47244910G>C"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001264992.1:p.(Ser917Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr18",
+                      "pos": 47244910,
+                      "ref": "G",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

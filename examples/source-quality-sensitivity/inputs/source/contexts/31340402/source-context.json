@@ -1,0 +1,224 @@
+{
+  "pmid": "31340402",
+  "source_titles": [
+    "Gillespie's Syndrome with Minor Cerebellar Involvement and No Intellectual Disability Associated with a Novel ITPR1 Mutation: Report of a Case and Literature Review"
+  ],
+  "selected_case_ids": [
+    "TC_0e4af5a6009d6a87"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "ITPR1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/ITPR1/PMID_31340402_patient.json",
+      "sha256": "e49812b233ffc1c7de1f19ffa5605407fc02767f72a48f09504bd1ec7427d002",
+      "case_id": "TC_0e4af5a6009d6a87",
+      "selected_record": true,
+      "subject": {
+        "id": "patient",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P26Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:206700",
+            "label": "Gillespie syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0100021",
+            "label": "Cerebral palsy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001251",
+            "label": "Ataxia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0031936",
+            "label": "Delayed ability to walk"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002080",
+            "label": "Intention tremor"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002376",
+            "label": "Developmental regression"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0006855",
+            "label": "Cerebellar vermis atrophy"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P26Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001348",
+            "label": "Brisk reflexes"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003487",
+            "label": "Babinski sign"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000750",
+            "label": "Delayed speech and language development"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000508",
+            "label": "Ptosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007676",
+            "label": "Hypoplasia of the iris"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000526",
+            "label": "Aniridia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011499",
+            "label": "Mydriasis"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0007894",
+            "label": "Hypopigmentation of the fundus"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "LcNxJs03F92EGzBTmWGOMqwx",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:206700",
+              "label": "Gillespie syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "patient",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c6325GtoA_ITPR1_NM_001378452v1",
+                    "geneContext": {
+                      "valueId": "HGNC:6180",
+                      "symbol": "ITPR1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001378452.1:c.6325G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000003.12:g.4779583G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001365381.1:p.(Glu2109Lys)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr3",
+                      "pos": 4779583,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

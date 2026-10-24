@@ -1,0 +1,2977 @@
+{
+  "schema_version": 1,
+  "pmid": "38158857",
+  "title": "Differential alternative splicing analysis links variation in ZRSR2 to a novel type of oral-facial-digital syndrome.",
+  "reviewer": {
+    "id": "Codex-reader-4-successor-Bernoulli-2044",
+    "reviewed_at_utc": "2026-10-24T20:50:31.452490+00:00",
+    "method": "Personal full review of all16mainpages,14supplementpages,allmain/suppfigures and tables,full702nonempty workbook cells including headers and700geneIDs,all51reference entries and the entire assigned packet. Actual text/pixel/data coverage separately enumerated; predecessor template preserved. Literature adjudication only."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Predecessor record disclosed inherited aggregate benchmark exposure. Successor mandatory HANDOFF.md reading exposed a historical HG002/FGFR2 public-control per-case rank and embedded aggregate results. No target-case outcome files,inference ranks or separate benchmark outcome summaries consulted. Not blinded. Prior reading is not reassigned;this successor personally read only the newly specified sources/components."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "9d3df7d9c119ed1c337257d98ca44170457bfae25fa0c4a88ae09512d9897dce",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "predecessor",
+      "pmid": "38158857",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/assets/successor-2044-bernoulli/inherited/38158857-406aea2ab11d0eb7ac01ef0fcc62753454603939b5129063d9360a201d848824.json",
+      "sha256": "406aea2ab11d0eb7ac01ef0fcc62753454603939b5129063d9360a201d848824",
+      "kind": "metadata",
+      "description": "Exact predecessor canonical bytes,attributed to Codex-reader-4;template-only work is not personal fulltext reading."
+    },
+    {
+      "id": "succession",
+      "pmid": "38158857",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/deadline-reader-succession-2044.json",
+      "sha256": "0f49730beceabc625910468bfbdb99cc1d0fffed4abda0fcf671172b6220dd94",
+      "kind": "metadata",
+      "description": "Formal disjoint logical-reader4 successor assignment and predecessor hashes."
+    },
+    {
+      "id": "published",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/38158857/published.pdf",
+      "sha256": "5fef05f22b657f1cd01a695caa7ce7f438302d3d9605151952c2c0bf6d8e88ba",
+      "kind": "pdf",
+      "description": "Exact parent-held authorized original;all16pages personally read and visually inspected."
+    },
+    {
+      "id": "published_layout",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/38158857/published.layout.txt",
+      "sha256": "e0096270698493cbe9c43c014866e7d163e89c3ee59cf7a7b977efce9545f25a",
+      "kind": "text",
+      "description": "Entire supplied layout read;allpage pixels independently inspected."
+    },
+    {
+      "id": "published_extent",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/pdfinfo.txt",
+      "sha256": "ab5e2ad91525d3f6af138442a8fd24c20397482515e50b9672081c15c5d8445b",
+      "kind": "metadata",
+      "description": "Mechanical page extent corroborated by printed original pagination and content."
+    },
+    {
+      "id": "published_preparation",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/preparation.json",
+      "sha256": "b861de22ef4ae4a9a6899e12d70caa6bb160d9d139133b636815b498ba80c1b1",
+      "kind": "metadata",
+      "description": "Verified-original rendering provenance;preparation is not reading."
+    },
+    {
+      "id": "published_page1",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-01.png",
+      "sha256": "a59a1306e022f31975ff1b23ab607e0c8e5b311eb5eb19cd43c123372798f5ce",
+      "kind": "image",
+      "description": "Entire published page1 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page2",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-02.png",
+      "sha256": "9765d893dc05eb4f4344ebb84c5a906f6a91afe6d418ec8658fa3f9f3bd06835",
+      "kind": "image",
+      "description": "Entire published page2 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page3",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-03.png",
+      "sha256": "014b711fdc250ab1bedd4ede23f9e7e1b262e190c62c85b1d7d6d2ccd4e6f953",
+      "kind": "image",
+      "description": "Entire published page3 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page4",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-04.png",
+      "sha256": "1b642fa371867970562082f32b9e092eb36fd837d1d98bcf81a997561103fcee",
+      "kind": "image",
+      "description": "Entire published page4 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page5",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-05.png",
+      "sha256": "a57af6e5117516d4b178c6f04f8c6408034e7ee51ee6f9e6505c87b94285e99f",
+      "kind": "image",
+      "description": "Entire published page5 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page6",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-06.png",
+      "sha256": "9384ce2ec4b0ff60a0975cec49f36e4495d608665e5937276681bada5819d426",
+      "kind": "image",
+      "description": "Entire published page6 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page7",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-07.png",
+      "sha256": "166c3dbc4f4a9e00496b1b87716a3e32a062aa650761cbde3f9a3cf53647a396",
+      "kind": "image",
+      "description": "Entire published page7 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page8",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-08.png",
+      "sha256": "3511c143dfd6b68814995ed4ab05fc0bb2f9179691658a086d9fb6f30d5a6bea",
+      "kind": "image",
+      "description": "Entire published page8 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page9",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-09.png",
+      "sha256": "6e8e08e6057a27ea98e07ddea899f08b8df054b62c87e038f2b3d55490a7f75f",
+      "kind": "image",
+      "description": "Entire published page9 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page10",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-10.png",
+      "sha256": "cffdb0c0ac1a93cfc522321bcfcb4cfa8e7e7a2914412b90de44090cc4570f08",
+      "kind": "image",
+      "description": "Entire published page10 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page11",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-11.png",
+      "sha256": "abb80ebc535faf0dfdb385b3f1c354f540371cc7fd306aeb2e192518ab047d75",
+      "kind": "image",
+      "description": "Entire published page11 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page12",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-12.png",
+      "sha256": "9022c81455106aa89ea31984224fec14b8b3cd15ec58b58e2be6f2a5199df771",
+      "kind": "image",
+      "description": "Entire published page12 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page13",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-13.png",
+      "sha256": "a485c32551568ab37735c16d0189a953e2eb90fc8e4526dc714e6bdea2444353",
+      "kind": "image",
+      "description": "Entire published page13 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page14",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-14.png",
+      "sha256": "676974008d09773d19a14398b92c556ea43d84d04b21b9847df62690b6c9c8f9",
+      "kind": "image",
+      "description": "Entire published page14 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page15",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-15.png",
+      "sha256": "51a9c6f5692c70933615c1369afa92b0fd508973b63056f27536439691f3dd14",
+      "kind": "image",
+      "description": "Entire published page15 personally visually inspected at130dpi."
+    },
+    {
+      "id": "published_page16",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/published/page-16.png",
+      "sha256": "0966c845598d0b719125eb597766f612c9200c23a13c4efcdbbe62dce24734f6",
+      "kind": "image",
+      "description": "Entire published page16 personally visually inspected at130dpi."
+    },
+    {
+      "id": "parent_receipt",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/38158857/retrieval.json",
+      "sha256": "c56b59795d88fa90def2171882f069fa2c3d3563c452660397a16a67407b5e28",
+      "kind": "metadata",
+      "description": "Parent public Open Archive retrieval attribution with exact sourcebytes/hashes. No UI/attestation operated by successor."
+    },
+    {
+      "id": "supplement",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/38158857/supplement.pdf",
+      "sha256": "2ca3ccf9f3d95e43596be4aacef6fb0451398afb3b787b38d40d45e37c04c776",
+      "kind": "pdf",
+      "description": "Exact parent-held authorized original;all14pages personally read and visually inspected."
+    },
+    {
+      "id": "supplement_layout",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/38158857/supplement.layout.txt",
+      "sha256": "b046c4cede9cf5238b0bfbe31da7d34d9a30fc3a60684529062230f09315525e",
+      "kind": "text",
+      "description": "Entire supplied layout read;allpage pixels independently inspected."
+    },
+    {
+      "id": "supplement_extent",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/pdfinfo.txt",
+      "sha256": "e0adf70e97fbbe060df92b128a2ac178f983983982c288088e5badcf7c90370e",
+      "kind": "metadata",
+      "description": "Mechanical page extent corroborated by printed original pagination and content."
+    },
+    {
+      "id": "supplement_preparation",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/preparation.json",
+      "sha256": "d0feff91e19e01ec5dcce1f454f71671418d660f6ab68da771c24699e3d7139e",
+      "kind": "metadata",
+      "description": "Verified-original rendering provenance;preparation is not reading."
+    },
+    {
+      "id": "supplement_page1",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-01.png",
+      "sha256": "3014b33658795101cdebef1579c217c61f003520599f0764bb7ebb7e76c97a80",
+      "kind": "image",
+      "description": "Entire supplement page1 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page2",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-02.png",
+      "sha256": "b04ae3e6df655c186028f5fe4c565620af5f275e67bf7c84e13b989134ab40f1",
+      "kind": "image",
+      "description": "Entire supplement page2 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page3",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-03.png",
+      "sha256": "70c23b5d186233954eff8f8f4d281c56b6035cf4172234864aa079410d683e5c",
+      "kind": "image",
+      "description": "Entire supplement page3 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page4",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-04.png",
+      "sha256": "86c1fff56775b555c704329d11123a97a9ef86f8e4fc3543408f400e4ca5ea2d",
+      "kind": "image",
+      "description": "Entire supplement page4 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page5",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-05.png",
+      "sha256": "98db7c7eb48a3a06edd2aef3fa5661808fda8744bdd20302a54fa4ec3dd448fe",
+      "kind": "image",
+      "description": "Entire supplement page5 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page6",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-06.png",
+      "sha256": "41e61aeed451202cd78bb007732b3e801e8fb6e38219ea0bc86bc1e5d599378e",
+      "kind": "image",
+      "description": "Entire supplement page6 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page7",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-07.png",
+      "sha256": "9a14fe317798d0d71afcfa07141e1b6f530bc8307d0279aad9eec362c962cc0d",
+      "kind": "image",
+      "description": "Entire supplement page7 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page8",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-08.png",
+      "sha256": "7d0405db20879449b1a02fbd0774d045c61ee83362fe032905a186927694767b",
+      "kind": "image",
+      "description": "Entire supplement page8 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page9",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-09.png",
+      "sha256": "6a127239d5e1b7c22fd07da0396f99b57759d45a8300b692df60aaff01779d20",
+      "kind": "image",
+      "description": "Entire supplement page9 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page10",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-10.png",
+      "sha256": "af48a47d66e8cae5fb5a1474c745c75694ed090abaf6882adc97889c98245664",
+      "kind": "image",
+      "description": "Entire supplement page10 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page11",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-11.png",
+      "sha256": "911a1cb1576e4586cf8b6b2ce3e8254418c57f518e089371adf917dd62d93890",
+      "kind": "image",
+      "description": "Entire supplement page11 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page12",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-12.png",
+      "sha256": "f59db356a9170e09aef2168dd6e27ba7a25fb923e1659cc37e435dfdb40b27f8",
+      "kind": "image",
+      "description": "Entire supplement page12 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page13",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-13.png",
+      "sha256": "dbf06c9497ec3c755b4c6861706416182112cb277785c6267e5cec93f47c2f6c",
+      "kind": "image",
+      "description": "Entire supplement page13 personally visually inspected at130dpi."
+    },
+    {
+      "id": "supplement_page14",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/supplement/page-14.png",
+      "sha256": "80a62a08c5bb162cadbe174a2bda973eaa1470604947e3b97539dc9000e5de28",
+      "kind": "image",
+      "description": "Entire supplement page14 personally visually inspected at130dpi."
+    },
+    {
+      "id": "tableS2",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-deadline-build-20261024/public-final-originals/38158857/tables.xlsx",
+      "sha256": "7b61c0364daedbae043430438c6660918532b1171d2bbf1ed164fcf5c56930a5",
+      "kind": "data",
+      "description": "Parent-held original Table S2 workbook, personally read Sheet1 A1:G703; all populated A cells and headers, other columns blank except merged title."
+    },
+    {
+      "id": "tableS2_cells",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/workbook/all-cells.txt",
+      "sha256": "4f999b8df7548a84dcda377157a51489a3acca5552fb72e1e4d390244fafde0f",
+      "kind": "text",
+      "description": "Coordinate-preserving full cell extraction, personally read in three successive ranges 1:240,241:480,481:703; parse is not reading credit."
+    },
+    {
+      "id": "tableS2_rows1",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/workbook/rows-1-180.png",
+      "sha256": "4832ad2b53764ee020bc29b1edb4e87c5036169383302f4d01dd9038a03d006f",
+      "kind": "image",
+      "description": "Derivative value view of original cells A1:G180, visually read; column A reflowed into three labeled blocks, not a native workbook screenshot."
+    },
+    {
+      "id": "tableS2_rows181",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/workbook/rows-181-360.png",
+      "sha256": "a10edb4d82fa38320745ffa0b9e8ea7c9567ebb87a41b29ca4f24cbbeee31f47",
+      "kind": "image",
+      "description": "Derivative value view of original cells A181:G360, visually read; column A reflowed into three labeled blocks, not a native workbook screenshot."
+    },
+    {
+      "id": "tableS2_rows361",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/workbook/rows-361-540.png",
+      "sha256": "a92b089b277ddd54d4ee8b4908d79b0184b8cf6c3c0c2d9055bc4c656941958c",
+      "kind": "image",
+      "description": "Derivative value view of original cells A361:G540, visually read; column A reflowed into three labeled blocks, not a native workbook screenshot."
+    },
+    {
+      "id": "tableS2_rows541",
+      "pmid": "38158857",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-4/successor-2044-bernoulli/38158857/workbook/rows-541-703.png",
+      "sha256": "1eee8d8756bc12861a620e4cb6d58a67da8fe4a1a4b289cccaa586088a9884df",
+      "kind": "image",
+      "description": "Derivative value view of original cells A541:G703, visually read; column A reflowed into three labeled blocks, not a native workbook screenshot."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Differential alternative splicing analysis links variation in ZRSR2 to a novel type of oral-facial-digital syndrome.",
+    "evidence": [
+      {
+        "source_id": "published",
+        "locator": "p1 title/byline/DOI10.1016/j.gim.2023.101059, Genetics in Medicine26(2024)101059; continuous pp1–16 ending reference51."
+      },
+      {
+        "source_id": "parent_receipt",
+        "locator": "Exact publisher-DOI original and mmc1.pdf/mmc2.xlsx URLs, bytes and SHA256 independently verified."
+      }
+    ],
+    "note": "Identity established from original title, DOI, article number and content. Supplement families1–6 and TablesS1/S3 plus workbook TableS2 match the main referrals and DOI-specific retrieval. No reading credit inherited from retrieval."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 8,
+      "table": 4,
+      "supplement": 2
+    },
+    "evidence": [
+      {
+        "source_id": "published",
+        "locator": "Entire pp1–16:main Figures1–3,Table1, referrals to Supplementary data,FiguresS1–S5,TablesS1–S3."
+      },
+      {
+        "source_id": "supplement",
+        "locator": "14pages:families1–6 pp1–7;FiguresS1–S5 pp8–12;TablesS1/S3 pp13–14."
+      },
+      {
+        "source_id": "tableS2",
+        "locator": "One sheet Sheet1, title TableS2, A1:G703;A3:A702 contains700 gene-ID entries; A703 blank."
+      }
+    ],
+    "note": "Eight figures and four tables counted across main and supplements. Two supplement containers:14pagePDF and TableS2 workbook. Data available upon author request is not a held public component; no contact made. Workbook has700 gene-ID cells."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 16,
+      "extent_source_id": "published",
+      "extent_evidence": [
+        {
+          "source_id": "published",
+          "locator": "All16pages, every section/caption and all51reference entries personally read in layout and all-page130dpi renders; original article ends atreference51."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 16,
+          "mode": "text",
+          "source_id": "published",
+          "locator": "All16pages, every section/caption and all51reference entries personally read in layout and all-page130dpi renders; original article ends atreference51."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "published_page1",
+          "locator": "Entire page1 ofpublished visually inspected."
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "published_page2",
+          "locator": "Entire page2 ofpublished visually inspected."
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "published_page3",
+          "locator": "Entire page3 ofpublished visually inspected."
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "published_page4",
+          "locator": "Entire page4 ofpublished visually inspected."
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "published_page5",
+          "locator": "Entire page5 ofpublished visually inspected."
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "published_page6",
+          "locator": "Entire page6 ofpublished visually inspected."
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "published_page7",
+          "locator": "Entire page7 ofpublished visually inspected."
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "published_page8",
+          "locator": "Entire page8 ofpublished visually inspected."
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "published_page9",
+          "locator": "Entire page9 ofpublished visually inspected."
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "published_page10",
+          "locator": "Entire page10 ofpublished visually inspected."
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "mode": "pixels",
+          "source_id": "published_page11",
+          "locator": "Entire page11 ofpublished visually inspected."
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "published_page12",
+          "locator": "Entire page12 ofpublished visually inspected."
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "mode": "pixels",
+          "source_id": "published_page13",
+          "locator": "Entire page13 ofpublished visually inspected."
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "mode": "pixels",
+          "source_id": "published_page14",
+          "locator": "Entire page14 ofpublished visually inspected."
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "mode": "pixels",
+          "source_id": "published_page15",
+          "locator": "Entire page15 ofpublished visually inspected."
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "mode": "pixels",
+          "source_id": "published_page16",
+          "locator": "Entire page16 ofpublished visually inspected."
+        }
+      ],
+      "note": "All16pages, every section/caption and all51reference entries personally read in layout and all-page130dpi renders; original article ends atreference51."
+    },
+    {
+      "id": "supplement_pdf",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 14,
+      "extent_source_id": "supplement",
+      "extent_evidence": [
+        {
+          "source_id": "supplement",
+          "locator": "All14pages read:all six family narratives, five raster-only figures including embedded legends, TablesS1/S3. Raster figures pp8–12 read visually; layout alone omits them."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 14,
+          "mode": "text",
+          "source_id": "supplement",
+          "locator": "All14pages read:all six family narratives, five raster-only figures including embedded legends, TablesS1/S3. Raster figures pp8–12 read visually; layout alone omits them."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supplement_page1",
+          "locator": "Entire page1 ofsupplement visually inspected."
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "supplement_page2",
+          "locator": "Entire page2 ofsupplement visually inspected."
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "supplement_page3",
+          "locator": "Entire page3 ofsupplement visually inspected."
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "supplement_page4",
+          "locator": "Entire page4 ofsupplement visually inspected."
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "supplement_page5",
+          "locator": "Entire page5 ofsupplement visually inspected."
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "supplement_page6",
+          "locator": "Entire page6 ofsupplement visually inspected."
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "supplement_page7",
+          "locator": "Entire page7 ofsupplement visually inspected."
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "supplement_page8",
+          "locator": "Entire page8 ofsupplement visually inspected."
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "supplement_page9",
+          "locator": "Entire page9 ofsupplement visually inspected."
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "supplement_page10",
+          "locator": "Entire page10 ofsupplement visually inspected."
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "mode": "pixels",
+          "source_id": "supplement_page11",
+          "locator": "Entire page11 ofsupplement visually inspected."
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "supplement_page12",
+          "locator": "Entire page12 ofsupplement visually inspected."
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "mode": "pixels",
+          "source_id": "supplement_page13",
+          "locator": "Entire page13 ofsupplement visually inspected."
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "mode": "pixels",
+          "source_id": "supplement_page14",
+          "locator": "Entire page14 ofsupplement visually inspected."
+        }
+      ],
+      "note": "All14pages read:all six family narratives, five raster-only figures including embedded legends, TablesS1/S3. Raster figures pp8–12 read visually; layout alone omits them."
+    },
+    {
+      "id": "figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 18,
+      "extent_source_id": "published",
+      "extent_evidence": [
+        {
+          "source_id": "published",
+          "locator": "A–R:all six pedigrees,oral/facial/digital photos and MRIs; family6 mother carrier and patient8 hemizygote."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 18,
+          "mode": "text",
+          "source_id": "published",
+          "locator": "A–R:all six pedigrees,oral/facial/digital photos and MRIs; family6 mother carrier and patient8 hemizygote."
+        },
+        {
+          "start": 1,
+          "end": 18,
+          "mode": "pixels",
+          "source_id": "published_page8",
+          "locator": "A–R:all six pedigrees,oral/facial/digital photos and MRIs; family6 mother carrier and patient8 hemizygote."
+        }
+      ],
+      "note": "A–R:all six pedigrees,oral/facial/digital photos and MRIs; family6 mother carrier and patient8 hemizygote."
+    },
+    {
+      "id": "figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 3,
+      "extent_source_id": "published",
+      "extent_evidence": [
+        {
+          "source_id": "published",
+          "locator": "A–C:patient1/control microscopy and cilia-length barplot; not a patient8 assay. Caption describes percentage while axis is length in micrometres; no new quantitative inference."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 3,
+          "mode": "text",
+          "source_id": "published",
+          "locator": "A–C:patient1/control microscopy and cilia-length barplot; not a patient8 assay. Caption describes percentage while axis is length in micrometres; no new quantitative inference."
+        },
+        {
+          "start": 1,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "published_page9",
+          "locator": "A–C:patient1/control microscopy and cilia-length barplot; not a patient8 assay. Caption describes percentage while axis is length in micrometres; no new quantitative inference."
+        }
+      ],
+      "note": "A–C:patient1/control microscopy and cilia-length barplot; not a patient8 assay. Caption describes percentage while axis is length in micrometres; no new quantitative inference."
+    },
+    {
+      "id": "figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 1,
+      "extent_source_id": "published",
+      "extent_evidence": [
+        {
+          "source_id": "published",
+          "locator": "Entire heatmap,all29rows,genotype/MIG/intron-type legends and caption."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "published",
+          "locator": "Entire heatmap,all29rows,genotype/MIG/intron-type legends and caption."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "published_page10",
+          "locator": "Entire heatmap,all29rows,genotype/MIG/intron-type legends and caption."
+        }
+      ],
+      "note": "Entire heatmap,all29rows,genotype/MIG/intron-type legends and caption."
+    },
+    {
+      "id": "figureS1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 3,
+      "extent_source_id": "supplement",
+      "extent_evidence": [
+        {
+          "source_id": "supplement",
+          "locator": "A–C:all heatmap rows,columns,legends and full raster caption; fibroblast53introns,LCL31,overlap23 as authors report."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 3,
+          "mode": "text",
+          "source_id": "supplement",
+          "locator": "A–C:all heatmap rows,columns,legends and full raster caption; fibroblast53introns,LCL31,overlap23 as authors report."
+        },
+        {
+          "start": 1,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "supplement_page8",
+          "locator": "A–C:all heatmap rows,columns,legends and full raster caption; fibroblast53introns,LCL31,overlap23 as authors report."
+        }
+      ],
+      "note": "A–C:all heatmap rows,columns,legends and full raster caption; fibroblast53introns,LCL31,overlap23 as authors report."
+    },
+    {
+      "id": "figureS2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 1,
+      "extent_source_id": "supplement",
+      "extent_evidence": [
+        {
+          "source_id": "supplement",
+          "locator": "All labeled gel panels/controls and full caption; authors explicitly call RT-PCR nonquantitative."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supplement",
+          "locator": "All labeled gel panels/controls and full caption; authors explicitly call RT-PCR nonquantitative."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supplement_page9",
+          "locator": "All labeled gel panels/controls and full caption; authors explicitly call RT-PCR nonquantitative."
+        }
+      ],
+      "note": "All labeled gel panels/controls and full caption; authors explicitly call RT-PCR nonquantitative."
+    },
+    {
+      "id": "figureS3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 2,
+      "extent_source_id": "supplement",
+      "extent_evidence": [
+        {
+          "source_id": "supplement",
+          "locator": "A–B:complete gel,ladder,labels and splice diagram/caption."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "text",
+          "source_id": "supplement",
+          "locator": "A–B:complete gel,ladder,labels and splice diagram/caption."
+        },
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "supplement_page10",
+          "locator": "A–B:complete gel,ladder,labels and splice diagram/caption."
+        }
+      ],
+      "note": "A–B:complete gel,ladder,labels and splice diagram/caption."
+    },
+    {
+      "id": "figureS4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 1,
+      "extent_source_id": "supplement",
+      "extent_evidence": [
+        {
+          "source_id": "supplement",
+          "locator": "Whole volcano plot,labels,legend,axes and caption."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supplement",
+          "locator": "Whole volcano plot,labels,legend,axes and caption."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supplement_page11",
+          "locator": "Whole volcano plot,labels,legend,axes and caption."
+        }
+      ],
+      "note": "Whole volcano plot,labels,legend,axes and caption."
+    },
+    {
+      "id": "figureS5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "panels",
+      "unit_count": 2,
+      "extent_source_id": "supplement",
+      "extent_evidence": [
+        {
+          "source_id": "supplement",
+          "locator": "A–B:transcript/read tracks and expression plot,complete caption; apparent short-transcript overexpression described as counting artefact."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "text",
+          "source_id": "supplement",
+          "locator": "A–B:transcript/read tracks and expression plot,complete caption; apparent short-transcript overexpression described as counting artefact."
+        },
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "supplement_page12",
+          "locator": "A–B:transcript/read tracks and expression plot,complete caption; apparent short-transcript overexpression described as counting artefact."
+        }
+      ],
+      "note": "A–B:transcript/read tracks and expression plot,complete caption; apparent short-transcript overexpression described as counting artefact."
+    },
+    {
+      "id": "table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 3,
+      "extent_source_id": "published",
+      "extent_evidence": [
+        {
+          "source_id": "published",
+          "locator": "Table1 pp5–7, all columns/rows/footnotes read, including Family6 Patient8."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 3,
+          "mode": "text",
+          "source_id": "published",
+          "locator": "Table1 allpp5–7."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "published_page5",
+          "locator": "Table1 continuation p5,allcells."
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "published_page6",
+          "locator": "Table1 continuation p6,allcells."
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "published_page7",
+          "locator": "Table1 continuation p7,allcells."
+        }
+      ],
+      "note": "Table1 pp5–7, all columns/rows/footnotes read, including Family6 Patient8."
+    },
+    {
+      "id": "tableS1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "supplement",
+      "extent_evidence": [
+        {
+          "source_id": "supplement",
+          "locator": "tableS1,entirep13,allrows/headers;source reading only."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supplement",
+          "locator": "tableS1,entirep13,allrows/headers;source reading only."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supplement_page13",
+          "locator": "tableS1,entirep13,allrows/headers;source reading only."
+        }
+      ],
+      "note": "tableS1,entirep13,allrows/headers;source reading only."
+    },
+    {
+      "id": "tableS3",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "supplement",
+      "extent_evidence": [
+        {
+          "source_id": "supplement",
+          "locator": "tableS3,entirep14,allrows/headers;source reading only."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "supplement",
+          "locator": "tableS3,entirep14,allrows/headers;source reading only."
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supplement_page14",
+          "locator": "tableS3,entirep14,allrows/headers;source reading only."
+        }
+      ],
+      "note": "tableS3,entirep14,allrows/headers;source reading only."
+    },
+    {
+      "id": "tableS2",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "data",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 703,
+      "extent_source_id": "tableS2",
+      "extent_evidence": [
+        {
+          "source_id": "tableS2",
+          "locator": "Sheet1 rows1–703, columnsA:G. A1:G1 merged title,A2 header,A3:A702=700 gene-ID cells,A703 blank; B:G blank. All values personally read; no biological interpretations inferred."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 703,
+          "mode": "data",
+          "source_id": "tableS2",
+          "locator": "All Sheet1 A1:G703 values read via coordinate-preserving extraction."
+        },
+        {
+          "start": 1,
+          "end": 180,
+          "mode": "pixels",
+          "source_id": "tableS2_rows1",
+          "locator": "Entire derivative cell view rows1–180; all original cell coordinates retained."
+        },
+        {
+          "start": 181,
+          "end": 360,
+          "mode": "pixels",
+          "source_id": "tableS2_rows181",
+          "locator": "Entire derivative cell view rows181–360; all original cell coordinates retained."
+        },
+        {
+          "start": 361,
+          "end": 540,
+          "mode": "pixels",
+          "source_id": "tableS2_rows361",
+          "locator": "Entire derivative cell view rows361–540; all original cell coordinates retained."
+        },
+        {
+          "start": 541,
+          "end": 703,
+          "mode": "pixels",
+          "source_id": "tableS2_rows541",
+          "locator": "Entire derivative cell view rows541–703; all original cell coordinates retained."
+        }
+      ],
+      "note": "Sheet1 rows1–703, columnsA:G. A1:G1 merged title,A2 header,A3:A702=700 gene-ID cells,A703 blank; B:G blank. All values personally read; no biological interpretations inferred."
+    },
+    {
+      "id": "supplement_workbook",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "items",
+      "unit_count": 703,
+      "extent_source_id": "tableS2",
+      "extent_evidence": [
+        {
+          "source_id": "tableS2",
+          "locator": "Entire sole sheet A1:G703,as recorded under TableS2; formatting-only blank final row included."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 703,
+          "mode": "data",
+          "source_id": "tableS2",
+          "locator": "Entire sole sheet A1:G703,as recorded under TableS2; formatting-only blank final row included."
+        }
+      ],
+      "note": "Entire sole sheet A1:G703,as recorded under TableS2; formatting-only blank final row included."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/ZRSR2/PMID_38158857_Family_6_PATIENT_8.json",
+      "packet_sha256": "a20c6e0886d7cda08aeba615fc4b7cea158a1a7c77eac6e23873b6fd6add49d9",
+      "case_id": "TC_a737ed7bb8a8e37c",
+      "role": "selected",
+      "packet_subject_id": "Family 6 PATIENT 8",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Actual source-context packet read in full, including all70phenotypes, disease/onset,subject and entire allele/interpretation. Omitted findings are not explicit negative examinations. Exact OMIM XXI label and packet VCF normalization are not established by this publication."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Family6 Patient8 is the 13-month-old male; prenatal ventriculomegaly and horseshoe kidney at22weeks match packet age/sex/onset.",
+        "evidence": [
+          {
+            "source_id": "published",
+            "locator": "Table1pp5–7;Supplementary data Family6pp6–7."
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Patient8 carries hemizygous ZRSR2 NM_005089.4:c.1211_1212del,NP_005080.1:p.(Gly404GlufsTer23);Table1 gives NC_000023.11:g.15823004_15823005del.",
+        "evidence": [
+          {
+            "source_id": "published",
+            "locator": "Table1p5;Resultsp8–9."
+          }
+        ],
+        "limitations": [
+          "Family6 supplement writes transcript.3;mainTable1 uses.4."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Variant is maternally inherited; family6 mother is heterozygous. Affected maternal uncle is not genotyped and was excluded; grandmother unavailable.",
+        "evidence": [
+          {
+            "source_id": "published",
+            "locator": "Figure1Ap8;Resultspp8–9;SupplementFamily6pp6–7."
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Phase not applicable:single hemizygous X-linked allele; no compound-heterozygous phase claim.",
+        "evidence": [
+          {
+            "source_id": "published",
+            "locator": "Table1p5;Figure1Ap8."
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors attribute a novel X-linked recessive OFD syndrome to terminal-exon ZRSR2 variants. Patient8 allele supported by clinical/segregation correspondence; functional studies tested patient1 with the other frameshift. Formal OMIM301132/XXI naming and an independently applied ACMG classification are not established here.",
+        "evidence": [
+          {
+            "source_id": "published",
+            "locator": "Resultspp8–11;Discussionpp11–13;SupplementFamily6pp6–7."
+          }
+        ],
+        "limitations": [
+          "Source correspondence only; not clinical validation or a treatment inference."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Every packet phenotype compared with Table1 and Family6 narrative. Most asserted exclusions are not explicitly examined; several positive HPO terms add specificity. Packet also omits documented macrocrania and groove under lower lip.",
+        "evidence": [
+          {
+            "source_id": "published",
+            "locator": "Table1pp5–7;SupplementFamily6pp6–7."
+          }
+        ],
+        "limitations": [
+          "Every packet phenotype compared with Table1 and Family6 narrative. Most asserted exclusions are not explicitly examined; several positive HPO terms add specificity. Packet also omits documented macrocrania and groove under lower lip."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1211_1212del_ZRSR2_NM_005089v4",
+            "geneContext": {
+              "valueId": "HGNC:23019",
+              "symbol": "ZRSR2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_005089.4:c.1211_1212del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000023.11:g.15823004_15823005del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_005080.1:p.(Gly404GlufsTer23)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chrX",
+              "pos": 15823000,
+              "ref": "AGG",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000134",
+              "label": "hemizygous"
+            }
+          },
+          "snapshot_sha256": "efde894ad427220ec82cd296905b8317057cb0e8b4a6be3ed925cb0a6ed9bf8a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Gene,hemizygosity and all three HGVS expressions match mainTable1. Exact packet VCF chrX:15823000 AGG>A is not printed; equivalence to the HGVS deletion at15823004–15823005 would require reference-sequence normalization and is not independently established here.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1p5;Resultspp8–9;SupplementFamily6p6."
+              }
+            ],
+            "limitations": [
+              "Do not infer contradiction solely from shifted representation in a repeat."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000835",
+              "label": "Adrenal hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "081824deaf3032f1e76e623375ab7e192a05466888a029ea9e542fd38e2a07dd",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Adrenal hypoplasia: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Adrenal hypoplasia: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012287",
+              "label": "Hypothalamic luteinizing hormone-releasing hormone deficiency"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "07e18a8e37184b538781607a21ec35c02086faa6ef4872b34a19a8f25f6af324",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypothalamic luteinizing hormone-releasing hormone deficiency: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Hypothalamic luteinizing hormone-releasing hormone deficiency: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011748",
+              "label": "Adrenocorticotropic hormone deficiency"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "54124469a8ec72924e4283dc822a7831a77b4b9208663a3c385f948462069732",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Adrenocorticotropic hormone deficiency: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Adrenocorticotropic hormone deficiency: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011755",
+              "label": "Ectopic posterior pituitary"
+            }
+          },
+          "snapshot_sha256": "2cb82fd28970c8dba9901fb18e3302c5c2c51dad8271802804dab75f8ccdaff3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ectopic posterior pituitary on MRI.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034323",
+              "label": "Reduced circulating growth hormone concentration"
+            }
+          },
+          "snapshot_sha256": "12853bfd6ae42664b59f51b3825a8916bf25a53db53fd136768a1cec58357ba4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "GH deficiency is explicit,but the specific circulating-hormone measurement is not reported.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "GH deficiency is explicit,but the specific circulating-hormone measurement is not reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030341",
+              "label": "Decreased circulating follicle stimulating hormone concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "23d5fcd3a5e2d291345a0a727939d508a777935d6a1d63694a3cd071a6ba351b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Decreased circulating follicle stimulating hormone concentration: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Decreased circulating follicle stimulating hormone concentration: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030344",
+              "label": "Decreased circulating luteinizing hormone level"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "616703e6d5790b1afaadd128846efdcd5d7ef662db29edf1a240e2aa38460813",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Decreased circulating luteinizing hormone level: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Decreased circulating luteinizing hormone level: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0031098",
+              "label": "Decreased thyroid-stimulating hormone level"
+            }
+          },
+          "snapshot_sha256": "72370c6a94228aab518f3c66b82cb4b7b848329ddd91f55de0387316cf40cf47",
+          "assessment": {
+            "status": "qualified",
+            "statement": "TSH deficiency is explicit,but no patient8 serum value is reported.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "TSH deficiency is explicit,but no patient8 serum value is reported."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010952",
+              "label": "Mild fetal ventriculomegaly"
+            }
+          },
+          "snapshot_sha256": "6c0b4a22812495bd683615110b2629eaba9859e13d34ed0c0b0b234de98bc815",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Fetal dilated ventricles at22weeks are explicit; mild severity is not specified.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Fetal dilated ventricles at22weeks are explicit; mild severity is not specified."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001511",
+              "label": "Intrauterine growth retardation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "253267a47ab1d0b57c991235377b32dc3cd8d0352aad3c4433b3eebadfd3dcf4",
+          "assessment": {
+            "status": "supported",
+            "statement": "IUGR explicitly no in Table1.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001518",
+              "label": "Small for gestational age"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e79c13790bc8d480693746366525308673048c35473da9a271e74fbcaeeffb26",
+          "assessment": {
+            "status": "supported",
+            "statement": "Term birth weight3965g(p95),length50cm(p50),not small for gestational age.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009890",
+              "label": "High anterior hairline"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6ed393200bb72c9baaa97f2cbd3dba8efb536a27478f272c8f513f203b9fba6c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "High anterior hairline: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "High anterior hairline: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000294",
+              "label": "Low anterior hairline"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8af816b8704a744ac4cc009db8c3fe2e5d8c9e9e1ef94ff8aafdb8f2e79f625f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Low anterior hairline: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Low anterior hairline: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001629",
+              "label": "Ventricular septal defect"
+            }
+          },
+          "snapshot_sha256": "e2caa25def18bdca7d13d84964ed1a0777e161da97c9d66f2b9e73e44ac92c47",
+          "assessment": {
+            "status": "supported",
+            "statement": "Ventricular septal defect explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009439",
+              "label": "Short middle phalanx of the 3rd finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5ea69d139518257a6b968530888bc594292307c86b410d940848032242e88aca",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short middle phalanx of the 3rd finger: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Short middle phalanx of the 3rd finger: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009577",
+              "label": "Short middle phalanx of the 2nd finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cfc01eb90b20d7c4486e50e6bdc82550f31f27635f182dd30341ce15cb0ef185",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short middle phalanx of the 2nd finger: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Short middle phalanx of the 2nd finger: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009295",
+              "label": "Short middle phalanx of the 4th finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ebbf46bcc8a27fbc4cc1dd0f67c511919677653bc970e25e1e3fae9988714f7e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short middle phalanx of the 4th finger: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Short middle phalanx of the 4th finger: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001841",
+              "label": "Preaxial foot polydactyly"
+            }
+          },
+          "snapshot_sha256": "fbc4324d089451f7584d4efd0bba0a07d00e4ba4647ae5f5eaaa1ab7d77fcc2d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Bilateral hallux duplication supports preaxial foot polydactyly.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008115",
+              "label": "Clinodactyly of the 3rd toe"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d3cb4d56d5a479b6308105e692abdc0035be7ab5b91f0464035d5916a535d770",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Clinodactyly of the 3rd toe: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Clinodactyly of the 3rd toe: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011918",
+              "label": "Clinodactyly of the 4th toe"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "51d73690ea7843d97530d88069589e4c8664b30146edfd7c5c8866e29654bed0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Clinodactyly of the 4th toe: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Clinodactyly of the 4th toe: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005824",
+              "label": "Clinodactyly of the 2nd toe"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "90816ad3af8b796ed8aaa357e86624c8edf2c4a79fe3112b427c401461c72d46",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Clinodactyly of the 2nd toe: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Clinodactyly of the 2nd toe: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001159",
+              "label": "Syndactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daad0d477d85856268a78cb17b0874078f0db733274eb2391fcb8f5026eeb784",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Syndactyly: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Syndactyly: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001177",
+              "label": "Preaxial hand polydactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2f929f9b56d0a37325febd98b8af1b124295587f90c0c180aa3f85242e82d674",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Preaxial hand polydactyly: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Preaxial hand polydactyly: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004209",
+              "label": "Clinodactyly of the 5th finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5f1bd4668fec817d68730fc2af210eb8407c5bc21a9de9806444d6757420600b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Clinodactyly of the 5th finger: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Clinodactyly of the 5th finger: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001162",
+              "label": "Postaxial hand polydactyly"
+            }
+          },
+          "snapshot_sha256": "62160df025e3d27e94fadec5f727a8c0747355f6967a3088c504cf77c8d28af6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Bilateral postaxial hand polydactyly explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001156",
+              "label": "Brachydactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "87bce5488a94b3e83340bbfd84d6e457048e37b4d24ce1841817619e98f2888f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Brachydactyly: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Brachydactyly: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be809d419558367f5a8d26c6e7b96d9d348e8895370525fa5dc014af31b8cced",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Micrognathia: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Micrognathia: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000303",
+              "label": "Mandibular prognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9686a6ed16020d67e61eb736722e8206137fea9544009c298158de5e4956e614",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Mandibular prognathia: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Mandibular prognathia: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010538",
+              "label": "Small sella turcica"
+            }
+          },
+          "snapshot_sha256": "3c4f9a1bfb32008c03ea84547db7ba767309b605c04e7fcecf824f3cc4044851",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoplasia of sella turcica on MRI.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002007",
+              "label": "Frontal bossing"
+            }
+          },
+          "snapshot_sha256": "813330582cf485d1426c57a251646392c4f708fc2a4749f2937d2d5153f593d3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Frontal bossing in Table1.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011451",
+              "label": "Primary microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b50f907dbbda956175db165f70b817f97c363cfca108b485a31dbcfe6d08c66",
+          "assessment": {
+            "status": "supported",
+            "statement": "Birth head circumference37.5cm(p98),not primary microcephaly.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005484",
+              "label": "Secondary microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "59000c606fae1c57a160d5f9057589767db537dc6052f4407f8587b76a7d4fd7",
+          "assessment": {
+            "status": "supported",
+            "statement": "At13months head circumference+1.2SD; excludes microcephaly at this assessment only.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000369",
+              "label": "Low-set ears"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ea3c99f77d325f2810bba05cb968302cbc1008c58ed25bc0410c8d56e3480627",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Low-set ears: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Low-set ears: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000365",
+              "label": "Hearing impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f5217f5bb3ce68d4e4ca41ccfd1243869f4272d9be7d9c3101fba1c01a0df407",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hearing impairment: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Hearing impairment: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000588",
+              "label": "Optic disc coloboma"
+            }
+          },
+          "snapshot_sha256": "c29c3a920123f969e5adcdafff1a9bc36b1f192ccbd8eba3baa0847aef617f43",
+          "assessment": {
+            "status": "supported",
+            "statement": "Optic-disc coloboma explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000568",
+              "label": "Microphthalmia"
+            }
+          },
+          "snapshot_sha256": "b7fb2b77e031b9848280a002f8975db5e304e1518856a492c1738d5150eb21a7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Bilateral microphthalmia explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c75e654012c14dea90453d61fde221f4dca1c2729c3ea61db1e002c4f5fd16eb",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Hypertelorism: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Hypertelorism: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000486",
+              "label": "Strabismus"
+            }
+          },
+          "snapshot_sha256": "7bc8706c26de748aeefcd531789677954b526ba4939cb782fc6a07e22f22106b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Squint of left eye supports strabismus.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            }
+          },
+          "snapshot_sha256": "54464f016709001622b86a345d70ba17dab8e162cf855064c192bd2f3c44364b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Upper-eyelid ptosis explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/39",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Seizure: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Seizure: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/40",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000739",
+              "label": "Anxiety"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7f8a7a0cca4a8c7477c78119e53f28dfec1a1e3555254211a648ac38e7798337",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Anxiety: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Anxiety: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/41",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1 developmental delay yes;mainp8 includes patient8 among mild global delay cases.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/42",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033128",
+              "label": "Delayed ability to crawl"
+            }
+          },
+          "snapshot_sha256": "a7b2386d9f71ccc7557647e0dcfbd22aed24d13e8a81d1210301a6696cf8b7f7",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Motor delay with rolling/crawling at13months is explicit; age at first crawling is not given.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Motor delay with rolling/crawling at13months is explicit; age at first crawling is not given."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/43",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006956",
+              "label": "Lateral ventricle dilatation"
+            }
+          },
+          "snapshot_sha256": "cd961766ca2ef2f6037a2ea94881b6bac79a226df6093d6826f32082072f571a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Enlarged lateral ventricles explicitly reported on MRI.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/44",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000054",
+              "label": "Micropenis"
+            }
+          },
+          "snapshot_sha256": "ed0139ffa59a5039758ba62c41b229a1b24319afcc23b76960eeb83b76aaa19a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Micropenis explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/45",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000046",
+              "label": "Small scrotum"
+            }
+          },
+          "snapshot_sha256": "270f428c2c2c8962426b64d6a31cb7d65dec63ab7042095e037eb63f4dee0728",
+          "assessment": {
+            "status": "supported",
+            "statement": "Small scrotum in Table1.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/46",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008689",
+              "label": "Bilateral cryptorchidism"
+            }
+          },
+          "snapshot_sha256": "a5f08b46f187a76f3784562a10bed9db6be5d99c836c227c79c22845e615e595",
+          "assessment": {
+            "status": "supported",
+            "statement": "Bilateral undescended testes in Table1.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/47",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012741",
+              "label": "Unilateral cryptorchidism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d623464e2b395773ab01924aafc2bd70941911dd65ac67bee9bfbc6a041ada08",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Bilateral cryptorchidism is explicit; exclusion of unilateral disease is a semantic coding distinction,not a separate negative examination.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Bilateral cryptorchidism is explicit; exclusion of unilateral disease is a semantic coding distinction,not a separate negative examination."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/48",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033733",
+              "label": "Low-grade vesicoureteral reflux"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bbecdc803ae3b713ec327a87014cea72f9a9c3496699b1a63b21c63911a56844",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Low-grade vesicoureteral reflux: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Low-grade vesicoureteral reflux: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/49",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000085",
+              "label": "Horseshoe kidney"
+            }
+          },
+          "snapshot_sha256": "48ce06dfb221b52e5fecffa44ee82381610a3e388b41fca9b901a02beb12d34b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Horseshoe kidney diagnosed prenatally and postnatally.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/50",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009099",
+              "label": "Median cleft palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c49e2c8d04a44634b4ff08243468be034609007db9852fba5ee9fad5edd49065",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Median cleft palate: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Median cleft palate: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/51",
+          "snapshot": {
+            "type": {
+              "id": "HP:5201016",
+              "label": "Submucous cleft palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "71ece1a5c5ee9e51c93b8f6f0a7745278fdc93dcbea85671f1130aa4355396c9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Submucous cleft palate: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Submucous cleft palate: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/52",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012368",
+              "label": "Flat face"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d919af8dc8d99c9470d31882e2fc3240a3290f5e1e17c87116dec62066c40e65",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Flat face: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Flat face: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/53",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000180",
+              "label": "Lobulated tongue"
+            }
+          },
+          "snapshot_sha256": "db96b6da129bb8d6837a528546929b3d3bc69e6efd17f0573be8377aef9494a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Lobulated tongue explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/54",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009084",
+              "label": "Midline notch of upper alveolar ridge"
+            }
+          },
+          "snapshot_sha256": "b8b83985995b447fdd1a729fe9022e7f462b8c86c8a700a56b3a133c93b95084",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Alveolar notch/indentation of gums is explicit; upper and midline localization is not specified.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Alveolar notch/indentation of gums is explicit; upper and midline localization is not specified."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/55",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000161",
+              "label": "Median cleft upper lip"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b1b76654b4d2d8aba3c0d319c81f9b7f705d7d07b3eb5d381b9c55ef179ec1ad",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Median cleft upper lip: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Median cleft upper lip: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/56",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006315",
+              "label": "Solitary median maxillary central incisor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ce2d1676f573e12ef0fdcb47f48f1cd89dd4b9bb456a507532529ae87acb2181",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Solitary median maxillary central incisor: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Solitary median maxillary central incisor: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/57",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001592",
+              "label": "Selective tooth agenesis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0e1db1b3b78ffcba008da1e04a0fe6550a31746a24ecec01a11b5204b76c1224",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Selective tooth agenesis: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Selective tooth agenesis: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/58",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000677",
+              "label": "Oligodontia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0aa154c84fa847823beca8e1485d94e90e04efcc2761c3f7a1fef6f0a0c8b220",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Oligodontia: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Oligodontia: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/59",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000189",
+              "label": "Narrow palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c628e041da0ee73c6f524629747df96a8f5759deb3f46f3e603f7948c91eb116",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Narrow palate: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Narrow palate: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/60",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3a127a8dbb9cbee1edd518029e0ba016d63f5c393adf2c3598edc1e619b74b4f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "High palate: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "High palate: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/61",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000191",
+              "label": "Accessory oral frenulum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ae64365b76fb2d6f67efe9d0ef295b64f92cf8fc2c584359e0caab995a2b6d1f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Accessory oral frenulum: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Accessory oral frenulum: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/62",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000337",
+              "label": "Broad forehead"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c5d67076a702dab5d480cfe10561c9b7b83d17e4a0cf74fed962583043cc41ac",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Broad forehead: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Broad forehead: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/63",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000348",
+              "label": "High forehead"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9bd0f18bb0f324dcb8154763ae8ac6ea384b27e32b435d7bcfd5ec411f5faba4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "High forehead: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "High forehead: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/64",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000430",
+              "label": "Underdeveloped nasal alae"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0374045bdef2a26b5a8db404cd591a9b89bea09d73b47b23f5d627c8f5abe0db",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Underdeveloped nasal alae: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Underdeveloped nasal alae: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/65",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000452",
+              "label": "Choanal stenosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "16442b4fa8b68edd874640e3ca7ab9042a9058ba17157f21829012bab00bb552",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Choanal stenosis: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Choanal stenosis: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/66",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005280",
+              "label": "Depressed nasal bridge"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "21fe9b14fb5b68f364eb1048773ec5d9f37599cabd6f77076884d98d07dd8fb0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Depressed nasal bridge: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Depressed nasal bridge: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/67",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003196",
+              "label": "Short nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "50f17182f8fb434821ba8aa18ce8eddddb27829117b2805435cb39853ee63f13",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Short nose: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Short nose: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/68",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030815",
+              "label": "Lipoma of the tongue"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8ba6623d0d1a61648406ca020504721464811e1616b08fa8d391024becd32df8",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Lipoma of the tongue: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": [
+              "Lipoma of the tongue: packet asserts exclusion,but Patient8 Table1 and Family6 narrative do not explicitly establish this negative. Nonmention is not absence."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/69",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011802",
+              "label": "Hamartoma of tongue"
+            }
+          },
+          "snapshot_sha256": "5dc7f83e7e70fb5de6a0ab362a64d9f12925d0234782066a6e5e8eab32bc027c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Tongue hamartoma explicitly reported.",
+            "evidence": [
+              {
+                "source_id": "published",
+                "locator": "Table1pp5–7,Family6 Patient8 column;Supplementary data Family6pp6–7."
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [
+    {
+      "component_id": null,
+      "status": "resolved",
+      "detail": "Initial non-UI publisher403 superseded by parent-held public Open Archive originals. All original bytes/hashes verified and all identified components personally read. No UI or attestation operated by successor.",
+      "evidence": [
+        {
+          "source_id": "parent_receipt",
+          "locator": "All3files verified."
+        },
+        {
+          "source_id": "published",
+          "locator": "All16pages"
+        },
+        {
+          "source_id": "supplement",
+          "locator": "All14pages"
+        },
+        {
+          "source_id": "tableS2",
+          "locator": "AllA1:G703"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Post-inference nonblinded source correspondence only; no clinical truth established.",
+    "All51reference entries read; cited publications were not separately read by this review.",
+    "Abstract/cohort totals and female-carrier counts differ between sections; patient8 correspondence uses explicit Table1 and Family6 narrative. No new biological inference from functional panels.",
+    "Predecessor Codex-reader-4 canonical SHA256 406aea2ab11d0eb7ac01ef0fcc62753454603939b5129063d9360a201d848824 preserved byte-for-byte. Its template-only method and aggregate_only exposure remain attributable to that predecessor;no inherited fulltext reading claimed. Logical reader-4 ownership and registry unchanged."
+  ]
+}

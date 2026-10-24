@@ -1,0 +1,4868 @@
+{
+  "schema_version": 1,
+  "pmid": "35052493",
+  "title": "Genotype-Phenotype Comparison in POGZ-Related Neurodevelopmental Disorders by Using Clinical Scoring",
+  "reviewer": {
+    "id": "reader-3-continuation-20261024",
+    "reviewed_at_utc": "2026-10-24T19:33:20.221422+00:00",
+    "method": "Personally read the full 371-line main text, all four figures in original pixels and captions, all four complete tables including nine wrapped table pages, and every nonempty cell/blank convention/formula/cached value in all six supplementary workbook sheets. Read workbook structure, original font/fill/number-format groups and every merged range; additionally inspected all four full colored Sheet D pages. Corrected the Table 2 reading derivative header alignment and personally re-read its full corrected page. Full original title/PMID/DOI identity checked. Personally read both assigned selected packets in full, every allele and all 173 phenotype assertions; there are no assigned alternates. Prior acquisition/preparation is not personal reading. This new review spans the disk-full interruption; no canonical record was written until storage recovered. No target-case outcome files consulted."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Required HANDOFF reading exposed aggregate history and a historical public-control HG002/FGFR2 case-specific rank. No target-case inference ranks, inference-output files or benchmark outcome summaries consulted. This review is not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "fd40b32ac114ae718ad62cf97f71c9cc953b3a246255b159996bd3ca7ab64183",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "xml",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/main.xml",
+      "sha256": "c8e47a0c9079e2296438eb6844def1829b6cacaefc2be5abd89677757888d2c9",
+      "kind": "xml",
+      "description": "Primary full article XML; bibliographic identity, complete body and supplement inventory"
+    },
+    {
+      "id": "maintext",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/main.complete.txt",
+      "sha256": "91d186dce582f008fda5065814770a1b11b1bd3effeefbde945be9962af78eb0",
+      "kind": "text",
+      "description": "371 lines personally read, with previously truncated table region re-read in smaller chunks"
+    },
+    {
+      "id": "zip",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/cloud/PMC8775410.1/genes-13-00154-s001.zip",
+      "sha256": "3ff9e7064c31eae85cec34af042e9d9cb5270765054bac6647c7285d25f8248e",
+      "kind": "data",
+      "description": "Original single-file supplement archive"
+    },
+    {
+      "id": "workbook",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/supplement.xlsx",
+      "sha256": "1d1ba77a86d7fceb7ed35925a11499c24c152007a0566b4d9d24c0e572be0dcb",
+      "kind": "data",
+      "description": "Original workbook bytes extracted from ZIP; six sheets fully read as data, formulas and formatting metadata"
+    },
+    {
+      "id": "cells",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/workbook-exact-cells.json",
+      "sha256": "481591bf4a5d59e5b13ee756270b1b8262b24ad3f73e09bd5c5943f655524700",
+      "kind": "data",
+      "description": "Exact complete nonempty extents with blank cells and style maps preserved"
+    },
+    {
+      "id": "structure",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/workbook-structure.json",
+      "sha256": "fde033144d47b295ff4df50bb4733cec481b6bed444425aeaa918ec24d5fc42d",
+      "kind": "data",
+      "description": "All six sheet extents, formulas, hidden-state, images/charts/comments inventory"
+    },
+    {
+      "id": "tablecells",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-tables-exact-cells.json",
+      "sha256": "61074359fb1305fa4721384fbc876a4140c7bed9e4747e07e361d3e8319bfb16",
+      "kind": "data",
+      "description": "Original XML table cells, rowspans and colspans"
+    },
+    {
+      "id": "table2pdf",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-2-corrected.pdf",
+      "sha256": "8619889de45c5c09f4a43036a7d1bdd8c72349f0e2d357a72b135084483aa336",
+      "kind": "pdf",
+      "description": "Corrected reading derivative: row 2 has blank severity-column cell under rowspan"
+    },
+    {
+      "id": "table2page",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-2-corrected-1.png",
+      "sha256": "3cca697342cf1ed0756ea5d6e945932aa7038e61a323c73300bdfcf8400a817f",
+      "kind": "image",
+      "description": "Complete corrected Table 2 personally inspected"
+    },
+    {
+      "id": "Dpdf",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-D-format.pdf",
+      "sha256": "4f0772df72b79dd28ecb48e1b7bbab2f4c78e490d64123bf7910b27ed47ffcea",
+      "kind": "pdf",
+      "description": "All 118 rows, original cohort fill colors and annotated merged-cell ranges; all four pages inspected"
+    },
+    {
+      "id": "F1",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/cloud/PMC8775410.1/genes-13-00154-g001.jpg",
+      "sha256": "c7dde610747cced5827d14a6ce86203642a4f45602773b2aab42e9d0f9f139ae",
+      "kind": "image",
+      "description": "Original Figure 1; entire image personally read"
+    },
+    {
+      "id": "F2",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/cloud/PMC8775410.1/genes-13-00154-g002.jpg",
+      "sha256": "91cf3970ee71c3a3ebcd5b609cadadcb3d536c16e6e5865178d2a6530ed871d0",
+      "kind": "image",
+      "description": "Original Figure 2; entire image personally read"
+    },
+    {
+      "id": "F3",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/cloud/PMC8775410.1/genes-13-00154-g003.jpg",
+      "sha256": "bcbe429d6921c789e7a15cd1e29db9720a90a0d192ff804b401895248b4e21bd",
+      "kind": "image",
+      "description": "Original Figure 3; entire image personally read"
+    },
+    {
+      "id": "F4",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/cloud/PMC8775410.1/genes-13-00154-g004.jpg",
+      "sha256": "174b4dd3e82179f0b6628f6fc24a40dfb7e038167b37665c2cde12130ddf6d2e",
+      "kind": "image",
+      "description": "Original Figure 4; entire image personally read"
+    },
+    {
+      "id": "T1pdf",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-1.pdf",
+      "sha256": "0af6ff798c33b143b9f045e8771a94dcdb19a21785c70905d939a3848bcb584f",
+      "kind": "pdf",
+      "description": "Complete wrapped Table 1 reading derivative"
+    },
+    {
+      "id": "T1page1",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-1-page-1.png",
+      "sha256": "4f748b485a2071b7f29e0a448fb82bf6459c16e0c29960e174bde310696eabfd",
+      "kind": "image",
+      "description": "Table 1, entire page 1 personally inspected"
+    },
+    {
+      "id": "T1page2",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-1-page-2.png",
+      "sha256": "e86493de09a03e95c30a381529b5e00c1df6c4cdf30569cef4f6f4646a998c23",
+      "kind": "image",
+      "description": "Table 1, entire page 2 personally inspected"
+    },
+    {
+      "id": "T1page3",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-1-page-3.png",
+      "sha256": "14d0b07b1bde3ff9b822b1fb122e0b5323d0259f10b7667c34d67583d01fb4b7",
+      "kind": "image",
+      "description": "Table 1, entire page 3 personally inspected"
+    },
+    {
+      "id": "T1page4",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-1-page-4.png",
+      "sha256": "97d7c679a7f7741ab676e8b354a3286b32cc4399150f3294ed7905fb2535fdb8",
+      "kind": "image",
+      "description": "Table 1, entire page 4 personally inspected"
+    },
+    {
+      "id": "T1page5",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-1-page-5.png",
+      "sha256": "dbcab8a9182f9628f1f6206be77d9206f3248e27d06777e424dd55641e89bb7e",
+      "kind": "image",
+      "description": "Table 1, entire page 5 personally inspected"
+    },
+    {
+      "id": "T3pdf",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-3.pdf",
+      "sha256": "28fa3b70d2b436ef20e4e1c3486c1e2abee5582aa35341986a26762df1567b94",
+      "kind": "pdf",
+      "description": "Complete wrapped Table 3 reading derivative"
+    },
+    {
+      "id": "T3page1",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-3-page-1.png",
+      "sha256": "8a0072ef8143c274a6af90304f2a368836b0ff811d57b21a009ee7e2f381c10e",
+      "kind": "image",
+      "description": "Table 3, entire page 1 personally inspected"
+    },
+    {
+      "id": "T3page2",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-3-page-2.png",
+      "sha256": "8716fc453a9af5298e19948a80c767abcf6de359b8413caaa74913028e73554f",
+      "kind": "image",
+      "description": "Table 3, entire page 2 personally inspected"
+    },
+    {
+      "id": "T4pdf",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-4.pdf",
+      "sha256": "ff802dcff2e3af46dcf1f1505af0282002649490967791c6d36bf21e8895cbaf",
+      "kind": "pdf",
+      "description": "Complete wrapped Table 4 reading derivative"
+    },
+    {
+      "id": "T4page1",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/main-table-4-page-1.png",
+      "sha256": "3d4836f3911b83597fa79b89adf730c122cdb24c4315c62ae99479107c7d6908",
+      "kind": "image",
+      "description": "Table 4, entire page 1 personally inspected"
+    },
+    {
+      "id": "S1text",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-1.txt",
+      "sha256": "895f4d16d7881f17cb8998f93e281b4a5bc4eeea46dc896c2249670a7a76a302",
+      "kind": "text",
+      "description": "Complete sheet 1 values and original formulas/cached results"
+    },
+    {
+      "id": "S2text",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-2.txt",
+      "sha256": "6931b75b22c13a13421f1e163026752dc55bee4a51cf3bcf281e40f13eead8f5",
+      "kind": "text",
+      "description": "Complete sheet 2 values and original formulas/cached results"
+    },
+    {
+      "id": "S3text",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-3.txt",
+      "sha256": "76c8b55f4c9db2fdcc74ffee63adbf1e1a216d903c20c87b55875117f1d39351",
+      "kind": "text",
+      "description": "Complete sheet 3 values and original formulas/cached results"
+    },
+    {
+      "id": "S4text",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-4.txt",
+      "sha256": "e3dcca67fde156c9451020aef6789da50dc49d7bfcbfed3e94a53cb4643ec3b4",
+      "kind": "text",
+      "description": "Complete sheet 4 values and original formulas/cached results"
+    },
+    {
+      "id": "S5text",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-5.txt",
+      "sha256": "67a184cb1e09ad2c303fb4060116e38080f42b5956ff3b70338356bc0d9aa845",
+      "kind": "text",
+      "description": "Complete sheet 5 values and original formulas/cached results"
+    },
+    {
+      "id": "S6text",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-6.txt",
+      "sha256": "82eb062aaf507b8847be92f95f7ebbb5dc2d58ae536c5cc92567efa2d8eaebfe",
+      "kind": "text",
+      "description": "Complete sheet 6 values and original formulas/cached results"
+    },
+    {
+      "id": "S2sparse",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-2-sparse.txt",
+      "sha256": "d537ab692a3165c7da59ebdef92fc576b910428c6ff3eb2fda134c711313ba65",
+      "kind": "text",
+      "description": "All nonempty cells with coordinates; omitted cells explicitly blank, never negatives; full arrays retained separately"
+    },
+    {
+      "id": "S3sparse",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-3-sparse.txt",
+      "sha256": "fda3e89cb0285626a668aaddb389149f72cd1e21a8810d94e3a95b2f305fb4c7",
+      "kind": "text",
+      "description": "All nonempty cells with coordinates; omitted cells explicitly blank, never negatives; full arrays retained separately"
+    },
+    {
+      "id": "Dpage1",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-D-format-1.png",
+      "sha256": "b62ca4c3475adaca7c045e80bfa2a1769c1fa6ab8ca77006fc474decc0ef47d2",
+      "kind": "image",
+      "description": "Entire Sheet D colored reading page 1 personally inspected"
+    },
+    {
+      "id": "Dpage2",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-D-format-2.png",
+      "sha256": "811d7c9a106dffab019ea77ddcbf141d43d2c01124a3727967df40d6c213a508",
+      "kind": "image",
+      "description": "Entire Sheet D colored reading page 2 personally inspected"
+    },
+    {
+      "id": "Dpage3",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-D-format-3.png",
+      "sha256": "2568d563bc517b81ebb18c8c1e09bf0889ea5710418c0016792f67cc3c886277",
+      "kind": "image",
+      "description": "Entire Sheet D colored reading page 3 personally inspected"
+    },
+    {
+      "id": "Dpage4",
+      "pmid": "35052493",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/35052493/reviewer-3-assets/continuation/sheet-D-format-4.png",
+      "sha256": "ab6297899903ca52edd5b5dc605d8002495f9b4017ab127302e8ed19d585cafe",
+      "kind": "image",
+      "description": "Entire Sheet D colored reading page 4 personally inspected"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Genotype-Phenotype Comparison in POGZ-Related Neurodevelopmental Disorders by Using Clinical Scoring",
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "article-title and article-id: PMID35052493, PMC8775410, DOI10.3390/genes13010154; Genes2022;13:154"
+      }
+    ],
+    "note": "Original XML identity and original figures verified; failed/partial PDF retrieval is not cited as a readable PDF. Source reading used complete XML/text, original image assets and workbook. No browser/native UI."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 4,
+      "table": 4,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "Four fig elements, four table-wrap elements, two duplicate supplementary-material links to genes-13-00154-s001.zip"
+      },
+      {
+        "source_id": "zip",
+        "locator": "ZIP central directory: exactly SUPPLEMENTARY TABLE_REVISED.xlsx; extracted bytes equal original member"
+      },
+      {
+        "source_id": "structure",
+        "locator": "Six visible sheets; no hidden rows/columns, comments, embedded images/charts or conditional formatting"
+      }
+    ],
+    "note": "One unique published supplement containing six sheets A-F, not two supplements. All nonempty content read. Styled trailing blank regions contain no additional observations."
+  },
+  "components": [
+    {
+      "id": "main",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 371,
+      "extent_source_id": "maintext",
+      "extent_evidence": [
+        {
+          "source_id": "maintext",
+          "locator": "Entire 371-line article including references and back matter"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 371,
+          "mode": "text",
+          "source_id": "maintext",
+          "locator": "All sections, clinical descriptions, methods, discussion, captions, declarations and references personally read"
+        }
+      ],
+      "note": "Coverage records only the units and modalities actually read in this continuation."
+    },
+    {
+      "id": "F1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "F1",
+      "extent_evidence": [
+        {
+          "source_id": "F1",
+          "locator": "Entire Figure 1"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "F1",
+          "locator": "All panels/labels/axes read; complete caption read in maintext"
+        }
+      ],
+      "note": "Coverage records only the units and modalities actually read in this continuation."
+    },
+    {
+      "id": "F2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "F2",
+      "extent_evidence": [
+        {
+          "source_id": "F2",
+          "locator": "Entire Figure 2"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "F2",
+          "locator": "All panels/labels/axes read; complete caption read in maintext"
+        }
+      ],
+      "note": "Coverage records only the units and modalities actually read in this continuation."
+    },
+    {
+      "id": "F3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "F3",
+      "extent_evidence": [
+        {
+          "source_id": "F3",
+          "locator": "Entire Figure 3"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "F3",
+          "locator": "All panels/labels/axes read; complete caption read in maintext"
+        }
+      ],
+      "note": "Coverage records only the units and modalities actually read in this continuation."
+    },
+    {
+      "id": "F4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "F4",
+      "extent_evidence": [
+        {
+          "source_id": "F4",
+          "locator": "Entire Figure 4"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "F4",
+          "locator": "All panels/labels/axes read; complete caption read in maintext"
+        }
+      ],
+      "note": "Coverage records only the units and modalities actually read in this continuation."
+    },
+    {
+      "id": "T1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 5,
+      "extent_source_id": "T1pdf",
+      "extent_evidence": [
+        {
+          "source_id": "T1pdf",
+          "locator": "Complete Table 1 reading derivative"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 5,
+          "mode": "text",
+          "source_id": "xml",
+          "locator": "All original Table 1 cells, caption, footnotes and merge metadata"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "T1page1",
+          "locator": "Entire wrapped Table 1 page 1"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "T1page2",
+          "locator": "Entire wrapped Table 1 page 2"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "T1page3",
+          "locator": "Entire wrapped Table 1 page 3"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "T1page4",
+          "locator": "Entire wrapped Table 1 page 4"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "T1page5",
+          "locator": "Entire wrapped Table 1 page 5"
+        }
+      ],
+      "note": "Table 2 uses the corrected header alignment. Main Table 3 bold novel-variant markup separately inspected in original XML; no claim that plain derivative preserved bold. Source text and original cell order retained."
+    },
+    {
+      "id": "T2",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "table2pdf",
+      "extent_evidence": [
+        {
+          "source_id": "table2pdf",
+          "locator": "Complete Table 2 reading derivative"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "xml",
+          "locator": "All original Table 2 cells, caption, footnotes and merge metadata"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table2page",
+          "locator": "Entire wrapped Table 2 page 1"
+        }
+      ],
+      "note": "Table 2 uses the corrected header alignment. Main Table 3 bold novel-variant markup separately inspected in original XML; no claim that plain derivative preserved bold. Source text and original cell order retained."
+    },
+    {
+      "id": "T3",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 2,
+      "extent_source_id": "T3pdf",
+      "extent_evidence": [
+        {
+          "source_id": "T3pdf",
+          "locator": "Complete Table 3 reading derivative"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "text",
+          "source_id": "xml",
+          "locator": "All original Table 3 cells, caption, footnotes and merge metadata"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "T3page1",
+          "locator": "Entire wrapped Table 3 page 1"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "T3page2",
+          "locator": "Entire wrapped Table 3 page 2"
+        }
+      ],
+      "note": "Table 2 uses the corrected header alignment. Main Table 3 bold novel-variant markup separately inspected in original XML; no claim that plain derivative preserved bold. Source text and original cell order retained."
+    },
+    {
+      "id": "T4",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "T4pdf",
+      "extent_evidence": [
+        {
+          "source_id": "T4pdf",
+          "locator": "Complete Table 4 reading derivative"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "xml",
+          "locator": "All original Table 4 cells, caption, footnotes and merge metadata"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "T4page1",
+          "locator": "Entire wrapped Table 4 page 1"
+        }
+      ],
+      "note": "Table 2 uses the corrected header alignment. Main Table 3 bold novel-variant markup separately inspected in original XML; no claim that plain derivative preserved bold. Source text and original cell order retained."
+    },
+    {
+      "id": "supplement",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "data"
+      ],
+      "unit_type": "sheets",
+      "unit_count": 6,
+      "extent_source_id": "workbook",
+      "extent_evidence": [
+        {
+          "source_id": "workbook",
+          "locator": "All six sheets A-F; full nonempty extents and formulas verified"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "data",
+          "source_id": "workbook",
+          "locator": "Sheet 1 A1:N143: every value, original formula and cached result, blank convention, heading/legend and formatting metadata personally read"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "data",
+          "source_id": "workbook",
+          "locator": "Sheet 2 A1:AK142: every value, original formula and cached result, blank convention, heading/legend and formatting metadata personally read"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "data",
+          "source_id": "workbook",
+          "locator": "Sheet 3 A1:BQ144: every value, original formula and cached result, blank convention, heading/legend and formatting metadata personally read"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "data",
+          "source_id": "workbook",
+          "locator": "Sheet 4 A1:J118: every value, original formula and cached result, blank convention, heading/legend and formatting metadata personally read"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "data",
+          "source_id": "workbook",
+          "locator": "Sheet 5 A1:I70: every value, original formula and cached result, blank convention, heading/legend and formatting metadata personally read"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "data",
+          "source_id": "workbook",
+          "locator": "Sheet 6 A1:I117: every value, original formula and cached result, blank convention, heading/legend and formatting metadata personally read"
+        }
+      ],
+      "note": "Data reading was manual from complete cell arrays (A,D,E,F) and complete coordinate-keyed nonempty listings with explicit blank convention (B,C), with formulas listed separately. All 117 cohort columns/rows were read. Source formulas were inspected, not recalculated. In addition to required data coverage, all four Dpdf/Dpage1-4 reading pages were personally inspected. No claim of native spreadsheet UI or all-sheet pixel rendering."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/POGZ/PMID_35052493_individual_L02.json",
+      "packet_sha256": "0a4bfab3ba6034d6255298abd8d249128087fca8c1609b96ec02ff968b7b8b83",
+      "case_id": "TC_2f7e0b4e364b6bcb",
+      "role": "selected",
+      "packet_subject_id": "individual L02",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "No packet file edited; exact snapshots retained. Age-field contradiction and source-specific qualifications are adjudication findings only.",
+        "Source author-reported causal diagnosis and historical database rarity are not independent clinical validation or a current database assertion."
+      ],
+      "patient_identity": {
+        "status": "contradicted",
+        "statement": "L02 patient label, sex and variant match. Packet timeAtLastEncounter is P4Y, but source explicitly gives last follow-up 6.5 years and diagnosis 4 years. The packet places diagnosis age in the last-encounter field; this is an age-field contradiction, not a different-patient finding.",
+        "evidence": [
+          {
+            "source_id": "workbook",
+            "locator": "A_Phenotype of present patients: C2:C9 and column A labels"
+          },
+          {
+            "source_id": "xml",
+            "locator": "Table3 L02 row; Methods2.1/2.2 and Results3.1"
+          }
+        ],
+        "limitations": [
+          "Source follow-up age must not be silently replaced by diagnosis age. Packet snapshot retained unchanged."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Source reports POGZ c.2763del; p.Thr922Leufs*6 for L02, matching packet coding/protein consequences. Table3 gives unversioned NM_015100. The packet additionally asserts NM_015100.4/NP_055915.2, GRCh38 genomic/VCF coordinates and heterozygosity; direct per-patient allele-fraction/zygosity output is not shown.",
+        "evidence": [
+          {
+            "source_id": "workbook",
+            "locator": "A_Phenotype of present patients: C2:C9 and column A labels"
+          },
+          {
+            "source_id": "xml",
+            "locator": "Table3 L02 row; Methods2.1/2.2 and Results3.1"
+          }
+        ],
+        "limitations": [
+          "Coding/protein correspondence supported; transcript versions, genomic left/right normalization and exact VCF representation not independently validated. Dominant de novo disease context is not a printed patient zygosity assay."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "L02 is explicitly reported de novo in Sheet A C6 and Table3. Authors use PM6 rather than PS2.",
+        "evidence": [
+          {
+            "source_id": "workbook",
+            "locator": "A_Phenotype of present patients: C2:C9 and column A labels"
+          },
+          {
+            "source_id": "xml",
+            "locator": "Table3 L02 row; Methods2.1/2.2 and Results3.1"
+          }
+        ],
+        "limitations": [
+          "No parentage-confirmation details or patient/parent electropherograms supplied for this allele; retain author-reported de novo status without upgrading it."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Packet contains one variant in an autosomal dominant POGZ disorder. No second allele requires cis/trans resolution; this does not establish independently measured allele balance or parentage.",
+        "evidence": [
+          {
+            "source_id": "workbook",
+            "locator": "A_Phenotype of present patients: C2:C9 and column A labels"
+          },
+          {
+            "source_id": "xml",
+            "locator": "Table3 L02 row; Methods2.1/2.2 and Results3.1"
+          }
+        ],
+        "limitations": [
+          "No independently measured phase/allele-specific expression data supplied."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors classify L02 variant Pathogenic using PVS1/PM2/PM6/PP3 and attribute the phenotype to POGZ-related White-Sutton syndrome. L02 score31/severity4 and predicted escape from NMD are reported; no L02 RNA/protein experiment establishes that prediction or gain-of-function.",
+        "evidence": [
+          {
+            "source_id": "workbook",
+            "locator": "A_Phenotype of present patients: C2:C9 and column A labels"
+          },
+          {
+            "source_id": "xml",
+            "locator": "Table3 L02 row; Methods2.1/2.2 and Results3.1"
+          },
+          {
+            "source_id": "workbook",
+            "locator": "D rows5/63; E NMD tables/footnotes"
+          },
+          {
+            "source_id": "maintext",
+            "locator": "Discussion: inferred mechanism and retrospective genotype/phenotype comparisons"
+          }
+        ],
+        "limitations": [
+          "Clinical source attribution, not independent ACMG reclassification or clinical truth. Cohort association does not prove the individual mechanism; NMD summary inconsistencies retained below."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "All packet phenotype assertions compared individually with the complete source column; most explicit positives and negatives correspond. Combined facial labels cannot establish several specific findings/negatives. L02 packet also omits duplicated upper collecting system/bilateral ureter ectopy, renal dysplasia, severe hip dysplasia/genu valga/flat feet, amblyopia/poor accommodation and absence of speech at6.5years.",
+        "evidence": [
+          {
+            "source_id": "workbook",
+            "locator": "Sheet A entire column C, all rows1-143 and A-column labels"
+          }
+        ],
+        "limitations": [
+          "Publication phenotyping is not exhaustive. Explicit minus signs support reported absence at assessment, not lifelong absence. Blank cells mean unknown/unreported/not applicable/not done. All later observations must retain source follow-up ages."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c2763del_POGZ_NM_015100v4",
+            "geneContext": {
+              "valueId": "HGNC:18801",
+              "symbol": "POGZ"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_015100.4:c.2763del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000001.11:g.151406276del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_055915.2:p.(Thr922LeufsTer6)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr1",
+              "pos": 151406271,
+              "ref": "TG",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "bdf93a77e94fe89364b6d30092978948b365055a01f33cd7a4e35fb05a1b9b76",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Source reports POGZ c.2763del; p.Thr922Leufs*6 for L02, matching packet coding/protein consequences. Table3 gives unversioned NM_015100. The packet additionally asserts NM_015100.4/NP_055915.2, GRCh38 genomic/VCF coordinates and heterozygosity; direct per-patient allele-fraction/zygosity output is not shown.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients: C2:C9 and column A labels"
+              },
+              {
+                "source_id": "xml",
+                "locator": "Table3 L02 row; Methods2.1/2.2 and Results3.1"
+              }
+            ],
+            "limitations": [
+              "Coding/protein correspondence supported; transcript versions, genomic left/right normalization and exact VCF representation not independently validated. Dominant de novo disease context is not a printed patient zygosity assay."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000322",
+              "label": "Short philtrum"
+            }
+          },
+          "snapshot_sha256": "31dc60ba4822a51976adcce8b0cd492cb2f38e6e88b5e263a3b987c65730924b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C21, Short philtrum, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C21; A21 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000194",
+              "label": "Open mouth"
+            }
+          },
+          "snapshot_sha256": "cd9d77f9feea7adfe7e4e49ee4fe6c1bf75aa3bf30039dc0dd7a9adfd8e0de0d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C26, Open mouth, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C26; A26 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000154",
+              "label": "Wide mouth"
+            }
+          },
+          "snapshot_sha256": "c5b63c68cb940ff7b5c3e879c569a3d0470742907eafb5def0040c2a15e3b51d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C27, Macrostomia, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C27; A27 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000158",
+              "label": "Macroglossia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3c9ebabaa42d6b04eff65899d50ef6e754dca5434dab4d7d154723e59fb74871",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C28, Protrusion of the tongue / macroglossia, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C28; A28 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            }
+          },
+          "snapshot_sha256": "7464dd531646fde4b613619c2d8d042119320ad998e758c0b3296f9a1376e8e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C29, High-arched palate, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C29; A29 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000175",
+              "label": "Cleft palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "957c01067f0f046de0fbc8fce87578a45f7b5f8583352f18e0a3530172ac9c94",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C96, Cleft palate, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C96; A96 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000193",
+              "label": "Bifid uvula"
+            }
+          },
+          "snapshot_sha256": "4d248a199ecd1f64e95eedb8121a606d18e39a28220c64a530194e71c6790f0f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C30, Bifid uvula, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C30; A30 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000303",
+              "label": "Mandibular prognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9686a6ed16020d67e61eb736722e8206137fea9544009c298158de5e4956e614",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C31, Mandibula (prognathia or micro-retrognathia), reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C31; A31 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000278",
+              "label": "Retrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "66dda0282a422dd164068df1af84aa261c849aca4e56fdc28993d0323e42e4c2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C31, Mandibula (prognathia or micro-retrognathia), reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C31; A31 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000307",
+              "label": "Pointed chin"
+            }
+          },
+          "snapshot_sha256": "467d1118c1bdaea65d399f57687317092d698625c5c4133eacbee89e28ff1121",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C32, Pointed chin, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C32; A32 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002714",
+              "label": "Downturned corners of mouth"
+            }
+          },
+          "snapshot_sha256": "8fbdd40f275af16bcb46891e09bc44963a4a02d82471082ab32026da211f9882",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C22, Downturned corners of mouth (triangular/tented), reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C22; A22 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002263",
+              "label": "Exaggerated cupid's bow"
+            }
+          },
+          "snapshot_sha256": "bdbb70c4101a2c552ff62b515e8696c9d7bec4d11c78b14dfbb003be4f50a858",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Sheet A C23, Upper lip (cupid's bow), reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C23; A23 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "Source says upper lip (cupid's bow) positive without explicitly stating exaggerated; specific HPO modifier is an interpretation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000219",
+              "label": "Thin upper lip vermilion"
+            }
+          },
+          "snapshot_sha256": "99c27d160c5710ce25431f2c1160d2daf7fa32c356981881d551b4b815fce314",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C24, Thin vermillion/thin upper lip, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C24; A24 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000232",
+              "label": "Everted lower lip vermilion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9f56d927a6aa99a589ca099968696e0e5d8261b50da9681a9fe66e17887fb278",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C25, Everted upper/lower lip, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C25; A25 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010803",
+              "label": "Everted upper lip vermilion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bcf06b1958161ddf7612cc3c77d3ef5bdca8233c969e93cae65df2f73293da82",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C25, Everted upper/lower lip, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C25; A25 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000369",
+              "label": "Low-set ears"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ea3c99f77d325f2810bba05cb968302cbc1008c58ed25bc0410c8d56e3480627",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C33, Low-set ears, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C33; A33 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000358",
+              "label": "Posteriorly rotated ears"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "eeb77ab977a1bbde81fec6fa59f61309ec237be034a0a6d326df1eaa572bd23e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C34, Posteriorly rotated ears, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C34; A34 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000396",
+              "label": "Overfolded helix"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d6dcf3978423af83263daa6d9bc815a45c38ba44a57ac785a4af45076b48fc00",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C35, Over-folded/abnormally folded helices, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C35; A35 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000341",
+              "label": "Narrow forehead"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "519a4b73e060bc5cab8837d8801ced17116daca10fac8c88776d8cbbd43f8b39",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C11 marks the combined source label 'Broad /high forehead / bitemporal narrowing' positive. It does not separately exclude the packet feature Narrow forehead.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C11; A11 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "A positive combined label cannot establish a negative component."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000337",
+              "label": "Broad forehead"
+            }
+          },
+          "snapshot_sha256": "7807b85461125b852877ebe908d6ab63323c036636d85c907a18bcfc6d5e87f4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "C11 marks combined label 'Broad /high forehead / bitemporal narrowing' positive, consistent with a facial finding but without separately identifying this exact subtype.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C11; A11 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "Source combines alternatives; broad/high/bitemporal and up/down direction must not be silently separated. Figure1 does not supply a clinical per-feature assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C12, Hypertelorism, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C12; A12 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            }
+          },
+          "snapshot_sha256": "8d20831251db00a4a9f41505a640736489915d6d6521fc75535fbcab38213b26",
+          "assessment": {
+            "status": "qualified",
+            "statement": "C13 marks combined label 'Downslanting or upslanting palpebral fissures' positive, consistent with a facial finding but without separately identifying this exact subtype.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C13; A13 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "Source combines alternatives; broad/high/bitemporal and up/down direction must not be silently separated. Figure1 does not supply a clinical per-feature assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000582",
+              "label": "Upslanted palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5867461b798c329bd0bddddb67e84eb665b91c9df85237c30adf17460594bcc0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C13 marks the combined source label 'Downslanting or upslanting palpebral fissures' positive. It does not separately exclude the packet feature Upslanted palpebral fissure.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C13; A13 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "A positive combined label cannot establish a negative component."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000286",
+              "label": "Epicanthus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3d1a3807e547a1db3644b4e3e18feea0a9f55f6f1520aa0e0ea2e761eaa116e4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C14, Epicanthus, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C14; A14 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e033332deff34bfb43d8333aa3e2b1ba4e4dbf229f9098646b172fe5a88ca401",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C15, Ptosis, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C15; A15 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0045075",
+              "label": "Sparse eyebrow"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "04cd612a807048a89e4016ca57dfe68dd2651f64166224bee3ed7117df63857b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C16, High-arched/ sparse eyebrows, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C16; A16 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002553",
+              "label": "Highly arched eyebrow"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4dd37f7f1491e8b6d6f6ae2b332bedc32418adb4446df85a8f55d1958383bc1d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C16, High-arched/ sparse eyebrows, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C16; A16 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000470",
+              "label": "Short neck"
+            }
+          },
+          "snapshot_sha256": "e88928cfbf8d7e28e089178d9d73928540f45c432872026b35683d2e43b5d8ab",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C97, Short neck, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C97; A97 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000540",
+              "label": "Hypermetropia"
+            }
+          },
+          "snapshot_sha256": "65978e30a4b5c9318a331a46ae5f7a13192ad7b370004c0434ef3140b7389ff7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C39, Hypermetropia, reports ' + (right: +6 D  left: +6 D) Amblyopia, poor accommodation  ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C39; A39 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000545",
+              "label": "Myopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cdbdfc9d0104b0a4698b5dc9ddaf3e503f6b3493a8670b367009e0104567bfc3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C38, Myopia, reports ' -                ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C38; A38 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012803",
+              "label": "Anisometropia"
+            }
+          },
+          "snapshot_sha256": "51ca290392e78f1042edb11ec55ba23fb2b5d08568606b56c22651bf7f1886ae",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C40, Anisometropia, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C40; A40 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000589",
+              "label": "Coloboma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c370c4e0a2b87645ed12455e93e698c3a4388325a5dbd085af9a523f25dc61ce",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C42, Coloboma, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C42; A42 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000483",
+              "label": "Astigmatism"
+            }
+          },
+          "snapshot_sha256": "6263e87265f429cfa02a09ae86f38198a065947d6bdc016f2b00b6228b5e9f42",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C41, Astigmatism, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C41; A41 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000486",
+              "label": "Strabismus"
+            }
+          },
+          "snapshot_sha256": "7bc8706c26de748aeefcd531789677954b526ba4939cb782fc6a07e22f22106b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C37, Strabismus, reports 'Strabismus divergens right', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C37; A37 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000648",
+              "label": "Optic atrophy"
+            }
+          },
+          "snapshot_sha256": "de2b993a485b58d85de952aec20fccc9eff9e4744632d38934fd714b2f2ef3e4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Sheet A C43, Optic nerve atrophy or hypoplasia, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C43; A43 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "Source combines optic atrophy or hypoplasia without specifying which; exact atrophy term not independently established."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001500",
+              "label": "Broad finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4949cf6dca80c5f933e1a2fb69a293360ba3ee225bc848a0491117e8664c655c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C100, Broad fingers and toes, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C100; A100 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001837",
+              "label": "Broad toe"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b6faea752db4012553deca96455c61a1ef372a1404ed4ce3e62445d61a7bd723",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C100, Broad fingers and toes, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C100; A100 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030084",
+              "label": "Clinodactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5e6a9483c3db45b5d1944a2fca9f3cfa8c4167065dd8966aae3725e2096edf14",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C101, Clinodactyly, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C101; A101 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001159",
+              "label": "Syndactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daad0d477d85856268a78cb17b0874078f0db733274eb2391fcb8f5026eeb784",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C99, Syndactyly (where), reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C99; A99 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/39",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001156",
+              "label": "Brachydactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "87bce5488a94b3e83340bbfd84d6e457048e37b4d24ce1841817619e98f2888f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C98, Brachydactyly +/- Small hands, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C98; A98 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/40",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            }
+          },
+          "snapshot_sha256": "dee5d947ac21a314d7d79787c31b9353f0bbc535903aceaff2561ad86ae68d6a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C93, Microcephaly, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C93; A93 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/41",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000248",
+              "label": "Brachycephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "79373c6d8799f069c375035ea2de4f48e964cd0d2abfddb4c251a4892680cfc4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C92, Brachycephaly, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C92; A92 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/42",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001357",
+              "label": "Plagiocephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "36e3a4d64b72140c2441776d278d633a4952b2d1ad3a55083fd64cb8f2a45af0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C94, Plagiocephaly, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C94; A94 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/43",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6db568d0dd760bea978b8846d66cb918c3bc978c8bb480f209e63a73a910f4bc",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C103, Scoliosis, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C103; A103 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/44",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001382",
+              "label": "Joint hypermobility"
+            }
+          },
+          "snapshot_sha256": "6212f74029c9ba7cd995c7bf712370446d8eda7b0efa8ecc7a4f16450eefda14",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C102, Joint laxity, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C102; A102 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/45",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000776",
+              "label": "Congenital diaphragmatic hernia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fcee5146bd1d8145936d600970b4f254feacafef17bf5c152cd55409b5710735",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C115, Diaphragmatic hernia, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C115; A115 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/46",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034392",
+              "label": "Joint contracture"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5327619e0d2c3c7cb5bbbb7cc769b42204da4eff389ba0f9b99722749e19256f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C104, Contractures (where), reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C104; A104 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/47",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4b4613c7fa0acae00a4b09e0839e5259a569ed69649430e0cebff75f8fd391cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C105, Short stature, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C105; A105 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/48",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005280",
+              "label": "Depressed nasal bridge"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "21fe9b14fb5b68f364eb1048773ec5d9f37599cabd6f77076884d98d07dd8fb0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C18, Depressed, flat nasal bridge, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C18; A18 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/49",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000455",
+              "label": "Broad nasal tip"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5a9a853939d9d23586172e17ac40e74a8e6f9fb2edf088f66e8b311763d33453",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C17, Broad nasal tip, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C17; A17 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/50",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000447",
+              "label": "Pear-shaped nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4cb0ccb9df1c566afa89bb63e743ee046965a3ad953e3e04e1d2164bf7d0b0d3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C19, Pear-shaped nose, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C19; A19 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/51",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011800",
+              "label": "Midface retrusion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8977ea4d67149de11c81e29edb6023eb5854fe8801cbef6c0f05948a95f4ad4b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C20, Midface hypoplasia/retrusion, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C20; A20 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/52",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001290",
+              "label": "Generalized hypotonia"
+            }
+          },
+          "snapshot_sha256": "b25631abdb1b0a21148ad8bffcadb33b5b7a7a0dab707b25e73524d167bfe016",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C86, Generalized hypotonia, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C86; A86 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/53",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012389",
+              "label": "Appendicular hypotonia"
+            }
+          },
+          "snapshot_sha256": "a40d05634c24c68bad63b6b8fc8c120d5d8394a80ac1fe716010d1179db74d16",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C85, Appendicular hypotonia, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C85; A85 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/54",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008936",
+              "label": "Axial hypotonia"
+            }
+          },
+          "snapshot_sha256": "689eeac5c2fc3d940f93547c5204d8da7ecb5e5209fa1493711e741557eb5d87",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C84, Axial hypotonia, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C84; A84 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/55",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000297",
+              "label": "Facial hypotonia"
+            }
+          },
+          "snapshot_sha256": "25d38d17390c2c79cc6022cc3f83559c80bb99e3ae4b648cc284b570f29beb3b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C83, Facial hypotonia, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C83; A83 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/56",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002079",
+              "label": "Hypoplasia of the corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "47e649fa70bba531b4dc7011111064a0945f0b560c3b0f6a4fd6b53e22e72c0e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C58, Aplasia/hypoplasia of the corpus callosum, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C58; A58 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/57",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002059",
+              "label": "Cerebral atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6e9354e43127895ba3e40ee678cff4b29174e820705bb9fb9931860ebcceb03a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C59, Cerebral atrophy, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C59; A59 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/58",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009879",
+              "label": "Simplified gyral pattern"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "349339678a2646ba665f34e4430958abd6cd0599b8edbb0ab7b01dc0885e4ddd",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C60, Polymicrogyria/ simplified gyral pattern, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C60; A60 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/59",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002365",
+              "label": "Hypoplasia of the brainstem"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7623485512dbaf697209f4ffb113727c5531ffa57c9c46efea4f406f0920f28b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C61, Brainstem hypoplasia, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C61; A61 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/60",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001321",
+              "label": "Cerebellar hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e02a63045a6df38e5319b4598f9b905ee6b5f9e72b7faf495d1d080f45880f30",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C62, Cerebellar dysplasia/hypoplasia, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C62; A62 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/61",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002188",
+              "label": "Delayed CNS myelination"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "85fb8e854b9a3dec7ca6cff34b3ce14af9b2c0ded04949d0deb03405873646d4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C64, Delayed myelination, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C64; A64 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/62",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002119",
+              "label": "Ventriculomegaly"
+            }
+          },
+          "snapshot_sha256": "993f816c45a75051fd382dc72aecbe204b6c72aae2633c986ca79e58daaab898",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C67, Ventriculomegaly, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C67; A67 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/63",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C49, Global developmental delay, reports ' ++++', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C49; A49 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/64",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002194",
+              "label": "Delayed gross motor development"
+            }
+          },
+          "snapshot_sha256": "155cf26d5f7c71324d35cf4c466ccec4fde6a8fc358547828e945d4c740985c5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C50, Gross motor developmental delay, reports ' ++', corresponding to the packet positive. Walking at5years postdates the packet age4years.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C50; A50 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/65",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010862",
+              "label": "Delayed fine motor development"
+            }
+          },
+          "snapshot_sha256": "4cef78a7b7015d4b9e21fcc8badfe239b9335031322b02b7c8753ca623ee0b5c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C52, Fine motor developmental delay, reports ' +++', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C52; A52 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/66",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C53, Speech delay/No speech, reports ' ++++ ', corresponding to the packet positive. No speech at6.5years is stated, a later observation than packet last-encounter4years.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C53; A53 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/67",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            }
+          },
+          "snapshot_sha256": "48676c3701994966952c6afa26b3d2a47be69e0754311248381fa7cc3631da7a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C70, Seizures (please specify the type), reports 'Seizures in sleep (daily until 4.5 ys, weekly since then) and muscle tremors in pain', corresponding to the packet positive. Events are in sleep: daily until4.5years, weekly thereafter; pain-related muscle tremors are also described, not automatically seizures.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C70; A70 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/68",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002373",
+              "label": "Febrile seizure (within the age range of 3 months to 6 years)"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "33c3645615838ca87509fc50ce8247554ee818df850622dd7cf39cbe4242996c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C73, Febrile seizures, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C73; A73 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/69",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C76, Autism spectrum disorder, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C76; A76 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/70",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100716",
+              "label": "Self-injurious behavior"
+            }
+          },
+          "snapshot_sha256": "d1a314a0adec70d2e0652058220ce7a2a99d3b8da0d5d0bc4dc68d266ae8e82a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C77, (Self-)injurious behavior, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C77; A77 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/71",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000739",
+              "label": "Anxiety"
+            }
+          },
+          "snapshot_sha256": "e5ab29299c90c138a790ce421b29ca468fe5dbb07d7f8ddd2ce3985af4dd193d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C78, Anxiety, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C78; A78 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/72",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007018",
+              "label": "Attention deficit hyperactivity disorder"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3ee80e741babb6bf9a9a71d910c03ae19e65647682663b6b6c12c3e2891b4cba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C79, ADHD, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C79; A79 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/73",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012760",
+              "label": "Reduced social responsiveness"
+            }
+          },
+          "snapshot_sha256": "0545cfe1b4594b1ba0b05626315d5769b414912613f59983c4016deb7c41ca52",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C80, Limited social interactions, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C80; A80 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/74",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000744",
+              "label": "Low frustration tolerance"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "1c10cda7b5e1119981df54f3be4f63bd55bc8acb268472d1cc721e128d3407a7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C81, Low frustration tolerance (tantrums), reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C81; A81 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/75",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001631",
+              "label": "Atrial septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb3b341d3b228f4383f619ab3c58f06ed8fa35761f5484b5949d160df704ab32",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C89, ASD, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C89; A89 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/76",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001643",
+              "label": "Patent ductus arteriosus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7925d20356f59b8427eef31ac40ec617898e53efb74385a7154f4c39c5cb4ed7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C90, PDA, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C90; A90 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/77",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001508",
+              "label": "Failure to thrive"
+            }
+          },
+          "snapshot_sha256": "345530d804151ce8815170a44114bb90928ca700acf76267f7185db8d735c2f0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C113, Failure to thrive, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C113; A113 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/78",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002019",
+              "label": "Constipation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "32c743816de94ceb709f5d808e277998caff2f2c2ae4ccb6715547c487fdb28e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C111, Constipation, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C111; A111 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/79",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002020",
+              "label": "Gastroesophageal reflux"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4079b47a877e8de26b6388a10c28d9867f51e29ffadcb19d68cb70544944e0f9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C110, Gastroesophageal reflux, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C110; A110 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/80",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            }
+          },
+          "snapshot_sha256": "2f75f0cec9f37b168994d1f28ca569a464f852938adfe5cb43e05e0ecb36264f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C108, Feeding difficulties: dysphagia, swallowing difficulty, reports ' + (only pulpy food) ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C108; A108 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/81",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002572",
+              "label": "Episodic vomiting"
+            }
+          },
+          "snapshot_sha256": "c3e2761b1ed6413537ee3177b464410141e478ba78ddaa72b536cfac8bd1f626",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C112, Cyclic vomiting, reports ' +  (acetonamic)', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C112; A112 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/82",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000407",
+              "label": "Sensorineural hearing impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "17e465157bf67f935d000cd21d04c8478cf88d8c782a91ec7f1144a41d313e31",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C69, Sensoneural hearing loss (bilateral/ unilateral), reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C69; A69 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/83",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000403",
+              "label": "Recurrent otitis media"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a61b1f9d38ae263eda270924e948d37c7a074c3634f3309ad6760c68fe7aa42b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C138, Recurrent otitis media, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C138; A138 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/84",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002205",
+              "label": "Recurrent respiratory infections"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3202e197447a348b6e126a22288935fda7fde7388bb444d7cc001a9246b883c5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A C137, Frequent respiratory infections, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients C137; A137 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/POGZ/PMID_35052493_individual_R01.json",
+      "packet_sha256": "3e9ba983da4f109bf211418bf2058124ff4c9273f99f8147326e6320ef708cd2",
+      "case_id": "TC_e1c4c0abf48614eb",
+      "role": "selected",
+      "packet_subject_id": "individual R01",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "No packet file edited; exact snapshots retained. Age-field contradiction and source-specific qualifications are adjudication findings only.",
+        "Source author-reported causal diagnosis and historical database rarity are not independent clinical validation or a current database assertion."
+      ],
+      "patient_identity": {
+        "status": "contradicted",
+        "statement": "R01 patient label, sex and variant match. Packet timeAtLastEncounter is P7Y, but source explicitly gives last follow-up 8 years and diagnosis 7 years. The packet places diagnosis age in the last-encounter field; this is an age-field contradiction, not a different-patient finding.",
+        "evidence": [
+          {
+            "source_id": "workbook",
+            "locator": "A_Phenotype of present patients: I2:I9 and column A labels"
+          },
+          {
+            "source_id": "xml",
+            "locator": "Table3 R01 row; Methods2.1/2.2 and Results3.1"
+          }
+        ],
+        "limitations": [
+          "Source follow-up age must not be silently replaced by diagnosis age. Packet snapshot retained unchanged."
+        ]
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Source reports POGZ c.600dupT; p.Gly201Trpfs*114 for R01, matching packet coding/protein consequences. Table3 gives unversioned NM_015100. The packet additionally asserts NM_015100.4/NP_055915.2, GRCh38 genomic/VCF coordinates and heterozygosity; direct per-patient allele-fraction/zygosity output is not shown.",
+        "evidence": [
+          {
+            "source_id": "workbook",
+            "locator": "A_Phenotype of present patients: I2:I9 and column A labels"
+          },
+          {
+            "source_id": "xml",
+            "locator": "Table3 R01 row; Methods2.1/2.2 and Results3.1"
+          }
+        ],
+        "limitations": [
+          "Coding/protein correspondence supported; transcript versions, genomic left/right normalization and exact VCF representation not independently validated. Dominant de novo disease context is not a printed patient zygosity assay."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "R01 is explicitly reported de novo in Sheet A I6 and Table3. Authors use PM6 rather than PS2.",
+        "evidence": [
+          {
+            "source_id": "workbook",
+            "locator": "A_Phenotype of present patients: I2:I9 and column A labels"
+          },
+          {
+            "source_id": "xml",
+            "locator": "Table3 R01 row; Methods2.1/2.2 and Results3.1"
+          }
+        ],
+        "limitations": [
+          "No parentage-confirmation details or patient/parent electropherograms supplied for this allele; retain author-reported de novo status without upgrading it."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Packet contains one variant in an autosomal dominant POGZ disorder. No second allele requires cis/trans resolution; this does not establish independently measured allele balance or parentage.",
+        "evidence": [
+          {
+            "source_id": "workbook",
+            "locator": "A_Phenotype of present patients: I2:I9 and column A labels"
+          },
+          {
+            "source_id": "xml",
+            "locator": "Table3 R01 row; Methods2.1/2.2 and Results3.1"
+          }
+        ],
+        "limitations": [
+          "No independently measured phase/allele-specific expression data supplied."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Authors classify R01 variant Pathogenic using PVS1/PM2/PM6/PP3 and attribute the phenotype to POGZ-related White-Sutton syndrome. R01 score22/severity3 and predicted NMD are reported; no R01 RNA/protein experiment establishes that prediction.",
+        "evidence": [
+          {
+            "source_id": "workbook",
+            "locator": "A_Phenotype of present patients: I2:I9 and column A labels"
+          },
+          {
+            "source_id": "xml",
+            "locator": "Table3 R01 row; Methods2.1/2.2 and Results3.1"
+          },
+          {
+            "source_id": "workbook",
+            "locator": "D rows5/63; E NMD tables/footnotes"
+          },
+          {
+            "source_id": "maintext",
+            "locator": "Discussion: inferred mechanism and retrospective genotype/phenotype comparisons"
+          }
+        ],
+        "limitations": [
+          "Clinical source attribution, not independent ACMG reclassification or clinical truth. Cohort association does not prove the individual mechanism; NMD summary inconsistencies retained below."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "All packet phenotype assertions compared individually with the complete source column; most explicit positives and negatives correspond. Combined facial labels cannot establish several specific findings/negatives. R01 packet also omits overweight/obesity (BMI20.5;97.6th percentile), hypertrichosis of hands, nocturnal enuresis and persistent unpleasant-smell sensation; large earlobes is not an overfolded-helix negative.",
+        "evidence": [
+          {
+            "source_id": "workbook",
+            "locator": "Sheet A entire column I, all rows1-143 and A-column labels"
+          }
+        ],
+        "limitations": [
+          "Publication phenotyping is not exhaustive. Explicit minus signs support reported absence at assessment, not lifelong absence. Blank cells mean unknown/unreported/not applicable/not done. All later observations must retain source follow-up ages."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c600dupT_POGZ_NM_015100v4",
+            "geneContext": {
+              "valueId": "HGNC:18801",
+              "symbol": "POGZ"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_015100.4:c.600dupT"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000001.11:g.151428383dup"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_055915.2:p.(Gly201TrpfsTer114)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr1",
+              "pos": 151428381,
+              "ref": "C",
+              "alt": "CA"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "773bc99c4489a372abe469a42c941b97d6390a8ac4e3f9e4931cf0d6c72560b4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Source reports POGZ c.600dupT; p.Gly201Trpfs*114 for R01, matching packet coding/protein consequences. Table3 gives unversioned NM_015100. The packet additionally asserts NM_015100.4/NP_055915.2, GRCh38 genomic/VCF coordinates and heterozygosity; direct per-patient allele-fraction/zygosity output is not shown.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients: I2:I9 and column A labels"
+              },
+              {
+                "source_id": "xml",
+                "locator": "Table3 R01 row; Methods2.1/2.2 and Results3.1"
+              }
+            ],
+            "limitations": [
+              "Coding/protein correspondence supported; transcript versions, genomic left/right normalization and exact VCF representation not independently validated. Dominant de novo disease context is not a printed patient zygosity assay."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000322",
+              "label": "Short philtrum"
+            }
+          },
+          "snapshot_sha256": "31dc60ba4822a51976adcce8b0cd492cb2f38e6e88b5e263a3b987c65730924b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I21, Short philtrum, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I21; A21 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000194",
+              "label": "Open mouth"
+            }
+          },
+          "snapshot_sha256": "cd9d77f9feea7adfe7e4e49ee4fe6c1bf75aa3bf30039dc0dd7a9adfd8e0de0d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I26, Open mouth, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I26; A26 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000154",
+              "label": "Wide mouth"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f319c53b98c835a38717d13af60caa5f19b680a54865a2a405eb415c2a7d3863",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I27, Macrostomia, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I27; A27 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            }
+          },
+          "snapshot_sha256": "7464dd531646fde4b613619c2d8d042119320ad998e758c0b3296f9a1376e8e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I29, High-arched palate, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I29; A29 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000175",
+              "label": "Cleft palate"
+            }
+          },
+          "snapshot_sha256": "5fcb9f5da61cdbc91fd8b137e7fafe3fe3832af85e93b4c0437328035bd4b96d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I96, Cleft palate, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I96; A96 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000193",
+              "label": "Bifid uvula"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0d0460ee5bdb7bb738569c2a90a563469ca28da3b1eb33a1fa32a9c4abddceff",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I30, Bifid uvula, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I30; A30 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000303",
+              "label": "Mandibular prognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9686a6ed16020d67e61eb736722e8206137fea9544009c298158de5e4956e614",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I31, Mandibula (prognathia or micro-retrognathia), reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I31; A31 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000278",
+              "label": "Retrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "66dda0282a422dd164068df1af84aa261c849aca4e56fdc28993d0323e42e4c2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I31, Mandibula (prognathia or micro-retrognathia), reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I31; A31 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000307",
+              "label": "Pointed chin"
+            }
+          },
+          "snapshot_sha256": "467d1118c1bdaea65d399f57687317092d698625c5c4133eacbee89e28ff1121",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I32, Pointed chin, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I32; A32 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002714",
+              "label": "Downturned corners of mouth"
+            }
+          },
+          "snapshot_sha256": "8fbdd40f275af16bcb46891e09bc44963a4a02d82471082ab32026da211f9882",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I22, Downturned corners of mouth (triangular/tented), reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I22; A22 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002263",
+              "label": "Exaggerated cupid's bow"
+            }
+          },
+          "snapshot_sha256": "bdbb70c4101a2c552ff62b515e8696c9d7bec4d11c78b14dfbb003be4f50a858",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Sheet A I23, Upper lip (cupid's bow), reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I23; A23 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "Source says upper lip (cupid's bow) positive without explicitly stating exaggerated; specific HPO modifier is an interpretation."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000219",
+              "label": "Thin upper lip vermilion"
+            }
+          },
+          "snapshot_sha256": "99c27d160c5710ce25431f2c1160d2daf7fa32c356981881d551b4b815fce314",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I24, Thin vermillion/thin upper lip, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I24; A24 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000232",
+              "label": "Everted lower lip vermilion"
+            }
+          },
+          "snapshot_sha256": "1a750293be871b47d7d8948fb61c844567d75ed58e91ad36dd94684f9524fe1f",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Sheet A I25, Everted upper/lower lip, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I25; A25 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "Positive combined label 'Everted upper/lower lip' does not separately specify every component; packet specificity retained as qualified."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010803",
+              "label": "Everted upper lip vermilion"
+            }
+          },
+          "snapshot_sha256": "39e93c98b7042f873f7afcd77665d13fc5c563d4e773cd07888e8d97b04e7ada",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Sheet A I25, Everted upper/lower lip, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I25; A25 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "Positive combined label 'Everted upper/lower lip' does not separately specify every component; packet specificity retained as qualified."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000369",
+              "label": "Low-set ears"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ea3c99f77d325f2810bba05cb968302cbc1008c58ed25bc0410c8d56e3480627",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I33, Low-set ears, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I33; A33 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000358",
+              "label": "Posteriorly rotated ears"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "eeb77ab977a1bbde81fec6fa59f61309ec237be034a0a6d326df1eaa572bd23e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I34, Posteriorly rotated ears, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I34; A34 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000396",
+              "label": "Overfolded helix"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "d6dcf3978423af83263daa6d9bc815a45c38ba44a57ac785a4af45076b48fc00",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Sheet A I35 reports large earlobes, not a negative assessment of overfolded helices.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I35; A35 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "A different ear finding does not establish this excluded feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000341",
+              "label": "Narrow forehead"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "519a4b73e060bc5cab8837d8801ced17116daca10fac8c88776d8cbbd43f8b39",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "I11 marks the combined source label 'Broad /high forehead / bitemporal narrowing' positive. It does not separately exclude the packet feature Narrow forehead.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I11; A11 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "A positive combined label cannot establish a negative component."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000337",
+              "label": "Broad forehead"
+            }
+          },
+          "snapshot_sha256": "7807b85461125b852877ebe908d6ab63323c036636d85c907a18bcfc6d5e87f4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "I11 marks combined label 'Broad /high forehead / bitemporal narrowing' positive, consistent with a facial finding but without separately identifying this exact subtype.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I11; A11 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "Source combines alternatives; broad/high/bitemporal and up/down direction must not be silently separated. Figure1 does not supply a clinical per-feature assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000316",
+              "label": "Hypertelorism"
+            }
+          },
+          "snapshot_sha256": "2de3c5fd8c0e4ca20446de373a27cb84b06228d035f2521315fd6ec8483042a4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I12, Hypertelorism, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I12; A12 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000494",
+              "label": "Downslanted palpebral fissures"
+            }
+          },
+          "snapshot_sha256": "8d20831251db00a4a9f41505a640736489915d6d6521fc75535fbcab38213b26",
+          "assessment": {
+            "status": "qualified",
+            "statement": "I13 marks combined label 'Downslanting or upslanting palpebral fissures' positive, consistent with a facial finding but without separately identifying this exact subtype.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I13; A13 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "Source combines alternatives; broad/high/bitemporal and up/down direction must not be silently separated. Figure1 does not supply a clinical per-feature assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000582",
+              "label": "Upslanted palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5867461b798c329bd0bddddb67e84eb665b91c9df85237c30adf17460594bcc0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "I13 marks the combined source label 'Downslanting or upslanting palpebral fissures' positive. It does not separately exclude the packet feature Upslanted palpebral fissure.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I13; A13 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "A positive combined label cannot establish a negative component."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000286",
+              "label": "Epicanthus"
+            }
+          },
+          "snapshot_sha256": "fa35492c67bd8ba3f8e32394909fc187ef3a6a091e19b289420ad8ddab6e1acb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I14, Epicanthus, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I14; A14 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000508",
+              "label": "Ptosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e033332deff34bfb43d8333aa3e2b1ba4e4dbf229f9098646b172fe5a88ca401",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I15, Ptosis, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I15; A15 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0045075",
+              "label": "Sparse eyebrow"
+            }
+          },
+          "snapshot_sha256": "9eab0c4cd247730919e93b647e798e616b6203895c8aacab8d9b0bada553e4eb",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Sheet A I16, High-arched/ sparse eyebrows, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I16; A16 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "Positive combined label 'High-arched/ sparse eyebrows' does not separately specify every component; packet specificity retained as qualified."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002553",
+              "label": "Highly arched eyebrow"
+            }
+          },
+          "snapshot_sha256": "a7e494d9f16421b88d87fb27a8a1aeb38fe7142e74ec9e3f5f5216740ab4e81d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Sheet A I16, High-arched/ sparse eyebrows, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I16; A16 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "Positive combined label 'High-arched/ sparse eyebrows' does not separately specify every component; packet specificity retained as qualified."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000470",
+              "label": "Short neck"
+            }
+          },
+          "snapshot_sha256": "e88928cfbf8d7e28e089178d9d73928540f45c432872026b35683d2e43b5d8ab",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I97, Short neck, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I97; A97 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000540",
+              "label": "Hypermetropia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "01d24e38ecbb395b2f9cea29bb0dcbab733b451b278366f22c53a9ba7d4e4311",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I39, Hypermetropia, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I39; A39 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000545",
+              "label": "Myopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "cdbdfc9d0104b0a4698b5dc9ddaf3e503f6b3493a8670b367009e0104567bfc3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I38, Myopia, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I38; A38 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012803",
+              "label": "Anisometropia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "ae77674d906aa6535f5622322660d27c2cccce10b8787054d0ca8d8dd4797387",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I40, Anisometropia, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I40; A40 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/30",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100704",
+              "label": "Cerebral visual impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2f002835a50971c71ef0b51e8543cafbe2c7dd9b815fe6ad8eaf3b06f8b14771",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I45, Cortical visual impairment, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I45; A45 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/31",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000510",
+              "label": "Rod-cone dystrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "2a5ce5e2cab7ad62301a0e23f8d8f26440677a359f82661bd8cdffef78895360",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I44, Rod-cone dystrophy, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I44; A44 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/32",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000589",
+              "label": "Coloboma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c370c4e0a2b87645ed12455e93e698c3a4388325a5dbd085af9a523f25dc61ce",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I42, Coloboma, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I42; A42 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/33",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000483",
+              "label": "Astigmatism"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a74838fe5695fd4d780af5e94556b981b90834311a982c4fa5d3a582421593c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I41, Astigmatism, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I41; A41 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/34",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000486",
+              "label": "Strabismus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3b49b45ac128cc7c84ce063ac3ad39346a6f94fa91fddcf113a7541acdb44aa1",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I37, Strabismus, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I37; A37 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/35",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000648",
+              "label": "Optic atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4e8b992acb27098941e010a5f37618c7853ad2d1b03bec5861be67f30126bd01",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I43, Optic nerve atrophy or hypoplasia, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I43; A43 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/36",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001500",
+              "label": "Broad finger"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4949cf6dca80c5f933e1a2fb69a293360ba3ee225bc848a0491117e8664c655c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I100, Broad fingers and toes, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I100; A100 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/37",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001837",
+              "label": "Broad toe"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "b6faea752db4012553deca96455c61a1ef372a1404ed4ce3e62445d61a7bd723",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I100, Broad fingers and toes, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I100; A100 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/38",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030084",
+              "label": "Clinodactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5e6a9483c3db45b5d1944a2fca9f3cfa8c4167065dd8966aae3725e2096edf14",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I101, Clinodactyly, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I101; A101 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/39",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001159",
+              "label": "Syndactyly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "daad0d477d85856268a78cb17b0874078f0db733274eb2391fcb8f5026eeb784",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I99, Syndactyly (where), reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I99; A99 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/40",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001156",
+              "label": "Brachydactyly"
+            }
+          },
+          "snapshot_sha256": "09cd3651cd1b9688b8b6b1e512cddd925efd7a55361d789533fa531c3383e61a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Sheet A I98, Brachydactyly +/- Small hands, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I98; A98 label; A143 legend"
+              }
+            ],
+            "limitations": [
+              "Positive combined label 'Brachydactyly +/- Small hands' does not separately specify every component; packet specificity retained as qualified."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/41",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000252",
+              "label": "Microcephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "8b26ca25b33f32c272caed90a373a5582d5af8f7514e24235731db7aaae3afeb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I93, Microcephaly, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I93; A93 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/42",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000248",
+              "label": "Brachycephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "79373c6d8799f069c375035ea2de4f48e964cd0d2abfddb4c251a4892680cfc4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I92, Brachycephaly, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I92; A92 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/43",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001357",
+              "label": "Plagiocephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "36e3a4d64b72140c2441776d278d633a4952b2d1ad3a55083fd64cb8f2a45af0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I94, Plagiocephaly, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I94; A94 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/44",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002650",
+              "label": "Scoliosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6db568d0dd760bea978b8846d66cb918c3bc978c8bb480f209e63a73a910f4bc",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I103, Scoliosis, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I103; A103 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/45",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001382",
+              "label": "Joint hypermobility"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e731a557c51d369a1d2b75f670f0a5d82dd2823d5908574c0e0858aa47927dec",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I102, Joint laxity, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I102; A102 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/46",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000776",
+              "label": "Congenital diaphragmatic hernia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fcee5146bd1d8145936d600970b4f254feacafef17bf5c152cd55409b5710735",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I115, Diaphragmatic hernia, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I115; A115 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/47",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034392",
+              "label": "Joint contracture"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5327619e0d2c3c7cb5bbbb7cc769b42204da4eff389ba0f9b99722749e19256f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I104, Contractures (where), reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I104; A104 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/48",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004322",
+              "label": "Short stature"
+            }
+          },
+          "snapshot_sha256": "1b50d63adae74dce026ec2e71a5ac3acb68f40de41c49c079a589c966bdfa5f6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I105, Short stature, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I105; A105 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/49",
+          "snapshot": {
+            "type": {
+              "id": "HP:0005280",
+              "label": "Depressed nasal bridge"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "21fe9b14fb5b68f364eb1048773ec5d9f37599cabd6f77076884d98d07dd8fb0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I18, Depressed, flat nasal bridge, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I18; A18 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/50",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000455",
+              "label": "Broad nasal tip"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5a9a853939d9d23586172e17ac40e74a8e6f9fb2edf088f66e8b311763d33453",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I17, Broad nasal tip, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I17; A17 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/51",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000447",
+              "label": "Pear-shaped nose"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4cb0ccb9df1c566afa89bb63e743ee046965a3ad953e3e04e1d2164bf7d0b0d3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I19, Pear-shaped nose, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I19; A19 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/52",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011800",
+              "label": "Midface retrusion"
+            }
+          },
+          "snapshot_sha256": "bc9fc4de33dd49d9c5b50ae9ee5526f902d2bacd5ea3c61440158ec15e4244e2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I20, Midface hypoplasia/retrusion, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I20; A20 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/53",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001290",
+              "label": "Generalized hypotonia"
+            }
+          },
+          "snapshot_sha256": "b25631abdb1b0a21148ad8bffcadb33b5b7a7a0dab707b25e73524d167bfe016",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I86, Generalized hypotonia, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I86; A86 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/54",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012389",
+              "label": "Appendicular hypotonia"
+            }
+          },
+          "snapshot_sha256": "a40d05634c24c68bad63b6b8fc8c120d5d8394a80ac1fe716010d1179db74d16",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I85, Appendicular hypotonia, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I85; A85 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/55",
+          "snapshot": {
+            "type": {
+              "id": "HP:0008936",
+              "label": "Axial hypotonia"
+            }
+          },
+          "snapshot_sha256": "689eeac5c2fc3d940f93547c5204d8da7ecb5e5209fa1493711e741557eb5d87",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I84, Axial hypotonia, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I84; A84 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/56",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000297",
+              "label": "Facial hypotonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "df722d7aedc51f03f38692fbf29fed377a89f330a226d95b7c21cc163ac01e64",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I83, Facial hypotonia, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I83; A83 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/57",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002079",
+              "label": "Hypoplasia of the corpus callosum"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "47e649fa70bba531b4dc7011111064a0945f0b560c3b0f6a4fd6b53e22e72c0e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I58, Aplasia/hypoplasia of the corpus callosum, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I58; A58 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/58",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002059",
+              "label": "Cerebral atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6e9354e43127895ba3e40ee678cff4b29174e820705bb9fb9931860ebcceb03a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I59, Cerebral atrophy, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I59; A59 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/59",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009879",
+              "label": "Simplified gyral pattern"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "349339678a2646ba665f34e4430958abd6cd0599b8edbb0ab7b01dc0885e4ddd",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I60, Polymicrogyria/ simplified gyral pattern, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I60; A60 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/60",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002365",
+              "label": "Hypoplasia of the brainstem"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7623485512dbaf697209f4ffb113727c5531ffa57c9c46efea4f406f0920f28b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I61, Brainstem hypoplasia, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I61; A61 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/61",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001321",
+              "label": "Cerebellar hypoplasia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "e02a63045a6df38e5319b4598f9b905ee6b5f9e72b7faf495d1d080f45880f30",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I62, Cerebellar dysplasia/hypoplasia, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I62; A62 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/62",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002188",
+              "label": "Delayed CNS myelination"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "85fb8e854b9a3dec7ca6cff34b3ce14af9b2c0ded04949d0deb03405873646d4",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I64, Delayed myelination, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I64; A64 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/63",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002119",
+              "label": "Ventriculomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4c85b83b33f5e08675bcbde6baa99ffface6333858512085937da3432336a001",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I67, Ventriculomegaly, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I67; A67 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/64",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I49, Global developmental delay, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I49; A49 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/65",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002194",
+              "label": "Delayed gross motor development"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7f5162653d55105c908187fd55eee6a61fe7b6d3ba9b4610da4a99627dcd2610",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I50, Gross motor developmental delay, reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I50; A50 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/66",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010862",
+              "label": "Delayed fine motor development"
+            }
+          },
+          "snapshot_sha256": "4cef78a7b7015d4b9e21fcc8badfe239b9335031322b02b7c8753ca623ee0b5c",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I52, Fine motor developmental delay, reports ' ++', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I52; A52 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/67",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I53, Speech delay/No speech, reports ' +++', corresponding to the packet positive. First talking3years5months, with receptive and expressive language difficulties.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I53; A53 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/68",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            }
+          },
+          "snapshot_sha256": "c444dd47b030fe9f7b2523d299496431fe54f2ce557f990c454810b00764e589",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I57, Intellectual disability (IQ, if applicable), reports ' + (64)', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I57; A57 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/69",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025190",
+              "label": "Bilateral tonic-clonic seizure with generalized onset"
+            }
+          },
+          "snapshot_sha256": "3888ca8516ee914442c59f19c168318c20d17196a58af4b2293d8d2617b88ee7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I70, Seizures (please specify the type), reports '1 episode of generalised tonic-clonic seizure', corresponding to the packet positive. One generalized tonic-clonic episode is reported, not recurrent episodes inferred from the combined-medication entry.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I70; A70 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/70",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I76, Autism spectrum disorder, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I76; A76 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/71",
+          "snapshot": {
+            "type": {
+              "id": "HP:0100716",
+              "label": "Self-injurious behavior"
+            }
+          },
+          "snapshot_sha256": "d1a314a0adec70d2e0652058220ce7a2a99d3b8da0d5d0bc4dc68d266ae8e82a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I77, (Self-)injurious behavior, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I77; A77 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/72",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000739",
+              "label": "Anxiety"
+            }
+          },
+          "snapshot_sha256": "e5ab29299c90c138a790ce421b29ca468fe5dbb07d7f8ddd2ce3985af4dd193d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I78, Anxiety, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I78; A78 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/73",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007018",
+              "label": "Attention deficit hyperactivity disorder"
+            }
+          },
+          "snapshot_sha256": "c552a77fbe6b6c556de28d977a1e60f571d5859985dd4611f6932fa80c9f96ef",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I79, ADHD, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I79; A79 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/74",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012760",
+              "label": "Reduced social responsiveness"
+            }
+          },
+          "snapshot_sha256": "0545cfe1b4594b1ba0b05626315d5769b414912613f59983c4016deb7c41ca52",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I80, Limited social interactions, reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I80; A80 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/75",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000744",
+              "label": "Low frustration tolerance"
+            }
+          },
+          "snapshot_sha256": "0fd484982072943b5b2db6b50323cc8298fb26ad4ebb52f37c818b0f975be8cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I81, Low frustration tolerance (tantrums), reports ' + ', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I81; A81 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/76",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001631",
+              "label": "Atrial septal defect"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb3b341d3b228f4383f619ab3c58f06ed8fa35761f5484b5949d160df704ab32",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I89, ASD, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I89; A89 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/77",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001643",
+              "label": "Patent ductus arteriosus"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7925d20356f59b8427eef31ac40ec617898e53efb74385a7154f4c39c5cb4ed7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I90, PDA, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I90; A90 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/78",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001508",
+              "label": "Failure to thrive"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c98922b65593d23c85a231142a31fa7bb5b1c7afbae03fc9b7b6fedeeb80a4d6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I113, Failure to thrive, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I113; A113 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/79",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002019",
+              "label": "Constipation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "32c743816de94ceb709f5d808e277998caff2f2c2ae4ccb6715547c487fdb28e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I111, Constipation, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I111; A111 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/80",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002020",
+              "label": "Gastroesophageal reflux"
+            }
+          },
+          "snapshot_sha256": "6112ad37d5c92f39220139319f831b5466b4f54d53ce0afe57116d9e76f52a70",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I110, Gastroesophageal reflux, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I110; A110 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/81",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011968",
+              "label": "Feeding difficulties"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fb57ff08999d38194e0a98237b37f9865603ea25fd0ee0c22e9894cd09f04112",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I108, Feeding difficulties: dysphagia, swallowing difficulty, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I108; A108 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/82",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002572",
+              "label": "Episodic vomiting"
+            }
+          },
+          "snapshot_sha256": "c3e2761b1ed6413537ee3177b464410141e478ba78ddaa72b536cfac8bd1f626",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I112, Cyclic vomiting, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I112; A112 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/83",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000407",
+              "label": "Sensorineural hearing impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "17e465157bf67f935d000cd21d04c8478cf88d8c782a91ec7f1144a41d313e31",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I69, Sensoneural hearing loss (bilateral/ unilateral), reports ' - ', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I69; A69 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/84",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000028",
+              "label": "Cryptorchidism"
+            }
+          },
+          "snapshot_sha256": "2201f0ab0ac08957bd688ef0f5bd4e65383760b33ff01b37dcfe5ae2cd588e10",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I129, Cryptorchism, reports ' +', corresponding to the packet positive.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I129; A129 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/85",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000054",
+              "label": "Micropenis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6701188256a61698f2459b2920ca7f5c4a522eea1efeb63de8c9b6cd6b1f4bcc",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I132, Micropenis, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I132; A132 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/86",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000403",
+              "label": "Recurrent otitis media"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a61b1f9d38ae263eda270924e948d37c7a074c3634f3309ad6760c68fe7aa42b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I138, Recurrent otitis media, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I138; A138 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/87",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002205",
+              "label": "Recurrent respiratory infections"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3202e197447a348b6e126a22288935fda7fde7388bb444d7cc001a9246b883c5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Sheet A I137, Frequent respiratory infections, reports ' -', corresponding to the packet negative.",
+            "evidence": [
+              {
+                "source_id": "workbook",
+                "locator": "A_Phenotype of present patients I137; A137 label; A143 legend"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Main Table3 versus Sheet A cumulative-score discrepancies: L01 53 versus51; G01 9 versus10; W01 16 versus20; S01 13 versus12. Severity categories remain the same; L02 31 and R01 22 agree. No silent score correction.",
+    "NMD summaries are internally inconsistent: Sheet D F37 labels missense D01 as NMD yes, whereas Sheet E row70 states all missense escape NMD. Sheet E rows11/12 give42/67, whereas rows63/64 give46/63. C63 averages D!E2:E45 and E117:E118, encompassing non-NMD entries and omitting NL01 row116; C64 averages E46:E107, whose text 1? entries are not numeric. Main prose describes42 truncating NMD cases plus3 deletions. No reconciliation or fresh NMD mechanistic inference claimed.",
+    "The source uses different severity cutoffs by ascertainment/detail cohort. Less-detailed cohort has many blank/not-reported cells, with category totals sometimes zero; these are not clinical negative observations. Sheet C uncertain scores 1? and infant US02 reassignment are retained.",
+    "Sheet F uses broad48-person denominators (20 males/26 females/2 unreported sex) for many symptoms despite missing per-person information. B70 cardiovascular aggregate1 versus rows71-73 component counts3/2/3 also requires caution. Frequency totals are author calculations, not independently validated prevalence.",
+    "Hypothesized dominant-negative/gain-of-function versus haploinsufficiency and NMD grouping are not individual functional proof. Retrospective literature ascertainment, post hoc regional cutoffs, unequal detail and multiple comparisons constrain severity prediction. No wet-lab design/execution.",
+    "Figure4 is the paper's published facial-analysis comparison (48 affected photos, 21mild/27severe;79 controls), not a target benchmark outcome. Mild-versus-severe AUC0.74, p0.067 does not establish validated individual severity classification; published comparisons to controls do not substitute external clinical validation.",
+    "Whole-source review includes all13 present patients and all104 literature columns/rows. G01/G02 are related mother/child, US02 previously published; independent-case or family counts must not be inferred simply from117 entries. Other diagnoses/variants in S01/US01 and source uncertainty remain visible.",
+    "Original workbook ZIP member bytes verified identical. Full data/formula/style/merge reading for allsix sheets; four colored reading pages only forD. Original PDF acquisition was unusable and never claimed read. FullXML, originalfigures, complete tables and workbook supply source reading; no access failure relabeled as PDF success.",
+    "Prepared Table2 first derivative misplaced its subheader by ignoring rowspan; corrected derivative created and fully inspected, with original cells unchanged. Earlier defective derivative is not cited by this record.",
+    "Historical public-control HG002/FGFR2 case-specific rank exposure from requiredHANDOFF reading is disclosed per_case; no target-case inference ranks or benchmark summaries consulted. No blinded claim."
+  ]
+}

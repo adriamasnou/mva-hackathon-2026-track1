@@ -1,0 +1,800 @@
+{
+  "schema_version": 1,
+  "pmid": "36777730",
+  "title": "Clinical and genetic features of luscan-lumish syndrome associated with a novel de novo variant of SETD2 gene: Case report and literature review",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T10:36:44.356244+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "4df0c32ec07b14cb4fc44d0705ae15c2ce451b23ed88bcdbf58614577a4ff8d0",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "36777730",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36777730/main.xml",
+      "sha256": "df4344e3d3d25dd06df89f891710b7f0f1151e8aec1d35ddbe3da65a3f2071db",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "36777730",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36777730/main.complete.txt",
+      "sha256": "01fda6319c3734ab35ef1cf436e8369c401d56082abf2b7ca384e7257e8684d7",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "36777730",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/36777730/availability.json",
+      "sha256": "b85b048cad4b01cf9565a57bab377985acc03299bdea30a7fe5ffcb401e06400",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "figure-1",
+      "pmid": "36777730",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36777730/cloud/PMC9911649.1/fgene-14-1081391-g001.jpg",
+      "sha256": "c47fc1bdd83f09526ac3a6420b9f273a23f76dc976ce1aa70c4648c13b4f8bb2",
+      "kind": "image",
+      "description": "All three panels pedigree/Sanger, alignment and variant map viewed"
+    },
+    {
+      "id": "main-pdf",
+      "pmid": "36777730",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36777730/cloud/PMC9911649.1/PMC9911649.1.pdf",
+      "sha256": "89e942ee8aae5c2f64a6ee02fa37d16689abc45c1fb4e3c82c892b501e980429",
+      "kind": "pdf",
+      "description": "Publisher main PDF"
+    },
+    {
+      "id": "pdf-layout",
+      "pmid": "36777730",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/36777730/layout.txt",
+      "sha256": "e85c2576c76d01cbebd0113d8f8eb8a7cddfd8bd841826fe14eb819df25f7eb2",
+      "kind": "text",
+      "description": "Main PDF layout extraction"
+    },
+    {
+      "id": "supp-original",
+      "pmid": "36777730",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/36777730/cloud/PMC9911649.1/Image1.TIF",
+      "sha256": "e196607c9310b08a9f816c3435c80b29be5e94a0e065fb1e2807e5ff15dea3b8",
+      "kind": "image",
+      "description": "Single-frame original supplementary MRI TIFF"
+    },
+    {
+      "id": "supp-pixels",
+      "pmid": "36777730",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/36777730/supp-frame-1.png",
+      "sha256": "cfc83a2539d29eaf51c1b08184fe29c5b0aba4e3e92a9859f26bc658ddf2f31c",
+      "kind": "image",
+      "description": "Lossless PNG conversion of full supplementary TIFF viewed"
+    },
+    {
+      "id": "page-4",
+      "pmid": "36777730",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/36777730/page-4.png",
+      "sha256": "aa2614d402cd6e714f4e2895b6f8917d7d9910164566cf8df8674f3c9db4265f",
+      "kind": "image",
+      "description": "Entire historical/current-case Table1 pixels inspected"
+    },
+    {
+      "id": "page-5",
+      "pmid": "36777730",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/36777730/page-5.png",
+      "sha256": "736baa93e630ee60b8d55fdc187cfd76824e0fe85b4927a4dd6aa7a872b6721f",
+      "kind": "image",
+      "description": "Entire historical/current-case Table1 pixels inspected"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Clinical and genetic features of luscan-lumish syndrome associated with a novel de novo variant of SETD2 gene: Case report and literature review",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 1,
+      "table": 1,
+      "supplement": 4
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Four XML supplement anchors all map to one physical Image1.TIF; complete asset inventory, no four-file claim. Parent updating duplicate-link counting; record retains exact anchors for compatibility."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 263,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–263"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 263,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–263"
+        }
+      ],
+      "note": "Full article, all22references, historical15case table plus present case, methods and declarations read. Present variant is an in-frame Ser838 deletion; pathogenicity paragraph incorrectly describes loss of a termination codon. Functional effect remains speculative. Paper classifies likely pathogenic, whereas packet states pathogenic. Figure/table pixels and single physical TIFF supplement viewed."
+    },
+    {
+      "id": "figure:F1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "figure-1",
+      "extent_evidence": [
+        {
+          "source_id": "figure-1",
+          "locator": "all A–C panels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "figure-1",
+          "locator": "all panels and labels"
+        }
+      ],
+      "note": "Proband indel trace differs from both parents; alignment only partly conserved; map not functional assay."
+    },
+    {
+      "id": "table:T1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 2,
+      "extent_source_id": "main-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "main-pdf",
+          "locator": "Table1 pages4–5"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 2,
+          "mode": "text",
+          "source_id": "pdf-layout",
+          "locator": "Table1 pages4–5 complete"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "page-4",
+          "locator": "all rows and columns"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "page-5",
+          "locator": "all rows and columns"
+        }
+      ],
+      "note": "All15 historical rows and present proband, both sections, inspected. No copied historical patient diagnoses counted as present case."
+    },
+    {
+      "id": "supplement:supplementary-material1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "frames",
+      "unit_count": 1,
+      "extent_source_id": "supp-original",
+      "extent_evidence": [
+        {
+          "source_id": "supp-original",
+          "locator": "single TIFF frame, four sagittal MRI panels"
+        },
+        {
+          "source_id": "main-xml",
+          "locator": "S1 caption and SM1 Image1.TIF; repeated Associated Data links"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp-pixels",
+          "locator": "all four MRI panels inspected"
+        }
+      ],
+      "note": "One physical supplement Image1.TIF shared by four XML elements (caption, media and repeated Associated Data entries). These are duplicate anchors, not four separate files. No independent radiology measurements."
+    },
+    {
+      "id": "supplement:SM1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "frames",
+      "unit_count": 1,
+      "extent_source_id": "supp-original",
+      "extent_evidence": [
+        {
+          "source_id": "supp-original",
+          "locator": "single TIFF frame, four sagittal MRI panels"
+        },
+        {
+          "source_id": "main-xml",
+          "locator": "S1 caption and SM1 Image1.TIF; repeated Associated Data links"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp-pixels",
+          "locator": "all four MRI panels inspected"
+        }
+      ],
+      "note": "One physical supplement Image1.TIF shared by four XML elements (caption, media and repeated Associated Data entries). These are duplicate anchors, not four separate files. No independent radiology measurements."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material1_reqid_",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "frames",
+      "unit_count": 1,
+      "extent_source_id": "supp-original",
+      "extent_evidence": [
+        {
+          "source_id": "supp-original",
+          "locator": "single TIFF frame, four sagittal MRI panels"
+        },
+        {
+          "source_id": "main-xml",
+          "locator": "S1 caption and SM1 Image1.TIF; repeated Associated Data links"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp-pixels",
+          "locator": "all four MRI panels inspected"
+        }
+      ],
+      "note": "One physical supplement Image1.TIF shared by four XML elements (caption, media and repeated Associated Data entries). These are duplicate anchors, not four separate files. No independent radiology measurements."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material2_reqid_",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "frames",
+      "unit_count": 1,
+      "extent_source_id": "supp-original",
+      "extent_evidence": [
+        {
+          "source_id": "supp-original",
+          "locator": "single TIFF frame, four sagittal MRI panels"
+        },
+        {
+          "source_id": "main-xml",
+          "locator": "S1 caption and SM1 Image1.TIF; repeated Associated Data links"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp-pixels",
+          "locator": "all four MRI panels inspected"
+        }
+      ],
+      "note": "One physical supplement Image1.TIF shared by four XML elements (caption, media and repeated Associated Data entries). These are duplicate anchors, not four separate files. No independent radiology measurements."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SETD2/PMID_36777730_Proband.json",
+      "packet_sha256": "b467c32c6867d80a2456c2dacfa35aa367dd91fd1f56fd1ed49db29924933dcb",
+      "case_id": "TC_cba3bef946371b53",
+      "role": "selected",
+      "packet_subject_id": "Proband",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Only new proband mapped; 15 literature cases read as context."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Sole new proband is a male aged5y7m, matching packet. Historical15patients in Table1 are not this case.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Case description"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "WES and Sanger report heterozygous c.2514_2516delTAG p.Ser838del.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results Targeted sequencing; Figure1A"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Variant absent in both parents on Sanger and called de novo. Explicit maternity/paternity confirmation and parental mosaicism sensitivity are not supplied.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results; Figure1A"
+          }
+        ],
+        "limitations": [
+          "Do not independently award PS2 without documented parentage confirmation."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Single heterozygous in-frame deletion; compound-heterozygous phase not applicable.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "De novo candidate deletion and phenotype support the authors likely-pathogenic interpretation. Packet PATHOGENIC exceeds source label. PM4 rationale incorrectly calls this termination-codon loss; it is an in-frame Ser838 deletion. Functional effect explicitly awaits experiment.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Pathogenicity analysis and Bioinformatics analysis"
+          }
+        ],
+        "limitations": [
+          "No new functional assay; partly conserved residue; no independent clinical reclassification."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All13features checked against description and current-case table row; tall stature >2SD, a core feature, is omitted. Negative symptoms reflect age5y7m evaluation.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Case description; Table1 currentcase"
+          }
+        ],
+        "limitations": [
+          "Infantile speech onset is approximate; early developmental trajectory described retrospectively."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c2514_2516delTAG_SETD2_NM_014159v7",
+            "geneContext": {
+              "valueId": "HGNC:18420",
+              "symbol": "SETD2"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_014159.7:c.2514_2516delTAG"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000003.12:g.47122123_47122125del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_054878.5:p.(Ser838del)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr3",
+              "pos": 47122119,
+              "ref": "TCTA",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "f4221b91ae290b1f90308cccfb4b6abc36b1b95941b1deec435230de836b3f9c",
+          "assessment": {
+            "status": "qualified",
+            "statement": "c.2514_2516delTAG p.Ser838del matches. Source lacks explicit NM_014159.7 version; its chromosomal range47163609–47163612 includes four positions while deletion is3nt, and packet genomic HGVS/VCF use shifted representations.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results and Table1 currentcase"
+              }
+            ],
+            "limitations": [
+              "Exact transcript-version/genomic-repeat normalization not independently reconstructed."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001999",
+              "label": "Abnormal facial shape"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be875f7b2546d3573ff96fbd996b45f79a8c2f4ed7b536e471dce6ab9384ceea",
+          "assessment": {
+            "status": "supported",
+            "statement": "No unusual facial features.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description; Table1 current-case row; supplementary FigureS1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000256",
+              "label": "Macrocephaly"
+            }
+          },
+          "snapshot_sha256": "081c6d2646a2f160bd9caeaa55ad658fca4d896b0efa93c63f227d3faea1352d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Head circumference54cm >2SD.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description; Table1 current-case row; supplementary FigureS1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000403",
+              "label": "Recurrent otitis media"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a61b1f9d38ae263eda270924e948d37c7a074c3634f3309ad6760c68fe7aa42b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Otitis media minus in current-case Table1 row.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description; Table1 current-case row; supplementary FigureS1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002020",
+              "label": "Gastroesophageal reflux"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4079b47a877e8de26b6388a10c28d9867f51e29ffadcb19d68cb70544944e0f9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Gastroesophageal reflux minus in current-case Table1 row.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description; Table1 current-case row; supplementary FigureS1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000365",
+              "label": "Hearing impairment"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f5217f5bb3ce68d4e4ca41ccfd1243869f4272d9be7d9c3101fba1c01a0df407",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hearing test normal.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description; Table1 current-case row; supplementary FigureS1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "7d980d74444a5d74086a74089fb1eca96adfa17f48e4fa26407f7d1fc812a68f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Seizures minus in current-case Table1 row.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description; Table1 current-case row; supplementary FigureS1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "Motor/language delay and GDS33–47 across domains.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description; Table1 current-case row; supplementary FigureS1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            },
+            "onset": {
+              "ontologyClass": {
+                "id": "HP:0003593",
+                "label": "Infantile onset"
+              }
+            }
+          },
+          "snapshot_sha256": "3a1c5710a03d61d2d69be8128ff1ba5f9cf8c2835f6febf8ddfa29c83a1f7444",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Delayed words until about18months and slow later language progress directly described; exact infantile onset cutoff is retrospective and imprecise.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description"
+              }
+            ],
+            "limitations": [
+              "No precise onset date before age1 supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034435",
+              "label": "Abnormal eye contact"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a36846fc929d03d060aad202d9830edf82db8534c570f3a158b6a93c97f3e85b",
+          "assessment": {
+            "status": "supported",
+            "statement": "Normal eye contact observed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description; Table1 current-case row; supplementary FigureS1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f37a617c9079a8c3ca1b69beb3c8d31339d617d796fa0ab93a407c75efb77d3e",
+          "assessment": {
+            "status": "supported",
+            "statement": "Does not meet ASD diagnostic criteria and ASD minus in table.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description; Table1 current-case row; supplementary FigureS1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000733",
+              "label": "Motor stereotypy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "17cfbad499ae22d433226309a396e207b32c10ba193bad5cb462e1e3da47e262",
+          "assessment": {
+            "status": "supported",
+            "statement": "No obvious stereotyped behavior.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description; Table1 current-case row; supplementary FigureS1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033725",
+              "label": "Thin corpus callosum"
+            }
+          },
+          "snapshot_sha256": "46e89517a2809531e4acbda0a00736d04c295a09bcc1007bfc99860ddefc0cb2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Mildly thinner corpus callosum body on MRI report.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description; Table1 current-case row; supplementary FigureS1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001252",
+              "label": "Hypotonia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4a1bfc1bd5599f694602bb5a9c71ff1934f02d19f1529197116397e70f25b7f7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypomyotonia minus in current-case Table1 row.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Case description; Table1 current-case row; supplementary FigureS1 caption"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading."
+  ]
+}

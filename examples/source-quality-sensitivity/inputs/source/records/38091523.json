@@ -1,0 +1,1323 @@
+{
+  "schema_version": 1,
+  "pmid": "38091523",
+  "title": "LRRC23 truncation impairs radial spoke 3 head assembly and sperm motility underlying male infertility",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T14:25:25.669901+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "0e63a69f768ae316402343795cb547db7af236c34c2cf3bd21e5ae025b54c486",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "38091523",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38091523/main.xml",
+      "sha256": "6b5abfee0188c756f3d8cf72682ef8d32e6074c1df4997989101b16d73c5dc68",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "38091523",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38091523/main.complete.txt",
+      "sha256": "d067ecf4428e46120b14eb30cb1a7fa30e77709578c3dcadf0ff90ff5185bc07",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "38091523",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/38091523/availability.json",
+      "sha256": "e68b79afac804a45e7895f18fd9842fb6abdf3a7cc9e4eb90d7e5e1af31f324e",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "elife-90095-supp1",
+      "pmid": "38091523",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38091523/cloud/PMC10721216.1/elife-90095-supp1.docx",
+      "sha256": "b4ce853aa41e9be562f2e73e4e3df8c931f5e1ad019b727a21ac6a3585be94b5",
+      "kind": "data",
+      "description": "Original DOCX supplementarymaterial"
+    },
+    {
+      "id": "elife-90095-supp1-text",
+      "pmid": "38091523",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/38091523/elife-90095-supp1.txt",
+      "sha256": "43d8e0b86274d65bd16b5b3c1586a83560065140d557a7ff6bc10e0aad125348",
+      "kind": "text",
+      "description": "Complete paragraphs/tablecelltext read"
+    },
+    {
+      "id": "elife-90095-supp2",
+      "pmid": "38091523",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38091523/cloud/PMC10721216.1/elife-90095-supp2.docx",
+      "sha256": "ce712121b4bb18320bce25074c91ef3570bbde46d4b152558e691d357a150db5",
+      "kind": "data",
+      "description": "Original DOCX supplementarymaterial"
+    },
+    {
+      "id": "elife-90095-supp2-text",
+      "pmid": "38091523",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/38091523/elife-90095-supp2.txt",
+      "sha256": "468095e2e681b5222c6ac85bf62d277233fefee2b0f20485c6deb4b8e1bc4bcf",
+      "kind": "text",
+      "description": "Complete paragraphs/tablecelltext read"
+    },
+    {
+      "id": "elife-90095-supp3",
+      "pmid": "38091523",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38091523/cloud/PMC10721216.1/elife-90095-supp3.docx",
+      "sha256": "e41a4fa4b59f27f0f0932ec4299effdb615fc7a5fb1f6f1e505f5151983a91fb",
+      "kind": "data",
+      "description": "Original DOCX supplementarymaterial"
+    },
+    {
+      "id": "elife-90095-supp3-text",
+      "pmid": "38091523",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/38091523/elife-90095-supp3.txt",
+      "sha256": "d0adf6ac496566a0a0900163eee6d995729d90a3d031a672bfdbb45faffa8c30",
+      "kind": "text",
+      "description": "Complete paragraphs/tablecelltext read"
+    },
+    {
+      "id": "elife-90095-mdarchecklist1",
+      "pmid": "38091523",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38091523/cloud/PMC10721216.1/elife-90095-mdarchecklist1.docx",
+      "sha256": "6d3fdf9e6a818d564b5fd1e4307acd29014b0f6b1ebaf972365198d20c80fecb",
+      "kind": "data",
+      "description": "Original DOCX supplementarymaterial"
+    },
+    {
+      "id": "elife-90095-mdarchecklist1-text",
+      "pmid": "38091523",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/38091523/elife-90095-mdarchecklist1.txt",
+      "sha256": "4d2b9534920c5454f333675aaa36e5891295fec6d928ed32f69a7abea6016782",
+      "kind": "text",
+      "description": "Complete paragraphs/tablecelltext read"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "LRRC23 truncation impairs radial spoke 3 head assembly and sperm motility underlying male infertility",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 14,
+      "table": 0,
+      "supplement": 25
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim. Three separatelylinkedVideos1–3includedexplicitly."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 950,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–950"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 950,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–950"
+        }
+      ],
+      "note": "Entiremaintext,allreferences,publicreviewsandauthorresponsesreadin4successivechunks;figurecaptionsnotpixels."
+    },
+    {
+      "id": "figure:fig1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig1]; Figure 1.A bi-allelic splicing donor site variant in LRRC23 was identified from asthenozoospermia patients.(A) A consanguineous pedigree with two infertile males (IV-1 and IV-2). IV-1 was subjected for WES (arrow). Genotypes of the variant (blue) in all family members included in this study (III-1, III-2, IV-1, IV-2, IV-3, and IV-4) are confirmed by Sanger sequencing. +, wild-type allele. An infer"
+    },
+    {
+      "id": "figure:fig1s1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig1s1]; Figure 1—figure supplement 1.A LRRC23 splicing site variant identified from infertile male patients.(A) Papanicolaou-stained sperm from the infertile male member, IV-2. (B) The splicing site variant in the 5th intron of LRRC23 gene. The variant is predicted to cause early termination of the protein translation. (C) Sequence alignment of the normal and predicted mutant LRRC23 by the splicing site m"
+    },
+    {
+      "id": "figure:fig2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig2]; Figure 2.Lrrc23 mutant mice mimicking human splice variant phenocopy male infertility and reduced sperm motility.(A, B) Immunoblotting of LRRC23 in testis (A) and epididymal sperm (B) from mutant male mice. Truncated LRRC23 (arrowheads) is detected from testis microsome fraction (filled), but not in mature sperm (empty), of heterozygous (+/Δ) and homozygous (Δ/Δ) males. Acetylated tubulin (AcTub) "
+    },
+    {
+      "id": "figure:fig2s1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig2s1]; Figure 2—figure supplement 1.Generation of LRRC23 mutant mouse models.(A) A pair-wise alignment of human and mouse LRRC23 protein sequences. Deleted amino acids by the splice site mutation (encoded by exon 6 and 7) are written in red. Epitopes for the LRRC23 antibodies against N- (118–197, yellow) and C-terminus (209–288, cyan) are highlighted. (B) Generation of LRRC23 mutant mouse models by CRISP"
+    },
+    {
+      "id": "figure:fig2s2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig2s2]; Figure 2—figure supplement 2.Characterization of the Lrrc23 lossof-function male mice.(A–D) Protein expression of LRRC23 in wild type (WT) and Lrrc23 mutant males. (A) Original images of truncated LRRC23 immunoblotting in testis shown in Figure 2A. Short (top) and long (middle) exposure images are shown. Calmodulin (CaM) is a loading control. (B) Immunobloting of LRRC23 in testis from Lrrc23-4135d"
+    },
+    {
+      "id": "figure:video1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=video1]; Video 1.Lrrc23+/Δ and Lrrc23Δ/Δ sperm swimming freely in a viscous environment.Free-swimming Lrrc23+/Δ and Lrrc23Δ/Δ sperm in the viscous condition containing 0.3% methylcellulose were recorded for 2 s before and after inducing capacitation for 90 min. Individual videos are played at 50 fps (1/2 speed)."
+    },
+    {
+      "id": "figure:video2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=video2]; Video 2.Flagellar waveform of Lrrc23+/Δ and Lrrc23Δ/Δ sperm before and after inducing capacitation.Tail movements of head-tethered sperm from Lrrc23+/Δ and Lrrc23Δ/Δ males are recorded for 2 s before and after incubation under capacitating conditions for 90 min. Each video is played at 100 fps (1/2 speed)."
+    },
+    {
+      "id": "figure:fig3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig3]; Figure 3.C-terminal truncation of human LRRC23 by the splicing site mutation prevents its interaction with radial spoke (RS) head.(A) Sub-tomogram averaging images of RSs from Chlamydomonas reinhardtii (red), Trypanosoma brucei (yellow), mouse sperm (sky blue), and human sperm (blue). RSs at 7th microtubule doublet (MTD) are shown for human sperm. Original data from Electron Microscopy Data Bank w"
+    },
+    {
+      "id": "figure:fig3s1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig3s1]; Figure 3—figure supplement 1.A predicted RSP15 ortholog, LRRC34, in metazoan species.(A) Purified recombinant GST confirmed by Coomassie blue staining (left) and immunoblotting (right). (B) Interaction test of GST to human radial spoke proteins (RSPH) by trap-assay as a negative control. Yellow lines in α-GST blot images indicate molecular weight (25 kDa). (C) Comparison of the pairwise distances "
+    },
+    {
+      "id": "figure:fig4",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig4]; Figure 4.LRRC23 mutation disrupts the third radial spoke (RS) in sperm flagellum.(A) Immunostaining of flagellar proteins in different compartments. Shown are midpiece (TOM20), annulus (SEPT4 and SEPT12), fibrous sheath (AKAP4), outer dense fiber (ODF2), and axoneme (acetylated tubulin, AcTub) in Lrrc23+/Δ (top) and Lrrc23Δ/Δ (bottom) sperm. Magnified insets are represented for annulus proteins (s"
+    },
+    {
+      "id": "figure:fig4s1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig4s1]; Figure 4—figure supplement 1.Flagellar compartmentalization in Lrrc23-mutant sperm.(A) Distribution of the axonemal components in Lrrc23Δ/Δ sperm. Immunostained radial spoke (RSPH3B and RSPH9) and dynein arm (DNAH1, DNAH2, and DNAH9) in Lrrc23+/Δ and Lrrc23Δ/Δ sperm are shown by confocal images. Hoechst is used for counterstaining the sperm head. Experiment was performed with three biological repl"
+    },
+    {
+      "id": "figure:video3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=video3]; Video 3.Tilted series of cryo-electron tomogram slices from WT (left) and Lrrc23Δ/Δ (right) spermatozoa.Tomogram images were acquired of WT and Lrrc23Δ/Δ sperm were acquired on the grid and image slices were rendered to show the axonemal structure in a tilt series."
+    },
+    {
+      "id": "figure:fig5",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig5]; Figure 5.Head of the third radial spoke is absent in Lrrc23Δ/Δ sperm flagella.(A, B) Sub-tomogram averaging (STA) to analyze structural defects at radial spoke (RS) of WT (A) and Lrrc23Δ/Δ sperm (B). Shown are STA images resulted from 96 nm doublet repeats from WT and Lrrc23Δ/Δ sperm. RS2 and 3 are magnified and density to represent RS3 head and the bridge between RS2 and RS3 (red circle) is misse"
+    },
+    {
+      "id": "figure:fig5s1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=fig5s1]; Figure 5—figure supplement 1.Workflow of cryo-electron tomography (cryo-ET) and sub-tomogram averaging (STA) processing of 96 nm microtubule doublet repeat from mouse sperm.(A) An example of low magnification map of Lrrc23Δ/Δ mouse sperm on grid square. Scale bar, 10 µm. (B) An example tomographic slice obtained from sperm on the grid and segmented particles with 24 nm interval (green circles, rig"
+    },
+    {
+      "id": "supplement:fig1s1sdata1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=fig1s1sdata1]; Figure 1—figure supplement 1—source data 1.Uncropped blot images for Figure 1—figure supplement 1."
+    },
+    {
+      "id": "supplement:fig2sdata1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=fig2sdata1]; Figure 2—source data 1.Uncropped blot images for Figure 2."
+    },
+    {
+      "id": "supplement:fig2s1sdata1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=fig2s1sdata1]; Figure 2—figure supplement 1—source data 1."
+    },
+    {
+      "id": "supplement:fig2s2sdata1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=fig2s2sdata1]; Figure 2—figure supplement 2—source data 1.Uncropped blot images for Figure 2—figure supplement 1."
+    },
+    {
+      "id": "supplement:fig3sdata1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=fig3sdata1]; Figure 3—source data 1.Uncropped gel and blot images for Figure 3."
+    },
+    {
+      "id": "supplement:fig3s1sdata1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=fig3s1sdata1]; Figure 3—figure supplement 1—source data 1.Uncropped blot images for Figure 3—figure supplement 1."
+    },
+    {
+      "id": "supplement:fig4s1sdata1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=fig4s1sdata1]; Figure 4—figure supplement 1—source data 1.Uncropped blot images for Figure 4—figure supplement 1."
+    },
+    {
+      "id": "supplement:supp1",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "lines",
+      "unit_count": 18,
+      "extent_source_id": "elife-90095-supp1-text",
+      "extent_evidence": [
+        {
+          "source_id": "elife-90095-supp1-text",
+          "locator": "lines1–18"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 18,
+          "mode": "text",
+          "source_id": "elife-90095-supp1-text",
+          "locator": "Allparagraphsandtablecells"
+        }
+      ],
+      "note": "Fulltextread; tablepixelsunread."
+    },
+    {
+      "id": "supplement:supp2",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "lines",
+      "unit_count": 24,
+      "extent_source_id": "elife-90095-supp2-text",
+      "extent_evidence": [
+        {
+          "source_id": "elife-90095-supp2-text",
+          "locator": "lines1–24"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 24,
+          "mode": "text",
+          "source_id": "elife-90095-supp2-text",
+          "locator": "Allparagraphsandtablecells"
+        }
+      ],
+      "note": "Fulltextread; tablepixelsunread."
+    },
+    {
+      "id": "supplement:supp3",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "lines",
+      "unit_count": 22,
+      "extent_source_id": "elife-90095-supp3-text",
+      "extent_evidence": [
+        {
+          "source_id": "elife-90095-supp3-text",
+          "locator": "lines1–22"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 22,
+          "mode": "text",
+          "source_id": "elife-90095-supp3-text",
+          "locator": "Allparagraphsandtablecells"
+        }
+      ],
+      "note": "Fulltextread; tablepixelsunread."
+    },
+    {
+      "id": "supplement:mdar",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "lines",
+      "unit_count": 120,
+      "extent_source_id": "elife-90095-mdarchecklist1-text",
+      "extent_evidence": [
+        {
+          "source_id": "elife-90095-mdarchecklist1-text",
+          "locator": "lines1–120"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 120,
+          "mode": "text",
+          "source_id": "elife-90095-mdarchecklist1-text",
+          "locator": "Allparagraphsandtablecells"
+        }
+      ],
+      "note": "Fulltextread; tablepixelsunread."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material1_reqid_",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=db_ds_supplementary-material1_reqid_]; Figure 1—figure supplement 1—source data 1.Uncropped blot images for Figure 1—figure supplement 1."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material2_reqid_",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=db_ds_supplementary-material2_reqid_]; Figure 2—source data 1.Uncropped blot images for Figure 2."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material3_reqid_",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=db_ds_supplementary-material3_reqid_]; Figure 2—figure supplement 1—source data 1."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material4_reqid_",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=db_ds_supplementary-material4_reqid_]; Figure 2—figure supplement 2—source data 1.Uncropped blot images for Figure 2—figure supplement 1."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material5_reqid_",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=db_ds_supplementary-material5_reqid_]; Figure 3—source data 1.Uncropped gel and blot images for Figure 3."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material6_reqid_",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=db_ds_supplementary-material6_reqid_]; Figure 3—figure supplement 1—source data 1.Uncropped blot images for Figure 3—figure supplement 1."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material7_reqid_",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=db_ds_supplementary-material7_reqid_]; Figure 4—figure supplement 1—source data 1.Uncropped blot images for Figure 4—figure supplement 1."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material8_reqid_",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "lines",
+      "unit_count": 18,
+      "extent_source_id": "elife-90095-supp1-text",
+      "extent_evidence": [
+        {
+          "source_id": "elife-90095-supp1-text",
+          "locator": "lines1–18"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 18,
+          "mode": "text",
+          "source_id": "elife-90095-supp1-text",
+          "locator": "Allparagraphsandtablecells"
+        }
+      ],
+      "note": "Fulltextread; tablepixelsunread."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material9_reqid_",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "lines",
+      "unit_count": 24,
+      "extent_source_id": "elife-90095-supp2-text",
+      "extent_evidence": [
+        {
+          "source_id": "elife-90095-supp2-text",
+          "locator": "lines1–24"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 24,
+          "mode": "text",
+          "source_id": "elife-90095-supp2-text",
+          "locator": "Allparagraphsandtablecells"
+        }
+      ],
+      "note": "Fulltextread; tablepixelsunread."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material10_reqid_",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "lines",
+      "unit_count": 22,
+      "extent_source_id": "elife-90095-supp3-text",
+      "extent_evidence": [
+        {
+          "source_id": "elife-90095-supp3-text",
+          "locator": "lines1–22"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 22,
+          "mode": "text",
+          "source_id": "elife-90095-supp3-text",
+          "locator": "Allparagraphsandtablecells"
+        }
+      ],
+      "note": "Fulltextread; tablepixelsunread."
+    },
+    {
+      "id": "supplement:db_ds_supplementary-material11_reqid_",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "lines",
+      "unit_count": 120,
+      "extent_source_id": "elife-90095-mdarchecklist1-text",
+      "extent_evidence": [
+        {
+          "source_id": "elife-90095-mdarchecklist1-text",
+          "locator": "lines1–120"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 120,
+          "mode": "text",
+          "source_id": "elife-90095-mdarchecklist1-text",
+          "locator": "Allparagraphsandtablecells"
+        }
+      ],
+      "note": "Fulltextread; tablepixelsunread."
+    },
+    {
+      "id": "supplement:video1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "frames",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "MaintextVideo1; captionreadbutvideoframesnotviewed."
+    },
+    {
+      "id": "supplement:video2",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "frames",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "MaintextVideo2; captionreadbutvideoframesnotviewed."
+    },
+    {
+      "id": "supplement:video3",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "frames",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "MaintextVideo3; captionreadbutvideoframesnotviewed."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/LRRC23/PMID_38091523_IV_1.json",
+      "packet_sha256": "fa7793430c7994f82f973259d4aa1fc9a029f72ffe1da86cc49fa8d192d797fc",
+      "case_id": "TC_c7eff425b2ddc4de",
+      "role": "selected",
+      "packet_subject_id": "IV-1",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Primarysourceaudit,notclinicalproofoflabel."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "ExactIV-1,Pakistani male sibling,age49,marriages16and3years;WESproband.",
+        "evidence": [
+          {
+            "source_id": "elife-90095-supp1-text",
+            "locator": "TableEV1 IV-1column"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "HomozygousLRRC23NM_001135217:c.621+1G>A; TableEV2GRCh37chr12:7016610 vs packetGRCh38chr12:6907446G>A.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Resultsvariantidentification;TableEV2"
+          }
+        ],
+        "limitations": [
+          "Genomebuildconversionandtranscriptversionnotindependentlyverified;codingandgenegeneidentityagree."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Bothaffectedbrothershomozygous;fatherheterozygous,motherhomozygousandfertile. InfertilesisterIV-4alsohomozygous;femaleassociationnotestablished.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Figure1A/Dcaption;Resultsfirstsection"
+          }
+        ],
+        "limitations": [
+          "Rawpedigreepixelsnotinspected;onefamily,notindependentreplication."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Singlehomozygousvariant reported;doesnotrequirecompoundheterozygousphaseinference.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Resultsfirstsection"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Minigenein293Tdemonstratesintronretentionandtruncation;twomousedeletionlinesphenocopymalemotilityfailure,cryoETshowsRS3head/bridgeabsence;humanrecombinanttruncationabolishesRSPH9interaction.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results;Discussion;AuthorResponsetoreviewers"
+          }
+        ],
+        "limitations": [
+          "Patientsdeclinedfollowup;nohumanpatientspermRNA/proteinlocalization/ultrastructuremechanismmeasurement.",
+          "Mouseexon6–7deletionmimicsoutcomebutisnotexactsingle-nucleotidehumanvariant.",
+          "LRRC23preciseRS3positionnotdirectlyresolved;authorsacknowledgeatomiclocalizationneedsfuturestudy.",
+          "Reportedcausalassociationnotclinicalproofbythisaudit;femalefertilityvariableandnotexcludeduniversally."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "AllfourmappedfeaturescomparedagainstexactindividualEV1column;normalmorphologyandabsenceofPCDsymptomsreportedmaintext.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Resultsfirstsection"
+          }
+        ],
+        "limitations": [
+          "SupplementEV1labelsconcentrationreference>39million/ml,whichresemblesatotalcountthreshold;units/reportinglimitationpreserved.",
+          "Allfigure/tablepixels,uncroppedblotsandvideosunread."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c621_1GtoA_LRRC23_NM_001135217v2",
+            "geneContext": {
+              "valueId": "HGNC:19138",
+              "symbol": "LRRC23"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001135217.2:c.621+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000012.12:g.6907446G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001128689.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr12",
+              "pos": 6907446,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "6abeea1da67a2d2301c8d6d82e618a388392e2b7652f21b00c98b1364b75ed7a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "HomozygousLRRC23NM_001135217:c.621+1G>A; TableEV2GRCh37chr12:7016610 vs packetGRCh38chr12:6907446G>A.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsvariantidentification;TableEV2"
+              }
+            ],
+            "limitations": [
+              "Genomebuildconversionandtranscriptversionnotindependentlyverified;codingandgenegeneidentityagree."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003251",
+              "label": "Male infertility"
+            }
+          },
+          "snapshot_sha256": "39d19caae57a397b25fc37130fdf43fcb343139763757e2344cfb475aefc4e39",
+          "assessment": {
+            "status": "supported",
+            "statement": "Maleinfertilityafterunprotectedintercourse.",
+            "evidence": [
+              {
+                "source_id": "elife-90095-supp1-text",
+                "locator": "TableEV1 IV-1column"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034011",
+              "label": "Reduced progressive sperm motility"
+            }
+          },
+          "snapshot_sha256": "29cc30cdde07d6c33066e31fcad05241e0a4b48a55b4776e067d9e2474e7232f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Progressivemotility15%below32%tablereference.",
+            "evidence": [
+              {
+                "source_id": "elife-90095-supp1-text",
+                "locator": "TableEV1 IV-1column"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012207",
+              "label": "Reduced sperm motility"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "507953fd6786377d80d7ee17f1db87d584a924d74b81521b432ea433b9e97c83",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Totalmotility45%abovetable40%threshold;negativeappliestototalmotility,notallmotility.",
+            "evidence": [
+              {
+                "source_id": "elife-90095-supp1-text",
+                "locator": "TableEV1 IV-1column"
+              }
+            ],
+            "limitations": [
+              "PacketbroadReduced sperm motilitynegativecoexistswithreducedprogressivepositiveterm;preservetotal-versus-progressivedistinction."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000798",
+              "label": "Oligozoospermia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bb36e0f77eccee7bd0f818378af9fdc0943052b6c919b97d258c989524301bcf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Concentration40million/mlwithvolume3ml;countsnotoligozoospermicbytablereference.",
+            "evidence": [
+              {
+                "source_id": "elife-90095-supp1-text",
+                "locator": "TableEV1 IV-1column"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/LRRC23/PMID_38091523_IV_2.json",
+      "packet_sha256": "ef961c591f8db0dd8d3fb09db39debeb785bb539f24d598725b4cb9b1b8a91aa",
+      "case_id": "TC_c7eff425b2ddc4de",
+      "role": "alternate",
+      "packet_subject_id": "IV-2",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Primarysourceaudit,notclinicalproofoflabel."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "ExactIV-2,Pakistani male sibling,age36,marriage4years.",
+        "evidence": [
+          {
+            "source_id": "elife-90095-supp1-text",
+            "locator": "TableEV1 IV-2column"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "HomozygousLRRC23NM_001135217:c.621+1G>A; TableEV2GRCh37chr12:7016610 vs packetGRCh38chr12:6907446G>A.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Resultsvariantidentification;TableEV2"
+          }
+        ],
+        "limitations": [
+          "Genomebuildconversionandtranscriptversionnotindependentlyverified;codingandgenegeneidentityagree."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Bothaffectedbrothershomozygous;fatherheterozygous,motherhomozygousandfertile. InfertilesisterIV-4alsohomozygous;femaleassociationnotestablished.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Figure1A/Dcaption;Resultsfirstsection"
+          }
+        ],
+        "limitations": [
+          "Rawpedigreepixelsnotinspected;onefamily,notindependentreplication."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Singlehomozygousvariant reported;doesnotrequirecompoundheterozygousphaseinference.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Resultsfirstsection"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Minigenein293Tdemonstratesintronretentionandtruncation;twomousedeletionlinesphenocopymalemotilityfailure,cryoETshowsRS3head/bridgeabsence;humanrecombinanttruncationabolishesRSPH9interaction.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results;Discussion;AuthorResponsetoreviewers"
+          }
+        ],
+        "limitations": [
+          "Patientsdeclinedfollowup;nohumanpatientspermRNA/proteinlocalization/ultrastructuremechanismmeasurement.",
+          "Mouseexon6–7deletionmimicsoutcomebutisnotexactsingle-nucleotidehumanvariant.",
+          "LRRC23preciseRS3positionnotdirectlyresolved;authorsacknowledgeatomiclocalizationneedsfuturestudy.",
+          "Reportedcausalassociationnotclinicalproofbythisaudit;femalefertilityvariableandnotexcludeduniversally."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "AllfourmappedfeaturescomparedagainstexactindividualEV1column;normalmorphologyandabsenceofPCDsymptomsreportedmaintext.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Resultsfirstsection"
+          }
+        ],
+        "limitations": [
+          "SupplementEV1labelsconcentrationreference>39million/ml,whichresemblesatotalcountthreshold;units/reportinglimitationpreserved.",
+          "Allfigure/tablepixels,uncroppedblotsandvideosunread."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c621_1GtoA_LRRC23_NM_001135217v2",
+            "geneContext": {
+              "valueId": "HGNC:19138",
+              "symbol": "LRRC23"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001135217.2:c.621+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000012.12:g.6907446G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001128689.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr12",
+              "pos": 6907446,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "6abeea1da67a2d2301c8d6d82e618a388392e2b7652f21b00c98b1364b75ed7a",
+          "assessment": {
+            "status": "qualified",
+            "statement": "HomozygousLRRC23NM_001135217:c.621+1G>A; TableEV2GRCh37chr12:7016610 vs packetGRCh38chr12:6907446G>A.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Resultsvariantidentification;TableEV2"
+              }
+            ],
+            "limitations": [
+              "Genomebuildconversionandtranscriptversionnotindependentlyverified;codingandgenegeneidentityagree."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003251",
+              "label": "Male infertility"
+            }
+          },
+          "snapshot_sha256": "39d19caae57a397b25fc37130fdf43fcb343139763757e2344cfb475aefc4e39",
+          "assessment": {
+            "status": "supported",
+            "statement": "Maleinfertilityafterunprotectedintercourse.",
+            "evidence": [
+              {
+                "source_id": "elife-90095-supp1-text",
+                "locator": "TableEV1 IV-2column"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034011",
+              "label": "Reduced progressive sperm motility"
+            }
+          },
+          "snapshot_sha256": "29cc30cdde07d6c33066e31fcad05241e0a4b48a55b4776e067d9e2474e7232f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Progressivemotility2%below32%tablereference.",
+            "evidence": [
+              {
+                "source_id": "elife-90095-supp1-text",
+                "locator": "TableEV1 IV-2column"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012207",
+              "label": "Reduced sperm motility"
+            }
+          },
+          "snapshot_sha256": "0d43e6d77a7c4ac80c3258b5ec78300fe6877df087dc4c17b52c873c2075a412",
+          "assessment": {
+            "status": "supported",
+            "statement": "Totalmotility30%belowtable40%threshold.",
+            "evidence": [
+              {
+                "source_id": "elife-90095-supp1-text",
+                "locator": "TableEV1 IV-2column"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000798",
+              "label": "Oligozoospermia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bb36e0f77eccee7bd0f818378af9fdc0943052b6c919b97d258c989524301bcf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Concentration60million/mlwithvolume1.5ml;countsnotoligozoospermicbytablereference.",
+            "evidence": [
+              {
+                "source_id": "elife-90095-supp1-text",
+                "locator": "TableEV1 IV-2column"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading.",
+    "EV2LRRC23gnomADMAF.00003233exceedsMethodsclaimedfinalcutoff.00002;variantfilteringdescriptiondoesnotstraightforwardlyreproducecandidateinclusion.",
+    "MDARmarksrandomisation/blinding/codeavailabilityN/A;mainmethodsusesin-housescriptswithoutreleaseidentifiedintext.",
+    "CryoETfinalresolutions34ÅWT/27Åmutant;8/20and38/60tomogramsused,1212/2137subtomogramsarenotindependenthumanpatients."
+  ]
+}

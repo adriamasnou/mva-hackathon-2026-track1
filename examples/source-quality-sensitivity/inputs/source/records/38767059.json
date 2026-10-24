@@ -1,0 +1,2025 @@
+{
+  "schema_version": 1,
+  "pmid": "38767059",
+  "title": "Loss of function of FAM177A1, a Golgi complex localized protein, causes a novel neurodevelopmental disorder",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T15:17:13.022612+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "53629dab8a29871b8251b603493496dcc0af9b926181adc86c76e678a406c054",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "38767059",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38767059/cloud/PMC11451386.1/PMC11451386.1.xml",
+      "sha256": "01aef4c3b5d0bb84778f72d22d552742f53bd2b8b57ad785daa31154e34a7eee",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "38767059",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38767059/cloud/PMC11451386.1/PMC11451386.1.txt",
+      "sha256": "b1bc459ae19cb9808e98336a8eff5d7af1f5c50cdeea78f3a7c518bea327beb7",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "38767059",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38767059/cloud/PMC11451386.1/PMC11451386.1.xml.fetch.json",
+      "sha256": "36fa9aa40eb931f5c4d8c4496afe58d5dfb7a8c1eb22f9eeade1d5cffa3a48ca",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Loss of function of FAM177A1, a Golgi complex localized protein, causes a novel neurodevelopmental disorder",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 9,
+      "table": 1,
+      "supplement": 2
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 430,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–430"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 430,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–430"
+        }
+      ],
+      "note": "All main text, ninefigurecaptions, Table1 and29references read."
+    },
+    {
+      "id": "figure:F1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F1]; Figure 1.Genetic findings of individuals harboring homozygous variants in FAM177A1.(A) Pedigrees representing affected individuals (shaded black) in the three families reported in this cohort, as well as variants in FAM177A1 and predicted protein changes in individuals tested. (B) Gene schematic of the location of variants and deletions in the mRNA and predicted protein changes."
+    },
+    {
+      "id": "figure:F2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F2]; Figure 2.Deletions in FAM177A1 gene result in altered mRNA expression and loss of protein expression in individuals A1 and A2.(A) RNA sequencing reads from Family A showing near complete absence of reads covering exons 4, 5, and the 3’UTR (blue arrows and bars). (B) Sashimi plot of RNA-sequencing data from Family A showing splicing from exon 3 into the downstream gene, PPP2R3C (blue arrows). (C) E"
+    },
+    {
+      "id": "figure:F3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F3]; Figure 3.Subcellular localization of zebrafish fam177a1a-mNeonGreen and human FAM177A1-mNeonGreen in zebrafish embryos and mammalian COS7 cell line.Developing Notochord and enveloping layer (EVL) in the embryos. (A-F) Embryos co-injected with fam177a1a-mNeonGreen and GM130-tdTomato RNAs at one-cell stage and imaged at 12 hpf. (G-L) Embryos co-injected with FAM177A1-mNeonGreen and GM130-tdTomato RN"
+    },
+    {
+      "id": "figure:F4",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F4]; Figure 4.Generation of zebrafish fam177a1a, fam177a1b and fam177a1a/b geneless mutants.(A) Genetic locus of fam177a1a and the sequences of geneless alleles. (B) Genetic locus of fam177a1b and the sequences of the geneless alleles. (C) Gene expression of fam177a1a and fam177a1a/b compared to WT as measured by quantitative RNA sequencing in the fam177a1a and fam177a1b genetic background (KO- knockou"
+    },
+    {
+      "id": "figure:F5",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F5]; Figure 5.Morphometric analysis of zebrafish fam177a1a, fam177a1b and fam177a1a/b geneless mutants.(A) Measurement of body length from swim bladder to the end of the tail in WT, fam177a1a, fam177a1b and fam177a1a/b mutants at 25 hpf. (B-E) Lateral views at 25 hpf. (B) WT. (C) fam177a1a single mutant. (D) fam177a1b single mutant. (E) fam177a1a/b double mutant. Scale bar, 200 mm."
+    },
+    {
+      "id": "figure:F6",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F6]; Figure 6.Intracellular distribution of the Golgi complex in developing notochord during late gastrulation.Dorsal view, anterior to the left. Brackets indicate notochord area. (A-F) Embryos injected with H2B-GFP, memGFP and GM130-tdTomato RNAs at one-cell stage and imaged at 11 hpf. (G-L) Embryos injected with H2B-GFP and memGFP RNAs at one-cell stage, fixed at 11 hpf, and stained with ɑ-GM130 anti"
+    },
+    {
+      "id": "figure:F7",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F7]; Figure 7.Bulk RNA-sequencing analysis of WT, fam177a1a and fam177a1a/b replicates in zebrafish 8dpf.(A) Heatmap of correlation of three independent RNA samples. The color represents the strength and direction of correlation. Three replicates of each genotype. (B) Principal component analysis (PCA) using RNA-sequencing data. Percent variability within each principal component is listed on each axis"
+    },
+    {
+      "id": "figure:F8",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F8]; Figure 8.RNA-seq analysis FAM177A-deficient and WT fibroblasts.(A) Heatmap of correlation within the human RNA samples from the affected participants’ fibroblasts and control fibroblasts. (B) Principal component analysis using human RNA-seq data."
+    },
+    {
+      "id": "figure:F9",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F9]; Figure 9.Gene Ontology (GO) enrichment analysis of differentially expressed genes among human and zebrafish RNA-sequencing.GO terms pertaining to biological processes (BP) and human phenotype ontology (HP) are listed on the y-axis. The color of the bubbles indicates significance of the enrichment (log10(Pvalue). The hit ratio (hit_ratio) refers to the size of the bubble and indicates the relative "
+    },
+    {
+      "id": "table:T1",
+      "kind": "table",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor table-wrap[@id=T1]; Table 1.Summary of clinical phenotypes of FAM177A1-associated neurodevelopmental disorder. All protein changes are presented as predicted protein changes.Family AFamily BFamily CAlazami et al.A1A2B1C1C2P1P2P3P4\nGenomic DNA (GRCh37; NC_000014.8)\ng.35513596_35521681del / g.35546985_35556768del–g.35522586G>T / g.35522527_35522528delg.35546382dup\nCoding (NM_173607.5)\n–c.(339+1_340−1)_(406+1_407−1)delc"
+    },
+    {
+      "id": "supplement:SD1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=SD1]; MMC2"
+    },
+    {
+      "id": "supplement:SD2",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=SD2]; MMC1"
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/FAM177A1/PMID_38767059_C1.json",
+      "packet_sha256": "75b682344367d2b43c50227888b5962927dcc298549ee7004868ff814891cec4",
+      "case_id": "TC_2995ba7a48e6fd3b",
+      "role": "selected",
+      "packet_subject_id": "C1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Supplementaryclinicalnarrative,TablesS1/S2 and mainfigure/tablepixels remain unread."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "C1 is FamilyC daughter aged6years; distinct from FamilyA structural-deletion siblings and olderAlazami family.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1;Resultsclinicalcharacteristics"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Compound heterozygous NM_173607.5 c.268G>T Glu90Ter and c.209_210del Ile70ArgfsTer15 match FamilyC.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1;Genomicfindings"
+          }
+        ],
+        "limitations": [
+          "Source variants reportedGRCh37, frozenpacketGRCh38; genomic liftover/indel representation not independently reconciled.",
+          "Predicted loss-of-function forFamilyC; protein experiments performedFamilyA, notC."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Both Csiblings share biallelic variants; authors state unaffected heterozygous parents and recessive segregation.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genomicfindings;Figure1caption"
+          }
+        ],
+        "limitations": [
+          "Specific parental allele assignments require Figure1pedigree pixels, still unread."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Source calls compound heterozygous, consistent withtransinheritance.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1;Genomicfindings"
+          }
+        ],
+        "limitations": [
+          "Independent parental-trace verification and exact parental assignments not yet available in read evidence."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Five individuals/threefamilies expand historical4siblings; predictedLOFwithconsistentphenotype. FamilyA iPSC immunoblot shows absent detectable protein and zebrafish doubleknockouts transient shortening.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results;Figures2–9;Discussion"
+          }
+        ],
+        "limitations": [
+          "FamilyC mutant protein not directlyassayed;FamilyA deletion additionally affectsPPP2R3C and yieldsfusiontranscripts withuncleareffects.",
+          "Wholegene expressionoutlier analysis missedFamilyA because retainedexons1–3; exon-specific/spliceanalysis revealed defect.",
+          "Zebrafish retainnormalgrossGolgi morphology and become fertileadults; humanneurobehavioral phenotype not reproduced.",
+          "No shareddysregulatedgenes acrosshuman/zebrafish excepttargethomologs; overlappingGOterms not proof of identicalmechanism.",
+          "No rescueexperiment or therapeuticresponse demonstrated; n2patient fibroblasts are siblings."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "All30 selected/alternatefeatures compared with thisindividual; detailednegativefields andsomeclinicalsubtypes require supplements.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1;Results"
+          }
+        ],
+        "limitations": [
+          "SourceTable1FamilyAphysicalfeatures/FamilyBhyperreflexia differ from narrative; not transferred toFamilyC.",
+          "Main4abnormalMRIs vsC1normal consistent with fouravailableabnormal and fifthreportednormal; sourcepresentationmustretainavailability."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c268GtoT_FAM177A1_NM_173607v5",
+            "geneContext": {
+              "valueId": "HGNC:19829",
+              "symbol": "FAM177A1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_173607.5:c.268G>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000014.9:g.35053380G>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_775878.2:p.(Glu90Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr14",
+              "pos": 35053380,
+              "ref": "G",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "bf8a61cfecac8f3c78680016eff3d73c59128e461a26b878894d16113149203d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Compound heterozygous NM_173607.5 c.268G>T Glu90Ter and c.209_210del Ile70ArgfsTer15 match FamilyC.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Genomicfindings"
+              }
+            ],
+            "limitations": [
+              "Source variants reportedGRCh37, frozenpacketGRCh38; genomic liftover/indel representation not independently reconciled.",
+              "Predicted loss-of-function forFamilyC; protein experiments performedFamilyA, notC."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c209_210del_FAM177A1_NM_173607v5",
+            "geneContext": {
+              "valueId": "HGNC:19829",
+              "symbol": "FAM177A1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_173607.5:c.209_210del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000014.9:g.35053321_35053322del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_775878.2:p.(Ile70ArgfsTer15)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr14",
+              "pos": 35053319,
+              "ref": "CAT",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "0452742e483139e5c5d2bc496bed86b0af5df119754aac357e06cad30403e69b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Compound heterozygous NM_173607.5 c.268G>T Glu90Ter and c.209_210del Ile70ArgfsTer15 match FamilyC.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Genomicfindings"
+              }
+            ],
+            "limitations": [
+              "Source variants reportedGRCh37, frozenpacketGRCh38; genomic liftover/indel representation not independently reconciled.",
+              "Predicted loss-of-function forFamilyC; protein experiments performedFamilyA, notC."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002007",
+              "label": "Frontal bossing"
+            }
+          },
+          "snapshot_sha256": "813330582cf485d1426c57a251646392c4f708fc2a4749f2937d2d5153f593d3",
+          "assessment": {
+            "status": "supported",
+            "statement": "C1: Frontal bossing explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C1column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000582",
+              "label": "Upslanted palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5867461b798c329bd0bddddb67e84eb665b91c9df85237c30adf17460594bcc0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Upslanted palpebral fissure specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001999",
+              "label": "Abnormal facial shape"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be875f7b2546d3573ff96fbd996b45f79a8c2f4ed7b536e471dce6ab9384ceea",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Abnormal facial shape specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000256",
+              "label": "Macrocephaly"
+            }
+          },
+          "snapshot_sha256": "081c6d2646a2f160bd9caeaa55ad658fca4d896b0efa93c63f227d3faea1352d",
+          "assessment": {
+            "status": "supported",
+            "statement": "C1: Macrocephaly explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C1column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000268",
+              "label": "Dolichocephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0a219cf32d4efdf0a2adccb84f0c3d8d54ddff7ae1d9c07a7c36f0e233d85b9d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Dolichocephaly specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000519",
+              "label": "Developmental cataract"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0b05e25aa6d029020022bf938dc1f4b8ac255786094ffa0abfdde688cb2ade86",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Developmental cataract specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000490",
+              "label": "Deeply set eye"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c455e07ca56f5d1ba66e43e3f6fc8761828fa9ac79e7c7596733a76d4d0a8cdf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Deeply set eye specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000565",
+              "label": "Esotropia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "74279909da82999087739e9fd93effd65e4e6c97e35d1076199b806f7165541e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Esotropia specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000646",
+              "label": "Amblyopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c2f98d78dc649728745e5186a9683153a223c5e374a5a83c91fdee2a36be388c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Amblyopia specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000540",
+              "label": "Hypermetropia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "01d24e38ecbb395b2f9cea29bb0dcbab733b451b278366f22c53a9ba7d4e4311",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Hypermetropia specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "C1: Delayed speech and language development explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C1column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "C1: Global developmental delay explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C1column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            }
+          },
+          "snapshot_sha256": "c444dd47b030fe9f7b2523d299496431fe54f2ce557f990c454810b00764e589",
+          "assessment": {
+            "status": "supported",
+            "statement": "C1: Intellectual disability explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C1column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001257",
+              "label": "Spasticity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "615562e4142a03f965ec8d9a70bf25645c0651830025ee8c20377b216abf48c7",
+          "assessment": {
+            "status": "qualified",
+            "statement": "C1: Spasticity broadly consistent with Table1 tone/behavior and reported imaging, but finer localization/exclusion not explicitly established.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Neurologicalmanifestations/imaging"
+              }
+            ],
+            "limitations": [
+              "NormalMRIforC1isreportedhistory, not images held; unlistedspasticity/aggression not independently testedabsence.",
+              "Hypotonia documented; appendicular/generalized subtype requires detail."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "supported",
+            "statement": "C1: Autistic behavior explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C1column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000718",
+              "label": "Aggressive behavior"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "450f43059bf2f8df1e6d5f0d1e061e2d46f999f44e5bb0e4abeb086346e6e571",
+          "assessment": {
+            "status": "qualified",
+            "statement": "C1: Aggressive behavior broadly consistent with Table1 tone/behavior and reported imaging, but finer localization/exclusion not explicitly established.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Neurologicalmanifestations/imaging"
+              }
+            ],
+            "limitations": [
+              "NormalMRIforC1isreportedhistory, not images held; unlistedspasticity/aggression not independently testedabsence.",
+              "Hypotonia documented; appendicular/generalized subtype requires detail."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000752",
+              "label": "Hyperactivity"
+            }
+          },
+          "snapshot_sha256": "5d40e3cc96e1938f072e1316676755a38b81f6ebe0a7584b89a24f59c6a6b578",
+          "assessment": {
+            "status": "supported",
+            "statement": "C1: Hyperactivity explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C1column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001347",
+              "label": "Hyperreflexia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bd72ce0ee63b76100103e9ea99fbeac4e82fd684024571f9cb74873c9e42fc80",
+          "assessment": {
+            "status": "supported",
+            "statement": "C1: Hyperreflexia explicitly absent inTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C1column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001288",
+              "label": "Gait disturbance"
+            }
+          },
+          "snapshot_sha256": "8fb7a84e18814f9b114a4be736e63bc646551b005cb7476e1c09dfc4b82bf805",
+          "assessment": {
+            "status": "supported",
+            "statement": "C1: Gait disturbance explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C1column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002353",
+              "label": "EEG abnormality"
+            }
+          },
+          "snapshot_sha256": "1988384bc5a9ffae67a3bb781fb6ea1350991113125ae5de18037c0ad0606e07",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: EEG abnormality specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0011147",
+              "label": "Typical absence seizure"
+            }
+          },
+          "snapshot_sha256": "8e711f3c699145bda764d074447c738061065d0080b231154b894cb16ea02c25",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Typical absence seizure specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010819",
+              "label": "Atonic seizure"
+            }
+          },
+          "snapshot_sha256": "5f382e3e926207bda864ba0d6af28a09371c2b1a5ce4f173d9cdf828709fd728",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Atonic seizure specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002188",
+              "label": "Delayed CNS myelination"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "85fb8e854b9a3dec7ca6cff34b3ce14af9b2c0ded04949d0deb03405873646d4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "C1: Delayed CNS myelination broadly consistent with Table1 tone/behavior and reported imaging, but finer localization/exclusion not explicitly established.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Neurologicalmanifestations/imaging"
+              }
+            ],
+            "limitations": [
+              "NormalMRIforC1isreportedhistory, not images held; unlistedspasticity/aggression not independently testedabsence.",
+              "Hypotonia documented; appendicular/generalized subtype requires detail."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006970",
+              "label": "Periventricular leukomalacia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f7d16c208723c05104494a8d0d6dadc950a2f5401fb5080e86c78748d4047c80",
+          "assessment": {
+            "status": "qualified",
+            "statement": "C1: Periventricular leukomalacia broadly consistent with Table1 tone/behavior and reported imaging, but finer localization/exclusion not explicitly established.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Neurologicalmanifestations/imaging"
+              }
+            ],
+            "limitations": [
+              "NormalMRIforC1isreportedhistory, not images held; unlistedspasticity/aggression not independently testedabsence.",
+              "Hypotonia documented; appendicular/generalized subtype requires detail."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034392",
+              "label": "Joint contracture"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5327619e0d2c3c7cb5bbbb7cc769b42204da4eff389ba0f9b99722749e19256f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Joint contracture specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012389",
+              "label": "Appendicular hypotonia"
+            }
+          },
+          "snapshot_sha256": "a40d05634c24c68bad63b6b8fc8c120d5d8394a80ac1fe716010d1179db74d16",
+          "assessment": {
+            "status": "qualified",
+            "statement": "C1: Appendicular hypotonia broadly consistent with Table1 tone/behavior and reported imaging, but finer localization/exclusion not explicitly established.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Neurologicalmanifestations/imaging"
+              }
+            ],
+            "limitations": [
+              "NormalMRIforC1isreportedhistory, not images held; unlistedspasticity/aggression not independently testedabsence.",
+              "Hypotonia documented; appendicular/generalized subtype requires detail."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001864",
+              "label": "Clinodactyly of the 5th toe"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "aa3f9ca625ae67a5f2d76f5c5f36240915391cc894050bece86602d43fac6571",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Clinodactyly of the 5th toe specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001763",
+              "label": "Pes planus"
+            }
+          },
+          "snapshot_sha256": "67b660794845b438d53d7d0a59289517ed6c28a5605809f3fe5f659d4ab95625",
+          "assessment": {
+            "status": "supported",
+            "statement": "C1: Pes planus explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C1column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/28",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000954",
+              "label": "Single transverse palmar crease"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "83a8526ca5d5a3638249655ec88a55e2ff6be317b6f2e93e7bd4078be63539a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C1: Single transverse palmar crease specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/29",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002719",
+              "label": "Recurrent infections"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c3da490b0d2da948a7bacfda3524ef046dffa23cad72cb6cd0b9083a991e4564",
+          "assessment": {
+            "status": "supported",
+            "statement": "C1: Recurrent infections explicitly absent inTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C1column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/FAM177A1/PMID_38767059_C2.json",
+      "packet_sha256": "b20dea0ad76b04a5edbe322707a95733d9e008a1fe0f10085faa32b9878d62c8",
+      "case_id": "TC_2995ba7a48e6fd3b",
+      "role": "alternate",
+      "packet_subject_id": "C2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Supplementaryclinicalnarrative,TablesS1/S2 and mainfigure/tablepixels remain unread."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "C2 is FamilyC daughter aged4years; distinct from FamilyA structural-deletion siblings and olderAlazami family.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1;Resultsclinicalcharacteristics"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Compound heterozygous NM_173607.5 c.268G>T Glu90Ter and c.209_210del Ile70ArgfsTer15 match FamilyC.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1;Genomicfindings"
+          }
+        ],
+        "limitations": [
+          "Source variants reportedGRCh37, frozenpacketGRCh38; genomic liftover/indel representation not independently reconciled.",
+          "Predicted loss-of-function forFamilyC; protein experiments performedFamilyA, notC."
+        ]
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Both Csiblings share biallelic variants; authors state unaffected heterozygous parents and recessive segregation.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genomicfindings;Figure1caption"
+          }
+        ],
+        "limitations": [
+          "Specific parental allele assignments require Figure1pedigree pixels, still unread."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Source calls compound heterozygous, consistent withtransinheritance.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1;Genomicfindings"
+          }
+        ],
+        "limitations": [
+          "Independent parental-trace verification and exact parental assignments not yet available in read evidence."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Five individuals/threefamilies expand historical4siblings; predictedLOFwithconsistentphenotype. FamilyA iPSC immunoblot shows absent detectable protein and zebrafish doubleknockouts transient shortening.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results;Figures2–9;Discussion"
+          }
+        ],
+        "limitations": [
+          "FamilyC mutant protein not directlyassayed;FamilyA deletion additionally affectsPPP2R3C and yieldsfusiontranscripts withuncleareffects.",
+          "Wholegene expressionoutlier analysis missedFamilyA because retainedexons1–3; exon-specific/spliceanalysis revealed defect.",
+          "Zebrafish retainnormalgrossGolgi morphology and become fertileadults; humanneurobehavioral phenotype not reproduced.",
+          "No shareddysregulatedgenes acrosshuman/zebrafish excepttargethomologs; overlappingGOterms not proof of identicalmechanism.",
+          "No rescueexperiment or therapeuticresponse demonstrated; n2patient fibroblasts are siblings."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "All28 selected/alternatefeatures compared with thisindividual; detailednegativefields andsomeclinicalsubtypes require supplements.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Table1;Results"
+          }
+        ],
+        "limitations": [
+          "SourceTable1FamilyAphysicalfeatures/FamilyBhyperreflexia differ from narrative; not transferred toFamilyC.",
+          "Main4abnormalMRIs vsC1normal consistent with fouravailableabnormal and fifthreportednormal; sourcepresentationmustretainavailability."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c209_210del_FAM177A1_NM_173607v5",
+            "geneContext": {
+              "valueId": "HGNC:19829",
+              "symbol": "FAM177A1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_173607.5:c.209_210del"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000014.9:g.35053321_35053322del"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_775878.2:p.(Ile70ArgfsTer15)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr14",
+              "pos": 35053319,
+              "ref": "CAT",
+              "alt": "C"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "0452742e483139e5c5d2bc496bed86b0af5df119754aac357e06cad30403e69b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Compound heterozygous NM_173607.5 c.268G>T Glu90Ter and c.209_210del Ile70ArgfsTer15 match FamilyC.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Genomicfindings"
+              }
+            ],
+            "limitations": [
+              "Source variants reportedGRCh37, frozenpacketGRCh38; genomic liftover/indel representation not independently reconciled.",
+              "Predicted loss-of-function forFamilyC; protein experiments performedFamilyA, notC."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c268GtoT_FAM177A1_NM_173607v5",
+            "geneContext": {
+              "valueId": "HGNC:19829",
+              "symbol": "FAM177A1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_173607.5:c.268G>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000014.9:g.35053380G>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_775878.2:p.(Glu90Ter)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr14",
+              "pos": 35053380,
+              "ref": "G",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "bf8a61cfecac8f3c78680016eff3d73c59128e461a26b878894d16113149203d",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Compound heterozygous NM_173607.5 c.268G>T Glu90Ter and c.209_210del Ile70ArgfsTer15 match FamilyC.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Genomicfindings"
+              }
+            ],
+            "limitations": [
+              "Source variants reportedGRCh37, frozenpacketGRCh38; genomic liftover/indel representation not independently reconciled.",
+              "Predicted loss-of-function forFamilyC; protein experiments performedFamilyA, notC."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002007",
+              "label": "Frontal bossing"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "563a5baa39ebd5f0941e591d045b7c0233e4fc03dce6c8be81cd6fc3404b63a0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: Frontal bossing specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000582",
+              "label": "Upslanted palpebral fissure"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5867461b798c329bd0bddddb67e84eb665b91c9df85237c30adf17460594bcc0",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: Upslanted palpebral fissure specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001999",
+              "label": "Abnormal facial shape"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be875f7b2546d3573ff96fbd996b45f79a8c2f4ed7b536e471dce6ab9384ceea",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: Abnormal facial shape specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000256",
+              "label": "Macrocephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f5b9b8adf0ca32082848fafc6622946d2ba3692b68f69863a3cb2faa820c02f2",
+          "assessment": {
+            "status": "supported",
+            "statement": "C2: Macrocephaly explicitly absent inTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C2column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000268",
+              "label": "Dolichocephaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0a219cf32d4efdf0a2adccb84f0c3d8d54ddff7ae1d9c07a7c36f0e233d85b9d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: Dolichocephaly specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000519",
+              "label": "Developmental cataract"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "0b05e25aa6d029020022bf938dc1f4b8ac255786094ffa0abfdde688cb2ade86",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: Developmental cataract specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000490",
+              "label": "Deeply set eye"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c455e07ca56f5d1ba66e43e3f6fc8761828fa9ac79e7c7596733a76d4d0a8cdf",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: Deeply set eye specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000565",
+              "label": "Esotropia"
+            }
+          },
+          "snapshot_sha256": "d87686e64e6f8358d9f2bd4a073b10898de7048e33178c8ecf2c245aa8813206",
+          "assessment": {
+            "status": "supported",
+            "statement": "C2: Esotropia explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C2column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000646",
+              "label": "Amblyopia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c2f98d78dc649728745e5186a9683153a223c5e374a5a83c91fdee2a36be388c",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: Amblyopia specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000540",
+              "label": "Hypermetropia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "01d24e38ecbb395b2f9cea29bb0dcbab733b451b278366f22c53a9ba7d4e4311",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: Hypermetropia specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000750",
+              "label": "Delayed speech and language development"
+            }
+          },
+          "snapshot_sha256": "1c969b663042ff6ed57a5784c60d125589f4951be1078e3e5bee692055c5b583",
+          "assessment": {
+            "status": "supported",
+            "statement": "C2: Delayed speech and language development explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C2column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001263",
+              "label": "Global developmental delay"
+            }
+          },
+          "snapshot_sha256": "19fca50089ee7489f4f257df46a47214139be273fca88df1a056045515876db9",
+          "assessment": {
+            "status": "supported",
+            "statement": "C2: Global developmental delay explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C2column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001249",
+              "label": "Intellectual disability"
+            }
+          },
+          "snapshot_sha256": "c444dd47b030fe9f7b2523d299496431fe54f2ce557f990c454810b00764e589",
+          "assessment": {
+            "status": "supported",
+            "statement": "C2: Intellectual disability explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C2column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001257",
+              "label": "Spasticity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "615562e4142a03f965ec8d9a70bf25645c0651830025ee8c20377b216abf48c7",
+          "assessment": {
+            "status": "qualified",
+            "statement": "C2: Spasticity broadly consistent with Table1 tone/behavior and reported imaging, but finer localization/exclusion not explicitly established.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Neurologicalmanifestations/imaging"
+              }
+            ],
+            "limitations": [
+              "NormalMRIforC1isreportedhistory, not images held; unlistedspasticity/aggression not independently testedabsence.",
+              "Hypotonia documented; appendicular/generalized subtype requires detail."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000729",
+              "label": "Autistic behavior"
+            }
+          },
+          "snapshot_sha256": "e8deb953b446cd677755ee491cfdd614a764a6f133fea25d172387efafc26940",
+          "assessment": {
+            "status": "supported",
+            "statement": "C2: Autistic behavior explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C2column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001347",
+              "label": "Hyperreflexia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bd72ce0ee63b76100103e9ea99fbeac4e82fd684024571f9cb74873c9e42fc80",
+          "assessment": {
+            "status": "supported",
+            "statement": "C2: Hyperreflexia explicitly absent inTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C2column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001288",
+              "label": "Gait disturbance"
+            }
+          },
+          "snapshot_sha256": "8fb7a84e18814f9b114a4be736e63bc646551b005cb7476e1c09dfc4b82bf805",
+          "assessment": {
+            "status": "supported",
+            "statement": "C2: Gait disturbance explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C2column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002353",
+              "label": "EEG abnormality"
+            }
+          },
+          "snapshot_sha256": "1988384bc5a9ffae67a3bb781fb6ea1350991113125ae5de18037c0ad0606e07",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: EEG abnormality specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001250",
+              "label": "Seizure"
+            }
+          },
+          "snapshot_sha256": "48676c3701994966952c6afa26b3d2a47be69e0754311248381fa7cc3631da7a",
+          "assessment": {
+            "status": "supported",
+            "statement": "C2: Seizure explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C2column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0009879",
+              "label": "Simplified gyral pattern"
+            }
+          },
+          "snapshot_sha256": "082bbda9f55da0e51aad760b31749917a5df6ddde96b561851c7956901d34e01",
+          "assessment": {
+            "status": "supported",
+            "statement": "C2: Simplified gyral pattern explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C2column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002188",
+              "label": "Delayed CNS myelination"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "85fb8e854b9a3dec7ca6cff34b3ce14af9b2c0ded04949d0deb03405873646d4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "C2: Delayed CNS myelination broadly consistent with Table1 tone/behavior and reported imaging, but finer localization/exclusion not explicitly established.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Neurologicalmanifestations/imaging"
+              }
+            ],
+            "limitations": [
+              "NormalMRIforC1isreportedhistory, not images held; unlistedspasticity/aggression not independently testedabsence.",
+              "Hypotonia documented; appendicular/generalized subtype requires detail."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/21",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006970",
+              "label": "Periventricular leukomalacia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f7d16c208723c05104494a8d0d6dadc950a2f5401fb5080e86c78748d4047c80",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: Periventricular leukomalacia specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/22",
+          "snapshot": {
+            "type": {
+              "id": "HP:0034392",
+              "label": "Joint contracture"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5327619e0d2c3c7cb5bbbb7cc769b42204da4eff389ba0f9b99722749e19256f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: Joint contracture specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/23",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001290",
+              "label": "Generalized hypotonia"
+            }
+          },
+          "snapshot_sha256": "b25631abdb1b0a21148ad8bffcadb33b5b7a7a0dab707b25e73524d167bfe016",
+          "assessment": {
+            "status": "qualified",
+            "statement": "C2: Generalized hypotonia broadly consistent with Table1 tone/behavior and reported imaging, but finer localization/exclusion not explicitly established.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Neurologicalmanifestations/imaging"
+              }
+            ],
+            "limitations": [
+              "NormalMRIforC1isreportedhistory, not images held; unlistedspasticity/aggression not independently testedabsence.",
+              "Hypotonia documented; appendicular/generalized subtype requires detail."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/24",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001864",
+              "label": "Clinodactyly of the 5th toe"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "aa3f9ca625ae67a5f2d76f5c5f36240915391cc894050bece86602d43fac6571",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: Clinodactyly of the 5th toe specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/25",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001763",
+              "label": "Pes planus"
+            }
+          },
+          "snapshot_sha256": "67b660794845b438d53d7d0a59289517ed6c28a5605809f3fe5f659d4ab95625",
+          "assessment": {
+            "status": "supported",
+            "statement": "C2: Pes planus explicitly reported in currentpatient maintext/Table1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C2column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/26",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000954",
+              "label": "Single transverse palmar crease"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "83a8526ca5d5a3638249655ec88a55e2ff6be317b6f2e93e7bd4078be63539a7",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "C2: Single transverse palmar crease specific positive/negative not established in maintext; supplemental individual narrative/TableS1needed.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": [
+              "Omission cannot be treated as a negative; broadseizures do not verify exactseizuretype."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/27",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002719",
+              "label": "Recurrent infections"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c3da490b0d2da948a7bacfda3524ef046dffa23cad72cb6cd0b9083a991e4564",
+          "assessment": {
+            "status": "supported",
+            "statement": "C2: Recurrent infections explicitly absent inTable1.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Table1 C2column;Resultsclinicalsubsections"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference sourceaudit;aggregateoutcomeexposure, no per-case ranks consulted.",
+    "Scope maintext only; no claim of independent model reproduction.",
+    "Statisticalstar thresholds contain inequalities typo; figure scaleunit mm should not be reused withoutpixel/unitverification."
+  ]
+}

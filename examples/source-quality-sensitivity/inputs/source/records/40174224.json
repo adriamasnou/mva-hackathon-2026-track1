@@ -1,0 +1,1696 @@
+{
+  "schema_version": 1,
+  "pmid": "40174224",
+  "title": "The Genetic Architecture of Congenital Diarrhea and\nEnteropathy",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T12:24:11.447847+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "739381b8f5ee22d9761ac5cbfd89a0fd596809d5eabb9aea81fdeee290164328",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "40174224",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40174224/main.xml",
+      "sha256": "661dfee992ade1b001674e77efe3cf0fa99e9b2b45ca79506c117f548a432249",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "40174224",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40174224/main.complete.txt",
+      "sha256": "6a5d8479be1006a65999325dc2b01c1f32629274f40522d9b40203ce45003160",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/40174224/availability.json",
+      "sha256": "2ee6f6b08a5c0ac4d2e04a3a48b179c62036ebcfbf4805a3a150cc998f09edd9",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "fig-1",
+      "pmid": "40174224",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40174224/cloud/PMC11968080.1/nihms-2042924-f0001.jpg",
+      "sha256": "fab1eccd46a5bb87cf178c7fd1c0c5f67ec200f7405dc019ac61bb305db71aaa",
+      "kind": "image",
+      "description": "Original entiremainfigure inspected"
+    },
+    {
+      "id": "fig-2",
+      "pmid": "40174224",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40174224/cloud/PMC11968080.1/nihms-2042924-f0002.jpg",
+      "sha256": "52259337c1fbf3d3337bf893cad3b41975959c0a757139c3bb14c936f648a0e1",
+      "kind": "image",
+      "description": "Original entiremainfigure inspected"
+    },
+    {
+      "id": "fig-3",
+      "pmid": "40174224",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40174224/cloud/PMC11968080.1/nihms-2042924-f0003.jpg",
+      "sha256": "b2e09377ebaef69913ffca61ae3abdfeaf0fa4fcfad4c5d491c5ad139ec760a9",
+      "kind": "image",
+      "description": "Original entiremainfigure inspected"
+    },
+    {
+      "id": "fig-4",
+      "pmid": "40174224",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40174224/cloud/PMC11968080.1/nihms-2042924-f0004.jpg",
+      "sha256": "f3a94de70e5492074b31a952be7aa0e1ec10a8ade124e17fbae7677b14038bdb",
+      "kind": "image",
+      "description": "Original entiremainfigure inspected"
+    },
+    {
+      "id": "supp-docx",
+      "pmid": "40174224",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40174224/cloud/PMC11968080.1/NIHMS2042924-supplement-supplement.docx",
+      "sha256": "3fb0018797814651d4cc35c0f570efc292defe8d407404e5eac02433a292a402",
+      "kind": "data",
+      "description": "Original32page supplement with methods, figuresS1-S4, TablesS1-S7/S9 and45references"
+    },
+    {
+      "id": "supp-pdf",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/NIHMS2042924-supplement-supplement.pdf",
+      "sha256": "b25ab5fe4931880a6dd6d85bbc70b7b4a2350ac65ec0ec963a1f14c2f559f60b",
+      "kind": "pdf",
+      "description": "DOCX render; EMF graphics onpages16/17 fail rendering and are separately recovered"
+    },
+    {
+      "id": "supp-text",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/supp-text.txt",
+      "sha256": "582f1bf3ca363f3297ebb93b4ba29fac4bcd3fcf929ca5a206dae803cde90b01",
+      "kind": "text",
+      "description": "CompleteDOCX text read includingalltables/methods/references"
+    },
+    {
+      "id": "supp-page-1",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-1.png",
+      "sha256": "bb502d6fedba5e39ea7ae49de9084563cc7b2d9fb8a0ca33d553e43006625025",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-2",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-2.png",
+      "sha256": "a492bceb2f532e59e625f5345c2f1a476e023011247e34d2b5a9f3ee5d318336",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-3",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-3.png",
+      "sha256": "311666841724da8cfe49b8cde03c5ed6fec0d152229c261cb153f530e11e3ee9",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-4",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-4.png",
+      "sha256": "fd0f5451bff91a53f05d3639640a105e9d0eb259da3c160827921f98a9ec873b",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-5",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-5.png",
+      "sha256": "acf575b9c5b29b41c80e0a92c8b9164c0ed859e93e4c0e6b84978fe1eb3b86ee",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-6",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-6.png",
+      "sha256": "98b5892815e4de12d8dd89ea66c93dbccda6f7eabc27610b11e40a04f4586949",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-7",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-7.png",
+      "sha256": "866cc989cf52a7467face5f5c4350835c32eee365a926f68f3e9a0a1e08ff6c0",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-8",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-8.png",
+      "sha256": "3bc047cdc03a10fdb749617415685512111626b4b07bfae33cb28b791567df06",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-9",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-9.png",
+      "sha256": "7f6eb7766f78bb002838fb69aec32b3f6849366a8b011c28dfbc0a09e8a37ced",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-10",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-10.png",
+      "sha256": "2aa6e2517456dca7bcfb3bd9df0f7282478e72324ebafce432684550ff56a8af",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-11",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-11.png",
+      "sha256": "d6825d51ae9cb74f85e1a87662933f316a57197475cd717c40e59a64767df5db",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-12",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-12.png",
+      "sha256": "dd6960f08fd8e31bc7e7c414fe26987705f9eb9d332a09fbe83413ba3167b1aa",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-13",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-13.png",
+      "sha256": "1d850fd9ab1da2c2dd40875a57586df0bf514948b1b8b9fc682cab83a9d5f273",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-14",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-14.png",
+      "sha256": "26b7f38c86f5ae82a1efe687b87c8cbaa3a8ca909669bac3d9ffdef61615df99",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-15",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-15.png",
+      "sha256": "61599e5400ee4c037ecc8f60fa33aa87804d20754fc245994501c9a87e7c9f1b",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-16",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-16.png",
+      "sha256": "99472745a78f854e69e9eae03bac59609b990181fde388db0c388835cd87eb1c",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-17",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-17.png",
+      "sha256": "27af659225b8b0fe6f579c69554840bfb1bdb849293b9ffc3cd8463399db4e3d",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-18",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-18.png",
+      "sha256": "6f9acc89cad07feb14b14cdee9c91c6afc54c924c05bdb706e630bc850a5ffa9",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-19",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-19.png",
+      "sha256": "610362b4600bf2c03e4dbdd7e32c404a3d27e3776f8af76ba3389d37a6e080b8",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-20",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-20.png",
+      "sha256": "33517d97fe42e6d9218f2f2f4899d4718a2daa869a4a98302f6babb88cb87cc6",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-21",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-21.png",
+      "sha256": "4eddb8e021c20cc5448ce9239e12416c44dd06be86ec5b329e69285158632d7e",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-22",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-22.png",
+      "sha256": "9d84ac74a151ac64681bcc761fd542d65fa518f171b55b08c57735c8482600e7",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-23",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-23.png",
+      "sha256": "1a25a9efafc8a320a3401cc459ee505f9228aa15c90987db753b51a5350149a4",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-24",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-24.png",
+      "sha256": "238c082e47e47f74b49db9c9aca2035af5e714eef819d5e89ee7e553bfbb4785",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-25",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-25.png",
+      "sha256": "c7c96b9d8748b4dd425bced9761299f4be086b3d9abb697fe49fe5993885b34a",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-26",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-26.png",
+      "sha256": "caaafc7d173d7bf8d0da70ea696d42d7cb62f455f5f3fbff752be6d60ebf1b18",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-27",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-27.png",
+      "sha256": "53bea29f8d8bd0cfe203c4352eb57218e9e31eb168350bcca711adbb4d745881",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-28",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-28.png",
+      "sha256": "d01cdac5c4225e53ff95d579e5f8bb9656e4ded536db1ae4034dd2d7c005eec0",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-29",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-29.png",
+      "sha256": "7e5d8df851cf999dd9b8497724afaf742e48784393fd891e3bd8fd56dbd004a7",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-30",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-30.png",
+      "sha256": "b3b771bffd81b9d40d0329f35d7f492a7c6e923d8c3e395e397ca740df1eef61",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-31",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-31.png",
+      "sha256": "6f0851d6b270245c5f4baea8925041480b7dd88bef157cfaf1fdfbefd9334c18",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-page-32",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/docx/page-32.png",
+      "sha256": "4cb35e4ea0f1e135874c04bd91b1826c261fc2ebcd18a204b8f739a08800ac61",
+      "kind": "image",
+      "description": "Supplementpage pixels inspected; missingEMFimages separatelyhandled"
+    },
+    {
+      "id": "supp-emf-3",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/media/image3.emf",
+      "sha256": "a76309e088a62786b455eceef1c5e6bc68f2d73b4312a73173de8dd4b0df526e",
+      "kind": "data",
+      "description": "Exact originalEMF fromDOCX archive; includesembeddedPDF"
+    },
+    {
+      "id": "supp-embedded-3",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/media/image3-embedded.pdf",
+      "sha256": "d028203cb9bc52ea56004e2acf7c09e5bc33bbd33de0e45ff8edba352e33cae5",
+      "kind": "pdf",
+      "description": "VerbatimembeddedPDFstream extracted fromEMF, no visual reconstruction"
+    },
+    {
+      "id": "supp-figure-S3",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/media/image3-embedded.png",
+      "sha256": "2527b6009e57a674a3726965047db29e462a647d148843132f2d824550919d88",
+      "kind": "image",
+      "description": "Recovered completeoriginalfigurepixels inspected"
+    },
+    {
+      "id": "supp-emf-4",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/media/image4.emf",
+      "sha256": "e5baea3ac432953239fa962d57184d89e9c3a7ff0d513d84beb05e42190b1ad0",
+      "kind": "data",
+      "description": "Exact originalEMF fromDOCX archive; includesembeddedPDF"
+    },
+    {
+      "id": "supp-embedded-4",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/media/image4-embedded.pdf",
+      "sha256": "ba00c9abd49b7c0dbc57868c8737f31ba6b7e062d277b84ad269c87ec169b243",
+      "kind": "pdf",
+      "description": "VerbatimembeddedPDFstream extracted fromEMF, no visual reconstruction"
+    },
+    {
+      "id": "supp-figure-S4",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/media/image4-embedded.png",
+      "sha256": "ee0a4d28e080645095d8762fe450f75f870bc8d0fc8e6e9b0932b8c48c9442f0",
+      "kind": "image",
+      "description": "Recovered completeoriginalfigurepixels inspected"
+    },
+    {
+      "id": "table8-source",
+      "pmid": "40174224",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40174224/cloud/PMC11968080.1/NIHMS2042924-supplement-supp_table_8.xlsx",
+      "sha256": "4014cadf44e63b08f729e1a079c14a78c3a3f0939da35babab7f58cc42be1463",
+      "kind": "data",
+      "description": "Originalone-sheet knownCODEvariantlist; allpopulatedcells A1:M129 read"
+    },
+    {
+      "id": "table8-text",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/NIHMS2042924-supplement-supp_table_8.txt",
+      "sha256": "b066156a90557c6a059f125aa0e6ebdf981a94956569e0180df8bf15b67ea28c",
+      "kind": "text",
+      "description": "Allnonemptycellcoordinates/values read"
+    },
+    {
+      "id": "table8-render",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table8/table8.pdf",
+      "sha256": "fede3a83f94e8a8d434b3a9d1a80daa87784f8dba3b9b70ff6b642d813f34f6b",
+      "kind": "pdf",
+      "description": "Print-layout-only derivative, samecells, A1:M129 over3pages"
+    },
+    {
+      "id": "table8-page-1",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table8/page-1.png",
+      "sha256": "0762abaed4650d418955aa19f9af73b15feaebe81180f631d94574e0ad03afd4",
+      "kind": "image",
+      "description": "RenderedknownCODEtablepixels inspected"
+    },
+    {
+      "id": "table8-page-2",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table8/page-2.png",
+      "sha256": "54193e794789017c574e045a3dd5e2b4a0478142f205930521e55cda213a7bae",
+      "kind": "image",
+      "description": "RenderedknownCODEtablepixels inspected"
+    },
+    {
+      "id": "table8-page-3",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table8/page-3.png",
+      "sha256": "78887a5a6a718cc606fd508058258ea61d0e3824e3fa560a7c2a18d0e9b8b546",
+      "kind": "image",
+      "description": "RenderedknownCODEtablepixels inspected"
+    },
+    {
+      "id": "table10-source",
+      "pmid": "40174224",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40174224/cloud/PMC11968080.1/NIHMS2042924-supplement-supp_table_10.xlsx",
+      "sha256": "7dd1935723ae68d96ab33c5bb8dcafb3eea2ea20402e93b08d9116199243a8c1",
+      "kind": "data",
+      "description": "Original3-sheet BioID workbook"
+    },
+    {
+      "id": "table10-significant-text",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table10-significant.txt",
+      "sha256": "9ec7d881d30a595d0ba50cf3a03bc498b5ea4325271d154b78e6dd356bf51392",
+      "kind": "text",
+      "description": "Entirethirdworksheet cellvalues read; notentirerawworkbook"
+    },
+    {
+      "id": "table11-source",
+      "pmid": "40174224",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/40174224/cloud/PMC11968080.1/NIHMS2042924-supplement-supp_table_11.xlsx",
+      "sha256": "8c1a9e1d853a3350ee46433d8f550988f5adf1ea0e6d4cab3479ce88c0ad2429",
+      "kind": "data",
+      "description": "Original3-sheet BioID workbook"
+    },
+    {
+      "id": "table11-significant-text",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table11-significant.txt",
+      "sha256": "2e10f799a1c87550286a30f5ee53236fadc6abeb8423f72eb930e517a677d0bb",
+      "kind": "text",
+      "description": "Entirethirdworksheet cellvalues read; notentirerawworkbook"
+    },
+    {
+      "id": "workbook-check-script",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/audit_40174224_workbooks.py",
+      "sha256": "6f0f7e8b75dcc4c277fab87439437f63c995d6439d115a5abcbb523ad4fd32ba",
+      "kind": "text",
+      "description": "Read-only numericconsistency code; notSAINTreproduction"
+    },
+    {
+      "id": "workbook-check-results",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/workbook-consistency.json",
+      "sha256": "5149380204e3d7be4e7dc3582683872526ca276e85b11e50ed1c20e6db3defdc",
+      "kind": "metadata",
+      "description": "All-row computationalnumericchecks, separatefrommanualfullreading"
+    },
+    {
+      "id": "table10-summary-render",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table10-significant.pdf",
+      "sha256": "3c550a146fda50b027c3a42910fc9132622086f8d430af0bc6b154573634955d",
+      "kind": "pdf",
+      "description": "Render-onlycopy oforiginalcachedBFDRsummaryvalues; formattingwidth/rowheight changedtofit; originalworkbookunchanged"
+    },
+    {
+      "id": "table10-summary-page-1",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table10-significant-1.png",
+      "sha256": "4af56fa0bb93b6246a629aca07e3485e50c11503122529fcde563fe7d9863d33",
+      "kind": "image",
+      "description": "Entire summarypagepixels reviewed"
+    },
+    {
+      "id": "table10-summary-page-2",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table10-significant-2.png",
+      "sha256": "43b5e51e9c7481409d5871cacf9f253820ef828ed2a735a0da483d5c9b472dd9",
+      "kind": "image",
+      "description": "Entire summarypagepixels reviewed"
+    },
+    {
+      "id": "table10-summary-page-3",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table10-significant-3.png",
+      "sha256": "f5b9022359898dc6e9b4cd85a6feee85306f527977bd6e11b39ee272534f142f",
+      "kind": "image",
+      "description": "Entire summarypagepixels reviewed"
+    },
+    {
+      "id": "table10-summary-page-4",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table10-significant-4.png",
+      "sha256": "b6e642f0656cdeb531d2f4afc80a9f2a2e6f153ec809fbacfdd55d1b09d3cdc7",
+      "kind": "image",
+      "description": "Entire summarypagepixels reviewed"
+    },
+    {
+      "id": "table11-summary-render",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table11-significant.pdf",
+      "sha256": "2140c4a60b65ce6df8b6d092ee49eebfcb33544bfde05e8dc26c310397735c54",
+      "kind": "pdf",
+      "description": "Render-onlycopy oforiginalcachedBFDRsummaryvalues; formattingwidth/rowheight changedtofit; originalworkbookunchanged"
+    },
+    {
+      "id": "table11-summary-page-1",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table11-significant-1.png",
+      "sha256": "a90eb1dc90817a2e8dc916e3a4d75272f9a182d9fe778fda71b39927855d4997",
+      "kind": "image",
+      "description": "Entire summarypagepixels reviewed"
+    },
+    {
+      "id": "table11-summary-page-2",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table11-significant-2.png",
+      "sha256": "d32c02d02cfed00344fa58d3a5a63bfba7b4c414426d39721d3a6db2cb4eaff5",
+      "kind": "image",
+      "description": "Entire summarypagepixels reviewed"
+    },
+    {
+      "id": "table11-summary-page-3",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table11-significant-3.png",
+      "sha256": "b8da432e739f2ee6cba6901818a982f4a4bb0f83f66f791ab176f1bdf05fd7d9",
+      "kind": "image",
+      "description": "Entire summarypagepixels reviewed"
+    },
+    {
+      "id": "table11-summary-page-4",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table11-significant-4.png",
+      "sha256": "395b5f4d0f3f4fb8e731163142d87153db039c564c49316be3edbfb0d4c2a740",
+      "kind": "image",
+      "description": "Entire summarypagepixels reviewed"
+    },
+    {
+      "id": "table11-summary-page-5",
+      "pmid": "40174224",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/reviewer-4/renders/40174224/table11-significant-5.png",
+      "sha256": "f888f1b3b669b8d41a931d6f17155a72901e35696bea3b7d8cf4b5e5bdfcb1b8",
+      "kind": "image",
+      "description": "Entire summarypagepixels reviewed"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "The Genetic Architecture of Congenital Diarrhea and\nEnteropathy",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 4,
+      "table": 0,
+      "supplement": 4
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Four distinct supplementary assets; repeated db_ds anchors point to the same DOCX/threeXLSX assets and are deduplicated."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 260,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–260"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 260,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–260"
+        }
+      ],
+      "note": "Full main text, all38references/declarations, all4mainfigure pixels, full32pageDOCX text and pixels including recoveredEMF figuresS3/S4, and TableS8 allcells/pixels read. BioID significant sheets read as data; underlying SAINT/Raw sheets not yet fully reviewed. Do not count wholepaper complete."
+    },
+    {
+      "id": "figure:F1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig-1",
+      "extent_evidence": [
+        {
+          "source_id": "fig-1",
+          "locator": "allpanels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig-1",
+          "locator": "entirefigure allpanels, pedigrees, images, graphs, labels"
+        }
+      ],
+      "note": "Figure1cohort; Figure2GRWD1 pedigree/zebrafish/BioID/localization; Figure3MYO1A; Figure4MON1A all inspected. Modeldata do not prove clinicalcausality."
+    },
+    {
+      "id": "figure:F2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig-2",
+      "extent_evidence": [
+        {
+          "source_id": "fig-2",
+          "locator": "allpanels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig-2",
+          "locator": "entirefigure allpanels, pedigrees, images, graphs, labels"
+        }
+      ],
+      "note": "Figure1cohort; Figure2GRWD1 pedigree/zebrafish/BioID/localization; Figure3MYO1A; Figure4MON1A all inspected. Modeldata do not prove clinicalcausality."
+    },
+    {
+      "id": "figure:F3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig-3",
+      "extent_evidence": [
+        {
+          "source_id": "fig-3",
+          "locator": "allpanels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig-3",
+          "locator": "entirefigure allpanels, pedigrees, images, graphs, labels"
+        }
+      ],
+      "note": "Figure1cohort; Figure2GRWD1 pedigree/zebrafish/BioID/localization; Figure3MYO1A; Figure4MON1A all inspected. Modeldata do not prove clinicalcausality."
+    },
+    {
+      "id": "figure:F4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "fig-4",
+      "extent_evidence": [
+        {
+          "source_id": "fig-4",
+          "locator": "allpanels"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "fig-4",
+          "locator": "entirefigure allpanels, pedigrees, images, graphs, labels"
+        }
+      ],
+      "note": "Figure1cohort; Figure2GRWD1 pedigree/zebrafish/BioID/localization; Figure3MYO1A; Figure4MON1A all inspected. Modeldata do not prove clinicalcausality."
+    },
+    {
+      "id": "supplement:SD1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 32,
+      "extent_source_id": "supp-pdf",
+      "extent_evidence": [
+        {
+          "source_id": "supp-pdf",
+          "locator": "32pages"
+        },
+        {
+          "source_id": "supp-docx",
+          "locator": "allparagraphs/tables and4embeddedimages"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 32,
+          "mode": "text",
+          "source_id": "supp-text",
+          "locator": "Allparagraphs/cells, methods, legends, TablesS1-S7/S9 and45references"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "supp-page-1",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "supp-page-2",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "supp-page-3",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "supp-page-4",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "supp-page-5",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "supp-page-6",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "mode": "pixels",
+          "source_id": "supp-page-7",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "mode": "pixels",
+          "source_id": "supp-page-8",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "mode": "pixels",
+          "source_id": "supp-page-9",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "mode": "pixels",
+          "source_id": "supp-page-10",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "mode": "pixels",
+          "source_id": "supp-page-11",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "mode": "pixels",
+          "source_id": "supp-page-12",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "mode": "pixels",
+          "source_id": "supp-page-13",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "mode": "pixels",
+          "source_id": "supp-page-14",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "mode": "pixels",
+          "source_id": "supp-page-15",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "mode": "pixels",
+          "source_id": "supp-page-16",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 17,
+          "end": 17,
+          "mode": "pixels",
+          "source_id": "supp-page-17",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 18,
+          "end": 18,
+          "mode": "pixels",
+          "source_id": "supp-page-18",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 19,
+          "end": 19,
+          "mode": "pixels",
+          "source_id": "supp-page-19",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "mode": "pixels",
+          "source_id": "supp-page-20",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 21,
+          "end": 21,
+          "mode": "pixels",
+          "source_id": "supp-page-21",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 22,
+          "end": 22,
+          "mode": "pixels",
+          "source_id": "supp-page-22",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 23,
+          "end": 23,
+          "mode": "pixels",
+          "source_id": "supp-page-23",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 24,
+          "end": 24,
+          "mode": "pixels",
+          "source_id": "supp-page-24",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 25,
+          "end": 25,
+          "mode": "pixels",
+          "source_id": "supp-page-25",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 26,
+          "end": 26,
+          "mode": "pixels",
+          "source_id": "supp-page-26",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 27,
+          "end": 27,
+          "mode": "pixels",
+          "source_id": "supp-page-27",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 28,
+          "end": 28,
+          "mode": "pixels",
+          "source_id": "supp-page-28",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 29,
+          "end": 29,
+          "mode": "pixels",
+          "source_id": "supp-page-29",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 30,
+          "end": 30,
+          "mode": "pixels",
+          "source_id": "supp-page-30",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 31,
+          "end": 31,
+          "mode": "pixels",
+          "source_id": "supp-page-31",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 32,
+          "end": 32,
+          "mode": "pixels",
+          "source_id": "supp-page-32",
+          "locator": "entirepage; p16/17legend/text only inthisrender, withgraphics coveredbyseparate embeddedPDF artifacts"
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "mode": "pixels",
+          "source_id": "supp-figure-S3",
+          "locator": "FigureS3 allpanels renderedfromembeddedPDF"
+        },
+        {
+          "start": 17,
+          "end": 17,
+          "mode": "pixels",
+          "source_id": "supp-figure-S4",
+          "locator": "FigureS4 allpanels renderedfromembeddedPDF"
+        }
+      ],
+      "note": "FullDOCX reviewed. S3/S4 blanks inLibreOffice were renderingloss, notmissingprimaryfigures; recoveredoriginalPDFstreams fromEMF and inspected. S2largegrwd1deletion/lowmRNA; S3mon1aexon2indel/HRM; S4proband5SLC9A3exon8depth4.1. TableS9GRWD1allelesLP, notpathogenic; MYO1AI678FVUS. MethodsMON1AR152C vsmainR249C not independently reconciled."
+    },
+    {
+      "id": "supplement:SD2",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "data",
+        "pixels"
+      ],
+      "unit_type": "sheets",
+      "unit_count": 1,
+      "extent_source_id": "table8-source",
+      "extent_evidence": [
+        {
+          "source_id": "table8-source",
+          "locator": "oneworksheet, nonemptycells A1:M129"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "data",
+          "source_id": "table8-source",
+          "locator": "Variant Summary table!A1:M129, allpopulatedcells andfootnote"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table8-page-1",
+          "locator": "page1/3, allvariantrows andclassificationcolumns; footnoteend read fromoriginalcells"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table8-page-2",
+          "locator": "page2/3, allvariantrows andclassificationcolumns; footnoteend read fromoriginalcells"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table8-page-3",
+          "locator": "page3/3, allvariantrows andclassificationcolumns; footnoteend read fromoriginalcells"
+        }
+      ],
+      "note": "70knownCODEcases with eight siblingpairs,62families; distinctfromGRWD1newfamily. Allvariantrows andfootnotes read. RedSLC9A3/PERCC1/XIAP requireadditionalanalysis. FormattingextendsbeyondM butnopopulatedcells there. Footnoteendsclippedinprint butoriginalfullcellread."
+    },
+    {
+      "id": "supplement:SD3",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "data",
+        "pixels"
+      ],
+      "unit_type": "sheets",
+      "unit_count": 3,
+      "extent_source_id": "table10-source",
+      "extent_evidence": [
+        {
+          "source_id": "table10-source",
+          "locator": "3worksheets:SAINT,Raw,andBFDR significanttable"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "data",
+          "source_id": "table10-source",
+          "locator": "Complete thirdworksheet:107x14 forGRWD1;108x12 forMON1A, allpopulatedcells read"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "table10-summary-page-1",
+          "locator": "BFDRsummaryworksheet page1/4; allrows, headers, controls, colorcoding andlog2values"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "table10-summary-page-2",
+          "locator": "BFDRsummaryworksheet page2/4; allrows, headers, controls, colorcoding andlog2values"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "table10-summary-page-3",
+          "locator": "BFDRsummaryworksheet page3/4; allrows, headers, controls, colorcoding andlog2values"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "table10-summary-page-4",
+          "locator": "BFDRsummaryworksheet page4/4; allrows, headers, controls, colorcoding andlog2values"
+        }
+      ],
+      "note": "Thirdworksheet values read. SAINT andRaw whole-sheet data review and workbook pixels remainpending. Do not label rawdata fullyread or results independentlyreproduced. GRWD1RPL3spectralsumsWT1700/H307R318/V368F654; bait3010/2508/2697; CCT/prefoldin increased. Controlcolumns contain20entries, versus18 statedinmethods; zero-countrows usepseudocount1. MON1AworkbooklabelsvariantR152C, unresolvedvsR249Cinmain. Entirethirdsheetnowalso reviewedinpixels, includingeverypopulatedrow. AllSAINT/Rawrows underwentexplicitnumericconsistencychecks; thisdoesnotclaimmanualreadingofallrawcells orfullrawsheetpixels, whichremainpending."
+    },
+    {
+      "id": "supplement:SD4",
+      "kind": "supplement",
+      "status": "partial",
+      "required_modes": [
+        "data",
+        "pixels"
+      ],
+      "unit_type": "sheets",
+      "unit_count": 3,
+      "extent_source_id": "table11-source",
+      "extent_evidence": [
+        {
+          "source_id": "table11-source",
+          "locator": "3worksheets:SAINT,Raw,andBFDR significanttable"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "data",
+          "source_id": "table11-source",
+          "locator": "Complete thirdworksheet:107x14 forGRWD1;108x12 forMON1A, allpopulatedcells read"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "table11-summary-page-1",
+          "locator": "BFDRsummaryworksheet page1/5; allrows, headers, controls, colorcoding andlog2values"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "table11-summary-page-2",
+          "locator": "BFDRsummaryworksheet page2/5; allrows, headers, controls, colorcoding andlog2values"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "table11-summary-page-3",
+          "locator": "BFDRsummaryworksheet page3/5; allrows, headers, controls, colorcoding andlog2values"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "table11-summary-page-4",
+          "locator": "BFDRsummaryworksheet page4/5; allrows, headers, controls, colorcoding andlog2values"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "table11-summary-page-5",
+          "locator": "BFDRsummaryworksheet page5/5; allrows, headers, controls, colorcoding andlog2values"
+        }
+      ],
+      "note": "Thirdworksheet values read. SAINT andRaw whole-sheet data review and workbook pixels remainpending. Do not label rawdata fullyread or results independentlyreproduced. GRWD1RPL3spectralsumsWT1700/H307R318/V368F654; bait3010/2508/2697; CCT/prefoldin increased. Controlcolumns contain20entries, versus18 statedinmethods; zero-countrows usepseudocount1. MON1AworkbooklabelsvariantR152C, unresolvedvsR249Cinmain. Entirethirdsheetnowalso reviewedinpixels, includingeverypopulatedrow. AllSAINT/Rawrows underwentexplicitnumericconsistencychecks; thisdoesnotclaimmanualreadingofallrawcells orfullrawsheetpixels, whichremainpending."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/GRWD1/PMID_40174224_sib_pair_brother.json",
+      "packet_sha256": "beda61e643bd44d3d7a73ec4fbf8ea52d04aef6693fac38d8a1cdfa4c242a338",
+      "case_id": "TC_1db8ee2254355c02",
+      "role": "selected",
+      "packet_subject_id": "sib pair brother",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Post-inference source support, notclinicalvalidation; no per-caseranksconsulted."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exactmale member ofGRWD1affected siblingpair inFigure2A; distinctfromMYO1A/MON1A probands and70knownCODEcases.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:Mutations inGRWD1; Figure2A; TableS9"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Affected sibling has heterozygousc.920A>G(p.H307R) andc.1102G>T(p.V368F), reportedcompoundheterozygous.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:Mutations inGRWD1; Figure2A"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "H307R inheritedfrommother; V368F fromfather; bothaffected siblings sharepair,4familymembers sequenced.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:Mutations inGRWD1; Figure2A; TableS9"
+          },
+          {
+            "source_id": "supp-text",
+            "locator": "TableS9 GRWD1columns inheritance andfamilymemberssequenced"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Oppositeparentalorigins supportintransphase inbothsiblings.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Figure2A; Results:Mutations inGRWD1"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Onefamily plusalteredvariantlocalization/interactors andgrwd1zebrafishloss supportcandidateassociation. AuthorsTableS9classifiesbothGRWD1allelesLIKELYPATHOGENIC; packetPATHOGENIC/SOLVEDmustnotbeinterpretedasclinicalproof.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:Mutations inGRWD1; Figure2; Discussion"
+          },
+          {
+            "source_id": "supp-text",
+            "locator": "TableS9 ACMGclassification/code rows; methodsBioID"
+          }
+        ],
+        "limitations": [
+          "Noindependenthumanfamilyreplication; authorsrequestadditionalcases.",
+          "Celloverexpressionandmosaiczebrafishknockout differfromendogenouspatientcompoundheterozygousintestinaltissue; no clinicaldrugrescue measured.",
+          "TableS9severityclassification isLP ratherthanpacketP. BioIDunderlyingSAINT/Rawreviewsstillpending."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Bothpacketpositivefeatures source-supported. Packetomitsdiffusearterialhypoplasia anddoesnotencodefullclinicalcourse.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:Mutations inGRWD1 openingparagraph"
+          }
+        ],
+        "limitations": [
+          "Sparsephenotyping cannotimplyabsenceofunlistedfeatures; exactassessmentage notreported."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c920AtoG_GRWD1_NM_031485v4",
+            "geneContext": {
+              "valueId": "HGNC:21270",
+              "symbol": "GRWD1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_031485.4:c.920A>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000019.10:g.48451128A>G"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_113673.3:p.(His307Arg)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr19",
+              "pos": 48451128,
+              "ref": "A",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "382104d54ddb839d2ce217b603cc9e971a5d9cbe17c6c8b6d5cfb7f9670e11ce",
+          "assessment": {
+            "status": "qualified",
+            "statement": "c.920A>G/p.His307Arg/chr19:48451128A>G,heterozygousstate,andGRCh38coordinates matchTableS9.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS9 GRWD1columns"
+              }
+            ],
+            "limitations": [
+              "Source usesNM_031485.3,packet.4; coding/protein/GRCh38coordinates agree buttranscriptversionequivalencenotindependentlyrenormalized."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1102GtoT_GRWD1_NM_031485v4",
+            "geneContext": {
+              "valueId": "HGNC:21270",
+              "symbol": "GRWD1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_031485.4:c.1102G>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000019.10:g.48452786G>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_113673.3:p.(Val368Phe)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr19",
+              "pos": 48452786,
+              "ref": "G",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "d112ac5a15e47f7654e781b3ca72f76e6342534c2b41a5ad65943457a513a491",
+          "assessment": {
+            "status": "qualified",
+            "statement": "c.1102G>T/p.Val368Phe/chr19:48452786G>T,heterozygousstate,andGRCh38coordinates matchTableS9.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS9 GRWD1columns"
+              }
+            ],
+            "limitations": [
+              "Source usesNM_031485.3,packet.4; coding/protein/GRCh38coordinates agree buttranscriptversionequivalencenotindependentlyrenormalized."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002014",
+              "label": "Diarrhea"
+            }
+          },
+          "snapshot_sha256": "5b000778ef2d027cae1034d58bf675c262511ead1a0f2d7b00d6a9c63f6dfeb7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Diarrhea directlysupported bybothsiblingshavingcongenitaldiarrhea requiringparenteralnutrition.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results:Mutations inGRWD1 openingparagraph"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033994",
+              "label": "Dependency on parenteral nutrition"
+            }
+          },
+          "snapshot_sha256": "852d418f6f0bec83e1a2d5a4f4290c2415187fd9c8667682dcc60ebc25e68ac2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dependency on parenteral nutrition directlysupported bybothsiblingshavingcongenitaldiarrhea requiringparenteralnutrition.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results:Mutations inGRWD1 openingparagraph"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/GRWD1/PMID_40174224_sib_pair_sister.json",
+      "packet_sha256": "5c9521b5c7accb04f75dbf055135f4dca9e5b1eb3c3b2d02be18a018853418ba",
+      "case_id": "TC_1db8ee2254355c02",
+      "role": "alternate",
+      "packet_subject_id": "sib pair sister",
+      "review_status": "adjudicated",
+      "category": "qualified",
+      "limitations": [
+        "Post-inference source support, notclinicalvalidation; no per-caseranksconsulted."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exactfemale member ofGRWD1affected siblingpair inFigure2A; distinctfromMYO1A/MON1A probands and70knownCODEcases.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:Mutations inGRWD1; Figure2A; TableS9"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Affected sibling has heterozygousc.920A>G(p.H307R) andc.1102G>T(p.V368F), reportedcompoundheterozygous.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:Mutations inGRWD1; Figure2A"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "H307R inheritedfrommother; V368F fromfather; bothaffected siblings sharepair,4familymembers sequenced.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:Mutations inGRWD1; Figure2A; TableS9"
+          },
+          {
+            "source_id": "supp-text",
+            "locator": "TableS9 GRWD1columns inheritance andfamilymemberssequenced"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Oppositeparentalorigins supportintransphase inbothsiblings.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Figure2A; Results:Mutations inGRWD1"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Onefamily plusalteredvariantlocalization/interactors andgrwd1zebrafishloss supportcandidateassociation. AuthorsTableS9classifiesbothGRWD1allelesLIKELYPATHOGENIC; packetPATHOGENIC/SOLVEDmustnotbeinterpretedasclinicalproof.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:Mutations inGRWD1; Figure2; Discussion"
+          },
+          {
+            "source_id": "supp-text",
+            "locator": "TableS9 ACMGclassification/code rows; methodsBioID"
+          }
+        ],
+        "limitations": [
+          "Noindependenthumanfamilyreplication; authorsrequestadditionalcases.",
+          "Celloverexpressionandmosaiczebrafishknockout differfromendogenouspatientcompoundheterozygousintestinaltissue; no clinicaldrugrescue measured.",
+          "TableS9severityclassification isLP ratherthanpacketP. BioIDunderlyingSAINT/Rawreviewsstillpending."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "Bothpacketpositivefeatures source-supported. Packetomitsdiffusearterialhypoplasia anddoesnotencodefullclinicalcourse.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Results:Mutations inGRWD1 openingparagraph"
+          }
+        ],
+        "limitations": [
+          "Sparsephenotyping cannotimplyabsenceofunlistedfeatures; exactassessmentage notreported."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c920AtoG_GRWD1_NM_031485v4",
+            "geneContext": {
+              "valueId": "HGNC:21270",
+              "symbol": "GRWD1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_031485.4:c.920A>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000019.10:g.48451128A>G"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_113673.3:p.(His307Arg)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr19",
+              "pos": 48451128,
+              "ref": "A",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "382104d54ddb839d2ce217b603cc9e971a5d9cbe17c6c8b6d5cfb7f9670e11ce",
+          "assessment": {
+            "status": "qualified",
+            "statement": "c.920A>G/p.His307Arg/chr19:48451128A>G,heterozygousstate,andGRCh38coordinates matchTableS9.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS9 GRWD1columns"
+              }
+            ],
+            "limitations": [
+              "Source usesNM_031485.3,packet.4; coding/protein/GRCh38coordinates agree buttranscriptversionequivalencenotindependentlyrenormalized."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1102GtoT_GRWD1_NM_031485v4",
+            "geneContext": {
+              "valueId": "HGNC:21270",
+              "symbol": "GRWD1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_031485.4:c.1102G>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000019.10:g.48452786G>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_113673.3:p.(Val368Phe)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr19",
+              "pos": 48452786,
+              "ref": "G",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "d112ac5a15e47f7654e781b3ca72f76e6342534c2b41a5ad65943457a513a491",
+          "assessment": {
+            "status": "qualified",
+            "statement": "c.1102G>T/p.Val368Phe/chr19:48452786G>T,heterozygousstate,andGRCh38coordinates matchTableS9.",
+            "evidence": [
+              {
+                "source_id": "supp-text",
+                "locator": "TableS9 GRWD1columns"
+              }
+            ],
+            "limitations": [
+              "Source usesNM_031485.3,packet.4; coding/protein/GRCh38coordinates agree buttranscriptversionequivalencenotindependentlyrenormalized."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002014",
+              "label": "Diarrhea"
+            }
+          },
+          "snapshot_sha256": "5b000778ef2d027cae1034d58bf675c262511ead1a0f2d7b00d6a9c63f6dfeb7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Diarrhea directlysupported bybothsiblingshavingcongenitaldiarrhea requiringparenteralnutrition.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results:Mutations inGRWD1 openingparagraph"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033994",
+              "label": "Dependency on parenteral nutrition"
+            }
+          },
+          "snapshot_sha256": "852d418f6f0bec83e1a2d5a4f4290c2415187fd9c8667682dcc60ebc25e68ac2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Dependency on parenteral nutrition directlysupported bybothsiblingshavingcongenitaldiarrhea requiringparenteralnutrition.",
+            "evidence": [
+              {
+                "source_id": "main-text",
+                "locator": "Results:Mutations inGRWD1 openingparagraph"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading.",
+    "DOCXTableS9CADD24.9/28.0 vsmainboth25; maintreatmentandclinicalclaimsnotinferredfrommodeldata.",
+    "Two BioIDworkbooks remainpartial, notwithstandingfullyreadmaintext/clinicalcaseevidence.",
+    "Supplementmethods18controlruns vs20entriesinworkbooks/mainlegend; MON1AR152C/R249C andmon1aexon1/exon2 wordingdifferences retainedunresolved.",
+    "Read-only workbookaudit: all6429GRWD1 and6333MON1ASAINTrows haveinternally matching displayedSpecSum/UniqueSpecSum. Rawlog2cachedvalues match reportedSpecSumratios; 4992GRWD1 and886MON1Azero-vector entries storeSpecSum1 (pseudocount), notobservedpeptides.",
+    "GRWD1BFDR-01 summarycontains8nonbait/taggenes withoutanyBFDR<=.01:CEBPZ,KRR1,SDAD1,FIBP,MCTS1,CCDC92,WDR89,FDPS. Worksheetmembershipalone isnotahighconfidenceinteraction. PublishedRPL3directionstillmatchesdisplayedcounts.",
+    "MON1ASAINTall6333rows reportNumReplicates8/UniqueSpec8entries butdisplaySpec4entries; GRWD1reports4/4/4. Likelydifferentexport/aggregation, unresolvedwithoutunderlyingMSconfiguration; do notcallitfabrication oruseas8independentbiologicalreplicates.",
+    "MON1A_R152Cmethods/workbook versusR249Cmain stillunresolved; 20controlentries vs18methods stated. NoSAINTmodelrerun orendogenouspatientintestinalrescue claimed."
+  ]
+}

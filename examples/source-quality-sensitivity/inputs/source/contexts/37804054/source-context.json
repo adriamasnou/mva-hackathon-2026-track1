@@ -1,0 +1,150 @@
+{
+  "pmid": "37804054",
+  "source_titles": [
+    "LRRC23 deficiency causes male infertility with idiopathic asthenozoospermia by disrupting the assembly of radial spokes"
+  ],
+  "selected_case_ids": [
+    "TC_79889a0f61728c7a"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "LRRC23"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/LRRC23/PMID_37804054_proband_AC027.json",
+      "sha256": "cfd86fe578882d5f60ddfb5ad00f3d88cef47c2ad33718a9c5543fe76b0d3152",
+      "case_id": "TC_79889a0f61728c7a",
+      "selected_record": true,
+      "subject": {
+        "id": "proband AC027",
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620848",
+            "label": "Spermatogenic failure 92"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0011462",
+              "label": "Young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003251",
+            "label": "Male infertility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034011",
+            "label": "Reduced progressive sperm motility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012207",
+            "label": "Reduced sperm motility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000798",
+            "label": "Oligozoospermia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0032560",
+            "label": "Coiled sperm flagella"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034811",
+            "label": "Bent sperm flagella"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0032559",
+            "label": "Short sperm flagella"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032558",
+            "label": "Absent sperm flagella"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "YqSu7SvKZeSLpPqUWAo34rAi",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620848",
+              "label": "Spermatogenic failure 92"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "proband AC027",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c376CtoT_LRRC23_NM_001135217v2",
+                    "geneContext": {
+                      "valueId": "HGNC:19138",
+                      "symbol": "LRRC23"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001135217.2:c.376C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000012.12:g.6906548C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001128689.1:p.(Arg126Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr12",
+                      "pos": 6906548,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

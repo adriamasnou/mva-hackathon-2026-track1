@@ -1,0 +1,3107 @@
+{
+  "schema_version": 1,
+  "pmid": "38272031",
+  "title": "Mutations in SAMD7 cause autosomal-recessive macular dystrophy with or without cone dysfunction.",
+  "reviewer": {
+    "id": "reader-3",
+    "reviewed_at_utc": "2026-10-24T10:41:27.677185+00:00",
+    "method": "Read entire 67586-character UCL accepted manuscript in contiguous untruncated chunks; all five main figures, graphical abstract, both main tables as pixels. Read entire 19-page publisher supplement as text and pixels including all eight narratives, FiguresS1–S5, TablesS1–S2 and methods."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Required HANDOFF was read and includes aggregate compact-cohort metrics. No per-case inference ranks, scores or outcomes opened or used. This is a post-inference audit, not blinded validation."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "9612350273f8bfc7d566dc80166414e0d7e336cbd7fcee61bd99901c0374f26e",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main",
+      "pmid": "38272031",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38272031/retrieval-followup/20261024T102130721421Z-b18d91528d/response.body.layout.txt",
+      "sha256": "b9528ed0eaa1c406bb5e110185e10cdefe984de287a75eb8901f8ec68d42342e",
+      "kind": "text",
+      "description": "Complete UCL accepted manuscript layout extraction."
+    },
+    {
+      "id": "article",
+      "pmid": "38272031",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38272031/retrieval-followup/20261024T102130721421Z-b18d91528d/response.body",
+      "sha256": "f2f79dfd6ccc659ea46d24fefd5d45b38c531352586ecf30916f27a18f47c7fe",
+      "kind": "pdf",
+      "description": "UCL primary repository manuscript, eprint10188996, AJHG-D-23-00612R4."
+    },
+    {
+      "id": "supp",
+      "pmid": "38272031",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38272031/reviewer-3/mmc1.pdf",
+      "sha256": "f8cf91ff5e011b95d33dcacf976bceeb4c75879c3deb82d9aa5dc1f2a58f924b",
+      "kind": "pdf",
+      "description": "Publisher Supplemental Information https://ars.els-cdn.com/content/image/1-s2.0-S0002929724000016-mmc1.pdf"
+    },
+    {
+      "id": "supp_text",
+      "pmid": "38272031",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38272031/reviewer-3/supp.txt",
+      "sha256": "b2f0b07dec6fa7324bad47bd753ca303d6eb5b131e3141559d4b0dcad33dbdf6",
+      "kind": "text",
+      "description": "Entire19-page supplemental extraction."
+    },
+    {
+      "id": "canonical",
+      "pmid": "38272031",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38272031/europepmc.json",
+      "sha256": "550f1d00bca5ad7718e0a0dabc8cfc4ebc74f0a6521e5b0869051e28a183ca70",
+      "kind": "metadata",
+      "description": "Exact PMID38272031/PMC10870129/title/DOI10.1016/j.ajhg.2024.01.001 identity metadata."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Mutations in SAMD7 cause autosomal-recessive macular dystrophy with or without cone dysfunction.",
+    "evidence": [
+      {
+        "source_id": "article",
+        "locator": "Manuscript title, author list and manuscriptID"
+      },
+      {
+        "source_id": "supp",
+        "locator": "Publisher title/author cover"
+      },
+      {
+        "source_id": "canonical",
+        "locator": "Exact PMID/title/DOI match"
+      }
+    ],
+    "note": "Accepted UCL manuscript, not asserted identical in every word to version of record. PMID/DOI not printed on accepted manuscript title; matched by canonical metadata, exact title/authors and publisher supplement."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 6,
+      "table": 2,
+      "supplement": 1
+    },
+    "evidence": [
+      {
+        "source_id": "article",
+        "locator": "Entire manuscript: graphical abstract, Figures1–5, Tables1–2 and one supplemental file"
+      },
+      {
+        "source_id": "supp",
+        "locator": "Complete19-page supplemental information: FiguresS1–S5, TablesS1–S2, cases/methods/references"
+      }
+    ],
+    "note": "Graphical abstract counted as sixth figure. Underlying clinical, sequencing, raw imaging and external scRNA datasets not independently reanalyzed/read; all supplied paper components consumed."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 1360,
+      "extent_source_id": "main",
+      "extent_evidence": [
+        {
+          "source_id": "main",
+          "locator": "Entire37-page accepted manuscript extraction"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1360,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "All67586characters in chunks0–23000–46000–end, including tables, captions, refs and disclosure"
+        }
+      ],
+      "note": "Raster figures separately inspected."
+    },
+    {
+      "id": "fig1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Figure1, PDFpage27"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Figure1 all panels, PDFpage27"
+        }
+      ],
+      "note": "All panels visually inspected."
+    },
+    {
+      "id": "fig2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Figure2, PDFpage28"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Figure2 all panels, PDFpage28"
+        }
+      ],
+      "note": "All panels visually inspected."
+    },
+    {
+      "id": "fig3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Figure3, PDFpage29"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Figure3 all panels, PDFpage29"
+        }
+      ],
+      "note": "All panels visually inspected."
+    },
+    {
+      "id": "fig4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Figure4, PDFpage30"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Figure4 all panels, PDFpage30"
+        }
+      ],
+      "note": "All panels visually inspected."
+    },
+    {
+      "id": "fig5",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Figure5, PDFpage31"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Figure5 all panels, PDFpage31"
+        }
+      ],
+      "note": "All panels visually inspected."
+    },
+    {
+      "id": "graphical",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Graphical abstract PDFpage3"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "Complete graphical abstract"
+        }
+      ],
+      "note": "Visual summary not independent evidence."
+    },
+    {
+      "id": "table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Table1, PDFpages24"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Table1 all rows/columns/footnotes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "PDFpages24 complete table"
+        }
+      ],
+      "note": "All six families/eight source individuals, not selected-only reading."
+    },
+    {
+      "id": "table2",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "article",
+      "extent_evidence": [
+        {
+          "source_id": "article",
+          "locator": "Table2, PDFpages25–26"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "main",
+          "locator": "Table2 all rows/columns/footnotes"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "article",
+          "locator": "PDFpages25–26 complete table"
+        }
+      ],
+      "note": "All six families/eight source individuals, not selected-only reading."
+    },
+    {
+      "id": "supp1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 19,
+      "extent_source_id": "supp",
+      "extent_evidence": [
+        {
+          "source_id": "supp",
+          "locator": "Full19-page PDF"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 19,
+          "mode": "text",
+          "source_id": "supp_text",
+          "locator": "Entire30400-character extraction; raster captions additionally consumed in pixels"
+        },
+        {
+          "start": 1,
+          "end": 19,
+          "mode": "pixels",
+          "source_id": "supp",
+          "locator": "Every page1–19 inspected; all five supplemental figures, full candidate table and primers"
+        }
+      ],
+      "note": "Case narratives2–5; Sanger/alignment6–7; longitudinalcase3-1p8; scRNAp9; IFcontrolsp10; candidateTableS1p11–14; primerTableS2p15; methodsp16–18; referencesp19."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SAMD7/PMID_38272031_Individual_3_1.json",
+      "packet_sha256": "4a481deaa084a647b4be22882958a2325e44b19ecf3e9d11dd40964c47ecd275",
+      "case_id": "TC_3a8c652c2fe0dd31",
+      "role": "selected",
+      "packet_subject_id": "Individual 3-1",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Source discovery report supports association, not independent clinical pathogenicity certification.",
+        "Same-allele persons retained as separate source packets; unreported negatives not assumed absent."
+      ],
+      "patient_identity": {
+        "status": "qualified",
+        "statement": "Exact individual3-1; Female57y,6/24OD,6/6OS, mildphotophobia, patternmaculopathy with normal full-fieldERG (MDwithoutCD). Table2 firstdiagnosis49 versus supplementarynarrative47. FigureS3 documents right centralatrophy after8y; packet retinal-atrophy exclusion contradicted.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual3-1, Figure4 and Figure1 family3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual3-1, pages2–5"
+          }
+        ],
+        "limitations": [
+          "Firstdiagnosis47 versus49 is internal source conflict; latestage57 agrees."
+        ]
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous SAMD7 NM_001304366.2:c.211+1G>A; hg38chr3:169921339G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Minigene exon4skipping with predicted NMD; same allele independently in family4.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1, Genetic analyses, Figures1–3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1 p6"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Proband homozygous in Figure1; parentalgenotypes not displayed. Parents consanguineous.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 family3; Table1 and Genetic analyses"
+          }
+        ],
+        "limitations": [
+          "Do not turn consanguinity or reported familial symptoms into measured segregation."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Reported homozygous single allele, not two different variants requiring cis/transassignment. Source Sanger supports homozygosity; independent raw allele-balance/CNV exclusion not performed.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 and Genetic analyses"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Five homozygous alleles across six families/eight patients plus functional evidence support a new recessive SAMD7-macular-dystrophy association. Minigene exon4skipping with predicted NMD; same allele independently in family4.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual3-1, Figure4 and Figure1 family3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual3-1, pages2–5"
+          },
+          {
+            "source_id": "article",
+            "locator": "Figures2–3, Discussion"
+          },
+          {
+            "source_id": "supp",
+            "locator": "TableS1 and methods"
+          }
+        ],
+        "limitations": [
+          "Packet PATHOGENIC/SOLVED label is not itself causal validation.",
+          "No retinal patientRNA, rescue, or external independent replication is supplied; precise targetgenes/mechanism remain unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet positive and negative assertions checked against exact patient row and narrative, all eight Figure4 panels, and longitudinalFigureS3. Female57y,6/24OD,6/6OS, mildphotophobia, patternmaculopathy with normal full-fieldERG (MDwithoutCD). Table2 firstdiagnosis49 versus supplementarynarrative47. FigureS3 documents right centralatrophy after8y; packet retinal-atrophy exclusion contradicted.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual3-1, Figure4 and Figure1 family3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual3-1, pages2–5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS3 p8"
+          }
+        ],
+        "limitations": [
+          "Unreported exclusions remainunresolved.",
+          "Diagnosisage is not necessarily symptomonset; family4 symptoms precede firstpresentation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c211_1GtoA_SAMD7_NM_001304366v2",
+            "geneContext": {
+              "valueId": "HGNC:25394",
+              "symbol": "SAMD7"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001304366.2:c.211+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000003.12:g.169921339G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001291295.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr3",
+              "pos": 169921339,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "873192f9d932e138fe59d4d954bbc7ad86b2b02289315931ca9787d9a6c1a46f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Homozygous SAMD7 NM_001304366.2:c.211+1G>A; hg38chr3:169921339G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Minigene exon4skipping with predicted NMD; same allele independently in family4.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1, Genetic analyses, Figures1–3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "FigureS1 p6"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007663",
+              "label": "Reduced visual acuity"
+            }
+          },
+          "snapshot_sha256": "df1bc7a58572be0ac6925730d63c22f8c86713c34a5437f3f2d3205632e269a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced visual acuity positive is supported for individual3-1 by individual Table2/case narrative. Exact BCVA recorded in identity finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual3-1, Figure4 and Figure1 family3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual3-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007754",
+              "label": "Macular dystrophy"
+            }
+          },
+          "snapshot_sha256": "271bb6ac0985a26fa9f6c9e548398aa0248ce60da54c4ba9251c88dce638bbb7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular dystrophy positive is supported for individual3-1 by individual Table2/case narrative. Diagnosis MDwithCD or MDwithoutCD as individually specified.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual3-1, Figure4 and Figure1 family3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual3-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001105",
+              "label": "Retinal atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "52859eaeb082ddf13edc90bf524a0dd2d29c6141d4075458c0fb0be0bf26894e",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet explicitly excludes retinalatrophy atage57. FigureS3 follow-up at8years from49 documents progression to centralatrophy in right eye (panelsE/F), with outerretinaldisruption inU/V.",
+            "evidence": [
+              {
+                "source_id": "supp",
+                "locator": "FigureS3 page8, caption and panelsE/F,U/V"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012511",
+              "label": "Temporal optic disc pallor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "518a364295cb137dfedca1ea8462b24f5f77a9b5c7ad323375ffbff79a051c18",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Temporal optic disc pallor is not explicitly established in individual3-1 narrative/Table2. Unreported feature is not an examined negative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual3-1, Figure4 and Figure1 family3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual3-1, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025159",
+              "label": "Hypoautofluorescent retinal lesion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "67f18b6ffab621a38e214bb66da15741f8eb6ac32827bd5dcb34123746993dd9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Hypoautofluorescent retinal lesion is not explicitly established in individual3-1 narrative/Table2. Unreported feature is not an examined negative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual3-1, Figure4 and Figure1 family3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual3-1, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000603",
+              "label": "Central scotoma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "75f13743ba554fd1baff1f9647503458f3bb1882dd17de46e3e060eb5eda6b02",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Central scotoma is not explicitly established in individual3-1 narrative/Table2. Unreported feature is not an examined negative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual3-1, Figure4 and Figure1 family3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual3-1, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SAMD7/PMID_38272031_Individual_4_1.json",
+      "packet_sha256": "b7ac356ac16ed560bd0f6885fd6c379e7ea6c27303e07f939de1c3a2bbe60fea",
+      "case_id": "TC_3a8c652c2fe0dd31",
+      "role": "alternate",
+      "packet_subject_id": "Individual 4-1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source discovery report supports association, not independent clinical pathogenicity certification.",
+        "Same-allele persons retained as separate source packets; unreported negatives not assumed absent."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual4-1; Female38y, firstpresentation35 after3years symptoms;6/75OD,6/60OS, macularatrophy and central hypoautofluorescent ring, mild brightlight sensitivity and cone dysfunction. Supplement explicitly no rod involvement, in tension with main generalized paragraph.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual4-1, Figure4 and Figure1 family4"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual4-1, pages2–5"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous SAMD7 NM_001304366.2:c.211+1G>A; hg38chr3:169921339G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Minigene exon4skipping with predicted NMD; same allele family3 and sibling4-2.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1, Genetic analyses, Figures1–3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1 p6"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Both siblings homozygous; consanguineous parents in Figure1, but individual parentalgenotypes not displayed. Biparental inheritance plausible, not directly documented by printed pedigree genotypes.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 family4; Table1 and Genetic analyses"
+          }
+        ],
+        "limitations": [
+          "Do not turn consanguinity or reported familial symptoms into measured segregation."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Reported homozygous single allele, not two different variants requiring cis/transassignment. Source Sanger supports homozygosity; independent raw allele-balance/CNV exclusion not performed.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 and Genetic analyses"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Five homozygous alleles across six families/eight patients plus functional evidence support a new recessive SAMD7-macular-dystrophy association. Minigene exon4skipping with predicted NMD; same allele family3 and sibling4-2.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual4-1, Figure4 and Figure1 family4"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual4-1, pages2–5"
+          },
+          {
+            "source_id": "article",
+            "locator": "Figures2–3, Discussion"
+          },
+          {
+            "source_id": "supp",
+            "locator": "TableS1 and methods"
+          }
+        ],
+        "limitations": [
+          "Packet PATHOGENIC/SOLVED label is not itself causal validation.",
+          "No retinal patientRNA, rescue, or external independent replication is supplied; precise targetgenes/mechanism remain unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet positive and negative assertions checked against exact patient row and narrative, all eight Figure4 panels, and longitudinalFigureS3. Female38y, firstpresentation35 after3years symptoms;6/75OD,6/60OS, macularatrophy and central hypoautofluorescent ring, mild brightlight sensitivity and cone dysfunction. Supplement explicitly no rod involvement, in tension with main generalized paragraph.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual4-1, Figure4 and Figure1 family4"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual4-1, pages2–5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS3 p8"
+          }
+        ],
+        "limitations": [
+          "Unreported exclusions remainunresolved.",
+          "Diagnosisage is not necessarily symptomonset; family4 symptoms precede firstpresentation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c211_1GtoA_SAMD7_NM_001304366v2",
+            "geneContext": {
+              "valueId": "HGNC:25394",
+              "symbol": "SAMD7"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001304366.2:c.211+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000003.12:g.169921339G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001291295.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr3",
+              "pos": 169921339,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "873192f9d932e138fe59d4d954bbc7ad86b2b02289315931ca9787d9a6c1a46f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Homozygous SAMD7 NM_001304366.2:c.211+1G>A; hg38chr3:169921339G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Minigene exon4skipping with predicted NMD; same allele family3 and sibling4-2.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1, Genetic analyses, Figures1–3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "FigureS1 p6"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007663",
+              "label": "Reduced visual acuity"
+            }
+          },
+          "snapshot_sha256": "df1bc7a58572be0ac6925730d63c22f8c86713c34a5437f3f2d3205632e269a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced visual acuity positive is supported for individual4-1 by individual Table2/case narrative. Exact BCVA recorded in identity finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual4-1, Figure4 and Figure1 family4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual4-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007401",
+              "label": "Macular atrophy"
+            }
+          },
+          "snapshot_sha256": "0b57a7bcdaa2d2606d51d535558c037c3f998b0061304710abcb64322a3ff859",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular atrophy positive is supported for individual4-1 by individual Table2/case narrative. Table2 fundus entry explicitly macularatrophy.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual4-1, Figure4 and Figure1 family4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual4-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007754",
+              "label": "Macular dystrophy"
+            }
+          },
+          "snapshot_sha256": "271bb6ac0985a26fa9f6c9e548398aa0248ce60da54c4ba9251c88dce638bbb7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular dystrophy positive is supported for individual4-1 by individual Table2/case narrative. Diagnosis MDwithCD or MDwithoutCD as individually specified.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual4-1, Figure4 and Figure1 family4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual4-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012511",
+              "label": "Temporal optic disc pallor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "518a364295cb137dfedca1ea8462b24f5f77a9b5c7ad323375ffbff79a051c18",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Temporal optic disc pallor is not explicitly established in individual4-1 narrative/Table2. Unreported feature is not an examined negative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual4-1, Figure4 and Figure1 family4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual4-1, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025159",
+              "label": "Hypoautofluorescent retinal lesion"
+            }
+          },
+          "snapshot_sha256": "3c89dfb46b33adf64ed2c5b7cc0f9d440fd03efe4ab4d2a017d2b657c97e2fba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoautofluorescent retinal lesion positive is supported for individual4-1 by individual Table2/case narrative. FAF individual description explicitly hypoautofluorescent region/ring.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual4-1, Figure4 and Figure1 family4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual4-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000603",
+              "label": "Central scotoma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "75f13743ba554fd1baff1f9647503458f3bb1882dd17de46e3e060eb5eda6b02",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Central scotoma is not explicitly established in individual4-1 narrative/Table2. Unreported feature is not an examined negative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual4-1, Figure4 and Figure1 family4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual4-1, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SAMD7/PMID_38272031_Individual_4_2.json",
+      "packet_sha256": "d5555059e7ee3b2eb4037de99e3096a6432f109c57dbeb9f035face5e318952a",
+      "case_id": "TC_3a8c652c2fe0dd31",
+      "role": "alternate",
+      "packet_subject_id": "Individual 4-2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source discovery report supports association, not independent clinical pathogenicity certification.",
+        "Same-allele persons retained as separate source packets; unreported negatives not assumed absent."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual4-2; Male29y younger brother4-1; firstpresentation26 after1year symptoms;6/12OD,6/18OS, macularatrophy/hypoautofluorescent ring and mild cone dysfunction. Denies color-discrimination problems and photophobia. Rodsnormal Table2/supplement.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual4-2, Figure4 and Figure1 family4"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual4-2, pages2–5"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous SAMD7 NM_001304366.2:c.211+1G>A; hg38chr3:169921339G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Minigene exon4skipping with predicted NMD; sibling is not independent family replication.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1, Genetic analyses, Figures1–3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1 p6"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Both siblings homozygous; consanguineous parents in Figure1, but individual parentalgenotypes not displayed. Biparental inheritance plausible, not directly documented by printed pedigree genotypes.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 family4; Table1 and Genetic analyses"
+          }
+        ],
+        "limitations": [
+          "Do not turn consanguinity or reported familial symptoms into measured segregation."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Reported homozygous single allele, not two different variants requiring cis/transassignment. Source Sanger supports homozygosity; independent raw allele-balance/CNV exclusion not performed.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 and Genetic analyses"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Five homozygous alleles across six families/eight patients plus functional evidence support a new recessive SAMD7-macular-dystrophy association. Minigene exon4skipping with predicted NMD; sibling is not independent family replication.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual4-2, Figure4 and Figure1 family4"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual4-2, pages2–5"
+          },
+          {
+            "source_id": "article",
+            "locator": "Figures2–3, Discussion"
+          },
+          {
+            "source_id": "supp",
+            "locator": "TableS1 and methods"
+          }
+        ],
+        "limitations": [
+          "Packet PATHOGENIC/SOLVED label is not itself causal validation.",
+          "No retinal patientRNA, rescue, or external independent replication is supplied; precise targetgenes/mechanism remain unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet positive and negative assertions checked against exact patient row and narrative, all eight Figure4 panels, and longitudinalFigureS3. Male29y younger brother4-1; firstpresentation26 after1year symptoms;6/12OD,6/18OS, macularatrophy/hypoautofluorescent ring and mild cone dysfunction. Denies color-discrimination problems and photophobia. Rodsnormal Table2/supplement.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual4-2, Figure4 and Figure1 family4"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual4-2, pages2–5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS3 p8"
+          }
+        ],
+        "limitations": [
+          "Unreported exclusions remainunresolved.",
+          "Diagnosisage is not necessarily symptomonset; family4 symptoms precede firstpresentation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c211_1GtoA_SAMD7_NM_001304366v2",
+            "geneContext": {
+              "valueId": "HGNC:25394",
+              "symbol": "SAMD7"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001304366.2:c.211+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000003.12:g.169921339G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001291295.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr3",
+              "pos": 169921339,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "873192f9d932e138fe59d4d954bbc7ad86b2b02289315931ca9787d9a6c1a46f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Homozygous SAMD7 NM_001304366.2:c.211+1G>A; hg38chr3:169921339G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Minigene exon4skipping with predicted NMD; sibling is not independent family replication.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1, Genetic analyses, Figures1–3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "FigureS1 p6"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007663",
+              "label": "Reduced visual acuity"
+            }
+          },
+          "snapshot_sha256": "df1bc7a58572be0ac6925730d63c22f8c86713c34a5437f3f2d3205632e269a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced visual acuity positive is supported for individual4-2 by individual Table2/case narrative. Exact BCVA recorded in identity finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual4-2, Figure4 and Figure1 family4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual4-2, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007401",
+              "label": "Macular atrophy"
+            }
+          },
+          "snapshot_sha256": "0b57a7bcdaa2d2606d51d535558c037c3f998b0061304710abcb64322a3ff859",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular atrophy positive is supported for individual4-2 by individual Table2/case narrative. Table2 fundus entry explicitly macularatrophy.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual4-2, Figure4 and Figure1 family4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual4-2, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007754",
+              "label": "Macular dystrophy"
+            }
+          },
+          "snapshot_sha256": "271bb6ac0985a26fa9f6c9e548398aa0248ce60da54c4ba9251c88dce638bbb7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular dystrophy positive is supported for individual4-2 by individual Table2/case narrative. Diagnosis MDwithCD or MDwithoutCD as individually specified.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual4-2, Figure4 and Figure1 family4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual4-2, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012511",
+              "label": "Temporal optic disc pallor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "518a364295cb137dfedca1ea8462b24f5f77a9b5c7ad323375ffbff79a051c18",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Temporal optic disc pallor is not explicitly established in individual4-2 narrative/Table2. Unreported feature is not an examined negative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual4-2, Figure4 and Figure1 family4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual4-2, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025159",
+              "label": "Hypoautofluorescent retinal lesion"
+            }
+          },
+          "snapshot_sha256": "3c89dfb46b33adf64ed2c5b7cc0f9d440fd03efe4ab4d2a017d2b657c97e2fba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoautofluorescent retinal lesion positive is supported for individual4-2 by individual Table2/case narrative. FAF individual description explicitly hypoautofluorescent region/ring.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual4-2, Figure4 and Figure1 family4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual4-2, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000603",
+              "label": "Central scotoma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "75f13743ba554fd1baff1f9647503458f3bb1882dd17de46e3e060eb5eda6b02",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Central scotoma is not explicitly established in individual4-2 narrative/Table2. Unreported feature is not an examined negative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual4-2, Figure4 and Figure1 family4"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual4-2, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SAMD7/PMID_38272031_Individual_1_1.json",
+      "packet_sha256": "aaeb129bda3c30646e9f0f191d1225ad86192a38a239b845fb7861859f40225d",
+      "case_id": "TC_0f970355d17184ea",
+      "role": "selected",
+      "packet_subject_id": "Individual 1-1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source discovery report supports association, not independent clinical pathogenicity certification.",
+        "Same-allele persons retained as separate source packets; unreported negatives not assumed absent."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual1-1; Female50y, firstdiagnosis25; BCVA6/60bilaterally, geographic macular/RPE/outer-retinal atrophy with extensive hypoautofluorescence, mildly reduced cone responses and mildly reduced rod b-wave.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual1-1, Figure4 and Figure1 family1"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual1-1, pages2–5"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous SAMD7 NM_001304366.2:c.290+1G>A; hg38chr3:169925137G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Minigene exon5 skipping; NMD predicted, not measured in patient retina.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1, Genetic analyses, Figures1–3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1 p6"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Proband homozygous in Figure1; parentalgenotypes not displayed. Consanguinity unknown. ",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 family1; Table1 and Genetic analyses"
+          }
+        ],
+        "limitations": [
+          "Do not turn consanguinity or reported familial symptoms into measured segregation."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Reported homozygous single allele, not two different variants requiring cis/transassignment. Source Sanger supports homozygosity; independent raw allele-balance/CNV exclusion not performed.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 and Genetic analyses"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Five homozygous alleles across six families/eight patients plus functional evidence support a new recessive SAMD7-macular-dystrophy association. Minigene exon5 skipping; NMD predicted, not measured in patient retina. TableS1 evaluates BEST1p.Leu567Phe, IDSp.Arg297Cys and MYO7Ap.Arg1879Thr alternatives; their rejection is an author assessment, not independent exclusion of every alternative. Other homozygous GOLGA6L2/IDI2 candidates also present.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual1-1, Figure4 and Figure1 family1"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual1-1, pages2–5"
+          },
+          {
+            "source_id": "article",
+            "locator": "Figures2–3, Discussion"
+          },
+          {
+            "source_id": "supp",
+            "locator": "TableS1 and methods"
+          }
+        ],
+        "limitations": [
+          "Packet PATHOGENIC/SOLVED label is not itself causal validation.",
+          "No retinal patientRNA, rescue, or external independent replication is supplied; precise targetgenes/mechanism remain unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet positive and negative assertions checked against exact patient row and narrative, all eight Figure4 panels, and longitudinalFigureS3. Female50y, firstdiagnosis25; BCVA6/60bilaterally, geographic macular/RPE/outer-retinal atrophy with extensive hypoautofluorescence, mildly reduced cone responses and mildly reduced rod b-wave.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual1-1, Figure4 and Figure1 family1"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual1-1, pages2–5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS3 p8"
+          }
+        ],
+        "limitations": [
+          "Unreported exclusions remainunresolved.",
+          "Diagnosisage is not necessarily symptomonset; family4 symptoms precede firstpresentation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c290_1GtoA_SAMD7_NM_001304366v2",
+            "geneContext": {
+              "valueId": "HGNC:25394",
+              "symbol": "SAMD7"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001304366.2:c.290+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000003.12:g.169925137G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001291295.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr3",
+              "pos": 169925137,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "94da62056d1820b109ecdbd5f1ef90e2742e3906e00099e1d205a575dd02d628",
+          "assessment": {
+            "status": "supported",
+            "statement": "Homozygous SAMD7 NM_001304366.2:c.290+1G>A; hg38chr3:169925137G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Minigene exon5 skipping; NMD predicted, not measured in patient retina.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1, Genetic analyses, Figures1–3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "FigureS1 p6"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007663",
+              "label": "Reduced visual acuity"
+            }
+          },
+          "snapshot_sha256": "df1bc7a58572be0ac6925730d63c22f8c86713c34a5437f3f2d3205632e269a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced visual acuity positive is supported for individual1-1 by individual Table2/case narrative. Exact BCVA recorded in identity finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual1-1, Figure4 and Figure1 family1"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual1-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007401",
+              "label": "Macular atrophy"
+            }
+          },
+          "snapshot_sha256": "0b57a7bcdaa2d2606d51d535558c037c3f998b0061304710abcb64322a3ff859",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular atrophy positive is supported for individual1-1 by individual Table2/case narrative. Table2 fundus entry explicitly macularatrophy.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual1-1, Figure4 and Figure1 family1"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual1-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007754",
+              "label": "Macular dystrophy"
+            }
+          },
+          "snapshot_sha256": "271bb6ac0985a26fa9f6c9e548398aa0248ce60da54c4ba9251c88dce638bbb7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular dystrophy positive is supported for individual1-1 by individual Table2/case narrative. Diagnosis MDwithCD or MDwithoutCD as individually specified.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual1-1, Figure4 and Figure1 family1"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual1-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007722",
+              "label": "Retinal pigment epithelial atrophy"
+            }
+          },
+          "snapshot_sha256": "439ab30ba77018585425be8d5f3117954ca2d2f5b16467c01f4140600d626f00",
+          "assessment": {
+            "status": "supported",
+            "statement": "Retinal pigment epithelial atrophy positive is supported for individual1-1 by individual Table2/case narrative. CompleteRPEatrophy in case1-1 OCT.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual1-1, Figure4 and Figure1 family1"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual1-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012511",
+              "label": "Temporal optic disc pallor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "518a364295cb137dfedca1ea8462b24f5f77a9b5c7ad323375ffbff79a051c18",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Temporal optic disc pallor is not explicitly established in individual1-1 narrative/Table2. Unreported feature is not an examined negative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual1-1, Figure4 and Figure1 family1"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual1-1, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025159",
+              "label": "Hypoautofluorescent retinal lesion"
+            }
+          },
+          "snapshot_sha256": "3c89dfb46b33adf64ed2c5b7cc0f9d440fd03efe4ab4d2a017d2b657c97e2fba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoautofluorescent retinal lesion positive is supported for individual1-1 by individual Table2/case narrative. FAF individual description explicitly hypoautofluorescent region/ring.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual1-1, Figure4 and Figure1 family1"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual1-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000603",
+              "label": "Central scotoma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "75f13743ba554fd1baff1f9647503458f3bb1882dd17de46e3e060eb5eda6b02",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Central scotoma is not explicitly established in individual1-1 narrative/Table2. Unreported feature is not an examined negative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual1-1, Figure4 and Figure1 family1"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual1-1, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SAMD7/PMID_38272031_Individual_2_1.json",
+      "packet_sha256": "4de51ee087bd7f1c1565a41f9ea7cc311ebea3f21385dd8e6995e39d110ef864",
+      "case_id": "TC_9f9f89e677886c1a",
+      "role": "selected",
+      "packet_subject_id": "Individual 2-1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source discovery report supports association, not independent clinical pathogenicity certification.",
+        "Same-allele persons retained as separate source packets; unreported negatives not assumed absent."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual2-1; Male23y, reducedVA detected14; current6/40OD,6/30OS, macular outer-retinal atrophy, temporal disc pallor/RNFLthinning, central absolute scotoma5degrees and mild cone/rodresponse reduction. Myopia−2.25D at16.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual2-1, Figure4 and Figure1 family2"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual2-1, pages2–5"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous SAMD7 NM_001304366.2:c.919+1G>A; hg38chr3:169927182G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Minigene mainly intron6retention plus exon6skipping; NMD predicted.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1, Genetic analyses, Figures1–3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1 p6"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Father2-2homozygous and motherheterozygous for c919+1G>A, confirming transmission of one allele fromeach; family consanguineous.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 family2; Table1 and Genetic analyses"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Reported homozygous single allele, not two different variants requiring cis/transassignment. Source Sanger supports homozygosity; independent raw allele-balance/CNV exclusion not performed.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 and Genetic analyses"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Five homozygous alleles across six families/eight patients plus functional evidence support a new recessive SAMD7-macular-dystrophy association. Minigene mainly intron6retention plus exon6skipping; NMD predicted.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual2-1, Figure4 and Figure1 family2"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual2-1, pages2–5"
+          },
+          {
+            "source_id": "article",
+            "locator": "Figures2–3, Discussion"
+          },
+          {
+            "source_id": "supp",
+            "locator": "TableS1 and methods"
+          }
+        ],
+        "limitations": [
+          "Packet PATHOGENIC/SOLVED label is not itself causal validation.",
+          "No retinal patientRNA, rescue, or external independent replication is supplied; precise targetgenes/mechanism remain unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet positive and negative assertions checked against exact patient row and narrative, all eight Figure4 panels, and longitudinalFigureS3. Male23y, reducedVA detected14; current6/40OD,6/30OS, macular outer-retinal atrophy, temporal disc pallor/RNFLthinning, central absolute scotoma5degrees and mild cone/rodresponse reduction. Myopia−2.25D at16.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual2-1, Figure4 and Figure1 family2"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual2-1, pages2–5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS3 p8"
+          }
+        ],
+        "limitations": [
+          "Unreported exclusions remainunresolved.",
+          "Diagnosisage is not necessarily symptomonset; family4 symptoms precede firstpresentation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c919_1GtoA_SAMD7_NM_001304366v2",
+            "geneContext": {
+              "valueId": "HGNC:25394",
+              "symbol": "SAMD7"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001304366.2:c.919+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000003.12:g.169927182G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001291295.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr3",
+              "pos": 169927182,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "1ae2f62ce01d9371515132e12d65d840e2dcf29acc3f27c5ca297d1dc7dd51f0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Homozygous SAMD7 NM_001304366.2:c.919+1G>A; hg38chr3:169927182G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Minigene mainly intron6retention plus exon6skipping; NMD predicted.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1, Genetic analyses, Figures1–3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "FigureS1 p6"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007663",
+              "label": "Reduced visual acuity"
+            }
+          },
+          "snapshot_sha256": "df1bc7a58572be0ac6925730d63c22f8c86713c34a5437f3f2d3205632e269a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced visual acuity positive is supported for individual2-1 by individual Table2/case narrative. Exact BCVA recorded in identity finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual2-1, Figure4 and Figure1 family2"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual2-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007401",
+              "label": "Macular atrophy"
+            }
+          },
+          "snapshot_sha256": "0b57a7bcdaa2d2606d51d535558c037c3f998b0061304710abcb64322a3ff859",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular atrophy positive is supported for individual2-1 by individual Table2/case narrative. Table2 fundus entry explicitly macularatrophy.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual2-1, Figure4 and Figure1 family2"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual2-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007754",
+              "label": "Macular dystrophy"
+            }
+          },
+          "snapshot_sha256": "271bb6ac0985a26fa9f6c9e548398aa0248ce60da54c4ba9251c88dce638bbb7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular dystrophy positive is supported for individual2-1 by individual Table2/case narrative. Diagnosis MDwithCD or MDwithoutCD as individually specified.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual2-1, Figure4 and Figure1 family2"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual2-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007722",
+              "label": "Retinal pigment epithelial atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "86bae1ab45e09b39c60451e77c064a6f7bc1c64c832fee79bff072853541fd6e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Retinal pigment epithelial atrophy is not explicitly established in individual2-1 narrative/Table2. Outerretinal/EZ changes are present; maculopathy rather than labeled atrophy does not prove absence of retinalatrophy.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual2-1, Figure4 and Figure1 family2"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual2-1, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012511",
+              "label": "Temporal optic disc pallor"
+            }
+          },
+          "snapshot_sha256": "c3c9fdbd6211e523cae3679942a75a8112e12ad3ee18220fbe5dd3cd6beb9487",
+          "assessment": {
+            "status": "supported",
+            "statement": "Temporal optic disc pallor positive is supported for individual2-1 by individual Table2/case narrative. Explicit temporalpallor in individual narrative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual2-1, Figure4 and Figure1 family2"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual2-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025159",
+              "label": "Hypoautofluorescent retinal lesion"
+            }
+          },
+          "snapshot_sha256": "3c89dfb46b33adf64ed2c5b7cc0f9d440fd03efe4ab4d2a017d2b657c97e2fba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoautofluorescent retinal lesion positive is supported for individual2-1 by individual Table2/case narrative. FAF individual description explicitly hypoautofluorescent region/ring.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual2-1, Figure4 and Figure1 family2"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual2-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000603",
+              "label": "Central scotoma"
+            }
+          },
+          "snapshot_sha256": "0ca72d16410fddb0df267ed4c2bcf86f4146d32479bb34e53c4b56affc562d0d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Central scotoma positive is supported for individual2-1 by individual Table2/case narrative. Kineticfields show absolute central5degree scotoma in2-1.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual2-1, Figure4 and Figure1 family2"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual2-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SAMD7/PMID_38272031_Individual_2_2.json",
+      "packet_sha256": "3a3ab0916ff15bf4ffbb87312603da6565ce6476719d195601c43714ab0e318a",
+      "case_id": "TC_9f9f89e677886c1a",
+      "role": "alternate",
+      "packet_subject_id": "Individual 2-2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source discovery report supports association, not independent clinical pathogenicity certification.",
+        "Same-allele persons retained as separate source packets; unreported negatives not assumed absent."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual2-2; Male51y father of2-1; initially without complaints but examined after homozygous result:6/10OD,6/6OS, metamorphopsia, low-light/reading difficulty, patternmaculopathy and moderate cone/rod dysfunction. Normal-appearing optic nerve and RNFL; kineticfields normal but microperimetry has discrete mild–moderate sensitivity loss.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual2-2, Figure4 and Figure1 family2"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual2-2, pages2–5"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous SAMD7 NM_001304366.2:c.919+1G>A; hg38chr3:169927182G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Same allele as affected son; no independent affected-family replicate. Minigene intron6retention/exon6skipping.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1, Genetic analyses, Figures1–3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1 p6"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Homozygous affected father, heterozygous spouse and homozygous son2-1; father parentalgenotypes not reported.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 family2; Table1 and Genetic analyses"
+          }
+        ],
+        "limitations": [
+          "Do not turn consanguinity or reported familial symptoms into measured segregation."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Reported homozygous single allele, not two different variants requiring cis/transassignment. Source Sanger supports homozygosity; independent raw allele-balance/CNV exclusion not performed.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 and Genetic analyses"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Five homozygous alleles across six families/eight patients plus functional evidence support a new recessive SAMD7-macular-dystrophy association. Same allele as affected son; no independent affected-family replicate. Minigene intron6retention/exon6skipping.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual2-2, Figure4 and Figure1 family2"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual2-2, pages2–5"
+          },
+          {
+            "source_id": "article",
+            "locator": "Figures2–3, Discussion"
+          },
+          {
+            "source_id": "supp",
+            "locator": "TableS1 and methods"
+          }
+        ],
+        "limitations": [
+          "Packet PATHOGENIC/SOLVED label is not itself causal validation.",
+          "No retinal patientRNA, rescue, or external independent replication is supplied; precise targetgenes/mechanism remain unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet positive and negative assertions checked against exact patient row and narrative, all eight Figure4 panels, and longitudinalFigureS3. Male51y father of2-1; initially without complaints but examined after homozygous result:6/10OD,6/6OS, metamorphopsia, low-light/reading difficulty, patternmaculopathy and moderate cone/rod dysfunction. Normal-appearing optic nerve and RNFL; kineticfields normal but microperimetry has discrete mild–moderate sensitivity loss.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual2-2, Figure4 and Figure1 family2"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual2-2, pages2–5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS3 p8"
+          }
+        ],
+        "limitations": [
+          "Unreported exclusions remainunresolved.",
+          "Diagnosisage is not necessarily symptomonset; family4 symptoms precede firstpresentation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c919_1GtoA_SAMD7_NM_001304366v2",
+            "geneContext": {
+              "valueId": "HGNC:25394",
+              "symbol": "SAMD7"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001304366.2:c.919+1G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000003.12:g.169927182G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001291295.1:p.?"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr3",
+              "pos": 169927182,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "1ae2f62ce01d9371515132e12d65d840e2dcf29acc3f27c5ca297d1dc7dd51f0",
+          "assessment": {
+            "status": "supported",
+            "statement": "Homozygous SAMD7 NM_001304366.2:c.919+1G>A; hg38chr3:169927182G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Same allele as affected son; no independent affected-family replicate. Minigene intron6retention/exon6skipping.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1, Genetic analyses, Figures1–3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "FigureS1 p6"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007663",
+              "label": "Reduced visual acuity"
+            }
+          },
+          "snapshot_sha256": "df1bc7a58572be0ac6925730d63c22f8c86713c34a5437f3f2d3205632e269a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced visual acuity positive is supported for individual2-2 by individual Table2/case narrative. Exact BCVA recorded in identity finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual2-2, Figure4 and Figure1 family2"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual2-2, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007754",
+              "label": "Macular dystrophy"
+            }
+          },
+          "snapshot_sha256": "271bb6ac0985a26fa9f6c9e548398aa0248ce60da54c4ba9251c88dce638bbb7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular dystrophy positive is supported for individual2-2 by individual Table2/case narrative. Diagnosis MDwithCD or MDwithoutCD as individually specified.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual2-2, Figure4 and Figure1 family2"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual2-2, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001105",
+              "label": "Retinal atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "52859eaeb082ddf13edc90bf524a0dd2d29c6141d4075458c0fb0be0bf26894e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Retinal atrophy is not explicitly established in individual2-2 narrative/Table2. Outerretinal/EZ changes are present; maculopathy rather than labeled atrophy does not prove absence of retinalatrophy.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual2-2, Figure4 and Figure1 family2"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual2-2, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012511",
+              "label": "Temporal optic disc pallor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "518a364295cb137dfedca1ea8462b24f5f77a9b5c7ad323375ffbff79a051c18",
+          "assessment": {
+            "status": "supported",
+            "statement": "Opticnerve explicitly normal-appearing and peripapillaryRNFL notthinned; supports excluded temporalpallor at this examination.",
+            "evidence": [
+              {
+                "source_id": "supp",
+                "locator": "Page3 case2-2 opticnerve/RNFL"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025159",
+              "label": "Hypoautofluorescent retinal lesion"
+            }
+          },
+          "snapshot_sha256": "3c89dfb46b33adf64ed2c5b7cc0f9d440fd03efe4ab4d2a017d2b657c97e2fba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoautofluorescent retinal lesion positive is supported for individual2-2 by individual Table2/case narrative. FAF individual description explicitly hypoautofluorescent region/ring.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual2-2, Figure4 and Figure1 family2"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual2-2, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000603",
+              "label": "Central scotoma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "75f13743ba554fd1baff1f9647503458f3bb1882dd17de46e3e060eb5eda6b02",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Kinetic visualfields have normalsensitivities atalllocations, but microperimetry detects discrete mild–moderate sensitivity losses; exclusion is assay-dependent.",
+            "evidence": [
+              {
+                "source_id": "supp",
+                "locator": "Page3 case2-2 kineticfields/microperimetry"
+              }
+            ],
+            "limitations": [
+              "Normal kineticfield cannot imply entirely normal central sensitivity."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SAMD7/PMID_38272031_Individual_6_1.json",
+      "packet_sha256": "72aabf508ddbb10b727a7031594f3475ba73aa41e406ff4fe89ef8c7a83f593a",
+      "case_id": "TC_7f432179564d2430",
+      "role": "selected",
+      "packet_subject_id": "Individual 6-1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source discovery report supports association, not independent clinical pathogenicity certification.",
+        "Same-allele persons retained as separate source packets; unreported negatives not assumed absent."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual6-1; Female39y, firstdiagnosis37;6/6OD,6/7.5OS, temporaldisc pallor, pigmented/yellow macular changes, hypoautofluorescence, RPE/EZirregularity and mild cone dysfunction with normal rodresponses. Preserved acuity does not imply absence of macular disease.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual6-1, Figure4 and Figure1 family6"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual6-1, pages2–5"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous SAMD7 NM_001304366.2:c.992A>T p.Asp331Val; hg38chr3:169928529A>T. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Mouse Samd7p.Asp328Val homolog assay in HEK293FT reduces but does not abolish CRX-dependent transcriptional repression. Technical replicates14–16 are not independent patient or retinal-rescue experiments.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1, Genetic analyses, Figures1–3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1 p6"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Proband homozygous in Figure1; parentalgenotypes not displayed. Parents consanguineous.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 family6; Table1 and Genetic analyses"
+          }
+        ],
+        "limitations": [
+          "Do not turn consanguinity or reported familial symptoms into measured segregation."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Reported homozygous single allele, not two different variants requiring cis/transassignment. Source Sanger supports homozygosity; independent raw allele-balance/CNV exclusion not performed.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 and Genetic analyses"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Five homozygous alleles across six families/eight patients plus functional evidence support a new recessive SAMD7-macular-dystrophy association. Mouse Samd7p.Asp328Val homolog assay in HEK293FT reduces but does not abolish CRX-dependent transcriptional repression. Technical replicates14–16 are not independent patient or retinal-rescue experiments.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual6-1, Figure4 and Figure1 family6"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual6-1, pages2–5"
+          },
+          {
+            "source_id": "article",
+            "locator": "Figures2–3, Discussion"
+          },
+          {
+            "source_id": "supp",
+            "locator": "TableS1 and methods"
+          }
+        ],
+        "limitations": [
+          "Packet PATHOGENIC/SOLVED label is not itself causal validation.",
+          "No retinal patientRNA, rescue, or external independent replication is supplied; precise targetgenes/mechanism remain unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet positive and negative assertions checked against exact patient row and narrative, all eight Figure4 panels, and longitudinalFigureS3. Female39y, firstdiagnosis37;6/6OD,6/7.5OS, temporaldisc pallor, pigmented/yellow macular changes, hypoautofluorescence, RPE/EZirregularity and mild cone dysfunction with normal rodresponses. Preserved acuity does not imply absence of macular disease.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual6-1, Figure4 and Figure1 family6"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual6-1, pages2–5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS3 p8"
+          }
+        ],
+        "limitations": [
+          "Unreported exclusions remainunresolved.",
+          "Diagnosisage is not necessarily symptomonset; family4 symptoms precede firstpresentation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c992AtoT_SAMD7_NM_001304366v2",
+            "geneContext": {
+              "valueId": "HGNC:25394",
+              "symbol": "SAMD7"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001304366.2:c.992A>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000003.12:g.169928529A>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001291295.1:p.(Asp331Val)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr3",
+              "pos": 169928529,
+              "ref": "A",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "d455bc6223d4cab9c7fb8e9eaa4b28aa752408372d5f8dcd5cf0ac2b13d0a81f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Homozygous SAMD7 NM_001304366.2:c.992A>T p.Asp331Val; hg38chr3:169928529A>T. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Mouse Samd7p.Asp328Val homolog assay in HEK293FT reduces but does not abolish CRX-dependent transcriptional repression. Technical replicates14–16 are not independent patient or retinal-rescue experiments.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1, Genetic analyses, Figures1–3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "FigureS1 p6"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007663",
+              "label": "Reduced visual acuity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "5687422cf1a809a3c230b4653eedc03a92f8f09c6d407b4a9431a91274a6f3eb",
+          "assessment": {
+            "status": "qualified",
+            "statement": "BCVA6/6right,6/7.5left is substantiallypreserved, but the left eye is below6/6. Categorical bilateral absence depends on the acuitythreshold.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 case6-1"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Page5 case6-1"
+              }
+            ],
+            "limitations": [
+              "Acuity threshold is not specified by packet."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007401",
+              "label": "Macular atrophy"
+            }
+          },
+          "snapshot_sha256": "0b57a7bcdaa2d2606d51d535558c037c3f998b0061304710abcb64322a3ff859",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular atrophy positive is supported for individual6-1 by individual Table2/case narrative. Table2 fundus entry explicitly macularatrophy.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual6-1, Figure4 and Figure1 family6"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual6-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007754",
+              "label": "Macular dystrophy"
+            }
+          },
+          "snapshot_sha256": "271bb6ac0985a26fa9f6c9e548398aa0248ce60da54c4ba9251c88dce638bbb7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular dystrophy positive is supported for individual6-1 by individual Table2/case narrative. Diagnosis MDwithCD or MDwithoutCD as individually specified.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual6-1, Figure4 and Figure1 family6"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual6-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012511",
+              "label": "Temporal optic disc pallor"
+            }
+          },
+          "snapshot_sha256": "c3c9fdbd6211e523cae3679942a75a8112e12ad3ee18220fbe5dd3cd6beb9487",
+          "assessment": {
+            "status": "supported",
+            "statement": "Temporal optic disc pallor positive is supported for individual6-1 by individual Table2/case narrative. Explicit temporalpallor in individual narrative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual6-1, Figure4 and Figure1 family6"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual6-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025159",
+              "label": "Hypoautofluorescent retinal lesion"
+            }
+          },
+          "snapshot_sha256": "3c89dfb46b33adf64ed2c5b7cc0f9d440fd03efe4ab4d2a017d2b657c97e2fba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoautofluorescent retinal lesion positive is supported for individual6-1 by individual Table2/case narrative. FAF individual description explicitly hypoautofluorescent region/ring.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual6-1, Figure4 and Figure1 family6"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual6-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000603",
+              "label": "Central scotoma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "75f13743ba554fd1baff1f9647503458f3bb1882dd17de46e3e060eb5eda6b02",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Central scotoma is not explicitly established in individual6-1 narrative/Table2. Unreported feature is not an examined negative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual6-1, Figure4 and Figure1 family6"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual6-1, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/SAMD7/PMID_38272031_Individual_5_1.json",
+      "packet_sha256": "df546edda70558e04bcd4bc23a65f6ee6f21d389b6e42c2abe403295167fbfd4",
+      "case_id": "TC_1cde8c8222ea2bff",
+      "role": "selected",
+      "packet_subject_id": "Individual 5-1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Source discovery report supports association, not independent clinical pathogenicity certification.",
+        "Same-allele persons retained as separate source packets; unreported negatives not assumed absent."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "Exact individual5-1; Female50y, firstdiagnosis42;6/15both, patternmaculopathy/EZloss/pigmentmigration with hypoautofluorescence and normal full-fieldERG (MDwithoutCD). Decreasedrenalfunction is additional unexplained feature, not established SAMD7effect. Father visual difficulty unexamined/unsequenced.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual5-1, Figure4 and Figure1 family5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual5-1, pages2–5"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "supported",
+        "statement": "Homozygous SAMD7 NM_001304366.2:c.1153G>A p.Val385Ile; hg38chr3:169938318G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Exon9 firstbase V385I substitution alters splicing: 62.7% correctly spliced product within mutant lane,24.4% exon9skip,12.9% alternative product; correctlyspliced abundance ~60% belowWT. Remaining normal-splice product carries missense; last-exon abnormalproducts may escapeNMD. Not a demonstrated complete null.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table1, Genetic analyses, Figures1–3"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1 p6"
+          }
+        ],
+        "limitations": []
+      },
+      "segregation": {
+        "status": "qualified",
+        "statement": "Proband homozygous in Figure1; parentalgenotypes not displayed. Consanguinity unknown. Father visualdifficulty not examined or genotyped.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 family5; Table1 and Genetic analyses"
+          }
+        ],
+        "limitations": [
+          "Do not turn consanguinity or reported familial symptoms into measured segregation."
+        ]
+      },
+      "phase": {
+        "status": "supported",
+        "statement": "Reported homozygous single allele, not two different variants requiring cis/transassignment. Source Sanger supports homozygosity; independent raw allele-balance/CNV exclusion not performed.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Figure1 and Genetic analyses"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS1"
+          }
+        ],
+        "limitations": []
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Five homozygous alleles across six families/eight patients plus functional evidence support a new recessive SAMD7-macular-dystrophy association. Exon9 firstbase V385I substitution alters splicing: 62.7% correctly spliced product within mutant lane,24.4% exon9skip,12.9% alternative product; correctlyspliced abundance ~60% belowWT. Remaining normal-splice product carries missense; last-exon abnormalproducts may escapeNMD. Not a demonstrated complete null. Renalimpairment remains unexplained.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual5-1, Figure4 and Figure1 family5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual5-1, pages2–5"
+          },
+          {
+            "source_id": "article",
+            "locator": "Figures2–3, Discussion"
+          },
+          {
+            "source_id": "supp",
+            "locator": "TableS1 and methods"
+          }
+        ],
+        "limitations": [
+          "Packet PATHOGENIC/SOLVED label is not itself causal validation.",
+          "No retinal patientRNA, rescue, or external independent replication is supplied; precise targetgenes/mechanism remain unresolved."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All packet positive and negative assertions checked against exact patient row and narrative, all eight Figure4 panels, and longitudinalFigureS3. Female50y, firstdiagnosis42;6/15both, patternmaculopathy/EZloss/pigmentmigration with hypoautofluorescence and normal full-fieldERG (MDwithoutCD). Decreasedrenalfunction is additional unexplained feature, not established SAMD7effect. Father visual difficulty unexamined/unsequenced.",
+        "evidence": [
+          {
+            "source_id": "article",
+            "locator": "Table2 individual5-1, Figure4 and Figure1 family5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "Case Reports individual5-1, pages2–5"
+          },
+          {
+            "source_id": "supp",
+            "locator": "FigureS3 p8"
+          }
+        ],
+        "limitations": [
+          "Unreported exclusions remainunresolved.",
+          "Diagnosisage is not necessarily symptomonset; family4 symptoms precede firstpresentation."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c1153GtoA_SAMD7_NM_001304366v2",
+            "geneContext": {
+              "valueId": "HGNC:25394",
+              "symbol": "SAMD7"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_001304366.2:c.1153G>A"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000003.12:g.169938318G>A"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_001291295.1:p.(Val385Ile)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr3",
+              "pos": 169938318,
+              "ref": "G",
+              "alt": "A"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          },
+          "snapshot_sha256": "d156c5791baec9d46505cff10c7b2490d553404f3016b811e8611d32b4ae7b9f",
+          "assessment": {
+            "status": "supported",
+            "statement": "Homozygous SAMD7 NM_001304366.2:c.1153G>A p.Val385Ile; hg38chr3:169938318G>A. Transcript/version agrees with packet. Table1/Genetic analyses and SangerFigureS1 confirm allele; molecular effect must be distinguished from coding label. Exon9 firstbase V385I substitution alters splicing: 62.7% correctly spliced product within mutant lane,24.4% exon9skip,12.9% alternative product; correctlyspliced abundance ~60% belowWT. Remaining normal-splice product carries missense; last-exon abnormalproducts may escapeNMD. Not a demonstrated complete null.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table1, Genetic analyses, Figures1–3"
+              },
+              {
+                "source_id": "supp",
+                "locator": "FigureS1 p6"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007663",
+              "label": "Reduced visual acuity"
+            }
+          },
+          "snapshot_sha256": "df1bc7a58572be0ac6925730d63c22f8c86713c34a5437f3f2d3205632e269a2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Reduced visual acuity positive is supported for individual5-1 by individual Table2/case narrative. Exact BCVA recorded in identity finding.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual5-1, Figure4 and Figure1 family5"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual5-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007754",
+              "label": "Macular dystrophy"
+            }
+          },
+          "snapshot_sha256": "271bb6ac0985a26fa9f6c9e548398aa0248ce60da54c4ba9251c88dce638bbb7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Macular dystrophy positive is supported for individual5-1 by individual Table2/case narrative. Diagnosis MDwithCD or MDwithoutCD as individually specified.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual5-1, Figure4 and Figure1 family5"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual5-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001105",
+              "label": "Retinal atrophy"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "52859eaeb082ddf13edc90bf524a0dd2d29c6141d4075458c0fb0be0bf26894e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Retinal atrophy is not explicitly established in individual5-1 narrative/Table2. Outerretinal/EZ changes are present; maculopathy rather than labeled atrophy does not prove absence of retinalatrophy.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual5-1, Figure4 and Figure1 family5"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual5-1, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0012511",
+              "label": "Temporal optic disc pallor"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "518a364295cb137dfedca1ea8462b24f5f77a9b5c7ad323375ffbff79a051c18",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Temporal optic disc pallor is not explicitly established in individual5-1 narrative/Table2. Unreported feature is not an examined negative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual5-1, Figure4 and Figure1 family5"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual5-1, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025159",
+              "label": "Hypoautofluorescent retinal lesion"
+            }
+          },
+          "snapshot_sha256": "3c89dfb46b33adf64ed2c5b7cc0f9d440fd03efe4ab4d2a017d2b657c97e2fba",
+          "assessment": {
+            "status": "supported",
+            "statement": "Hypoautofluorescent retinal lesion positive is supported for individual5-1 by individual Table2/case narrative. FAF individual description explicitly hypoautofluorescent region/ring.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual5-1, Figure4 and Figure1 family5"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual5-1, pages2–5"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000603",
+              "label": "Central scotoma"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "75f13743ba554fd1baff1f9647503458f3bb1882dd17de46e3e060eb5eda6b02",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Excluded Central scotoma is not explicitly established in individual5-1 narrative/Table2. Unreported feature is not an examined negative.",
+            "evidence": [
+              {
+                "source_id": "article",
+                "locator": "Table2 individual5-1, Figure4 and Figure1 family5"
+              },
+              {
+                "source_id": "supp",
+                "locator": "Case Reports individual5-1, pages2–5"
+              }
+            ],
+            "limitations": [
+              "No feature-specific negative evidence supplied."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "All supplied main/supplement components consumed; rawpatientsequencing, fullclinicalrecords, rawERGtraces, originalimagevolumes and external scRNA data not read/reanalyzed.",
+    "Main rodresponse paragraph includes4-1/4-2 as attenuated while Table2 has scotopicWNR and supplemental4-1 explicitly no rodinvolvement. Preserve source conflict.",
+    "Figure2 caption c211G>A omits +1 while genotypeTable1/diagram correctly c211+1G>A.",
+    "Supplement FigureS3 demonstrates late rightcentralatrophy in3-1 despite packet exclusion; source initialdiagnosis47 vs49 inconsistency retained.",
+    "Maintext calls luciferase CRX human; supplemental methods say murineCrx and Samd7; exact reagent species conflict remains. Functional change is mousehomolog/transfectedcell assay, not a human retinalrescue.",
+    "V385I splice percentages and60% relativeabundance reduction have different denominators; not interchangeable. D331V shows partialrepression, not complete functionalabolition.",
+    "S1 candidate rejection for IDS relies partly on femalecarrier status; this is not an absolute proof against all symptomaticfemalecarriers. No independent diagnostic reinterpretation from aggregate tables.",
+    "No outcome/rank files opened; original cases and evaluation retained unchanged."
+  ]
+}

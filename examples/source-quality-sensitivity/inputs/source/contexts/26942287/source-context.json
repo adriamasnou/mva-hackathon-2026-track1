@@ -1,0 +1,286 @@
+{
+  "pmid": "26942287",
+  "source_titles": [
+    "Disruption of POGZ Is Associated with Intellectual Disability and Autism Spectrum Disorders"
+  ],
+  "selected_case_ids": [
+    "TC_1ea537a8447d054b"
+  ],
+  "alternate_case_ids": [
+    "TC_1ea537a8447d054b"
+  ],
+  "genes": [
+    "POGZ"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/POGZ/PMID_26942287_EE4.json",
+      "sha256": "95fd26425790d8b0a81f289d403f6d3aa93253ad264fe4a8094d94e48b7d51d8",
+      "case_id": "TC_1ea537a8447d054b",
+      "selected_record": true,
+      "subject": {
+        "id": "EE4",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P12Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:616364",
+            "label": "White-Sutton syndrome"
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000540",
+            "label": "Hypermetropia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002194",
+            "label": "Delayed gross motor development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000750",
+            "label": "Delayed speech and language development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000729",
+            "label": "Autistic behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000744",
+            "label": "Low frustration tolerance"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "p32oNOhmlDZBPbhsSl09K6Cn",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:616364",
+              "label": "White-Sutton syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "EE4",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c2020del_POGZ_NM_015100v4",
+                    "geneContext": {
+                      "valueId": "HGNC:18801",
+                      "symbol": "POGZ"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_015100.4:c.2020del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.151408736del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_055915.2:p.(Arg674ValfsTer9)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 151408734,
+                      "ref": "CG",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/POGZ/PMID_26942287_UMCN7.json",
+      "sha256": "71f76029bd90c9eaafcf0fbd9540e59f8aec3a73ce26e10891fb3467f1c918f1",
+      "case_id": "TC_1ea537a8447d054b",
+      "selected_record": false,
+      "subject": {
+        "id": "UMCN7",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P5Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:616364",
+            "label": "White-Sutton syndrome"
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000252",
+            "label": "Microcephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001357",
+            "label": "Plagiocephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002194",
+            "label": "Delayed gross motor development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000750",
+            "label": "Delayed speech and language development"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000729",
+            "label": "Autistic behavior"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011968",
+            "label": "Feeding difficulties"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "rx2SrzZwj8emoE1CTnn5iimy",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:616364",
+              "label": "White-Sutton syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "UMCN7",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c2020del_POGZ_NM_015100v4",
+                    "geneContext": {
+                      "valueId": "HGNC:18801",
+                      "symbol": "POGZ"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_015100.4:c.2020del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.151408736del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_055915.2:p.(Arg674ValfsTer9)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 151408734,
+                      "ref": "CG",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

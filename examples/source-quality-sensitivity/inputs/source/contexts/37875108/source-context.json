@@ -1,0 +1,445 @@
+{
+  "pmid": "37875108",
+  "source_titles": [
+    "Human MCTS1-dependent translation of JAK2 is essential for IFN-γ immunity to mycobacteria"
+  ],
+  "selected_case_ids": [
+    "TC_8fd3c8c6ca617dbd",
+    "TC_d7c2b67868347f26",
+    "TC_ec39b2d4477e7841"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "MCTS1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/MCTS1/PMID_37875108_Patient_3.json",
+      "sha256": "b42eb597a7f8bd619c0832fd0da322884f3bedc8828c2880e98e78e446abce38",
+      "case_id": "TC_8fd3c8c6ca617dbd",
+      "selected_record": true,
+      "subject": {
+        "id": "Patient 3",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P12Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:301115",
+            "label": "Immunodeficiency 118, mycobacteriosis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P1Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002754",
+            "label": "Osteomyelitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001954",
+            "label": "Recurrent fever"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001744",
+            "label": "Splenomegaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002240",
+            "label": "Hepatomegaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0020087",
+            "label": "BCGosis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P1Y"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0020086",
+            "label": "BCGitis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004313",
+            "label": "Decreased circulating immunoglobulin concentration"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "c7PeIieE1QrFyjKNOOYXkgEp",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:301115",
+              "label": "Immunodeficiency 118, mycobacteriosis"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Patient 3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c164_1_164_4del_MCTS1_NM_014060v3",
+                    "geneContext": {
+                      "valueId": "HGNC:23357",
+                      "symbol": "MCTS1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_014060.3:c.164+1_164+4del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000023.11:g.120605562_120605565del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_054779.1:p.?"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chrX",
+                      "pos": 120605559,
+                      "ref": "GGTAA",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000134",
+                      "label": "hemizygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/MCTS1/PMID_37875108_Patient_2.json",
+      "sha256": "dfeb8d90e5ab229274e24b5aed09f9621b60c19c3dbc014de8b883feb9105c8e",
+      "case_id": "TC_d7c2b67868347f26",
+      "selected_record": true,
+      "subject": {
+        "id": "Patient 2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P18Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:301115",
+            "label": "Immunodeficiency 118, mycobacteriosis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P3M"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002754",
+            "label": "Osteomyelitis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001954",
+            "label": "Recurrent fever"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001744",
+            "label": "Splenomegaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002240",
+            "label": "Hepatomegaly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0020087",
+            "label": "BCGosis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P3M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0020086",
+            "label": "BCGitis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004313",
+            "label": "Decreased circulating immunoglobulin concentration"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "7cCrBZQXqH9ty7wG8mSTiNRU",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:301115",
+              "label": "Immunodeficiency 118, mycobacteriosis"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Patient 2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c213dup_MCTS1_NM_014060v3",
+                    "geneContext": {
+                      "valueId": "HGNC:23357",
+                      "symbol": "MCTS1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_014060.3:c.213dup"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000023.11:g.120606127dup"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_054779.1:p.(Arg72Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chrX",
+                      "pos": 120606121,
+                      "ref": "C",
+                      "alt": "CT"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000134",
+                      "label": "hemizygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/MCTS1/PMID_37875108_Patient_1.json",
+      "sha256": "28ab47d960de76c97673585c8e492d80841e3ed76b871254703f32b45a7dc279",
+      "case_id": "TC_ec39b2d4477e7841",
+      "selected_record": true,
+      "subject": {
+        "id": "Patient 1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P1Y"
+          }
+        },
+        "vitalStatus": {
+          "status": "DECEASED"
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:301115",
+            "label": "Immunodeficiency 118, mycobacteriosis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P7M"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0002754",
+            "label": "Osteomyelitis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001954",
+            "label": "Recurrent fever"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001744",
+            "label": "Splenomegaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002240",
+            "label": "Hepatomegaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0020087",
+            "label": "BCGosis"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P7M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0020086",
+            "label": "BCGitis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "t3kV27jvHElr7YiviRivwYkp",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:301115",
+              "label": "Immunodeficiency 118, mycobacteriosis"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Patient 1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c225_226insG_MCTS1_NM_014060v3",
+                    "geneContext": {
+                      "valueId": "HGNC:23357",
+                      "symbol": "MCTS1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_014060.3:c.225_226insG"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000023.11:g.120606142dup"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_054779.1:p.(Pro77AlafsTer22)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chrX",
+                      "pos": 120606139,
+                      "ref": "A",
+                      "alt": "AG"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000134",
+                      "label": "hemizygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

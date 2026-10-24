@@ -1,0 +1,184 @@
+{
+  "pmid": "38513146",
+  "source_titles": [
+    "Early-onset West syndrome with developmental delay associated with a novel KLHL20 variant."
+  ],
+  "selected_case_ids": [
+    "TC_1b0b936925fff5c9"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "KLHL20"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/KLHL20/PMID_38513146_Patient.json",
+      "sha256": "699aeb5c5852a6ed20682c6fd182b998620025bfabc3cfc3124f7df640550a59",
+      "case_id": "TC_1b0b936925fff5c9",
+      "selected_record": true,
+      "subject": {
+        "id": "Patient",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P11M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621390",
+            "label": "Neurodevelopmental disorder with early-onset seizures, facial dysmorphism, and behavioral abnormalities"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P2M"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0011220",
+            "label": "Prominent forehead"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000582",
+            "label": "Upslanted palpebral fissure"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000321",
+            "label": "Square face"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000243",
+            "label": "Trigonocephaly"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000278",
+            "label": "Retrognathia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012469",
+            "label": "Infantile spasms"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P2M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002521",
+            "label": "Hypsarrhythmia"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P2M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P5M"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032989",
+            "label": "Delayed ability to roll over"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001631",
+            "label": "Atrial septal defect"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000329",
+            "label": "Facial hemangioma"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "bB8Xn9dM6FrwTdqspvjpM0Tu",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621390",
+              "label": "Neurodevelopmental disorder with early-onset seizures, facial dysmorphism, and behavioral abnormalities"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Patient",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1636GtoA_KLHL20_NM_014458v4",
+                    "geneContext": {
+                      "valueId": "HGNC:25056",
+                      "symbol": "KLHL20"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_014458.4:c.1636G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000001.11:g.173775840G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_055273.2:p.(Gly546Arg)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr1",
+                      "pos": 173775840,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

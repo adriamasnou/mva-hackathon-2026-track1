@@ -1,0 +1,3609 @@
+{
+  "schema_version": 1,
+  "pmid": "31057532",
+  "title": "Assessing the Functional Relevance of Variants in the IKAROS Family Zinc Finger Protein 1 (IKZF1) in a Cohort of Patients With Primary Immunodeficiency",
+  "reviewer": {
+    "id": "reader-2-resume-20261024",
+    "reviewed_at_utc": "2026-10-24T19:24:30.323132+00:00",
+    "method": "Current resumed reviewer read all stated source-text units and inspected the stated pixel components directly. Record serialized after manual source comparison; script execution/extraction is not reading."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "per_case",
+    "exposure_note": "Mandatory HANDOFF.md read at resume exposed aggregate benchmark outcomes and a historical HG002/FGFR2 public-control case-specific rank. Conservatively declared per_case; this old public-control exposure is distinct from target-case outcomes: no target-case inference/result files or additional outcome summaries were consulted for this review. This is post-inference source correspondence, not blinded validation. Earlier canonical reviews are inherited work and are not claimed as this reviewer reading."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "4a1906d7d294dadb045489eaa81163bae9cfd818132be747382200d40108ada2",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "text",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31057532/main.complete.txt",
+      "sha256": "8e74d6cb6d15245d1fa28faf370f0e129995603060debdcbbf2b9e6fe5daf701",
+      "kind": "text",
+      "description": "All 530 lines personally read, all nine families and alternatives."
+    },
+    {
+      "id": "xml",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31057532/main.xml",
+      "sha256": "0d1fc0facabd5876bfce33f2bfba5e4ea2bb6b20f7bb5ab490b203844b112674",
+      "kind": "xml",
+      "description": "Identity, component inventory and correction link."
+    },
+    {
+      "id": "pdf",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31057532/cloud/PMC6477086.1/PMC6477086.1.pdf",
+      "sha256": "21ea992925cc41926269500a86554b3cfa8fd87ca44dbfff8a9d1ad2929a7963",
+      "kind": "pdf",
+      "description": "All 18 pages personally inspected."
+    },
+    {
+      "id": "layout",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/layout.txt",
+      "sha256": "feb7edcdaa41014722166d7e1879bb9010c4532bb05dbf67f4eedbc48df1a41a",
+      "kind": "text",
+      "description": "Layout-preserving derivative, all table cells checked against pixels."
+    },
+    {
+      "id": "s1",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31057532/cloud/PMC6477086.1/Image_1.JPEG",
+      "sha256": "172572af9016efa31a3230a3517c8858b5a92f481c65d58988794020389a2ddf",
+      "kind": "image",
+      "description": "Entire S1: nine family chromatogram pairs and caption."
+    },
+    {
+      "id": "s2",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31057532/cloud/PMC6477086.1/Image_2.JPEG",
+      "sha256": "d8a4a344bbd6d14cfaf3a7b016e5fc4a3a0503c160fd2eec8e48d08f81618f88",
+      "kind": "image",
+      "description": "Entire S2: all three blot panels, lanes, controls and caption."
+    },
+    {
+      "id": "s3",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31057532/cloud/PMC6477086.1/Image_3.pdf",
+      "sha256": "3316359ef2311c373246a89a211d7b9157956834b94a5846db4749bfedd4c72d",
+      "kind": "pdf",
+      "description": "Complete six-page S3, panels A–Q."
+    },
+    {
+      "id": "s3text",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/Image_3/layout.txt",
+      "sha256": "ca8f57ac21b58dcf050f6be886a54b5084c63b9fda71c955832803149ceffde1",
+      "kind": "text",
+      "description": "All S3 captions and extracted text read."
+    },
+    {
+      "id": "s4",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/31057532/cloud/PMC6477086.1/Table_1.pdf",
+      "sha256": "44dcfe35d3afaa6f5b5c7b455bb843021d390ffd7d599daa8381d4e2c36802ca",
+      "kind": "pdf",
+      "description": "Complete single-page S1 table, all 22 rows."
+    },
+    {
+      "id": "s4text",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/Table_1/layout.txt",
+      "sha256": "7a8383c54d4e0e9c104417a84d6a996ddeefd169d99e0493ce19e691b3f5724d",
+      "kind": "text",
+      "description": "Entire table read as published assay provenance only."
+    },
+    {
+      "id": "s4pixel",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/Table_1/page-1.png",
+      "sha256": "e8aa9600a6e4b04159cc2a2b907d082b2ad1486333a585afcda279bc64d7a01e",
+      "kind": "image",
+      "description": "All 22 table rows personally inspected."
+    },
+    {
+      "id": "correction_headers",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/corrigendum.headers",
+      "sha256": "b1bedd4c1ce8db8676c2bc78ed823a0e9d50fcb83c8e4cb5da0d68ee678c860b",
+      "kind": "metadata",
+      "description": "Europe PMC retrieval response headers."
+    },
+    {
+      "id": "f1detail",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/figure1-detail.png",
+      "sha256": "210c1cb3ef5c17810cc11d705cbb40aab06eb608d28d11ad94062a4f752a54c0",
+      "kind": "image",
+      "description": "All nine pedigrees and every current/historical variant/domain label at legible detail."
+    },
+    {
+      "id": "correction",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/corrigendum.complete.txt",
+      "sha256": "65b8c3e9efceedf47f649db0d13c84de32291dad521f7de323f0b6c7fa1d5ed6",
+      "kind": "text",
+      "description": "Entire linked correction text, clearly identified as PMID31316524 rather than the main article; original XML personally read."
+    },
+    {
+      "id": "correction_provenance",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/corrigendum.provenance.json",
+      "sha256": "8cceb3cbbf2ed323ab28cc47f5e640d7f008ff74e60bccfbcb37a92e0185987d",
+      "kind": "metadata",
+      "description": "URL, durable original XML path/bytes/hash and derivative hash for separately identified correction."
+    },
+    {
+      "id": "p1",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-01.png",
+      "sha256": "c2f4eb82085db160f8701ff880dc4fb6fde42fc6d3a5ce31348e2e28a0d823b6",
+      "kind": "image",
+      "description": "Entire main page 1 inspected."
+    },
+    {
+      "id": "p2",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-02.png",
+      "sha256": "c48f6028bdd24c14ad20b040817c405cee492233b15bc057bc61a8a5bdb4bf11",
+      "kind": "image",
+      "description": "Entire main page 2 inspected."
+    },
+    {
+      "id": "p3",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-03.png",
+      "sha256": "0718b761ffd2e5f094d8bc5ae42f3abd7896fff1e464be1f7e24ccdb9c868287",
+      "kind": "image",
+      "description": "Entire main page 3 inspected."
+    },
+    {
+      "id": "p4",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-04.png",
+      "sha256": "2d4188dc4664cacd46ff6028bfdef0ab001f690f40ddc155dd1c2816388e4ad1",
+      "kind": "image",
+      "description": "Entire main page 4 inspected."
+    },
+    {
+      "id": "p5",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-05.png",
+      "sha256": "8d54e26d9c2336094dd8650ae703b6850aacbf010f36b9c432c12cc40d9aaed8",
+      "kind": "image",
+      "description": "Entire main page 5 inspected."
+    },
+    {
+      "id": "p6",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-06.png",
+      "sha256": "fdac7e9b660ac783bfd098fc45078899629f2aa078cc9b1277f59db06693e77a",
+      "kind": "image",
+      "description": "Entire main page 6 inspected."
+    },
+    {
+      "id": "p7",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-07.png",
+      "sha256": "0e6c39b4e55009c883c7faa907edcd47cc5d7f1df813c9316dc381304b08151f",
+      "kind": "image",
+      "description": "Entire main page 7 inspected."
+    },
+    {
+      "id": "p8",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-08.png",
+      "sha256": "89406133b9cc3f41a3bdc10547124b4e78d1f07e5f5fe8756a4303bd947d8fa6",
+      "kind": "image",
+      "description": "Entire main page 8 inspected."
+    },
+    {
+      "id": "p9",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-09.png",
+      "sha256": "d50322419a01ab0d964459eb5342befe349a88120821fde54c4cca3918701cee",
+      "kind": "image",
+      "description": "Entire main page 9 inspected."
+    },
+    {
+      "id": "p10",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-10.png",
+      "sha256": "eec5517bfef3ec679f5ef5de4bfcfcc9c87ef1464ce60666b0a303433f2c74ee",
+      "kind": "image",
+      "description": "Entire main page 10 inspected."
+    },
+    {
+      "id": "p11",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-11.png",
+      "sha256": "7aac00f169b58488e9e1106043e91c4cea2af9ec486ef9c32eb3d37d6ffef977",
+      "kind": "image",
+      "description": "Entire main page 11 inspected."
+    },
+    {
+      "id": "p12",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-12.png",
+      "sha256": "5e83ac0af868b6e24846e4c2fc57aa9e0894eafd324c667e29fa30ae9bc9bda1",
+      "kind": "image",
+      "description": "Entire main page 12 inspected."
+    },
+    {
+      "id": "p13",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-13.png",
+      "sha256": "bc68058687af05965053a69d1d550ba2b76e950b5ceeb010a248a74403bf7e7b",
+      "kind": "image",
+      "description": "Entire main page 13 inspected."
+    },
+    {
+      "id": "p14",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-14.png",
+      "sha256": "302aad510b578ee700cb04e72837ddb4f6c5bbe1ea494d5e93d1917bfa1d392a",
+      "kind": "image",
+      "description": "Entire main page 14 inspected."
+    },
+    {
+      "id": "p15",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-15.png",
+      "sha256": "70064a97257d4dac77299d565384ff32ca16ae045c5cbc1a3104e112f5080e73",
+      "kind": "image",
+      "description": "Entire main page 15 inspected."
+    },
+    {
+      "id": "p16",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-16.png",
+      "sha256": "ec0e0a2c07d8e6cfe83ae281559349d4873d3393dea535f6529fbf16ff831e89",
+      "kind": "image",
+      "description": "Entire main page 16 inspected."
+    },
+    {
+      "id": "p17",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-17.png",
+      "sha256": "abe0b25e0e142d29b67b1d940a4e6e7851588174916cf37298833fb0f503712d",
+      "kind": "image",
+      "description": "Entire main page 17 inspected."
+    },
+    {
+      "id": "p18",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/PMC6477086.1/page-18.png",
+      "sha256": "623bbde457f6b6ff6cd7d3a234c68923a32c81a5eeea2547f9a6416415df5795",
+      "kind": "image",
+      "description": "Entire main page 18 inspected."
+    },
+    {
+      "id": "s3p1",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/Image_3/page-1.png",
+      "sha256": "1f519ad61d962910928ff2ac3e5405abab6710507deca377eeb0f869957d6bb4",
+      "kind": "image",
+      "description": "Entire S3 page 1 inspected."
+    },
+    {
+      "id": "s3p2",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/Image_3/page-2.png",
+      "sha256": "4b444e3cb0f2eaf22f636d16ef879de005baf217c003405bcbe45501f905082b",
+      "kind": "image",
+      "description": "Entire S3 page 2 inspected."
+    },
+    {
+      "id": "s3p3",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/Image_3/page-3.png",
+      "sha256": "881063de9802d3bb1d9d9c08bd826ddf5722ae1c08e6769ce0348be77584a2db",
+      "kind": "image",
+      "description": "Entire S3 page 3 inspected."
+    },
+    {
+      "id": "s3p4",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/Image_3/page-4.png",
+      "sha256": "33cef50cece7c2069f8186bc71fabf9e4b2bcb26248116cc3c836041316cbf99",
+      "kind": "image",
+      "description": "Entire S3 page 4 inspected."
+    },
+    {
+      "id": "s3p5",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/Image_3/page-5.png",
+      "sha256": "ca0d49d18a9d59b22227a69129de46d074e421c04ade4c0438f649e0eb758412",
+      "kind": "image",
+      "description": "Entire S3 page 5 inspected."
+    },
+    {
+      "id": "s3p6",
+      "pmid": "31057532",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/reviewer-2/31057532/Image_3/page-6.png",
+      "sha256": "1e4db0f89042fcdf572323da03c4618dacd56c0e99278068608f4a35880b59e7",
+      "kind": "image",
+      "description": "Entire S3 page 6 inspected."
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "Assessing the Functional Relevance of Variants in the IKAROS Family Zinc Finger Protein 1 (IKZF1) in a Cohort of Patients With Primary Immunodeficiency",
+    "evidence": [
+      {
+        "source_id": "p1",
+        "locator": "Eskandarian et al.; Frontiers in Immunology 2019;10:568; DOI10.3389/fimmu.2019.00568"
+      },
+      {
+        "source_id": "xml",
+        "locator": "PMID31057532, PMC6477086; correction-forward PMC6611354"
+      }
+    ],
+    "note": "Original PDF1893431bytes SHA25621ea992925cc41926269500a86554b3cfa8fd87ca44dbfff8a9d1ad2929a7963 verified. Image_3.pdf854073bytes SHA3316359ef2311c373246a89a211d7b9157956834b94a5846db4749bfedd4c72d; Table_1.pdf187517bytes SHA44dcfe35d3afaa6f5b5c7b455bb843021d390ffd7d599daa8381d4e2c36802ca. All original/derivative hashes recomputed. Corrigendum7714bytes SHAa45c5a00697146ce3a6738d4ad81a12e524e0b41d7e51366f00b339974d6e63b obtained from https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6611354/fullTextXML and fully read; no clinical correction. All new large files external."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 4,
+      "table": 2,
+      "supplement": 5
+    },
+    "evidence": [
+      {
+        "source_id": "xml",
+        "locator": "Four main figures, two main tables and four unique linked supplementary files."
+      },
+      {
+        "source_id": "correction",
+        "locator": "Additional reviewed correction document: affiliations only; no figures/tables."
+      }
+    ],
+    "note": "Supplement count includes four published assets plus linked corrigendum as additional reviewed document. Full XML correction text has no visual evidence component. All unique components read; cited prior publications not claimed read."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 530,
+      "extent_source_id": "text",
+      "extent_evidence": [
+        {
+          "source_id": "text",
+          "locator": "All 530 lines and 18 PDF pages personally read."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 530,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Entire article, all nine family contexts, methods/results/discussion, 68 references and statements"
+        }
+      ],
+      "note": "All 530 lines and 18 PDF pages personally read."
+    },
+    {
+      "id": "figure1",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "All source panels read; representative images are not independently quantified raw data."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p4",
+          "locator": "All Figure1 panels/labels/caption"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "f1detail",
+          "locator": "Every pedigree and variant/domain label read at detail"
+        }
+      ],
+      "note": "All source panels read; representative images are not independently quantified raw data."
+    },
+    {
+      "id": "figure2",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "All source panels read; representative images are not independently quantified raw data."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p6",
+          "locator": "All Figure2 panels/labels/caption"
+        }
+      ],
+      "note": "All source panels read; representative images are not independently quantified raw data."
+    },
+    {
+      "id": "figure3",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "All source panels read; representative images are not independently quantified raw data."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p8",
+          "locator": "All Figure3 panels/labels/caption"
+        }
+      ],
+      "note": "All source panels read; representative images are not independently quantified raw data."
+    },
+    {
+      "id": "figure4",
+      "kind": "figure",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "All source panels read; representative images are not independently quantified raw data."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p9",
+          "locator": "All Figure4 panels/labels/caption"
+        }
+      ],
+      "note": "All source panels read; representative images are not independently quantified raw data."
+    },
+    {
+      "id": "table1",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Table1 all13 individuals and reference intervals; Table2 all variants/predictors/assays, including untested variants and technical control."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Every Table1 cell and footnote"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p5",
+          "locator": "Entire sideways Table1, column alignment verified"
+        }
+      ],
+      "note": "Table1 all13 individuals and reference intervals; Table2 all variants/predictors/assays, including untested variants and technical control."
+    },
+    {
+      "id": "table2",
+      "kind": "table",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "xml",
+      "extent_evidence": [
+        {
+          "source_id": "xml",
+          "locator": "Table1 all13 individuals and reference intervals; Table2 all variants/predictors/assays, including untested variants and technical control."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "text",
+          "locator": "Every Table2 cell and footnote"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "p14",
+          "locator": "Entire sideways Table2, column alignment verified"
+        }
+      ],
+      "note": "Table1 all13 individuals and reference intervals; Table2 all variants/predictors/assays, including untested variants and technical control."
+    },
+    {
+      "id": "supp1",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "s1",
+      "extent_evidence": [
+        {
+          "source_id": "s1",
+          "locator": "S1: nine paired chromatograms; S2: three complete blots, nuclear extracts and antibody-epitope limitation. No independent sequence calling."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "s1",
+          "locator": "Entire S1, all panels and caption"
+        }
+      ],
+      "note": "S1: nine paired chromatograms; S2: three complete blots, nuclear extracts and antibody-epitope limitation. No independent sequence calling."
+    },
+    {
+      "id": "supp2",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "s2",
+      "extent_evidence": [
+        {
+          "source_id": "s2",
+          "locator": "S1: nine paired chromatograms; S2: three complete blots, nuclear extracts and antibody-epitope limitation. No independent sequence calling."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "s2",
+          "locator": "Entire S2, all panels and caption"
+        }
+      ],
+      "note": "S1: nine paired chromatograms; S2: three complete blots, nuclear extracts and antibody-epitope limitation. No independent sequence calling."
+    },
+    {
+      "id": "supp3",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 6,
+      "extent_source_id": "s3",
+      "extent_evidence": [
+        {
+          "source_id": "s3",
+          "locator": "All A–Q panels, pedigree, alternative-variant labeling, flow plots, reporter curves, blots and localization images read."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 6,
+          "mode": "text",
+          "source_id": "s3text",
+          "locator": "Every caption/text unit"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "s3p1",
+          "locator": "All S3 page1 panels and captions"
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "mode": "pixels",
+          "source_id": "s3p2",
+          "locator": "All S3 page2 panels and captions"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "mode": "pixels",
+          "source_id": "s3p3",
+          "locator": "All S3 page3 panels and captions"
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "mode": "pixels",
+          "source_id": "s3p4",
+          "locator": "All S3 page4 panels and captions"
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "mode": "pixels",
+          "source_id": "s3p5",
+          "locator": "All S3 page5 panels and captions"
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "mode": "pixels",
+          "source_id": "s3p6",
+          "locator": "All S3 page6 panels and captions"
+        }
+      ],
+      "note": "All A–Q panels, pedigree, alternative-variant labeling, flow plots, reporter curves, blots and localization images read."
+    },
+    {
+      "id": "supp4",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "pages",
+      "unit_count": 1,
+      "extent_source_id": "s4",
+      "extent_evidence": [
+        {
+          "source_id": "s4",
+          "locator": "Published reagent sequences read for provenance appraisal only, no assay design/execution or independent sequence validation."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "s4text",
+          "locator": "All 22 rows"
+        },
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "s4pixel",
+          "locator": "Every cell of complete table"
+        }
+      ],
+      "note": "Published reagent sequences read for provenance appraisal only, no assay design/execution or independent sequence validation."
+    },
+    {
+      "id": "corrigendum",
+      "kind": "supplement",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "correction",
+      "extent_evidence": [
+        {
+          "source_id": "correction",
+          "locator": "DOI10.3389/fimmu.2019.01490, PMID31316524: adds author affiliation; authors state scientific conclusions unchanged. No additional figures or supplements."
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "text",
+          "source_id": "correction",
+          "locator": "Entire XML: all front matter, both body paragraphs and metadata"
+        }
+      ],
+      "note": "DOI10.3389/fimmu.2019.01490, PMID31316524: adds author affiliation; authors state scientific conclusions unchanged. No additional figures or supplements."
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/IKZF1/PMID_31057532_Family_A_individual_A_II_1.json",
+      "packet_sha256": "3297e1d40562e754ca4bb3ddab78cf1c87c7a18e5d4acd153fe4720d955290a4",
+      "case_id": "TC_da59064ff5083027",
+      "role": "selected",
+      "packet_subject_id": "Family A individual A.II.1",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Individual values retained; no borrowing from other family members or other pedigrees.",
+        "Historical public-control exposure declared; no target outcomes read."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "A.II.1: affected son, current age 19, onset 19 years. Individual label matches pedigree and Table1.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.1"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_006060.6:c.427C>T/p.Arg143Trp explicitly identified in all four affected family members and Sanger confirmed.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.1"
+          }
+        ],
+        "limitations": [
+          "Source lists NC_000007.14:g.50450243C>T, while packet uses g.50382545C>T; methods align to hg19. Assembly/coordinate labeling is inconsistent and exact genomic equivalence was not independently remapped. Coding/protein identity matches."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Affected mother and all three affected sons carry R143W; unaffected father and daughter are wild type in Figure1. TNFSF10 candidate also co-segregates in the same family.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.1"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single heterozygous IKZF1 allele; sons inherit it maternally by the family segregation. Compound-heterozygous phase is not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.1"
+          }
+        ],
+        "limitations": [
+          "Origin of the allele in the mother is not established; do not call de novo. TNFSF10 is a separate locus and its cosegregation does not establish a single causal mechanism."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "R143W has direct functional support for impaired target-DNA binding and pericentromeric localization when expressed alone; familial CVID segregation supports relevance.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.1"
+          }
+        ],
+        "limitations": [
+          "Wildtype coexpression retains binding/localization in these heterologous assays; no demonstrated dominant-negative effect here. This does not quantify endogenous patient-cell function.",
+          "TNFSF10/TRAIL Gln27Lys also cosegregates and shows model-system defects; its independent/modifying contribution to CVID remains unproved.",
+          "Representative overexpression images/gels and one binding motif do not resolve transcriptional effects, penetrance or causal contributions in patient B cells."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "All20 assigned features, including every negative, compared with exact individual measurements and full clinical context.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.1"
+          }
+        ],
+        "limitations": [
+          "Specific negative autoantibodies, otitis/diarrhea or autoimmune diagnoses are often unreported rather than explicitly excluded.",
+          "Cell fractions are not absolute counts, and switched-memory subsets are not total memory B-cell measurements; current measurements do not establish lifetime absence."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c427CtoT_IKZF1_NM_006060v6",
+            "geneContext": {
+              "valueId": "HGNC:13176",
+              "symbol": "IKZF1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_006060.6:c.427C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000007.14:g.50382545C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_006051.1:p.(Arg143Trp)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr7",
+              "pos": 50382545,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "3d5223238c4c3a310e4ce14afb32e3569b12c3a96123dfb84f55f9cbbed31db6",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous c.427C>T/p.Arg143Trp matches source, Figure1, S1 and family segregation.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": [
+              "Exact GRCh38 coordinate differs from printed source coordinate; hg19 methods versus NC_000007.14 labeling prevents claiming independently verified genomic normalization. No invented coordinate correction."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004812",
+              "label": "B Acute Lymphoblastic Leukemia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b6aee22bffd2b52482d5861b0ed8f873c3038458f45b56974ca1eef59e20524",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 explicitly records ALL No in this individual; B-ALL occurs in familyG, not familyA.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": [
+              "Clinical history at reported age, not lifetime cancer exclusion or separate molecular testing for both leukemia lineages."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006727",
+              "label": "T-cell acute lymphoblastic leukemias"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "08a3badc998d1c89352bb2e5d3b0483ed8adc7d82d6f9cdcf00f4245762b58ee",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 explicitly records ALL No in this individual; B-ALL occurs in familyG, not familyA.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": [
+              "Clinical history at reported age, not lifetime cancer exclusion or separate molecular testing for both leukemia lineages."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002205",
+              "label": "Recurrent respiratory infections"
+            }
+          },
+          "snapshot_sha256": "d1091906188d973fbafa9ac84f6f04cd91e330cee26f5fa7858c07ced88380b5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Recurrent bacterial respiratory infections in FamilyA narrative and Sinopulmonary infections Yes for this individual.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000403",
+              "label": "Recurrent otitis media"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a61b1f9d38ae263eda270924e948d37c7a074c3634f3309ad6760c68fe7aa42b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Otitis is not specifically excluded for this individual.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": [
+              "Other manifestations list is not an exhaustive negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002028",
+              "label": "Chronic diarrhea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a0520e832f0589a95e4bef0ad1a7d79a9f821e1c29e8392b8cbea7553d51454",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicit chronic-diarrhea negative is provided for this individual.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": [
+              "None/other listed manifestations do not prove exclusion; chronic gastritis in mother is a different feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033222",
+              "label": "Inverted CD4:CD8 ratio"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f27ecf97bb513162d9c9093e823769472af50c99f70560917dfecb829f5904e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "CD4/CD8 ratio 2.8, within source reference1–3.6 and not inverted at measurement.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001973",
+              "label": "Autoimmune thrombocytopenia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f1799d44ec00e5a537000ae4b8a9f337bab68105c22b9f904fa643ed7db21111",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Other autoimmune/skin findings are listed, without explicit exclusion of this specific diagnosis.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": [
+              "Other listed autoimmune manifestations do not establish the requested specific negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010976",
+              "label": "Decreased total B cell count"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f95977262784d15d8820981e851c858ff83f8a373d8a7932eafd5ee5a96cbc24",
+          "assessment": {
+            "status": "supported",
+            "statement": "CD19 B cells 106/µl; reference100–500. Normal at this measurement supports exclusion.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030374",
+              "label": "Decreased proportion of memory B cells"
+            }
+          },
+          "snapshot_sha256": "59f2f0eeeb2a1b874cfe369152eaf95ece01f7bbdc0820bee42e25ee68b97a6b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgA+CD27+ 1.3% (reference2.8–10.9), IgG+CD27+ 2.3% (2.5–20.3); at least the IgG-switched subset is reduced.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": [
+              "Source measures isotype-specific memory subsets, not total CD27+ memory fraction. A.II.2IgA-memory subset is normal."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030380",
+              "label": "Decreased transitional B cell proportion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9e9e3bc98ed3101d88f27a90fa02c8ef364a1202e252cc0b7f87cfcd8d6f7e0a",
+          "assessment": {
+            "status": "supported",
+            "statement": "IgM++CD38 transitional proportion 2.8%; reference0.5–4.4. Normal, supports both increased/decreased exclusions.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030381",
+              "label": "Increased transitional B cell proportion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "6496e62c35db5db1d1aeb3e03398081c028743f541f9400fdb8190bd6822de8b",
+          "assessment": {
+            "status": "supported",
+            "statement": "IgM++CD38 transitional proportion 2.8%; reference0.5–4.4. Normal, supports both increased/decreased exclusions.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032129",
+              "label": "Decreased proportion of plasmablasts"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "69f326a06e97f8e776fa920a2a9e96f97d1e91939f9bad21e88e0ef3fa867b7d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Plasmablast proportion 2.3% of B cells; reference0.4–3.6. Not below reference; A.II.2 is elevated rather than normal.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004315",
+              "label": "Decreased circulating IgG concentration"
+            }
+          },
+          "snapshot_sha256": "01fedeedbff1656c9388ab85b6e282e079077b7e1a97eed6bb95f6d546078604",
+          "assessment": {
+            "status": "supported",
+            "statement": "IGG 3.24 g/l, source reference7–16. Below source reference.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002720",
+              "label": "Decreased circulating IgA concentration"
+            }
+          },
+          "snapshot_sha256": "d0dc53e10d03c4215d67db28c6a27cd3ca8e09c0dbd94e05809b0f5f3df04471",
+          "assessment": {
+            "status": "supported",
+            "statement": "IGA 0.55 g/l, source reference0.7–4. Below source reference.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002850",
+              "label": "Decreased circulating total IgM"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "dbdb9d6a6bc7fa6b87b3eb9dd0bcb4893b8d716cb42d180af0be0a8559f6fe8c",
+          "assessment": {
+            "status": "supported",
+            "statement": "IGM 1.4 g/l, source reference0.4–2.3. Not decreased at this assessment.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3da3d0fa5a0298a54d11f959b7518ea72d80ed868975d71219bbfc2a7dff80cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1 explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000872",
+              "label": "Hashimoto thyroiditis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bda640e9df7a5760c8b4573793ca0486b9cb6f294107cd423cadc6e49756773e",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Other autoimmune/skin findings are listed, without explicit exclusion of this specific diagnosis.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": [
+              "Other listed autoimmune manifestations do not establish the requested specific negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002633",
+              "label": "Vasculitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "51c5dc524bf355dee83792c10dba855e0299f5bb547772ab2a17231c142a8cc4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Other autoimmune/skin findings are listed, without explicit exclusion of this specific diagnosis.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": [
+              "Other listed autoimmune manifestations do not establish the requested specific negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033563",
+              "label": "Anti-tissue transglutaminase antibody positivity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fa610db830f99c6db1256f8446d942d91212a511dfca73d9ffbcda6e364eb78b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "These antibody results are not provided for FamilyA; positivity is mentioned for I.II.1 only.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": [
+              "No evidence that this individual was tested; unreported is not negative. Source also says tissue transaminase in that unrelated row."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:4000029",
+              "label": "Antigliadin antibody positivity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "42bc92d7dc8715f8e2eccddc73f9995ace31c12a7298670f5b3dc6288cdbc751",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "These antibody results are not provided for FamilyA; positivity is mentioned for I.II.1 only.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.1; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.1"
+              }
+            ],
+            "limitations": [
+              "No evidence that this individual was tested; unreported is not negative. Source also says tissue transaminase in that unrelated row."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IKZF1/PMID_31057532_Family_A_individual_A_II_2.json",
+      "packet_sha256": "955e0f00b62716f00c9d7253193ebb0b2bca98885fc3a1dfc19ba9f3fd3bcd06",
+      "case_id": "TC_da59064ff5083027",
+      "role": "alternate",
+      "packet_subject_id": "Family A individual A.II.2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Individual values retained; no borrowing from other family members or other pedigrees.",
+        "Historical public-control exposure declared; no target outcomes read."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "A.II.2: affected son, current age 29, onset 24 years. Individual label matches pedigree and Table1.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.2"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_006060.6:c.427C>T/p.Arg143Trp explicitly identified in all four affected family members and Sanger confirmed.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.2"
+          }
+        ],
+        "limitations": [
+          "Source lists NC_000007.14:g.50450243C>T, while packet uses g.50382545C>T; methods align to hg19. Assembly/coordinate labeling is inconsistent and exact genomic equivalence was not independently remapped. Coding/protein identity matches."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Affected mother and all three affected sons carry R143W; unaffected father and daughter are wild type in Figure1. TNFSF10 candidate also co-segregates in the same family.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.2"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single heterozygous IKZF1 allele; sons inherit it maternally by the family segregation. Compound-heterozygous phase is not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.2"
+          }
+        ],
+        "limitations": [
+          "Origin of the allele in the mother is not established; do not call de novo. TNFSF10 is a separate locus and its cosegregation does not establish a single causal mechanism."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "R143W has direct functional support for impaired target-DNA binding and pericentromeric localization when expressed alone; familial CVID segregation supports relevance.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.2"
+          }
+        ],
+        "limitations": [
+          "Wildtype coexpression retains binding/localization in these heterologous assays; no demonstrated dominant-negative effect here. This does not quantify endogenous patient-cell function.",
+          "TNFSF10/TRAIL Gln27Lys also cosegregates and shows model-system defects; its independent/modifying contribution to CVID remains unproved.",
+          "Representative overexpression images/gels and one binding motif do not resolve transcriptional effects, penetrance or causal contributions in patient B cells."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "All20 assigned features, including every negative, compared with exact individual measurements and full clinical context.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.2"
+          }
+        ],
+        "limitations": [
+          "Specific negative autoantibodies, otitis/diarrhea or autoimmune diagnoses are often unreported rather than explicitly excluded.",
+          "Cell fractions are not absolute counts, and switched-memory subsets are not total memory B-cell measurements; current measurements do not establish lifetime absence."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c427CtoT_IKZF1_NM_006060v6",
+            "geneContext": {
+              "valueId": "HGNC:13176",
+              "symbol": "IKZF1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_006060.6:c.427C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000007.14:g.50382545C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_006051.1:p.(Arg143Trp)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr7",
+              "pos": 50382545,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "3d5223238c4c3a310e4ce14afb32e3569b12c3a96123dfb84f55f9cbbed31db6",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous c.427C>T/p.Arg143Trp matches source, Figure1, S1 and family segregation.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": [
+              "Exact GRCh38 coordinate differs from printed source coordinate; hg19 methods versus NC_000007.14 labeling prevents claiming independently verified genomic normalization. No invented coordinate correction."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004812",
+              "label": "B Acute Lymphoblastic Leukemia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b6aee22bffd2b52482d5861b0ed8f873c3038458f45b56974ca1eef59e20524",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 explicitly records ALL No in this individual; B-ALL occurs in familyG, not familyA.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": [
+              "Clinical history at reported age, not lifetime cancer exclusion or separate molecular testing for both leukemia lineages."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006727",
+              "label": "T-cell acute lymphoblastic leukemias"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "08a3badc998d1c89352bb2e5d3b0483ed8adc7d82d6f9cdcf00f4245762b58ee",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 explicitly records ALL No in this individual; B-ALL occurs in familyG, not familyA.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": [
+              "Clinical history at reported age, not lifetime cancer exclusion or separate molecular testing for both leukemia lineages."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002205",
+              "label": "Recurrent respiratory infections"
+            }
+          },
+          "snapshot_sha256": "d1091906188d973fbafa9ac84f6f04cd91e330cee26f5fa7858c07ced88380b5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Recurrent bacterial respiratory infections in FamilyA narrative and Sinopulmonary infections Yes for this individual.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000403",
+              "label": "Recurrent otitis media"
+            }
+          },
+          "snapshot_sha256": "d3b4bafe53c8fc627fe0533d68d7355920f084cf348a84d9009ef49d2cff1922",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists otitis for this individual.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": [
+              "Recurrence and middle-ear location are not separately documented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002028",
+              "label": "Chronic diarrhea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a0520e832f0589a95e4bef0ad1a7d79a9f821e1c29e8392b8cbea7553d51454",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicit chronic-diarrhea negative is provided for this individual.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": [
+              "None/other listed manifestations do not prove exclusion; chronic gastritis in mother is a different feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033222",
+              "label": "Inverted CD4:CD8 ratio"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f27ecf97bb513162d9c9093e823769472af50c99f70560917dfecb829f5904e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "CD4/CD8 ratio 1.6, within source reference1–3.6 and not inverted at measurement.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001973",
+              "label": "Autoimmune thrombocytopenia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f1799d44ec00e5a537000ae4b8a9f337bab68105c22b9f904fa643ed7db21111",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 autoimmunity No supports no reported autoimmune disorder.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": [
+              "Broad clinical negative only; no specific testing or lifetime exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010976",
+              "label": "Decreased total B cell count"
+            }
+          },
+          "snapshot_sha256": "d271c8dbe1f949ea6f4b8b6acbb9834ba3da11d46c275dbeac2d328fe25c29bb",
+          "assessment": {
+            "status": "supported",
+            "statement": "CD19 B cells 29/µl; reference100–500. Below reference supports decreased count.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030374",
+              "label": "Decreased proportion of memory B cells"
+            }
+          },
+          "snapshot_sha256": "59f2f0eeeb2a1b874cfe369152eaf95ece01f7bbdc0820bee42e25ee68b97a6b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgA+CD27+ 3.8% (reference2.8–10.9), IgG+CD27+ 1.6% (2.5–20.3); at least the IgG-switched subset is reduced.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": [
+              "Source measures isotype-specific memory subsets, not total CD27+ memory fraction. A.II.2IgA-memory subset is normal."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030380",
+              "label": "Decreased transitional B cell proportion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9e9e3bc98ed3101d88f27a90fa02c8ef364a1202e252cc0b7f87cfcd8d6f7e0a",
+          "assessment": {
+            "status": "supported",
+            "statement": "IgM++CD38 transitional proportion 25.72%; reference0.5–4.4. Increased, supports increased proportion and excludes decreased proportion at this measurement.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030381",
+              "label": "Increased transitional B cell proportion"
+            }
+          },
+          "snapshot_sha256": "c66ce63aad105c7af424cc9e2b61e6a1e70b754e11fac657c9e6c134296add1c",
+          "assessment": {
+            "status": "supported",
+            "statement": "IgM++CD38 transitional proportion 25.72%; reference0.5–4.4. Increased, supports increased proportion and excludes decreased proportion at this measurement.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032129",
+              "label": "Decreased proportion of plasmablasts"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "69f326a06e97f8e776fa920a2a9e96f97d1e91939f9bad21e88e0ef3fa867b7d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Plasmablast proportion 4.7% of B cells; reference0.4–3.6. Not below reference; A.II.2 is elevated rather than normal.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004315",
+              "label": "Decreased circulating IgG concentration"
+            }
+          },
+          "snapshot_sha256": "01fedeedbff1656c9388ab85b6e282e079077b7e1a97eed6bb95f6d546078604",
+          "assessment": {
+            "status": "supported",
+            "statement": "IGG 5.5 g/l, source reference7–16. Below source reference.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002720",
+              "label": "Decreased circulating IgA concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "94d80eca7d63205318a6415bdb0951d6f323f37f76ba465fd4742e61ba80f183",
+          "assessment": {
+            "status": "supported",
+            "statement": "IGA 1.2 g/l, source reference0.7–4. Not decreased at this assessment.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002850",
+              "label": "Decreased circulating total IgM"
+            }
+          },
+          "snapshot_sha256": "c124705ab707a74946f3e4b2bdd796f46ac57bcf053cfa1004374fc312319344",
+          "assessment": {
+            "status": "supported",
+            "statement": "IGM 0.2 g/l, source reference0.4–2.3. Below source reference.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3da3d0fa5a0298a54d11f959b7518ea72d80ed868975d71219bbfc2a7dff80cf",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1 explicitly records No.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000872",
+              "label": "Hashimoto thyroiditis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bda640e9df7a5760c8b4573793ca0486b9cb6f294107cd423cadc6e49756773e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 autoimmunity No supports no reported autoimmune disorder.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": [
+              "Broad clinical negative only; no specific testing or lifetime exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002633",
+              "label": "Vasculitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "51c5dc524bf355dee83792c10dba855e0299f5bb547772ab2a17231c142a8cc4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 autoimmunity No supports no reported autoimmune disorder.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": [
+              "Broad clinical negative only; no specific testing or lifetime exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033563",
+              "label": "Anti-tissue transglutaminase antibody positivity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fa610db830f99c6db1256f8446d942d91212a511dfca73d9ffbcda6e364eb78b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "These antibody results are not provided for FamilyA; positivity is mentioned for I.II.1 only.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": [
+              "No evidence that this individual was tested; unreported is not negative. Source also says tissue transaminase in that unrelated row."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:4000029",
+              "label": "Antigliadin antibody positivity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "42bc92d7dc8715f8e2eccddc73f9995ace31c12a7298670f5b3dc6288cdbc751",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "These antibody results are not provided for FamilyA; positivity is mentioned for I.II.1 only.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.2"
+              }
+            ],
+            "limitations": [
+              "No evidence that this individual was tested; unreported is not negative. Source also says tissue transaminase in that unrelated row."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IKZF1/PMID_31057532_Family_A_individual_A_II_3.json",
+      "packet_sha256": "c97d5d63ac7a85d241c507a9d752e7bba4446673dc96436afda4ad83a181e5ce",
+      "case_id": "TC_da59064ff5083027",
+      "role": "alternate",
+      "packet_subject_id": "Family A individual A.II.3",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Individual values retained; no borrowing from other family members or other pedigrees.",
+        "Historical public-control exposure declared; no target outcomes read."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "A.II.3: affected son, current age 23, onset 18 years. Individual label matches pedigree and Table1.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.3"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_006060.6:c.427C>T/p.Arg143Trp explicitly identified in all four affected family members and Sanger confirmed.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.3"
+          }
+        ],
+        "limitations": [
+          "Source lists NC_000007.14:g.50450243C>T, while packet uses g.50382545C>T; methods align to hg19. Assembly/coordinate labeling is inconsistent and exact genomic equivalence was not independently remapped. Coding/protein identity matches."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Affected mother and all three affected sons carry R143W; unaffected father and daughter are wild type in Figure1. TNFSF10 candidate also co-segregates in the same family.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.3"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single heterozygous IKZF1 allele; sons inherit it maternally by the family segregation. Compound-heterozygous phase is not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.3"
+          }
+        ],
+        "limitations": [
+          "Origin of the allele in the mother is not established; do not call de novo. TNFSF10 is a separate locus and its cosegregation does not establish a single causal mechanism."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "R143W has direct functional support for impaired target-DNA binding and pericentromeric localization when expressed alone; familial CVID segregation supports relevance.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.3"
+          }
+        ],
+        "limitations": [
+          "Wildtype coexpression retains binding/localization in these heterologous assays; no demonstrated dominant-negative effect here. This does not quantify endogenous patient-cell function.",
+          "TNFSF10/TRAIL Gln27Lys also cosegregates and shows model-system defects; its independent/modifying contribution to CVID remains unproved.",
+          "Representative overexpression images/gels and one binding motif do not resolve transcriptional effects, penetrance or causal contributions in patient B cells."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "All20 assigned features, including every negative, compared with exact individual measurements and full clinical context.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.II.3"
+          }
+        ],
+        "limitations": [
+          "Specific negative autoantibodies, otitis/diarrhea or autoimmune diagnoses are often unreported rather than explicitly excluded.",
+          "Cell fractions are not absolute counts, and switched-memory subsets are not total memory B-cell measurements; current measurements do not establish lifetime absence."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c427CtoT_IKZF1_NM_006060v6",
+            "geneContext": {
+              "valueId": "HGNC:13176",
+              "symbol": "IKZF1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_006060.6:c.427C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000007.14:g.50382545C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_006051.1:p.(Arg143Trp)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr7",
+              "pos": 50382545,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "3d5223238c4c3a310e4ce14afb32e3569b12c3a96123dfb84f55f9cbbed31db6",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous c.427C>T/p.Arg143Trp matches source, Figure1, S1 and family segregation.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": [
+              "Exact GRCh38 coordinate differs from printed source coordinate; hg19 methods versus NC_000007.14 labeling prevents claiming independently verified genomic normalization. No invented coordinate correction."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004812",
+              "label": "B Acute Lymphoblastic Leukemia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b6aee22bffd2b52482d5861b0ed8f873c3038458f45b56974ca1eef59e20524",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 explicitly records ALL No in this individual; B-ALL occurs in familyG, not familyA.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": [
+              "Clinical history at reported age, not lifetime cancer exclusion or separate molecular testing for both leukemia lineages."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006727",
+              "label": "T-cell acute lymphoblastic leukemias"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "08a3badc998d1c89352bb2e5d3b0483ed8adc7d82d6f9cdcf00f4245762b58ee",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 explicitly records ALL No in this individual; B-ALL occurs in familyG, not familyA.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": [
+              "Clinical history at reported age, not lifetime cancer exclusion or separate molecular testing for both leukemia lineages."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002205",
+              "label": "Recurrent respiratory infections"
+            }
+          },
+          "snapshot_sha256": "d1091906188d973fbafa9ac84f6f04cd91e330cee26f5fa7858c07ced88380b5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Recurrent bacterial respiratory infections in FamilyA narrative and Sinopulmonary infections Yes for this individual.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000403",
+              "label": "Recurrent otitis media"
+            }
+          },
+          "snapshot_sha256": "d3b4bafe53c8fc627fe0533d68d7355920f084cf348a84d9009ef49d2cff1922",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 lists otitis for this individual.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": [
+              "Recurrence and middle-ear location are not separately documented."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002028",
+              "label": "Chronic diarrhea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a0520e832f0589a95e4bef0ad1a7d79a9f821e1c29e8392b8cbea7553d51454",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicit chronic-diarrhea negative is provided for this individual.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": [
+              "None/other listed manifestations do not prove exclusion; chronic gastritis in mother is a different feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033222",
+              "label": "Inverted CD4:CD8 ratio"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f27ecf97bb513162d9c9093e823769472af50c99f70560917dfecb829f5904e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "CD4/CD8 ratio 1.8, within source reference1–3.6 and not inverted at measurement.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001973",
+              "label": "Autoimmune thrombocytopenia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f1799d44ec00e5a537000ae4b8a9f337bab68105c22b9f904fa643ed7db21111",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 autoimmunity No supports no reported autoimmune disorder.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": [
+              "Broad clinical negative only; no specific testing or lifetime exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010976",
+              "label": "Decreased total B cell count"
+            }
+          },
+          "snapshot_sha256": "d271c8dbe1f949ea6f4b8b6acbb9834ba3da11d46c275dbeac2d328fe25c29bb",
+          "assessment": {
+            "status": "supported",
+            "statement": "CD19 B cells 72/µl; reference100–500. Below reference supports decreased count.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030374",
+              "label": "Decreased proportion of memory B cells"
+            }
+          },
+          "snapshot_sha256": "59f2f0eeeb2a1b874cfe369152eaf95ece01f7bbdc0820bee42e25ee68b97a6b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgA+CD27+ 0.49% (reference2.8–10.9), IgG+CD27+ 0.39% (2.5–20.3); at least the IgG-switched subset is reduced.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": [
+              "Source measures isotype-specific memory subsets, not total CD27+ memory fraction. A.II.2IgA-memory subset is normal."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030380",
+              "label": "Decreased transitional B cell proportion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9e9e3bc98ed3101d88f27a90fa02c8ef364a1202e252cc0b7f87cfcd8d6f7e0a",
+          "assessment": {
+            "status": "supported",
+            "statement": "IgM++CD38 transitional proportion 17%; reference0.5–4.4. Increased, supports increased proportion and excludes decreased proportion at this measurement.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030381",
+              "label": "Increased transitional B cell proportion"
+            }
+          },
+          "snapshot_sha256": "c66ce63aad105c7af424cc9e2b61e6a1e70b754e11fac657c9e6c134296add1c",
+          "assessment": {
+            "status": "supported",
+            "statement": "IgM++CD38 transitional proportion 17%; reference0.5–4.4. Increased, supports increased proportion and excludes decreased proportion at this measurement.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032129",
+              "label": "Decreased proportion of plasmablasts"
+            }
+          },
+          "snapshot_sha256": "a1811c20bba3ed3ffb8287dff507b6ebecb836127aa4cb88e10bc38a272c9534",
+          "assessment": {
+            "status": "supported",
+            "statement": "Plasmablast proportion 0.3% of B cells; reference0.4–3.6. Below reference.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004315",
+              "label": "Decreased circulating IgG concentration"
+            }
+          },
+          "snapshot_sha256": "01fedeedbff1656c9388ab85b6e282e079077b7e1a97eed6bb95f6d546078604",
+          "assessment": {
+            "status": "supported",
+            "statement": "IGG 3.4 g/l, source reference7–16. Below source reference.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002720",
+              "label": "Decreased circulating IgA concentration"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "94d80eca7d63205318a6415bdb0951d6f323f37f76ba465fd4742e61ba80f183",
+          "assessment": {
+            "status": "supported",
+            "statement": "IGA 1.18 g/l, source reference0.7–4. Not decreased at this assessment.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002850",
+              "label": "Decreased circulating total IgM"
+            }
+          },
+          "snapshot_sha256": "c124705ab707a74946f3e4b2bdd796f46ac57bcf053cfa1004374fc312319344",
+          "assessment": {
+            "status": "supported",
+            "statement": "IGM 0.23 g/l, source reference0.4–2.3. Below source reference.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            }
+          },
+          "snapshot_sha256": "a9dc192bb81a5d54d7ac2a389feee23da043715c9bfd9f500536aca55909c288",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1 explicitly records Yes.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000872",
+              "label": "Hashimoto thyroiditis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "bda640e9df7a5760c8b4573793ca0486b9cb6f294107cd423cadc6e49756773e",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 autoimmunity No supports no reported autoimmune disorder.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": [
+              "Broad clinical negative only; no specific testing or lifetime exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002633",
+              "label": "Vasculitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "51c5dc524bf355dee83792c10dba855e0299f5bb547772ab2a17231c142a8cc4",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 autoimmunity No supports no reported autoimmune disorder.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": [
+              "Broad clinical negative only; no specific testing or lifetime exclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033563",
+              "label": "Anti-tissue transglutaminase antibody positivity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fa610db830f99c6db1256f8446d942d91212a511dfca73d9ffbcda6e364eb78b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "These antibody results are not provided for FamilyA; positivity is mentioned for I.II.1 only.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": [
+              "No evidence that this individual was tested; unreported is not negative. Source also says tissue transaminase in that unrelated row."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:4000029",
+              "label": "Antigliadin antibody positivity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "42bc92d7dc8715f8e2eccddc73f9995ace31c12a7298670f5b3dc6288cdbc751",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "These antibody results are not provided for FamilyA; positivity is mentioned for I.II.1 only.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.II.3; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.II.3"
+              }
+            ],
+            "limitations": [
+              "No evidence that this individual was tested; unreported is not negative. Source also says tissue transaminase in that unrelated row."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/IKZF1/PMID_31057532_Family_A_individual_A_I_2.json",
+      "packet_sha256": "966b80b376fa0088dac019f5ad42c7871220b8900f086bf408bd6ccb1cf3822c",
+      "case_id": "TC_da59064ff5083027",
+      "role": "alternate",
+      "packet_subject_id": "Family A individual A.I.2",
+      "review_status": "adjudicated",
+      "category": "unresolved",
+      "limitations": [
+        "Individual values retained; no borrowing from other family members or other pedigrees.",
+        "Historical public-control exposure declared; no target outcomes read."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "A.I.2: mother, current age 53, onset 29 years. Individual label matches pedigree and Table1.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.I.2"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "Heterozygous NM_006060.6:c.427C>T/p.Arg143Trp explicitly identified in all four affected family members and Sanger confirmed.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.I.2"
+          }
+        ],
+        "limitations": [
+          "Source lists NC_000007.14:g.50450243C>T, while packet uses g.50382545C>T; methods align to hg19. Assembly/coordinate labeling is inconsistent and exact genomic equivalence was not independently remapped. Coding/protein identity matches."
+        ]
+      },
+      "segregation": {
+        "status": "supported",
+        "statement": "Affected mother and all three affected sons carry R143W; unaffected father and daughter are wild type in Figure1. TNFSF10 candidate also co-segregates in the same family.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.I.2"
+          }
+        ],
+        "limitations": []
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Single heterozygous IKZF1 allele; sons inherit it maternally by the family segregation. Compound-heterozygous phase is not applicable.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.I.2"
+          }
+        ],
+        "limitations": [
+          "Origin of the allele in the mother is not established; do not call de novo. TNFSF10 is a separate locus and its cosegregation does not establish a single causal mechanism."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "R143W has direct functional support for impaired target-DNA binding and pericentromeric localization when expressed alone; familial CVID segregation supports relevance.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.I.2"
+          }
+        ],
+        "limitations": [
+          "Wildtype coexpression retains binding/localization in these heterologous assays; no demonstrated dominant-negative effect here. This does not quantify endogenous patient-cell function.",
+          "TNFSF10/TRAIL Gln27Lys also cosegregates and shows model-system defects; its independent/modifying contribution to CVID remains unproved.",
+          "Representative overexpression images/gels and one binding motif do not resolve transcriptional effects, penetrance or causal contributions in patient B cells."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "unresolved",
+        "statement": "All20 assigned features, including every negative, compared with exact individual measurements and full clinical context.",
+        "evidence": [
+          {
+            "source_id": "text",
+            "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+          },
+          {
+            "source_id": "p5",
+            "locator": "Table1 individual A.I.2"
+          }
+        ],
+        "limitations": [
+          "Specific negative autoantibodies, otitis/diarrhea or autoimmune diagnoses are often unreported rather than explicitly excluded.",
+          "Cell fractions are not absolute counts, and switched-memory subsets are not total memory B-cell measurements; current measurements do not establish lifetime absence."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c427CtoT_IKZF1_NM_006060v6",
+            "geneContext": {
+              "valueId": "HGNC:13176",
+              "symbol": "IKZF1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_006060.6:c.427C>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000007.14:g.50382545C>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_006051.1:p.(Arg143Trp)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr7",
+              "pos": 50382545,
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "3d5223238c4c3a310e4ce14afb32e3569b12c3a96123dfb84f55f9cbbed31db6",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Heterozygous c.427C>T/p.Arg143Trp matches source, Figure1, S1 and family segregation.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": [
+              "Exact GRCh38 coordinate differs from printed source coordinate; hg19 methods versus NC_000007.14 labeling prevents claiming independently verified genomic normalization. No invented coordinate correction."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004812",
+              "label": "B Acute Lymphoblastic Leukemia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9b6aee22bffd2b52482d5861b0ed8f873c3038458f45b56974ca1eef59e20524",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 explicitly records ALL No in this individual; B-ALL occurs in familyG, not familyA.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": [
+              "Clinical history at reported age, not lifetime cancer exclusion or separate molecular testing for both leukemia lineages."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0006727",
+              "label": "T-cell acute lymphoblastic leukemias"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "08a3badc998d1c89352bb2e5d3b0483ed8adc7d82d6f9cdcf00f4245762b58ee",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Table1 explicitly records ALL No in this individual; B-ALL occurs in familyG, not familyA.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": [
+              "Clinical history at reported age, not lifetime cancer exclusion or separate molecular testing for both leukemia lineages."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002205",
+              "label": "Recurrent respiratory infections"
+            }
+          },
+          "snapshot_sha256": "d1091906188d973fbafa9ac84f6f04cd91e330cee26f5fa7858c07ced88380b5",
+          "assessment": {
+            "status": "supported",
+            "statement": "Recurrent bacterial respiratory infections in FamilyA narrative and Sinopulmonary infections Yes for this individual.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000403",
+              "label": "Recurrent otitis media"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "a61b1f9d38ae263eda270924e948d37c7a074c3634f3309ad6760c68fe7aa42b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Otitis is not specifically excluded for this individual.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": [
+              "Other manifestations list is not an exhaustive negative assessment."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002028",
+              "label": "Chronic diarrhea"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9a0520e832f0589a95e4bef0ad1a7d79a9f821e1c29e8392b8cbea7553d51454",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "No explicit chronic-diarrhea negative is provided for this individual.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": [
+              "None/other listed manifestations do not prove exclusion; chronic gastritis in mother is a different feature."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033222",
+              "label": "Inverted CD4:CD8 ratio"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f27ecf97bb513162d9c9093e823769472af50c99f70560917dfecb829f5904e9",
+          "assessment": {
+            "status": "supported",
+            "statement": "CD4/CD8 ratio 1.09, within source reference1–3.6 and not inverted at measurement.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001973",
+              "label": "Autoimmune thrombocytopenia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "f1799d44ec00e5a537000ae4b8a9f337bab68105c22b9f904fa643ed7db21111",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Other autoimmune/skin findings are listed, without explicit exclusion of this specific diagnosis.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": [
+              "Other listed autoimmune manifestations do not establish the requested specific negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0010976",
+              "label": "Decreased total B cell count"
+            }
+          },
+          "snapshot_sha256": "d271c8dbe1f949ea6f4b8b6acbb9834ba3da11d46c275dbeac2d328fe25c29bb",
+          "assessment": {
+            "status": "supported",
+            "statement": "CD19 B cells 20/µl; reference100–500. Below reference supports decreased count.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030374",
+              "label": "Decreased proportion of memory B cells"
+            }
+          },
+          "snapshot_sha256": "59f2f0eeeb2a1b874cfe369152eaf95ece01f7bbdc0820bee42e25ee68b97a6b",
+          "assessment": {
+            "status": "qualified",
+            "statement": "IgA+CD27+ 0.16% (reference2.8–10.9), IgG+CD27+ 0.12% (2.5–20.3); at least the IgG-switched subset is reduced.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": [
+              "Source measures isotype-specific memory subsets, not total CD27+ memory fraction. A.II.2IgA-memory subset is normal."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030380",
+              "label": "Decreased transitional B cell proportion"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "9e9e3bc98ed3101d88f27a90fa02c8ef364a1202e252cc0b7f87cfcd8d6f7e0a",
+          "assessment": {
+            "status": "supported",
+            "statement": "IgM++CD38 transitional proportion 8.47%; reference0.5–4.4. Increased, supports increased proportion and excludes decreased proportion at this measurement.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030381",
+              "label": "Increased transitional B cell proportion"
+            }
+          },
+          "snapshot_sha256": "c66ce63aad105c7af424cc9e2b61e6a1e70b754e11fac657c9e6c134296add1c",
+          "assessment": {
+            "status": "supported",
+            "statement": "IgM++CD38 transitional proportion 8.47%; reference0.5–4.4. Increased, supports increased proportion and excludes decreased proportion at this measurement.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032129",
+              "label": "Decreased proportion of plasmablasts"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "69f326a06e97f8e776fa920a2a9e96f97d1e91939f9bad21e88e0ef3fa867b7d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Plasmablast proportion 0.8% of B cells; reference0.4–3.6. Not below reference; A.II.2 is elevated rather than normal.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0004315",
+              "label": "Decreased circulating IgG concentration"
+            }
+          },
+          "snapshot_sha256": "01fedeedbff1656c9388ab85b6e282e079077b7e1a97eed6bb95f6d546078604",
+          "assessment": {
+            "status": "supported",
+            "statement": "IGG 1.13 g/l, source reference7–16. Below source reference.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002720",
+              "label": "Decreased circulating IgA concentration"
+            }
+          },
+          "snapshot_sha256": "d0dc53e10d03c4215d67db28c6a27cd3ca8e09c0dbd94e05809b0f5f3df04471",
+          "assessment": {
+            "status": "supported",
+            "statement": "IGA 0.28 g/l, source reference0.7–4. Below source reference.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002850",
+              "label": "Decreased circulating total IgM"
+            }
+          },
+          "snapshot_sha256": "c124705ab707a74946f3e4b2bdd796f46ac57bcf053cfa1004374fc312319344",
+          "assessment": {
+            "status": "supported",
+            "statement": "IGM 0.28 g/l, source reference0.4–2.3. Below source reference.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001744",
+              "label": "Splenomegaly"
+            }
+          },
+          "snapshot_sha256": "a9dc192bb81a5d54d7ac2a389feee23da043715c9bfd9f500536aca55909c288",
+          "assessment": {
+            "status": "supported",
+            "statement": "Table1 explicitly records Yes.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000872",
+              "label": "Hashimoto thyroiditis"
+            }
+          },
+          "snapshot_sha256": "2e8947b8c59d72f002fc0a00f8b1b7985a1badd2972d4067ac3c3363824478d3",
+          "assessment": {
+            "status": "supported",
+            "statement": "Mother has explicit Hashimoto thyroiditis and urticaria in Table1.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002633",
+              "label": "Vasculitis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "51c5dc524bf355dee83792c10dba855e0299f5bb547772ab2a17231c142a8cc4",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "Other autoimmune/skin findings are listed, without explicit exclusion of this specific diagnosis.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": [
+              "Other listed autoimmune manifestations do not establish the requested specific negative."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033563",
+              "label": "Anti-tissue transglutaminase antibody positivity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "fa610db830f99c6db1256f8446d942d91212a511dfca73d9ffbcda6e364eb78b",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "These antibody results are not provided for FamilyA; positivity is mentioned for I.II.1 only.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": [
+              "No evidence that this individual was tested; unreported is not negative. Source also says tissue transaminase in that unrelated row."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:4000029",
+              "label": "Antigliadin antibody positivity"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "42bc92d7dc8715f8e2eccddc73f9995ace31c12a7298670f5b3dc6288cdbc751",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "These antibody results are not provided for FamilyA; positivity is mentioned for I.II.1 only.",
+            "evidence": [
+              {
+                "source_id": "text",
+                "locator": "Table1 column A.I.2; Family A results; Figures1A and S1/S3A"
+              },
+              {
+                "source_id": "p5",
+                "locator": "Table1 individual A.I.2"
+              }
+            ],
+            "limitations": [
+              "No evidence that this individual was tested; unreported is not negative. Source also says tissue transaminase in that unrelated row."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "All530mainlines/18pages, four figures, two tables, four supplements and full linked corrigendum read. All four assigned FamilyA individuals and80phenotype annotations individually adjudicated; all13source clinical columns and nine family contexts reviewed.",
+    "FamilyA coding/protein allele supported; printed NC_000007.14:g.50450243 coordinate versus packetg.50382545 and hg19 methods is an unresolved assembly-label discrepancy. No exact genomic normalization claimed.",
+    "Negative autoantibodies and many specific clinical exclusions are unreported. ALLNo and splenomegalyYes/No are explicit, bounded to assessment. A.II.1CD19106 is normal; other familyAcounts20/29/72low. A.II.2plasmablast4.7is high, not normal; exclusion of decrease remains supported.",
+    "Memory-B-cell label compresses IgA/IgG-switched subsets; only IgG-memory is low in A.II.2. Increased transitional fraction in other familyAmembers does not establish increased absolute transitional count; authors say absolute counts normal.",
+    "R143Walone impairs DNA-binding/localization, coexpression preserves wildtype activity; no dominant-negative effect shown under tested conditions. Equal plasmid amounts and expected25/50/25dimer fractions are assumptions, not measured stoichiometry. Mobility shift does not independently identify exact dimer/multimer composition.",
+    "K286truncatedprotein31kDa enters nucleus and binds tested motif, despite summary causal wording implying DNA-binding defect. Predicted haploinsufficiency from sequence is not proof protein decay. H119R/V139A/M494fsnotfunctionallytested; normal available assays for G337S/A448Rdo not prove benignity. M494V oligomerization effect distinct from DNA-binding/pericentromeric defect; Table2does not call it loss of function.",
+    "FamilyA TNFSF10candidate cosegregates but mechanistic/clinical contribution unresolved. S3Bdiagramc79C>A versus main/S3Cc79G>T labeling; B/Ccaptions swapped. No precise alternative HGVS repair invented.",
+    "S3Jdoseaxis0.05/0.2/0.8/3.2/12.8 differs from caption1.6–12.8range. S3Eis a single24hco-culture snapshot, not demonstrated kinetic delay; annexin-positive and membrane-integrity quadrants must not be conflated. S3F/Gsupports less cell death in mutant co-culture. Replicate n/statistical methods for significance annotations are not specified.",
+    "S3M/Iplots appear identical in separate context sections; no independent-replicate claim. ERlocalization is inferred from diffuse cytoplasm/internal staining without an ER-specific marker. Glycosylation/cleavage interpreted from blot bands, not independent biochemical identification.",
+    "Table1D.II.2/G.II.2 versus narrativeD.II.1/G.II.1; F.I.1table versus affectedF.II.1pedigree. These unassigned numbering inconsistencies retained, no features transferred to FamilyA. Figure1slash legend says diseased though deceased father described; genotypeNDnotnegative.",
+    "CorrigendumPMID31316524fullyread, only missing author affiliation. No correction of clinical/genotype discrepancies supplied.",
+    "Methods and all published supplementary sequences read for clinical evidence appraisal only; no wet-labdesign/execution, contacts or browser/nativeUI. HistoricalHG002/FGFR2public-control exposure declaredper_case; no target outcomes consulted."
+  ]
+}

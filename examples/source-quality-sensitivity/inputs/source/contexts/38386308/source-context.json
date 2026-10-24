@@ -1,0 +1,1322 @@
+{
+  "pmid": "38386308",
+  "source_titles": [
+    "ZSCAN10 deficiency causes a neurodevelopmental disorder with characteristic oto-facial malformations."
+  ],
+  "selected_case_ids": [
+    "TC_23f9d0fe0ad61c5b",
+    "TC_05cf29edaf07b486"
+  ],
+  "alternate_case_ids": [
+    "TC_23f9d0fe0ad61c5b"
+  ],
+  "genes": [
+    "ZSCAN10"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/ZSCAN10/PMID_38386308_F2_II_2.json",
+      "sha256": "e91d248e9d5699e8522ee022d830c192a50a3dc098dcefc8ef3dbce79707c1a5",
+      "case_id": "TC_23f9d0fe0ad61c5b",
+      "selected_record": true,
+      "subject": {
+        "id": "F2:II.2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P15Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620910",
+            "label": "Otofacial neurodevelopmental syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000175",
+            "label": "Cleft palate"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000286",
+            "label": "Epicanthus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000494",
+            "label": "Downslanted palpebral fissures"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000431",
+            "label": "Wide nasal bridge"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000324",
+            "label": "Facial asymmetry"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000297",
+            "label": "Facial hypotonia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000358",
+            "label": "Posteriorly rotated ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000369",
+            "label": "Low-set ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000385",
+            "label": "Small earlobe"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000396",
+            "label": "Overfolded helix"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011236",
+            "label": "Angulated antihelix"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011245",
+            "label": "Abnormality of superior crus of antihelix"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001270",
+            "label": "Motor delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002342",
+            "label": "Moderate intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001256",
+            "label": "Mild intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0010864",
+            "label": "Severe intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000729",
+            "label": "Autistic behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000733",
+            "label": "Motor stereotypy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000718",
+            "label": "Aggressive behavior"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002591",
+            "label": "Polyphagia"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "ZtbAk9CwrdhWp6dGW75iOdH2",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620910",
+              "label": "Otofacial neurodevelopmental syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "F2:II.2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1456CtoT_ZSCAN10_NM_032805v3",
+                    "geneContext": {
+                      "valueId": "HGNC:12997",
+                      "symbol": "ZSCAN10"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_032805.3:c.1456C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000016.10:g.3089978G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_116194.2:p.(Gln486Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr16",
+                      "pos": 3089978,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/ZSCAN10/PMID_38386308_F2_II_3.json",
+      "sha256": "df146168e58eab664e39761a1d633aa824d873a8f76df1cb5bccf8b193c5a9c6",
+      "case_id": "TC_23f9d0fe0ad61c5b",
+      "selected_record": false,
+      "subject": {
+        "id": "F2:II.3",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P11Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620910",
+            "label": "Otofacial neurodevelopmental syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000286",
+            "label": "Epicanthus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000494",
+            "label": "Downslanted palpebral fissures"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000431",
+            "label": "Wide nasal bridge"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000324",
+            "label": "Facial asymmetry"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000297",
+            "label": "Facial hypotonia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000358",
+            "label": "Posteriorly rotated ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000396",
+            "label": "Overfolded helix"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011246",
+            "label": "Underdeveloped superior crus of antihelix"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001270",
+            "label": "Motor delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002342",
+            "label": "Moderate intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001256",
+            "label": "Mild intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010864",
+            "label": "Severe intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000729",
+            "label": "Autistic behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000733",
+            "label": "Motor stereotypy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000718",
+            "label": "Aggressive behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002591",
+            "label": "Polyphagia"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "vcluSJ2sdod4ml9EGDFZlXXi",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620910",
+              "label": "Otofacial neurodevelopmental syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "F2:II.3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1456CtoT_ZSCAN10_NM_032805v3",
+                    "geneContext": {
+                      "valueId": "HGNC:12997",
+                      "symbol": "ZSCAN10"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_032805.3:c.1456C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000016.10:g.3089978G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_116194.2:p.(Gln486Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr16",
+                      "pos": 3089978,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/ZSCAN10/PMID_38386308_F4_II_2.json",
+      "sha256": "2e3700c6d854a63be63a436f5b0cafe38bb283e78fefb21733a32535a564cd81",
+      "case_id": "TC_23f9d0fe0ad61c5b",
+      "selected_record": false,
+      "subject": {
+        "id": "F4:II.2",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2Y"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620910",
+            "label": "Otofacial neurodevelopmental syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000028",
+            "label": "Cryptorchidism"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000054",
+            "label": "Micropenis"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000175",
+            "label": "Cleft palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000286",
+            "label": "Epicanthus"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000494",
+            "label": "Downslanted palpebral fissures"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000431",
+            "label": "Wide nasal bridge"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000324",
+            "label": "Facial asymmetry"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000297",
+            "label": "Facial hypotonia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000505",
+            "label": "Visual impairment"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000358",
+            "label": "Posteriorly rotated ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000369",
+            "label": "Low-set ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008551",
+            "label": "Microtia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011245",
+            "label": "Abnormality of superior crus of antihelix"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000365",
+            "label": "Hearing impairment"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001270",
+            "label": "Motor delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002342",
+            "label": "Moderate intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001256",
+            "label": "Mild intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0010864",
+            "label": "Severe intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000729",
+            "label": "Autistic behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000733",
+            "label": "Motor stereotypy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000718",
+            "label": "Aggressive behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002591",
+            "label": "Polyphagia"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "FqwpdOzmi1wvGK5ST4vRPnMI",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620910",
+              "label": "Otofacial neurodevelopmental syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "F4:II.2",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1456CtoT_ZSCAN10_NM_032805v3",
+                    "geneContext": {
+                      "valueId": "HGNC:12997",
+                      "symbol": "ZSCAN10"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_032805.3:c.1456C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000016.10:g.3089978G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_116194.2:p.(Gln486Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr16",
+                      "pos": 3089978,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/ZSCAN10/PMID_38386308_F5a_II_3.json",
+      "sha256": "20efe8d49cf3cb1cef070e9c13a5bb0d87bb596d2db0541044ce78b0a1d632e4",
+      "case_id": "TC_23f9d0fe0ad61c5b",
+      "selected_record": false,
+      "subject": {
+        "id": "F5a:II.3",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P3Y7M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620910",
+            "label": "Otofacial neurodevelopmental syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003623",
+              "label": "Neonatal onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000286",
+            "label": "Epicanthus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000494",
+            "label": "Downslanted palpebral fissures"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000431",
+            "label": "Wide nasal bridge"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000324",
+            "label": "Facial asymmetry"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000297",
+            "label": "Facial hypotonia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000505",
+            "label": "Visual impairment"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000358",
+            "label": "Posteriorly rotated ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000369",
+            "label": "Low-set ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008551",
+            "label": "Microtia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011245",
+            "label": "Abnormality of superior crus of antihelix"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000365",
+            "label": "Hearing impairment"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001270",
+            "label": "Motor delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002342",
+            "label": "Moderate intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001256",
+            "label": "Mild intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0010864",
+            "label": "Severe intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000729",
+            "label": "Autistic behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000733",
+            "label": "Motor stereotypy"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000718",
+            "label": "Aggressive behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002591",
+            "label": "Polyphagia"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "xiVPF8wuTrrBC5IMJVOalvqO",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620910",
+              "label": "Otofacial neurodevelopmental syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "F5a:II.3",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1456CtoT_ZSCAN10_NM_032805v3",
+                    "geneContext": {
+                      "valueId": "HGNC:12997",
+                      "symbol": "ZSCAN10"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_032805.3:c.1456C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000016.10:g.3089978G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_116194.2:p.(Gln486Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr16",
+                      "pos": 3089978,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/ZSCAN10/PMID_38386308_F5b_II_1.json",
+      "sha256": "7a5c1f2b3723f2c89323436a078bdbf31945739f3febc9adac79075394851a7d",
+      "case_id": "TC_23f9d0fe0ad61c5b",
+      "selected_record": false,
+      "subject": {
+        "id": "F5b:II.1",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P10Y3M"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620910",
+            "label": "Otofacial neurodevelopmental syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000286",
+            "label": "Epicanthus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000494",
+            "label": "Downslanted palpebral fissures"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000431",
+            "label": "Wide nasal bridge"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000324",
+            "label": "Facial asymmetry"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000297",
+            "label": "Facial hypotonia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000505",
+            "label": "Visual impairment"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000369",
+            "label": "Low-set ears"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0008551",
+            "label": "Microtia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000407",
+            "label": "Sensorineural hearing impairment"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001270",
+            "label": "Motor delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002342",
+            "label": "Moderate intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001256",
+            "label": "Mild intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0010864",
+            "label": "Severe intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000729",
+            "label": "Autistic behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000733",
+            "label": "Motor stereotypy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000718",
+            "label": "Aggressive behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002591",
+            "label": "Polyphagia"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "Lf6dCdhzw9qjzcfSDv1Nz5Oc",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620910",
+              "label": "Otofacial neurodevelopmental syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "F5b:II.1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1456CtoT_ZSCAN10_NM_032805v3",
+                    "geneContext": {
+                      "valueId": "HGNC:12997",
+                      "symbol": "ZSCAN10"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_032805.3:c.1456C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000016.10:g.3089978G>A"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_116194.2:p.(Gln486Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr16",
+                      "pos": 3089978,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/ZSCAN10/PMID_38386308_F1_II_6.json",
+      "sha256": "804b7c06ad885d808feab5e10b214d3a7ce011ecf305f0ea81f1d8247cdfb28b",
+      "case_id": "TC_05cf29edaf07b486",
+      "selected_record": true,
+      "subject": {
+        "id": "F1:II.6",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P9Y6M"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620910",
+            "label": "Otofacial neurodevelopmental syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000054",
+            "label": "Micropenis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000286",
+            "label": "Epicanthus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000494",
+            "label": "Downslanted palpebral fissures"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000431",
+            "label": "Wide nasal bridge"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000324",
+            "label": "Facial asymmetry"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000297",
+            "label": "Facial hypotonia"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000505",
+            "label": "Visual impairment"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000396",
+            "label": "Overfolded helix"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011236",
+            "label": "Angulated antihelix"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011245",
+            "label": "Abnormality of superior crus of antihelix"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0011380",
+            "label": "Abnormal semicircular canal morphology"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000365",
+            "label": "Hearing impairment"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001270",
+            "label": "Motor delay"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0002342",
+            "label": "Moderate intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001256",
+            "label": "Mild intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0010864",
+            "label": "Severe intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000729",
+            "label": "Autistic behavior"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000733",
+            "label": "Motor stereotypy"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000718",
+            "label": "Aggressive behavior"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002591",
+            "label": "Polyphagia"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "tVP4NUes4H7GGxVT3J6bxQuS",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620910",
+              "label": "Otofacial neurodevelopmental syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "F1:II.6",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1112del_ZSCAN10_NM_032805v3",
+                    "geneContext": {
+                      "valueId": "HGNC:12997",
+                      "symbol": "ZSCAN10"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_032805.3:c.1112del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000016.10:g.3090324del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_116194.2:p.(Pro371ArgfsTer49)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr16",
+                      "pos": 3090321,
+                      "ref": "CG",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

@@ -1,0 +1,949 @@
+{
+  "schema_version": 1,
+  "pmid": "38950322",
+  "title": "CIAO1 loss of function causes a neuromuscular disorder with compromise of nucleocytoplasmic Fe-S enzymes",
+  "reviewer": {
+    "id": "Codex-reader-4",
+    "reviewed_at_utc": "2026-10-24T13:36:32.291204+00:00",
+    "method": "Full available article text read in model context; packet comparison and visual/supplement coverage are recorded separately."
+  },
+  "audit": {
+    "timing": "post_inference",
+    "preregistered": false,
+    "scope": "source_correspondence_not_clinical_validation",
+    "clinical_truth_established": false,
+    "ranking_outcomes_seen": true,
+    "outcome_exposure": "aggregate_only",
+    "exposure_note": "Inherited context contained aggregate benchmark performance. No individual ranking outputs are consulted in this source review. Not blinded."
+  },
+  "bindings": {
+    "inventory_sha256": "f308b360ca21851b4c715048688d283152b2b1aaeb981dd0e891f2611c8c8fb5",
+    "context_sha256": "e10078da37cc2e7d0d511104f7566299eee7afa2adfc61aa14b412a892a84fe4",
+    "case_manifest_sha256": "816f87efa1fc2bfcf8f0b6f3c9326cbb01f62c601f8ecaae4208d02086bd45fc",
+    "packet_archive_sha256": "d0c70005bb09b87035087516252b6b539fbc0415be7c664b73c9cde7eedf205a",
+    "protocol_sha256": "ea4f8ee79f2b2c9eff169d6378d94e15eff56f0dcdd5ae9405f406b098953eaf"
+  },
+  "artifacts": [
+    {
+      "id": "main-xml",
+      "pmid": "38950322",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38950322/main.xml",
+      "sha256": "ac40aceed16a14c96438c82c43ec2a65b045effa5f191802c55fcd5dd808daf3",
+      "kind": "xml",
+      "description": "Complete PMC article XML; identity and component inventory"
+    },
+    {
+      "id": "main-text",
+      "pmid": "38950322",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38950322/main.complete.txt",
+      "sha256": "3e66ff3b4063727b2460e31b6f2b0c75e6fd3877481b32d846e3d8ab59b1a1d3",
+      "kind": "text",
+      "description": "Complete extraction of article text including reference list and declarations"
+    },
+    {
+      "id": "retrieval",
+      "pmid": "38950322",
+      "path": "Users/adriamasnou/mva-hackathon/dossier/sweeps/evidence-2026-10-24/source-audit/papers/38950322/availability.json",
+      "sha256": "b8744a4b8932ad6499b4bc20910a725a62698af6aba63fa5fd4b1b42875415d6",
+      "kind": "metadata",
+      "description": "Primary XML retrieval receipt and article identifiers"
+    },
+    {
+      "id": "table1-image",
+      "pmid": "38950322",
+      "path": "Volumes/easystore/MVA-public-source-audit-20261024/papers/38950322/cloud/PMC11178529.1/jci-134-179559-g193.jpg",
+      "sha256": "b0de7866edd8a73c4cbdade0fc6cb4eb61188d724e384a729a442b2ba610a98a",
+      "kind": "image",
+      "description": "Complete primary Table1 allrows/4patientcolumns/footnote read visually"
+    }
+  ],
+  "identity": {
+    "status": "verified",
+    "title": "CIAO1 loss of function causes a neuromuscular disorder with compromise of nucleocytoplasmic Fe-S enzymes",
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "front/article-meta/article-id pmid and article-title"
+      },
+      {
+        "source_id": "retrieval",
+        "locator": "article_ids"
+      }
+    ],
+    "note": "PMID, title and DOI compared across retrieved article XML and its retrieval record."
+  },
+  "component_inventory": {
+    "status": "complete",
+    "expected_counts": {
+      "main_text": 1,
+      "figure": 7,
+      "table": 1,
+      "supplement": 2
+    },
+    "evidence": [
+      {
+        "source_id": "main-xml",
+        "locator": "all fig, table-wrap and supplementary-material elements"
+      }
+    ],
+    "note": "Inventory of the held full-article XML version. Separate linked material not inventoried in XML must be added if encountered; no whole-shelf claim."
+  },
+  "components": [
+    {
+      "id": "main_text",
+      "kind": "main_text",
+      "status": "full",
+      "required_modes": [
+        "text"
+      ],
+      "unit_type": "lines",
+      "unit_count": 470,
+      "extent_source_id": "main-text",
+      "extent_evidence": [
+        {
+          "source_id": "main-xml",
+          "locator": "complete article XML"
+        },
+        {
+          "source_id": "main-text",
+          "locator": "lines 1–470"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 470,
+          "mode": "text",
+          "source_id": "main-text",
+          "locator": "complete extraction lines 1–470"
+        }
+      ],
+      "note": "Entire article including all46references, methods,7figurecaptions and endmatter read. Image-only Table1 separately read visually in full. Four unrelatedcases; detailed cellularrescue forP1/P2, mappedcaseP4."
+    },
+    {
+      "id": "figure:F1",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F1]; Figure 1Identification of biallelic CIAO1 variants in 4 independent patients with a neuromuscular condition of undefined etiology.(A) Proposed model for the biogenesis of ISCs in mammalian cells. De novo assembly of ISCs occurs upon the main scaffold protein ISCU by the coordinated action of a multiprotein complex, which consists of the cysteine desulfurase NFS1 and the accessory protein ISD11. Th"
+    },
+    {
+      "id": "figure:F2",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F2]; Figure 2Muscle MRI, histopathology, and ultrastructural findings.(A) Anatomical reference. MRI scan positions are indicated with red lines on a human reference image. Figure 2A was created with BioRender.com. (B) Normal muscle MRI cross-sectional images showing anatomy of pelvic (top), thigh (middle), and lower leg (bottom) muscles. AL, adductor longus; AM, adductor magnus; BF, biceps femoris; EDL"
+    },
+    {
+      "id": "figure:F3",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F3]; Figure 3Brain MRI of P2 demonstrating evolving increased iron deposition in deep nuclei of the brain.Brain MRI of P2 performed at age 8 years 6 months shows normal anatomy and susceptibility signals. Brain MRI acquired at age 14 years 6 months shows increased, atypical-for-age susceptibility of bilateral globus pallidus (interna and externa with laminar sparing, upper row), substantia nigra (middl"
+    },
+    {
+      "id": "figure:F4",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F4]; Figure 4The CIAO1 variants identified in P1 cause protein instability and compromised biogenesis of multiple Fe-S clients of the CIA complex.(A and B) Levels of the CIA components and Fe-S proteins in P1- and parent-derived fibroblasts (“Fath” and “Moth” correspond to father and mother of P1, respectively). Levels of FAM96A are also shown, along with the cytosolic iron and ISC chaperone BOLA2 (46)"
+    },
+    {
+      "id": "figure:F5",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F5]; Figure 5Lentivirus-mediated transduction of V5-tagged WT CIAO1 in patient-derived cells reversed all the abnormalities caused by impaired function of the CIA machinery.(A) IBs to detect CIAO1, MMS19, FAM96B, FAM96A, and recipient Fe-S proteins (DPYD, CDKAL1, POLD1, RTEL1, ERCC2, and ELP3) on lysates from P1-derived (CIAO1–/–), parent-derived (CIAO1+/–), and control-derived (CTRL, CIAO1+/+) fibrobl"
+    },
+    {
+      "id": "figure:F6",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F6]; Figure 6A second cell line derived from P2 demonstrates abnormal characteristics similar to those seen in P1 cells, and these defects in P2-derived cells are entirely reversed when the WT CIAO1 gene is reintroduced.(A)SDS IBs were used to detect CIA components, FAM96A, and Fe-S recipient proteins (ERCC2, ELP3, POLD1, DPYD, and RTEL1) in fibroblasts from P1, his parents, a control cell line with 2 "
+    },
+    {
+      "id": "figure:F7",
+      "kind": "figure",
+      "status": "unread",
+      "required_modes": [
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor fig[@id=F7]; Figure 7Mitochondrial dysfunction and compromised biogenesis of Fe-S recipients of the CIA complex in muscle from P1.(A) SDS IBs to detect the CIA components (CIAO1, MMS19, FAM96B) and FAM96A in P1 and control (CIAO1+/+) muscle tissue specimens. Levels of cytoplasmic and nuclear Fe-S proteins (RTEL1, POLD1, DPYD, ERCC2), of the IRPs IRP1 and IRP2, and of the IRP-regulated target TFRC were also ass"
+    },
+    {
+      "id": "table:T1",
+      "kind": "table",
+      "status": "partial",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": 1,
+      "extent_source_id": "table1-image",
+      "extent_evidence": [
+        {
+          "source_id": "table1-image",
+          "locator": "completeTable1"
+        }
+      ],
+      "coverage": [
+        {
+          "start": 1,
+          "end": 1,
+          "mode": "pixels",
+          "source_id": "table1-image",
+          "locator": "alltablecells andfootnote visually read; image-only source has no XML celltext"
+        }
+      ],
+      "note": "All tablecell text read directly from original pixels; separate text/data artifact remains pending under strict tablemodalityschema."
+    },
+    {
+      "id": "supplement:SD1",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=SD1]; Supplemental data"
+    },
+    {
+      "id": "supplement:SD2",
+      "kind": "supplement",
+      "status": "unread",
+      "required_modes": [
+        "text",
+        "pixels"
+      ],
+      "unit_type": "items",
+      "unit_count": null,
+      "extent_source_id": null,
+      "extent_evidence": [],
+      "coverage": [],
+      "note": "Not yet inspected. XML anchor supplementary-material[@id=SD2]; Supporting data values"
+    }
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/CIAO1/PMID_38950322_P4.json",
+      "packet_sha256": "5fb61e05cba89129b2ff3c0e70e41afc9a5a50feedbe5d5d9a4ae7da3c10342d",
+      "case_id": "TC_b3acd57e21ee121d",
+      "role": "selected",
+      "packet_subject_id": "P4",
+      "review_status": "adjudicated",
+      "category": "contradicted",
+      "limitations": [
+        "Mainfigures andsupplements unread; Table1allpixels/textread. No individualranksseen."
+      ],
+      "patient_identity": {
+        "status": "supported",
+        "statement": "ExactP4, whiteSerbianfemale, onset17years, lastassessment59years. Distinct from mechanisticcell-line donorsP1/P2.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Recruitment/samplecollection; Table1"
+          },
+          {
+            "source_id": "table1-image",
+            "locator": "P4demographicrows"
+          }
+        ],
+        "limitations": []
+      },
+      "genotype": {
+        "status": "qualified",
+        "statement": "P4 reported compound heterozygousAsp171Gly/His251Leu. Packet encodesc.512A>G andc.752A>T.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic findings"
+          }
+        ],
+        "limitations": [
+          "Table1 imageprintsc.512A>C besideAsp171Gly, discordant withpacketA>G andaminoacididentity; exactDNAletter requires supportingsequence clarification."
+        ]
+      },
+      "segregation": {
+        "status": "unresolved",
+        "statement": "Maintext explicitly statessegregation testing availableP1/P2; P4parental segregation is not demonstrated.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic findings"
+          }
+        ],
+        "limitations": [
+          "No parentalgenotypes forP4 provided in maintext; supplement pending."
+        ]
+      },
+      "phase": {
+        "status": "qualified",
+        "statement": "Authors report compoundheterozygosity; independentphase evidence forP4 not shown.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Genetic findings"
+          }
+        ],
+        "limitations": [
+          "Cannot elevate reported trans configuration to directly established parental phase."
+        ]
+      },
+      "causal_confidence": {
+        "status": "qualified",
+        "statement": "Four-unrelatedcase association, variantsunstable/poorpartnerbinding inengineeredHeLacells; patientcellrescue inP1/P2 and P1muscle evidence supportCIAO1 mechanism.",
+        "evidence": [
+          {
+            "source_id": "main-text",
+            "locator": "Functionalresults andDiscussion"
+          }
+        ],
+        "limitations": [
+          "P4not donor for demonstratedfibroblastrescue or musclebiochemicalassays. P4specifichumanphase and fullclinicalcausality remainlessdirect.",
+          "WTlentiviralcellularrescue is not therapeutic efficacy inpatients or proofeveryphenotype iscaused bythesealleles."
+        ]
+      },
+      "phenotype_completeness": {
+        "status": "qualified",
+        "statement": "All21packetfeatures checked; constipationpolarity discrepancy and unsupportednegativeassertions retained. Sourcealso reportsdiastolicdysfunction/EF60% andhyperlipidemia.",
+        "evidence": [
+          {
+            "source_id": "table1-image",
+            "locator": "Table1P4"
+          }
+        ],
+        "limitations": [
+          "Packetdoesnotfullyrepresentlongitudinalclinicalcourse; formalnegativefindingstestingnotrecorded."
+        ]
+      },
+      "alleles": [
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/0/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c512AtoG_CIAO1_NM_004804v3",
+            "geneContext": {
+              "valueId": "HGNC:14280",
+              "symbol": "CIAO1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_004804.3:c.512A>G"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.96268479A>G"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_004795.1:p.(Asp171Gly)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 96268479,
+              "ref": "A",
+              "alt": "G"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "7817aefb96ae76aff0ba14b7649e447db58e2fe3bfbe0f9e05801c0327135657",
+          "assessment": {
+            "status": "qualified",
+            "statement": "Asp171Gly identity matches but Table1 prints c.512A>C versuspacketc.512A>G.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1P4variantrow"
+              }
+            ],
+            "limitations": [
+              "Source DNA/aminoacid nomenclature discordance forAsp171Gly must remainopen."
+            ]
+          }
+        },
+        {
+          "pointer": "/interpretations/0/diagnosis/genomicInterpretations/1/variantInterpretation/variationDescriptor",
+          "snapshot": {
+            "id": "c752AtoT_CIAO1_NM_004804v3",
+            "geneContext": {
+              "valueId": "HGNC:14280",
+              "symbol": "CIAO1"
+            },
+            "expressions": [
+              {
+                "syntax": "hgvs.c",
+                "value": "NM_004804.3:c.752A>T"
+              },
+              {
+                "syntax": "hgvs.g",
+                "value": "NC_000002.12:g.96269328A>T"
+              },
+              {
+                "syntax": "hgvs.p",
+                "value": "NP_004795.1:p.(His251Leu)"
+              }
+            ],
+            "vcfRecord": {
+              "genomeAssembly": "hg38",
+              "chrom": "chr2",
+              "pos": 96269328,
+              "ref": "A",
+              "alt": "T"
+            },
+            "moleculeContext": "genomic",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          },
+          "snapshot_sha256": "89588c1c9f5c52eb354138fca25e65a1a35bd27162c5e315fad1aa048b12d757",
+          "assessment": {
+            "status": "qualified",
+            "statement": "His251Leu/c.752A>T matchesTable1.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1P4variantrow"
+              }
+            ],
+            "limitations": [
+              "GRCh38 genomic coordinate not independently normalized; P4phaseunverified."
+            ]
+          }
+        }
+      ],
+      "phenotypes": [
+        {
+          "pointer": "/phenotypicFeatures/0",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000347",
+              "label": "Micrognathia"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "be809d419558367f5a8d26c6e7b96d9d348e8895370525fa5dc014af31b8cced",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P4 explicit absence of Micrognathia is not recorded; termappears for anothercase or is not listed forP4.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": [
+              "Unlisted findings in an Other row are not negative clinical examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/1",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000218",
+              "label": "High palate"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3a127a8dbb9cbee1edd518029e0ba016d63f5c393adf2c3598edc1e619b74b4f",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P4 explicit absence of High palate is not recorded; termappears for anothercase or is not listed forP4.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": [
+              "Unlisted findings in an Other row are not negative clinical examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/2",
+          "snapshot": {
+            "type": {
+              "id": "HP:0030319",
+              "label": "Weakness of facial musculature"
+            }
+          },
+          "snapshot_sha256": "50d5a7764d18f1fcf2f035b83e5dcb9e80ff3b15aa6d6bdda0cf607a1f8a14e6",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Weakness of facial musculature. P4Table1cell supportsstatement.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/3",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001328",
+              "label": "Specific learning disability"
+            }
+          },
+          "snapshot_sha256": "0ee36727c21b466579230f1d8d22ee9afefad63b988282dfb90435d48d75fdf7",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Specific learning disability. P4Table1cell supportsstatement.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/4",
+          "snapshot": {
+            "type": {
+              "id": "HP:0007018",
+              "label": "Attention deficit hyperactivity disorder"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "3ee80e741babb6bf9a9a71d910c03ae19e65647682663b6b6c12c3e2891b4cba",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P4neurobehavioralcomorbidities rowNo supports absence ofreportedADHD; noformalADHDassessment specified.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": [
+              "Broadnegative row rather than diagnostic-testexclusion."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/5",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003388",
+              "label": "Easy fatigability"
+            }
+          },
+          "snapshot_sha256": "50d97d1478704e1f13055951cbbf75062908ddd817d4e375d71cc61283b0500a",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Easy fatigability. P4Table1cell supportsstatement.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/6",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003236",
+              "label": "Elevated circulating creatine kinase concentration"
+            }
+          },
+          "snapshot_sha256": "3533a9736e36165b7ecbb618942d0085d003799254c4d353520f752a6df367b2",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Elevated circulating creatine kinase concentration. P4Table1cell supportsstatement.CKnormalto209U/L,referencerange0–150.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/7",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002093",
+              "label": "Respiratory insufficiency"
+            }
+          },
+          "snapshot_sha256": "bf2a867bc92f3550b058674a09fe550dc86903e6364949eb027f66d5599ae021",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Respiratory insufficiency. P4Table1cell supportsstatement.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/8",
+          "snapshot": {
+            "type": {
+              "id": "HP:0032341",
+              "label": "Reduced forced vital capacity"
+            }
+          },
+          "snapshot_sha256": "a2f6df863006f81996bcfb201973298272b229e1e8b52e4b0f21c1bce16eef91",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Reduced forced vital capacity. P4Table1cell supportsstatement.FVC60%predictedat59years.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/9",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002020",
+              "label": "Gastroesophageal reflux"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "4079b47a877e8de26b6388a10c28d9867f51e29ffadcb19d68cb70544944e0f9",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P4 explicit absence of Gastroesophageal reflux is not recorded; termappears for anothercase or is not listed forP4.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": [
+              "Unlisted findings in an Other row are not negative clinical examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/10",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002019",
+              "label": "Constipation"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "32c743816de94ceb709f5d808e277998caff2f2c2ae4ccb6715547c487fdb28e",
+          "assessment": {
+            "status": "contradicted",
+            "statement": "Packet excludesconstipation, whileP4Table1GIcomplaints andconstipation row isYes.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/11",
+          "snapshot": {
+            "type": {
+              "id": "HP:0033163",
+              "label": "Small intestinal bacterial overgrowth"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "c910130ae6dc4079a5b3b2599475bfc9e04643a8ad75774a36dd2e500cbe369d",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P4 explicit absence of Small intestinal bacterial overgrowth is not recorded; termappears for anothercase or is not listed forP4.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": [
+              "Unlisted findings in an Other row are not negative clinical examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/12",
+          "snapshot": {
+            "type": {
+              "id": "HP:0025502",
+              "label": "Overweight"
+            }
+          },
+          "snapshot_sha256": "cf9b74fc70d4578af62d24de293f8a7819dc1921ffbe70c50d3a14622d7d7370",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Overweight. P4Table1cell supportsstatement.BMI26.7.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/13",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001007",
+              "label": "Hirsutism"
+            }
+          },
+          "snapshot_sha256": "35973aadbc87d472bba314ce9e34f9a46288514e2ccae872a85bff6fa4a5a720",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Hirsutism. P4Table1cell supportsstatement.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/14",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001771",
+              "label": "Achilles tendon contracture"
+            }
+          },
+          "snapshot_sha256": "b1a4430a3d8f91fdd6e4369a056362ed8fc3aaff1f4cbd7f3d916bb4ad2b63fb",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Achilles tendon contracture. P4Table1cell supportsstatement.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/15",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003707",
+              "label": "Calf muscle pseudohypertrophy"
+            }
+          },
+          "snapshot_sha256": "263c5271f592d9472a185eaf4c9312720bc18923cf9c28d14195ef2fb556ef33",
+          "assessment": {
+            "status": "qualified",
+            "statement": "P4calfhypertrophyTable1 and cohortpseudohypertrophy narrative supportmapping; exactpseudohypertrophy mechanism not separately quantifiedforP4.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": [
+              "Clinicalenlargement, not P4specificmusclecomposition measurement."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/16",
+          "snapshot": {
+            "type": {
+              "id": "HP:0000939",
+              "label": "Osteoporosis"
+            },
+            "excluded": true
+          },
+          "snapshot_sha256": "97a9b4816b0614e610f879ea4b849dd84246da09ff77ae8c69ddd9a6c0140473",
+          "assessment": {
+            "status": "unresolved",
+            "statement": "P4 explicit absence of Osteoporosis is not recorded; termappears for anothercase or is not listed forP4.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": [
+              "Unlisted findings in an Other row are not negative clinical examinations."
+            ]
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/17",
+          "snapshot": {
+            "type": {
+              "id": "HP:0002460",
+              "label": "Distal muscle weakness"
+            }
+          },
+          "snapshot_sha256": "cf5a7c61045aa6081228ae1c9bd0aafb72d3dbbf0231d93e5bc116c8ca3f619d",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Distal muscle weakness. P4Table1cell supportsstatement.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/18",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003327",
+              "label": "Axial muscle weakness"
+            }
+          },
+          "snapshot_sha256": "76cf0b894e3113f5220833c54fa64e81b7ec78b7943b82cfd3c7a897a42bf042",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Axial muscle weakness. P4Table1cell supportsstatement.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/19",
+          "snapshot": {
+            "type": {
+              "id": "HP:0003701",
+              "label": "Proximal muscle weakness"
+            }
+          },
+          "snapshot_sha256": "aa3f7d1740de879278b35eb7a5e9470ebbc4322cd4c2738f7af5c08100378608",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Proximal muscle weakness. P4Table1cell supportsstatement.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        },
+        {
+          "pointer": "/phenotypicFeatures/20",
+          "snapshot": {
+            "type": {
+              "id": "HP:0001382",
+              "label": "Joint hypermobility"
+            }
+          },
+          "snapshot_sha256": "6212f74029c9ba7cd995c7bf712370446d8eda7b0efa8ecc7a4f16450eefda14",
+          "assessment": {
+            "status": "supported",
+            "statement": "Present: Joint hypermobility. P4Table1cell supportsstatement.",
+            "evidence": [
+              {
+                "source_id": "table1-image",
+                "locator": "Table1 P4column correspondingrow"
+              }
+            ],
+            "limitations": []
+          }
+        }
+      ]
+    }
+  ],
+  "access_issues": [],
+  "limitations": [
+    "Post-inference source audit with prior aggregate-outcome exposure; not clinical validation.",
+    "Figure/table pixels and supplement statuses are separate from main-text reading.",
+    "Source Table1 P4c.512A>C/p.Asp171Gly nomenclature conflict retained, not silentlycorrected.",
+    "Main methods contain apparentuniterrors(500mgIPprotein,20mgBNPAGE,450mLgradient); not treated as an executablevalidatedprotocol.",
+    "No independent recreation oflaboratory assays; source audit not clinicalvalidation."
+  ]
+}

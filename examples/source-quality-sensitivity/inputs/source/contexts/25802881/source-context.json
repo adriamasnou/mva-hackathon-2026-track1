@@ -1,0 +1,150 @@
+{
+  "pmid": "25802881",
+  "source_titles": [
+    "A positive genotype-phenotype correlation in a large cohort of patients with Pseudohypoparathyroidism Type Ia and Pseudo-pseudohypoparathyroidism and 33 newly identified mutations in the GNAS gene."
+  ],
+  "selected_case_ids": [
+    "TC_faa3c5a0a7a775c9"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "GNAS"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/GNAS/PMID_25802881_P69.json",
+      "sha256": "088c5d8d6e63e3a847f863158f0264f1ae299d84f6310d0dcb837963a5743597",
+      "case_id": "TC_faa3c5a0a7a775c9",
+      "selected_record": true,
+      "subject": {
+        "id": "P69",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P17Y11M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:103580",
+            "label": "Pseudohypoparathyroidism Ia"
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0010049",
+            "label": "Short metacarpal"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001156",
+            "label": "Brachydactyly"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0034282",
+            "label": "Subcutaneous ossification"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0004363",
+            "label": "Abnormal circulating calcium concentration"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0002905",
+            "label": "Hyperphosphatemia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001513",
+            "label": "Obesity"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "AEJyoENRnhZChzOhcUdN2BbZ",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:103580",
+              "label": "Pseudohypoparathyroidism Ia"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "P69",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c754_756del_GNAS_NM_000516v7",
+                    "geneContext": {
+                      "valueId": "HGNC:4392",
+                      "symbol": "GNAS"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_000516.7:c.754_756del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000020.11:g.58909719_58909721del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_000507.1:p.(Ser252del)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr20",
+                      "pos": 58909711,
+                      "ref": "CCAG",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

@@ -1,0 +1,117 @@
+{
+  "pmid": "25007886",
+  "source_titles": [
+    "Biosynthetic and functional defects in newly identified SLC4A11 mutants and absence of COL8A2 mutations in Fuchs endothelial corneal dystrophy"
+  ],
+  "selected_case_ids": [
+    "TC_7a6cae71b0c8a3d1"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "SLC4A11"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/SLC4A11/PMID_25007886_Subject_1.json",
+      "sha256": "ab55a98c380fe068a9a1473be10364f3e4b4fae0c309bb74b0ed453bd59861ab",
+      "case_id": "TC_7a6cae71b0c8a3d1",
+      "selected_record": true,
+      "subject": {
+        "id": "Subject 1",
+        "sex": "UNKNOWN_SEX"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:613268",
+            "label": "Corneal dystrophy, Fuchs endothelial, 4"
+          },
+          "onset": {
+            "age": {
+              "iso8601duration": "P46Y"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0007663",
+            "label": "Reduced visual acuity"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0012038",
+            "label": "Corneal guttata"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001131",
+            "label": "Corneal dystrophy"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "kAzeczLeUNxJmSnIGMmCskIn",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:613268",
+              "label": "Corneal dystrophy, Fuchs endothelial, 4"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "Subject 1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c671GtoC_SLC4A11_NM_001174089v2",
+                    "geneContext": {
+                      "valueId": "HGNC:16438",
+                      "symbol": "SLC4A11"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001174089.2:c.671G>C"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000020.11:g.3233572C>G"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_001167560.1:p.(Trp224Ser)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr20",
+                      "pos": 3233572,
+                      "ref": "C",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

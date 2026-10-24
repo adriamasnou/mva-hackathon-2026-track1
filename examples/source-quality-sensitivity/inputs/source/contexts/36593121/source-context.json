@@ -1,0 +1,468 @@
+{
+  "pmid": "36593121",
+  "source_titles": [
+    "Biallelic mutations in CFAP54 cause male infertility with severe MMAF and NOA."
+  ],
+  "selected_case_ids": [
+    "TC_f5caea54cbd5f1b8",
+    "TC_eaa59d5faa62e8e4",
+    "TC_dc1efa90432b7438"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "CFAP54"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/CFAP54/PMID_36593121_YT558_II_1.json",
+      "sha256": "f7fadd11a5aba128301f8fe478bee020287dd51c22357cb27ff713b2269cc3f6",
+      "case_id": "TC_f5caea54cbd5f1b8",
+      "selected_record": true,
+      "subject": {
+        "id": "YT558 II-1",
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621124",
+            "label": "Spermatogenic failure 98"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0025708",
+              "label": "Early young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003251",
+            "label": "Male infertility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000798",
+            "label": "Oligozoospermia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:6000135",
+            "label": "Low semen volume"
+          },
+          "excluded": true
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "9zryE3NCBYj2b99McSsydp3Q",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621124",
+              "label": "Spermatogenic failure 98"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "YT558 II-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c878GtoA_CFAP54_NM_001306084v2",
+                    "geneContext": {
+                      "valueId": "HGNC:26456",
+                      "symbol": "CFAP54"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001306084.2:c.878G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000012.12:g.96519007G>A"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr12",
+                      "pos": 96519007,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "YT558 II-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c955CtoT_CFAP54_NM_001306084v2",
+                    "geneContext": {
+                      "valueId": "HGNC:26456",
+                      "symbol": "CFAP54"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001306084.2:c.955C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000012.12:g.96521869C>T"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr12",
+                      "pos": 96521869,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/CFAP54/PMID_36593121_YT698_II_1.json",
+      "sha256": "654819d61d4ca418aa62e2ae69c2c8d8b3b7be88bdb0c389df48d6b5b812cc86",
+      "case_id": "TC_eaa59d5faa62e8e4",
+      "selected_record": true,
+      "subject": {
+        "id": "YT698 II-1",
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621124",
+            "label": "Spermatogenic failure 98"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0025708",
+              "label": "Early young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003251",
+            "label": "Male infertility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000798",
+            "label": "Oligozoospermia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034011",
+            "label": "Reduced progressive sperm motility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012207",
+            "label": "Reduced sperm motility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:6000135",
+            "label": "Low semen volume"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0032558",
+            "label": "Absent sperm flagella"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032559",
+            "label": "Short sperm flagella"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032560",
+            "label": "Coiled sperm flagella"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034811",
+            "label": "Bent sperm flagella"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033393",
+            "label": "Irregularly shaped sperm tail"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "HCrQAQSVnJVV1QKoIZ5w33Bq",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621124",
+              "label": "Spermatogenic failure 98"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "YT698 II-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c4885CtoT_CFAP54_NM_001306084v2",
+                    "geneContext": {
+                      "valueId": "HGNC:26456",
+                      "symbol": "CFAP54"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001306084.2:c.4885C>T"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000012.12:g.96651600C>T"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr12",
+                      "pos": 96651600,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              },
+              {
+                "subjectOrBiosampleId": "YT698 II-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c937GtoA_CFAP54_NM_001306084v2",
+                    "geneContext": {
+                      "valueId": "HGNC:26456",
+                      "symbol": "CFAP54"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001306084.2:c.937G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000012.12:g.96519066G>A"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr12",
+                      "pos": 96519066,
+                      "ref": "G",
+                      "alt": "A"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000135",
+                      "label": "heterozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "member": "0.1.27/CFAP54/PMID_36593121_XH008_II_1.json",
+      "sha256": "8b2fb4233067c053ca8af8c1ff81bbed4377de186cc1bf21a090d0017fd96596",
+      "case_id": "TC_dc1efa90432b7438",
+      "selected_record": true,
+      "subject": {
+        "id": "XH008 II-1",
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:621124",
+            "label": "Spermatogenic failure 98"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0025708",
+              "label": "Early young adult onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0003251",
+            "label": "Male infertility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000798",
+            "label": "Oligozoospermia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0034011",
+            "label": "Reduced progressive sperm motility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0012207",
+            "label": "Reduced sperm motility"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:6000135",
+            "label": "Low semen volume"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032558",
+            "label": "Absent sperm flagella"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032559",
+            "label": "Short sperm flagella"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0032560",
+            "label": "Coiled sperm flagella"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0034811",
+            "label": "Bent sperm flagella"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0033393",
+            "label": "Irregularly shaped sperm tail"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "bnq7Es6XXxL3276XA8IsZBQZ",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:621124",
+              "label": "Spermatogenic failure 98"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "XH008 II-1",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c3317del_CFAP54_NM_001306084v2",
+                    "geneContext": {
+                      "valueId": "HGNC:26456",
+                      "symbol": "CFAP54"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_001306084.2:c.3317del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000012.12:g.96592594del"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr12",
+                      "pos": 96592590,
+                      "ref": "CT",
+                      "alt": "C"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

@@ -1,0 +1,187 @@
+{
+  "pmid": "23211637",
+  "source_titles": [
+    "Novel FGD1 mutation underlying Aarskog-Scott syndrome with myopathy and distal arthropathy"
+  ],
+  "selected_case_ids": [
+    "TC_744fed453c096001"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "FGD1"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/FGD1/PMID_23211637_index_case.json",
+      "sha256": "454c061bb82e7f6e3d0fbe042510a59c754e15425833c7b1b2dba06e5a6c8183",
+      "case_id": "TC_744fed453c096001",
+      "selected_record": true,
+      "subject": {
+        "id": "index case",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P16Y"
+          }
+        },
+        "sex": "MALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:305400",
+            "label": "Aarskog-Scott syndrome"
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0000316",
+            "label": "Hypertelorism"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000508",
+            "label": "Ptosis"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0004322",
+            "label": "Short stature"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001263",
+            "label": "Global developmental delay"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001249",
+            "label": "Intellectual disability"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000347",
+            "label": "Micrognathia"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000463",
+            "label": "Anteverted nares"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0003196",
+            "label": "Short nose"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410030",
+            "label": "Cleft lip"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000218",
+            "label": "High palate"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000175",
+            "label": "Cleft palate"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000028",
+            "label": "Cryptorchidism"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0000049",
+            "label": "Shawl scrotum"
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001840",
+            "label": "Metatarsus adductus"
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "EEqejnVMBebPJWmbFzNpa3i7",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:305400",
+              "label": "Aarskog-Scott syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "index case",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c1341GtoA_FGD1_NM_004463v3",
+                    "geneContext": {
+                      "valueId": "HGNC:3663",
+                      "symbol": "FGD1"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_004463.3:c.1341G>A"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000023.11:g.54465852C>T"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_004454.2:p.(Trp447Ter)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chrX",
+                      "pos": 54465852,
+                      "ref": "C",
+                      "alt": "T"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000134",
+                      "label": "hemizygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}

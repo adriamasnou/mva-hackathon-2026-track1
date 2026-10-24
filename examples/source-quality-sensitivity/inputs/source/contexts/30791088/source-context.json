@@ -1,0 +1,240 @@
+{
+  "pmid": "30791088",
+  "source_titles": [
+    "A homozygous frameshift variant in an alternatively spliced exon of DLG5 causes hydrocephalus and renal dysplasia"
+  ],
+  "selected_case_ids": [
+    "TC_0fb54f6c15768610"
+  ],
+  "alternate_case_ids": [],
+  "genes": [
+    "DLG5"
+  ],
+  "packets": [
+    {
+      "member": "0.1.27/DLG5/PMID_30791088_female.json",
+      "sha256": "38f40bcebbfc5ecda977fe8564bdd413708d2ae1748d260d1ec0bd5bb1465759",
+      "case_id": "TC_0fb54f6c15768610",
+      "selected_record": true,
+      "subject": {
+        "id": "female",
+        "timeAtLastEncounter": {
+          "age": {
+            "iso8601duration": "P2M"
+          }
+        },
+        "sex": "FEMALE"
+      },
+      "diseases": [
+        {
+          "term": {
+            "id": "OMIM:620703",
+            "label": "Yuksel-Vogel-Bauser syndrome"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        }
+      ],
+      "phenotypicFeatures": [
+        {
+          "type": {
+            "id": "HP:0001631",
+            "label": "Atrial septal defect"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001629",
+            "label": "Ventricular septal defect"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000003",
+            "label": "Multicystic kidney dysplasia"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000126",
+            "label": "Hydronephrosis"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0033132",
+            "label": "Renal cortical hyperechogenicity"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001334",
+            "label": "Communicating hydrocephalus"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0010953",
+            "label": "Noncommunicating hydrocephalus"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0410030",
+            "label": "Cleft lip"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0000175",
+            "label": "Cleft palate"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0003577",
+              "label": "Congenital onset"
+            }
+          }
+        },
+        {
+          "type": {
+            "id": "HP:0001169",
+            "label": "Broad palm"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001769",
+            "label": "Broad foot"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0009473",
+            "label": "Joint contracture of the hand"
+          },
+          "excluded": true
+        },
+        {
+          "type": {
+            "id": "HP:0001171",
+            "label": "Split hand"
+          },
+          "onset": {
+            "ontologyClass": {
+              "id": "HP:0034198",
+              "label": "Second trimester onset"
+            }
+          }
+        }
+      ],
+      "interpretations": [
+        {
+          "id": "COjG7kC8fTXmxo9FTeb0zdVD",
+          "progressStatus": "SOLVED",
+          "diagnosis": {
+            "disease": {
+              "id": "OMIM:620703",
+              "label": "Yuksel-Vogel-Bauser syndrome"
+            },
+            "genomicInterpretations": [
+              {
+                "subjectOrBiosampleId": "female",
+                "interpretationStatus": "CAUSATIVE",
+                "variantInterpretation": {
+                  "acmgPathogenicityClassification": "PATHOGENIC",
+                  "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+                  "variationDescriptor": {
+                    "id": "c3081_3106del_DLG5_NM_004747v4",
+                    "geneContext": {
+                      "valueId": "HGNC:2904",
+                      "symbol": "DLG5"
+                    },
+                    "expressions": [
+                      {
+                        "syntax": "hgvs.c",
+                        "value": "NM_004747.4:c.3081_3106del"
+                      },
+                      {
+                        "syntax": "hgvs.g",
+                        "value": "NC_000010.11:g.77821380_77821405del"
+                      },
+                      {
+                        "syntax": "hgvs.p",
+                        "value": "NP_004738.3:p.(Arg1027SerfsTer11)"
+                      }
+                    ],
+                    "vcfRecord": {
+                      "genomeAssembly": "hg38",
+                      "chrom": "chr10",
+                      "pos": 77821377,
+                      "ref": "GCTTCTGACTCGGAGCTAGTCTCCAGC",
+                      "alt": "G"
+                    },
+                    "moleculeContext": "genomic",
+                    "allelicState": {
+                      "id": "GENO:0000136",
+                      "label": "homozygous"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "existing_read_record": null,
+  "held_candidates": [],
+  "review_status": "NOT_ADJUDICATED"
+}
