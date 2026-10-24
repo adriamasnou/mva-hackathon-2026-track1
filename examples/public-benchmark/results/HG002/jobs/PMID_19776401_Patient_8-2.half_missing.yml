@@ -1,0 +1,92 @@
+phenopacket:
+  id: PMID_19776401_Patient_8-2.half_missing
+  subject:
+    id: PUBLIC_CASE
+    sex: MALE
+  phenotypicFeatures:
+  - type:
+      id: HP:0000246
+  - type:
+      id: HP:0000491
+  - type:
+      id: HP:0006335
+  - type:
+      id: HP:0032163
+  - type:
+      id: HP:0410327
+  - type:
+      id: HP:0410328
+  - type:
+      id: HP:0410330
+  htsFiles:
+  - uri: /Users/adriamasnou/mva-hackathon/pipeline/work/public-validation-20261023/inputs/PMID_19776401_Patient_8-2.vcf
+    htsFormat: VCF
+    genomeAssembly: hg38
+  metaData:
+    created: '2026-10-23T21:23:42.630373+00:00'
+    createdBy: adriamasnou-public-benchmark
+    resources:
+    - id: hp
+      name: human phenotype ontology
+      url: http://purl.obolibrary.org/obo/hp.owl
+      version: Exomiser-2512-bundled-HPO
+      namespacePrefix: HP
+      iriPrefix: http://purl.obolibrary.org/obo/HP_
+    phenopacketSchemaVersion: 1.0
+analysis:
+  analysisMode: PASS_ONLY
+  inheritanceModes:
+    AUTOSOMAL_DOMINANT: 0.1
+    AUTOSOMAL_RECESSIVE_COMP_HET: 2.0
+    AUTOSOMAL_RECESSIVE_HOM_ALT: 0.1
+    X_DOMINANT: 0.1
+    X_RECESSIVE_COMP_HET: 2.0
+    X_RECESSIVE_HOM_ALT: 0.1
+    MITOCHONDRIAL: 0.2
+  frequencySources:
+  - UK10K
+  - GNOMAD_E_AFR
+  - GNOMAD_E_AMR
+  - GNOMAD_E_EAS
+  - GNOMAD_E_NFE
+  - GNOMAD_E_SAS
+  - GNOMAD_G_AFR
+  - GNOMAD_G_AMR
+  - GNOMAD_G_EAS
+  - GNOMAD_G_NFE
+  - GNOMAD_G_SAS
+  pathogenicitySources:
+  - REVEL
+  - MVP
+  - ALPHA_MISSENSE
+  - SPLICE_AI
+  steps:
+  - failedVariantFilter: {}
+  - variantEffectFilter:
+      remove:
+      - FIVE_PRIME_UTR_EXON_VARIANT
+      - FIVE_PRIME_UTR_INTRON_VARIANT
+      - THREE_PRIME_UTR_EXON_VARIANT
+      - THREE_PRIME_UTR_INTRON_VARIANT
+      - NON_CODING_TRANSCRIPT_EXON_VARIANT
+      - UPSTREAM_GENE_VARIANT
+      - INTERGENIC_VARIANT
+      - REGULATORY_REGION_VARIANT
+      - CODING_TRANSCRIPT_INTRON_VARIANT
+      - NON_CODING_TRANSCRIPT_INTRON_VARIANT
+      - DOWNSTREAM_GENE_VARIANT
+  - frequencyFilter:
+      maxFrequency: 2.0
+  - pathogenicityFilter:
+      keepNonPathogenic: true
+  - inheritanceFilter: {}
+  - omimPrioritiser: {}
+  - hiPhivePrioritiser: {}
+outputOptions:
+  outputContributingVariantsOnly: false
+  numGenes: 0
+  outputDirectory: /Users/adriamasnou/mva-hackathon/pipeline/work/public-validation-cache300k-20261024/results
+  outputFileName: PMID_19776401_Patient_8-2.half_missing
+  outputFormats:
+  - JSON
+  - TSV_GENE

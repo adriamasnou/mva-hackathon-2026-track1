@@ -1,0 +1,20 @@
+{
+  "recorded_utc": "2026-10-23T22:55:07.231125+00:00",
+  "type": "Cache-only operational relaunch; not an initial pre-inference plan",
+  "reason": "The first two HG002 analyses took116.446s/105.701s, with repeated external database reads. jcmd reported ~1.93GiB heap used against12GiB limit. Increase bounded cache60000to300000; no allele/phenotype/filter/prioritiser changes.",
+  "prior_work": "/Users/adriamasnou/mva-hackathon/pipeline/work/public-validation-20261023",
+  "prior_manifest_sha256": "73df515657cc8bdb569b8a54ae634f9df3813aec12eb94ac7df378d5c88696d9",
+  "new_manifest_sha256": "52472cbc9fdb6fdc53365ce0dda6e79200d55f43454fdd73b0b2ec255766aee0",
+  "prior_properties_sha256": "981ee11989ce3db194c8703f16cd23e7cd170a3830f070429e5e08bc76b45f96",
+  "new_properties_sha256": "38523a0f4634c3dc001368b9517cdeff4ab929d8cec0017cb88db2ed9c540c3c",
+  "all_analysis_job_content_equal_except_output_directory": true,
+  "all_vcf_paths_and_hashes_unchanged": true,
+  "prior_execution_sha256": "8bf23531b4943ec4f8d343627e55d9d18ccccaecde02001710f7bb03c75fabc6",
+  "prior_status": "failed",
+  "prior_completed_output_hashes": {
+    "/Users/adriamasnou/mva-hackathon/pipeline/work/public-validation-20261023/results/PMID_36595822_nan.original.jsonl": "d7e9a0cdebf457a8c3f56e312a87a4c8006a2cf1a50297806c730d7f7b44f11e",
+    "/Users/adriamasnou/mva-hackathon/pipeline/work/public-validation-20261023/results/PMID_36595822_nan.half_missing.jsonl": "e570a2649fa236add8f19f3e0530e23f1308d4bc68499390e65ab74abe6d6237"
+  },
+  "result_selection": "Run all48jobs again, not just failures. Compare all completed first-attempt outputs, regardless of outcome. No case, source group, endpoint or analysis rule chosen using results.",
+  "score_inspection": "Parent inspected only runtime/progress and output membership for this benchmark before relaunch; prior FGFR2 results were viewed and remain a separate control."
+}

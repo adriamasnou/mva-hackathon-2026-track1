@@ -1,0 +1,13 @@
+{
+  "frozen_utc": "2026-10-23T21:41:18.243931+00:00",
+  "results_seen": false,
+  "case_selection_changed": false,
+  "job_yaml_changed": false,
+  "runtime_override": "exomiser.hg38.use-clinvar-white-list=false",
+  "scope": "All new twelve-case runs on both HG002/HG001, all four HPO arms. Historical reconstruction unchanged.",
+  "reason": "Remove the default ClinVar variant filter-bypass whitelist before evaluation.",
+  "primary_source": "https://github.com/exomiser/Exomiser/blob/15.1.0/exomiser-cli/src/main/resources/application.properties",
+  "remaining_leakage": "Disabling filter bypass does not remove ClinVar annotations, model training knowledge, phenotype-disease associations or prior knowledge of known cases. This is not a novel-gene benchmark.",
+  "previous_properties_sha256": "ba98ab159349282c9d346687029c6744ed065126fb80c7abc7bf350b5bb36134",
+  "properties_sha256": "981ee11989ce3db194c8703f16cd23e7cd170a3830f070429e5e08bc76b45f96"
+}

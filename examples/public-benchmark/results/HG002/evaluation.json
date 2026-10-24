@@ -1,0 +1,1825 @@
+{
+  "interpretation": "Semi-synthetic source-label recovery, not clinical diagnostic accuracy. One common autosomal background. PAX4 disputed truth and both X controls excluded from primary summary but retained below.",
+  "tie_policy": "Rank interval includes every exactly tied combined score; recovery uses worst tied rank.",
+  "primary_autosomal": {
+    "original": {
+      "denominator": 9,
+      "recovered": {
+        "1": 6,
+        "5": 7,
+        "10": 8
+      },
+      "not_scored": 0,
+      "failed_or_missing": 0
+    },
+    "half_missing": {
+      "denominator": 9,
+      "recovered": {
+        "1": 6,
+        "5": 7,
+        "10": 8
+      },
+      "not_scored": 0,
+      "failed_or_missing": 0
+    },
+    "swapped": {
+      "denominator": 9,
+      "recovered": {
+        "1": 3,
+        "5": 5,
+        "10": 6
+      },
+      "not_scored": 0,
+      "failed_or_missing": 0
+    },
+    "none": {
+      "denominator": 9,
+      "recovered": {
+        "1": 0,
+        "5": 0,
+        "10": 6
+      },
+      "not_scored": 0,
+      "failed_or_missing": 0
+    }
+  },
+  "all_case_results": [
+    {
+      "case_id": "PMID_36595822_nan",
+      "gene": "PAX4",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "original",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.5315268450088753,
+      "priority_score": 1.0,
+      "variant_score": 0.9623284339904785,
+      "output_sha256": "5a4841ba26c8983f649eddcb7d4fe8f1d94bb7aebd6ec7dbf89ba60f1dab16b1",
+      "top_five": [
+        {
+          "gene": "PAX4",
+          "score": 0.5315268450088753
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.40143395952736083
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.13413764381410068
+        },
+        {
+          "gene": "F11",
+          "score": 0.13366931712054927
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.1297468839184161
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_36595822_nan",
+      "gene": "PAX4",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "half_missing",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 2,
+      "rank_max": 2,
+      "scored_genes": 470,
+      "combined_score": 0.3063925156227943,
+      "priority_score": 0.906081845254833,
+      "variant_score": 0.9623284339904785,
+      "output_sha256": "30b400153662460c74801615a6b047ed26d7ae115a03b96035df30cfe392490c",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.4020091311089667
+        },
+        {
+          "gene": "PAX4",
+          "score": 0.3063925156227943
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.13433351853708447
+        },
+        {
+          "gene": "F11",
+          "score": 0.13362606760467372
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.1297470323824923
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_36595822_nan",
+      "gene": "PAX4",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "swapped",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 25,
+      "rank_max": 25,
+      "scored_genes": 470,
+      "combined_score": 0.011433986490741772,
+      "priority_score": 0.5434150397777557,
+      "variant_score": 0.9623284339904785,
+      "output_sha256": "04d92905fe22258019578ab300dd92380f486f8c175e78f6ca1148d1a799906f",
+      "top_five": [
+        {
+          "gene": "DNMT3A",
+          "score": 0.6569033635769937
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.3927580379561283
+        },
+        {
+          "gene": "F11",
+          "score": 0.14095947424435754
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12995491418395957
+        },
+        {
+          "gene": "NKX2-5",
+          "score": 0.10255830360078515
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_36595822_nan",
+      "gene": "PAX4",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "none",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 21,
+      "rank_max": 21,
+      "scored_genes": 470,
+      "combined_score": 0.48116421699523926,
+      "priority_score": null,
+      "variant_score": 0.9623284339904785,
+      "output_sha256": "b97d5614d2f7a98db6bbfc98bec1fa53ee5c3a6ea3342aae7c9be7c975843686",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CTAGE15",
+          "score": 0.5
+        },
+        {
+          "gene": "GOLGA8N",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        },
+        {
+          "gene": "LILRB3",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_27753196_index_patient",
+      "gene": "MTOR",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.802159645933748,
+      "priority_score": 0.7746793277253087,
+      "variant_score": 0.9742000102996826,
+      "output_sha256": "543dd4fe4c57fd0facfbf076469fe433f7cc2aeb11f708d8eb332895034053cb",
+      "top_five": [
+        {
+          "gene": "MTOR",
+          "score": 0.802159645933748
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.39272208830034666
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.3108638741199755
+        },
+        {
+          "gene": "F11",
+          "score": 0.2641773470511833
+        },
+        {
+          "gene": "MSH3",
+          "score": 0.18115956396851132
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_27753196_index_patient",
+      "gene": "MTOR",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.8273561523283391,
+      "priority_score": 0.7913218213203399,
+      "variant_score": 0.9742000102996826,
+      "output_sha256": "2c65c5fd6221a45768537e58fcc174857f9a6b0704e5b2000c64b2d8aac42a07",
+      "top_five": [
+        {
+          "gene": "MTOR",
+          "score": 0.8273561523283391
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.5125956601453524
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.39272516818136655
+        },
+        {
+          "gene": "F11",
+          "score": 0.13354673594631425
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12975286420929646
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_27753196_index_patient",
+      "gene": "MTOR",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.6019430836028598,
+      "priority_score": 0.6764834725036155,
+      "variant_score": 0.9742000102996826,
+      "output_sha256": "380f1d185b9b6b54e6b379ad007ce7a7e4de4dc8e13f3552e295c504bfe7bf41",
+      "top_five": [
+        {
+          "gene": "MTOR",
+          "score": 0.6019430836028598
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.5659747720758886
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.39899120459712095
+        },
+        {
+          "gene": "F11",
+          "score": 0.16237142753219747
+        },
+        {
+          "gene": "TBR1",
+          "score": 0.15185534848091606
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_27753196_index_patient",
+      "gene": "MTOR",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 19,
+      "rank_max": 19,
+      "scored_genes": 470,
+      "combined_score": 0.4871000051498413,
+      "priority_score": null,
+      "variant_score": 0.9742000102996826,
+      "output_sha256": "9768c63428ce8db0527628c232c3527f863f8cb508e58dee18d248cf25741076",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CTAGE15",
+          "score": 0.5
+        },
+        {
+          "gene": "GOLGA8N",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        },
+        {
+          "gene": "LILRB3",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_23440193_11_y_old_boy",
+      "gene": "KCNJ2",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.9822234291480191,
+      "priority_score": 0.9404967001206455,
+      "variant_score": 0.998199999332428,
+      "output_sha256": "8ea24a38463693dc22b5259a18947ca1e77071fb2601c607167fcdabe5ff42d3",
+      "top_five": [
+        {
+          "gene": "KCNJ2",
+          "score": 0.9822234291480191
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.39288573374775687
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.2580848999999364
+        },
+        {
+          "gene": "F11",
+          "score": 0.1320914367918774
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.1297450430377817
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_23440193_11_y_old_boy",
+      "gene": "KCNJ2",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.9718445039623229,
+      "priority_score": 0.8936543922870045,
+      "variant_score": 0.998199999332428,
+      "output_sha256": "f2982eae0051acf036d5ec019146c13d6ce79b3ca736783723c9453be3ff42dc",
+      "top_five": [
+        {
+          "gene": "KCNJ2",
+          "score": 0.9718445039623229
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.39287632181290444
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.32079241720690266
+        },
+        {
+          "gene": "F11",
+          "score": 0.13209211022506884
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12976304803111233
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_23440193_11_y_old_boy",
+      "gene": "KCNJ2",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.6221424102316309,
+      "priority_score": 0.5907072528373174,
+      "variant_score": 0.998199999332428,
+      "output_sha256": "6f5327d6ad4a9ce707396e89fbd622ec291b49e8a91cf992eff0304ce2c2fc25",
+      "top_five": [
+        {
+          "gene": "KCNJ2",
+          "score": 0.6221424102316309
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.3925467526932578
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.1333323167855377
+        },
+        {
+          "gene": "F11",
+          "score": 0.13207163089702678
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12974444018200898
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_23440193_11_y_old_boy",
+      "gene": "KCNJ2",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 10,
+      "rank_max": 10,
+      "scored_genes": 470,
+      "combined_score": 0.499099999666214,
+      "priority_score": null,
+      "variant_score": 0.998199999332428,
+      "output_sha256": "d74a0a28e5d44fc8862b7457d3ec37886f35e33b88bc7993c3faf08916f6e037",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CTAGE15",
+          "score": 0.5
+        },
+        {
+          "gene": "GOLGA8N",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        },
+        {
+          "gene": "LILRB3",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_31239556_individual_32",
+      "gene": "CTCF",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.8595185743381969,
+      "priority_score": 0.8657935936521579,
+      "variant_score": 0.9991016983985901,
+      "output_sha256": "d2ff6e5adfe689f1dc417b5a48942be179e662650256551b95f5be4186227997",
+      "top_five": [
+        {
+          "gene": "CTCF",
+          "score": 0.8595185743381969
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.5659747720758886
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.39899120459712095
+        },
+        {
+          "gene": "F11",
+          "score": 0.16237142753219747
+        },
+        {
+          "gene": "TBR1",
+          "score": 0.15185534848091606
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_31239556_individual_32",
+      "gene": "CTCF",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.9382046569857727,
+      "priority_score": 0.956279733579638,
+      "variant_score": 0.9991016983985901,
+      "output_sha256": "52abbfeb98077b12fb0ebbc115eb88f27baae8637a3c17ce27ca4b26e97f684b",
+      "top_five": [
+        {
+          "gene": "CTCF",
+          "score": 0.9382046569857727
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.8275121922059337
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.7591838669746535
+        },
+        {
+          "gene": "F11",
+          "score": 0.33310364139518317
+        },
+        {
+          "gene": "ARID1A",
+          "score": 0.26620229553074143
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_31239556_individual_32",
+      "gene": "CTCF",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.6837254137262545,
+      "priority_score": 0.7622142067814184,
+      "variant_score": 0.9991016983985901,
+      "output_sha256": "12071ac320bf85cee25aea41018d70a064d0122bdf30b0e5fb08bd04719f6cae",
+      "top_five": [
+        {
+          "gene": "CTCF",
+          "score": 0.6837254137262545
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.6225000907115488
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.3927589915917139
+        },
+        {
+          "gene": "F11",
+          "score": 0.13916061409072014
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12980889226821396
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_31239556_individual_32",
+      "gene": "CTCF",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 9,
+      "rank_max": 9,
+      "scored_genes": 470,
+      "combined_score": 0.49955084919929504,
+      "priority_score": null,
+      "variant_score": 0.9991016983985901,
+      "output_sha256": "8891c3d0ec0e4e9baef570cb9465460eec396d9ef648ab5e8724ddcc23359ee4",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CTAGE15",
+          "score": 0.5
+        },
+        {
+          "gene": "GOLGA8N",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        },
+        {
+          "gene": "LILRB3",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_29469822_Family_4_II-1",
+      "gene": "LZTR1",
+      "stratum": "autosomal_homozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 8,
+      "rank_max": 8,
+      "scored_genes": 470,
+      "combined_score": 0.03095314002453913,
+      "priority_score": 0.8251365433927129,
+      "variant_score": 0.7197737693786621,
+      "output_sha256": "b50cdb0dd5abfa68634f4c4c27887a54489b3a56f296dace643e4d10d9e53b18",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.6013806197903576
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.4759285407167623
+        },
+        {
+          "gene": "F11",
+          "score": 0.13887431672798747
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12984638113581737
+        },
+        {
+          "gene": "RAB30",
+          "score": 0.04486572607698699
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_29469822_Family_4_II-1",
+      "gene": "LZTR1",
+      "stratum": "autosomal_homozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 6,
+      "rank_max": 6,
+      "scored_genes": 470,
+      "combined_score": 0.1123116389555307,
+      "priority_score": 0.9621830431950305,
+      "variant_score": 0.7197737693786621,
+      "output_sha256": "97d79ab041228235081ec8afce37c6148564d94e931b087a03de96780cac5e0b",
+      "top_five": [
+        {
+          "gene": "DNMT3A",
+          "score": 0.5286327223571771
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.40260483928309976
+        },
+        {
+          "gene": "MAP2K1",
+          "score": 0.1885553151838872
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.1576052822330625
+        },
+        {
+          "gene": "F11",
+          "score": 0.14558563896077223
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_29469822_Family_4_II-1",
+      "gene": "LZTR1",
+      "stratum": "autosomal_homozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 64,
+      "rank_max": 64,
+      "scored_genes": 470,
+      "combined_score": 0.0021205022700825594,
+      "priority_score": 0.5553097259695792,
+      "variant_score": 0.7197737693786621,
+      "output_sha256": "c753cf9dd492c1e7994f25af53cef2056aa59d115d1e057141cd9edd7847a851",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.39272208830034666
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.3108638741199755
+        },
+        {
+          "gene": "F11",
+          "score": 0.2641773470511833
+        },
+        {
+          "gene": "MSH3",
+          "score": 0.18115956396851132
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.1297591980040579
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_29469822_Family_4_II-1",
+      "gene": "LZTR1",
+      "stratum": "autosomal_homozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 123,
+      "rank_max": 123,
+      "scored_genes": 470,
+      "combined_score": 0.35988688468933105,
+      "priority_score": null,
+      "variant_score": 0.7197737693786621,
+      "output_sha256": "dce5b52c2ae58667208b726812ae1feacdfce1ea1c517ba2b09cb989e41057de",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CTAGE15",
+          "score": 0.5
+        },
+        {
+          "gene": "GOLGA8N",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        },
+        {
+          "gene": "LILRB3",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_37054711_Family_10_Subject_13",
+      "gene": "INTS11",
+      "stratum": "autosomal_homozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 2,
+      "rank_max": 2,
+      "scored_genes": 470,
+      "combined_score": 0.41227899703097476,
+      "priority_score": 0.8874374402047969,
+      "variant_score": 0.9967878460884094,
+      "output_sha256": "11b86260431783440339a5320570e1eda0728e13ceefeb2cd588e1297fba6056",
+      "top_five": [
+        {
+          "gene": "DNMT3A",
+          "score": 0.6225000907115488
+        },
+        {
+          "gene": "INTS11",
+          "score": 0.41227899703097476
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.3927589915917139
+        },
+        {
+          "gene": "F11",
+          "score": 0.13916061409072014
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12980889226821396
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_37054711_Family_10_Subject_13",
+      "gene": "INTS11",
+      "stratum": "autosomal_homozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 3,
+      "rank_max": 3,
+      "scored_genes": 470,
+      "combined_score": 0.2921522715124326,
+      "priority_score": 0.8346296237302615,
+      "variant_score": 0.9967878460884094,
+      "output_sha256": "55c00fcad59d7069853a98dc3155c37c3fa5ad9ff12c79420cded2c2334b53a1",
+      "top_five": [
+        {
+          "gene": "DNMT3A",
+          "score": 0.5444854817722715
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.3929351956582348
+        },
+        {
+          "gene": "INTS11",
+          "score": 0.2921522715124326
+        },
+        {
+          "gene": "F11",
+          "score": 0.13890773594273437
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.13064897415483456
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_37054711_Family_10_Subject_13",
+      "gene": "INTS11",
+      "stratum": "autosomal_homozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 13,
+      "rank_max": 13,
+      "scored_genes": 470,
+      "combined_score": 0.014197817003316328,
+      "priority_score": 0.5005582325393334,
+      "variant_score": 0.9967878460884094,
+      "output_sha256": "62732ac9008f9dd6b195360cf3b595424480c8d400368f32ac8e78d6317ade53",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.39423181579947414
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.13853798130896972
+        },
+        {
+          "gene": "F11",
+          "score": 0.1332490396865608
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12974834801223334
+        },
+        {
+          "gene": "RAB30",
+          "score": 0.04476277578222166
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_37054711_Family_10_Subject_13",
+      "gene": "INTS11",
+      "stratum": "autosomal_homozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 10,
+      "rank_max": 10,
+      "scored_genes": 470,
+      "combined_score": 0.4983939230442047,
+      "priority_score": null,
+      "variant_score": 0.9967878460884094,
+      "output_sha256": "2b36f2e66b5f9a29fb66af4c6cd03071fc4c1e6fe40336d831d8de6fc0fe9eef",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CTAGE15",
+          "score": 0.5
+        },
+        {
+          "gene": "GOLGA8N",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        },
+        {
+          "gene": "LILRB3",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_14742428_DM",
+      "gene": "BCKDHB",
+      "stratum": "autosomal_homozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.9786514779429764,
+      "priority_score": 1.0,
+      "variant_score": 0.9991932511329651,
+      "output_sha256": "bab3ac472b8958668d482367da0218dc4b8a7d9e541a2c022a6ed1fc1920a451",
+      "top_five": [
+        {
+          "gene": "BCKDHB",
+          "score": 0.9786514779429764
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.39423181579947414
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.13853798130896972
+        },
+        {
+          "gene": "F11",
+          "score": 0.1332490396865608
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12974834801223334
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_14742428_DM",
+      "gene": "BCKDHB",
+      "stratum": "autosomal_homozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.9786514779429764,
+      "priority_score": 1.0,
+      "variant_score": 0.9991932511329651,
+      "output_sha256": "e0a99a3d64dc12d28477a4d343b025bdcf214fe19723d7f5a89150e11163d823",
+      "top_five": [
+        {
+          "gene": "BCKDHB",
+          "score": 0.9786514779429764
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.39426685140063555
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.14074026337600243
+        },
+        {
+          "gene": "F11",
+          "score": 0.13327579363839698
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12976397897570996
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_14742428_DM",
+      "gene": "BCKDHB",
+      "stratum": "autosomal_homozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 3,
+      "rank_max": 3,
+      "scored_genes": 470,
+      "combined_score": 0.24342713025576737,
+      "priority_score": 0.5062551349401474,
+      "variant_score": 0.9991932511329651,
+      "output_sha256": "e7a106ff6a07d4ce2fab79267cf54654ab35878d5512a881f727a3ad7a1eb545",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.5159777669170599
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.4925221010162289
+        },
+        {
+          "gene": "BCKDHB",
+          "score": 0.24342713025576737
+        },
+        {
+          "gene": "F11",
+          "score": 0.13964497371152113
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12976466463002886
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_14742428_DM",
+      "gene": "BCKDHB",
+      "stratum": "autosomal_homozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 9,
+      "rank_max": 9,
+      "scored_genes": 470,
+      "combined_score": 0.49959662556648254,
+      "priority_score": null,
+      "variant_score": 0.9991932511329651,
+      "output_sha256": "cef35fad81ac9d70f407cd56d1ec7f8f40aaa4b3f2c94d31999cbef46b4732d9",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CTAGE15",
+          "score": 0.5
+        },
+        {
+          "gene": "GOLGA8N",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        },
+        {
+          "gene": "LILRB3",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_19776401_Patient_8-2",
+      "gene": "DOCK8",
+      "stratum": "autosomal_homozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 22,
+      "rank_max": 22,
+      "scored_genes": 470,
+      "combined_score": 0.008446107435115946,
+      "priority_score": 0.7319248298267141,
+      "variant_score": 0.6234925985336304,
+      "output_sha256": "7d2c94844a2a1d5618d8c9af295492ff83a711e2f06dd20f5d383b13fdaf4034",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.3925467526932578
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.1333323167855377
+        },
+        {
+          "gene": "F11",
+          "score": 0.13207163089702678
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12974444018200898
+        },
+        {
+          "gene": "RAB30",
+          "score": 0.044762352349467814
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_19776401_Patient_8-2",
+      "gene": "DOCK8",
+      "stratum": "autosomal_homozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 27,
+      "rank_max": 27,
+      "scored_genes": 470,
+      "combined_score": 0.005663457612534694,
+      "priority_score": 0.6918537985882989,
+      "variant_score": 0.6234925985336304,
+      "output_sha256": "f5e3d255d5f9f67acf892cc463c575446c1654af0b7e1253901d6e2542c1b460",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.39253796015375325
+        },
+        {
+          "gene": "F11",
+          "score": 0.13203297012724033
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.1314032238983474
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.1297444139395257
+        },
+        {
+          "gene": "RAB30",
+          "score": 0.044762352192725376
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_19776401_Patient_8-2",
+      "gene": "DOCK8",
+      "stratum": "autosomal_homozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 90,
+      "rank_max": 90,
+      "scored_genes": 470,
+      "combined_score": 0.0008298583670448928,
+      "priority_score": 0.5001588717132108,
+      "variant_score": 0.6234925985336304,
+      "output_sha256": "2f75808e0067de33f61dc349b9b68b6e854d610ac3762c3c1e0cc25ab9831ac3",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.40625166737546126
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.1816853640026357
+        },
+        {
+          "gene": "F11",
+          "score": 0.13217864566433943
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12991648863044916
+        },
+        {
+          "gene": "RAB30",
+          "score": 0.04476400726681339
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_19776401_Patient_8-2",
+      "gene": "DOCK8",
+      "stratum": "autosomal_homozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 143,
+      "rank_max": 143,
+      "scored_genes": 470,
+      "combined_score": 0.3117462992668152,
+      "priority_score": null,
+      "variant_score": 0.6234925985336304,
+      "output_sha256": "a038ab4f501c597473ee0307128498ac20d6a06dc5ee9d279d2a379540701f7a",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CTAGE15",
+          "score": 0.5
+        },
+        {
+          "gene": "GOLGA8N",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        },
+        {
+          "gene": "LILRB3",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17331980_patient",
+      "gene": "COG8",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.6667405697508225,
+      "priority_score": 0.8730868666854872,
+      "variant_score": 0.998029351234436,
+      "output_sha256": "48e9356d81acb8ee08827398b9b0a978652137139e767c3b9a4e68de29625aa4",
+      "top_five": [
+        {
+          "gene": "COG8",
+          "score": 0.6667405697508225
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.40625166737546126
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.1816853640026357
+        },
+        {
+          "gene": "F11",
+          "score": 0.13217864566433943
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12991648863044916
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17331980_patient",
+      "gene": "COG8",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.4895438685183328,
+      "priority_score": 0.7998779598796214,
+      "variant_score": 0.998029351234436,
+      "output_sha256": "0989a57e202330792f38da74275c55727da3ba87018c68ae0a33b0f9113d507f",
+      "top_five": [
+        {
+          "gene": "COG8",
+          "score": 0.4895438685183328
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.39250892205359544
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.1448040795392363
+        },
+        {
+          "gene": "F11",
+          "score": 0.1320637703992273
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12992752749147005
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17331980_patient",
+      "gene": "COG8",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 6,
+      "rank_max": 6,
+      "scored_genes": 470,
+      "combined_score": 0.045057806927166,
+      "priority_score": 0.5000100389479485,
+      "variant_score": 0.998029351234436,
+      "output_sha256": "fb7028b5bc6b578b1762537a566997e9ec3d94eddd7384b101e732f4d546e342",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.392513840738859
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.13521810709147372
+        },
+        {
+          "gene": "F11",
+          "score": 0.13211937069374943
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.1306853377158742
+        },
+        {
+          "gene": "NKX2-5",
+          "score": 0.0526796236096018
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17331980_patient",
+      "gene": "COG8",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 8,
+      "rank_max": 8,
+      "scored_genes": 470,
+      "combined_score": 0.4998428523540497,
+      "priority_score": null,
+      "variant_score": 0.9996857047080994,
+      "output_sha256": "b8e9f301ca97da530a731608d6c08b1dea1f4c02afc4f0dacee45e4c782ed083",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CTAGE15",
+          "score": 0.5
+        },
+        {
+          "gene": "GOLGA8N",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        },
+        {
+          "gene": "LILRB3",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_24403049_Proband_2",
+      "gene": "SLC35C1",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.8817177705078485,
+      "priority_score": 0.9462867238295585,
+      "variant_score": 0.9168318212032318,
+      "output_sha256": "666952d73ab326de55308ed65e2a31ba7a5fd7c9cfb50bd7a800a184174e3255",
+      "top_five": [
+        {
+          "gene": "SLC35C1",
+          "score": 0.8817177705078485
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.5159777669170599
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.4925221010162289
+        },
+        {
+          "gene": "F11",
+          "score": 0.13964497371152113
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12976466463002886
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_24403049_Proband_2",
+      "gene": "SLC35C1",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 470,
+      "combined_score": 0.8556575170659082,
+      "priority_score": 0.9234753873876004,
+      "variant_score": 0.9168318212032318,
+      "output_sha256": "31a40b82314fef3ff6b14d407f1b421a969dde4a19b67fb2587295500149f03a",
+      "top_five": [
+        {
+          "gene": "SLC35C1",
+          "score": 0.8556575170659082
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.6033391553216934
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.5073795625902515
+        },
+        {
+          "gene": "F11",
+          "score": 0.13892585773500005
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12974664895900118
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_24403049_Proband_2",
+      "gene": "SLC35C1",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 5,
+      "rank_max": 5,
+      "scored_genes": 470,
+      "combined_score": 0.0782294794701848,
+      "priority_score": 0.5007025497034192,
+      "variant_score": 0.9168318212032318,
+      "output_sha256": "1cde46f9bc3e333c4a365f5898b6cba417aa135626d884bd283fe75b3c485d41",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.40143395952736083
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.13413764381410068
+        },
+        {
+          "gene": "F11",
+          "score": 0.13366931712054927
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.1297468839184161
+        },
+        {
+          "gene": "SLC35C1",
+          "score": 0.0782294794701848
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_24403049_Proband_2",
+      "gene": "SLC35C1",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 8,
+      "rank_max": 8,
+      "scored_genes": 470,
+      "combined_score": 0.4999634623527527,
+      "priority_score": null,
+      "variant_score": 0.9999269247055054,
+      "output_sha256": "00c0772184872996b5217832dede23c0cc66498ff1efe8cd29e579f10e47e0f6",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CTAGE15",
+          "score": 0.5
+        },
+        {
+          "gene": "GOLGA8N",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        },
+        {
+          "gene": "LILRB3",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17295247_Individual_III_3",
+      "gene": "ZIC3",
+      "stratum": "X_heterozygous_female",
+      "arm": "original",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 79,
+      "rank_max": 79,
+      "scored_genes": 470,
+      "combined_score": 0.0010483104582009488,
+      "priority_score": 0.25341733801178634,
+      "variant_score": 0.9757000207901001,
+      "output_sha256": "a892cf6dd2b48c95597e9f0de900b00008c00522321cde3bc6b7157c6583f83d",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.392513840738859
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.13521810709147372
+        },
+        {
+          "gene": "F11",
+          "score": 0.13211937069374943
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.1306853377158742
+        },
+        {
+          "gene": "NKX2-5",
+          "score": 0.0526796236096018
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17295247_Individual_III_3",
+      "gene": "ZIC3",
+      "stratum": "X_heterozygous_female",
+      "arm": "half_missing",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 79,
+      "rank_max": 79,
+      "scored_genes": 470,
+      "combined_score": 0.001048366633901153,
+      "priority_score": 0.2534226786810905,
+      "variant_score": 0.9757000207901001,
+      "output_sha256": "311c9cb2724978a56bddb118e215d44589098b39976666fcd61e27e5ddafcd42",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.39251243047541
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.13231573419495962
+        },
+        {
+          "gene": "F11",
+          "score": 0.13216749253523855
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12974539422869857
+        },
+        {
+          "gene": "NKX2-5",
+          "score": 0.07901453510382402
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17295247_Individual_III_3",
+      "gene": "ZIC3",
+      "stratum": "X_heterozygous_female",
+      "arm": "swapped",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 48,
+      "rank_max": 48,
+      "scored_genes": 470,
+      "combined_score": 0.003980759208743127,
+      "priority_score": 0.3865547720860323,
+      "variant_score": 0.9757000207901001,
+      "output_sha256": "1af704e8670eafd057f660a92a34a4cb599e9899f480e0e5834448b60329d842",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.6013806197903576
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.4759285407167623
+        },
+        {
+          "gene": "F11",
+          "score": 0.13887431672798747
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12984638113581737
+        },
+        {
+          "gene": "RAB30",
+          "score": 0.04486572607698699
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17295247_Individual_III_3",
+      "gene": "ZIC3",
+      "stratum": "X_heterozygous_female",
+      "arm": "none",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 19,
+      "rank_max": 19,
+      "scored_genes": 470,
+      "combined_score": 0.48785001039505005,
+      "priority_score": null,
+      "variant_score": 0.9757000207901001,
+      "output_sha256": "c74608282780cc5ef6b5284b87f9aadf6b5951067f60e373023fa1210ed9d2ff",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CTAGE15",
+          "score": 0.5
+        },
+        {
+          "gene": "GOLGA8N",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        },
+        {
+          "gene": "LILRB3",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_16783569_IV_11",
+      "gene": "OFD1",
+      "stratum": "X_hemizygous_male",
+      "arm": "original",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 2,
+      "rank_max": 2,
+      "scored_genes": 470,
+      "combined_score": 0.6039775042349138,
+      "priority_score": 0.9626832191994565,
+      "variant_score": 1.0,
+      "output_sha256": "2bb4b14d954e37d37e210e4d76a975b331bc03e7c8b11ed186cc4ccfaed6ab34",
+      "top_five": [
+        {
+          "gene": "DNMT3A",
+          "score": 0.6569033635769937
+        },
+        {
+          "gene": "OFD1",
+          "score": 0.6039775042349138
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.3927580379561283
+        },
+        {
+          "gene": "F11",
+          "score": 0.14095947424435754
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.12995491418395957
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_16783569_IV_11",
+      "gene": "OFD1",
+      "stratum": "X_hemizygous_male",
+      "arm": "half_missing",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 2,
+      "rank_max": 2,
+      "scored_genes": 470,
+      "combined_score": 0.6893057767141366,
+      "priority_score": 1.0,
+      "variant_score": 1.0,
+      "output_sha256": "551059830718e962f052ce07d737d22cb4fdd665d03099f392a869446fe4e22b",
+      "top_five": [
+        {
+          "gene": "DNMT3A",
+          "score": 0.9582358775893502
+        },
+        {
+          "gene": "OFD1",
+          "score": 0.6893057767141366
+        },
+        {
+          "gene": "F11",
+          "score": 0.6054736869250094
+        },
+        {
+          "gene": "KRT17",
+          "score": 0.4725516660569613
+        },
+        {
+          "gene": "TBR1",
+          "score": 0.35530863983240385
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_16783569_IV_11",
+      "gene": "OFD1",
+      "stratum": "X_hemizygous_male",
+      "arm": "swapped",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 11,
+      "rank_max": 11,
+      "scored_genes": 470,
+      "combined_score": 0.014693957691895234,
+      "priority_score": 0.5019523289520293,
+      "variant_score": 1.0,
+      "output_sha256": "325a7bf10bc0c0a31b31485d864fbda0d77773c1a77b3047c08e2d8f36722463",
+      "top_five": [
+        {
+          "gene": "KRT17",
+          "score": 0.39288573374775687
+        },
+        {
+          "gene": "DNMT3A",
+          "score": 0.2580848999999364
+        },
+        {
+          "gene": "F11",
+          "score": 0.1320914367918774
+        },
+        {
+          "gene": "ANO2",
+          "score": 0.1297450430377817
+        },
+        {
+          "gene": "NKX2-5",
+          "score": 0.046616882211615994
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_16783569_IV_11",
+      "gene": "OFD1",
+      "stratum": "X_hemizygous_male",
+      "arm": "none",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 8,
+      "scored_genes": 470,
+      "combined_score": 0.5,
+      "priority_score": null,
+      "variant_score": 1.0,
+      "output_sha256": "8f272096e36733e6ef3389f4df16ce3f528c42de6a977884ea97449e6399a0c2",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CTAGE15",
+          "score": 0.5
+        },
+        {
+          "gene": "GOLGA8N",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        },
+        {
+          "gene": "LILRB3",
+          "score": 0.5
+        }
+      ]
+    }
+  ],
+  "execution_receipt_sha256": "c3e6e2b0e20aa83dd9c5ab08cdffd96b16c83a6147898b8227dc9c15af190092"
+}
