@@ -1,0 +1,62 @@
+{
+  "frozen_utc": "2026-10-23T22:08:24.191287+00:00",
+  "results_seen": false,
+  "source_groups": {
+    "schema_version": "1.0",
+    "recorded_at_utc": "2026-10-23T22:04:54.886626+00:00",
+    "primary_source_label_genes": [
+      "MTOR",
+      "KCNJ2",
+      "CTCF",
+      "LZTR1",
+      "INTS11",
+      "BCKDHB",
+      "DOCK8",
+      "COG8",
+      "SLC35C1"
+    ],
+    "no_exomiser_results_seen": true,
+    "frozen_inputs_manifest_sha256": "a69127a6c33cb66668686b446fd4d1e793422712bbd60b538a7c25ac159a61e2",
+    "original_pre_result_4_3_2": {
+      "primary_case_supported_with_all_positive_HPOs_supported": [
+        "KCNJ2",
+        "LZTR1",
+        "INTS11",
+        "COG8"
+      ],
+      "primary_case_genotype_supported_with_material_qualifications": [
+        "CTCF",
+        "BCKDHB",
+        "SLC35C1"
+      ],
+      "original_case_verification_incomplete": [
+        "MTOR",
+        "DOCK8"
+      ]
+    },
+    "current_source_support_4_5": {
+      "primary_case_supported_with_all_positive_HPOs_supported": [
+        "KCNJ2",
+        "LZTR1",
+        "INTS11",
+        "COG8"
+      ],
+      "primary_case_supported_with_material_qualifications": [
+        "CTCF",
+        "BCKDHB",
+        "SLC35C1",
+        "MTOR",
+        "DOCK8"
+      ]
+    },
+    "frozen_for_evaluation": true,
+    "scope": "Source support, not clinical accuracy. Preserve both original4/3/2 sensitivity and current4/5 map distinctly. All rows and arms remain; subsequent coverage findings append without silently changing this freeze.",
+    "review": {
+      "path": "truth-adjudication-v3.json",
+      "sha256": "aae8b0f78030856a24eb36a1e4aae0b33d2c0f12c2da7f6bcf7b1bf7018dbbd2"
+    }
+  },
+  "source_groups_sha256": "e7ee5cb7b4c1abae16e88bb8c57d8dd474acb38f6e7b373b4b16544090f5e634",
+  "source_review_sha256": "aae8b0f78030856a24eb36a1e4aae0b33d2c0f12c2da7f6bcf7b1bf7018dbbd2",
+  "purpose": "Retain all nine primary source-label cases and report sensitivity for the original4/3/2 groups and current4/5 evidence map. Source support is not independent clinical truth. All twelve cases, four arms and two backgrounds unchanged."
+}

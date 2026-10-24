@@ -80,7 +80,7 @@ The tool addresses a practical information gap while preserving uncertainty. It 
 
 The [rescue-decision prototype](rescue-decision-validation.md) makes functional, exposure, fate and uncertainty rules executable. All 40 frozen synthetic cases matched expected decisions; seven deliberately faulty rule versions were detected. A separate 720,000-experiment simulation reproduced exactly and quantifies the multiplicity–detection trade-off under declared assumptions. Neither result measures drug rescue or clinical performance. **[OUR MEASUREMENT]**
 
-**Executed public reconstruction.** Two new Exomiser runs ranked *FGFR2* first among 2 and 471 scored genes, including a public HG002 genome with 4,096,123 normalized variants. Exact configurations, logs and complete gene-score tables now support offline verification. The missing August configuration remains unrecovered; its historical 649-gene result is separate. These controls demonstrate execution, not diagnostic sensitivity or freedom from ClinVar knowledge. [Public-case report](generalisation-public-case.md). **[OUR MEASUREMENT]**
+**Executed public evaluation.** Across 96 genomic jobs, original-HPO top-1/5/10 recovery was **6/7/8 (HG002) and 7/8/8 (HG001) of nine primary source labels**; five have material source qualifications. Phenotype-only recovered **4/8/8**; candidate universes differ. COG8/SLC35C1 no-HPO best modes use only one of two source alleles. [Full evaluation and portable outputs](public-validation.md); [separate FGFR2 reconstructions](generalisation-public-case.md). These semi-synthetic checks establish execution and ranking behaviour, not clinical accuracy or drug rescue. **[OUR MEASUREMENT]**
 
 ## 6. What is delivered, and what remains unknown
 

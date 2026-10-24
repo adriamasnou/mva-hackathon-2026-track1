@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-10-23T22:55:08.826291+00:00",
+  "type": "Cache-only operational relaunch; not an initial pre-inference plan",
+  "reason": "The first two HG002 analyses took116.446s/105.701s, with repeated external database reads. jcmd reported ~1.93GiB heap used against12GiB limit. Increase bounded cache60000to300000; no allele/phenotype/filter/prioritiser changes.",
+  "prior_work": "/Volumes/easystore/MVA-public-exomiser-2512/runs/public-validation-HG001-20261023",
+  "prior_manifest_sha256": "4e08680e944265c94bc4fbddf6f8b5a46cc8f7038b9ef9c6b3d77df0cafb0cb8",
+  "new_manifest_sha256": "ddde0113a49a5745c0e11f8c547d79f5b09a7f8d82c09e34ebb8cec0b6efb004",
+  "prior_properties_sha256": "981ee11989ce3db194c8703f16cd23e7cd170a3830f070429e5e08bc76b45f96",
+  "new_properties_sha256": "38523a0f4634c3dc001368b9517cdeff4ab929d8cec0017cb88db2ed9c540c3c",
+  "all_analysis_job_content_equal_except_output_directory": true,
+  "all_vcf_paths_and_hashes_unchanged": true,
+  "prior_execution_sha256": null,
+  "prior_status": "not_started",
+  "prior_completed_output_hashes": {},
+  "result_selection": "Run all48jobs again, not just failures. Compare all completed first-attempt outputs, regardless of outcome. No case, source group, endpoint or analysis rule chosen using results.",
+  "score_inspection": "Parent inspected only runtime/progress and output membership for this benchmark before relaunch; prior FGFR2 results were viewed and remain a separate control."
+}

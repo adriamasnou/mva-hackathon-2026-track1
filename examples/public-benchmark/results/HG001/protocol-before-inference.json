@@ -1,0 +1,22 @@
+{
+  "frozen_utc": "2026-10-23T21:41:59.483481+00:00",
+  "results_seen": false,
+  "case_manifest_sha256": "a69127a6c33cb66668686b446fd4d1e793422712bbd60b538a7c25ac159a61e2",
+  "background_sha256": "93bc4c2c696eaf13515ab058caecc064bfed704f85bac7482330ca91bc730daa",
+  "gff_sha256": "08e881d96ab6385a2c31f063a018be4b2c36860b323f2724be07022deeef21ce",
+  "job_template_sha256": "50f83311418ed0e3276ccf0dfdf8766b8b0b5241b7cbc417e9e730a6f1ad31e4",
+  "background_rule": "All canonical autosomal Ensembl 116 exons, any transcript/biotype, plus 20 bp flanks; merge overlapping/bookended BED intervals; bcftools view -R --regions-overlap 1. No gene/score selection.",
+  "spike_rule": "Replace any background record at each source causal position, then add source allele/genotype unphased. Record collisions. Normalise multiallelic records with bcftools norm -m -any before merging. Preserve all other observed autosomal genotypes.",
+  "analysis_rule": "Reconstructed 15.1.0 exome template unchanged across cases. Same variant sources/filters and inheritance modes. Original/half/swapped differ only in HPO list. None removes hiPhivePrioritiser and supplies no HPO; OMIM inheritance prior remains.",
+  "outcomes": "Primary: source-designated causal gene rank and top-1/5/10 over nine provisional autosomal source-label comparators, failures count as not recovered. PAX4 is separately reported as disputed truth after pre-result primary-source adjudication; its paper calls the variant VUS. Report both minimum and maximum tied rank; success uses conservative maximum rank. Keep all twelve cases and all four arms visible. Two X cases reported separately because background lacks X; ZIC3 also has unresolved source-phenotype conflict.",
+  "limits": [
+    "One common public autosomal background, synthetic combinations, not independent patient genomes.",
+    "Source-curated SOLVED labels are not independently adjudicated clinical diagnoses.",
+    "Knowledge leakage possible; no novel-gene or clinical sensitivity claim.",
+    "X background absent: two X cases are limited technical controls, not X-linked validation.",
+    "A result failure or filtered causal gene remains in denominator; no post-result replacement.",
+    "Causal gene ranking does not confirm every causal allele, phase, drug response or patient benefit."
+  ],
+  "commands": [],
+  "tool_version": "bcftools 1.24"
+}

@@ -1,0 +1,227 @@
+
+ Welcome to:
+  _____ _            _____                     _
+ |_   _| |__   ___  | ____|_  _____  _ __ ___ (_)___  ___ _ __
+   | | | '_ \ / _ \ |  _| \ \/ / _ \| '_ ` _ \| / __|/ _ \ '__|
+   | | | | | |  __/ | |___ >  < (_) | | | | | | \__ \  __/ |
+   |_| |_| |_|\___| |_____/_/\_\___/|_| |_| |_|_|___/\___|_|
+
+ A Tool to Annotate and Prioritize Exome Variants     v15.1.0
+
+2026-10-24T10:41:29.006+02:00  INFO 73640 --- [           main] o.monarchinitiative.exomiser.cli.Main    : Starting Main v15.1.0 using Java 21.0.12.1 with PID 73640 (/Users/adriamasnou/mva-hackathon/pipeline/exomiser/exomiser-cli-15.1.0/exomiser-cli-15.1.0.jar started by adriamasnou in /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024)
+2026-10-24T10:41:29.009+02:00  INFO 73640 --- [           main] o.monarchinitiative.exomiser.cli.Main    : No active profile set, falling back to 1 default profile: "default"
+2026-10-24T10:41:29.253+02:00  INFO 73640 --- [           main] o.m.exomiser.cli.config.MainConfig       : Exomiser home: /Users/adriamasnou/mva-hackathon/pipeline/exomiser/exomiser-cli-15.1.0
+2026-10-24T10:41:29.257+02:00  INFO 73640 --- [           main] o.m.exomiser.cli.config.MainConfig       : Root data source directory set to: /Volumes/easystore/MVA-public-exomiser-2512/data
+2026-10-24T10:41:29.259+02:00  INFO 73640 --- [           main] o.m.e.c.g.j.JannovarDataProtoSerialiser  : Deserialising Jannovar data from /Volumes/easystore/MVA-public-exomiser-2512/data/2512_hg38/2512_hg38_transcripts_ensembl.ser
+2026-10-24T10:41:29.725+02:00  INFO 73640 --- [           main] o.m.e.c.g.j.JannovarDataProtoSerialiser  : Deserialisation took 0.465 sec.
+2026-10-24T10:41:35.354+02:00  INFO 73640 --- [           main] o.m.e.c.g.dao.ClinVarWhiteListReader     : Reading ClinVar whitelist...
+2026-10-24T10:41:35.358+02:00  INFO 73640 --- [           main] o.m.e.c.g.dao.serialisers.MvStoreUtil    : MVMap 'clinvar' opened with 4128517 entries
+2026-10-24T10:41:37.640+02:00  INFO 73640 --- [           main] o.m.e.c.g.dao.ClinVarWhiteListReader     : Read 287098 ClinVar whitelist variants in 2285 ms
+2026-10-24T10:41:37.658+02:00  INFO 73640 --- [           main] o.m.e.a.genome.GenomeDataSourceLoader    : Loaded 287098 whitelist variants
+2026-10-24T10:41:37.702+02:00  INFO 73640 --- [           main] o.m.e.c.g.dao.serialisers.MvStoreUtil    : MVMap 'alleles' opened with 816467174 entries
+2026-10-24T10:41:37.714+02:00  INFO 73640 --- [           main] o.m.e.c.g.dao.serialisers.MvStoreUtil    : MVMap 'clinvar' opened with 4128517 entries
+2026-10-24T10:41:39.247+02:00  INFO 73640 --- [           main] o.m.e.core.genome.dao.ClinVarDaoMvStore  : Created 18591 ClinVar gene stats in 1533 ms
+2026-10-24T10:41:40.017+02:00  INFO 73640 --- [           main] g.GenomeAnalysisServiceAutoConfiguration : Configured hg38 genome analysis service
+2026-10-24T10:41:56.123+02:00  INFO 73640 --- [           main] o.m.e.a.ExomiserConfigReporter           : exomiser.data-directory: /Volumes/easystore/MVA-public-exomiser-2512/data
+2026-10-24T10:41:56.123+02:00  INFO 73640 --- [           main] o.m.e.a.ExomiserConfigReporter           : exomiser.hg19.data-version: -
+2026-10-24T10:41:56.123+02:00  INFO 73640 --- [           main] o.m.e.a.ExomiserConfigReporter           : exomiser.hg38.data-version: 2512
+2026-10-24T10:41:56.123+02:00  INFO 73640 --- [           main] o.m.e.a.ExomiserConfigReporter           : exomiser.hg38.clinvar-data-version: 2512
+2026-10-24T10:41:56.123+02:00  INFO 73640 --- [           main] o.m.e.a.ExomiserConfigReporter           : exomiser.phenotype.data-version: 2512
+2026-10-24T10:41:56.123+02:00  INFO 73640 --- [           main] o.m.e.a.ExomiserConfigReporter           : spring.cache.type: caffeine
+2026-10-24T10:41:56.194+02:00  INFO 73640 --- [           main] o.monarchinitiative.exomiser.cli.Main    : Started Main in 27.291 seconds (process running for 27.505)
+2026-10-24T10:41:56.199+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running command BatchCommand{batchFilePath=/Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/batch.txt, dryRun=false}
+2026-10-24T10:41:56.199+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Processing batch file /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/batch.txt
+2026-10-24T10:41:56.200+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Parsing command '--analysis /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/jobs/PMID_36595822_nan.phenotype_only.yml'
+2026-10-24T10:41:56.291+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Parsing command '--analysis /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/jobs/PMID_27753196_index_patient.phenotype_only.yml'
+2026-10-24T10:41:56.296+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Parsing command '--analysis /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/jobs/PMID_23440193_11_y_old_boy.phenotype_only.yml'
+2026-10-24T10:41:56.299+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Parsing command '--analysis /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/jobs/PMID_31239556_individual_32.phenotype_only.yml'
+2026-10-24T10:41:56.303+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Parsing command '--analysis /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/jobs/PMID_29469822_Family_4_II-1.phenotype_only.yml'
+2026-10-24T10:41:56.306+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Parsing command '--analysis /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/jobs/PMID_37054711_Family_10_Subject_13.phenotype_only.yml'
+2026-10-24T10:41:56.309+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Parsing command '--analysis /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/jobs/PMID_14742428_DM.phenotype_only.yml'
+2026-10-24T10:41:56.312+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Parsing command '--analysis /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/jobs/PMID_19776401_Patient_8-2.phenotype_only.yml'
+2026-10-24T10:41:56.315+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Parsing command '--analysis /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/jobs/PMID_17331980_patient.phenotype_only.yml'
+2026-10-24T10:41:56.317+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Parsing command '--analysis /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/jobs/PMID_24403049_Proband_2.phenotype_only.yml'
+2026-10-24T10:41:56.320+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Parsing command '--analysis /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/jobs/PMID_17295247_Individual_III_3.phenotype_only.yml'
+2026-10-24T10:41:56.322+02:00  INFO 73640 --- [           main] o.m.e.c.commands.batch.BatchFileReader   : Parsing command '--analysis /Users/adriamasnou/mva-hackathon/pipeline/work/public-phenotype-hg38-20261024/jobs/PMID_16783569_IV_11.phenotype_only.yml'
+2026-10-24T10:41:56.324+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running job 1 of 12
+2026-10-24T10:41:56.328+02:00  INFO 73640 --- [           main] o.m.e.core.analysis.AnalysisStepChecker  : CAUTION: Analysis contains no variant filtering steps. This will not perform well.
+2026-10-24T10:41:56.328+02:00  INFO 73640 --- [           main] o.m.exomiser.core.Exomiser               : Running analysis using hg38 assembly with mode: PASS_ONLY
+2026-10-24T10:41:56.330+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Validating sample input data
+2026-10-24T10:41:56.332+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : No pedigree or sample names present. Using default 'PUBLIC_CASE'
+2026-10-24T10:41:56.332+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : Creating single-sample pedigree for PUBLIC_CASE
+2026-10-24T10:41:56.335+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running analysis for proband PUBLIC_CASE without VCF
+2026-10-24T10:41:56.399+02:00  WARN 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : RUNNING AN ANALYSIS WITHOUT ANY VARIANT FILTERING WILL LEAD TO SUB-OPTIMAL RESULTS!
+2026-10-24T10:41:56.401+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Checking inheritance mode compatibility with [] for genes which passed filters
+2026-10-24T10:41:56.409+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: OmimPrioritiser{}
+2026-10-24T10:41:57.066+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: HiPhivePriority{options=HiPhiveOptions{diseaseId='', candidateGeneSymbol='', isBenchmarkingEnabled=false, runPpi=true, runHuman=true, runMouse=true, runFish=true}}
+2026-10-24T10:44:22.788+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Scoring genes
+2026-10-24T10:44:23.284+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Analysed sample PUBLIC_CASE with 19192 genes containing 0 filtered variants
+2026-10-24T10:44:23.284+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Finished analysis in 2m 26s 949ms (146949 ms)
+2026-10-24T10:44:23.284+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Writing results...
+2026-10-24T10:44:23.651+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running job 2 of 12
+2026-10-24T10:44:23.651+02:00  INFO 73640 --- [           main] o.m.e.core.analysis.AnalysisStepChecker  : CAUTION: Analysis contains no variant filtering steps. This will not perform well.
+2026-10-24T10:44:23.651+02:00  INFO 73640 --- [           main] o.m.exomiser.core.Exomiser               : Running analysis using hg38 assembly with mode: PASS_ONLY
+2026-10-24T10:44:23.651+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Validating sample input data
+2026-10-24T10:44:23.651+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : No pedigree or sample names present. Using default 'PUBLIC_CASE'
+2026-10-24T10:44:23.651+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : Creating single-sample pedigree for PUBLIC_CASE
+2026-10-24T10:44:23.651+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running analysis for proband PUBLIC_CASE without VCF
+2026-10-24T10:44:23.656+02:00  WARN 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : RUNNING AN ANALYSIS WITHOUT ANY VARIANT FILTERING WILL LEAD TO SUB-OPTIMAL RESULTS!
+2026-10-24T10:44:23.657+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Checking inheritance mode compatibility with [] for genes which passed filters
+2026-10-24T10:44:23.661+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: OmimPrioritiser{}
+2026-10-24T10:44:23.702+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: HiPhivePriority{options=HiPhiveOptions{diseaseId='', candidateGeneSymbol='', isBenchmarkingEnabled=false, runPpi=true, runHuman=true, runMouse=true, runFish=true}}
+2026-10-24T10:44:27.182+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Scoring genes
+2026-10-24T10:44:27.596+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Analysed sample PUBLIC_CASE with 19192 genes containing 0 filtered variants
+2026-10-24T10:44:27.596+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Finished analysis in 0m 3s 944ms (3944 ms)
+2026-10-24T10:44:27.596+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Writing results...
+2026-10-24T10:44:27.869+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running job 3 of 12
+2026-10-24T10:44:27.869+02:00  INFO 73640 --- [           main] o.m.e.core.analysis.AnalysisStepChecker  : CAUTION: Analysis contains no variant filtering steps. This will not perform well.
+2026-10-24T10:44:27.869+02:00  INFO 73640 --- [           main] o.m.exomiser.core.Exomiser               : Running analysis using hg38 assembly with mode: PASS_ONLY
+2026-10-24T10:44:27.869+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Validating sample input data
+2026-10-24T10:44:27.869+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : No pedigree or sample names present. Using default 'PUBLIC_CASE'
+2026-10-24T10:44:27.869+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : Creating single-sample pedigree for PUBLIC_CASE
+2026-10-24T10:44:27.869+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running analysis for proband PUBLIC_CASE without VCF
+2026-10-24T10:44:27.873+02:00  WARN 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : RUNNING AN ANALYSIS WITHOUT ANY VARIANT FILTERING WILL LEAD TO SUB-OPTIMAL RESULTS!
+2026-10-24T10:44:27.874+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Checking inheritance mode compatibility with [] for genes which passed filters
+2026-10-24T10:44:27.876+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: OmimPrioritiser{}
+2026-10-24T10:44:27.897+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: HiPhivePriority{options=HiPhiveOptions{diseaseId='', candidateGeneSymbol='', isBenchmarkingEnabled=false, runPpi=true, runHuman=true, runMouse=true, runFish=true}}
+2026-10-24T10:44:29.366+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Scoring genes
+2026-10-24T10:44:29.829+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Analysed sample PUBLIC_CASE with 19192 genes containing 0 filtered variants
+2026-10-24T10:44:29.829+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Finished analysis in 0m 1s 959ms (1959 ms)
+2026-10-24T10:44:29.829+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Writing results...
+2026-10-24T10:44:29.948+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running job 4 of 12
+2026-10-24T10:44:29.948+02:00  INFO 73640 --- [           main] o.m.e.core.analysis.AnalysisStepChecker  : CAUTION: Analysis contains no variant filtering steps. This will not perform well.
+2026-10-24T10:44:29.948+02:00  INFO 73640 --- [           main] o.m.exomiser.core.Exomiser               : Running analysis using hg38 assembly with mode: PASS_ONLY
+2026-10-24T10:44:29.948+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Validating sample input data
+2026-10-24T10:44:29.948+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : No pedigree or sample names present. Using default 'PUBLIC_CASE'
+2026-10-24T10:44:29.948+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : Creating single-sample pedigree for PUBLIC_CASE
+2026-10-24T10:44:29.948+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running analysis for proband PUBLIC_CASE without VCF
+2026-10-24T10:44:29.952+02:00  WARN 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : RUNNING AN ANALYSIS WITHOUT ANY VARIANT FILTERING WILL LEAD TO SUB-OPTIMAL RESULTS!
+2026-10-24T10:44:29.953+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Checking inheritance mode compatibility with [] for genes which passed filters
+2026-10-24T10:44:29.956+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: OmimPrioritiser{}
+2026-10-24T10:44:29.969+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: HiPhivePriority{options=HiPhiveOptions{diseaseId='', candidateGeneSymbol='', isBenchmarkingEnabled=false, runPpi=true, runHuman=true, runMouse=true, runFish=true}}
+2026-10-24T10:44:32.435+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Scoring genes
+2026-10-24T10:44:33.012+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Analysed sample PUBLIC_CASE with 19192 genes containing 0 filtered variants
+2026-10-24T10:44:33.013+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Finished analysis in 0m 3s 64ms (3064 ms)
+2026-10-24T10:44:33.013+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Writing results...
+2026-10-24T10:44:33.248+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running job 5 of 12
+2026-10-24T10:44:33.249+02:00  INFO 73640 --- [           main] o.m.e.core.analysis.AnalysisStepChecker  : CAUTION: Analysis contains no variant filtering steps. This will not perform well.
+2026-10-24T10:44:33.249+02:00  INFO 73640 --- [           main] o.m.exomiser.core.Exomiser               : Running analysis using hg38 assembly with mode: PASS_ONLY
+2026-10-24T10:44:33.249+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Validating sample input data
+2026-10-24T10:44:33.249+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : No pedigree or sample names present. Using default 'PUBLIC_CASE'
+2026-10-24T10:44:33.249+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : Creating single-sample pedigree for PUBLIC_CASE
+2026-10-24T10:44:33.249+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running analysis for proband PUBLIC_CASE without VCF
+2026-10-24T10:44:33.254+02:00  WARN 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : RUNNING AN ANALYSIS WITHOUT ANY VARIANT FILTERING WILL LEAD TO SUB-OPTIMAL RESULTS!
+2026-10-24T10:44:33.255+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Checking inheritance mode compatibility with [] for genes which passed filters
+2026-10-24T10:44:33.260+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: OmimPrioritiser{}
+2026-10-24T10:44:33.277+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: HiPhivePriority{options=HiPhiveOptions{diseaseId='', candidateGeneSymbol='', isBenchmarkingEnabled=false, runPpi=true, runHuman=true, runMouse=true, runFish=true}}
+2026-10-24T10:44:37.185+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Scoring genes
+2026-10-24T10:44:37.634+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Analysed sample PUBLIC_CASE with 19192 genes containing 0 filtered variants
+2026-10-24T10:44:37.634+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Finished analysis in 0m 4s 385ms (4385 ms)
+2026-10-24T10:44:37.634+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Writing results...
+2026-10-24T10:44:37.868+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running job 6 of 12
+2026-10-24T10:44:37.868+02:00  INFO 73640 --- [           main] o.m.e.core.analysis.AnalysisStepChecker  : CAUTION: Analysis contains no variant filtering steps. This will not perform well.
+2026-10-24T10:44:37.868+02:00  INFO 73640 --- [           main] o.m.exomiser.core.Exomiser               : Running analysis using hg38 assembly with mode: PASS_ONLY
+2026-10-24T10:44:37.868+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Validating sample input data
+2026-10-24T10:44:37.868+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : No pedigree or sample names present. Using default 'PUBLIC_CASE'
+2026-10-24T10:44:37.868+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : Creating single-sample pedigree for PUBLIC_CASE
+2026-10-24T10:44:37.868+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running analysis for proband PUBLIC_CASE without VCF
+2026-10-24T10:44:37.872+02:00  WARN 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : RUNNING AN ANALYSIS WITHOUT ANY VARIANT FILTERING WILL LEAD TO SUB-OPTIMAL RESULTS!
+2026-10-24T10:44:37.872+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Checking inheritance mode compatibility with [] for genes which passed filters
+2026-10-24T10:44:37.875+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: OmimPrioritiser{}
+2026-10-24T10:44:37.889+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: HiPhivePriority{options=HiPhiveOptions{diseaseId='', candidateGeneSymbol='', isBenchmarkingEnabled=false, runPpi=true, runHuman=true, runMouse=true, runFish=true}}
+2026-10-24T10:44:41.112+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Scoring genes
+2026-10-24T10:44:41.672+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Analysed sample PUBLIC_CASE with 19192 genes containing 0 filtered variants
+2026-10-24T10:44:41.672+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Finished analysis in 0m 3s 803ms (3803 ms)
+2026-10-24T10:44:41.672+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Writing results...
+2026-10-24T10:44:41.881+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running job 7 of 12
+2026-10-24T10:44:41.882+02:00  INFO 73640 --- [           main] o.m.e.core.analysis.AnalysisStepChecker  : CAUTION: Analysis contains no variant filtering steps. This will not perform well.
+2026-10-24T10:44:41.882+02:00  INFO 73640 --- [           main] o.m.exomiser.core.Exomiser               : Running analysis using hg38 assembly with mode: PASS_ONLY
+2026-10-24T10:44:41.882+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Validating sample input data
+2026-10-24T10:44:41.882+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : No pedigree or sample names present. Using default 'PUBLIC_CASE'
+2026-10-24T10:44:41.882+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : Creating single-sample pedigree for PUBLIC_CASE
+2026-10-24T10:44:41.882+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running analysis for proband PUBLIC_CASE without VCF
+2026-10-24T10:44:41.886+02:00  WARN 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : RUNNING AN ANALYSIS WITHOUT ANY VARIANT FILTERING WILL LEAD TO SUB-OPTIMAL RESULTS!
+2026-10-24T10:44:41.886+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Checking inheritance mode compatibility with [] for genes which passed filters
+2026-10-24T10:44:41.889+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: OmimPrioritiser{}
+2026-10-24T10:44:41.900+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: HiPhivePriority{options=HiPhiveOptions{diseaseId='', candidateGeneSymbol='', isBenchmarkingEnabled=false, runPpi=true, runHuman=true, runMouse=true, runFish=true}}
+2026-10-24T10:44:43.845+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Scoring genes
+2026-10-24T10:44:44.269+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Analysed sample PUBLIC_CASE with 19192 genes containing 0 filtered variants
+2026-10-24T10:44:44.270+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Finished analysis in 0m 2s 387ms (2387 ms)
+2026-10-24T10:44:44.270+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Writing results...
+2026-10-24T10:44:44.410+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running job 8 of 12
+2026-10-24T10:44:44.410+02:00  INFO 73640 --- [           main] o.m.e.core.analysis.AnalysisStepChecker  : CAUTION: Analysis contains no variant filtering steps. This will not perform well.
+2026-10-24T10:44:44.410+02:00  INFO 73640 --- [           main] o.m.exomiser.core.Exomiser               : Running analysis using hg38 assembly with mode: PASS_ONLY
+2026-10-24T10:44:44.410+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Validating sample input data
+2026-10-24T10:44:44.410+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : No pedigree or sample names present. Using default 'PUBLIC_CASE'
+2026-10-24T10:44:44.410+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : Creating single-sample pedigree for PUBLIC_CASE
+2026-10-24T10:44:44.410+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running analysis for proband PUBLIC_CASE without VCF
+2026-10-24T10:44:44.414+02:00  WARN 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : RUNNING AN ANALYSIS WITHOUT ANY VARIANT FILTERING WILL LEAD TO SUB-OPTIMAL RESULTS!
+2026-10-24T10:44:44.414+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Checking inheritance mode compatibility with [] for genes which passed filters
+2026-10-24T10:44:44.417+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: OmimPrioritiser{}
+2026-10-24T10:44:44.428+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: HiPhivePriority{options=HiPhiveOptions{diseaseId='', candidateGeneSymbol='', isBenchmarkingEnabled=false, runPpi=true, runHuman=true, runMouse=true, runFish=true}}
+2026-10-24T10:44:48.226+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Scoring genes
+2026-10-24T10:44:48.591+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Analysed sample PUBLIC_CASE with 19192 genes containing 0 filtered variants
+2026-10-24T10:44:48.591+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Finished analysis in 0m 4s 180ms (4180 ms)
+2026-10-24T10:44:48.591+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Writing results...
+2026-10-24T10:44:48.922+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running job 9 of 12
+2026-10-24T10:44:48.923+02:00  INFO 73640 --- [           main] o.m.e.core.analysis.AnalysisStepChecker  : CAUTION: Analysis contains no variant filtering steps. This will not perform well.
+2026-10-24T10:44:48.923+02:00  INFO 73640 --- [           main] o.m.exomiser.core.Exomiser               : Running analysis using hg38 assembly with mode: PASS_ONLY
+2026-10-24T10:44:48.923+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Validating sample input data
+2026-10-24T10:44:48.923+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : No pedigree or sample names present. Using default 'PUBLIC_CASE'
+2026-10-24T10:44:48.923+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : Creating single-sample pedigree for PUBLIC_CASE
+2026-10-24T10:44:48.923+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running analysis for proband PUBLIC_CASE without VCF
+2026-10-24T10:44:48.928+02:00  WARN 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : RUNNING AN ANALYSIS WITHOUT ANY VARIANT FILTERING WILL LEAD TO SUB-OPTIMAL RESULTS!
+2026-10-24T10:44:48.928+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Checking inheritance mode compatibility with [] for genes which passed filters
+2026-10-24T10:44:48.932+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: OmimPrioritiser{}
+2026-10-24T10:44:48.946+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: HiPhivePriority{options=HiPhiveOptions{diseaseId='', candidateGeneSymbol='', isBenchmarkingEnabled=false, runPpi=true, runHuman=true, runMouse=true, runFish=true}}
+2026-10-24T10:44:51.446+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Scoring genes
+2026-10-24T10:44:51.909+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Analysed sample PUBLIC_CASE with 19192 genes containing 0 filtered variants
+2026-10-24T10:44:51.909+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Finished analysis in 0m 2s 985ms (2985 ms)
+2026-10-24T10:44:51.909+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Writing results...
+2026-10-24T10:44:52.086+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running job 10 of 12
+2026-10-24T10:44:52.086+02:00  INFO 73640 --- [           main] o.m.e.core.analysis.AnalysisStepChecker  : CAUTION: Analysis contains no variant filtering steps. This will not perform well.
+2026-10-24T10:44:52.086+02:00  INFO 73640 --- [           main] o.m.exomiser.core.Exomiser               : Running analysis using hg38 assembly with mode: PASS_ONLY
+2026-10-24T10:44:52.086+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Validating sample input data
+2026-10-24T10:44:52.086+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : No pedigree or sample names present. Using default 'PUBLIC_CASE'
+2026-10-24T10:44:52.086+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : Creating single-sample pedigree for PUBLIC_CASE
+2026-10-24T10:44:52.086+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running analysis for proband PUBLIC_CASE without VCF
+2026-10-24T10:44:52.090+02:00  WARN 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : RUNNING AN ANALYSIS WITHOUT ANY VARIANT FILTERING WILL LEAD TO SUB-OPTIMAL RESULTS!
+2026-10-24T10:44:52.091+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Checking inheritance mode compatibility with [] for genes which passed filters
+2026-10-24T10:44:52.094+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: OmimPrioritiser{}
+2026-10-24T10:44:52.106+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: HiPhivePriority{options=HiPhiveOptions{diseaseId='', candidateGeneSymbol='', isBenchmarkingEnabled=false, runPpi=true, runHuman=true, runMouse=true, runFish=true}}
+2026-10-24T10:44:55.443+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Scoring genes
+2026-10-24T10:44:55.872+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Analysed sample PUBLIC_CASE with 19192 genes containing 0 filtered variants
+2026-10-24T10:44:55.872+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Finished analysis in 0m 3s 785ms (3785 ms)
+2026-10-24T10:44:55.872+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Writing results...
+2026-10-24T10:44:56.114+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running job 11 of 12
+2026-10-24T10:44:56.114+02:00  INFO 73640 --- [           main] o.m.e.core.analysis.AnalysisStepChecker  : CAUTION: Analysis contains no variant filtering steps. This will not perform well.
+2026-10-24T10:44:56.114+02:00  INFO 73640 --- [           main] o.m.exomiser.core.Exomiser               : Running analysis using hg38 assembly with mode: PASS_ONLY
+2026-10-24T10:44:56.114+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Validating sample input data
+2026-10-24T10:44:56.114+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : No pedigree or sample names present. Using default 'PUBLIC_CASE'
+2026-10-24T10:44:56.114+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : Creating single-sample pedigree for PUBLIC_CASE
+2026-10-24T10:44:56.114+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running analysis for proband PUBLIC_CASE without VCF
+2026-10-24T10:44:56.119+02:00  WARN 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : RUNNING AN ANALYSIS WITHOUT ANY VARIANT FILTERING WILL LEAD TO SUB-OPTIMAL RESULTS!
+2026-10-24T10:44:56.119+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Checking inheritance mode compatibility with [] for genes which passed filters
+2026-10-24T10:44:56.123+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: OmimPrioritiser{}
+2026-10-24T10:44:56.134+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: HiPhivePriority{options=HiPhiveOptions{diseaseId='', candidateGeneSymbol='', isBenchmarkingEnabled=false, runPpi=true, runHuman=true, runMouse=true, runFish=true}}
+2026-10-24T10:44:57.950+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Scoring genes
+2026-10-24T10:44:58.366+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Analysed sample PUBLIC_CASE with 19192 genes containing 0 filtered variants
+2026-10-24T10:44:58.366+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Finished analysis in 0m 2s 251ms (2251 ms)
+2026-10-24T10:44:58.366+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Writing results...
+2026-10-24T10:44:58.512+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Running job 12 of 12
+2026-10-24T10:44:58.513+02:00  INFO 73640 --- [           main] o.m.e.core.analysis.AnalysisStepChecker  : CAUTION: Analysis contains no variant filtering steps. This will not perform well.
+2026-10-24T10:44:58.513+02:00  INFO 73640 --- [           main] o.m.exomiser.core.Exomiser               : Running analysis using hg38 assembly with mode: PASS_ONLY
+2026-10-24T10:44:58.513+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Validating sample input data
+2026-10-24T10:44:58.513+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : No pedigree or sample names present. Using default 'PUBLIC_CASE'
+2026-10-24T10:44:58.513+02:00  INFO 73640 --- [           main] o.m.e.c.a.s.PedigreeSampleValidator      : Creating single-sample pedigree for PUBLIC_CASE
+2026-10-24T10:44:58.513+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running analysis for proband PUBLIC_CASE without VCF
+2026-10-24T10:44:58.516+02:00  WARN 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : RUNNING AN ANALYSIS WITHOUT ANY VARIANT FILTERING WILL LEAD TO SUB-OPTIMAL RESULTS!
+2026-10-24T10:44:58.517+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Checking inheritance mode compatibility with [] for genes which passed filters
+2026-10-24T10:44:58.519+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: OmimPrioritiser{}
+2026-10-24T10:44:58.530+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Running Prioritiser: HiPhivePriority{options=HiPhiveOptions{diseaseId='', candidateGeneSymbol='', isBenchmarkingEnabled=false, runPpi=true, runHuman=true, runMouse=true, runFish=true}}
+2026-10-24T10:45:00.258+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Scoring genes
+2026-10-24T10:45:00.786+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Analysed sample PUBLIC_CASE with 19192 genes containing 0 filtered variants
+2026-10-24T10:45:00.786+02:00  INFO 73640 --- [           main] o.m.e.c.analysis.AbstractAnalysisRunner  : Finished analysis in 0m 2s 273ms (2273 ms)
+2026-10-24T10:45:00.786+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Writing results...
+2026-10-24T10:45:00.919+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Finished batch of 12 samples in 3m 4s 594ms (184594 ms)
+2026-10-24T10:45:00.919+02:00  INFO 73640 --- [           main] o.m.e.c.c.batch.BatchCommandRunner       : Exomising finished - Bye!

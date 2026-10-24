@@ -1,0 +1,1825 @@
+{
+  "interpretation": "Semi-synthetic source-label recovery, not clinical diagnostic accuracy. One common autosomal background. PAX4 disputed truth and both X controls excluded from primary summary but retained below.",
+  "tie_policy": "Rank interval includes every exactly tied combined score; recovery uses worst tied rank.",
+  "primary_autosomal": {
+    "original": {
+      "denominator": 9,
+      "recovered": {
+        "1": 7,
+        "5": 8,
+        "10": 8
+      },
+      "not_scored": 0,
+      "failed_or_missing": 0
+    },
+    "half_missing": {
+      "denominator": 9,
+      "recovered": {
+        "1": 7,
+        "5": 8,
+        "10": 8
+      },
+      "not_scored": 0,
+      "failed_or_missing": 0
+    },
+    "swapped": {
+      "denominator": 9,
+      "recovered": {
+        "1": 5,
+        "5": 6,
+        "10": 6
+      },
+      "not_scored": 0,
+      "failed_or_missing": 0
+    },
+    "none": {
+      "denominator": 9,
+      "recovered": {
+        "1": 0,
+        "5": 0,
+        "10": 0
+      },
+      "not_scored": 0,
+      "failed_or_missing": 0
+    }
+  },
+  "all_case_results": [
+    {
+      "case_id": "PMID_36595822_nan",
+      "gene": "PAX4",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "original",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.5315268450088753,
+      "priority_score": 1.0,
+      "variant_score": 0.9623284339904785,
+      "output_sha256": "ad231adcfd86b3575f12e406f11db3d36ad6969e218411eb9ceca3c8a76dfaa2",
+      "top_five": [
+        {
+          "gene": "PAX4",
+          "score": 0.5315268450088753
+        },
+        {
+          "gene": "PAH",
+          "score": 0.05901430562472205
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.042403813248024586
+        },
+        {
+          "gene": "AK4",
+          "score": 0.02785326935598192
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027255545479427563
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_36595822_nan",
+      "gene": "PAX4",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "half_missing",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.3063925156227943,
+      "priority_score": 0.906081845254833,
+      "variant_score": 0.9623284339904785,
+      "output_sha256": "ddc10e0a05198e83937e5f4fb7682431f05b420c74bf78d3f32dee014ec9f265",
+      "top_five": [
+        {
+          "gene": "PAX4",
+          "score": 0.3063925156227943
+        },
+        {
+          "gene": "PAH",
+          "score": 0.05843429505194056
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.042406226187566134
+        },
+        {
+          "gene": "AK4",
+          "score": 0.027844764440856783
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027250743861496937
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_36595822_nan",
+      "gene": "PAX4",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "swapped",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 16,
+      "rank_max": 16,
+      "scored_genes": 344,
+      "combined_score": 0.011433986490741772,
+      "priority_score": 0.5434150397777557,
+      "variant_score": 0.9623284339904785,
+      "output_sha256": "87ae7ea37ce5ca557d7d7930becc8bea024c4bc1fba25534576f13b02714af9f",
+      "top_five": [
+        {
+          "gene": "TNNT2",
+          "score": 0.24730815877887954
+        },
+        {
+          "gene": "PAH",
+          "score": 0.054778890161947966
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.03151551130710924
+        },
+        {
+          "gene": "TPP1",
+          "score": 0.0308017905447219
+        },
+        {
+          "gene": "AK4",
+          "score": 0.028299059910835193
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_36595822_nan",
+      "gene": "PAX4",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "none",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 23,
+      "rank_max": 23,
+      "scored_genes": 344,
+      "combined_score": 0.48116421699523926,
+      "priority_score": null,
+      "variant_score": 0.9623284339904785,
+      "output_sha256": "a2ff9ae097546da278ac0440c98276b0c13717b0fab120b96559563e9f95c941",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CDK11B",
+          "score": 0.5
+        },
+        {
+          "gene": "CELA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_27753196_index_patient",
+      "gene": "MTOR",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.802159645933748,
+      "priority_score": 0.7746793277253087,
+      "variant_score": 0.9742000102996826,
+      "output_sha256": "675a6a1b48829184470f156c7d81ab411b7f98b90ed7f7b1b81cc43b8870ee6e",
+      "top_five": [
+        {
+          "gene": "MTOR",
+          "score": 0.802159645933748
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.0648328928786745
+        },
+        {
+          "gene": "PAH",
+          "score": 0.051082342362433454
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027693696502802862
+        },
+        {
+          "gene": "AK4",
+          "score": 0.02722240904430486
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_27753196_index_patient",
+      "gene": "MTOR",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.8273561523283391,
+      "priority_score": 0.7913218213203399,
+      "variant_score": 0.9742000102996826,
+      "output_sha256": "4cfb36deea741af510fa0ecbed7603e9943a52f24cf453e142a3c43acd1c72a6",
+      "top_five": [
+        {
+          "gene": "MTOR",
+          "score": 0.8273561523283391
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.07532606034519651
+        },
+        {
+          "gene": "PAH",
+          "score": 0.05109263538681371
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027723284009369232
+        },
+        {
+          "gene": "AK4",
+          "score": 0.02754387930293907
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_27753196_index_patient",
+      "gene": "MTOR",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.6019430836028598,
+      "priority_score": 0.6764834725036155,
+      "variant_score": 0.9742000102996826,
+      "output_sha256": "6f4a421e6a46011d7a8233a400c675da9c2dad535f2dd6b92f872ca2d408a19c",
+      "top_five": [
+        {
+          "gene": "MTOR",
+          "score": 0.6019430836028598
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.2887803551902913
+        },
+        {
+          "gene": "PAH",
+          "score": 0.06723791647790613
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.031442142173024774
+        },
+        {
+          "gene": "AK4",
+          "score": 0.02834400081963237
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_27753196_index_patient",
+      "gene": "MTOR",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 22,
+      "rank_max": 22,
+      "scored_genes": 344,
+      "combined_score": 0.4871000051498413,
+      "priority_score": null,
+      "variant_score": 0.9742000102996826,
+      "output_sha256": "de5fcb56e7ccb3d80c384c4b3acfc2395d4c2aba966e2cd48b7e1e275ecd00a4",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CDK11B",
+          "score": 0.5
+        },
+        {
+          "gene": "CELA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_23440193_11_y_old_boy",
+      "gene": "KCNJ2",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.9822234291480191,
+      "priority_score": 0.9404967001206455,
+      "variant_score": 0.998199999332428,
+      "output_sha256": "f01fe784b7cc94bde4d7a4c4ed553a30e0297dcbd3e494ef067aad045284c11f",
+      "top_five": [
+        {
+          "gene": "KCNJ2",
+          "score": 0.9822234291480191
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.34375295211519413
+        },
+        {
+          "gene": "PAH",
+          "score": 0.05111752290002285
+        },
+        {
+          "gene": "AK4",
+          "score": 0.0279476655625923
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027000179684467142
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_23440193_11_y_old_boy",
+      "gene": "KCNJ2",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.9718445039623229,
+      "priority_score": 0.8936543922870045,
+      "variant_score": 0.998199999332428,
+      "output_sha256": "8c2a95f8e0b0df317d273a7b2466a315126a747d4eb6778e6e0928b36ceafaba",
+      "top_five": [
+        {
+          "gene": "KCNJ2",
+          "score": 0.9718445039623229
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.3143488252029954
+        },
+        {
+          "gene": "PAH",
+          "score": 0.051135849257227715
+        },
+        {
+          "gene": "AK4",
+          "score": 0.0280090183419848
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027076108378437838
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_23440193_11_y_old_boy",
+      "gene": "KCNJ2",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.6221424102316309,
+      "priority_score": 0.5907072528373174,
+      "variant_score": 0.998199999332428,
+      "output_sha256": "c6d1529b7c628ad3b25915c84747a56342ba395ed467d5337691c2639f3cf673",
+      "top_five": [
+        {
+          "gene": "KCNJ2",
+          "score": 0.6221424102316309
+        },
+        {
+          "gene": "PAH",
+          "score": 0.05090324701313452
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.042274031121617775
+        },
+        {
+          "gene": "AK4",
+          "score": 0.027164323698482977
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.026993914012411722
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_23440193_11_y_old_boy",
+      "gene": "KCNJ2",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 16,
+      "rank_max": 16,
+      "scored_genes": 344,
+      "combined_score": 0.499099999666214,
+      "priority_score": null,
+      "variant_score": 0.998199999332428,
+      "output_sha256": "3e0189b244eae5452424bc821ade9cbadf967881d2a9de97be50fc12a8666841",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CDK11B",
+          "score": 0.5
+        },
+        {
+          "gene": "CELA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_31239556_individual_32",
+      "gene": "CTCF",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.8595185743381969,
+      "priority_score": 0.8657935936521579,
+      "variant_score": 0.9991016983985901,
+      "output_sha256": "8051d6d0fffa75a8e222c74f86182c79a025fd3648eb5096d182c20374a36028",
+      "top_five": [
+        {
+          "gene": "CTCF",
+          "score": 0.8595185743381969
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.2887803551902913
+        },
+        {
+          "gene": "PAH",
+          "score": 0.06723791647790613
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.031442142173024774
+        },
+        {
+          "gene": "AK4",
+          "score": 0.02834400081963237
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_31239556_individual_32",
+      "gene": "CTCF",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.9382046569857727,
+      "priority_score": 0.956279733579638,
+      "variant_score": 0.9991016983985901,
+      "output_sha256": "391f5518946e2bc14eb5fadba8d13ea053d29878d807c47a2957a8acad687555",
+      "top_five": [
+        {
+          "gene": "CTCF",
+          "score": 0.9382046569857727
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.7705324868911155
+        },
+        {
+          "gene": "PAH",
+          "score": 0.0914725183366633
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.06921850107273293
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.0655501575010666
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_31239556_individual_32",
+      "gene": "CTCF",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.6837254137262545,
+      "priority_score": 0.7622142067814184,
+      "variant_score": 0.9991016983985901,
+      "output_sha256": "75356eca374306dbb0026cf4309261fa26f604b52d07ae224653ec299f8644e5",
+      "top_five": [
+        {
+          "gene": "CTCF",
+          "score": 0.6837254137262545
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.18985049736272228
+        },
+        {
+          "gene": "PAH",
+          "score": 0.09214531171107285
+        },
+        {
+          "gene": "COL4A2",
+          "score": 0.05600391626496382
+        },
+        {
+          "gene": "KDM6B",
+          "score": 0.04496155135566968
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_31239556_individual_32",
+      "gene": "CTCF",
+      "stratum": "autosomal_single_heterozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 15,
+      "rank_max": 15,
+      "scored_genes": 344,
+      "combined_score": 0.49955084919929504,
+      "priority_score": null,
+      "variant_score": 0.9991016983985901,
+      "output_sha256": "b6e5a4620c63ac9208807ebce7e89f08848031e97a81f80882c471d2d9bf80c3",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CDK11B",
+          "score": 0.5
+        },
+        {
+          "gene": "CELA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_29469822_Family_4_II-1",
+      "gene": "LZTR1",
+      "stratum": "autosomal_homozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 4,
+      "rank_max": 4,
+      "scored_genes": 344,
+      "combined_score": 0.03095314002453913,
+      "priority_score": 0.8251365433927129,
+      "variant_score": 0.7197737693786621,
+      "output_sha256": "0b9fe8b4c88912ea3dea453f4b3a45a0009ce07f3b060ad2543e15b14060bcf1",
+      "top_five": [
+        {
+          "gene": "PAH",
+          "score": 0.09115440656397336
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.08780538121153014
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.031027570125950706
+        },
+        {
+          "gene": "LZTR1",
+          "score": 0.03095314002453913
+        },
+        {
+          "gene": "AK4",
+          "score": 0.027267903666882868
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_29469822_Family_4_II-1",
+      "gene": "LZTR1",
+      "stratum": "autosomal_homozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 2,
+      "rank_max": 2,
+      "scored_genes": 344,
+      "combined_score": 0.1123116389555307,
+      "priority_score": 0.9621830431950305,
+      "variant_score": 0.7197737693786621,
+      "output_sha256": "8626a12a12fb395214969d2f35acfbc3959694288b42da260517c2f1b4dbe006",
+      "top_five": [
+        {
+          "gene": "TNNT2",
+          "score": 0.3248821521009524
+        },
+        {
+          "gene": "LZTR1",
+          "score": 0.1123116389555307
+        },
+        {
+          "gene": "LTBP3",
+          "score": 0.10509902578346514
+        },
+        {
+          "gene": "PAH",
+          "score": 0.08460861642336973
+        },
+        {
+          "gene": "PRAMEF33",
+          "score": 0.05389446249808019
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_29469822_Family_4_II-1",
+      "gene": "LZTR1",
+      "stratum": "autosomal_homozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 49,
+      "rank_max": 49,
+      "scored_genes": 344,
+      "combined_score": 0.0021205022700825594,
+      "priority_score": 0.5553097259695792,
+      "variant_score": 0.7197737693786621,
+      "output_sha256": "52acc68043a064f29b0219c211095c58cc9bcbc3f656e83ab2abec1b6ebef848",
+      "top_five": [
+        {
+          "gene": "TNNT2",
+          "score": 0.0648328928786745
+        },
+        {
+          "gene": "PAH",
+          "score": 0.051082342362433454
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027693696502802862
+        },
+        {
+          "gene": "AK4",
+          "score": 0.02722240904430486
+        },
+        {
+          "gene": "PRAMEF33",
+          "score": 0.017211654167668865
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_29469822_Family_4_II-1",
+      "gene": "LZTR1",
+      "stratum": "autosomal_homozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 80,
+      "rank_max": 80,
+      "scored_genes": 344,
+      "combined_score": 0.35988688468933105,
+      "priority_score": null,
+      "variant_score": 0.7197737693786621,
+      "output_sha256": "af51caa22c78aeb72a6d85d8456cd626d83a49146fd91cd63d54110b909d0842",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CDK11B",
+          "score": 0.5
+        },
+        {
+          "gene": "CELA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_37054711_Family_10_Subject_13",
+      "gene": "INTS11",
+      "stratum": "autosomal_homozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.41227899703097476,
+      "priority_score": 0.8874374402047969,
+      "variant_score": 0.9967878460884094,
+      "output_sha256": "1e7cb5f3fd46ca8147defb3e6a0381495cfc15a4d26dec273fc2290a64ddac83",
+      "top_five": [
+        {
+          "gene": "INTS11",
+          "score": 0.41227899703097476
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.18985049736272228
+        },
+        {
+          "gene": "PAH",
+          "score": 0.09214531171107285
+        },
+        {
+          "gene": "COL4A2",
+          "score": 0.05600391626496382
+        },
+        {
+          "gene": "KDM6B",
+          "score": 0.04496155135566968
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_37054711_Family_10_Subject_13",
+      "gene": "INTS11",
+      "stratum": "autosomal_homozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.2921522715124326,
+      "priority_score": 0.8346296237302615,
+      "variant_score": 0.9967878460884094,
+      "output_sha256": "936cd22fb9a73680c8e32e73dfde6800ee60725f08a23ad2cbd21635d5cedf8a",
+      "top_five": [
+        {
+          "gene": "INTS11",
+          "score": 0.2921522715124326
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.15910257000140726
+        },
+        {
+          "gene": "COL4A2",
+          "score": 0.07414513090872035
+        },
+        {
+          "gene": "PAH",
+          "score": 0.061186363240599805
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.030858556249019696
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_37054711_Family_10_Subject_13",
+      "gene": "INTS11",
+      "stratum": "autosomal_homozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 11,
+      "rank_max": 11,
+      "scored_genes": 344,
+      "combined_score": 0.014197817003316328,
+      "priority_score": 0.5005582325393334,
+      "variant_score": 0.9967878460884094,
+      "output_sha256": "3bfee53d8aea780aeea1c0cec834f9c8d4f919d3fc51783045107e78b9fef119",
+      "top_five": [
+        {
+          "gene": "PAH",
+          "score": 0.08127042843859231
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.04480481774631204
+        },
+        {
+          "gene": "AK4",
+          "score": 0.028264453486482644
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027317232412139986
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.025013111125559383
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_37054711_Family_10_Subject_13",
+      "gene": "INTS11",
+      "stratum": "autosomal_homozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 17,
+      "rank_max": 17,
+      "scored_genes": 344,
+      "combined_score": 0.4983939230442047,
+      "priority_score": null,
+      "variant_score": 0.9967878460884094,
+      "output_sha256": "d29e0ebe80f1e3e30e7eac424d21d91d4966c80a775acadbbbf697918ea0403e",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CDK11B",
+          "score": 0.5
+        },
+        {
+          "gene": "CELA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_14742428_DM",
+      "gene": "BCKDHB",
+      "stratum": "autosomal_homozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.9786514779429764,
+      "priority_score": 1.0,
+      "variant_score": 0.9991932511329651,
+      "output_sha256": "e73f0577406a3d65e6bda9904fcffb93554acf822a7cf5a35aaf3c0c5f5b7f43",
+      "top_five": [
+        {
+          "gene": "BCKDHB",
+          "score": 0.9786514779429764
+        },
+        {
+          "gene": "PAH",
+          "score": 0.08127042843859231
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.04480481774631204
+        },
+        {
+          "gene": "AK4",
+          "score": 0.028264453486482644
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027317232412139986
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_14742428_DM",
+      "gene": "BCKDHB",
+      "stratum": "autosomal_homozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.9786514779429764,
+      "priority_score": 1.0,
+      "variant_score": 0.9991932511329651,
+      "output_sha256": "53db7d14c1fd66a813968ed7e924ecdac81df996acb9c62083d05d56b11c2160",
+      "top_five": [
+        {
+          "gene": "BCKDHB",
+          "score": 0.9786514779429764
+        },
+        {
+          "gene": "PAH",
+          "score": 0.10226307730764014
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.061580733516208394
+        },
+        {
+          "gene": "AK4",
+          "score": 0.02836784728585186
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.02733287939150726
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_14742428_DM",
+      "gene": "BCKDHB",
+      "stratum": "autosomal_homozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.24342713025576737,
+      "priority_score": 0.5062551349401474,
+      "variant_score": 0.9991932511329651,
+      "output_sha256": "e06b30e4cf66153a23e720ea666185b532321cc978ad983ee0f818f001b28069",
+      "top_five": [
+        {
+          "gene": "BCKDHB",
+          "score": 0.24342713025576737
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.07443968445199732
+        },
+        {
+          "gene": "PAH",
+          "score": 0.051006629892407805
+        },
+        {
+          "gene": "AK4",
+          "score": 0.02788809411625396
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027685125298988547
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_14742428_DM",
+      "gene": "BCKDHB",
+      "stratum": "autosomal_homozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 15,
+      "rank_max": 15,
+      "scored_genes": 344,
+      "combined_score": 0.49959662556648254,
+      "priority_score": null,
+      "variant_score": 0.9991932511329651,
+      "output_sha256": "910010bb546342bc536c636bce3730dc0368b5688cae6e3dc1ea0d34f609cfe0",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CDK11B",
+          "score": 0.5
+        },
+        {
+          "gene": "CELA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_19776401_Patient_8-2",
+      "gene": "DOCK8",
+      "stratum": "autosomal_homozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 15,
+      "rank_max": 15,
+      "scored_genes": 344,
+      "combined_score": 0.008446107435115946,
+      "priority_score": 0.7319248298267141,
+      "variant_score": 0.6234925985336304,
+      "output_sha256": "958459395a30f50ac966e5466404f5a77cd2a05394da35a4c4bf0bc02959e7b6",
+      "top_five": [
+        {
+          "gene": "PAH",
+          "score": 0.05090324701313452
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.042274031121617775
+        },
+        {
+          "gene": "AK4",
+          "score": 0.027164323698482977
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.026993914012411722
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.023220393898137542
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_19776401_Patient_8-2",
+      "gene": "DOCK8",
+      "stratum": "autosomal_homozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 16,
+      "rank_max": 16,
+      "scored_genes": 344,
+      "combined_score": 0.005663457612534694,
+      "priority_score": 0.6918537985882989,
+      "variant_score": 0.6234925985336304,
+      "output_sha256": "6394fcc6e1d9193f692637c5217a6b3dc348e6403d514b04e5ce98e519a33f8d",
+      "top_five": [
+        {
+          "gene": "PAH",
+          "score": 0.05090221999983932
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.042269850442349634
+        },
+        {
+          "gene": "AK4",
+          "score": 0.027146059890163145
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.026963338844955137
+        },
+        {
+          "gene": "CDK11A",
+          "score": 0.016637259064749527
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_19776401_Patient_8-2",
+      "gene": "DOCK8",
+      "stratum": "autosomal_homozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 66,
+      "rank_max": 66,
+      "scored_genes": 344,
+      "combined_score": 0.0008298583670448928,
+      "priority_score": 0.5001588717132108,
+      "variant_score": 0.6234925985336304,
+      "output_sha256": "a53fd874376b08e7f9b11724681a4767569b058f02ca20d47c9e3021a74a3688",
+      "top_five": [
+        {
+          "gene": "TNNT2",
+          "score": 0.0596101703288284
+        },
+        {
+          "gene": "PAH",
+          "score": 0.05503086833425904
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.02871234714265796
+        },
+        {
+          "gene": "AK4",
+          "score": 0.028267756105831193
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.021582911710541074
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_19776401_Patient_8-2",
+      "gene": "DOCK8",
+      "stratum": "autosomal_homozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 95,
+      "rank_max": 95,
+      "scored_genes": 344,
+      "combined_score": 0.3117462992668152,
+      "priority_score": null,
+      "variant_score": 0.6234925985336304,
+      "output_sha256": "65ec6ee6111c838374415b647e999824a7ee24db62d90905cb03f95321ae9001",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CDK11B",
+          "score": 0.5
+        },
+        {
+          "gene": "CELA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17331980_patient",
+      "gene": "COG8",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.6667405697508225,
+      "priority_score": 0.8730868666854872,
+      "variant_score": 0.998029351234436,
+      "output_sha256": "e33d01d16129dd84555c4ab6557aa79baa14f5383232bbc63aa54d86d2d69fc7",
+      "top_five": [
+        {
+          "gene": "COG8",
+          "score": 0.6667405697508225
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.0596101703288284
+        },
+        {
+          "gene": "PAH",
+          "score": 0.05503086833425904
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.02871234714265796
+        },
+        {
+          "gene": "AK4",
+          "score": 0.028267756105831193
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17331980_patient",
+      "gene": "COG8",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.4895438685183328,
+      "priority_score": 0.7998779598796214,
+      "variant_score": 0.998029351234436,
+      "output_sha256": "18c679b904196aae789f9633960856b71eaea7e85e35d49876aab269ef142b0d",
+      "top_five": [
+        {
+          "gene": "COG8",
+          "score": 0.4895438685183328
+        },
+        {
+          "gene": "PAH",
+          "score": 0.054917186709777924
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.04847635061513757
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.032448749069006536
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.0317727131329256
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17331980_patient",
+      "gene": "COG8",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 2,
+      "rank_max": 2,
+      "scored_genes": 344,
+      "combined_score": 0.045057806927166,
+      "priority_score": 0.5000100389479485,
+      "variant_score": 0.998029351234436,
+      "output_sha256": "3d3f941d5cd056506333c4798ef2ab2090a03d22e389c999afb59026a6c6d883",
+      "top_five": [
+        {
+          "gene": "PAH",
+          "score": 0.05087117110584203
+        },
+        {
+          "gene": "COG8",
+          "score": 0.045057806927166
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.04313352807138188
+        },
+        {
+          "gene": "CDK11A",
+          "score": 0.03637371259485385
+        },
+        {
+          "gene": "AK4",
+          "score": 0.02762956632384445
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17331980_patient",
+      "gene": "COG8",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 11,
+      "rank_max": 11,
+      "scored_genes": 344,
+      "combined_score": 0.4998428523540497,
+      "priority_score": null,
+      "variant_score": 0.9996857047080994,
+      "output_sha256": "9cdda191f3ff436d015800b6f0232ebf35980917cfc7c4a8fc30be3686f27ca9",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CDK11B",
+          "score": 0.5
+        },
+        {
+          "gene": "CELA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_24403049_Proband_2",
+      "gene": "SLC35C1",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "original",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.8817177705078485,
+      "priority_score": 0.9462867238295585,
+      "variant_score": 0.9168318212032318,
+      "output_sha256": "3d6355be4be7c854a913665dc1f0563ee1fee0564285f4f6621787a5fc9ce07d",
+      "top_five": [
+        {
+          "gene": "SLC35C1",
+          "score": 0.8817177705078485
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.07443968445199732
+        },
+        {
+          "gene": "PAH",
+          "score": 0.051006629892407805
+        },
+        {
+          "gene": "AK4",
+          "score": 0.02788809411625396
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027685125298988547
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_24403049_Proband_2",
+      "gene": "SLC35C1",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "half_missing",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.8556575170659082,
+      "priority_score": 0.9234753873876004,
+      "variant_score": 0.9168318212032318,
+      "output_sha256": "148f3f8381905d7a89f96d23cf7a73123ad5a8136d13064315c96ae76bca5a2a",
+      "top_five": [
+        {
+          "gene": "SLC35C1",
+          "score": 0.8556575170659082
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.0655063701624911
+        },
+        {
+          "gene": "PAH",
+          "score": 0.05184250599503611
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.03084724294016781
+        },
+        {
+          "gene": "AK4",
+          "score": 0.027904463569486053
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_24403049_Proband_2",
+      "gene": "SLC35C1",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "swapped",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.0782294794701848,
+      "priority_score": 0.5007025497034192,
+      "variant_score": 0.9168318212032318,
+      "output_sha256": "a5210d322b36ef8f11308a8d296318bd800bdc515426d800b524fdee457eef2d",
+      "top_five": [
+        {
+          "gene": "SLC35C1",
+          "score": 0.0782294794701848
+        },
+        {
+          "gene": "PAH",
+          "score": 0.05901430562472205
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.042403813248024586
+        },
+        {
+          "gene": "AK4",
+          "score": 0.02785326935598192
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027255545479427563
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_24403049_Proband_2",
+      "gene": "SLC35C1",
+      "stratum": "autosomal_two_heterozygous",
+      "arm": "none",
+      "primary_autosomal": true,
+      "status": "scored",
+      "rank_min": 11,
+      "rank_max": 11,
+      "scored_genes": 344,
+      "combined_score": 0.4999634623527527,
+      "priority_score": null,
+      "variant_score": 0.9999269247055054,
+      "output_sha256": "666cc85d4ad224f4b5073ab860206c62ec73cc1467a3151b5f9e267e244ce189",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CDK11B",
+          "score": 0.5
+        },
+        {
+          "gene": "CELA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17295247_Individual_III_3",
+      "gene": "ZIC3",
+      "stratum": "X_heterozygous_female",
+      "arm": "original",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 66,
+      "rank_max": 66,
+      "scored_genes": 344,
+      "combined_score": 0.0010483104582009488,
+      "priority_score": 0.25341733801178634,
+      "variant_score": 0.9757000207901001,
+      "output_sha256": "4bb9d9ec9dbe9090eebd12172a7053eb79fbb3d43b0d2dba588f1354cc6f9170",
+      "top_five": [
+        {
+          "gene": "PAH",
+          "score": 0.05087117110584203
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.04313352807138188
+        },
+        {
+          "gene": "CDK11A",
+          "score": 0.03637371259485385
+        },
+        {
+          "gene": "AK4",
+          "score": 0.02762956632384445
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.02696615701931473
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17295247_Individual_III_3",
+      "gene": "ZIC3",
+      "stratum": "X_heterozygous_female",
+      "arm": "half_missing",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 66,
+      "rank_max": 66,
+      "scored_genes": 344,
+      "combined_score": 0.001048366633901153,
+      "priority_score": 0.2534226786810905,
+      "variant_score": 0.9757000207901001,
+      "output_sha256": "7b412207a3522af029546e5190e2d3d1e164574ad2a85aee2d128fb637dc08dc",
+      "top_five": [
+        {
+          "gene": "PAH",
+          "score": 0.050905092250350135
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.050684600686503656
+        },
+        {
+          "gene": "CDK11A",
+          "score": 0.03502477193926536
+        },
+        {
+          "gene": "AK4",
+          "score": 0.027581557635907097
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.026966571340018012
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17295247_Individual_III_3",
+      "gene": "ZIC3",
+      "stratum": "X_heterozygous_female",
+      "arm": "swapped",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 33,
+      "rank_max": 33,
+      "scored_genes": 344,
+      "combined_score": 0.003980759208743127,
+      "priority_score": 0.3865547720860323,
+      "variant_score": 0.9757000207901001,
+      "output_sha256": "9e7321d52cf9889465debdc12f3d429a6abf5d3afcefe70298a9703b1cff8033",
+      "top_five": [
+        {
+          "gene": "PAH",
+          "score": 0.09115440656397336
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.08780538121153014
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.031027570125950706
+        },
+        {
+          "gene": "AK4",
+          "score": 0.027267903666882868
+        },
+        {
+          "gene": "LTBP3",
+          "score": 0.019665980379080322
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_17295247_Individual_III_3",
+      "gene": "ZIC3",
+      "stratum": "X_heterozygous_female",
+      "arm": "none",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 21,
+      "rank_max": 21,
+      "scored_genes": 344,
+      "combined_score": 0.48785001039505005,
+      "priority_score": null,
+      "variant_score": 0.9757000207901001,
+      "output_sha256": "3b421ff4daa7bf5672c8be505d5b8202a38b7b978a22a1a1000d6da7ead6c351",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CDK11B",
+          "score": 0.5
+        },
+        {
+          "gene": "CELA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_16783569_IV_11",
+      "gene": "OFD1",
+      "stratum": "X_hemizygous_male",
+      "arm": "original",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 1,
+      "scored_genes": 344,
+      "combined_score": 0.6039775042349138,
+      "priority_score": 0.9626832191994565,
+      "variant_score": 1.0,
+      "output_sha256": "6dd453ef565f1575b4cf6a8b430986183a3f468c3349c34681422f6789147e60",
+      "top_five": [
+        {
+          "gene": "OFD1",
+          "score": 0.6039775042349138
+        },
+        {
+          "gene": "TNNT2",
+          "score": 0.24730815877887954
+        },
+        {
+          "gene": "PAH",
+          "score": 0.054778890161947966
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.03151551130710924
+        },
+        {
+          "gene": "TPP1",
+          "score": 0.0308017905447219
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_16783569_IV_11",
+      "gene": "OFD1",
+      "stratum": "X_hemizygous_male",
+      "arm": "half_missing",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 2,
+      "rank_max": 2,
+      "scored_genes": 344,
+      "combined_score": 0.6893057767141366,
+      "priority_score": 1.0,
+      "variant_score": 1.0,
+      "output_sha256": "26dd5abc67e48ff33334e3a39fbf508e6493e58298f6b081598201ad7b3987dc",
+      "top_five": [
+        {
+          "gene": "TNNT2",
+          "score": 0.8700563681235186
+        },
+        {
+          "gene": "OFD1",
+          "score": 0.6893057767141366
+        },
+        {
+          "gene": "NID1",
+          "score": 0.3750466147985328
+        },
+        {
+          "gene": "CERT1",
+          "score": 0.3211396043406575
+        },
+        {
+          "gene": "KDM6B",
+          "score": 0.2426165506672667
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_16783569_IV_11",
+      "gene": "OFD1",
+      "stratum": "X_hemizygous_male",
+      "arm": "swapped",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 6,
+      "rank_max": 6,
+      "scored_genes": 344,
+      "combined_score": 0.014693957691895234,
+      "priority_score": 0.5019523289520293,
+      "variant_score": 1.0,
+      "output_sha256": "16bf6ac5e4028af7277d0cf4872d106eeced268392d6e187f4f0845935bda404",
+      "top_five": [
+        {
+          "gene": "TNNT2",
+          "score": 0.34375295211519413
+        },
+        {
+          "gene": "PAH",
+          "score": 0.05111752290002285
+        },
+        {
+          "gene": "AK4",
+          "score": 0.0279476655625923
+        },
+        {
+          "gene": "CTSB",
+          "score": 0.027000179684467142
+        },
+        {
+          "gene": "CDK11A",
+          "score": 0.01664025184799624
+        }
+      ]
+    },
+    {
+      "case_id": "PMID_16783569_IV_11",
+      "gene": "OFD1",
+      "stratum": "X_hemizygous_male",
+      "arm": "none",
+      "primary_autosomal": false,
+      "status": "scored",
+      "rank_min": 1,
+      "rank_max": 11,
+      "scored_genes": 344,
+      "combined_score": 0.5,
+      "priority_score": null,
+      "variant_score": 1.0,
+      "output_sha256": "c196474a1cb1ade7eb2596f017cb886f630b71b4d9b0d7284c1d26454515b169",
+      "top_five": [
+        {
+          "gene": "ASAH2B",
+          "score": 0.5
+        },
+        {
+          "gene": "CDK11B",
+          "score": 0.5
+        },
+        {
+          "gene": "CELA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQA1",
+          "score": 0.5
+        },
+        {
+          "gene": "HLA-DQB1",
+          "score": 0.5
+        }
+      ]
+    }
+  ],
+  "execution_receipt_sha256": "d293d9d4350954d403d6e35a75b6f070ac9a24abec9e44a155be464ecc6f1521"
+}

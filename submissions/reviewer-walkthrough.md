@@ -27,6 +27,25 @@ python3 analysis/rescue_decision/decision.py examples/rescue-decision-demo/faile
 
 Expected decisions are **`DO_NOT_ADVANCE`** for the selection example and **`TECHNICALLY_INDETERMINATE`** for failed exposure measurement. The latter cannot establish biological inefficacy. Exit 0 means valid input, not a favourable biological result. These are three materialized examples from the existing frozen casebook, not additional independent validation cases. The [complete prototype evaluation](rescue-decision-validation.md) contains all 40 expected cases and the limits of its assertions.
 
+## Inspect public source-label recovery
+
+The [multi-case writeup](public-validation.md) reports all 96 genomic and twelve phenotype-only jobs, including misses, source qualifications and two frozen source-support partitions. [Paired genomic results](../examples/public-benchmark/results/paired-summary.json) use the same nine primary source labels on both backgrounds; there are not eighteen independent cases.
+
+Compare CTCF and DOCK8 in the [phenotype-only evaluation](../examples/public-benchmark/results/phenotype-only/evaluation.json) and the genomic [HG002](../examples/public-benchmark/results/HG002/evaluation.json) / [HG001](../examples/public-benchmark/results/HG001/evaluation.json) evaluations. All three recover eight of nine labels within ten, but CTCF ranks 132 versus 1/1 and DOCK8 ranks 2 versus 22/15. Different candidate universes and filtering prevent interpreting those changes as the causal value of sequencing.
+
+Next compare the [HG002 source-allele diagnostic](../examples/public-benchmark/results/HG002/source-variant-audit.json) with the [raw source-gene record excerpts](../examples/public-benchmark/results/source-gene-evidence/records.json). COG8 and SLC35C1 have two exact, passed source alleles with contribution flags, yet each no-HPO best-scoring autosomal-dominant mode uses only one allele. The excerpt verifier below reproduces those four exceptions across both backgrounds. A global contribution flag does not establish joint pair recovery or phase.
+
+Verify the compact exports without a reference genome, Java or annotation databases:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 examples/public-benchmark/verify_export.py examples/public-benchmark/results/HG002
+PYTHONDONTWRITEBYTECODE=1 python3 examples/public-benchmark/verify_export.py examples/public-benchmark/results/HG001
+PYTHONDONTWRITEBYTECODE=1 python3 examples/public-benchmark/export_phenotype.py --verify examples/public-benchmark/results/phenotype-only
+PYTHONDONTWRITEBYTECODE=1 python3 examples/public-benchmark/source_evidence.py --verify examples/public-benchmark/results/source-gene-evidence
+```
+
+These checks verify hashes and rederive ranks from every retained gene-score table. The excerpt check also recomputes joint best-mode allele contribution and matches source-gene scores to the compact exports. Full source-file hashes were verified during extraction; the offline check can inspect their recorded hashes but cannot rehash undistributed original files. These checks do not rerun inference, independently confirm the published diagnoses or measure therapeutic benefit.
+
 ## Reproduce the public software checks
 
 ```sh
